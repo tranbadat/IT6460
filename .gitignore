@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# File trung gian trong quá trình lập HSMT
+hsmt_lam_viec/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Cấu hình Claude Code cá nhân
+.claude/settings.local.json
+
+# Office lock files
+~$*

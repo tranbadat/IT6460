@@ -1,0 +1,83 @@
+{
+ "_ghi_chu": "Đầu vào do chủ đầu tư hoặc bên lập HSMT quyết định, RFP không có. Chỉ ghi giá trị và lựa chọn ngắn gọn, không ghi câu văn của HSMT. Giải thích từng trường trong references/tham_so.md.",
+ "chu_dau_tu": {
+  "ten": "Công ty Cổ phần ABC Wear",
+  "dia_chi": "trụ sở chính Công ty Cổ phần ABC Wear",
+  "nguoi_dai_dien": "Tổng Giám đốc",
+  "nguoi_co_tham_quyen": "Tổng Giám đốc Công ty Cổ phần ABC Wear",
+  "dia_diem_ban_hanh": "Hà Nội"
+ },
+ "goi_thau": {
+  "ten": "Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+  "du_an": "Phát triển kênh bán hàng trực tuyến của Công ty Cổ phần ABC Wear",
+  "linh_vuc": "dịch vụ phi tư vấn",
+  "nguon_von": "vốn tự có, vốn chủ sở hữu của Công ty Cổ phần ABC Wear",
+  "chu_dau_tu_tu_lua_chon_ap_dung_luat": true,
+  "gia_goi_thau": 2000000000,
+  "loai_hop_dong": "trọn gói",
+  "hinh_thuc": "đấu thầu rộng rãi trong nước, qua mạng",
+  "phuong_thuc": "một giai đoạn một túi hồ sơ",
+  "chia_phan": false,
+  "dung_tu_van_dau_thau": false
+ },
+ "nam_ap_dung_cho_20XX": 2027,
+ "lich": {
+  "gio_dong_thau": "9:00",
+  "phut_mo_thau_sau_dong_thau": 30,
+  "hoi_nghi_tien_dau_thau": {"co": true, "ngay": "01/03", "gio": "9:00", "thay_cho": "buổi trình bày đề xuất trong RFP"},
+  "ngay_hop_dong_hieu_luc_du_kien": "18/03"
+ },
+ "chinh_sach": {
+  "hieu_luc_hsdt_ngay": 90,
+  "ty_le_bao_dam_du_thau_phan_tram": 1.5,
+  "bao_dam_du_thau_cong_them_ngay": 30,
+  "hoan_tra_bao_dam_du_thau_ngay": 14,
+  "ty_le_nha_thau_phu_toi_da_phan_tram": 40,
+  "nam_lich_su_hop_dong": 3,
+  "nam_hop_dong_tuong_tu": 3,
+  "nam_doanh_thu": 3,
+  "he_so_k_doanh_thu": 1.0,
+  "ty_le_hop_dong_tuong_tu_phan_tram": 30,
+  "dinh_nghia_hop_dong_tuong_tu": "xây dựng, triển khai website bán hàng, thương mại điện tử hoặc phần mềm ứng dụng web có tích hợp với hệ thống khác",
+  "phuong_phap_ky_thuat": "chấm điểm",
+  "diem_ky_thuat_toi_thieu_phan_tram": 70,
+  "diem_toi_thieu_tung_tieu_chi_phan_tram": 60,
+  "trong_so_tieu_chi_ky_thuat": [30, 20, 20, 15, 15],
+  "phuong_phap_tai_chinh": "giá thấp nhất",
+  "phuong_an_ky_thuat_thay_the": false,
+  "ty_le_tang_giam_khoi_luong_phan_tram": 0,
+  "mua_them": false,
+  "thiet_bi_chu_yeu": false,
+  "ty_le_bao_dam_thuc_hien_phan_tram": 3,
+  "bao_dam_thuc_hien_sau_cut_over_ngay": 30,
+  "hoan_tra_bao_dam_thuc_hien_ngay": 14,
+  "tam_ung_phan_tram": 15,
+  "bao_lanh_tam_ung": true,
+  "thanh_toan": [
+   {"dot": 1, "phan_tram": 15, "su_kien": "tạm ứng"},
+   {"dot": 2, "phan_tram": 25, "su_kien": "hai bên xác nhận đặc tả yêu cầu (baseline) và giao diện ưu tiên"},
+   {"dot": 3, "phan_tram": 30, "su_kien": "hoàn thành các chức năng chính của hệ thống và tích hợp với các hệ thống liên quan"},
+   {"dot": 4, "phan_tram": 25, "su_kien": "hệ thống đưa vào vận hành và được nghiệm thu"},
+   {"dot": 5, "phan_tram": 5, "su_kien": "nhà thầu nộp bảo lãnh bảo hành"}
+  ],
+  "thanh_toan_trong_ngay": 15,
+  "bao_lanh_bao_hanh_phan_tram": 5,
+  "phat_cham_tien_do_phan_tram_ngay": 0.1,
+  "phat_toi_da_phan_tram": 8,
+  "tiet_kiem_chi_phi_phan_tram": 30,
+  "thay_the_nhan_su_ngay": 7,
+  "hoa_giai_toi_da_ngay": 30,
+  "co_quan_giai_quyet_tranh_chap": "Tòa án nhân dân có thẩm quyền tại Hà Nội",
+  "ngon_ngu_tieng_viet": true
+ },
+ "nhan_su_chu_chot": [
+  {"vi_tri": "Quản trị dự án", "so_luong": 1, "kinh_nghiem": "tối thiểu 03 năm quản lý dự án phần mềm hoặc tối thiểu 02 hợp đồng tương tự"},
+  {"vi_tri": "Kỹ sư phát triển phần mềm", "so_luong": 3, "kinh_nghiem": "tối thiểu 02 năm lập trình ứng dụng web"},
+  {"vi_tri": "Kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử", "so_luong": 1, "kinh_nghiem": "tối thiểu 02 năm phân tích nghiệp vụ hoặc kiểm thử phần mềm"}
+ ],
+ "can_cu_phap_ly": {
+  "luat": "Luật Đấu thầu số 22/2023/QH15 (đã được sửa đổi, bổ sung bởi Luật số 57/2024/QH15 và Luật số 90/2025/QH15)",
+  "nghi_dinh": "Nghị định số 214/2025/NĐ-CP (đã được sửa đổi, bổ sung bởi các Nghị định số 165/2026/NĐ-CP, 170/2026/NĐ-CP và 349/2026/NĐ-CP)",
+  "thong_tu": "Thông tư số 79/2025/TT-BTC"
+ }
+}
