@@ -55,39 +55,737 @@
    2025
   ],
   "he_so_k": 1.0,
-  "ty_le_hop_dong_tuong_tu": 30
+  "ty_le_hop_dong_tuong_tu": 30,
+  "thue_gtgt": {
+   "loai": "khong_chiu_thue",
+   "thue_suat_phan_tram": 0,
+   "gia_tri_thue": "0",
+   "can_cu": "Dịch vụ phần mềm thuộc đối tượng không chịu thuế GTGT (Luật Thuế GTGT số 48/2024/QH15, khoản 21 Điều 5)"
+  },
+  "hop_dong_tuong_tu_cong_gop": false,
+  "hang_muc_tuong_tu": []
  },
  "ky_thuat": {
   "tieu_chi": [
    {
     "stt": 1,
-    "ten": "Hiểu biết về mục tiêu dự án và giải pháp kỹ thuật tổng thể: mức độ hiểu mục tiêu mở rộng khách hàng qua internet, mô hình hệ thống mới, điều kiện tiền đề của đề xuất và giải pháp bảo đảm các yêu cầu phi chức năng gồm hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm, thời gian phản hồi không quá 2 giây và khách hàng thao tác dễ dàng.",
+    "ten": "Hiểu biết mục tiêu dự án và giải pháp kỹ thuật tổng thể, gồm giải pháp đáp ứng các yêu cầu phi chức năng",
     "diem_toi_da": 30,
-    "diem_toi_thieu": 18
+    "diem_toi_thieu": 18,
+    "chi_tiet": [
+     {
+      "stt": "1.1",
+      "ten": "Hiểu biết mục tiêu dự án và mô hình hệ thống mới",
+      "noi_dung": "Mức độ hiểu mục tiêu mở rộng khách hàng qua internet, tạo kênh bán hàng mới (mục 2 Chương V), các chức năng, cơ sở dữ liệu bán hàng (Selling DB), hệ thống liên quan và chiều của các luồng dữ liệu (mục 3.1 Chương V), phần ngoài phạm vi (mục 3.2 Chương V).",
+      "diem_toi_da": 5,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 5,
+        "mo_ta": "Phân tích đúng và đủ mục tiêu, các chức năng, Selling DB, Main System, nghiệp vụ vận chuyển và chiều của các luồng dữ liệu, chỉ ra ảnh hưởng của từng yếu tố tới giải pháp đề xuất."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 4,
+        "mo_ta": "Trình bày đúng và đủ mục tiêu, các thành phần và luồng dữ liệu nhưng chưa phân tích ảnh hưởng tới giải pháp đề xuất."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 2,
+        "mo_ta": "Trình bày đúng mục tiêu nhưng thiếu một số thành phần hoặc luồng dữ liệu của mục 3.1 Chương V."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày hoặc hiểu sai mục tiêu, mô hình hệ thống mới."
+       }
+      ]
+     },
+     {
+      "stt": "1.2",
+      "ten": "Giải pháp kiến trúc, công nghệ và tích hợp với Main System",
+      "noi_dung": "Kiến trúc ứng dụng, công nghệ, thiết kế Selling DB, phương án tích hợp với Main System, bảo mật dữ liệu khách hàng, đề xuất cấu hình tối thiểu của hạ tầng vận hành (máy chủ, đường truyền, phần mềm nền) đủ để đáp ứng yêu cầu tại mục 3.4, sự phù hợp với phân định tại mục 3.5 Chương V (mục 3.1, 3.4 và 3.5 Chương V).",
+      "diem_toi_da": 7,
+      "co_ban": true,
+      "diem_toi_thieu": 5,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 7,
+        "mo_ta": "Giải pháp đầy đủ, nhất quán về kiến trúc, công nghệ, Selling DB, tích hợp với Main System và bảo mật dữ liệu khách hàng, có lý do lựa chọn, có phương án dự phòng cho rủi ro tích hợp, cấu hình hạ tầng đề xuất cụ thể, có thuyết minh đáp ứng mục 3.4 và phù hợp phân định tại mục 3.5 Chương V."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 5,
+        "mo_ta": "Giải pháp đủ các thành phần nêu trên, có cấu hình hạ tầng đề xuất, khả thi và phù hợp phân định tại mục 3.5 Chương V nhưng chưa nêu lý do lựa chọn, phương án dự phòng cho rủi ro tích hợp hoặc thuyết minh cấu hình đáp ứng mục 3.4."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 3,
+        "mo_ta": "Thiếu một trong các thành phần kiến trúc, tích hợp với Main System, bảo mật dữ liệu khách hàng, cấu hình hạ tầng đề xuất, hoặc giải pháp chưa phù hợp phân định tại mục 3.5 Chương V."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không có giải pháp hoặc giải pháp không khả thi."
+       }
+      ]
+     },
+     {
+      "stt": "1.3",
+      "ten": "Giải pháp bảo đảm hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+      "noi_dung": "Giải pháp bảo đảm tính sẵn sàng, dự phòng, sao lưu và phục hồi, giám sát, bảo trì không làm gián đoạn dịch vụ, đề xuất cách tính thời gian hoạt động liên tục làm điều kiện đo (mục 3.4 và 3.5 Chương V).",
+      "diem_toi_da": 6,
+      "co_ban": true,
+      "diem_toi_thieu": 4,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 6,
+        "mo_ta": "Giải pháp đủ các nội dung nêu trên, có cách tính thời gian hoạt động liên tục, điều kiện đo rõ ràng và phương án kiểm thử chứng minh trước khi đưa hệ thống vào vận hành."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 4,
+        "mo_ta": "Giải pháp đủ các nội dung nêu trên, có điều kiện đo nhưng phương án kiểm thử chứng minh chưa cụ thể."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 2,
+        "mo_ta": "Giải pháp thiếu dự phòng, sao lưu hoặc giám sát, hoặc không đề xuất điều kiện đo."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không có giải pháp hoặc giải pháp không đáp ứng yêu cầu hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm."
+       }
+      ]
+     },
+     {
+      "stt": "1.4",
+      "ten": "Giải pháp bảo đảm thời gian phản hồi không quá 2 giây",
+      "noi_dung": "Giải pháp hiệu năng cho các thao tác tìm kiếm sản phẩm, quản lý thành viên, đặt hàng và truy cập Selling DB, đề xuất điều kiện đo (tải, số người dùng đồng thời, điểm đo) và phương pháp kiểm thử hiệu năng (mục 3.4 và 3.5 Chương V).",
+      "diem_toi_da": 6,
+      "co_ban": true,
+      "diem_toi_thieu": 4,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 6,
+        "mo_ta": "Giải pháp hiệu năng cụ thể cho từng chức năng, điều kiện đo rõ ràng về tải, số người dùng đồng thời, điểm đo và phương pháp kiểm thử hiệu năng có tiêu chí đạt."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 4,
+        "mo_ta": "Giải pháp hiệu năng phù hợp, có điều kiện đo nhưng phương pháp kiểm thử hiệu năng chưa cụ thể."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 2,
+        "mo_ta": "Giải pháp nêu chung, không gắn với các chức năng, hoặc không đề xuất điều kiện đo."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không có giải pháp hoặc giải pháp không đáp ứng thời gian phản hồi không quá 2 giây."
+       }
+      ]
+     },
+     {
+      "stt": "1.5",
+      "ten": "Giải pháp giao diện giúp khách hàng thao tác dễ dàng (Easy Operation for the Customer)",
+      "noi_dung": "Nguyên tắc thiết kế giao diện, trình tự thao tác tìm kiếm sản phẩm, đăng ký thành viên và đặt hàng, sơ đồ phân cấp menu dự kiến, cách đánh giá mức độ thao tác dễ dàng của khách hàng (mục 2 và 3.4 Chương V).",
+      "diem_toi_da": 4,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 4,
+        "mo_ta": "Có nguyên tắc thiết kế, trình tự thao tác rút gọn cho cả ba chức năng, menu dự kiến và cách đánh giá mức độ thao tác dễ dàng có sự tham gia của Chủ đầu tư."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 3,
+        "mo_ta": "Có nguyên tắc thiết kế và trình tự thao tác cho cả ba chức năng nhưng chưa có cách đánh giá mức độ thao tác dễ dàng."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Chỉ nêu nguyên tắc chung, chưa gắn với các chức năng của hệ thống."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày."
+       }
+      ]
+     },
+     {
+      "stt": "1.6",
+      "ten": "Điều kiện tiền đề (Precondition) của giải pháp",
+      "noi_dung": "Mức độ rõ ràng của các điều kiện tiền đề và giả định kỹ thuật mà giải pháp dựa vào, sự nhất quán với phân định trách nhiệm và giả định tại mục 3.5 Chương V (mục 3.5 và mục 4 Chương V).",
+      "diem_toi_da": 2,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Đạt đủ",
+        "diem": 2,
+        "mo_ta": "Nêu rõ từng điều kiện tiền đề, gắn với nội dung của giải pháp, nhất quán với mục 3.5 Chương V và không phát sinh nghĩa vụ cho Chủ đầu tư ngoài phân định tại mục 3.5 Chương V."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Có nêu điều kiện tiền đề nhưng chung chung, chưa gắn với nội dung của giải pháp hoặc có nội dung chưa nhất quán với mục 3.5 Chương V."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không nêu điều kiện tiền đề."
+       }
+      ]
+     }
+    ]
    },
    {
     "stt": 2,
-    "ten": "Phạm vi công việc, sản phẩm đầu ra, phương pháp thực hiện và bảo đảm chất lượng: mức độ đầy đủ của phạm vi công việc từ phân tích hệ thống đến kiểm thử vận hành, các sản phẩm bàn giao nêu tại mục 3.3 Chương V, phương pháp phát triển, kiểm thử và bảo đảm chất lượng.",
+    "ten": "Phạm vi công việc, sản phẩm bàn giao, phương pháp thực hiện và bảo đảm chất lượng",
     "diem_toi_da": 20,
-    "diem_toi_thieu": 12
+    "diem_toi_thieu": 12,
+    "chi_tiet": [
+     {
+      "stt": "2.1",
+      "ten": "Phạm vi công việc (Project Scope) gắn với tiêu chuẩn của Chủ đầu tư",
+      "noi_dung": "Mức độ đầy đủ của phạm vi công việc từ phân tích hệ thống đến kiểm thử vận hành theo yêu cầu tại Chương V, phân rã thành các công việc gắn với hạng mục Mẫu số 01A, nhận diện phần ngoài phạm vi là chức năng quản trị nội bộ (mục 3.2 Chương V).",
+      "diem_toi_da": 5,
+      "co_ban": true,
+      "diem_toi_thieu": 4,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 5,
+        "mo_ta": "Phạm vi đủ mọi hạng mục Mẫu số 01A, phân rã đến công việc có sản phẩm cụ thể, nêu rõ phần ngoài phạm vi và cách đáp ứng yêu cầu của Chủ đầu tư tại Chương V."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 4,
+        "mo_ta": "Phạm vi đủ mọi hạng mục Mẫu số 01A và nêu rõ phần ngoài phạm vi nhưng phân rã công việc chưa chi tiết."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 2,
+        "mo_ta": "Phạm vi thiếu một hoặc hai hạng mục Mẫu số 01A, hoặc không nêu phần ngoài phạm vi."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Phạm vi thiếu từ ba hạng mục Mẫu số 01A trở lên hoặc không trình bày."
+       }
+      ]
+     },
+     {
+      "stt": "2.2",
+      "ten": "Sản phẩm bàn giao (Deliverables) trong hợp đồng",
+      "noi_dung": "Danh mục, nội dung, hình thức và thời điểm bàn giao của các sản phẩm: đặc tả hệ thống (Specification) gồm cấu hình cơ sở dữ liệu (DB Configuration) và chức năng (Function), quy trình vận hành mới (New Operational Flow), cấu trúc cơ sở dữ liệu (Database Structure), sơ đồ phân cấp menu (Menu Layer), hệ thống đã hoàn thành kiểm thử vận hành và tài liệu chuyển giao (mục 3.3 Chương V, Mẫu số 01A).",
+      "diem_toi_da": 5,
+      "co_ban": true,
+      "diem_toi_thieu": 4,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 5,
+        "mo_ta": "Nêu đủ các sản phẩm của mục 3.3 Chương V, mỗi sản phẩm có nội dung chính, hình thức, thời điểm bàn giao và cách Chủ đầu tư kiểm tra, xác nhận."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 4,
+        "mo_ta": "Nêu đủ các sản phẩm của mục 3.3 Chương V với nội dung và thời điểm bàn giao nhưng chưa nêu cách kiểm tra, xác nhận."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 2,
+        "mo_ta": "Thiếu một sản phẩm của mục 3.3 Chương V hoặc chỉ liệt kê tên sản phẩm."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Thiếu từ hai sản phẩm trở lên hoặc không trình bày."
+       }
+      ]
+     },
+     {
+      "stt": "2.3",
+      "ten": "Phương pháp phân tích, thiết kế và xây dựng hệ thống",
+      "noi_dung": "Phương pháp thu thập và phân tích yêu cầu, lập và xác nhận đặc tả, thiết kế, xây dựng các chức năng và Selling DB, quản lý cấu hình mã nguồn (mục 3.1 đến 3.3 Chương V).",
+      "diem_toi_da": 4,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 4,
+        "mo_ta": "Phương pháp cụ thể cho từng giai đoạn, có cách thức Chủ đầu tư tham gia xác nhận đặc tả và giao diện ưu tiên, phù hợp thời gian đến ngày cut over."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 3,
+        "mo_ta": "Phương pháp phù hợp cho từng giai đoạn nhưng chưa nêu cách thức Chủ đầu tư tham gia xác nhận."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Chỉ nêu tên phương pháp, chưa áp dụng cụ thể vào gói thầu."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày."
+       }
+      ]
+     },
+     {
+      "stt": "2.4",
+      "ten": "Phương pháp kiểm thử và kiểm thử vận hành",
+      "noi_dung": "Kế hoạch kiểm thử chức năng, kiểm thử tích hợp với Main System, kiểm thử các yêu cầu phi chức năng theo điều kiện đo, kiểm thử vận hành (Operation Test) có sự tham gia của Chủ đầu tư, tiêu chí đạt và quản lý lỗi (mục 3.2, 3.4 và 3.5 Chương V).",
+      "diem_toi_da": 4,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 4,
+        "mo_ta": "Đủ các loại kiểm thử nêu trên, mỗi loại có phạm vi, dữ liệu, môi trường kiểm thử theo phân định tại mục 3.5 Chương V (môi trường do nhà thầu cung cấp, môi trường thử của Main System, hạ tầng vận hành chính thức), tiêu chí đạt và quy trình xử lý lỗi."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 3,
+        "mo_ta": "Đủ các loại kiểm thử nêu trên nhưng tiêu chí đạt hoặc môi trường kiểm thử chưa cụ thể."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Thiếu kiểm thử tích hợp, kiểm thử phi chức năng hoặc kiểm thử vận hành."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày."
+       }
+      ]
+     },
+     {
+      "stt": "2.5",
+      "ten": "Biện pháp bảo đảm chất lượng",
+      "noi_dung": "Quy trình rà soát sản phẩm, đo lường và theo dõi chất lượng, xử lý sai sót trước khi bàn giao (mục 3.3 và mục 5 Chương V).",
+      "diem_toi_da": 2,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Đạt đủ",
+        "diem": 2,
+        "mo_ta": "Có quy trình bảo đảm chất lượng áp dụng cho từng sản phẩm bàn giao, có chỉ số theo dõi và người chịu trách nhiệm."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Có quy trình chung, chưa gắn với các sản phẩm bàn giao."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày."
+       }
+      ]
+     }
+    ]
    },
    {
     "stt": 3,
-    "ten": "Kế hoạch, tiến độ, tổ chức và nhân sự: tính hợp lý và khả thi của tiến độ đến ngày đưa hệ thống vào vận hành (cut over) 01/07/2027, tổ chức thực hiện dự án của nhà thầu, bố trí nhân sự và kế hoạch họp.",
+    "ten": "Kế hoạch, tiến độ đến ngày cut over, tổ chức thực hiện và nhân sự",
     "diem_toi_da": 20,
-    "diem_toi_thieu": 12
+    "diem_toi_thieu": 12,
+    "chi_tiet": [
+     {
+      "stt": "3.1",
+      "ten": "Tiến độ (Schedule) đến ngày cut over",
+      "noi_dung": "Tính hợp lý và khả thi của tiến độ từ ngày hợp đồng có hiệu lực đến ngày đưa hệ thống vào vận hành (cut over) 01/07/2027: các giai đoạn, mốc gắn với sản phẩm bàn giao và đợt thanh toán tại Mục 13.1 E-ĐKCT, công việc găng, thời gian dự phòng, sự phù hợp với các thời hạn Chủ đầu tư cung cấp tài liệu, môi trường thử của hệ thống hiện có, hạ tầng vận hành và hoàn thành thay đổi phía Main System (mục 3.5 và mục 4 Chương V).",
+      "diem_toi_da": 6,
+      "co_ban": true,
+      "diem_toi_thieu": 4,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 6,
+        "mo_ta": "Tiến độ đưa hệ thống vào vận hành (cut over) không muộn hơn ngày 01/07/2027, đủ mốc gắn với sản phẩm và đợt thanh toán, xác định công việc găng, có thời gian dự phòng và phù hợp các thời hạn tại mục 3.5 Chương V."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 4,
+        "mo_ta": "Tiến độ đưa hệ thống vào vận hành (cut over) không muộn hơn ngày 01/07/2027, đủ mốc gắn với sản phẩm nhưng chưa xác định công việc găng hoặc thời gian dự phòng."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 2,
+        "mo_ta": "Tiến độ đưa hệ thống vào vận hành (cut over) không muộn hơn ngày 01/07/2027 nhưng thiếu mốc gắn với sản phẩm hoặc không phù hợp các thời hạn tại mục 3.5 Chương V."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Tiến độ đưa hệ thống vào vận hành muộn hơn ngày 01/07/2027 hoặc không trình bày."
+       }
+      ]
+     },
+     {
+      "stt": "3.2",
+      "ten": "Tổ chức thực hiện dự án (Organization)",
+      "noi_dung": "Sơ đồ tổ chức thực hiện của nhà thầu cho gói thầu, đầu mối làm việc với Chủ đầu tư, cơ chế phối hợp, báo cáo và ra quyết định, quản lý nhà thầu phụ nếu có (mục 4 Chương V).",
+      "diem_toi_da": 4,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 4,
+        "mo_ta": "Sơ đồ tổ chức rõ ràng, có đầu mối, cơ chế phối hợp, báo cáo, ra quyết định và quản lý nhà thầu phụ (nếu có) phù hợp quy mô gói thầu."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 3,
+        "mo_ta": "Có sơ đồ tổ chức và đầu mối nhưng cơ chế phối hợp, ra quyết định chưa cụ thể."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Chỉ nêu danh sách bộ phận, chưa thể hiện quan hệ và đầu mối."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày."
+       }
+      ]
+     },
+     {
+      "stt": "3.3",
+      "ten": "Bố trí nhân sự thực hiện gói thầu",
+      "noi_dung": "Phân công nhân sự chủ chốt theo Bảng số 02 Chương III và nhân sự khác theo giai đoạn, thời gian huy động, phương án thay thế khi nhân sự vắng mặt (mục 4 Chương V).",
+      "diem_toi_da": 4,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 4,
+        "mo_ta": "Phân công rõ nhiệm vụ, thời gian huy động của từng nhân sự theo giai đoạn, phù hợp tiến độ, có phương án thay thế."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 3,
+        "mo_ta": "Phân công nhiệm vụ và thời gian huy động phù hợp tiến độ nhưng chưa có phương án thay thế."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Chỉ liệt kê nhân sự, chưa phân công theo giai đoạn."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày."
+       }
+      ]
+     },
+     {
+      "stt": "3.4",
+      "ten": "Kế hoạch họp (Meeting)",
+      "noi_dung": "Kế hoạch họp với Chủ đầu tư: loại cuộc họp, tần suất, thành phần, nội dung, cách lập và xác nhận biên bản, chế độ báo cáo tiến độ (mục 4 Chương V).",
+      "diem_toi_da": 3,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 3,
+        "mo_ta": "Kế hoạch họp đủ các nội dung nêu trên, gắn với các mốc xác nhận đặc tả, kiểm tra sản phẩm và cut over."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 2,
+        "mo_ta": "Kế hoạch họp có loại cuộc họp, tần suất, thành phần nhưng chưa gắn với các mốc của dự án."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Chỉ nêu họp định kỳ, chưa có thành phần và nội dung."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày."
+       }
+      ]
+     },
+     {
+      "stt": "3.5",
+      "ten": "Kế hoạch chuyển giao, hướng dẫn vận hành và hỗ trợ cut over",
+      "noi_dung": "Kế hoạch chuyển giao tài liệu, hướng dẫn cán bộ của Chủ đầu tư vận hành hệ thống theo quy trình vận hành mới, các bước chuyển sang vận hành chính thức và hỗ trợ sau cut over (mục 3.2 và 3.3 Chương V, Mẫu số 01A).",
+      "diem_toi_da": 3,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 3,
+        "mo_ta": "Kế hoạch cụ thể về đối tượng, nội dung, thời gian hướng dẫn, các bước chuyển sang vận hành chính thức, phương án quay lui khi có sự cố và hỗ trợ sau cut over."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 2,
+        "mo_ta": "Có kế hoạch hướng dẫn và các bước chuyển sang vận hành chính thức nhưng chưa có phương án quay lui khi có sự cố."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Chỉ nêu cam kết chuyển giao và hướng dẫn chung."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày."
+       }
+      ]
+     }
+    ]
    },
    {
     "stt": 4,
-    "ten": "Vai trò, trách nhiệm, quản lý thay đổi, rủi ro và bảo hành: sự rõ ràng về vai trò và trách nhiệm của các bên, cách quản lý thay đổi đặc tả, quản lý rủi ro và cam kết khắc phục sai sót trong thời hạn 12 tháng kể từ ngày hệ thống được nghiệm thu.",
+    "ten": "Vai trò và trách nhiệm, quản lý thay đổi, quản lý rủi ro và khắc phục sai sót",
     "diem_toi_da": 15,
-    "diem_toi_thieu": 9
+    "diem_toi_thieu": 9,
+    "chi_tiet": [
+     {
+      "stt": "4.1",
+      "ten": "Vai trò và trách nhiệm (Roles) của các bên",
+      "noi_dung": "Mức độ rõ ràng của vai trò và trách nhiệm của nhà thầu và Chủ đầu tư trong xác nhận đặc tả, cung cấp thông tin, kiểm tra, nghiệm thu và vận hành, sự nhất quán với phân định tại mục 3.5 Chương V (mục 3.5, mục 4 và mục 5 Chương V).",
+      "diem_toi_da": 4,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 4,
+        "mo_ta": "Có ma trận vai trò và trách nhiệm cho từng công việc chính và sản phẩm, nhất quán với mục 3.5 Chương V, nêu rõ người phê duyệt của mỗi bên."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 3,
+        "mo_ta": "Nêu đủ vai trò và trách nhiệm của các bên, nhất quán với mục 3.5 Chương V nhưng chưa chi tiết đến từng sản phẩm."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Vai trò và trách nhiệm nêu chung hoặc có nội dung chưa nhất quán với mục 3.5 Chương V."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày."
+       }
+      ]
+     },
+     {
+      "stt": "4.2",
+      "ten": "Quản lý thay đổi đặc tả",
+      "noi_dung": "Quy trình tiếp nhận đề xuất thay đổi đặc tả của mỗi bên, đánh giá ảnh hưởng tới phạm vi và tiến độ, thống nhất bằng văn bản theo Mục 17.1(c) E-ĐKCT, quản lý phiên bản đặc tả và tài liệu (mục 4 Chương V).",
+      "diem_toi_da": 4,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 4,
+        "mo_ta": "Quy trình đủ các bước, có biểu mẫu, thời hạn xử lý, cấp phê duyệt và quản lý phiên bản, phù hợp Mục 17.1(c) E-ĐKCT."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 3,
+        "mo_ta": "Quy trình đủ các bước, phù hợp Mục 17.1(c) E-ĐKCT nhưng chưa có thời hạn xử lý hoặc chưa quản lý phiên bản."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Chỉ nêu nguyên tắc chung về thay đổi đặc tả."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày hoặc quy trình trái với Mục 17.1(c) E-ĐKCT."
+       }
+      ]
+     },
+     {
+      "stt": "4.3",
+      "ten": "Quản lý rủi ro",
+      "noi_dung": "Nhận diện, đánh giá các rủi ro chính của gói thầu (tích hợp với Main System, thời gian đến ngày cut over, hiệu năng và hoạt động liên tục), biện pháp phòng ngừa, ứng phó và theo dõi (mục 3 và mục 4 Chương V).",
+      "diem_toi_da": 4,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 4,
+        "mo_ta": "Nhận diện đủ các rủi ro chính, có đánh giá mức độ, biện pháp phòng ngừa, ứng phó, người phụ trách và cách theo dõi."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 3,
+        "mo_ta": "Nhận diện đủ các rủi ro chính và biện pháp ứng phó nhưng chưa đánh giá mức độ hoặc chưa có cách theo dõi."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Chỉ nêu một số rủi ro chung, chưa gắn với gói thầu."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày."
+       }
+      ]
+     },
+     {
+      "stt": "4.4",
+      "ten": "Khắc phục sai sót trong thời hạn trách nhiệm",
+      "noi_dung": "Phương án tiếp nhận, phân loại và khắc phục lỗi logic, sai sót thuộc trách nhiệm của nhà thầu trong thời hạn 12 tháng kể từ ngày hệ thống được nghiệm thu, thời gian phản hồi và khắc phục (Mục 20.1 E-ĐKCT, mục 5 Chương V).",
+      "diem_toi_da": 3,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 3,
+        "mo_ta": "Có quy trình tiếp nhận, phân loại theo mức độ, thời gian phản hồi và khắc phục cho từng mức, đầu mối hỗ trợ trong suốt 12 tháng."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 2,
+        "mo_ta": "Có quy trình tiếp nhận và khắc phục nhưng chưa có thời gian phản hồi cho từng mức độ."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 1,
+        "mo_ta": "Chỉ nêu cam kết khắc phục chung."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không trình bày."
+       }
+      ]
+     }
+    ]
    },
    {
     "stt": 5,
-    "ten": "Điều kiện khác và đề xuất bổ sung: điều kiện khác liên quan đến hợp đồng, đề nghị đối với Chủ đầu tư, đề xuất khác có lợi cho thành công của dự án và thông tin về kết quả thực hiện hợp đồng của nhà thầu theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP.",
+    "ten": "Đề xuất khác có lợi cho thành công của dự án và thông tin về kết quả thực hiện hợp đồng của nhà thầu theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP",
     "diem_toi_da": 15,
-    "diem_toi_thieu": 9
+    "diem_toi_thieu": 9,
+    "chi_tiet": [
+     {
+      "stt": "5.1",
+      "ten": "Đề xuất bổ sung cần thiết cho thành công của dự án",
+      "noi_dung": "Các nội dung nhà thầu bổ sung ngoài nội dung bắt buộc tại mục 4 Chương V, cần thiết cho thành công của dự án, có phân tích lợi ích và cách thực hiện, không làm thay đổi phạm vi, thời gian thực hiện hợp đồng và không phát sinh nghĩa vụ cho Chủ đầu tư (mục 4 Chương V).",
+      "diem_toi_da": 5,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 5,
+        "mo_ta": "Có từ hai đề xuất trở lên gắn với rủi ro hoặc mục tiêu cụ thể của dự án, mỗi đề xuất có phân tích lợi ích và cách thực hiện."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 4.5,
+        "mo_ta": "Có một đề xuất gắn với rủi ro hoặc mục tiêu cụ thể của dự án, có phân tích lợi ích và cách thực hiện."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 2,
+        "mo_ta": "Có đề xuất nhưng nêu chung, chưa phân tích lợi ích hoặc cách thực hiện."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không có đề xuất, hoặc đề xuất làm thay đổi phạm vi, thời gian thực hiện hợp đồng hay phát sinh nghĩa vụ cho Chủ đầu tư."
+       }
+      ]
+     },
+     {
+      "stt": "5.2",
+      "ten": "Đề xuất nâng cao hiệu quả của kênh bán hàng trực tuyến",
+      "noi_dung": "Đề xuất giúp mở rộng khách hàng qua internet và nâng cao hiệu quả của kênh bán hàng mới trong phạm vi hệ thống, ví dụ khả năng truy cập từ nhiều loại thiết bị, khả năng mở rộng khi số lượng khách hàng tăng (mục 2 và mục 3 Chương V).",
+      "diem_toi_da": 5,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Tốt",
+        "diem": 5,
+        "mo_ta": "Đề xuất cụ thể, gắn với mục tiêu mở rộng khách hàng qua internet, nêu rõ cách thực hiện trong phạm vi hệ thống và lợi ích dự kiến."
+       },
+       {
+        "muc": "Đạt",
+        "diem": 4.5,
+        "mo_ta": "Đề xuất gắn với mục tiêu của dự án, có cách thực hiện trong phạm vi hệ thống nhưng lợi ích dự kiến chưa rõ."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 2,
+        "mo_ta": "Đề xuất nêu chung, chưa gắn với mục tiêu của dự án."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Không có đề xuất."
+       }
+      ]
+     },
+     {
+      "stt": "5.3",
+      "ten": "Thông tin về kết quả thực hiện hợp đồng của nhà thầu",
+      "noi_dung": "Thông tin về kết quả thực hiện hợp đồng của nhà thầu trên Hệ thống mạng đấu thầu quốc gia theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP, xét từ ngày 01 tháng 01 năm 2024 đến thời điểm đóng thầu. Việc nhà thầu có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP được xét trong thời hạn 02 năm kể từ lần cuối cùng thực hiện hành vi, như Mục 18.2 E-BDL. Đối với nhà thầu liên danh, xét thông tin của tất cả thành viên liên danh. Trường hợp thông tin của nhà thầu thuộc nhiều mức thì áp dụng mức có điểm thấp nhất.",
+      "diem_toi_da": 5,
+      "co_ban": false,
+      "diem_toi_thieu": null,
+      "muc_cham": [
+       {
+        "muc": "Đạt đủ",
+        "diem": 5,
+        "mo_ta": "Thông tin trên Hệ thống không ghi nhận hợp đồng nào của nhà thầu chậm tiến độ, chất lượng không đạt yêu cầu hoặc bị chấm dứt do lỗi của nhà thầu. Nhà thầu không có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP, hoặc có tên nhưng đã quá 02 năm kể từ lần cuối cùng thực hiện hành vi."
+       },
+       {
+        "muc": "Đạt một phần",
+        "diem": 3,
+        "mo_ta": "Thông tin trên Hệ thống ghi nhận hợp đồng của nhà thầu chậm tiến độ hoặc chất lượng không đạt yêu cầu do lỗi của nhà thầu, không có hợp đồng bị chấm dứt do lỗi của nhà thầu."
+       },
+       {
+        "muc": "Đạt mức thấp",
+        "diem": 1,
+        "mo_ta": "Thông tin trên Hệ thống ghi nhận hợp đồng của nhà thầu bị chấm dứt do lỗi của nhà thầu."
+       },
+       {
+        "muc": "Không đạt",
+        "diem": 0,
+        "mo_ta": "Nhà thầu có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP, chưa quá 02 năm kể từ lần cuối cùng thực hiện hành vi."
+       }
+      ]
+     }
+    ]
    }
   ],
   "tong_toi_thieu": 70
@@ -119,10 +817,10 @@
   {
    "stt": 1,
    "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
-   "mo_ta": "Chương V mục 3.1 và 3.3. Phân tích yêu cầu, lập đặc tả Web Selling Site System gồm cấu hình cơ sở dữ liệu (DB Configuration) và chức năng (Function), được hai bên xác nhận",
+   "mo_ta": "Chương V mục 3.1, 3.3 và 3.5. Phân tích yêu cầu, lập đặc tả Web Selling Site System gồm cấu hình cơ sở dữ liệu (DB Configuration), chức năng (Function) điều kiện đo các yêu cầu phi chức năng và cấu hình hạ tầng vận hành, được hai bên xác nhận",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
   },
   {
@@ -131,7 +829,7 @@
    "mo_ta": "Chương V mục 3.3. Lập quy trình vận hành mới của kênh bán hàng trực tuyến, gắn với các chức năng của hệ thống và Main System",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
   },
   {
@@ -140,7 +838,7 @@
    "mo_ta": "Chương V mục 3.1 và 3.3. Thiết kế cấu trúc cơ sở dữ liệu bán hàng phù hợp với đặc tả và yêu cầu tích hợp với Main System",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
   },
   {
@@ -149,7 +847,7 @@
    "mo_ta": "Chương V mục 3.3 và 3.4. Thiết kế hệ thống menu và giao diện các màn hình chính của chức năng tìm kiếm sản phẩm, quản lý thành viên, đặt hàng, bảo đảm khách hàng thao tác dễ dàng",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
   },
   {
@@ -158,7 +856,7 @@
    "mo_ta": "Chương V mục 3.1 và 3.4. Chức năng cho khách hàng tìm kiếm sản phẩm qua internet",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
   },
   {
@@ -167,7 +865,7 @@
    "mo_ta": "Chương V mục 3.1 và 3.4. Chức năng đăng ký và quản lý thông tin thành viên",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
   },
   {
@@ -176,7 +874,7 @@
    "mo_ta": "Chương V mục 3.1 và 3.4. Chức năng cho khách hàng đặt hàng trực tuyến",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
   },
   {
@@ -185,7 +883,7 @@
    "mo_ta": "Chương V mục 3.1. Xây dựng Selling DB theo cấu trúc cơ sở dữ liệu được xác nhận tại hạng mục 3",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
   },
   {
@@ -194,34 +892,34 @@
    "mo_ta": "Chương V mục 3.1. Kết nối và trao đổi dữ liệu giữa Selling DB và Main System, phục vụ quản trị bán hàng, sản phẩm, logistics, giao dịch và vận chuyển",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
   },
   {
    "stt": 10,
    "danh_muc": "Kiểm thử hệ thống",
-   "mo_ta": "Chương V mục 3.2 và 3.4. Kiểm thử chức năng, kiểm thử tích hợp và kiểm thử các yêu cầu phi chức năng về hoạt động liên tục và thời gian phản hồi",
+   "mo_ta": "Chương V mục 3.2, 3.4 và 3.5. Kiểm thử chức năng trên môi trường kiểm thử do nhà thầu cung cấp, kiểm thử tích hợp trên môi trường thử của Main System, kiểm thử các yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi theo điều kiện đo đã xác nhận trên hạ tầng vận hành chính thức",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
   },
   {
    "stt": 11,
    "danh_muc": "Kiểm thử vận hành (Operation Test)",
-   "mo_ta": "Chương V mục 3.2. Kiểm thử hệ thống trong điều kiện vận hành theo quy trình vận hành mới, có sự tham gia của Chủ đầu tư",
+   "mo_ta": "Chương V mục 3.2 và 3.5. Kiểm thử hệ thống trên hạ tầng vận hành chính thức theo quy trình vận hành mới, có sự tham gia của Chủ đầu tư",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
   },
   {
    "stt": 12,
    "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
-   "mo_ta": "Chương V mục 3.2. Chuyển giao tài liệu, hướng dẫn cán bộ của Chủ đầu tư vận hành hệ thống theo quy trình vận hành mới",
+   "mo_ta": "Chương V mục 3.2 và 3.3. Bàn giao tài liệu chuyển giao nêu tại mục 3.3, hướng dẫn cán bộ của Chủ đầu tư vận hành hệ thống theo quy trình vận hành mới",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
   },
   {
@@ -230,7 +928,7 @@
    "mo_ta": "Chương V mục 3.2. Chuyển hệ thống sang vận hành chính thức ngày 01/07/2027",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
+   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "ngay_hoan_thanh": "01/07/2027"
   }
  ],
@@ -241,27 +939,48 @@
    {
     "dot": 1,
     "phan_tram": 15,
-    "su_kien": "tạm ứng"
+    "su_kien": "tạm ứng",
+    "hang_muc_01a": []
    },
    {
     "dot": 2,
     "phan_tram": 25,
-    "su_kien": "hai bên xác nhận đặc tả yêu cầu (baseline) và giao diện ưu tiên"
+    "su_kien": "hai bên xác nhận đặc tả yêu cầu (baseline) và giao diện ưu tiên",
+    "hang_muc_01a": [
+     1,
+     2,
+     3,
+     4
+    ]
    },
    {
     "dot": 3,
     "phan_tram": 30,
-    "su_kien": "hoàn thành các chức năng chính của hệ thống và tích hợp với các hệ thống liên quan"
+    "su_kien": "hoàn thành các chức năng chính của hệ thống và tích hợp với các hệ thống liên quan",
+    "hang_muc_01a": [
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
    },
    {
     "dot": 4,
     "phan_tram": 25,
-    "su_kien": "hệ thống đưa vào vận hành và được nghiệm thu"
+    "su_kien": "hệ thống đưa vào vận hành và được nghiệm thu",
+    "hang_muc_01a": [
+     10,
+     11,
+     12,
+     13
+    ]
    },
    {
     "dot": 5,
     "phan_tram": 5,
-    "su_kien": "nhà thầu nộp bảo lãnh bảo hành"
+    "su_kien": "nhà thầu nộp bảo lãnh bảo hành",
+    "hang_muc_01a": []
    }
   ],
   "nha_thau_phu_toi_da_phan_tram": 40,
@@ -271,14 +990,95 @@
   "phat_toi_da_phan_tram": 8,
   "ty_le_nha_thau_phu_toi_da_phan_tram": 40,
   "thanh_toan_trong_ngay": 15,
+  "phat_khong_huy_dong_nhan_su_phan_tram_ngay": 0,
+  "gia_han_khi_chu_dau_tu_cung_cap_cham": true,
   "thay_the_nhan_su_ngay": 7
+ },
+ "phan_dinh": {
+  "ha_tang_ben_cung_cap": {
+   "may_chu": "chu_dau_tu",
+   "duong_truyen": "chu_dau_tu",
+   "phan_mem_nen": "chu_dau_tu",
+   "moi_truong_kiem_thu": "nha_thau"
+  },
+  "thong_tin_he_thong_hien_co": {
+   "ten": "Main System",
+   "tai_lieu": [
+    "tài liệu đặc tả giao diện trao đổi dữ liệu sản phẩm, bán hàng, giao dịch của Main System"
+   ],
+   "thoi_han_cung_cap_ngay": 27
+  },
+  "dieu_kien_do_phi_chuc_nang": "nha_thau_de_xuat",
+  "thoi_han_ha_tang": {
+   "moi_truong_thu_he_thong_hien_co": "20/05/2027",
+   "ha_tang_van_hanh_chinh_thuc": "10/06/2027",
+   "thay_doi_he_thong_hien_co": "20/05/2027"
+  },
+  "cau_hinh_ha_tang": "nha_thau_de_xuat",
+  "kiem_thu_van_hanh_tren": "ha_tang_chinh_thuc",
+  "thay_doi_he_thong_hien_co": "chu_dau_tu",
+  "han_cung_cap_thong_tin_he_thong": "14/04/2027",
+  "han_cung_cap_thong_tin_he_thong_iso": "2027-04-14",
+  "thoi_han_ha_tang_iso": {
+   "moi_truong_thu_he_thong_hien_co": "2027-05-20",
+   "ha_tang_van_hanh_chinh_thuc": "2027-06-10",
+   "thay_doi_he_thong_hien_co": "2027-05-20"
+  },
+  "dot_xac_nhan_dac_ta": 2,
+  "dong": [
+   {
+    "stt": 1,
+    "noi_dung": "Máy chủ vận hành hệ thống",
+    "phan_dinh": "Chủ đầu tư cung cấp theo cấu hình đã thống nhất, chậm nhất ngày 10/06/2027. Cấu hình tối thiểu do nhà thầu đề xuất trong E-HSDT, hai bên thống nhất khi xác nhận đặc tả yêu cầu trước khi thanh toán Đợt 2 theo Mục 13.1 E-ĐKCT"
+   },
+   {
+    "stt": 2,
+    "noi_dung": "Đường truyền kết nối internet và kết nối tới hệ thống hiện có",
+    "phan_dinh": "Chủ đầu tư cung cấp theo cấu hình đã thống nhất, chậm nhất ngày 10/06/2027. Cấu hình tối thiểu do nhà thầu đề xuất trong E-HSDT, hai bên thống nhất khi xác nhận đặc tả yêu cầu trước khi thanh toán Đợt 2 theo Mục 13.1 E-ĐKCT"
+   },
+   {
+    "stt": 3,
+    "noi_dung": "Phần mềm nền (hệ điều hành, hệ quản trị cơ sở dữ liệu, máy chủ ứng dụng) và bản quyền",
+    "phan_dinh": "Chủ đầu tư cung cấp theo cấu hình đã thống nhất, chậm nhất ngày 10/06/2027. Cấu hình tối thiểu do nhà thầu đề xuất trong E-HSDT, hai bên thống nhất khi xác nhận đặc tả yêu cầu trước khi thanh toán Đợt 2 theo Mục 13.1 E-ĐKCT"
+   },
+   {
+    "stt": 4,
+    "noi_dung": "Môi trường phát triển và kiểm thử hệ thống",
+    "phan_dinh": "Nhà thầu cung cấp, chi phí tính trong giá dự thầu"
+   },
+   {
+    "stt": 5,
+    "noi_dung": "Thông tin, giao diện trao đổi dữ liệu của hệ thống hiện có (Main System)",
+    "phan_dinh": "Chủ đầu tư cung cấp tài liệu đặc tả giao diện trao đổi dữ liệu sản phẩm, bán hàng, giao dịch của Main System chậm nhất ngày 14/04/2027, tức 27 ngày kể từ ngày hợp đồng có hiệu lực."
+   },
+   {
+    "stt": 6,
+    "noi_dung": "Môi trường thử của hệ thống hiện có (Main System)",
+    "phan_dinh": "Chủ đầu tư cung cấp chậm nhất ngày 20/05/2027"
+   },
+   {
+    "stt": 7,
+    "noi_dung": "Thay đổi phía hệ thống hiện có (Main System) để trao đổi dữ liệu với hệ thống mới",
+    "phan_dinh": "Chủ đầu tư thực hiện, nhà thầu chịu trách nhiệm phía hệ thống mới. Chủ đầu tư hoàn thành thay đổi chậm nhất ngày 20/05/2027"
+   },
+   {
+    "stt": 8,
+    "noi_dung": "Môi trường kiểm thử vận hành và đo các yêu cầu phi chức năng",
+    "phan_dinh": "Thực hiện trên hạ tầng vận hành chính thức"
+   },
+   {
+    "stt": 9,
+    "noi_dung": "Điều kiện đo các yêu cầu phi chức năng tại mục 3.4",
+    "phan_dinh": "Nhà thầu đề xuất điều kiện đo trong E-HSDT (tải, số người dùng đồng thời, cách tính thời gian hoạt động liên tục, điểm đo). Hai bên xác nhận điều kiện đo trong đặc tả yêu cầu trước khi thanh toán Đợt 2 theo Mục 13.1 E-ĐKCT."
+   }
+  ]
  },
  "e_bdl": {
   "E-CDNT 1.1": "Tên Chủ đầu tư: Công ty Cổ phần ABC Wear.",
   "E-CDNT 1.2": "Tên gói thầu: Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System). Tên dự án: Phát triển kênh bán hàng trực tuyến của Công ty Cổ phần ABC Wear. Số lượng, số hiệu các phần thuộc gói thầu: gói thầu không chia phần.",
   "E-CDNT 3": "Nguồn vốn: vốn tự có, vốn chủ sở hữu của Công ty Cổ phần ABC Wear.",
-  "E-CDNT 5.1 (c)": "Bảo đảm cạnh tranh trong đấu thầu theo quy định như sau: Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp trên 30% với: Công ty Cổ phần ABC Wear, trụ sở chính Công ty Cổ phần ABC Wear. + Trường hợp nhà thầu, chủ đầu tư là công ty mẹ, công ty con, công ty thành viên trong tập đoàn kinh tế nhà nước, tổng công ty nhà nước, nhà thầu được tham dự gói thầu của chủ đầu tư nếu sản phẩm, dịch vụ thuộc gói thầu đó thuộc ngành, nghề sản xuất, kinh doanh chính của tập đoàn kinh tế nhà nước, tổng công ty nhà nước. + Trường hợp nhà thầu là đơn vị sự nghiệp công lập, nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với Chủ đầu tư, trừ trường hợp: nhà thầu là đơn vị sự nghiệp công lập thuộc cơ quan quản lý nhà nước có chức năng, nhiệm vụ được giao phù hợp với tính chất gói thầu của cơ quan quản lý nhà nước đó; các đơn vị sự nghiệp công lập có cùng một cơ quan trực tiếp quản lý. + Đơn vị sự nghiệp công lập và doanh nghiệp có cùng một cơ quan trực tiếp quản lý, góp vốn khi tham dự thầu các gói thầu của nhau không phải đáp ứng quy định độc lập về pháp lý và độc lập về tài chính giữa nhà thầu với chủ đầu tư. - Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp với các nhà thầu tư vấn; không cùng có cổ phần hoặc vốn góp trên 20% của một tổ chức, cá nhân khác với từng bên, cụ thể như sau: + Tư vấn lập thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán: không có. + Tư vấn thẩm tra thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán: không có. + Tư vấn thẩm định giá: không có. + Tư vấn giám sát thực hiện hợp đồng, kiểm định: không có. + Tư vấn lập E-HSMT: không có. + Tư vấn thẩm định E-HSMT: không có. + Tư vấn đánh giá E-HSDT: không có. + Tư vấn thẩm định kết quả lựa chọn nhà thầu: không có. + Tư vấn quản lý dự án, quản lý hợp đồng, tư vấn khác mà các dịch vụ tư vấn này có phần công việc liên quan trực tiếp tới gói thầu: không có. Nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với nhà thầu tư vấn (đã nêu trên). Tỷ lệ cổ phần, vốn góp giữa các bên được xác định tại thời điểm đóng thầu và theo tỷ lệ ghi trong giấy chứng nhận đăng ký doanh nghiệp, quyết định thành lập, các giấy tờ khác có giá trị tương đương. Trường hợp nhà thầu tham dự thầu với tư cách liên danh hoặc nhà thầu tư vấn được lựa chọn với tư cách liên danh, tỷ lệ sở hữu vốn của tổ chức, cá nhân khác trong liên danh được xác định theo công thức sau: Tỷ lệ sở hữu vốn = X1 x Y1 + X2 x Y2 + ... + Xn x Yn Trong đó: Xi: Tỷ lệ sở hữu vốn của tổ chức, cá nhân khác trong thành viên liên danh thứ i. Yi: Tỷ lệ phần trăm (%) khối lượng công việc của thành viên liên danh thứ i trong thỏa thuận liên danh. n: Số thành viên tham gia trong liên danh. - Nhà thầu trong nước thuộc trường hợp quy định tại điểm g khoản 1 Điều 10 của Luật Đấu thầu khi chào thầu dịch vụ do nhà thầu đó cung cấp không phải đáp ứng quy định về bảo đảm cạnh tranh quy định tại Mục này.",
-  "E-CDNT 7.5": "Hội nghị tiền đấu thầu: Có. Thời gian: 9 giờ 00, ngày 01/03/2027. Địa điểm: phòng họp A, trụ sở chính Công ty Cổ phần ABC Wear. Người chịu trách nhiệm tổ chức: Yamada, Phòng Kế hoạch, email yamada@abc.com.",
+  "E-CDNT 5.1 (c)": "Bảo đảm cạnh tranh trong đấu thầu theo quy định như sau: Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp trên 30% với: Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội. + Trường hợp nhà thầu, chủ đầu tư là công ty mẹ, công ty con, công ty thành viên trong tập đoàn kinh tế nhà nước, tổng công ty nhà nước, nhà thầu được tham dự gói thầu của chủ đầu tư nếu sản phẩm, dịch vụ thuộc gói thầu đó thuộc ngành, nghề sản xuất, kinh doanh chính của tập đoàn kinh tế nhà nước, tổng công ty nhà nước. + Trường hợp nhà thầu là đơn vị sự nghiệp công lập, nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với Chủ đầu tư, trừ trường hợp: nhà thầu là đơn vị sự nghiệp công lập thuộc cơ quan quản lý nhà nước có chức năng, nhiệm vụ được giao phù hợp với tính chất gói thầu của cơ quan quản lý nhà nước đó; các đơn vị sự nghiệp công lập có cùng một cơ quan trực tiếp quản lý. + Đơn vị sự nghiệp công lập và doanh nghiệp có cùng một cơ quan trực tiếp quản lý, góp vốn khi tham dự thầu các gói thầu của nhau không phải đáp ứng quy định độc lập về pháp lý và độc lập về tài chính giữa nhà thầu với chủ đầu tư. - Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp với các nhà thầu tư vấn; không cùng có cổ phần hoặc vốn góp trên 20% của một tổ chức, cá nhân khác với từng bên, cụ thể như sau: + Tư vấn lập thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán: không có. + Tư vấn thẩm tra thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán: không có. + Tư vấn thẩm định giá: không có. + Tư vấn giám sát thực hiện hợp đồng, kiểm định: không có. + Tư vấn lập E-HSMT: không có. + Tư vấn thẩm định E-HSMT: không có. + Tư vấn đánh giá E-HSDT: không có. + Tư vấn thẩm định kết quả lựa chọn nhà thầu: không có. + Tư vấn quản lý dự án, quản lý hợp đồng, tư vấn khác mà các dịch vụ tư vấn này có phần công việc liên quan trực tiếp tới gói thầu: không có. Nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với nhà thầu tư vấn (đã nêu trên). Tỷ lệ cổ phần, vốn góp giữa các bên được xác định tại thời điểm đóng thầu và theo tỷ lệ ghi trong giấy chứng nhận đăng ký doanh nghiệp, quyết định thành lập, các giấy tờ khác có giá trị tương đương. Trường hợp nhà thầu tham dự thầu với tư cách liên danh hoặc nhà thầu tư vấn được lựa chọn với tư cách liên danh, tỷ lệ sở hữu vốn của tổ chức, cá nhân khác trong liên danh được xác định theo công thức sau: Tỷ lệ sở hữu vốn = X1 x Y1 + X2 x Y2 + ... + Xn x Yn Trong đó: Xi: Tỷ lệ sở hữu vốn của tổ chức, cá nhân khác trong thành viên liên danh thứ i. Yi: Tỷ lệ phần trăm (%) khối lượng công việc của thành viên liên danh thứ i trong thỏa thuận liên danh. n: Số thành viên tham gia trong liên danh. - Nhà thầu trong nước thuộc trường hợp quy định tại điểm g khoản 1 Điều 10 của Luật Đấu thầu khi chào thầu dịch vụ do nhà thầu đó cung cấp không phải đáp ứng quy định về bảo đảm cạnh tranh quy định tại Mục này.",
+  "E-CDNT 7.5": "Hội nghị tiền đấu thầu: Có. Thời gian: 9 giờ 00, ngày 01/03/2027. Địa điểm: phòng họp A, trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội. Người chịu trách nhiệm tổ chức: Yamada, Phòng Kế hoạch, điện thoại 024 0000 1010, email yamada@abc.com.",
   "E-CDNT 8": "Chi phí nộp E-HSDT: theo quy định hiện hành, do Hệ thống trích xuất.",
   "E-CDNT 10.8": "Nhà thầu phải nộp cùng với E-HSDT các tài liệu sau đây: không yêu cầu.",
   "E-CDNT 12.1": "Nhà thầu không được phép nộp đề xuất phương án kỹ thuật thay thế.",
@@ -293,17 +1093,17 @@
   "E-CDNT 29.3 (đ)": "Xếp hạng nhà thầu: nhà thầu có giá dự thầu sau khi trừ đi giá trị giảm giá (nếu có) thấp nhất được xếp hạng thứ nhất.",
   "E-CDNT 31.4": "Nhà thầu có giá dự thầu sau khi trừ đi giá trị giảm giá (nếu có) thấp nhất.",
   "E-CDNT 31.5": "Giá gói thầu để làm căn cứ xét duyệt trúng thầu: giá gói thầu được phê duyệt trong kế hoạch lựa chọn nhà thầu là 2.000.000.000 đồng. Trường hợp dự toán của gói thầu được phê duyệt thấp hơn hoặc cao hơn giá gói thầu được phê duyệt thì dự toán này sẽ thay thế giá gói thầu để làm cơ sở xét duyệt trúng thầu.",
-  "E-CDNT 34.1": "Tỷ lệ tăng khối lượng tối đa là: 0%. Tỷ lệ giảm khối lượng tối đa là: 0%.",
+  "E-CDNT 34.1": "Tỷ lệ tăng khối lượng tối đa là: 0%. Tỷ lệ giảm khối lượng tối đa là: 0%. Thay đổi đặc tả, khối lượng sau khi ký hợp đồng thực hiện theo Mục 17 E-ĐKC và Mục 17.1 E-ĐKCT.",
   "E-CDNT 34.2": "Tùy chọn mua thêm: không áp dụng.",
-  "E-CDNT 38.1": "- Người có thẩm quyền: Tổng Giám đốc Công ty Cổ phần ABC Wear. + Địa chỉ: trụ sở chính Công ty Cổ phần ABC Wear. + E-mail nhận đơn kiến nghị: yamada@abc.com (Phòng Kế hoạch tiếp nhận và chuyển người có thẩm quyền). - Bộ phận thường trực giúp việc cho Chủ tịch Hội đồng giải quyết kiến nghị: không thành lập, do gói thầu sử dụng vốn tự có của doanh nghiệp. Kiến nghị do người có thẩm quyền giải quyết.",
-  "E-CDNT 38.2": "- Nhà thầu gửi văn bản kiến nghị tới Chủ đầu tư qua Hệ thống hoặc qua e-mail yamada@abc.com. Văn bản kiến nghị nêu rõ nội dung kiến nghị, căn cứ và đề nghị của nhà thầu. - Chủ đầu tư xem xét, giải quyết và trả lời nhà thầu bằng văn bản trong thời hạn quy định của Luật Đấu thầu số 22/2023/QH15 và Nghị định số 214/2025/NĐ-CP. - Trường hợp Chủ đầu tư không trả lời trong thời hạn quy định hoặc nhà thầu không đồng ý với kết quả giải quyết, nhà thầu gửi kiến nghị tới người có thẩm quyền nêu tại Mục 38.1 E-BDL qua e-mail yamada@abc.com hoặc theo địa chỉ trụ sở chính Công ty Cổ phần ABC Wear. - Đầu mối tiếp nhận và theo dõi kiến nghị: Yamada, Phòng Kế hoạch, e-mail yamada@abc.com."
+  "E-CDNT 38.1": "- Người có thẩm quyền: Tổng Giám đốc Công ty Cổ phần ABC Wear. + Địa chỉ: Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội, điện thoại 024 0000 1010, fax 024 0000 1011. + E-mail nhận đơn kiến nghị: yamada@abc.com (Phòng Kế hoạch tiếp nhận và chuyển người có thẩm quyền). - Bộ phận thường trực giúp việc cho Chủ tịch Hội đồng giải quyết kiến nghị: không thành lập, do gói thầu sử dụng vốn tự có của doanh nghiệp. Kiến nghị do người có thẩm quyền giải quyết.",
+  "E-CDNT 38.2": "- Nhà thầu gửi văn bản kiến nghị tới Chủ đầu tư qua Hệ thống hoặc qua e-mail yamada@abc.com. Văn bản kiến nghị nêu rõ nội dung kiến nghị, căn cứ và đề nghị của nhà thầu. - Chủ đầu tư xem xét, giải quyết và trả lời nhà thầu bằng văn bản trong thời hạn quy định của Luật Đấu thầu số 22/2023/QH15 và Nghị định số 214/2025/NĐ-CP. - Trường hợp Chủ đầu tư không trả lời trong thời hạn quy định hoặc nhà thầu không đồng ý với kết quả giải quyết, nhà thầu gửi kiến nghị tới người có thẩm quyền nêu tại Mục 38.1 E-BDL qua e-mail yamada@abc.com hoặc theo địa chỉ Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội. - Đầu mối tiếp nhận và theo dõi kiến nghị: Yamada, Phòng Kế hoạch, điện thoại 024 0000 1010, e-mail yamada@abc.com."
  },
  "e_dkct": {
-  "E-ĐKC 1.3": "Chủ đầu tư: Công ty Cổ phần ABC Wear, trụ sở chính Công ty Cổ phần ABC Wear; đại diện: Tổng Giám đốc. Số tài khoản, mã số thuế, điện thoại được ghi khi hoàn thiện hợp đồng.",
-  "E-ĐKC 1.5": "Địa điểm cung cấp dịch vụ là: trụ sở chính Công ty Cổ phần ABC Wear, nơi bàn giao sản phẩm, tích hợp với Main System, kiểm thử vận hành, chuyển giao và đưa hệ thống vào vận hành. Các công việc phân tích, thiết kế và xây dựng phần mềm được thực hiện tại nơi làm việc của nhà thầu hoặc tại trụ sở chính Công ty Cổ phần ABC Wear theo kế hoạch được hai bên thống nhất.",
+  "E-ĐKC 1.3": "Chủ đầu tư: Công ty Cổ phần ABC Wear. Địa chỉ: Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội. Số tài khoản: 0000001010 tại Ngân hàng giả định, chi nhánh Hà Nội. Mã số thuế: 0000001010. Điện thoại: 024 0000 1010. Fax: 024 0000 1011. E-mail: yamada@abc.com. Đại diện: Tổng Giám đốc.",
+  "E-ĐKC 1.5": "Địa điểm cung cấp dịch vụ là: trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội, nơi bàn giao sản phẩm, tích hợp với Main System, kiểm thử vận hành, chuyển giao và đưa hệ thống vào vận hành. Các công việc phân tích, thiết kế và xây dựng phần mềm được thực hiện tại nơi làm việc của nhà thầu hoặc tại trụ sở chính nêu trên theo kế hoạch được hai bên thống nhất.",
   "E-ĐKC 1.11": "Nhà thầu: nhà thầu trúng thầu. Tên, địa chỉ, số tài khoản, mã số thuế được ghi khi hoàn thiện hợp đồng.",
-  "E-ĐKC 2.2 (i)": "Các tài liệu sau đây cũng là một phần của Hợp đồng: - Biên bản xác nhận đặc tả yêu cầu giữa Chủ đầu tư và nhà thầu. - Các văn bản thống nhất thay đổi đặc tả theo Mục 17.1(c) E-ĐKCT.",
-  "E-ĐKC 4.1": "Các thông báo gửi về Chủ đầu tư theo địa chỉ: người nhận Yamada, Phòng Kế hoạch, địa chỉ trụ sở chính Công ty Cổ phần ABC Wear, e-mail yamada@abc.com.",
+  "E-ĐKC 2.2 (i)": "Các tài liệu sau đây cũng là một phần của Hợp đồng: - Biên bản xác nhận đặc tả yêu cầu giữa Chủ đầu tư và nhà thầu, gồm điều kiện đo các yêu cầu phi chức năng và cấu hình hạ tầng vận hành theo mục 3.5 Chương V. - Các văn bản thống nhất thay đổi đặc tả theo Mục 17.1(c) E-ĐKCT.",
+  "E-ĐKC 4.1": "Các thông báo gửi về Chủ đầu tư theo địa chỉ dưới đây. Người nhận: Yamada, Phòng Kế hoạch. Địa chỉ: Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội. Điện thoại: +84 24 0000 1010. Fax: +84 24 0000 1011. Địa chỉ email: yamada@abc.com.",
   "E-ĐKC 5.2": "- Giá trị bảo đảm thực hiện hợp đồng: 3% giá hợp đồng. - Hiệu lực của bảo đảm thực hiện hợp đồng: kể từ ngày hợp đồng có hiệu lực cho đến hết ngày 31 tháng 07 năm 2027.",
   "E-ĐKC 5.4": "Thời hạn hoàn trả bảo đảm thực hiện hợp đồng: trong vòng 14 ngày kể từ ngày nhà thầu hoàn thành các nghĩa vụ hợp đồng, sau khi hệ thống được nghiệm thu và đưa vào vận hành.",
   "E-ĐKC 6.1": "Danh sách nhà thầu phụ: theo danh sách nhà thầu phụ nêu trong E-HSDT được Chủ đầu tư chấp thuận.",
@@ -313,12 +1113,12 @@
   "E-ĐKC 10.2": "Giá hợp đồng: cố định.",
   "E-ĐKC 11": "Điều chỉnh thuế: không được phép.",
   "E-ĐKC 12.1": "Tạm ứng: 15% giá hợp đồng. - Điều kiện tạm ứng: sau khi hợp đồng có hiệu lực, Chủ đầu tư nhận được văn bản đề nghị tạm ứng của nhà thầu và bảo lãnh tiền tạm ứng theo Mẫu số 16 Phần 4 hoặc mẫu khác được Chủ đầu tư chấp thuận. - Phương thức tạm ứng: chuyển khoản, trong thời hạn thanh toán nêu tại Mục 13.1 E-ĐKCT. - Bảo lãnh tiền tạm ứng có giá trị tương đương khoản tạm ứng và có hiệu lực từ ngày nhà thầu nhận tạm ứng đến khi Chủ đầu tư thanh toán Đợt 2 theo Mục 13.1 E-ĐKCT. - Thu hồi tạm ứng: khoản tạm ứng được tính là Đợt 1 tại Mục 13.1 E-ĐKCT và được thu hồi toàn bộ khi thanh toán Đợt 2 bằng cách bù trừ vào giá trị sản phẩm được nghiệm thu. Tỷ lệ nêu cho từng đợt tại Mục 13.1 E-ĐKCT là số tiền thực trả của đợt đó, tổng các đợt kể cả tạm ứng bằng 100% giá hợp đồng.",
-  "E-ĐKC 13.1": "Phương thức thanh toán: chuyển khoản, thanh toán làm 05 đợt, tổng các đợt bằng 100% giá hợp đồng. - Đợt 1: 15% giá hợp đồng, tạm ứng sau khi hợp đồng có hiệu lực và nhà thầu nộp bảo lãnh tiền tạm ứng theo Mục 12.1 E-ĐKCT. - Đợt 2: 25% giá hợp đồng, sau khi hai bên xác nhận đặc tả yêu cầu và giao diện ưu tiên, gồm đặc tả hệ thống (Specification), quy trình vận hành mới (New Operational Flow), cấu trúc cơ sở dữ liệu (Database Structure), sơ đồ phân cấp menu (Menu Layer) và thiết kế giao diện các màn hình chính của chức năng tìm kiếm sản phẩm, quản lý thành viên, đặt hàng (giao diện ưu tiên). - Đợt 3: 30% giá hợp đồng, sau khi nhà thầu hoàn thành các chức năng chính của hệ thống gồm tìm kiếm sản phẩm (Product Search), quản lý thành viên (Member Administration), đặt hàng (Order), cơ sở dữ liệu bán hàng (Selling DB) và hoàn thành tích hợp với Main System, được Chủ đầu tư kiểm tra đạt. - Đợt 4: 25% giá hợp đồng, sau khi hệ thống hoàn thành kiểm thử vận hành, được đưa vào vận hành (cut over) và được Chủ đầu tư nghiệm thu. - Đợt 5: 5% giá hợp đồng, sau khi nhà thầu nộp bảo lãnh bảo hành có giá trị bằng 5% giá hợp đồng, có hiệu lực đến hết thời hạn trách nhiệm đối với sai sót theo Mục 20.1 E-ĐKCT. Hồ sơ thanh toán gồm văn bản đề nghị thanh toán của nhà thầu, biên bản nghiệm thu hoặc biên bản xác nhận sản phẩm của đợt tương ứng, hóa đơn hợp lệ và bảo lãnh tương ứng đối với Đợt 1 và Đợt 5. Chủ đầu tư thanh toán trong vòng 15 ngày kể từ ngày nhận đủ hồ sơ thanh toán hợp lệ.",
+  "E-ĐKC 13.1": "Phương thức thanh toán: chuyển khoản, thanh toán làm 05 đợt, tổng các đợt bằng 100% giá hợp đồng. - Đợt 1: 15% giá hợp đồng, tạm ứng sau khi hợp đồng có hiệu lực và nhà thầu nộp bảo lãnh tiền tạm ứng theo Mục 12.1 E-ĐKCT. - Đợt 2: 25% giá hợp đồng, sau khi hai bên xác nhận đặc tả yêu cầu (baseline) và giao diện ưu tiên, gồm đặc tả hệ thống (Specification) kèm điều kiện đo các yêu cầu phi chức năng và cấu hình hạ tầng vận hành, quy trình vận hành mới (New Operational Flow), cấu trúc cơ sở dữ liệu (Database Structure), sơ đồ phân cấp menu (Menu Layer) và thiết kế giao diện các màn hình chính của chức năng tìm kiếm sản phẩm, quản lý thành viên, đặt hàng (hạng mục 1 đến 4 Mẫu số 01A). - Đợt 3: 30% giá hợp đồng, sau khi nhà thầu hoàn thành các chức năng chính của hệ thống gồm tìm kiếm sản phẩm (Product Search), quản lý thành viên (Member Administration), đặt hàng (Order), cơ sở dữ liệu bán hàng (Selling DB) và hoàn thành tích hợp với Main System, được Chủ đầu tư kiểm tra đạt (hạng mục 5 đến 9 Mẫu số 01A). - Đợt 4: 25% giá hợp đồng, sau khi hệ thống hoàn thành kiểm thử hệ thống, kiểm thử vận hành, chuyển giao, được đưa vào vận hành (cut over) và được Chủ đầu tư nghiệm thu (hạng mục 10 đến 13 Mẫu số 01A). - Đợt 5: 5% giá hợp đồng, sau khi nhà thầu nộp bảo lãnh bảo hành có giá trị bằng 5% giá hợp đồng do ngân hàng, tổ chức tín dụng hoặc chi nhánh ngân hàng nước ngoài được thành lập theo pháp luật Việt Nam phát hành, có hiệu lực đến hết thời hạn trách nhiệm đối với sai sót theo Mục 20.1 E-ĐKCT, hình thức và nội dung theo mẫu được Chủ đầu tư chấp thuận. Hồ sơ thanh toán gồm văn bản đề nghị thanh toán của nhà thầu, biên bản nghiệm thu hoặc biên bản xác nhận sản phẩm của đợt tương ứng, hóa đơn hợp lệ và bảo lãnh tương ứng đối với Đợt 1 và Đợt 5. Chủ đầu tư thanh toán trong vòng 15 ngày kể từ ngày nhận đủ hồ sơ thanh toán hợp lệ.",
   "E-ĐKC 13.2": "Giảm trừ thanh toán: không áp dụng.",
-  "E-ĐKC 15": "Vừa áp dụng phạt vi phạm hợp đồng vừa áp dụng bồi thường thiệt hại. 1. Phạt vi phạm hợp đồng: Áp dụng. Trừ trường hợp bất khả kháng theo quy định tại Mục 16 E-ĐKC, nếu Nhà thầu không thực hiện một phần hay toàn bộ nội dung công việc theo đúng thời hạn đã nêu trong hợp đồng thì Chủ đầu tư có thể khấu trừ vào giá hợp đồng một khoản tiền phạt tương ứng với 0,1%/ngày giá trị công việc chậm thực hiện cho đến khi nội dung công việc đó được thực hiện. Chủ đầu tư sẽ khấu trừ đến 8% giá trị phần hợp đồng bị vi phạm. Khi đạt đến mức phạt tối đa, Chủ đầu tư có thể xem xét chấm dứt hợp đồng theo quy định tại Mục 19 E-ĐKC. 2. Bồi thường thiệt hại: Áp dụng theo quy định của pháp luật dân sự.",
+  "E-ĐKC 15": "Vừa áp dụng phạt vi phạm hợp đồng vừa áp dụng bồi thường thiệt hại. 1. Phạt vi phạm hợp đồng: Áp dụng. Trừ trường hợp bất khả kháng theo quy định tại Mục 16 E-ĐKC, nếu Nhà thầu không thực hiện một phần hay toàn bộ nội dung công việc theo đúng thời hạn đã nêu trong hợp đồng thì Chủ đầu tư có thể khấu trừ vào giá hợp đồng một khoản tiền phạt tương ứng với 0,1%/ngày giá trị công việc chậm thực hiện cho đến khi nội dung công việc đó được thực hiện. Chủ đầu tư sẽ khấu trừ đến 8% giá trị phần hợp đồng bị vi phạm. Khi đạt đến mức phạt tối đa, Chủ đầu tư có thể xem xét chấm dứt hợp đồng theo quy định tại Mục 19 E-ĐKC. Trường hợp không kịp thời khắc phục sai sót theo thông báo của Chủ đầu tư, Nhà thầu có trách nhiệm nộp tiền phạt thực hiện hợp đồng tương ứng với 10% chi phí cần thiết để khắc phục sai sót. 2. Bồi thường thiệt hại: Áp dụng. Bồi thường thiệt hại trên cơ sở toàn bộ thiệt hại thực tế.",
   "E-ĐKC 17.1(c)": "Các nội dung khác về sửa đổi hợp đồng: Chủ đầu tư hoặc nhà thầu được đề xuất thay đổi đặc tả khi cần thiết. Thay đổi đặc tả chỉ được thực hiện sau khi hai bên thống nhất bằng văn bản. Văn bản thống nhất nêu rõ nội dung thay đổi và ảnh hưởng đến tiến độ, giá hợp đồng (nếu có).",
   "E-ĐKC 17.4": "Trường hợp đề xuất giải pháp tiết kiệm chi phí được Chủ đầu tư chấp thuận và giúp giảm giá hợp đồng, Chủ đầu tư thanh toán cho nhà thầu 30% giá trị giảm giá hợp đồng.",
-  "E-ĐKC 18 (e)": "Các trường hợp khác: không có.",
+  "E-ĐKC 18 (e)": "Các trường hợp khác: Chủ đầu tư cung cấp chậm tài liệu, hạ tầng, môi trường hoặc hoàn thành chậm thay đổi phía hệ thống hiện có so với thời hạn tại mục 3.5 Chương V thì các mốc liên quan được lùi tương ứng số ngày chậm.",
   "E-ĐKC 20.1": "Nguyên tắc và cách thức đánh giá chất lượng: Chủ đầu tư kiểm tra sản phẩm theo đặc tả đã được hai bên xác nhận và thông báo kết quả kiểm tra cho nhà thầu bằng văn bản. Sản phẩm đạt kết quả kiểm tra được coi là Chủ đầu tư chấp nhận sản phẩm. Đối với lỗi logic trong sản phẩm hoặc vấn đề khác thuộc trách nhiệm của nhà thầu, nhà thầu sửa chữa, bổ sung bằng chi phí của mình trong thời gian sớm nhất. Thời hạn trách nhiệm đối với sai sót: 12 tháng kể từ ngày hệ thống được nghiệm thu và đưa vào vận hành. Trong thời hạn này, nhà thầu duy trì hiệu lực của bảo lãnh bảo hành nêu tại Đợt 5 Mục 13.1 E-ĐKCT.",
   "E-ĐKC 21.2": "Thời gian nhà thầu thực hiện việc thay thế nhân sự: 07 ngày kể từ ngày nhận được yêu cầu thay thế nhân sự của Chủ đầu tư.",
   "E-ĐKC 22.2": "- Thời gian để tiến hành hòa giải: tối đa 30 ngày. - Giải quyết tranh chấp: nếu hòa giải không thành, một trong hai bên gửi yêu cầu giải quyết tới Tòa án nhân dân có thẩm quyền tại Hà Nội. Chi phí giải quyết tranh chấp do bên có lỗi chịu theo phán quyết.",

@@ -41,6 +41,21 @@
       "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
      }
     ]
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-17 23:56:54",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "hsmt",
+    "hash": "34fbfca0a43a",
+    "vao": {
+     "rfp": "0cd3ba3b317b",
+     "mau_5a": "528321637d25",
+     "tham_so_hsmt": "aedfe8a5fdbb"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 301
    }
   ],
   "du_lieu/hsmt.json": [
@@ -75,6 +90,21 @@
     "ghi_chu": "",
     "trang_thai": "Dự thảo",
     "thu_tu": 85
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-17 23:56:54",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "hsmt",
+    "hash": "b5dc7df2b203",
+    "vao": {
+     "rfp": "0cd3ba3b317b",
+     "mau_5a": "528321637d25",
+     "tham_so_hsmt": "aedfe8a5fdbb"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 302
    }
   ],
   "du_lieu/rfp_yeu_cau.json": [
@@ -87,13 +117,13 @@
     "vao": {
      "rfp": "0cd3ba3b317b",
      "mau_5a": "528321637d25",
-     "tham_so_hsmt": "aa5a4d044c65"
+     "tham_so_hsmt": "aedfe8a5fdbb"
     },
     "ghi_chu": "",
     "trang_thai": "Dự thảo",
     "thu_tu": 3,
-    "thu_tu_kiem_tra": 86,
-    "ngay_kiem_tra": "2026-10-16 23:49:45"
+    "thu_tu_kiem_tra": 303,
+    "ngay_kiem_tra": "2026-10-17 23:56:54"
    }
   ],
   "du_lieu/wbs.json": [
@@ -4698,6 +4728,6 @@
    }
   ]
  },
- "dem": 300,
+ "dem": 303,
  "duong_co_so": []
 }

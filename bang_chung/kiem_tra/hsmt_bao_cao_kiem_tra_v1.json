@@ -1,7 +1,44 @@
 {
  "file": "HSMT_v1.docx",
- "ket_luan": "dat",
+ "md5": "53cc52cf12984c574c5a4bb172a215ee",
+ "vong_word": "3",
+ "md5_noi_dung": "c5d90e23fe2c0cccfd0f89638c91a15a",
+ "vong": 3,
+ "ket_luan": "cho_nguoi_dung",
+ "ket_luan_lop_a": "dat",
  "so_loi": 0,
- "so_canh_bao": 0,
- "phat_hien": []
+ "so_canh_bao": 3,
+ "so_cho_nguoi_dung": 3,
+ "phat_hien": [
+  {
+   "ma": "PH01",
+   "muc_do": "canh_bao",
+   "nhom": "phat_hien_mo",
+   "vi_tri": "Máy chủ vận hành hệ thống | Chủ đầu tư cung cấp chậm nhất ngày 10/06/2027",
+   "id_so": "PH012",
+   "mo_ta": "Phát hiện PH012 (MH11) của vòng 2 chưa đóng: Phần còn lại của PH008 sau vòng 2. Bảng mục 3.5 Chương V đã có thời hạn cho dòng 1 đến 3 và xác định kiểm thử vận hành, đo yêu cầu phi chức năng trên hạ tầng vận hành chính thức (dòng 8), nhưng vẫn không nêu số lượng, cấu hình máy chủ, loại phần mềm nền do Chủ đầu tư cung cấp, cũng không nêu Chủ đầu tư cung cấp theo cấu hình do nhà thầu đề xuất. Nhà thầu phải chứng minh hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm (cần dự phòng máy chủ, tiêu chí 1.3) và thời gian phản hồi không quá 2 giây (tiêu chí 1.4) trên chính hạ tầng này trong hợp đồng trọn gói. Dòng 9 chỉ cho nhà thầu đề xuất tải, số người dùng đồng thời, cách tính thời gian hoạt động liên tục, điểm đo, không gồm cấu hình hạ tầng. Tiêu chí 1.6 chỉ cho điểm Đạt đủ khi điều kiện tiền đề không phát sinh nghĩa vụ mới cho Chủ đầu tư, nên nhà thầu khó nêu yêu cầu cấu hình làm điều kiện tiền đề. Chưa chắc nhóm có chủ ý để nhà thầu tự giả định cấu hình hay không, nên ghi cảnh báo.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Khắc phục rồi để lớp B xác nhận đóng, hoặc ghi giải trình bằng chay_quy_trinh.py giai_trinh"
+  },
+  {
+   "ma": "PH01",
+   "muc_do": "canh_bao",
+   "nhom": "phat_hien_mo",
+   "vi_tri": "Thay đổi phía hệ thống hiện có (Main System) để trao đổi dữ liệu với hệ thống mới | Chủ đầu tư thực hiện, nhà thầu chịu trách nhiệm phía hệ thống mới",
+   "id_so": "PH013",
+   "mo_ta": "Phát hiện PH013 (MH11) của vòng 2 chưa đóng: Dòng 7 bảng mục 3.5 Chương V (thêm ở vòng 2 theo PH009) giao Chủ đầu tư thực hiện thay đổi phía Main System nhưng không có thời hạn hoàn thành. E-ĐKC 18 (e) và câu dẫn bảng mục 3.5 chỉ cho lùi mốc khi Chủ đầu tư cung cấp chậm tài liệu, hạ tầng, môi trường so với thời hạn tại mục 3.5. Thay đổi phía Main System không phải tài liệu, hạ tầng hay môi trường và không có thời hạn, nên khi Chủ đầu tư hoàn thành chậm thì không có căn cứ lùi mốc. Trong khi đó Đợt 3 Mục 13.1 E-ĐKCT đòi hỏi hoàn thành tích hợp với Main System và E-ĐKC 15 phạt chậm 0,1% mỗi ngày. Mục 3.5 chưa đủ thời hạn cung cấp theo yêu cầu MH11 cho hợp đồng trọn gói.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Khắc phục rồi để lớp B xác nhận đóng, hoặc ghi giải trình bằng chay_quy_trinh.py giai_trinh"
+  },
+  {
+   "ma": "PH01",
+   "muc_do": "canh_bao",
+   "nhom": "phat_hien_mo",
+   "vi_tri": "Nhà thầu bị phạt 0,05% giá hợp đồng cho mỗi ngày không huy động. Khoản phạt này được tính chung trong mức khấu trừ tối đa 8% nêu trên.",
+   "id_so": "PH014",
+   "mo_ta": "Phát hiện PH014 (MH10) của vòng 2 chưa đóng: Câu phạt không huy động nhân sự chủ chốt thêm ở vòng 2 (PH004) tại E-ĐKC 15 tính trên giá hợp đồng, nhưng mức tối đa nêu trên trong cùng mục là 8% giá trị phần hợp đồng bị vi phạm, còn mức phạt chậm theo Mẫu 5A tính trên giá trị công việc chậm thực hiện. Với việc không huy động nhân sự chủ chốt, phần hợp đồng bị vi phạm không được xác định, nên chưa rõ mức trần là 8% giá hợp đồng hay 8% giá trị phần việc của nhân sự đó. Tham số chỉ quy định 0,05% mỗi ngày, không quy định cơ sở tính. Chưa chắc việc tính trên toàn bộ giá hợp đồng có vượt giới hạn 8% giá trị phần nghĩa vụ bị vi phạm theo pháp luật thương mại hay không, nên ghi cảnh báo.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Khắc phục rồi để lớp B xác nhận đóng, hoặc ghi giải trình bằng chay_quy_trinh.py giai_trinh"
+  }
+ ]
 }

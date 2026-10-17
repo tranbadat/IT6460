@@ -15,6 +15,10 @@ Dùng:
       Vòng đạt: tệp Word lớp B đã kiểm tra (khóa file của báo cáo, đúng md5 và đúng vòng) trở thành HSMT_ket_qua.docx.
   python3 chay_quy_trinh.py giai_trinh <thu_muc_lam_viec> <ma_PHxxx> "<nội dung giải trình>"
       Ghi giải trình của người dùng cho một phát hiện đang mở. Phát hiện có giải trình không chặn kết luận đạt.
+  python3 chay_quy_trinh.py chot_vong <thu_muc_lam_viec> [bao_cao_kiem_tra.json]
+      Chốt lại kết luận của vòng đã ghi_nhan sau khi người dùng giải trình, không tăng vòng, không hợp nhất lại báo cáo.
+      Tính lại từ mục còn mở trong sổ và tham số chờ (TS01) của báo cáo vòng đó. Đạt thì nâng tệp lớp B đã kiểm tra
+      (đúng md5, đúng vòng) thành HSMT_ket_qua.docx như nhánh đạt của ghi_nhan.
 Mã thoát: 0 đạt, 2 còn mục chờ người dùng hoặc agent Soạn thảo, 1 lỗi.
 """
 import os as _os, sys as _sys  # noqa: E401
@@ -127,6 +131,16 @@ def kiem_ban_giao(wd, bc, vong):
     return src
 
 
+def nang_ban_giao(wd, bc, src, vong):
+    """Chép tệp lớp B đã kiểm tra thành HSMT_ket_qua.docx. Trả các khóa ghi vào báo cáo."""
+    giao = os.path.join(wd, 'HSMT_ket_qua.docx')
+    if os.path.abspath(src) != os.path.abspath(giao):
+        shutil.copy(src, giao)
+    md5_giao = md5_tep(giao)
+    print(f'Bản giao HSMT_ket_qua.docx là {bc["file"]} của vòng {vong}, md5 {md5_giao}.')
+    return {'tep_giao': 'HSMT_ket_qua.docx', 'md5_giao': md5_giao}
+
+
 def ghi_nhan(wd, bc_path):
     """Kết thúc một vòng: hợp nhất báo cáo (lớp A và lớp B) vào sổ phát hiện, ghi kết luận vòng, vòng đạt thì nâng bản đã kiểm tra thành bản giao."""
     bc = json.load(open(bc_path, encoding='utf-8'))
@@ -138,11 +152,7 @@ def ghi_nhan(wd, bc_path):
     ghi_so(wd, so)
     bc_moi = {**bc, 'vong': so['vong'], 'ket_luan': kl, 'phat_hien_mo': [x['id'] for x in mo], 'so_tham_so_cho': len(ts01)}
     if src:
-        giao = os.path.join(wd, 'HSMT_ket_qua.docx')
-        if os.path.abspath(src) != os.path.abspath(giao):
-            shutil.copy(src, giao)
-        bc_moi = {**bc_moi, 'tep_giao': 'HSMT_ket_qua.docx', 'md5_giao': md5_tep(giao)}
-        print(f'Bản giao HSMT_ket_qua.docx là {bc["file"]} của vòng {so["vong"]}, md5 {bc_moi["md5_giao"]}.')
+        bc_moi = {**bc_moi, **nang_ban_giao(wd, bc, src, so['vong'])}
     json.dump(bc_moi, open(bc_path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     dong = [x for x in so['phat_hien'] if x.get('vong_dong') == so['vong']]
     print(f"Vòng {so['vong']}: {len(dong)} phát hiện đã đóng, {len(mo)} phát hiện còn mở, {len(ts01)} tham số chờ Chủ đầu tư.")
@@ -163,6 +173,27 @@ def giai_trinh(wd, ma, noi_dung):
     moi = {**x, 'trang_thai': 'giai_trinh', 'giai_trinh': noi_dung.strip(), 'vong_giai_trinh': so['vong']}
     ghi_so(wd, {**so, 'phat_hien': [moi if y['id'] == ma else y for y in so['phat_hien']]})
     print(f'Đã ghi giải trình cho {ma} ({x["ma"]}): {noi_dung.strip()[:120]}')
+    print(f'Vòng {so["vong"]} đã ghi_nhan thì chạy chay_quy_trinh.py chot_vong {wd} để chốt lại kết luận vòng này, không tăng vòng.')
+
+
+def chot_vong(wd, bc_path):
+    """Chốt lại vòng đã ghi_nhan sau khi người dùng giải trình: tính lại kết luận, đạt thì nâng bản giao. Sổ không đổi."""
+    so = doc_so(wd)
+    bc = json.load(open(bc_path, encoding='utf-8'))
+    if 'phat_hien_mo' not in bc or bc.get('vong') != so['vong']:
+        sys.exit(f'LỖI: {os.path.basename(bc_path)} không phải báo cáo đã ghi_nhan của vòng {so["vong"]} '
+                 f'(vòng trong báo cáo: {bc.get("vong")}). Chạy lớp B và ghi_nhan cho vòng này trước.')
+    kl, ts01, mo = ket_luan_vong(so, bc)
+    src = kiem_ban_giao(wd, bc, so['vong']) if kl == 'dat' else None
+    gt = [x['id'] for x in so['phat_hien'] if x['trang_thai'] == 'giai_trinh' and x.get('vong_giai_trinh') == so['vong']]
+    bc_moi = {**bc, 'ket_luan': kl, 'phat_hien_mo': [x['id'] for x in mo], 'so_tham_so_cho': len(ts01), 'giai_trinh_khi_chot': gt}
+    if src:
+        bc_moi = {**bc_moi, **nang_ban_giao(wd, bc, src, so['vong'])}
+    json.dump(bc_moi, open(bc_path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print(f"Chốt vòng {so['vong']}: {len(mo)} phát hiện còn mở, {len(ts01)} tham số chờ Chủ đầu tư, giải trình trong vòng: {', '.join(gt) or 'không'}.")
+    in_muc_cho(ts01 + mo)
+    print(f'Kết luận vòng: {kl} ({KET_LUAN[kl]})')
+    sys.exit({'dat': 0, 'chua_dat': 1, 'cho_nguoi_dung': 2}[kl])
 
 
 cmd = sys.argv[1] if len(sys.argv) > 1 else ''
@@ -172,7 +203,9 @@ if cmd == 'hoan_thien':
     hoan_thien(*sys.argv[2:4])
 if cmd == 'ghi_nhan':
     ghi_nhan(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else os.path.join(sys.argv[2], 'bao_cao_kiem_tra.json'))
+if cmd == 'chot_vong':
+    chot_vong(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else os.path.join(sys.argv[2], 'bao_cao_kiem_tra.json'))
 if cmd == 'giai_trinh':
     giai_trinh(*sys.argv[2:5])
     sys.exit(0)
-sys.exit('Lệnh không hợp lệ: dùng chuan_bi, hoan_thien, ghi_nhan hoặc giai_trinh')
+sys.exit('Lệnh không hợp lệ: dùng chuan_bi, hoan_thien, ghi_nhan, giai_trinh hoặc chot_vong')

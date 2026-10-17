@@ -13,7 +13,7 @@ CÁC BƯỚC (thư mục làm việc /mnt/data/hsmt)
 3. Đóng vai agent Soạn thảo theo vai_soan_thao.md và quy_tac_soan_thao.md: đọc hsmt_khung.json, ghi /mnt/data/hsmt/ban_soan.json, gồm tiêu chí kỹ thuật chi tiết (TIEU_CHI_CHI_TIET).
 4. Chạy: python3 /mnt/data/chay_quy_trinh.py hoan_thien /mnt/data/Mau_5A.docx /mnt/data/hsmt
    Mã thoát 2 kèm HSMT_du_thao.docx: còn tham số chờ Chủ đầu tư hoặc phát hiện mở của vòng trước, vẫn làm bước 5 trên bản dự thảo. Mã thoát 2 khác: xử lý theo vai_sua.md rồi chạy lại. Tối đa 3 vòng.
-5. Kiểm tra lớp B theo vai_kiem_tra.md. Tốt nhất do một GPT Kiểm tra riêng thực hiện. Nếu tự làm, chỉ đọc file Word, mẫu, RFP, các file nguồn chuẩn và so_phat_hien.json, không mở hsmt_khung.json, ban_soan.json. Kết thúc vòng: python3 /mnt/data/chay_quy_trinh.py ghi_nhan /mnt/data/hsmt. Phát hiện chưa đóng được mang sang vòng sau.
+5. Kiểm tra lớp B theo vai_kiem_tra.md. Tốt nhất do một GPT Kiểm tra riêng thực hiện. Nếu tự làm, chỉ đọc file Word, mẫu, RFP, các file nguồn chuẩn và so_phat_hien.json, không mở hsmt_khung.json, ban_soan.json. Kết thúc vòng: python3 /mnt/data/chay_quy_trinh.py ghi_nhan /mnt/data/hsmt. Phát hiện chưa đóng được mang sang vòng sau. Người dùng giải trình sau ghi_nhan thì chạy python3 /mnt/data/chay_quy_trinh.py chot_vong /mnt/data/hsmt, không chạy lại ghi_nhan.
 6. Đạt (kết luận vòng dat): đưa link tải HSMT_ket_qua.docx và báo cáo kiểm tra. Nêu số vòng, điểm lệch RFP có căn cứ, mục cần người dùng quyết. Kết luận cho_nguoi_dung: hỏi người dùng các tham số TS01 và phát hiện còn mở, không giao như bản đạt.
 
 KHI SỬA

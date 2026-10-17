@@ -62,6 +62,9 @@ def kiem_hsmt_dat():
     mo = [x['id'] for x in so['phat_hien'] if x.get('trang_thai') == 'mo']
     if mo:
         loi.thoat_loi(f'Sổ phát hiện {loi.tuong_doi(P(TEN_SO))} còn {len(mo)} mục mở: {", ".join(mo)}.')
+    gt = [x['id'] for x in so['phat_hien'] if x.get('trang_thai') == 'giai_trinh']
+    if gt:
+        print(f'HSMT đạt có {len(gt)} phát hiện người dùng đã giải trình: {", ".join(gt)} (xem {loi.tuong_doi(P(TEN_SO))}).')
     return bc
 
 
