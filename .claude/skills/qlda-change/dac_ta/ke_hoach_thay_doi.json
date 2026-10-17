@@ -1,0 +1,227 @@
+{
+ "id": "ke_hoach_thay_doi",
+ "ten": "Kế hoạch quản lý thay đổi",
+ "nut_ra": "doc_thay_doi",
+ "ngay_tai_lieu": "{da#ngay_bat_dau|ngay}",
+ "tieu_de_dau_trang": "Kế hoạch thực hiện - Kế hoạch quản lý thay đổi",
+ "truoc": [
+  [
+   "qlda-change/scripts/tinh_bang_thay_doi.py"
+  ]
+ ],
+ "nguon": {
+  "tdb": "du_lieu/thay_doi_bang.json",
+  "hsmt": "du_lieu/hsmt.json",
+  "lich": "du_lieu/lich.json",
+  "cp": "du_lieu/chi_phi.json",
+  "pc": "du_lieu/phan_cong.json"
+ },
+ "bia": {
+  "tieu_de": "Kế hoạch quản lý thay đổi",
+  "dong_phu": [
+   "Change management plan"
+  ]
+ },
+ "muc_luc": true,
+ "khoi": [
+  {
+   "h1": "1. Mục đích và căn cứ"
+  },
+  {
+   "soan": "CAN_CU",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Mục đích của kế hoạch. Căn cứ hợp đồng: RFP cho phép hai bên thay đổi đặc tả khi cần, E-ĐKC 17 của HSMT về sửa đổi hợp đồng (thay đổi chỉ thực hiện khi hai bên thống nhất bằng văn bản), cách xử lý khi thay đổi chạm giá hoặc mốc. Phạm vi: thay đổi phạm vi, đặc tả, lịch, nhân sự, đơn giá, quy trình.",
+   "nguon": [
+    "hsmt"
+   ],
+   "bat_buoc": [
+    "văn bản"
+   ]
+  },
+  {
+   "h1": "2. Ban kiểm soát thay đổi"
+  },
+  {
+   "bang_san": "tdb#ccb"
+  },
+  {
+   "soan": "VAI_TRO",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1,
+   "huong_dan": "Trách nhiệm của người đề xuất, người đánh giá tác động, ban kiểm soát thay đổi, chủ đầu tư, người cập nhật tài liệu.",
+   "nguon": [
+    "pc"
+   ]
+  },
+  {
+   "h1": "3. Quy trình xử lý yêu cầu thay đổi"
+  },
+  {
+   "soan": "QUY_TRINH",
+   "dang": "dong_bang",
+   "cot": [
+    "Bước",
+    "Nội dung",
+    "Người thực hiện",
+    "Thời hạn",
+    "Đầu ra"
+   ],
+   "widths": [
+    800,
+    3500,
+    1800,
+    1300,
+    1900
+   ],
+   "toi_thieu": 6,
+   "huong_dan": "Các bước: tiếp nhận và lập phiếu, đánh giá tác động định lượng (MD, chi phí, ngày chậm, mức) bằng công cụ của nhóm, phê duyệt theo mức, cập nhật dữ liệu nguồn và chạy lại các tài liệu theo ma trận lan truyền, thông báo các bên, đóng yêu cầu và ghi phiên bản. Thời hạn lấy theo bảng phân loại.",
+   "nguon": [
+    "tdb"
+   ],
+   "bat_buoc": [
+    "đánh giá tác động"
+   ]
+  },
+  {
+   "doan": "Trạng thái của một yêu cầu thay đổi: {tdb#trang_thai}."
+  },
+  {
+   "h1": "4. Phân loại và thẩm quyền phê duyệt"
+  },
+  {
+   "bang_san": "tdb#phan_loai"
+  },
+  {
+   "doan": "Chi phí của thay đổi tính theo MD tăng nhân đơn giá loại công việc. Đơn giá nhân công bình quân hiện tại là {tdb#don_gia_md_binh_quan|tien} đồng mỗi MD."
+  },
+  {
+   "h1": "5. Đánh giá tác động và lan truyền thay đổi"
+  },
+  {
+   "soan": "TAC_DONG",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Cách đánh giá tác động: gói WBS bị ảnh hưởng, gói trên đường găng, dự trữ đến cut over (hiện {lich#du_tru_den_cut_over_ngay} ngày), ảnh hưởng mốc thanh toán, rủi ro mới, chất lượng. Cách xác định tài liệu phải cập nhật bằng sơ đồ phụ thuộc.",
+   "nguon": [
+    "lich",
+    "tdb"
+   ],
+   "bat_buoc": [
+    "đường găng"
+   ]
+  },
+  {
+   "bang_san": "tdb#lan_truyen"
+  },
+  {
+   "h1": "6. Kiểm soát cấu hình và phiên bản"
+  },
+  {
+   "soan": "CAU_HINH",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Đường cơ sở phạm vi, tiến độ, chi phí. Mọi thay đổi được ghi phiên bản tài liệu, mã băm nội dung, ghi chú mã yêu cầu thay đổi. Tài liệu đấu thầu đã khóa không sửa. Liên kết với tài liệu quản lý phiên bản.",
+   "nguon": [
+    "tdb"
+   ],
+   "bat_buoc": [
+    "phiên bản"
+   ]
+  },
+  {
+   "h1": "7. Sổ yêu cầu thay đổi"
+  },
+  {
+   "bang": {
+    "nguon": "tdb#so_thay_doi",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Nội dung",
+      "tieu_de",
+      3000
+     ],
+     [
+      "Ngày",
+      "ngay|ngay",
+      1100,
+      "c"
+     ],
+     [
+      "MD",
+      "md_tang|md",
+      700,
+      "r"
+     ],
+     [
+      "Chi phí, đồng",
+      "chi_phi_tang|tien",
+      1400,
+      "r"
+     ],
+     [
+      "Chậm, ngày",
+      "ngay_cham",
+      800,
+      "c"
+     ],
+     [
+      "Mức",
+      "muc_ten",
+      900,
+      "c"
+     ],
+     [
+      "Trạng thái tại ngày lập",
+      "trang_thai",
+      1300
+     ]
+    ],
+    "rong_thi": "Chưa có yêu cầu thay đổi nào được ghi nhận tại thời điểm lập kế hoạch."
+   }
+  },
+  {
+   "h1": "8. Truyền thông và theo dõi"
+  },
+  {
+   "soan": "THEO_DOI",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Thông báo kết quả cho các bên, báo cáo số yêu cầu thay đổi và tác động trong báo cáo tiến độ, rà soát trong họp sprint, chỉ số theo dõi (số yêu cầu mở, MD tăng lũy kế, thời gian xử lý). Liên kết với quản lý rủi ro khi thay đổi phát sinh rủi ro mới.",
+   "nguon": [
+    "tdb"
+   ],
+   "bat_buoc": [
+    "báo cáo tiến độ"
+   ]
+  }
+ ],
+ "kiem_tra": {
+  "gia_tri": [
+   {
+    "mo_ta": "Đơn giá MD bình quân",
+    "bt": "{tdb#don_gia_md_binh_quan|tien}"
+   }
+  ],
+  "ma_phai_co": [
+   {
+    "nguon": "tdb#so_thay_doi",
+    "truong": "ma",
+    "mo_ta": "Mọi yêu cầu thay đổi trong sổ"
+   }
+  ],
+  "doc_hieu": [
+   "Quy trình có người, thời hạn, đầu ra cho từng bước",
+   "Thẩm quyền phê duyệt theo mức tác động, thay đổi chạm giá hoặc mốc phải có phụ lục hợp đồng",
+   "Có cơ chế xác định tài liệu phải cập nhật",
+   "Phù hợp E-ĐKC về sửa đổi hợp đồng của HSMT",
+   "Liên kết với quản lý rủi ro và quản lý phiên bản"
+  ]
+ }
+}

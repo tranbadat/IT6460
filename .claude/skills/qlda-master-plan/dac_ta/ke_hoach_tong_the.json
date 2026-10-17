@@ -1,0 +1,522 @@
+{
+ "id": "ke_hoach_tong_the",
+ "ten": "Kế hoạch tổng thể dự án",
+ "nut_ra": "doc_ke_hoach",
+ "ngay_tai_lieu": "{da#ngay_bat_dau|ngay}",
+ "tieu_de_dau_trang": "Lập kế hoạch - Master plan",
+ "nguon": {
+  "hsmt": "du_lieu/hsmt.json",
+  "rfp": "du_lieu/rfp_yeu_cau.json",
+  "wbs": "du_lieu/wbs.json",
+  "lich": "du_lieu/lich.json",
+  "pc": "du_lieu/phan_cong.json",
+  "cp": "du_lieu/chi_phi.json",
+  "rr": "du_lieu/rui_ro.json",
+  "tv": "dau_vao/thanh_vien.json"
+ },
+ "bia": {
+  "tieu_de": "Kế hoạch tổng thể dự án",
+  "dong_phu": [
+   "Master plan, lập trên cơ sở HSMT, HSDT, WBS, master schedule, phân công và cost estimate"
+  ]
+ },
+ "muc_luc": true,
+ "khoi": [
+  {
+   "h1": "1. Tổng quan dự án"
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Nội dung",
+      "Thông tin"
+     ],
+     [
+      "Dự án",
+      "{da#ten_du_an}"
+     ],
+     [
+      "Chủ đầu tư",
+      "{hsmt#goi_thau.chu_dau_tu}"
+     ],
+     [
+      "Nhà thầu",
+      "{da#don_vi_thuc_hien}"
+     ],
+     [
+      "Loại hợp đồng",
+      "{hsmt#goi_thau.loai_hop_dong}"
+     ],
+     [
+      "Giá hợp đồng dự kiến",
+      "{cp#gia_chao|tien} đồng"
+     ],
+     [
+      "Thời gian",
+      "{lich#ngay_bat_dau|ngay} đến {lich#cut_over|ngay}, {lich#so_ngay_lam_viec} ngày làm việc, {lich#so_sprint} sprint"
+     ],
+     [
+      "Khối lượng",
+      "{wbs#tong_md|md} MD, {wbs#so_goi_la} gói công việc"
+     ],
+     [
+      "Nhân sự",
+      "{pc#tong_quy|md} MD quỹ thời gian"
+     ]
+    ],
+    "widths": [
+     3000,
+     6300
+    ]
+   }
+  },
+  {
+   "soan": "MUC_TIEU",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Mục tiêu dự án theo RFP, mục tiêu của nhà thầu, tiêu chí thành công đo được (đúng phạm vi, đúng mốc cut over, trong ngân sách, đạt yêu cầu phi chức năng, nghiệm thu).",
+   "nguon": [
+    "rfp",
+    "hsmt"
+   ],
+   "bat_buoc": [
+    "{lich#cut_over|ngay}",
+    "2 giây"
+   ]
+  },
+  {
+   "h1": "2. Phạm vi và cấu trúc phân rã công việc"
+  },
+  {
+   "bang": {
+    "nguon": "wbs#nhom",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      800,
+      "c"
+     ],
+     [
+      "Nhóm công việc",
+      "ten",
+      5300
+     ],
+     [
+      "MD",
+      "md|md",
+      1500,
+      "r"
+     ],
+     [
+      "Tỷ trọng",
+      "ty_trong|pt",
+      1700,
+      "r"
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng cộng",
+     "cot": [
+      2,
+      3
+     ]
+    }
+   }
+  },
+  {
+   "soan": "PHAM_VI",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Phạm vi theo RFP và HSMT, sản phẩm bàn giao, phần ngoài phạm vi và giả định, cách quản lý phạm vi (baseline đặc tả, quy trình thay đổi). Dẫn chiếu tài liệu WBS.",
+   "nguon": [
+    "wbs",
+    "rfp"
+   ],
+   "bat_buoc": [
+    "ngoài phạm vi"
+   ]
+  },
+  {
+   "h1": "3. Tiến độ và mốc"
+  },
+  {
+   "bang": {
+    "nguon": "lich#moc",
+    "cot": [
+     [
+      "Mốc",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Nội dung",
+      "ten",
+      4100
+     ],
+     [
+      "Ngày dự kiến",
+      "ngay|ngay",
+      1400,
+      "c"
+     ],
+     [
+      "Hạn",
+      "han|ngay",
+      1300,
+      "c"
+     ],
+     [
+      "Thanh toán",
+      "dot_thanh_toan",
+      1100,
+      "c"
+     ]
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "lich#sprint",
+    "cot": [
+     [
+      "Sprint",
+      "ma",
+      800,
+      "c"
+     ],
+     [
+      "Từ",
+      "tu|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Đến",
+      "den|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "MD kế hoạch",
+      "md_ke_hoach|md",
+      1100,
+      "r"
+     ],
+     [
+      "Mục tiêu",
+      "muc_tieu",
+      5000
+     ]
+    ]
+   }
+  },
+  {
+   "doan": "Lịch có ràng buộc nguồn lực hoàn thành ngày {lich#ket_thuc_du_kien|ngay}, dự trữ {lich#du_tru_den_cut_over_ngay} ngày làm việc đến cut over. Đường găng theo phụ thuộc dài {lich#do_dai_gang_ngay} ngày làm việc."
+  },
+  {
+   "soan": "TIEN_DO",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Phương pháp lập lịch theo sprint, các gói trên đường găng, cách theo dõi tiến độ (SPI, mốc), biện pháp bảo vệ mốc cut over. Dẫn chiếu master schedule.",
+   "nguon": [
+    "lich"
+   ],
+   "bat_buoc": [
+    "đường găng"
+   ]
+  },
+  {
+   "h1": "4. Tổ chức và nguồn lực"
+  },
+  {
+   "bang": {
+    "nguon": "pc#tai",
+    "cot": [
+     [
+      "Thành viên",
+      "ho_ten",
+      2400
+     ],
+     [
+      "Chức danh",
+      "chuc_danh",
+      3200
+     ],
+     [
+      "MD giao",
+      "md_giao|md",
+      1200,
+      "r"
+     ],
+     [
+      "Quỹ, MD",
+      "quy|md",
+      1200,
+      "r"
+     ],
+     [
+      "Sử dụng",
+      "ty_le_su_dung|pt",
+      1300,
+      "r"
+     ]
+    ]
+   }
+  },
+  {
+   "soan": "TO_CHUC",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Cơ cấu tổ chức dự án, vai trò chính, đầu mối với chủ đầu tư, huy động vị trí bổ sung, xử lý quá tải. Dẫn chiếu tài liệu phân công.",
+   "nguon": [
+    "pc",
+    "tv"
+   ]
+  },
+  {
+   "h1": "5. Chi phí và ngân sách"
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Khoản mục",
+      "Giá trị, đồng"
+     ],
+     [
+      "A. Nhân công",
+      "{cp#A|tien}"
+     ],
+     [
+      "B. Chi phí khác",
+      "{cp#B|tien}"
+     ],
+     [
+      "C. Chi phí chung và lợi nhuận",
+      "{cp#C|tien}"
+     ],
+     [
+      "Giá hợp đồng dự kiến",
+      "{cp#gia_chao|tien}"
+     ],
+     [
+      "Tổng EMV rủi ro",
+      "{cp#tong_emv_rui_ro|tien}"
+     ]
+    ],
+    "widths": [
+     6000,
+     3300
+    ],
+    "right_cols": [
+     1
+    ]
+   }
+  },
+  {
+   "soan": "CHI_PHI",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1,
+   "huong_dan": "Ngân sách, đường cơ sở chi phí theo sprint, theo dõi CPI, quy tắc dùng dự phòng, dòng tiền theo đợt thanh toán. Dẫn chiếu cost estimate.",
+   "nguon": [
+    "cp"
+   ],
+   "bat_buoc": [
+    "CPI"
+   ]
+  },
+  {
+   "h1": "6. Chất lượng và nghiệm thu"
+  },
+  {
+   "soan": "CHAT_LUONG",
+   "dang": "dong_bang",
+   "cot": [
+    "Đối tượng",
+    "Tiêu chí, chỉ số",
+    "Cách kiểm tra",
+    "Thời điểm"
+   ],
+   "widths": [
+    2000,
+    3200,
+    2500,
+    1600
+   ],
+   "toi_thieu": 5,
+   "huong_dan": "Điều kiện hoàn thành của gói và sprint, tiêu chí nghiệm thu sản phẩm theo đặc tả (kiểm tra đạt là chấp nhận theo RFP), yêu cầu phi chức năng 24 giờ 365 ngày và 2 giây, ngưỡng lỗi khi UAT, điều kiện go/no-go cho cut over.",
+   "nguon": [
+    "rfp",
+    "hsmt",
+    "lich"
+   ]
+  },
+  {
+   "h1": "7. Truyền thông và kế hoạch họp"
+  },
+  {
+   "soan": "TRUYEN_THONG",
+   "dang": "dong_bang",
+   "cot": [
+    "Hoạt động",
+    "Tần suất",
+    "Thành phần",
+    "Đầu ra"
+   ],
+   "widths": [
+    2400,
+    1500,
+    2700,
+    2700
+   ],
+   "toi_thieu": 4,
+   "huong_dan": "Họp khởi động, lập kế hoạch sprint, trình diễn cuối sprint, báo cáo tiến độ, họp ban kiểm soát thay đổi, họp quyết định cut over. Kênh liên lạc với đầu mối chủ đầu tư.",
+   "nguon": [
+    "rfp",
+    "lich"
+   ]
+  },
+  {
+   "h1": "8. Rủi ro"
+  },
+  {
+   "bang": {
+    "nguon": "rr#danh_sach",
+    "loc": {
+     "muc": "cao"
+    },
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Rủi ro",
+      "ten",
+      3800
+     ],
+     [
+      "Phụ trách",
+      "ho_ten_phu_trach",
+      2000
+     ],
+     [
+      "Ứng phó",
+      "ke_hoach_ung_pho",
+      2800
+     ]
+    ],
+    "rong_thi": "Không có rủi ro mức cao."
+   }
+  },
+  {
+   "doan": "Sổ rủi ro gồm {rr#tong_hop.so_rui_ro} rủi ro, tổng EMV {rr#tong_hop.tong_emv_tien|tien} đồng. Chi tiết tại kế hoạch quản lý rủi ro."
+  },
+  {
+   "h1": "9. Quản lý thay đổi và cấu hình"
+  },
+  {
+   "soan": "THAY_DOI",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Tóm tắt quy trình thay đổi, thẩm quyền, cách lan truyền cập nhật giữa các tài liệu, quản lý phiên bản. Dẫn chiếu kế hoạch quản lý thay đổi và tài liệu quản lý phiên bản.",
+   "nguon": [
+    "hsmt"
+   ],
+   "bat_buoc": [
+    "yêu cầu thay đổi",
+    "phiên bản"
+   ]
+  },
+  {
+   "h1": "10. Chuyển giao và kết thúc"
+  },
+  {
+   "soan": "CHUYEN_GIAO",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Chuẩn bị cut over (diễn tập, đối chiếu dữ liệu, phương án khôi phục), đào tạo, bàn giao mã nguồn và quyền sở hữu, bảo hành theo HSMT, hồ sơ kết thúc dự án.",
+   "nguon": [
+    "hsmt",
+    "wbs",
+    "lich"
+   ],
+   "bat_buoc": [
+    "{hsmt#hop_dong.bao_hanh_thang} tháng"
+   ]
+  },
+  {
+   "h1": "11. Đường cơ sở của dự án"
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Đường cơ sở",
+      "Giá trị",
+      "Tài liệu gốc"
+     ],
+     [
+      "Phạm vi",
+      "{wbs#tong_md|md} MD, {wbs#so_goi_la} gói công việc",
+      "WBS"
+     ],
+     [
+      "Tiến độ",
+      "Cut over {lich#cut_over|ngay}, {lich#so_sprint} sprint",
+      "Master schedule"
+     ],
+     [
+      "Chi phí",
+      "{cp#gia_chao|tien} đồng",
+      "Cost estimate"
+     ]
+    ],
+    "widths": [
+     2000,
+     4300,
+     3000
+    ]
+   }
+  }
+ ],
+ "kiem_tra": {
+  "gia_tri": [
+   {
+    "mo_ta": "Giá",
+    "bt": "{cp#gia_chao|tien}"
+   },
+   {
+    "mo_ta": "Cut over",
+    "bt": "{lich#cut_over|ngay}"
+   },
+   {
+    "mo_ta": "Tổng MD",
+    "bt": "{wbs#tong_md|md}"
+   }
+  ],
+  "ma_phai_co": [
+   {
+    "nguon": "lich#moc",
+    "truong": "ma",
+    "mo_ta": "Mọi mốc"
+   },
+   {
+    "nguon": "wbs#nhom",
+    "truong": "ten",
+    "mo_ta": "Mọi nhóm WBS"
+   }
+  ],
+  "doc_hieu": [
+   "Kế hoạch dựa trên HSMT, HSDT, WBS, lịch sprint, phân công: không mâu thuẫn số liệu với các tài liệu đó",
+   "Có tiêu chí nghiệm thu và điều kiện cut over kiểm chứng được",
+   "Có ba đường cơ sở và cách kiểm soát",
+   "Kế hoạch họp đáp ứng yêu cầu Meeting của RFP"
+  ]
+ }
+}

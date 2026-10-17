@@ -4,9 +4,9 @@
 
 | File | Nguồn | Ghi chú |
 |---|---|---|
-| Mau_5A.docx | Thông tư 79/2025/TT-BTC | Đã đính kèm trong `assets/`. Cách tải lại: `assets/README.txt` |
-| RFP.pdf | Khách hàng | Bản của ABC Wear đã đính kèm trong `assets/`. RFP khác thì người dùng tải lên |
-| tham_so_chu_dau_tu.json | Chủ đầu tư hoặc bên lập HSMT | Các giá trị RFP không có: giá gói thầu, năm, chính sách hợp đồng, nhân sự chủ chốt. Mẫu cho ABC Wear: `dau_vao/tham_so_chu_dau_tu.json`. Giải thích: `references/tham_so.md` |
+| Mau_5A.docx | Thông tư 79/2025/TT-BTC | Đặt trong `dau_vao/` của dự án. Cách tải lại: `assets/README.txt` |
+| RFP.pdf | Khách hàng | Đặt trong `dau_vao/` của dự án. RFP khác thì thay tệp này |
+| tham_so_chu_dau_tu.json | Chủ đầu tư hoặc bên lập HSMT | Các giá trị RFP không có: giá gói thầu, năm, chính sách hợp đồng, nhân sự chủ chốt. Bản cho ABC Wear: `dau_vao/tham_so_chu_dau_tu.json` của dự án. Giải thích: `references/tham_so.md` |
 
 Skill không chứa, không đọc và không so với HSMT, HSDT có sẵn. Không agent nào được dùng một hồ sơ hoàn chỉnh làm đầu vào hay làm chuẩn đánh giá.
 

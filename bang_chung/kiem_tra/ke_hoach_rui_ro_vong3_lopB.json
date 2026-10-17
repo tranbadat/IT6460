@@ -1,0 +1,191 @@
+{
+ "tai_lieu": "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx",
+ "phien_ban_tai_lieu": "0.4",
+ "dac_ta": "ke_hoach_rui_ro",
+ "vong": 3,
+ "thoi_gian": "2026-10-17 00:16:14",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B)",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 6,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục, sổ 19 rủi ro, bảng 6.2 có ứng phó, Mục 7 nêu điều kiện dự phòng và vấn đề đã biết."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Sổ, 6.1, 6.2, ma trận (4x4: 1; 3x3: 6; 3x4: 6; 3x5: 1; 2x3: 1; 2x4: 2; 2x5: 2), tổng 48 MD, 128.287.673 đồng, 22,2 ngày, dự trữ 5 ngày khớp dữ liệu. 19/19 rủi ro tính lại đúng."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "16/17 gói găng có liên kết, căn cứ E-ĐKC 15 và Mục 18 đúng HSMT, quy tắc tính tiền đã nêu. Cảnh báo nhẹ về giả định RR19 (MH13)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Dấu hiệu đo được, có mốc trung gian cho RR03, ngưỡng lỗi thống nhất."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ phát hiện, quyết định (quản trị dự án, người đại diện nhà thầu, Chủ đầu tư), hành động, cập nhật qua yêu cầu thay đổi. Cảnh báo nhẹ MH19, MH22. MH01, MH02, MH17 chờ nhóm quyết định."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman 13, bảng 12, không in đậm, không dấu chấm phẩy, không từ cần tránh, không mã nội bộ."
+  },
+  {
+   "tieu_chi": "DH1 - Mỗi rủi ro mức cao có kế hoạch ứng phó khả thi, dấu hiệu, người phụ trách",
+   "ket_qua": "dat",
+   "nhan_xet": "RR02, RR03 đạt."
+  },
+  {
+   "tieu_chi": "DH2 - Rủi ro bao phủ đường găng, mốc cut over, tích hợp Main System, nhân sự bổ sung",
+   "ket_qua": "dat",
+   "nhan_xet": "Đạt, có thêm hạ tầng, bảo hành, phụ thuộc một người, dòng tiền."
+  },
+  {
+   "tieu_chi": "DH3 - Dự phòng chi phí và thời gian được so sánh với EMV",
+   "ket_qua": "dat",
+   "nhan_xet": "Có so sánh và điều kiện. Việc tách khoản B chờ nhóm (MH02)."
+  },
+  {
+   "tieu_chi": "DH4 - Ngưỡng cảnh báo có hành động cụ thể",
+   "ket_qua": "dat",
+   "nhan_xet": "Đạt."
+  },
+  {
+   "tieu_chi": "DH5 - Liên kết với quy trình thay đổi",
+   "ket_qua": "dat",
+   "nhan_xet": "Đạt."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "so_lieu",
+   "vi_tri": "Mục 7, đoạn 1: \"... là vấn đề đã biết, được nêu trong cost estimate và chờ nhóm quyết định mức huy động.\"",
+   "mo_ta": "Vấn đề đã biết về huy động vượt khối lượng (chênh lệch so với dòng A 414.389.772 đồng theo chi_phi.json) đang chờ nhóm quyết định. Tài liệu đã nêu đúng trạng thái này.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định mức huy động trong dau_vao/thanh_vien.json, sau đó chạy lại các bước giao việc, lịch, chi phí, rủi ro theo sơ đồ phụ thuộc."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "du_phong",
+   "vi_tri": "Mục 7, bảng: \"Đủ (khi toàn bộ khoản B được dùng làm dự phòng)\"",
+   "mo_ta": "Kết luận có điều kiện, chờ nhóm tách khoản B. Phần dư chỉ còn 21.712.327 đồng, trong khi khoản B còn phải chi môi trường, công cụ và bảo hành 12 tháng.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm tách khoản B trong dau_vao/don_gia.json hoặc đổi cách tính dự phòng, chạy lại chi_phi và ke_hoach_rui_ro."
+  },
+  {
+   "ma": "MH13",
+   "muc_do": "canh_bao",
+   "nhom": "truy_vet",
+   "vi_tri": "Mục 3, đoạn 2: \"RR19 tính chi phí vốn theo giả định nêu trong sổ\"",
+   "mo_ta": "Giả định của RR19 (chi phí vốn 10% một năm trên giá trị Đợt 3 trong một tháng, 4.375.000 đồng, cần nhóm xác nhận) chỉ có trong rui_ro.json. Sổ trong tài liệu chỉ hiển thị EMV, nên người đọc không kiểm chứng được và không biết giả định đang chờ xác nhận.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại PHUONG_PHAP, nêu giả định của RR19 bằng tham chiếu dữ liệu và ghi rõ là chờ nhóm xác nhận."
+  },
+  {
+   "ma": "MH17",
+   "muc_do": "canh_bao",
+   "nhom": "kha_thi",
+   "vi_tri": "Mục 6.2, RR04: \"Ký hợp đồng lao động ... chậm nhất 10 ngày làm việc trước sprint huy động\". RR19: \"thỏa thuận hạn mức vốn lưu động trước khi ký hợp đồng\"",
+   "mo_ta": "Kế hoạch áp dụng từ 18/03/2027. Hạn của K (04/03/2027) và biện pháp của RR19 (trước khi ký hợp đồng) đều đã qua tại ngày áp dụng, chưa có xác nhận đã thực hiện. thanh_vien.json vẫn ghi K cần xác nhận.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận tình trạng hợp đồng của K và hạn mức vốn lưu động tại ngày 18/03/2027. Nếu chưa có, ghi RR04, RR19 ở trạng thái đã kích hoạt ứng phó."
+  },
+  {
+   "ma": "MH19",
+   "muc_do": "canh_bao",
+   "nhom": "ung_pho",
+   "vi_tri": "Mục 6.2, RR18: \"giao Phạm Tuấn Anh (từ S1 đến S3)\"",
+   "mo_ta": "Phạm Tuấn Anh dùng 100% quỹ ở S3 và đang làm gói găng 5.2.1 (15/04 đến 22/04/2027), trùng thời gian 6.1.1 (14/04 đến 21/04/2027, dự trữ 1 ngày). Nếu thay Ninh Đức Toàn trong S3, đường găng sẽ chậm. Trong S1, S2 phương án vẫn khả thi.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Ghi người thay thế theo giai đoạn: Phạm Tuấn Anh trong S1, S2, vị trí D1 trong S3 (dùng 80% quỹ, có năng lực DEV), D3 từ S4."
+  },
+  {
+   "ma": "MH22",
+   "muc_do": "canh_bao",
+   "nhom": "kha_thi",
+   "vi_tri": "Mục 6.2, RR06, kế hoạch ứng phó: \"Ninh Đức Toàn tăng tài nguyên máy chủ trên môi trường vận hành\"",
+   "mo_ta": "Phát hiện mới, xuất hiện do bảng 6.2 nay có cột ứng phó. wbs.json ghi hạ tầng máy chủ vận hành thuộc Chủ đầu tư, nằm ngoài phạm vi, và RR16 cũng coi hạ tầng là trách nhiệm bàn giao của Chủ đầu tư. Vì vậy nhà thầu không tự tăng tài nguyên được, cần Chủ đầu tư đồng ý và có thể phát sinh chi phí của Chủ đầu tư.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa ke_hoach_ung_pho RR06: Ninh Đức Toàn lập đề xuất cấu hình, Trần Bá Đạt đề nghị Chủ đầu tư tăng tài nguyên (lập yêu cầu thay đổi nếu phát sinh chi phí)."
+  }
+ ],
+ "doi_chieu_vong_2": [
+  {
+   "ma": "MH01",
+   "trang_thai": "cho_nhom_quyet_dinh",
+   "vi_tri_moi": "Mục 7, đoạn 1: \"Ngoài sổ rủi ro, chi phí lương theo thời gian huy động vượt dòng A là vấn đề đã biết, được nêu trong cost estimate và chờ nhóm quyết định mức huy động.\"",
+   "nhan_xet": "Tài liệu đã nêu đúng là vấn đề đã biết đang chờ nhóm quyết định. Giữ cảnh báo can_nguoi_dung."
+  },
+  {
+   "ma": "MH02",
+   "trang_thai": "cho_nhom_quyet_dinh",
+   "vi_tri_moi": "Mục 7, bảng: \"Đủ (khi toàn bộ khoản B được dùng làm dự phòng)\"",
+   "nhan_xet": "Tài liệu nêu đúng điều kiện và việc chờ tách khoản B. Phần dư còn 21.712.327 đồng (150.000.000 - 128.287.673). Giữ cảnh báo can_nguoi_dung."
+  },
+  {
+   "ma": "MH04",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 6.1, dấu hiệu RR03: \"Mốc M4 chưa đạt sau 2 ngày làm việc so với ngày dự kiến trong master schedule\"",
+   "nhan_xet": "Dấu hiệu nay xuất hiện vào 17/06/2027 (M4 dự kiến 15/06/2027), khi còn 3 ngày dự trữ."
+  },
+  {
+   "ma": "MH05",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 6.2, bảng bốn cột có \"Kế hoạch ứng phó khi xảy ra\"",
+   "nhan_xet": "Đặc tả và tài liệu đã có cột ứng phó, 17 dòng khớp rui_ro.json."
+  },
+  {
+   "ma": "MH07",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 4, RR11: \"Gói 5.1.1, 5.2.1, 5.3.1, 5.3.2\". Mục 5, đoạn 2 nêu thêm RR07, RR09, RR12, RR17, RR19",
+   "nhan_xet": "16/17 gói găng có rủi ro liên kết. Chỉ còn 1.1.1 (họp khởi động), chấp nhận được."
+  },
+  {
+   "ma": "MH13",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "Mục 3, đoạn 2: \"Riêng RR13 tính bằng 10% chi phí lương ..., RR19 tính chi phí vốn theo giả định nêu trong sổ.\"",
+   "nhan_xet": "Đã nêu quy tắc phạt và cách tính RR13. Giả định của RR19 chỉ có trong rui_ro.json, chưa hiển thị trong tài liệu. Giữ cảnh báo nhẹ."
+  },
+  {
+   "ma": "MH17",
+   "trang_thai": "cho_nhom_quyet_dinh",
+   "vi_tri_moi": "Mục 6.2, RR04: \"chậm nhất 10 ngày làm việc trước sprint huy động\". RR19: \"thỏa thuận hạn mức vốn lưu động trước khi ký hợp đồng\"",
+   "nhan_xet": "Tình trạng hợp đồng của K vẫn chờ nhóm xác nhận. Biện pháp phòng ngừa mới của RR19 cũng đặt trước ngày ký hợp đồng, tức trước ngày áp dụng kế hoạch. Giữ cảnh báo can_nguoi_dung."
+  },
+  {
+   "ma": "MH19",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "Mục 6.2, RR18: \"Trần Bá Đạt giao Phạm Tuấn Anh (từ S1 đến S3) hoặc vị trí D3 (từ S4)\". Mục 4: \"Gói 8.1.1, 6.1.1, 8.1.2, 8.3.2\"",
+   "nhan_xet": "Đã có người thay thế và liên kết 6.1.1. Tuy vậy Phạm Tuấn Anh dùng 100% quỹ ở S3 và đang làm gói găng 5.2.1 (15/04 đến 22/04/2027), trùng thời gian 6.1.1 (14/04 đến 21/04/2027). Giữ cảnh báo nhẹ."
+  },
+  {
+   "ma": "MH20",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 4, RR19: \"Mốc M2 hoặc M3 trễ làm dời khoản thu Đợt 2, Đợt 3, nhà thầu thiếu vốn lưu động\"",
+   "nhan_xet": "Đã bổ sung, có dấu hiệu đo được (M2 hoặc M3 chậm quá 2 ngày làm việc) và cấp quyết định là người đại diện nhà thầu."
+  },
+  {
+   "ma": "MH21",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 3, đoạn 2 (quy tắc phạt hai trường hợp). Mục 4: RR02 \"15.382.500\", RR08 \"2.255.000\"",
+   "nhan_xet": "RR02 đã cộng 1 ngày phạt. Tên RR08 khớp lịch (8.3.2 ghim 29/06, 8.3.3 ghim 01/07/2027). Mô tả RR10, RR15 đã sửa. Giới hạn so từng rủi ro với cả dự trữ được Mục 7 thể hiện gián tiếp (5 ngày so với 22,2 ngày), không giữ phát hiện."
+  }
+ ],
+ "tinh_lai_emv": {
+  "quy_tac": "Tiền = MD x đơn giá ngày loại công việc. Phạt 437.500 đồng/ngày (0,1% giá trị Đợt 4): gói găng tính số ngày vượt 5 ngày dự trữ, gói ghim ngày cut over (8.3.2, 8.3.3) tính toàn bộ số ngày. RR13 = 10% x 501.129.318 đồng. RR19 = 525.000.000 x 10% / 12.",
+  "ket_qua": "19/19 khớp. Tổng 48 MD, 128.287.673 đồng, 22,2 ngày."
+ },
+ "ghi_chu": "Vòng 3 (vòng cuối): không có lỗi. 6 cảnh báo, trong đó MH01, MH02, MH17 chờ nhóm quyết định, MH13, MH19, MH22 tự sửa được. Lớp B không đọc rui_ro_nhap.json, khung.json, khung_nguon.json, ban_soan.json, noi_dung*.json, nhật ký soạn, script trong /private/tmp."
+}

@@ -1,0 +1,222 @@
+{
+ "_huong_dan": "Mỗi người một dòng. loai: nhom (thành viên nhóm) hoặc bo_sung (vị trí huy động thêm). vai_tro: mã vai trò dùng cho lương tham chiếu (khóa trong don_gia.json, luong_tham_chieu_thang). loai_cong_viec: các loại công việc người này làm được (mã trong don_gia.json, don_gia_tron_goi_thang). ty_le: phần thời gian dành cho dự án (1 là toàn thời gian). tu_sprint, den_sprint: để trống nếu tham gia toàn dự án. Các dòng có _can_xac_nhan cần nhóm xác nhận lại. trinh_do, so_nam_kinh_nghiem (số), kinh_nghiem (dự án, công việc liên quan), chung_chi: bắt buộc với người giữ vị trí nhân sự chủ chốt của HSDT.",
+ "thanh_vien": [
+  {
+   "id": "dat",
+   "ho_ten": "Trần Bá Đạt",
+   "mssv": "20252129M",
+   "loai": "nhom",
+   "chuc_danh": "Trưởng nhóm, quản trị dự án",
+   "kiem_nhiem": "Kiến trúc sư hệ thống",
+   "trinh_do": "",
+   "so_nam_kinh_nghiem": null,
+   "kinh_nghiem": "",
+   "chung_chi": "",
+   "vai_tro": "LEAD",
+   "loai_cong_viec": [
+    "PM",
+    "BA",
+    "DEV"
+   ],
+   "ty_le": 1.0,
+   "tu_sprint": null,
+   "den_sprint": null
+  },
+  {
+   "id": "tuananh",
+   "ho_ten": "Phạm Tuấn Anh",
+   "mssv": "20252253M",
+   "loai": "nhom",
+   "chuc_danh": "Kỹ sư phát triển backend",
+   "kiem_nhiem": "",
+   "trinh_do": "",
+   "so_nam_kinh_nghiem": null,
+   "kinh_nghiem": "",
+   "chung_chi": "",
+   "vai_tro": "BACKEND",
+   "loai_cong_viec": [
+    "DEV"
+   ],
+   "ty_le": 1.0,
+   "tu_sprint": null,
+   "den_sprint": null
+  },
+  {
+   "id": "minh",
+   "ho_ten": "Vũ Đức Minh",
+   "mssv": "20252252M",
+   "loai": "nhom",
+   "chuc_danh": "Kỹ sư phát triển frontend",
+   "kiem_nhiem": "Thiết kế UX/UI",
+   "trinh_do": "",
+   "so_nam_kinh_nghiem": null,
+   "kinh_nghiem": "",
+   "chung_chi": "",
+   "vai_tro": "FRONTEND",
+   "loai_cong_viec": [
+    "DEV",
+    "QA"
+   ],
+   "ty_le": 1.0,
+   "tu_sprint": null,
+   "den_sprint": null
+  },
+  {
+   "id": "toan",
+   "ho_ten": "Ninh Đức Toàn",
+   "mssv": "20252131M",
+   "loai": "nhom",
+   "chuc_danh": "Kỹ sư phát triển backend",
+   "kiem_nhiem": "Triển khai và an toàn (DevOps)",
+   "trinh_do": "",
+   "so_nam_kinh_nghiem": null,
+   "kinh_nghiem": "",
+   "chung_chi": "",
+   "vai_tro": "BACKEND",
+   "loai_cong_viec": [
+    "DEV",
+    "DEVOPS",
+    "QA"
+   ],
+   "ty_le": 1.0,
+   "tu_sprint": null,
+   "den_sprint": null
+  },
+  {
+   "id": "lien",
+   "ho_ten": "Nguyễn Thị Phương Liên",
+   "mssv": "20252130M",
+   "loai": "nhom",
+   "chuc_danh": "Phân tích nghiệp vụ",
+   "kiem_nhiem": "Kỹ sư kiểm thử",
+   "trinh_do": "",
+   "so_nam_kinh_nghiem": null,
+   "kinh_nghiem": "",
+   "chung_chi": "",
+   "vai_tro": "BAQA",
+   "loai_cong_viec": [
+    "BA",
+    "QA"
+   ],
+   "ty_le": 1.0,
+   "tu_sprint": null,
+   "den_sprint": null
+  },
+  {
+   "id": "K",
+   "ho_ten": "K",
+   "loai": "bo_sung",
+   "chuc_danh": "Kiến trúc sư, phân tích nghiệp vụ",
+   "kiem_nhiem": "",
+   "trinh_do": "",
+   "so_nam_kinh_nghiem": null,
+   "kinh_nghiem": "",
+   "chung_chi": "",
+   "vai_tro": "BAQA",
+   "loai_cong_viec": [
+    "BA",
+    "DEV"
+   ],
+   "ty_le": 1.0,
+   "tu_sprint": 1,
+   "den_sprint": null,
+   "_can_xac_nhan": true
+  },
+  {
+   "id": "D1",
+   "ho_ten": "D1",
+   "loai": "bo_sung",
+   "chuc_danh": "Kỹ sư phát triển",
+   "kiem_nhiem": "",
+   "trinh_do": "",
+   "so_nam_kinh_nghiem": null,
+   "kinh_nghiem": "",
+   "chung_chi": "",
+   "vai_tro": "BACKEND",
+   "loai_cong_viec": [
+    "DEV"
+   ],
+   "ty_le": 1.0,
+   "tu_sprint": 3,
+   "den_sprint": null,
+   "_can_xac_nhan": true
+  },
+  {
+   "id": "D2",
+   "ho_ten": "D2",
+   "loai": "bo_sung",
+   "chuc_danh": "Kỹ sư phát triển",
+   "kiem_nhiem": "",
+   "trinh_do": "",
+   "so_nam_kinh_nghiem": null,
+   "kinh_nghiem": "",
+   "chung_chi": "",
+   "vai_tro": "FRONTEND",
+   "loai_cong_viec": [
+    "DEV"
+   ],
+   "ty_le": 1.0,
+   "tu_sprint": 3,
+   "den_sprint": null,
+   "_can_xac_nhan": true
+  },
+  {
+   "id": "D3",
+   "ho_ten": "D3",
+   "loai": "bo_sung",
+   "chuc_danh": "Kỹ sư phát triển",
+   "kiem_nhiem": "DevOps",
+   "trinh_do": "",
+   "so_nam_kinh_nghiem": null,
+   "kinh_nghiem": "",
+   "chung_chi": "",
+   "vai_tro": "BACKEND",
+   "loai_cong_viec": [
+    "DEV",
+    "DEVOPS"
+   ],
+   "ty_le": 1.0,
+   "tu_sprint": 4,
+   "den_sprint": null,
+   "_can_xac_nhan": true
+  },
+  {
+   "id": "Q1",
+   "ho_ten": "Q1",
+   "loai": "bo_sung",
+   "chuc_danh": "Kỹ sư kiểm thử",
+   "kiem_nhiem": "",
+   "trinh_do": "",
+   "so_nam_kinh_nghiem": null,
+   "kinh_nghiem": "",
+   "chung_chi": "",
+   "vai_tro": "BAQA",
+   "loai_cong_viec": [
+    "QA"
+   ],
+   "ty_le": 1.0,
+   "tu_sprint": 3,
+   "den_sprint": null,
+   "_can_xac_nhan": true
+  },
+  {
+   "id": "Q2",
+   "ho_ten": "Q2",
+   "loai": "bo_sung",
+   "chuc_danh": "Kỹ sư kiểm thử",
+   "kiem_nhiem": "",
+   "trinh_do": "",
+   "so_nam_kinh_nghiem": null,
+   "kinh_nghiem": "",
+   "chung_chi": "",
+   "vai_tro": "BAQA",
+   "loai_cong_viec": [
+    "QA"
+   ],
+   "ty_le": 1.0,
+   "tu_sprint": 4,
+   "den_sprint": null,
+   "_can_xac_nhan": true
+  }
+ ]
+}

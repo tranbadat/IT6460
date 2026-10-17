@@ -6,6 +6,13 @@ Dùng: python3 fix_hsmt.py <hsmt_noi_dung.json> <bao_cao_kiem_tra.json> <hsmt_no
 - Lỗi về nội dung, số liệu, pháp lý, RFP (cach_sua = can_nguoi_dung) được chuyển cho người dùng quyết, không tự sửa.
 Mã thoát: 0 nếu không còn việc chờ người dùng, 2 nếu còn.
 """
+import os as _os, sys as _sys  # noqa: E401
+_os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
+for _s in (_sys.stdout, _sys.stderr):
+    try:
+        _s.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 import json, re, sys
 
 data_in, report_in, data_out, log_out = sys.argv[1:5]
@@ -15,7 +22,7 @@ rep = json.load(open(report_in, encoding='utf-8'))
 TEXT_RULES = {
     'DD03': [('[\u2013\u2014]', '-')],
     'PL01': [(r'Nghị định số 24/2024/NĐ-CP', 'Nghị định số 214/2025/NĐ-CP'), (r'24/2024/NĐ-CP', '214/2025/NĐ-CP')],
-    'VP01': [(r'chạy được', 'hoạt động được'), (r'dùng được', 'có thể sử dụng'),
+    'VP01': [(r'không chạy được', 'không hoạt động được'), (r'không dùng được', 'không sử dụng được'), (r'(?<!không )chạy được', 'hoạt động được'), (r'(?<!không )dùng được', 'có thể sử dụng'),
              (r'lỗi chặn', 'lỗi nghiêm trọng làm gián đoạn vận hành'), (r'đóng lỗi', 'khắc phục dứt điểm lỗi'),
              (r'go-live', 'đưa hệ thống vào vận hành')],
 }

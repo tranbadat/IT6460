@@ -6,6 +6,13 @@ Khung có đủ cấu trúc theo Mẫu 5A. Các mục cơ học (tên, số li�
 được điền sẵn. Các mục cần diễn đạt nội dung từ RFP để dạng <<SOẠN:ID>> và mô tả trong khóa "can_soan"
 (hướng dẫn của mẫu, nguồn dữ liệu, dạng kết quả). Agent Soạn thảo chỉ viết file ban_soan.json cho các ID này.
 """
+import os as _os, sys as _sys  # noqa: E401
+_os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
+for _s in (_sys.stdout, _sys.stderr):
+    try:
+        _s.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 import json, re, sys
 
 ct = json.load(open(sys.argv[1], encoding='utf-8'))
@@ -107,12 +114,37 @@ br()
 
 # ---------------- Chương II: E-BDL
 pt = cs['ty_le_bao_dam_du_thau_phan_tram']
+TU_VAN_5_1_C = ['Tư vấn lập thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán', 'Tư vấn thẩm tra thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán',
+                'Tư vấn thẩm định giá', 'Tư vấn giám sát thực hiện hợp đồng, kiểm định', 'Tư vấn lập E-HSMT', 'Tư vấn thẩm định E-HSMT',
+                'Tư vấn đánh giá E-HSDT', 'Tư vấn thẩm định kết quả lựa chọn nhà thầu',
+                'Tư vấn quản lý dự án, quản lý hợp đồng, tư vấn khác mà các dịch vụ tư vấn này có phần công việc liên quan trực tiếp tới gói thầu']
+
+
+def bdl_5_1_c():
+    # Nguyên văn Mục 5.1 (c) E-BDL của Mẫu 5A, chỉ điền các chỗ trống
+    tu_van = 'không có' if not gt['dung_tu_van_dau_thau'] else 'theo E-TBMT trên Hệ thống'
+    return ([f"Bảo đảm cạnh tranh trong đấu thầu theo quy định như sau: Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp trên 30% với: {CDT}, {cdt['dia_chi']}.",
+             '+ Trường hợp nhà thầu, chủ đầu tư là công ty mẹ, công ty con, công ty thành viên trong tập đoàn kinh tế nhà nước, tổng công ty nhà nước, nhà thầu được tham dự gói thầu của chủ đầu tư nếu sản phẩm, dịch vụ thuộc gói thầu đó thuộc ngành, nghề sản xuất, kinh doanh chính của tập đoàn kinh tế nhà nước, tổng công ty nhà nước.',
+             '+ Trường hợp nhà thầu là đơn vị sự nghiệp công lập, nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với Chủ đầu tư, trừ trường hợp: nhà thầu là đơn vị sự nghiệp công lập thuộc cơ quan quản lý nhà nước có chức năng, nhiệm vụ được giao phù hợp với tính chất gói thầu của cơ quan quản lý nhà nước đó; các đơn vị sự nghiệp công lập có cùng một cơ quan trực tiếp quản lý.',
+             '+ Đơn vị sự nghiệp công lập và doanh nghiệp có cùng một cơ quan trực tiếp quản lý, góp vốn khi tham dự thầu các gói thầu của nhau không phải đáp ứng quy định độc lập về pháp lý và độc lập về tài chính giữa nhà thầu với chủ đầu tư.',
+             '- Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp với các nhà thầu tư vấn; không cùng có cổ phần hoặc vốn góp trên 20% của một tổ chức, cá nhân khác với từng bên, cụ thể như sau:']
+            + [f'+ {ten}: {tu_van}.' for ten in TU_VAN_5_1_C]  # mỗi dòng một đoạn, kết thúc bằng dấu chấm (van_phong.md)
+            + ['Nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với nhà thầu tư vấn (đã nêu trên).',
+               'Tỷ lệ cổ phần, vốn góp giữa các bên được xác định tại thời điểm đóng thầu và theo tỷ lệ ghi trong giấy chứng nhận đăng ký doanh nghiệp, quyết định thành lập, các giấy tờ khác có giá trị tương đương.',
+               'Trường hợp nhà thầu tham dự thầu với tư cách liên danh hoặc nhà thầu tư vấn được lựa chọn với tư cách liên danh, tỷ lệ sở hữu vốn của tổ chức, cá nhân khác trong liên danh được xác định theo công thức sau:',
+               'Tỷ lệ sở hữu vốn = X1 x Y1 + X2 x Y2 + ... + Xn x Yn',
+               'Trong đó:',
+               'Xi: Tỷ lệ sở hữu vốn của tổ chức, cá nhân khác trong thành viên liên danh thứ i.',
+               'Yi: Tỷ lệ phần trăm (%) khối lượng công việc của thành viên liên danh thứ i trong thỏa thuận liên danh.',
+               'n: Số thành viên tham gia trong liên danh.',
+               '- Nhà thầu trong nước thuộc trường hợp quy định tại điểm g khoản 1 Điều 10 của Luật Đấu thầu khi chào thầu dịch vụ do nhà thầu đó cung cấp không phải đáp ứng quy định về bảo đảm cạnh tranh quy định tại Mục này.'])
+
+
 bdl_auto = {
     'E-CDNT 1.1': f'Tên Chủ đầu tư: {CDT}.',
     'E-CDNT 1.2': [f'Tên gói thầu: {GOI}.', f'Tên dự án: {DUAN}.', 'Số lượng, số hiệu các phần thuộc gói thầu: ' + ('gói thầu không chia phần.' if not gt['chia_phan'] else 'theo E-TBMT.')],
     'E-CDNT 3': f"Nguồn vốn: {gt['nguon_von']}.",
-    'E-CDNT 5.1 (c)': [f"Bảo đảm cạnh tranh trong đấu thầu: nhà thầu tham dự thầu không có cổ phần hoặc vốn góp trên 30% với {CDT}, {cdt['dia_chi']}."]
-                      + (['Gói thầu không sử dụng đơn vị tư vấn lập, thẩm định E-HSMT, đánh giá E-HSDT, thẩm định kết quả lựa chọn nhà thầu hoặc giám sát thực hiện hợp đồng. Chủ đầu tư tự thực hiện các công việc này.'] if not gt['dung_tu_van_dau_thau'] else []),
+    'E-CDNT 5.1 (c)': bdl_5_1_c(),
     'E-CDNT 7.5': (f"Hội nghị tiền đấu thầu: Có. Thời gian: {hn['gio']}, ngày {hn['ngay']}. Địa điểm: <<SOẠN:DIA_DIEM_HOI_NGHI>>. Người chịu trách nhiệm tổ chức: {NGUOI_LH}, email {EMAIL}." if hn else 'Hội nghị tiền đấu thầu: Không.'),
     'E-CDNT 8': 'Chi phí nộp E-HSDT: theo quy định hiện hành, do Hệ thống trích xuất.',
     'E-CDNT 10.8': 'Nhà thầu phải nộp cùng với E-HSDT các tài liệu sau đây: không yêu cầu.',
@@ -120,7 +152,8 @@ bdl_auto = {
     'E-CDNT 17.1': f"Thời hạn hiệu lực của E-HSDT là: ≥ {th['hieu_luc_hsdt_ngay']} ngày, kể từ ngày có thời điểm đóng thầu.",
     'E-CDNT 18.2': ['Nội dung bảo đảm dự thầu:',
                     f"- Giá trị bảo đảm dự thầu: {tien['bao_dam_du_thau']} đồng." + (' Do giá trị bảo đảm dự thầu nhỏ hơn 50 triệu đồng, nhà thầu thực hiện cam kết trong đơn dự thầu theo quy định tại Mục 18.8 E-CDNT.' if int(tien['bao_dam_du_thau'].replace('.', '')) < 50_000_000 else '')
-                    + ' Đối với nhà thầu có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP và được đăng tải trên Hệ thống mạng đấu thầu quốc gia phải thực hiện biện pháp bảo đảm dự thầu với giá trị gấp 03 lần giá trị yêu cầu nêu trên trong thời hạn 02 năm kể từ lần cuối cùng thực hiện các hành vi này.',
+                    + ' Đối với nhà thầu có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP và được đăng tải trên Hệ thống mạng đấu thầu quốc gia phải thực hiện biện pháp bảo đảm dự thầu với giá trị gấp 03 lần giá trị yêu cầu nêu trên trong thời hạn 02 năm kể từ lần cuối cùng thực hiện các hành vi này.'
+                    + ' Trường hợp nhà thầu liên danh, thành viên liên danh có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP như nêu trên phải thực hiện biện pháp bảo đảm dự thầu với giá trị gấp 03 lần giá trị bảo đảm dự thầu tương ứng với tỷ lệ giá trị công việc thành viên đó đảm nhận trong liên danh trong thời hạn 02 năm kể từ lần cuối cùng thực hiện hành vi này.',
                     f"- Thời gian có hiệu lực của bảo đảm dự thầu: ≥ {th['hieu_luc_bao_dam_du_thau_ngay']} ngày, kể từ ngày có thời điểm đóng thầu."],
     'E-CDNT 18.4': f"Thời gian hoàn trả hoặc giải tỏa bảo đảm dự thầu đối với nhà thầu không được lựa chọn: {th['hoan_tra_bao_dam_du_thau_ngay']} ngày, kể từ ngày kết quả lựa chọn nhà thầu được phê duyệt.",
     'E-CDNT 18.9': 'Bảo đảm dự thầu: không áp dụng.',
@@ -158,7 +191,9 @@ h2('Mục 1. Đánh giá tính hợp lệ của E-HSDT')
 B.append({'t': 'fixed_paras', 'key': 'muc1'})
 h2('Mục 2. Tiêu chuẩn đánh giá về năng lực và kinh nghiệm')
 h2('2.1. Tiêu chuẩn đánh giá về năng lực và kinh nghiệm')
-p('Sử dụng tiêu chí đạt, không đạt. Nhà thầu được đánh giá đạt tất cả nội dung tại Bảng số 01 thì đáp ứng yêu cầu về năng lực và kinh nghiệm. Năng lực và kinh nghiệm của nhà thầu phụ không được xem xét khi đánh giá E-HSDT của nhà thầu. Trường hợp tài liệu chứng minh năng lực, kinh nghiệm không bằng đồng Việt Nam, nhà thầu quy đổi theo tỷ giá bán ra của một ngân hàng thương mại hoạt động tại Việt Nam tại ngày có thời điểm đóng thầu.')
+p('Tiêu chuẩn đánh giá năng lực và kinh nghiệm thực hiện theo quy định tại Bảng số 01 Chương này và được số hóa dưới dạng webform trên Hệ thống, sử dụng tiêu chí đạt, không đạt. Nhà thầu được đánh giá đạt tất cả nội dung quy định tại Bảng số 01 thì đáp ứng yêu cầu về năng lực và kinh nghiệm. Năng lực và kinh nghiệm của nhà thầu phụ sẽ không được xem xét khi đánh giá E-HSDT của nhà thầu. Bản thân nhà thầu phải đáp ứng các tiêu chí đánh giá về năng lực và kinh nghiệm.')
+p('Trường hợp đồng tiền nêu trong các hợp đồng tương tự hoặc xác nhận thanh toán của Chủ đầu tư đối với những hợp đồng cung cấp dịch vụ phi tư vấn đã thực hiện hoặc tờ khai nộp thuế hoặc các tài liệu liên quan chứng minh năng lực, kinh nghiệm của nhà thầu không phải VND thì khi lập E-HSDT, nhà thầu phải quy đổi về VND để làm cơ sở đánh giá E-HSDT. Việc quy đổi được áp dụng tỷ giá bán ra của một ngân hàng thương mại hoạt động tại Việt Nam tại ngày ký hợp đồng tương tự đó.')
+p('Trường hợp nhà thầu tham dự thầu là công ty mẹ (ví dụ như Tổng công ty) có huy động công ty con, công ty thành viên thực hiện một phần công việc của gói thầu thì nhà thầu phải kê khai cụ thể phần công việc dành cho các công ty con, công ty thành viên theo Mẫu số 09B Chương IV. Việc đánh giá kinh nghiệm thực hiện hợp đồng tương tự căn cứ vào giá trị, khối lượng công việc do công ty mẹ, công ty con, công ty thành viên đảm nhiệm trong gói thầu.')
 p('Bảng số 01. Bảng tiêu chuẩn đánh giá về năng lực và kinh nghiệm (webform trên Hệ thống)')
 b01 = ct['bang01']
 hdr = next(r for r in b01 if len(r) >= 6 and r[0] == 'TT' and 'Tổng các thành viên liên danh' in ' '.join(r))
@@ -215,12 +250,12 @@ def ap_dung(ma):
     return 'Áp dụng'
 
 
-bm = [['STT', 'Biểu mẫu', 'Trách nhiệm', 'Áp dụng']]
+bm = [['STT', 'Biểu mẫu', 'Cách thức thực hiện', 'Trách nhiệm thực hiện', 'Áp dụng']]
 for r in ct['chuong4_bieu_mau']:
     if not r or not r[0].isdigit(): continue
     ma = re.match(r'Mẫu số (\w+)\.', r[1]).group(1)
-    bm.append([r[0], r[1], 'Chủ đầu tư' if r[3] == 'X' else 'Nhà thầu', ap_dung(ma)])
-table(bm, [600, 4700, 1300, 3000], [0])
+    bm.append([r[0], r[1], r[2], 'Chủ đầu tư' if r[3] == 'X' else 'Nhà thầu', ap_dung(ma)])
+table(bm, [600, 3600, 1800, 1200, 2400], [0])
 h2('2. Mẫu số 01A. Phạm vi cung cấp (hợp đồng trọn gói)')
 B.append({'t': 'table', 'rows': [ct['mau01a_cot'][:2] + ['Mô tả dịch vụ'] + ct['mau01a_cot'][3:], S('MAU_01A', 'Các dòng của Mẫu 01A, mỗi dòng 7 ô: STT, danh mục dịch vụ, mô tả dịch vụ (dẫn chiếu mục Chương V), khối lượng (1), đơn vị tính (Gói), địa điểm thực hiện, ngày hoàn thành. Lập một hạng mục cho mỗi sản phẩm bàn giao của RFP, mỗi chức năng của hệ thống mới, việc tích hợp với hệ thống liên quan, kiểm thử hệ thống và kiểm thử vận hành, đào tạo chuyển giao và hỗ trợ cut over. Ngày hoàn thành ghi theo tiến độ được duyệt, trước ngày cut over, riêng hạng mục cut over ghi đúng ngày cut over.', ['rfp_yeu_cau.json: san_pham_ban_giao, he_thong, moc.cut_over', 'gia_tri_tinh.json: lich.cut_over'], 'dong_bang')],
           'widths': [500, 1900, 2200, 900, 800, 1800, 1500], 'center_cols': [0, 3, 4]})
@@ -248,6 +283,29 @@ br()
 
 # ---------------- Chương VII: E-ĐKCT
 tt = hd['thanh_toan']
+canh_bao = []
+so_vn = lambda v: str(v).replace('.', ',')
+
+
+def dkc_15():
+    # Nguyên văn Mục 15 E-ĐKCT của Mẫu 5A. Tỷ lệ phạt khắc phục sai sót và cách bồi thường là lựa chọn của chủ đầu tư.
+    pkss, bt = cs.get('phat_khac_phuc_sai_sot_phan_tram'), cs.get('boi_thuong_thiet_hai')
+    phat = (f"1. Phạt vi phạm hợp đồng: Áp dụng. Trừ trường hợp bất khả kháng theo quy định tại Mục 16 E-ĐKC, nếu Nhà thầu không thực hiện một phần hay toàn bộ nội dung công việc theo đúng thời hạn đã nêu trong hợp đồng thì Chủ đầu tư có thể khấu trừ vào giá hợp đồng một khoản tiền phạt tương ứng với {so_vn(cs['phat_cham_tien_do_phan_tram_ngay'])}%/ngày giá trị công việc chậm thực hiện cho đến khi nội dung công việc đó được thực hiện. "
+            f"Chủ đầu tư sẽ khấu trừ đến {so_vn(cs['phat_toi_da_phan_tram'])}% giá trị phần hợp đồng bị vi phạm. Khi đạt đến mức phạt tối đa, Chủ đầu tư có thể xem xét chấm dứt hợp đồng theo quy định tại Mục 19 E-ĐKC.")
+    if pkss is None:
+        canh_bao.append('Thiếu tham số chinh_sach.phat_khac_phuc_sai_sot_phan_tram: E-ĐKC 15 chưa có tỷ lệ phạt khi không kịp thời khắc phục sai sót')
+    else:
+        phat += f" Trường hợp không kịp thời khắc phục sai sót theo thông báo của Chủ đầu tư, Nhà thầu có trách nhiệm nộp tiền phạt thực hiện hợp đồng tương ứng với {so_vn(pkss)}% chi phí cần thiết để khắc phục sai sót."
+    if bt is None:
+        canh_bao.append('Thiếu tham số chinh_sach.boi_thuong_thiet_hai: E-ĐKC 15 chưa chọn cách bồi thường thiệt hại')
+        boi = '2. Bồi thường thiệt hại: Áp dụng theo quy định của pháp luật dân sự.'
+    elif bt == 'toan_bo_thiet_hai_thuc_te':
+        boi = '2. Bồi thường thiệt hại: Áp dụng. Bồi thường thiệt hại trên cơ sở toàn bộ thiệt hại thực tế.'
+    else:
+        boi = f'2. Bồi thường thiệt hại: Áp dụng. Bồi thường thiệt hại trên cơ sở một mức xác định: {bt}.'
+    return ['Vừa áp dụng phạt vi phạm hợp đồng vừa áp dụng bồi thường thiệt hại.', phat, boi]
+
+
 dkct_auto = {
     'E-ĐKC 1.3': f"Chủ đầu tư: {CDT}, {cdt['dia_chi']}; đại diện: {cdt['nguoi_dai_dien']}. Số tài khoản, mã số thuế, điện thoại được ghi khi hoàn thiện hợp đồng.",
     'E-ĐKC 1.11': 'Nhà thầu: nhà thầu trúng thầu. Tên, địa chỉ, số tài khoản, mã số thuế được ghi khi hoàn thiện hợp đồng.',
@@ -261,9 +319,7 @@ dkct_auto = {
     'E-ĐKC 10.2': 'Giá hợp đồng: cố định.' if gt['loai_hop_dong'] == 'trọn gói' else 'Giá hợp đồng: theo loại hợp đồng.',
     'E-ĐKC 11': 'Điều chỉnh thuế: không được phép.',
     'E-ĐKC 13.2': 'Giảm trừ thanh toán: không áp dụng.',
-    'E-ĐKC 15': ['Vừa áp dụng phạt vi phạm hợp đồng vừa áp dụng bồi thường thiệt hại.',
-                 f"1. Phạt vi phạm hợp đồng: áp dụng. Chậm tiến độ do lỗi của nhà thầu bị phạt {str(cs['phat_cham_tien_do_phan_tram_ngay']).replace('.', ',')}% giá trị phần hợp đồng bị chậm cho mỗi ngày chậm. Tổng mức phạt không vượt {cs['phat_toi_da_phan_tram']}% giá trị phần hợp đồng bị vi phạm.",
-                 '2. Bồi thường thiệt hại: áp dụng theo quy định của pháp luật.'],
+    'E-ĐKC 15': dkc_15(),
     'E-ĐKC 17.4': f"Trường hợp đề xuất giải pháp tiết kiệm chi phí được Chủ đầu tư chấp thuận và giúp giảm giá hợp đồng, Chủ đầu tư thanh toán cho nhà thầu {cs['tiet_kiem_chi_phi_phan_tram']}% giá trị giảm giá hợp đồng.",
     'E-ĐKC 18 (e)': 'Các trường hợp khác: không có.',
     'E-ĐKC 21.2': f"Thời gian nhà thầu thực hiện việc thay thế nhân sự: {cs['thay_the_nhan_su_ngay']:02d} ngày kể từ ngày nhận được yêu cầu thay thế nhân sự của Chủ đầu tư.",
@@ -311,7 +367,9 @@ table([['STT', 'Biểu mẫu', 'Áp dụng']] + [[str(i + 1), f"{x['ma']}. {tieu
 
 meta = {'ten': 'E-HSMT ' + GOI, 'header': 'E-HSMT - Gói thầu dịch vụ phi tư vấn (Mẫu số 5A, TT 79/2025/TT-BTC)', 'font': 'Times New Roman', 'size_pt': 13,
         'page': 'A4', 'margin_twip': {'top': 1134, 'bottom': 1134, 'left': 1417, 'right': 1134}}
-json.dump({'meta': meta, 'can_soan': can_soan, 'blocks': B}, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+json.dump({'meta': meta, 'can_soan': can_soan, 'canh_bao': canh_bao, 'blocks': B}, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print(f'Đã lập khung: {len(B)} khối, {len(can_soan)} mục cần agent soạn:')
+for c in canh_bao:
+    print('CẢNH BÁO:', c)
 for k, v in can_soan.items():
     print(f'  {k} ({v["dang"]})')

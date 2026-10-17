@@ -1,0 +1,542 @@
+{
+ "id": "chi_phi",
+ "ten": "Thuyết minh dự toán chi phí",
+ "nut_ra": "doc_chi_phi",
+ "ngay_tai_lieu": [
+  "{nt#ngay_ky_don|ngay}",
+  "{da#ngay_bat_dau|ngay}"
+ ],
+ "tieu_de_dau_trang": "Cost estimate - Thuyết minh dự toán chi phí",
+ "nguon": {
+  "cp": "du_lieu/chi_phi.json",
+  "wbs": "du_lieu/wbs.json",
+  "hsmt": "du_lieu/hsmt.json",
+  "rr": "du_lieu/rui_ro.json",
+  "lich": "du_lieu/lich.json",
+  "nt": "dau_vao/nha_thau.json",
+  "da": "dau_vao/du_an.json"
+ },
+ "bia": {
+  "tieu_de": "Thuyết minh dự toán chi phí",
+  "dong_phu": [
+   "Cost estimate, kèm tệp Cost_estimate.xlsx"
+  ]
+ },
+ "muc_luc": true,
+ "khoi": [
+  {
+   "h1": "1. Căn cứ và phương pháp"
+  },
+  {
+   "soan": "CAN_CU",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 3,
+   "huong_dan": "Nêu căn cứ: phạm vi theo HSMT và WBS, đơn giá trọn gói theo loại công việc và nguồn của đơn giá, lương tham chiếu dùng để đối chiếu. Nêu phương pháp: dòng A tính từ MD theo loại công việc, dòng B theo danh mục, dự phòng so với EMV của sổ rủi ro, khoản C và thuế. Nêu quan hệ với Mẫu 11A của HSDT.",
+   "nguon": [
+    "cp",
+    "wbs",
+    "hsmt"
+   ],
+   "bat_buoc": [
+    "{wbs#tong_md|md} MD",
+    "Mẫu 11A"
+   ]
+  },
+  {
+   "h1": "2. Nhân công theo loại công việc"
+  },
+  {
+   "bang": {
+    "nguon": "cp#nhan_cong",
+    "cot": [
+     [
+      "Loại",
+      "loai",
+      1100,
+      "c"
+     ],
+     [
+      "Loại công việc",
+      "ten",
+      2700
+     ],
+     [
+      "MD",
+      "md|md",
+      1000,
+      "r"
+     ],
+     [
+      "Người-tháng",
+      "mm|so2",
+      1200,
+      "r"
+     ],
+     [
+      "Đơn giá, đồng/người-tháng",
+      "don_gia_thang|tien",
+      1700,
+      "r"
+     ],
+     [
+      "Thành tiền, đồng",
+      "thanh_tien|tien",
+      1800,
+      "r"
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "A. Tổng nhân công",
+     "cot": [
+      2,
+      5
+     ]
+    }
+   }
+  },
+  {
+   "doan": "Một người-tháng tính bằng {cp#md_moi_mm|nguyen} MD. Tổng khối lượng {cp#tong_md|md} MD, tương đương {cp#tong_mm|so2} người-tháng. Nguồn đơn giá: {cp#nguon_don_gia}."
+  },
+  {
+   "h1": "3. Tổng hợp dự toán và giá chào"
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Khoản mục",
+      "Giá trị, đồng"
+     ],
+     [
+      "A. Nhân công theo loại công việc",
+      "{cp#A|tien}"
+     ],
+     [
+      "B. Chi phí khác",
+      "{cp#B|tien}"
+     ],
+     [
+      "D. Dự phòng rủi ro tách riêng",
+      "{cp#D|tien}"
+     ],
+     [
+      "Chi phí đã biết (A + B + D)",
+      "{cp#chi_phi_da_biet|tien}"
+     ],
+     [
+      "C. Chi phí chung và lợi nhuận",
+      "{cp#C|tien}"
+     ],
+     [
+      "Giá trước thuế",
+      "{cp#gia_truoc_thue|tien}"
+     ],
+     [
+      "Thuế GTGT",
+      "{cp#thue|tien}"
+     ],
+     [
+      "Giá chào trọn gói",
+      "{cp#gia_chao|tien}"
+     ],
+     [
+      "Giá gói thầu theo HSMT",
+      "{cp#gia_goi_thau|tien}"
+     ]
+    ],
+    "widths": [
+     6300,
+     3000
+    ],
+    "right_cols": [
+     1
+    ]
+   }
+  },
+  {
+   "doan": "Giá chào thấp hơn giá gói thầu {cp#thap_hon_goi_thau|tien} đồng, tương đương {cp#ty_le_thap_hon|pt}. Khoản C bằng {cp#ty_le_C|pt} giá trước thuế. Căn cứ thuế: {cp#can_cu_thue}."
+  },
+  {
+   "soan": "GIA_CHAO",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1,
+   "huong_dan": "Giải thích cách xác định giá chào (mục tiêu hay cộng dồn), khoản C gồm những gì, vì sao mức C đủ cho chi phí quản lý, bảo hành và lợi nhuận, và vị trí giá so với giá gói thầu.",
+   "nguon": [
+    "cp"
+   ]
+  },
+  {
+   "h1": "4. Chi phí khác và dự phòng rủi ro"
+  },
+  {
+   "bang": {
+    "nguon": "cp#chi_phi_khac",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      800,
+      "c"
+     ],
+     [
+      "Khoản mục",
+      "ten",
+      4300
+     ],
+     [
+      "Số tiền, đồng",
+      "so_tien|tien",
+      1800,
+      "r"
+     ],
+     [
+      "Căn cứ",
+      "can_cu",
+      2400
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "B. Tổng chi phí khác",
+     "cot": [
+      2
+     ]
+    }
+   }
+  },
+  {
+   "doan": "Tổng EMV của sổ đăng ký rủi ro là {cp#tong_emv_rui_ro|tien} đồng. Dự phòng hiện có là {cp#du_phong_hien_co|tien} đồng."
+  },
+  {
+   "soan": "DU_PHONG",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Đánh giá dự phòng đủ hay thiếu so với EMV, các rủi ro đóng góp EMV lớn nhất (dùng mã rủi ro), quy tắc sử dụng dự phòng: ai đề xuất, ai phê duyệt, ghi nhận vào sổ thay đổi, cập nhật dự toán.",
+   "nguon": [
+    "cp",
+    "rr"
+   ],
+   "bat_buoc": [
+    "{rr#danh_sach[0].ma}"
+   ]
+  },
+  {
+   "h1": "5. Đối chiếu chi phí lương theo người"
+  },
+  {
+   "bang": {
+    "nguon": "cp#doi_chieu_nguoi",
+    "cot": [
+     [
+      "Họ tên",
+      "ho_ten",
+      2200
+     ],
+     [
+      "Nhóm",
+      "loai",
+      1500
+     ],
+     [
+      "Lương tham chiếu, đồng/tháng",
+      "luong|tien",
+      1500,
+      "r"
+     ],
+     [
+      "Đơn giá ngày gồm bảo hiểm, đồng",
+      "don_gia_ngay|tien",
+      1300,
+      "r"
+     ],
+     [
+      "MD huy động",
+      "md_huy_dong|md",
+      1100,
+      "r"
+     ],
+     [
+      "Chi phí, đồng",
+      "chi_phi|tien",
+      1700,
+      "r"
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng",
+     "cot": [
+      4,
+      5
+     ],
+     "cot_nhan": 0
+    }
+   }
+  },
+  {
+   "doan": "Lương tham chiếu: {cp#nguon_luong}, hệ số bảo hiểm {cp#he_so_bao_hiem|so3}, {cp#ngay_lam_viec_moi_thang|nguyen} ngày làm việc mỗi tháng. Chi phí lương theo người là {cp#tong_chi_phi_nguoi|tien} đồng cho {cp#tong_md_huy_dong|md} MD huy động, bình quân {cp#luong_binh_quan_md_huy_dong|tien} đồng mỗi MD huy động. Dòng A trừ chi phí này còn {cp#chenh_lech_A_nguoi|tien} đồng, bằng {cp#ty_le_chenh_lech_A|pt} so với dòng A. Dòng A đủ chi trả lương khi tổng MD huy động không vượt {cp#md_huy_dong_hoa_von|md} MD, tức tỷ lệ sử dụng quỹ huy động từ {cp#ty_le_su_dung_hoa_von|pt} trở lên. Tỷ lệ sử dụng theo kế hoạch hiện tại là {cp#ty_le_su_dung|pt}."
+  },
+  {
+   "soan": "DOI_CHIEU",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1,
+   "huong_dan": "Nhận xét kết quả đối chiếu: dòng A theo loại công việc so với chi phí lương theo người, ý nghĩa của mức huy động hòa vốn và tỷ lệ sử dụng hòa vốn, biện pháp khi tỷ lệ sử dụng thấp hơn mức hòa vốn.",
+   "nguon": [
+    "cp"
+   ]
+  },
+  {
+   "h1": "6. Phân bổ giá theo hạng mục Mẫu 01A"
+  },
+  {
+   "bang": {
+    "nguon": "cp#mau_11a",
+    "cot": [
+     [
+      "STT",
+      "stt",
+      600,
+      "c"
+     ],
+     [
+      "Danh mục dịch vụ",
+      "danh_muc",
+      4200
+     ],
+     [
+      "Khối lượng",
+      "khoi_luong",
+      900,
+      "c"
+     ],
+     [
+      "Đơn vị",
+      "don_vi",
+      800,
+      "c"
+     ],
+     [
+      "Thành tiền, đồng",
+      "thanh_tien|tien",
+      2800,
+      "r"
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng cộng",
+     "cot": [
+      4
+     ]
+    }
+   }
+  },
+  {
+   "doan": "Thành tiền phân bổ theo tỷ trọng chi phí nhân công của từng hạng mục, tổng bằng giá chào {cp#gia_chao|tien} đồng."
+  },
+  {
+   "h1": "7. Phân bổ theo nhóm WBS"
+  },
+  {
+   "bang": {
+    "nguon": "cp#theo_wbs",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Nhóm công việc",
+      "ten",
+      4000
+     ],
+     [
+      "MD",
+      "md|md",
+      1000,
+      "r"
+     ],
+     [
+      "Chi phí nhân công, đồng",
+      "chi_phi_a|tien",
+      1800,
+      "r"
+     ],
+     [
+      "Giá phân bổ, đồng",
+      "gia_phan_bo|tien",
+      1800,
+      "r"
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng cộng",
+     "cot": [
+      2,
+      3,
+      4
+     ]
+    }
+   }
+  },
+  {
+   "h1": "8. Dòng tiền theo sprint"
+  },
+  {
+   "bang": {
+    "nguon": "cp#thanh_toan",
+    "cot": [
+     [
+      "Đợt",
+      "dot",
+      600,
+      "c"
+     ],
+     [
+      "Tỷ lệ, %",
+      "phan_tram",
+      700,
+      "c"
+     ],
+     [
+      "Sự kiện",
+      "su_kien",
+      3300
+     ],
+     [
+      "Ngày sự kiện",
+      "ngay_su_kien|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Ngày thu dự kiến",
+      "ngay|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Sprint thu",
+      "sprint",
+      1000,
+      "c"
+     ],
+     [
+      "Số tiền, đồng",
+      "so_tien|tien",
+      1500,
+      "r"
+     ]
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "cp#dong_tien",
+    "cot": [
+     [
+      "Sprint",
+      "sprint",
+      900,
+      "c"
+     ],
+     [
+      "Chi lương kế hoạch, đồng",
+      "chi_luong|tien",
+      1350,
+      "r"
+     ],
+     [
+      "Chi lương theo huy động, đồng",
+      "chi_luong_huy_dong|tien",
+      1350,
+      "r"
+     ],
+     [
+      "Thu, đồng",
+      "thu|tien",
+      1300,
+      "r"
+     ],
+     [
+      "Lũy kế chi, đồng",
+      "luy_ke_chi|tien",
+      1400,
+      "r"
+     ],
+     [
+      "Lũy kế thu, đồng",
+      "luy_ke_thu|tien",
+      1400,
+      "r"
+     ],
+     [
+      "Chênh lệch, đồng",
+      "chenh_lech|tien",
+      1400,
+      "r"
+     ]
+    ]
+   }
+  },
+  {
+   "soan": "DONG_TIEN",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1,
+   "huong_dan": "Nhận xét dòng tiền: dòng chi tính theo lương của thời gian huy động, dòng thu theo ngày sự kiện cộng thời hạn thanh toán của HSMT. Nêu sprint có lũy kế âm và mức âm lớn nhất, nhu cầu vốn lưu động, quan hệ giữa các mốc trong master schedule và các đợt thanh toán, rủi ro khi mốc trễ.",
+   "nguon": [
+    "cp",
+    "lich"
+   ]
+  },
+  {
+   "h1": "9. Độ nhạy và rủi ro chi phí"
+  },
+  {
+   "doan": "Sau khi trừ chi phí lương theo người huy động, chi phí khác và dự phòng, khoản còn lại của giá trước thuế là {cp#C_sau_luong|tien} đồng, bằng {cp#ty_le_C_sau_luong|pt}, tương đương khoảng {cp#nguong_chiu_dung_md|nguyen} MD huy động theo lương bình quân. Nếu áp thuế suất {cp#do_nhay_thue.thue_suat|pt}, giá trước thuế là {cp#do_nhay_thue.gia_truoc_thue|tien} đồng, khoản C còn {cp#do_nhay_thue.C|tien} đồng ({cp#do_nhay_thue.ty_le_C|pt}) và khoản còn lại sau chi phí lương thực tế còn {cp#do_nhay_thue.C_sau_luong|tien} đồng ({cp#do_nhay_thue.ty_le_C_sau_luong|pt})."
+  },
+  {
+   "soan": "DO_NHAY",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Phân tích các yếu tố làm chi phí tăng (khối lượng tăng, năng suất giảm, thuế, rủi ro tích hợp), ngưỡng chịu đựng của giá chào, và cách kiểm soát chi phí khi thực hiện (CPI theo sprint, quy trình thay đổi).",
+   "nguon": [
+    "cp",
+    "rr"
+   ],
+   "bat_buoc": [
+    "CPI"
+   ]
+  }
+ ],
+ "kiem_tra": {
+  "gia_tri": [
+   {
+    "mo_ta": "Giá chào",
+    "bt": "{cp#gia_chao|tien}"
+   },
+   {
+    "mo_ta": "Dòng A",
+    "bt": "{cp#A|tien}"
+   },
+   {
+    "mo_ta": "Tổng MD",
+    "bt": "{wbs#tong_md|md}"
+   },
+   {
+    "mo_ta": "Giá gói thầu",
+    "bt": "{hsmt#tien.gia_goi_thau|tien}"
+   },
+   {
+    "mo_ta": "Khoản còn lại sau chi phí lương thực tế",
+    "bt": "{cp#C_sau_luong|tien}"
+   }
+  ],
+  "doc_hieu": [
+   "Phương pháp tính giải thích được từng dòng của Excel",
+   "Dự phòng được so với EMV và có quy tắc sử dụng",
+   "Nhận xét dòng tiền gắn với mốc thanh toán",
+   "Độ nhạy nêu ngưỡng chịu đựng cụ thể",
+   "Số liệu trong Word khớp tệp Cost_estimate.xlsx"
+  ]
+ }
+}

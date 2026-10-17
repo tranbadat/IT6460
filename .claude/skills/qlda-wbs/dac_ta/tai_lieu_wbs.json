@@ -1,0 +1,17 @@
+{
+ "id": "tai_lieu_wbs",
+ "ten": "WBS",
+ "_ghi_chu": "Chỉ dùng cho kiểm tra trình bày, văn phong các file WBS do xuat_wbs.py tạo.",
+ "khoi": [],
+ "kiem_tra": {
+  "cho_phep_dam": true,
+  "doc_hieu": [
+   "Tên gói dạng danh từ, gắn sản phẩm kiểm tra được",
+   "Mức 2 của phân hệ theo vòng đời",
+   "Không có gói thuộc chức năng quản trị nội bộ",
+   "Gói tích hợp tách riêng cho mỗi hệ thống bên ngoài",
+   "Sơ đồ cây và bảng chi tiết khớp nhau"
+  ]
+ },
+ "chi_kiem_tra": "python .claude/skills/qlda-wbs/scripts/xuat_wbs.py"
+}

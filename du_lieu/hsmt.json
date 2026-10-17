@@ -1,0 +1,360 @@
+{
+ "goi_thau": {
+  "ten": "Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+  "du_an": "Phát triển kênh bán hàng trực tuyến của Công ty Cổ phần ABC Wear",
+  "linh_vuc": "dịch vụ phi tư vấn",
+  "nguon_von": "vốn tự có, vốn chủ sở hữu của Công ty Cổ phần ABC Wear",
+  "chu_dau_tu_tu_lua_chon_ap_dung_luat": true,
+  "gia_goi_thau": 2000000000,
+  "loai_hop_dong": "trọn gói",
+  "hinh_thuc": "đấu thầu rộng rãi trong nước, qua mạng",
+  "phuong_thuc": "một giai đoạn một túi hồ sơ",
+  "chia_phan": false,
+  "dung_tu_van_dau_thau": false,
+  "chu_dau_tu": "Công ty Cổ phần ABC Wear"
+ },
+ "lich": {
+  "phat_hanh": "22/02/2027",
+  "dong_thau": "08/03/2027",
+  "gio_dong_thau": "9 giờ 00",
+  "gio_mo_thau": "9 giờ 30",
+  "so_ngay_chuan_bi_hsdt": 14,
+  "han_nha_thau_de_nghi_lam_ro": "03/03/2027",
+  "han_chu_dau_tu_tra_loi": "04/03/2027",
+  "hoi_nghi_tien_dau_thau": {
+   "ngay": "01/03/2027",
+   "gio": "9 giờ 00"
+  },
+  "hop_dong_hieu_luc_du_kien": "18/03/2027",
+  "cut_over": "01/07/2027",
+  "so_tuan_thuc_hien": 15,
+  "cut_over_iso": "2027-07-01",
+  "hop_dong_hieu_luc_iso": "2027-03-18",
+  "dong_thau_iso": "2027-03-08",
+  "phat_hanh_iso": "2027-02-22"
+ },
+ "tien": {
+  "gia_goi_thau": 2000000000,
+  "bao_dam_du_thau": 30000000,
+  "doanh_thu_binh_quan_toi_thieu": 2000000000,
+  "hop_dong_tuong_tu_toi_thieu": 600000000
+ },
+ "thoi_han": {
+  "hieu_luc_hsdt_ngay": 90,
+  "hieu_luc_bao_dam_du_thau_ngay": 120,
+  "hoan_tra_bao_dam_du_thau_ngay": 14,
+  "hieu_luc_bao_dam_thuc_hien_den": "31 tháng 07 năm 2027"
+ },
+ "nang_luc": {
+  "moc_lich_su_hop_dong": "01 tháng 01 năm 2024",
+  "moc_hop_dong_tuong_tu": "01 tháng 01 năm 2024",
+  "nam_tai_chinh_gan_nhat": 2025,
+  "cac_nam_doanh_thu": [
+   2023,
+   2024,
+   2025
+  ],
+  "he_so_k": 1.0,
+  "ty_le_hop_dong_tuong_tu": 30
+ },
+ "ky_thuat": {
+  "tieu_chi": [
+   {
+    "stt": 1,
+    "ten": "Hiểu biết về mục tiêu dự án và giải pháp kỹ thuật tổng thể: mức độ hiểu mục tiêu mở rộng khách hàng qua internet, mô hình hệ thống mới, điều kiện tiền đề của đề xuất và giải pháp bảo đảm các yêu cầu phi chức năng gồm hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm, thời gian phản hồi không quá 2 giây và khách hàng thao tác dễ dàng.",
+    "diem_toi_da": 30,
+    "diem_toi_thieu": 18
+   },
+   {
+    "stt": 2,
+    "ten": "Phạm vi công việc, sản phẩm đầu ra, phương pháp thực hiện và bảo đảm chất lượng: mức độ đầy đủ của phạm vi công việc từ phân tích hệ thống đến kiểm thử vận hành, các sản phẩm bàn giao nêu tại mục 3.3 Chương V, phương pháp phát triển, kiểm thử và bảo đảm chất lượng.",
+    "diem_toi_da": 20,
+    "diem_toi_thieu": 12
+   },
+   {
+    "stt": 3,
+    "ten": "Kế hoạch, tiến độ, tổ chức và nhân sự: tính hợp lý và khả thi của tiến độ đến ngày đưa hệ thống vào vận hành (cut over) 01/07/2027, tổ chức thực hiện dự án của nhà thầu, bố trí nhân sự và kế hoạch họp.",
+    "diem_toi_da": 20,
+    "diem_toi_thieu": 12
+   },
+   {
+    "stt": 4,
+    "ten": "Vai trò, trách nhiệm, quản lý thay đổi, rủi ro và bảo hành: sự rõ ràng về vai trò và trách nhiệm của các bên, cách quản lý thay đổi đặc tả, quản lý rủi ro và cam kết khắc phục sai sót trong thời hạn 12 tháng kể từ ngày hệ thống được nghiệm thu.",
+    "diem_toi_da": 15,
+    "diem_toi_thieu": 9
+   },
+   {
+    "stt": 5,
+    "ten": "Điều kiện khác và đề xuất bổ sung: điều kiện khác liên quan đến hợp đồng, đề nghị đối với Chủ đầu tư, đề xuất khác có lợi cho thành công của dự án và thông tin về kết quả thực hiện hợp đồng của nhà thầu theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP.",
+    "diem_toi_da": 15,
+    "diem_toi_thieu": 9
+   }
+  ],
+  "tong_toi_thieu": 70
+ },
+ "nhan_su_chu_chot": [
+  {
+   "stt": 1,
+   "vi_tri": "Quản trị dự án",
+   "so_luong": 1,
+   "kinh_nghiem": "Tối thiểu 03 năm quản lý dự án phần mềm hoặc tối thiểu 02 hợp đồng tương tự",
+   "chung_chi": "Không yêu cầu"
+  },
+  {
+   "stt": 2,
+   "vi_tri": "Kỹ sư phát triển phần mềm",
+   "so_luong": 3,
+   "kinh_nghiem": "Tối thiểu 02 năm lập trình ứng dụng web",
+   "chung_chi": "Không yêu cầu"
+  },
+  {
+   "stt": 3,
+   "vi_tri": "Kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử",
+   "so_luong": 1,
+   "kinh_nghiem": "Tối thiểu 02 năm phân tích nghiệp vụ hoặc kiểm thử phần mềm",
+   "chung_chi": "Không yêu cầu"
+  }
+ ],
+ "mau_01a": [
+  {
+   "stt": 1,
+   "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+   "mo_ta": "Chương V mục 3.1 và 3.3. Phân tích yêu cầu, lập đặc tả Web Selling Site System gồm cấu hình cơ sở dữ liệu (DB Configuration) và chức năng (Function), được hai bên xác nhận",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
+  },
+  {
+   "stt": 2,
+   "danh_muc": "Thiết kế quy trình vận hành mới (New Operational Flow)",
+   "mo_ta": "Chương V mục 3.3. Lập quy trình vận hành mới của kênh bán hàng trực tuyến, gắn với các chức năng của hệ thống và Main System",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
+  },
+  {
+   "stt": 3,
+   "danh_muc": "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+   "mo_ta": "Chương V mục 3.1 và 3.3. Thiết kế cấu trúc cơ sở dữ liệu bán hàng phù hợp với đặc tả và yêu cầu tích hợp với Main System",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
+  },
+  {
+   "stt": 4,
+   "danh_muc": "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+   "mo_ta": "Chương V mục 3.3 và 3.4. Thiết kế hệ thống menu và giao diện các màn hình chính của chức năng tìm kiếm sản phẩm, quản lý thành viên, đặt hàng, bảo đảm khách hàng thao tác dễ dàng",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
+  },
+  {
+   "stt": 5,
+   "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+   "mo_ta": "Chương V mục 3.1 và 3.4. Chức năng cho khách hàng tìm kiếm sản phẩm qua internet",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
+  },
+  {
+   "stt": 6,
+   "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+   "mo_ta": "Chương V mục 3.1 và 3.4. Chức năng đăng ký và quản lý thông tin thành viên",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
+  },
+  {
+   "stt": 7,
+   "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+   "mo_ta": "Chương V mục 3.1 và 3.4. Chức năng cho khách hàng đặt hàng trực tuyến",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
+  },
+  {
+   "stt": 8,
+   "danh_muc": "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+   "mo_ta": "Chương V mục 3.1. Xây dựng Selling DB theo cấu trúc cơ sở dữ liệu được xác nhận tại hạng mục 3",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
+  },
+  {
+   "stt": 9,
+   "danh_muc": "Tích hợp với hệ thống chính (Main System)",
+   "mo_ta": "Chương V mục 3.1. Kết nối và trao đổi dữ liệu giữa Selling DB và Main System, phục vụ quản trị bán hàng, sản phẩm, logistics, giao dịch và vận chuyển",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
+  },
+  {
+   "stt": 10,
+   "danh_muc": "Kiểm thử hệ thống",
+   "mo_ta": "Chương V mục 3.2 và 3.4. Kiểm thử chức năng, kiểm thử tích hợp và kiểm thử các yêu cầu phi chức năng về hoạt động liên tục và thời gian phản hồi",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
+  },
+  {
+   "stt": 11,
+   "danh_muc": "Kiểm thử vận hành (Operation Test)",
+   "mo_ta": "Chương V mục 3.2. Kiểm thử hệ thống trong điều kiện vận hành theo quy trình vận hành mới, có sự tham gia của Chủ đầu tư",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
+  },
+  {
+   "stt": 12,
+   "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
+   "mo_ta": "Chương V mục 3.2. Chuyển giao tài liệu, hướng dẫn cán bộ của Chủ đầu tư vận hành hệ thống theo quy trình vận hành mới",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "Theo tiến độ được duyệt, trước ngày 01/07/2027"
+  },
+  {
+   "stt": 13,
+   "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+   "mo_ta": "Chương V mục 3.2. Chuyển hệ thống sang vận hành chính thức ngày 01/07/2027",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
+   "ngay_hoan_thanh": "01/07/2027"
+  }
+ ],
+ "hop_dong": {
+  "bao_dam_thuc_hien_phan_tram": 3,
+  "tam_ung_phan_tram": 15,
+  "thanh_toan": [
+   {
+    "dot": 1,
+    "phan_tram": 15,
+    "su_kien": "tạm ứng"
+   },
+   {
+    "dot": 2,
+    "phan_tram": 25,
+    "su_kien": "hai bên xác nhận đặc tả yêu cầu (baseline) và giao diện ưu tiên"
+   },
+   {
+    "dot": 3,
+    "phan_tram": 30,
+    "su_kien": "hoàn thành các chức năng chính của hệ thống và tích hợp với các hệ thống liên quan"
+   },
+   {
+    "dot": 4,
+    "phan_tram": 25,
+    "su_kien": "hệ thống đưa vào vận hành và được nghiệm thu"
+   },
+   {
+    "dot": 5,
+    "phan_tram": 5,
+    "su_kien": "nhà thầu nộp bảo lãnh bảo hành"
+   }
+  ],
+  "nha_thau_phu_toi_da_phan_tram": 40,
+  "bao_hanh_thang": 12,
+  "bao_lanh_bao_hanh_phan_tram": 5,
+  "phat_cham_tien_do_phan_tram_ngay": 0.1,
+  "phat_toi_da_phan_tram": 8,
+  "ty_le_nha_thau_phu_toi_da_phan_tram": 40,
+  "thanh_toan_trong_ngay": 15,
+  "thay_the_nhan_su_ngay": 7
+ },
+ "e_bdl": {
+  "E-CDNT 1.1": "Tên Chủ đầu tư: Công ty Cổ phần ABC Wear.",
+  "E-CDNT 1.2": "Tên gói thầu: Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System). Tên dự án: Phát triển kênh bán hàng trực tuyến của Công ty Cổ phần ABC Wear. Số lượng, số hiệu các phần thuộc gói thầu: gói thầu không chia phần.",
+  "E-CDNT 3": "Nguồn vốn: vốn tự có, vốn chủ sở hữu của Công ty Cổ phần ABC Wear.",
+  "E-CDNT 5.1 (c)": "Bảo đảm cạnh tranh trong đấu thầu theo quy định như sau: Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp trên 30% với: Công ty Cổ phần ABC Wear, trụ sở chính Công ty Cổ phần ABC Wear. + Trường hợp nhà thầu, chủ đầu tư là công ty mẹ, công ty con, công ty thành viên trong tập đoàn kinh tế nhà nước, tổng công ty nhà nước, nhà thầu được tham dự gói thầu của chủ đầu tư nếu sản phẩm, dịch vụ thuộc gói thầu đó thuộc ngành, nghề sản xuất, kinh doanh chính của tập đoàn kinh tế nhà nước, tổng công ty nhà nước. + Trường hợp nhà thầu là đơn vị sự nghiệp công lập, nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với Chủ đầu tư, trừ trường hợp: nhà thầu là đơn vị sự nghiệp công lập thuộc cơ quan quản lý nhà nước có chức năng, nhiệm vụ được giao phù hợp với tính chất gói thầu của cơ quan quản lý nhà nước đó; các đơn vị sự nghiệp công lập có cùng một cơ quan trực tiếp quản lý. + Đơn vị sự nghiệp công lập và doanh nghiệp có cùng một cơ quan trực tiếp quản lý, góp vốn khi tham dự thầu các gói thầu của nhau không phải đáp ứng quy định độc lập về pháp lý và độc lập về tài chính giữa nhà thầu với chủ đầu tư. - Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp với các nhà thầu tư vấn; không cùng có cổ phần hoặc vốn góp trên 20% của một tổ chức, cá nhân khác với từng bên, cụ thể như sau: + Tư vấn lập thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán: không có. + Tư vấn thẩm tra thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán: không có. + Tư vấn thẩm định giá: không có. + Tư vấn giám sát thực hiện hợp đồng, kiểm định: không có. + Tư vấn lập E-HSMT: không có. + Tư vấn thẩm định E-HSMT: không có. + Tư vấn đánh giá E-HSDT: không có. + Tư vấn thẩm định kết quả lựa chọn nhà thầu: không có. + Tư vấn quản lý dự án, quản lý hợp đồng, tư vấn khác mà các dịch vụ tư vấn này có phần công việc liên quan trực tiếp tới gói thầu: không có. Nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với nhà thầu tư vấn (đã nêu trên). Tỷ lệ cổ phần, vốn góp giữa các bên được xác định tại thời điểm đóng thầu và theo tỷ lệ ghi trong giấy chứng nhận đăng ký doanh nghiệp, quyết định thành lập, các giấy tờ khác có giá trị tương đương. Trường hợp nhà thầu tham dự thầu với tư cách liên danh hoặc nhà thầu tư vấn được lựa chọn với tư cách liên danh, tỷ lệ sở hữu vốn của tổ chức, cá nhân khác trong liên danh được xác định theo công thức sau: Tỷ lệ sở hữu vốn = X1 x Y1 + X2 x Y2 + ... + Xn x Yn Trong đó: Xi: Tỷ lệ sở hữu vốn của tổ chức, cá nhân khác trong thành viên liên danh thứ i. Yi: Tỷ lệ phần trăm (%) khối lượng công việc của thành viên liên danh thứ i trong thỏa thuận liên danh. n: Số thành viên tham gia trong liên danh. - Nhà thầu trong nước thuộc trường hợp quy định tại điểm g khoản 1 Điều 10 của Luật Đấu thầu khi chào thầu dịch vụ do nhà thầu đó cung cấp không phải đáp ứng quy định về bảo đảm cạnh tranh quy định tại Mục này.",
+  "E-CDNT 7.5": "Hội nghị tiền đấu thầu: Có. Thời gian: 9 giờ 00, ngày 01/03/2027. Địa điểm: phòng họp A, trụ sở chính Công ty Cổ phần ABC Wear. Người chịu trách nhiệm tổ chức: Yamada, Phòng Kế hoạch, email yamada@abc.com.",
+  "E-CDNT 8": "Chi phí nộp E-HSDT: theo quy định hiện hành, do Hệ thống trích xuất.",
+  "E-CDNT 10.8": "Nhà thầu phải nộp cùng với E-HSDT các tài liệu sau đây: không yêu cầu.",
+  "E-CDNT 12.1": "Nhà thầu không được phép nộp đề xuất phương án kỹ thuật thay thế.",
+  "E-CDNT 17.1": "Thời hạn hiệu lực của E-HSDT là: ≥ 90 ngày, kể từ ngày có thời điểm đóng thầu.",
+  "E-CDNT 18.2": "Nội dung bảo đảm dự thầu: - Giá trị bảo đảm dự thầu: 30.000.000 đồng. Do giá trị bảo đảm dự thầu nhỏ hơn 50 triệu đồng, nhà thầu thực hiện cam kết trong đơn dự thầu theo quy định tại Mục 18.8 E-CDNT. Đối với nhà thầu có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP và được đăng tải trên Hệ thống mạng đấu thầu quốc gia phải thực hiện biện pháp bảo đảm dự thầu với giá trị gấp 03 lần giá trị yêu cầu nêu trên trong thời hạn 02 năm kể từ lần cuối cùng thực hiện các hành vi này. Trường hợp nhà thầu liên danh, thành viên liên danh có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP như nêu trên phải thực hiện biện pháp bảo đảm dự thầu với giá trị gấp 03 lần giá trị bảo đảm dự thầu tương ứng với tỷ lệ giá trị công việc thành viên đó đảm nhận trong liên danh trong thời hạn 02 năm kể từ lần cuối cùng thực hiện hành vi này. - Thời gian có hiệu lực của bảo đảm dự thầu: ≥ 120 ngày, kể từ ngày có thời điểm đóng thầu.",
+  "E-CDNT 18.4": "Thời gian hoàn trả hoặc giải tỏa bảo đảm dự thầu đối với nhà thầu không được lựa chọn: 14 ngày, kể từ ngày kết quả lựa chọn nhà thầu được phê duyệt.",
+  "E-CDNT 18.9": "Bảo đảm dự thầu: không áp dụng.",
+  "E-CDNT 27.2": "Giá trị tối đa dành cho nhà thầu phụ: 40% giá dự thầu của nhà thầu. Việc kê khai sử dụng nhà thầu phụ thực hiện theo Mẫu số 09A Chương IV.",
+  "E-CDNT 28.2": "Cách tính ưu đãi: sản phẩm đổi mới sáng tạo quy định tại khoản 4 Điều 6 của Nghị định số 214/2025/NĐ-CP là dịch vụ phi tư vấn của doanh nghiệp khởi nghiệp sáng tạo trong nước được hưởng ưu đãi như sau: Nhà thầu không thuộc đối tượng được hưởng ưu đãi phải cộng thêm một khoản tiền bằng 7,5% giá dự thầu trừ đi giá trị giảm giá (nếu có) vào giá dự thầu trừ đi giá trị giảm giá (nếu có) của nhà thầu đó để so sánh, xếp hạng.",
+  "E-CDNT 28.8": "Các ưu đãi khác: không có.",
+  "E-CDNT 29.1": "Phương pháp đánh giá E-HSDT là: - Đánh giá về năng lực và kinh nghiệm: Đạt/Không đạt. - Đánh giá về kỹ thuật: chấm điểm, theo Mục 3 Chương III. - Đánh giá về tài chính: phương pháp giá thấp nhất, theo Mục 4 Chương III.",
+  "E-CDNT 29.3 (đ)": "Xếp hạng nhà thầu: nhà thầu có giá dự thầu sau khi trừ đi giá trị giảm giá (nếu có) thấp nhất được xếp hạng thứ nhất.",
+  "E-CDNT 31.4": "Nhà thầu có giá dự thầu sau khi trừ đi giá trị giảm giá (nếu có) thấp nhất.",
+  "E-CDNT 31.5": "Giá gói thầu để làm căn cứ xét duyệt trúng thầu: giá gói thầu được phê duyệt trong kế hoạch lựa chọn nhà thầu là 2.000.000.000 đồng. Trường hợp dự toán của gói thầu được phê duyệt thấp hơn hoặc cao hơn giá gói thầu được phê duyệt thì dự toán này sẽ thay thế giá gói thầu để làm cơ sở xét duyệt trúng thầu.",
+  "E-CDNT 34.1": "Tỷ lệ tăng khối lượng tối đa là: 0%. Tỷ lệ giảm khối lượng tối đa là: 0%.",
+  "E-CDNT 34.2": "Tùy chọn mua thêm: không áp dụng.",
+  "E-CDNT 38.1": "- Người có thẩm quyền: Tổng Giám đốc Công ty Cổ phần ABC Wear. + Địa chỉ: trụ sở chính Công ty Cổ phần ABC Wear. + E-mail nhận đơn kiến nghị: yamada@abc.com (Phòng Kế hoạch tiếp nhận và chuyển người có thẩm quyền). - Bộ phận thường trực giúp việc cho Chủ tịch Hội đồng giải quyết kiến nghị: không thành lập, do gói thầu sử dụng vốn tự có của doanh nghiệp. Kiến nghị do người có thẩm quyền giải quyết.",
+  "E-CDNT 38.2": "- Nhà thầu gửi văn bản kiến nghị tới Chủ đầu tư qua Hệ thống hoặc qua e-mail yamada@abc.com. Văn bản kiến nghị nêu rõ nội dung kiến nghị, căn cứ và đề nghị của nhà thầu. - Chủ đầu tư xem xét, giải quyết và trả lời nhà thầu bằng văn bản trong thời hạn quy định của Luật Đấu thầu số 22/2023/QH15 và Nghị định số 214/2025/NĐ-CP. - Trường hợp Chủ đầu tư không trả lời trong thời hạn quy định hoặc nhà thầu không đồng ý với kết quả giải quyết, nhà thầu gửi kiến nghị tới người có thẩm quyền nêu tại Mục 38.1 E-BDL qua e-mail yamada@abc.com hoặc theo địa chỉ trụ sở chính Công ty Cổ phần ABC Wear. - Đầu mối tiếp nhận và theo dõi kiến nghị: Yamada, Phòng Kế hoạch, e-mail yamada@abc.com."
+ },
+ "e_dkct": {
+  "E-ĐKC 1.3": "Chủ đầu tư: Công ty Cổ phần ABC Wear, trụ sở chính Công ty Cổ phần ABC Wear; đại diện: Tổng Giám đốc. Số tài khoản, mã số thuế, điện thoại được ghi khi hoàn thiện hợp đồng.",
+  "E-ĐKC 1.5": "Địa điểm cung cấp dịch vụ là: trụ sở chính Công ty Cổ phần ABC Wear, nơi bàn giao sản phẩm, tích hợp với Main System, kiểm thử vận hành, chuyển giao và đưa hệ thống vào vận hành. Các công việc phân tích, thiết kế và xây dựng phần mềm được thực hiện tại nơi làm việc của nhà thầu hoặc tại trụ sở chính Công ty Cổ phần ABC Wear theo kế hoạch được hai bên thống nhất.",
+  "E-ĐKC 1.11": "Nhà thầu: nhà thầu trúng thầu. Tên, địa chỉ, số tài khoản, mã số thuế được ghi khi hoàn thiện hợp đồng.",
+  "E-ĐKC 2.2 (i)": "Các tài liệu sau đây cũng là một phần của Hợp đồng: - Biên bản xác nhận đặc tả yêu cầu giữa Chủ đầu tư và nhà thầu. - Các văn bản thống nhất thay đổi đặc tả theo Mục 17.1(c) E-ĐKCT.",
+  "E-ĐKC 4.1": "Các thông báo gửi về Chủ đầu tư theo địa chỉ: người nhận Yamada, Phòng Kế hoạch, địa chỉ trụ sở chính Công ty Cổ phần ABC Wear, e-mail yamada@abc.com.",
+  "E-ĐKC 5.2": "- Giá trị bảo đảm thực hiện hợp đồng: 3% giá hợp đồng. - Hiệu lực của bảo đảm thực hiện hợp đồng: kể từ ngày hợp đồng có hiệu lực cho đến hết ngày 31 tháng 07 năm 2027.",
+  "E-ĐKC 5.4": "Thời hạn hoàn trả bảo đảm thực hiện hợp đồng: trong vòng 14 ngày kể từ ngày nhà thầu hoàn thành các nghĩa vụ hợp đồng, sau khi hệ thống được nghiệm thu và đưa vào vận hành.",
+  "E-ĐKC 6.1": "Danh sách nhà thầu phụ: theo danh sách nhà thầu phụ nêu trong E-HSDT được Chủ đầu tư chấp thuận.",
+  "E-ĐKC 6.2": "Giá trị công việc mà nhà thầu phụ thực hiện không vượt quá: 40% giá hợp đồng.",
+  "E-ĐKC 6.4": "Mọi trường hợp thuê ngoài, kể cả sử dụng nhà thầu phụ chưa có trong E-HSDT, nhà thầu phải có văn bản đề nghị và chỉ được thực hiện sau khi được Chủ đầu tư chấp thuận bằng văn bản. Nhà thầu chịu trách nhiệm trước Chủ đầu tư về chất lượng, tiến độ và việc bảo mật thông tin đối với phần công việc thuê ngoài.",
+  "E-ĐKC 10.1": "Loại hợp đồng: trọn gói.",
+  "E-ĐKC 10.2": "Giá hợp đồng: cố định.",
+  "E-ĐKC 11": "Điều chỉnh thuế: không được phép.",
+  "E-ĐKC 12.1": "Tạm ứng: 15% giá hợp đồng. - Điều kiện tạm ứng: sau khi hợp đồng có hiệu lực, Chủ đầu tư nhận được văn bản đề nghị tạm ứng của nhà thầu và bảo lãnh tiền tạm ứng theo Mẫu số 16 Phần 4 hoặc mẫu khác được Chủ đầu tư chấp thuận. - Phương thức tạm ứng: chuyển khoản, trong thời hạn thanh toán nêu tại Mục 13.1 E-ĐKCT. - Bảo lãnh tiền tạm ứng có giá trị tương đương khoản tạm ứng và có hiệu lực từ ngày nhà thầu nhận tạm ứng đến khi Chủ đầu tư thanh toán Đợt 2 theo Mục 13.1 E-ĐKCT. - Thu hồi tạm ứng: khoản tạm ứng được tính là Đợt 1 tại Mục 13.1 E-ĐKCT và được thu hồi toàn bộ khi thanh toán Đợt 2 bằng cách bù trừ vào giá trị sản phẩm được nghiệm thu. Tỷ lệ nêu cho từng đợt tại Mục 13.1 E-ĐKCT là số tiền thực trả của đợt đó, tổng các đợt kể cả tạm ứng bằng 100% giá hợp đồng.",
+  "E-ĐKC 13.1": "Phương thức thanh toán: chuyển khoản, thanh toán làm 05 đợt, tổng các đợt bằng 100% giá hợp đồng. - Đợt 1: 15% giá hợp đồng, tạm ứng sau khi hợp đồng có hiệu lực và nhà thầu nộp bảo lãnh tiền tạm ứng theo Mục 12.1 E-ĐKCT. - Đợt 2: 25% giá hợp đồng, sau khi hai bên xác nhận đặc tả yêu cầu và giao diện ưu tiên, gồm đặc tả hệ thống (Specification), quy trình vận hành mới (New Operational Flow), cấu trúc cơ sở dữ liệu (Database Structure), sơ đồ phân cấp menu (Menu Layer) và thiết kế giao diện các màn hình chính của chức năng tìm kiếm sản phẩm, quản lý thành viên, đặt hàng (giao diện ưu tiên). - Đợt 3: 30% giá hợp đồng, sau khi nhà thầu hoàn thành các chức năng chính của hệ thống gồm tìm kiếm sản phẩm (Product Search), quản lý thành viên (Member Administration), đặt hàng (Order), cơ sở dữ liệu bán hàng (Selling DB) và hoàn thành tích hợp với Main System, được Chủ đầu tư kiểm tra đạt. - Đợt 4: 25% giá hợp đồng, sau khi hệ thống hoàn thành kiểm thử vận hành, được đưa vào vận hành (cut over) và được Chủ đầu tư nghiệm thu. - Đợt 5: 5% giá hợp đồng, sau khi nhà thầu nộp bảo lãnh bảo hành có giá trị bằng 5% giá hợp đồng, có hiệu lực đến hết thời hạn trách nhiệm đối với sai sót theo Mục 20.1 E-ĐKCT. Hồ sơ thanh toán gồm văn bản đề nghị thanh toán của nhà thầu, biên bản nghiệm thu hoặc biên bản xác nhận sản phẩm của đợt tương ứng, hóa đơn hợp lệ và bảo lãnh tương ứng đối với Đợt 1 và Đợt 5. Chủ đầu tư thanh toán trong vòng 15 ngày kể từ ngày nhận đủ hồ sơ thanh toán hợp lệ.",
+  "E-ĐKC 13.2": "Giảm trừ thanh toán: không áp dụng.",
+  "E-ĐKC 15": "Vừa áp dụng phạt vi phạm hợp đồng vừa áp dụng bồi thường thiệt hại. 1. Phạt vi phạm hợp đồng: Áp dụng. Trừ trường hợp bất khả kháng theo quy định tại Mục 16 E-ĐKC, nếu Nhà thầu không thực hiện một phần hay toàn bộ nội dung công việc theo đúng thời hạn đã nêu trong hợp đồng thì Chủ đầu tư có thể khấu trừ vào giá hợp đồng một khoản tiền phạt tương ứng với 0,1%/ngày giá trị công việc chậm thực hiện cho đến khi nội dung công việc đó được thực hiện. Chủ đầu tư sẽ khấu trừ đến 8% giá trị phần hợp đồng bị vi phạm. Khi đạt đến mức phạt tối đa, Chủ đầu tư có thể xem xét chấm dứt hợp đồng theo quy định tại Mục 19 E-ĐKC. 2. Bồi thường thiệt hại: Áp dụng theo quy định của pháp luật dân sự.",
+  "E-ĐKC 17.1(c)": "Các nội dung khác về sửa đổi hợp đồng: Chủ đầu tư hoặc nhà thầu được đề xuất thay đổi đặc tả khi cần thiết. Thay đổi đặc tả chỉ được thực hiện sau khi hai bên thống nhất bằng văn bản. Văn bản thống nhất nêu rõ nội dung thay đổi và ảnh hưởng đến tiến độ, giá hợp đồng (nếu có).",
+  "E-ĐKC 17.4": "Trường hợp đề xuất giải pháp tiết kiệm chi phí được Chủ đầu tư chấp thuận và giúp giảm giá hợp đồng, Chủ đầu tư thanh toán cho nhà thầu 30% giá trị giảm giá hợp đồng.",
+  "E-ĐKC 18 (e)": "Các trường hợp khác: không có.",
+  "E-ĐKC 20.1": "Nguyên tắc và cách thức đánh giá chất lượng: Chủ đầu tư kiểm tra sản phẩm theo đặc tả đã được hai bên xác nhận và thông báo kết quả kiểm tra cho nhà thầu bằng văn bản. Sản phẩm đạt kết quả kiểm tra được coi là Chủ đầu tư chấp nhận sản phẩm. Đối với lỗi logic trong sản phẩm hoặc vấn đề khác thuộc trách nhiệm của nhà thầu, nhà thầu sửa chữa, bổ sung bằng chi phí của mình trong thời gian sớm nhất. Thời hạn trách nhiệm đối với sai sót: 12 tháng kể từ ngày hệ thống được nghiệm thu và đưa vào vận hành. Trong thời hạn này, nhà thầu duy trì hiệu lực của bảo lãnh bảo hành nêu tại Đợt 5 Mục 13.1 E-ĐKCT.",
+  "E-ĐKC 21.2": "Thời gian nhà thầu thực hiện việc thay thế nhân sự: 07 ngày kể từ ngày nhận được yêu cầu thay thế nhân sự của Chủ đầu tư.",
+  "E-ĐKC 22.2": "- Thời gian để tiến hành hòa giải: tối đa 30 ngày. - Giải quyết tranh chấp: nếu hòa giải không thành, một trong hai bên gửi yêu cầu giải quyết tới Tòa án nhân dân có thẩm quyền tại Hà Nội. Chi phí giải quyết tranh chấp do bên có lỗi chịu theo phán quyết.",
+  "E-ĐKC 8 (bổ sung)": "Nhà thầu bắt đầu thực hiện công việc xây dựng hệ thống ngay sau khi hợp đồng có hiệu lực. Nhà thầu bàn giao các sản phẩm nêu tại Mẫu số 01A đúng địa điểm và thời hạn đã thống nhất trong tiến độ được Chủ đầu tư chấp thuận.",
+  "E-ĐKC 14 (bổ sung)": "Toàn bộ quyền sở hữu và bản quyền đối với các sản phẩm được phát triển và các kết quả kỹ thuật hình thành trong quá trình thực hiện hợp đồng thuộc về Chủ đầu tư. Nhà thầu chỉ được sử dụng các sản phẩm và kết quả này cho bên thứ ba khi được Chủ đầu tư chấp thuận bằng văn bản. Nhà thầu bảo mật dữ liệu khách hàng, dữ liệu của Main System và các tài liệu khác do Chủ đầu tư cung cấp trong quá trình thực hiện hợp đồng theo Mục 14 E-ĐKC."
+ },
+ "lech_rfp": [
+  {
+   "ma": "R26",
+   "nguyen_van": "10 copies of proposal should be submitted",
+   "can_cu": "Đấu thầu qua mạng theo Mẫu số 5A: nhà thầu nộp một bộ E-HSDT trên Hệ thống mạng đấu thầu quốc gia, không yêu cầu nộp nhiều bản hay hồ sơ giấy. Giải pháp tương đương: nộp E-HSDT qua Hệ thống trước thời điểm đóng thầu"
+  },
+  {
+   "ma": "R27",
+   "nguyen_van": "We would tell you the accurate time for presentation.",
+   "can_cu": "Phương thức một giai đoạn một túi hồ sơ đánh giá trên E-HSDT nộp qua Hệ thống, không có bước thuyết trình đề xuất. Giải pháp tương đương: tổ chức hội nghị tiền đấu thầu với thời gian xác định trước trong E-TBMT và Mục 7.5 E-BDL (theo tham số chủ đầu tư)"
+  },
+  {
+   "ma": "R29",
+   "nguyen_van": "How to deal with RFP: RFP includes our confidential information. Please keep secure and manage well.",
+   "can_cu": "E-HSMT được phát hành công khai, miễn phí trên Hệ thống theo Luật Đấu thầu và Mẫu số 5A, nên nội dung E-HSMT không thể giữ bí mật (Mục 14.3 điểm b E-ĐKC loại trừ thông tin đã công bố). Giải pháp tương đương: tài liệu, dữ liệu về hệ thống hiện có chỉ cung cấp cho nhà thầu trúng thầu sau khi hợp đồng có hiệu lực và được bảo vệ bằng nghĩa vụ bảo mật tại Mục 14 E-ĐKC và dòng E-ĐKC 14 (bổ sung)"
+  },
+  {
+   "ma": "R30",
+   "nguyen_van": "If you have any questions about RFP, ask us by e-mail or coming to our home.",
+   "can_cu": "Theo Mẫu số 5A và Luật Đấu thầu, đề nghị làm rõ E-HSMT gửi qua Hệ thống và Chủ đầu tư trả lời trên Hệ thống để mọi nhà thầu cùng nhận thông tin. Giải pháp tương đương: làm rõ qua Hệ thống, trao đổi trực tiếp tại hội nghị tiền đấu thầu"
+  },
+  {
+   "ma": "R32",
+   "nguyen_van": "Duration February 22th to March 7th",
+   "can_cu": "Luật Đấu thầu và Mẫu số 5A: nhà thầu gửi đề nghị làm rõ tối thiểu 03 ngày làm việc trước ngày có thời điểm đóng thầu, Chủ đầu tư trả lời tối thiểu 02 ngày làm việc trước ngày có thời điểm đóng thầu. Ngày 07/03 muộn hơn hạn này. Giải pháp tương đương: nhận đề nghị làm rõ từ ngày phát hành E-HSMT đến hạn làm rõ hợp lệ trong gia_tri_tinh.json"
+  },
+  {
+   "ma": "R33",
+   "nguyen_van": "(Party A is ABC Wear, Party B is Inter Solution)",
+   "can_cu": "Đấu thầu rộng rãi phải bảo đảm cạnh tranh, công bằng (Luật Đấu thầu số 22/2023/QH15). E-HSMT không được nêu trước tên nhà thầu. Giải pháp tương đương: bên B là nhà thầu trúng thầu theo kết quả lựa chọn nhà thầu"
+  }
+ ]
+}

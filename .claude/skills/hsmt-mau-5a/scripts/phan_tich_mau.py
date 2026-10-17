@@ -6,6 +6,13 @@ Ra:
 - mau5a_cau_truc.json: các mục phải điền kèm hướng dẫn của mẫu: E-BDL, E-ĐKCT (Phần 3A), Bảng số 01,
   Bảng số 02, danh mục biểu mẫu Chương IV, cột Mẫu 01A, hướng dẫn Chương III và Chương V, danh mục Phần 4.
 """
+import os as _os, sys as _sys  # noqa: E401
+_os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
+for _s in (_sys.stdout, _sys.stderr):
+    try:
+        _s.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 import json, os, re, sys
 import docx
 

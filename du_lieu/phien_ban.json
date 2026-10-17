@@ -1,0 +1,4396 @@
+{
+ "tai_lieu": {
+  "ket_qua/01_HSMT/HSMT.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:12:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "hsmt",
+    "hash": "81a2fafe7408",
+    "vao": {
+     "rfp": "0cd3ba3b317b",
+     "mau_5a": "528321637d25",
+     "tham_so_hsmt": "aa5a4d044c65"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 1
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:21:07",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "hsmt",
+    "hash": "99b2a8c74522",
+    "vao": {
+     "rfp": "0cd3ba3b317b",
+     "mau_5a": "528321637d25",
+     "tham_so_hsmt": "aa5a4d044c65"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 17,
+    "thu_tu_kiem_tra": 84,
+    "ngay_kiem_tra": "2026-10-16 23:49:45",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "du_lieu/hsmt.json": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:12:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "hsmt",
+    "hash": "763ceb892f68",
+    "vao": {
+     "rfp": "0cd3ba3b317b",
+     "mau_5a": "528321637d25",
+     "tham_so_hsmt": "aa5a4d044c65"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 2,
+    "thu_tu_kiem_tra": 18,
+    "ngay_kiem_tra": "2026-10-16 23:21:07"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:49:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "hsmt",
+    "hash": "6ad6379e2605",
+    "vao": {
+     "rfp": "0cd3ba3b317b",
+     "mau_5a": "528321637d25",
+     "tham_so_hsmt": "aa5a4d044c65"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 85
+   }
+  ],
+  "du_lieu/rfp_yeu_cau.json": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:12:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "hsmt",
+    "hash": "053f860dbf01",
+    "vao": {
+     "rfp": "0cd3ba3b317b",
+     "mau_5a": "528321637d25",
+     "tham_so_hsmt": "aa5a4d044c65"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 3,
+    "thu_tu_kiem_tra": 86,
+    "ngay_kiem_tra": "2026-10-16 23:49:45"
+   }
+  ],
+  "du_lieu/wbs.json": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:16:15",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "wbs",
+    "hash": "c993c5c295b3",
+    "vao": {
+     "hsmt": "3a8786a91fff",
+     "rfp_yc": "2350be76d755",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 4
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:17:42",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "wbs",
+    "hash": "165a427f90e9",
+    "vao": {
+     "hsmt": "3a8786a91fff",
+     "rfp_yc": "2350be76d755",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 6
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-16 23:18:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "wbs",
+    "hash": "8d48149b218c",
+    "vao": {
+     "hsmt": "3a8786a91fff",
+     "rfp_yc": "2350be76d755",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 8
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-16 23:19:37",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "wbs",
+    "hash": "9082133ba7b1",
+    "vao": {
+     "hsmt": "3a8786a91fff",
+     "rfp_yc": "2350be76d755",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 12
+   },
+   {
+    "phien_ban": "0.5",
+    "ngay": "2026-10-16 23:20:43",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "wbs",
+    "hash": "841fd4faf3bd",
+    "vao": {
+     "hsmt": "3a8786a91fff",
+     "rfp_yc": "2350be76d755",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 15
+   },
+   {
+    "phien_ban": "0.6",
+    "ngay": "2026-10-16 23:21:30",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "wbs",
+    "hash": "bd418ffa8649",
+    "vao": {
+     "hsmt": "3a8786a91fff",
+     "rfp_yc": "2350be76d755",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 20
+   },
+   {
+    "phien_ban": "0.7",
+    "ngay": "2026-10-16 23:49:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "wbs",
+    "hash": "adbc7418c2f5",
+    "vao": {
+     "hsmt": "6d6276caaa5d",
+     "rfp_yc": "2350be76d755",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 87
+   },
+   {
+    "phien_ban": "0.8",
+    "ngay": "2026-10-16 23:50:15",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "wbs",
+    "hash": "8f89370449cd",
+    "vao": {
+     "hsmt": "6d6276caaa5d",
+     "rfp_yc": "2350be76d755",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 89
+   },
+   {
+    "phien_ban": "0.9",
+    "ngay": "2026-10-17 00:07:31",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "wbs",
+    "hash": "dd22fe0879b0",
+    "vao": {
+     "hsmt": "6d6276caaa5d",
+     "rfp_yc": "2350be76d755",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 245,
+    "thu_tu_kiem_tra": 249,
+    "ngay_kiem_tra": "2026-10-17 00:11:53"
+   }
+  ],
+  "du_lieu/phan_cong.json": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:17:06",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "e1813ac4b0e4",
+    "vao": {
+     "wbs": "8cdb30ef90be",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 5
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:17:42",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "0c118858571b",
+    "vao": {
+     "wbs": "a10e24e49bde",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 7
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-16 23:18:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "942875de9ae0",
+    "vao": {
+     "wbs": "a9e7bec4bbfb",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 9
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-16 23:19:08",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "bc8c9f1bfa36",
+    "vao": {
+     "wbs": "a9e7bec4bbfb",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 10
+   },
+   {
+    "phien_ban": "0.5",
+    "ngay": "2026-10-16 23:19:19",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "68625f7cfed9",
+    "vao": {
+     "wbs": "a9e7bec4bbfb",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 11
+   },
+   {
+    "phien_ban": "0.6",
+    "ngay": "2026-10-16 23:19:37",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "f7fc98baa3e5",
+    "vao": {
+     "wbs": "a67c8ac0f000",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 13
+   },
+   {
+    "phien_ban": "0.7",
+    "ngay": "2026-10-16 23:20:00",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9ec0dfbb7a7a",
+    "vao": {
+     "wbs": "a67c8ac0f000",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 14
+   },
+   {
+    "phien_ban": "0.8",
+    "ngay": "2026-10-16 23:20:43",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "5646a9f91be8",
+    "vao": {
+     "wbs": "22d06b013f0c",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 16
+   },
+   {
+    "phien_ban": "0.9",
+    "ngay": "2026-10-16 23:21:30",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "30b37952a8b3",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 21
+   },
+   {
+    "phien_ban": "0.10",
+    "ngay": "2026-10-16 23:21:41",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2d641448574a",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 22
+   },
+   {
+    "phien_ban": "0.11",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "30b37952a8b3",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 23
+   },
+   {
+    "phien_ban": "0.12",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "c9d2fcca4f60",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 24
+   },
+   {
+    "phien_ban": "0.13",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "f4aa31042d65",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 25
+   },
+   {
+    "phien_ban": "0.14",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "1489c954a530",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 26
+   },
+   {
+    "phien_ban": "0.15",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "393b8112c629",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 27
+   },
+   {
+    "phien_ban": "0.16",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "ab916bd726d7",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 28
+   },
+   {
+    "phien_ban": "0.17",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "975639a0b978",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 29
+   },
+   {
+    "phien_ban": "0.18",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "aad77787020c",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 30
+   },
+   {
+    "phien_ban": "0.19",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "be063dc0548d",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 31
+   },
+   {
+    "phien_ban": "0.20",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9210dedb0d23",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 32
+   },
+   {
+    "phien_ban": "0.21",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "c3cfae6a67bd",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 33
+   },
+   {
+    "phien_ban": "0.22",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2f59f751f51b",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 34
+   },
+   {
+    "phien_ban": "0.23",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "420615559f11",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 35
+   },
+   {
+    "phien_ban": "0.24",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "4627b81b6902",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 36
+   },
+   {
+    "phien_ban": "0.25",
+    "ngay": "2026-10-16 23:21:57",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "5b3dd2be2bac",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 37
+   },
+   {
+    "phien_ban": "0.26",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "13d8c9114643",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 38
+   },
+   {
+    "phien_ban": "0.27",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "1fc8947b94f2",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 39
+   },
+   {
+    "phien_ban": "0.28",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "75b77bcf1ad1",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 40
+   },
+   {
+    "phien_ban": "0.29",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "c7569f967807",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 41
+   },
+   {
+    "phien_ban": "0.30",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "aa4666e5908d",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 42
+   },
+   {
+    "phien_ban": "0.31",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "f6e9c1ee8636",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 43
+   },
+   {
+    "phien_ban": "0.32",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "3d63b69be752",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 44
+   },
+   {
+    "phien_ban": "0.33",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "b5c8cece2d7f",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 45
+   },
+   {
+    "phien_ban": "0.34",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "bdc10891acff",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 46
+   },
+   {
+    "phien_ban": "0.35",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2d641448574a",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 47
+   },
+   {
+    "phien_ban": "0.36",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "e5a9106edf58",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 48
+   },
+   {
+    "phien_ban": "0.37",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "3af75282a8a5",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 49
+   },
+   {
+    "phien_ban": "0.38",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "75e4f51b3cb7",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 50
+   },
+   {
+    "phien_ban": "0.39",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "29d694f69084",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 51
+   },
+   {
+    "phien_ban": "0.40",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "6fe938d1b88a",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 52
+   },
+   {
+    "phien_ban": "0.41",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "3838a439a1f3",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 53
+   },
+   {
+    "phien_ban": "0.42",
+    "ngay": "2026-10-16 23:21:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "77c1736aa10a",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 54
+   },
+   {
+    "phien_ban": "0.43",
+    "ngay": "2026-10-16 23:21:59",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "348aa1555d52",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 55
+   },
+   {
+    "phien_ban": "0.44",
+    "ngay": "2026-10-16 23:21:59",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "d6ae95731c19",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 56
+   },
+   {
+    "phien_ban": "0.45",
+    "ngay": "2026-10-16 23:21:59",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "223f7901be7b",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 57
+   },
+   {
+    "phien_ban": "0.46",
+    "ngay": "2026-10-16 23:21:59",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "e946742840aa",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "3a8786a91fff",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 58
+   },
+   {
+    "phien_ban": "0.47",
+    "ngay": "2026-10-16 23:22:10",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "aad77787020c",
+    "vao": {
+     "wbs": "dca4cb470ad5",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 59,
+    "thu_tu_kiem_tra": 88,
+    "ngay_kiem_tra": "2026-10-16 23:49:45"
+   },
+   {
+    "phien_ban": "0.48",
+    "ngay": "2026-10-16 23:50:15",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "e510ac5da24a",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 90,
+    "thu_tu_kiem_tra": 91,
+    "ngay_kiem_tra": "2026-10-16 23:50:44"
+   },
+   {
+    "phien_ban": "0.49",
+    "ngay": "2026-10-16 23:50:44",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "1fcf10f57bc8",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 92
+   },
+   {
+    "phien_ban": "0.50",
+    "ngay": "2026-10-16 23:50:44",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9505fa380063",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 93
+   },
+   {
+    "phien_ban": "0.51",
+    "ngay": "2026-10-16 23:50:44",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "6b0b15e015ff",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 94
+   },
+   {
+    "phien_ban": "0.52",
+    "ngay": "2026-10-16 23:50:44",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9b0f20614274",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 95
+   },
+   {
+    "phien_ban": "0.53",
+    "ngay": "2026-10-16 23:50:44",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "ff95cdd88290",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 96
+   },
+   {
+    "phien_ban": "0.54",
+    "ngay": "2026-10-16 23:50:44",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "25b1e5c46f01",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 97
+   },
+   {
+    "phien_ban": "0.55",
+    "ngay": "2026-10-16 23:50:44",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2ba593609727",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 98
+   },
+   {
+    "phien_ban": "0.56",
+    "ngay": "2026-10-16 23:50:44",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "17da341b06f4",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 99
+   },
+   {
+    "phien_ban": "0.57",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "e85d1f19c304",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 100
+   },
+   {
+    "phien_ban": "0.58",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "d8f934d061fb",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 101
+   },
+   {
+    "phien_ban": "0.59",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "36b030207472",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 102
+   },
+   {
+    "phien_ban": "0.60",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "ee51378e4fb6",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 103
+   },
+   {
+    "phien_ban": "0.61",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "f847e3b20e4e",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 104
+   },
+   {
+    "phien_ban": "0.62",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "28fdd381d309",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 105
+   },
+   {
+    "phien_ban": "0.63",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "68b3f2972418",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 106
+   },
+   {
+    "phien_ban": "0.64",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "12100023ee12",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 107
+   },
+   {
+    "phien_ban": "0.65",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "52ac581d10e8",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 108
+   },
+   {
+    "phien_ban": "0.66",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "b50dd295645d",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 109
+   },
+   {
+    "phien_ban": "0.67",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "f9e8a8ac2361",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 110
+   },
+   {
+    "phien_ban": "0.68",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "6bd139e99a64",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 111
+   },
+   {
+    "phien_ban": "0.69",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "374650d6883a",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 112
+   },
+   {
+    "phien_ban": "0.70",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9b150a0979d4",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 113
+   },
+   {
+    "phien_ban": "0.71",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2aeb43ca2f13",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 114
+   },
+   {
+    "phien_ban": "0.72",
+    "ngay": "2026-10-16 23:50:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2ac7bb4aefc7",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 115
+   },
+   {
+    "phien_ban": "0.73",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "ef4d864bbb1b",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 116
+   },
+   {
+    "phien_ban": "0.74",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "d2353897b649",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 117
+   },
+   {
+    "phien_ban": "0.75",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "7b0b246c7bbf",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 118
+   },
+   {
+    "phien_ban": "0.76",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "5e8e6b3ef3c9",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 119
+   },
+   {
+    "phien_ban": "0.77",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "89347f7eb87d",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 120
+   },
+   {
+    "phien_ban": "0.78",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "53b5e18d5fbc",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 121
+   },
+   {
+    "phien_ban": "0.79",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "afb23c8ba85b",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 122
+   },
+   {
+    "phien_ban": "0.80",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "e510ac5da24a",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 123
+   },
+   {
+    "phien_ban": "0.81",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "1fcf10f57bc8",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 124
+   },
+   {
+    "phien_ban": "0.82",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "6b0b15e015ff",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 125
+   },
+   {
+    "phien_ban": "0.83",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9b0f20614274",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 126
+   },
+   {
+    "phien_ban": "0.84",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "ff95cdd88290",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 127
+   },
+   {
+    "phien_ban": "0.85",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "25b1e5c46f01",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 128
+   },
+   {
+    "phien_ban": "0.86",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2ba593609727",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 129
+   },
+   {
+    "phien_ban": "0.87",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "17da341b06f4",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 130
+   },
+   {
+    "phien_ban": "0.88",
+    "ngay": "2026-10-16 23:50:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "e85d1f19c304",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 131
+   },
+   {
+    "phien_ban": "0.89",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "d8f934d061fb",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 132
+   },
+   {
+    "phien_ban": "0.90",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "36b030207472",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 133
+   },
+   {
+    "phien_ban": "0.91",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "ee51378e4fb6",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 134
+   },
+   {
+    "phien_ban": "0.92",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "f847e3b20e4e",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 135
+   },
+   {
+    "phien_ban": "0.93",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "28fdd381d309",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 136
+   },
+   {
+    "phien_ban": "0.94",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "68b3f2972418",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 137
+   },
+   {
+    "phien_ban": "0.95",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "12100023ee12",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 138
+   },
+   {
+    "phien_ban": "0.96",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "52ac581d10e8",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 139
+   },
+   {
+    "phien_ban": "0.97",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "b50dd295645d",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 140
+   },
+   {
+    "phien_ban": "0.98",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "f9e8a8ac2361",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 141
+   },
+   {
+    "phien_ban": "0.99",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "6bd139e99a64",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 142
+   },
+   {
+    "phien_ban": "0.100",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "374650d6883a",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 143
+   },
+   {
+    "phien_ban": "0.101",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9b150a0979d4",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 144
+   },
+   {
+    "phien_ban": "0.102",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2aeb43ca2f13",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 145
+   },
+   {
+    "phien_ban": "0.103",
+    "ngay": "2026-10-16 23:50:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2ac7bb4aefc7",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 146
+   },
+   {
+    "phien_ban": "0.104",
+    "ngay": "2026-10-16 23:50:48",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "ef4d864bbb1b",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 147
+   },
+   {
+    "phien_ban": "0.105",
+    "ngay": "2026-10-16 23:50:48",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "d2353897b649",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 148
+   },
+   {
+    "phien_ban": "0.106",
+    "ngay": "2026-10-16 23:50:48",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "7b0b246c7bbf",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 149
+   },
+   {
+    "phien_ban": "0.107",
+    "ngay": "2026-10-16 23:50:48",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "5e8e6b3ef3c9",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 150
+   },
+   {
+    "phien_ban": "0.108",
+    "ngay": "2026-10-16 23:50:48",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "89347f7eb87d",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 151
+   },
+   {
+    "phien_ban": "0.109",
+    "ngay": "2026-10-16 23:50:48",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "53b5e18d5fbc",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 152
+   },
+   {
+    "phien_ban": "0.110",
+    "ngay": "2026-10-16 23:50:48",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "afb23c8ba85b",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 153
+   },
+   {
+    "phien_ban": "0.111",
+    "ngay": "2026-10-16 23:51:00",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9505fa380063",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 154
+   },
+   {
+    "phien_ban": "0.112",
+    "ngay": "2026-10-16 23:52:02",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "ce2691f7c28a",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 155
+   },
+   {
+    "phien_ban": "0.113",
+    "ngay": "2026-10-16 23:52:02",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "955eefdf0e34",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 156
+   },
+   {
+    "phien_ban": "0.114",
+    "ngay": "2026-10-16 23:52:02",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "c363d40a3c5e",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 157
+   },
+   {
+    "phien_ban": "0.115",
+    "ngay": "2026-10-16 23:52:02",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "69eeb942ff7d",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 158
+   },
+   {
+    "phien_ban": "0.116",
+    "ngay": "2026-10-16 23:52:02",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "4364495cdc9e",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 159
+   },
+   {
+    "phien_ban": "0.117",
+    "ngay": "2026-10-16 23:52:02",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "3745189ae9f3",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 160
+   },
+   {
+    "phien_ban": "0.118",
+    "ngay": "2026-10-16 23:52:02",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "7b7442eeb719",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 161
+   },
+   {
+    "phien_ban": "0.119",
+    "ngay": "2026-10-16 23:52:02",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "b3cae05bc12b",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 162
+   },
+   {
+    "phien_ban": "0.120",
+    "ngay": "2026-10-16 23:52:02",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "85db3aec46ae",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 163
+   },
+   {
+    "phien_ban": "0.121",
+    "ngay": "2026-10-16 23:52:02",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "bc65705cc509",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 164
+   },
+   {
+    "phien_ban": "0.122",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "40d52924003b",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 165
+   },
+   {
+    "phien_ban": "0.123",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "db7209cee967",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 166
+   },
+   {
+    "phien_ban": "0.124",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "e1d59672dfc6",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 167
+   },
+   {
+    "phien_ban": "0.125",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "b257d048b177",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 168
+   },
+   {
+    "phien_ban": "0.126",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "70e582fd4391",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 169
+   },
+   {
+    "phien_ban": "0.127",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "3e84efbabb62",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 170
+   },
+   {
+    "phien_ban": "0.128",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "1a456d6de6b8",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 171
+   },
+   {
+    "phien_ban": "0.129",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "cdcc06197fed",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 172
+   },
+   {
+    "phien_ban": "0.130",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "30f9d7251bd9",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 173
+   },
+   {
+    "phien_ban": "0.131",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "3cf87986068e",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 174
+   },
+   {
+    "phien_ban": "0.132",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "1cc1319348de",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 175
+   },
+   {
+    "phien_ban": "0.133",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "caaac85845be",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 176
+   },
+   {
+    "phien_ban": "0.134",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "a2e43c2015e1",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 177
+   },
+   {
+    "phien_ban": "0.135",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2090363fcbcf",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 178
+   },
+   {
+    "phien_ban": "0.136",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2efa23361360",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 179
+   },
+   {
+    "phien_ban": "0.137",
+    "ngay": "2026-10-16 23:52:03",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "69def3dae2ca",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 180
+   },
+   {
+    "phien_ban": "0.138",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9f277cab10c8",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 181
+   },
+   {
+    "phien_ban": "0.139",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "e49906d21799",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 182
+   },
+   {
+    "phien_ban": "0.140",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "3d320397a028",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 183
+   },
+   {
+    "phien_ban": "0.141",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "ef2254b4e722",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 184
+   },
+   {
+    "phien_ban": "0.142",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "f6512f695758",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 185
+   },
+   {
+    "phien_ban": "0.143",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "ae9733841a7e",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 186
+   },
+   {
+    "phien_ban": "0.144",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "78d55c6fc6ab",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 187
+   },
+   {
+    "phien_ban": "0.145",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "926ad5d067db",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 188
+   },
+   {
+    "phien_ban": "0.146",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "3340d615401f",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 189
+   },
+   {
+    "phien_ban": "0.147",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "e784b2faa0fb",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 190
+   },
+   {
+    "phien_ban": "0.148",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9dde7c5c210e",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 191
+   },
+   {
+    "phien_ban": "0.149",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "f12366b88ba2",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 192
+   },
+   {
+    "phien_ban": "0.150",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "a05af8bdd24d",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 193
+   },
+   {
+    "phien_ban": "0.151",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2cdea736cdba",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 194
+   },
+   {
+    "phien_ban": "0.152",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "bbe1bd9f900d",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 195
+   },
+   {
+    "phien_ban": "0.153",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "7fa71028f2e8",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 196
+   },
+   {
+    "phien_ban": "0.154",
+    "ngay": "2026-10-16 23:52:04",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "f572b5022670",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 197
+   },
+   {
+    "phien_ban": "0.155",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "8ef0ae55d099",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 198
+   },
+   {
+    "phien_ban": "0.156",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "5ec3ba15a53c",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 199
+   },
+   {
+    "phien_ban": "0.157",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "3a8bd2545bb5",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 200
+   },
+   {
+    "phien_ban": "0.158",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9c88346dcc8b",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 201
+   },
+   {
+    "phien_ban": "0.159",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "462c77ea787e",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 202
+   },
+   {
+    "phien_ban": "0.160",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "87ccd699a569",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 203
+   },
+   {
+    "phien_ban": "0.161",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "bb793d0537b4",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 204
+   },
+   {
+    "phien_ban": "0.162",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "c7d6d60fc55b",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 205
+   },
+   {
+    "phien_ban": "0.163",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "389b09d0bdb5",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 206
+   },
+   {
+    "phien_ban": "0.164",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "8908f2919775",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 207
+   },
+   {
+    "phien_ban": "0.165",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "5e837c593a03",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 208
+   },
+   {
+    "phien_ban": "0.166",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "13102cdb54fe",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 209
+   },
+   {
+    "phien_ban": "0.167",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "7086f9c09fff",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 210
+   },
+   {
+    "phien_ban": "0.168",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "1cc1319348de",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 211
+   },
+   {
+    "phien_ban": "0.169",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "69def3dae2ca",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 212
+   },
+   {
+    "phien_ban": "0.170",
+    "ngay": "2026-10-16 23:52:05",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9f277cab10c8",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 213
+   },
+   {
+    "phien_ban": "0.171",
+    "ngay": "2026-10-16 23:52:06",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "e49906d21799",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 214
+   },
+   {
+    "phien_ban": "0.172",
+    "ngay": "2026-10-16 23:52:06",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "3d320397a028",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 215
+   },
+   {
+    "phien_ban": "0.173",
+    "ngay": "2026-10-16 23:52:06",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "ef2254b4e722",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 216
+   },
+   {
+    "phien_ban": "0.174",
+    "ngay": "2026-10-16 23:52:06",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "f6512f695758",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 217
+   },
+   {
+    "phien_ban": "0.175",
+    "ngay": "2026-10-16 23:52:06",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "ae9733841a7e",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 218
+   },
+   {
+    "phien_ban": "0.176",
+    "ngay": "2026-10-16 23:52:06",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "78d55c6fc6ab",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 219
+   },
+   {
+    "phien_ban": "0.177",
+    "ngay": "2026-10-16 23:52:22",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "2efa23361360",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 220
+   },
+   {
+    "phien_ban": "0.178",
+    "ngay": "2026-10-16 23:52:43",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "9f277cab10c8",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 221
+   },
+   {
+    "phien_ban": "0.179",
+    "ngay": "2026-10-16 23:52:43",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "7a6f5dda462c",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 222
+   },
+   {
+    "phien_ban": "0.180",
+    "ngay": "2026-10-16 23:52:43",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "247e9002a748",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 223
+   },
+   {
+    "phien_ban": "0.181",
+    "ngay": "2026-10-16 23:56:59",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "92108a16293d",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 232,
+    "thu_tu_kiem_tra": 246,
+    "ngay_kiem_tra": "2026-10-17 00:07:31"
+   },
+   {
+    "phien_ban": "0.182",
+    "ngay": "2026-10-17 00:11:53",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "003bb62743ff",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "thanh_vien": "e384398a1b27",
+     "hsmt": "6d6276caaa5d",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 250
+   }
+  ],
+  "du_lieu/lich.json": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:22:56",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "9ba0e71a7336",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "3a8786a91fff"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 60
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:52:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "e378a06418cc",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "phan_cong": "d12e52ab8b1a",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 224
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-16 23:53:26",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "61c839b1c166",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "phan_cong": "d12e52ab8b1a",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 226
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-17 00:11:54",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "e84d9a28c786",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 251
+   }
+  ],
+  "ket_qua/04_Master_schedule/Master_schedule.xlsx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:22:56",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "9ba0e71a7336",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "3a8786a91fff"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 61
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:52:58",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "e378a06418cc",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "phan_cong": "d12e52ab8b1a",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 225
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-16 23:53:26",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "61c839b1c166",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "phan_cong": "d12e52ab8b1a",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 227
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-17 00:11:54",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "e84d9a28c786",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 252,
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "du_lieu/rui_ro.json": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:24:40",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "rui_ro",
+    "hash": "a163228e25b8",
+    "vao": {
+     "hsmt": "3a8786a91fff",
+     "rfp_yc": "2350be76d755",
+     "wbs": "ecc9c6ee7861",
+     "lich": "32c8e9e2975d",
+     "phan_cong": "b70a718b5be7",
+     "thanh_vien": "e384398a1b27"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 62
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:29:12",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "rui_ro",
+    "hash": "2f98b6289212",
+    "vao": {
+     "hsmt": "3a8786a91fff",
+     "rfp_yc": "2350be76d755",
+     "wbs": "ecc9c6ee7861",
+     "lich": "32c8e9e2975d",
+     "phan_cong": "b70a718b5be7",
+     "thanh_vien": "e384398a1b27"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 77
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-16 23:55:33",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "rui_ro",
+    "hash": "6a316c6bc243",
+    "vao": {
+     "hsmt": "6d6276caaa5d",
+     "rfp_yc": "2350be76d755",
+     "wbs": "ecbed5373d9b",
+     "lich": "f4b6e2d81f34",
+     "phan_cong": "d12e52ab8b1a",
+     "thanh_vien": "e384398a1b27"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 228,
+    "thu_tu_kiem_tra": 229,
+    "ngay_kiem_tra": "2026-10-16 23:55:44"
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-17 00:09:17",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "rui_ro",
+    "hash": "e08b3ca26c40",
+    "vao": {
+     "hsmt": "6d6276caaa5d",
+     "rfp_yc": "2350be76d755",
+     "wbs": "3c546ef7e2c4",
+     "lich": "d9e095ba7047",
+     "phan_cong": "fc53fd92ba08",
+     "thanh_vien": "e384398a1b27"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 247,
+    "thu_tu_kiem_tra": 248,
+    "ngay_kiem_tra": "2026-10-17 00:09:39"
+   },
+   {
+    "phien_ban": "0.5",
+    "ngay": "2026-10-17 00:11:54",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "rui_ro",
+    "hash": "7ba143f681a8",
+    "vao": {
+     "hsmt": "6d6276caaa5d",
+     "rfp_yc": "2350be76d755",
+     "wbs": "3c546ef7e2c4",
+     "lich": "0f674afa4059",
+     "phan_cong": "3c53909268f8",
+     "thanh_vien": "e384398a1b27"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 253
+   }
+  ],
+  "du_lieu/chi_phi.json": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:24:50",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "934f9806c456",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "thanh_vien": "e384398a1b27",
+     "don_gia": "2923081b1c90",
+     "rui_ro": "c988af3bf0c5",
+     "hsmt": "3a8786a91fff"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 63,
+    "thu_tu_kiem_tra": 78,
+    "ngay_kiem_tra": "2026-10-16 23:29:13"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:46:06",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "22abbcf98208",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "thanh_vien": "e384398a1b27",
+     "don_gia": "2923081b1c90",
+     "rui_ro": "c988af3bf0c5",
+     "hsmt": "3a8786a91fff"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 82
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-16 23:55:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "977f083c5fdb",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "phan_cong": "d12e52ab8b1a",
+     "lich": "f4b6e2d81f34",
+     "thanh_vien": "e384398a1b27",
+     "don_gia": "2923081b1c90",
+     "rui_ro": "6cacbc7ed737",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 230
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-17 00:11:55",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "df34aca5c368",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "thanh_vien": "e384398a1b27",
+     "don_gia": "2923081b1c90",
+     "rui_ro": "4433389dd105",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 254
+   }
+  ],
+  "ket_qua/06_Cost_estimate/Cost_estimate.xlsx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:24:50",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "934f9806c456",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "thanh_vien": "e384398a1b27",
+     "don_gia": "2923081b1c90",
+     "rui_ro": "c988af3bf0c5",
+     "hsmt": "3a8786a91fff"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 64,
+    "thu_tu_kiem_tra": 79,
+    "ngay_kiem_tra": "2026-10-16 23:29:13"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:46:06",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "22abbcf98208",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "thanh_vien": "e384398a1b27",
+     "don_gia": "2923081b1c90",
+     "rui_ro": "c988af3bf0c5",
+     "hsmt": "3a8786a91fff"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 83
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-16 23:55:45",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "977f083c5fdb",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "phan_cong": "d12e52ab8b1a",
+     "lich": "f4b6e2d81f34",
+     "thanh_vien": "e384398a1b27",
+     "don_gia": "2923081b1c90",
+     "rui_ro": "6cacbc7ed737",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 231
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-17 00:11:55",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "df34aca5c368",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "thanh_vien": "e384398a1b27",
+     "don_gia": "2923081b1c90",
+     "rui_ro": "4433389dd105",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 255,
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:25:10",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "c7b471bf987a",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "3a8786a91fff",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 65,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_1_Quan_ly_du_an.json",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:58:14",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "4aa8dd1a6b25",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "6d6276caaa5d",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 233,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_1_Quan_ly_du_an.json",
+    "ngay_tai_lieu": "18/03/2027",
+    "thu_tu_kiem_tra": 256,
+    "ngay_kiem_tra": "2026-10-17 00:12:39",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:25:11",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "0fc3cd5616da",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "3a8786a91fff",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 66,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_2_Phan_tich_va_thiet_ke_chung.json",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:58:14",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "49e07dc904b8",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "6d6276caaa5d",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 234,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_2_Phan_tich_va_thiet_ke_chung.json",
+    "ngay_tai_lieu": "18/03/2027",
+    "thu_tu_kiem_tra": 257,
+    "ngay_kiem_tra": "2026-10-17 00:12:39",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:25:11",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "c2d6a45f2c49",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "3a8786a91fff",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 67,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.json",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:58:14",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "23f69bf33a41",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "6d6276caaa5d",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 235,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.json",
+    "ngay_tai_lieu": "18/03/2027",
+    "thu_tu_kiem_tra": 258,
+    "ngay_kiem_tra": "2026-10-17 00:12:40",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/03_WBS/WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:25:11",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "5a5928550265",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "3a8786a91fff",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 68,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.json",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:58:14",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "45782d9b2595",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "6d6276caaa5d",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 236,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.json",
+    "ngay_tai_lieu": "18/03/2027",
+    "thu_tu_kiem_tra": 259,
+    "ngay_kiem_tra": "2026-10-17 00:12:40",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:25:11",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "8b827edae38c",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "3a8786a91fff",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 69,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_5_Phan_he_dat_hang_Order.json",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:58:15",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "088a1b4125ac",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "6d6276caaa5d",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 237,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_5_Phan_he_dat_hang_Order.json",
+    "ngay_tai_lieu": "18/03/2027",
+    "thu_tu_kiem_tra": 260,
+    "ngay_kiem_tra": "2026-10-17 00:12:40",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:25:11",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "8a7e5b2a09cd",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "3a8786a91fff",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 70,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.json",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:58:15",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "1980fdd14717",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "phan_cong": "fc53fd92ba08",
+     "lich": "f4b6e2d81f34",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "6d6276caaa5d",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 238,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.json",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-17 00:12:40",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "daadefa54d9c",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "6d6276caaa5d",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 261,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.json",
+    "ngay_tai_lieu": "18/03/2027",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:25:12",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "8d4b1d865800",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "3a8786a91fff",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 71,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.json",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:58:15",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "aa61054a04ae",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "6d6276caaa5d",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 239,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.json",
+    "ngay_tai_lieu": "18/03/2027",
+    "thu_tu_kiem_tra": 262,
+    "ngay_kiem_tra": "2026-10-17 00:12:40",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:25:12",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "c89100a8ebd2",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "3a8786a91fff",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 72,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_8_Trien_khai_va_chuyen_giao.json",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:58:15",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "968fe4527fc6",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "phan_cong": "fc53fd92ba08",
+     "lich": "f4b6e2d81f34",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "6d6276caaa5d",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 240,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_8_Trien_khai_va_chuyen_giao.json",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-17 00:12:40",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "7cdc7e19297e",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "6d6276caaa5d",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 263,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_8_Trien_khai_va_chuyen_giao.json",
+    "ngay_tai_lieu": "18/03/2027",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/03_WBS/WBS_tong_hop.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:25:12",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "b634b2e443db",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "3a8786a91fff",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 73,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_tong_hop.json",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:58:15",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "acaf4de93595",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "6d6276caaa5d",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 241,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_tong_hop.json",
+    "ngay_tai_lieu": "18/03/2027",
+    "thu_tu_kiem_tra": 264,
+    "ngay_kiem_tra": "2026-10-17 00:12:41",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:28:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "9656ca507b70",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "thanh_vien": "e384398a1b27",
+     "don_gia": "2923081b1c90",
+     "rui_ro": "cff053a1c9ab",
+     "hsmt": "3a8786a91fff"
+    },
+    "ghi_chu": "Lập lần đầu trong lần chạy thử bộ skill",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 74,
+    "noi_dung": "lam_viec/chi_phi/noi_dung_Thuyet_minh_du_toan.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:29:13",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "708d1f2838a5",
+    "vao": {
+     "wbs": "ecc9c6ee7861",
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "thanh_vien": "e384398a1b27",
+     "don_gia": "2923081b1c90",
+     "rui_ro": "c988af3bf0c5",
+     "hsmt": "3a8786a91fff"
+    },
+    "ghi_chu": "Sửa văn phong theo kiểm tra lớp A",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 80,
+    "noi_dung": "lam_viec/chi_phi/noi_dung_Thuyet_minh_du_toan.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-16 23:58:16",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "428f0be33ac2",
+    "vao": {
+     "wbs": "ecbed5373d9b",
+     "phan_cong": "fc53fd92ba08",
+     "lich": "f4b6e2d81f34",
+     "thanh_vien": "e384398a1b27",
+     "don_gia": "2923081b1c90",
+     "rui_ro": "6cacbc7ed737",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "Vòng 2: sửa theo kiểm tra lớp B",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 242,
+    "noi_dung": "lam_viec/chi_phi/noi_dung_Thuyet_minh_du_toan.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-17 00:12:41",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "0c56d263a505",
+    "vao": {
+     "wbs": "3c546ef7e2c4",
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "thanh_vien": "e384398a1b27",
+     "don_gia": "2923081b1c90",
+     "rui_ro": "4433389dd105",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "Vòng 3: sửa theo kiểm tra lớp B vòng 2",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 265,
+    "noi_dung": "lam_viec/chi_phi/noi_dung_Thuyet_minh_du_toan.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:28:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "ke_hoach_rui_ro",
+    "hash": "32cc8597f947",
+    "vao": {
+     "rui_ro": "cff053a1c9ab",
+     "chi_phi": "411d347833ca",
+     "lich": "32c8e9e2975d",
+     "phan_cong": "b70a718b5be7",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "3a8786a91fff"
+    },
+    "ghi_chu": "Lập lần đầu trong lần chạy thử bộ skill",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 75,
+    "noi_dung": "lam_viec/ke_hoach_rui_ro/noi_dung_Ke_hoach_quan_ly_rui_ro.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:29:14",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "ke_hoach_rui_ro",
+    "hash": "96110ad3371e",
+    "vao": {
+     "rui_ro": "c988af3bf0c5",
+     "chi_phi": "411d347833ca",
+     "lich": "32c8e9e2975d",
+     "phan_cong": "b70a718b5be7",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "3a8786a91fff"
+    },
+    "ghi_chu": "Sửa văn phong theo kiểm tra lớp A",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 81,
+    "noi_dung": "lam_viec/ke_hoach_rui_ro/noi_dung_Ke_hoach_quan_ly_rui_ro.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-16 23:58:16",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "ke_hoach_rui_ro",
+    "hash": "1d5d3062d6a6",
+    "vao": {
+     "rui_ro": "6cacbc7ed737",
+     "chi_phi": "14e48334b01c",
+     "lich": "f4b6e2d81f34",
+     "phan_cong": "fc53fd92ba08",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "Vòng 2: sửa theo kiểm tra lớp B",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 243,
+    "noi_dung": "lam_viec/ke_hoach_rui_ro/noi_dung_Ke_hoach_quan_ly_rui_ro.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-17 00:12:42",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "ke_hoach_rui_ro",
+    "hash": "895f1aa7e31b",
+    "vao": {
+     "rui_ro": "4433389dd105",
+     "chi_phi": "b352c37a2b43",
+     "lich": "0f674afa4059",
+     "phan_cong": "3c53909268f8",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "Vòng 3: sửa theo kiểm tra lớp B vòng 2",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 266,
+    "noi_dung": "lam_viec/ke_hoach_rui_ro/noi_dung_Ke_hoach_quan_ly_rui_ro.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-16 23:28:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "phan_cong_tai_lieu",
+    "hash": "0bede1cf25f9",
+    "vao": {
+     "phan_cong": "b70a718b5be7",
+     "lich": "32c8e9e2975d",
+     "wbs": "ecc9c6ee7861",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "3a8786a91fff"
+    },
+    "ghi_chu": "Lập lần đầu trong lần chạy thử bộ skill",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 76,
+    "noi_dung": "lam_viec/phan_cong_tai_lieu/noi_dung_Phan_cong_nhiem_vu.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.2",
+    "ngay": "2026-10-16 23:58:17",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "phan_cong_tai_lieu",
+    "hash": "f76dcaa9be0a",
+    "vao": {
+     "phan_cong": "fc53fd92ba08",
+     "lich": "f4b6e2d81f34",
+     "wbs": "ecbed5373d9b",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "Vòng 2: sửa theo kiểm tra lớp B",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 244,
+    "noi_dung": "lam_viec/phan_cong_tai_lieu/noi_dung_Phan_cong_nhiem_vu.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-17 00:12:42",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "phan_cong_tai_lieu",
+    "hash": "179707280fea",
+    "vao": {
+     "phan_cong": "3c53909268f8",
+     "lich": "0f674afa4059",
+     "wbs": "3c546ef7e2c4",
+     "thanh_vien": "e384398a1b27",
+     "du_an": "86ba8d089b07",
+     "hsmt": "6d6276caaa5d"
+    },
+    "ghi_chu": "Vòng 3: sửa theo kiểm tra lớp B vòng 2",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 267,
+    "noi_dung": "lam_viec/phan_cong_tai_lieu/noi_dung_Phan_cong_nhiem_vu.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-17 00:17:40",
+      "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   }
+  ],
+  "ket_qua/16_Bang_chung/Phu_luc_bang_chung_prompt_skill.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-17 00:17:50",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "bang_chung",
+    "hash": "e209557d5efe",
+    "vao": {
+     "phien_ban_reg": "b5028baa71fb",
+     "nhat_ky_chay": "80c9e45d0427"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 268
+   }
+  ]
+ },
+ "dem": 268,
+ "duong_co_so": []
+}

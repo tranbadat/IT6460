@@ -1,0 +1,398 @@
+"""Lập cost estimate từ WBS, đơn giá, giao việc, lịch và sổ rủi ro.
+
+Dùng: python tinh_chi_phi.py
+Đầu vào: du_lieu/wbs.json, dau_vao/don_gia.json, dau_vao/thanh_vien.json, du_lieu/phan_cong.json, du_lieu/lich.json,
+         du_lieu/rui_ro.json, du_lieu/hsmt.json
+Phương pháp:
+  A. Nhân công theo loại công việc = MD / md_moi_mm x đơn giá trọn gói theo người-tháng.
+  B. Chi phí khác theo danh mục trong don_gia.json.
+  D. Dự phòng rủi ro theo du_phong_rui_ro.cach_tinh (nằm trong B, tỷ lệ, hoặc bằng tổng EMV), so với tổng EMV của sổ rủi ro.
+  Giá chào: mục tiêu (C là phần còn lại) hoặc cộng dồn (C = tỷ lệ x chi phí). Thuế GTGT theo thuế suất và căn cứ khai báo.
+  Đối chiếu: chi phí lương theo từng người (lương tham chiếu x hệ số bảo hiểm / ngày làm việc mỗi tháng x MD huy động).
+  Khoản còn lại sau chi phí lương thực tế = giá trước thuế - chi phí lương theo người - B - D, kèm mức huy động hòa vốn.
+  Phân bổ: giá theo nhóm WBS và theo hạng mục Mẫu 01A (Mẫu 11A), dòng tiền theo sprint với các đợt thanh toán
+  (chi lương theo MD huy động, thu theo ngày sự kiện cộng thời hạn thanh toán của HSMT).
+Ra: du_lieu/chi_phi.json, ket_qua/06_Cost_estimate/Cost_estimate.xlsx (công thức). Mã thoát 0 đạt, 1 lỗi.
+"""
+import os as _os, sys as _sys  # noqa: E401
+_os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
+for _s in (_sys.stdout, _sys.stderr):
+    try:
+        _s.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+import datetime as dt
+import os
+import sys
+
+from openpyxl import Workbook
+from openpyxl.formatting.rule import FormulaRule
+from openpyxl.styles import PatternFill
+from openpyxl.utils import get_column_letter as L
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(HERE, '..', '..', 'qlda-loi', 'scripts'))
+import loi  # noqa: E402
+import xlsx_chung as X  # noqa: E402
+
+wbs = loi.doc_json('du_lieu/wbs.json'); dg = loi.doc_json('dau_vao/don_gia.json')
+tvs = loi.doc_json('dau_vao/thanh_vien.json')['thanh_vien']; pc = loi.doc_json('du_lieu/phan_cong.json')
+lich = loi.doc_json('du_lieu/lich.json'); rr = loi.doc_json('du_lieu/rui_ro.json'); hsmt = loi.doc_json('du_lieu/hsmt.json')
+by, la = loi.nut_wbs(wbs)
+F = []
+add = lambda ma, mo, md='loi': F.append({'ma': ma, 'muc_do': md, 'nhom': 'chi_phi', 'vi_tri': '', 'mo_ta': mo, 'cach_sua': 'can_nguoi_dung', 'de_xuat': ''})
+LCV = dg['loai_cong_viec']; MDMM = float(dg['md_moi_mm'])
+for k, v in LCV.items():
+    if not v.get('don_gia_tron_goi_thang'):
+        add('C01', f'Thiếu đơn giá trọn gói cho loại {k} trong don_gia.json')
+for g in la:
+    if g.get('loai') not in LCV:
+        add('C02', f'Gói {g["ma"]} có loại {g.get("loai")} chưa có đơn giá')
+for t in tvs:
+    if t.get('vai_tro') not in dg['luong_tham_chieu_thang']:
+        add('C03', f'{t["ho_ten"]}: vai trò {t.get("vai_tro")} chưa có lương tham chiếu')
+if [f for f in F if f['muc_do'] == 'loi']:
+    for f in F:
+        print(f'[{f["muc_do"]}] {f["ma"]}: {f["mo_ta"]}')
+    sys.exit(1)
+
+# A. nhân công
+nc = []
+for k, v in LCV.items():
+    m = sum(float(g['md']) for g in la if g['loai'] == k)
+    if m:
+        nc.append({'loai': k, 'ten': v['ten'], 'md': round(m, 2), 'mm': round(m / MDMM, 4), 'don_gia_thang': v['don_gia_tron_goi_thang'],
+                   'thanh_tien': round(m / MDMM * v['don_gia_tron_goi_thang'])})
+A = sum(x['thanh_tien'] for x in nc)
+cost_goi = {g['ma']: float(g['md']) / MDMM * LCV[g['loai']]['don_gia_tron_goi_thang'] for g in la}
+# B, D
+B = sum(float(x['so_tien']) for x in dg.get('chi_phi_khac', []))
+emv = float(rr['tong_hop']['tong_emv_tien'])
+cdp = dg.get('du_phong_rui_ro', {}).get('cach_tinh', 'nam_trong_chi_phi_khac')
+D = round(emv) if cdp == 'emv' else (round((A + B) * float(dg['du_phong_rui_ro'].get('ty_le', 0))) if cdp == 'ty_le' else 0)
+du_phong_co = D if cdp != 'nam_trong_chi_phi_khac' else B
+if du_phong_co < emv:
+    add('C10', f'Dự phòng ({loi.tien(du_phong_co)} đồng) thấp hơn tổng EMV rủi ro ({loi.tien(emv)} đồng)', 'canh_bao')
+# giá
+vat = float(dg['thue_gtgt']['thue_suat'])
+chi_phi_biet = A + B + D
+if dg.get('cach_tinh_gia') == 'muc_tieu':
+    gia = float(dg['gia_chao_muc_tieu'])
+    truoc_thue = gia / (1 + vat)
+    C = truoc_thue - chi_phi_biet
+else:
+    C = chi_phi_biet * float(dg['ty_le_chi_phi_chung_va_loi_nhuan'])
+    truoc_thue = chi_phi_biet + C
+    gia = truoc_thue * (1 + vat)
+thue = gia - truoc_thue
+ggt = float(hsmt['tien']['gia_goi_thau'])
+if gia > ggt:
+    add('C20', f'Giá chào {loi.tien(gia)} đồng vượt giá gói thầu {loi.tien(ggt)} đồng')
+if C / truoc_thue < float(dg.get('ty_le_chi_phi_chung_va_loi_nhuan_toi_thieu', 0)):
+    add('C21', f'Khoản chi phí chung và lợi nhuận chỉ {C / truoc_thue:.1%} giá trước thuế, dưới mức tối thiểu', 'loi' if C < 0 else 'canh_bao')
+vat2 = float(dg['thue_gtgt'].get('thue_suat_do_nhay', vat))
+tt2 = gia / (1 + vat2); C2 = tt2 - chi_phi_biet
+
+# đối chiếu theo người
+ngay_thang = float(dg['ngay_lam_viec_moi_thang']); hs = float(dg['he_so_bao_hiem'])
+quy = {x['id']: x['quy'] for x in pc['tai']}; giao = {x['id']: x['md_giao'] for x in pc['tai']}
+dcn = []
+for t in tvs:
+    luong = float(dg['luong_tham_chieu_thang'][t['vai_tro']]['luong'])
+    dgn = luong * hs / ngay_thang
+    dcn.append({'id': t['id'], 'ho_ten': t['ho_ten'], 'loai': 'Thành viên nhóm' if t['loai'] == 'nhom' else 'Vị trí bổ sung', 'vai_tro': t['vai_tro'],
+                'luong': luong, 'don_gia_ngay': round(dgn), 'md_huy_dong': quy.get(t['id'], 0), 'md_giao': giao.get(t['id'], 0),
+                'chi_phi': round(dgn * quy.get(t['id'], 0)), '_dgn': dgn})
+tong_nguoi = sum(x['chi_phi'] for x in dcn)
+if tong_nguoi > A:
+    lo = tong_nguoi + B + D > truoc_thue
+    add('C30', f'Chi phí lương theo người huy động ({loi.tien(tong_nguoi)} đồng) vượt dòng A ({loi.tien(A)} đồng)'
+               + ('. Giá trước thuế không đủ bù chi phí thực, cần giảm MD huy động hoặc xem lại giá' if lo else '. Giá chào vẫn bù được nhưng khoản C giảm'),
+        'loi' if lo else 'canh_bao')
+
+tong_md_hd = sum(x['md_huy_dong'] for x in dcn)
+luong_tho = sum(x['_dgn'] * x['md_huy_dong'] for x in dcn)  # chưa làm tròn từng người, cùng cách tính với Excel
+luong_md = luong_tho / tong_md_hd if tong_md_hd else 0  # chi phí lương bình quân mỗi MD huy động
+C_luong = truoc_thue - luong_tho - B - D
+C2_luong = tt2 - luong_tho - B - D
+md_hd_hoa_von = A / luong_md if luong_md else 0
+if 0 <= C_luong < truoc_thue * float(dg.get('ty_le_chi_phi_chung_va_loi_nhuan_toi_thieu', 0)):
+    add('C22', f'Khoản còn lại sau chi phí lương thực tế chỉ {C_luong / truoc_thue:.1%} giá trước thuế, dưới mức tối thiểu', 'canh_bao')
+
+# phân bổ theo WBS và Mẫu 01A
+he_so_gia = truoc_thue / A if A else 0
+a_nhom = [sum(cost_goi[g['ma']] for g in la if g['ma'].split('.')[0] == n['ma']) for n in wbs['nhom']]
+a_tron = loi.lam_tron_tong(a_nhom, 0); g_tron = loi.lam_tron_tong([v / A * gia if A else 0 for v in a_nhom], 0)  # tổng các dòng bằng đúng A và giá chào
+theo_wbs = [{'ma': n['ma'], 'ten': n['ten'], 'md': n['md'], 'chi_phi_a': int(a_tron[i]), 'gia_phan_bo': int(g_tron[i])} for i, n in enumerate(wbs['nhom'])]
+p01 = {}
+for g in la:
+    hm = g.get('hang_muc_01a') or []
+    for h in hm:
+        p01[h] = p01.get(h, 0) + cost_goi[g['ma']] / len(hm)
+m11 = []
+a_hm = [p01.get(h['stt'], 0) for h in hsmt['mau_01a']]
+a_hm_tron = loi.lam_tron_tong(a_hm, 0)
+for i, h in enumerate(hsmt['mau_01a']):
+    m11.append({'stt': h['stt'], 'danh_muc': h['danh_muc'], 'khoi_luong': h['khoi_luong'], 'don_vi': h['don_vi'], 'chi_phi_a': int(a_hm_tron[i]),
+                'thanh_tien': round(a_hm[i] / A * gia) if A else 0})
+m11[-1]['thanh_tien'] = round(gia) - sum(x['thanh_tien'] for x in m11[:-1])  # cùng cách với sheet Mau_11A: dòng cuối nhận phần làm tròn
+
+# dòng tiền theo sprint
+dgn_id = {x['id']: x.pop('_dgn') for x in dcn}  # đơn giá ngày chưa làm tròn, khớp công thức Excel
+sp = [s['ma'] for s in lich['sprint']]
+chi_sp = {s: sum(r['md'] * dgn_id[r['thanh_vien']] for r in lich['phan_bo'] if r['sprint'] == s) for s in sp}
+quy_sp = {t['id']: loi.quy_thoi_gian(t, lich['sprint']) for t in tvs}
+chi_hd_sp = {s: sum(quy_sp[p][s] * dgn_id[p] for p in quy_sp) for s in sp}  # lương trả theo thời gian huy động
+SAU = 'Sau cut over'
+tre_tt = int(hsmt['hop_dong'].get('thanh_toan_trong_ngay') or 0)  # thời hạn thanh toán (ngày) theo E-ĐKC 13.1
+
+
+def sprint_cua(ngay_iso):
+    return next((x['ma'] for x in lich['sprint'] if x['den'] >= ngay_iso), SAU)
+moc_dot = {int(m['dot_thanh_toan']): m for m in lich['moc'] if str(m.get('dot_thanh_toan', '')).strip()}
+tt_rows = []
+for x in hsmt['hop_dong']['thanh_toan']:
+    m = moc_dot.get(x['dot'])
+    if x['dot'] == 1:
+        ngay_sk = lich['ngay_bat_dau']
+    elif m:
+        ngay_sk = m['ngay']
+    else:
+        ngay_sk = ''
+        if x['dot'] < len(hsmt['hop_dong']['thanh_toan']):
+            add('C40', f'Đợt thanh toán {x["dot"]} chưa gắn mốc trong lịch (thêm dot_thanh_toan vào mốc)', 'canh_bao')
+    ngay_thu = (dt.date.fromisoformat(ngay_sk) + dt.timedelta(days=tre_tt)).isoformat() if ngay_sk else ''
+    tt_rows.append({'dot': x['dot'], 'phan_tram': x['phan_tram'], 'su_kien': x['su_kien'], 'ngay_su_kien': ngay_sk,
+                    'ngay': ngay_thu, 'sprint': sprint_cua(ngay_thu) if ngay_thu else SAU, 'so_tien': round(gia * x['phan_tram'] / 100)})
+sp_dt = sp + ([SAU] if any(r['sprint'] == SAU for r in tt_rows) else [])
+dong_tien, lk_c, lk_t = [], 0, 0
+for s in sp_dt:
+    thu = sum(r['so_tien'] for r in tt_rows if r['sprint'] == s)
+    lk_c += chi_hd_sp.get(s, 0); lk_t += thu
+    dong_tien.append({'sprint': s, 'chi_luong': round(chi_sp.get(s, 0)), 'chi_luong_huy_dong': round(chi_hd_sp.get(s, 0)), 'thu': thu,
+                      'luy_ke_chi': round(lk_c), 'luy_ke_thu': lk_t, 'chenh_lech': round(lk_t - lk_c)})
+am = [x['sprint'] for x in dong_tien if x['chenh_lech'] < 0]
+if am:
+    add('C41', f'Dòng tiền lũy kế âm ở các sprint {", ".join(am)}, cần vốn lưu động', 'canh_bao')
+
+out = {'nhan_cong': nc, 'A': round(A), 'chi_phi_khac': dg.get('chi_phi_khac', []), 'B': round(B), 'D': D, 'cach_tinh_du_phong': cdp,
+       'du_phong_hien_co': round(du_phong_co), 'tong_emv_rui_ro': round(emv), 'chi_phi_da_biet': round(chi_phi_biet),
+       'gia_chao': round(gia), 'gia_truoc_thue': round(truoc_thue), 'thue': round(thue), 'thue_suat': vat, 'can_cu_thue': dg['thue_gtgt']['can_cu'],
+       'C': round(C), 'ty_le_C': round(C / truoc_thue, 4), 'gia_goi_thau': round(ggt), 'thap_hon_goi_thau': round(ggt - gia), 'ty_le_thap_hon': round((ggt - gia) / ggt, 4),
+       'do_nhay_thue': {'thue_suat': vat2, 'gia_truoc_thue': round(tt2), 'C': round(C2), 'ty_le_C': round(C2 / tt2, 4),
+                        'C_sau_luong': round(C2_luong), 'ty_le_C_sau_luong': round(C2_luong / tt2, 4)},
+       'C_sau_luong': round(C_luong), 'ty_le_C_sau_luong': round(C_luong / truoc_thue, 4),
+       'luong_binh_quan_md_huy_dong': round(luong_md), 'nguong_chiu_dung_md': round(C_luong / luong_md, 1) if luong_md else 0,
+       'md_huy_dong_hoa_von': round(md_hd_hoa_von, 2), 'ty_le_su_dung': round(wbs['tong_md'] / tong_md_hd, 4) if tong_md_hd else 0,
+       'ty_le_su_dung_hoa_von': round(wbs['tong_md'] / md_hd_hoa_von, 4) if md_hd_hoa_von else 0, 'thoi_han_thanh_toan_ngay': tre_tt,
+       'tong_md': wbs['tong_md'], 'tong_mm': round(wbs['tong_md'] / MDMM, 2), 'md_moi_mm': MDMM,
+       'doi_chieu_nguoi': dcn, 'tong_chi_phi_nguoi': tong_nguoi, 'tong_md_huy_dong': round(sum(x['md_huy_dong'] for x in dcn), 2),
+       'chenh_lech_A_nguoi': round(A - tong_nguoi), 'ty_le_chenh_lech_A': round((A - tong_nguoi) / A, 4), 'nang_suat_hoa_von': round(tong_nguoi / A, 4),
+       'he_so_bao_hiem': hs, 'ngay_lam_viec_moi_thang': ngay_thang, 'nguon_luong': dg['nguon_luong'], 'nguon_don_gia': dg['nguon_don_gia_tron_goi'],
+       'theo_wbs': theo_wbs, 'mau_11a': m11, 'thanh_toan': tt_rows, 'dong_tien': dong_tien,
+       'kiem_tra': {'phat_hien': F}}
+loi_ = [f for f in F if f['muc_do'] == 'loi']
+for f in F:
+    print(f'[{f["muc_do"]}] {f["ma"]}: {f["mo_ta"]}')
+if loi_:
+    sys.exit(1)
+loi.ghi_json('du_lieu/chi_phi.json', out)
+
+# ---------------- Excel
+OUT = loi.duong_dan('ket_qua/06_Cost_estimate/Cost_estimate.xlsx')
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
+wb = Workbook()
+wb.properties.creator = wb.properties.lastModifiedBy = loi.du_an().get('nguoi_lap', '')
+ts = wb.active; ts.title = 'Tham_so'
+ts['A1'] = 'Tham số dự toán'; ts['A1'].font = X.F_TEN
+tham = [('md_moi_mm', 'Số MD mỗi người-tháng', MDMM, '0'), ('he_so', 'Hệ số bảo hiểm phần doanh nghiệp', hs, '0.000'),
+        ('ngay_thang', 'Ngày làm việc mỗi tháng', ngay_thang, '0'), ('gia_muc_tieu', 'Giá chào mục tiêu, đồng', float(dg.get('gia_chao_muc_tieu') or 0), X.SO),
+        ('thue', 'Thuế suất GTGT áp dụng', vat, X.PT), ('thue2', 'Thuế suất GTGT tính độ nhạy', vat2, X.PT),
+        ('tre_tt', 'Thời hạn thanh toán theo HSMT (Mục 13.1 E-ĐKCT), ngày', tre_tt, '0'),
+        ('ty_le_min', 'Tỷ lệ chi phí chung và lợi nhuận tối thiểu', float(dg.get('ty_le_chi_phi_chung_va_loi_nhuan_toi_thieu', 0)), X.PT),
+        ('ty_le_cl', 'Tỷ lệ chi phí chung và lợi nhuận (cách cộng dồn)', float(dg.get('ty_le_chi_phi_chung_va_loi_nhuan', 0)), X.PT),
+        ('gia_goi_thau', 'Giá gói thầu theo HSMT, đồng', ggt, X.SO), ('emv', 'Tổng EMV sổ rủi ro, đồng', emv, X.SO),
+        ('dp_ty_le', 'Tỷ lệ dự phòng (cách tỷ lệ)', float(dg.get('du_phong_rui_ro', {}).get('ty_le', 0)), X.PT)]
+R = {}
+X.tieu_de(ts, 3, ['Tham số', 'Giá trị', 'Nguồn'], [46, 18, 70])
+for i, (k, ten, v, f) in enumerate(tham, 4):
+    X.o(ts, i, 1, ten); X.o(ts, i, 2, v, fmt=f, nhap=True)
+    X.o(ts, i, 3, {'thue': dg['thue_gtgt']['can_cu'], 'he_so': dg.get('nguon_he_so_bao_hiem', ''), 'gia_goi_thau': 'du_lieu/hsmt.json',
+                   'emv': 'du_lieu/rui_ro.json'}.get(k, 'dau_vao/don_gia.json'), wrap=True)
+    R[k] = f'Tham_so!$B${i}'
+r0 = len(tham) + 6
+X.o(ts, r0 - 1, 1, 'Đơn giá trọn gói theo loại công việc', dam=True)
+X.tieu_de(ts, r0, ['Mã loại', 'Tên', 'Đơn giá, đồng/người-tháng'])
+for i, (k, v) in enumerate(LCV.items(), r0 + 1):
+    X.o(ts, i, 1, k, nhap=True); X.o(ts, i, 2, v['ten'], nhap=True); X.o(ts, i, 3, v['don_gia_tron_goi_thang'], fmt=X.SO, nhap=True)
+dg_rng = (f'Tham_so!$A${r0 + 1}:$A${r0 + len(LCV)}', f'Tham_so!$C${r0 + 1}:$C${r0 + len(LCV)}')
+r1 = r0 + len(LCV) + 3
+X.o(ts, r1 - 1, 1, 'Lương tham chiếu theo vai trò (' + dg['nguon_luong'] + ')', dam=True)
+X.tieu_de(ts, r1, ['Mã vai trò', 'Tên', 'Lương, đồng/tháng'])
+for i, (k, v) in enumerate(dg['luong_tham_chieu_thang'].items(), r1 + 1):
+    X.o(ts, i, 1, k, nhap=True); X.o(ts, i, 2, v['ten'], nhap=True); X.o(ts, i, 3, v['luong'], fmt=X.SO, nhap=True)
+lg_rng = (f'Tham_so!$A${r1 + 1}:$A${r1 + len(dg["luong_tham_chieu_thang"])}', f'Tham_so!$C${r1 + 1}:$C${r1 + len(dg["luong_tham_chieu_thang"])}')
+ts.freeze_panes = None
+
+wm = wb.create_sheet('WBS_MD')
+X.tieu_de(wm, 1, ['Mã gói', 'Tên gói', 'Loại', 'MD', 'Nhóm mức 1', 'Chi phí A của gói, đồng'], [9, 52, 8, 8, 10, 18])
+for i, g in enumerate(la, 2):
+    X.o(wm, i, 1, g['ma'], nhap=True); X.o(wm, i, 2, g['ten'], nhap=True); X.o(wm, i, 3, g['loai'], nhap=True)
+    X.o(wm, i, 4, float(g['md']), fmt=X.SO2, nhap=True); X.o(wm, i, 5, g['ma'].split('.')[0], nhap=True)
+    X.o(wm, i, 6, f'=D{i}/{R["md_moi_mm"]}*INDEX({dg_rng[1]},MATCH(C{i},{dg_rng[0]},0))', fmt=X.SO)
+nla = len(la) + 1
+
+nh = wb.create_sheet('Nhan_cong')
+X.tieu_de(nh, 1, ['Loại công việc', 'Tên', 'MD', 'Người-tháng', 'Đơn giá, đồng/người-tháng', 'Thành tiền, đồng'], [12, 34, 10, 12, 20, 18])
+for i, x in enumerate(nc, 2):
+    X.o(nh, i, 1, x['loai'], nhap=True); X.o(nh, i, 2, x['ten'], nhap=True)
+    X.o(nh, i, 3, f'=SUMIFS(WBS_MD!$D:$D,WBS_MD!$C:$C,A{i})', fmt=X.SO2)
+    X.o(nh, i, 4, f'=C{i}/{R["md_moi_mm"]}', fmt=X.SO2)
+    X.o(nh, i, 5, f'=INDEX({dg_rng[1]},MATCH(A{i},{dg_rng[0]},0))', fmt=X.SO, lien_ket=True)
+    X.o(nh, i, 6, f'=D{i}*E{i}', fmt=X.SO)
+nn = len(nc) + 1
+X.o(nh, nn + 1, 2, 'A. Tổng nhân công', dam=True)
+for c in (3, 4, 6):
+    X.o(nh, nn + 1, c, f'=SUM({L(c)}2:{L(c)}{nn})', fmt=X.SO2 if c < 6 else X.SO, dam=True)
+A_REF = f'Nhan_cong!$F${nn + 1}'
+
+kh = wb.create_sheet('Chi_phi_khac')
+X.tieu_de(kh, 1, ['Mã', 'Khoản mục', 'Số tiền, đồng', 'Căn cứ'], [8, 50, 18, 50])
+for i, x in enumerate(dg.get('chi_phi_khac', []), 2):
+    X.o(kh, i, 1, x['ma'], nhap=True); X.o(kh, i, 2, x['ten'], nhap=True); X.o(kh, i, 3, float(x['so_tien']), fmt=X.SO, nhap=True)
+    X.o(kh, i, 4, x.get('can_cu', ''), nhap=True, wrap=True)
+nk = len(dg.get('chi_phi_khac', [])) + 1
+X.o(kh, nk + 1, 2, 'B. Tổng chi phí khác', dam=True); X.o(kh, nk + 1, 3, f'=SUM(C2:C{nk})', fmt=X.SO, dam=True)
+B_REF = f'Chi_phi_khac!$C${nk + 1}'
+
+th = wb.create_sheet('Tong_hop', 0)
+th['A1'] = 'Cost estimate'; th['A1'].font = X.F_TEN
+X.o(th, 2, 1, loi.du_an()['ten_du_an'])
+D_F = {'emv': f'={R["emv"]}', 'ty_le': f'=({A_REF}+{B_REF})*{R["dp_ty_le"]}'}.get(cdp, '=0')
+rows = [('A. Nhân công theo loại công việc', f'={A_REF}', X.SO), ('B. Chi phí khác', f'={B_REF}', X.SO),
+        ('D. Dự phòng rủi ro tách riêng', D_F, X.SO), ('Chi phí đã biết (A + B + D)', '=B4+B5+B6', X.SO),
+        ('Giá chào trọn gói, gồm thuế', f'={R["gia_muc_tieu"]}' if dg.get('cach_tinh_gia') == 'muc_tieu' else f'=B7*(1+{R["ty_le_cl"]})*(1+{R["thue"]})', X.SO),
+        ('Giá trước thuế', f'=B8/(1+{R["thue"]})', X.SO), ('Thuế GTGT', '=B8-B9', X.SO),
+        ('C. Chi phí chung và lợi nhuận', '=B9-B7', X.SO), ('Tỷ lệ C trên giá trước thuế', '=IF(B9=0,0,B11/B9)', X.PT),
+        ('Giá gói thầu', f'={R["gia_goi_thau"]}', X.SO), ('Giá chào thấp hơn giá gói thầu', '=B13-B8', X.SO), ('Tỷ lệ thấp hơn', '=IF(B13=0,0,B14/B13)', X.PT),
+        ('Kiểm tra giá chào không vượt giá gói thầu', '=IF(B8<=B13,"Đạt","Vượt giá gói thầu")', None),
+        ('Kiểm tra tỷ lệ C tối thiểu', f'=IF(B12>={R["ty_le_min"]},"Đạt","Dưới mức tối thiểu")', None),
+        ('Tổng EMV sổ rủi ro', f'={R["emv"]}', X.SO),
+        ('Dự phòng hiện có (B nếu dự phòng nằm trong B, ngược lại D)', '=B5' if cdp == 'nam_trong_chi_phi_khac' else '=B6', X.SO),
+        ('Kiểm tra dự phòng so với EMV', '=IF(B19>=B18,"Đủ","Thiếu")', None),
+        ('Độ nhạy: giá trước thuế nếu áp thuế suất tính độ nhạy', f'=B8/(1+{R["thue2"]})', X.SO), ('Độ nhạy: khoản C tương ứng', '=B21-B7', X.SO),
+        ('Chi phí lương theo người huy động', f'=Doi_chieu_nguoi!$I${len(dcn) + 2}', X.SO),
+        ('Khoản còn lại sau chi phí lương thực tế (giá trước thuế - lương - B - D)', '=B9-B23-B5-B6', X.SO),
+        ('Tỷ lệ khoản còn lại trên giá trước thuế', '=IF(B9=0,0,B24/B9)', X.PT),
+        ('Kiểm tra giá trước thuế đủ bù chi phí lương thực tế', '=IF(B24>=0,"Đạt","Không đủ")', None),
+        ('Kiểm tra tỷ lệ khoản còn lại tối thiểu', f'=IF(B25>={R["ty_le_min"]},"Đạt","Dưới mức tối thiểu")', None),
+        ('Độ nhạy: khoản còn lại sau chi phí lương thực tế', '=B21-B23-B5-B6', X.SO)]
+X.tieu_de(th, 3, ['Khoản mục', 'Giá trị, đồng'], [62, 22])
+for i, (k, f, nf) in enumerate(rows, 4):
+    X.o(th, i, 1, k, dam=k[:2] in ('A.', 'B.', 'C.', 'D.') or k.startswith('Giá chào trọn')); X.o(th, i, 2, f, fmt=nf, lien_ket=f.startswith('=Tham') or 'Nhan_cong' in f or 'Chi_phi' in f)
+th.conditional_formatting.add('B16:B17', FormulaRule(formula=['AND(B16<>"Đạt",B16<>"")'], fill=PatternFill('solid', fgColor='F8CBAD')))
+th.conditional_formatting.add('B20', FormulaRule(formula=['B20="Thiếu"'], fill=PatternFill('solid', fgColor='F8CBAD')))
+th.conditional_formatting.add('B26:B27', FormulaRule(formula=['AND(B26<>"Đạt",B26<>"")'], fill=PatternFill('solid', fgColor='F8CBAD')))
+X.ghi_chu_bang(th, 30, 'Căn cứ thuế: ' + dg['thue_gtgt']['can_cu'])
+X.ghi_chu_bang(th, 31, 'Kiểm tra dự phòng so với EMV chỉ đúng khi toàn bộ dòng B được dùng làm dự phòng (cách tính nằm trong chi phí khác).')
+X.ghi_chu_bang(th, 32, 'Chữ xanh dương: dữ liệu đầu vào. Chữ xanh lá: tham chiếu sang sheet khác. Chữ đen: công thức.')
+
+dn = wb.create_sheet('Doi_chieu_nguoi')
+X.tieu_de(dn, 1, ['Mã', 'Họ tên', 'Nhóm', 'Vai trò lương', 'Lương tham chiếu, đồng/tháng', 'Đơn giá ngày gồm bảo hiểm', 'MD huy động', 'MD được giao', 'Chi phí lương, đồng'],
+          [8, 26, 16, 12, 18, 16, 12, 12, 18])
+for i, x in enumerate(dcn, 2):
+    X.o(dn, i, 1, x['id'], nhap=True); X.o(dn, i, 2, x['ho_ten'], nhap=True); X.o(dn, i, 3, x['loai'], nhap=True); X.o(dn, i, 4, x['vai_tro'], nhap=True)
+    X.o(dn, i, 5, f'=INDEX({lg_rng[1]},MATCH(D{i},{lg_rng[0]},0))', fmt=X.SO, lien_ket=True)
+    X.o(dn, i, 6, f'=E{i}*{R["he_so"]}/{R["ngay_thang"]}', fmt=X.SO)
+    X.o(dn, i, 7, x['md_huy_dong'], fmt=X.SO2, nhap=True); X.o(dn, i, 8, x['md_giao'], fmt=X.SO2, nhap=True)
+    X.o(dn, i, 9, f'=F{i}*G{i}', fmt=X.SO)
+nd = len(dcn) + 1
+X.o(dn, nd + 1, 2, 'Tổng', dam=True)
+for c in (7, 8, 9):
+    X.o(dn, nd + 1, c, f'=SUM({L(c)}2:{L(c)}{nd})', fmt=X.SO2 if c < 9 else X.SO, dam=True)
+X.o(dn, nd + 2, 2, 'Chênh lệch dòng A so với chi phí lương theo người'); X.o(dn, nd + 2, 9, f'={A_REF}-I{nd + 1}', fmt=X.SO)
+X.o(dn, nd + 3, 2, 'Năng suất tối thiểu để dòng A đủ chi trả'); X.o(dn, nd + 3, 9, f'=IF({A_REF}=0,0,I{nd + 1}/{A_REF})', fmt=X.PT)
+X.o(dn, nd + 4, 2, 'MD huy động hòa vốn (dòng A chia lương bình quân mỗi MD huy động)'); X.o(dn, nd + 4, 9, f'=IF(I{nd + 1}=0,0,{A_REF}/(I{nd + 1}/G{nd + 1}))', fmt=X.SO2)
+X.o(dn, nd + 5, 2, 'Tỷ lệ sử dụng quỹ huy động (MD WBS chia MD huy động)'); X.o(dn, nd + 5, 9, f'=IF(G{nd + 1}=0,0,Nhan_cong!$C${nn + 1}/G{nd + 1})', fmt=X.PT)
+X.o(dn, nd + 6, 2, 'Tỷ lệ sử dụng hòa vốn'); X.o(dn, nd + 6, 9, f'=IF(I{nd + 4}=0,0,Nhan_cong!$C${nn + 1}/I{nd + 4})', fmt=X.PT)
+
+g1 = wb.create_sheet('Goi_01A')
+X.tieu_de(g1, 1, ['Mã gói', 'Hạng mục Mẫu 01A', 'Tỷ lệ chia', 'Chi phí A phân bổ, đồng'], [10, 14, 10, 20])
+rr_ = 2
+for i, g in enumerate(la, 2):
+    hm = g.get('hang_muc_01a') or []
+    for h in hm:
+        X.o(g1, rr_, 1, g['ma'], nhap=True); X.o(g1, rr_, 2, h, nhap=True); X.o(g1, rr_, 3, 1 / len(hm), fmt='0.0000', nhap=True)
+        X.o(g1, rr_, 4, f'=INDEX(WBS_MD!$F$2:$F${nla},MATCH(A{rr_},WBS_MD!$A$2:$A${nla},0))*C{rr_}', fmt=X.SO)
+        rr_ += 1
+m1 = wb.create_sheet('Mau_11A')
+m1['A1'] = 'Phân bổ giá chào theo hạng mục Mẫu 01A (căn cứ lập Mẫu 11A)'; m1['A1'].font = X.F_TEN
+X.tieu_de(m1, 3, ['STT', 'Danh mục dịch vụ', 'Khối lượng', 'Đơn vị', 'Chi phí A phân bổ, đồng', 'Thành tiền, đồng'], [6, 52, 10, 8, 20, 20])
+for i, x in enumerate(m11, 4):
+    X.o(m1, i, 1, x['stt'], nhap=True); X.o(m1, i, 2, x['danh_muc'], nhap=True, wrap=True); X.o(m1, i, 3, x['khoi_luong'], nhap=True); X.o(m1, i, 4, x['don_vi'], nhap=True)
+    X.o(m1, i, 5, f'=SUMIFS(Goi_01A!$D:$D,Goi_01A!$B:$B,A{i})', fmt=X.SO)
+    X.o(m1, i, 6, f'=ROUND(E{i}/{A_REF}*Tong_hop!$B$8,0)' if i < 3 + len(m11) else f'=Tong_hop!$B$8-SUM(F4:F{i - 1})', fmt=X.SO)
+n11 = 3 + len(m11)
+X.o(m1, n11 + 1, 2, 'Tổng cộng', dam=True)
+X.o(m1, n11 + 1, 5, f'=SUM(E4:E{n11})', fmt=X.SO, dam=True); X.o(m1, n11 + 1, 6, f'=SUM(F4:F{n11})', fmt=X.SO, dam=True)
+X.ghi_chu_bang(m1, n11 + 3, 'Thành tiền phân bổ theo tỷ trọng chi phí nhân công của hạng mục. Dòng cuối nhận phần làm tròn để tổng bằng đúng giá chào.')
+
+dt_ = wb.create_sheet('Dong_tien')
+X.tieu_de(dt_, 1, ['Đợt', 'Tỷ lệ', 'Sự kiện', 'Sprint thu', 'Ngày thu dự kiến', 'Số tiền, đồng', 'Ngày sự kiện'], [6, 8, 60, 12, 14, 18, 14])
+for i, x in enumerate(tt_rows, 2):
+    X.o(dt_, i, 1, x['dot'], nhap=True); X.o(dt_, i, 2, x['phan_tram'] / 100, fmt=X.PT, nhap=True); X.o(dt_, i, 3, x['su_kien'], nhap=True, wrap=True)
+    X.o(dt_, i, 4, x['sprint'], nhap=True)
+    X.o(dt_, i, 5, f'=IF(G{i}="","",G{i}+{R["tre_tt"]})' if x['ngay_su_kien'] else None, fmt=X.NGAY)
+    X.o(dt_, i, 6, f'=B{i}*Tong_hop!$B$8', fmt=X.SO)
+    X.o(dt_, i, 7, dt.date.fromisoformat(x['ngay_su_kien']) if x['ngay_su_kien'] else None, fmt=X.NGAY, nhap=True)
+r2 = len(tt_rows) + 4
+X.tieu_de(dt_, r2, ['Sprint', 'Chi lương kế hoạch', 'Chi lương theo huy động', 'Thu theo đợt', 'Lũy kế chi (theo huy động)', 'Lũy kế thu', 'Chênh lệch lũy kế'])
+X.ghi_chu_bang(dt_, r2 - 1, f'Ngày thu dự kiến = ngày sự kiện + {tre_tt} ngày (thời hạn thanh toán theo HSMT). Lũy kế chi tính theo lương của thời gian huy động.')
+hd_sheet = wb.create_sheet('Huy_dong_luong')
+X.tieu_de(hd_sheet, 1, ['Mã thành viên', 'Sprint', 'MD huy động', 'Đơn giá ngày', 'Chi lương, đồng'], [12, 8, 12, 14, 16])
+hd_rows = [(p, s, quy_sp[p][s]) for p in quy_sp for s in sp if quy_sp[p][s]]
+for i, (p, s, q) in enumerate(hd_rows, 2):
+    X.o(hd_sheet, i, 1, p, nhap=True); X.o(hd_sheet, i, 2, s, nhap=True); X.o(hd_sheet, i, 3, q, fmt=X.SO2, nhap=True)
+    X.o(hd_sheet, i, 4, f'=INDEX(Doi_chieu_nguoi!$F$2:$F${nd},MATCH(A{i},Doi_chieu_nguoi!$A$2:$A${nd},0))', fmt=X.SO, lien_ket=True)
+    X.o(hd_sheet, i, 5, f'=C{i}*D{i}', fmt=X.SO)
+pb_sheet = wb.create_sheet('Phan_bo_luong')
+X.tieu_de(pb_sheet, 1, ['Mã thành viên', 'Sprint', 'MD kế hoạch', 'Đơn giá ngày', 'Chi lương, đồng'], [12, 8, 12, 14, 16])
+for i, x in enumerate(lich['phan_bo'], 2):
+    X.o(pb_sheet, i, 1, x['thanh_vien'], nhap=True); X.o(pb_sheet, i, 2, x['sprint'], nhap=True); X.o(pb_sheet, i, 3, x['md'], fmt=X.SO2, nhap=True)
+    X.o(pb_sheet, i, 4, f'=INDEX(Doi_chieu_nguoi!$F$2:$F${nd},MATCH(A{i},Doi_chieu_nguoi!$A$2:$A${nd},0))', fmt=X.SO, lien_ket=True)
+    X.o(pb_sheet, i, 5, f'=C{i}*D{i}', fmt=X.SO)
+for j, s in enumerate(sp_dt, r2 + 1):
+    X.o(dt_, j, 1, s, nhap=True)
+    X.o(dt_, j, 2, f'=SUMIFS(Phan_bo_luong!$E:$E,Phan_bo_luong!$B:$B,A{j})', fmt=X.SO)
+    X.o(dt_, j, 3, f'=SUMIFS(Huy_dong_luong!$E:$E,Huy_dong_luong!$B:$B,A{j})', fmt=X.SO)
+    X.o(dt_, j, 4, f'=SUMIFS($F$2:$F${len(tt_rows) + 1},$D$2:$D${len(tt_rows) + 1},A{j})', fmt=X.SO)
+    X.o(dt_, j, 5, f'=C{j}' + (f'+E{j - 1}' if j > r2 + 1 else ''), fmt=X.SO)
+    X.o(dt_, j, 6, f'=D{j}' + (f'+F{j - 1}' if j > r2 + 1 else ''), fmt=X.SO)
+    X.o(dt_, j, 7, f'=F{j}-E{j}', fmt=X.SO)
+dt_.conditional_formatting.add(f'G{r2 + 1}:G{r2 + len(sp_dt)}', FormulaRule(formula=[f'G{r2 + 1}<0'], fill=PatternFill('solid', fgColor='F8CBAD')))
+wb.save(OUT)
+
+kq = X.tinh_lai(OUT)
+ghi = 'Máy không có LibreOffice, Excel tự tính khi mở.'
+if kq and kq.get('status'):
+    lc = X.dem_loi_cong_thuc(OUT)
+    if lc:
+        loi.thoat_loi('Công thức lỗi: ' + ', '.join(lc[:10]))
+    v = X.doc_gia_tri(OUT)
+    so = [('A', v['Tong_hop']['B4'].value, A), ('B', v['Tong_hop']['B5'].value, B), ('giá chào', v['Tong_hop']['B8'].value, gia),
+          ('C', v['Tong_hop']['B11'].value, C), ('lương theo người', v['Doi_chieu_nguoi'][f'I{nd + 1}'].value, tong_nguoi),
+          ('tổng Mẫu 11A', v['Mau_11A'][f'F{n11 + 1}'].value, round(gia))]
+    so += [(f'Mẫu 11A dòng {x["stt"]}', v['Mau_11A'][f'F{4 + i}'].value, x['thanh_tien']) for i, x in enumerate(m11)]
+    so += [('khoản còn lại sau chi phí lương', v['Tong_hop']['B24'].value, C_luong)]
+    so += [(f'dòng tiền {x["sprint"]}', v['Dong_tien'][f'G{r2 + 1 + i}'].value, x['chenh_lech']) for i, x in enumerate(dong_tien)]
+    for ten, a_, b_ in so:
+        if a_ is None or abs(float(a_) - float(b_)) > (0.5 if ten.startswith('Mẫu 11A') else 2):
+            loi.thoat_loi(f'Đối chiếu Excel và Python lệch ở {ten}: {a_} khác {b_}')
+    ghi = 'Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (A, B, C, giá chào, lương theo người, tổng Mẫu 11A, khoản còn lại sau lương, dòng tiền).'
+print(f'A {loi.trieu(A)} triệu, B {loi.trieu(B)} triệu, giá chào {loi.trieu(gia)} triệu, C {loi.trieu(C)} triệu ({C / truoc_thue:.2%}). '
+      f'Lương theo người {loi.trieu(tong_nguoi)} triệu. {ghi}')
+pbs = loi.hoan_tat_buoc('chi_phi', 'Lập cost estimate và Excel công thức. ' + ghi, bo_qua=('doc_chi_phi',),
+                        hash_tep={'ket_qua/06_Cost_estimate/Cost_estimate.xlsx': loi.bam_obj(out)})
+for k, v in pbs.items():
+    print(f'  {k}: phiên bản {v}')
+print('Tiếp theo: python .claude/skills/qlda-loi/scripts/chay.py chuan_bi chi_phi (thuyết minh dự toán)')

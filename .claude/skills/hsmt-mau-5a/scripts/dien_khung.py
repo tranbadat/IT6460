@@ -6,6 +6,13 @@ ban_soan.json là một đối tượng {ID: nội dung}:
 - dạng "dong_bang": danh sách các dòng, mỗi dòng là danh sách ô (chuỗi hoặc danh sách chuỗi)
 Mã thoát 1 nếu thiếu ID, thừa ID, sai dạng hoặc sai số ô.
 """
+import os as _os, sys as _sys  # noqa: E401
+_os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
+for _s in (_sys.stdout, _sys.stderr):
+    try:
+        _s.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 import copy, json, sys
 
 khung = json.load(open(sys.argv[1], encoding='utf-8'))

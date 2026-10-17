@@ -1,0 +1,140 @@
+{
+ "_ghi_chu": "Chỉ tiêu đánh giá dự án mặc định. Nhóm ghi đè ngưỡng tại dau_vao/kpi.json (cùng mã) và ghi lý do. so_sanh: ge (lớn hơn hoặc bằng), le (nhỏ hơn hoặc bằng), eq. xep_loai: xếp loại chung theo tỷ lệ KPI đạt.",
+ "kpi": [
+  {
+   "ma": "K01",
+   "nhom": "Tiến độ",
+   "chi_tieu": "Đưa hệ thống vào vận hành (cut over) đúng hạn hợp đồng",
+   "do": "so_ngay_tre_cut_over",
+   "so_sanh": "le",
+   "muc_tieu": 0,
+   "don_vi": "ngày làm việc"
+  },
+  {
+   "ma": "K02",
+   "nhom": "Tiến độ",
+   "chi_tieu": "Tỷ lệ mốc đạt đúng hạn",
+   "do": "ty_le_moc_dung_han",
+   "so_sanh": "ge",
+   "muc_tieu": 0.8,
+   "don_vi": "%"
+  },
+  {
+   "ma": "K03",
+   "nhom": "Tiến độ",
+   "chi_tieu": "Chỉ số tiến độ SPI kỳ cuối",
+   "do": "spi_cuoi",
+   "so_sanh": "ge",
+   "muc_tieu": 0.95,
+   "don_vi": ""
+  },
+  {
+   "ma": "K04",
+   "nhom": "Chi phí",
+   "chi_tieu": "Chỉ số chi phí CPI kỳ cuối",
+   "do": "cpi_cuoi",
+   "so_sanh": "ge",
+   "muc_tieu": 0.95,
+   "don_vi": ""
+  },
+  {
+   "ma": "K05",
+   "nhom": "Chi phí",
+   "chi_tieu": "Chênh lệch công sức thực tế so với kế hoạch",
+   "do": "ty_le_chenh_md",
+   "so_sanh": "le",
+   "muc_tieu": 0.1,
+   "don_vi": "%"
+  },
+  {
+   "ma": "K06",
+   "nhom": "Phạm vi",
+   "chi_tieu": "Tỷ lệ gói công việc hoàn thành",
+   "do": "ty_le_goi_hoan_thanh",
+   "so_sanh": "ge",
+   "muc_tieu": 1.0,
+   "don_vi": "%"
+  },
+  {
+   "ma": "K07",
+   "nhom": "Chất lượng",
+   "chi_tieu": "Tỷ lệ tiêu chí nghiệm thu đạt",
+   "do": "ty_le_nghiem_thu_dat",
+   "so_sanh": "ge",
+   "muc_tieu": 1.0,
+   "don_vi": "%"
+  },
+  {
+   "ma": "K08",
+   "nhom": "Chất lượng",
+   "chi_tieu": "Tỷ lệ yêu cầu RFP được nghiệm thu đạt",
+   "do": "ty_le_yeu_cau_rfp_dat",
+   "so_sanh": "ge",
+   "muc_tieu": 1.0,
+   "don_vi": "%"
+  },
+  {
+   "ma": "K09",
+   "nhom": "Chất lượng",
+   "chi_tieu": "Lỗi mức nghiêm trọng và cao còn mở khi bàn giao",
+   "do": "loi_nghiem_trong_cao_con_mo",
+   "so_sanh": "le",
+   "muc_tieu": 0,
+   "don_vi": "lỗi"
+  },
+  {
+   "ma": "K10",
+   "nhom": "Chất lượng",
+   "chi_tieu": "Mật độ lỗi trên 10 MD thực tế",
+   "do": "mat_do_loi",
+   "so_sanh": "le",
+   "muc_tieu": 2.0,
+   "don_vi": "lỗi/10 MD"
+  },
+  {
+   "ma": "K11",
+   "nhom": "Thay đổi",
+   "chi_tieu": "Yêu cầu thay đổi có quyết định trong thời hạn đánh giá",
+   "do": "ty_le_cr_dung_han",
+   "so_sanh": "ge",
+   "muc_tieu": 1.0,
+   "don_vi": "%"
+  },
+  {
+   "ma": "K12",
+   "nhom": "Rủi ro",
+   "chi_tieu": "Rủi ro đã xảy ra có hành động ứng phó được ghi nhận",
+   "do": "ty_le_rui_ro_co_ung_pho",
+   "so_sanh": "ge",
+   "muc_tieu": 1.0,
+   "don_vi": "%"
+  },
+  {
+   "ma": "K13",
+   "nhom": "Rủi ro",
+   "chi_tieu": "Tác động thực tế của rủi ro so với dự phòng",
+   "do": "ty_le_dung_du_phong",
+   "so_sanh": "le",
+   "muc_tieu": 1.0,
+   "don_vi": "%"
+  }
+ ],
+ "xep_loai": [
+  {
+   "tu": 0.9,
+   "ten": "Tốt"
+  },
+  {
+   "tu": 0.75,
+   "ten": "Khá"
+  },
+  {
+   "tu": 0.5,
+   "ten": "Trung bình"
+  },
+  {
+   "tu": 0,
+   "ten": "Chưa đạt"
+  }
+ ]
+}

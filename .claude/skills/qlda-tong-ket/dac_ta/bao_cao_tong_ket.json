@@ -1,0 +1,757 @@
+{
+ "id": "tong_ket",
+ "ten": "Báo cáo tổng kết dự án",
+ "nut_ra": "doc_tong_ket",
+ "ten_tep": "Bao_cao_tong_ket_du_an.docx",
+ "ngay_tai_lieu": "{kt#ngay_chot|ngay}",
+ "tieu_de_dau_trang": "Kết thúc dự án - Báo cáo tổng kết dự án",
+ "nguon": {
+  "kt": "du_lieu/ket_thuc.json",
+  "hsmt": "du_lieu/hsmt.json",
+  "cp": "du_lieu/chi_phi.json",
+  "lich": "du_lieu/lich.json"
+ },
+ "bia": {
+  "tieu_de": "Báo cáo tổng kết dự án",
+  "dong_phu": [
+   "Số liệu tính đến ngày {kt#ngay_chot|ngay}"
+  ]
+ },
+ "muc_luc": true,
+ "khoi": [
+  {
+   "h1": "1. Thông tin chung"
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Nội dung",
+      "Kế hoạch",
+      "Thực tế"
+     ],
+     [
+      "Thời gian thực hiện",
+      "{kt#tien_do.ngay_bat_dau|ngay} đến {kt#tien_do.ket_thuc_ke_hoach|ngay}",
+      "{kt#tien_do.ngay_bat_dau|ngay} đến {kt#tien_do.ket_thuc_thuc_te|ngay}"
+     ],
+     [
+      "Đưa hệ thống vào vận hành",
+      "{kt#tien_do.cut_over|ngay}",
+      "{kt#tien_do.cut_over_thuc_te|ngay}"
+     ],
+     [
+      "Giá hợp đồng trước thuế, đồng",
+      "{kt#chi_phi.gia_hop_dong_truoc_thue|tien}",
+      "{kt#chi_phi.gia_hop_dong_truoc_thue|tien}"
+     ],
+     [
+      "Công sức, MD",
+      "{kt#chi_phi.BAC_md|md}",
+      "{kt#chi_phi.AC_md|md}"
+     ],
+     [
+      "Số gói công việc hoàn thành",
+      "{kt#pham_vi.so_goi}",
+      "{kt#pham_vi.so_goi_hoan_thanh}"
+     ],
+     [
+      "Số yêu cầu thay đổi được duyệt",
+      "",
+      "{kt#thay_doi.so_duyet}"
+     ],
+     [
+      "Chỉ tiêu đánh giá đạt",
+      "{kt#so_kpi}",
+      "{kt#so_kpi_dat}"
+     ]
+    ],
+    "widths": [
+     3300,
+     3000,
+     3000
+    ]
+   }
+  },
+  {
+   "soan": "TOM_TAT",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 3,
+   "huong_dan": "Tóm tắt kết quả dự án: mục tiêu theo HSMT và RFP đã đạt hay chưa, hệ thống đã đưa vào vận hành ngày nào, mức độ đạt về phạm vi, tiến độ, chi phí, chất lượng, số chỉ tiêu đạt. Không đánh giá thay báo cáo đánh giá, chỉ nêu kết quả.",
+   "nguon": [
+    "kt",
+    "hsmt"
+   ],
+   "bat_buoc": [
+    "{kt#so_kpi_dat}"
+   ]
+  },
+  {
+   "h1": "2. Phạm vi và sản phẩm bàn giao"
+  },
+  {
+   "bang": {
+    "nguon": "kt#nghiem_thu.hang_muc",
+    "cot": [
+     [
+      "STT",
+      "stt",
+      600,
+      "c"
+     ],
+     [
+      "Hạng mục theo Mẫu 01A",
+      "danh_muc",
+      4700
+     ],
+     [
+      "Số tiêu chí",
+      "so_tieu_chi",
+      1300,
+      "c"
+     ],
+     [
+      "Đạt",
+      "so_dat",
+      1000,
+      "c"
+     ],
+     [
+      "Kết quả",
+      "ket_qua",
+      1700,
+      "c"
+     ]
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "kt#pham_vi.goi_chua_xong",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      900,
+      "c"
+     ],
+     [
+      "Gói chưa hoàn thành",
+      "ten",
+      5000
+     ],
+     [
+      "Hoàn thành",
+      "phan_tram|ptg",
+      1400,
+      "r"
+     ],
+     [
+      "Phụ trách",
+      "nguoi",
+      2000
+     ]
+    ],
+    "rong_thi": "Toàn bộ {kt#pham_vi.so_goi} gói công việc lá đã hoàn thành."
+   }
+  },
+  {
+   "bang": {
+    "nguon": "kt#pham_vi.goi_vuot_20pt",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      900,
+      "c"
+     ],
+     [
+      "Gói vượt công sức trên 20%",
+      "ten",
+      4400
+     ],
+     [
+      "Kế hoạch, MD",
+      "md_ke_hoach|md",
+      1300,
+      "r"
+     ],
+     [
+      "Thực tế, MD",
+      "md_thuc_te|md",
+      1300,
+      "r"
+     ],
+     [
+      "Chênh lệch",
+      "ty_le_chenh|pt",
+      1400,
+      "r"
+     ]
+    ],
+    "rong_thi": "Không có gói vượt công sức kế hoạch trên 20%."
+   }
+  },
+  {
+   "soan": "PHAM_VI",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Nhận xét phạm vi: sản phẩm bàn giao theo RFP (đặc tả, quy trình vận hành mới, cấu trúc cơ sở dữ liệu, sơ đồ menu), hạng mục chưa nghiệm thu nếu có, thay đổi phạm vi đã duyệt (mã CR).",
+   "nguon": [
+    "kt",
+    "hsmt"
+   ]
+  },
+  {
+   "h1": "3. Tiến độ"
+  },
+  {
+   "bang": {
+    "nguon": "kt#tien_do.moc",
+    "cot": [
+     [
+      "Mốc",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Nội dung",
+      "ten",
+      3900
+     ],
+     [
+      "Kế hoạch",
+      "ke_hoach|ngay",
+      1300,
+      "c"
+     ],
+     [
+      "Thực tế",
+      "thuc_te|ngay",
+      1300,
+      "c"
+     ],
+     [
+      "Kết quả",
+      "trang_thai",
+      2100
+     ]
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "kt#tien_do.lich_su",
+    "cot": [
+     [
+      "Kỳ",
+      "ky",
+      1100,
+      "c"
+     ],
+     [
+      "Ngày",
+      "ngay_bao_cao|ngay",
+      1400,
+      "c"
+     ],
+     [
+      "PV, MD",
+      "PV_md|md",
+      1300,
+      "r"
+     ],
+     [
+      "EV, MD",
+      "EV_md|md",
+      1300,
+      "r"
+     ],
+     [
+      "AC, MD",
+      "AC_md|md",
+      1300,
+      "r"
+     ],
+     [
+      "SPI",
+      "spi|so2",
+      900,
+      "r"
+     ],
+     [
+      "CPI",
+      "cpi|so2",
+      900,
+      "r"
+     ],
+     [
+      "Trạng thái",
+      "trang_thai_chung",
+      1100,
+      "c"
+     ]
+    ]
+   }
+  },
+  {
+   "soan": "TIEN_DO",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Nhận xét tiến độ: xu hướng SPI qua các kỳ, mốc trễ và nguyên nhân, mốc thanh toán, ngày đưa vào vận hành so với hợp đồng.",
+   "nguon": [
+    "kt"
+   ],
+   "bat_buoc": [
+    "{kt#tien_do.spi_cuoi|so2}"
+   ]
+  },
+  {
+   "h1": "4. Chi phí và nguồn lực"
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Khoản mục",
+      "Kế hoạch, đồng",
+      "Thực tế, đồng",
+      "Chênh lệch, đồng"
+     ],
+     [
+      "Chi phí nhân sự (MD x lương ngày vai trò x hệ số bảo hiểm)",
+      "{kt#chi_phi.chi_phi_nhan_su_ke_hoach|tien}",
+      "{kt#chi_phi.chi_phi_nhan_su_thuc_te|tien}",
+      "{kt#chi_phi.chenh_chi_phi_nhan_su|tien}"
+     ],
+     [
+      "Chi phí khác (khoản B)",
+      "{kt#chi_phi.B_ke_hoach|tien}",
+      "{kt#chi_phi.B_thuc_te|tien}{kt#chi_phi.B_ghi_chu}",
+      "{kt#chi_phi.chenh_B|tien}"
+     ],
+     [
+      "Giá hợp đồng trước thuế",
+      "{kt#chi_phi.gia_hop_dong_truoc_thue|tien}",
+      "{kt#chi_phi.gia_hop_dong_truoc_thue|tien}",
+      "0"
+     ],
+     [
+      "Chênh lệch giá hợp đồng và chi phí",
+      "{kt#chi_phi.loi_nhuan_ke_hoach|tien}",
+      "{kt#chi_phi.loi_nhuan_thuc_te|tien}",
+      ""
+     ]
+    ],
+    "widths": [
+     3700,
+     1900,
+     1900,
+     1800
+    ],
+    "right_cols": [
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Chỉ tiêu",
+      "Kế hoạch",
+      "Thực tế"
+     ],
+     [
+      "Tỷ suất chênh lệch trên giá hợp đồng",
+      "{kt#chi_phi.ty_suat_loi_nhuan_ke_hoach|pt}",
+      "{kt#chi_phi.ty_suat_loi_nhuan_thuc_te|pt}"
+     ],
+     [
+      "Công sức, MD",
+      "{kt#chi_phi.BAC_md|md}",
+      "{kt#chi_phi.AC_md|md}"
+     ],
+     [
+      "Giá trị theo đơn giá dự toán, đồng",
+      "BAC {kt#chi_phi.BAC|tien}",
+      "EV {kt#chi_phi.EV|tien}, AC {kt#chi_phi.AC|tien}"
+     ],
+     [
+      "Chỉ số CPI, SPI kỳ cuối",
+      "",
+      "CPI {kt#tien_do.cpi_cuoi|so2}, SPI {kt#tien_do.spi_cuoi|so2}"
+     ]
+    ],
+    "widths": [
+     3700,
+     2600,
+     3000
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "kt#nhan_luc",
+    "cot": [
+     [
+      "Thành viên",
+      "ho_ten",
+      2400
+     ],
+     [
+      "Vai trò",
+      "ten_vai_tro",
+      1900
+     ],
+     [
+      "Kế hoạch, MD",
+      "md_ke_hoach|md",
+      1300,
+      "r"
+     ],
+     [
+      "Thực tế, MD",
+      "md_thuc_te|md",
+      1300,
+      "r"
+     ],
+     [
+      "Chênh lệch, MD",
+      "chenh_lech|md",
+      1300,
+      "r"
+     ],
+     [
+      "Tỷ lệ",
+      "ty_le_chenh|pt",
+      1100,
+      "r"
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng",
+     "cot": [
+      2,
+      3,
+      4
+     ]
+    }
+   }
+  },
+  {
+   "soan": "CHI_PHI",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Nhận xét chi phí và nguồn lực: chênh lệch MD và chi phí, thành viên hoặc gói có chênh lệch lớn, việc dùng dự phòng. Không tính lại số, dùng tham chiếu dữ liệu.",
+   "nguon": [
+    "kt",
+    "cp"
+   ]
+  },
+  {
+   "h1": "5. Chất lượng"
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Chỉ tiêu",
+      "Giá trị"
+     ],
+     [
+      "Tiêu chí nghiệm thu đạt",
+      "{kt#nghiem_thu.so_dat}/{kt#nghiem_thu.so_tieu_chi} ({kt#nghiem_thu.ty_le_nghiem_thu_dat|pt})"
+     ],
+     [
+      "Tiêu chí phải nghiệm thu lại",
+      "{kt#nghiem_thu.so_nghiem_thu_lai}"
+     ],
+     [
+      "Yêu cầu RFP nghiệm thu đạt",
+      "{kt#nghiem_thu.so_yeu_cau_rfp_dat}/{kt#nghiem_thu.so_yeu_cau_rfp}"
+     ],
+     [
+      "Tổng số lỗi và mật độ lỗi",
+      "{kt#loi.tong} lỗi, {kt#loi.mat_do_loi|so2} lỗi trên 10 MD"
+     ],
+     [
+      "Lỗi còn mở khi bàn giao",
+      "{kt#loi.con_mo} lỗi"
+     ],
+     [
+      "Thời gian khắc phục trung bình",
+      "{kt#loi.thoi_gian_dong_tb|so1} ngày làm việc"
+     ]
+    ],
+    "widths": [
+     5300,
+     4000
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "kt#loi.theo_muc",
+    "cot": [
+     [
+      "Mức độ",
+      "muc",
+      3000
+     ],
+     [
+      "Tổng",
+      "tong",
+      2000,
+      "c"
+     ],
+     [
+      "Đã đóng",
+      "da_dong",
+      2100,
+      "c"
+     ],
+     [
+      "Còn mở",
+      "con_mo",
+      2200,
+      "c"
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng",
+     "cot": [
+      1,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  {
+   "soan": "CHAT_LUONG",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Nhận xét chất lượng: tiêu chí không đạt lần đầu và cách khắc phục, phân bố lỗi theo nhóm WBS, lỗi còn mở và kế hoạch xử lý trong thời hạn bảo hành.",
+   "nguon": [
+    "kt"
+   ]
+  },
+  {
+   "h1": "6. Thay đổi và rủi ro"
+  },
+  {
+   "bang": {
+    "nguon": "kt#thay_doi.danh_sach",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Yêu cầu thay đổi",
+      "tieu_de",
+      3300
+     ],
+     [
+      "Mức",
+      "muc",
+      1100,
+      "c"
+     ],
+     [
+      "Trạng thái",
+      "trang_thai",
+      1400
+     ],
+     [
+      "MD",
+      "md_tang|md",
+      800,
+      "r"
+     ],
+     [
+      "Chi phí, đồng",
+      "chi_phi_tang|tien",
+      1300,
+      "r"
+     ],
+     [
+      "Xử lý, ngày",
+      "so_ngay_xu_ly",
+      700,
+      "c"
+     ]
+    ],
+    "rong_thi": "Không phát sinh yêu cầu thay đổi."
+   }
+  },
+  {
+   "bang": {
+    "nguon": "kt#rui_ro.xay_ra_ds",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Rủi ro đã xảy ra",
+      "ten",
+      2900
+     ],
+     [
+      "Hành động ứng phó",
+      "hanh_dong",
+      3300
+     ],
+     [
+      "MD",
+      "md_tac_dong|md",
+      800,
+      "r"
+     ],
+     [
+      "Chi phí, đồng",
+      "chi_phi_tac_dong|tien",
+      1600,
+      "r"
+     ]
+    ],
+    "rong_thi": "Không có rủi ro nào xảy ra."
+   }
+  },
+  {
+   "soan": "THAY_DOI_RUI_RO",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Tóm tắt kết quả quản lý thay đổi và rủi ro: số CR, tác động đã duyệt, rủi ro xảy ra so với sổ đăng ký, tác động thực tế so với EMV và dự phòng, rủi ro mới phát sinh ngoài sổ nếu có.",
+   "nguon": [
+    "kt"
+   ]
+  },
+  {
+   "h1": "7. Bàn giao và công việc sau dự án"
+  },
+  {
+   "bang": {
+    "nguon": "kt#loi.con_mo_ds",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      900,
+      "c"
+     ],
+     [
+      "Lỗi còn mở",
+      "mo_ta",
+      4700
+     ],
+     [
+      "Mức độ",
+      "muc_do",
+      1400,
+      "c"
+     ],
+     [
+      "Gói",
+      "ma_goi",
+      1000,
+      "c"
+     ],
+     [
+      "Phát hiện",
+      "ngay_phat_hien|ngay",
+      1300,
+      "c"
+     ]
+    ],
+    "rong_thi": "Không còn lỗi mở khi bàn giao."
+   }
+  },
+  {
+   "soan": "BAN_GIAO",
+   "dang": "dong_bang",
+   "cot": [
+    "Nội dung",
+    "Người phụ trách",
+    "Thời hạn",
+    "Ghi chú"
+   ],
+   "widths": [
+    4200,
+    1900,
+    1400,
+    1800
+   ],
+   "toi_thieu": 4,
+   "huong_dan": "Công việc sau dự án: bàn giao tài liệu và mã nguồn, xử lý lỗi còn mở, bảo hành trách nhiệm sai sót theo thời hạn trong HSMT, đào tạo vận hành, lưu trữ hồ sơ, thanh lý hợp đồng.",
+   "nguon": [
+    "kt",
+    "hsmt"
+   ]
+  },
+  {
+   "h1": "8. Kết luận"
+  },
+  {
+   "soan": "KET_LUAN",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Kết luận ngắn về việc hoàn thành hợp đồng và đề nghị (nghiệm thu tổng thể, thanh toán đợt cuối, thanh lý). Không lặp lại số đã nêu ở các mục trên.",
+   "nguon": [
+    "kt"
+   ]
+  }
+ ],
+ "kiem_tra": {
+  "gia_tri": [
+   {
+    "mo_ta": "MD thực tế",
+    "bt": "{kt#chi_phi.AC_md|md}"
+   },
+   {
+    "mo_ta": "SPI cuối",
+    "bt": "{kt#tien_do.spi_cuoi|so2}"
+   },
+   {
+    "mo_ta": "CPI cuối",
+    "bt": "{kt#tien_do.cpi_cuoi|so2}"
+   },
+   {
+    "mo_ta": "Ngày vận hành",
+    "bt": "{kt#tien_do.cut_over_thuc_te|ngay}"
+   }
+  ],
+  "ma_phai_co": [
+   {
+    "nguon": "kt#thay_doi.danh_sach",
+    "truong": "ma",
+    "mo_ta": "Mọi yêu cầu thay đổi"
+   },
+   {
+    "nguon": "kt#rui_ro.xay_ra_ds",
+    "truong": "ma",
+    "mo_ta": "Mọi rủi ro đã xảy ra"
+   },
+   {
+    "nguon": "kt#tien_do.moc",
+    "truong": "ma",
+    "mo_ta": "Mọi mốc"
+   }
+  ],
+  "doc_hieu": [
+   "Tóm tắt khớp số liệu, không thổi phồng kết quả",
+   "Nêu nguyên nhân của mọi chênh lệch lớn về tiến độ, chi phí, chất lượng",
+   "Công việc sau dự án có người, thời hạn",
+   "Không đánh giá chủ quan thay cho báo cáo đánh giá"
+  ]
+ }
+}

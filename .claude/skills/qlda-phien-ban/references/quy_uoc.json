@@ -1,0 +1,73 @@
+{
+ "_ghi_chu": "Quy ước quản lý phiên bản áp dụng cho bộ tài liệu dự án. Thay đổi quy ước được ghi phiên bản cùng skill.",
+ "danh_so": [
+  {
+   "truong_hop": "Tạo lần đầu",
+   "phien_ban": "0.1",
+   "giai_thich": "Bản dự thảo đầu tiên do script hoặc agent tạo ra"
+  },
+  {
+   "truong_hop": "Nội dung thay đổi trước đường cơ sở",
+   "phien_ban": "0.2, 0.3",
+   "giai_thich": "Tăng 0.1 khi băm nội dung thay đổi, không tăng khi chạy lại cho cùng nội dung"
+  },
+  {
+   "truong_hop": "Lập đường cơ sở",
+   "phien_ban": "1.0, 2.0",
+   "giai_thich": "Tăng số chính khi tài liệu được đưa vào đường cơ sở (ký hợp đồng, phê duyệt kế hoạch, nghiệm thu)"
+  },
+  {
+   "truong_hop": "Thay đổi sau đường cơ sở",
+   "phien_ban": "1.1, 1.2",
+   "giai_thich": "Chỉ thực hiện theo yêu cầu thay đổi đã phê duyệt, ghi mã CR trong ghi chú"
+  }
+ ],
+ "trang_thai": [
+  {
+   "ma": "Dự thảo",
+   "y_nghia": "Đã tạo, chưa qua kiểm tra độc lập"
+  },
+  {
+   "ma": "Đã kiểm tra",
+   "y_nghia": "Đạt kiểm tra lớp A (script) và lớp B (agent độc lập)"
+  },
+  {
+   "ma": "Đã duyệt",
+   "y_nghia": "Trưởng nhóm hoặc chủ đầu tư phê duyệt"
+  },
+  {
+   "ma": "Đường cơ sở",
+   "y_nghia": "Thuộc một đường cơ sở, chỉ thay đổi qua quy trình yêu cầu thay đổi"
+  },
+  {
+   "ma": "Khóa",
+   "y_nghia": "Hồ sơ đấu thầu sau ký hợp đồng, không sửa, thay đổi ghi bằng phụ lục hoặc biên bản"
+  }
+ ],
+ "quy_tac": [
+  {
+   "noi_dung": "Đặt tên tệp",
+   "quy_dinh": "Tên tệp cố định theo tài liệu, không ghi số phiên bản trong tên. Phiên bản ghi ở bìa, đầu trang và sổ phiên bản"
+  },
+  {
+   "noi_dung": "Cấu trúc thư mục",
+   "quy_dinh": "Tách riêng đầu vào do nhóm cung cấp, dữ liệu chuẩn do công cụ tính, tài liệu nộp, bản nháp và báo cáo kiểm tra, nhật ký bằng chứng. Tài liệu nộp được đánh số theo thứ tự lập"
+  },
+  {
+   "noi_dung": "Đăng ký phiên bản",
+   "quy_dinh": "Tự động mỗi khi công cụ tạo tệp, lưu băm nội dung, băm đầu vào, bước, người lập"
+  },
+  {
+   "noi_dung": "Phát hiện tài liệu cũ",
+   "quy_dinh": "So mã băm đầu vào đã lưu với đầu vào hiện tại. Công cụ điều phối liệt kê tài liệu cần cập nhật và thứ tự cập nhật"
+  },
+  {
+   "noi_dung": "Kho lưu trữ",
+   "quy_dinh": "Thư mục dự án quản lý bằng git. Mỗi lần hoàn thiện tài liệu commit kèm mã bước và phiên bản, lập đường cơ sở thì gắn thẻ"
+  },
+  {
+   "noi_dung": "Thay đổi sau đường cơ sở",
+   "quy_dinh": "Yêu cầu thay đổi được phê duyệt, cập nhật dữ liệu nguồn, chạy lại các bước bị ảnh hưởng, đóng yêu cầu thay đổi khi mọi tài liệu đã cập nhật"
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "_huong_dan": "Đơn giá và tham số chi phí. Tiền tính bằng đồng. Mọi số liệu trong cost estimate, bảng lương lấy từ file này.",
+ "loai_cong_viec": {
+  "PM": {"ten": "Quản lý dự án", "don_gia_tron_goi_thang": 55000000},
+  "BA": {"ten": "Phân tích nghiệp vụ, kiến trúc", "don_gia_tron_goi_thang": 43000000},
+  "QA": {"ten": "Kiểm thử, bảo đảm chất lượng", "don_gia_tron_goi_thang": 40000000},
+  "DEV": {"ten": "Phát triển phần mềm", "don_gia_tron_goi_thang": 42000000},
+  "DEVOPS": {"ten": "Triển khai và vận hành", "don_gia_tron_goi_thang": 52000000}
+ },
+ "md_moi_mm": 20,
+ "nguon_don_gia_tron_goi": "Đơn giá trọn gói theo người-tháng của nhà thầu, đã gồm lương, bảo hiểm và chi phí quản lý trực tiếp của nhân sự",
+ "luong_tham_chieu_thang": {
+  "LEAD": {"ten": "Trưởng nhóm, kiến trúc sư", "luong": 51000000},
+  "BACKEND": {"ten": "Kỹ sư backend", "luong": 30000000},
+  "FRONTEND": {"ten": "Kỹ sư frontend", "luong": 28000000},
+  "BAQA": {"ten": "Phân tích nghiệp vụ, kiểm thử", "luong": 27000000}
+ },
+ "nguon_luong": "Mức trung vị theo vị trí, báo cáo lương ITviec 2025-2026",
+ "he_so_bao_hiem": 1.235,
+ "nguon_he_so_bao_hiem": "Lương cộng bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp và kinh phí công đoàn phần doanh nghiệp đóng",
+ "ngay_lam_viec_moi_thang": 22,
+ "chi_phi_khac": [
+  {"ma": "B", "ten": "Môi trường, công cụ, bảo hành 12 tháng và dự phòng", "so_tien": 150000000, "can_cu": "Ước tính của nhà thầu"}
+ ],
+ "du_phong_rui_ro": {"cach_tinh": "nam_trong_chi_phi_khac", "_ghi_chu": "nam_trong_chi_phi_khac: dự phòng đã nằm trong khoản B, so với tổng EMV rủi ro để kiểm tra. ty_le: thêm dòng dự phòng bằng ty_le x (A + B). emv: thêm dòng dự phòng bằng tổng EMV của sổ rủi ro.", "ty_le": 0.0},
+ "cach_tinh_gia": "muc_tieu",
+ "gia_chao_muc_tieu": 1750000000,
+ "ty_le_chi_phi_chung_va_loi_nhuan_toi_thieu": 0.05,
+ "ty_le_chi_phi_chung_va_loi_nhuan": 0.12,
+ "thue_gtgt": {"thue_suat": 0.0, "can_cu": "Dịch vụ phần mềm thuộc đối tượng không chịu thuế GTGT (Luật Thuế GTGT số 48/2024/QH15, khoản 21 Điều 5; Nghị định số 181/2025/NĐ-CP, khoản 13 Điều 4)", "thue_suat_do_nhay": 0.1}
+}

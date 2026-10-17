@@ -1,0 +1,353 @@
+{
+ "id": "ke_hoach_rui_ro",
+ "ten": "Kế hoạch quản lý rủi ro",
+ "nut_ra": "doc_rui_ro",
+ "ngay_tai_lieu": "{da#ngay_bat_dau|ngay}",
+ "tieu_de_dau_trang": "Kế hoạch thực hiện - Kế hoạch quản lý rủi ro",
+ "truoc": [
+  [
+   "qlda-risk/scripts/tinh_bang_rui_ro.py"
+  ]
+ ],
+ "nguon": {
+  "rr": "du_lieu/rui_ro.json",
+  "rb": "du_lieu/rui_ro_bang.json",
+  "cp": "du_lieu/chi_phi.json",
+  "lich": "du_lieu/lich.json",
+  "pc": "du_lieu/phan_cong.json",
+  "hsmt": "du_lieu/hsmt.json"
+ },
+ "bia": {
+  "tieu_de": "Kế hoạch quản lý rủi ro",
+  "dong_phu": [
+   "Risk management plan"
+  ]
+ },
+ "muc_luc": true,
+ "khoi": [
+  {
+   "h1": "1. Mục đích và phạm vi"
+  },
+  {
+   "soan": "MUC_DICH",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Mục đích của kế hoạch, phạm vi áp dụng (toàn bộ vòng đời dự án đến cut over và thời hạn bảo hành), quan hệ với master plan, master schedule, cost estimate và kế hoạch quản lý thay đổi.",
+   "nguon": [
+    "lich",
+    "hsmt"
+   ],
+   "bat_buoc": [
+    "{lich#cut_over|ngay}"
+   ]
+  },
+  {
+   "h1": "2. Tổ chức và trách nhiệm"
+  },
+  {
+   "soan": "TO_CHUC",
+   "dang": "dong_bang",
+   "cot": [
+    "Vai trò",
+    "Người đảm nhận",
+    "Trách nhiệm"
+   ],
+   "widths": [
+    2200,
+    2600,
+    4500
+   ],
+   "toi_thieu": 4,
+   "huong_dan": "Mỗi dòng một vai trò: chủ trì quản lý rủi ro (quản trị dự án), người phụ trách từng rủi ro, nhóm phát triển và kiểm thử (báo cáo dấu hiệu), chủ đầu tư (phối hợp rủi ro thuộc phía chủ đầu tư). Tên người lấy từ thành viên và người phụ trách trong sổ rủi ro.",
+   "nguon": [
+    "rr",
+    "pc"
+   ]
+  },
+  {
+   "h1": "3. Phương pháp và thang đo"
+  },
+  {
+   "soan": "PHUONG_PHAP",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Quy trình: nhận diện, phân tích định tính (điểm), phân tích định lượng (EMV), lập kế hoạch ứng phó, theo dõi. Nguồn nhận diện: RFP, HSMT, WBS, đường găng, phân công, các bên liên quan. Tần suất rà soát.",
+   "nguon": [
+    "rr",
+    "lich"
+   ],
+   "bat_buoc": [
+    "EMV"
+   ]
+  },
+  {
+   "h2": "3.1. Thang xác suất"
+  },
+  {
+   "bang_san": "rb#xac_suat"
+  },
+  {
+   "h2": "3.2. Thang tác động"
+  },
+  {
+   "bang_san": "rb#tac_dong"
+  },
+  {
+   "h2": "3.3. Phân mức rủi ro"
+  },
+  {
+   "bang_san": "rb#muc"
+  },
+  {
+   "h1": "4. Sổ đăng ký rủi ro"
+  },
+  {
+   "doan": "Sổ gồm {rr#tong_hop.so_rui_ro} rủi ro: {rr#tong_hop.so_cao} mức cao, {rr#tong_hop.so_trung_binh} mức trung bình, {rr#tong_hop.so_thap} mức thấp."
+  },
+  {
+   "section": "ngang"
+  },
+  {
+   "bang": {
+    "nguon": "rr#danh_sach",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Rủi ro",
+      "ten",
+      3000
+     ],
+     [
+      "Nhóm",
+      "nhom_ten",
+      1600
+     ],
+     [
+      "XS",
+      "xac_suat",
+      500,
+      "c"
+     ],
+     [
+      "TĐ",
+      "tac_dong",
+      500,
+      "c"
+     ],
+     [
+      "Điểm",
+      "diem",
+      600,
+      "c"
+     ],
+     [
+      "Mức",
+      "muc_ten",
+      1100,
+      "c"
+     ],
+     [
+      "EMV, đồng",
+      "emv_tien|tien",
+      1400,
+      "r"
+     ],
+     [
+      "Chiến lược",
+      "chien_luoc_ten",
+      1300
+     ],
+     [
+      "Phụ trách",
+      "ho_ten_phu_trach",
+      1800
+     ],
+     [
+      "Liên kết",
+      "lien_ket_hien_thi",
+      1700
+     ]
+    ]
+   }
+  },
+  {
+   "section": "doc"
+  },
+  {
+   "h1": "5. Ma trận xác suất và tác động"
+  },
+  {
+   "bang_san": "rb#ma_tran"
+  },
+  {
+   "soan": "NHAN_XET_MA_TRAN",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1,
+   "huong_dan": "Nhận xét phân bố rủi ro trên ma trận, nhóm rủi ro tập trung, rủi ro gắn với đường găng và mốc cut over.",
+   "nguon": [
+    "rr",
+    "lich"
+   ]
+  },
+  {
+   "h1": "6. Biện pháp ứng phó"
+  },
+  {
+   "h2": "6.1. Rủi ro mức cao"
+  },
+  {
+   "bang": {
+    "nguon": "rr#danh_sach",
+    "loc": {
+     "muc": "cao"
+    },
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Biện pháp phòng ngừa",
+      "bien_phap_phong_ngua",
+      2900
+     ],
+     [
+      "Kế hoạch ứng phó khi xảy ra",
+      "ke_hoach_ung_pho",
+      3200
+     ],
+     [
+      "Dấu hiệu nhận biết",
+      "dau_hieu",
+      2500
+     ]
+    ],
+    "rong_thi": "Sổ rủi ro hiện không có rủi ro mức cao."
+   }
+  },
+  {
+   "h2": "6.2. Rủi ro mức trung bình và thấp"
+  },
+  {
+   "bang": {
+    "nguon": "rr#danh_sach",
+    "loc": {
+     "muc": [
+      "trung_binh",
+      "thap"
+     ]
+    },
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Biện pháp phòng ngừa",
+      "bien_phap_phong_ngua",
+      2900
+     ],
+     [
+      "Kế hoạch ứng phó khi xảy ra",
+      "ke_hoach_ung_pho",
+      3200
+     ],
+     [
+      "Dấu hiệu nhận biết",
+      "dau_hieu",
+      2500
+     ]
+    ]
+   }
+  },
+  {
+   "h1": "7. Dự phòng thời gian và chi phí"
+  },
+  {
+   "bang_san": "rb#du_phong"
+  },
+  {
+   "soan": "DU_PHONG",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Đánh giá dự phòng chi phí so với EMV và dự trữ thời gian so với EMV thời gian. Quy tắc dùng dự phòng: điều kiện, người đề xuất, người phê duyệt, ghi nhận vào sổ thay đổi, cập nhật dự toán và lịch.",
+   "nguon": [
+    "rb",
+    "cp",
+    "lich"
+   ],
+   "bat_buoc": [
+    "{cp#du_phong_hien_co|tien}"
+   ]
+  },
+  {
+   "h1": "8. Theo dõi, ngưỡng cảnh báo và báo cáo"
+  },
+  {
+   "bang_san": "rb#nguong"
+  },
+  {
+   "soan": "THEO_DOI",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Chu kỳ rà soát (họp sprint, báo cáo tiến độ), cách cập nhật trạng thái rủi ro, đóng rủi ro, bổ sung rủi ro mới, báo cáo cho chủ đầu tư. Liên kết với báo cáo tiến độ (SPI, CPI) và kế hoạch quản lý thay đổi.",
+   "nguon": [
+    "rr"
+   ],
+   "bat_buoc": [
+    "SPI",
+    "CPI"
+   ]
+  },
+  {
+   "h1": "9. Quan hệ với quản lý thay đổi"
+  },
+  {
+   "soan": "THAY_DOI",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1,
+   "huong_dan": "Khi ứng phó rủi ro làm đổi phạm vi, lịch, chi phí: lập yêu cầu thay đổi, đánh giá tác động, cập nhật các tài liệu bị ảnh hưởng theo sơ đồ phụ thuộc, ghi phiên bản.",
+   "nguon": [
+    "rr"
+   ],
+   "bat_buoc": [
+    "yêu cầu thay đổi"
+   ]
+  }
+ ],
+ "kiem_tra": {
+  "gia_tri": [
+   {
+    "mo_ta": "Tổng EMV",
+    "bt": "{rr#tong_hop.tong_emv_tien|tien}"
+   },
+   {
+    "mo_ta": "Dự phòng",
+    "bt": "{cp#du_phong_hien_co|tien}"
+   }
+  ],
+  "ma_phai_co": [
+   {
+    "nguon": "rr#danh_sach",
+    "truong": "ma",
+    "mo_ta": "Mọi mã rủi ro có trong tài liệu"
+   }
+  ],
+  "doc_hieu": [
+   "Mỗi rủi ro mức cao có kế hoạch ứng phó khả thi, dấu hiệu, người phụ trách",
+   "Rủi ro bao phủ đường găng, mốc cut over, tích hợp Main System, nhân sự bổ sung",
+   "Dự phòng chi phí và thời gian được so sánh với EMV",
+   "Ngưỡng cảnh báo có hành động cụ thể",
+   "Liên kết với quy trình thay đổi"
+  ]
+ }
+}

@@ -1,0 +1,265 @@
+{
+ "tai_lieu": "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+ "tai_lieu_kem": "ket_qua/06_Cost_estimate/Cost_estimate.xlsx",
+ "dac_ta": "chi_phi",
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "vong": 2,
+ "thoi_gian": "2026-10-17",
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 11,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục theo đặc tả, có dòng tiền theo huy động, ngưỡng chịu đựng và các điểm chờ quyết định được nêu rõ. Người đọc dùng được để quyết định về mức huy động và vốn lưu động. Còn cảnh báo về giả định thời điểm trả lương (MH14)."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Tính lại độc lập khớp toàn bộ với dữ liệu nguồn: A 767.000.000 (66 gói, 351 MD), C 833.000.000, 11 người 683 MD, Mẫu 11A và nhóm WBS tổng 1.750.000.000, EMV 125.750.173 (18 rủi ro), dòng tiền từng sprint, ngày thu theo E-ĐKC 13.1. Còn lệch hiển thị Word so với Excel: 443,40 so với 443,43 và 1 đồng ở khoản còn lại (MH13). Vị trí chi phí bảo lãnh chưa thống nhất (MH16)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Dòng A truy về gói WBS, Mẫu 11A truy về Mẫu 01A, đợt thanh toán gắn mốc M0 đến M7 và dẫn E-ĐKC 12.1, 13.1, rủi ro dẫn mã RR. Mục 7 chưa có sheet (MH11)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Chỉ tiêu hòa vốn diễn đạt bằng MD huy động và tỷ lệ sử dụng, kiểm chứng được bằng công thức Doi_chieu_nguoi!I16:I18."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có ngưỡng chịu đựng bằng tiền và MD, quy tắc dùng dự phòng có cấp phê duyệt (quản trị dự án, người đại diện theo pháp luật), cập nhật sổ thay đổi và dự toán. Ngưỡng CPI chưa có số (MH17), ngưỡng trễ mốc chưa chính xác (MH15)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Đúng phông, cỡ chữ, bảng lặp tiêu đề, không in đậm, không từ cấm, không còn lặp nguyên số liệu. Có cách viết về thuế cần sửa (MH18)."
+  },
+  {
+   "tieu_chi": "Phương pháp tính giải thích được từng dòng của Excel",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục 1, 5, 8, 9 giải thích các dòng Tong_hop, Doi_chieu_nguoi, Huy_dong_luong, Dong_tien. Mục 7 chưa có sheet đối chiếu (MH11)."
+  },
+  {
+   "tieu_chi": "Dự phòng được so với EMV và có quy tắc sử dụng",
+   "ket_qua": "dat",
+   "nhan_xet": "So với EMV 125.750.173 đồng, nêu điều kiện của kết luận và việc chờ nhóm tách dòng B, có quy tắc sử dụng (MH07 chờ quyết định)."
+  },
+  {
+   "tieu_chi": "Nhận xét dòng tiền gắn với mốc thanh toán",
+   "ket_qua": "dat",
+   "nhan_xet": "Gắn mốc M2, M3, M6, M7 và thời hạn thanh toán HSMT. Cần chính xác hóa ngưỡng trễ mốc và giả định trả lương (MH14, MH15)."
+  },
+  {
+   "tieu_chi": "Độ nhạy nêu ngưỡng chịu đựng cụ thể",
+   "ket_qua": "dat",
+   "nhan_xet": "418.610.228 đồng (23,9%), khoảng 242 MD. Với thuế 10% còn 259.519.319 đồng (16,3%)."
+  },
+  {
+   "tieu_chi": "Số liệu trong Word khớp tệp Cost_estimate.xlsx",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Khớp toàn bộ các bảng, trừ MD huy động hòa vốn (443,40 so với 443,43) và chênh 1 đồng ở hai khoản còn lại sau lương (MH13)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH13",
+   "muc_do": "loi",
+   "nhom": "so_lieu_word_excel",
+   "vi_tri": "Mục 5, đoạn cố định 'không vượt 443,40 MD' và DOI_CHIEU 'không vượt 443,40 MD'; Excel Doi_chieu_nguoi!I16 = 443,43",
+   "mo_ta": "chi_phi.json làm tròn md_huy_dong_hoa_von xuống một chữ số thập phân (443,4), rồi Word hiển thị với hai chữ số thành 443,40. Excel tính 767.000.000 / 1.729.707 = 443,43. Word và Excel lệch nhau, và hai chữ số thập phân tạo độ chính xác giả. Lệch nhỏ cùng loại: khoản còn lại sau lương ở Word là 418.610.228 đồng, Excel Tong_hop!B24 hiển thị 418.610.227 đồng. Kịch bản thuế 10% ở Word là 259.519.319 đồng, Excel B28 là 259.519.318 đồng. Nguyên nhân là làm tròn trung gian khác nhau.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "tinh_chi_phi.py: lưu md_huy_dong_hoa_von hai chữ số thập phân (443,43). C_sau_luong và do_nhay_thue.C_sau_luong tính từ giá trị chưa làm tròn như công thức Excel, hoặc Excel dùng ROUND cho thống nhất."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "quyet_dinh_huy_dong",
+   "vi_tri": "Mục 5, DOI_CHIEU 'Phương án để nhóm quyết định...'",
+   "mo_ta": "Tỷ lệ sử dụng quỹ huy động 51,4%, thấp hơn mức hòa vốn 79,2%. Chi phí lương theo người vượt dòng A 414.389.772 đồng, khoản còn lại sau lương 418.610.228 đồng (23,9%). Tài liệu đã nêu đúng là vấn đề đã biết chờ nhóm quyết định. Dữ liệu huy động trong dau_vao/thanh_vien.json chưa đổi.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định giữ hay giảm mức huy động (tu_sprint, ty_le của K, D1, D2, D3, Q1, Q2) và xác nhận giá chào mục tiêu."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "du_phong",
+   "vi_tri": "Mục 4, DU_PHONG 'Nhóm cần tách dòng B thành các khoản riêng trong dữ liệu đơn giá để đánh giá lại'",
+   "mo_ta": "Dòng B vẫn là một khoản 150.000.000 đồng chưa tách. Kết luận đủ dự phòng chỉ đúng khi chi phí không phải dự phòng trong B không vượt 24.249.827 đồng (150.000.000 trừ EMV 125.750.173). Tài liệu đã nêu đúng là chờ nhóm quyết định.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm tách chi_phi_khac trong dau_vao/don_gia.json (môi trường và công cụ, bảo hành 12 tháng, phí bảo lãnh, dự phòng)."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "thue",
+   "vi_tri": "Mục 1, đoạn căn cứ thuế",
+   "mo_ta": "Căn cứ không chịu thuế GTGT và số hiệu điều khoản trích dẫn chưa được xác nhận. Lớp B không kiểm chứng được điều khoản. Tài liệu đã nêu đúng là cần nhóm xác nhận.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận thue_gtgt.can_cu trong dau_vao/don_gia.json."
+  },
+  {
+   "ma": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "quyet_dinh_don_gia",
+   "vi_tri": "Mục 1 và mục 2, đơn giá trọn gói",
+   "mo_ta": "Đơn giá tự xác định, tài liệu đã nêu cần xác nhận. Đơn giá PM 55.000.000 đồng/người-tháng thấp hơn chi phí lương gồm bảo hiểm của người làm toàn bộ 33 MD PM (51.000.000 x 1,235 = 62.985.000 đồng/tháng). Điểm này chưa được nêu để nhóm cân nhắc.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận hoặc điều chỉnh loai_cong_viec trong dau_vao/don_gia.json, nhất là PM."
+  },
+  {
+   "ma": "MH10",
+   "muc_do": "canh_bao",
+   "nhom": "ngay_tai_lieu",
+   "vi_tri": "Bìa 'Ngày 18/03/2027'",
+   "mo_ta": "Ngày tài liệu sau thời điểm đóng thầu 08/03/2027, trong khi dự toán là căn cứ Mẫu 11A của HSDT. Nguyên nhân là dau_vao/nha_thau.json ngay_ky_don còn trống.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm điền ngay_ky_don trong khoảng 22/02/2027 đến 08/03/2027."
+  },
+  {
+   "ma": "MH11",
+   "muc_do": "canh_bao",
+   "nhom": "excel",
+   "vi_tri": "Mục 7; Excel Tong_hop!B6; Doi_chieu_nguoi!H13, B15; Dong_tien!D2:E6",
+   "mo_ta": "Còn tồn từ vòng 1: mục 7 (phân bổ theo nhóm WBS) chưa có sheet công thức đối chiếu, Tong_hop!B6 là hằng số 0, Doi_chieu_nguoi!H13 cho 351,01 MD so với 351 MD. Phát sinh: ngày thu (E2:E6) và sprint thu (D2:D6) là ô nhập tay chữ xanh. Ghi chú A8 nói 'ngày sự kiện + 15 ngày' nhưng không có công thức và tham số thời hạn thanh toán trong Tham_so, nên sửa ngày sự kiện ở cột G không cập nhật dòng thu. Nhãn 'Năng suất tối thiểu' ở Doi_chieu_nguoi!B15 không còn dùng trong Word.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "tinh_chi_phi.py: thêm Tham_so thời hạn thanh toán (15 ngày), E2 = G2 + tham số, sprint thu bằng tra cứu theo bảng ngày sprint. Thêm sheet Theo_WBS. D tính theo tham số."
+  },
+  {
+   "ma": "MH14",
+   "muc_do": "canh_bao",
+   "nhom": "dong_tien",
+   "vi_tri": "Mục 8, DONG_TIEN 'mức âm lớn nhất là -236.915.909 đồng ở cuối S6. Nhà thầu cần chuẩn bị vốn lưu động tối thiểu bằng mức này, chưa gồm chi phí bảo lãnh'",
+   "mo_ta": "Mức vốn lưu động phụ thuộc giả định thời điểm trả lương mà tài liệu chưa nêu. Nếu lương ghi nhận theo ngày làm việc, trước khi nhận Đợt 3 ngày 25/06/2027 chênh lệch lũy kế xuống khoảng -387.361.364 đồng (ngày 24/06/2027). Trước khi nhận Đợt 2 ngày 14/05/2027 là khoảng -260.690.909 đồng. Nếu trả lương cuối tháng, mức âm lớn nhất khoảng -110.245.455 đồng (cuối tháng 4). Dòng chi chưa gồm phần chi trong dự án của dòng B (môi trường, công cụ), câu kết luận chỉ loại trừ chi phí bảo lãnh.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại DONG_TIEN: nêu giả định thời điểm trả lương và mức âm tương ứng, nêu dòng chi chưa gồm chi phí khác B. Nếu cần, tinh_chi_phi.py tính thêm mức âm lớn nhất theo ngày."
+  },
+  {
+   "ma": "MH15",
+   "muc_do": "canh_bao",
+   "nhom": "dong_tien_moc",
+   "vi_tri": "Mục 8, DONG_TIEN 'Mốc M2 hoặc M3 trễ quá hạn của mốc sẽ dời khoản thu tương ứng sang sprint sau'",
+   "mo_ta": "Khoản thu dời sprint ngay cả khi mốc trễ trong hạn. M2 ngày 29/04/2027, hạn 10/05/2027. Trễ một ngày làm việc (sang 04/05/2027, sau các ngày nghỉ 30/04 đến 03/05) đã đưa Đợt 2 về ngày 19/05/2027, thuộc S5. Lũy kế cuối S4 khi đó là -298.302.272 đồng. M3 ngày 10/06/2027, hạn 17/06/2027. Trễ sau 16/06/2027 đưa Đợt 3 ra sau cut over, lũy kế cuối S7 là -481.389.772 đồng. Câu hiện tại gợi ý trễ trong hạn không ảnh hưởng dòng tiền.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại câu rủi ro khi mốc trễ: nêu ngày mốc muộn nhất để khoản thu còn trong sprint dự kiến (M2 đến 02/05/2027, M3 đến 16/06/2027) và mức âm tương ứng."
+  },
+  {
+   "ma": "MH16",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan_noi_bo",
+   "vi_tri": "Mục 3 GIA_CHAO 'Khoản C phải bù ... chi phí bảo lãnh'; mục 4 DU_PHONG 'chi phí môi trường, công cụ, bảo hành và bảo lãnh trong dòng B'; mục 8 'chưa gồm chi phí bảo lãnh'",
+   "mo_ta": "Chi phí bảo lãnh (tạm ứng, thực hiện hợp đồng, bảo hành) được đặt trong khoản C ở mục 3 nhưng trong dòng B ở mục 4. Người đọc không xác định được ngưỡng chịu đựng ở mục 9 đã trừ chi phí bảo lãnh hay chưa.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thống nhất một vị trí cho chi phí bảo lãnh (tạm thời trong C cho đến khi nhóm tách dòng B), sửa GIA_CHAO hoặc DU_PHONG cho khớp."
+  },
+  {
+   "ma": "MH17",
+   "muc_do": "canh_bao",
+   "nhom": "nguong_kiem_soat",
+   "vi_tri": "Mục 9, DO_NHAY 'so với ngưỡng vàng, ngưỡng đỏ của kế hoạch quản lý dự án'",
+   "mo_ta": "Ngưỡng CPI chưa có số. Kế hoạch quản lý dự án chưa có trong ket_qua, nhưng dau_vao/du_an.json đã khai báo cpi_vang 0,95 và cpi_do 0,85.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại câu kiểm soát chi phí, dùng tham chiếu {da#nguong_canh_bao.cpi_vang} và {da#nguong_canh_bao.cpi_do} kèm người quyết định khi vượt ngưỡng."
+  },
+  {
+   "ma": "MH18",
+   "muc_do": "canh_bao",
+   "nhom": "thue_dien_dat",
+   "vi_tri": "Mục 1 'Vì vậy giá chào không gồm thuế giá trị gia tăng'",
+   "mo_ta": "Mục 13.4 E-CDNT của HSMT loại E-HSDT nếu nhà thầu tuyên bố giá dự thầu không bao gồm thuế, phí, lệ phí. Câu này đúng ý (dịch vụ không chịu thuế GTGT nên không có khoản thuế) nhưng dễ bị hiểu thành tuyên bố giá chưa gồm thuế khi đưa sang HSDT.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Viết lại: 'Giá chào đã bao gồm các loại thuế, phí, lệ phí theo quy định. Dịch vụ không chịu thuế GTGT nên khoản thuế GTGT bằng không.'"
+  }
+ ],
+ "trang_thai_phat_hien_vong_1": [
+  {
+   "ma": "MH01",
+   "muc_do_vong1": "loi",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 8, bảng dòng tiền có cột 'Chi lương theo huy động'; Excel Dong_tien!C10:G17, sheet Huy_dong_luong",
+   "nhan_xet": "Dòng chi tính theo quỹ huy động. Tính lại độc lập khớp từng sprint (S7 lệch 1 đồng do làm tròn). Nhận định lũy kế âm ở S1, S3, S5, S6 và mức âm -236.915.909 đồng ở cuối S6 đúng với bảng. Còn điểm về giả định thời điểm trả lương và dòng chi B, xem MH14."
+  },
+  {
+   "ma": "MH02",
+   "muc_do_vong1": "loi",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 8, bảng thanh toán (ngày sự kiện, ngày thu, sprint thu) và đoạn 'Dòng thu tính theo ngày sự kiện cộng thời hạn thanh toán 15 ngày theo Mục 13.1 E-ĐKCT...'",
+   "nhan_xet": "Ngày thu bằng ngày sự kiện cộng 15 ngày (02/04, 14/05, 25/06, 16/07/2027). Sprint thu đúng. Đã dẫn E-ĐKC 12.1 và 13.1. Ngưỡng trễ mốc chưa chính xác, xem MH15."
+  },
+  {
+   "ma": "MH03",
+   "muc_do_vong1": "loi",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 9, đoạn cố định đầu mục và đoạn 'Ngưỡng chịu đựng của giá chào là khoản còn lại sau chi phí lương thực tế...'",
+   "nhan_xet": "Đã có ngưỡng 418.610.228 đồng (23,9%), khoảng 242 MD. Kịch bản thuế 10% đã trừ lương (259.519.319 đồng, 16,3%). Excel Tong_hop!B23:B28 có công thức tương ứng. Ngưỡng CPI vẫn chưa có số, xem MH17."
+  },
+  {
+   "ma": "MH04",
+   "muc_do_vong1": "loi",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 1 và mục 5 'hệ số bảo hiểm 1,235'",
+   "nhan_xet": "Khớp Tham_so!B5."
+  },
+  {
+   "ma": "MH05",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "cho_nhom_quyet_dinh",
+   "vi_tri_moi": "Mục 5, các đoạn 'Đây là vấn đề đã biết của kế hoạch huy động...' và 'Phương án để nhóm quyết định...'; Excel Tong_hop!B24:B27",
+   "nhan_xet": "Tài liệu đã nêu đúng đây là vấn đề chờ nhóm quyết định và có phương án. RR13 đã đổi nội dung. Dữ liệu huy động trong thanh_vien.json chưa đổi. Giữ cảnh báo cần người dùng."
+  },
+  {
+   "ma": "MH06",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 5, đoạn cố định 'Dòng A đủ chi trả lương khi tổng MD huy động không vượt ... tức tỷ lệ sử dụng quỹ huy động từ 79,2% trở lên'",
+   "nhan_xet": "Đã thay chỉ số năng suất bằng MD huy động hòa vốn và tỷ lệ sử dụng hòa vốn. Tỷ lệ -54% ghi rõ 'so với dòng A'. Phát sinh sai lệch hiển thị 443,40 so với 443,43, xem MH13. Nhãn 'Năng suất tối thiểu' còn ở Doi_chieu_nguoi!B15, không ảnh hưởng Word."
+  },
+  {
+   "ma": "MH07",
+   "muc_do_vong1": "loi",
+   "trang_thai": "cho_nhom_quyet_dinh",
+   "vi_tri_moi": "Mục 1 'chưa có danh mục chi tiết và chưa tách riêng phần dự phòng rủi ro'; mục 4 đoạn 'Kết luận này chỉ đúng khi... Nhóm cần tách dòng B...'; Excel Tong_hop!A31",
+   "nhan_xet": "Tài liệu đã nêu đúng kết luận 'đủ' là có điều kiện và cần nhóm tách dòng B. Word và Excel không còn mâu thuẫn. Câu 'lập theo danh mục' đã bỏ. Chuyển thành cảnh báo cần người dùng theo hướng dẫn điều phối. Vị trí chi phí bảo lãnh chưa thống nhất, xem MH16."
+  },
+  {
+   "ma": "MH08",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "cho_nhom_quyet_dinh",
+   "vi_tri_moi": "Mục 1 'Dịch vụ được xác định thuộc đối tượng không chịu thuế giá trị gia tăng... Căn cứ này cần được nhóm xác nhận'; mục 9 dẫn Mục 11 E-ĐKCT",
+   "nhan_xet": "Đã bỏ cụm 'thuế suất 0%', đã nêu cần xác nhận, đã dẫn E-ĐKC 11. Cách viết 'giá chào không gồm thuế' có rủi ro, xem MH18."
+  },
+  {
+   "ma": "MH09",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "cho_nhom_quyet_dinh",
+   "vi_tri_moi": "Mục 1 'Đơn giá do nhà thầu tự xác định, chưa có nguồn tham chiếu độc lập và cần nhóm xác nhận'",
+   "nhan_xet": "Tài liệu đã nêu là chờ xác nhận. Chưa nêu đơn giá PM 55.000.000 đồng thấp hơn chi phí lương gồm bảo hiểm của người đảm nhận PM (62.985.000 đồng/tháng)."
+  },
+  {
+   "ma": "MH10",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "chua_khac_phuc",
+   "vi_tri_moi": "Bìa 'Ngày 18/03/2027'",
+   "nhan_xet": "dau_vao/nha_thau.json ngay_ky_don vẫn trống. Tài liệu không nêu là chờ quyết định."
+  },
+  {
+   "ma": "MH11",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "Excel Tong_hop!A2, B6, B26; Doi_chieu_nguoi!H13; Dong_tien!D2:E6; mục 7",
+   "nhan_xet": "Đã sửa phông A2 và thêm dòng kiểm tra bù chi phí lương (B26, B27). Còn tồn: mục 7 chưa có sheet, B6 vẫn là hằng số 0, H13 = 351,01. Phát sinh: ngày thu và sprint thu trong Dong_tien là ô nhập tay."
+  },
+  {
+   "ma": "MH12",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 3 GIA_CHAO, mục 9 DO_NHAY",
+   "nhan_xet": "Không còn lặp nguyên số liệu và câu của các đoạn cố định."
+  }
+ ],
+ "ghi_chu": "Vòng 2. Báo cáo vòng 1 lưu tại lam_viec/chi_phi/bao_cao_kiem_tra_lop_B_vong1.json. Tính lại độc lập từ du_lieu, dau_vao và HSMT: công thức Excel đúng, giá trị đã tính khớp, giá chào 1.750.000.000 đồng không vượt giá gói thầu, tổng Mẫu 11A bằng giá chào, ngày thu đúng E-ĐKC 13.1. Chỉ còn một lỗi hiển thị số (MH13), sửa tự động được. Các điểm chờ nhóm quyết định giữ cảnh báo cần người dùng. Không đọc khung.json, khung_nguon.json, ban_soan.json, noi_dung*.json, nhật ký soạn, script trong /private/tmp."
+}

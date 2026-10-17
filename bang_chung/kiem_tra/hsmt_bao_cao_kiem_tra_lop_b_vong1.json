@@ -1,0 +1,186 @@
+{
+ "file": "HSMT_ket_qua.docx",
+ "ket_luan": "chua_dat",
+ "so_loi": 3,
+ "so_canh_bao": 11,
+ "phat_hien": [
+  {
+   "ma": "MH10",
+   "muc_do": "loi",
+   "nhom": "doc_hieu",
+   "vi_tri": "Nghĩa vụ bảo mật theo Mục 14 E-ĐKC áp dụng cả đối với thông tin của Chủ đầu tư mà nhà thầu nhận được từ E-HSMT.",
+   "mo_ta": "Câu cuối của dòng E-ĐKC 14 (bổ sung) mâu thuẫn với điểm b Mục 14.3 E-ĐKC (Chương VI): nghĩa vụ bảo mật không áp dụng đối với thông tin đã hoặc sẽ được công bố mà không do lỗi của các bên. E-HSMT được phát hành công khai, miễn phí trên Hệ thống (Thông tin chính của E-TBMT), nên thông tin trong E-HSMT thuộc trường hợp loại trừ này. Câu bổ sung vì vậy thay thế chứ không chi tiết hóa điều kiện chung, trái với câu dẫn đầu Chương VII (chi tiết hóa và bổ sung nhưng không thay thế điều kiện chung).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Soạn lại DKC_BO_SUNG, dòng E-ĐKC 14 (bổ sung), Chương VII: bỏ câu này hoặc thay bằng câu: Nghĩa vụ bảo mật theo Mục 14 E-ĐKC áp dụng đối với tài liệu, dữ liệu mà Chủ đầu tư cung cấp cho nhà thầu ngoài E-HSMT, gồm thông tin về Main System, dữ liệu bán hàng và dữ liệu khách hàng trong Selling DB. Sửa cùng lúc với phát hiện MH01 (C5_1)."
+  },
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "E-HSMT có các thông tin bảo mật của Chủ đầu tư. Nhà thầu có trách nhiệm bảo mật thông tin, quản lý chặt chẽ các tài liệu này và chỉ sử dụng cho mục đích lập E-HSDT và thực hiện hợp đồng.",
+   "mo_ta": "RFP trang 3 (How to deal with RFP) yêu cầu giữ bí mật RFP vì có thông tin bảo mật. Khi chuyển sang E-HSMT qua mạng, E-HSMT được công bố công khai trên Hệ thống nên yêu cầu này không thể áp dụng nguyên văn cho chính E-HSMT. rfp_yeu_cau.json ghi R29 là dap_ung thay vì điểm lệch có căn cứ, và câu tại Chương V mục 1 (C5_1) đặt nghĩa vụ bảo mật lên nội dung E-HSMT, không khả thi và không phù hợp Mục 14.3 E-ĐKC.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Soạn lại C5_1 (Chương V mục 1): thay câu bằng nội dung bảo mật đối với tài liệu, dữ liệu do Chủ đầu tư cung cấp cho nhà thầu ngoài E-HSMT (khi làm rõ E-HSMT, tại hội nghị tiền đấu thầu và trong thực hiện hợp đồng, như thông tin về Main System và dữ liệu khách hàng). Cập nhật R29 trong rfp_yeu_cau.json thành xu_ly = lech_co_can_cu, căn cứ: E-HSMT được công khai trên Hệ thống mạng đấu thầu quốc gia theo Luật Đấu thầu số 22/2023/QH15. Giải pháp tương đương: nghĩa vụ bảo mật theo Mục 14 E-ĐKC và DKC_BO_SUNG (E-ĐKC 14) đối với tài liệu cung cấp ngoài E-HSMT."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "loi",
+   "nhom": "doc_hieu",
+   "vi_tri": "1. Phạt vi phạm hợp đồng: áp dụng. Chậm tiến độ do lỗi của nhà thầu bị phạt 0,1% giá trị phần hợp đồng bị chậm cho mỗi ngày chậm. Tổng mức phạt không vượt 8% giá trị phần hợp đồng bị vi phạm. / 2. Bồi thường thiệt hại: áp dụng theo quy định của pháp luật.",
+   "mo_ta": "E-ĐKC 15 chưa trả lời đủ câu hỏi của mẫu. (1) Khi áp dụng phạt, mẫu yêu cầu ghi tỷ lệ % chi phí cần thiết để khắc phục sai sót mà nhà thầu phải nộp phạt khi không kịp thời khắc phục sai sót. Mục 20.2 E-ĐKC dẫn chiếu khoản phạt này tới Mục 15 E-ĐKC nhưng E-ĐKCT bỏ trống. (2) Thiếu câu cố định của mẫu: khi đạt đến mức phạt tối đa, Chủ đầu tư có thể xem xét chấm dứt hợp đồng theo Mục 19 E-ĐKC. (3) Với bồi thường thiệt hại, mẫu yêu cầu chọn một trong hai cách (trên cơ sở toàn bộ thiệt hại thực tế hoặc trên cơ sở một mức xác định, nêu rõ mức và phương thức). HSMT chỉ ghi theo quy định của pháp luật. tham_so_chu_dau_tu.json không có tỷ lệ phạt khắc phục sai sót và cách bồi thường.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Chủ đầu tư cung cấp tỷ lệ % phạt khi không kịp thời khắc phục sai sót và cách bồi thường thiệt hại (nên bổ sung trường tương ứng vào tham_so_chu_dau_tu.json). Soạn lại E-ĐKC 15, Chương VII theo cấu trúc mẫu: giữ 0,1% mỗi ngày và tối đa 8%, thêm câu chấm dứt hợp đồng khi đạt mức phạt tối đa theo Mục 19 E-ĐKC, thêm tỷ lệ phạt khắc phục sai sót, ghi rõ cách bồi thường thiệt hại đã chọn."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "loi",
+   "nhom": "doc_hieu",
+   "vi_tri": "Trường hợp tài liệu chứng minh năng lực, kinh nghiệm không bằng đồng Việt Nam, nhà thầu quy đổi theo tỷ giá bán ra của một ngân hàng thương mại hoạt động tại Việt Nam tại ngày có thời điểm đóng thầu.",
+   "mo_ta": "Chỗ trống của mẫu tại Chương III Mục 2.1 chỉ là căn cứ xác định tỷ giá. Thời điểm quy đổi là nội dung cố định của Mẫu 5A: tỷ giá tại ngày ký hợp đồng tương tự đó. HSMT đổi thành tại ngày có thời điểm đóng thầu, làm thay đổi cách đánh giá giá trị hợp đồng tương tự. Ngoài ra Mục 2.1 bỏ đoạn cố định của mẫu về nhà thầu là công ty mẹ huy động công ty con, công ty thành viên (kê khai theo Mẫu số 09B, đánh giá kinh nghiệm theo phần việc từng đơn vị đảm nhiệm), trong khi Chương IV vẫn áp dụng Mẫu số 09B và Chương I không có quy định này.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Soạn lại đoạn mở đầu Chương III Mục 2.1 theo nguyên văn mẫu: trường hợp đồng tiền nêu trong các hợp đồng tương tự, xác nhận thanh toán, tờ khai nộp thuế hoặc tài liệu liên quan không phải VND thì nhà thầu quy đổi về VND, áp dụng tỷ giá bán ra của một ngân hàng thương mại hoạt động tại Việt Nam tại ngày ký hợp đồng tương tự đó. Chép lại đoạn của mẫu về công ty mẹ, công ty con, công ty thành viên và Mẫu số 09B."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "Đối với nhà thầu có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP và được đăng tải trên Hệ thống mạng đấu thầu quốc gia phải thực hiện biện pháp bảo đảm dự thầu với giá trị gấp 03 lần giá trị yêu cầu nêu trên trong thời hạn 02 năm kể từ lần cuối cùng thực hiện các hành vi này.",
+   "mo_ta": "Mục 18.2 E-BDL chép câu cố định của mẫu về nhà thầu độc lập nhưng bỏ câu kế tiếp về thành viên liên danh có hành vi tại khoản 1 Điều 20 Nghị định số 214/2025/NĐ-CP (gấp 03 lần giá trị bảo đảm tương ứng tỷ lệ công việc trong liên danh), dù gói thầu cho phép liên danh (Mẫu số 03). Mục 5.1 (c) E-BDL cũng lược các nội dung cố định của mẫu: thời điểm xác định tỷ lệ cổ phần, vốn góp (tại thời điểm đóng thầu), công thức tính tỷ lệ sở hữu vốn trong liên danh và trường hợp nhà thầu thuộc điểm g khoản 1 Điều 10 Luật Đấu thầu. Chưa chắc chắn: nếu các câu cố định này được Hệ thống in sẵn trên webform E-BDL thì việc lược không ảnh hưởng hiệu lực, nhưng bản Word đang chép một phần nên không nhất quán.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Chương II: chép nguyên văn câu về thành viên liên danh vào Mục 18.2 E-BDL ngay sau câu về nhà thầu độc lập, và chép lại các nội dung cố định còn thiếu của Mục 5.1 (c) E-BDL từ noi_dung_mau trong mau5a_cau_truc.json (giữ nguyên tên Chủ đầu tư và câu không sử dụng đơn vị tư vấn). Không thay đổi giá trị nào."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "Chủ đầu tư: Công ty Cổ phần ABC Wear, trụ sở chính Công ty Cổ phần ABC Wear; đại diện: Tổng Giám đốc. Số tài khoản, mã số thuế, điện thoại được ghi khi hoàn thiện hợp đồng.",
+   "mo_ta": "Thông tin liên hệ chưa đủ theo câu hỏi của mẫu: Mục 7.5 E-BDL thiếu số điện thoại của người chịu trách nhiệm tổ chức hội nghị tiền đấu thầu. Mục 38.1 E-BDL thiếu địa chỉ cụ thể, số điện thoại, số fax của người có thẩm quyền và dùng e-mail của Phòng Kế hoạch thay cho e-mail của người có thẩm quyền. E-ĐKC 1.3 chưa có địa chỉ cụ thể, số tài khoản, mã số thuế, điện thoại, fax, e-mail của Chủ đầu tư (thông tin Chủ đầu tư đã biết ở giai đoạn lập E-HSMT). E-ĐKC 4.1 thiếu điện thoại, fax. Cụm trụ sở chính Công ty Cổ phần ABC Wear không phải là địa chỉ. RFP và tham_so_chu_dau_tu.json đều không có các dữ liệu này nên ghi cảnh báo, cần người dùng cung cấp.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Người dùng cung cấp địa chỉ trụ sở, số điện thoại, fax (nếu có), số tài khoản, mã số thuế của Chủ đầu tư và e-mail nhận kiến nghị của người có thẩm quyền, bổ sung vào tham_so_chu_dau_tu.json (chu_dau_tu). Cập nhật Mục 7.5, 38.1 E-BDL (Chương II), E-ĐKC 1.3, 4.1 (Chương VII) và địa chỉ hội nghị tiền đấu thầu. Nếu chưa có dữ liệu, giữ cách ghi hiện tại và nêu rõ là thông tin sẽ được Chủ đầu tư cập nhật trên Hệ thống."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "STT | Biểu mẫu | Trách nhiệm | Áp dụng",
+   "mo_ta": "Bảng danh mục biểu mẫu Chương IV bỏ cột Cách thức thực hiện của Mẫu 5A (Webform, Scan đính kèm lên Hệ thống hoặc bảo lãnh điện tử). Thông tin hình thức nộp Mẫu số 04A, 04B và các mẫu webform không còn trong E-HSMT. Danh mục biểu mẫu thuộc phần script lấy từ mẫu, lớp A không bắt được sai khác cột.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Chương IV mục 1: khôi phục cột Cách thức thực hiện theo bảng chuong4_bieu_mau trong mau5a_cau_truc.json, giữ cột Áp dụng hiện có. Không thay đổi giá trị."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "Thu hồi tạm ứng: khoản tạm ứng là Đợt 1 tại Mục 13.1 E-ĐKCT và được thu hồi khi Chủ đầu tư nghiệm thu sản phẩm của Đợt 2.",
+   "mo_ta": "Mục 13.1 E-ĐKCT ghi 05 đợt, tổng bằng 100% giá hợp đồng, trong đó Đợt 1 (15%) là khoản tạm ứng. Nếu thu hồi tạm ứng hiểu theo nghĩa thông thường là khấu trừ vào khoản thanh toán Đợt 2 thì Đợt 2 thực nhận 10% và tổng thanh toán còn 85%, mâu thuẫn với câu tổng các đợt bằng 100% giá hợp đồng. Cách hiểu còn lại (khoản tạm ứng được hoàn ứng bằng giá trị sản phẩm nghiệm thu ở Đợt 2, Đợt 2 vẫn thanh toán đủ 25%) không được nêu. Dễ phát sinh tranh chấp khi thanh toán.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Chủ đầu tư chọn cách hoàn ứng. Soạn lại DKC_12_1 và dòng Đợt 2 của DKC_13_1 (Chương VII) cho thống nhất, ví dụ: khoản tạm ứng được hoàn ứng khi Chủ đầu tư nghiệm thu sản phẩm Đợt 2, Chủ đầu tư thanh toán Đợt 2 bằng 25% giá hợp đồng và không khấu trừ thêm. Nếu chọn khấu trừ thì điều chỉnh tỷ lệ các đợt trong tham số."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "Đợt 2: 25% giá hợp đồng, sau khi hai bên xác nhận đặc tả yêu cầu (baseline) và giao diện ưu tiên",
+   "mo_ta": "Cụm giao diện ưu tiên chỉ xuất hiện ở điều kiện thanh toán Đợt 2, không có sản phẩm hay hạng mục tương ứng trong Chương V mục 3.3, mục 5 và Mẫu số 01A. Không xác định được giao diện nào là ưu tiên và tiêu chí xác nhận, nên điều kiện thanh toán không đo được. Từ baseline là thuật ngữ tiếng Anh không có trong RFP. Sự kiện thanh toán lấy từ tham_so_chu_dau_tu.json, phát hiện này chỉ yêu cầu định nghĩa rõ, không đổi quyết định của Chủ đầu tư.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Chủ đầu tư xác định nội dung giao diện ưu tiên (ví dụ thiết kế giao diện các màn hình tìm kiếm sản phẩm, đăng ký thành viên, đặt hàng) và bổ sung thành sản phẩm tại C5_3 (mục 3.3) và MAU_01A, hoặc bỏ cụm này khỏi DKC_13_1. Thay (baseline) bằng cách viết tiếng Việt: đặc tả yêu cầu được hai bên xác nhận."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "tối thiểu là 2.000.000.000 đồng, xác định theo cách tính đối với gói thầu có thời gian thực hiện dưới 12 tháng với hệ số k bằng 1,0.",
+   "mo_ta": "Ghi chú (6) Bảng số 01 Mẫu 5A: doanh thu yêu cầu = (Giá gói thầu - giá trị thuế VAT) x k. Giá gói thầu 2.000.000.000 đồng đã bao gồm thuế, phí nhưng mức doanh thu yêu cầu bằng đúng giá gói thầu, tức chưa trừ thuế VAT. Giá trị khớp gia_tri_tinh.json và chỉ đúng nếu dịch vụ của gói thầu không chịu thuế giá trị gia tăng. Chưa chắc chắn vì E-HSMT và tham số không nêu thuế suất.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Người dùng xác nhận tình trạng thuế giá trị gia tăng của gói thầu. Nếu có thuế, tính lại doanh_thu_binh_quan_toi_thieu bằng script tinh_gia_tri.py (bước 3) và cập nhật Bảng số 01 dòng 3, Chương III. Nếu không chịu thuế, ghi rõ trong dòng 3 rằng giá gói thầu không bao gồm thuế giá trị gia tăng."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "Áp dụng phương pháp chấm điểm theo thang điểm 100. Mức điểm yêu cầu tối thiểu về kỹ thuật là 70 điểm, bằng 70% tổng số điểm tối đa. Mỗi tiêu chí tổng quát phải đạt tối thiểu mức điểm nêu tại bảng dưới đây.",
+   "mo_ta": "Năm tiêu chí tổng quát phủ đủ nội dung đề xuất của RFP và không chấm giá, nhưng mỗi tiêu chí chỉ là một câu mô tả, không chia tiêu chí chi tiết, không có điểm và mức chấm cho từng tiêu chí chi tiết. Mẫu 5A Chương III Mục 3.1 tính điểm tiêu chí tổng quát từ điểm các tiêu chí chi tiết và yêu cầu Chủ đầu tư cụ thể hóa tiêu chí. Thiếu tiêu chí chi tiết làm việc chấm điểm phụ thuộc đánh giá chủ quan của tổ chuyên gia, dễ phát sinh kiến nghị.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Soạn lại TIEU_CHI_1 đến TIEU_CHI_5 (Chương III Mục 3) thành các tiêu chí chi tiết có điểm tối đa và mức chấm, giữ trọng số 30, 20, 20, 15, 15 và điểm tối thiểu 18, 12, 12, 9, 9. Ví dụ TIEU_CHI_1: hiểu mục tiêu và mô hình hệ thống mới; điều kiện tiền đề; giải pháp hoạt động liên tục 24 giờ, 365 ngày; giải pháp và cách đo thời gian phản hồi không quá 2 giây; giải pháp thao tác dễ dàng."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "Phân tích hệ thống và lập đặc tả hệ thống (Specification) | Chương V mục 3.1 và 3.3. Phân tích yêu cầu, lập đặc tả Web Selling Site System gồm cấu hình cơ sở dữ liệu (DB Configuration) và chức năng (Function), được hai bên xác nhận | 1 | Gói | Trụ sở chính Công ty Cổ phần ABC Wear",
+   "mo_ta": "Mẫu số 01A ghi địa điểm thực hiện dịch vụ của tất cả hạng mục là trụ sở chính Công ty Cổ phần ABC Wear, trong khi E-ĐKC 1.5 và Chương V mục 1 quy định công việc phân tích, thiết kế, xây dựng phần mềm được thực hiện tại nơi làm việc của nhà thầu hoặc tại trụ sở chính theo kế hoạch hai bên thống nhất. Hạng mục 1 đến 8 của Mẫu số 01A không khớp E-ĐKC 1.5.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "MAU_01A, cột Địa điểm thực hiện dịch vụ của hạng mục 1 đến 8: ghi Nơi làm việc của nhà thầu hoặc trụ sở chính Công ty Cổ phần ABC Wear theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear. Hạng mục 9 đến 13 giữ nguyên."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "Hỗ trợ đưa hệ thống vào vận hành (cut over) | Chương V mục 3.2. Chuyển hệ thống sang vận hành chính thức và hỗ trợ Chủ đầu tư trong thời gian đầu vận hành | 1 | Gói | Trụ sở chính Công ty Cổ phần ABC Wear | 01/07/2027",
+   "mo_ta": "Hạng mục 13 Mẫu số 01A có công việc hỗ trợ Chủ đầu tư trong thời gian đầu vận hành nhưng không nêu thời lượng, và ngày hoàn thành là 01/07/2027, chính là ngày cut over, nên công việc sau vận hành không có thời gian thực hiện. Chương V mục 3.2 chỉ nêu hỗ trợ đưa hệ thống vào vận hành ngày 01/07/2027, thời gian thực hiện hợp đồng tại E-TBMT kết thúc ngày 01/07/2027, và RFP chỉ yêu cầu phạm vi từ phân tích hệ thống đến kiểm thử vận hành. Mẫu số 01A vì vậy chưa khớp Chương V.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Bỏ cụm và hỗ trợ Chủ đầu tư trong thời gian đầu vận hành khỏi MAU_01A hạng mục 13 để khớp C5_3 (mục 3.2). Nếu Chủ đầu tư cần hỗ trợ sau cut over thì quyết định thời lượng (ví dụ đến 31/07/2027, trùng hiệu lực bảo đảm thực hiện hợp đồng) và ghi thống nhất tại C5_3, MAU_01A và thời gian thực hiện hợp đồng."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "tính hợp lý và khả thi của tiến độ đến ngày cut over 01/07/2027",
+   "mo_ta": "Từ cut over được dùng như từ tiếng Việt, không có tên tiếng Việt đứng trước, tại TIEU_CHI_3 và tại Chương V mục 4 (tiến độ đến ngày cut over (Schedule)), trong khi các chỗ khác viết ngày đưa hệ thống vào vận hành (cut over), trái quy tắc tên tiếng Anh để trong ngoặc sau tên tiếng Việt của van_phong.md. Cách viết thư điện tử không thống nhất: email (Thông tin chính của E-TBMT, Mục 7.5 E-BDL), e-mail và E-mail (Mục 38.1, 38.2 E-BDL, E-ĐKC 4.1).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "TIEU_CHI_3: đổi thành tiến độ đến ngày đưa hệ thống vào vận hành (cut over) 01/07/2027. C5_4: đổi thành tiến độ đến ngày đưa hệ thống vào vận hành (Schedule). Thống nhất viết e-mail trong toàn bộ E-HSMT. Không thay đổi ngày hay giá trị."
+  }
+ ],
+ "lop_b": [
+  {
+   "ma": "MH01",
+   "ket_qua": "co_phat_hien",
+   "ghi_chu": "Đã xem 5 trang ảnh RFP, mọi yêu cầu R01-R48 có trong HSMT; R29 (bảo mật RFP) xử lý chưa phù hợp với E-HSMT công khai, rfp_yeu_cau.json không bỏ sót mục nào khác."
+  },
+  {
+   "ma": "MH02",
+   "ket_qua": "dat",
+   "ghi_chu": "Các mốc 22/02, 01/03, 03/03, 04/03, 08/03, 18/03, 01/07, 31/07/2027 và các năm 2023-2025 thống nhất giữa E-TBMT, Chương II, III, V, VII và khớp gia_tri_tinh.json."
+  },
+  {
+   "ma": "MH03",
+   "ket_qua": "co_phat_hien",
+   "ghi_chu": "Số tiền, tỷ lệ khớp nhau giữa các chương; còn mơ hồ về thu hồi tạm ứng, giao diện ưu tiên và cách trừ thuế VAT trong yêu cầu doanh thu."
+  },
+  {
+   "ma": "MH04",
+   "ket_qua": "co_phat_hien",
+   "ghi_chu": "E-ĐKC 15 thiếu nội dung bắt buộc, Chương III Mục 2.1 sửa nội dung cố định, một số mục E-BDL, E-ĐKCT lược nội dung cố định hoặc thiếu thông tin liên hệ."
+  },
+  {
+   "ma": "MH05",
+   "ket_qua": "co_phat_hien",
+   "ghi_chu": "Phủ đủ 10 nội dung đề xuất của RFP và không chấm giá, nhưng chưa có tiêu chí chi tiết và mức chấm."
+  },
+  {
+   "ma": "MH06",
+   "ket_qua": "co_phat_hien",
+   "ghi_chu": "Mẫu số 01A phủ đủ 4 sản phẩm, 3 chức năng, Selling DB, tích hợp, kiểm thử, chuyển giao, cut over; lệch địa điểm với E-ĐKC 1.5 và hạng mục 13 có hỗ trợ sau vận hành không xác định."
+  },
+  {
+   "ma": "MH07",
+   "ket_qua": "dat",
+   "ghi_chu": "Bảng số 02 khớp tham số (1 quản trị dự án, 3 kỹ sư phát triển, 1 phân tích nghiệp vụ hoặc kiểm thử), không yêu cầu chứng chỉ, không hạn chế cạnh tranh."
+  },
+  {
+   "ma": "MH08",
+   "ket_qua": "co_phat_hien",
+   "ghi_chu": "Không có từ cấm, ký hiệu, in đậm hay viết hoa toàn bộ; còn dùng cut over thiếu tên tiếng Việt và cách viết e-mail chưa thống nhất."
+  },
+  {
+   "ma": "MH09",
+   "ket_qua": "dat",
+   "ghi_chu": "Năm điểm lệch R26, R27, R30, R32, R33 đều có giải pháp tương đương trong HSMT, không nêu Inter Solution, không yêu cầu bản in; R29 nên chuyển thành điểm lệch (xem MH01)."
+  },
+  {
+   "ma": "MH10",
+   "ket_qua": "co_phat_hien",
+   "ghi_chu": "E-ĐKC 8 (bổ sung) không mâu thuẫn; câu cuối E-ĐKC 14 (bổ sung) mâu thuẫn Mục 14.3 điểm b E-ĐKC."
+  }
+ ]
+}

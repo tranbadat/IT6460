@@ -1,0 +1,299 @@
+{
+ "mau_10a": [
+  {
+   "stt": 1,
+   "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-03-18",
+   "ket_thuc": "2027-05-05",
+   "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+   "goi": "1.1.1, 1.1.2, 2.1.1, 2.1.2, 2.1.3, 2.1.4 ..."
+  },
+  {
+   "stt": 2,
+   "danh_muc": "Thiết kế quy trình vận hành mới (New Operational Flow)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-04-21",
+   "ket_thuc": "2027-05-05",
+   "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+   "goi": "2.1.4, 2.2.1"
+  },
+  {
+   "stt": 3,
+   "danh_muc": "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-04-07",
+   "ket_thuc": "2027-05-05",
+   "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+   "goi": "2.1.4, 2.2.3"
+  },
+  {
+   "stt": 4,
+   "danh_muc": "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-04-07",
+   "ket_thuc": "2027-05-06",
+   "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+   "goi": "2.1.4, 2.3.1, 2.3.2, 2.3.3"
+  },
+  {
+   "stt": 5,
+   "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-03-23",
+   "ket_thuc": "2027-06-09",
+   "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+   "goi": "2.3.3, 3.1.1, 3.2.1, 3.3.1, 3.3.2, 3.3.3 ..."
+  },
+  {
+   "stt": 6,
+   "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-03-23",
+   "ket_thuc": "2027-06-03",
+   "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+   "goi": "2.3.3, 4.1.1, 4.2.1, 4.3.1, 4.3.2, 4.3.3 ..."
+  },
+  {
+   "stt": 7,
+   "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-03-23",
+   "ket_thuc": "2027-06-03",
+   "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+   "goi": "2.3.3, 5.1.1, 5.2.1, 5.3.1, 5.3.2, 5.3.3 ..."
+  },
+  {
+   "stt": 8,
+   "danh_muc": "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-03-23",
+   "ket_thuc": "2027-06-08",
+   "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+   "goi": "6.1.1, 6.1.2, 8.1.1"
+  },
+  {
+   "stt": 9,
+   "danh_muc": "Tích hợp với hệ thống chính (Main System)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-03-23",
+   "ket_thuc": "2027-06-11",
+   "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+   "goi": "6.2.1, 6.2.2, 6.2.3, 6.2.4, 6.2.5, 8.1.1"
+  },
+  {
+   "stt": 10,
+   "danh_muc": "Kiểm thử hệ thống",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-05-06",
+   "ket_thuc": "2027-06-22",
+   "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+   "goi": "7.1.1, 7.1.2, 7.2.1, 7.2.2, 7.2.3, 7.2.4 ..."
+  },
+  {
+   "stt": 11,
+   "danh_muc": "Kiểm thử vận hành (Operation Test)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-05-06",
+   "ket_thuc": "2027-06-28",
+   "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+   "goi": "7.1.1, 7.3.1, 7.3.2, 7.3.3"
+  },
+  {
+   "stt": 12,
+   "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-06-10",
+   "ket_thuc": "2027-06-25",
+   "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+   "goi": "8.2.1, 8.2.2"
+  },
+  {
+   "stt": 13,
+   "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
+   "bat_dau": "2027-05-06",
+   "ket_thuc": "2027-07-01",
+   "yeu_cau": "01/07/2027",
+   "goi": "1.3.2, 8.1.2, 8.3.1, 8.3.2, 8.3.3"
+  }
+ ],
+ "dap_ung": {
+  "cot": [
+   "Yêu cầu của HSMT",
+   "Đề xuất của nhà thầu",
+   "Đánh giá"
+  ],
+  "dong": [
+   [
+    "Giá dự thầu không vượt giá gói thầu",
+    "1.750.000.000 đồng, giá gói thầu 2.000.000.000 đồng",
+    "Đáp ứng"
+   ],
+   [
+    "Hiệu lực E-HSDT",
+    "Tối thiểu 90 ngày",
+    "Đáp ứng"
+   ],
+   [
+    "Bảo đảm dự thầu",
+    "30.000.000 đồng, cam kết trong đơn dự thầu (Mục 18.8 E-CDNT)",
+    "Đáp ứng"
+   ],
+   [
+    "Hợp đồng tương tự",
+    "0 hợp đồng từ 600.000.000 đồng, hoàn thành từ 01 tháng 01 năm 2024",
+    "Chưa đáp ứng"
+   ],
+   [
+    "Doanh thu bình quân",
+    "0 đồng các năm 2023, 2024, 2025",
+    "Chưa đáp ứng"
+   ],
+   [
+    "Nhân sự chủ chốt (Bảng số 02)",
+    "Quản trị dự án: Trần Bá Đạt. Kỹ sư phát triển phần mềm: Phạm Tuấn Anh, Ninh Đức Toàn, Vũ Đức Minh. Kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử: Nguyễn Thị Phương Liên",
+    "Đáp ứng"
+   ],
+   [
+    "Thời gian thực hiện",
+    "Từ 18/03/2027 đến cut over 01/07/2027, hoàn thành dự kiến 01/07/2027",
+    "Đáp ứng"
+   ],
+   [
+    "Phạm vi theo Mẫu 01A",
+    "13/13 hạng mục có tiến độ và giá",
+    "Đáp ứng"
+   ]
+  ],
+  "widths": [
+   2800,
+   5000,
+   1500
+  ]
+ },
+ "hop_dong_tuong_tu": [],
+ "doanh_thu": [
+  {
+   "nam": 2023,
+   "doanh_thu": 0
+  },
+  {
+   "nam": 2024,
+   "doanh_thu": 0
+  },
+  {
+   "nam": 2025,
+   "doanh_thu": 0
+  }
+ ],
+ "doanh_thu_binh_quan": 0,
+ "so_hop_dong_dat": 0,
+ "nhan_su_chu_chot": [
+  {
+   "stt": 1,
+   "vi_tri": "Quản trị dự án",
+   "yeu_cau": "Tối thiểu 03 năm quản lý dự án phần mềm hoặc tối thiểu 02 hợp đồng tương tự",
+   "ho_ten": "Trần Bá Đạt",
+   "trinh_do": "",
+   "so_nam": null,
+   "kinh_nghiem": "",
+   "chung_chi": "Không",
+   "danh_gia": "Đáp ứng"
+  },
+  {
+   "stt": 2,
+   "vi_tri": "Kỹ sư phát triển phần mềm",
+   "yeu_cau": "Tối thiểu 02 năm lập trình ứng dụng web",
+   "ho_ten": "Phạm Tuấn Anh",
+   "trinh_do": "",
+   "so_nam": null,
+   "kinh_nghiem": "",
+   "chung_chi": "Không",
+   "danh_gia": "Đáp ứng"
+  },
+  {
+   "stt": 2,
+   "vi_tri": "Kỹ sư phát triển phần mềm",
+   "yeu_cau": "Tối thiểu 02 năm lập trình ứng dụng web",
+   "ho_ten": "Ninh Đức Toàn",
+   "trinh_do": "",
+   "so_nam": null,
+   "kinh_nghiem": "",
+   "chung_chi": "Không",
+   "danh_gia": "Đáp ứng"
+  },
+  {
+   "stt": 2,
+   "vi_tri": "Kỹ sư phát triển phần mềm",
+   "yeu_cau": "Tối thiểu 02 năm lập trình ứng dụng web",
+   "ho_ten": "Vũ Đức Minh",
+   "trinh_do": "",
+   "so_nam": null,
+   "kinh_nghiem": "",
+   "chung_chi": "Không",
+   "danh_gia": "Đáp ứng"
+  },
+  {
+   "stt": 3,
+   "vi_tri": "Kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử",
+   "yeu_cau": "Tối thiểu 02 năm phân tích nghiệp vụ hoặc kiểm thử phần mềm",
+   "ho_ten": "Nguyễn Thị Phương Liên",
+   "trinh_do": "",
+   "so_nam": null,
+   "kinh_nghiem": "",
+   "chung_chi": "Không",
+   "danh_gia": "Đáp ứng"
+  }
+ ],
+ "don_du_thau": [
+  "Ngày:",
+  "Tên gói thầu: Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+  "Kính gửi: Công ty Cổ phần ABC Wear",
+  "Sau khi nghiên cứu E-HSMT, chúng tôi:",
+  "Tên nhà thầu: Inter Solution, Mã số thuế, cam kết thực hiện gói thầu Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System) số E-TBMT: theo thông báo mời thầu trên Hệ thống mạng đấu thầu quốc gia theo đúng yêu cầu nêu trong E-HSMT với giá dự thầu (tổng số tiền) là 1.750.000.000 đồng (bằng chữ: một tỷ bảy trăm năm mươi triệu đồng) cùng với các bảng giá dự thầu kèm theo.",
+  "Hiệu lực của E-HSDT: 90 ngày kể từ ngày đóng thầu",
+  "Bảo đảm dự thầu: 30.000.000 đồng (bằng chữ: ba mươi triệu đồng)",
+  "Chúng tôi cam kết:",
+  "1. Không đang trong quá trình thực hiện thủ tục giải thể hoặc bị thu hồi giấy chứng nhận đăng ký doanh nghiệp, giấy chứng nhận đăng ký hợp tác xã, liên hiệp hợp tác xã, tổ hợp tác, không thuộc trường hợp mất khả năng thanh toán theo quy định của pháp luật về phá sản (không đang trong quá trình chấm dứt hoạt động hoặc bị thu hồi giấy chứng nhận đăng ký hộ kinh doanh đối với nhà thầu là hộ kinh doanh);",
+  "2. Không vi phạm quy định về bảo đảm cạnh tranh trong đấu thầu;",
+  "3. Đã thực hiện nghĩa vụ kê khai thuế và nộp thuế của năm tài chính gần nhất so với thời điểm đóng thầu;",
+  "4. Không đang trong thời gian bị cấm tham dự thầu theo quy định của pháp luật đấu thầu;",
+  "5. Không đang bị truy cứu trách nhiệm hình sự (chủ hộ không đang bị truy cứu trách nhiệm hình sự trong trường hợp nhà thầu là hộ kinh doanh);",
+  "6. Không thực hiện các hành vi tham nhũng, hối lộ, thông thầu, cản trở và các hành vi vi phạm quy định khác của pháp luật đấu thầu khi tham dự gói thầu này;",
+  "7. Trong thời hạn 03 năm trước thời điểm đóng thầu, nhà thầu không có nhân sự (ký kết hợp đồng lao động với nhà thầu tại thời điểm nhân sự thực hiện hành vi vi phạm) bị Tòa án kết án có hành vi vi phạm quy định về đấu thầu gây hậu quả nghiêm trọng theo quy định của pháp luật về hình sự nhằm mục đích cho nhà thầu đó trúng thầu;",
+  "8. Những thông tin kê khai trong E-HSDT là trung thực;",
+  "9. Trường hợp trúng thầu, E-HSDT và các văn bản bổ sung, làm rõ E-HSDT tạo thành thỏa thuận ràng buộc trách nhiệm giữa hai bên cho tới khi hợp đồng được ký kết;",
+  "10. Nếu E-HSDT của chúng tôi được chấp nhận, chúng tôi sẽ thực hiện biện pháp bảo đảm thực hiện hợp đồng theo quy định tại Mục 37.1 E-CDNT của E-HSMT;",
+  "11. Trường hợp chúng tôi không nộp bản gốc bảo đảm dự thầu theo yêu cầu của Chủ đầu tư quy định tại Mục 18.5 E-CDNT; trong trường hợp giá trị bảo đảm dự thầu nhỏ hơn 50 triệu đồng, không nộp tiền mặt, Séc bảo chi, thư bảo lãnh dự thầu hoặc giấy chứng nhận bảo hiểm bảo lãnh theo quy định tại Mục 18.8 E-CDNT thì chúng tôi sẽ bị đánh giá không đảm bảo uy tín khi tham dự thầu theo quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP, nêu tên trên Hệ thống mạng đấu thầu quốc gia và tài khoản của chúng tôi sẽ bị khóa trong vòng 06 tháng kể từ ngày chủ đầu tư công khai tên chúng tôi trên Hệ thống mạng đấu thầu quốc gia, trừ trường hợp bất khả kháng.",
+  "Đơn dự thầu được ký bằng chữ ký số của , , khi nộp E-HSDT."
+ ],
+ "bao_dam_ghi_chu": "Giá trị nhỏ hơn 50 triệu đồng nên nhà thầu cam kết trong đơn dự thầu theo Mục 18.8 E-CDNT, không nộp thư bảo lãnh dự thầu khi nộp E-HSDT.",
+ "bao_dam_du_thau_chu": "ba mươi triệu"
+}

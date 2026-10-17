@@ -1,0 +1,489 @@
+{
+ "_ghi_chu": "Sơ đồ phụ thuộc của bộ skill. dau_vao: tệp do nhóm cung cấp. buoc: mỗi bước do một skill thực hiện, vao là mã nút đầu vào (tệp đầu vào hoặc đầu ra của bước khác), ra là mã nút đầu ra và đường dẫn. Đường dẫn tính từ thư mục gốc dự án.",
+ "dau_vao": {
+  "rfp": {
+   "tep": "dau_vao/RFP.pdf",
+   "mo_ta": "RFP của khách hàng",
+   "bat_buoc": true
+  },
+  "mau_5a": {
+   "tep": "dau_vao/Mau_5A.docx",
+   "mo_ta": "Mẫu số 5A, Thông tư 79/2025/TT-BTC",
+   "bat_buoc": true
+  },
+  "tham_so_hsmt": {
+   "tep": "dau_vao/tham_so_chu_dau_tu.json",
+   "mo_ta": "Tham số chủ đầu tư cho HSMT",
+   "bat_buoc": true
+  },
+  "du_an": {
+   "tep": "dau_vao/du_an.json",
+   "mo_ta": "Thông tin dự án, lịch làm việc, sprint, người lập",
+   "bat_buoc": true
+  },
+  "thanh_vien": {
+   "tep": "dau_vao/thanh_vien.json",
+   "mo_ta": "Thành viên nhóm và vị trí bổ sung, vai trò, quỹ thời gian",
+   "bat_buoc": true
+  },
+  "don_gia": {
+   "tep": "dau_vao/don_gia.json",
+   "mo_ta": "Đơn giá vai trò, chi phí khác, tỷ lệ chi phí chung và lợi nhuận, thuế",
+   "bat_buoc": true
+  },
+  "nha_thau": {
+   "tep": "dau_vao/nha_thau.json",
+   "mo_ta": "Thông tin nhà thầu cho HSDT (pháp nhân, hợp đồng tương tự, tài chính)",
+   "bat_buoc": true
+  },
+  "thay_doi": {
+   "tep": "du_lieu/thay_doi.json",
+   "mo_ta": "Sổ yêu cầu thay đổi, cập nhật trong quá trình thực hiện",
+   "bat_buoc": false
+  },
+  "tt_nhat_ky": {
+   "tep": "dau_vao/thuc_te/nhat_ky_cong_viec.csv",
+   "mo_ta": "Nhật ký công việc thực tế: ngày, thành viên, mã gói WBS, MD",
+   "bat_buoc": false
+  },
+  "tt_hoan_thanh": {
+   "tep": "dau_vao/thuc_te/hoan_thanh.csv",
+   "mo_ta": "Tỷ lệ hoàn thành gói công việc theo ngày cập nhật",
+   "bat_buoc": false
+  },
+  "tt_moc": {
+   "tep": "dau_vao/thuc_te/moc_thuc_te.csv",
+   "mo_ta": "Ngày đạt mốc thực tế",
+   "bat_buoc": false
+  },
+  "tt_nghiem_thu": {
+   "tep": "dau_vao/thuc_te/nghiem_thu.csv",
+   "mo_ta": "Kết quả nghiệm thu theo tiêu chí",
+   "bat_buoc": false
+  },
+  "tt_loi": {
+   "tep": "dau_vao/thuc_te/loi.csv",
+   "mo_ta": "Danh sách lỗi phát hiện và khắc phục",
+   "bat_buoc": false
+  },
+  "tt_retro": {
+   "tep": "dau_vao/thuc_te/retro.md",
+   "mo_ta": "Ghi chép họp cải tiến cuối sprint",
+   "bat_buoc": false
+  },
+  "tt_rui_ro": {
+   "tep": "dau_vao/thuc_te/theo_doi_rui_ro.csv",
+   "mo_ta": "Nhật ký theo dõi rủi ro: ngày, mã rủi ro, trạng thái, hành động, tác động thực tế",
+   "bat_buoc": false
+  },
+  "tt_chi_phi": {
+   "tep": "dau_vao/thuc_te/chi_phi_thuc_te.csv",
+   "mo_ta": "Chi phí khác thực tế ngoài nhân công",
+   "bat_buoc": false
+  },
+  "kpi": {
+   "tep": "dau_vao/kpi.json",
+   "mo_ta": "Ghi đè ngưỡng chỉ tiêu đánh giá dự án (không bắt buộc)",
+   "bat_buoc": false
+  },
+  "phien_ban_reg": {
+   "tep": "du_lieu/phien_ban.json",
+   "mo_ta": "Sổ phiên bản tài liệu (tự động)",
+   "bat_buoc": false,
+   "bien_dong": true
+  },
+  "nhat_ky_chay": {
+   "tep": "bang_chung/nhat_ky_chay.jsonl",
+   "mo_ta": "Nhật ký chạy skill, script, agent (tự động)",
+   "bat_buoc": false,
+   "bien_dong": true
+  }
+ },
+ "buoc": [
+  {
+   "id": "hsmt",
+   "skill": "hsmt-mau-5a",
+   "nhom": "Lập kế hoạch",
+   "ten": "Hồ sơ mời thầu",
+   "vao": [
+    "rfp",
+    "mau_5a",
+    "tham_so_hsmt"
+   ],
+   "ra": {
+    "doc_hsmt": "ket_qua/01_HSMT/HSMT.docx",
+    "hsmt": "du_lieu/hsmt.json",
+    "rfp_yc": "du_lieu/rfp_yeu_cau.json"
+   },
+   "khoa": "Đường cơ sở đấu thầu. Sau khi ký hợp đồng không sửa tài liệu này; thay đổi được ghi bằng phụ lục hợp đồng hoặc biên bản thỏa thuận."
+  },
+  {
+   "id": "wbs",
+   "skill": "qlda-wbs",
+   "nhom": "Lập kế hoạch",
+   "ten": "WBS (dữ liệu)",
+   "vao": [
+    "hsmt",
+    "rfp_yc",
+    "du_an"
+   ],
+   "ra": {
+    "wbs": "du_lieu/wbs.json"
+   }
+  },
+  {
+   "id": "giao_viec",
+   "skill": "qlda-phan-cong",
+   "nhom": "Lập kế hoạch",
+   "ten": "Giao việc theo gói WBS (dữ liệu)",
+   "vao": [
+    "wbs",
+    "thanh_vien",
+    "hsmt",
+    "du_an"
+   ],
+   "ra": {
+    "phan_cong": "du_lieu/phan_cong.json"
+   }
+  },
+  {
+   "id": "lich",
+   "skill": "qlda-master-schedule",
+   "nhom": "Lập kế hoạch",
+   "ten": "Master schedule",
+   "vao": [
+    "wbs",
+    "phan_cong",
+    "thanh_vien",
+    "du_an",
+    "hsmt"
+   ],
+   "ra": {
+    "lich": "du_lieu/lich.json",
+    "xlsx_lich": "ket_qua/04_Master_schedule/Master_schedule.xlsx"
+   }
+  },
+  {
+   "id": "tai_lieu_wbs",
+   "skill": "qlda-wbs",
+   "nhom": "Lập kế hoạch",
+   "ten": "WBS (tài liệu)",
+   "vao": [
+    "wbs",
+    "phan_cong",
+    "lich",
+    "rfp_yc",
+    "hsmt",
+    "thanh_vien",
+    "du_an"
+   ],
+   "ra": {
+    "doc_wbs": "ket_qua/03_WBS"
+   }
+  },
+  {
+   "id": "rui_ro",
+   "skill": "qlda-risk",
+   "nhom": "Kế hoạch thực hiện",
+   "ten": "Sổ đăng ký rủi ro (dữ liệu)",
+   "vao": [
+    "hsmt",
+    "rfp_yc",
+    "wbs",
+    "lich",
+    "phan_cong",
+    "thanh_vien"
+   ],
+   "ra": {
+    "rui_ro": "du_lieu/rui_ro.json"
+   }
+  },
+  {
+   "id": "chi_phi",
+   "skill": "qlda-cost-estimate",
+   "nhom": "Lập kế hoạch",
+   "ten": "Cost estimate",
+   "vao": [
+    "wbs",
+    "phan_cong",
+    "lich",
+    "thanh_vien",
+    "don_gia",
+    "rui_ro",
+    "hsmt"
+   ],
+   "ra": {
+    "chi_phi": "du_lieu/chi_phi.json",
+    "xlsx_chi_phi": "ket_qua/06_Cost_estimate/Cost_estimate.xlsx",
+    "doc_chi_phi": "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx"
+   }
+  },
+  {
+   "id": "hsdt",
+   "skill": "qlda-hsdt",
+   "nhom": "Lập kế hoạch",
+   "ten": "Hồ sơ dự thầu",
+   "vao": [
+    "hsmt",
+    "rfp_yc",
+    "wbs",
+    "lich",
+    "phan_cong",
+    "chi_phi",
+    "rui_ro",
+    "thanh_vien",
+    "nha_thau",
+    "du_an"
+   ],
+   "ra": {
+    "doc_hsdt": "ket_qua/02_HSDT/HSDT.docx"
+   },
+   "khoa": "Đường cơ sở đấu thầu. Sau khi ký hợp đồng không sửa tài liệu này; thay đổi được ghi bằng phụ lục hợp đồng hoặc biên bản thỏa thuận."
+  },
+  {
+   "id": "ke_hoach_rui_ro",
+   "skill": "qlda-risk",
+   "nhom": "Kế hoạch thực hiện",
+   "ten": "Risk management plan",
+   "vao": [
+    "rui_ro",
+    "chi_phi",
+    "lich",
+    "phan_cong",
+    "thanh_vien",
+    "du_an",
+    "hsmt"
+   ],
+   "ra": {
+    "doc_rui_ro": "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx"
+   }
+  },
+  {
+   "id": "ke_hoach_thay_doi",
+   "skill": "qlda-change",
+   "nhom": "Kế hoạch thực hiện",
+   "ten": "Change management plan",
+   "vao": [
+    "hsmt",
+    "doc_hsdt",
+    "phan_cong",
+    "thanh_vien",
+    "lich",
+    "chi_phi",
+    "don_gia",
+    "du_an"
+   ],
+   "ra": {
+    "doc_thay_doi": "ket_qua/08_Change_management_plan/Ke_hoach_quan_ly_thay_doi.docx"
+   },
+   "_ghi_chu": "Sổ thay đổi là nhật ký sống, không làm kế hoạch bị đánh dấu cũ. Bảng sổ thay đổi trong kế hoạch phản ánh thời điểm lập, sổ đầy đủ ở tài liệu quản lý phiên bản và báo cáo tổng kết."
+  },
+  {
+   "id": "ke_hoach_tong_the",
+   "skill": "qlda-master-plan",
+   "nhom": "Lập kế hoạch",
+   "ten": "Master plan",
+   "vao": [
+    "hsmt",
+    "doc_hsdt",
+    "wbs",
+    "lich",
+    "phan_cong",
+    "chi_phi",
+    "rui_ro",
+    "doc_rui_ro",
+    "doc_thay_doi",
+    "thanh_vien",
+    "du_an",
+    "rfp_yc"
+   ],
+   "ra": {
+    "doc_ke_hoach": "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx"
+   }
+  },
+  {
+   "id": "phan_cong_tai_lieu",
+   "skill": "qlda-phan-cong",
+   "nhom": "Kế hoạch thực hiện",
+   "ten": "Danh sách phân chia công việc (responsibilities)",
+   "vao": [
+    "phan_cong",
+    "lich",
+    "wbs",
+    "thanh_vien",
+    "du_an",
+    "hsmt"
+   ],
+   "ra": {
+    "doc_phan_cong": "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx"
+   }
+  },
+  {
+   "id": "bao_cao_tien_do",
+   "skill": "qlda-bao-cao-tien-do",
+   "nhom": "Kế hoạch thực hiện",
+   "ten": "Báo cáo tiến độ",
+   "vao": [
+    "lich",
+    "wbs",
+    "phan_cong",
+    "chi_phi",
+    "don_gia",
+    "thanh_vien",
+    "tt_nhat_ky",
+    "tt_hoan_thanh",
+    "rui_ro",
+    "tt_rui_ro",
+    "thay_doi",
+    "du_an"
+   ],
+   "ra": {
+    "tien_do": "du_lieu/tien_do",
+    "doc_tien_do": "ket_qua/09_Bao_cao_tien_do"
+   },
+   "anh_chup": true,
+   "_ghi_chu": "Báo cáo theo kỳ giữ nguyên số liệu tại thời điểm lập, không bị đánh dấu cũ khi có dữ liệu kỳ sau."
+  },
+  {
+   "id": "so_lieu_ket_thuc",
+   "skill": "qlda-tong-ket",
+   "nhom": "Kết thúc dự án",
+   "ten": "Số liệu kết thúc dự án (dữ liệu)",
+   "vao": [
+    "wbs",
+    "lich",
+    "chi_phi",
+    "phan_cong",
+    "thanh_vien",
+    "don_gia",
+    "tt_nhat_ky",
+    "tt_hoan_thanh",
+    "tt_moc",
+    "tt_nghiem_thu",
+    "tt_loi",
+    "rui_ro",
+    "tt_rui_ro",
+    "thay_doi",
+    "hsmt",
+    "rfp_yc",
+    "tt_chi_phi",
+    "tien_do",
+    "kpi"
+   ],
+   "ra": {
+    "ket_thuc": "du_lieu/ket_thuc.json"
+   }
+  },
+  {
+   "id": "tong_ket",
+   "skill": "qlda-tong-ket",
+   "nhom": "Kết thúc dự án",
+   "ten": "Báo cáo tổng kết dự án",
+   "vao": [
+    "ket_thuc",
+    "hsmt",
+    "doc_hsdt",
+    "doc_ke_hoach",
+    "lich",
+    "chi_phi",
+    "du_an",
+    "tt_moc"
+   ],
+   "ra": {
+    "doc_tong_ket": "ket_qua/11_Bao_cao_tong_ket/Bao_cao_tong_ket_du_an.docx"
+   }
+  },
+  {
+   "id": "danh_gia",
+   "skill": "qlda-danh-gia",
+   "nhom": "Kết thúc dự án",
+   "ten": "Báo cáo đánh giá dự án",
+   "vao": [
+    "ket_thuc",
+    "hsmt",
+    "rfp_yc",
+    "doc_tong_ket",
+    "tt_nghiem_thu",
+    "du_an",
+    "rui_ro",
+    "tt_rui_ro"
+   ],
+   "ra": {
+    "doc_danh_gia": "ket_qua/12_Bao_cao_danh_gia/Bao_cao_danh_gia_du_an.docx"
+   }
+  },
+  {
+   "id": "bai_hoc",
+   "skill": "qlda-bai-hoc",
+   "nhom": "Kết thúc dự án",
+   "ten": "Báo cáo bài học kinh nghiệm",
+   "vao": [
+    "ket_thuc",
+    "rui_ro",
+    "tt_rui_ro",
+    "thay_doi",
+    "tt_retro",
+    "doc_danh_gia",
+    "du_an",
+    "lich",
+    "wbs",
+    "rfp_yc",
+    "tt_loi",
+    "tt_nghiem_thu"
+   ],
+   "ra": {
+    "bai_hoc": "du_lieu/bai_hoc.json",
+    "doc_bai_hoc": "ket_qua/13_Bai_hoc_kinh_nghiem/Bao_cao_bai_hoc_kinh_nghiem.docx"
+   }
+  },
+  {
+   "id": "bang_luong",
+   "skill": "qlda-bang-luong",
+   "nhom": "Kết thúc dự án",
+   "ten": "Bảng phân chia lương",
+   "vao": [
+    "tt_nhat_ky",
+    "thanh_vien",
+    "don_gia",
+    "chi_phi",
+    "lich",
+    "du_an"
+   ],
+   "ra": {
+    "luong": "du_lieu/luong.json",
+    "xlsx_luong": "ket_qua/14_Bang_phan_chia_luong/Bang_phan_chia_luong.xlsx"
+   }
+  },
+  {
+   "id": "phien_ban",
+   "skill": "qlda-phien-ban",
+   "nhom": "Kết thúc dự án",
+   "ten": "Tài liệu quản lý phiên bản",
+   "vao": [
+    "phien_ban_reg",
+    "nhat_ky_chay",
+    "thay_doi",
+    "du_an"
+   ],
+   "ra": {
+    "phien_ban_th": "du_lieu/phien_ban_tong_hop.json",
+    "xlsx_phien_ban": "ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
+    "doc_phien_ban": "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx"
+   }
+  },
+  {
+   "id": "bang_chung",
+   "skill": "qlda-loi",
+   "nhom": "Nộp kèm",
+   "ten": "Phụ lục bằng chứng prompt và skill",
+   "vao": [
+    "phien_ban_reg",
+    "nhat_ky_chay"
+   ],
+   "ra": {
+    "doc_bang_chung": "ket_qua/16_Bang_chung/Phu_luc_bang_chung_prompt_skill.docx"
+   }
+  }
+ ],
+ "_ghi_chu_khoa": "Bước có khóa khoa là đường cơ sở đấu thầu. Sau lệnh so_phien_ban.py duong_co_so ... --hop-dong (ký hợp đồng), bước này không tạo lại, thay đổi ghi bằng phụ lục hoặc biên bản."
+}

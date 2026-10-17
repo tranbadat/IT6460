@@ -1,0 +1,26 @@
+{
+ "tai_lieu": "lam_viec/chi_phi/chi_phi_vong1.docx",
+ "dac_ta": "chi_phi",
+ "thoi_gian": "2026-10-16 23:28:46",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 1,
+ "phat_hien": [
+  {
+   "ma": "VP02",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "ông việc chia cho số MD mỗi người-tháng rồi nhân đơn giá trọn gói, tổng là 762.700.",
+   "mo_ta": "Cách diễn đạt cần xem lại: rồi",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "bỏ hoặc dùng từ nối trang trọng"
+  }
+ ],
+ "tieu_chi_doc_hieu": [
+  "Phương pháp tính giải thích được từng dòng của Excel",
+  "Dự phòng được so với EMV và có quy tắc sử dụng",
+  "Nhận xét dòng tiền gắn với mốc thanh toán",
+  "Độ nhạy nêu ngưỡng chịu đựng cụ thể",
+  "Số liệu trong Word khớp tệp Cost_estimate.xlsx"
+ ]
+}

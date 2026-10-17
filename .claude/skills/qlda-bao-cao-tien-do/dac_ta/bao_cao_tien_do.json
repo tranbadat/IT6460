@@ -1,0 +1,483 @@
+{
+ "id": "bao_cao_tien_do",
+ "ten": "Báo cáo tiến độ",
+ "nut_ra": "doc_tien_do",
+ "ten_tep": "Bao_cao_tien_do_{td#ky}.docx",
+ "ngay_tai_lieu": "{td#ngay_bao_cao|ngay}",
+ "tieu_de_dau_trang": "Kế hoạch thực hiện - Báo cáo tiến độ kỳ {td#ky}",
+ "nguon": {
+  "td": "du_lieu/tien_do/hien_tai.json",
+  "ls": "du_lieu/tien_do/lich_su.json",
+  "lich": "du_lieu/lich.json",
+  "rr": "du_lieu/rui_ro.json"
+ },
+ "bia": {
+  "tieu_de": "Báo cáo tiến độ",
+  "dong_phu": [
+   "Kỳ {td#ky}, ngày báo cáo {td#ngay_bao_cao|ngay}"
+  ]
+ },
+ "khoi": [
+  {
+   "h1": "1. Tóm tắt"
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Chỉ tiêu",
+      "Giá trị",
+      "Trạng thái"
+     ],
+     [
+      "Thời gian đã qua",
+      "{td#so_ngay_da_qua}/{td#so_ngay_lam_viec} ngày làm việc ({td#ty_le_thoi_gian|pt})",
+      ""
+     ],
+     [
+      "Khối lượng hoàn thành (EV/BAC)",
+      "{td#EV_md|md}/{td#BAC_md|md} MD ({td#ty_le_hoan_thanh|pt})",
+      ""
+     ],
+     [
+      "Chỉ số tiến độ SPI",
+      "{td#spi|so2}",
+      "{td#trang_thai_spi}"
+     ],
+     [
+      "Chỉ số chi phí CPI",
+      "{td#cpi|so2}",
+      "{td#trang_thai_cpi}"
+     ],
+     [
+      "Dự báo hoàn thành",
+      "{td#du_bao_hoan_thanh|ngay} (kế hoạch {td#ket_thuc_ke_hoach|ngay}, cut over {td#cut_over|ngay})",
+      ""
+     ],
+     [
+      "Trạng thái chung",
+      "",
+      "{td#trang_thai_chung}"
+     ]
+    ],
+    "widths": [
+     3300,
+     4300,
+     1700
+    ]
+   }
+  },
+  {
+   "soan": "TOM_TAT",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Đánh giá chung tình hình dự án trong kỳ dựa trên SPI, CPI, mốc, gói chậm, rủi ro và thay đổi. Nêu rõ trạng thái chung và nguyên nhân chính. Nếu dự báo hoàn thành sau ngày cut over thì nêu rõ số ngày và biện pháp.",
+   "nguon": [
+    "td"
+   ],
+   "bat_buoc": [
+    "{td#spi|so2}",
+    "{td#cpi|so2}"
+   ]
+  },
+  {
+   "h1": "2. Giá trị thu được"
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Chỉ số",
+      "Theo MD",
+      "Theo chi phí, đồng"
+     ],
+     [
+      "BAC",
+      "{td#BAC_md|md}",
+      "{td#BAC|tien}"
+     ],
+     [
+      "PV",
+      "{td#PV_md|md}",
+      "{td#PV|tien}"
+     ],
+     [
+      "EV",
+      "{td#EV_md|md}",
+      "{td#EV|tien}"
+     ],
+     [
+      "AC",
+      "{td#AC_md|md}",
+      "{td#AC|tien}"
+     ],
+     [
+      "SV = EV - PV",
+      "{td#SV_md|md}",
+      "{td#SV|tien}"
+     ],
+     [
+      "CV = EV - AC",
+      "{td#CV_md|md}",
+      "{td#CV|tien}"
+     ],
+     [
+      "EAC",
+      "{td#EAC_md|md}",
+      "{td#EAC|tien}"
+     ],
+     [
+      "ETC",
+      "{td#ETC_md|md}",
+      ""
+     ],
+     [
+      "VAC",
+      "{td#VAC_md|md}",
+      ""
+     ],
+     [
+      "TCPI",
+      "{td#tcpi|so2}",
+      ""
+     ]
+    ],
+    "widths": [
+     3000,
+     3100,
+     3200
+    ],
+    "right_cols": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "doan": "Chi phí quy đổi theo đơn giá loại công việc của đường cơ sở chi phí nhân công. Ngưỡng cảnh báo: SPI hoặc CPI dưới {da#nguong_canh_bao.spi_vang|so2} là vàng, dưới {da#nguong_canh_bao.spi_do|so2} là đỏ."
+  },
+  {
+   "bang": {
+    "nguon": "ls#ky",
+    "cot": [
+     [
+      "Kỳ",
+      "ky",
+      1200,
+      "c"
+     ],
+     [
+      "Ngày",
+      "ngay_bao_cao|ngay",
+      1400,
+      "c"
+     ],
+     [
+      "PV, MD",
+      "PV_md|md",
+      1300,
+      "r"
+     ],
+     [
+      "EV, MD",
+      "EV_md|md",
+      1300,
+      "r"
+     ],
+     [
+      "AC, MD",
+      "AC_md|md",
+      1300,
+      "r"
+     ],
+     [
+      "SPI",
+      "spi|so2",
+      900,
+      "r"
+     ],
+     [
+      "CPI",
+      "cpi|so2",
+      900,
+      "r"
+     ],
+     [
+      "Trạng thái",
+      "trang_thai_chung",
+      1000,
+      "c"
+     ]
+    ]
+   }
+  },
+  {
+   "h1": "3. Tiến độ gói công việc và mốc"
+  },
+  {
+   "bang": {
+    "nguon": "td#moc",
+    "cot": [
+     [
+      "Mốc",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Nội dung",
+      "ten",
+      3800
+     ],
+     [
+      "Kế hoạch",
+      "ke_hoach|ngay",
+      1300,
+      "c"
+     ],
+     [
+      "Thực tế",
+      "thuc_te|ngay",
+      1300,
+      "c"
+     ],
+     [
+      "Trạng thái",
+      "trang_thai",
+      2200
+     ]
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "td#goi_cham",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      800,
+      "c"
+     ],
+     [
+      "Gói chậm",
+      "ten",
+      3400
+     ],
+     [
+      "Kế hoạch",
+      "ke_hoach|pt",
+      1000,
+      "r"
+     ],
+     [
+      "Thực tế",
+      "thuc_te|pt",
+      1000,
+      "r"
+     ],
+     [
+      "Phụ trách",
+      "nguoi",
+      1900
+     ],
+     [
+      "Hạn",
+      "ket_thuc_ke_hoach|ngay",
+      1200,
+      "c"
+     ]
+    ],
+    "rong_thi": "Không có gói chậm hơn kế hoạch quá 10%."
+   }
+  },
+  {
+   "soan": "KET_QUA",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Kết quả đạt được trong kỳ: gói và sản phẩm hoàn thành, sản phẩm trình diễn cuối sprint, mốc đạt. Dùng mã gói và mã mốc.",
+   "nguon": [
+    "td",
+    "lich"
+   ]
+  },
+  {
+   "h1": "4. Công sức theo thành viên"
+  },
+  {
+   "bang": {
+    "nguon": "td#nguoi",
+    "cot": [
+     [
+      "Thành viên",
+      "ho_ten",
+      3200
+     ],
+     [
+      "Kế hoạch đến nay, MD",
+      "ke_hoach|md",
+      2000,
+      "r"
+     ],
+     [
+      "Thực tế, MD",
+      "thuc_te|md",
+      2000,
+      "r"
+     ],
+     [
+      "Chênh lệch, MD",
+      "chenh_lech|md",
+      2100,
+      "r"
+     ]
+    ]
+   }
+  },
+  {
+   "h1": "5. Vấn đề, rủi ro và thay đổi"
+  },
+  {
+   "bang": {
+    "nguon": "td#rui_ro",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Rủi ro",
+      "ten",
+      3000
+     ],
+     [
+      "Mức",
+      "muc",
+      1000,
+      "c"
+     ],
+     [
+      "Trạng thái",
+      "trang_thai",
+      1500
+     ],
+     [
+      "Hành động",
+      "hanh_dong",
+      2000
+     ],
+     [
+      "Phụ trách",
+      "phu_trach",
+      1100
+     ]
+    ],
+    "rong_thi": "Không có rủi ro cần báo cáo trong kỳ."
+   }
+  },
+  {
+   "bang": {
+    "nguon": "td#thay_doi",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      800,
+      "c"
+     ],
+     [
+      "Yêu cầu thay đổi",
+      "tieu_de",
+      4300
+     ],
+     [
+      "Trạng thái",
+      "trang_thai",
+      1600
+     ],
+     [
+      "MD",
+      "md_tang|md",
+      900,
+      "r"
+     ],
+     [
+      "Chậm, ngày",
+      "ngay_cham",
+      1100,
+      "c"
+     ]
+    ],
+    "rong_thi": "Không có yêu cầu thay đổi trong kỳ."
+   }
+  },
+  {
+   "soan": "VAN_DE",
+   "dang": "dong_bang",
+   "cot": [
+    "Vấn đề",
+    "Nguyên nhân",
+    "Hành động khắc phục",
+    "Người phụ trách",
+    "Hạn"
+   ],
+   "widths": [
+    2200,
+    2000,
+    2700,
+    1400,
+    1000
+   ],
+   "toi_thieu": 2,
+   "huong_dan": "Mỗi gói chậm, chỉ số dưới ngưỡng, rủi ro đã xảy ra là một dòng. Hành động gắn với kế hoạch ứng phó trong sổ rủi ro (ghi mã rủi ro) hoặc yêu cầu thay đổi (ghi mã CR).",
+   "nguon": [
+    "td",
+    "rr"
+   ]
+  },
+  {
+   "h1": "6. Kế hoạch kỳ tới"
+  },
+  {
+   "soan": "KY_TOI",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Mục tiêu sprint kế tiếp theo master schedule, gói ưu tiên (đường găng, gói chậm), mốc sắp tới, đề nghị đối với chủ đầu tư.",
+   "nguon": [
+    "lich",
+    "td"
+   ]
+  }
+ ],
+ "kiem_tra": {
+  "gia_tri": [
+   {
+    "mo_ta": "SPI",
+    "bt": "{td#spi|so2}"
+   },
+   {
+    "mo_ta": "CPI",
+    "bt": "{td#cpi|so2}"
+   },
+   {
+    "mo_ta": "EV",
+    "bt": "{td#EV_md|md}"
+   }
+  ],
+  "ma_phai_co": [
+   {
+    "nguon": "td#goi_cham",
+    "truong": "ma",
+    "mo_ta": "Mọi gói chậm"
+   }
+  ],
+  "doc_hieu": [
+   "Nhận định khớp chỉ số SPI, CPI và trạng thái",
+   "Mỗi vấn đề có hành động, người, hạn",
+   "Hành động gắn với sổ rủi ro hoặc yêu cầu thay đổi",
+   "Kế hoạch kỳ tới ưu tiên đường găng và gói chậm"
+  ]
+ }
+}

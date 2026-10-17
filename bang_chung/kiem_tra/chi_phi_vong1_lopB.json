@@ -1,0 +1,178 @@
+{
+ "tai_lieu": "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+ "tai_lieu_kem": "ket_qua/06_Cost_estimate/Cost_estimate.xlsx",
+ "dac_ta": "chi_phi",
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "thoi_gian": "2026-10-16 23:40",
+ "ket_luan": "chua_dat",
+ "so_loi": 5,
+ "so_canh_bao": 7,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Đủ 9 mục theo đặc tả, đủ các khối soạn và số bắt buộc. Tuy vậy nhận định dòng tiền (MH01, MH02) và phần độ nhạy thiếu ngưỡng (MH03) khiến người đọc chưa dùng được để quyết định về vốn lưu động và biên độ giá."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Bảng số trong Word khớp chi_phi.json và giá trị đã tính trong Excel (A 762.700.000, B 150.000.000, C 837.300.000, giá chào 1.750.000.000, 11 người, 13 hạng mục 11A, 8 nhóm WBS, 7 sprint). Dòng A khớp 65 gói WBS và đơn giá, EMV 112.380.000 khớp sổ rủi ro, 5 đợt thanh toán khớp tỷ lệ và sự kiện HSMT. Sai lệch: cơ sở dòng tiền mâu thuẫn mục 5 (MH01), thời điểm thu trái E-ĐKC 12.1 và 13.1 (MH02), hệ số 1,24 so với 1,235 (MH04), Excel kết luận dự phòng 'Đủ' trái với Word (MH07)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Dòng A truy về gói WBS và loại công việc, Mẫu 11A truy về hạng mục Mẫu 01A qua sheet Goi_01A, rủi ro dẫn mã RR, đợt thanh toán gắn mốc M0 đến M7. Còn thiếu căn cứ chi tiết của dòng B (MH07) và sheet cho mục 7 (MH11)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Các số liệu kiểm chứng được bằng công thức Excel. Chỉ số năng suất hòa vốn chưa định nghĩa rõ (MH06), ngưỡng CPI chưa nêu số (MH03)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Có quy tắc dùng dự phòng (người phụ trách đề xuất, quản trị dự án phê duyệt, ghi sổ thay đổi, cập nhật dự toán) và theo dõi CPI theo sprint. Thiếu ngưỡng phát hiện cụ thể (MH03), dự phòng chưa xác định được quy mô (MH07)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, cỡ 13, bảng cỡ 12, tiêu đề bảng lặp lại, không in đậm, không từ cấm, không ký hiệu. Có lặp ý và thuật ngữ thuế chưa chuẩn (MH12, MH08)."
+  },
+  {
+   "tieu_chi": "Phương pháp tính giải thích được từng dòng của Excel",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục 1 giải thích A, B, D, C, thuế và phân bổ Mẫu 11A. Mục 8 nêu cơ sở chi lương kế hoạch. Chưa giải thích tỷ lệ chia 1/13 của các gói quản lý dùng chung trong Goi_01A, mục 7 không có sheet (MH11)."
+  },
+  {
+   "tieu_chi": "Dự phòng được so với EMV và có quy tắc sử dụng",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Có so sánh và quy tắc sử dụng nhưng không kết luận được đủ hay thiếu vì dự phòng gộp trong B (MH07)."
+  },
+  {
+   "tieu_chi": "Nhận xét dòng tiền gắn với mốc thanh toán",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Có gắn mốc M2, M3, M6, M7, nhưng kết luận không có lũy kế âm sai khi tính theo chi phí huy động và thời hạn thanh toán HSMT (MH01, MH02)."
+  },
+  {
+   "tieu_chi": "Độ nhạy nêu ngưỡng chịu đựng cụ thể",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Chỉ có kịch bản thuế 10%, chưa nêu ngưỡng chịu đựng bằng tiền hoặc MD (MH03)."
+  },
+  {
+   "tieu_chi": "Số liệu trong Word khớp tệp Cost_estimate.xlsx",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Khớp toàn bộ các bảng, trừ hệ số bảo hiểm (MH04), kết luận dự phòng (MH07) và mục 7 không có sheet đối chiếu (MH11)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan_dong_tien",
+   "vi_tri": "Mục 8, đoạn 'Dòng tiền theo sprint không có giai đoạn lũy kế âm...'; Cost_estimate.xlsx sheet Dong_tien!B10:B16 (Chi lương kế hoạch = SUMIFS Phan_bo_luong theo MD giao)",
+   "mo_ta": "Bảng dòng tiền tính chi lương theo MD được giao (tổng 601.384.373 đồng), trong khi mục 5 và chính đoạn thứ ba của mục 8 xác định chi phí lương thực tế theo thời gian huy động là 1.181.389.772 đồng. Tính lại theo quỹ huy động trong lich.json (quỹ từng người từng sprint nhân đơn giá ngày), với ngày thu đúng ngày mốc: chênh lệch lũy kế cuối S3 là -110.245.455 đồng và cuối S5 là -48.859.091 đồng. Nhận định 'không có giai đoạn lũy kế âm' và 'chênh lệch lũy kế thấp nhất ở cuối S3 là 43.625.441 đồng' chỉ đúng với giả định chỉ trả lương cho ngày có việc, mâu thuẫn với mục 5. Nhu cầu vốn lưu động bị bỏ qua. Dòng chi cũng chưa gồm chi phí khác B (150.000.000 đồng).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "tinh_chi_phi.py: thêm vào dong_tien cột chi lương theo huy động (lich.phan_bo.quy x đơn giá ngày) và lũy kế tương ứng, dùng làm kịch bản chính hoặc đặt song song; Excel Dong_tien thêm cột công thức SUMIFS trên quỹ huy động. Soạn lại DONG_TIEN: nêu sprint lũy kế âm, mức vốn lưu động cần chuẩn bị và nguồn bù."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "nhat_quan_hsmt",
+   "vi_tri": "Mục 8, 'Khoản tạm ứng Đợt 1 (262.500.000 đồng) nhận ngay khi hợp đồng có hiệu lực'; chi_phi.json thanh_toan[].ngay; Excel Dong_tien!E2:E6",
+   "mo_ta": "E-ĐKC 12.1 và 13.1 của HSMT: Đợt 1 chỉ trả sau khi Chủ đầu tư nhận văn bản đề nghị và bảo lãnh tiền tạm ứng; mọi đợt được thanh toán trong vòng 15 ngày kể từ ngày nhận đủ hồ sơ hợp lệ. Dòng tiền lấy ngày thu bằng ngày mốc (Đợt 1 ngày 18/03/2027, Đợt 2 ngày 05/05/2027, Đợt 3 ngày 11/06/2027, Đợt 4 và 5 ngày 01/07/2027). Với độ trễ 15 ngày: Đợt 1 có thể sang S2, Đợt 2 sang S5, Đợt 3 sang S7, Đợt 4 và 5 sau cut over. Khi đó, theo MD giao, lũy kế âm cuối S1 (-51.858.211 đồng) và cuối S4 (-67.860.816 đồng). Theo quỹ huy động, lũy kế âm tại S1, S3, S4 (-298.302.272 đồng), S5, S6 (-236.915.909 đồng). Câu 'nhận ngay khi hợp đồng có hiệu lực' sai với HSMT.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "tinh_chi_phi.py và Excel Dong_tien: thêm tham số độ trễ thanh toán 15 ngày (E-ĐKC 13.1), ngày thu dự kiến = ngày mốc + độ trễ, gán sprint theo ngày thu. Soạn lại DONG_TIEN, dẫn E-ĐKC 12.1 và 13.1, nêu điều kiện bảo lãnh tạm ứng."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "loi",
+   "nhom": "noi_dung_bat_buoc",
+   "vi_tri": "Mục 9, khối DO_NHAY ('Khoản C là phần đệm tài chính chính của giá chào...'; 'so với ngưỡng cảnh báo của kế hoạch quản lý dự án')",
+   "mo_ta": "Tiêu chí doc_hieu 'Độ nhạy nêu ngưỡng chịu đựng cụ thể' và hướng dẫn khối DO_NHAY yêu cầu ngưỡng chịu đựng của giá chào, nhưng mục 9 chỉ có kịch bản thuế 10% và câu định tính. Kịch bản thuế cho C còn 678.209.091 đồng (42,6%) nhưng chưa trừ phần bù lương 418.689.772 đồng. Số liệu tính lại: giá trước thuế trừ B và chi phí lương theo người còn 418.610.228 đồng (23,9% giá trước thuế), tương đương khoảng 242 MD huy động theo đơn giá ngày bình quân 1.729.707 đồng. Với thuế 10% còn 259.519.319 đồng (16,3%), khoảng 150 MD. Ngưỡng CPI dẫn chiếu sang kế hoạch quản lý dự án, tài liệu này chưa có trong ket_qua nên chưa kiểm chứng được.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "chi_phi.json bổ sung trường C sau bù lương, tỷ lệ và số MD tương đương (có và không có thuế 10%); Excel Tong_hop thêm các dòng công thức tương ứng. Soạn lại DO_NHAY: nêu ngưỡng bằng tiền, bằng MD, ngưỡng CPI cụ thể (ví dụ CPI dưới 0,95 trong hai sprint liên tiếp) và người quyết định."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "loi",
+   "nhom": "so_lieu_word_excel",
+   "vi_tri": "Mục 1 'nhân hệ số bảo hiểm 1,24'; mục 5 'hệ số bảo hiểm 1,24'",
+   "mo_ta": "dau_vao/don_gia.json, chi_phi.json và Excel Tham_so!B5 dùng hệ số 1,235. Word hiển thị 1,24 do định dạng hai chữ số thập phân. Người đọc tính lại 51.000.000 x 1,24 / 22 = 2.874.545 đồng, khác đơn giá ngày 2.862.955 đồng trong bảng mục 5 và Excel.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Đặc tả mục 5 đổi {cp#he_so_bao_hiem|so2} sang định dạng ba chữ số thập phân. Khối CAN_CU viết 1,235."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "quyet_dinh_huy_dong_gia_chao",
+   "vi_tri": "Mục 3 GIA_CHAO 'phần bù lương chiếm tỷ trọng đáng kể của khoản C'; Excel Tong_hop!B17; du_lieu/rui_ro.json RR13",
+   "mo_ta": "Quỹ huy động 683 MD so với 349 MD công việc, tỷ lệ sử dụng 51,1%. Phần bù lương 418.689.772 đồng chiếm 50,0% khoản C. C sau bù lương còn 418.610.228 đồng (23,9%). Kiểm tra 'tỷ lệ C tối thiểu' trong Excel dùng C trước khi bù lương nên luôn đạt. RR13 trong sổ rủi ro ghi tác động 40.000.000 đồng, xác suất 0,4, trong khi chênh lệch 418.689.772 đồng đã chắc chắn theo kế hoạch huy động hiện tại. Các vị trí có sprint huy động không có việc: D2 và Q1 ở S3, Q2 ở S4, Phạm Tuấn Anh ở S1 và S6, Vũ Đức Minh ở S1 và S7. Nhóm cần quyết định giữ mức huy động (chấp nhận C thực 23,9%) hay điều chỉnh thời điểm, tỷ lệ huy động, và xác nhận lại giá chào mục tiêu 1.750.000.000 đồng.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định trong dau_vao/thanh_vien.json (tu_sprint, ty_le của K, D1, D2, D3, Q1, Q2) và dau_vao/don_gia.json (gia_chao_muc_tieu). Sau đó cập nhật RR13 trong sổ rủi ro cho khớp, Excel Tong_hop thêm dòng kiểm tra C sau bù lương so với tỷ lệ tối thiểu."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "dien_giai_chi_so",
+   "vi_tri": "Mục 5: 'Dòng A chênh lệch -418.689.772 đồng (-54,9%) so với chi phí này. Dòng A đủ chi trả khi năng suất đạt từ 154,9% trở lên'; DOI_CHIEU 'Năng suất hòa vốn 1,55...'; 'Biện pháp khi năng suất thấp hơn mức hòa vốn'",
+   "mo_ta": "Chỉ số 154,9% là tỷ số chi phí lương theo người trên dòng A, gọi là năng suất mà không nêu năng suất so với cơ sở nào. Tỷ lệ -54,9% tính trên dòng A, nhưng câu viết 'so với chi phí này' (tính trên chi phí lương là -35,4%). Cùng một chỉ số được viết 154,9% và 1,55. Đoạn biện pháp trình bày như tình huống dự phòng, trong khi kế hoạch hiện tại đã dưới mức hòa vốn. Cách diễn đạt kiểm chứng được: dòng A đủ chi trả khi MD huy động không vượt khoảng 441 MD, tức tỷ lệ sử dụng quỹ thời gian từ 79,1% trở lên, kế hoạch hiện tại 51,1%.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa câu cố định mục 5 trong dac_ta/thuyet_minh_du_toan.json và tinh_chi_phi.py (thêm MD huy động hòa vốn, tỷ lệ sử dụng hòa vốn). Soạn lại DOI_CHIEU dùng tham chiếu dữ liệu, một định dạng thống nhất."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "loi",
+   "nhom": "du_phong_truy_vet",
+   "vi_tri": "Mục 4 bảng chi phí khác (một dòng B, căn cứ 'Ước tính của nhà thầu'); DU_PHONG 'Dự phòng rủi ro nằm trong dòng B với giá trị 150.000.000 đồng... cần được tách riêng khi lập HSDT'; mục 1 'Dòng B ... lập theo danh mục của nhà thầu'; Excel Tong_hop!B19 (=B5), B20 ('Đủ')",
+   "mo_ta": "Dòng B gộp môi trường, công cụ, bảo hành 12 tháng và dự phòng thành một khoản 150.000.000 đồng, không có danh mục chi tiết, không truy vết được căn cứ. Phần dành cho rủi ro không xác định nên việc so với EMV 112.380.000 đồng không kết luận được đủ hay thiếu. Văn bản tự nêu cần tách riêng, nhưng Excel Tong_hop!B20 kết luận 'Đủ' khi so toàn bộ B với EMV. Hai tài liệu mâu thuẫn. Câu 'lập theo danh mục' không đúng với dữ liệu. Chưa thấy chi phí bảo lãnh tạm ứng (15%), bảo đảm thực hiện hợp đồng (3%), bảo lãnh bảo hành (5%) theo E-ĐKC 5.2, 12.1, 13.1 trong B hoặc trong phần giải thích khoản C.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm tách chi_phi_khac trong dau_vao/don_gia.json thành các khoản có căn cứ (môi trường và công cụ, bảo hành 12 tháng, phí bảo lãnh) và chọn cách tính dự phòng riêng (du_phong_rui_ro.cach_tinh = emv hoặc ty_le). Sau đó chạy lại tinh_chi_phi.py, soạn lại DU_PHONG với kết luận đủ hay thiếu."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "thue",
+   "vi_tri": "Mục 1 'Thuế giá trị gia tăng áp dụng thuế suất 0%, căn cứ: Dịch vụ phần mềm thuộc đối tượng không chịu thuế GTGT...'; Excel Tham_so!B8",
+   "mo_ta": "Đối tượng không chịu thuế GTGT khác với thuế suất 0%, nên câu 'áp dụng thuế suất 0%' không đúng thuật ngữ. Số tiền không đổi. Lớp B không kiểm chứng được số hiệu điều khoản trích dẫn (khoản 21 Điều 5 Luật 48/2024/QH15, khoản 13 Điều 4 Nghị định 181/2025/NĐ-CP). Phạm vi gói thầu còn gồm thiết kế quy trình vận hành, hướng dẫn và hỗ trợ vận hành. Việc xếp toàn bộ vào dịch vụ phần mềm không chịu thuế cần được xác nhận. HSMT E-ĐKC 11 không cho điều chỉnh thuế và E-CDNT 13.4 yêu cầu giá dự thầu gồm mọi loại thuế, nên nếu bị áp 10% thì nhà thầu chịu toàn bộ. Mục 9 chưa dẫn E-ĐKC 11.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận căn cứ thuế (điều khoản, phạm vi dịch vụ được coi là dịch vụ phần mềm) trong dau_vao/don_gia.json thue_gtgt.can_cu. Soạn lại câu thuế ở mục 1 thành 'không chịu thuế GTGT'. DO_NHAY dẫn E-ĐKC 11. Cân nhắc thêm rủi ro thuế vào sổ rủi ro."
+  },
+  {
+   "ma": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "quyet_dinh_don_gia",
+   "vi_tri": "Mục 2 bảng nhân công, nguồn đơn giá 'Đơn giá trọn gói theo người-tháng của nhà thầu'",
+   "mo_ta": "Đơn giá trọn gói do nhà thầu tự khai, không có nguồn tham chiếu thị trường. Đơn giá PM 55.000.000 đồng/người-tháng thấp hơn chi phí lương gồm bảo hiểm của người đảm nhận toàn bộ 33 MD PM (Trần Bá Đạt: 51.000.000 x 1,235 = 62.985.000 đồng/tháng). Các loại khác cao hơn chi phí lương tương ứng. Thuyết minh chưa nêu cơ sở của đơn giá.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận hoặc điều chỉnh dau_vao/don_gia.json loai_cong_viec (đặc biệt PM) và ghi nguồn tham chiếu. Sau đó chạy lại dự toán."
+  },
+  {
+   "ma": "MH10",
+   "muc_do": "canh_bao",
+   "nhom": "ngay_tai_lieu",
+   "vi_tri": "Bìa: 'Ngày 18/03/2027'; mục 1 'Bảng giá dự thầu trong HSDT sử dụng đúng số liệu này'",
+   "mo_ta": "Ngày tài liệu lấy ngày bắt đầu dự án 18/03/2027 vì dau_vao/nha_thau.json ngay_ky_don để trống. Dự toán là căn cứ của Mẫu 11A trong HSDT nên phải có ngày trước thời điểm đóng thầu 08/03/2027 (HSMT). Ngày hiện tại mâu thuẫn với vai trò căn cứ giá dự thầu.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm điền ngay_ky_don trong dau_vao/nha_thau.json, trong khoảng 22/02/2027 đến 08/03/2027, rồi tạo lại tài liệu."
+  },
+  {
+   "ma": "MH11",
+   "muc_do": "canh_bao",
+   "nhom": "excel",
+   "vi_tri": "Mục 7 bảng phân bổ theo nhóm WBS; Excel Tong_hop!B6 (=0), Tong_hop!A2, Doi_chieu_nguoi!H13",
+   "mo_ta": "Mục 7 không có sheet tương ứng trong Cost_estimate.xlsx nên cột giá phân bổ không đối chiếu được bằng công thức (dòng nhóm 7 nhận phần làm tròn 1 đồng, chưa ghi chú). Tong_hop!B6 là hằng số 0, không gắn với cách tính dự phòng hoặc Tham_so!B14. Tong_hop!A2 dùng phông Calibri, trái quy định Times New Roman. Chưa có dòng kiểm tra giá trước thuế đủ bù B cộng chi phí lương theo người, điều kiện mà SKILL coi là lỗi. Doi_chieu_nguoi!H13 cho 349,01 MD so với 349 MD do làm tròn phân phối một phần ba.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "tinh_chi_phi.py: thêm sheet Theo_WBS (SUMIFS theo WBS_MD!E, ROUND, dòng cuối nhận phần làm tròn), D tính theo tham số, đặt phông Times New Roman cho A2, thêm dòng kiểm tra bù chi phí lương trong Tong_hop."
+  },
+  {
+   "ma": "MH12",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 3 đoạn cố định và GIA_CHAO; mục 9 đoạn cố định và DO_NHAY; mục 1 'Dòng B (khoản B: ...)'",
+   "mo_ta": "GIA_CHAO lặp lại nguyên các số 250.000.000 đồng, 12,5%, 47,9% của đoạn cố định ngay trên. DO_NHAY lặp lại nguyên câu độ nhạy thuế 10% của đoạn cố định. Cụm 'Dòng B (khoản B: ...)' thừa. Không phát hiện từ cấm, ký hiệu hay in đậm.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại GIA_CHAO, DO_NHAY bỏ phần lặp, dành chỗ cho phân tích mới (MH03, MH05)."
+  }
+ ],
+ "ghi_chu": "Báo cáo lớp A vòng 1 kết luận đạt, 0 lỗi. Lớp B tính lại độc lập từ du_lieu và dau_vao: công thức Excel đúng, giá trị đã tính khớp Python, giá chào 1.750.000.000 đồng không vượt giá gói thầu 2.000.000.000 đồng, tổng Mẫu 11A bằng giá chào. Không đọc khung.json, khung_nguon.json, ban_soan.json, noi_dung*.json, nhật ký soạn và script trong /private/tmp."
+}

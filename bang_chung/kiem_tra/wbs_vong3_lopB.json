@@ -1,0 +1,97 @@
+{
+ "tai_lieu": "ket_qua/03_WBS",
+ "tai_lieu_kem": [
+  "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+  "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+  "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.docx",
+  "ket_qua/03_WBS/WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.docx",
+  "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+  "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+  "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+  "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx",
+  "ket_qua/03_WBS/WBS_tong_hop.docx"
+ ],
+ "dac_ta": "tai_lieu_wbs",
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "vong": 3,
+ "thoi_gian": "2026-10-17 00:20",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 1,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Chín tệp đủ các mục theo quy_tac_wbs.md. Phạm vi phủ đủ chức năng, tích hợp, sản phẩm bàn giao, yêu cầu phi chức năng của RFP và 13 hạng mục Mẫu 01A, không có gói quản trị nội bộ. Tổng 351 MD, 66 gói lá, tương đương 4,8 người toàn thời gian trong 73 ngày làm việc, hợp lý với nội dung và 5 nhân sự chủ chốt. Giả định ngoài phạm vi nêu rõ gói và thời điểm Chủ đầu tư xác nhận."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Đối chiếu bằng script 9 tệp với du_lieu/wbs.json, lich.json, phan_cong.json hiện tại: sơ đồ cây, bảng chi tiết (tên, mức, MD, loại, sản phẩm), tổng nhóm, thời gian và sprint, người chịu trách nhiệm, phụ thuộc đầu vào, ma trận truy vết, phân bổ 01A (351,00), tỷ trọng, 11 giả định đều khớp. Nhóm 8 nay ghi 24/03/2027 - 01/07/2027, khớp lich.json (8.3.2 ngày 29/06 - 30/06, 8.3.3 ngày 01/07/2027), khớp M6 (cut over 01/07/2027) và M7 (căn cứ 1.3.2 kết thúc 01/07, 8.3.3 ngày 01/07). Dự trữ 5 ngày (22/06 - 28/06/2027) nằm giữa 7.3.3 và 8.3.2. Giao việc 66 gói khớp WBS. Tệp WBS_6 và WBS_8 lên phiên bản 0.3, các tệp không đổi nội dung giữ 0.2, phù hợp quản lý phiên bản theo từng tệp."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mọi gói lá gắn hạng mục Mẫu 01A và nguồn đúng. Yêu cầu RFP được gắn gói hoặc có lý do không cần gói. R35, R38, R39, R42, R43 được xử lý như vòng 2."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Sản phẩm mọi gói lá kiểm chứng được. Sản phẩm 6.1.1 đã bỏ điều kiện không kiểm được, sản phẩm 8.1.1 và 8.1.2 đã có cấu hình gửi thư điện tử, khớp giả định về thư điện tử."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Giả định có gói và thời điểm xác nhận (1.1.1, 2.1.2, 6.2.1), lập trình song song với xác nhận đặc tả gắn rủi ro RR01, thay đổi đặc tả qua 1.2.2. Dự trữ 5 ngày được đặt trước các gói cut over."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Định dạng và văn phong đạt: Times New Roman 13, bảng 12, A4, bảng lưới, tiêu đề bảng lặp lại, chỉ mục cha in đậm, quét theo van_phong.json không có vi phạm, Chủ đầu tư viết hoa thống nhất."
+  },
+  {
+   "tieu_chi": "doc_hieu: Tên gói dạng danh từ, gắn sản phẩm kiểm tra được",
+   "ket_qua": "dat",
+   "nhan_xet": "Đạt trên 66 gói lá."
+  },
+  {
+   "tieu_chi": "doc_hieu: Mức 2 của phân hệ theo vòng đời",
+   "ket_qua": "dat",
+   "nhan_xet": "Nhóm 3, 4, 5 đủ năm mục mức 2 theo vòng đời."
+  },
+  {
+   "tieu_chi": "doc_hieu: Không có gói thuộc chức năng quản trị nội bộ",
+   "ket_qua": "dat",
+   "nhan_xet": "Không có gói quản trị nội bộ."
+  },
+  {
+   "tieu_chi": "doc_hieu: Gói tích hợp tách riêng cho mỗi hệ thống bên ngoài",
+   "ket_qua": "dat",
+   "nhan_xet": "Main System có mục 6.2 riêng. Thư điện tử qua máy chủ thư của Chủ đầu tư, cấu hình trong 8.1.1 và 8.1.2, theo quy tắc Chủ đầu tư xác nhận tại 2.1.2."
+  },
+  {
+   "tieu_chi": "doc_hieu: Sơ đồ cây và bảng chi tiết khớp nhau",
+   "ket_qua": "dat",
+   "nhan_xet": "Kiểm tra bằng script trên 8 tệp nhóm, khớp hoàn toàn."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "ngay_tai_lieu",
+   "vi_tri": "Trang bìa cả 9 tệp: 'Tài liệu kế hoạch dự án, kèm theo Phần III. Đề xuất kỹ thuật của hồ sơ dự thầu', 'Phiên bản 0.2 (0.3), ngày 18/03/2027'",
+   "mo_ta": "Chưa khắc phục, chờ nhóm: ngay_ky_don trong dau_vao/nha_thau.json vẫn để trống nên tài liệu đề ngày bắt đầu dự án 18/03/2027, sau thời điểm đóng thầu 08/03/2027, trong khi ghi là kèm theo hồ sơ dự thầu. Giữ mức cảnh báo theo hướng dẫn của agent điều phối. Nếu đến khi lập HSDT trường này vẫn trống thì tài liệu mâu thuẫn với HSMT và phải tính là lỗi.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm điền ngay_ky_don (từ 22/02/2027 đến 08/03/2027) trong dau_vao/nha_thau.json rồi chạy lại xuat_wbs.py."
+  }
+ ],
+ "doi_chieu_vong_2": [
+  {"ma": "MH14", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_8 mục 1 'Thời gian thực hiện | 24/03/2027 - 01/07/2027 (sprint S1 đến S7)'", "nhan_xet": "lich.json: 8.3.2 ngày 29/06 - 30/06, 8.3.3 ngày 01/07/2027, ket_thuc_du_kien 01/07/2027, dự trữ 5 ngày trước 8.3.2. Khớp M6, M7."},
+  {"ma": "MH02", "trang_thai": "chua_khac_phuc", "vi_tri_moi": "Bìa 9 tệp, ngày 18/03/2027", "nhan_xet": "ngay_ky_don vẫn trống, chờ nhóm, giữ cảnh báo can_nguoi_dung."},
+  {"ma": "MH03", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_6 gói 6.1.1, sản phẩm 'Selling DB trên môi trường phát triển và kiểm thử theo cấu trúc đã thiết kế'", "nhan_xet": "Đã bỏ điều kiện điều chỉnh theo đặc tả được xác nhận."},
+  {"ma": "MH08", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_8 gói 8.1.1 'Môi trường phát triển, kiểm thử có cấu hình gửi thư điện tử và quy trình triển khai tự động', 8.1.2 'Môi trường vận hành có giám sát, sao lưu và cấu hình gửi thư điện tử qua máy chủ thư của Chủ đầu tư'", "nhan_xet": "Sản phẩm khớp giả định về thư điện tử, có cả môi trường kiểm thử."}
+ ],
+ "doi_chieu_vong_1": "Xem lam_viec/wbs/bao_cao_kiem_tra_lop_B_vong2.json: MH01, MH04, MH05, MH06, MH07, MH09, MH10, MH11, MH12, MH13 đã khắc phục từ vòng 2. MH03, MH08 khắc phục hoàn toàn ở vòng 3. MH02 chờ nhóm.",
+ "ghi_chu": "Vòng 3 (vòng cuối). Báo cáo lớp A kết luận đạt, 0 lỗi, 66 gói lá, 351 MD. Lớp B so sánh nội dung 9 tệp với bản vòng 2 (chỉ WBS_6 và WBS_8 thay đổi) và chạy lại toàn bộ đối chiếu với du_lieu/wbs.json, lich.json, phan_cong.json, kiểm định dạng và văn phong. Không phát hiện lỗi mới. Không đọc lam_viec/wbs/wbs_nhap.json, khung.json, ban_soan.json, noi_dung*.json, nhật ký soạn, script tạo dữ liệu trong /private/tmp. Không sửa tệp nào ngoài báo cáo này. Chưa chạy so_phien_ban.py, nhat_ky.py và chưa chép vào bang_chung theo yêu cầu của agent điều phối."
+}

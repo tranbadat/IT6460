@@ -64,6 +64,8 @@
   "bao_lanh_bao_hanh_phan_tram": 5,
   "phat_cham_tien_do_phan_tram_ngay": 0.1,
   "phat_toi_da_phan_tram": 8,
+  "phat_khac_phuc_sai_sot_phan_tram": null,
+  "boi_thuong_thiet_hai": null,
   "tiet_kiem_chi_phi_phan_tram": 30,
   "thay_the_nhan_su_ngay": 7,
   "hoa_giai_toi_da_ngay": 30,

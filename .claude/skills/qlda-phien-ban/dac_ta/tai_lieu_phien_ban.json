@@ -1,0 +1,432 @@
+{
+ "id": "phien_ban",
+ "ten": "Tài liệu quản lý phiên bản",
+ "nut_ra": "doc_phien_ban",
+ "ngay_tai_lieu": "{pb#ngay_tai_lieu}",
+ "ten_tep": "Tai_lieu_quan_ly_phien_ban.docx",
+ "tieu_de_dau_trang": "Kết thúc dự án - Tài liệu quản lý phiên bản",
+ "nguon": {
+  "pb": "du_lieu/phien_ban_tong_hop.json"
+ },
+ "truoc": [
+  [
+   "qlda-phien-ban/scripts/so_phien_ban.py",
+   "tong_hop"
+  ]
+ ],
+ "bia": {
+  "tieu_de": "Tài liệu quản lý phiên bản",
+  "dong_phu": [
+   "Tổng hợp ngày {pb#ngay_tai_lieu}"
+  ]
+ },
+ "khoi": [
+  {
+   "h1": "1. Mục đích và phạm vi"
+  },
+  {
+   "doan": "Tài liệu quy định cách đánh số, trạng thái, lưu trữ và kiểm soát phiên bản của bộ tài liệu dự án, đồng thời ghi lại danh mục tài liệu, các đường cơ sở và lịch sử thay đổi. Sổ phiên bản được cập nhật tự động mỗi khi script hoặc lệnh hoàn thiện tạo tệp, kèm băm nội dung và băm đầu vào để phát hiện tài liệu cũ. Bản đầy đủ ở tệp So_phien_ban.xlsx cùng thư mục."
+  },
+  {
+   "soan": "PHAM_VI",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Nêu phạm vi áp dụng (tài liệu nộp trong ket_qua, dữ liệu chuẩn trong du_lieu), vai trò người quản lý cấu hình, người phê duyệt, nơi lưu trữ và cách truy cập.",
+   "nguon": [
+    "pb"
+   ]
+  },
+  {
+   "h1": "2. Quy ước"
+  },
+  {
+   "h2": "2.1. Đánh số phiên bản"
+  },
+  {
+   "bang": {
+    "nguon": "pb#quy_uoc.danh_so",
+    "cot": [
+     [
+      "Trường hợp",
+      "truong_hop",
+      2800
+     ],
+     [
+      "Phiên bản",
+      "phien_ban",
+      1500,
+      "c"
+     ],
+     [
+      "Giải thích",
+      "giai_thich",
+      5000
+     ]
+    ]
+   }
+  },
+  {
+   "h2": "2.2. Trạng thái"
+  },
+  {
+   "bang": {
+    "nguon": "pb#quy_uoc.trang_thai",
+    "cot": [
+     [
+      "Trạng thái",
+      "ma",
+      2300
+     ],
+     [
+      "Ý nghĩa",
+      "y_nghia",
+      7000
+     ]
+    ]
+   }
+  },
+  {
+   "h2": "2.3. Lưu trữ và kiểm soát"
+  },
+  {
+   "bang": {
+    "nguon": "pb#quy_uoc.quy_tac",
+    "cot": [
+     [
+      "Nội dung",
+      "noi_dung",
+      2500
+     ],
+     [
+      "Quy định",
+      "quy_dinh",
+      6800
+     ]
+    ]
+   }
+  },
+  {
+   "h1": "3. Danh mục tài liệu và phiên bản hiện hành"
+  },
+  {
+   "bang": {
+    "nguon": "pb#danh_muc",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Tài liệu",
+      "ten",
+      2700
+     ],
+     [
+      "Tệp",
+      "ten_tep",
+      2600
+     ],
+     [
+      "Phiên bản",
+      "phien_ban",
+      1000,
+      "c"
+     ],
+     [
+      "Ngày tài liệu",
+      "ngay_tai_lieu",
+      1200,
+      "c"
+     ],
+     [
+      "Trạng thái",
+      "trang_thai",
+      1100
+     ]
+    ]
+   }
+  },
+  {
+   "doan": "Số tài liệu: {pb#so_tai_lieu}, tổng số phiên bản tài liệu đã đăng ký: {pb#so_phien_ban_tai_lieu}, số tài liệu cần cập nhật theo đầu vào mới: {pb#so_can_cap_nhat}."
+  },
+  {
+   "bang": {
+    "nguon": "pb#danh_muc",
+    "loc": {
+     "tinh_trang": [
+      "Cần cập nhật",
+      "Không còn tệp"
+     ]
+    },
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Tài liệu cần cập nhật",
+      "ten",
+      3500
+     ],
+     [
+      "Đầu vào đã đổi",
+      "dau_vao_da_doi",
+      5100
+     ]
+    ],
+    "rong_thi": "Mọi tài liệu đang dùng đầu vào mới nhất."
+   }
+  },
+  {
+   "h1": "4. Đường cơ sở"
+  },
+  {
+   "bang": {
+    "nguon": "pb#duong_co_so_bang",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      800,
+      "c"
+     ],
+     [
+      "Tên",
+      "ten",
+      3500
+     ],
+     [
+      "Ngày",
+      "ngay|ngay",
+      1300,
+      "c"
+     ],
+     [
+      "Số tài liệu",
+      "so_tai_lieu",
+      1200,
+      "c"
+     ],
+     [
+      "Người lập",
+      "nguoi",
+      2500
+     ]
+    ],
+    "rong_thi": "Chưa lập đường cơ sở."
+   }
+  },
+  {
+   "soan": "DUONG_CO_SO",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1,
+   "huong_dan": "Nêu các thời điểm lập đường cơ sở (ký hợp đồng, phê duyệt kế hoạch, nghiệm thu), tài liệu thuộc từng đường cơ sở và quy định thay đổi sau đường cơ sở.",
+   "nguon": [
+    "pb"
+   ]
+  },
+  {
+   "h1": "5. Thay đổi và phiên bản"
+  },
+  {
+   "bang": {
+    "nguon": "pb#thay_doi",
+    "cot": [
+     [
+      "Mã CR",
+      "ma",
+      800,
+      "c"
+     ],
+     [
+      "Nội dung",
+      "tieu_de",
+      2600
+     ],
+     [
+      "Trạng thái",
+      "trang_thai",
+      1300
+     ],
+     [
+      "Tài liệu cập nhật",
+      "tai_lieu_cap_nhat",
+      2600
+     ],
+     [
+      "Phiên bản sau thay đổi",
+      "phien_ban_sau",
+      2000
+     ]
+    ],
+    "rong_thi": "Không có yêu cầu thay đổi."
+   }
+  },
+  {
+   "section": "ngang"
+  },
+  {
+   "h1": "6. Lịch sử phiên bản tài liệu"
+  },
+  {
+   "bang": {
+    "nguon": "pb#lich_su_tai_lieu",
+    "cot": [
+     [
+      "Tệp",
+      "ten_tep",
+      3200
+     ],
+     [
+      "Phiên bản",
+      "phien_ban",
+      900,
+      "c"
+     ],
+     [
+      "Ngày tài liệu",
+      "ngay_tai_lieu",
+      1300,
+      "c"
+     ],
+     [
+      "Thời điểm tạo",
+      "thoi_diem",
+      1800,
+      "c"
+     ],
+     [
+      "Tài liệu",
+      "ten_buoc",
+      2200
+     ],
+     [
+      "Trạng thái",
+      "trang_thai",
+      1300
+     ],
+     [
+      "Ghi chú",
+      "ghi_chu",
+      2300
+     ]
+    ]
+   }
+  },
+  {
+   "section": "doc"
+  },
+  {
+   "h1": "7. Truy vết quá trình tạo tài liệu"
+  },
+  {
+   "bang": {
+    "nguon": "pb#nhat_ky",
+    "cot": [
+     [
+      "Skill",
+      "skill",
+      2300
+     ],
+     [
+      "Phiên bản skill",
+      "phien_ban_skill",
+      1300,
+      "c"
+     ],
+     [
+      "Lần chạy script",
+      "so_lan_script",
+      1300,
+      "c"
+     ],
+     [
+      "Lần agent",
+      "so_lan_agent",
+      1100,
+      "c"
+     ],
+     [
+      "Prompt",
+      "prompt",
+      3300
+     ]
+    ]
+   }
+  },
+  {
+   "doan": "Nhật ký chạy ghi {pb#so_lan_chay} lần chạy, trong đó {pb#so_lan_agent} lần do agent thực hiện. Chi tiết prompt, đầu vào, đầu ra và băm nội dung của từng lần chạy ở Phụ lục bằng chứng prompt và skill."
+  },
+  {
+   "bang": {
+    "nguon": "pb#git",
+    "cot": [
+     [
+      "Commit",
+      "ma",
+      1100,
+      "c"
+     ],
+     [
+      "Ngày",
+      "ngay|ngay",
+      1300,
+      "c"
+     ],
+     [
+      "Tác giả",
+      "tac_gia",
+      1900
+     ],
+     [
+      "Nội dung",
+      "noi_dung",
+      5000
+     ]
+    ],
+    "rong_thi": "Thư mục dự án chưa có lịch sử git. Kho lưu trữ: {pb#kho_luu_tru}."
+   }
+  },
+  {
+   "h1": "8. Nhận xét"
+  },
+  {
+   "soan": "NHAN_XET",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Nhận xét tình hình kiểm soát phiên bản: số lần cập nhật của các tài liệu chính, tài liệu thay đổi nhiều nhất và lý do (mã CR), tài liệu còn cần cập nhật, đề xuất cải tiến.",
+   "nguon": [
+    "pb"
+   ]
+  }
+ ],
+ "kiem_tra": {
+  "gia_tri": [
+   {
+    "mo_ta": "Số tài liệu",
+    "bt": "Số tài liệu: {pb#so_tai_lieu}"
+   }
+  ],
+  "ma_phai_co": [
+   {
+    "nguon": "pb#danh_muc",
+    "truong": "ma",
+    "mo_ta": "Mọi tài liệu"
+   },
+   {
+    "nguon": "pb#thay_doi",
+    "truong": "ma",
+    "mo_ta": "Mọi yêu cầu thay đổi"
+   }
+  ],
+  "doc_hieu": [
+   "Quy ước nhất quán với sổ phiên bản",
+   "Nhận xét dựa trên số liệu sổ phiên bản và mã CR",
+   "Nêu rõ tài liệu còn cần cập nhật nếu có"
+  ]
+ }
+}

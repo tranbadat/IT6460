@@ -1,0 +1,496 @@
+{
+ "id": "danh_gia",
+ "ten": "Báo cáo đánh giá dự án",
+ "nut_ra": "doc_danh_gia",
+ "ten_tep": "Bao_cao_danh_gia_du_an.docx",
+ "ngay_tai_lieu": "{kt#ngay_chot|ngay}",
+ "tieu_de_dau_trang": "Kết thúc dự án - Báo cáo đánh giá dự án",
+ "nguon": {
+  "kt": "du_lieu/ket_thuc.json",
+  "hsmt": "du_lieu/hsmt.json",
+  "rfp": "du_lieu/rfp_yeu_cau.json",
+  "rr": "du_lieu/rui_ro.json"
+ },
+ "bia": {
+  "tieu_de": "Báo cáo đánh giá dự án",
+  "dong_phu": [
+   "Số liệu tính đến ngày {kt#ngay_chot|ngay}"
+  ]
+ },
+ "muc_luc": true,
+ "khoi": [
+  {
+   "h1": "1. Mục đích và phương pháp đánh giá"
+  },
+  {
+   "doan": "Báo cáo đánh giá mức độ đạt mục tiêu của dự án theo bộ chỉ tiêu định lượng, kết quả nghiệm thu so với yêu cầu RFP và HSMT, hiệu quả quản lý thay đổi và quản lý rủi ro. Số liệu lấy từ báo cáo tổng kết dự án và dữ liệu thực tế của nhóm (nhật ký công việc, tỷ lệ hoàn thành, mốc, nghiệm thu, lỗi, theo dõi rủi ro, sổ yêu cầu thay đổi)."
+  },
+  {
+   "bang": {
+    "nguon": "kt#xep_loai_thang",
+    "cot": [
+     [
+      "Tỷ lệ chỉ tiêu đạt từ",
+      "tu|pt",
+      3500,
+      "c"
+     ],
+     [
+      "Xếp loại",
+      "ten",
+      5800
+     ]
+    ]
+   }
+  },
+  {
+   "soan": "PHUONG_PHAP",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Nêu người tham gia đánh giá (nhóm dự án, đầu mối chủ đầu tư), thời điểm, cách thu thập bằng chứng và cách xếp loại. Nêu các ngưỡng KPI đã ghi đè và lý do nếu có.",
+   "nguon": [
+    "kt"
+   ]
+  },
+  {
+   "h1": "2. Kết quả theo bộ chỉ tiêu"
+  },
+  {
+   "bang": {
+    "nguon": "kt#kpi",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      600,
+      "c"
+     ],
+     [
+      "Nhóm",
+      "nhom",
+      1100
+     ],
+     [
+      "Chỉ tiêu",
+      "chi_tieu",
+      3700
+     ],
+     [
+      "Mục tiêu",
+      "muc_tieu_hien_thi",
+      1300,
+      "c"
+     ],
+     [
+      "Thực tế",
+      "thuc_te_hien_thi",
+      1400,
+      "c"
+     ],
+     [
+      "Kết quả",
+      "ket_qua",
+      1200,
+      "c"
+     ]
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "kt#kpi_theo_nhom",
+    "cot": [
+     [
+      "Nhóm chỉ tiêu",
+      "nhom",
+      2600
+     ],
+     [
+      "Mã",
+      "ma",
+      3100
+     ],
+     [
+      "Số chỉ tiêu",
+      "so",
+      1800,
+      "c"
+     ],
+     [
+      "Đạt",
+      "dat",
+      1800,
+      "c"
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng",
+     "cot": [
+      2,
+      3
+     ]
+    }
+   }
+  },
+  {
+   "doan": "Tỷ lệ chỉ tiêu đạt {kt#ty_le_kpi_dat|pt} ({kt#so_kpi_dat}/{kt#so_kpi}), xếp loại chung: {kt#xep_loai}."
+  },
+  {
+   "soan": "DANH_GIA_KPI",
+   "dang": "dong_bang",
+   "cot": [
+    "Chỉ tiêu",
+    "Nhận định",
+    "Nguyên nhân",
+    "Bằng chứng"
+   ],
+   "widths": [
+    1300,
+    3000,
+    2800,
+    2200
+   ],
+   "toi_thieu": 4,
+   "huong_dan": "Mỗi chỉ tiêu không đạt hoặc đạt sát ngưỡng là một dòng, ghi mã chỉ tiêu ở cột đầu. Nguyên nhân dựa trên dữ liệu (mã gói, mã mốc, mã CR, mã rủi ro, mã lỗi). Bằng chứng là mã hoặc tên biểu mẫu. Nếu mọi chỉ tiêu đều đạt thì nêu các chỉ tiêu có biên độ nhỏ nhất và yếu tố giúp đạt.",
+   "nguon": [
+    "kt"
+   ]
+  },
+  {
+   "h1": "3. Đánh giá nghiệm thu"
+  },
+  {
+   "bang": {
+    "nguon": "kt#nghiem_thu.yeu_cau_rfp",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Yêu cầu RFP",
+      "noi_dung",
+      4900
+     ],
+     [
+      "Biên bản nghiệm thu",
+      "ma_nghiem_thu",
+      2000,
+      "c"
+     ],
+     [
+      "Kết quả",
+      "ket_qua",
+      1700,
+      "c"
+     ]
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "kt#nghiem_thu.khong_dat",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      800,
+      "c"
+     ],
+     [
+      "Tiêu chí không đạt",
+      "tieu_chi",
+      4600
+     ],
+     [
+      "Ngày",
+      "ngay|ngay",
+      1300,
+      "c"
+     ],
+     [
+      "Ghi chú",
+      "ghi_chu",
+      2600
+     ]
+    ],
+    "rong_thi": "Kết quả nghiệm thu cuối cùng không còn tiêu chí không đạt. Số tiêu chí phải nghiệm thu lại: {kt#nghiem_thu.so_nghiem_thu_lai}."
+   }
+  },
+  {
+   "soan": "NGHIEM_THU",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 3,
+   "huong_dan": "Đánh giá mức độ đáp ứng yêu cầu RFP và tiêu chí kỹ thuật của HSMT: yêu cầu phi chức năng (24 giờ 365 ngày, thời gian phản hồi 2 giây, dễ sử dụng), sản phẩm bàn giao, tiêu chí phải nghiệm thu lại và nguyên nhân, yêu cầu chưa nghiệm thu nếu có. Ghi mã yêu cầu R và mã nghiệm thu NT.",
+   "nguon": [
+    "kt",
+    "rfp",
+    "hsmt"
+   ]
+  },
+  {
+   "h1": "4. Đánh giá quản lý thay đổi"
+  },
+  {
+   "bang": {
+    "nguon": "kt#thay_doi.danh_sach",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Yêu cầu thay đổi",
+      "tieu_de",
+      2900
+     ],
+     [
+      "Nguồn",
+      "nguon",
+      1200
+     ],
+     [
+      "Mức",
+      "muc",
+      1100,
+      "c"
+     ],
+     [
+      "Đề xuất",
+      "ngay_de_xuat|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Quyết định",
+      "ngay_quyet_dinh|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Ngày xử lý",
+      "so_ngay_xu_ly",
+      1000,
+      "c"
+     ]
+    ],
+    "rong_thi": "Không phát sinh yêu cầu thay đổi trong quá trình thực hiện."
+   }
+  },
+  {
+   "doan": "Số yêu cầu thay đổi: {kt#thay_doi.tong}, được phê duyệt: {kt#thay_doi.so_duyet}, có quyết định trong thời hạn đánh giá: {kt#thay_doi.so_dung_han}. Tổng tác động đã duyệt: {kt#thay_doi.md_tang_duyet|md} MD, {kt#thay_doi.chi_phi_tang_duyet|tien} đồng."
+  },
+  {
+   "soan": "THAY_DOI",
+   "dang": "dong_bang",
+   "cot": [
+    "Tiêu chí",
+    "Kết quả",
+    "Đánh giá"
+   ],
+   "widths": [
+    2800,
+    3500,
+    3000
+   ],
+   "toi_thieu": 4,
+   "huong_dan": "Đánh giá quy trình quản lý thay đổi theo các tiêu chí: tiếp nhận và ghi sổ, đánh giá tác động (MD, chi phí, tiến độ, đường găng), phê duyệt đúng cấp, cập nhật tài liệu và phiên bản, kiểm soát thay đổi không chính thức, phụ lục hợp đồng khi đổi giá hoặc mốc. Kết quả ghi mã CR.",
+   "nguon": [
+    "kt"
+   ]
+  },
+  {
+   "h1": "5. Đánh giá quản lý rủi ro"
+  },
+  {
+   "bang": {
+    "nguon": "kt#rui_ro.danh_sach",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Rủi ro",
+      "ten",
+      3100
+     ],
+     [
+      "Mức",
+      "muc",
+      1000,
+      "c"
+     ],
+     [
+      "EMV, MD",
+      "emv_md|md",
+      1000,
+      "r"
+     ],
+     [
+      "Thực tế, MD",
+      "md_tac_dong|md",
+      1100,
+      "r"
+     ],
+     [
+      "Trạng thái cuối",
+      "trang_thai_cuoi",
+      1500
+     ],
+     [
+      "CR",
+      "ma_cr",
+      900,
+      "c"
+     ]
+    ]
+   }
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Chỉ tiêu",
+      "Giá trị"
+     ],
+     [
+      "Số rủi ro trong sổ",
+      "{kt#rui_ro.tong}"
+     ],
+     [
+      "Đã xảy ra",
+      "{kt#rui_ro.so_da_xay_ra}"
+     ],
+     [
+      "Đã kích hoạt kế hoạch ứng phó",
+      "{kt#rui_ro.so_kich_hoat}"
+     ],
+     [
+      "Tổng EMV kế hoạch",
+      "{kt#rui_ro.tong_emv_md|md} MD, {kt#rui_ro.tong_emv_tien|tien} đồng"
+     ],
+     [
+      "Tác động thực tế",
+      "{kt#rui_ro.tac_dong_md|md} MD, {kt#rui_ro.tac_dong_tien|tien} đồng"
+     ],
+     [
+      "Dự phòng kế hoạch, tỷ lệ đã dùng",
+      "{kt#rui_ro.du_phong|tien} đồng, {kt#rui_ro.ty_le_dung_du_phong|pt}"
+     ]
+    ],
+    "widths": [
+     4300,
+     5000
+    ]
+   }
+  },
+  {
+   "soan": "RUI_RO",
+   "dang": "dong_bang",
+   "cot": [
+    "Tiêu chí",
+    "Kết quả",
+    "Đánh giá"
+   ],
+   "widths": [
+    2800,
+    3500,
+    3000
+   ],
+   "toi_thieu": 4,
+   "huong_dan": "Đánh giá quản lý rủi ro: mức độ nhận diện đầy đủ (rủi ro xảy ra có trong sổ không, rủi ro mới), độ chính xác của đánh giá xác suất và tác động (EMV so với thực tế), hiệu quả biện pháp phòng ngừa, tính kịp thời của ứng phó (dấu hiệu, kích hoạt), mức dùng dự phòng. Kết quả ghi mã rủi ro.",
+   "nguon": [
+    "kt",
+    "rr"
+   ]
+  },
+  {
+   "h1": "6. Đánh giá thực hiện cam kết"
+  },
+  {
+   "soan": "CAM_KET",
+   "dang": "dong_bang",
+   "cot": [
+    "Cam kết",
+    "Căn cứ",
+    "Kết quả thực hiện",
+    "Đánh giá"
+   ],
+   "widths": [
+    2600,
+    1800,
+    3000,
+    1900
+   ],
+   "toi_thieu": 5,
+   "huong_dan": "Đối chiếu các cam kết chính trong HSMT và HSDT với kết quả: thời hạn cut over, nhân sự chủ chốt, phương pháp và kế hoạch, bảo đảm chất lượng, quản lý thay đổi và rủi ro, bảo hành trách nhiệm sai sót. Căn cứ ghi mục của HSMT hoặc HSDT. Đánh giá: Đạt, Đạt một phần, Chưa đạt.",
+   "nguon": [
+    "kt",
+    "hsmt"
+   ]
+  },
+  {
+   "h1": "7. Kết luận và kiến nghị"
+  },
+  {
+   "soan": "KET_LUAN",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 3,
+   "huong_dan": "Kết luận xếp loại chung, điểm mạnh, hạn chế chính, kiến nghị với nhóm dự án và chủ đầu tư. Kiến nghị cụ thể, có thể kiểm chứng.",
+   "nguon": [
+    "kt"
+   ],
+   "bat_buoc": [
+    "{kt#xep_loai}"
+   ]
+  }
+ ],
+ "kiem_tra": {
+  "gia_tri": [
+   {
+    "mo_ta": "Tỷ lệ KPI đạt",
+    "bt": "{kt#ty_le_kpi_dat|pt}"
+   },
+   {
+    "mo_ta": "Xếp loại",
+    "bt": "{kt#xep_loai}"
+   }
+  ],
+  "ma_phai_co": [
+   {
+    "nguon": "kt#kpi",
+    "truong": "ma",
+    "mo_ta": "Mọi chỉ tiêu"
+   },
+   {
+    "nguon": "kt#thay_doi.danh_sach",
+    "truong": "ma",
+    "mo_ta": "Mọi yêu cầu thay đổi"
+   },
+   {
+    "nguon": "kt#rui_ro.xay_ra_ds",
+    "truong": "ma",
+    "mo_ta": "Rủi ro đã xảy ra"
+   },
+   {
+    "nguon": "kt#nghiem_thu.yeu_cau_rfp",
+    "truong": "ma",
+    "mo_ta": "Yêu cầu RFP"
+   }
+  ],
+  "doc_hieu": [
+   "Nhận định dựa trên số liệu và mã bằng chứng, không chung chung",
+   "Đánh giá cả mặt chưa tốt, không chỉ liệt kê thành tích",
+   "Đánh giá quản lý rủi ro so sánh EMV với tác động thực tế",
+   "Đánh giá quản lý thay đổi theo từng bước của quy trình",
+   "Kiến nghị cụ thể, có thể kiểm chứng"
+  ]
+ }
+}

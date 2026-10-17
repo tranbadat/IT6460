@@ -1,0 +1,9 @@
+{
+ "_ghi_chu": "Phân loại yêu cầu thay đổi theo tác động. Nhóm có thể điều chỉnh ngưỡng; thay đổi ngưỡng được ghi phiên bản.",
+ "muc": [
+  {"ma": "nho", "ten": "Nhỏ", "md_toi_da": 2, "ngay_cham_toi_da": 0, "chi_phi_toi_da": 5000000, "nguoi_phe_duyet": "Quản trị dự án", "thoi_han_danh_gia_ngay": 1},
+  {"ma": "trung_binh", "ten": "Trung bình", "md_toi_da": 10, "ngay_cham_toi_da": 3, "chi_phi_toi_da": 25000000, "nguoi_phe_duyet": "Quản trị dự án và đầu mối chủ đầu tư", "thoi_han_danh_gia_ngay": 3},
+  {"ma": "lon", "ten": "Lớn", "md_toi_da": null, "ngay_cham_toi_da": null, "chi_phi_toi_da": null, "nguoi_phe_duyet": "Ban kiểm soát thay đổi, ký phụ lục hợp đồng nếu đổi giá hoặc mốc", "thoi_han_danh_gia_ngay": 3}
+ ],
+ "trang_thai": ["Mới", "Đang đánh giá", "Chờ phê duyệt", "Đã phê duyệt", "Từ chối", "Hoãn", "Đã thực hiện", "Đã đóng"]
+}

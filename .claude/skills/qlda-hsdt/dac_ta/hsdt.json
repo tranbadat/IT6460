@@ -1,0 +1,754 @@
+{
+ "id": "hsdt",
+ "ten": "Hồ sơ dự thầu",
+ "nut_ra": "doc_hsdt",
+ "ngay_tai_lieu": "{nt#ngay_ky_don|ngay}",
+ "tieu_de_dau_trang": "E-HSDT - {nt#ten} - {hsmt#goi_thau.ten}",
+ "truoc": [
+  [
+   "qlda-hsdt/scripts/tinh_hsdt.py"
+  ]
+ ],
+ "nguon": {
+  "hsmt": "du_lieu/hsmt.json",
+  "rfp": "du_lieu/rfp_yeu_cau.json",
+  "wbs": "du_lieu/wbs.json",
+  "lich": "du_lieu/lich.json",
+  "pc": "du_lieu/phan_cong.json",
+  "cp": "du_lieu/chi_phi.json",
+  "rr": "du_lieu/rui_ro.json",
+  "tv": "dau_vao/thanh_vien.json",
+  "nt": "dau_vao/nha_thau.json",
+  "hb": "du_lieu/hsdt_bang.json"
+ },
+ "bia": {
+  "tieu_de": "Hồ sơ dự thầu",
+  "dong_phu": [
+   "Gói thầu: {hsmt#goi_thau.ten}",
+   "Chủ đầu tư: {hsmt#goi_thau.chu_dau_tu}",
+   "Nhà thầu: {nt#ten}"
+  ]
+ },
+ "muc_luc": true,
+ "khoi": [
+  {
+   "h1": "Phần I. Đơn dự thầu và thông tin nhà thầu"
+  },
+  {
+   "h2": "1. Thông tin nhà thầu"
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Nội dung",
+      "Thông tin"
+     ],
+     [
+      "Tên nhà thầu",
+      "{nt#ten}"
+     ],
+     [
+      "Địa chỉ",
+      "{nt#dia_chi}"
+     ],
+     [
+      "Người đại diện",
+      "{nt#dai_dien}, {nt#chuc_vu_dai_dien}"
+     ],
+     [
+      "Mã số thuế",
+      "{nt#ma_so_thue}"
+     ],
+     [
+      "Điện thoại, e-mail",
+      "{nt#dien_thoai}, {nt#email}"
+     ],
+     [
+      "Năm thành lập",
+      "{nt#nam_thanh_lap}"
+     ]
+    ],
+    "widths": [
+     3000,
+     6300
+    ]
+   }
+  },
+  {
+   "h2": "2. Đơn dự thầu (Mẫu số 02)"
+  },
+  {
+   "doan_ds": "hb#don_du_thau"
+  },
+  {
+   "doan": "Bảo đảm dự thầu theo E-BDL: {hsmt#tien.bao_dam_du_thau|tien} đồng. {hb#bao_dam_ghi_chu}"
+  },
+  {
+   "h2": "3. Bảng đáp ứng yêu cầu của HSMT"
+  },
+  {
+   "bang_san": "hb#dap_ung"
+  },
+  {
+   "h1": "Phần II. Năng lực và kinh nghiệm"
+  },
+  {
+   "h2": "4. Hợp đồng tương tự (Mẫu số 05)"
+  },
+  {
+   "bang": {
+    "nguon": "hb#hop_dong_tuong_tu",
+    "cot": [
+     [
+      "Tên hợp đồng",
+      "ten",
+      2600
+     ],
+     [
+      "Chủ đầu tư",
+      "chu_dau_tu",
+      1900
+     ],
+     [
+      "Giá trị, đồng",
+      "gia_tri|tien",
+      1600,
+      "r"
+     ],
+     [
+      "Hoàn thành",
+      "ngay_hoan_thanh|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Nội dung tương tự",
+      "mo_ta",
+      2000
+     ]
+    ]
+   }
+  },
+  {
+   "doan": "Yêu cầu của HSMT: tối thiểu 01 hợp đồng tương tự giá trị từ {hsmt#tien.hop_dong_tuong_tu_toi_thieu|tien} đồng, hoàn thành từ ngày {hsmt#nang_luc.moc_hop_dong_tuong_tu} đến thời điểm đóng thầu. Nhà thầu kê khai {hb#so_hop_dong_dat} hợp đồng đáp ứng."
+  },
+  {
+   "h2": "5. Tình hình tài chính (Mẫu số 08)"
+  },
+  {
+   "bang": {
+    "nguon": "hb#doanh_thu",
+    "cot": [
+     [
+      "Năm tài chính",
+      "nam",
+      3000,
+      "c"
+     ],
+     [
+      "Doanh thu không gồm thuế GTGT, đồng",
+      "doanh_thu|tien",
+      6300,
+      "r"
+     ]
+    ]
+   }
+  },
+  {
+   "doan": "Doanh thu bình quân {hb#doanh_thu_binh_quan|tien} đồng, yêu cầu tối thiểu {hsmt#tien.doanh_thu_binh_quan_toi_thieu|tien} đồng. Nhà thầu đã thực hiện nghĩa vụ kê khai và nộp thuế năm {hsmt#nang_luc.nam_tai_chinh_gan_nhat}."
+  },
+  {
+   "h2": "6. Nhân sự chủ chốt (Mẫu số 06A, 06B, 06C)"
+  },
+  {
+   "bang": {
+    "nguon": "hb#nhan_su_chu_chot",
+    "cot": [
+     [
+      "STT",
+      "stt",
+      500,
+      "c"
+     ],
+     [
+      "Vị trí",
+      "vi_tri",
+      1600
+     ],
+     [
+      "Họ tên",
+      "ho_ten",
+      1500
+     ],
+     [
+      "Trình độ",
+      "trinh_do",
+      1400
+     ],
+     [
+      "Số năm kinh nghiệm",
+      "so_nam",
+      900,
+      "c"
+     ],
+     [
+      "Kinh nghiệm liên quan",
+      "kinh_nghiem",
+      2400
+     ],
+     [
+      "Đánh giá",
+      "danh_gia",
+      1000,
+      "c"
+     ]
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "tv#thanh_vien",
+    "loc": {
+     "loai": "nhom"
+    },
+    "cot": [
+     [
+      "Họ tên",
+      "ho_ten",
+      2500
+     ],
+     [
+      "Chức danh",
+      "chuc_danh",
+      3000
+     ],
+     [
+      "Kiêm nhiệm",
+      "kiem_nhiem",
+      2300
+     ],
+     [
+      "Loại công việc",
+      "loai_cong_viec",
+      1500
+     ]
+    ]
+   }
+  },
+  {
+   "soan": "NHAN_SU",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Tóm tắt kinh nghiệm phù hợp của nhân sự chủ chốt với yêu cầu Bảng số 02, cam kết huy động, phương án thay thế khi cần (thời hạn theo HSMT). Không bịa kinh nghiệm: chỉ nêu điều có trong dữ liệu thành viên, phần còn lại ghi theo hồ sơ kèm theo.",
+   "nguon": [
+    "pc",
+    "tv",
+    "hsmt"
+   ]
+  },
+  {
+   "h2": "7. Nhà thầu phụ (Mẫu số 09A)"
+  },
+  {
+   "bang": {
+    "nguon": "nt#nha_thau_phu",
+    "cot": [
+     [
+      "Tên nhà thầu phụ",
+      "ten",
+      3000
+     ],
+     [
+      "Phạm vi công việc",
+      "pham_vi",
+      4300
+     ],
+     [
+      "Giá trị, đồng",
+      "gia_tri|tien",
+      2000,
+      "r"
+     ]
+    ],
+    "rong_thi": "Nhà thầu không sử dụng nhà thầu phụ. Các vị trí bổ sung là nhân sự của nhà thầu."
+   }
+  },
+  {
+   "h1": "Phần III. Đề xuất kỹ thuật"
+  },
+  {
+   "h2": "8. Hiểu biết về dự án, tiền đề và giải pháp tổng thể"
+  },
+  {
+   "soan": "GIAI_PHAP",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 4,
+   "huong_dan": "Theo tiêu chí kỹ thuật 1 của HSMT: mục tiêu dự án, tiền đề thực hiện (Precondition của RFP), kiến trúc hệ thống, cách đáp ứng hoạt động liên tục và thời gian phản hồi, tích hợp hệ thống chính và vận chuyển, an toàn thông tin.",
+   "nguon": [
+    "rfp",
+    "hsmt",
+    "wbs"
+   ],
+   "bat_buoc": [
+    "tiền đề",
+    "24 giờ",
+    "2 giây"
+   ]
+  },
+  {
+   "h2": "9. Phạm vi, sản phẩm bàn giao, phương pháp và bảo đảm chất lượng"
+  },
+  {
+   "bang": {
+    "nguon": "hsmt#mau_01a",
+    "cot": [
+     [
+      "STT",
+      "stt",
+      600,
+      "c"
+     ],
+     [
+      "Hạng mục theo Mẫu 01A",
+      "danh_muc",
+      3700
+     ],
+     [
+      "Sản phẩm, mô tả",
+      "mo_ta",
+      5000
+     ]
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "wbs#nhom",
+    "cot": [
+     [
+      "Mã WBS",
+      "ma",
+      1000,
+      "c"
+     ],
+     [
+      "Nhóm công việc",
+      "ten",
+      5300
+     ],
+     [
+      "Khối lượng, MD",
+      "md|md",
+      1500,
+      "r"
+     ],
+     [
+      "Tỷ trọng",
+      "ty_trong|pt",
+      1500,
+      "r"
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng cộng",
+     "cot": [
+      2,
+      3
+     ]
+    }
+   }
+  },
+  {
+   "soan": "PHUONG_PHAP",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 3,
+   "huong_dan": "Theo tiêu chí kỹ thuật 2: phạm vi hoạt động theo yêu cầu của chủ đầu tư, sản phẩm bàn giao theo hợp đồng, phương pháp thực hiện theo sprint, điều kiện hoàn thành, kiểm thử và bảo đảm chất lượng, các giả định ngoài phạm vi.",
+   "nguon": [
+    "wbs",
+    "hsmt",
+    "lich"
+   ],
+   "bat_buoc": [
+    "sản phẩm bàn giao",
+    "kiểm thử"
+   ]
+  },
+  {
+   "h2": "10. Tiến độ, tổ chức thực hiện và kế hoạch họp"
+  },
+  {
+   "bang": {
+    "nguon": "lich#sprint",
+    "cot": [
+     [
+      "Sprint",
+      "ma",
+      800,
+      "c"
+     ],
+     [
+      "Từ",
+      "tu|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Đến",
+      "den|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Mục tiêu",
+      "muc_tieu",
+      3200
+     ],
+     [
+      "Sản phẩm trình diễn",
+      "san_pham_demo",
+      2900
+     ]
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "lich#moc",
+    "cot": [
+     [
+      "Mốc",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Nội dung",
+      "ten",
+      4200
+     ],
+     [
+      "Ngày dự kiến",
+      "ngay|ngay",
+      1400,
+      "c"
+     ],
+     [
+      "Đợt thanh toán",
+      "dot_thanh_toan",
+      1300,
+      "c"
+     ],
+     [
+      "Sprint",
+      "sprint",
+      1000,
+      "c"
+     ]
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "pc#tai",
+    "cot": [
+     [
+      "Thành viên",
+      "ho_ten",
+      2500
+     ],
+     [
+      "Chức danh",
+      "chuc_danh",
+      3200
+     ],
+     [
+      "MD được giao",
+      "md_giao|md",
+      1300,
+      "r"
+     ],
+     [
+      "Quỹ, MD",
+      "quy|md",
+      1100,
+      "r"
+     ],
+     [
+      "Sử dụng",
+      "ty_le_su_dung|pt",
+      1200,
+      "r"
+     ]
+    ]
+   }
+  },
+  {
+   "soan": "KE_HOACH_HOP",
+   "dang": "dong_bang",
+   "cot": [
+    "Cuộc họp",
+    "Tần suất",
+    "Thành phần",
+    "Nội dung và đầu ra"
+   ],
+   "widths": [
+    2000,
+    1500,
+    2600,
+    3200
+   ],
+   "toi_thieu": 4,
+   "huong_dan": "Kế hoạch họp theo yêu cầu Meeting của RFP: họp khởi động, họp lập kế hoạch sprint, họp trình diễn cuối sprint với chủ đầu tư, họp báo cáo tiến độ, họp quyết định cut over.",
+   "nguon": [
+    "lich",
+    "rfp"
+   ]
+  },
+  {
+   "soan": "TO_CHUC",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Tổ chức thực hiện của nhà thầu (Organization của RFP): cơ cấu nhóm, vai trò, cơ chế điều phối, dự phòng nhân lực, liên kết với tài liệu phân công.",
+   "nguon": [
+    "pc",
+    "tv"
+   ],
+   "bat_buoc": [
+    "tổ chức"
+   ]
+  },
+  {
+   "h2": "11. Vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành"
+  },
+  {
+   "soan": "VAI_TRO",
+   "dang": "dong_bang",
+   "cot": [
+    "Nội dung",
+    "Trách nhiệm của nhà thầu",
+    "Trách nhiệm của chủ đầu tư"
+   ],
+   "widths": [
+    2300,
+    3500,
+    3500
+   ],
+   "toi_thieu": 5,
+   "huong_dan": "Roles của RFP: cung cấp thông tin và môi trường, xác nhận đặc tả, kiểm tra và chấp nhận sản phẩm, quản lý thay đổi, quyền sở hữu và bản quyền, bảo mật, nghiệm thu, bảo hành.",
+   "nguon": [
+    "rfp",
+    "hsmt"
+   ]
+  },
+  {
+   "bang": {
+    "nguon": "rr#danh_sach",
+    "loc": {
+     "muc": "cao"
+    },
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Rủi ro chính",
+      "ten",
+      3600
+     ],
+     [
+      "Kế hoạch ứng phó",
+      "ke_hoach_ung_pho",
+      5000
+     ]
+    ],
+    "rong_thi": "Không có rủi ro mức cao."
+   }
+  },
+  {
+   "soan": "THAY_DOI_BAO_HANH",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Quy trình quản lý yêu cầu thay đổi (thay đổi đặc tả theo thỏa thuận bằng văn bản của hai bên), quản lý rủi ro, cam kết sửa lỗi bằng chi phí của nhà thầu và thời hạn bảo hành theo HSMT.",
+   "nguon": [
+    "hsmt",
+    "rr"
+   ],
+   "bat_buoc": [
+    "{hsmt#hop_dong.bao_hanh_thang} tháng",
+    "thay đổi"
+   ]
+  },
+  {
+   "h2": "12. Điều kiện khác và đề nghị đối với chủ đầu tư"
+  },
+  {
+   "soan": "DIEU_KIEN",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 3,
+   "huong_dan": "Other Conditions và Request for us của RFP: điều kiện liên quan hợp đồng, các đề nghị đối với chủ đầu tư (đầu mối, xác nhận nhà cung cấp thanh toán, giao diện hệ thống chính, môi trường), các đề xuất khác có lợi cho dự án.",
+   "nguon": [
+    "rfp",
+    "rr",
+    "hsmt"
+   ],
+   "bat_buoc": [
+    "điều kiện khác",
+    "đề nghị"
+   ]
+  },
+  {
+   "h1": "Phần IV. Đề xuất tài chính"
+  },
+  {
+   "h2": "13. Bảng tiến độ thực hiện (Mẫu số 10A)"
+  },
+  {
+   "bang": {
+    "nguon": "hb#mau_10a",
+    "cot": [
+     [
+      "STT",
+      "stt",
+      600,
+      "c"
+     ],
+     [
+      "Danh mục dịch vụ",
+      "danh_muc",
+      3500
+     ],
+     [
+      "Bắt đầu",
+      "bat_dau|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Hoàn thành",
+      "ket_thuc|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Yêu cầu của HSMT",
+      "yeu_cau",
+      2800
+     ]
+    ]
+   }
+  },
+  {
+   "h2": "14. Bảng giá dự thầu (Mẫu số 11A)"
+  },
+  {
+   "bang": {
+    "nguon": "cp#mau_11a",
+    "cot": [
+     [
+      "STT",
+      "stt",
+      600,
+      "c"
+     ],
+     [
+      "Danh mục dịch vụ",
+      "danh_muc",
+      4200
+     ],
+     [
+      "Khối lượng",
+      "khoi_luong",
+      900,
+      "c"
+     ],
+     [
+      "Đơn vị",
+      "don_vi",
+      800,
+      "c"
+     ],
+     [
+      "Thành tiền, đồng",
+      "thanh_tien|tien",
+      2800,
+      "r"
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "Giá dự thầu",
+     "cot": [
+      4
+     ]
+    }
+   }
+  },
+  {
+   "h2": "15. Chi phí ước tính và cơ sở tính giá"
+  },
+  {
+   "doan": "Giá dự thầu trọn gói {cp#gia_chao|tien} đồng, thấp hơn giá gói thầu {cp#thap_hon_goi_thau|tien} đồng. Khối lượng {wbs#tong_md|md} MD theo WBS. Thuế GTGT: {cp#can_cu_thue}."
+  },
+  {
+   "soan": "THUYET_MINH_GIA",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Estimated Cost with reason của RFP: cơ sở tính giá (khối lượng theo WBS, đơn giá theo loại công việc, chi phí khác, dự phòng rủi ro), lý do giá hợp lý, liên kết với tệp cost estimate.",
+   "nguon": [
+    "cp",
+    "wbs"
+   ],
+   "bat_buoc": [
+    "chi phí ước tính"
+   ]
+  }
+ ],
+ "kiem_tra": {
+  "gia_tri": [
+   {
+    "mo_ta": "Giá dự thầu",
+    "bt": "{cp#gia_chao|tien}"
+   },
+   {
+    "mo_ta": "Ngày cut over",
+    "bt": "{lich#cut_over|ngay}"
+   },
+   {
+    "mo_ta": "Hiệu lực E-HSDT",
+    "bt": "{hsmt#thoi_han.hieu_luc_hsdt_ngay} ngày"
+   }
+  ],
+  "ma_phai_co": [
+   {
+    "nguon": "hsmt#mau_01a",
+    "truong": "danh_muc",
+    "mo_ta": "Mọi hạng mục Mẫu 01A"
+   },
+   {
+    "nguon": "lich#moc",
+    "truong": "ma",
+    "mo_ta": "Mọi mốc"
+   }
+  ],
+  "tu_khoa": [
+   "Mẫu số 10A",
+   "Mẫu số 11A",
+   "tiền đề",
+   "kế hoạch họp",
+   "vai trò và trách nhiệm",
+   "điều kiện khác",
+   "đề nghị đối với chủ đầu tư",
+   "chi phí ước tính"
+  ],
+  "doc_hieu": [
+   "Đề xuất kỹ thuật trả lời đủ 5 tiêu chí kỹ thuật của HSMT theo đúng thứ tự",
+   "Đủ 10 nội dung đề xuất của RFP",
+   "Mẫu 10A và 11A theo đúng danh mục Mẫu 01A, tổng 11A bằng giá dự thầu",
+   "Năng lực kinh nghiệm đáp ứng Bảng số 01, nhân sự đáp ứng Bảng số 02",
+   "Không có cam kết vượt phạm vi RFP"
+  ]
+ }
+}

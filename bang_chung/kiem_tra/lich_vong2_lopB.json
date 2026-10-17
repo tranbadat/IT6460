@@ -1,0 +1,238 @@
+{
+ "tai_lieu": "ket_qua/04_Master_schedule/Master_schedule.xlsx",
+ "buoc": "lich",
+ "vong": 2,
+ "thoi_gian": "2026-10-17",
+ "ket_luan": "chua_dat",
+ "so_loi": 3,
+ "so_canh_bao": 6,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Có đủ Gantt, sprint, mốc gắn đợt thanh toán, phân bổ và tải. Lich_trinh gồm 103 dòng (thêm 1.3.3), khớp hoàn toàn lich.json về MD, ngày, người, phụ thuộc và cờ găng. Phan_bo 77/77 ô khớp lich.json."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Tong_quan!B12 vẫn bằng 8 (MH01). Tong_quan!B10 và B11 cho kết thúc 01/07 và dự trữ 0, trái với lich.json (24/06, dự trữ 5) và với tài liệu phân công (MH02). MD theo người của Đạt và Toàn lệch phan_cong.json (MH07)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "M3 đã truy vết về gói 1.3.3. M6 đổi thành Ngày cố định nên không còn liên kết với gói 8.3.3 (xem MH03)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mốc có ngày, hạn và trạng thái tính bằng công thức. Sprint có sản phẩm trình diễn khớp các gói hoàn thành."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Dữ liệu có dự trữ 5 ngày làm việc. Hạn mốc bằng ngày dự kiến cộng dự trữ, không vượt ngày muộn nhất, nên trạng thái mốc có tác dụng cảnh báo. Lưu ý: Tong_quan vẫn hiển thị dự trữ 0 (MH02), và dự trữ đang đặt sau ngày đưa vào vận hành (MH03)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Định dạng đúng quy ước. Các điểm trình bày nhỏ ở MH09 chưa sửa."
+  },
+  {
+   "tieu_chi": "TR1 Khả thi đến cut over",
+   "ket_qua": "dat",
+   "nhan_xet": "Gói cuối không dàn trải kết thúc 24/06/2027. Lớp B tính lại trên ngày thực tế: độ dự trữ nhỏ nhất so với ngày 01/07 là 5 ngày làm việc."
+  },
+  {
+   "tieu_chi": "TR2 Mốc khớp điều kiện thanh toán HSMT (E-ĐKC 13.1)",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Đợt 1 khớp M0, Đợt 2 khớp M2 (2.1.4, 29/04), Đợt 3 khớp M3 (1.3.3, Chủ đầu tư kiểm tra, 10/06), Đợt 5 khớp M7. Riêng Đợt 4 gắn M6 ngày 01/07/2027, trong khi lịch đặt việc triển khai chính thức và ngày đầu vận hành ở 22-24/06 (MH03)."
+  },
+  {
+   "tieu_chi": "TR3 Tải nguồn lực không vượt quỹ",
+   "ket_qua": "dat",
+   "nhan_xet": "77/77 ô không vượt quỹ, cao nhất 10/10. Phân bổ vẫn chưa cân đối (MH06)."
+  },
+  {
+   "tieu_chi": "TR4 Mục tiêu và sản phẩm trình diễn khớp gói hoàn thành",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục tiêu S1 đến S7 đã viết lại và nêu đủ các gói hoàn thành. S4 ghi trình diễn ở mức dịch vụ. Trình diễn S5 dựa trên 3.3.3, 4.3.3, 5.3.4, 5.3.3, 6.2.4, đều hoàn thành trong S5 hoặc trước đó."
+  },
+  {
+   "tieu_chi": "TR5 Mức hợp lý: dự trữ, đường găng, thứ tự nghiệp vụ",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Đã có dự trữ 5 ngày. Phần cuối đường găng (6.2.5 đến 8.3.3) trùng chuỗi điều khiển thực tế. 7.2.3 đã làm sau kiểm thử phân hệ. 7.3.2 đã làm sau hướng dẫn vận hành. Chưa hợp lý: dự trữ nằm sau ngày đưa vào vận hành (MH03), đường găng hiển thị vẫn chỉ tính theo phụ thuộc (MH04), đặc tả và lập trình vẫn bắt đầu trước khi kế hoạch, đặc tả được xác nhận (MH05)."
+  }
+ ],
+ "doi_chieu_vong1": [
+  {
+   "ma_vong1": "MH01",
+   "muc_do_vong1": "loi",
+   "trang_thai": "chua_khac_phuc",
+   "vi_tri_moi": "Tong_quan!B12 =COUNTIF(Sprint!A:A,\"S*\") => 8",
+   "ghi_chu": "Ô tiêu đề 'Sprint' ở Sprint!A1 cũng khớp mẫu S*, nên kết quả vẫn là 8. Giữ ở MH01 vòng 2."
+  },
+  {
+   "ma_vong1": "MH02",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "lich.json du_tru_den_cut_over_ngay = 5; Tong_quan!B11 = 0",
+   "ghi_chu": "Dữ liệu đã có dự trữ 5 ngày, lớp B tính lại xác nhận. Workbook vẫn hiện 0 (MH02 vòng 2). Dự trữ đặt sau ngày đưa vào vận hành (MH03 vòng 2)."
+  },
+  {
+   "ma_vong1": "MH03",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "Tong_quan!B13 = 59; Lich_trinh cột L",
+   "ghi_chu": "Phần cuối đường găng đã trùng chuỗi điều khiển thực tế. Vẫn chưa có cột dự trữ và chưa giải thích chênh lệch 59 ngày so với 68 ngày. Giữ ở MH04 vòng 2."
+  },
+  {
+   "ma_vong1": "MH04",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Moc!D3:D7: M1 08/04, M2 10/05, M3 17/06, M4 22/06, M5 28/06",
+   "ghi_chu": "Hạn bằng ngày dự kiến cộng 5 ngày làm việc, không muộn hơn ngày muộn nhất. Ví dụ M4 trễ đến 22/06 thì 8.3.3 vẫn kịp 01/07."
+  },
+  {
+   "ma_vong1": "MH05",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Lich_trinh dòng 1.3.3 (09-10/06); Moc!A5 M3, căn cứ 1.3.3",
+   "ghi_chu": "Đã có gói Chủ đầu tư kiểm tra. 1.3.3 phụ thuộc 3.5.1, 4.5.1, 5.5.1 và 6.2.5."
+  },
+  {
+   "ma_vong1": "MH06",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Sprint!H2:I8",
+   "ghi_chu": "Mục tiêu và sản phẩm trình diễn đã khớp các gói hoàn thành."
+  },
+  {
+   "ma_vong1": "MH07",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "7.2.3 (07-10/06, sau 3.4.1, 4.4.1, 5.4.1, 6.2.5); 2.1.3 (29/03-01/04); 3.3.2 (26/04), 5.3.1 (27/04)",
+   "ghi_chu": "Ý (c) đã khắc phục. Ý (a) và (b) còn, giữ ở MH05 vòng 2."
+  },
+  {
+   "ma_vong1": "MH08",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "chua_khac_phuc",
+   "vi_tri_moi": "Tai_nguon",
+   "ghi_chu": "Thuộc quyết định của nhóm. Giữ ở MH06 vòng 2."
+  },
+  {
+   "ma_vong1": "MH09",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "chua_khac_phuc",
+   "vi_tri_moi": "Tai_nguon!J4 39,31, J7 42,68; phan_cong.json tai 40,00, 42,00",
+   "ghi_chu": "Giữ ở MH07 vòng 2."
+  },
+  {
+   "ma_vong1": "MH10",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "chua_khac_phuc",
+   "vi_tri_moi": "Lich_trinh cột E, Phan_bo, Tai_nguon",
+   "ghi_chu": "Dữ liệu nhóm chưa cung cấp. Giữ ở MH08 vòng 2."
+  },
+  {
+   "ma_vong1": "MH11",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "chua_khac_phuc",
+   "vi_tri_moi": "Huong_dan!A5, A6; Tong_quan!A16; Tai_nguon không có định dạng có điều kiện",
+   "ghi_chu": "Giữ ở MH09 vòng 2."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "vong1": "MH01",
+   "muc_do": "loi",
+   "nhom": "CL02 Nhất quán",
+   "vi_tri": "Tong_quan!B12 'Số sprint' =COUNTIF(Sprint!A:A,\"S*\") => 8",
+   "mo_ta": "Công thức mới vẫn đếm cả ô tiêu đề 'Sprint' ở Sprint!A1, nên kết quả là 8. lich.json có so_sprint = 7, sheet Sprint có S1 đến S7.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Trong xuat_gantt.py dùng =COUNT(Sprint!B:B) (đếm ô ngày bắt đầu, dòng Tổng không có ngày) hoặc =COUNTIFS(Sprint!A:A,\"S*\",Sprint!A:A,\"<>Sprint\"). Mở bằng LibreOffice để kiểm tra giá trị tính lại."
+  },
+  {
+   "ma": "MH02",
+   "vong1": "MH02",
+   "muc_do": "loi",
+   "nhom": "CL02 Nhất quán",
+   "vi_tri": "Tong_quan!B10 'Kết thúc dự kiến' =MAX(Lich_trinh!G:G) => 01/07/2027; B11 'Dự trữ đến cut over' => 0",
+   "mo_ta": "lap_lich.py đã bỏ gói dàn trải khi tính ngày kết thúc: lich.json ghi ket_thuc_du_kien 2027-06-24, du_tru_den_cut_over_ngay 5. Công thức trong workbook vẫn lấy MAX của mọi dòng, kể cả các gói dàn trải 1.2.1-1.3.2 kéo đến 01/07, nên hiển thị kết thúc 01/07 và dự trữ 0. Phan_cong_nhiem_vu.docx mục 1 lại ghi dự trữ 5 ngày. Hai tài liệu mâu thuẫn nhau.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa B10 trong xuat_gantt.py thành =MAXIFS(Lich_trinh!G:G,Lich_trinh!C:C,3,Lich_trinh!E:E,\"<>*dàn trải*\"), hoặc tính theo cùng định nghĩa với lap_lich.py. Định nghĩa lại sau khi xử lý MH03."
+  },
+  {
+   "ma": "MH03",
+   "vong1": "",
+   "muc_do": "loi",
+   "nhom": "TR2, CL02 Ngày đưa vào vận hành",
+   "vi_tri": "Lich_trinh dòng 8.3.2 'Triển khai phiên bản chính thức và chuyển dữ liệu vận hành' 22/06-23/06; 8.3.3 'Hỗ trợ ngày đầu vận hành và biên bản bàn giao hệ thống' 24/06; Moc!A8 M6 01/07/2027 'Ngày cố định'",
+   "mo_ta": "HSMT Mẫu 01A hạng mục 13 ghi rõ chuyển hệ thống sang vận hành chính thức ngày 01/07/2027, và 8.3.2, 8.3.3 truy vết về đúng hạng mục này. Mốc M6 (Đợt 4) cũng ngày 01/07. Tuy vậy lịch xếp triển khai chính thức, chuyển dữ liệu và ngày đầu vận hành vào 22-24/06, sớm hơn 5 ngày làm việc. Dự trữ 5 ngày vì thế nằm sau ngày đưa vào vận hành thay vì trước đó. Dữ liệu vận hành chuyển ngày 23/06 sẽ lệch với Main System nếu hệ thống chỉ chính thức chạy từ 01/07. Biên bản bàn giao hệ thống (24/06) cũng khác ngày bàn giao hồ sơ vào ngày cut over của 1.3.2 và M7 (01/07). M6 ghi Ngày cố định nên không còn liên kết với 8.3.3, và trạng thái M6 trong Excel là Không có hạn, trong lich.json là Đúng hạn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Neo 8.3.2 và 8.3.3 kết thúc đúng 01/07/2027 (bắt đầu không sớm hơn 29/06, xếp lùi từ cut over). Thể hiện dự trữ 5 ngày giữa 7.3.3 (21/06) và 8.3.2, tính bằng ngày bắt đầu muộn nhất của 8.3.2 trừ ngày kết thúc của 7.3.3. Đặt căn cứ M6 là 8.3.3 cộng ngày cố định. Sau đó chạy lại lap_lich.py, xuat_gantt.py và tài liệu phân công."
+  },
+  {
+   "ma": "MH04",
+   "vong1": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "TR5 Đường găng",
+   "vi_tri": "Tong_quan!B13 'Đường găng theo phụ thuộc, ngày' = 59; Lich_trinh cột L; không có cột dự trữ",
+   "mo_ta": "Lớp B tính lại trên ngày thực tế, với phụ thuộc và thứ tự công việc của cùng người. Chuỗi không còn dự trữ (so với ngày 24/06) gồm 6.2.5, 7.2.1, 7.2.3, 7.2.6, 7.3.2, 7.3.3, 8.3.2, 8.3.3, trùng phần cuối các gói tô đỏ. Một số gói tô đỏ lại còn dự trữ thực: 5.1.1 và 5.2.1 còn 3 ngày; 1.1.1, 1.1.2, 2.1.2, 5.3.1, 5.3.2, 5.3.3, 6.2.4 còn 1 ngày. Ngược lại, các gói chỉ còn 1 ngày nhưng không tô đỏ: 2.1.1, 2.1.3, 6.2.1, 2.3.1, 4.1.1, 4.2.1 (K), 4.3.1 (D3), 7.2.2, 1.3.3, 8.2.2. Workbook không có cột dự trữ và không giải thích vì sao lịch 68 ngày dài hơn 59 ngày theo phụ thuộc. Mức ảnh hưởng thấp hơn vòng 1 vì toàn chuỗi đã có thêm 5 ngày dự trữ.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thêm cột dự trữ theo lịch đã cân bằng nguồn lực. Ở Tong_quan ghi chú độ dài lịch sau cân bằng (68 ngày) bên cạnh 59 ngày theo phụ thuộc."
+  },
+  {
+   "ma": "MH05",
+   "vong1": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "TR5 Thứ tự nghiệp vụ",
+   "vi_tri": "2.1.3 (29/03-01/04, chỉ phụ thuộc 2.1.1) so với M1 01/04; 6.2.2 (22/04), 6.2.3 (23/04), 3.3.2 (26/04), 5.3.1 (27/04) so với M2 29/04",
+   "mo_ta": "Đặc tả phi chức năng vẫn làm song song và không phụ thuộc kế hoạch được xác nhận. Lập trình dịch vụ tìm kiếm, giỏ hàng và tích hợp Main System bắt đầu trước khi hai bên xác nhận đặc tả và giao diện (M2), nên có nguy cơ phải làm lại nếu Chủ đầu tư yêu cầu sửa. Đây có thể là lựa chọn làm song song có chủ đích, nhóm cần quyết định.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Thêm phụ thuộc vào 1.1.2 và 2.1.4, hoặc ghi rõ đây là làm song song có chủ đích và đưa rủi ro làm lại vào sổ rủi ro."
+  },
+  {
+   "ma": "MH06",
+   "vong1": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "TR3 Tải nguồn lực",
+   "vi_tri": "Tai_nguon: D2 15,5/53 (29,2%), S3 0; Q1 20,5/53 (38,7%), S3 0; Q2 16,5/43 (38,4%), S4 0; S7 26,6/143 MD (18,6%)",
+   "mo_ta": "Không ô nào vượt quỹ. Tuy vậy D2, Q1, Q2 vẫn được huy động toàn thời gian sớm hơn nhu cầu, và tuần dự trữ cuối S7 gần như không có việc. Đây là quyết định huy động của nhóm.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm cân nhắc lùi tu_sprint của D2, Q1 (sang S4) và Q2 (sang S5), rồi kiểm tra ảnh hưởng tới dự toán."
+  },
+  {
+   "ma": "MH07",
+   "vong1": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 Nhất quán với giao việc",
+   "vi_tri": "Tai_nguon!J4 Đạt 39,31, J7 Toàn 42,68; Sprint!E2:E8 25,71; 41,71; 61,43; 80,29; 63,46; 51,80; 26,60",
+   "mo_ta": "phan_cong.json (tai) vẫn ghi Đạt 40,00 và Toàn 42,00, chia đều 2.2.2 mỗi người 3 MD, trong khi lịch ghi phan_nguoi Đạt 2,32, Toàn 3,68. tong_md_giao là 351,01, còn WBS là 351. Mục sprint[].md_ke_hoach trong lich.json (25,72; 41,72; 63,45; 51,79; 26,61, tổng 351,01) lệch 0,01 so với Excel (tổng 351,00).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Tính phan_cong.json tai từ lich.json goi[].phan_nguoi, hoặc dùng cùng một cách chia. Tính sprint[].md_ke_hoach từ phan_bo đã làm tròn giữ tổng."
+  },
+  {
+   "ma": "MH08",
+   "vong1": "MH10",
+   "muc_do": "canh_bao",
+   "nhom": "Dữ liệu nhóm chưa cung cấp",
+   "vi_tri": "Lich_trinh cột E, Phan_bo cột B, Tai_nguon cột B: 'K', 'D1', 'D2', 'D3', 'Q1', 'Q2'",
+   "mo_ta": "Sáu vị trí bổ sung chưa có họ tên thật. thanh_vien.json đánh dấu _can_xac_nhan. Đây không phải lỗi của tài liệu.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm bổ sung ho_ten trong dau_vao/thanh_vien.json, rồi chạy lại."
+  },
+  {
+   "ma": "MH09",
+   "vong1": "MH11",
+   "muc_do": "canh_bao",
+   "nhom": "CL06 Trình bày",
+   "vi_tri": "Huong_dan!A5 '... ô đỏ là quá tải'; Huong_dan!A6 và Tong_quan!A16 '... rồi chạy lại lap_lich.py và xuat_gantt.py'",
+   "mo_ta": "Tai_nguon vẫn không có định dạng có điều kiện. Phan_bo tô màu cam nhạt (F8CBAD), không phải màu đỏ. Ghi chú dùng từ rồi và nêu tên script.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thêm định dạng có điều kiện cho Tai_nguon hoặc sửa câu hướng dẫn. Viết lại ghi chú: Cập nhật WBS, giao việc hoặc mốc, sau đó tạo lại lịch và workbook."
+  }
+ ],
+ "nhan_xet_lop_A": "lam_viec/lich/bao_cao_kiem_tra.json vẫn kết luận dat, 0 phát hiện. Báo cáo này chỉ kiểm tra lich.json, không kiểm tra công thức trong workbook nên không phát hiện MH01 và MH02."
+}

@@ -1,0 +1,231 @@
+{
+ "tai_lieu": "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+ "buoc": "phan_cong_tai_lieu",
+ "dac_ta": ".claude/skills/qlda-phan-cong/dac_ta/phan_cong_tai_lieu.json",
+ "vong": 2,
+ "thoi_gian": "2026-10-17",
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 7,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Có đủ 7 mục theo đặc tả. Mục 6 tách MD gói và MD của người. Cột Bên ngoài ghi vai trò (C) hoặc (I). Tài liệu dùng được để giao việc và theo dõi tải."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Đã khớp: tổng MD của người ở mục 6 bằng cột Giao ở mục 5 (chỉ lệch 0,01 MD ở 2 người), các ô sprint khớp Master_schedule.xlsx Tai_nguon, 93 dòng mục 6 khớp lich.json (ngày, MD gói, phan_nguoi, vai trò). Chưa khớp: ma trận RACI không cho Chủ đầu tư vai trò nào ở 1.1, dù M1 là Chủ đầu tư xác nhận kế hoạch (MH01). Dự trữ 5 ngày ghi ở mục 1 trái với Master_schedule (MH03). Tổng 351,01 khác 351 (MH05)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi dòng giao việc mang mã WBS và thời gian theo master schedule. Thay thế nhân sự dẫn chiếu Mục 21.2 E-ĐKCT kèm thời hạn."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Có thời hạn thay thế 7 ngày, ngưỡng tải 9/10 quỹ, ngưỡng chậm 1 ngày cho gói găng, và tải theo sprint đo bằng MD."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục 7 có ngưỡng phát hiện, người quyết định, hành động, người dự phòng cho K và D3, và quy trình cập nhật. Tuy vậy ngưỡng 9/10 đã bị vượt ngay trong kế hoạch, và người dự phòng cho K đang kín việc đúng các sprint K làm việc (MH04)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman 13, bảng cỡ 12, tiêu đề bảng lặp lại, RACI in trang ngang, không có từ trong danh sách cần tránh. Còn một câu chưa gọn (MH08)."
+  },
+  {
+   "tieu_chi": "TR1 Mỗi hạng mục mức 1, mức 2 có đúng một A",
+   "ket_qua": "dat",
+   "nhan_xet": "37/37 dòng có đúng một A."
+  },
+  {
+   "tieu_chi": "TR2 Không ai quá tải trong sprint",
+   "ket_qua": "dat",
+   "nhan_xet": "Mọi ô không vượt quỹ, cao nhất 10/10."
+  },
+  {
+   "tieu_chi": "TR3 Nhân sự chủ chốt khớp Bảng số 02 HSMT và HSDT Mẫu 06A",
+   "ket_qua": "dat",
+   "nhan_xet": "Vị trí và số lượng khớp Bảng số 02. Chưa kiểm chứng được kinh nghiệm. HSDT chưa lập nên chưa đối chiếu được Mẫu 06A (MH06)."
+  },
+  {
+   "tieu_chi": "TR4 Có quy tắc thay thế và điều chỉnh khi thay đổi",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục 7 có quy tắc thay thế (7 ngày theo E-ĐKC 21.2), xử lý quá tải hoặc chậm, và cập nhật khi có thay đổi."
+  }
+ ],
+ "doi_chieu_vong1": [
+  {
+   "ma_vong1": "MH01",
+   "muc_do_vong1": "loi",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 6, cột 'MD gói' và 'MD của người'",
+   "ghi_chu": "Tổng cột MD của người theo từng thành viên bằng cột Giao ở mục 5, tổng 351,00. Chỉ lệch làm tròn: Đạt 39,32 so với 39,31, D1 29,16 so với 29,17 (ghi ở MH05)."
+  },
+  {
+   "ma_vong1": "MH02",
+   "muc_do_vong1": "loi",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 5, cột Giao, MD (Đạt 39,31; Toàn 42,68)",
+   "ghi_chu": "Tổng các ô sprint bằng cột Giao ở cả 11 dòng, và khớp Master_schedule Tai_nguon. phan_cong.json tai vẫn ghi 40,00 và 42,00 (ghi ở MH05)."
+  },
+  {
+   "ma_vong1": "MH03",
+   "muc_do_vong1": "loi",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 4, cột Bên ngoài: 'Chủ đầu tư (C)', '(I)', '(C, I)'",
+   "ghi_chu": "Đã ghi vai trò. Dữ liệu RACI lại bỏ Chủ đầu tư khỏi 1.1, 1.2, 2.2 (ghi ở MH01 vòng 2)."
+  },
+  {
+   "ma_vong1": "MH04",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "chua_khac_phuc",
+   "vi_tri_moi": "Mục 3",
+   "ghi_chu": "Dữ liệu nhóm chưa cung cấp. Giữ ở MH06."
+  },
+  {
+   "ma_vong1": "MH05",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 7: '...trong thời hạn 7 ngày kể từ ngày nhận yêu cầu theo Mục 21.2 E-ĐKCT.'",
+   "ghi_chu": "Khớp HSMT (07 ngày)."
+  },
+  {
+   "ma_vong1": "MH06",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "Mục 1 đoạn 1; mục 7 đoạn 3",
+   "ghi_chu": "Đã có ngưỡng, người dự phòng, và đã nói rõ phần quỹ dư không phải dự trữ tiến độ. Còn vấn đề ngưỡng và người dự phòng (MH04)."
+  },
+  {
+   "ma_vong1": "MH07",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 1 đoạn 2, 3",
+   "ghi_chu": "Mô tả đã khớp giao việc. Chỉ còn thiếu một chi tiết nhỏ: Trần Bá Đạt nay nhận 3.1.1 (BA, 4 MD), không nêu trong câu phân tích nghiệp vụ. Không tính thành phát hiện."
+  },
+  {
+   "ma_vong1": "MH08",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "Mục 1, 2: '351,01 MD', '331,99 MD'; mục 5: 'D1 ... 55%'",
+   "ghi_chu": "Ô tải đã hiển thị đúng 2 chữ số theo giá trị gốc. Tổng 351,01 và định dạng tỷ lệ chưa sửa. Giữ ở MH05."
+  },
+  {
+   "ma_vong1": "MH09",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "Mục 4",
+   "ghi_chu": "Không còn thành viên mang cả C và I. Chủ đầu tư ở 8.3 vẫn là (C, I). Việc bỏ chữ I làm Đạt không còn vai trò ở 2.3, 6.2, 7.3, 8.2 (MH02 vòng 2)."
+  },
+  {
+   "ma_vong1": "MH10",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "chua_khac_phuc",
+   "vi_tri_moi": "Mục 2, 4, 5, 6",
+   "ghi_chu": "Dữ liệu nhóm chưa cung cấp. Giữ ở MH07."
+  },
+  {
+   "ma_vong1": "MH11",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "Mục 1 đoạn 3: 'lịch có dự trữ 5 ngày làm việc đến ngày cut over 01/07/2027'",
+   "ghi_chu": "Đã diễn đạt trung tính và đúng với lich.json. Nhưng Master_schedule.xlsx vẫn hiện dự trữ 0, và ngày đưa vào vận hành trong lịch sai (MH03)."
+  },
+  {
+   "ma_vong1": "MH12",
+   "muc_do_vong1": "canh_bao",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "Mục 7 đoạn 1",
+   "ghi_chu": "Đã bỏ lặp từ đầu mối, câu vẫn chưa gọn. Giữ ở MH08."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "vong1": "",
+   "muc_do": "loi",
+   "nhom": "CL02 Nhất quán với master schedule",
+   "vi_tri": "Mục 4, ma trận RACI: dòng 1.1 'Khởi động và lập kế hoạch' và 1.2 'Theo dõi, kiểm soát và báo cáo', cột Bên ngoài để trống (trach_nhiem 1.1, 1.2: I = [])",
+   "mo_ta": "Mốc M1 trong Master_schedule là Kế hoạch quản lý dự án được Chủ đầu tư xác nhận (căn cứ 1.1.2). Gói 1.1.1 là họp khởi động, xác nhận vai trò và trách nhiệm các bên. Vậy mà Chủ đầu tư không có vai trò nào ở 1.1. Tương tự, 1.2.1 gồm trình diễn và báo cáo cuối sprint cho Chủ đầu tư nhưng Chủ đầu tư không có vai trò ở 1.2. Ở vòng 1, cả hai dòng đều ghi Chủ đầu tư là I. Cùng lúc, dòng 2.2 (gồm New Operational Flow và Database Structure, thuộc điều kiện Đợt 2 trong E-ĐKC 13.1) cũng bỏ Chủ đầu tư. Riêng dòng này có thể chấp nhận vì việc xác nhận nằm ở 2.1.4, mục 2.1.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Trong phan_cong.json trach_nhiem, đặt Chủ đầu tư là C ở 1.1 (xác nhận kế hoạch, M1) và I ở 1.2. Cân nhắc đặt I ở 2.2. Chạy lại kiem_tra_giao_viec.py, rồi chuan_bi và hoan_thien. Bổ sung kế hoạch vào câu liệt kê các hạng mục Chủ đầu tư được tham vấn ở mục 1."
+  },
+  {
+   "ma": "MH02",
+   "vong1": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "CL01 Ma trận RACI",
+   "vi_tri": "Mục 4: cột Đạt để trống ở 2.3, 6.2, 7.3, 8.2; dòng 8.3 'Chủ đầu tư (C, I)'",
+   "mo_ta": "Sau khi bỏ ghi kép C và I, quản trị dự án (A của mục 1, người lập hồ sơ nghiệm thu và thanh toán 1.3.1) không còn vai trò ở thiết kế giao diện, tích hợp Main System, kiểm thử vận hành cùng Chủ đầu tư (điều kiện Đợt 4) và chuyển giao. Chủ đầu tư ở 8.3 vẫn mang cả C và I, chưa đúng với mô tả RACI không còn ghi kép.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Đặt Đạt là I, hoặc C, ở 2.3, 6.2, 7.3, 8.2. Ghi Chủ đầu tư ở 8.3 một vai trò (C)."
+  },
+  {
+   "ma": "MH03",
+   "vong1": "MH11",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 Đối chiếu với master schedule",
+   "vi_tri": "Mục 1 đoạn 3: 'lịch có dự trữ 5 ngày làm việc đến ngày cut over 01/07/2027'; mục 6: '8.3.2 ... 22/06/2027 - 23/06/2027', '8.3.3 Hỗ trợ ngày đầu vận hành ... 24/06/2027'",
+   "mo_ta": "Tài liệu khớp lich.json. Tuy vậy Master_schedule.xlsx (Tong_quan!B11) hiển thị dự trữ 0, và lịch đặt triển khai chính thức, ngày đầu vận hành vào 22-24/06 thay vì ngày cut over 01/07/2027 trong HSMT. Xem báo cáo lớp B bước lich, MH02 và MH03 (lỗi). Khi lịch được sửa, thời gian ở mục 6 và câu dự trữ sẽ thay đổi.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sau khi sửa bước lich, chạy lại chuan_bi và hoan_thien phan_cong_tai_lieu."
+  },
+  {
+   "ma": "MH04",
+   "vong1": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "CL05 Ngưỡng và người dự phòng",
+   "vi_tri": "Mục 7 đoạn 3: 'Khi tải của một người trong sprint vượt chín phần mười quỹ thời gian... Người dự phòng cho vị trí K là Nguyễn Thị Phương Liên...'; mục 5",
+   "mo_ta": "Ngay trong kế hoạch, 12 ô ở mục 5 đã vượt 9/10: Đạt S2 9,03; Anh S3; Minh S3, S4; Toàn S3, S4; Liên S2; K S2, S3, S4 9,50; D1 S4; D3 S4. Như vậy ngưỡng báo động bị kích hoạt ngay từ đầu và không phân biệt được với tình huống phát sinh. Người dự phòng cho K là Liên, nhưng Liên ở mức 10/10 tại S2 và 9/10 tại S3, đúng giai đoạn K làm 2.3.1, 4.1.1, 4.2.1. Người dự phòng cho D3 ở S4 (Toàn 10/10, Anh 8,50/10) cũng gần kín việc.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Đặt ngưỡng theo mức tăng so với kế hoạch (ví dụ thực tế vượt kế hoạch 1 MD hoặc vượt 100% quỹ), hoặc chấp nhận các ô 100% và ghi rõ. Chọn người dự phòng cho K trong S2-S3 là người còn quỹ, ví dụ Trần Bá Đạt (4,43/10 ở S3, có năng lực BA)."
+  },
+  {
+   "ma": "MH05",
+   "vong1": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "CL02, CL06 Số liệu và định dạng",
+   "vi_tri": "Mục 1: 'Toàn bộ 351,01 MD', 'Phần quỹ chưa giao (331,99 MD)... không phải dự trữ tiến độ'; mục 2: 'khối lượng giao 351,01 MD, phần dư 331,99 MD dùng cho xử lý phát sinh'; mục 5: 'D1 ... 55%'; mục 6: Đạt 39,32, D1 29,16",
+   "mo_ta": "Phần lời lấy tổng từ phan_cong.json (351,01, gồm Đạt 40,00 và Toàn 42,00), trong khi bảng mục 5, mục 6 và WBS đều là 351,00. Tổng mục 6 theo người lệch mục 5 0,01 MD ở Đạt và D1 do làm tròn. Mục 2 nói phần dư dùng cho xử lý phát sinh, mục 1 lại nói phần này chủ yếu thuộc vị trí huy động sớm, không phải dự trữ tiến độ, nên hai câu chưa thống nhất. Tỷ lệ 55% chưa cùng định dạng với 53,8%.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Tính pc tai và tong_md_giao từ lich.json phan_nguoi rồi làm tròn giữ tổng (351,00, phần dư 332,00). Sửa câu cố định ở mục 2 trong đặc tả, ví dụ 'phần quỹ chưa giao'. Định dạng tỷ lệ thống nhất 1 chữ số thập phân."
+  },
+  {
+   "ma": "MH06",
+   "vong1": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "TR3 Nhân sự chủ chốt",
+   "vi_tri": "Mục 3",
+   "mo_ta": "Vị trí và số lượng khớp Bảng số 02. Trình độ, số năm kinh nghiệm và kinh nghiệm của 5 nhân sự chủ chốt trong thanh_vien.json vẫn trống, nên chưa kiểm chứng được yêu cầu kinh nghiệm. Chưa có HSDT Mẫu 06A để đối chiếu.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm bổ sung dữ liệu kinh nghiệm. Đối chiếu lại khi lập HSDT."
+  },
+  {
+   "ma": "MH07",
+   "vong1": "MH10",
+   "muc_do": "canh_bao",
+   "nhom": "Dữ liệu nhóm chưa cung cấp",
+   "vi_tri": "Mục 2, 4, 5, 6 và bảng chú giải: 'K | K', 'D1 | D1', 'D2 | D2', 'D3 | D3', 'Q1 | Q1', 'Q2 | Q2'",
+   "mo_ta": "Sáu vị trí bổ sung chưa có họ tên thật. Đây không phải lỗi của tài liệu.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm bổ sung ho_ten trong dau_vao/thanh_vien.json."
+  },
+  {
+   "ma": "MH08",
+   "vong1": "MH12",
+   "muc_do": "canh_bao",
+   "nhom": "CL06 Văn phong",
+   "vi_tri": "Mục 7 đoạn 1: 'Việc làm việc với Chủ đầu tư thực hiện qua Công ty Cổ phần ABC Wear, đầu mối Yamada, Phòng Kế hoạch, mọi xác nhận được ghi bằng biên bản.'",
+   "mo_ta": "Cụm 'Việc làm việc' lặp từ. Câu vẫn ghép nguyên chuỗi tên từ ben_ngoai.ten.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Viết lại: 'Nhóm làm việc với Chủ đầu tư qua đầu mối là ông Yamada, Phòng Kế hoạch, Công ty Cổ phần ABC Wear. Mọi xác nhận được ghi bằng biên bản.'"
+  }
+ ],
+ "nhan_xet_lop_A": "bao_cao_kiem_tra_vong1.json (thời gian 2026-10-16 23:58:17) kiểm tra phan_cong_tai_lieu_vong1.docx, có MD5 trùng tệp ket_qua (0b948792...). Kết luận dat, 0 phát hiện. Báo cáo này không kiểm tra vai trò Chủ đầu tư trong RACI so với mốc."
+}

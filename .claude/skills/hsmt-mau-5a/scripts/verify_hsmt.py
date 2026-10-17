@@ -6,6 +6,13 @@ Chỉ đọc file Word đầu ra và các nguồn chuẩn. Không đọc khung, 
 Mọi giá trị kỳ vọng lấy từ nguồn chuẩn, không ghi cứng trong script.
 Mã thoát: 0 đạt, 1 còn lỗi.
 """
+import os as _os, sys as _sys  # noqa: E401
+_os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
+for _s in (_sys.stdout, _sys.stderr):
+    try:
+        _s.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 import argparse, json, os, re, sys, zipfile
 import docx
 

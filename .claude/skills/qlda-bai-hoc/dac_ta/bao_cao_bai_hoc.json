@@ -1,0 +1,310 @@
+{
+ "id": "bai_hoc",
+ "ten": "Báo cáo bài học kinh nghiệm",
+ "nut_ra": "doc_bai_hoc",
+ "ten_tep": "Bao_cao_bai_hoc_kinh_nghiem.docx",
+ "ngay_tai_lieu": "{kt#ngay_chot|ngay}",
+ "tieu_de_dau_trang": "Kết thúc dự án - Báo cáo bài học kinh nghiệm",
+ "nguon": {
+  "bh": "du_lieu/bai_hoc.json",
+  "kt": "du_lieu/ket_thuc.json"
+ },
+ "bia": {
+  "tieu_de": "Báo cáo bài học kinh nghiệm",
+  "dong_phu": [
+   "Số liệu tính đến ngày {kt#ngay_chot|ngay}"
+  ]
+ },
+ "muc_luc": true,
+ "khoi": [
+  {
+   "h1": "1. Mục đích và nguồn bài học"
+  },
+  {
+   "doan": "Báo cáo tổng hợp bài học kinh nghiệm của dự án để áp dụng cho các dự án sau của nhóm và của Inter Solution. Mỗi bài học được rút từ sự kiện có ghi nhận trong dữ liệu dự án và dẫn mã bằng chứng: yêu cầu thay đổi (CR), rủi ro (RR), ghi chép họp cải tiến cuối sprint (R-Sx-nn), nghiệm thu (NT), lỗi (L), chỉ tiêu đánh giá (K), mốc (M), sprint (S) và gói WBS."
+  },
+  {
+   "bang": {
+    "nguon": "bh#nguon_bang_chung",
+    "cot": [
+     [
+      "Nguồn bằng chứng",
+      "loai",
+      5300
+     ],
+     [
+      "Số mã được trích dẫn",
+      "so_ma",
+      4000,
+      "c"
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng",
+     "cot": [
+      1
+     ]
+    }
+   }
+  },
+  {
+   "soan": "CACH_LAM",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Mô tả cách thu thập bài học: họp cải tiến cuối mỗi sprint, họp tổng kết, đối chiếu báo cáo đánh giá dự án. Nêu người tham gia và cách xác nhận bằng chứng.",
+   "nguon": [
+    "bh",
+    "kt"
+   ]
+  },
+  {
+   "h1": "2. Tổng hợp"
+  },
+  {
+   "bang": {
+    "nguon": "bh#theo_nhom",
+    "cot": [
+     [
+      "Nhóm",
+      "nhom",
+      4300
+     ],
+     [
+      "Thực hành tốt",
+      "tich_cuc",
+      2500,
+      "c"
+     ],
+     [
+      "Cần cải thiện",
+      "can_cai_thien",
+      2500,
+      "c"
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng",
+     "cot": [
+      1,
+      2
+     ]
+    }
+   }
+  },
+  {
+   "soan": "TONG_HOP",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Nêu các bài học quan trọng nhất, ưu tiên bài học gắn với rủi ro đã xảy ra, yêu cầu thay đổi và chỉ tiêu không đạt. Dẫn mã bài học BH.",
+   "nguon": [
+    "bh",
+    "kt"
+   ]
+  },
+  {
+   "section": "ngang"
+  },
+  {
+   "h1": "3. Thực hành tốt nên duy trì"
+  },
+  {
+   "bang": {
+    "nguon": "bh#bai_hoc",
+    "loc": {
+     "loai": "tich_cuc"
+    },
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Nhóm",
+      "nhom_ten",
+      1500
+     ],
+     [
+      "Tình huống",
+      "tinh_huong",
+      2900
+     ],
+     [
+      "Nguyên nhân",
+      "nguyen_nhan",
+      2200
+     ],
+     [
+      "Bài học",
+      "bai_hoc",
+      2400
+     ],
+     [
+      "Khuyến nghị",
+      "khuyen_nghi_hien_thi",
+      2700
+     ],
+     [
+      "Bằng chứng",
+      "bang_chung_hien_thi",
+      1400
+     ]
+    ],
+    "rong_thi": "Không có."
+   }
+  },
+  {
+   "h1": "4. Vấn đề cần cải thiện"
+  },
+  {
+   "bang": {
+    "nguon": "bh#bai_hoc",
+    "loc": {
+     "loai": "can_cai_thien"
+    },
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Nhóm",
+      "nhom_ten",
+      1500
+     ],
+     [
+      "Tình huống",
+      "tinh_huong",
+      2900
+     ],
+     [
+      "Nguyên nhân",
+      "nguyen_nhan",
+      2200
+     ],
+     [
+      "Bài học",
+      "bai_hoc",
+      2400
+     ],
+     [
+      "Khuyến nghị",
+      "khuyen_nghi_hien_thi",
+      2700
+     ],
+     [
+      "Bằng chứng",
+      "bang_chung_hien_thi",
+      1400
+     ]
+    ],
+    "rong_thi": "Không có."
+   }
+  },
+  {
+   "h1": "5. Ghi chép họp cải tiến cuối sprint"
+  },
+  {
+   "bang": {
+    "nguon": "bh#retro",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      1200,
+      "c"
+     ],
+     [
+      "Sprint",
+      "sprint",
+      900,
+      "c"
+     ],
+     [
+      "Loại",
+      "loai",
+      1600
+     ],
+     [
+      "Nội dung",
+      "noi_dung",
+      8600
+     ],
+     [
+      "Bài học",
+      "bai_hoc",
+      1500,
+      "c"
+     ]
+    ],
+    "rong_thi": "Chưa có ghi chép họp cải tiến."
+   }
+  },
+  {
+   "section": "doc"
+  },
+  {
+   "h1": "6. Đề xuất cải tiến quy trình"
+  },
+  {
+   "soan": "CAI_TIEN",
+   "dang": "dong_bang",
+   "cot": [
+    "Quy trình",
+    "Thay đổi đề xuất",
+    "Bài học căn cứ"
+   ],
+   "widths": [
+    2300,
+    5200,
+    1800
+   ],
+   "toi_thieu": 4,
+   "huong_dan": "Chuyển khuyến nghị thành thay đổi cụ thể trong quy trình hoặc biểu mẫu của bộ kế hoạch: ước lượng WBS, lập lịch, quản lý rủi ro (thang đo, dấu hiệu), quản lý thay đổi (thời hạn, cấp phê duyệt), kiểm thử và nghiệm thu, ghi nhật ký công việc. Cột cuối ghi mã BH.",
+   "nguon": [
+    "bh"
+   ]
+  },
+  {
+   "h1": "7. Kết luận"
+  },
+  {
+   "soan": "KET_LUAN",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Kết luận ngắn, nêu cách lưu trữ và phổ biến bài học (kho tài liệu dự án, buổi chia sẻ) và người chịu trách nhiệm.",
+   "nguon": [
+    "bh"
+   ]
+  }
+ ],
+ "kiem_tra": {
+  "gia_tri": [],
+  "ma_phai_co": [
+   {
+    "nguon": "bh#bai_hoc",
+    "truong": "ma",
+    "mo_ta": "Mọi bài học"
+   },
+   {
+    "nguon": "kt#rui_ro.xay_ra_ds",
+    "truong": "ma",
+    "mo_ta": "Rủi ro đã xảy ra"
+   },
+   {
+    "nguon": "kt#thay_doi.danh_sach",
+    "truong": "ma",
+    "mo_ta": "Yêu cầu thay đổi"
+   }
+  ],
+  "doc_hieu": [
+   "Bài học phát biểu chung, áp dụng được cho dự án khác",
+   "Nguyên nhân là nguyên nhân gốc, không chỉ mô tả lại sự kiện",
+   "Khuyến nghị là hành động cụ thể, có người hoặc quy trình áp dụng",
+   "Đề xuất cải tiến quy trình gắn với bài học"
+  ]
+ }
+}

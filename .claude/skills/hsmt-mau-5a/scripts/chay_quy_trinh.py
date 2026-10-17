@@ -9,10 +9,17 @@ Dùng:
       Chạy: ghép bản soạn, rồi vòng tạo, kiểm tra lớp A, sửa (tối đa 3 vòng).
 Mã thoát: 0 đạt, 2 còn mục chờ người dùng hoặc agent Soạn thảo, 1 lỗi.
 """
+import os as _os, sys as _sys  # noqa: E401
+_os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
+for _s in (_sys.stdout, _sys.stderr):
+    try:
+        _s.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 import os, shutil, subprocess, sys
 
 here = os.path.dirname(os.path.abspath(__file__))
-run = lambda *a: subprocess.run([sys.executable, *a], capture_output=True, text=True)
+run = lambda *a: subprocess.run([sys.executable, *a], capture_output=True, text=True, encoding='utf-8', errors='replace')
 S = lambda n: os.path.join(here, n)
 
 

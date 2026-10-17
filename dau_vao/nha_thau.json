@@ -1,0 +1,39 @@
+{
+ "_huong_dan": "Thông tin nhà thầu dùng cho HSDT. Đây là bài tập với nhà thầu giả định, nhóm tự điền và chịu trách nhiệm về số liệu. Trường để trống sẽ bị bước chuẩn bị HSDT báo thiếu. ngay_ky_don: yyyy-mm-dd, trong khoảng từ ngày phát hành HSMT đến ngày đóng thầu. so_e_tbmt để trống nếu không có số thông báo mời thầu.",
+ "ten": "Inter Solution",
+ "dia_chi": "",
+ "dai_dien": "",
+ "chuc_vu_dai_dien": "",
+ "ma_so_thue": "",
+ "dien_thoai": "",
+ "email": "",
+ "so_e_tbmt": "",
+ "nam_thanh_lap": null,
+ "lien_danh": false,
+ "hop_dong_tuong_tu": [
+  {
+   "ten": "",
+   "chu_dau_tu": "",
+   "gia_tri": null,
+   "ngay_hoan_thanh": "",
+   "mo_ta": ""
+  }
+ ],
+ "doanh_thu": [
+  {
+   "nam": null,
+   "doanh_thu": null
+  }
+ ],
+ "nghia_vu_thue_nam_gan_nhat": "",
+ "hop_dong_khong_hoan_thanh": [],
+ "nha_thau_phu": [],
+ "ngay_ky_don": "",
+ "giam_gia_phan_tram": 0,
+ "bao_dam_du_thau": {
+  "_ghi_chu": "Chỉ cần khi giá trị bảo đảm dự thầu của HSMT từ 50 triệu đồng",
+  "to_chuc_phat_hanh": "",
+  "so": "",
+  "ngay_phat_hanh": ""
+ }
+}

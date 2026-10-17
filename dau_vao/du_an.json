@@ -1,0 +1,32 @@
+{
+ "_huong_dan": "Thông tin chung của dự án. Các skill đọc file này cho bìa tài liệu, lịch làm việc, ngưỡng cảnh báo. Ngày viết dạng yyyy-mm-dd.",
+ "ten_du_an": "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+ "khach_hang": "Công ty Cổ phần ABC Wear",
+ "don_vi_thuc_hien": "Inter Solution",
+ "mon_hoc": "Quản trị dự án và Quản lý thay đổi",
+ "ma_nhom": "PM_26I_02",
+ "giang_vien": "Vũ Thị Hương Giang",
+ "nguoi_lap": "Trần Bá Đạt",
+ "ngay_bat_dau": "2027-03-18",
+ "ngay_cut_over": "2027-07-01",
+ "ngay_nghi": [
+  "2027-04-16",
+  "2027-04-30",
+  "2027-05-03"
+ ],
+ "_nguon_ngay_nghi": "Giỗ Tổ Hùng Vương 16/4/2027, 30/4/2027, nghỉ bù 1/5 vào 3/5/2027 (dự kiến, VnEconomy). Cập nhật khi có thông báo chính thức.",
+ "sprint": {
+  "so_ngay_lam_viec": 10,
+  "gop_phan_du_vao_sprint_cuoi": true,
+  "tien_to": "S"
+ },
+ "gio_moi_md": 8,
+ "chu_ky_bao_cao": "sprint",
+ "nguong_canh_bao": {
+  "spi_vang": 0.95,
+  "spi_do": 0.85,
+  "cpi_vang": 0.95,
+  "cpi_do": 0.85
+ },
+ "kho_luu_tru": "git, thư mục dự án này"
+}

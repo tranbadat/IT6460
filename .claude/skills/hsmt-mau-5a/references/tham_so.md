@@ -17,6 +17,8 @@ RFP chỉ nêu yêu cầu nghiệp vụ, mốc và điều khoản hợp đồng
 | chinh_sach | ty_le_bao_dam_thuc_hien_phan_tram | Từ 2% đến 10% |
 | chinh_sach | tam_ung_phan_tram, bao_lanh_tam_ung, thanh_toan | Đợt 1 bằng tạm ứng nếu có. Tổng các đợt 100%. Sự kiện ghi ngắn, agent diễn đạt gắn với sản phẩm của RFP |
 | chinh_sach | phat_cham_tien_do_phan_tram_ngay, phat_toi_da_phan_tram | Mức phạt tối đa theo pháp luật |
+| chinh_sach | phat_khac_phuc_sai_sot_phan_tram | Tỷ lệ phạt (% chi phí cần thiết để khắc phục) khi nhà thầu không kịp thời khắc phục sai sót, Mục 15 E-ĐKCT. Để null thì lap_khung.py cảnh báo và bỏ câu này |
+| chinh_sach | boi_thuong_thiet_hai | Cách bồi thường thiệt hại tại Mục 15 E-ĐKCT: `toan_bo_thiet_hai_thuc_te`, hoặc câu ngắn nêu mức và phương thức bồi thường xác định. Để null thì lap_khung.py cảnh báo và ghi theo pháp luật dân sự |
 | chinh_sach | hoa_giai_toi_da_ngay, co_quan_giai_quyet_tranh_chap | Cơ chế tranh chấp |
 | nhan_su_chu_chot | vi_tri, so_luong, kinh_nghiem | Không đặt yêu cầu hạn chế cạnh tranh |
 | can_cu_phap_ly | luat, nghi_dinh, thong_tu | Cập nhật khi văn bản thay đổi |

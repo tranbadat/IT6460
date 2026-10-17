@@ -5,7 +5,33 @@ Dùng: python3 build_hsmt.py <hsmt_noi_dung.json> <mau5a_fixed.json> <file_ra.do
 - mau5a_fixed.json: Chương I, Chương VI, Mục 1 Chương III trích nguyên văn từ Mẫu 5A (phan_tich_mau.py).
 Chỉ cần thư viện python-docx.
 """
-import json, re, sys
+import os as _os, sys as _sys  # noqa: E401
+_os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
+for _s in (_sys.stdout, _sys.stderr):
+    try:
+        _s.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+import json, os, re, sys
+
+
+def lam_sach_thuoc_tinh(path):
+    """Bỏ ảnh thu nhỏ và thông tin ứng dụng của mẫu mặc định trong tệp Word."""
+    import re as _re, shutil as _sh, zipfile as _zf
+    tmp = path + '.tmp'
+    with _zf.ZipFile(path) as zi, _zf.ZipFile(tmp, 'w', _zf.ZIP_DEFLATED) as zo:
+        for it in zi.infolist():
+            if it.filename == 'docProps/thumbnail.jpeg':
+                continue
+            data = zi.read(it.filename)
+            if it.filename == '_rels/.rels':
+                data = _re.sub(rb'<Relationship [^>]*thumbnail\.jpeg"[^>]*/>', b'', data)
+            elif it.filename == 'docProps/app.xml':
+                data = _re.sub(rb'<Application>[^<]*</Application>', b'<Application></Application>', data)
+                data = _re.sub(rb'<Template>[^<]*</Template>', b'<Template></Template>', data)
+            zo.writestr(it, data)
+    _sh.move(tmp, path)
+
 from docx import Document
 from docx.enum.section import WD_ORIENT
 from docx.enum.table import WD_TABLE_ALIGNMENT
@@ -134,7 +160,14 @@ for b in data['blocks']:
     else:
         raise ValueError('Khối không hợp lệ: ' + t)
 
-doc.core_properties.author = 'Tran Ba Dat'
+try:
+    _tg = json.load(open(os.path.join(os.getcwd(), 'dau_vao', 'du_an.json'), encoding='utf-8')).get('nguoi_lap', '')
+except Exception:
+    _tg = meta.get('tac_gia', '')
+doc.core_properties.author = _tg
+doc.core_properties.last_modified_by = _tg
 doc.core_properties.title = meta['ten']
+doc.core_properties.comments = ''
 doc.save(out_path)
+lam_sach_thuoc_tinh(out_path)
 print('Đã tạo', out_path)

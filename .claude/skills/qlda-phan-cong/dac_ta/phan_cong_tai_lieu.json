@@ -1,0 +1,248 @@
+{
+ "id": "phan_cong_tai_lieu",
+ "ten": "Danh sách phân chia công việc",
+ "nut_ra": "doc_phan_cong",
+ "ngay_tai_lieu": "{da#ngay_bat_dau|ngay}",
+ "tieu_de_dau_trang": "Kế hoạch thực hiện - Danh sách phân chia công việc (responsibilities)",
+ "truoc": [
+  [
+   "qlda-phan-cong/scripts/tinh_bang_phan_cong.py"
+  ]
+ ],
+ "nguon": {
+  "pc": "du_lieu/phan_cong.json",
+  "pcb": "du_lieu/phan_cong_bang.json",
+  "lich": "du_lieu/lich.json",
+  "wbs": "du_lieu/wbs.json",
+  "tv": "dau_vao/thanh_vien.json",
+  "hsmt": "du_lieu/hsmt.json"
+ },
+ "bia": {
+  "tieu_de": "Danh sách phân chia công việc",
+  "dong_phu": [
+   "Responsibilities, ma trận RACI và tải công việc theo sprint"
+  ]
+ },
+ "khoi": [
+  {
+   "h1": "1. Nguyên tắc phân công"
+  },
+  {
+   "soan": "NGUYEN_TAC",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 3,
+   "huong_dan": "Nêu nguyên tắc: mỗi gói WBS một người thực hiện chính, mỗi hạng mục một người chịu trách nhiệm cuối, phân công theo năng lực và quỹ thời gian, giữ dư địa cho phát sinh, người hỗ trợ cho gói lớn và gói trên đường găng. Giải thích ký hiệu RACI.",
+   "nguon": [
+    "pc",
+    "lich"
+   ],
+   "bat_buoc": [
+    "RACI"
+   ]
+  },
+  {
+   "h1": "2. Thành viên và vai trò"
+  },
+  {
+   "bang": {
+    "nguon": "pcb#thanh_vien",
+    "cot": [
+     [
+      "Họ tên",
+      "ho_ten",
+      2300
+     ],
+     [
+      "Nhóm",
+      "loai_ten",
+      1600,
+      "c"
+     ],
+     [
+      "Chức danh",
+      "chuc_danh",
+      2300
+     ],
+     [
+      "Kiêm nhiệm",
+      "kiem_nhiem",
+      1600
+     ],
+     [
+      "Loại công việc",
+      "loai_cong_viec_ten",
+      1500
+     ]
+    ]
+   }
+  },
+  {
+   "doan": "Nhóm gồm thành viên nhóm và các vị trí bổ sung. Tổng quỹ thời gian {lich#tong_quy|md} MD, khối lượng giao theo master schedule {lich#tong_md|md} MD. Phần quỹ chưa giao chủ yếu thuộc các vị trí bổ sung được huy động sớm hơn nhu cầu, việc điều chỉnh huy động thuộc quyết định của nhóm."
+  },
+  {
+   "h1": "3. Nhân sự chủ chốt theo HSMT"
+  },
+  {
+   "bang": {
+    "nguon": "pc#vi_tri_chu_chot",
+    "cot": [
+     [
+      "STT",
+      "stt",
+      600,
+      "c"
+     ],
+     [
+      "Vị trí theo Bảng số 02",
+      "vi_tri",
+      3600
+     ],
+     [
+      "Số lượng yêu cầu",
+      "so_luong",
+      1300,
+      "c"
+     ],
+     [
+      "Nhân sự đề xuất",
+      "ho_ten",
+      3800
+     ]
+    ]
+   }
+  },
+  {
+   "section": "ngang"
+  },
+  {
+   "h1": "4. Ma trận RACI"
+  },
+  {
+   "doan": "R: thực hiện. A: chịu trách nhiệm cuối và phê duyệt. C: được tham vấn. I: được thông báo."
+  },
+  {
+   "bang_san": "pcb#raci"
+  },
+  {
+   "bang": {
+    "nguon": "pcb#chu_giai_ten",
+    "cot": [
+     [
+      "Tên trong ma trận",
+      "ten_ngan",
+      2600
+     ],
+     [
+      "Họ tên hoặc đơn vị",
+      "ho_ten",
+      6700
+     ]
+    ]
+   }
+  },
+  {
+   "h1": "5. Tải công việc theo sprint"
+  },
+  {
+   "doan": "Mỗi ô ghi MD kế hoạch trên quỹ thời gian của thành viên trong sprint, theo master schedule."
+  },
+  {
+   "bang_san": "pcb#tai_sprint"
+  },
+  {
+   "section": "doc"
+  },
+  {
+   "h1": "6. Giao việc theo thành viên"
+  },
+  {
+   "bang": {
+    "nguon": "pcb#theo_nguoi",
+    "cot": [
+     [
+      "Thành viên",
+      "ho_ten",
+      1800
+     ],
+     [
+      "Mã gói",
+      "ma",
+      750,
+      "c"
+     ],
+     [
+      "Gói công việc",
+      "ten",
+      3000
+     ],
+     [
+      "MD gói",
+      "md|md",
+      700,
+      "r"
+     ],
+     [
+      "MD của người",
+      "md_nguoi|md",
+      800,
+      "r"
+     ],
+     [
+      "Vai trò",
+      "vai",
+      950,
+      "c"
+     ],
+     [
+      "Thời gian",
+      "thoi_gian",
+      1700
+     ]
+    ]
+   }
+  },
+  {
+   "h1": "7. Phối hợp, thay thế và điều chỉnh phân công"
+  },
+  {
+   "soan": "DIEU_CHINH",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 3,
+   "huong_dan": "Quy tắc phối hợp trong nhóm và với chủ đầu tư, thay thế nhân sự (thời hạn theo E-ĐKC 21.2 của HSMT), xử lý quá tải hoặc vắng mặt (người hỗ trợ, dự phòng thời gian), điều chỉnh phân công khi có thay đổi: cập nhật giao việc, chạy lại lịch, ghi phiên bản.",
+   "nguon": [
+    "pc",
+    "hsmt",
+    "lich"
+   ],
+   "bat_buoc": [
+    "thay thế nhân sự"
+   ]
+  }
+ ],
+ "kiem_tra": {
+  "gia_tri": [
+   {
+    "mo_ta": "Tổng MD giao",
+    "bt": "{lich#tong_md|md}"
+   },
+   {
+    "mo_ta": "Tổng quỹ",
+    "bt": "{pc#tong_quy|md}"
+   }
+  ],
+  "ma_phai_co": [
+   {
+    "nguon": "tv#thanh_vien",
+    "truong": "ho_ten",
+    "mo_ta": "Mọi thành viên có trong tài liệu"
+   }
+  ],
+  "doc_hieu": [
+   "Mỗi hạng mục mức 1, mức 2 có đúng một A",
+   "Không ai quá tải trong sprint",
+   "Nhân sự chủ chốt khớp Bảng số 02 HSMT và HSDT Mẫu 06A",
+   "Có quy tắc thay thế và điều chỉnh khi thay đổi"
+  ],
+  "cho_phep_dam": true
+ }
+}

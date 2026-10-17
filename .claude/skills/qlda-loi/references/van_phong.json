@@ -1,0 +1,80 @@
+{
+ "_ghi_chu": "Quy tắc văn phong dùng cho kiểm tra tự động. tu_thay_the: có một cách thay duy nhất, sửa tự động. tu_can_xem: cần người hoặc agent chọn cách diễn đạt.",
+ "tu_thay_the": [
+  {
+   "mau": "không chạy được",
+   "thay": "không hoạt động được"
+  },
+  {
+   "mau": "(?<!không )chạy được",
+   "thay": "hoạt động được"
+  },
+  {
+   "mau": "không dùng được",
+   "thay": "không sử dụng được"
+  },
+  {
+   "mau": "(?<!không )dùng được",
+   "thay": "có thể sử dụng"
+  },
+  {
+   "mau": "lỗi chặn",
+   "thay": "lỗi nghiêm trọng làm gián đoạn vận hành"
+  },
+  {
+   "mau": "đóng lỗi",
+   "thay": "khắc phục dứt điểm lỗi"
+  },
+  {
+   "mau": "go-live",
+   "thay": "đưa hệ thống vào vận hành"
+  },
+  {
+   "mau": "chạy thử",
+   "thay": "vận hành thử"
+  },
+  {
+   "mau": "đẩy đơn hàng",
+   "thay": "chuyển đơn hàng"
+  },
+  {
+   "mau": "[→⇒✓✔➜•]",
+   "thay": "-"
+  }
+ ],
+ "tu_can_xem": [
+  {
+   "mau": "(?<!chủ )(?<!Chủ )\\b[Cc]hốt\\b",
+   "goi_y": "thống nhất, xác nhận, phê duyệt, hoàn thiện"
+  },
+  {
+   "mau": "\\bxong\\b",
+   "goi_y": "hoàn thành"
+  },
+  {
+   "mau": "\\brồi\\b",
+   "goi_y": "bỏ hoặc dùng từ nối trang trọng"
+  },
+  {
+   "mau": "(?<![Xx]ây )\\bdựng\\b",
+   "goi_y": "thiết lập, xây dựng"
+  },
+  {
+   "mau": "(?i)dưới đây là",
+   "goi_y": "bỏ lời dẫn, vào thẳng nội dung"
+  },
+  {
+   "mau": "(?i)\\b(nhóm mình|mình sẽ|bọn em|tụi em)\\b",
+   "goi_y": "nhóm, nhóm dự án"
+  },
+  {
+   "mau": "(?i)\\b(cực kỳ|siêu|khá là|rất rất)\\b",
+   "goi_y": "bỏ từ nhấn mạnh khẩu ngữ"
+  },
+  {
+   "mau": "!",
+   "goi_y": "không dùng câu cảm thán"
+  }
+ ],
+ "cham_phay_toi_da": 3
+}

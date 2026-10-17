@@ -1,0 +1,9 @@
+{
+ "_ghi_chu": "Nhóm bài học, nhóm bắt buộc và quy tắc kiểm tra. Nhóm có thể điều chỉnh, thay đổi được ghi phiên bản.",
+ "nhom": {"pham_vi": "Phạm vi và yêu cầu", "tien_do": "Tiến độ", "chi_phi": "Chi phí và ước lượng", "chat_luong": "Chất lượng và nghiệm thu", "rui_ro": "Quản lý rủi ro",
+          "thay_doi": "Quản lý thay đổi", "nhan_su": "Nhân sự và tổ chức nhóm", "giao_tiep": "Giao tiếp với chủ đầu tư", "cong_cu": "Công cụ và quy trình"},
+ "nhom_bat_buoc": ["tien_do", "chi_phi", "chat_luong", "rui_ro", "thay_doi", "nhan_su"],
+ "loai": {"tich_cuc": "Thực hành tốt nên duy trì", "can_cai_thien": "Vấn đề cần cải thiện"},
+ "so_luong_toi_thieu": 8,
+ "do_dai_toi_thieu": {"tinh_huong": 40, "nguyen_nhan": 30, "bai_hoc": 30, "khuyen_nghi": 40}
+}

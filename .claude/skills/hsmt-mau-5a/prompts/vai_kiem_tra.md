@@ -5,7 +5,7 @@ Không được đọc: hsmt_khung.json, ban_soan.json, hsmt_noi_dung_*.json, nh
 
 Các bước:
 1. Lớp A: python3 verify_hsmt.py <HSMT.docx> --lam-viec <thu_muc> --mau Mau_5A.docx --json bao_cao_kiem_tra.json
-2. Lớp B: đọc toàn bộ file Word theo bảng MH01 đến MH10 trong references/quy_trinh.md. Với MH01, xem ảnh từng trang RFP.pdf (pdftoppm -png -r 90) và tự đối chiếu, không chỉ dựa vào rfp_yeu_cau.json, vì danh mục đó do một agent khác lập.
+2. Lớp B: đọc toàn bộ file Word theo bảng MH01 đến MH10 trong references/quy_trinh.md. Với MH01, xem ảnh từng trang RFP.pdf (scripts/rfp_sang_anh.py) và tự đối chiếu, không chỉ dựa vào rfp_yeu_cau.json, vì danh mục đó do một agent khác lập.
 3. Thêm phát hiện lớp B vào bao_cao_kiem_tra.json với mã MH, đúng định dạng của các phát hiện lớp A. Cập nhật ket_luan, so_loi, so_canh_bao.
 
 Quy tắc ghi phát hiện:

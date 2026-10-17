@@ -1,0 +1,4 @@
+{
+ "_huong_dan": "Ghi đè ngưỡng KPI mặc định (.claude/skills/qlda-tong-ket/references/kpi_mac_dinh.json) theo mã, kèm lý do. Ví dụ: {\"ma\": \"K10\", \"muc_tieu\": 1.5, \"ly_do\": \"Theo thỏa thuận với chủ đầu tư tại họp khởi động\"}. Để trống nếu dùng mặc định.",
+ "kpi": []
+}

@@ -1,0 +1,13 @@
+{
+ "_ghi_chu": "Thang đo xác suất, tác động và quy tắc phân mức. Nhóm có thể điều chỉnh; mọi thay đổi được ghi phiên bản.",
+ "xac_suat": {"1": "Rất thấp, dưới 10%", "2": "Thấp, 10% đến 30%", "3": "Trung bình, 30% đến 50%", "4": "Cao, 50% đến 70%", "5": "Rất cao, trên 70%"},
+ "xac_suat_pt": {"1": 0.05, "2": 0.2, "3": 0.4, "4": 0.6, "5": 0.8},
+ "dung_sai_xac_suat": 0.15,
+ "tac_dong": {"1": "Không đáng kể: chậm dưới 1 ngày, chi phí dưới 1%", "2": "Nhỏ: chậm 1 đến 3 ngày, chi phí 1% đến 3%", "3": "Trung bình: chậm 4 đến 7 ngày hoặc ảnh hưởng một chức năng", "4": "Lớn: chậm trên 7 ngày, ảnh hưởng mốc thanh toán", "5": "Rất lớn: không đạt cut over hoặc vi phạm hợp đồng"},
+ "muc": {"thap": [1, 7], "trung_binh": [8, 14], "cao": [15, 25]},
+ "ten_muc": {"thap": "Thấp", "trung_binh": "Trung bình", "cao": "Cao"},
+ "nhom": {"pham_vi": "Phạm vi và yêu cầu", "tien_do": "Tiến độ", "nhan_su": "Nhân sự", "ky_thuat": "Kỹ thuật", "tich_hop": "Tích hợp và đối tác", "chi_phi": "Chi phí", "chat_luong": "Chất lượng", "phap_ly": "Pháp lý và hợp đồng", "van_hanh": "Vận hành và chuyển đổi"},
+ "nhom_bat_buoc": ["pham_vi", "tien_do", "nhan_su", "ky_thuat", "tich_hop", "van_hanh"],
+ "chien_luoc": {"ne_tranh": "Né tránh", "giam_nhe": "Giảm nhẹ", "chuyen_giao": "Chuyển giao", "chap_nhan_chu_dong": "Chấp nhận chủ động", "chap_nhan_thu_dong": "Chấp nhận thụ động", "khai_thac": "Khai thác", "tang_cuong": "Tăng cường", "chia_se": "Chia sẻ"},
+ "so_luong_toi_thieu": 10
+}

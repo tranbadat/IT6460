@@ -4,6 +4,13 @@ Dùng: python3 tinh_gia_tri.py <tham_so_chu_dau_tu.json> <rfp_yeu_cau.json> <gia
 Mọi con số trong HSMT (ngày, tiền, tỷ lệ, mốc năm) lấy từ file ra của script này để các agent khác nhau
 cho cùng một kết quả. Script dừng và báo lỗi nếu giá trị vi phạm giới hạn luật định.
 """
+import os as _os, sys as _sys  # noqa: E401
+_os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
+for _s in (_sys.stdout, _sys.stderr):
+    try:
+        _s.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 import json, sys
 from datetime import date, timedelta
 

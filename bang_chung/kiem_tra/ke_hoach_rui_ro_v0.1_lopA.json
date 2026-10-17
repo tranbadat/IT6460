@@ -1,0 +1,26 @@
+{
+ "tai_lieu": "lam_viec/ke_hoach_rui_ro/ke_hoach_rui_ro_vong1.docx",
+ "dac_ta": "ke_hoach_rui_ro",
+ "thoi_gian": "2026-10-16 23:28:46",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 1,
+ "phat_hien": [
+  {
+   "ma": "VP02",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Kiểm thử phân hệ ngay sau khi lập trình xong từng phân hệ, khắc phục lỗi trong sprin",
+   "mo_ta": "Cách diễn đạt cần xem lại: xong",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "hoàn thành"
+  }
+ ],
+ "tieu_chi_doc_hieu": [
+  "Mỗi rủi ro mức cao có kế hoạch ứng phó khả thi, dấu hiệu, người phụ trách",
+  "Rủi ro bao phủ đường găng, mốc cut over, tích hợp Main System, nhân sự bổ sung",
+  "Dự phòng chi phí và thời gian được so sánh với EMV",
+  "Ngưỡng cảnh báo có hành động cụ thể",
+  "Liên kết với quy trình thay đổi"
+ ]
+}
