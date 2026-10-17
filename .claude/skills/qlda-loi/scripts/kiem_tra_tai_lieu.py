@@ -10,7 +10,13 @@ Mã thoát: 0 đạt, 1 còn lỗi.
   tu_khoa: ["cụm từ" hoặc tham chiếu]                                   cụm từ phải có
   cam: ["cụm từ không được xuất hiện"]
   cho_phep_dam: true|false                                              cho phép in đậm (mục cha WBS)
+  muc_bat_buoc: [{"tieu_de": "cụm từ trong tiêu đề", "toi_thieu": 1, "de_xuat": ...} hoặc "cụm từ"]
+                                                                        mục phải có tiêu đề chứa cụm từ và đủ số khối nội dung (CT02, CT03)
+  bieu_mau: [{"mau_so": "10A", "tep": "dau_vao/Mau_5A.docx"}]           phải có bảng đúng tiêu đề cột của biểu mẫu (BM01)
+  ngoac_cho_phep: ["[văn bản cố định của mẫu]"]                         ngoặc vuông chứa chữ được phép (ngoại lệ của CT00)
   doc_hieu: [tiêu chí cho lớp B]                                        không kiểm ở đây
+CT00 bắt: chỗ chưa soạn, tham chiếu chưa giải, ký hiệu ___, ghi chú nháp, mọi dấu giữ chỗ trong ngoặc vuông chứa chữ
+hoặc dấu ba chấm ([Nhóm bổ sung ...], [...]), ô bảng chỉ có dấu câu (trừ một gạch ngang), ô bắt đầu hoặc kết thúc bằng dấu phẩy (cảnh báo).
 """
 import os as _os, sys as _sys  # noqa: E401
 _os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
@@ -27,6 +33,7 @@ import sys
 import zipfile
 
 import docx
+from docx.text.paragraph import Paragraph
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import loi  # noqa: E402
@@ -62,9 +69,22 @@ def ctx(m, w=50):
 # 1. Dấu vết chưa hoàn thiện
 for pat, mo in ((r'<<SOẠN', 'Còn chỗ giữ chỗ chưa soạn'), (r'\{[a-z_0-9]+#[^}]*\}', 'Còn tham chiếu dữ liệu chưa giải'),
                 (r'\{\{[A-Z_]+\}\}', 'Còn biến chưa thay (phiên bản, ngày)'), (r'_{3,}', 'Còn ký hiệu ___'),
-                (r'\[(ghi|nêu|điền)', 'Còn hướng dẫn trong ngoặc vuông'), (r'(?i)\b(TODO|TBD|lorem)\b', 'Còn ghi chú nháp')):
+                (r'(?i)\b(TODO|TBD|lorem)\b', 'Còn ghi chú nháp')):
     for m in re.finditer(pat, t):
         add('CT00', 'cau_truc', mo, ctx(m), 'can_nguoi_dung', 'Soạn bổ sung hoặc kiểm tra dữ liệu nguồn')
+NGOAC_CHO_PHEP = {N(G(s)) for s in kt.get('ngoac_cho_phep', [])}  # văn bản cố định của mẫu có ngoặc vuông chứa chữ
+for m in loi.MAU_NGOAC_VUONG.finditer(t):
+    if loi.la_giu_cho(m.group(0)) and N(m.group(0)) not in NGOAC_CHO_PHEP:
+        add('CT00', 'cau_truc', 'Còn dấu giữ chỗ trong ngoặc vuông: ' + m.group(0)[:60], ctx(m), 'can_nguoi_dung',
+            'Bổ sung dữ liệu nguồn (ví dụ dau_vao/nha_thau.json) hoặc soạn lại đoạn, rồi tạo lại')
+O_DAU_CAU_CHO_PHEP = ('-', '–')  # ô chỉ có một gạch ngang là quy ước không có (ma trận RACI)
+for s in cells:
+    if s and not re.sub(r'[\W_]', '', s) and s not in O_DAU_CAU_CHO_PHEP:
+        add('CT00', 'cau_truc', f'Ô bảng chỉ có dấu câu: "{s[:20]}"', s[:40], 'can_nguoi_dung',
+            'Kiểm tra trường trống trong dữ liệu nguồn ghép vào ô này')
+    elif re.search(r'^[,;]|[,;]$', s):
+        add('CT00', 'cau_truc', 'Ô bảng bắt đầu hoặc kết thúc bằng dấu phẩy, có thể thiếu một trường dữ liệu', s[:80],
+            'can_nguoi_dung', 'Kiểm tra trường trống trong dữ liệu nguồn', 'canh_bao')
 
 # 2. Tiêu đề theo đặc tả
 for kb in spec.get('khoi', []):
@@ -73,6 +93,51 @@ for kb in spec.get('khoi', []):
             tieu_de = N(G(kb[lv]))
             if tieu_de not in heads:
                 add('CT01', 'cau_truc', 'Thiếu tiêu đề mục: ' + tieu_de, '', 'tu_dong', 'Chạy lại lap_khung.py và build_docx.py')
+
+
+
+def than_muc(tieu_de_muc):
+    """Số khối có nội dung (đoạn khác rỗng, bảng) từ tiêu đề có chứa tieu_de_muc đến tiêu đề kế tiếp cùng cấp hoặc cao hơn.
+    Trả về None khi không có tiêu đề nào chứa cụm từ."""
+    can = N(tieu_de_muc).lower()
+    cap, dem = None, 0
+    for el in d.element.body.iterchildren():
+        tag = el.tag.split('}')[-1]
+        p = Paragraph(el, d) if tag == 'p' else None
+        ten_kieu = p.style.name if p is not None and p.style is not None else ''
+        cap_p = int(re.sub(r'\D', '', ten_kieu) or 9) if ten_kieu.startswith('Heading') else None
+        if cap is None:
+            cap = cap_p if cap_p and can in N(p.text).lower() else None
+            continue
+        if cap_p and cap_p <= cap:
+            break
+        dem += 1 if tag == 'tbl' or (p is not None and N(p.text)) else 0
+    return None if cap is None else dem
+
+
+# 2b. Mục bắt buộc: muc_bat_buoc [{"tieu_de": cụm từ trong tiêu đề, "toi_thieu": số khối nội dung}] hoặc chuỗi
+for mb in kt.get('muc_bat_buoc', []):
+    mb = mb if isinstance(mb, dict) else {'tieu_de': mb}
+    ten_muc = N(G(mb['tieu_de']))
+    n = than_muc(ten_muc)
+    if n is None:
+        add('CT02', 'cau_truc', 'Thiếu mục bắt buộc: ' + ten_muc, '', 'can_nguoi_dung', mb.get('de_xuat', 'Bổ sung mục vào đặc tả hoặc bản soạn'))
+    elif n < int(mb.get('toi_thieu', 1)):
+        add('CT03', 'cau_truc', f'Mục bắt buộc "{ten_muc}" có {n} khối nội dung, cần tối thiểu {mb.get("toi_thieu", 1)}', '', 'can_nguoi_dung',
+            'Soạn bổ sung nội dung cho mục')
+
+# 2c. Bảng theo biểu mẫu: bieu_mau [{"mau_so": "10A", "tep": "dau_vao/Mau_5A.docx"}], phải có bảng đúng tiêu đề cột của mẫu
+dau_bang = [[loi.chuan_hoa_tieu_de(x) for x in (loi._dong_tieu_de(tb) or [])] for tb in d.tables]
+for bm in kt.get('bieu_mau', []):
+    try:
+        cot = loi.cot_bieu_mau(bm.get('tep', 'dau_vao/Mau_5A.docx'), bm['mau_so'])
+    except Exception as e:
+        add('BM00', 'bieu_mau', f'Không đọc được Mẫu số {bm["mau_so"]} ({e})', muc_do='canh_bao'); continue
+    if not cot:
+        add('BM00', 'bieu_mau', f'Không tìm thấy bảng của Mẫu số {bm["mau_so"]} trong tệp mẫu', muc_do='canh_bao'); continue
+    if [loi.chuan_hoa_tieu_de(x) for x in cot] not in dau_bang:
+        add('BM01', 'bieu_mau', f'Không có bảng đúng tiêu đề cột của Mẫu số {bm["mau_so"]}: ' + ' | '.join(cot), '', 'can_nguoi_dung',
+            'Sửa tiêu đề cột của bảng trong đặc tả theo Mẫu 5A')
 
 # 3. Giá trị phải khớp dữ liệu
 for g in kt.get('gia_tri', []):

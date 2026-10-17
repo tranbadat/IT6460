@@ -8,6 +8,9 @@
 - Gạch ngang đơn, không dùng gạch dài.
 - Excel: Times New Roman, ô nhập liệu chữ xanh dương, ô công thức chữ đen, ô cần nhóm điền nền vàng, mọi con số tổng hợp là công thức.
 - Ngày dạng dd/mm/yyyy. Tiền dạng 1.000.000 đồng hoặc 1.411,98 triệu đồng. MD viết số thập phân với dấu phẩy.
+- Số tiền âm viết chữ "âm" trước số, ví dụ âm 296.981.818 đồng, trong cả đoạn văn và bảng. Không dùng dấu trừ hay ngoặc đơn. Định dạng tien, trieu tự áp dụng.
+- Dòng tổng của bảng phải bằng tổng gốc của dữ liệu. Khi các dòng đã làm tròn cộng lệch tổng gốc (ví dụ 351,01 so với 351), đặc tả khai báo dong_tong.tong để phân bổ lại phần làm tròn (xem du_lieu.md).
+- Không để dấu giữ chỗ trong ngoặc vuông ([Nhóm bổ sung ...], [...]) hay ô bảng chỉ có dấu câu. Thiếu dữ liệu thì bổ sung đầu vào rồi tạo lại.
 
 ## Văn phong
 - Trang trọng, văn bản quản lý dự án. Không khẩu ngữ, không nhân hóa, không câu cảm thán, không lời dẫn kiểu "dưới đây là".

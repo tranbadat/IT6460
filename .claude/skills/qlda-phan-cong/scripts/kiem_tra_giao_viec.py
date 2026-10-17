@@ -2,8 +2,10 @@
 
 Dùng: python kiem_tra_giao_viec.py <phan_cong_nhap.json>
 Kiểm tra: mọi gói lá có một người thực hiện (R); người hỗ trợ hợp lệ; loại công việc phù hợp năng lực người nhận;
-mỗi mục mức 1, mức 2 có đúng một người chịu trách nhiệm cuối (A); C, I là thành viên hoặc bên ngoài đã khai báo;
+mỗi mục mức 1, mức 2 có đúng một người chịu trách nhiệm cuối (A, thành viên); C, I là thành viên hoặc bên ngoài đã khai báo;
+phe_duyet (bên ngoài phê duyệt, ví dụ Chủ đầu tư xác nhận đặc tả, kiểm thử vận hành, nghiệm thu) là bên ngoài đã khai báo (P13);
 tổng MD giao mỗi người không vượt quỹ thời gian; vị trí nhân sự chủ chốt khớp Bảng số 02 của HSMT.
+MD gói có người hỗ trợ chia theo tỷ lệ tham gia bằng loi.chia_md, tổng theo người bằng tổng WBS.
 Đạt thì ghi du_lieu/phan_cong.json, đăng ký phiên bản, ghi nhật ký. Mã thoát 0 đạt, 1 còn lỗi.
 """
 import os as _os, sys as _sys  # noqa: E401
@@ -60,11 +62,14 @@ for g in wbs['goi']:
         if not x or not x.get('A'):
             add('P10', 'Mục chưa có người chịu trách nhiệm cuối (A)', g['ma']); continue
         if x['A'] not in tv:
-            add('P11', f'Người chịu trách nhiệm {x["A"]} không phải thành viên', g['ma'])
+            add('P11', f'Người chịu trách nhiệm {x["A"]} không phải thành viên. Chủ đầu tư phê duyệt ghi ở khóa phe_duyet', g['ma'])
         for k in ('C', 'I'):
             for i in x.get(k, []):
                 if i not in tv and i not in ngoai:
                     add('P12', f'{k} = {i} không phải thành viên hoặc bên ngoài đã khai báo', g['ma'])
+        for i in x.get('phe_duyet', []):  # bên ngoài phê duyệt hạng mục (Chủ đầu tư xác nhận đặc tả, kiểm thử vận hành, nghiệm thu)
+            if i not in ngoai:
+                add('P13', f'phe_duyet = {i} không phải bên ngoài khai báo trong ben_ngoai', g['ma'])
 
 # tải công việc theo quỹ thời gian
 quy = {t['id']: loi.quy_thoi_gian(t, sprints) for t in tvs}
@@ -75,9 +80,8 @@ for g in la:
     if not x or x.get('R') not in tv:
         continue
     ng = [x['R']] + [h for h in x.get('ho_tro', []) if h in tv]
-    tong_tl = sum(float(tv[p].get('ty_le', 1)) for p in ng)
-    for p in ng:
-        v = float(g['md']) * float(tv[p].get('ty_le', 1)) / tong_tl
+    # chia MD của gói theo tỷ lệ tham gia, làm tròn sao cho các phần cộng đúng MD gói (tổng theo người khớp tổng WBS)
+    for p, v in zip(ng, loi.chia_md(g['md'], [tv[p].get('ty_le', 1) for p in ng])):
         md_giao[p] += v
         md_loai[p][g['loai']] = md_loai[p].get(g['loai'], 0) + v
 tai = []

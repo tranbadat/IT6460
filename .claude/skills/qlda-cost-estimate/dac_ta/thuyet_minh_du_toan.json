@@ -210,7 +210,7 @@
    "soan": "DU_PHONG",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Đánh giá dự phòng đủ hay thiếu so với EMV, các rủi ro đóng góp EMV lớn nhất (dùng mã rủi ro), quy tắc sử dụng dự phòng: ai đề xuất, ai phê duyệt, ghi nhận vào sổ thay đổi, cập nhật dự toán.",
+   "huong_dan": "Đánh giá dự phòng đủ hay thiếu so với EMV, các rủi ro đóng góp EMV lớn nhất (dùng mã rủi ro). Không viết lại quy tắc sử dụng dự phòng, chỉ dẫn chiếu bảng quy tắc ngay sau đoạn này.",
    "nguon": [
     "cp",
     "rr"
@@ -218,6 +218,13 @@
    "bat_buoc": [
     "{rr#danh_sach[0].ma}"
    ]
+  },
+  {
+   "doan": "Quy tắc sử dụng dự phòng rủi ro lấy từ nguồn chung với kế hoạch quản lý rủi ro, kế hoạch quản lý thay đổi và master plan."
+  },
+  {
+   "bang_san": "cp#quy_tac_du_phong",
+   "rong_thi": "Chưa có quy tắc sử dụng dự phòng trong nguồn chung."
   },
   {
    "h1": "5. Đối chiếu chi phí lương theo người"
@@ -229,17 +236,17 @@
      [
       "Họ tên",
       "ho_ten",
-      2200
+      2000
      ],
      [
       "Nhóm",
       "loai",
-      1500
+      1300
      ],
      [
       "Lương tham chiếu, đồng/tháng",
       "luong|tien",
-      1500,
+      1400,
       "r"
      ],
      [
@@ -251,13 +258,19 @@
      [
       "MD huy động",
       "md_huy_dong|md",
-      1100,
+      1000,
       "r"
      ],
      [
-      "Chi phí, đồng",
+      "MD công việc giao",
+      "md_giao|md",
+      1000,
+      "r"
+     ],
+     [
+      "Chi phí lương kế hoạch, đồng",
       "chi_phi|tien",
-      1700,
+      1300,
       "r"
      ]
     ],
@@ -265,20 +278,27 @@
      "nhan": "Tổng",
      "cot": [
       4,
-      5
+      5,
+      6
      ],
      "cot_nhan": 0
     }
    }
   },
   {
-   "doan": "Lương tham chiếu: {cp#nguon_luong}, hệ số bảo hiểm {cp#he_so_bao_hiem|so3}, {cp#ngay_lam_viec_moi_thang|nguyen} ngày làm việc mỗi tháng. Chi phí lương theo người là {cp#tong_chi_phi_nguoi|tien} đồng cho {cp#tong_md_huy_dong|md} MD huy động, bình quân {cp#luong_binh_quan_md_huy_dong|tien} đồng mỗi MD huy động. Dòng A trừ chi phí này còn {cp#chenh_lech_A_nguoi|tien} đồng, bằng {cp#ty_le_chenh_lech_A|pt} so với dòng A. Dòng A đủ chi trả lương khi tổng MD huy động không vượt {cp#md_huy_dong_hoa_von|md} MD, tức tỷ lệ sử dụng quỹ huy động từ {cp#ty_le_su_dung_hoa_von|pt} trở lên. Tỷ lệ sử dụng theo kế hoạch hiện tại là {cp#ty_le_su_dung|pt}."
+   "doan": "Lương tham chiếu: {cp#nguon_luong}, hệ số bảo hiểm {cp#he_so_bao_hiem|so3}, {cp#ngay_lam_viec_moi_thang|nguyen} ngày làm việc mỗi tháng. Cách trả lương do nhóm khai báo: {cp#cach_tra_luong_ten}, MD tính lương là {cp#co_so_luong}. Chi phí lương kế hoạch theo người là {cp#tong_chi_phi_nguoi|tien} đồng cho {cp#tong_md_tinh_luong|md} MD tính lương, bình quân {cp#luong_binh_quan_md|tien} đồng mỗi MD. Dòng A trừ chi phí này còn {cp#chenh_lech_A_nguoi|tien} đồng, bằng {cp#ty_le_chenh_lech_A|pt} so với dòng A. Dòng A đủ chi trả lương khi tổng MD tính lương không vượt {cp#md_hoa_von|md} MD."
+  },
+  {
+   "doan": "Về năng lực, quỹ huy động theo master schedule là {cp#tong_md_huy_dong|md} MD cho {cp#tong_md|md} MD công việc, tỷ lệ sử dụng quỹ {cp#ty_le_su_dung|pt}, còn {cp#tong_md_san_sang|md} MD sẵn sàng không ghi công."
+  },
+  {
+   "doan": "{cp#ghi_chu_huy_dong}"
   },
   {
    "soan": "DOI_CHIEU",
    "dang": "danh_sach_doan",
    "toi_thieu": 1,
-   "huong_dan": "Nhận xét kết quả đối chiếu: dòng A theo loại công việc so với chi phí lương theo người, ý nghĩa của mức huy động hòa vốn và tỷ lệ sử dụng hòa vốn, biện pháp khi tỷ lệ sử dụng thấp hơn mức hòa vốn.",
+   "huong_dan": "Nhận xét kết quả đối chiếu: dòng A theo loại công việc so với chi phí lương kế hoạch theo người theo cách trả lương đã khai báo, ý nghĩa của MD tính lương hòa vốn, tỷ lệ sử dụng quỹ huy động như chỉ số năng lực, biện pháp khi tỷ lệ sử dụng thấp.",
    "nguon": [
     "cp"
    ]
@@ -440,7 +460,7 @@
       "c"
      ],
      [
-      "Chi lương kế hoạch, đồng",
+      "Chi lương theo MD công việc, đồng",
       "chi_luong|tien",
       1350,
       "r"
@@ -458,7 +478,7 @@
       "r"
      ],
      [
-      "Lũy kế chi, đồng",
+      "Lũy kế chi theo cách trả lương, đồng",
       "luy_ke_chi|tien",
       1400,
       "r"
@@ -482,7 +502,7 @@
    "soan": "DONG_TIEN",
    "dang": "danh_sach_doan",
    "toi_thieu": 1,
-   "huong_dan": "Nhận xét dòng tiền: dòng chi tính theo lương của thời gian huy động, dòng thu theo ngày sự kiện cộng thời hạn thanh toán của HSMT. Nêu sprint có lũy kế âm và mức âm lớn nhất, nhu cầu vốn lưu động, quan hệ giữa các mốc trong master schedule và các đợt thanh toán, rủi ro khi mốc trễ.",
+   "huong_dan": "Nhận xét dòng tiền: dòng chi lũy kế tính theo cách trả lương đã khai báo, dòng thu theo ngày sự kiện cộng thời hạn thanh toán của HSMT. Nêu sprint có lũy kế âm và mức âm lớn nhất, nhu cầu vốn lưu động, quan hệ giữa các mốc trong master schedule và các đợt thanh toán, rủi ro khi mốc trễ.",
    "nguon": [
     "cp",
     "lich"
@@ -492,7 +512,7 @@
    "h1": "9. Độ nhạy và rủi ro chi phí"
   },
   {
-   "doan": "Sau khi trừ chi phí lương theo người huy động, chi phí khác và dự phòng, khoản còn lại của giá trước thuế là {cp#C_sau_luong|tien} đồng, bằng {cp#ty_le_C_sau_luong|pt}, tương đương khoảng {cp#nguong_chiu_dung_md|nguyen} MD huy động theo lương bình quân. Nếu áp thuế suất {cp#do_nhay_thue.thue_suat|pt}, giá trước thuế là {cp#do_nhay_thue.gia_truoc_thue|tien} đồng, khoản C còn {cp#do_nhay_thue.C|tien} đồng ({cp#do_nhay_thue.ty_le_C|pt}) và khoản còn lại sau chi phí lương thực tế còn {cp#do_nhay_thue.C_sau_luong|tien} đồng ({cp#do_nhay_thue.ty_le_C_sau_luong|pt})."
+   "doan": "Sau khi trừ chi phí lương kế hoạch theo người, chi phí khác và dự phòng, khoản còn lại của giá trước thuế là {cp#C_sau_luong|tien} đồng, bằng {cp#ty_le_C_sau_luong|pt}, tương đương khoảng {cp#nguong_chiu_dung_md|nguyen} MD tính lương theo lương bình quân. Nếu áp thuế suất {cp#do_nhay_thue.thue_suat|pt}, giá trước thuế là {cp#do_nhay_thue.gia_truoc_thue|tien} đồng, khoản C còn {cp#do_nhay_thue.C|tien} đồng ({cp#do_nhay_thue.ty_le_C|pt}) và khoản còn lại sau chi phí lương kế hoạch còn {cp#do_nhay_thue.C_sau_luong|tien} đồng ({cp#do_nhay_thue.ty_le_C_sau_luong|pt})."
   },
   {
    "soan": "DO_NHAY",
@@ -527,16 +547,21 @@
     "bt": "{hsmt#tien.gia_goi_thau|tien}"
    },
    {
-    "mo_ta": "Khoản còn lại sau chi phí lương thực tế",
+    "mo_ta": "Khoản còn lại sau chi phí lương kế hoạch",
     "bt": "{cp#C_sau_luong|tien}"
+   },
+   {
+    "mo_ta": "Chi phí lương kế hoạch theo người",
+    "bt": "{cp#tong_chi_phi_nguoi|tien}"
    }
   ],
   "doc_hieu": [
    "Phương pháp tính giải thích được từng dòng của Excel",
-   "Dự phòng được so với EMV và có quy tắc sử dụng",
+   "Dự phòng được so với EMV, quy tắc sử dụng lấy từ bảng nguồn chung, không viết lại",
    "Nhận xét dòng tiền gắn với mốc thanh toán",
    "Độ nhạy nêu ngưỡng chịu đựng cụ thể",
-   "Số liệu trong Word khớp tệp Cost_estimate.xlsx"
+   "Số liệu trong Word khớp tệp Cost_estimate.xlsx",
+   "Chi phí lương nêu đúng cách trả lương nhóm khai báo, ngày sẵn sàng chỉ là chỉ số năng lực khi trả theo công sức"
   ]
  }
 }

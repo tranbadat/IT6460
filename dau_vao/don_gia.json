@@ -13,16 +13,20 @@
   "LEAD": {"ten": "Trưởng nhóm, kiến trúc sư", "luong": 51000000},
   "BACKEND": {"ten": "Kỹ sư backend", "luong": 30000000},
   "FRONTEND": {"ten": "Kỹ sư frontend", "luong": 28000000},
-  "BAQA": {"ten": "Phân tích nghiệp vụ, kiểm thử", "luong": 27000000}
+  "BAQA": {"ten": "Phân tích nghiệp vụ, kiểm thử", "luong": 27000000},
+  "SA_BA": {"ten": "Kiến trúc sư kiêm phân tích nghiệp vụ", "luong": 47000000},
+  "TESTER": {"ten": "Kỹ sư kiểm thử", "luong": 24000000}
  },
- "nguon_luong": "Mức trung vị theo vị trí, báo cáo lương ITviec 2025-2026",
+ "nguon_luong": "Mức trung vị theo vị trí, báo cáo lương ITviec 2025-2026; mức SA_BA, TESTER do nhóm xác định trong bảng quyết toán lương",
  "he_so_bao_hiem": 1.235,
  "nguon_he_so_bao_hiem": "Lương cộng bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp và kinh phí công đoàn phần doanh nghiệp đóng",
  "ngay_lam_viec_moi_thang": 22,
+ "cach_tra_luong": "cong_suc",
+ "_nguon_cach_tra_luong": "Quyết định của nhóm ngày 17/10/2026: MD tính lương bằng MD nỗ lực của chi phí phần mềm (kế hoạch 657 MD theo uoc_luong.json, thực tế theo nhật ký công việc). MD huy động và quỹ MD của sprint có thể lớn hơn, phần chênh không tính lương.",
  "chi_phi_khac": [
   {"ma": "B", "ten": "Môi trường, công cụ, bảo hành 12 tháng và dự phòng", "so_tien": 150000000, "can_cu": "Ước tính của nhà thầu"}
  ],
- "du_phong_rui_ro": {"cach_tinh": "nam_trong_chi_phi_khac", "_ghi_chu": "nam_trong_chi_phi_khac: dự phòng đã nằm trong khoản B, so với tổng EMV rủi ro để kiểm tra. ty_le: thêm dòng dự phòng bằng ty_le x (A + B). emv: thêm dòng dự phòng bằng tổng EMV của sổ rủi ro.", "ty_le": 0.0},
+ "du_phong_rui_ro": {"cach_tinh": "nam_trong_chi_phi_khac", "_ghi_chu": "nam_trong_chi_phi_khac: dự phòng đã nằm trong khoản B, so_tien là phần dự phòng rủi ro của khoản B (trống thì coi cả khoản B là dự phòng), so với tổng EMV rủi ro để kiểm tra. ty_le: thêm dòng dự phòng bằng ty_le x (A + B). emv: thêm dòng dự phòng bằng tổng EMV của sổ rủi ro.", "ty_le": 0.0, "so_tien": 50000000, "_nguon_so_tien": "Kế hoạch quản lý rủi ro của nhóm mục 6 và danh mục dự án: dự phòng rủi ro 50.000.000 đồng nằm trong khoản B, phần còn lại 100.000.000 đồng cho môi trường, công cụ, bảo hành"},
  "cach_tinh_gia": "muc_tieu",
  "gia_chao_muc_tieu": 1750000000,
  "ty_le_chi_phi_chung_va_loi_nhuan_toi_thieu": 0.05,

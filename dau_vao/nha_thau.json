@@ -1,39 +1,58 @@
 {
- "_huong_dan": "Thông tin nhà thầu dùng cho HSDT. Đây là bài tập với nhà thầu giả định, nhóm tự điền và chịu trách nhiệm về số liệu. Trường để trống sẽ bị bước chuẩn bị HSDT báo thiếu. ngay_ky_don: yyyy-mm-dd, trong khoảng từ ngày phát hành HSMT đến ngày đóng thầu. so_e_tbmt để trống nếu không có số thông báo mời thầu.",
- "ten": "Inter Solution",
- "dia_chi": "",
- "dai_dien": "",
- "chuc_vu_dai_dien": "",
- "ma_so_thue": "",
- "dien_thoai": "",
- "email": "",
+ "_huong_dan": "Thông tin nhà thầu dùng cho HSDT. Đây là bài tập với nhà thầu giả định, nhóm tự điền và chịu trách nhiệm về số liệu. Trường để trống sẽ bị bước chuẩn bị HSDT báo thiếu. ngay_ky_don: yyyy-mm-dd, trong khoảng từ ngày phát hành HSMT đến ngày đóng thầu. so_e_tbmt để trống nếu không có số thông báo mời thầu. ten_viet_tat là tên ngắn in trên bìa và đầu trang mọi tài liệu (thay cho du_an.json don_vi_thuc_hien). Đổi nhà thầu thì sửa các trường của tệp này rồi chạy lại các bước báo cũ. hop_dong_tuong_tu[].quy_mo_md là khối lượng (MD) dùng đối chiếu ước lượng.",
+ "ten": "Công ty Cổ phần PM_26I_02",
+ "ten_viet_tat": "PM_26I_02",
+ "dia_chi": "Tầng 2, số 26I, phường Bạch Mai, thành phố Hà Nội",
+ "dai_dien": "Lê Quốc Bảo",
+ "chuc_vu_dai_dien": "Giám đốc",
+ "ma_so_thue": "0000260202",
+ "dien_thoai": "024 0000 2602",
+ "email": "lienhe@pm26i02.example.com",
  "so_e_tbmt": "",
- "nam_thanh_lap": null,
+ "nam_thanh_lap": 2018,
  "lien_danh": false,
  "hop_dong_tuong_tu": [
   {
-   "ten": "",
-   "chu_dau_tu": "",
-   "gia_tri": null,
-   "ngay_hoan_thanh": "",
-   "mo_ta": ""
+   "ten": "Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng, số 12/2024/HĐ-HG",
+   "chu_dau_tu": "Công ty Cổ phần Thời trang Hoàng Gia",
+   "gia_tri": 1150000000,
+   "ngay_hoan_thanh": "2024-11-29",
+   "mo_ta": "Ký ngày 04/03/2024. Nhà thầu chính, thực hiện độc lập. Phát triển website bán hàng trực tuyến, tích hợp hệ thống bán hàng nội bộ; ba phân hệ khách hàng, sản phẩm, đơn hàng và tầng tích hợp; khoảng 550 người-ngày.",
+   "quy_mo_md": 550
+  },
+  {
+   "ten": "Website bán hàng trực tuyến và tích hợp ERP, số 03/2025/HĐ-AP",
+   "chu_dau_tu": "Công ty TNHH Nội thất An Phát",
+   "gia_tri": 860000000,
+   "ngay_hoan_thanh": "2025-07-18",
+   "mo_ta": "Ký ngày 06/01/2025. Nhà thầu chính, thực hiện độc lập. Phát triển website bán hàng, tích hợp ERP và đơn vị giao vận; danh mục, giỏ hàng, đặt hàng, đồng bộ tồn kho; khoảng 420 người-ngày.",
+   "quy_mo_md": 420
   }
  ],
  "doanh_thu": [
   {
-   "nam": null,
-   "doanh_thu": null
+   "nam": 2023,
+   "doanh_thu": 22700000000
+  },
+  {
+   "nam": 2024,
+   "doanh_thu": 26900000000
+  },
+  {
+   "nam": 2025,
+   "doanh_thu": 29500000000
   }
  ],
- "nghia_vu_thue_nam_gan_nhat": "",
+ "nghia_vu_thue_nam_gan_nhat": "Đã thực hiện nghĩa vụ kê khai thuế và nộp thuế năm tài chính 2025 (cam kết trong đơn dự thầu, kèm chứng từ kê khai, nộp thuế năm 2025)",
  "hop_dong_khong_hoan_thanh": [],
  "nha_thau_phu": [],
- "ngay_ky_don": "",
+ "ngay_ky_don": "2027-03-05",
  "giam_gia_phan_tram": 0,
  "bao_dam_du_thau": {
   "_ghi_chu": "Chỉ cần khi giá trị bảo đảm dự thầu của HSMT từ 50 triệu đồng",
-  "to_chuc_phat_hanh": "",
+  "to_chuc_phat_hanh": "ngân hàng thương mại - Chi nhánh Hà Nội (nhóm không ghi tên ngân hàng cụ thể)",
   "so": "",
-  "ngay_phat_hanh": ""
- }
+  "ngay_phat_hanh": "2027-03-04"
+ },
+ "_nguon": "Đơn vị tạm theo tên nhóm PM_26I_02 (quyết định của nhóm ngày 17/10/2026): ten, ten_viet_tat, dia_chi, ma_so_thue, dien_thoai, email, nam_thanh_lap là giá trị giả định, thay khi có nhà thầu cụ thể. Hợp đồng tương tự, doanh thu, ngày ký đơn, bảo đảm dự thầu trích từ tài liệu nhóm. dai_dien suy từ người phê duyệt trong tài liệu lựa chọn dự án của nhóm, cần xác nhận."
 }

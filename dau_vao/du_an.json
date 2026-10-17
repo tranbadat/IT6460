@@ -2,7 +2,7 @@
  "_huong_dan": "Thông tin chung của dự án. Các skill đọc file này cho bìa tài liệu, lịch làm việc, ngưỡng cảnh báo. Ngày viết dạng yyyy-mm-dd.",
  "ten_du_an": "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
  "khach_hang": "Công ty Cổ phần ABC Wear",
- "don_vi_thuc_hien": "Inter Solution",
+ "don_vi_thuc_hien": "PM_26I_02",
  "mon_hoc": "Quản trị dự án và Quản lý thay đổi",
  "ma_nhom": "PM_26I_02",
  "giang_vien": "Vũ Thị Hương Giang",
@@ -18,7 +18,9 @@
  "sprint": {
   "so_ngay_lam_viec": 10,
   "gop_phan_du_vao_sprint_cuoi": true,
-  "tien_to": "S"
+  "tien_to": "S",
+  "sprint_nhan_phan_du": 3,
+  "_ghi_chu": "sprint_nhan_phan_du: số thứ tự sprint nhận phần ngày làm việc dư khi tổng số ngày không chia hết cho so_ngay_lam_viec. Để trống thì dồn vào sprint cuối (gop_phan_du_vao_sprint_cuoi). Nhóm quyết định."
  },
  "gio_moi_md": 8,
  "chu_ky_bao_cao": "sprint",
@@ -28,5 +30,46 @@
   "cpi_vang": 0.95,
   "cpi_do": 0.85
  },
- "kho_luu_tru": "git, thư mục dự án này"
+ "kho_luu_tru": "git, thư mục dự án này",
+ "_ghi_chu_don_vi": "Khi nha_thau.json có ten_viet_tat (hoặc ten), các script dùng giá trị đó thay cho don_vi_thuc_hien.",
+ "thoi_gian_phe_duyet_tai_lieu_ngay": 5,
+ "uat": {
+  "tu": "2027-06-18",
+  "den": "2027-06-29"
+ },
+ "cam_ket_chu_dau_tu": [
+  {
+   "ma": "CK1",
+   "noi_dung": "Tài liệu đặc tả giao diện trao đổi dữ liệu của Main System",
+   "han": "2027-04-14"
+  },
+  {
+   "ma": "CK2",
+   "noi_dung": "Môi trường thử của Main System",
+   "han": "2027-05-20"
+  },
+  {
+   "ma": "CK3",
+   "noi_dung": "Dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi theo định dạng thống nhất",
+   "han": "2027-06-10"
+  },
+  {
+   "ma": "CK4",
+   "noi_dung": "Bộ nhận diện thương hiệu, hình ảnh và nội dung sản phẩm",
+   "han": "2027-06-10"
+  },
+  {
+   "ma": "CK5",
+   "noi_dung": "Chủ sản phẩm có thẩm quyền quyết định yêu cầu nghiệp vụ, làm rõ yêu cầu 2-3 buổi mỗi tuần trong sprint 1-3, dự demo cuối mỗi sprint",
+   "han": null
+  },
+  {
+   "ma": "CK6",
+   "noi_dung": "Người dùng nghiệp vụ tham gia kiểm thử chấp nhận theo khoảng uat",
+   "han": null
+  }
+ ],
+ "_nguon_cam_ket": "Theo đề nghị của nhà thầu trong HSDT của nhóm (II.1, II.11). Lịch phải xếp các gói phụ thuộc không sớm hơn hạn cam kết.",
+ "nguong_su_dung_quy_toi_thieu": 0.8,
+ "_ghi_chu_nguong": "Tỷ lệ MD công việc trên quỹ huy động tối thiểu; thấp hơn thì bước hsdt dừng. Nhóm có thể đổi."
 }

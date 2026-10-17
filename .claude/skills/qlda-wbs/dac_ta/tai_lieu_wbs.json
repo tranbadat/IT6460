@@ -10,7 +10,10 @@
    "Mức 2 của phân hệ theo vòng đời",
    "Không có gói thuộc chức năng quản trị nội bộ",
    "Gói tích hợp tách riêng cho mỗi hệ thống bên ngoài",
-   "Sơ đồ cây và bảng chi tiết khớp nhau"
+   "Sơ đồ cây và bảng chi tiết khớp nhau",
+   "Mục Căn cứ ước lượng của tệp tổng hợp nêu phương pháp, loại ước lượng, các bước, bảng theo nhóm, căn cứ từng nhóm, đối chiếu hợp đồng tương tự và khoảng sai số, số liệu khớp khối can_cu_uoc_luong của du_lieu/wbs.json",
+   "Mỗi mục kiểm thử phân hệ có gói sửa lỗi, kiểm thử lại",
+   "Ngày tài liệu là ngày ký đơn dự thầu hiện hành, trừ bản cập nhật theo yêu cầu thay đổi"
   ]
  },
  "chi_kiem_tra": "python .claude/skills/qlda-wbs/scripts/xuat_wbs.py"

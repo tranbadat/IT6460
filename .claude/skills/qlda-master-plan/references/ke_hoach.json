@@ -1,0 +1,32 @@
+{
+ "_ghi_chu": "Giá trị mặc định của master plan, scripts/tinh_bang_ke_hoach.py dùng. ben_lien_quan: đánh giá mặc định theo vai, dòng trong phan_cong ben_ngoai có anh_huong, quan_tam, cach_tham_gia, vai_tro thì ghi đè. nguoi_xac_nhan: vai xác nhận từng loại mục tiêu, họ tên lấy từ ban kiểm soát thay đổi (du_lieu/thay_doi_bang.json vai_ban). Thang mức: Cao, Trung bình, Thấp. Nhóm có thể điều chỉnh.",
+ "ben_lien_quan": {
+  "tham_quyen_cdt": {"vai_tro": "Đại diện Chủ đầu tư ký hợp đồng, phụ lục hợp đồng, nghiệm thu", "anh_huong": "Cao", "quan_tam": "Trung bình",
+                     "cach_tham_gia": "Nhận báo cáo tại các mốc gắn đợt thanh toán, quyết định thay đổi mức lớn, ký nghiệm thu"},
+  "dau_moi_cdt": {"vai_tro": "Đầu mối liên lạc, xác nhận đặc tả, điều phối các bộ phận của Chủ đầu tư", "anh_huong": "Cao", "quan_tam": "Cao",
+                  "cach_tham_gia": "Họp trình diễn cuối sprint, họp xem xét đặc tả, phê duyệt thay đổi mức trung bình, nhận báo cáo tiến độ"},
+  "dai_dien_nt": {"vai_tro": "Đại diện nhà thầu ký hợp đồng, phụ lục hợp đồng, phê duyệt dùng dự phòng", "anh_huong": "Cao", "quan_tam": "Trung bình",
+                  "cach_tham_gia": "Nhận báo cáo tiến độ và chi phí cuối sprint, quyết định thay đổi mức lớn"},
+  "qtda": {"vai_tro": "Điều hành dự án, đầu mối của nhà thầu", "anh_huong": "Cao", "quan_tam": "Cao",
+           "cach_tham_gia": "Chủ trì các cuộc họp, lập báo cáo, quản lý thay đổi, rủi ro và vấn đề"},
+  "nhom": {"vai_tro": "Thực hiện các gói công việc theo phân công", "anh_huong": "Trung bình", "quan_tam": "Cao",
+           "cach_tham_gia": "Họp lập kế hoạch sprint, họp hằng ngày, họp cải tiến cuối sprint"}
+ },
+ "nguoi_xac_nhan": {
+  "pham_vi": "tham_quyen_cdt",
+  "cut_over": "tham_quyen_cdt",
+  "moc": "dau_moi_cdt",
+  "spi": "qtda",
+  "chi_phi": "dai_dien_nt",
+  "chat_luong": "dau_moi_cdt",
+  "bao_hanh": "dau_moi_cdt"
+ },
+ "ra_soat": {
+  "sprint": {"noi_dung": "Rà soát cuối sprint {ma}: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+             "vai": ["qtda", "dau_moi_cdt"], "them": "nhóm thực hiện", "dau_ra": "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"},
+  "moc": {"noi_dung": "Rà soát giai đoạn tại mốc {ma}: {ten}", "vai": ["qtda", "dai_dien_nt", "dau_moi_cdt"], "them": "",
+          "dau_ra": "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"},
+  "ket_thuc": {"noi_dung": "Rà soát kết thúc dự án sau giai đoạn hỗ trợ tăng cường", "vai": ["qtda", "dai_dien_nt", "dau_moi_cdt"], "them": "",
+               "dau_ra": "Báo cáo tổng kết, báo cáo đánh giá, báo cáo bài học kinh nghiệm"}
+ }
+}

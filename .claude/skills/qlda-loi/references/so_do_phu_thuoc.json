@@ -36,6 +36,16 @@
    "mo_ta": "Thông tin nhà thầu cho HSDT (pháp nhân, hợp đồng tương tự, tài chính)",
    "bat_buoc": true
   },
+  "uoc_luong": {
+   "tep": "dau_vao/uoc_luong.json",
+   "mo_ta": "Căn cứ ước lượng: phương pháp, kích thước, định mức, tổng theo nhóm WBS, khoảng sai số",
+   "bat_buoc": true
+  },
+  "chi_tieu": {
+   "tep": "dau_vao/chi_tieu_ky_thuat.json",
+   "mo_ta": "Chỉ tiêu kỹ thuật định lượng của nhà thầu: sẵn sàng, phản hồi, tải, an toàn, sao lưu, bảo hành",
+   "bat_buoc": true
+  },
   "thay_doi": {
    "tep": "du_lieu/thay_doi.json",
    "mo_ta": "Sổ yêu cầu thay đổi, cập nhật trong quá trình thực hiện",
@@ -81,6 +91,16 @@
    "mo_ta": "Chi phí khác thực tế ngoài nhân công",
    "bat_buoc": false
   },
+  "tt_van_de": {
+   "tep": "dau_vao/thuc_te/so_van_de.csv",
+   "mo_ta": "Sổ vấn đề: mã, ngày ghi nhận, người báo, ưu tiên, người phụ trách, hạn, trạng thái, liên kết rủi ro và yêu cầu thay đổi",
+   "bat_buoc": false
+  },
+  "tt_hanh_dong": {
+   "tep": "dau_vao/thuc_te/hanh_dong.csv",
+   "mo_ta": "Hành động xử lý vấn đề: mã, mã vấn đề, việc, người, hạn, trạng thái, bằng chứng",
+   "bat_buoc": false
+  },
   "kpi": {
    "tep": "dau_vao/kpi.json",
    "mo_ta": "Ghi đè ngưỡng chỉ tiêu đánh giá dự án (không bắt buộc)",
@@ -97,6 +117,11 @@
    "mo_ta": "Nhật ký chạy skill, script, agent (tự động)",
    "bat_buoc": false,
    "bien_dong": true
+  },
+  "quy_tac_thay_doi": {
+   "tep": ".claude/skills/qlda-change/references/phan_loai.json",
+   "mo_ta": "Quy tắc phân loại thay đổi và quy tắc dùng dự phòng dùng chung (tệp tham chiếu của skill qlda-change)",
+   "bat_buoc": true
   }
  },
  "buoc": [
@@ -125,7 +150,9 @@
    "vao": [
     "hsmt",
     "rfp_yc",
-    "du_an"
+    "du_an",
+    "uoc_luong",
+    "nha_thau"
    ],
    "ra": {
     "wbs": "du_lieu/wbs.json"
@@ -175,7 +202,9 @@
     "rfp_yc",
     "hsmt",
     "thanh_vien",
-    "du_an"
+    "du_an",
+    "nha_thau",
+    "uoc_luong"
    ],
    "ra": {
     "doc_wbs": "ket_qua/03_WBS"
@@ -192,7 +221,8 @@
     "wbs",
     "lich",
     "phan_cong",
-    "thanh_vien"
+    "thanh_vien",
+    "don_gia"
    ],
    "ra": {
     "rui_ro": "du_lieu/rui_ro.json"
@@ -210,7 +240,8 @@
     "thanh_vien",
     "don_gia",
     "rui_ro",
-    "hsmt"
+    "hsmt",
+    "quy_tac_thay_doi"
    ],
    "ra": {
     "chi_phi": "du_lieu/chi_phi.json",
@@ -233,7 +264,8 @@
     "rui_ro",
     "thanh_vien",
     "nha_thau",
-    "du_an"
+    "du_an",
+    "chi_tieu"
    ],
    "ra": {
     "doc_hsdt": "ket_qua/02_HSDT/HSDT.docx"
@@ -252,7 +284,8 @@
     "phan_cong",
     "thanh_vien",
     "du_an",
-    "hsmt"
+    "hsmt",
+    "quy_tac_thay_doi"
    ],
    "ra": {
     "doc_rui_ro": "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx"
@@ -271,7 +304,13 @@
     "lich",
     "chi_phi",
     "don_gia",
-    "du_an"
+    "du_an",
+    "rui_ro",
+    "wbs",
+    "nha_thau",
+    "rfp_yc",
+    "chi_tieu",
+    "quy_tac_thay_doi"
    ],
    "ra": {
     "doc_thay_doi": "ket_qua/08_Change_management_plan/Ke_hoach_quan_ly_thay_doi.docx"
@@ -295,7 +334,10 @@
     "doc_thay_doi",
     "thanh_vien",
     "du_an",
-    "rfp_yc"
+    "rfp_yc",
+    "chi_tieu",
+    "nha_thau",
+    "quy_tac_thay_doi"
    ],
    "ra": {
     "doc_ke_hoach": "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx"
@@ -335,7 +377,11 @@
     "rui_ro",
     "tt_rui_ro",
     "thay_doi",
-    "du_an"
+    "du_an",
+    "tt_van_de",
+    "tt_hanh_dong",
+    "tt_chi_phi",
+    "tt_moc"
    ],
    "ra": {
     "tien_do": "du_lieu/tien_do",
@@ -368,7 +414,11 @@
     "rfp_yc",
     "tt_chi_phi",
     "tien_do",
-    "kpi"
+    "kpi",
+    "tt_van_de",
+    "tt_hanh_dong",
+    "chi_tieu",
+    "du_an"
    ],
    "ra": {
     "ket_thuc": "du_lieu/ket_thuc.json"
@@ -387,7 +437,8 @@
     "lich",
     "chi_phi",
     "du_an",
-    "tt_moc"
+    "tt_moc",
+    "tt_van_de"
    ],
    "ra": {
     "doc_tong_ket": "ket_qua/11_Bao_cao_tong_ket/Bao_cao_tong_ket_du_an.docx"
@@ -429,7 +480,8 @@
     "wbs",
     "rfp_yc",
     "tt_loi",
-    "tt_nghiem_thu"
+    "tt_nghiem_thu",
+    "tt_van_de"
    ],
    "ra": {
     "bai_hoc": "du_lieu/bai_hoc.json",

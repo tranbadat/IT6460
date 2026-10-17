@@ -2,12 +2,40 @@
  "_ghi_chu": "Thang đo xác suất, tác động và quy tắc phân mức. Nhóm có thể điều chỉnh; mọi thay đổi được ghi phiên bản.",
  "xac_suat": {"1": "Rất thấp, dưới 10%", "2": "Thấp, 10% đến 30%", "3": "Trung bình, 30% đến 50%", "4": "Cao, 50% đến 70%", "5": "Rất cao, trên 70%"},
  "xac_suat_pt": {"1": 0.05, "2": 0.2, "3": 0.4, "4": 0.6, "5": 0.8},
+ "_ghi_chu_khoang": "Cận dưới, cận trên của từng mức xác suất, dùng tính khoảng EMV. Mức 5 lấy cận trên 90% vì sự kiện chắc chắn xảy ra là vấn đề, không còn là rủi ro.",
+ "xac_suat_khoang": {"1": [0.0, 0.1], "2": [0.1, 0.3], "3": [0.3, 0.5], "4": [0.5, 0.7], "5": [0.7, 0.9]},
  "dung_sai_xac_suat": 0.15,
- "tac_dong": {"1": "Không đáng kể: chậm dưới 1 ngày, chi phí dưới 1%", "2": "Nhỏ: chậm 1 đến 3 ngày, chi phí 1% đến 3%", "3": "Trung bình: chậm 4 đến 7 ngày hoặc ảnh hưởng một chức năng", "4": "Lớn: chậm trên 7 ngày, ảnh hưởng mốc thanh toán", "5": "Rất lớn: không đạt cut over hoặc vi phạm hợp đồng"},
+ "ty_le_dong_muc_xac_suat_toi_da": 0.5,
+ "tac_dong": {"1": "Không đáng kể", "2": "Nhỏ", "3": "Trung bình, hoặc ảnh hưởng một chức năng", "4": "Lớn, hoặc làm chậm mốc gắn đợt thanh toán", "5": "Rất lớn, làm lùi ngày cut over hoặc vi phạm hợp đồng"},
+ "_ghi_chu_nguong": "Mức tác động suy ra là mức lớn nhất trong các tiêu chí: ngày chậm (ngày làm việc) đạt ngay_tu, chi phí tác động trên giá chào đạt ty_le_chi_phi_tu, và cờ. Cờ moc_thanh_toan: mốc liên kết có đợt thanh toán (lich.json moc[].dot_thanh_toan) bị chậm; với mốc cut over chỉ tính khi số ngày chậm vượt dự trữ đến cut over. Cờ cut_over: chậm ở gói ghim ngày cut over hoặc vượt dự trữ trên đường găng. Cờ vi_pham_hop_dong: rủi ro khai vi_pham_hop_dong hoặc tiền phạt chạm mức tối đa của E-ĐKC 15. Mức 5 theo chi phí lấy bằng mức phạt tối đa 8% của E-ĐKC 15.",
+ "nguong_tac_dong": {
+  "ngay_tu": {"2": 1, "3": 4, "4": 8, "5": 16},
+  "ty_le_chi_phi_tu": {"2": 0.01, "3": 0.03, "4": 0.05, "5": 0.08},
+  "co": {"moc_thanh_toan": 4, "cut_over": 5, "vi_pham_hop_dong": 5}
+ },
+ "ten_co": {"moc_thanh_toan": "làm chậm mốc gắn đợt thanh toán", "cut_over": "làm lùi ngày cut over", "vi_pham_hop_dong": "vi phạm hợp đồng"},
+ "_ghi_chu_phat": "E-ĐKC 15 phạt 0,1% mỗi ngày, thời hạn tính bằng ngày là ngày lịch (Bộ luật Dân sự 2015, Điều 147). tac_dong_ngay và ngưỡng ngày của thang tác động tính theo ngày làm việc; khi tính phạt, số ngày làm việc làm lùi cut over được quy đổi sang ngày lịch theo lịch dự án (loi.ngay_lam_viec): số ngày lịch từ ngày cut over đến ngày làm việc thứ n sau ngày cut over, ví dụ cut over thứ Năm chậm 3 ngày làm việc là 5 ngày lịch. Đặt false nếu nhóm thống nhất phạt theo ngày làm việc.",
+ "phat_cham_quy_doi_ngay_lich": true,
+ "dung_sai_tien": 0.02,
  "muc": {"thap": [1, 7], "trung_binh": [8, 14], "cao": [15, 25]},
  "ten_muc": {"thap": "Thấp", "trung_binh": "Trung bình", "cao": "Cao"},
  "nhom": {"pham_vi": "Phạm vi và yêu cầu", "tien_do": "Tiến độ", "nhan_su": "Nhân sự", "ky_thuat": "Kỹ thuật", "tich_hop": "Tích hợp và đối tác", "chi_phi": "Chi phí", "chat_luong": "Chất lượng", "phap_ly": "Pháp lý và hợp đồng", "van_hanh": "Vận hành và chuyển đổi"},
  "nhom_bat_buoc": ["pham_vi", "tien_do", "nhan_su", "ky_thuat", "tich_hop", "van_hanh"],
+ "loai": {"de_doa": "Đe dọa", "co_hoi": "Cơ hội"},
  "chien_luoc": {"ne_tranh": "Né tránh", "giam_nhe": "Giảm nhẹ", "chuyen_giao": "Chuyển giao", "chap_nhan_chu_dong": "Chấp nhận chủ động", "chap_nhan_thu_dong": "Chấp nhận thụ động", "khai_thac": "Khai thác", "tang_cuong": "Tăng cường", "chia_se": "Chia sẻ"},
- "so_luong_toi_thieu": 10
+ "chien_luoc_theo_loai": {"de_doa": ["ne_tranh", "giam_nhe", "chuyen_giao", "chap_nhan_chu_dong", "chap_nhan_thu_dong"], "co_hoi": ["khai_thac", "tang_cuong", "chia_se", "chap_nhan_chu_dong", "chap_nhan_thu_dong"]},
+ "tien_them_cach_tinh": {
+  "chenh_luong_bo_sung": "ty_le x tổng (quỹ MD huy động x lương tham chiếu tháng x hệ số bảo hiểm / ngày làm việc mỗi tháng) của các vị trí bổ sung",
+  "chi_phi_von": "tổng tỷ lệ các đợt thanh toán bị chậm x giá chào x lai_suat_nam x so_thang / 12"
+ },
+ "tu_tong_hop_cam": ["emv", "sổ rủi ro", "tổng tác động"],
+ "_ghi_chu_3x3": "Quy đổi sang ma trận 3x3 xếp hạng A, B, C (ICTPM02 tr. 78): mức 1 đến 2 là thấp, mức 3 là trung bình, mức 4 đến 5 là cao, rồi tra hang[xác suất][tác động].",
+ "quy_doi_3x3": {
+  "muc": {"1": "thap", "2": "thap", "3": "trung_binh", "4": "cao", "5": "cao"},
+  "ten_xac_suat": {"cao": "Cao", "trung_binh": "Trung bình", "thap": "Thấp"},
+  "ten_tac_dong": {"cao": "Lớn", "trung_binh": "Trung bình", "thap": "Nhỏ"},
+  "hang": {"cao": {"cao": "A", "trung_binh": "A", "thap": "B"}, "trung_binh": {"cao": "A", "trung_binh": "B", "thap": "C"}, "thap": {"cao": "B", "trung_binh": "C", "thap": "C"}}
+ },
+ "so_luong_toi_thieu": 10,
+ "so_co_hoi_toi_thieu": 1
 }

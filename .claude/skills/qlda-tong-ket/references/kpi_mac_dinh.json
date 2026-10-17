@@ -1,5 +1,5 @@
 {
- "_ghi_chu": "Chỉ tiêu đánh giá dự án mặc định. Nhóm ghi đè ngưỡng tại dau_vao/kpi.json (cùng mã) và ghi lý do. so_sanh: ge (lớn hơn hoặc bằng), le (nhỏ hơn hoặc bằng), eq. xep_loai: xếp loại chung theo tỷ lệ KPI đạt.",
+ "_ghi_chu": "Chỉ tiêu đánh giá dự án mặc định. Nhóm ghi đè ngưỡng tại dau_vao/kpi.json (cùng mã) và ghi lý do. so_sanh: ge (lớn hơn hoặc bằng), le (nhỏ hơn hoặc bằng), eq. muc_tieu_tu: lấy ngưỡng từ khóa cùng tên trong dau_vao/du_an.json khi muc_tieu để trống. xep_loai: xếp loại chung theo tỷ lệ KPI đạt.",
  "kpi": [
   {
    "ma": "K01",
@@ -116,6 +116,16 @@
    "do": "ty_le_dung_du_phong",
    "so_sanh": "le",
    "muc_tieu": 1.0,
+   "don_vi": "%"
+  },
+  {
+   "ma": "K14",
+   "nhom": "Chi phí",
+   "chi_tieu": "Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động)",
+   "do": "ty_le_su_dung_huy_dong",
+   "so_sanh": "ge",
+   "muc_tieu": null,
+   "muc_tieu_tu": "nguong_su_dung_quy_toi_thieu",
    "don_vi": "%"
   }
  ],

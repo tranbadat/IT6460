@@ -1,8 +1,10 @@
 """Sinh file Word E-HSMT từ nội dung, dùng được trên Claude và ChatGPT (Code Interpreter).
 
-Dùng: python3 build_hsmt.py <hsmt_noi_dung.json> <mau5a_fixed.json> <file_ra.docx>
+Dùng: python3 build_hsmt.py <hsmt_noi_dung.json> <mau5a_fixed.json> <file_ra.docx> [--vong N]
 - hsmt_noi_dung.json: nội dung HSMT sau khi ghép khung và bản soạn (dien_khung.py).
 - mau5a_fixed.json: Chương I, Chương VI, Mục 1 Chương III trích nguyên văn từ Mẫu 5A (phan_tich_mau.py).
+- --vong N: vòng kiểm tra tạo ra tệp, ghi vào thuộc tính version. Thuộc tính identifier ghi md5 của hsmt_noi_dung.json
+  để bước trích dữ liệu đối chiếu tệp Word giao đi với nội dung được trích.
 Chỉ cần thư viện python-docx.
 """
 import os as _os, sys as _sys  # noqa: E401
@@ -12,7 +14,7 @@ for _s in (_sys.stdout, _sys.stderr):
         _s.reconfigure(encoding='utf-8')
     except Exception:
         pass
-import json, os, re, sys
+import hashlib, json, os, re, sys
 
 
 def lam_sach_thuoc_tinh(path):
@@ -90,16 +92,20 @@ m = meta['margin_twip']
 sec.top_margin, sec.bottom_margin = Twips(m['top']), Twips(m['bottom'])
 sec.left_margin, sec.right_margin = Twips(m['left']), Twips(m['right'])
 
+def truong(run, tag=None, lenh=None):
+    """Thêm ký hiệu trường (begin, separate, end) hoặc lệnh trường vào run."""
+    if tag:
+        el = OxmlElement('w:fldChar'); el.set(qn('w:fldCharType'), tag)
+    else:
+        el = OxmlElement('w:instrText'); el.set(qn('xml:space'), 'preserve'); el.text = lenh
+    run._element.append(el)
+
+
 hp = sec.header.paragraphs[0]; fmt(hp, WD_ALIGN_PARAGRAPH.RIGHT)
 set_font(hp.add_run(clean(meta['header'])), 10, italic=True)
 fp = sec.footer.paragraphs[0]; fmt(fp, WD_ALIGN_PARAGRAPH.CENTER)
 r = fp.add_run(); set_font(r, 11)
-for tag, txt in (('begin', None), (None, 'PAGE'), ('end', None)):
-    if tag:
-        el = OxmlElement('w:fldChar'); el.set(qn('w:fldCharType'), tag)
-    else:
-        el = OxmlElement('w:instrText'); el.set(qn('xml:space'), 'preserve'); el.text = txt
-    r._element.append(el)
+truong(r, 'begin'); truong(r, lenh='PAGE'); truong(r, 'end')
 
 def para(text, align=WD_ALIGN_PARAGRAPH.JUSTIFY, size=SIZE, before=0, after=5, line=1.25, style=None):
     pr = doc.add_paragraph(style=style)
@@ -134,11 +140,33 @@ def table(rows, widths, center_cols=()):
                 set_font(pr.add_run(clean(t)))
     for i, w in enumerate(widths):
         tbl.columns[i].width = Twips(w)
+    if len(rows) > 1 and str(rows[0][0]) in ('STT', 'TT', 'Nội dung'):  # dòng tiêu đề lặp lại khi bảng sang trang
+        tbl.rows[0]._tr.get_or_add_trPr().append(OxmlElement('w:tblHeader'))
     return tbl
+
+def muc_luc(dong):
+    """Trường mục lục (TOC) theo Heading 1, 2, có số trang. Word cập nhật khi mở tệp. Danh sách dòng là nội dung tạm."""
+    for i, txt in enumerate(dong):
+        pr = doc.add_paragraph(); fmt(pr, WD_ALIGN_PARAGRAPH.LEFT, 0, 3)
+        if i == 0:
+            r0 = pr.add_run(); truong(r0, 'begin'); truong(r0, lenh=' TOC \\o "1-2" \\h \\z \\u '); truong(r0, 'separate')
+        set_font(pr.add_run(clean(txt)))
+        if i == len(dong) - 1:
+            truong(pr.add_run(), 'end')
+    st = doc.settings.element
+    if st.find(qn('w:updateFields')) is not None:
+        return
+    uf = OxmlElement('w:updateFields'); uf.set(qn('w:val'), 'true')
+    # đúng thứ tự phần tử của w:settings: updateFields đứng trước hdrShapeDefaults, footnotePr, endnotePr, compat
+    sau = next((c for c in st if c.tag in {qn('w:' + n) for n in ('hdrShapeDefaults', 'footnotePr', 'endnotePr', 'compat', 'docVars', 'rsids')}), None)
+    sau.addprevious(uf) if sau is not None else st.append(uf)
+
 
 for b in data['blocks']:
     t = b['t']
-    if t == 'center':
+    if t == 'toc':
+        muc_luc(b['muc'])
+    elif t == 'center':
         para(b['text'], WD_ALIGN_PARAGRAPH.CENTER, b.get('size', SIZE), 0, 6, None)
     elif t == 'h1':
         para(b['text'], WD_ALIGN_PARAGRAPH.CENTER, SIZE + 2, 12, 8, None, 'Heading 1')
@@ -168,6 +196,8 @@ doc.core_properties.author = _tg
 doc.core_properties.last_modified_by = _tg
 doc.core_properties.title = meta['ten']
 doc.core_properties.comments = ''
+doc.core_properties.version = sys.argv[sys.argv.index('--vong') + 1] if '--vong' in sys.argv else ''
+doc.core_properties.identifier = hashlib.md5(open(data_path, 'rb').read()).hexdigest()
 doc.save(out_path)
 lam_sach_thuoc_tinh(out_path)
 print('Đã tạo', out_path)

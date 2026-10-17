@@ -1,9 +1,113 @@
 {
- "_ghi_chu": "Phân loại yêu cầu thay đổi theo tác động. Nhóm có thể điều chỉnh ngưỡng; thay đổi ngưỡng được ghi phiên bản.",
+ "_ghi_chu": "Phân loại yêu cầu thay đổi theo tác động, thẩm quyền, thời hạn, quy tắc đóng và quy tắc dùng dự phòng. Nhóm có thể điều chỉnh ngưỡng, thay đổi ngưỡng được ghi phiên bản. scripts/quy_tac_thay_doi.py nạp và kiểm tra tệp này.",
+ "cut_over_co_dinh": true,
+ "_ghi_chu_dieu_kien": "dieu_kien: điều kiện buộc mức tối thiểu. tu_dong: công cụ tính từ lịch, còn lại người đánh giá khai báo trong cr_nhap.json (dieu_kien). phu_luc: cần phụ lục hợp đồng, mức lớn không có điều kiện này cần văn bản thống nhất. Yêu cầu không khai báo noi_bo: true được gán cam_ket_cdt.",
+ "_ghi_chu_cut_over": "Ngày cut over là ngày cố định của hợp đồng (HSMT, Đợt 4 Mục 13.1 E-ĐKCT). Khi true, ngay_cham_cut_over_toi_da của mức nhỏ và trung bình phải bằng 0, mọi thay đổi làm chậm cut over là mức lớn.",
+ "thang_diem": {
+  "tu": 1,
+  "den": 10,
+  "can_cu": "Thang mức tác động ICTPM07 tr. 23: thấp 1-3 đội dự án tự giải quyết, trung bình 4-7 cần bên liên quan chủ chốt phê duyệt, cao 8-10 mọi bên liên quan chủ chốt tham gia và họp trong ba ngày làm việc",
+  "cach_tinh": "Mỗi chỉ số định lượng (MD tăng, chi phí nội bộ, tiêu hao dự trữ, chậm cut over) cho một điểm theo vị trí so với ngưỡng mức nhỏ và mức trung bình. Mỗi điều kiện của mức lớn cho tối thiểu 8 điểm, hai điều kiện 9 điểm, từ ba điều kiện 10 điểm. Điều kiện của mức trung bình cho tối thiểu 4 điểm. Điểm của yêu cầu là điểm cao nhất, mức là khoảng điểm chứa điểm đó."
+ },
+ "vai_ban": {
+  "qtda": "Quản trị dự án",
+  "dai_dien_nt": "Người đại diện ký hợp đồng của nhà thầu",
+  "dau_moi_cdt": "Đầu mối Chủ đầu tư",
+  "tham_quyen_cdt": "Người có thẩm quyền của Chủ đầu tư"
+ },
  "muc": [
-  {"ma": "nho", "ten": "Nhỏ", "md_toi_da": 2, "ngay_cham_toi_da": 0, "chi_phi_toi_da": 5000000, "nguoi_phe_duyet": "Quản trị dự án", "thoi_han_danh_gia_ngay": 1},
-  {"ma": "trung_binh", "ten": "Trung bình", "md_toi_da": 10, "ngay_cham_toi_da": 3, "chi_phi_toi_da": 25000000, "nguoi_phe_duyet": "Quản trị dự án và đầu mối chủ đầu tư", "thoi_han_danh_gia_ngay": 3},
-  {"ma": "lon", "ten": "Lớn", "md_toi_da": null, "ngay_cham_toi_da": null, "chi_phi_toi_da": null, "nguoi_phe_duyet": "Ban kiểm soát thay đổi, ký phụ lục hợp đồng nếu đổi giá hoặc mốc", "thoi_han_danh_gia_ngay": 3}
+  {
+   "ma": "nho",
+   "ten": "Nhỏ",
+   "diem": [1, 3],
+   "md_toi_da": 2,
+   "chi_phi_toi_da": 5000000,
+   "tieu_hao_du_tru_toi_da": 0,
+   "ngay_cham_cut_over_toi_da": 0,
+   "chi_noi_bo": true,
+   "pham_vi": "Thay đổi nội bộ của nhà thầu, không đổi cam kết với Chủ đầu tư: phân công lại trong nhóm, thứ tự gói trong sprint, cách làm nội bộ",
+   "nguoi_phe_duyet": "Quản trị dự án",
+   "tham_quyen": {
+    "qtda": "Phê duyệt, ghi sổ và báo cáo tại họp cuối sprint"
+   },
+   "thoi_han_danh_gia_ngay": 1,
+   "thoi_han_quyet_dinh_ngay": 1,
+   "van_ban": "Ghi sổ yêu cầu thay đổi, nêu trong báo cáo tiến độ",
+   "phu_luc_hop_dong": false
+  },
+  {
+   "ma": "trung_binh",
+   "ten": "Trung bình",
+   "diem": [4, 7],
+   "md_toi_da": 10,
+   "chi_phi_toi_da": 25000000,
+   "tieu_hao_du_tru_toi_da": 3,
+   "ngay_cham_cut_over_toi_da": 0,
+   "pham_vi": "Thay đổi chạm cam kết với Chủ đầu tư nhưng không chạm ngày cut over, mốc gắn đợt thanh toán, đặc tả đã xác nhận, phạm vi hợp đồng hoặc giá: chi tiết yêu cầu trước khi xác nhận đặc tả, mốc không gắn thanh toán, kế hoạch họp, thay thế nhân sự, tiêu hao một phần dự trữ đến cut over",
+   "nguoi_phe_duyet": "Quản trị dự án và đầu mối Chủ đầu tư",
+   "tham_quyen": {
+    "qtda": "Đề xuất và đồng phê duyệt",
+    "dau_moi_cdt": "Đồng phê duyệt bằng văn bản"
+   },
+   "thoi_han_danh_gia_ngay": 3,
+   "thoi_han_danh_gia_theo": "chi_tieu#thoi_han_danh_gia_thay_doi_ngay",
+   "thoi_han_quyet_dinh_ngay": 5,
+   "thoi_han_quyet_dinh_theo": "du_an#thoi_gian_phe_duyet_tai_lieu_ngay",
+   "van_ban": "Văn bản thống nhất của đầu mối hai bên (thư điện tử hoặc biên bản họp)",
+   "phu_luc_hop_dong": false
+  },
+  {
+   "ma": "lon",
+   "ten": "Lớn",
+   "diem": [8, 10],
+   "md_toi_da": null,
+   "chi_phi_toi_da": null,
+   "tieu_hao_du_tru_toi_da": null,
+   "ngay_cham_cut_over_toi_da": null,
+   "pham_vi": "Thay đổi chạm ngày cut over, mốc gắn đợt thanh toán, đặc tả đã xác nhận, phạm vi hợp đồng hoặc giá, hoặc vượt ngưỡng mức trung bình",
+   "nguoi_phe_duyet": "Ban kiểm soát thay đổi xem xét, người đại diện ký hợp đồng của hai bên quyết định và ký văn bản thống nhất hoặc phụ lục hợp đồng",
+   "tham_quyen": {
+    "qtda": "Chủ trì họp ban, trình đánh giá tác động và khuyến nghị",
+    "dau_moi_cdt": "Thành viên ban, cho ý kiến thay mặt các bộ phận của Chủ đầu tư",
+    "dai_dien_nt": "Quyết định và ký văn bản thống nhất hoặc phụ lục hợp đồng phía nhà thầu",
+    "tham_quyen_cdt": "Quyết định và ký văn bản thống nhất hoặc phụ lục hợp đồng phía Chủ đầu tư"
+   },
+   "hop_ban_trong_ngay": 3,
+   "thoi_han_danh_gia_ngay": 3,
+   "thoi_han_danh_gia_theo": "chi_tieu#thoi_han_danh_gia_thay_doi_ngay",
+   "thoi_han_quyet_dinh_ngay": 5,
+   "thoi_han_quyet_dinh_theo": "du_an#thoi_gian_phe_duyet_tai_lieu_ngay",
+   "van_ban": "Văn bản thống nhất thay đổi đặc tả, phụ lục hợp đồng khi đổi phạm vi, giá, thời gian thực hiện hoặc mốc thanh toán",
+   "phu_luc_hop_dong": true
+  }
  ],
- "trang_thai": ["Mới", "Đang đánh giá", "Chờ phê duyệt", "Đã phê duyệt", "Từ chối", "Hoãn", "Đã thực hiện", "Đã đóng"]
+ "dieu_kien": [
+  {"ma": "cham_cut_over", "muc": "lon", "phu_luc": true, "tu_dong": true, "ten": "Làm chậm ngày cut over", "can_cu": "Mục 17.1(b), Mục 18 E-ĐKC", "khoa_hsmt": []},
+  {"ma": "cham_moc_thanh_toan", "muc": "lon", "phu_luc": true, "tu_dong": true, "ten": "Làm mốc gắn đợt thanh toán vượt hạn của mốc", "can_cu": "Mục 13.1 E-ĐKCT, Mục 18 E-ĐKC", "khoa_hsmt": ["E-ĐKC 13.1"]},
+  {"ma": "cham_dac_ta", "muc": "lon", "ten": "Thay đổi đặc tả đã được hai bên xác nhận", "can_cu": "Mục 17.1(c), Mục 2.2(i) E-ĐKCT", "khoa_hsmt": ["E-ĐKC 17.1(c)", "E-ĐKC 2.2 (i)"]},
+  {"ma": "doi_pham_vi", "muc": "lon", "phu_luc": true, "ten": "Bổ sung hoặc bớt hạng mục ngoài phạm vi hợp đồng", "can_cu": "Mục 17.1(a), Mục 17.2 E-ĐKC", "khoa_hsmt": []},
+  {"ma": "doi_gia", "muc": "lon", "phu_luc": true, "ten": "Thay đổi giá hợp đồng", "can_cu": "Mục 10.2 E-ĐKCT, Mục 17.2 E-ĐKC", "khoa_hsmt": ["E-ĐKC 10.2"]},
+  {"ma": "cam_ket_cdt", "muc": "trung_binh", "ten": "Thay đổi cam kết khác với Chủ đầu tư hoặc yêu cầu không được khai báo là thay đổi nội bộ", "can_cu": "Mục 17.1(c) E-ĐKCT, Mục 21.2 E-ĐKCT", "khoa_hsmt": ["E-ĐKC 21.2"]},
+  {"ma": "doi_ngay_moc_thanh_toan", "muc": "trung_binh", "tu_dong": true, "ten": "Dời ngày dự kiến của mốc gắn đợt thanh toán trong hạn của mốc", "can_cu": "Mục 13.1 E-ĐKCT", "khoa_hsmt": ["E-ĐKC 13.1"]}
+ ],
+ "gia_de_nghi": {
+  "can_cu": "gia_du_thau",
+  "_ghi_chu": "Cách tính giá đề nghị Chủ đầu tư của phần thay đổi, bên cạnh chi phí nội bộ. gia_du_thau: chi phí nội bộ nhân hệ số giá dự thầu chia khoản A (cp#gia_chao / cp#A). mau_11a: hệ số thành tiền chia chi phí khoản A của hạng mục Mẫu 11A chứa gói, gói không gắn hạng mục dùng hệ số giá dự thầu. Giá chính thức do hai bên thương thảo theo Mục 17.2 E-ĐKC. Nhóm chọn cách tính."
+ },
+ "trang_thai": ["Mới", "Đang đánh giá", "Chờ phê duyệt", "Đã phê duyệt", "Từ chối", "Hoãn", "Đã thực hiện", "Đã đóng"],
+ "dong": [
+  {"ket_qua": "Đã phê duyệt", "dieu_kien": "Phần thay đổi đã thực hiện và được Chủ đầu tư kiểm tra đạt theo đặc tả đã cập nhật (Mục 20.1 E-ĐKCT), với thay đổi nội bộ do quản trị dự án kiểm tra. Văn bản thống nhất hoặc phụ lục hợp đồng đã lưu. Mọi tài liệu phải cập nhật đã tạo lại với đầu vào mới", "nguoi": "Quản trị dự án", "lenh": "thuc_hien, sau đó dong"},
+  {"ket_qua": "Từ chối", "dieu_kien": "Lý do từ chối đã thông báo cho người đề xuất bằng văn bản, hồ sơ yêu cầu được lưu để tham khảo", "nguoi": "Quản trị dự án", "lenh": "dong"},
+  {"ket_qua": "Hoãn", "dieu_kien": "Có ngày xem xét lại và người theo dõi. Đến ngày xem xét lại, yêu cầu được quyết định lại hoặc đóng khi hai bên thống nhất không thực hiện", "nguoi": "Quản trị dự án", "lenh": "quyet_dinh lại, hoặc dong"}
+ ],
+ "du_phong": {
+  "_ghi_chu": "Nguồn chung của quy tắc dùng dự phòng rủi ro cho kế hoạch quản lý thay đổi, kế hoạch quản lý rủi ro, thuyết minh dự toán và master plan. Sửa ở đây, các tài liệu trình bày bảng tdb#du_phong do tinh_bang_thay_doi.py sinh. {qtda}, {dai_dien_nt} được thay bằng họ tên trong ban kiểm soát thay đổi.",
+  "quy_tac": [
+   {"noi_dung": "Điều kiện sử dụng", "quy_dinh": "Một rủi ro trong sổ đăng ký rủi ro xảy ra hoặc kế hoạch ứng phó của rủi ro được kích hoạt"},
+   {"noi_dung": "Người đề xuất", "quy_dinh": "Người phụ trách rủi ro, nêu mã rủi ro, số tiền, MD hoặc ngày cần dùng"},
+   {"noi_dung": "Người phê duyệt", "quy_dinh": "{qtda} phê duyệt khoản dùng cho rủi ro do thành viên khác phụ trách. {dai_dien_nt} phê duyệt khoản dùng cho rủi ro do quản trị dự án phụ trách và khoản làm giảm phần chi phí chung và lợi nhuận"},
+   {"noi_dung": "Ghi nhận", "quy_dinh": "Ghi vào sổ yêu cầu thay đổi kèm mã rủi ro, cập nhật sổ rủi ro, dự toán và lịch theo ma trận lan truyền"},
+   {"noi_dung": "Không áp dụng", "quy_dinh": "Không dùng dự phòng để bù thay đổi phạm vi theo yêu cầu của Chủ đầu tư, các thay đổi này xử lý theo mức lớn bằng văn bản thống nhất hoặc phụ lục hợp đồng"}
+  ]
+ }
 }

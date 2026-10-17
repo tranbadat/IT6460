@@ -544,7 +544,7 @@
    "tac_dong": 3,
    "xac_suat_pt": 0.4,
    "tac_dong_md": 0,
-   "tac_dong_tien": 50112932,
+   "tac_dong_tien": 57287159,
    "tac_dong_ngay": 0,
    "chien_luoc": "giam_nhe",
    "bien_phap_phong_ngua": "Thống nhất mức lương khi ký hợp đồng lao động với từng vị trí bổ sung và so với lương tham chiếu trước khi ký",
@@ -562,7 +562,7 @@
    "muc_ten": "Trung bình",
    "xs_khop": true,
    "emv_md": 0.0,
-   "emv_tien": 20045173,
+   "emv_tien": 22914864,
    "emv_ngay": 0.0,
    "trang_thai": "Đang theo dõi",
    "ho_ten_phu_trach": "Trần Bá Đạt",
@@ -803,7 +803,7 @@
   "so_trung_binh": 16,
   "so_thap": 1,
   "tong_emv_md": 48.0,
-  "tong_emv_tien": 128287673,
+  "tong_emv_tien": 131157364,
   "tong_emv_ngay": 22.2
  },
  "ma_tran": [
@@ -877,7 +877,7 @@
   {
    "nhom": "Chi phí",
    "so": 2,
-   "emv_tien": 21795173
+   "emv_tien": 24664864
   },
   {
    "nhom": "Chất lượng",

@@ -7,7 +7,7 @@
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
    "bat_dau": "2027-03-18",
-   "ket_thuc": "2027-05-05",
+   "ket_thuc": "2027-04-29",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
    "goi": "1.1.1, 1.1.2, 2.1.1, 2.1.2, 2.1.3, 2.1.4 ..."
   },
@@ -17,8 +17,8 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
-   "bat_dau": "2027-04-21",
-   "ket_thuc": "2027-05-05",
+   "bat_dau": "2027-04-15",
+   "ket_thuc": "2027-04-29",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
    "goi": "2.1.4, 2.2.1"
   },
@@ -28,8 +28,8 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
-   "bat_dau": "2027-04-07",
-   "ket_thuc": "2027-05-05",
+   "bat_dau": "2027-04-08",
+   "ket_thuc": "2027-04-29",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
    "goi": "2.1.4, 2.2.3"
   },
@@ -39,8 +39,8 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
-   "bat_dau": "2027-04-07",
-   "ket_thuc": "2027-05-06",
+   "bat_dau": "2027-04-08",
+   "ket_thuc": "2027-05-07",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
    "goi": "2.1.4, 2.3.1, 2.3.2, 2.3.3"
   },
@@ -50,10 +50,10 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
-   "bat_dau": "2027-03-23",
-   "ket_thuc": "2027-06-09",
+   "bat_dau": "2027-03-24",
+   "ket_thuc": "2027-06-10",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "2.3.3, 3.1.1, 3.2.1, 3.3.1, 3.3.2, 3.3.3 ..."
+   "goi": "1.3.3, 2.3.3, 3.1.1, 3.2.1, 3.3.1, 3.3.2 ..."
   },
   {
    "stt": 6,
@@ -61,10 +61,10 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
-   "bat_dau": "2027-03-23",
-   "ket_thuc": "2027-06-03",
+   "bat_dau": "2027-03-24",
+   "ket_thuc": "2027-06-10",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "2.3.3, 4.1.1, 4.2.1, 4.3.1, 4.3.2, 4.3.3 ..."
+   "goi": "1.3.3, 2.3.3, 4.1.1, 4.2.1, 4.3.1, 4.3.2 ..."
   },
   {
    "stt": 7,
@@ -72,10 +72,10 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
-   "bat_dau": "2027-03-23",
-   "ket_thuc": "2027-06-03",
+   "bat_dau": "2027-03-24",
+   "ket_thuc": "2027-06-10",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "2.3.3, 5.1.1, 5.2.1, 5.3.1, 5.3.2, 5.3.3 ..."
+   "goi": "1.3.3, 2.3.3, 5.1.1, 5.2.1, 5.3.1, 5.3.2 ..."
   },
   {
    "stt": 8,
@@ -83,10 +83,10 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
-   "bat_dau": "2027-03-23",
-   "ket_thuc": "2027-06-08",
+   "bat_dau": "2027-03-24",
+   "ket_thuc": "2027-06-10",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "6.1.1, 6.1.2, 8.1.1"
+   "goi": "1.3.3, 6.1.1, 6.1.2, 8.1.1"
   },
   {
    "stt": 9,
@@ -94,10 +94,10 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
-   "bat_dau": "2027-03-23",
-   "ket_thuc": "2027-06-11",
+   "bat_dau": "2027-03-24",
+   "ket_thuc": "2027-06-10",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "6.2.1, 6.2.2, 6.2.3, 6.2.4, 6.2.5, 8.1.1"
+   "goi": "1.3.3, 6.2.1, 6.2.2, 6.2.3, 6.2.4, 6.2.5 ..."
   },
   {
    "stt": 10,
@@ -105,8 +105,8 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
-   "bat_dau": "2027-05-06",
-   "ket_thuc": "2027-06-22",
+   "bat_dau": "2027-05-04",
+   "ket_thuc": "2027-06-15",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
    "goi": "7.1.1, 7.1.2, 7.2.1, 7.2.2, 7.2.3, 7.2.4 ..."
   },
@@ -116,8 +116,8 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
-   "bat_dau": "2027-05-06",
-   "ket_thuc": "2027-06-28",
+   "bat_dau": "2027-05-04",
+   "ket_thuc": "2027-06-21",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
    "goi": "7.1.1, 7.3.1, 7.3.2, 7.3.3"
   },
@@ -127,8 +127,8 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
-   "bat_dau": "2027-06-10",
-   "ket_thuc": "2027-06-25",
+   "bat_dau": "2027-06-04",
+   "ket_thuc": "2027-06-14",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
    "goi": "8.2.1, 8.2.2"
   },
@@ -138,10 +138,10 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear",
-   "bat_dau": "2027-05-06",
+   "bat_dau": "2027-05-07",
    "ket_thuc": "2027-07-01",
    "yeu_cau": "01/07/2027",
-   "goi": "1.3.2, 8.1.2, 8.3.1, 8.3.2, 8.3.3"
+   "goi": "8.1.2, 8.3.1, 8.3.2, 8.3.3"
   }
  ],
  "dap_ung": {
@@ -168,13 +168,13 @@
    ],
    [
     "Hợp đồng tương tự",
-    "0 hợp đồng từ 600.000.000 đồng, hoàn thành từ 01 tháng 01 năm 2024",
-    "Chưa đáp ứng"
+    "2 hợp đồng từ 600.000.000 đồng, hoàn thành từ 01 tháng 01 năm 2024",
+    "Đáp ứng"
    ],
    [
     "Doanh thu bình quân",
-    "0 đồng các năm 2023, 2024, 2025",
-    "Chưa đáp ứng"
+    "26.366.666.667 đồng các năm 2023, 2024, 2025",
+    "Đáp ứng"
    ],
    [
     "Nhân sự chủ chốt (Bảng số 02)",
@@ -198,32 +198,47 @@
    1500
   ]
  },
- "hop_dong_tuong_tu": [],
+ "hop_dong_tuong_tu": [
+  {
+   "ten": "Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng, số 12/2024/HĐ-HG",
+   "chu_dau_tu": "Công ty Cổ phần Thời trang Hoàng Gia",
+   "gia_tri": 1150000000,
+   "ngay_hoan_thanh": "2024-11-29",
+   "mo_ta": "Ký ngày 04/03/2024. Nhà thầu chính, thực hiện độc lập. Phát triển website bán hàng trực tuyến, tích hợp hệ thống bán hàng nội bộ; ba phân hệ khách hàng, sản phẩm, đơn hàng và tầng tích hợp; khoảng 550 người-ngày."
+  },
+  {
+   "ten": "Website bán hàng trực tuyến và tích hợp ERP, số 03/2025/HĐ-AP",
+   "chu_dau_tu": "Công ty TNHH Nội thất An Phát",
+   "gia_tri": 860000000,
+   "ngay_hoan_thanh": "2025-07-18",
+   "mo_ta": "Ký ngày 06/01/2025. Nhà thầu chính, thực hiện độc lập. Phát triển website bán hàng, tích hợp ERP và đơn vị giao vận; danh mục, giỏ hàng, đặt hàng, đồng bộ tồn kho; khoảng 420 người-ngày."
+  }
+ ],
  "doanh_thu": [
   {
    "nam": 2023,
-   "doanh_thu": 0
+   "doanh_thu": 22700000000.0
   },
   {
    "nam": 2024,
-   "doanh_thu": 0
+   "doanh_thu": 26900000000.0
   },
   {
    "nam": 2025,
-   "doanh_thu": 0
+   "doanh_thu": 29500000000.0
   }
  ],
- "doanh_thu_binh_quan": 0,
- "so_hop_dong_dat": 0,
+ "doanh_thu_binh_quan": 26366666667,
+ "so_hop_dong_dat": 2,
  "nhan_su_chu_chot": [
   {
    "stt": 1,
    "vi_tri": "Quản trị dự án",
    "yeu_cau": "Tối thiểu 03 năm quản lý dự án phần mềm hoặc tối thiểu 02 hợp đồng tương tự",
    "ho_ten": "Trần Bá Đạt",
-   "trinh_do": "",
-   "so_nam": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam": 4,
+   "kinh_nghiem": "03/2024 - 11/2024: Inter Solution, quản trị dự án Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng cho Công ty CP Thời trang Hoàng Gia (1,15 tỷ đồng, khoảng 550 MD, 10 nhân sự); 01/2025 - 07/2025: Inter Solution, quản trị dự án Website bán hàng trực tuyến và tích hợp ERP cho Công ty TNHH Nội thất An Phát (860 triệu đồng, sprint 2 tuần); 09/2025 - 12/2026: Inter Solution, quản lý dự án, kiến trúc sư nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ",
    "chung_chi": "Không",
    "danh_gia": "Đáp ứng"
   },
@@ -232,9 +247,9 @@
    "vi_tri": "Kỹ sư phát triển phần mềm",
    "yeu_cau": "Tối thiểu 02 năm lập trình ứng dụng web",
    "ho_ten": "Phạm Tuấn Anh",
-   "trinh_do": "",
-   "so_nam": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam": 3,
+   "kinh_nghiem": "03/2024 - 11/2024: Inter Solution, kỹ sư backend dự án Hoàng Gia (API khách hàng, đơn hàng; thiết kế cơ sở dữ liệu; unit test); 01/2025 - 07/2025: Inter Solution, trưởng nhóm backend dự án An Phát (đồng bộ tồn kho với ERP, xác thực và phân quyền)",
    "chung_chi": "Không",
    "danh_gia": "Đáp ứng"
   },
@@ -243,9 +258,9 @@
    "vi_tri": "Kỹ sư phát triển phần mềm",
    "yeu_cau": "Tối thiểu 02 năm lập trình ứng dụng web",
    "ho_ten": "Ninh Đức Toàn",
-   "trinh_do": "",
-   "so_nam": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam": 3,
+   "kinh_nghiem": "03/2024 - 11/2024: Inter Solution, kỹ sư backend dự án Hoàng Gia (tìm kiếm và bộ lọc sản phẩm, chỉ mục tìm kiếm); 01/2025 - 12/2026: Inter Solution, kỹ sư DevOps cho các dự án thương mại điện tử (pipeline CI/CD, môi trường staging và production, giám sát, sao lưu và khôi phục; tham gia cut over dự án An Phát)",
    "chung_chi": "Không",
    "danh_gia": "Đáp ứng"
   },
@@ -254,9 +269,9 @@
    "vi_tri": "Kỹ sư phát triển phần mềm",
    "yeu_cau": "Tối thiểu 02 năm lập trình ứng dụng web",
    "ho_ten": "Vũ Đức Minh",
-   "trinh_do": "",
-   "so_nam": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam": 3,
+   "kinh_nghiem": "03/2024 - 11/2024: Inter Solution, kỹ sư frontend dự án Hoàng Gia (giao diện danh mục, giỏ hàng, đặt hàng trên máy tính và điện thoại); 01/2025 - 07/2025: Inter Solution, thiết kế UX/UI và lập trình giao diện dự án An Phát (prototype, quy chuẩn hiển thị, tối ưu tải trang)",
    "chung_chi": "Không",
    "danh_gia": "Đáp ứng"
   },
@@ -265,19 +280,19 @@
    "vi_tri": "Kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử",
    "yeu_cau": "Tối thiểu 02 năm phân tích nghiệp vụ hoặc kiểm thử phần mềm",
    "ho_ten": "Nguyễn Thị Phương Liên",
-   "trinh_do": "",
-   "so_nam": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam": 3,
+   "kinh_nghiem": "03/2024 - 11/2024: Inter Solution, chuyên viên phân tích nghiệp vụ dự án Hoàng Gia (khảo sát, SRS, use case, quy trình bán hàng trực tuyến); 01/2025 - 07/2025: Inter Solution, BA kiêm trưởng nhóm kiểm thử dự án An Phát (test case, quản lý lỗi, tổ chức UAT với khách hàng)",
    "chung_chi": "Không",
    "danh_gia": "Đáp ứng"
   }
  ],
  "don_du_thau": [
-  "Ngày:",
+  "Ngày: 05/03/2027",
   "Tên gói thầu: Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
   "Kính gửi: Công ty Cổ phần ABC Wear",
   "Sau khi nghiên cứu E-HSMT, chúng tôi:",
-  "Tên nhà thầu: Inter Solution, Mã số thuế, cam kết thực hiện gói thầu Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System) số E-TBMT: theo thông báo mời thầu trên Hệ thống mạng đấu thầu quốc gia theo đúng yêu cầu nêu trong E-HSMT với giá dự thầu (tổng số tiền) là 1.750.000.000 đồng (bằng chữ: một tỷ bảy trăm năm mươi triệu đồng) cùng với các bảng giá dự thầu kèm theo.",
+  "Tên nhà thầu: Công ty Cổ phần Giải pháp Inter Solution, Mã số thuế, cam kết thực hiện gói thầu Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System) số E-TBMT: theo thông báo mời thầu trên Hệ thống mạng đấu thầu quốc gia theo đúng yêu cầu nêu trong E-HSMT với giá dự thầu (tổng số tiền) là 1.750.000.000 đồng (bằng chữ: một tỷ bảy trăm năm mươi triệu đồng) cùng với các bảng giá dự thầu kèm theo.",
   "Hiệu lực của E-HSDT: 90 ngày kể từ ngày đóng thầu",
   "Bảo đảm dự thầu: 30.000.000 đồng (bằng chữ: ba mươi triệu đồng)",
   "Chúng tôi cam kết:",
@@ -292,7 +307,7 @@
   "9. Trường hợp trúng thầu, E-HSDT và các văn bản bổ sung, làm rõ E-HSDT tạo thành thỏa thuận ràng buộc trách nhiệm giữa hai bên cho tới khi hợp đồng được ký kết;",
   "10. Nếu E-HSDT của chúng tôi được chấp nhận, chúng tôi sẽ thực hiện biện pháp bảo đảm thực hiện hợp đồng theo quy định tại Mục 37.1 E-CDNT của E-HSMT;",
   "11. Trường hợp chúng tôi không nộp bản gốc bảo đảm dự thầu theo yêu cầu của Chủ đầu tư quy định tại Mục 18.5 E-CDNT; trong trường hợp giá trị bảo đảm dự thầu nhỏ hơn 50 triệu đồng, không nộp tiền mặt, Séc bảo chi, thư bảo lãnh dự thầu hoặc giấy chứng nhận bảo hiểm bảo lãnh theo quy định tại Mục 18.8 E-CDNT thì chúng tôi sẽ bị đánh giá không đảm bảo uy tín khi tham dự thầu theo quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP, nêu tên trên Hệ thống mạng đấu thầu quốc gia và tài khoản của chúng tôi sẽ bị khóa trong vòng 06 tháng kể từ ngày chủ đầu tư công khai tên chúng tôi trên Hệ thống mạng đấu thầu quốc gia, trừ trường hợp bất khả kháng.",
-  "Đơn dự thầu được ký bằng chữ ký số của , , khi nộp E-HSDT."
+  "Đơn dự thầu được ký bằng chữ ký số của Lê Quốc Bảo, Giám đốc, khi nộp E-HSDT."
  ],
  "bao_dam_ghi_chu": "Giá trị nhỏ hơn 50 triệu đồng nên nhà thầu cam kết trong đơn dự thầu theo Mục 18.8 E-CDNT, không nộp thư bảo lãnh dự thầu khi nộp E-HSDT.",
  "bao_dam_du_thau_chu": "ba mươi triệu"

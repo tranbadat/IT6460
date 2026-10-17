@@ -1,0 +1,27 @@
+{
+ "_huong_dan": "Căn cứ ước lượng khối lượng do nhóm cung cấp. Agent lập WBS phân rã gói lá sao cho tổng từng nhóm mức 1 khớp tong_theo_nhom (sai lệch trong dung_sai_nhom) và tổng toàn bộ bằng tong_md. Mỗi nhóm mức 1 ghi can_cu_uoc_luong dẫn về các bước dưới đây. Đổi phương pháp hoặc số liệu thì sửa tệp này rồi chạy lại từ bước wbs.",
+ "phuong_phap": "Ước lượng theo danh mục chức năng: phân loại từng chức năng theo thư viện định mức (giờ công chuẩn cho giải pháp, phát triển, kiểm thử đơn vị, kiểm thử), trừ phần tái sử dụng, cộng các đầu việc phi chức năng, sau đó đối chiếu với WBS và với hợp đồng tương tự",
+ "loai_uoc_luong": "Ước lượng sơ bộ giai đoạn dự thầu",
+ "khoang_sai_so": {"duoi": -0.15, "tren": 0.30},
+ "so_chuc_nang": 106,
+ "so_dau_viec_phi_chuc_nang": 25,
+ "cac_buoc": [
+  {"buoc": 1, "noi_dung": "106 chức năng gắn mã WBS (khách hàng, sản phẩm, đơn hàng, tích hợp, nền tảng dùng chung, công cụ kiểm thử, triển khai) được phân loại theo thư viện định mức, nỗ lực trước hiệu chỉnh", "md": 573.6},
+  {"buoc": 2, "noi_dung": "Trừ phần tái sử dụng theo tỷ lệ của từng chức năng (thư viện, thành phần dùng chung). Sau hiệu chỉnh gồm giải pháp 119,6 MD, phát triển 285,4 MD, kiểm thử 145,2 MD", "md": 550.3, "thanh_phan": {"giai_phap": 119.6, "phat_trien": 285.4, "kiem_thu": 145.2}},
+  {"buoc": 3, "noi_dung": "25 đầu việc phi chức năng: quản trị dự án, bảo đảm chất lượng, rà soát mã, kiểm thử tích hợp, nghiệm thu, hồ sơ kỹ thuật, triển khai, kiểm thử hiệu năng, rà soát an toàn thông tin, giám sát, đào tạo, hỗ trợ kiểm thử chấp nhận và vận hành thử, nghiên cứu tích hợp", "md": 106.7}
+ ],
+ "tong_md": 657,
+ "tong_theo_nhom": {
+  "1": {"ten": "Quản lý dự án", "md": 60},
+  "2": {"ten": "Phân tích và thiết kế chung", "md": 66},
+  "3": {"ten": "Phân hệ tìm kiếm và hiển thị sản phẩm", "md": 95},
+  "4": {"ten": "Phân hệ thành viên", "md": 91},
+  "5": {"ten": "Phân hệ đặt hàng", "md": 129},
+  "6": {"ten": "Cơ sở dữ liệu bán hàng và tích hợp hệ thống", "md": 95},
+  "7": {"ten": "Kiểm thử hệ thống và kiểm thử vận hành", "md": 71},
+  "8": {"ten": "Triển khai và chuyển giao", "md": 50}
+ },
+ "dung_sai_nhom": 0.1,
+ "nguon": "Bảng tính chi phí và báo giá của nhóm (106 chức năng, 25 đầu việc phi chức năng), tổng hợp tại HSDT của nhóm mục III.2 bảng 20 và III.5 bảng 26. Nhóm quyết định ngày 17/10/2026 dùng tổng 657 MD theo phương pháp này.",
+ "_ghi_chu": "Tài liệu nhóm ghi ba thành phần giải pháp, phát triển, kiểm thử ở bước 1 nhưng ba số này cộng ra 550,2 MD, tức kết quả bước 2 (mâu thuẫn M06), nên tệp này đặt ba thành phần ở bước 2. Mã nhóm theo WBS của bộ skill. Tài liệu nhóm đánh số phân hệ khách hàng là 3 (91 MD) và sản phẩm là 4 (95 MD); ở đây đã đổi về mã phân hệ của WBS skill."
+}

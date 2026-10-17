@@ -8,6 +8,10 @@ Dùng (chạy từ thư mục gốc dự án):
   python .../chay.py anh_huong <mã nút hoặc đường dẫn tệp>              các tài liệu phải cập nhật khi nút này thay đổi
   python .../chay.py bang_chung                                         xuất phụ lục bằng chứng prompt và skill
 Thư mục làm việc của mỗi bước: lam_viec/<buoc>/ (khung.json, ban_soan.json, các vòng, báo cáo kiểm tra).
+Tài liệu theo kỳ (đầu ra là thư mục, ví dụ báo cáo tiến độ): khi đạt, khung, bản soạn, các vòng được chép vào
+lam_viec/<buoc>/<tên tệp đầu ra>/, bằng chứng lớp A là bang_chung/kiem_tra/<buoc>_<tên tệp>_v<phiên bản>_lopA.json.
+CSV trong dau_vao/thuc_te/ chỉ có dòng tiêu đề coi như chưa có. Bước có đầu vào thực tế mà chưa tệp nào có dữ liệu
+ở trạng thái "chờ dữ liệu thực tế", không được gợi ý làm tiếp.
 Mã thoát: 0 đạt, 2 cần agent Soạn thảo hoặc người dùng xử lý, 1 lỗi.
 """
 import os as _os, sys as _sys  # noqa: E401
@@ -55,9 +59,23 @@ def tim_dac_ta(buoc_id):
     return None
 
 
+def co_du_lieu(p):
+    """Tệp CSV chỉ có dòng tiêu đề (mẫu nhập liệu trống) coi như chưa có dữ liệu."""
+    return not p.endswith('.csv') or bool(loi.doc_csv(p))
+
+
 def ton_tai(nut):
     p = loi.duong_dan_nut(sd, nut)
-    return p and os.path.exists(loi.duong_dan(p))
+    return bool(p) and os.path.exists(loi.duong_dan(p)) and co_du_lieu(p)
+
+
+THU_MUC_THUC_TE = 'dau_vao/thuc_te/'
+
+
+def cho_thuc_te(b):
+    """Bước có đầu vào thực tế (dau_vao/thuc_te/) nhưng chưa tệp nào có dòng dữ liệu: chưa làm được, không gợi ý."""
+    tt = [n for n in b['vao'] if (loi.duong_dan_nut(sd, n) or '').startswith(THU_MUC_THUC_TE)]
+    return bool(tt) and not any(ton_tai(n) for n in tt)
 
 
 def bat_buoc(nut):
@@ -105,7 +123,7 @@ def trang_thai_buoc(b):
                 if r and nut in b['vao'] and nut not in BIEN_DONG and loi.bam_nut(sd, nut) != h:
                     doi.add(nut)
     if not ra_co:
-        tt = 'thiếu đầu vào' if thieu else 'sẵn sàng thực hiện'
+        tt = 'thiếu đầu vào' if thieu else ('chờ dữ liệu thực tế' if cho_thuc_te(b) else 'sẵn sàng thực hiện')
     elif chua_dk:
         tt = 'cũ, cần cập nhật'
         doi.add('chưa đăng ký phiên bản: ' + ', '.join(chua_dk))
@@ -139,12 +157,15 @@ if a.lenh == 'trang_thai':
         print(json.dumps(rows, ensure_ascii=False, indent=1)); sys.exit(0)
     print(f'Thư mục dự án: {loi.GOC}')
     for k, v in sd['dau_vao'].items():
-        if not os.path.exists(loi.duong_dan(v['tep'])):
-            print(f'  Chưa có đầu vào {"bắt buộc" if v.get("bat_buoc", True) else "tùy chọn"}: {v["tep"]} ({v["mo_ta"]})')
+        if not ton_tai(k):
+            trong = ', chưa có dòng dữ liệu' if os.path.exists(loi.duong_dan(v['tep'])) else ''
+            print(f'  Chưa có đầu vào {"bắt buộc" if v.get("bat_buoc", True) else "tùy chọn"}: {v["tep"]} ({v["mo_ta"]}{trong})')
     for r in rows:
         extra = ''
         if r['thieu']:
             extra = ' | thiếu: ' + ', '.join(f'{n} ({nguon_cua(n)})' for n in r['thieu'])
+        if r['trang_thai'] == 'chờ dữ liệu thực tế':
+            extra += f' | nhóm ghi dữ liệu thực tế vào {THU_MUC_THUC_TE} khi thực hiện dự án'
         if r['dau_vao_da_doi']:
             extra += ' | đầu vào đã đổi: ' + ', '.join(r['dau_vao_da_doi'])
         if r['trang_thai'] == 'thiếu tài liệu':
@@ -217,9 +238,23 @@ def lap_khung_moi():
     loi.ghi_json(P('khung_nguon.json'), bam_nguon())
 
 
+def luu_theo_ky(ten_ra, so_vong):
+    """Tài liệu theo kỳ dùng chung lam_viec/<buoc>/: chép khung, bản soạn, nội dung, Word và báo cáo kiểm tra các vòng
+    vào lam_viec/<buoc>/<tên tệp đầu ra>/ để kỳ sau không ghi đè bằng chứng kỳ trước. Trả về thư mục lưu."""
+    d = P(ten_ra)
+    os.makedirs(d, exist_ok=True)
+    tep = ['khung.json', 'khung_nguon.json', 'ban_soan.json', 'noi_dung.json']
+    tep += [f'{b["id"]}_vong{i}.docx' for i in range(1, so_vong + 1)] + [f'bao_cao_kiem_tra_vong{i}.json' for i in range(1, so_vong + 1)]
+    for t in tep:
+        if os.path.exists(P(t)):
+            shutil.copy(P(t), os.path.join(d, t))
+    return loi.tuong_doi(d)
+
+
 def bam_nguon():
-    ds = dict(spec.get('nguon', {})); ds['_dac_ta'] = loi.tuong_doi(spec_path)
-    return {k: loi.bam(v) for k, v in ds.items()}
+    """Băm nguồn của khung, gồm cả du_an (bìa, đơn vị thực hiện gán từ nha_thau.json) để khung được lập lại khi đổi."""
+    ds = dict(spec.get('nguon', {})); ds.setdefault('da', 'dau_vao/du_an.json'); ds['_dac_ta'] = loi.tuong_doi(spec_path)
+    return {k: loi.bam_hieu_luc(v) for k, v in ds.items()}
 
 if a.lenh == 'chuan_bi':
     thieu = [f'{n} ({nguon_cua(n)})' for n in b['vao'] if not ton_tai(n) and bat_buoc(n)]
@@ -246,9 +281,13 @@ if a.lenh == 'hoan_thien':
         print('DỪNG: agent Soạn thảo sửa ban_soan.json theo thông báo trên.'); sys.exit(2)
     nut_ra = spec.get('nut_ra') or next(k for k in b['ra'] if k.startswith('doc_'))
     tep_ra = b['ra'][nut_ra]
-    if not os.path.splitext(tep_ra)[1]:  # đầu ra là thư mục: tên tệp theo đặc tả (ví dụ theo kỳ báo cáo)
+    theo_ky = not os.path.splitext(tep_ra)[1]
+    if theo_ky:  # đầu ra là thư mục: tên tệp theo đặc tả (ví dụ theo kỳ báo cáo)
         nguon_ = loi.nap_nguon(spec.get('nguon', {}))
         tep_ra = tep_ra + '/' + loi.giai_bieu_thuc(spec.get('ten_tep', b['id'] + '.docx'), nguon_)
+    ten_ra = os.path.splitext(os.path.basename(tep_ra))[0]
+    # tài liệu theo kỳ: tên bằng chứng có tên tệp đầu ra để kỳ sau không ghi đè kỳ trước
+    tien_to_bc = f'{b["id"]}_{ten_ra}' if theo_ky else b['id']
     nguon_ng = loi.nap_nguon(dict({'da': 'dau_vao/du_an.json'}, **spec.get('nguon', {})))
     ngay_tl = loi.ngay(loi.bay_gio()[:10])
     if a.ngay:
@@ -289,11 +328,13 @@ if a.lenh == 'hoan_thien':
             pb = loi.dang_ky_phien_ban(b['id'], tep_ra, b['vao'], a.ghi_chu, hash_noi_dung=h,
                                        them={'noi_dung': loi.tuong_doi(nd_luu), 'co_dinh': spec.get('co_dinh', ''), 'ngay_tai_lieu': ngay_tl})
             os.makedirs(loi.duong_dan('bang_chung/kiem_tra'), exist_ok=True)
-            shutil.copy(bc, loi.duong_dan(f'bang_chung/kiem_tra/{b["id"]}_v{pb}_lopA.json'))
+            shutil.copy(bc, loi.duong_dan(f'bang_chung/kiem_tra/{tien_to_bc}_v{pb}_lopA.json'))
+            luu = luu_theo_ky(ten_ra, n) if theo_ky else None
             loi.ghi_nhat_ky(b['skill'], b['id'] + '.hoan_thien', 'script', f'Tạo tài liệu {b["ten"]}, đạt kiểm tra lớp A sau {n} vòng',
-                            vao=[P('noi_dung.json')], ra=[tep_ra], ket_qua='đạt', chi_tiet={'phien_ban': pb, 'so_vong': n})
-            print(f'ĐẠT lớp A. Tài liệu: {tep_ra}, phiên bản {pb}.')
-            print(f'Tiếp theo: agent Kiểm tra lớp B theo qlda-loi/prompts/vai_kiem_tra.md với đặc tả {loi.tuong_doi(spec_path)}.')
+                            vao=[P('noi_dung.json')], ra=[tep_ra], ket_qua='đạt', chi_tiet={'phien_ban': pb, 'so_vong': n, 'luu_theo_ky': luu})
+            print(f'ĐẠT lớp A. Tài liệu: {tep_ra}, phiên bản {pb}.' + (f' Bản soạn và các vòng lưu tại {luu}.' if luu else ''))
+            print(f'Tiếp theo: agent Kiểm tra lớp B theo qlda-loi/prompts/vai_kiem_tra.md với đặc tả {loi.tuong_doi(spec_path)}, '
+                  f'chép báo cáo vào bang_chung/kiem_tra/{tien_to_bc}_v{pb}_lopB.json.')
             sys.exit(0)
         r = py(os.path.join(HERE, 'sua_tu_dong.py'), bc, P('noi_dung.json'), '--ban-soan', P('ban_soan.json'))
         print('[vòng %d sửa] ' % n + r.stdout.strip())

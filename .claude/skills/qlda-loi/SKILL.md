@@ -7,7 +7,7 @@ description: Lõi dùng chung của bộ skill quản lý dự án BTL_QLDA (ABC
 
 Các skill tài liệu (qlda-*) và hsmt-mau-5a dùng chung thư viện, quy trình và sơ đồ phụ thuộc trong skill này. Đọc trước:
 - `references/quy_trinh_chung.md`: vòng làm, kiểm tra, sửa và bảng các bước dữ liệu.
-- `references/du_lieu.md`: thư mục, tệp dữ liệu, cú pháp tham chiếu số liệu.
+- `references/du_lieu.md`: thư mục, tệp dữ liệu, cú pháp tham chiếu số liệu (khóa có dấu chấm, lọc mọi phần tử, đếm |dem), khóa đặc tả cho bảng (dong_tong.tong, mau_so, bìa hồ sơ thầu) và khóa kiểm tra lớp A (muc_bat_buoc, bieu_mau, ngoac_cho_phep).
 - `references/van_phong.md`: văn phong, trình bày (Times New Roman 13, bảng lưới, không in đậm trừ mục cha WBS, gạch ngang đơn).
 - `references/so_do_phu_thuoc.json`: đầu vào, đầu ra của từng bước, tài liệu khóa.
 

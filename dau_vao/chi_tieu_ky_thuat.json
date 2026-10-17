@@ -1,0 +1,81 @@
+{
+ "_huong_dan": "Chỉ tiêu kỹ thuật định lượng nhà thầu cam kết, dùng cho đề xuất kỹ thuật của HSDT, tiêu chí nghiệm thu của master plan và đánh giá khi kết thúc. Trường null là chưa thống nhất, tài liệu ghi rõ thời điểm thống nhất. Đổi chỉ tiêu thì sửa tệp này rồi chạy lại các bước báo cũ.",
+ "chi_tieu": [
+  {
+   "ma": "KT01",
+   "yeu_cau_hsmt": "Hoạt động liên tục 24 giờ mỗi ngày trong 365 ngày",
+   "chi_tieu": "Tỷ lệ sẵn sàng từ 99,5% mỗi tháng, không tính khung bảo trì đã thống nhất",
+   "gia_tri": 0.995,
+   "don_vi": "tỷ lệ mỗi tháng",
+   "giai_phap": "Tối thiểu 02 nút ứng dụng sau bộ cân bằng tải; cơ sở dữ liệu cấu hình chính và dự phòng; triển khai cuốn chiếu không dừng dịch vụ; kiểm tra sức khỏe và cảnh báo tự động",
+   "cach_kiem_chung": "Diễn tập chuyển đổi dự phòng trước cut over"
+  },
+  {
+   "ma": "KT02",
+   "yeu_cau_hsmt": "Thời gian phản hồi không quá 2 giây cho mỗi thao tác",
+   "chi_tieu": "Mọi thao tác cốt lõi (tìm kiếm, xem sản phẩm, đăng nhập, giỏ hàng, đặt hàng) không quá 2 giây, báo cáo kèm phân vị 95",
+   "gia_tri": 2,
+   "don_vi": "giây",
+   "giai_phap": "Chỉ mục tìm kiếm riêng; bộ nhớ đệm trang danh mục, chi tiết sản phẩm; tối ưu truy vấn và chỉ mục cơ sở dữ liệu; xử lý bất đồng bộ các tác vụ gọi hệ thống ngoài",
+   "cach_kiem_chung": "Đo các thao tác cốt lõi trên môi trường thống nhất, báo cáo kèm phân vị 95"
+  },
+  {
+   "ma": "KT03",
+   "yeu_cau_hsmt": "Thời gian phản hồi không quá 2 giây cho mỗi thao tác",
+   "chi_tieu": "Chịu tải 500 người dùng đồng thời",
+   "gia_tri": 500,
+   "don_vi": "người dùng đồng thời",
+   "giai_phap": "Mở rộng theo chiều ngang ở lớp ứng dụng",
+   "cach_kiem_chung": "Thử tải 500 người dùng đồng thời, đo lại sau tối ưu"
+  },
+  {
+   "ma": "KT04",
+   "yeu_cau_hsmt": "An toàn dữ liệu",
+   "chi_tieu": "Rà soát lỗ hổng theo OWASP Top 10 và kiểm thử lại sau khắc phục",
+   "gia_tri": null,
+   "don_vi": null,
+   "giai_phap": "HTTPS; băm mật khẩu; phân quyền theo vai trò; kiểm soát dữ liệu đầu vào; bảo vệ phiên; giới hạn đăng nhập sai; tách khóa và cấu hình bí mật khỏi mã nguồn; ghi nhật ký thao tác nhạy cảm",
+   "cach_kiem_chung": "Báo cáo rà soát lỗ hổng và kết quả kiểm thử lại"
+  },
+  {
+   "ma": "KT05",
+   "yeu_cau_hsmt": "Sao lưu, khôi phục",
+   "chi_tieu": "Sao lưu toàn phần hằng ngày, sao lưu nhật ký giao dịch theo giờ",
+   "gia_tri": null,
+   "don_vi": null,
+   "giai_phap": "Sao lưu toàn phần hằng ngày, sao lưu nhật ký giao dịch theo giờ",
+   "cach_kiem_chung": "Chạy thử khôi phục trước nghiệm thu",
+   "rpo_gio": null,
+   "rto_gio": null,
+   "_ghi_chu": "RPO, RTO do hai bên thống nhất khi xác nhận đặc tả"
+  }
+ ],
+ "bao_hanh": {
+  "thoi_han_thang": 12,
+  "muc_loi": [
+   {
+    "muc": "Nghiêm trọng",
+    "phan_hoi_gio": 2,
+    "khac_phuc": "8 giờ"
+   },
+   {
+    "muc": "Cao",
+    "phan_hoi_gio": null,
+    "khac_phuc": "1 ngày làm việc"
+   },
+   {
+    "muc": "Khác",
+    "phan_hoi_gio": null,
+    "khac_phuc": "3 ngày làm việc"
+   }
+  ],
+  "ho_tro_tang_cuong": {
+   "tu": "2027-07-02",
+   "den": "2027-07-15",
+   "noi_dung": "Trực hỗ trợ trong giờ hành chính, theo dõi cảnh báo và xử lý sự cố, nằm trong chi phí bảo hành"
+  }
+ },
+ "dieu_kien_cut_over": "Kiểm thử chấp nhận đạt, không còn lỗi nghiêm trọng hoặc cao làm gián đoạn luồng đặt hàng, có báo cáo hiệu năng và an toàn thông tin của bản phát hành",
+ "thoi_han_danh_gia_thay_doi_ngay": 3,
+ "nguon": "HSDT của nhóm mục II.2 bảng 11, II.10, II.11, III.7, III.8. Nhóm quyết định ngày 17/10/2026 đưa các chỉ tiêu này vào đầu vào chung."
+}

@@ -583,7 +583,7 @@
     "K"
    ],
    "R": "K",
-   "ho_ten_R": "K",
+   "ho_ten_R": "Nguyễn Hoàng Nam",
    "phu_thuoc": [
     "2.1.1"
    ],
@@ -768,7 +768,7 @@
     "K"
    ],
    "R": "K",
-   "ho_ten_R": "K",
+   "ho_ten_R": "Nguyễn Hoàng Nam",
    "phu_thuoc": [
     "2.1.2"
    ],
@@ -921,13 +921,13 @@
    "sprint_ket_thuc": "S3",
    "cha": "3.2",
    "phan_nguoi": {
-    "D1": 4.0
+    "D2": 4.0
    },
    "nguoi": [
-    "D1"
+    "D2"
    ],
-   "R": "D1",
-   "ho_ten_R": "D1",
+   "R": "D2",
+   "ho_ten_R": "Đỗ Minh Quân",
    "phu_thuoc": [
     "3.1.1",
     "2.2.3"
@@ -971,7 +971,7 @@
     "K"
    ],
    "R": "K",
-   "ho_ten_R": "K",
+   "ho_ten_R": "Nguyễn Hoàng Nam",
    "phu_thuoc": [
     "3.2.1",
     "2.3.3"
@@ -996,13 +996,13 @@
    "sprint_ket_thuc": "S4",
    "cha": "3.3",
    "phan_nguoi": {
-    "D1": 8.0
+    "D2": 8.0
    },
    "nguoi": [
-    "D1"
+    "D2"
    ],
-   "R": "D1",
-   "ho_ten_R": "D1",
+   "R": "D2",
+   "ho_ten_R": "Đỗ Minh Quân",
    "phu_thuoc": [
     "3.2.1",
     "6.1.1"
@@ -1027,15 +1027,15 @@
    "sprint_ket_thuc": "S5",
    "cha": "3.3",
    "phan_nguoi": {
-    "D2": 4.0,
+    "D1": 4.0,
     "minh": 4.0
    },
    "nguoi": [
-    "D2",
+    "D1",
     "minh"
    ],
-   "R": "D2",
-   "ho_ten_R": "D2",
+   "R": "D1",
+   "ho_ten_R": "Lê Quang Huy",
    "phu_thuoc": [
     "3.3.2",
     "2.3.3"
@@ -1060,13 +1060,13 @@
    "sprint_ket_thuc": "S5",
    "cha": "3.3",
    "phan_nguoi": {
-    "D1": 4.0
+    "D2": 4.0
    },
    "nguoi": [
-    "D1"
+    "D2"
    ],
-   "R": "D1",
-   "ho_ten_R": "D1",
+   "R": "D2",
+   "ho_ten_R": "Đỗ Minh Quân",
    "phu_thuoc": [
     "3.3.2"
    ],
@@ -1111,7 +1111,7 @@
     "Q2"
    ],
    "R": "Q1",
-   "ho_ten_R": "Q1",
+   "ho_ten_R": "Trần Thu Hà",
    "phu_thuoc": [
     "3.3.1",
     "3.3.3",
@@ -1156,7 +1156,7 @@
     "K"
    ],
    "R": "K",
-   "ho_ten_R": "K",
+   "ho_ten_R": "Nguyễn Hoàng Nam",
    "phu_thuoc": [
     "3.4.1"
    ],
@@ -1212,7 +1212,7 @@
     "K"
    ],
    "R": "K",
-   "ho_ten_R": "K",
+   "ho_ten_R": "Nguyễn Hoàng Nam",
    "phu_thuoc": [
     "2.1.2"
    ],
@@ -1255,7 +1255,7 @@
     "K"
    ],
    "R": "K",
-   "ho_ten_R": "K",
+   "ho_ten_R": "Nguyễn Hoàng Nam",
    "phu_thuoc": [
     "4.1.1",
     "2.2.3"
@@ -1299,7 +1299,7 @@
     "D3"
    ],
    "R": "D3",
-   "ho_ten_R": "D3",
+   "ho_ten_R": "Bùi Anh Tuấn",
    "phu_thuoc": [
     "4.2.1",
     "6.1.1"
@@ -1324,13 +1324,13 @@
    "sprint_ket_thuc": "S4",
    "cha": "4.3",
    "phan_nguoi": {
-    "D1": 6.0
+    "D2": 6.0
    },
    "nguoi": [
-    "D1"
+    "D2"
    ],
-   "R": "D1",
-   "ho_ten_R": "D1",
+   "R": "D2",
+   "ho_ten_R": "Đỗ Minh Quân",
    "phu_thuoc": [
     "4.2.1",
     "6.1.1"
@@ -1356,11 +1356,11 @@
    "cha": "4.3",
    "phan_nguoi": {
     "minh": 4.0,
-    "D2": 4.0
+    "D1": 4.0
    },
    "nguoi": [
     "minh",
-    "D2"
+    "D1"
    ],
    "R": "minh",
    "ho_ten_R": "Vũ Đức Minh",
@@ -1407,7 +1407,7 @@
     "Q2"
    ],
    "R": "Q2",
-   "ho_ten_R": "Q2",
+   "ho_ten_R": "Phạm Ngọc Anh",
    "phu_thuoc": [
     "4.3.2",
     "4.3.3"
@@ -1594,7 +1594,7 @@
     "K"
    ],
    "R": "K",
-   "ho_ten_R": "K",
+   "ho_ten_R": "Nguyễn Hoàng Nam",
    "phu_thuoc": [
     "5.2.1",
     "6.1.1"
@@ -1652,15 +1652,15 @@
    "sprint_ket_thuc": "S5",
    "cha": "5.3",
    "phan_nguoi": {
-    "D1": 3.0,
+    "D2": 3.0,
     "D3": 3.0
    },
    "nguoi": [
-    "D1",
+    "D2",
     "D3"
    ],
-   "R": "D1",
-   "ho_ten_R": "D1",
+   "R": "D2",
+   "ho_ten_R": "Đỗ Minh Quân",
    "phu_thuoc": [
     "5.3.2"
    ],
@@ -1684,15 +1684,15 @@
    "sprint_ket_thuc": "S4",
    "cha": "5.3",
    "phan_nguoi": {
-    "D2": 5.0,
+    "D1": 5.0,
     "minh": 5.0
    },
    "nguoi": [
-    "D2",
+    "D1",
     "minh"
    ],
-   "R": "D2",
-   "ho_ten_R": "D2",
+   "R": "D1",
+   "ho_ten_R": "Lê Quang Huy",
    "phu_thuoc": [
     "5.3.1",
     "2.3.3"
@@ -1738,7 +1738,7 @@
     "lien"
    ],
    "R": "Q1",
-   "ho_ten_R": "Q1",
+   "ho_ten_R": "Trần Thu Hà",
    "phu_thuoc": [
     "5.3.3",
     "5.3.4",
@@ -1783,7 +1783,7 @@
     "K"
    ],
    "R": "K",
-   "ho_ten_R": "K",
+   "ho_ten_R": "Nguyễn Hoàng Nam",
    "phu_thuoc": [
     "5.4.1"
    ],
@@ -1870,7 +1870,7 @@
     "D3"
    ],
    "R": "D3",
-   "ho_ten_R": "D3",
+   "ho_ten_R": "Bùi Anh Tuấn",
    "phu_thuoc": [
     "6.2.2"
    ],
@@ -2008,7 +2008,7 @@
     "tuananh"
    ],
    "R": "D3",
-   "ho_ten_R": "D3",
+   "ho_ten_R": "Bùi Anh Tuấn",
    "phu_thuoc": [
     "6.2.3",
     "5.3.3"
@@ -2041,7 +2041,7 @@
     "Q1"
    ],
    "R": "Q2",
-   "ho_ten_R": "Q2",
+   "ho_ten_R": "Phạm Ngọc Anh",
    "phu_thuoc": [
     "6.1.2",
     "6.2.4"
@@ -2128,7 +2128,7 @@
     "Q1"
    ],
    "R": "Q1",
-   "ho_ten_R": "Q1",
+   "ho_ten_R": "Trần Thu Hà",
    "phu_thuoc": [
     "7.1.1"
    ],
@@ -2173,7 +2173,7 @@
     "Q2"
    ],
    "R": "Q1",
-   "ho_ten_R": "Q1",
+   "ho_ten_R": "Trần Thu Hà",
    "phu_thuoc": [
     "7.1.2",
     "3.4.1",
@@ -2244,7 +2244,7 @@
     "D3"
    ],
    "R": "D3",
-   "ho_ten_R": "D3",
+   "ho_ten_R": "Bùi Anh Tuấn",
    "phu_thuoc": [
     "8.1.2",
     "3.4.1",
@@ -2337,19 +2337,19 @@
    "sprint_ket_thuc": "S7",
    "cha": "7.2",
    "phan_nguoi": {
-    "D1": 2.5,
     "D2": 2.5,
+    "D1": 2.5,
     "D3": 2.5,
     "tuananh": 2.5
    },
    "nguoi": [
-    "D1",
     "D2",
+    "D1",
     "D3",
     "tuananh"
    ],
-   "R": "D1",
-   "ho_ten_R": "D1",
+   "R": "D2",
+   "ho_ten_R": "Đỗ Minh Quân",
    "phu_thuoc": [
     "7.2.1",
     "7.2.2",
@@ -2460,12 +2460,12 @@
    "phan_nguoi": {
     "tuananh": 1.67,
     "D3": 1.67,
-    "D1": 1.66
+    "D2": 1.66
    },
    "nguoi": [
     "tuananh",
     "D3",
-    "D1"
+    "D2"
    ],
    "R": "tuananh",
    "ho_ten_R": "Phạm Tuấn Anh",
@@ -2600,7 +2600,7 @@
     "lien"
    ],
    "R": "K",
-   "ho_ten_R": "K",
+   "ho_ten_R": "Nguyễn Hoàng Nam",
    "phu_thuoc": [
     "3.5.1",
     "4.5.1",
@@ -2634,7 +2634,7 @@
     "lien"
    ],
    "R": "K",
-   "ho_ten_R": "K",
+   "ho_ten_R": "Nguyễn Hoàng Nam",
    "phu_thuoc": [
     "8.2.1",
     "7.2.1"
@@ -2743,7 +2743,7 @@
     "toan"
    ],
    "R": "D3",
-   "ho_ten_R": "D3",
+   "ho_ten_R": "Bùi Anh Tuấn",
    "phu_thuoc": [
     "8.3.2"
    ],
@@ -3120,7 +3120,7 @@
   },
   {
    "thanh_vien": "K",
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "sprint": "S1",
    "md": 5.5,
    "quy": 10.0,
@@ -3128,7 +3128,7 @@
   },
   {
    "thanh_vien": "K",
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "sprint": "S2",
    "md": 10.0,
    "quy": 10.0,
@@ -3136,7 +3136,7 @@
   },
   {
    "thanh_vien": "K",
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "sprint": "S3",
    "md": 10.0,
    "quy": 10.0,
@@ -3144,7 +3144,7 @@
   },
   {
    "thanh_vien": "K",
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "sprint": "S4",
    "md": 9.5,
    "quy": 10.0,
@@ -3152,7 +3152,7 @@
   },
   {
    "thanh_vien": "K",
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "sprint": "S5",
    "md": 6.0,
    "quy": 10.0,
@@ -3160,7 +3160,7 @@
   },
   {
    "thanh_vien": "K",
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "sprint": "S6",
    "md": 7.0,
    "quy": 10.0,
@@ -3168,7 +3168,7 @@
   },
   {
    "thanh_vien": "K",
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "sprint": "S7",
    "md": 0.0,
    "quy": 13.0,
@@ -3176,7 +3176,7 @@
   },
   {
    "thanh_vien": "D1",
-   "ho_ten": "D1",
+   "ho_ten": "Lê Quang Huy",
    "sprint": "S1",
    "md": 0.0,
    "quy": 0.0,
@@ -3184,7 +3184,7 @@
   },
   {
    "thanh_vien": "D1",
-   "ho_ten": "D1",
+   "ho_ten": "Lê Quang Huy",
    "sprint": "S2",
    "md": 0.0,
    "quy": 0.0,
@@ -3192,103 +3192,103 @@
   },
   {
    "thanh_vien": "D1",
-   "ho_ten": "D1",
-   "sprint": "S3",
-   "md": 8.0,
-   "quy": 10.0,
-   "ty_le": 0.8
-  },
-  {
-   "thanh_vien": "D1",
-   "ho_ten": "D1",
-   "sprint": "S4",
-   "md": 10.0,
-   "quy": 10.0,
-   "ty_le": 1.0
-  },
-  {
-   "thanh_vien": "D1",
-   "ho_ten": "D1",
-   "sprint": "S5",
-   "md": 7.0,
-   "quy": 10.0,
-   "ty_le": 0.7
-  },
-  {
-   "thanh_vien": "D1",
-   "ho_ten": "D1",
-   "sprint": "S6",
-   "md": 1.67,
-   "quy": 10.0,
-   "ty_le": 0.167
-  },
-  {
-   "thanh_vien": "D1",
-   "ho_ten": "D1",
-   "sprint": "S7",
-   "md": 2.5,
-   "quy": 13.0,
-   "ty_le": 0.1923
-  },
-  {
-   "thanh_vien": "D2",
-   "ho_ten": "D2",
-   "sprint": "S1",
-   "md": 0.0,
-   "quy": 0.0,
-   "ty_le": 0
-  },
-  {
-   "thanh_vien": "D2",
-   "ho_ten": "D2",
-   "sprint": "S2",
-   "md": 0.0,
-   "quy": 0.0,
-   "ty_le": 0
-  },
-  {
-   "thanh_vien": "D2",
-   "ho_ten": "D2",
+   "ho_ten": "Lê Quang Huy",
    "sprint": "S3",
    "md": 0.0,
    "quy": 10.0,
    "ty_le": 0.0
   },
   {
-   "thanh_vien": "D2",
-   "ho_ten": "D2",
+   "thanh_vien": "D1",
+   "ho_ten": "Lê Quang Huy",
    "sprint": "S4",
    "md": 6.0,
    "quy": 10.0,
    "ty_le": 0.6
   },
   {
-   "thanh_vien": "D2",
-   "ho_ten": "D2",
+   "thanh_vien": "D1",
+   "ho_ten": "Lê Quang Huy",
    "sprint": "S5",
    "md": 7.0,
    "quy": 10.0,
    "ty_le": 0.7
   },
   {
-   "thanh_vien": "D2",
-   "ho_ten": "D2",
+   "thanh_vien": "D1",
+   "ho_ten": "Lê Quang Huy",
    "sprint": "S6",
    "md": 1.67,
    "quy": 10.0,
    "ty_le": 0.167
   },
   {
-   "thanh_vien": "D2",
-   "ho_ten": "D2",
+   "thanh_vien": "D1",
+   "ho_ten": "Lê Quang Huy",
    "sprint": "S7",
    "md": 0.83,
    "quy": 13.0,
    "ty_le": 0.0638
   },
   {
+   "thanh_vien": "D2",
+   "ho_ten": "Đỗ Minh Quân",
+   "sprint": "S1",
+   "md": 0.0,
+   "quy": 0.0,
+   "ty_le": 0
+  },
+  {
+   "thanh_vien": "D2",
+   "ho_ten": "Đỗ Minh Quân",
+   "sprint": "S2",
+   "md": 0.0,
+   "quy": 0.0,
+   "ty_le": 0
+  },
+  {
+   "thanh_vien": "D2",
+   "ho_ten": "Đỗ Minh Quân",
+   "sprint": "S3",
+   "md": 8.0,
+   "quy": 10.0,
+   "ty_le": 0.8
+  },
+  {
+   "thanh_vien": "D2",
+   "ho_ten": "Đỗ Minh Quân",
+   "sprint": "S4",
+   "md": 10.0,
+   "quy": 10.0,
+   "ty_le": 1.0
+  },
+  {
+   "thanh_vien": "D2",
+   "ho_ten": "Đỗ Minh Quân",
+   "sprint": "S5",
+   "md": 7.0,
+   "quy": 10.0,
+   "ty_le": 0.7
+  },
+  {
+   "thanh_vien": "D2",
+   "ho_ten": "Đỗ Minh Quân",
+   "sprint": "S6",
+   "md": 1.67,
+   "quy": 10.0,
+   "ty_le": 0.167
+  },
+  {
+   "thanh_vien": "D2",
+   "ho_ten": "Đỗ Minh Quân",
+   "sprint": "S7",
+   "md": 2.5,
+   "quy": 13.0,
+   "ty_le": 0.1923
+  },
+  {
    "thanh_vien": "D3",
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "sprint": "S1",
    "md": 0.0,
    "quy": 0.0,
@@ -3296,7 +3296,7 @@
   },
   {
    "thanh_vien": "D3",
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "sprint": "S2",
    "md": 0.0,
    "quy": 0.0,
@@ -3304,7 +3304,7 @@
   },
   {
    "thanh_vien": "D3",
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "sprint": "S3",
    "md": 0.0,
    "quy": 0.0,
@@ -3312,7 +3312,7 @@
   },
   {
    "thanh_vien": "D3",
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "sprint": "S4",
    "md": 10.0,
    "quy": 10.0,
@@ -3320,7 +3320,7 @@
   },
   {
    "thanh_vien": "D3",
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "sprint": "S5",
    "md": 8.5,
    "quy": 10.0,
@@ -3328,7 +3328,7 @@
   },
   {
    "thanh_vien": "D3",
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "sprint": "S6",
    "md": 5.67,
    "quy": 10.0,
@@ -3336,7 +3336,7 @@
   },
   {
    "thanh_vien": "D3",
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "sprint": "S7",
    "md": 5.0,
    "quy": 13.0,
@@ -3344,7 +3344,7 @@
   },
   {
    "thanh_vien": "Q1",
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "sprint": "S1",
    "md": 0.0,
    "quy": 0.0,
@@ -3352,7 +3352,7 @@
   },
   {
    "thanh_vien": "Q1",
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "sprint": "S2",
    "md": 0.0,
    "quy": 0.0,
@@ -3360,7 +3360,7 @@
   },
   {
    "thanh_vien": "Q1",
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "sprint": "S3",
    "md": 0.0,
    "quy": 10.0,
@@ -3368,7 +3368,7 @@
   },
   {
    "thanh_vien": "Q1",
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "sprint": "S4",
    "md": 6.0,
    "quy": 10.0,
@@ -3376,7 +3376,7 @@
   },
   {
    "thanh_vien": "Q1",
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "sprint": "S5",
    "md": 5.5,
    "quy": 10.0,
@@ -3384,7 +3384,7 @@
   },
   {
    "thanh_vien": "Q1",
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "sprint": "S6",
    "md": 7.0,
    "quy": 10.0,
@@ -3392,7 +3392,7 @@
   },
   {
    "thanh_vien": "Q1",
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "sprint": "S7",
    "md": 2.0,
    "quy": 13.0,
@@ -3400,7 +3400,7 @@
   },
   {
    "thanh_vien": "Q2",
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "sprint": "S1",
    "md": 0.0,
    "quy": 0.0,
@@ -3408,7 +3408,7 @@
   },
   {
    "thanh_vien": "Q2",
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "sprint": "S2",
    "md": 0.0,
    "quy": 0.0,
@@ -3416,7 +3416,7 @@
   },
   {
    "thanh_vien": "Q2",
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "sprint": "S3",
    "md": 0.0,
    "quy": 0.0,
@@ -3424,7 +3424,7 @@
   },
   {
    "thanh_vien": "Q2",
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "sprint": "S4",
    "md": 0.0,
    "quy": 10.0,
@@ -3432,7 +3432,7 @@
   },
   {
    "thanh_vien": "Q2",
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "sprint": "S5",
    "md": 6.67,
    "quy": 10.0,
@@ -3440,7 +3440,7 @@
   },
   {
    "thanh_vien": "Q2",
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "sprint": "S6",
    "md": 7.83,
    "quy": 10.0,
@@ -3448,7 +3448,7 @@
   },
   {
    "thanh_vien": "Q2",
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "sprint": "S7",
    "md": 2.0,
    "quy": 13.0,

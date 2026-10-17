@@ -8,9 +8,9 @@
    "loai": "nhom",
    "chuc_danh": "Trưởng nhóm, quản trị dự án",
    "kiem_nhiem": "Kiến trúc sư hệ thống",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam_kinh_nghiem": 4,
+   "kinh_nghiem": "03/2024 - 11/2024: quản trị dự án Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng cho Công ty CP Thời trang Hoàng Gia (1,15 tỷ đồng, khoảng 550 MD, 10 nhân sự); 01/2025 - 07/2025: quản trị dự án Website bán hàng trực tuyến và tích hợp ERP cho Công ty TNHH Nội thất An Phát (860 triệu đồng, sprint 2 tuần); 09/2025 - 12/2026: quản lý dự án, kiến trúc sư nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ",
    "chung_chi": "",
    "vai_tro": "LEAD",
    "loai_cong_viec": [
@@ -20,7 +20,8 @@
    ],
    "ty_le": 1.0,
    "tu_sprint": null,
-   "den_sprint": null
+   "den_sprint": null,
+   "nam_sinh": 1998
   },
   {
    "id": "tuananh",
@@ -29,9 +30,9 @@
    "loai": "nhom",
    "chuc_danh": "Kỹ sư phát triển backend",
    "kiem_nhiem": "",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam_kinh_nghiem": 3,
+   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư backend dự án Hoàng Gia (API khách hàng, đơn hàng; thiết kế cơ sở dữ liệu; unit test); 01/2025 - 07/2025: trưởng nhóm backend dự án An Phát (đồng bộ tồn kho với ERP, xác thực và phân quyền)",
    "chung_chi": "",
    "vai_tro": "BACKEND",
    "loai_cong_viec": [
@@ -39,7 +40,8 @@
    ],
    "ty_le": 1.0,
    "tu_sprint": null,
-   "den_sprint": null
+   "den_sprint": null,
+   "nam_sinh": 2001
   },
   {
    "id": "minh",
@@ -48,9 +50,9 @@
    "loai": "nhom",
    "chuc_danh": "Kỹ sư phát triển frontend",
    "kiem_nhiem": "Thiết kế UX/UI",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam_kinh_nghiem": 3,
+   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư frontend dự án Hoàng Gia (giao diện danh mục, giỏ hàng, đặt hàng trên máy tính và điện thoại); 01/2025 - 07/2025: thiết kế UX/UI và lập trình giao diện dự án An Phát (prototype, quy chuẩn hiển thị, tối ưu tải trang)",
    "chung_chi": "",
    "vai_tro": "FRONTEND",
    "loai_cong_viec": [
@@ -59,7 +61,8 @@
    ],
    "ty_le": 1.0,
    "tu_sprint": null,
-   "den_sprint": null
+   "den_sprint": null,
+   "nam_sinh": 2002
   },
   {
    "id": "toan",
@@ -68,9 +71,9 @@
    "loai": "nhom",
    "chuc_danh": "Kỹ sư phát triển backend",
    "kiem_nhiem": "Triển khai và an toàn (DevOps)",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam_kinh_nghiem": 3,
+   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư backend dự án Hoàng Gia (tìm kiếm và bộ lọc sản phẩm, chỉ mục tìm kiếm); 01/2025 - 12/2026: kỹ sư DevOps cho các dự án thương mại điện tử (pipeline CI/CD, môi trường staging và production, giám sát, sao lưu và khôi phục; tham gia cut over dự án An Phát)",
    "chung_chi": "",
    "vai_tro": "BACKEND",
    "loai_cong_viec": [
@@ -80,7 +83,8 @@
    ],
    "ty_le": 1.0,
    "tu_sprint": null,
-   "den_sprint": null
+   "den_sprint": null,
+   "nam_sinh": 2001
   },
   {
    "id": "lien",
@@ -89,9 +93,9 @@
    "loai": "nhom",
    "chuc_danh": "Phân tích nghiệp vụ",
    "kiem_nhiem": "Kỹ sư kiểm thử",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam_kinh_nghiem": 3,
+   "kinh_nghiem": "03/2024 - 11/2024: chuyên viên phân tích nghiệp vụ dự án Hoàng Gia (khảo sát, SRS, use case, quy trình bán hàng trực tuyến); 01/2025 - 07/2025: BA kiêm trưởng nhóm kiểm thử dự án An Phát (test case, quản lý lỗi, tổ chức UAT với khách hàng)",
    "chung_chi": "",
    "vai_tro": "BAQA",
    "loai_cong_viec": [
@@ -100,19 +104,20 @@
    ],
    "ty_le": 1.0,
    "tu_sprint": null,
-   "den_sprint": null
+   "den_sprint": null,
+   "nam_sinh": 2001
   },
   {
    "id": "K",
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "loai": "bo_sung",
-   "chuc_danh": "Kiến trúc sư, phân tích nghiệp vụ",
-   "kiem_nhiem": "",
+   "chuc_danh": "Kiến trúc sư kiêm phân tích nghiệp vụ",
+   "kiem_nhiem": "Rà soát bảo mật, hỗ trợ triển khai",
    "trinh_do": "",
    "so_nam_kinh_nghiem": null,
    "kinh_nghiem": "",
    "chung_chi": "",
-   "vai_tro": "BAQA",
+   "vai_tro": "SA_BA",
    "loai_cong_viec": [
     "BA",
     "DEV"
@@ -120,14 +125,14 @@
    "ty_le": 1.0,
    "tu_sprint": 1,
    "den_sprint": null,
-   "_can_xac_nhan": true
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
   },
   {
    "id": "D1",
-   "ho_ten": "D1",
+   "ho_ten": "Lê Quang Huy",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư phát triển",
-   "kiem_nhiem": "",
+   "chuc_danh": "Kỹ sư phát triển frontend kiêm backend",
+   "kiem_nhiem": "Sửa lỗi phân hệ, tích hợp, UAT",
    "trinh_do": "",
    "so_nam_kinh_nghiem": null,
    "kinh_nghiem": "",
@@ -139,33 +144,33 @@
    "ty_le": 1.0,
    "tu_sprint": 3,
    "den_sprint": null,
-   "_can_xac_nhan": true
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
   },
   {
    "id": "D2",
-   "ho_ten": "D2",
+   "ho_ten": "Đỗ Minh Quân",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư phát triển",
-   "kiem_nhiem": "",
+   "chuc_danh": "Kỹ sư phát triển backend, thiết kế API",
+   "kiem_nhiem": "Kiểm thử hiệu năng",
    "trinh_do": "",
    "so_nam_kinh_nghiem": null,
    "kinh_nghiem": "",
    "chung_chi": "",
-   "vai_tro": "FRONTEND",
+   "vai_tro": "BACKEND",
    "loai_cong_viec": [
     "DEV"
    ],
    "ty_le": 1.0,
    "tu_sprint": 3,
    "den_sprint": null,
-   "_can_xac_nhan": true
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
   },
   {
    "id": "D3",
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư phát triển",
-   "kiem_nhiem": "DevOps",
+   "chuc_danh": "Kỹ sư phát triển backend",
+   "kiem_nhiem": "DevOps, giám sát và hỗ trợ cut over",
    "trinh_do": "",
    "so_nam_kinh_nghiem": null,
    "kinh_nghiem": "",
@@ -178,45 +183,45 @@
    "ty_le": 1.0,
    "tu_sprint": 4,
    "den_sprint": null,
-   "_can_xac_nhan": true
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
   },
   {
    "id": "Q1",
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư kiểm thử",
-   "kiem_nhiem": "",
+   "chuc_danh": "Kỹ sư kiểm thử kỹ thuật, kiểm thử tự động",
+   "kiem_nhiem": "Script kết nối và dữ liệu giả lập",
    "trinh_do": "",
    "so_nam_kinh_nghiem": null,
    "kinh_nghiem": "",
    "chung_chi": "",
-   "vai_tro": "BAQA",
+   "vai_tro": "TESTER",
    "loai_cong_viec": [
     "QA"
    ],
    "ty_le": 1.0,
    "tu_sprint": 3,
    "den_sprint": null,
-   "_can_xac_nhan": true
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
   },
   {
    "id": "Q2",
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư kiểm thử",
+   "chuc_danh": "Kỹ sư kiểm thử chức năng, hiệu năng và an toàn thông tin",
    "kiem_nhiem": "",
    "trinh_do": "",
    "so_nam_kinh_nghiem": null,
    "kinh_nghiem": "",
    "chung_chi": "",
-   "vai_tro": "BAQA",
+   "vai_tro": "TESTER",
    "loai_cong_viec": [
     "QA"
    ],
    "ty_le": 1.0,
    "tu_sprint": 4,
    "den_sprint": null,
-   "_can_xac_nhan": true
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
   }
  ]
 }

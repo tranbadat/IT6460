@@ -8,12 +8,12 @@
    "Minh",
    "Toàn",
    "Liên",
-   "K",
-   "D1",
-   "D2",
-   "D3",
-   "Q1",
-   "Q2",
+   "Nguyễn Hoàng Nam",
+   "Lê Quang Huy",
+   "Đỗ Minh Quân",
+   "Bùi Anh Tuấn",
+   "Trần Thu Hà",
+   "Phạm Ngọc Anh",
    "Bên ngoài"
   ],
   "dong": [
@@ -186,8 +186,8 @@
     "",
     "",
     "",
-    "R",
     "",
+    "R",
     "",
     "",
     "",
@@ -538,8 +538,8 @@
     "",
     "AR",
     "",
-    "R",
     "",
+    "R",
     "R",
     "R",
     "R",
@@ -731,7 +731,7 @@
     "63,7%"
    ],
    [
-    "K",
+    "Nguyễn Hoàng Nam",
     "5,50/10",
     "10/10",
     "10/10",
@@ -744,20 +744,7 @@
     "65,8%"
    ],
    [
-    "D1",
-    "-",
-    "-",
-    "8/10",
-    "10/10",
-    "7/10",
-    "1,67/10",
-    "2,50/13",
-    "29,17",
-    "53",
-    "55%"
-   ],
-   [
-    "D2",
+    "Lê Quang Huy",
     "-",
     "-",
     "0/10",
@@ -770,7 +757,20 @@
     "29,2%"
    ],
    [
-    "D3",
+    "Đỗ Minh Quân",
+    "-",
+    "-",
+    "8/10",
+    "10/10",
+    "7/10",
+    "1,67/10",
+    "2,50/13",
+    "29,17",
+    "53",
+    "55%"
+   ],
+   [
+    "Bùi Anh Tuấn",
     "-",
     "-",
     "-",
@@ -783,7 +783,7 @@
     "67,8%"
    ],
    [
-    "Q1",
+    "Trần Thu Hà",
     "-",
     "-",
     "0/10",
@@ -796,7 +796,7 @@
     "38,7%"
    ],
    [
-    "Q2",
+    "Phạm Ngọc Anh",
     "-",
     "-",
     "-",
@@ -1319,7 +1319,7 @@
    "sprint": "S6"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "1.3.3",
    "ten": "Kiểm tra, xác nhận chức năng chính và tích hợp cùng Chủ đầu tư",
    "md": 2,
@@ -1329,7 +1329,7 @@
    "sprint": "S6"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "2.1.1",
    "ten": "Khảo sát nghiệp vụ bán hàng trực tuyến và hệ thống hiện có",
    "md": 5,
@@ -1339,7 +1339,7 @@
    "sprint": "S1"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "2.1.2",
    "ten": "Đặc tả chức năng (Function) của hệ thống",
    "md": 8,
@@ -1349,7 +1349,7 @@
    "sprint": "S2"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "2.1.3",
    "ten": "Đặc tả yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi và thao tác",
    "md": 4,
@@ -1359,7 +1359,7 @@
    "sprint": "S1"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "2.3.1",
    "ten": "Sơ đồ phân cấp menu (Menu Layer)",
    "md": 4,
@@ -1369,7 +1369,7 @@
    "sprint": "S2"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "3.3.1",
    "ten": "Trang chủ và điều hướng danh mục theo Menu Layer",
    "md": 6,
@@ -1379,7 +1379,7 @@
    "sprint": "S4"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "3.5.1",
    "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ tìm kiếm",
    "md": 2,
@@ -1389,7 +1389,7 @@
    "sprint": "S6"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "4.1.1",
    "ten": "Đặc tả use case đăng ký, đăng nhập và quản lý thông tin thành viên",
    "md": 4,
@@ -1399,7 +1399,7 @@
    "sprint": "S2"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "4.2.1",
    "ten": "Thiết kế chi tiết chức năng thành viên và bảo mật tài khoản",
    "md": 4,
@@ -1409,7 +1409,7 @@
    "sprint": "S3"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "5.3.1",
    "ten": "Dịch vụ giỏ hàng",
    "md": 6,
@@ -1419,7 +1419,7 @@
    "sprint": "S3"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "5.3.2",
    "ten": "Dịch vụ đặt hàng và xác nhận đơn hàng",
    "md": 9,
@@ -1429,7 +1429,7 @@
    "sprint": "S4"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "5.5.1",
    "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ đặt hàng",
    "md": 2,
@@ -1439,7 +1439,7 @@
    "sprint": "S5"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "8.2.1",
    "ten": "Tài liệu hướng dẫn sử dụng và vận hành hệ thống",
    "md": 5,
@@ -1449,7 +1449,7 @@
    "sprint": "S6"
   },
   {
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "ma": "8.2.2",
    "ten": "Hướng dẫn vận hành cho cán bộ Chủ đầu tư",
    "md": 3,
@@ -1459,77 +1459,7 @@
    "sprint": "S6"
   },
   {
-   "ho_ten": "D1",
-   "ma": "3.2.1",
-   "ten": "Thiết kế chi tiết chức năng tìm kiếm và chỉ mục dữ liệu sản phẩm",
-   "md": 4,
-   "md_nguoi": 4.0,
-   "vai": "Thực hiện",
-   "thoi_gian": "20/04/2027 - 23/04/2027",
-   "sprint": "S3"
-  },
-  {
-   "ho_ten": "D1",
-   "ma": "3.3.2",
-   "ten": "Dịch vụ tìm kiếm, lọc và sắp xếp sản phẩm",
-   "md": 8,
-   "md_nguoi": 8.0,
-   "vai": "Thực hiện",
-   "thoi_gian": "26/04/2027 - 07/05/2027",
-   "sprint": "S3"
-  },
-  {
-   "ho_ten": "D1",
-   "ma": "3.3.4",
-   "ten": "Tối ưu thời gian phản hồi tìm kiếm",
-   "md": 4,
-   "md_nguoi": 4.0,
-   "vai": "Thực hiện",
-   "thoi_gian": "21/05/2027 - 26/05/2027",
-   "sprint": "S5"
-  },
-  {
-   "ho_ten": "D1",
-   "ma": "4.3.2",
-   "ten": "Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
-   "md": 6,
-   "md_nguoi": 6.0,
-   "vai": "Thực hiện",
-   "thoi_gian": "10/05/2027 - 17/05/2027",
-   "sprint": "S4"
-  },
-  {
-   "ho_ten": "D1",
-   "ma": "5.3.3",
-   "ten": "Dịch vụ lịch sử và trạng thái đơn hàng của thành viên",
-   "md": 6,
-   "md_nguoi": 3.0,
-   "vai": "Thực hiện",
-   "thoi_gian": "17/05/2027 - 20/05/2027",
-   "sprint": "S4"
-  },
-  {
-   "ho_ten": "D1",
-   "ma": "7.2.6",
-   "ten": "Khắc phục lỗi sau kiểm thử hệ thống",
-   "md": 10,
-   "md_nguoi": 2.5,
-   "vai": "Thực hiện",
-   "thoi_gian": "11/06/2027 - 15/06/2027",
-   "sprint": "S6"
-  },
-  {
-   "ho_ten": "D1",
-   "ma": "7.3.3",
-   "ten": "Khắc phục lỗi sau kiểm thử vận hành",
-   "md": 5,
-   "md_nguoi": 1.66,
-   "vai": "Hỗ trợ",
-   "thoi_gian": "18/06/2027 - 21/06/2027",
-   "sprint": "S7"
-  },
-  {
-   "ho_ten": "D2",
+   "ho_ten": "Lê Quang Huy",
    "ma": "3.3.3",
    "ten": "Giao diện kết quả tìm kiếm và chi tiết sản phẩm",
    "md": 8,
@@ -1539,7 +1469,7 @@
    "sprint": "S5"
   },
   {
-   "ho_ten": "D2",
+   "ho_ten": "Lê Quang Huy",
    "ma": "4.3.3",
    "ten": "Giao diện đăng ký, đăng nhập và trang thành viên",
    "md": 8,
@@ -1549,7 +1479,7 @@
    "sprint": "S4"
   },
   {
-   "ho_ten": "D2",
+   "ho_ten": "Lê Quang Huy",
    "ma": "5.3.4",
    "ten": "Giao diện giỏ hàng, đặt hàng và theo dõi đơn hàng",
    "md": 10,
@@ -1559,7 +1489,7 @@
    "sprint": "S4"
   },
   {
-   "ho_ten": "D2",
+   "ho_ten": "Lê Quang Huy",
    "ma": "7.2.6",
    "ten": "Khắc phục lỗi sau kiểm thử hệ thống",
    "md": 10,
@@ -1569,7 +1499,77 @@
    "sprint": "S6"
   },
   {
-   "ho_ten": "D3",
+   "ho_ten": "Đỗ Minh Quân",
+   "ma": "3.2.1",
+   "ten": "Thiết kế chi tiết chức năng tìm kiếm và chỉ mục dữ liệu sản phẩm",
+   "md": 4,
+   "md_nguoi": 4.0,
+   "vai": "Thực hiện",
+   "thoi_gian": "20/04/2027 - 23/04/2027",
+   "sprint": "S3"
+  },
+  {
+   "ho_ten": "Đỗ Minh Quân",
+   "ma": "3.3.2",
+   "ten": "Dịch vụ tìm kiếm, lọc và sắp xếp sản phẩm",
+   "md": 8,
+   "md_nguoi": 8.0,
+   "vai": "Thực hiện",
+   "thoi_gian": "26/04/2027 - 07/05/2027",
+   "sprint": "S3"
+  },
+  {
+   "ho_ten": "Đỗ Minh Quân",
+   "ma": "3.3.4",
+   "ten": "Tối ưu thời gian phản hồi tìm kiếm",
+   "md": 4,
+   "md_nguoi": 4.0,
+   "vai": "Thực hiện",
+   "thoi_gian": "21/05/2027 - 26/05/2027",
+   "sprint": "S5"
+  },
+  {
+   "ho_ten": "Đỗ Minh Quân",
+   "ma": "4.3.2",
+   "ten": "Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
+   "md": 6,
+   "md_nguoi": 6.0,
+   "vai": "Thực hiện",
+   "thoi_gian": "10/05/2027 - 17/05/2027",
+   "sprint": "S4"
+  },
+  {
+   "ho_ten": "Đỗ Minh Quân",
+   "ma": "5.3.3",
+   "ten": "Dịch vụ lịch sử và trạng thái đơn hàng của thành viên",
+   "md": 6,
+   "md_nguoi": 3.0,
+   "vai": "Thực hiện",
+   "thoi_gian": "17/05/2027 - 20/05/2027",
+   "sprint": "S4"
+  },
+  {
+   "ho_ten": "Đỗ Minh Quân",
+   "ma": "7.2.6",
+   "ten": "Khắc phục lỗi sau kiểm thử hệ thống",
+   "md": 10,
+   "md_nguoi": 2.5,
+   "vai": "Thực hiện",
+   "thoi_gian": "11/06/2027 - 15/06/2027",
+   "sprint": "S6"
+  },
+  {
+   "ho_ten": "Đỗ Minh Quân",
+   "ma": "7.3.3",
+   "ten": "Khắc phục lỗi sau kiểm thử vận hành",
+   "md": 5,
+   "md_nguoi": 1.66,
+   "vai": "Hỗ trợ",
+   "thoi_gian": "18/06/2027 - 21/06/2027",
+   "sprint": "S7"
+  },
+  {
+   "ho_ten": "Bùi Anh Tuấn",
    "ma": "4.3.1",
    "ten": "Dịch vụ đăng ký, đăng nhập, xác thực và khôi phục mật khẩu",
    "md": 9,
@@ -1579,7 +1579,7 @@
    "sprint": "S4"
   },
   {
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "ma": "5.3.3",
    "ten": "Dịch vụ lịch sử và trạng thái đơn hàng của thành viên",
    "md": 6,
@@ -1589,7 +1589,7 @@
    "sprint": "S4"
   },
   {
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "ma": "6.1.2",
    "ten": "Nạp dữ liệu sản phẩm ban đầu từ Main System và kiểm tra toàn vẹn",
    "md": 4,
@@ -1599,7 +1599,7 @@
    "sprint": "S5"
   },
   {
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "ma": "6.2.4",
    "ten": "Nhận trạng thái vận chuyển từ Main System và hiển thị trên trang theo dõi đơn hàng",
    "md": 5,
@@ -1609,7 +1609,7 @@
    "sprint": "S5"
   },
   {
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "ma": "7.2.3",
    "ten": "Kiểm thử hoạt động liên tục, sao lưu và phục hồi",
    "md": 4,
@@ -1619,7 +1619,7 @@
    "sprint": "S6"
   },
   {
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "ma": "7.2.6",
    "ten": "Khắc phục lỗi sau kiểm thử hệ thống",
    "md": 10,
@@ -1629,7 +1629,7 @@
    "sprint": "S6"
   },
   {
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "ma": "7.3.3",
    "ten": "Khắc phục lỗi sau kiểm thử vận hành",
    "md": 5,
@@ -1639,7 +1639,7 @@
    "sprint": "S7"
   },
   {
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "ma": "8.3.2",
    "ten": "Triển khai phiên bản chính thức và chuyển dữ liệu vận hành",
    "md": 3,
@@ -1649,7 +1649,7 @@
    "sprint": "S7"
   },
   {
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "ma": "8.3.3",
    "ten": "Hỗ trợ ngày đầu vận hành và biên bản bàn giao hệ thống",
    "md": 2,
@@ -1659,7 +1659,7 @@
    "sprint": "S7"
   },
   {
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "ma": "3.4.1",
    "ten": "Kịch bản và kiểm thử phân hệ tìm kiếm sản phẩm",
    "md": 5,
@@ -1669,7 +1669,7 @@
    "sprint": "S5"
   },
   {
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "ma": "5.4.1",
    "ten": "Kịch bản và kiểm thử phân hệ đặt hàng",
    "md": 6,
@@ -1679,7 +1679,7 @@
    "sprint": "S5"
   },
   {
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "ma": "6.2.5",
    "ten": "Kiểm thử tích hợp với Main System",
    "md": 6,
@@ -1689,7 +1689,7 @@
    "sprint": "S6"
   },
   {
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "ma": "7.1.2",
    "ten": "Kịch bản kiểm thử hệ thống đầu cuối",
    "md": 6,
@@ -1699,7 +1699,7 @@
    "sprint": "S4"
   },
   {
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "ma": "7.2.1",
    "ten": "Kiểm thử chức năng đầu cuối",
    "md": 8,
@@ -1709,7 +1709,7 @@
    "sprint": "S6"
   },
   {
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "ma": "7.3.2",
    "ten": "Kiểm thử vận hành cùng Chủ đầu tư",
    "md": 6,
@@ -1719,7 +1719,7 @@
    "sprint": "S7"
   },
   {
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "ma": "3.4.1",
    "ten": "Kịch bản và kiểm thử phân hệ tìm kiếm sản phẩm",
    "md": 5,
@@ -1729,7 +1729,7 @@
    "sprint": "S5"
   },
   {
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "ma": "4.4.1",
    "ten": "Kịch bản và kiểm thử phân hệ quản lý thành viên",
    "md": 5,
@@ -1739,7 +1739,7 @@
    "sprint": "S5"
   },
   {
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "ma": "6.2.5",
    "ten": "Kiểm thử tích hợp với Main System",
    "md": 6,
@@ -1749,7 +1749,7 @@
    "sprint": "S6"
   },
   {
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "ma": "7.2.1",
    "ten": "Kiểm thử chức năng đầu cuối",
    "md": 8,
@@ -1759,7 +1759,7 @@
    "sprint": "S6"
   },
   {
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "ma": "7.3.2",
    "ten": "Kiểm thử vận hành cùng Chủ đầu tư",
    "md": 6,
@@ -1791,28 +1791,28 @@
    "ho_ten": "Nguyễn Thị Phương Liên"
   },
   {
-   "ten_ngan": "K",
-   "ho_ten": "K"
+   "ten_ngan": "Nguyễn Hoàng Nam",
+   "ho_ten": "Nguyễn Hoàng Nam"
   },
   {
-   "ten_ngan": "D1",
-   "ho_ten": "D1"
+   "ten_ngan": "Lê Quang Huy",
+   "ho_ten": "Lê Quang Huy"
   },
   {
-   "ten_ngan": "D2",
-   "ho_ten": "D2"
+   "ten_ngan": "Đỗ Minh Quân",
+   "ho_ten": "Đỗ Minh Quân"
   },
   {
-   "ten_ngan": "D3",
-   "ho_ten": "D3"
+   "ten_ngan": "Bùi Anh Tuấn",
+   "ho_ten": "Bùi Anh Tuấn"
   },
   {
-   "ten_ngan": "Q1",
-   "ho_ten": "Q1"
+   "ten_ngan": "Trần Thu Hà",
+   "ho_ten": "Trần Thu Hà"
   },
   {
-   "ten_ngan": "Q2",
-   "ho_ten": "Q2"
+   "ten_ngan": "Phạm Ngọc Anh",
+   "ho_ten": "Phạm Ngọc Anh"
   },
   {
    "ten_ngan": "Chủ đầu tư",
@@ -1827,9 +1827,9 @@
    "loai": "nhom",
    "chuc_danh": "Trưởng nhóm, quản trị dự án",
    "kiem_nhiem": "Kiến trúc sư hệ thống",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam_kinh_nghiem": 4,
+   "kinh_nghiem": "03/2024 - 11/2024: Inter Solution, quản trị dự án Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng cho Công ty CP Thời trang Hoàng Gia (1,15 tỷ đồng, khoảng 550 MD, 10 nhân sự); 01/2025 - 07/2025: Inter Solution, quản trị dự án Website bán hàng trực tuyến và tích hợp ERP cho Công ty TNHH Nội thất An Phát (860 triệu đồng, sprint 2 tuần); 09/2025 - 12/2026: Inter Solution, quản lý dự án, kiến trúc sư nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ",
    "chung_chi": "",
    "vai_tro": "LEAD",
    "loai_cong_viec": [
@@ -1840,6 +1840,7 @@
    "ty_le": 1.0,
    "tu_sprint": null,
    "den_sprint": null,
+   "nam_sinh": 1998,
    "loai_ten": "Thành viên nhóm",
    "loai_cong_viec_ten": "PM, BA, DEV"
   },
@@ -1850,9 +1851,9 @@
    "loai": "nhom",
    "chuc_danh": "Kỹ sư phát triển backend",
    "kiem_nhiem": "",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam_kinh_nghiem": 3,
+   "kinh_nghiem": "03/2024 - 11/2024: Inter Solution, kỹ sư backend dự án Hoàng Gia (API khách hàng, đơn hàng; thiết kế cơ sở dữ liệu; unit test); 01/2025 - 07/2025: Inter Solution, trưởng nhóm backend dự án An Phát (đồng bộ tồn kho với ERP, xác thực và phân quyền)",
    "chung_chi": "",
    "vai_tro": "BACKEND",
    "loai_cong_viec": [
@@ -1861,6 +1862,7 @@
    "ty_le": 1.0,
    "tu_sprint": null,
    "den_sprint": null,
+   "nam_sinh": 2001,
    "loai_ten": "Thành viên nhóm",
    "loai_cong_viec_ten": "DEV"
   },
@@ -1871,9 +1873,9 @@
    "loai": "nhom",
    "chuc_danh": "Kỹ sư phát triển frontend",
    "kiem_nhiem": "Thiết kế UX/UI",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam_kinh_nghiem": 3,
+   "kinh_nghiem": "03/2024 - 11/2024: Inter Solution, kỹ sư frontend dự án Hoàng Gia (giao diện danh mục, giỏ hàng, đặt hàng trên máy tính và điện thoại); 01/2025 - 07/2025: Inter Solution, thiết kế UX/UI và lập trình giao diện dự án An Phát (prototype, quy chuẩn hiển thị, tối ưu tải trang)",
    "chung_chi": "",
    "vai_tro": "FRONTEND",
    "loai_cong_viec": [
@@ -1883,6 +1885,7 @@
    "ty_le": 1.0,
    "tu_sprint": null,
    "den_sprint": null,
+   "nam_sinh": 2002,
    "loai_ten": "Thành viên nhóm",
    "loai_cong_viec_ten": "DEV, QA"
   },
@@ -1893,9 +1896,9 @@
    "loai": "nhom",
    "chuc_danh": "Kỹ sư phát triển backend",
    "kiem_nhiem": "Triển khai và an toàn (DevOps)",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam_kinh_nghiem": 3,
+   "kinh_nghiem": "03/2024 - 11/2024: Inter Solution, kỹ sư backend dự án Hoàng Gia (tìm kiếm và bộ lọc sản phẩm, chỉ mục tìm kiếm); 01/2025 - 12/2026: Inter Solution, kỹ sư DevOps cho các dự án thương mại điện tử (pipeline CI/CD, môi trường staging và production, giám sát, sao lưu và khôi phục; tham gia cut over dự án An Phát)",
    "chung_chi": "",
    "vai_tro": "BACKEND",
    "loai_cong_viec": [
@@ -1906,6 +1909,7 @@
    "ty_le": 1.0,
    "tu_sprint": null,
    "den_sprint": null,
+   "nam_sinh": 2001,
    "loai_ten": "Thành viên nhóm",
    "loai_cong_viec_ten": "DEV, DEVOPS, QA"
   },
@@ -1916,9 +1920,9 @@
    "loai": "nhom",
    "chuc_danh": "Phân tích nghiệp vụ",
    "kiem_nhiem": "Kỹ sư kiểm thử",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+   "so_nam_kinh_nghiem": 3,
+   "kinh_nghiem": "03/2024 - 11/2024: Inter Solution, chuyên viên phân tích nghiệp vụ dự án Hoàng Gia (khảo sát, SRS, use case, quy trình bán hàng trực tuyến); 01/2025 - 07/2025: Inter Solution, BA kiêm trưởng nhóm kiểm thử dự án An Phát (test case, quản lý lỗi, tổ chức UAT với khách hàng)",
    "chung_chi": "",
    "vai_tro": "BAQA",
    "loai_cong_viec": [
@@ -1928,20 +1932,21 @@
    "ty_le": 1.0,
    "tu_sprint": null,
    "den_sprint": null,
+   "nam_sinh": 2001,
    "loai_ten": "Thành viên nhóm",
    "loai_cong_viec_ten": "BA, QA"
   },
   {
    "id": "K",
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "loai": "bo_sung",
-   "chuc_danh": "Kiến trúc sư, phân tích nghiệp vụ",
-   "kiem_nhiem": "",
+   "chuc_danh": "Kiến trúc sư kiêm phân tích nghiệp vụ",
+   "kiem_nhiem": "Rà soát bảo mật, hỗ trợ triển khai",
    "trinh_do": "",
    "so_nam_kinh_nghiem": null,
    "kinh_nghiem": "",
    "chung_chi": "",
-   "vai_tro": "BAQA",
+   "vai_tro": "SA_BA",
    "loai_cong_viec": [
     "BA",
     "DEV"
@@ -1949,16 +1954,16 @@
    "ty_le": 1.0,
    "tu_sprint": 1,
    "den_sprint": null,
-   "_can_xac_nhan": true,
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm.",
    "loai_ten": "Vị trí bổ sung",
    "loai_cong_viec_ten": "BA, DEV"
   },
   {
    "id": "D1",
-   "ho_ten": "D1",
+   "ho_ten": "Lê Quang Huy",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư phát triển",
-   "kiem_nhiem": "",
+   "chuc_danh": "Kỹ sư phát triển frontend kiêm backend",
+   "kiem_nhiem": "Sửa lỗi phân hệ, tích hợp, UAT",
    "trinh_do": "",
    "so_nam_kinh_nghiem": null,
    "kinh_nghiem": "",
@@ -1970,37 +1975,37 @@
    "ty_le": 1.0,
    "tu_sprint": 3,
    "den_sprint": null,
-   "_can_xac_nhan": true,
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm.",
    "loai_ten": "Vị trí bổ sung",
    "loai_cong_viec_ten": "DEV"
   },
   {
    "id": "D2",
-   "ho_ten": "D2",
+   "ho_ten": "Đỗ Minh Quân",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư phát triển",
-   "kiem_nhiem": "",
+   "chuc_danh": "Kỹ sư phát triển backend, thiết kế API",
+   "kiem_nhiem": "Kiểm thử hiệu năng",
    "trinh_do": "",
    "so_nam_kinh_nghiem": null,
    "kinh_nghiem": "",
    "chung_chi": "",
-   "vai_tro": "FRONTEND",
+   "vai_tro": "BACKEND",
    "loai_cong_viec": [
     "DEV"
    ],
    "ty_le": 1.0,
    "tu_sprint": 3,
    "den_sprint": null,
-   "_can_xac_nhan": true,
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm.",
    "loai_ten": "Vị trí bổ sung",
    "loai_cong_viec_ten": "DEV"
   },
   {
    "id": "D3",
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư phát triển",
-   "kiem_nhiem": "DevOps",
+   "chuc_danh": "Kỹ sư phát triển backend",
+   "kiem_nhiem": "DevOps, giám sát và hỗ trợ cut over",
    "trinh_do": "",
    "so_nam_kinh_nghiem": null,
    "kinh_nghiem": "",
@@ -2013,49 +2018,49 @@
    "ty_le": 1.0,
    "tu_sprint": 4,
    "den_sprint": null,
-   "_can_xac_nhan": true,
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm.",
    "loai_ten": "Vị trí bổ sung",
    "loai_cong_viec_ten": "DEV, DEVOPS"
   },
   {
    "id": "Q1",
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư kiểm thử",
-   "kiem_nhiem": "",
+   "chuc_danh": "Kỹ sư kiểm thử kỹ thuật, kiểm thử tự động",
+   "kiem_nhiem": "Script kết nối và dữ liệu giả lập",
    "trinh_do": "",
    "so_nam_kinh_nghiem": null,
    "kinh_nghiem": "",
    "chung_chi": "",
-   "vai_tro": "BAQA",
+   "vai_tro": "TESTER",
    "loai_cong_viec": [
     "QA"
    ],
    "ty_le": 1.0,
    "tu_sprint": 3,
    "den_sprint": null,
-   "_can_xac_nhan": true,
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm.",
    "loai_ten": "Vị trí bổ sung",
    "loai_cong_viec_ten": "QA"
   },
   {
    "id": "Q2",
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư kiểm thử",
+   "chuc_danh": "Kỹ sư kiểm thử chức năng, hiệu năng và an toàn thông tin",
    "kiem_nhiem": "",
    "trinh_do": "",
    "so_nam_kinh_nghiem": null,
    "kinh_nghiem": "",
    "chung_chi": "",
-   "vai_tro": "BAQA",
+   "vai_tro": "TESTER",
    "loai_cong_viec": [
     "QA"
    ],
    "ty_le": 1.0,
    "tu_sprint": 4,
    "den_sprint": null,
-   "_can_xac_nhan": true,
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm.",
    "loai_ten": "Vị trí bổ sung",
    "loai_cong_viec_ten": "QA"
   }

@@ -6,7 +6,7 @@ Mọi tài liệu của bộ skill đi qua cùng một vòng. Số liệu do scr
 
 | Bước | Agent viết | Script kiểm tra và tính | Dữ liệu chuẩn |
 |---|---|---|---|
-| hsmt | theo skill hsmt-mau-5a | trich_hsmt.py | du_lieu/hsmt.json, rfp_yeu_cau.json |
+| hsmt | theo skill hsmt-mau-5a | trich_hsmt.py (chỉ trích khi HSMT kết luận dat sau lớp B và lệnh ghi_nhan, sổ so_phat_hien.json không còn mục mở) | du_lieu/hsmt.json, rfp_yeu_cau.json |
 | wbs | wbs_nhap.json (vai_lap_wbs.md) | kiem_tra_wbs.py | du_lieu/wbs.json |
 | giao_viec | phan_cong_nhap.json (vai_giao_viec.md) | kiem_tra_giao_viec.py | du_lieu/phan_cong.json |
 | lich | moc_nhap.json (vai_lap_moc.md) | lap_lich.py, xuat_gantt.py | du_lieu/lich.json, Master_schedule.xlsx |

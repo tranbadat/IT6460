@@ -23,7 +23,7 @@ Dùng với công cụ khác: Codex CLI và các agent lập trình khác đọc
 | dau_vao/du_an.json | Ngày bắt đầu, cut over, ngày nghỉ, sprint, ngưỡng SPI, CPI | Rà lại ngày nghỉ 2027 |
 | dau_vao/thanh_vien.json | Thành viên và vị trí bổ sung, trình độ, số năm kinh nghiệm | Ghi họ tên thật cho các dòng có _can_xac_nhan rồi bỏ khóa này. Người giữ vị trí chủ chốt phải có trình độ và kinh nghiệm |
 | dau_vao/don_gia.json | Đơn giá trọn gói, lương tham chiếu, chi phí khác, giá chào mục tiêu, thuế | Rà lại nguồn đơn giá |
-| dau_vao/nha_thau.json | Pháp nhân, ngày ký đơn, hợp đồng tương tự, doanh thu, bảo đảm dự thầu của Inter Solution | Để trống, nhóm tự điền. HSDT không lập được khi còn trống |
+| dau_vao/nha_thau.json | Pháp nhân, ngày ký đơn, hợp đồng tương tự, doanh thu, bảo đảm dự thầu của nhà thầu | Để trống, nhóm tự điền. HSDT không lập được khi còn trống |
 | dau_vao/kpi.json | Ghi đè ngưỡng KPI đánh giá | Không bắt buộc |
 | dau_vao/thuc_te/*.csv, retro.md | Dữ liệu thực tế trong quá trình thực hiện | Cách ghi: .claude/skills/qlda-bao-cao-tien-do/references/nhap_lieu.md |
 

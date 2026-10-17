@@ -11,12 +11,12 @@ description: Giao việc cho thành viên nhóm theo gói WBS và lập danh sá
 
 1. Agent Giao việc theo `prompts/vai_giao_viec.md`, viết lam_viec/giao_viec/phan_cong_nhap.json.
 2. `python .claude/skills/qlda-phan-cong/scripts/kiem_tra_giao_viec.py lam_viec/giao_viec/phan_cong_nhap.json`
-   Mọi gói lá có một R, năng lực phù hợp (hoặc có lý do), mỗi mục mức 1, mức 2 có đúng một A, C và I hợp lệ, tổng MD mỗi người không vượt quỹ thời gian, nhân sự chủ chốt khớp HSMT.
+   Mọi gói lá có một R, năng lực phù hợp (hoặc có lý do), mỗi mục mức 1, mức 2 có đúng một A là thành viên, C và I hợp lệ, phe_duyet (bên ngoài phê duyệt, ví dụ Chủ đầu tư xác nhận đặc tả, kiểm thử vận hành, nghiệm thu) là bên ngoài đã khai báo trong ben_ngoai (P13), tổng MD mỗi người không vượt quỹ thời gian, nhân sự chủ chốt khớp HSMT. MD gói có người hỗ trợ chia theo tỷ lệ tham gia bằng loi.chia_md nên tổng theo người bằng tổng WBS.
 3. Chạy lại master schedule (qlda-master-schedule) để kiểm tra lịch khả thi với cách giao.
 
 ## Bước tài liệu (phan_cong_tai_lieu)
 
-1. `python .claude/skills/qlda-loi/scripts/chay.py chuan_bi phan_cong_tai_lieu` (tự chạy scripts/tinh_bang_phan_cong.py: RACI, giao việc theo người, tải theo sprint).
+1. `python .claude/skills/qlda-loi/scripts/chay.py chuan_bi phan_cong_tai_lieu` (tự chạy scripts/tinh_bang_phan_cong.py: RACI có cột Phê duyệt bên ngoài, giao việc theo người, tải theo sprint có dòng tổng cộng khớp tổng WBS).
 2. Agent Soạn thảo viết bản soạn: nguyên tắc phân công, trách nhiệm từng vai trò, cơ chế thay thế khi vắng mặt.
 3. `python .claude/skills/qlda-loi/scripts/chay.py hoan_thien phan_cong_tai_lieu --ghi-chu "..."`. Ma trận RACI in trang ngang.
 4. Agent Kiểm tra lớp B với `dac_ta/phan_cong_tai_lieu.json`.

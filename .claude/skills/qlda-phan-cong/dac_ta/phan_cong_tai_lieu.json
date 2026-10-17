@@ -118,7 +118,7 @@
    "h1": "4. Ma trận RACI"
   },
   {
-   "doan": "R: thực hiện. A: chịu trách nhiệm cuối và phê duyệt. C: được tham vấn. I: được thông báo."
+   "doan": "R: thực hiện. A: chịu trách nhiệm cuối và phê duyệt trong nhóm. C: được tham vấn. I: được thông báo. Cột Phê duyệt bên ngoài ghi bên ngoài xác nhận hoặc phê duyệt hạng mục theo hợp đồng, ví dụ Chủ đầu tư xác nhận đặc tả, kiểm thử vận hành và nghiệm thu."
   },
   {
    "bang_san": "pcb#raci"
@@ -144,7 +144,7 @@
    "h1": "5. Tải công việc theo sprint"
   },
   {
-   "doan": "Mỗi ô ghi MD kế hoạch trên quỹ thời gian của thành viên trong sprint, theo master schedule."
+   "doan": "Mỗi ô ghi MD kế hoạch trên quỹ thời gian của thành viên trong sprint, theo master schedule. Dòng cuối là tổng của các thành viên."
   },
   {
    "bang_san": "pcb#tai_sprint"

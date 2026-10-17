@@ -51,6 +51,11 @@
       "{kt#chi_phi.AC_md|md}"
      ],
      [
+      "Ngày huy động nhân sự, MD",
+      "{kt#chi_phi.md_huy_dong_ke_hoach|md}",
+      "{kt#chi_phi.md_huy_dong|md}"
+     ],
+     [
       "Số gói công việc hoàn thành",
       "{kt#pham_vi.so_goi}",
       "{kt#pham_vi.so_goi_hoan_thanh}"
@@ -218,27 +223,36 @@
      [
       "Nội dung",
       "ten",
-      3900
+      3100
      ],
      [
       "Kế hoạch",
       "ke_hoach|ngay",
-      1300,
+      1200,
+      "c"
+     ],
+     [
+      "Hạn",
+      "han|ngay",
+      1200,
       "c"
      ],
      [
       "Thực tế",
       "thuc_te|ngay",
-      1300,
+      1200,
       "c"
      ],
      [
       "Kết quả",
       "trang_thai",
-      2100
+      1900
      ]
     ]
    }
+  },
+  {
+   "doan": "Kết quả mốc so với hạn của mốc (mốc cut over so với ngày cut over của hợp đồng), cột Kế hoạch là ngày theo lịch hiện hành."
   },
   {
    "bang": {
@@ -247,43 +261,49 @@
      [
       "Kỳ",
       "ky",
-      1100,
+      1000,
       "c"
      ],
      [
       "Ngày",
       "ngay_bao_cao|ngay",
-      1400,
+      1300,
       "c"
      ],
      [
       "PV, MD",
       "PV_md|md",
-      1300,
+      1100,
       "r"
      ],
      [
       "EV, MD",
       "EV_md|md",
-      1300,
+      1100,
       "r"
      ],
      [
       "AC, MD",
       "AC_md|md",
-      1300,
+      1100,
       "r"
      ],
      [
       "SPI",
       "spi|so2",
-      900,
+      800,
       "r"
      ],
      [
       "CPI",
       "cpi|so2",
-      900,
+      800,
+      "r"
+     ],
+     [
+      "CPI thực",
+      "cpi_thuc|so2",
+      1000,
       "r"
      ],
      [
@@ -311,51 +331,10 @@
    "h1": "4. Chi phí và nguồn lực"
   },
   {
-   "bang_tinh": {
-    "rows": [
-     [
-      "Khoản mục",
-      "Kế hoạch, đồng",
-      "Thực tế, đồng",
-      "Chênh lệch, đồng"
-     ],
-     [
-      "Chi phí nhân sự (MD x lương ngày vai trò x hệ số bảo hiểm)",
-      "{kt#chi_phi.chi_phi_nhan_su_ke_hoach|tien}",
-      "{kt#chi_phi.chi_phi_nhan_su_thuc_te|tien}",
-      "{kt#chi_phi.chenh_chi_phi_nhan_su|tien}"
-     ],
-     [
-      "Chi phí khác (khoản B)",
-      "{kt#chi_phi.B_ke_hoach|tien}",
-      "{kt#chi_phi.B_thuc_te|tien}{kt#chi_phi.B_ghi_chu}",
-      "{kt#chi_phi.chenh_B|tien}"
-     ],
-     [
-      "Giá hợp đồng trước thuế",
-      "{kt#chi_phi.gia_hop_dong_truoc_thue|tien}",
-      "{kt#chi_phi.gia_hop_dong_truoc_thue|tien}",
-      "0"
-     ],
-     [
-      "Chênh lệch giá hợp đồng và chi phí",
-      "{kt#chi_phi.loi_nhuan_ke_hoach|tien}",
-      "{kt#chi_phi.loi_nhuan_thuc_te|tien}",
-      ""
-     ]
-    ],
-    "widths": [
-     3700,
-     1900,
-     1900,
-     1800
-    ],
-    "right_cols": [
-     1,
-     2,
-     3
-    ]
-   }
+   "bang_san": "kt#chi_phi.bang"
+  },
+  {
+   "doan": "Chi phí nhân sự tính theo cách trả lương nhóm khai báo ({kt#chi_phi.cach_tra_luong_ten}), MD tính lương là {kt#chi_phi.co_so_luong}, cùng cơ sở với cost estimate, tính đến ngày {kt#ngay_chot|ngay}. Ngày sẵn sàng không ghi công là ngày huy động trừ MD ghi trong nhật ký công việc. Chênh lệch giá hợp đồng và chi phí dùng chi phí nhân sự này."
   },
   {
    "bang_tinh": {
@@ -381,9 +360,24 @@
       "EV {kt#chi_phi.EV|tien}, AC {kt#chi_phi.AC|tien}"
      ],
      [
-      "Chỉ số CPI, SPI kỳ cuối",
+      "Chỉ số CPI theo công, SPI kỳ cuối",
       "",
       "CPI {kt#tien_do.cpi_cuoi|so2}, SPI {kt#tien_do.spi_cuoi|so2}"
+     ],
+     [
+      "Chỉ số CPI theo chi phí thực kỳ cuối",
+      "",
+      "{kt#chi_phi.cpi_thuc_cuoi|so2}"
+     ],
+     [
+      "Ngày huy động, ngày sẵn sàng không ghi công, MD",
+      "{kt#chi_phi.md_huy_dong_ke_hoach|md}",
+      "{kt#chi_phi.md_huy_dong|md}, sẵn sàng {kt#chi_phi.md_san_sang|md}"
+     ],
+     [
+      "Tỷ lệ sử dụng nhân lực huy động",
+      "",
+      "{kt#chi_phi.ty_le_su_dung_huy_dong|pt}"
      ]
     ],
     "widths": [
@@ -400,35 +394,47 @@
      [
       "Thành viên",
       "ho_ten",
-      2400
+      2000
      ],
      [
       "Vai trò",
       "ten_vai_tro",
-      1900
+      1500
      ],
      [
       "Kế hoạch, MD",
       "md_ke_hoach|md",
-      1300,
+      1000,
       "r"
      ],
      [
       "Thực tế, MD",
       "md_thuc_te|md",
-      1300,
+      1000,
       "r"
      ],
      [
       "Chênh lệch, MD",
       "chenh_lech|md",
-      1300,
+      900,
       "r"
      ],
      [
-      "Tỷ lệ",
-      "ty_le_chenh|pt",
+      "Huy động, MD",
+      "md_huy_dong|md",
+      1000,
+      "r"
+     ],
+     [
+      "Sẵn sàng không ghi công, MD",
+      "md_san_sang|md",
       1100,
+      "r"
+     ],
+     [
+      "Sử dụng",
+      "ty_le_su_dung|pt",
+      800,
       "r"
      ]
     ],
@@ -437,7 +443,9 @@
      "cot": [
       2,
       3,
-      4
+      4,
+      5,
+      6
      ]
     }
    }
@@ -446,7 +454,7 @@
    "soan": "CHI_PHI",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Nhận xét chi phí và nguồn lực: chênh lệch MD và chi phí, thành viên hoặc gói có chênh lệch lớn, việc dùng dự phòng. Không tính lại số, dùng tham chiếu dữ liệu.",
+   "huong_dan": "Nhận xét chi phí và nguồn lực: chi phí nhân sự theo cách trả lương đã khai báo so với kế hoạch, ngày sẵn sàng không ghi công (là chi phí khi trả theo ngày huy động, là chỉ số năng lực khi trả theo công sức) và tỷ lệ sử dụng nhân lực huy động, chênh lệch MD, thành viên hoặc gói có chênh lệch lớn, chi phí khác đã chi, nghĩa vụ đã cam kết chưa chi, việc dùng dự phòng, CPI theo công so với CPI theo chi phí thực. Không tính lại số, dùng tham chiếu dữ liệu.",
    "nguon": [
     "kt",
     "cp"
@@ -677,6 +685,97 @@
    }
   },
   {
+   "doan_ds": "kt#van_de.tom_tat"
+  },
+  {
+   "bang": {
+    "nguon": "kt#van_de.ton_dong",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Vấn đề tồn đọng",
+      "mo_ta",
+      3400
+     ],
+     [
+      "Ưu tiên",
+      "uu_tien",
+      900,
+      "c"
+     ],
+     [
+      "Liên kết",
+      "lien_ket",
+      1000,
+      "c"
+     ],
+     [
+      "Phụ trách",
+      "phu_trach",
+      1500
+     ],
+     [
+      "Hạn",
+      "han|ngay",
+      1100,
+      "c"
+     ],
+     [
+      "Trạng thái",
+      "trang_thai_hien_thi",
+      700
+     ]
+    ],
+    "rong_thi": "Không còn vấn đề mở trong sổ vấn đề khi kết thúc dự án."
+   }
+  },
+  {
+   "bang": {
+    "nguon": "kt#van_de.hanh_dong_ton_dong",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Vấn đề",
+      "ma_van_de",
+      800,
+      "c"
+     ],
+     [
+      "Hành động chưa hoàn thành",
+      "viec",
+      3600
+     ],
+     [
+      "Người thực hiện",
+      "nguoi",
+      1700
+     ],
+     [
+      "Hạn",
+      "han|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Trạng thái",
+      "trang_thai_hien_thi",
+      1300
+     ]
+    ],
+    "rong_thi": "Không còn hành động chưa hoàn thành."
+   }
+  },
+  {
    "soan": "BAN_GIAO",
    "dang": "dong_bang",
    "cot": [
@@ -692,7 +791,7 @@
     1800
    ],
    "toi_thieu": 4,
-   "huong_dan": "Công việc sau dự án: bàn giao tài liệu và mã nguồn, xử lý lỗi còn mở, bảo hành trách nhiệm sai sót theo thời hạn trong HSMT, đào tạo vận hành, lưu trữ hồ sơ, thanh lý hợp đồng.",
+   "huong_dan": "Công việc sau dự án: bàn giao tài liệu và mã nguồn, xử lý lỗi còn mở, vấn đề tồn đọng trong sổ vấn đề (ghi mã vấn đề), bảo hành trách nhiệm sai sót theo thời hạn trong HSMT, đào tạo vận hành, lưu trữ hồ sơ, thanh lý hợp đồng.",
    "nguon": [
     "kt",
     "hsmt"
@@ -728,6 +827,10 @@
    {
     "mo_ta": "Ngày vận hành",
     "bt": "{kt#tien_do.cut_over_thuc_te|ngay}"
+   },
+   {
+    "mo_ta": "Chi phí nhân sự theo cách trả lương",
+    "bt": "{kt#chi_phi.chi_phi_nhan_su_thuc_te|tien}"
    }
   ],
   "ma_phai_co": [
@@ -745,13 +848,20 @@
     "nguon": "kt#tien_do.moc",
     "truong": "ma",
     "mo_ta": "Mọi mốc"
+   },
+   {
+    "nguon": "kt#van_de.ton_dong",
+    "truong": "ma",
+    "mo_ta": "Mọi vấn đề tồn đọng"
    }
   ],
   "doc_hieu": [
    "Tóm tắt khớp số liệu, không thổi phồng kết quả",
    "Nêu nguyên nhân của mọi chênh lệch lớn về tiến độ, chi phí, chất lượng",
    "Công việc sau dự án có người, thời hạn",
-   "Không đánh giá chủ quan thay cho báo cáo đánh giá"
+   "Không đánh giá chủ quan thay cho báo cáo đánh giá",
+   "Nhận xét chi phí nêu đúng cách trả lương và ý nghĩa của ngày sẵn sàng, không kết luận tiết kiệm khi còn nghĩa vụ chưa chi",
+   "Vấn đề tồn đọng có người phụ trách và thời hạn trong công việc sau dự án"
   ]
  }
 }

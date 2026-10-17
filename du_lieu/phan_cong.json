@@ -240,7 +240,7 @@
   },
   {
    "ma": "3.2.1",
-   "R": "D1",
+   "R": "D2",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
@@ -264,7 +264,7 @@
   },
   {
    "ma": "3.3.2",
-   "R": "D1",
+   "R": "D2",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
@@ -276,7 +276,7 @@
   },
   {
    "ma": "3.3.3",
-   "R": "D2",
+   "R": "D1",
    "ho_tro": [
     "minh"
    ],
@@ -290,7 +290,7 @@
   },
   {
    "ma": "3.3.4",
-   "R": "D1",
+   "R": "D2",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
@@ -364,7 +364,7 @@
   },
   {
    "ma": "4.3.2",
-   "R": "D1",
+   "R": "D2",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
@@ -378,7 +378,7 @@
    "ma": "4.3.3",
    "R": "minh",
    "ho_tro": [
-    "D2"
+    "D1"
    ],
    "dan_trai": false,
    "tu_sprint": null,
@@ -464,7 +464,7 @@
   },
   {
    "ma": "5.3.3",
-   "R": "D1",
+   "R": "D2",
    "ho_tro": [
     "D3"
    ],
@@ -478,7 +478,7 @@
   },
   {
    "ma": "5.3.4",
-   "R": "D2",
+   "R": "D1",
    "ho_tro": [
     "minh"
    ],
@@ -694,9 +694,9 @@
   },
   {
    "ma": "7.2.6",
-   "R": "D1",
+   "R": "D2",
    "ho_tro": [
-    "D2",
+    "D1",
     "D3",
     "tuananh"
    ],
@@ -740,7 +740,7 @@
    "R": "tuananh",
    "ho_tro": [
     "D3",
-    "D1"
+    "D2"
    ],
    "dan_trai": false,
    "tu_sprint": null,
@@ -1350,9 +1350,9 @@
   },
   {
    "id": "K",
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "loai": "bo_sung",
-   "chuc_danh": "Kiến trúc sư, phân tích nghiệp vụ",
+   "chuc_danh": "Kiến trúc sư kiêm phân tích nghiệp vụ",
    "md_giao": 48.0,
    "quy": 73.0,
    "ty_le_su_dung": 0.6575,
@@ -1363,21 +1363,9 @@
   },
   {
    "id": "D1",
-   "ho_ten": "D1",
+   "ho_ten": "Lê Quang Huy",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư phát triển",
-   "md_giao": 29.17,
-   "quy": 53.0,
-   "ty_le_su_dung": 0.5503,
-   "theo_loai": {
-    "DEV": 29.17
-   }
-  },
-  {
-   "id": "D2",
-   "ho_ten": "D2",
-   "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư phát triển",
+   "chuc_danh": "Kỹ sư phát triển frontend kiêm backend",
    "md_giao": 15.5,
    "quy": 53.0,
    "ty_le_su_dung": 0.2925,
@@ -1386,10 +1374,22 @@
    }
   },
   {
-   "id": "D3",
-   "ho_ten": "D3",
+   "id": "D2",
+   "ho_ten": "Đỗ Minh Quân",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư phát triển",
+   "chuc_danh": "Kỹ sư phát triển backend, thiết kế API",
+   "md_giao": 29.17,
+   "quy": 53.0,
+   "ty_le_su_dung": 0.5503,
+   "theo_loai": {
+    "DEV": 29.17
+   }
+  },
+  {
+   "id": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
+   "loai": "bo_sung",
+   "chuc_danh": "Kỹ sư phát triển backend",
    "md_giao": 29.17,
    "quy": 43.0,
    "ty_le_su_dung": 0.6783,
@@ -1400,9 +1400,9 @@
   },
   {
    "id": "Q1",
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư kiểm thử",
+   "chuc_danh": "Kỹ sư kiểm thử kỹ thuật, kiểm thử tự động",
    "md_giao": 20.5,
    "quy": 53.0,
    "ty_le_su_dung": 0.3868,
@@ -1412,9 +1412,9 @@
   },
   {
    "id": "Q2",
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "loai": "bo_sung",
-   "chuc_danh": "Kỹ sư kiểm thử",
+   "chuc_danh": "Kỹ sư kiểm thử chức năng, hiệu năng và an toàn thông tin",
    "md_giao": 16.5,
    "quy": 43.0,
    "ty_le_su_dung": 0.3837,

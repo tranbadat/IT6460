@@ -1,6 +1,6 @@
 # Bài tập lớn Quản trị dự án và Quản lý thay đổi, nhóm PM_26I_02
 
-Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System) cho Công ty Cổ phần ABC Wear. Nhóm đóng hai vai: tư vấn lập HSMT theo Mẫu 5A (Thông tư 79/2025/TT-BTC) và nhà thầu Inter Solution lập HSDT, kế hoạch, thực hiện, kết thúc dự án.
+Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System) cho Công ty Cổ phần ABC Wear. Nhóm đóng hai vai: tư vấn lập HSMT theo Mẫu 5A (Thông tư 79/2025/TT-BTC) và nhà thầu lập HSDT, kế hoạch, thực hiện, kết thúc dự án. Thông tin nhà thầu nằm trong dau_vao/nha_thau.json (hiện là đơn vị tạm PM_26I_02), đổi nhà thầu chỉ sửa tệp này.
 
 ## Nguyên tắc bắt buộc
 

@@ -21,7 +21,7 @@
    "h1": "1. Mục đích và nguồn bài học"
   },
   {
-   "doan": "Báo cáo tổng hợp bài học kinh nghiệm của dự án để áp dụng cho các dự án sau của nhóm và của Inter Solution. Mỗi bài học được rút từ sự kiện có ghi nhận trong dữ liệu dự án và dẫn mã bằng chứng: yêu cầu thay đổi (CR), rủi ro (RR), ghi chép họp cải tiến cuối sprint (R-Sx-nn), nghiệm thu (NT), lỗi (L), chỉ tiêu đánh giá (K), mốc (M), sprint (S) và gói WBS."
+   "doan": "Báo cáo tổng hợp bài học kinh nghiệm của dự án để áp dụng cho các dự án sau của nhóm và của nhà thầu. Mỗi bài học được rút từ sự kiện có ghi nhận trong dữ liệu dự án và dẫn mã bằng chứng: yêu cầu thay đổi (CR), rủi ro (RR), ghi chép họp cải tiến cuối sprint (R-Sx-nn), nghiệm thu (NT), lỗi (L), chỉ tiêu đánh giá (K), mốc (M), sprint (S) và gói WBS."
   },
   {
    "bang": {

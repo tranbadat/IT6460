@@ -70,14 +70,18 @@
   {
    "soan": "PHUONG_PHAP",
    "dang": "danh_sach_doan",
-   "toi_thieu": 2,
-   "huong_dan": "Quy trình: nhận diện, phân tích định tính (điểm), phân tích định lượng (EMV), lập kế hoạch ứng phó, theo dõi. Nguồn nhận diện: RFP, HSMT, WBS, đường găng, phân công, các bên liên quan. Tần suất rà soát.",
+   "toi_thieu": 3,
+   "huong_dan": "Quy trình: nhận diện, phân tích định tính (điểm), phân tích định lượng (EMV), lập kế hoạch ứng phó, theo dõi. Nguồn nhận diện: RFP, HSMT, WBS, đường găng, phân công, các bên liên quan. Tần suất rà soát. Nêu cách xác định mức tác động: mức cao nhất theo ngày chậm, chi phí trên giá và điều kiện về mốc, hợp đồng theo bảng thang tác động; tiền tác động do script tính bằng MD nhân đơn giá ngày của loại công việc, cộng phạt chậm theo E-ĐKC 15 và khoản tiền thêm có lý do. Nêu EMV là ước tính định hướng: xác suất lấy giá trị đại diện của khoảng, mỗi rủi ro có căn cứ xác suất, tổng EMV in theo triệu đồng kèm khoảng theo cận của mức xác suất (dẫn {rb#emv.tien_trieu|so} triệu đồng, khoảng {rb#emv.tien_trieu_thap|so} đến {rb#emv.tien_trieu_cao|so}). Một đoạn đối chiếu với ma trận 3x3 xếp hạng A, B, C: quy tắc quy đổi (mức 1 đến 2 thấp, 3 trung bình, 4 đến 5 cao), số rủi ro theo hạng, lý do dùng thang 5 mức chi tiết (phân biệt rõ hơn, có ngưỡng định lượng, tính được EMV để so dự phòng và dự trữ, vẫn quy đổi được về hạng A, B, C).",
    "nguon": [
     "rr",
+    "rb",
     "lich"
    ],
    "bat_buoc": [
-    "EMV"
+    "EMV",
+    "ước tính định hướng",
+    "3x3",
+    "hạng A"
    ]
   },
   {
@@ -93,16 +97,25 @@
    "bang_san": "rb#tac_dong"
   },
   {
+   "doan": "{rb#ghi_chu_tac_dong}"
+  },
+  {
    "h2": "3.3. Phân mức rủi ro"
   },
   {
    "bang_san": "rb#muc"
   },
   {
+   "h2": "3.4. Quy đổi sang ma trận 3x3"
+  },
+  {
+   "bang_san": "rb#quy_doi_3x3"
+  },
+  {
    "h1": "4. Sổ đăng ký rủi ro"
   },
   {
-   "doan": "Sổ gồm {rr#tong_hop.so_rui_ro} rủi ro: {rr#tong_hop.so_cao} mức cao, {rr#tong_hop.so_trung_binh} mức trung bình, {rr#tong_hop.so_thap} mức thấp."
+   "doan": "Sổ gồm {rr#tong_hop.so_rui_ro} rủi ro ({rr#tong_hop.so_de_doa} đe dọa, {rr#tong_hop.so_co_hoi} cơ hội): {rr#tong_hop.so_cao} mức cao, {rr#tong_hop.so_trung_binh} mức trung bình, {rr#tong_hop.so_thap} mức thấp. Theo ma trận 3x3 có {rr#tong_hop.so_hang.A} rủi ro hạng A, {rr#tong_hop.so_hang.B} rủi ro hạng B, {rr#tong_hop.so_hang.C} rủi ro hạng C. EMV của từng rủi ro tính theo triệu đồng."
   },
   {
    "section": "ngang"
@@ -120,41 +133,47 @@
      [
       "Rủi ro",
       "ten",
-      3000
+      2600
      ],
      [
       "Nhóm",
       "nhom_ten",
-      1600
+      1400
      ],
      [
       "XS",
       "xac_suat",
-      500,
+      450,
       "c"
      ],
      [
       "TĐ",
       "tac_dong",
-      500,
+      450,
       "c"
      ],
      [
       "Điểm",
       "diem",
-      600,
+      550,
       "c"
      ],
      [
       "Mức",
       "muc_ten",
-      1100,
+      1000,
       "c"
      ],
      [
-      "EMV, đồng",
-      "emv_tien|tien",
-      1400,
+      "Hạng",
+      "hang",
+      600,
+      "c"
+     ],
+     [
+      "EMV, triệu đồng",
+      "emv_trieu|so1",
+      1100,
       "r"
      ],
      [
@@ -165,12 +184,79 @@
      [
       "Phụ trách",
       "ho_ten_phu_trach",
-      1800
+      1600
      ],
      [
       "Liên kết",
       "lien_ket_hien_thi",
-      1700
+      2400
+     ]
+    ]
+   }
+  },
+  {
+   "doan": "Nguyên nhân, tác động và căn cứ đánh giá của từng rủi ro:"
+  },
+  {
+   "bang": {
+    "nguon": "rr#danh_sach",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Loại",
+      "loai_ten",
+      900
+     ],
+     [
+      "Nguyên nhân",
+      "nguyen_nhan",
+      3300
+     ],
+     [
+      "Tác động",
+      "tac_dong_mo_ta",
+      3000
+     ],
+     [
+      "Căn cứ xác suất",
+      "can_cu_xac_suat",
+      3100
+     ],
+     [
+      "Căn cứ mức tác động",
+      "can_cu_muc_tac_dong",
+      3100
+     ]
+    ]
+   }
+  },
+  {
+   "doan": "Rủi ro còn lại sau biện pháp ứng phó và điều kiện đóng rủi ro:"
+  },
+  {
+   "bang": {
+    "nguon": "rr#danh_sach",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Rủi ro còn lại (xác suất x tác động)",
+      "con_lai_hien_thi",
+      3600
+     ],
+     [
+      "Điều kiện đóng",
+      "dieu_kien_dong",
+      9900
      ]
     ]
    }
@@ -182,16 +268,32 @@
    "h1": "5. Ma trận xác suất và tác động"
   },
   {
+   "h2": "5.1. Ma trận 5x5"
+  },
+  {
+   "doan": "Mỗi ô ghi mã các rủi ro đe dọa có cùng mức xác suất và tác động. Cơ hội được trình bày tại mục 4."
+  },
+  {
    "bang_san": "rb#ma_tran"
+  },
+  {
+   "h2": "5.2. Ma trận 3x3 và hạng A, B, C"
+  },
+  {
+   "bang_san": "rb#ma_tran_3x3"
   },
   {
    "soan": "NHAN_XET_MA_TRAN",
    "dang": "danh_sach_doan",
    "toi_thieu": 1,
-   "huong_dan": "Nhận xét phân bố rủi ro trên ma trận, nhóm rủi ro tập trung, rủi ro gắn với đường găng và mốc cut over.",
+   "huong_dan": "Nhận xét phân bố rủi ro trên ma trận 5x5 và 3x3, các rủi ro hạng A ({rb#ma_hang_a}), nhóm rủi ro tập trung, rủi ro gắn với đường găng và mốc cut over.",
    "nguon": [
     "rr",
+    "rb",
     "lich"
+   ],
+   "bat_buoc": [
+    "hạng A"
    ]
   },
   {
@@ -276,17 +378,40 @@
    "bang_san": "rb#du_phong"
   },
   {
+   "doan": "Giá trị EMV là ước tính định hướng, in theo triệu đồng; khoảng trong ngoặc tính theo cận dưới và cận trên của mức xác suất."
+  },
+  {
+   "doan": "Dự trữ thời gian đến cut over {rb#du_tru.ket_luan} so với EMV thời gian {rb#du_tru.emv_ngay_gang|so1} ngày làm việc của {rb#du_tru.so_rui_ro_gang} rủi ro liên kết gói trên đường găng, gói gắn ngày cut over hoặc mốc cut over ({rb#du_tru.ma_gang})."
+  },
+  {
+   "bang_san": "rb#phuong_an_du_tru",
+   "rong_thi": "Dự trữ thời gian đủ, không cần phương án bổ sung."
+  },
+  {
+   "doan": "Quy tắc sử dụng dự phòng rủi ro lấy từ nguồn chung với thuyết minh dự toán, kế hoạch quản lý thay đổi và master plan."
+  },
+  {
+   "bang_san": "cp#quy_tac_du_phong",
+   "rong_thi": "Chưa có quy tắc sử dụng dự phòng trong nguồn chung."
+  },
+  {
    "soan": "DU_PHONG",
    "dang": "danh_sach_doan",
-   "toi_thieu": 2,
-   "huong_dan": "Đánh giá dự phòng chi phí so với EMV và dự trữ thời gian so với EMV thời gian. Quy tắc dùng dự phòng: điều kiện, người đề xuất, người phê duyệt, ghi nhận vào sổ thay đổi, cập nhật dự toán và lịch.",
+   "toi_thieu": 3,
+   "huong_dan": "Đánh giá dự phòng chi phí so với EMV và dự trữ thời gian so với EMV thời gian của rủi ro trên đường găng hoặc gắn cut over (không dùng tổng EMV thời gian của cả sổ). Khi dự trữ thời gian thiếu: nêu đủ bốn phương án trong bảng (tăng dự trữ, đưa việc lên sớm, thu hẹp phạm vi, chấp nhận và báo Chủ đầu tư) và phương án nhóm đã chọn theo cột Áp dụng; khi bảng chưa có cột Áp dụng, nêu người quyết định, thời hạn chốt trước khi lập đường cơ sở, không tự chọn thay nhóm. Không viết lại quy tắc dùng dự phòng, chỉ dẫn chiếu bảng quy tắc dùng chung ở trên.",
    "nguon": [
     "rb",
     "cp",
-    "lich"
+    "lich",
+    "rr"
    ],
    "bat_buoc": [
-    "{cp#du_phong_hien_co|tien}"
+    "{cp#du_phong_hien_co|tien}",
+    "{rb#du_tru.emv_ngay_gang|so1}",
+    "{rb#du_tru.cum_phuong_an[0]}",
+    "{rb#du_tru.cum_phuong_an[1]}",
+    "{rb#du_tru.cum_phuong_an[2]}",
+    "{rb#du_tru.cum_phuong_an[3]}"
    ]
   },
   {
@@ -327,12 +452,16 @@
  "kiem_tra": {
   "gia_tri": [
    {
-    "mo_ta": "Tổng EMV",
-    "bt": "{rr#tong_hop.tong_emv_tien|tien}"
+    "mo_ta": "Tổng EMV theo triệu đồng",
+    "bt": "{rb#emv.tien_trieu|so} triệu đồng"
    },
    {
     "mo_ta": "Dự phòng",
     "bt": "{cp#du_phong_hien_co|tien}"
+   },
+   {
+    "mo_ta": "EMV thời gian trên đường găng hoặc gắn cut over",
+    "bt": "{rb#du_tru.emv_ngay_gang|so1}"
    }
   ],
   "ma_phai_co": [
@@ -347,7 +476,13 @@
    "Rủi ro bao phủ đường găng, mốc cut over, tích hợp Main System, nhân sự bổ sung",
    "Dự phòng chi phí và thời gian được so sánh với EMV",
    "Ngưỡng cảnh báo có hành động cụ thể",
-   "Liên kết với quy trình thay đổi"
+   "Liên kết với quy trình thay đổi",
+   "Mức tác động khớp thang định lượng (ngày chậm, chi phí trên giá, mốc) hoặc có lý do",
+   "Xác suất có căn cứ, EMV được nêu là ước tính định hướng",
+   "Có đối chiếu ma trận 3x3 hạng A, B, C và lý do dùng thang 5 mức",
+   "Dự trữ thời gian thiếu thì có phương án để nhóm chốt",
+   "Có cơ hội hoặc nêu lý do sổ chỉ gồm đe dọa",
+   "Nguyên nhân không viện dẫn số tổng hợp của chính sổ"
   ]
  }
 }

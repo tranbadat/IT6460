@@ -5,6 +5,8 @@ Dùng: python3 lap_khung.py <mau5a_cau_truc.json> <tham_so_chu_dau_tu.json> <rfp
 Khung có đủ cấu trúc theo Mẫu 5A. Các mục cơ học (tên, số liệu, mục Hệ thống trích xuất, cột cố định của mẫu)
 được điền sẵn. Các mục cần diễn đạt nội dung từ RFP để dạng <<SOẠN:ID>> và mô tả trong khóa "can_soan"
 (hướng dẫn của mẫu, nguồn dữ liệu, dạng kết quả). Agent Soạn thảo chỉ viết file ban_soan.json cho các ID này.
+Mục 3 Chương III có bảng tiêu chí chi tiết (TIEU_CHI_CHI_TIET, ràng buộc trong khóa rang_buoc). Chương V mục 3.5 và
+E-ĐKC 15 lập theo tham số; tham số bắt buộc còn trống thì giữ câu mẫu kèm dấu [Chủ đầu tư quyết định ...] (quy_uoc.py).
 """
 import os as _os, sys as _sys  # noqa: E401
 _os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
@@ -13,7 +15,10 @@ for _s in (_sys.stdout, _sys.stderr):
         _s.reconfigure(encoding='utf-8')
     except Exception:
         pass
-import json, re, sys
+import json, os, re, sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from quy_uoc import BEN, DOAN_2_2_C, DOAN_2_2_NHAN_SU, HA_TANG, KIEM_THU_VAN_HANH, THAY_DOI_HE_THONG, dau_cho, lay  # noqa: E402
 
 ct = json.load(open(sys.argv[1], encoding='utf-8'))
 ts = json.load(open(sys.argv[2], encoding='utf-8'))
@@ -28,10 +33,28 @@ CDT, GOI, DUAN = cdt['ten'], gt['ten'], gt['du_an']
 EMAIL = lh['email']
 NGUOI_LH = f"ông {lh['ho_ten']}, Phòng Kế hoạch" if 'Planning' in lh.get('bo_phan', '') else f"{lh['ho_ten']}, {lh.get('bo_phan', '')}"
 can_soan = {}
+so_vn = lambda v: str(v).replace('.', ',')
 
 
-def S(id_, huong_dan, nguon, dang='doan', mau_goc=''):
+def lh(k, mo_ta):
+    """Thông tin liên hệ của Chủ đầu tư từ tham số chu_dau_tu, thiếu thì ghi dấu chờ."""
+    v = cdt.get(k)
+    return str(v).strip() if v not in (None, '') else dau_cho(mo_ta)
+
+
+def so_quoc_te(s):
+    # Mục 4.1 E-ĐKCT yêu cầu số có mã quốc gia: số trong nước bắt đầu bằng 0 đổi sang +84
+    return '+84 ' + s[1:] if s.startswith('0') else s
+
+
+DIA_CHI, DIEN_THOAI, FAX = lh('dia_chi', 'địa chỉ cụ thể'), lh('dien_thoai', 'điện thoại'), lh('fax', 'fax')
+GIA_HAN = cs.get('gia_han_khi_chu_dau_tu_cung_cap_cham')  # lùi mốc khi Chủ đầu tư cung cấp chậm (E-ĐKC 18 (e), mục 3.5)
+
+
+def S(id_, huong_dan, nguon, dang='doan', mau_goc='', rang_buoc=None):
     can_soan[id_] = {'huong_dan': huong_dan, 'nguon': nguon, 'dang': dang, 'mau_goc': mau_goc}
+    if rang_buoc:
+        can_soan[id_]['rang_buoc'] = rang_buoc
     return f'<<SOẠN:{id_}>>'
 
 
@@ -92,11 +115,11 @@ br()
 
 # ---------------- Mục lục, mô tả tóm tắt
 center('Mục lục', 15)
-for t in ['Mô tả tóm tắt', 'Phần 1. Thủ tục đấu thầu', '    Chương I. Chỉ dẫn nhà thầu', '    Chương II. Bảng dữ liệu đấu thầu',
-          '    Chương III. Tiêu chuẩn đánh giá E-HSDT', '    Chương IV. Biểu mẫu mời thầu và dự thầu', 'Phần 2. Yêu cầu về kỹ thuật',
-          '    Chương V. Yêu cầu về kỹ thuật', 'Phần 3A. Điều kiện hợp đồng', '    Chương VI. Điều kiện chung của hợp đồng',
-          '    Chương VII. Điều kiện cụ thể của hợp đồng', 'Phần 4. Biểu mẫu hợp đồng']:
-    p(t)
+# Trường mục lục có số trang, cập nhật khi mở tệp trong Word. Danh sách dưới là nội dung tạm trước khi cập nhật.
+B.append({'t': 'toc', 'muc': ['Mô tả tóm tắt', 'Phần 1. Thủ tục đấu thầu', '    Chương I. Chỉ dẫn nhà thầu', '    Chương II. Bảng dữ liệu đấu thầu',
+                              '    Chương III. Tiêu chuẩn đánh giá E-HSDT', '    Chương IV. Biểu mẫu mời thầu và dự thầu', 'Phần 2. Yêu cầu về kỹ thuật',
+                              '    Chương V. Yêu cầu về kỹ thuật', 'Phần 3A. Điều kiện hợp đồng', '    Chương VI. Điều kiện chung của hợp đồng',
+                              '    Chương VII. Điều kiện cụ thể của hợp đồng', 'Phần 4. Biểu mẫu hợp đồng']})
 p('Phần 3B (thỏa thuận khung) và phụ lục các ví dụ của Mẫu số 5A không áp dụng cho gói thầu này.')
 h2('Mô tả tóm tắt')
 p('Phần 1. Thủ tục đấu thầu. Chương I cung cấp thông tin giúp nhà thầu chuẩn bị E-HSDT, được sử dụng mà không sửa đổi. Chương II quy định cụ thể nội dung của Chương I khi áp dụng cho gói thầu này. Chương III gồm các tiêu chuẩn đánh giá E-HSDT. Chương IV gồm các biểu mẫu mà Chủ đầu tư và nhà thầu hoàn chỉnh trên Hệ thống.')
@@ -123,7 +146,7 @@ TU_VAN_5_1_C = ['Tư vấn lập thiết kế kỹ thuật, thiết kế bản v
 def bdl_5_1_c():
     # Nguyên văn Mục 5.1 (c) E-BDL của Mẫu 5A, chỉ điền các chỗ trống
     tu_van = 'không có' if not gt['dung_tu_van_dau_thau'] else 'theo E-TBMT trên Hệ thống'
-    return ([f"Bảo đảm cạnh tranh trong đấu thầu theo quy định như sau: Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp trên 30% với: {CDT}, {cdt['dia_chi']}.",
+    return ([f"Bảo đảm cạnh tranh trong đấu thầu theo quy định như sau: Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp trên 30% với: {CDT}, {DIA_CHI}.",
              '+ Trường hợp nhà thầu, chủ đầu tư là công ty mẹ, công ty con, công ty thành viên trong tập đoàn kinh tế nhà nước, tổng công ty nhà nước, nhà thầu được tham dự gói thầu của chủ đầu tư nếu sản phẩm, dịch vụ thuộc gói thầu đó thuộc ngành, nghề sản xuất, kinh doanh chính của tập đoàn kinh tế nhà nước, tổng công ty nhà nước.',
              '+ Trường hợp nhà thầu là đơn vị sự nghiệp công lập, nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với Chủ đầu tư, trừ trường hợp: nhà thầu là đơn vị sự nghiệp công lập thuộc cơ quan quản lý nhà nước có chức năng, nhiệm vụ được giao phù hợp với tính chất gói thầu của cơ quan quản lý nhà nước đó; các đơn vị sự nghiệp công lập có cùng một cơ quan trực tiếp quản lý.',
              '+ Đơn vị sự nghiệp công lập và doanh nghiệp có cùng một cơ quan trực tiếp quản lý, góp vốn khi tham dự thầu các gói thầu của nhau không phải đáp ứng quy định độc lập về pháp lý và độc lập về tài chính giữa nhà thầu với chủ đầu tư.',
@@ -145,7 +168,7 @@ bdl_auto = {
     'E-CDNT 1.2': [f'Tên gói thầu: {GOI}.', f'Tên dự án: {DUAN}.', 'Số lượng, số hiệu các phần thuộc gói thầu: ' + ('gói thầu không chia phần.' if not gt['chia_phan'] else 'theo E-TBMT.')],
     'E-CDNT 3': f"Nguồn vốn: {gt['nguon_von']}.",
     'E-CDNT 5.1 (c)': bdl_5_1_c(),
-    'E-CDNT 7.5': (f"Hội nghị tiền đấu thầu: Có. Thời gian: {hn['gio']}, ngày {hn['ngay']}. Địa điểm: <<SOẠN:DIA_DIEM_HOI_NGHI>>. Người chịu trách nhiệm tổ chức: {NGUOI_LH}, email {EMAIL}." if hn else 'Hội nghị tiền đấu thầu: Không.'),
+    'E-CDNT 7.5': (f"Hội nghị tiền đấu thầu: Có. Thời gian: {hn['gio']}, ngày {hn['ngay']}. Địa điểm: <<SOẠN:DIA_DIEM_HOI_NGHI>>. Người chịu trách nhiệm tổ chức: {NGUOI_LH}, điện thoại {DIEN_THOAI}, email {EMAIL}." if hn else 'Hội nghị tiền đấu thầu: Không.'),
     'E-CDNT 8': 'Chi phí nộp E-HSDT: theo quy định hiện hành, do Hệ thống trích xuất.',
     'E-CDNT 10.8': 'Nhà thầu phải nộp cùng với E-HSDT các tài liệu sau đây: không yêu cầu.',
     'E-CDNT 12.1': 'Nhà thầu ' + ('được phép' if cs['phuong_an_ky_thuat_thay_the'] else 'không được phép') + ' nộp đề xuất phương án kỹ thuật thay thế.',
@@ -166,9 +189,10 @@ bdl_auto = {
     'E-CDNT 29.3 (đ)': 'Xếp hạng nhà thầu: nhà thầu có giá dự thầu sau khi trừ đi giá trị giảm giá (nếu có) thấp nhất được xếp hạng thứ nhất.',
     'E-CDNT 31.4': 'Nhà thầu có giá dự thầu sau khi trừ đi giá trị giảm giá (nếu có) thấp nhất.',
     'E-CDNT 31.5': f"Giá gói thầu để làm căn cứ xét duyệt trúng thầu: giá gói thầu được phê duyệt trong kế hoạch lựa chọn nhà thầu là {tien['gia_goi_thau']} đồng. Trường hợp dự toán của gói thầu được phê duyệt thấp hơn hoặc cao hơn giá gói thầu được phê duyệt thì dự toán này sẽ thay thế giá gói thầu để làm cơ sở xét duyệt trúng thầu.",
-    'E-CDNT 34.1': f"Tỷ lệ tăng khối lượng tối đa là: {cs['ty_le_tang_giam_khoi_luong_phan_tram']}%. Tỷ lệ giảm khối lượng tối đa là: {cs['ty_le_tang_giam_khoi_luong_phan_tram']}%.",
+    'E-CDNT 34.1': f"Tỷ lệ tăng khối lượng tối đa là: {cs['ty_le_tang_giam_khoi_luong_phan_tram']}%. Tỷ lệ giảm khối lượng tối đa là: {cs['ty_le_tang_giam_khoi_luong_phan_tram']}%."
+                   + (' Thay đổi đặc tả, khối lượng sau khi ký hợp đồng thực hiện theo Mục 17 E-ĐKC và Mục 17.1 E-ĐKCT.' if not cs['ty_le_tang_giam_khoi_luong_phan_tram'] else ''),
     'E-CDNT 34.2': 'Tùy chọn mua thêm: ' + ('có áp dụng.' if cs['mua_them'] else 'không áp dụng.'),
-    'E-CDNT 38.1': [f"- Người có thẩm quyền: {cdt['nguoi_co_tham_quyen']}.", f"+ Địa chỉ: {cdt['dia_chi']}.",
+    'E-CDNT 38.1': [f"- Người có thẩm quyền: {cdt['nguoi_co_tham_quyen']}.", f"+ Địa chỉ: {DIA_CHI}, điện thoại {DIEN_THOAI}, fax {FAX}.",
                     f"+ E-mail nhận đơn kiến nghị: {EMAIL} ({NGUOI_LH.split(', ')[-1]} tiếp nhận và chuyển người có thẩm quyền).",
                     '- Bộ phận thường trực giúp việc cho Chủ tịch Hội đồng giải quyết kiến nghị: không thành lập, do gói thầu sử dụng vốn tự có của doanh nghiệp. Kiến nghị do người có thẩm quyền giải quyết.'],
 }
@@ -198,11 +222,53 @@ p('Bảng số 01. Bảng tiêu chuẩn đánh giá về năng lực và kinh ng
 b01 = ct['bang01']
 hdr = next(r for r in b01 if len(r) >= 6 and r[0] == 'TT' and 'Tổng các thành viên liên danh' in ' '.join(r))
 data_rows = [r for r in b01 if r and r[0] in ('1', '2', '3', '4')]
+
+
+def yeu_cau_doanh_thu():
+    # Bảng số 01 dòng 3: công thức theo ghi chú (6) Mẫu 5A, nêu căn cứ thuế GTGT của gói thầu
+    th = nl.get('thue_gtgt') or {}
+    if th.get('loai') == 'khong_chiu_thue':
+        cc = th['can_cu']
+        thue = f"Giá trị thuế GTGT bằng 0 do {cc[0].lower() + cc[1:]}."
+    elif th.get('loai') == 'chiu_thue':
+        thue = f"Giá trị thuế GTGT với thuế suất {so_vn(th['thue_suat_phan_tram'])}% là {th['gia_tri_thue']} đồng."
+    else:
+        thue = 'Giá trị thuế GTGT: ' + dau_cho('gói thầu chịu hoặc không chịu thuế GTGT, căn cứ') + '.'
+    return (f"Áp dụng. Doanh thu bình quân hằng năm (không bao gồm thuế VAT) của {len(nl['cac_nam_doanh_thu']):02d} năm tài chính gần nhất so với thời điểm đóng thầu "
+            f"(các năm {', '.join(map(str, nl['cac_nam_doanh_thu']))}) tối thiểu là {tien['doanh_thu_binh_quan_toi_thieu']} đồng, bằng (giá gói thầu trừ giá trị thuế GTGT) "
+            f"nhân hệ số k bằng {so_vn(nl['he_so_k'])} theo cách tính đối với gói thầu có thời gian thực hiện dưới 12 tháng. {thue}")
+
+
+def yeu_cau_hop_dong_tuong_tu():
+    # Bảng số 01 dòng 4: chỉ cho cộng gộp hạng mục khi tham số cho phép và có giá trị từng hạng mục (ghi chú (11))
+    cg = nl.get('hop_dong_tuong_tu_cong_gop')
+    hm = nl.get('hang_muc_tuong_tu') or []
+    if cg is True and hm:
+        cong_gop = (' Nhà thầu cũng được coi là đáp ứng khi đã hoàn thành các hạng mục công việc tương tự trong các hợp đồng khác nhau với giá trị tối thiểu từng hạng mục như sau: '
+                    + ', '.join(f"{x['ten']} {x['gia_tri']} đồng" for x in hm) + '.')
+    elif cg is None:
+        cong_gop = ' Cộng gộp hạng mục công việc tương tự từ nhiều hợp đồng: ' + dau_cho('áp dụng kèm hạng mục và giá trị từng hạng mục, hoặc không áp dụng') + '.'
+    else:
+        cong_gop = ''
+    return (f"Áp dụng. Từ ngày {nl['moc_hop_dong_tuong_tu']} đến thời điểm đóng thầu, nhà thầu đã hoàn thành tối thiểu 01 hợp đồng tương tự với tư cách là nhà thầu chính "
+            f"(độc lập hoặc thành viên liên danh) hoặc nhà thầu phụ, có giá trị tối thiểu {tien['hop_dong_tuong_tu_toi_thieu']} đồng ({nl['ty_le_hop_dong_tuong_tu']}% giá gói thầu). "
+            f"Đối với hợp đồng nhà thầu tham gia với tư cách thành viên liên danh hoặc nhà thầu phụ thì chỉ tính giá trị phần việc do nhà thầu thực hiện.{cong_gop} "
+            f"Hợp đồng tương tự là hợp đồng {cs['dinh_nghia_hop_dong_tuong_tu']}.")
+
+
+def doan_mau_2_2(dau):
+    """Đoạn quy phạm Mục 2.2 Chương III Mẫu 5A, chép nguyên văn từ mau5a_cau_truc.json."""
+    x = next((x for x in ct['huong_dan_chuong3'] if x.startswith(dau)), None)
+    if x is None:
+        sys.exit(f'Không tìm thấy đoạn "{dau} ..." của Mục 2.2 Chương III trong mau5a_cau_truc.json. Kiểm tra lại Mẫu 5A và phan_tich_mau.py')
+    return x
+
+
 yeu_cau = {
     '1': f"Từ ngày {nl['moc_lich_su_hop_dong']} đến thời điểm đóng thầu, nhà thầu không có từ 02 hợp đồng trở lên (cung cấp dịch vụ phi tư vấn) không hoàn thành do lỗi của nhà thầu.",
     '2': f"Đã thực hiện nghĩa vụ kê khai thuế và nộp thuế của năm tài chính gần nhất so với thời điểm đóng thầu (năm {nl['nam_tai_chinh_gan_nhat']}).",
-    '3': f"Áp dụng. Doanh thu bình quân hằng năm (không bao gồm thuế VAT) của {len(nl['cac_nam_doanh_thu']):02d} năm tài chính gần nhất so với thời điểm đóng thầu (các năm {', '.join(map(str, nl['cac_nam_doanh_thu']))}) tối thiểu là {tien['doanh_thu_binh_quan_toi_thieu']} đồng, xác định theo cách tính đối với gói thầu có thời gian thực hiện dưới 12 tháng với hệ số k bằng {str(nl['he_so_k']).replace('.', ',')}.",
-    '4': f"Áp dụng. Từ ngày {nl['moc_hop_dong_tuong_tu']} đến thời điểm đóng thầu, nhà thầu đã hoàn thành tối thiểu 01 hợp đồng tương tự với tư cách là nhà thầu chính, thành viên liên danh hoặc nhà thầu phụ, có giá trị tối thiểu {tien['hop_dong_tuong_tu_toi_thieu']} đồng ({nl['ty_le_hop_dong_tuong_tu']}% giá gói thầu), hoặc có các hạng mục công việc tương tự trong các hợp đồng khác nhau với tổng giá trị tối thiểu {tien['hop_dong_tuong_tu_toi_thieu']} đồng theo hướng dẫn của Mẫu số 5A. Hợp đồng tương tự là hợp đồng {cs['dinh_nghia_hop_dong_tuong_tu']}.",
+    '3': yeu_cau_doanh_thu(),
+    '4': yeu_cau_hop_dong_tuong_tu(),
 }
 b01_rows = [['TT', 'Mô tả', 'Yêu cầu', 'Nhà thầu độc lập', 'Liên danh: tổng các thành viên', 'Liên danh: từng thành viên', 'Tài liệu cần nộp']]
 for r in data_rows:
@@ -210,20 +276,49 @@ for r in data_rows:
     b01_rows.append([r[0], mo_ta, yeu_cau[r[0]], r[3], r[4], r[5], r[6]])  # các cột liên danh, tài liệu: lấy nguyên từ mẫu
 table(b01_rows, [560, 1450, 2950, 1150, 1150, 1250, 1090])
 h2('2.2. Tiêu chuẩn đánh giá về nhân sự chủ chốt và thiết bị chủ yếu')
-p('a) Nhân sự chủ chốt. ' + S('NHAN_SU_LY_DO', 'Một đến hai câu nêu lý do gói thầu cần nhân sự chủ chốt, căn cứ tính chất công việc trong RFP (xây dựng hệ thống, tích hợp hệ thống hiện có). Câu tiếp theo nêu nhân sự có thể thuộc biên chế hoặc do nhà thầu huy động, kê khai theo Mẫu số 06A, 06B, 06C và phải chứng minh khả năng huy động.',
+p('a) Nhân sự chủ chốt. ' + S('NHAN_SU_LY_DO', 'Một đến hai câu nêu lý do gói thầu cần nhân sự chủ chốt, căn cứ tính chất công việc trong RFP (xây dựng hệ thống, tích hợp hệ thống hiện có). Không nhắc lại các đoạn quy phạm của Mục 2.2 Mẫu 5A về chứng minh khả năng huy động, bổ sung thay thế, kê khai không trung thực, cách tính số năm kinh nghiệm, Mẫu số 06A, 06B, 06C (script chép nguyên văn ngay sau câu này).',
                                  ['rfp_yeu_cau.json: he_thong, pham_vi', 'mau5a_cau_truc.json: huong_dan_chuong3']))
+for dau in DOAN_2_2_NHAN_SU:
+    p(doan_mau_2_2(dau))
 p('Bảng số 02. Yêu cầu về nhân sự chủ chốt (webform trên Hệ thống)')
 table([[re.sub(r'\(\d\)$', '', c) for c in ct['bang02'][0]]] + [[str(i + 1), x['vi_tri'], str(x['so_luong']), x['kinh_nghiem'][0].upper() + x['kinh_nghiem'][1:], 'Không yêu cầu'] for i, x in enumerate(ts['nhan_su_chu_chot'])],
       [600, 2400, 900, 3800, 1900], [0, 2])
 p('b) Thiết bị chủ yếu: ' + ('theo yêu cầu của Chủ đầu tư.' if cs['thiet_bi_chu_yeu'] else 'không yêu cầu, do gói thầu không cần thiết bị đặc chủng.'))
+NS_PHAT = cs.get('phat_khong_huy_dong_nhan_su_phan_tram_ngay')  # 0: không áp dụng phạt riêng
+p(doan_mau_2_2(DOAN_2_2_C) + (' Việc thay thế nhân sự chủ chốt thực hiện theo Mục 21 E-ĐKC và Mục 21.2 E-ĐKCT. Chậm thực hiện công việc do không huy động nhân sự chủ chốt bị phạt theo Mục 15 E-ĐKCT.'
+                              if NS_PHAT == 0 else ' Mức phạt khi không huy động nhân sự chủ chốt theo Mục 15 E-ĐKCT.'))
 h2('Mục 3. Tiêu chuẩn đánh giá về kỹ thuật')
 p(f"Áp dụng phương pháp chấm điểm theo thang điểm 100. Mức điểm yêu cầu tối thiểu về kỹ thuật là {kt['tong_toi_thieu']} điểm, bằng {kt['tong_toi_thieu']}% tổng số điểm tối đa. Mỗi tiêu chí tổng quát phải đạt tối thiểu mức điểm nêu tại bảng dưới đây. Tiêu chuẩn đánh giá được xây dựng trên các sản phẩm đầu ra nêu tại Chương V. Đề xuất kỹ thuật của nhà thầu trình bày đủ các nội dung nêu tại mục 4 Chương V.")
+CHU_DE_TIEU_CHI = ['hiểu biết mục tiêu và giải pháp kỹ thuật tổng thể, gồm các yêu cầu phi chức năng',
+                   'phạm vi, sản phẩm đầu ra, phương pháp thực hiện và bảo đảm chất lượng',
+                   'kế hoạch, tiến độ đến ngày cut over, tổ chức, nhân sự, kế hoạch họp',
+                   'vai trò, trách nhiệm, quản lý thay đổi, rủi ro, bảo hành',
+                   'đề xuất khác có lợi cho thành công của dự án và thông tin về kết quả thực hiện hợp đồng theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP']
 kt_rows = [['STT', 'Tiêu chí tổng quát', 'Điểm tối đa', 'Điểm tối thiểu']]
 for i, (w, m) in enumerate(zip(kt['trong_so'], kt['diem_toi_thieu'])):
-    kt_rows.append([str(i + 1), S(f'TIEU_CHI_{i + 1}', f'Tên và phạm vi tiêu chí tổng quát thứ {i + 1} (trọng số {w} điểm). Năm tiêu chí phải phủ đủ các nội dung đề xuất của RFP, sắp theo thứ tự: (1) hiểu biết mục tiêu và giải pháp kỹ thuật tổng thể, nêu các yêu cầu phi chức năng của RFP; (2) phạm vi, sản phẩm đầu ra, phương pháp và bảo đảm chất lượng; (3) kế hoạch, tiến độ đến ngày cut over, tổ chức, nhân sự, kế hoạch họp; (4) vai trò, trách nhiệm, quản lý thay đổi, rủi ro, bảo hành; (5) điều kiện khác, đề nghị của nhà thầu, đề xuất khác có lợi, thông tin về kết quả thực hiện hợp đồng theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP. Không đưa giá vào tiêu chí kỹ thuật.', ['rfp_yeu_cau.json: noi_dung_de_xuat, yeu_cau nhóm chinh_sach']), str(w), str(m)])
+    chu_de = f' Chủ đề: {CHU_DE_TIEU_CHI[i]}.' if i < len(CHU_DE_TIEU_CHI) else ''
+    kt_rows.append([str(i + 1), S(f'TIEU_CHI_{i + 1}', f'Tên tiêu chí tổng quát thứ {i + 1} (tối đa {w} điểm), một cụm danh từ ngắn nêu phạm vi chấm, chi tiết đặt ở TIEU_CHI_CHI_TIET.{chu_de} Không đưa giá, chi phí, điều kiện hoặc đề nghị của nhà thầu đối với Chủ đầu tư vào tiêu chí kỹ thuật.', ['rfp_yeu_cau.json: noi_dung_de_xuat, yeu_cau nhóm de_xuat, chinh_sach']), str(w), str(m)])
 kt_rows.append(['', 'Tổng cộng', '100', str(kt['tong_toi_thieu'])])
 table(kt_rows, [600, 6000, 1500, 1500], [0, 2, 3])
-p(f"E-HSDT đạt yêu cầu về kỹ thuật khi tổng điểm kỹ thuật không thấp hơn {kt['tong_toi_thieu']} điểm và từng tiêu chí tổng quát không thấp hơn mức điểm tối thiểu.")
+p('Điểm của mỗi tiêu chí tổng quát bằng tổng điểm của các tiêu chí chi tiết thuộc tiêu chí đó, chấm theo các mức nêu tại Bảng tiêu chí chi tiết dưới đây. Tổng điểm kỹ thuật bằng tổng điểm của các tiêu chí tổng quát. Cách tính này tương đương công thức tại Mục 3.1 Chương III Mẫu số 5A, trong đó tỷ trọng của mỗi tiêu chí chi tiết bằng điểm tối đa của tiêu chí chi tiết chia cho điểm tối đa của tiêu chí tổng quát chứa nó.')
+p('Tiêu chí chi tiết cơ bản được đánh dấu tại cột Tiêu chí cơ bản. Mức điểm tối thiểu chỉ quy định đối với tiêu chí chi tiết cơ bản.')
+p('Bảng tiêu chí chi tiết')
+CAN_PHU = [{'ma': y['ma'], 'nhom': y['nhom'], 'noi_dung': y['dien_giai'], 'tu_khoa': y['tu_khoa_kiem_tra']}
+           for y in rfp['yeu_cau'] if y['nhom'] in ('de_xuat', 'chinh_sach')]
+LY_DO_KHONG_TINH_DIEM = {'tai_chinh': 'chi phí, giá thuộc đề xuất tài chính (Mẫu số 11A), đánh giá theo Mục 4 Chương III',
+                         'dieu_kien_nha_thau': 'điều kiện khác, đề nghị của nhà thầu đối với Chủ đầu tư, xét theo Mục 24 và Mục 25 E-CDNT, không tính điểm'}
+tc_ct = S('TIEU_CHI_CHI_TIET',
+          'Tiêu chí chi tiết của từng tiêu chí tổng quát (cấu trúc Mục 3, 3.1 Chương III Mẫu số 5A). Mỗi tiêu chí tổng quát có từ 3 đến 6 tiêu chí chi tiết, tổng điểm tối đa của các tiêu chí chi tiết bằng điểm tối đa của tiêu chí tổng quát. '
+          'Mỗi tiêu chí chi tiết có tên, nội dung được chấm (dẫn chiếu nội dung đề xuất tại mục 4 hoặc yêu cầu tại mục 3 Chương V), điểm tối đa, đánh dấu cơ bản, và ít nhất 3 mức chấm (ví dụ đạt đủ, đạt một phần, không đạt) có điểm và mô tả, mức cao nhất bằng điểm tối đa, mức thấp nhất 0 điểm, điểm giảm dần. '
+          'Chỉ tiêu chí cơ bản được có diem_toi_thieu. Mỗi mã trong rang_buoc.can_phu phải được ít nhất một tiêu chí chi tiết ghi trong phu và dùng các cụm tu_khoa của mã đó, trừ mã thuộc một lý do trong rang_buoc.ly_do_khong_tinh_diem thì ghi vào khong_tinh_diem. '
+          'Không chấm giá, chi phí, điều kiện hoặc đề nghị của nhà thầu đối với Chủ đầu tư. Không chép chỉ tiêu kỹ thuật do nhà thầu cam kết. Dạng: {"tieu_chi_chi_tiet": [{"tieu_chi": 1, "ten": "", "noi_dung": "", "diem": 8, "co_ban": true, "diem_toi_thieu": 4, '
+          '"muc_cham": [{"muc": "Đạt đủ", "diem": 8, "mo_ta": ""}, {"muc": "Đạt một phần", "diem": 4, "mo_ta": ""}, {"muc": "Không đạt", "diem": 0, "mo_ta": ""}], "phu": ["R15"]}], "khong_tinh_diem": [{"ma": "R16", "ly_do": "tai_chinh"}]}.',
+          ['rfp_yeu_cau.json: yeu_cau nhóm de_xuat, chinh_sach', 'mau5a_cau_truc.json: huong_dan_chuong3 (Mục 3, 3.1)', 'gia_tri_tinh.json: ky_thuat'],
+          'tieu_chi_chi_tiet', rang_buoc={'trong_so': kt['trong_so'], 'diem_toi_thieu': kt['diem_toi_thieu'], 'so_tieu_chi_chi_tiet': [3, 6],
+                                          'so_muc_cham_toi_thieu': 3, 'can_phu': CAN_PHU, 'ly_do_khong_tinh_diem': LY_DO_KHONG_TINH_DIEM})
+table([['STT', 'Tiêu chí chi tiết', 'Điểm tối đa', 'Tiêu chí cơ bản', 'Mức chấm điểm'], tc_ct], [700, 3300, 900, 1100, 3600], [0, 2, 3])
+p('Điều kiện khác, đề nghị đối với Chủ đầu tư mà nhà thầu nêu trong E-HSDT không được tính điểm kỹ thuật. Các nội dung này được xem xét theo Mục 24 và Mục 25 E-CDNT về sai khác, đặt điều kiện và tính đáp ứng của E-HSDT.')
+p(f"E-HSDT đạt yêu cầu về kỹ thuật khi tổng điểm kỹ thuật không thấp hơn {kt['tong_toi_thieu']} điểm, từng tiêu chí tổng quát không thấp hơn mức điểm tối thiểu và từng tiêu chí chi tiết cơ bản có quy định mức điểm tối thiểu không thấp hơn mức đó.")
 h2('Mục 4. Tiêu chuẩn đánh giá về tài chính')
 p('Áp dụng phương pháp giá thấp nhất. Bước 1: xác định giá dự thầu, trừ đi giá trị giảm giá (nếu có). Bước 2: xác định ưu đãi (nếu có) theo Mục 28 E-CDNT. Bước 3: xếp hạng nhà thầu, E-HSDT có giá dự thầu trừ đi giá trị giảm giá (nếu có), sau ưu đãi (nếu có) thấp nhất được xếp hạng thứ nhất. Chỉ E-HSDT đáp ứng yêu cầu về năng lực, kinh nghiệm và về kỹ thuật mới được xem xét về giá. Giá đề nghị trúng thầu không vượt giá gói thầu.')
 h2('Mục 5. Phương án kỹ thuật thay thế trong E-HSDT')
@@ -266,12 +361,104 @@ center('Phần 2. Yêu cầu về kỹ thuật', 16)
 h1('Chương V. Yêu cầu về kỹ thuật')
 c5 = [('1. Giới thiệu chung về dự án và gói thầu', 'C5_1', 'Thông tin tóm tắt về dự án và gói thầu: chủ đầu tư, tên dự án, nội dung gói thầu, địa điểm thực hiện, thời gian từ ngày hợp đồng có hiệu lực đến ngày cut over. Thêm một câu về trách nhiệm bảo mật thông tin của Chủ đầu tư nêu trong E-HSMT nếu RFP có yêu cầu bảo mật.'),
       ('2. Mục tiêu công việc', 'C5_2', 'Mục tiêu dự án và chính sách phát triển trong RFP, nêu đủ từng yêu cầu chính sách với con số cụ thể.'),
-      ('3. Yêu cầu kỹ thuật của gói thầu', 'C5_3', 'Các đoạn đánh số 3.1 mô hình hệ thống mới (chức năng, cơ sở dữ liệu, hệ thống liên quan, giữ tên tiếng Anh của RFP trong ngoặc), 3.2 phạm vi (nêu rõ phạm vi theo RFP và phần ngoài phạm vi), 3.3 sản phẩm đầu ra (đủ các sản phẩm bàn giao của RFP), 3.4 yêu cầu phi chức năng.'),
+      ('3. Yêu cầu kỹ thuật của gói thầu', 'C5_3', 'Các đoạn đánh số 3.1 mô hình hệ thống mới (chức năng, cơ sở dữ liệu, hệ thống liên quan, giữ tên tiếng Anh của RFP trong ngoặc, nêu chiều của từng luồng dữ liệu có trong sơ đồ RFP), 3.2 phạm vi (nêu rõ phạm vi theo RFP và phần ngoài phạm vi), 3.3 sản phẩm đầu ra (đủ các sản phẩm bàn giao của RFP. Khi phạm vi có chuyển giao, đào tạo thì nêu tài liệu bàn giao kèm theo để hạng mục chuyển giao có đối tượng nghiệm thu), 3.4 yêu cầu phi chức năng (giữ con số của RFP, điều kiện đo đã nêu tại mục 3.5 do script lập). Không viết mục 3.5.'),
       ('4. Giải pháp và phương pháp luận', 'C5_4', 'Nêu nhà thầu chuẩn bị đề xuất gồm (1) giải pháp và phương pháp luận, (2) kế hoạch công tác theo hướng dẫn của mẫu, và phải trình bày đủ các nội dung đề xuất RFP yêu cầu. Chi phí ước tính kèm lý do trình bày trong đề xuất tài chính theo Mẫu số 11A, không chấm điểm kỹ thuật. Viết thành các câu ngắn, hạn chế dấu chấm phẩy.'),
       ('5. Quy định về kiểm tra, nghiệm thu sản phẩm', 'C5_5', 'Quy trình bàn giao, kiểm tra theo đặc tả, thông báo kết quả, kiểm tra đạt là chấp nhận sản phẩm, biên bản nghiệm thu là căn cứ thanh toán theo Mục 13.1 E-ĐKCT.')]
+PD, GPD = ts.get('phan_dinh') or {}, gv.get('phan_dinh') or {}
+
+
+def dong_thong_tin_he_thong():
+    tt = PD.get('thong_tin_he_thong_hien_co')
+    ten = 'Thông tin, giao diện trao đổi dữ liệu của hệ thống hiện có'
+    if not tt or not GPD.get('han_cung_cap_thong_tin_he_thong'):
+        return [ten, dau_cho('tài liệu, giao diện được cung cấp và thời hạn cung cấp')]
+    n = tt['thoi_han_cung_cap_ngay']
+    sau = f', tức {n} ngày kể từ ngày hợp đồng có hiệu lực' if n else ', là ngày hợp đồng có hiệu lực'
+    ds = tt['tai_lieu'] if isinstance(tt['tai_lieu'], list) else [tt['tai_lieu']]
+    noi = ', '.join(ds[:-1]) + ' và ' + ds[-1] if len(ds) > 1 else ds[0]
+    return [f"{ten} ({tt['ten']})", f"Chủ đầu tư cung cấp {noi} chậm nhất ngày {GPD['han_cung_cap_thong_tin_he_thong']}{sau}."]
+
+
+def truoc_dot_dac_ta():
+    dot = GPD.get('dot_xac_nhan_dac_ta')
+    return f'trước khi thanh toán Đợt {dot} theo Mục 13.1 E-ĐKCT' if dot else 'khi xác nhận đặc tả yêu cầu'
+
+
+def dong_dieu_kien_do():
+    dk = PD.get('dieu_kien_do_phi_chuc_nang')
+    ten = 'Điều kiện đo các yêu cầu phi chức năng tại mục 3.4'
+    if dk is None:
+        return [ten, dau_cho('quy định điều kiện đo, hoặc giao nhà thầu đề xuất và hai bên xác nhận trong đặc tả')]
+    if dk == 'nha_thau_de_xuat':
+        han = truoc_dot_dac_ta()
+        return [ten, f'Nhà thầu đề xuất điều kiện đo trong E-HSDT (tải, số người dùng đồng thời, cách tính thời gian hoạt động liên tục, điểm đo). Hai bên xác nhận điều kiện đo trong đặc tả yêu cầu {han}.']
+    return [ten, f"Thời gian phản hồi được đo với {dk['so_nguoi_dung_dong_thoi']} người dùng đồng thời. Yêu cầu hoạt động liên tục được đo bằng tỷ lệ sẵn sàng hằng tháng không thấp hơn {so_vn(dk['ty_le_san_sang_phan_tram'])}%. Nhà thầu nêu cách đo kiểm trong E-HSDT."]
+
+
+HAN_HT = GPD.get('thoi_han_ha_tang') or {}
+TEN_HT = (PD.get('thong_tin_he_thong_hien_co') or {}).get('ten')
+CUA_HT = f' ({TEN_HT})' if TEN_HT else ''
+
+
+def dong_ha_tang(k, ten):
+    # máy chủ, đường truyền, phần mềm nền do Chủ đầu tư cung cấp kèm thời hạn bàn giao hạ tầng vận hành chính thức
+    v = lay(PD, 'ha_tang_ben_cung_cap.' + k)
+    if not v:
+        return [ten, dau_cho('Chủ đầu tư hoặc nhà thầu cung cấp')]
+    if v != 'chu_dau_tu' or k == 'moi_truong_kiem_thu':
+        return [ten, BEN[v]]
+    han = HAN_HT.get('ha_tang_van_hanh_chinh_thuc')
+    han = f'chậm nhất ngày {han}' if han else 'thời hạn ' + dau_cho('ngày bàn giao hạ tầng vận hành chính thức')
+    ch = PD.get('cau_hinh_ha_tang')
+    if ch == 'nha_thau_de_xuat':
+        return [ten, f'{BEN[v]} theo cấu hình đã thống nhất, {han}. Cấu hình tối thiểu do nhà thầu đề xuất trong E-HSDT, '
+                     f'hai bên thống nhất khi xác nhận đặc tả yêu cầu {truoc_dot_dac_ta()}']
+    if isinstance(ch, dict) and ch.get(k):
+        return [ten, f'{BEN[v]}, {han}. Cấu hình: {ch[k]}']
+    return [ten, f"{BEN[v]}, {han}. Cấu hình: " + dau_cho('cấu hình do Chủ đầu tư nêu, hoặc theo đề xuất của nhà thầu được thống nhất trong đặc tả')]
+
+
+def dong_thay_doi():
+    # bên thực hiện thay đổi phía hệ thống hiện có, kèm thời hạn khi Chủ đầu tư thực hiện
+    ten, v = f'Thay đổi phía hệ thống hiện có{CUA_HT} để trao đổi dữ liệu với hệ thống mới', PD.get('thay_doi_he_thong_hien_co')
+    if v not in THAY_DOI_HE_THONG:
+        return [ten, dau_cho('Chủ đầu tư hoặc nhà thầu thực hiện')]
+    if v != 'chu_dau_tu':
+        return [ten, THAY_DOI_HE_THONG[v]]
+    han = HAN_HT.get('thay_doi_he_thong_hien_co')
+    return [ten, f"{THAY_DOI_HE_THONG[v]}. Chủ đầu tư hoàn thành thay đổi " + (f'chậm nhất ngày {han}' if han else dau_cho('thời hạn hoàn thành'))]
+
+
+def dong_lua_chon(ten, khoa, gia_tri, mo_ta_cho):
+    v = PD.get(khoa)
+    return [ten, gia_tri[v] if v in gia_tri else dau_cho(mo_ta_cho)]
+
+
+def dong_moi_truong_thu():
+    han = HAN_HT.get('moi_truong_thu_he_thong_hien_co')
+    return [f'Môi trường thử của hệ thống hiện có{CUA_HT}', f'Chủ đầu tư cung cấp chậm nhất ngày {han}' if han else dau_cho('thời hạn cung cấp môi trường thử')]
+
+
+def phan_dinh_3_5():
+    # Chương V mục 3.5: bên cung cấp và thời hạn hạ tầng, môi trường, thông tin hệ thống hiện có, bên thay đổi hệ thống hiện có,
+    # môi trường kiểm thử vận hành, điều kiện đo. Lấy từ tham số nhóm phan_dinh, ngày do tinh_gia_tri.py tính.
+    rows = [['STT', 'Nội dung', 'Phân định']] + [dong_ha_tang(k, ten) for k, ten in HA_TANG]
+    rows += [dong_thong_tin_he_thong(), dong_moi_truong_thu(),
+             dong_thay_doi(),
+             dong_lua_chon('Môi trường kiểm thử vận hành và đo các yêu cầu phi chức năng', 'kiem_thu_van_hanh_tren', KIEM_THU_VAN_HANH, 'hạ tầng vận hành chính thức hoặc môi trường kiểm thử của nhà thầu'),
+             dong_dieu_kien_do()]
+    cham = {True: 'Trường hợp Chủ đầu tư cung cấp hoặc hoàn thành chậm so với thời hạn nêu tại bảng, các mốc liên quan được lùi tương ứng số ngày chậm theo Mục 18 (e) E-ĐKCT.',
+            False: 'Việc Chủ đầu tư cung cấp chậm so với thời hạn nêu tại bảng là căn cứ để hai bên xem xét sửa đổi thời gian thực hiện hợp đồng theo Mục 17 E-ĐKC.'}
+    p('3.5. Phân định trách nhiệm và giả định. Giá dự thầu trọn gói được lập trên cơ sở phân định dưới đây. '
+      + cham.get(GIA_HAN, 'Xử lý khi Chủ đầu tư cung cấp chậm: ' + dau_cho('lùi mốc theo Mục 18 (e) E-ĐKCT hoặc sửa đổi hợp đồng theo Mục 17 E-ĐKC') + '.'))
+    table([rows[0]] + [[str(i), *r] for i, r in enumerate(rows[1:], 1)], [600, 3800, 5200], [0])
+
+
 for tieu_de, id_, hd_ in c5:
     h2(tieu_de)
     p(S(id_, hd_, ['rfp_yeu_cau.json', 'mau5a_cau_truc.json: huong_dan_chuong5', 'gia_tri_tinh.json: lich'], 'danh_sach_doan'))
+    if id_ == 'C5_3':
+        phan_dinh_3_5()
 br()
 
 # ---------------- Chương VI
@@ -284,7 +471,6 @@ br()
 # ---------------- Chương VII: E-ĐKCT
 tt = hd['thanh_toan']
 canh_bao = []
-so_vn = lambda v: str(v).replace('.', ',')
 
 
 def dkc_15():
@@ -292,13 +478,19 @@ def dkc_15():
     pkss, bt = cs.get('phat_khac_phuc_sai_sot_phan_tram'), cs.get('boi_thuong_thiet_hai')
     phat = (f"1. Phạt vi phạm hợp đồng: Áp dụng. Trừ trường hợp bất khả kháng theo quy định tại Mục 16 E-ĐKC, nếu Nhà thầu không thực hiện một phần hay toàn bộ nội dung công việc theo đúng thời hạn đã nêu trong hợp đồng thì Chủ đầu tư có thể khấu trừ vào giá hợp đồng một khoản tiền phạt tương ứng với {so_vn(cs['phat_cham_tien_do_phan_tram_ngay'])}%/ngày giá trị công việc chậm thực hiện cho đến khi nội dung công việc đó được thực hiện. "
             f"Chủ đầu tư sẽ khấu trừ đến {so_vn(cs['phat_toi_da_phan_tram'])}% giá trị phần hợp đồng bị vi phạm. Khi đạt đến mức phạt tối đa, Chủ đầu tư có thể xem xét chấm dứt hợp đồng theo quy định tại Mục 19 E-ĐKC.")
+    # Tham số còn null: giữ câu mẫu, thay giá trị bằng dấu chờ để verify_hsmt.py kết luận cho_nguoi_dung
+    ty_le = f'{so_vn(pkss)}%' if pkss is not None else dau_cho('tỷ lệ %')
     if pkss is None:
-        canh_bao.append('Thiếu tham số chinh_sach.phat_khac_phuc_sai_sot_phan_tram: E-ĐKC 15 chưa có tỷ lệ phạt khi không kịp thời khắc phục sai sót')
-    else:
-        phat += f" Trường hợp không kịp thời khắc phục sai sót theo thông báo của Chủ đầu tư, Nhà thầu có trách nhiệm nộp tiền phạt thực hiện hợp đồng tương ứng với {so_vn(pkss)}% chi phí cần thiết để khắc phục sai sót."
+        canh_bao.append('Thiếu tham số chinh_sach.phat_khac_phuc_sai_sot_phan_tram: E-ĐKC 15 giữ câu mẫu kèm dấu chờ Chủ đầu tư quyết định tỷ lệ phạt khi không kịp thời khắc phục sai sót')
+    phat += f" Trường hợp không kịp thời khắc phục sai sót theo thông báo của Chủ đầu tư, Nhà thầu có trách nhiệm nộp tiền phạt thực hiện hợp đồng tương ứng với {ty_le} chi phí cần thiết để khắc phục sai sót."
+    ns = cs.get('phat_khong_huy_dong_nhan_su_phan_tram_ngay')
+    ty_le_ns = f'{so_vn(ns)}%' if ns is not None else dau_cho('tỷ lệ %')
+    phat += '' if ns == 0 else (f" Trường hợp nhân sự chủ chốt không được huy động như đề xuất trong E-HSDT mà chưa được Chủ đầu tư chấp thuận thay thế theo Mục 21 E-ĐKC, "
+             f"Nhà thầu bị phạt {ty_le_ns} giá hợp đồng cho mỗi ngày không huy động. Khoản phạt này được tính chung trong mức khấu trừ tối đa {so_vn(cs['phat_toi_da_phan_tram'])}% nêu trên.")
     if bt is None:
-        canh_bao.append('Thiếu tham số chinh_sach.boi_thuong_thiet_hai: E-ĐKC 15 chưa chọn cách bồi thường thiệt hại')
-        boi = '2. Bồi thường thiệt hại: Áp dụng theo quy định của pháp luật dân sự.'
+        canh_bao.append('Thiếu tham số chinh_sach.boi_thuong_thiet_hai: E-ĐKC 15 giữ câu mẫu kèm dấu chờ Chủ đầu tư chọn cách bồi thường thiệt hại')
+        boi = ('2. Bồi thường thiệt hại: Áp dụng. Bồi thường thiệt hại trên cơ sở '
+               + dau_cho('toàn bộ thiệt hại thực tế, hoặc một mức xác định kèm mức bồi thường, phương thức bồi thường phù hợp với pháp luật dân sự') + '.')
     elif bt == 'toan_bo_thiet_hai_thuc_te':
         boi = '2. Bồi thường thiệt hại: Áp dụng. Bồi thường thiệt hại trên cơ sở toàn bộ thiệt hại thực tế.'
     else:
@@ -307,9 +499,9 @@ def dkc_15():
 
 
 dkct_auto = {
-    'E-ĐKC 1.3': f"Chủ đầu tư: {CDT}, {cdt['dia_chi']}; đại diện: {cdt['nguoi_dai_dien']}. Số tài khoản, mã số thuế, điện thoại được ghi khi hoàn thiện hợp đồng.",
+    'E-ĐKC 1.3': f"Chủ đầu tư: {CDT}. Địa chỉ: {DIA_CHI}. Số tài khoản: {lh('so_tai_khoan', 'số tài khoản')}. Mã số thuế: {lh('ma_so_thue', 'mã số thuế')}. Điện thoại: {DIEN_THOAI}. Fax: {FAX}. E-mail: {EMAIL}. Đại diện: {cdt['nguoi_dai_dien']}.",
     'E-ĐKC 1.11': 'Nhà thầu: nhà thầu trúng thầu. Tên, địa chỉ, số tài khoản, mã số thuế được ghi khi hoàn thiện hợp đồng.',
-    'E-ĐKC 4.1': f"Các thông báo gửi về Chủ đầu tư theo địa chỉ: người nhận {NGUOI_LH}, địa chỉ {cdt['dia_chi']}, e-mail {EMAIL}.",
+    'E-ĐKC 4.1': f"Các thông báo gửi về Chủ đầu tư theo địa chỉ dưới đây. Người nhận: {NGUOI_LH}. Địa chỉ: {DIA_CHI}. Điện thoại: {so_quoc_te(DIEN_THOAI)}. Fax: {so_quoc_te(FAX)}. Địa chỉ email: {EMAIL}.",
     'E-ĐKC 5.2': [f"- Giá trị bảo đảm thực hiện hợp đồng: {hd['bao_dam_thuc_hien_phan_tram']}% giá hợp đồng.",
                   f"- Hiệu lực của bảo đảm thực hiện hợp đồng: kể từ ngày hợp đồng có hiệu lực cho đến hết ngày {th['hieu_luc_bao_dam_thuc_hien_den']}."],
     'E-ĐKC 5.4': f"Thời hạn hoàn trả bảo đảm thực hiện hợp đồng: trong vòng {cs['hoan_tra_bao_dam_thuc_hien_ngay']} ngày kể từ ngày nhà thầu hoàn thành các nghĩa vụ hợp đồng, sau khi hệ thống được nghiệm thu và đưa vào vận hành.",
@@ -321,7 +513,8 @@ dkct_auto = {
     'E-ĐKC 13.2': 'Giảm trừ thanh toán: không áp dụng.',
     'E-ĐKC 15': dkc_15(),
     'E-ĐKC 17.4': f"Trường hợp đề xuất giải pháp tiết kiệm chi phí được Chủ đầu tư chấp thuận và giúp giảm giá hợp đồng, Chủ đầu tư thanh toán cho nhà thầu {cs['tiet_kiem_chi_phi_phan_tram']}% giá trị giảm giá hợp đồng.",
-    'E-ĐKC 18 (e)': 'Các trường hợp khác: không có.',
+    'E-ĐKC 18 (e)': 'Các trường hợp khác: ' + {True: 'Chủ đầu tư cung cấp chậm tài liệu, hạ tầng, môi trường hoặc hoàn thành chậm thay đổi phía hệ thống hiện có so với thời hạn tại mục 3.5 Chương V thì các mốc liên quan được lùi tương ứng số ngày chậm.',
+                                               False: 'không có.'}.get(GIA_HAN, dau_cho('có hoặc không lùi mốc khi Chủ đầu tư cung cấp chậm') + '.'),
     'E-ĐKC 21.2': f"Thời gian nhà thầu thực hiện việc thay thế nhân sự: {cs['thay_the_nhan_su_ngay']:02d} ngày kể từ ngày nhận được yêu cầu thay thế nhân sự của Chủ đầu tư.",
     'E-ĐKC 22.2': [f"- Thời gian để tiến hành hòa giải: tối đa {cs['hoa_giai_toi_da_ngay']} ngày.",
                    f"- Giải quyết tranh chấp: nếu hòa giải không thành, một trong hai bên gửi yêu cầu giải quyết tới {cs['co_quan_giai_quyet_tranh_chap']}. Chi phí giải quyết tranh chấp do bên có lỗi chịu theo phán quyết."],
@@ -331,7 +524,7 @@ dkct_soan = {
     'E-ĐKC 2.2 (i)': ('Các tài liệu khác là một phần của hợp đồng, gắn với các yêu cầu RFP về đặc tả và thay đổi đặc tả.', ['rfp_yeu_cau.json: nhóm hop_dong, san_pham']),
     'E-ĐKC 6.4': ('Yêu cầu khác về nhà thầu phụ, chuyển yêu cầu thuê ngoài của RFP thành điều khoản.', ['rfp_yeu_cau.json: nhóm hop_dong']),
     'E-ĐKC 12.1': (f"Tạm ứng {hd['tam_ung_phan_tram']}% giá hợp đồng, điều kiện cấp, hồ sơ tạm ứng, bảo lãnh tiền tạm ứng theo Mẫu số 16 Phần 4 nếu tham số yêu cầu, cách thu hồi vào thanh toán theo Mục 13.1 và thời hạn hiệu lực bảo lãnh tạm ứng." if hd['tam_ung_phan_tram'] else 'Ghi: Tạm ứng: không áp dụng.', ['tham_so_chu_dau_tu.json: chinh_sach.tam_ung_phan_tram, bao_lanh_tam_ung', 'gia_tri_tinh.json: hop_dong']),
-    'E-ĐKC 13.1': ('Phương thức thanh toán (chuyển khoản), số đợt, mỗi đợt một dòng bắt đầu bằng "- Đợt n: x% giá hợp đồng" kèm sự kiện kích hoạt theo tham số, diễn đạt gắn với sản phẩm của RFP. Đợt bảo hành nêu giá trị bảo lãnh bảo hành và hiệu lực đến hết thời hạn trách nhiệm đối với sai sót. Dòng cuối: hồ sơ thanh toán và thời hạn thanh toán. Tổng các đợt bằng 100%.', ['gia_tri_tinh.json: hop_dong.thanh_toan', 'tham_so_chu_dau_tu.json: chinh_sach.thanh_toan_trong_ngay, bao_lanh_bao_hanh_phan_tram']),
+    'E-ĐKC 13.1': ('Phương thức thanh toán (chuyển khoản), số đợt, mỗi đợt một dòng bắt đầu bằng "- Đợt n: x% giá hợp đồng" kèm sự kiện kích hoạt theo tham số, diễn đạt gắn với sản phẩm của RFP. Đợt gắn sản phẩm nêu các hạng mục được thanh toán theo dạng (hạng mục 1, 2 và 4 Mẫu số 01A) hoặc (hạng mục 5 đến 9 Mẫu số 01A). Mỗi hạng mục của MAU_01A thuộc đúng một đợt, đợt tạm ứng và đợt bảo hành không gắn hạng mục. Mọi bảo lãnh không có biểu mẫu trong Phần 4 (ví dụ bảo lãnh bảo hành) nêu bên phát hành (ngân hàng, tổ chức tín dụng hoặc chi nhánh ngân hàng nước ngoài được thành lập theo pháp luật Việt Nam), giá trị, hiệu lực đến hết thời hạn trách nhiệm đối với sai sót và hình thức, nội dung theo mẫu được Chủ đầu tư chấp thuận. Dòng cuối: hồ sơ thanh toán và thời hạn thanh toán. Tổng các đợt bằng 100%.', ['gia_tri_tinh.json: hop_dong.thanh_toan', 'tham_so_chu_dau_tu.json: chinh_sach.thanh_toan_trong_ngay, bao_lanh_bao_hanh_phan_tram']),
     'E-ĐKC 17.1(c)': ('Nội dung khác về sửa đổi hợp đồng, chuyển yêu cầu thay đổi đặc tả của RFP thành điều khoản: thay đổi chỉ thực hiện khi hai bên thống nhất bằng văn bản.', ['rfp_yeu_cau.json: nhóm hop_dong']),
     'E-ĐKC 20.1': ('Nguyên tắc và cách thức đánh giá chất lượng theo điều khoản kiểm tra, chấp nhận và sửa lỗi của RFP. Thời hạn trách nhiệm đối với sai sót theo RFP (quy đổi ra tháng) kể từ ngày nghiệm thu, bàn giao, và việc duy trì bảo lãnh bảo hành nếu có đợt thanh toán bảo hành.', ['rfp_yeu_cau.json: nhóm hop_dong', 'tham_so_chu_dau_tu.json: chinh_sach.bao_hanh']),
 }

@@ -31,6 +31,8 @@ REBUILD = {'NV01', 'DD01', 'DD02', 'DD04'}
 log, pending, rebuild = [], [], False
 codes = {'DD03'}  # luôn chuẩn hóa gạch dài trong dữ liệu
 for f in rep['phat_hien']:
+    if f['ma'] in ('TS01', 'PH01') or f.get('giai_trinh'):
+        continue  # tham số chờ Chủ đầu tư, phát hiện mở của vòng trước: chay_quy_trinh.py báo khi kết thúc, không thuộc vòng sửa tự động
     if f['cach_sua'] == 'tu_dong' and (f['ma'] in TEXT_RULES or f['ma'] in REBUILD):
         codes.add(f['ma'])
         if f['ma'] in REBUILD: rebuild = True

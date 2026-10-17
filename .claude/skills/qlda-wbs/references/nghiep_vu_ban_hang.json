@@ -1,0 +1,10 @@
+{
+ "_huong_dan": "Nghiệp vụ bán hàng thông dụng mà WBS phải xử lý rõ ở một trong ba chỗ: gói công việc (tên hoặc sản phẩm của gói có từ khóa, hoặc mã nghiệp vụ trong nguon của gói), khong_can_goi (ma là mã nghiệp vụ, kèm ly_do), gia_dinh_ngoai_pham_vi (câu giả định có từ khóa). kiem_tra_wbs.py cảnh báo W33 khi một nghiệp vụ không có ở đâu. tu_khoa so khớp không phân biệt hoa thường.",
+ "nghiep_vu": [
+  {"ma": "NV01", "ten": "Hủy đơn hàng", "tu_khoa": ["hủy đơn", "hủy đặt hàng"]},
+  {"ma": "NV02", "ten": "Đổi, trả hàng và hoàn tiền", "tu_khoa": ["đổi trả", "đổi, trả", "trả hàng", "hoàn tiền"]},
+  {"ma": "NV03", "ten": "Khuyến mại, mã giảm giá", "tu_khoa": ["khuyến mại", "khuyến mãi", "giảm giá"]},
+  {"ma": "NV04", "ten": "Phí vận chuyển", "tu_khoa": ["phí vận chuyển", "phí giao hàng", "cước vận chuyển"]},
+  {"ma": "NV05", "ten": "Giữ tồn kho khi đặt hàng", "tu_khoa": ["giữ tồn", "giữ hàng", "tạm giữ"]}
+ ]
+}

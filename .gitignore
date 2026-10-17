@@ -13,6 +13,9 @@ _tinh_lai/
 /lam_viec
 # Cấu hình Claude Code cá nhân
 .claude/settings.local.json
-
+/slide_tai_lieu
+/tai_lieu_da_lam
+/danh_gia_skill
+/bang_chung
 # Office lock files
 ~$*

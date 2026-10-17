@@ -12,8 +12,17 @@ Không được đọc: tài liệu kết quả có sẵn của lần làm trư�
 Quy tắc nội dung:
 1. Mọi con số (tiền, MD, ngày, tỷ lệ, số lượng) viết bằng tham chiếu dữ liệu {bi_danh#duong_dan|dinh_dang}, bí danh là khóa trong nguon của đặc tả.
    Ví dụ: "Giá chào là {cp#gia_chao|tien} đồng", "cut over ngày {lich#cut_over|ngay}", "SPI đạt {td#spi|so2}".
-   Định dạng: tien, trieu, md, pt, ngay, so, so1, so2, so3, nguyen, chu. Lọc phần tử danh sách: {rr#danh_sach[ma=RR01].ten}.
+   Định dạng: tien, trieu, md, pt, ngay, so, so1, so2, so3, nguyen, chu, dem (số phần tử).
+   Lọc phần tử danh sách: {rr#danh_sach[ma=RR01].ten} (phần tử đầu khớp), {rr#danh_sach[?muc=cao]|dem} (đếm mọi phần tử khớp).
+   Khóa có dấu chấm hoặc khoảng trắng đặt trong ngoặc vuông có nháy đơn: {lich#khong_som_hon['8.3.2']|ngay}, {hsmt#e_dkct['E-ĐKC 17.4']}.
+   Danh sách in thành chuỗi phân cách bằng dấu phẩy: {lich#duong_gang} ra "1.1.1, 1.1.2, ...", {lich#moc.ma} ra mã mọi mốc. Đếm: {hsmt#mau_01a|dem}, {wbs#nhom|dem}.
+   Không chép tay mã hay số từ dữ liệu khi tham chiếu được.
 2. Mỗi nhận định phải dựa trên dữ liệu nguồn hoặc yêu cầu RFP, HSMT. Không bịa số liệu, tên người, sự kiện.
+   Không nêu biện pháp, cam kết, chỉ tiêu, thời hạn, vai trò hay con số không có trong dữ liệu nguồn của đặc tả. Khi nêu biện pháp cho một rủi ro,
+   chỉ dùng bien_phap_phong_ngua, ke_hoach_ung_pho của đúng mã rủi ro đó trong sổ rủi ro, người thực hiện theo giao việc.
+   Ví dụ lỗi lớp B đã gặp: gán cho RR05 biện pháp "vị trí kiến trúc sư hỗ trợ quản trị dự án về kiến trúc" trong khi sổ rủi ro không có biện pháp này.
+   Thiếu dữ liệu để viết một ý bắt buộc thì không tự đặt giá trị, không để dấu giữ chỗ trong ngoặc vuông như [Nhóm bổ sung ...] hay [...]:
+   dừng và báo người dùng trường cần bổ sung (lớp A bắt mọi ngoặc vuông chứa chữ, mã CT00).
 3. Nêu rõ liên kết giữa các tài liệu khi hướng dẫn yêu cầu: mã gói WBS, mã mốc, mã rủi ro, mã yêu cầu thay đổi.
 4. Văn phong theo van_phong.md: trang trọng, không khẩu ngữ, không lời dẫn, hạn chế dấu chấm phẩy, không ký hiệu.
 5. Đủ số đoạn tối thiểu và đủ cụm từ bắt buộc của từng ID.

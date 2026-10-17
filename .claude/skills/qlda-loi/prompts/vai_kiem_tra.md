@@ -22,7 +22,7 @@ Thêm các tiêu chí riêng trong khóa kiem_tra.doc_hieu của đặc tả.
 - Không bịa lỗi. Không chắc thì ghi canh_bao và nêu điều chưa chắc.
 
 Sau khi ghi báo cáo:
-- Chép báo cáo vào bang_chung/kiem_tra/<buoc>_v<phiên bản>_lopB.json.
+- Chép báo cáo vào bang_chung/kiem_tra/<buoc>_v<phiên bản>_lopB.json. Tài liệu theo kỳ hoặc bước có nhiều tệp đầu ra (báo cáo tiến độ, WBS) dùng tên <buoc>_<tên tệp không đuôi>_v<phiên bản>_lopB.json, đúng tên chay.py in ở dòng "Tiếp theo".
 - Kết luận dat: python .claude/skills/qlda-phien-ban/scripts/so_phien_ban.py trang_thai <tài liệu> --trang-thai "Đã kiểm tra" --nguoi "agent Kiểm tra độc lập"
 - Kết luận chua_dat: chuyển báo cáo cho agent Sửa (qlda-loi/prompts/vai_sua.md).
 - python .claude/skills/qlda-loi/scripts/nhat_ky.py --skill <skill> --buoc <buoc>.kiem_tra_lop_B --vai "agent Kiểm tra độc lập" --prompt .claude/skills/qlda-loi/prompts/vai_kiem_tra.md --vao <tài liệu> --ra lam_viec/<buoc>/bao_cao_kiem_tra_lop_B.json --tom-tat "<kết luận, số lỗi>" --moi-truong "<phiên làm việc riêng, công cụ, mô hình>"

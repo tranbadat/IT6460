@@ -46,7 +46,12 @@ def tim_goc():
 GOC = tim_goc()
 
 
+TIEN_TO_SKILL = 'skill:'  # tệp tham chiếu tĩnh của skill, ví dụ skill:qlda-change/references/phan_loai.json
+
+
 def duong_dan(p):
+    if p.startswith(TIEN_TO_SKILL):
+        return os.path.join(THU_MUC_SKILLS, p[len(TIEN_TO_SKILL):])
     return p if os.path.isabs(p) else os.path.join(GOC, p)
 
 
@@ -64,7 +69,21 @@ def doc_json(p, mac_dinh=None):
             return mac_dinh
         raise FileNotFoundError('Không tìm thấy ' + tuong_doi(p))
     with open(p, encoding='utf-8') as f:
-        return json.load(f)
+        obj = json.load(f)
+    if tuong_doi(p) == 'dau_vao/du_an.json' and isinstance(obj, dict):
+        obj = gan_don_vi_thuc_hien(obj)
+    return obj
+
+
+def gan_don_vi_thuc_hien(da):
+    """Tên đơn vị thực hiện lấy từ nha_thau.json (ten_viet_tat, rồi ten) để đổi nhà thầu chỉ cần sửa một tệp."""
+    p = duong_dan('dau_vao/nha_thau.json')
+    if not os.path.exists(p):
+        return da
+    with open(p, encoding='utf-8') as f:
+        nt = json.load(f)
+    ten = nt.get('ten_viet_tat') or nt.get('ten')
+    return dict(da, don_vi_thuc_hien=ten) if ten else da
 
 
 def ghi_json(p, obj):
@@ -113,11 +132,15 @@ def so(v, le=0):
 
 
 def tien(v):
-    return so(round(float(v)), 0)
+    """Số tiền kiểu Việt Nam. Số âm viết chữ "âm" trước số (âm 296.981.818), theo references/van_phong.md."""
+    v = round(float(v))
+    return ('âm ' if v < 0 else '') + so(abs(v), 0)
 
 
 def trieu(v, le=2):
-    return so(float(v) / 1e6, le)
+    v = float(v) / 1e6
+    s = so(abs(v), le)
+    return ('âm ' if v < 0 and s.strip('0,.') else '') + s
 
 
 def md(v):
@@ -161,31 +184,71 @@ def ngay(v):
 
 DINH_DANG = {'tien': tien, 'trieu': trieu, 'md': md, 'pt': pt, 'ptg': ptg, 'ngay': ngay, 'so': lambda v: so(v, 0),
              'so1': lambda v: so(v, 1), 'so2': lambda v: so(v, 2), 'so3': lambda v: so(v, 3), 'nguyen': lambda v: str(int(round(float(v)))),
-             'chu': lambda v: str(v)}
+             'chu': lambda v: str(v),
+             'dem': lambda v: str(len(v)) if isinstance(v, (list, tuple, dict)) else ('0' if v in (None, '') else '1')}
 
 
 # ---------------------------------------------------------------- tham chiếu dữ liệu
+TACH_DUONG_DAN = re.compile(r"\[\s*'[^']*'\s*\]|\[\s*\"[^\"]*\"\s*\]|[^.\[\]]+|\[[^\]]*\]")
+
+
+def _buoc_ngoac(cur, inner):
+    """Một bước trong ngoặc vuông: ['khóa có dấu chấm'], [?k=v] (mọi phần tử khớp), [k=v] (phần tử đầu khớp), [số]."""
+    if inner[:1] in ('"', "'"):
+        return cur.get(inner[1:-1]) if isinstance(cur, dict) else None
+    if inner.startswith('?') and '=' in inner:
+        k, v = inner[1:].split('=', 1)
+        return [x for x in cur if isinstance(x, dict) and str(x.get(k)) == v]
+    if '=' in inner:
+        k, v = inner.split('=', 1)
+        return next((x for x in cur if isinstance(x, dict) and str(x.get(k)) == v), None)
+    return cur[int(inner)]
+
+
+def _buoc_khoa(cur, part):
+    """Một bước theo khóa. Gặp danh sách thì lấy khóa đó ở mọi phần tử (a.ds.ma ra danh sách mã)."""
+    if isinstance(cur, dict):
+        return cur.get(part)
+    if isinstance(cur, list):
+        ds = [x[part] for x in cur if isinstance(x, dict) and part in x]
+        return ds if ds or not cur else None
+    return None
+
+
 def lay(obj, path):
-    """Đi theo đường dẫn a.b[0].c, a[ma=3.1].md (lọc phần tử danh sách theo khóa)."""
+    """Đi theo đường dẫn a.b[0].c, a[ma=3.1].md (phần tử đầu khớp), a[?muc=cao] (mọi phần tử khớp),
+    a['8.3.2'] hoặc a["E-ĐKC 17.4"] (khóa có dấu chấm), a.ds.ma (lấy khóa ở mọi phần tử của danh sách)."""
     cur = obj
     if path in ('', None):
         return cur
-    for part in re.findall(r'[^.\[\]]+|\[[^\]]*\]', path):
-        if part.startswith('['):
-            inner = part[1:-1]
-            if '=' in inner:
-                k, v = inner.split('=', 1)
-                cur = next((x for x in cur if str(x.get(k)) == v), None)
-            else:
-                cur = cur[int(inner)]
-        else:
-            cur = cur[part] if isinstance(cur, dict) else None
+    for part in TACH_DUONG_DAN.findall(path):
+        cur = _buoc_ngoac(cur, part[1:-1].strip()) if part.startswith('[') else _buoc_khoa(cur, part)
         if cur is None:
             raise KeyError(path)
     return cur
 
 
 MAU_THAM_CHIEU = re.compile(r'\{([a-z_0-9]+)#([^}|]*)(?:\|([a-z0-9]+))?\}')
+
+
+def _chuoi_gia_tri(v, fmt, path):
+    """Giá trị đơn sang chuỗi theo định dạng. Phần tử là đối tượng thì dùng mã (ma) hoặc tên (ten)."""
+    if isinstance(v, dict):
+        v = v.get('ma', v.get('ten', ''))
+    if fmt:
+        return DINH_DANG[chon_dinh_dang(fmt, path)](v)
+    if isinstance(v, float):
+        return so(v, 2) if abs(v - round(v)) > 1e-9 else so(v, 0)
+    return str(v)
+
+
+def gia_tri_chuoi(v, fmt=None, path=''):
+    """Giá trị tham chiếu sang chuỗi: danh sách in thành chuỗi phân cách bằng dấu phẩy, |dem in số phần tử."""
+    if fmt == 'dem':
+        return DINH_DANG['dem'](v)
+    if isinstance(v, (list, tuple)):
+        return ', '.join(_chuoi_gia_tri(x, fmt, path) for x in v if x not in (None, ''))
+    return _chuoi_gia_tri(v, fmt, path)
 
 
 def giai_bieu_thuc(text, nguon, loi_ra=None):
@@ -198,12 +261,78 @@ def giai_bieu_thuc(text, nguon, loi_ra=None):
             if loi_ra is not None:
                 loi_ra.append(m.group(0))
             return m.group(0)
-        if fmt:
-            return DINH_DANG[chon_dinh_dang(fmt, path)](v)
-        if isinstance(v, float):
-            return so(v, 2) if abs(v - round(v)) > 1e-9 else so(v, 0)
-        return str(v)
+        return gia_tri_chuoi(v, fmt, path)
     return MAU_THAM_CHIEU.sub(thay, text)
+
+
+# ---------------------------------------------------------------- dấu giữ chỗ, biểu mẫu
+MAU_NGOAC_VUONG = re.compile(r'\[([^\[\]]*)\]')
+
+
+def la_giu_cho(s):
+    """Chuỗi có dấu giữ chỗ trong ngoặc vuông chứa chữ hoặc dấu ba chấm, ví dụ [Nhóm bổ sung ...], [...], [ghi tên]."""
+    if not isinstance(s, str):
+        return False
+    for m in MAU_NGOAC_VUONG.finditer(s):
+        inner = m.group(1)
+        if not inner.strip() or re.search(r'[^\W\d_]|\.\.\.|…', inner):
+            return True
+    return False
+
+
+def la_gia_tri_thieu(v):
+    """Giá trị coi là thiếu: None, chuỗi rỗng, chỉ có dấu câu, hoặc dấu giữ chỗ."""
+    if v is None:
+        return True
+    if isinstance(v, str):
+        return not re.sub(r'[\W_]', '', v) or la_giu_cho(v)
+    return False
+
+
+def chuan_hoa_tieu_de(s):
+    """Tiêu đề cột để so sánh: bỏ chú thích (1), gộp khoảng trắng, bỏ khoảng trắng quanh dấu /, chữ thường."""
+    s = re.sub(r'\(\d+\)', '', str(s))
+    s = re.sub(r'\s*/\s*', '/', re.sub(r'\s+', ' ', s)).strip()
+    return s.lower()
+
+
+def _dong_tieu_de(tbl):
+    """Dòng tiêu đề của bảng biểu mẫu: dòng đầu tiên có từ 3 ô khác nhau (ô gộp chỉ tính một lần)."""
+    for r in tbl.rows:
+        o = []
+        for c in r.cells:
+            t = re.sub(r'\s+', ' ', c.text).strip()
+            if t and (not o or o[-1] != t):
+                o.append(t)
+        if len(o) >= 3:
+            return o
+    return None
+
+
+_BIEU_MAU = {}
+
+
+def cot_bieu_mau(tep, mau_so):
+    """Tiêu đề cột bảng của Mẫu số <mau_so> trong tệp mẫu (dau_vao/Mau_5A.docx), đọc ở bảng đầu tiên có dòng
+    tiêu đề sau dòng "Mẫu số ...". Trả về danh sách tiêu đề, hoặc None khi không tìm thấy biểu mẫu hay bảng."""
+    p = duong_dan(tep)
+    if p not in _BIEU_MAU:
+        import docx
+        from docx.table import Table
+        from docx.text.paragraph import Paragraph
+        d = docx.Document(p)
+        out, mau = {}, None
+        for el in d.element.body.iterchildren():
+            tag = el.tag.split('}')[-1]
+            if tag == 'p':
+                m = re.match(r'Mẫu số (\w+)', Paragraph(el, d).text.strip())
+                mau = m.group(1) if m else mau
+            elif tag == 'tbl' and mau and mau not in out:
+                cot = _dong_tieu_de(Table(el, d))
+                if cot:
+                    out[mau] = cot
+        _BIEU_MAU[p] = out
+    return _BIEU_MAU[p].get(mau_so)
 
 
 def nap_nguon(bi_danh):
@@ -370,9 +499,14 @@ def danh_sach_sprint(da=None):
     tt = cfg.get('tien_to', 'S')
     k = len(days) // n
     du = len(days) - k * n
+    nhan = cfg.get('sprint_nhan_phan_du')  # số thứ tự sprint nhận phần ngày dư; trống thì theo gop_phan_du_vao_sprint_cuoi
+    if nhan is None:
+        nhan = k if cfg.get('gop_phan_du_vao_sprint_cuoi', True) else None
+    elif not (isinstance(nhan, int) and 1 <= nhan <= k):
+        thoat_loi(f'du_an.json sprint.sprint_nhan_phan_du = {nhan!r} phải là số nguyên từ 1 đến {k}')
     sp, i = [], 0
     for s in range(k):
-        size = n + (du if (s == k - 1 and cfg.get('gop_phan_du_vao_sprint_cuoi', True)) else 0)
+        size = n + (du if nhan is not None and s + 1 == int(nhan) else 0)
         sp.append({'ma': f'{tt}{s + 1}', 'so': s + 1, 'tu': days[i].isoformat(), 'den': days[i + size - 1].isoformat(),
                    'so_ngay': size, 'chi_so_dau': i, 'chi_so_cuoi': i + size - 1})
         i += size
@@ -470,6 +604,30 @@ def lam_tron_tong(gia_tri, le=2):
     return [x / k for x in san]
 
 
+def chia_md(md_, trong_so, le=2):
+    """Chia md_ theo trọng số (ví dụ tỷ lệ tham gia của người thực hiện và người hỗ trợ), làm tròn le chữ số
+    bằng lam_tron_tong để các phần cộng đúng md_ (không ra 351,01 khi cộng theo người)."""
+    t = sum(float(w) for w in trong_so)
+    return lam_tron_tong([float(md_) * float(w) / t for w in trong_so], le) if t else [0.0] * len(trong_so)
+
+
+def khop_tong(gia_tri, goc, le=2):
+    """Các giá trị đã làm tròn le chữ số mà cộng lệch tổng gốc chỉ do làm tròn (mỗi giá trị lệch tối đa nửa đơn vị cuối):
+    phân bổ lại phần lệch bằng lam_tron_tong trên các giá trị đã bị làm tròn (dùng đến chữ số cuối), giữ nguyên số tròn.
+    Trả về danh sách mới, hoặc None khi lệch quá sai số làm tròn (sai dữ liệu, không tự chỉnh)."""
+    k = 10 ** le
+    don_vi = [round(float(v or 0) * k) for v in gia_tri]
+    lech = round(float(goc) * k) - sum(don_vi)
+    if lech == 0:
+        return [u / k for u in don_vi]
+    ung_vien = [i for i, u in enumerate(don_vi) if u % 10] or [i for i, u in enumerate(don_vi) if u]
+    tong_uv = sum(don_vi[i] for i in ung_vien)
+    if abs(lech) > len(don_vi) / 2 or not tong_uv:
+        return None
+    thay = dict(zip(ung_vien, lam_tron_tong([don_vi[i] * (tong_uv + lech) / tong_uv / k for i in ung_vien], le)))
+    return [thay.get(i, u / k) for i, u in enumerate(don_vi)]
+
+
 def nut_bien_dong(sd=None):
     """Nút đầu vào thay đổi liên tục (sổ phiên bản, nhật ký), không dùng để xét tài liệu cũ."""
     sd = sd or so_do()
@@ -539,7 +697,21 @@ def bam_nut(sd, nut):
         lst = _so_phien_ban()['tai_lieu'].get(tuong_doi(duong_dan(p)))
         if lst:
             return 'nd:' + lst[-1]['hash']
-    return bam(p)
+    return bam_hieu_luc(p)
+
+
+def bam_hieu_luc(p):
+    """Băm tệp cộng phần giá trị doc_json gán ngầm khi đọc (du_an.don_vi_thuc_hien lấy từ nha_thau.json).
+    Phần gán chỉ được cộng khi khác giá trị trong tệp, nên băm cũ vẫn dùng được và đổi trường khác của nha_thau.json
+    không làm các bước chỉ dùng du_an bị báo cũ."""
+    h = bam(p)
+    if not h or not p.endswith('.json') or not os.path.isfile(duong_dan(p)):
+        return h
+    with open(duong_dan(p), encoding='utf-8') as f:
+        tho = json.load(f)
+    da_gan = doc_json(p)
+    khac = {k: v for k, v in da_gan.items() if tho.get(k) != v} if isinstance(da_gan, dict) and isinstance(tho, dict) else {}
+    return h + ':' + bam_obj(khac) if khac else h
 
 
 def dinh_dang_cot(vals, f):

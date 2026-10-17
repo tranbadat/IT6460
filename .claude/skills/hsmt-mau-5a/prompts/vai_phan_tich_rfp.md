@@ -41,5 +41,6 @@ Quy tắc:
 - Mỗi câu yêu cầu, cam kết, điều khoản trong RFP là một mục riêng. Không gộp, không bỏ sót. Đi lần lượt từ trang đầu đến trang cuối.
 - Các ô hoặc mục RFP để trống (chỉ có tiêu đề) vẫn ghi thành sản phẩm bàn giao, vì đó là sản phẩm nhà thầu phải lập.
 - tu_khoa_kiem_tra phải ngắn (2 đến 6 từ) và là cách diễn đạt mà HSMT tiếng Việt chắc chắn dùng, ví dụ "24 giờ", "2 giây", "Product Search". Không dùng cả câu.
+- Nội dung đề xuất về chi phí dùng tu_khoa_kiem_tra có cụm "chi phí ước tính" hoặc "Mẫu số 11A". Nội dung đề xuất là điều kiện khác hoặc đề nghị của nhà thầu đối với Chủ đầu tư dùng cụm "điều kiện khác" hoặc "đề nghị đối với Chủ đầu tư", vi_tri_hsmt ghi Chương V mục 4 và Chương III Mục 3 (không tính điểm). Kiểm tra lớp A dựa vào các cụm này để không đòi chấm điểm những nội dung đó.
 - Yêu cầu thủ tục xung đột với đấu thầu qua mạng theo Mẫu 5A (nộp bản giấy, nhiều bản, thuyết trình, hỏi đáp quá hạn làm rõ) ghi xu_ly là lech_co_can_cu và nêu căn cứ.
 - Không thêm yêu cầu RFP không có. Không đọc HSMT đã có để suy ra yêu cầu.

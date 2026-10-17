@@ -21,9 +21,10 @@ description: Lập hồ sơ mời thầu (E-HSMT) theo Mẫu số 5A, Thông tư
 | `scripts/lap_khung.py` | Bước 4: dựng khung HSMT, đánh dấu mục cần agent soạn |
 | `scripts/dien_khung.py` | Bước 5: ghép bản soạn vào khung |
 | `scripts/build_hsmt.py` | Bước 6: sinh file Word |
-| `scripts/verify_hsmt.py` | Bước 7 lớp A: kiểm tra theo nguồn chuẩn, không ghi cứng giá trị |
+| `scripts/verify_hsmt.py` | Bước 7 lớp A: kiểm tra theo nguồn chuẩn, không ghi cứng giá trị. Kết luận dat, chua_dat hoặc cho_nguoi_dung (còn tham số chờ Chủ đầu tư, phát hiện mở của vòng trước) |
 | `scripts/fix_hsmt.py` | Bước 8: sửa lỗi cơ học |
-| `scripts/chay_quy_trinh.py` | Điều phối các bước script (chuan_bi, hoan_thien) |
+| `scripts/chay_quy_trinh.py` | Điều phối các bước script (chuan_bi, hoan_thien), kết thúc vòng (ghi_nhan), ghi giải trình (giai_trinh) |
+| `scripts/quy_uoc.py` | Quy ước dùng chung: tham số Chủ đầu tư bắt buộc, dấu chờ, sổ phát hiện `so_phat_hien.json`, cách kết luận |
 | `prompts/vai_phan_tich_rfp.md`, `vai_soan_thao.md`, `vai_kiem_tra.md`, `vai_sua.md` | Chỉ dẫn cho từng agent |
 | `references/quy_tac_soan_thao.md`, `van_phong.md`, `tham_so.md`, `quy_trinh.md` | Quy tắc |
 
@@ -41,14 +42,17 @@ Các bước:
 1. Xác định đầu vào như trên. RFP khác ABC Wear mà chưa có tham số thì dừng và hỏi các trường trong `references/tham_so.md`.
 2. Agent Phân tích RFP theo `prompts/vai_phan_tich_rfp.md`. Chuyển RFP thành ảnh bằng `python <skill>/scripts/rfp_sang_anh.py <RFP.pdf> hsmt_lam_viec/anh_rfp`, xem từng ảnh, ghi `hsmt_lam_viec/rfp_yeu_cau.json`.
 3. `python <skill>/scripts/chay_quy_trinh.py chuan_bi <Mau_5A.docx> <tham_so.json> hsmt_lam_viec`. Lỗi tham số thì dừng và báo người dùng.
-4. Agent Soạn thảo theo `prompts/vai_soan_thao.md`, ghi `hsmt_lam_viec/ban_soan.json`.
-5. `python <skill>/scripts/chay_quy_trinh.py hoan_thien <Mau_5A.docx> hsmt_lam_viec`. Mã thoát 2 thì xử lý theo `prompts/vai_sua.md` và chạy lại. Tối đa 3 vòng.
-6. Agent Kiểm tra lớp B theo `prompts/vai_kiem_tra.md`. Có công cụ tạo agent con (Task, Agent) thì giao cho agent con, chỉ chuyển các file được phép đọc. Không có thì tự đóng vai và chỉ đọc các file được phép. Có lỗi thì quay lại bước 4 hoặc 5.
-7. Đạt:
-   - Trong bộ BTL_QLDA (có `.claude/skills/qlda-loi`): `python .claude/skills/qlda-loi/scripts/trich_hsmt.py hsmt_lam_viec`. Lệnh chép HSMT vào `ket_qua/01_HSMT/HSMT.docx`, trích `du_lieu/hsmt.json`, `du_lieu/rfp_yeu_cau.json` cho các skill WBS, lịch, dự toán, HSDT, kế hoạch, đăng ký phiên bản và ghi nhật ký.
+4. Agent Soạn thảo theo `prompts/vai_soan_thao.md`, ghi `hsmt_lam_viec/ban_soan.json`, gồm cả tiêu chí kỹ thuật chi tiết (TIEU_CHI_CHI_TIET). Nội dung tiêu chí là quyết định của bên tư vấn lập HSMT. Chỉ tiêu kỹ thuật do nhà thầu cam kết (`dau_vao/chi_tieu_ky_thuat.json`) không đưa vào HSMT.
+5. `python <skill>/scripts/chay_quy_trinh.py hoan_thien <Mau_5A.docx> hsmt_lam_viec`.
+   - Mã thoát 0: đạt lớp A, có `HSMT_ket_qua.docx`.
+   - Mã thoát 2 kèm dòng CHƯA HOÀN TẤT hoặc CHƯA ĐẠT và `HSMT_du_thao.docx`: lớp A không còn lỗi mới nhưng còn tham số chờ Chủ đầu tư quyết định (TS01) hoặc phát hiện mở của vòng trước (PH01). Vẫn chạy bước 6 trên bản dự thảo để gom đủ mục cần người dùng quyết.
+   - Mã thoát 2 khác: xử lý theo `prompts/vai_sua.md` và chạy lại. Tối đa 3 vòng.
+6. Agent Kiểm tra lớp B theo `prompts/vai_kiem_tra.md`. Có công cụ tạo agent con (Task, Agent) thì giao cho agent con, chỉ chuyển các file được phép đọc. Không có thì tự đóng vai và chỉ đọc các file được phép. Lớp B kiểm tra tệp do hoan_thien của vòng này tạo (`HSMT_ket_qua.docx` hoặc `HSMT_du_thao.docx`, vòng ghi trong thuộc tính tệp, kiểm tra CT07). Kết thúc vòng bằng `python <skill>/scripts/chay_quy_trinh.py ghi_nhan hsmt_lam_viec`: lệnh cập nhật sổ `so_phat_hien.json` và tính kết luận vòng. Vòng đạt thì tệp lớp B đã kiểm tra (đúng md5, đúng vòng) trở thành `HSMT_ket_qua.docx`. Bản giao của lần chạy trước được đổi tên kèm vòng khi chạy lại hoan_thien. Phát hiện chưa đóng được mang sang vòng sau, vòng sau không kết luận đạt khi còn phát hiện mở chưa giải trình. Có lỗi thì quay lại bước 4 hoặc 5. Mục thuộc quyết định của người dùng thì hỏi, người dùng quyết giữ nguyên thì ghi `chay_quy_trinh.py giai_trinh hsmt_lam_viec <PHxxx> "<lý do>"`.
+7. Đạt (kết luận vòng của `ghi_nhan` là dat):
+   - Trong bộ BTL_QLDA (có `.claude/skills/qlda-loi`): `python .claude/skills/qlda-loi/scripts/trich_hsmt.py hsmt_lam_viec`. Lệnh dừng nếu kết luận vòng trong `bao_cao_kiem_tra.json` khác dat, chưa qua ghi_nhan, báo cáo không thuộc vòng cuối của sổ, sổ còn mục mở, `HSMT_ket_qua.docx` khác bản ghi_nhan đã nâng (md5), vòng ghi trong tệp Word khác vòng báo cáo, hoặc không có `hsmt_noi_dung_v*.json` khớp md5 nội dung ghi trong tệp Word. Lệnh chép HSMT vào `ket_qua/01_HSMT/HSMT.docx`, trích `du_lieu/hsmt.json` (kèm tiêu chí chi tiết, phân định mục 3.5, hạng mục Mẫu 01A theo đợt thanh toán), `du_lieu/rfp_yeu_cau.json` cho các skill WBS, lịch, dự toán, HSDT, kế hoạch, đăng ký phiên bản và ghi nhật ký.
    - Dùng riêng skill: chép `hsmt_lam_viec/HSMT_ket_qua.docx` vào `ket_qua/` với tên `HSMT_<tên gói thầu ngắn>.docx`, kèm báo cáo kiểm tra.
    - Nếu máy có LibreOffice thì chuyển PDF (`soffice --headless --convert-to pdf`) để xem bố cục.
-8. Trả lời ngắn: số vòng, kết quả hai lớp kiểm tra, điểm lệch RFP có căn cứ, mục cần người dùng quyết.
+8. Trả lời ngắn: số vòng, kết quả hai lớp kiểm tra, điểm lệch RFP có căn cứ, mục cần người dùng quyết (tham số TS01 còn trống, phát hiện còn mở trong `so_phat_hien.json`).
 
 ## Nhật ký bằng chứng (trong bộ BTL_QLDA)
 
@@ -57,7 +61,7 @@ Sau mỗi bước của agent, ghi nhật ký để nộp kèm bằng chứng pr
 
 ## Khi người dùng muốn sửa
 
-- Sửa giá trị (ngày, tiền, tỷ lệ, chính sách): sửa tham số, chạy lại từ bước 3, rồi chạy lại bước 7 và `python .claude/skills/qlda-loi/scripts/chay.py anh_huong hsmt` để biết tài liệu sau cần cập nhật.
+- Sửa giá trị (ngày, tiền, tỷ lệ, chính sách, phân định trách nhiệm tại Chương V mục 3.5): sửa tham số, chạy lại từ bước 3, rồi chạy lại bước 7 và `python .claude/skills/qlda-loi/scripts/chay.py anh_huong hsmt` để biết tài liệu sau cần cập nhật.
 - Sau khi ký hợp đồng, HSMT là đường cơ sở đấu thầu: không tạo lại, thay đổi ghi bằng phụ lục hợp đồng hoặc biên bản.
 - Sửa nội dung diễn đạt: sửa `ban_soan.json` ở ID tương ứng, chạy lại bước 5.
 - Mặc định đưa chỉ dẫn sửa từng phần (vị trí, hiện tại, sửa thành). Chỉ tự chạy lại và xuất file khi người dùng yêu cầu rõ.

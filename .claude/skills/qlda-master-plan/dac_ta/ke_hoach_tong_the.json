@@ -4,6 +4,14 @@
  "nut_ra": "doc_ke_hoach",
  "ngay_tai_lieu": "{da#ngay_bat_dau|ngay}",
  "tieu_de_dau_trang": "Lập kế hoạch - Master plan",
+ "truoc": [
+  [
+   "qlda-change/scripts/tinh_bang_thay_doi.py"
+  ],
+  [
+   "qlda-master-plan/scripts/tinh_bang_ke_hoach.py"
+  ]
+ ],
  "nguon": {
   "hsmt": "du_lieu/hsmt.json",
   "rfp": "du_lieu/rfp_yeu_cau.json",
@@ -12,18 +20,26 @@
   "pc": "du_lieu/phan_cong.json",
   "cp": "du_lieu/chi_phi.json",
   "rr": "du_lieu/rui_ro.json",
-  "tv": "dau_vao/thanh_vien.json"
+  "tv": "dau_vao/thanh_vien.json",
+  "ct": "dau_vao/chi_tieu_ky_thuat.json",
+  "nt": "dau_vao/nha_thau.json",
+  "tdb": "du_lieu/thay_doi_bang.json",
+  "kb": "du_lieu/ke_hoach_bang.json",
+  "hb": "du_lieu/hsdt_bang.json"
  },
+ "nguon_tuy_chon": [
+  "hb"
+ ],
  "bia": {
   "tieu_de": "Kế hoạch tổng thể dự án",
   "dong_phu": [
-   "Master plan, lập trên cơ sở HSMT, HSDT, WBS, master schedule, phân công và cost estimate"
+   "Master plan, lập trên cơ sở HSMT, HSDT, WBS, master schedule, phân công, cost estimate, kế hoạch quản lý rủi ro và kế hoạch quản lý thay đổi"
   ]
  },
  "muc_luc": true,
  "khoi": [
   {
-   "h1": "1. Tổng quan dự án"
+   "h1": "1. Điều lệ dự án"
   },
   {
    "bang_tinh": {
@@ -72,21 +88,91 @@
    }
   },
   {
-   "soan": "MUC_TIEU",
+   "soan": "MUC_DICH",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Mục tiêu dự án theo RFP, mục tiêu của nhà thầu, tiêu chí thành công đo được (đúng phạm vi, đúng mốc cut over, trong ngân sách, đạt yêu cầu phi chức năng, nghiệm thu).",
+   "huong_dan": "Bối cảnh và mục đích dự án theo RFP (rfp#yeu_cau R02, R03 đến R05, R12), mục tiêu chính và mục tiêu phụ, mục tiêu của nhà thầu. Không nêu lại các ngưỡng đã có trong bảng mục tiêu, chỉ dẫn chiếu bảng.",
    "nguon": [
     "rfp",
-    "hsmt"
+    "hsmt",
+    "kb"
    ],
    "bat_buoc": [
-    "{lich#cut_over|ngay}",
-    "2 giây"
+    "{lich#cut_over|ngay}"
    ]
   },
   {
-   "h1": "2. Phạm vi và cấu trúc phân rã công việc"
+   "doan": "Mục tiêu của dự án được đo bằng chỉ số, ngưỡng, hạn và người xác nhận trong bảng sau, số liệu lấy từ HSMT, chỉ tiêu kỹ thuật nhà thầu cam kết, master schedule và cost estimate."
+  },
+  {
+   "bang_san": "kb#muc_tieu"
+  },
+  {
+   "soan": "RANG_BUOC",
+   "dang": "dong_bang",
+   "toi_thieu": 5,
+   "huong_dan": "Ràng buộc của dự án (ngày cut over cố định, hợp đồng trọn gói giá cố định, nhân sự chủ chốt theo HSMT và thay thế trong {hsmt#hop_dong.thay_the_nhan_su_ngay} ngày, thuê ngoài cần Chủ đầu tư chấp thuận, phần ngoài phạm vi theo wbs#gia_dinh_ngoai_pham_vi) và giả định (điều kiện tiền đề, cam kết của Chủ đầu tư ở bảng sau). Mỗi dòng có căn cứ là điều khoản HSMT, mã yêu cầu RFP hoặc mã cam kết. Số liệu viết bằng tham chiếu.",
+   "nguon": [
+    "hsmt",
+    "rfp",
+    "wbs",
+    "kb"
+   ],
+   "cot": [
+    "Loại",
+    "Nội dung",
+    "Căn cứ"
+   ],
+   "widths": [
+    1300,
+    5600,
+    2400
+   ]
+  },
+  {
+   "bang_san": "kb#cam_ket_cdt",
+   "rong_thi": "Chưa có cam kết của Chủ đầu tư được ghi nhận."
+  },
+  {
+   "doan": "Điều lệ dự án và kế hoạch tổng thể được lập, phê duyệt và xác nhận theo bảng sau."
+  },
+  {
+   "bang_san": "kb#phe_duyet"
+  },
+  {
+   "h1": "2. Các bên liên quan"
+  },
+  {
+   "bang_san": "kb#ben_lien_quan"
+  },
+  {
+   "soan": "BEN_LIEN_QUAN",
+   "dang": "dong_bang",
+   "toi_thieu": 3,
+   "huong_dan": "Các nhóm bên liên quan có căn cứ trong RFP và HSMT nhưng chưa có người cụ thể: khách hàng mua qua internet (R02, R03), bộ phận vận hành bán hàng, bộ phận quản lý Main System (R10), nghiệp vụ vận chuyển (R11). Không đặt tên người, không thêm nhóm không có căn cứ. Với mỗi nhóm nêu lợi ích hoặc yêu cầu của họ, điều dự án cần từ họ, cách tham gia, căn cứ. Thông tin còn thiếu ghi rõ được bổ sung tại họp khởi động.",
+   "nguon": [
+    "rfp",
+    "hsmt",
+    "kb",
+    "pc"
+   ],
+   "cot": [
+    "Nhóm bên liên quan",
+    "Lợi ích, yêu cầu",
+    "Điều dự án cần",
+    "Cách tham gia",
+    "Căn cứ"
+   ],
+   "widths": [
+    1900,
+    2000,
+    2000,
+    2200,
+    1200
+   ]
+  },
+  {
+   "h1": "3. Phạm vi và cấu trúc phân rã công việc"
   },
   {
    "bang": {
@@ -129,17 +215,18 @@
    "soan": "PHAM_VI",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Phạm vi theo RFP và HSMT, sản phẩm bàn giao, phần ngoài phạm vi và giả định, cách quản lý phạm vi (baseline đặc tả, quy trình thay đổi). Dẫn chiếu tài liệu WBS.",
+   "huong_dan": "Phạm vi theo RFP và HSMT, sản phẩm bàn giao theo Mẫu số 01A, phần ngoài phạm vi và giả định (wbs#gia_dinh_ngoai_pham_vi), cách quản lý phạm vi (đường cơ sở đặc tả tại mốc xác nhận đặc tả, quy trình thay đổi). Dẫn chiếu tài liệu WBS.",
    "nguon": [
     "wbs",
-    "rfp"
+    "rfp",
+    "hsmt"
    ],
    "bat_buoc": [
     "ngoài phạm vi"
    ]
   },
   {
-   "h1": "3. Tiến độ và mốc"
+   "h1": "4. Tiến độ và mốc"
   },
   {
    "bang": {
@@ -190,37 +277,36 @@
      [
       "Từ",
       "tu|ngay",
-      1200,
+      1150,
       "c"
      ],
      [
       "Đến",
       "den|ngay",
-      1200,
+      1150,
       "c"
-     ],
-     [
-      "MD kế hoạch",
-      "md_ke_hoach|md",
-      1100,
-      "r"
      ],
      [
       "Mục tiêu",
       "muc_tieu",
-      5000
+      3300
+     ],
+     [
+      "Sản phẩm trình diễn",
+      "san_pham_demo",
+      2900
      ]
     ]
    }
   },
   {
-   "doan": "Lịch có ràng buộc nguồn lực hoàn thành ngày {lich#ket_thuc_du_kien|ngay}, dự trữ {lich#du_tru_den_cut_over_ngay} ngày làm việc đến cut over. Đường găng theo phụ thuộc dài {lich#do_dai_gang_ngay} ngày làm việc."
+   "doan": "Lịch có ràng buộc nguồn lực hoàn thành ngày {lich#ket_thuc_du_kien|ngay} theo ràng buộc ngày cut over {lich#cut_over|ngay}. Chuỗi công việc trước các gói gắn ngày cut over có dự trữ {lich#du_tru_den_cut_over_ngay} ngày làm việc. Đường găng theo phụ thuộc dài {lich#do_dai_gang_ngay} ngày làm việc."
   },
   {
    "soan": "TIEN_DO",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Phương pháp lập lịch theo sprint, các gói trên đường găng, cách theo dõi tiến độ (SPI, mốc), biện pháp bảo vệ mốc cut over. Dẫn chiếu master schedule.",
+   "huong_dan": "Phương pháp lập lịch theo sprint, các gói trên đường găng (liệt kê đúng mã trong lich#duong_gang, không viết khoảng mã), cách theo dõi tiến độ (SPI, mốc so với hạn), biện pháp bảo vệ mốc cut over. Dẫn chiếu master schedule.",
    "nguon": [
     "lich"
    ],
@@ -229,7 +315,30 @@
    ]
   },
   {
-   "h1": "4. Tổ chức và nguồn lực"
+   "h1": "5. Tổ chức và nguồn lực"
+  },
+  {
+   "bang": {
+    "nguon": "pc#vi_tri_chu_chot",
+    "cot": [
+     [
+      "Vị trí nhân sự chủ chốt theo HSMT",
+      "vi_tri",
+      4300
+     ],
+     [
+      "Số lượng",
+      "so_luong",
+      1200,
+      "c"
+     ],
+     [
+      "Người đảm nhận",
+      "ho_ten",
+      3800
+     ]
+    ]
+   }
   },
   {
    "bang": {
@@ -263,6 +372,48 @@
       1300,
       "r"
      ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng cộng",
+     "cot": [
+      2,
+      3
+     ],
+     "tong": {
+      "2": "wbs#tong_md",
+      "3": "pc#tong_quy"
+     }
+    }
+   }
+  },
+  {
+   "bang": {
+    "nguon": "lich#sprint",
+    "cot": [
+     [
+      "Sprint",
+      "ma",
+      1500,
+      "c"
+     ],
+     [
+      "MD kế hoạch",
+      "md_ke_hoach|md",
+      2600,
+      "r"
+     ],
+     [
+      "Quỹ huy động, MD",
+      "quy|md",
+      2600,
+      "r"
+     ],
+     [
+      "Sử dụng",
+      "ty_le_su_dung|pt",
+      2600,
+      "r"
+     ]
     ]
    }
   },
@@ -270,46 +421,117 @@
    "soan": "TO_CHUC",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Cơ cấu tổ chức dự án, vai trò chính, đầu mối với chủ đầu tư, huy động vị trí bổ sung, xử lý quá tải. Dẫn chiếu tài liệu phân công.",
+   "huong_dan": "Cơ cấu tổ chức dự án, vai trò chính, người giữ từng vị trí nhân sự chủ chốt (bảng trên), nghĩa vụ thay thế nhân sự trong {hsmt#hop_dong.thay_the_nhan_su_ngay} ngày theo Mục 21.2 E-ĐKCT, đầu mối với Chủ đầu tư, tải theo sprint (bảng sử dụng quỹ theo sprint) và cách xử lý sprint quá tải hoặc dư quỹ. Gọi người bằng họ tên, không dùng mã nội bộ. Dẫn chiếu tài liệu phân công.",
    "nguon": [
     "pc",
-    "tv"
+    "tv",
+    "lich",
+    "hsmt"
+   ],
+   "bat_buoc": [
+    "{hsmt#hop_dong.thay_the_nhan_su_ngay} ngày"
    ]
   },
   {
-   "h1": "5. Chi phí và ngân sách"
+   "h1": "6. Mua sắm và thuê ngoài"
+  },
+  {
+   "bang_san": "kb#thue_ngoai"
+  },
+  {
+   "doan": "Vị trí bổ sung được huy động theo sprint, hồ sơ năng lực được hoàn thiện trước sprint huy động."
+  },
+  {
+   "bang_san": "kb#huy_dong",
+   "rong_thi": "Dự án không huy động vị trí bổ sung."
+  },
+  {
+   "doan": "Khoản chi phí khác (khoản B) gồm các hạng mục sau."
+  },
+  {
+   "bang": {
+    "nguon": "cp#chi_phi_khac",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      800,
+      "c"
+     ],
+     [
+      "Hạng mục",
+      "ten",
+      4300
+     ],
+     [
+      "Số tiền, đồng",
+      "so_tien|tien",
+      1800,
+      "r"
+     ],
+     [
+      "Căn cứ",
+      "can_cu",
+      2400
+     ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng cộng",
+     "cot": [
+      2
+     ]
+    }
+   }
+  },
+  {
+   "soan": "MUA_SAM",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "huong_dan": "Quyết định tự làm hay thuê ngoài, hạng mục cần mua hoặc thuê thuộc khoản B (môi trường, công cụ), thời điểm cần có theo gói WBS, người phê duyệt chi theo vai trong ban kiểm soát thay đổi (tdb#vai_ban). Thuê ngoài phát sinh chỉ thực hiện khi Chủ đầu tư chấp thuận bằng văn bản theo Mục 6.4 E-ĐKCT và đi qua quy trình yêu cầu thay đổi. Không nêu tên nhà cung cấp không có trong dữ liệu, khoản B chưa có danh mục chi tiết thì ghi rõ.",
+   "nguon": [
+    "kb",
+    "cp",
+    "tdb",
+    "wbs"
+   ],
+   "bat_buoc": [
+    "6.4"
+   ]
+  },
+  {
+   "h1": "7. Chi phí và ngân sách"
   },
   {
    "bang_tinh": {
     "rows": [
      [
       "Khoản mục",
-      "Giá trị, đồng"
+      "Giá trị"
      ],
      [
-      "A. Nhân công",
-      "{cp#A|tien}"
+      "Đường cơ sở chi phí (BAC), khoản A nhân công",
+      "{cp#A|tien} đồng"
      ],
      [
-      "B. Chi phí khác",
-      "{cp#B|tien}"
+      "Khoản B chi phí khác, gồm dự phòng, theo dõi theo danh mục",
+      "{cp#B|tien} đồng"
      ],
      [
-      "C. Chi phí chung và lợi nhuận",
-      "{cp#C|tien}"
+      "Khoản C chi phí chung và lợi nhuận",
+      "{cp#C|tien} đồng"
      ],
      [
-      "Giá hợp đồng dự kiến",
-      "{cp#gia_chao|tien}"
+      "Giá hợp đồng dự kiến, không dùng làm đường cơ sở chi phí",
+      "{cp#gia_chao|tien} đồng"
      ],
      [
       "Tổng EMV rủi ro",
-      "{cp#tong_emv_rui_ro|tien}"
+      "{kb#emv}"
      ]
     ],
     "widths": [
-     6000,
-     3300
+     5300,
+     4000
     ],
     "right_cols": [
      1
@@ -317,23 +539,83 @@
    }
   },
   {
+   "doan": "Dự án dùng một đường cơ sở chi phí là BAC bằng khoản nhân công {cp#A|tien} đồng, phân bổ theo sprint theo MD kế hoạch và dùng để tính CPI. Giá hợp đồng {cp#gia_chao|tien} đồng là giá trị thanh toán theo hợp đồng, khoản chi phí khác được theo dõi theo danh mục ở mục 6."
+  },
+  {
+   "doan": "Dự phòng rủi ro được dùng theo bảng quy tắc chung với kế hoạch quản lý thay đổi, kế hoạch quản lý rủi ro và thuyết minh dự toán."
+  },
+  {
+   "bang_san": "tdb#du_phong"
+  },
+  {
    "soan": "CHI_PHI",
    "dang": "danh_sach_doan",
    "toi_thieu": 1,
-   "huong_dan": "Ngân sách, đường cơ sở chi phí theo sprint, theo dõi CPI, quy tắc dùng dự phòng, dòng tiền theo đợt thanh toán. Dẫn chiếu cost estimate.",
+   "huong_dan": "Theo dõi CPI trên BAC, chi phí lương kế hoạch theo cách trả lương nhóm khai báo (cp#tong_chi_phi_nguoi; lương của toàn bộ ngày huy động là cp#tong_chi_phi_huy_dong, chỉ dùng để theo dõi năng lực) so với khoản A, dòng tiền theo đợt thanh toán (cp#thanh_toan). Không viết lại quy tắc dùng dự phòng, chỉ dẫn chiếu bảng quy tắc. Không gọi giá hợp đồng là đường cơ sở. Dẫn chiếu cost estimate.",
    "nguon": [
-    "cp"
+    "cp",
+    "tdb"
    ],
    "bat_buoc": [
-    "CPI"
+    "CPI",
+    "BAC"
    ]
   },
   {
-   "h1": "6. Chất lượng và nghiệm thu"
+   "h1": "8. Chất lượng và nghiệm thu"
+  },
+  {
+   "doan": "Các chỉ tiêu kỹ thuật nhà thầu cam kết được dùng làm tiêu chí nghiệm thu chất lượng."
+  },
+  {
+   "bang": {
+    "nguon": "ct#chi_tieu",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Yêu cầu HSMT",
+      "yeu_cau_hsmt",
+      2300
+     ],
+     [
+      "Chỉ tiêu",
+      "chi_tieu",
+      3300
+     ],
+     [
+      "Cách kiểm chứng",
+      "cach_kiem_chung",
+      3000
+     ]
+    ]
+   }
+  },
+  {
+   "doan": "Điều kiện quyết định cut over: {ct#dieu_kien_cut_over}."
+  },
+  {
+   "doan": "Bảo hành {ct#bao_hanh.thoi_han_thang} tháng kể từ ngày cut over, thời gian phản hồi và khắc phục theo mức lỗi như sau."
+  },
+  {
+   "bang_san": "kb#bao_hanh"
   },
   {
    "soan": "CHAT_LUONG",
    "dang": "dong_bang",
+   "toi_thieu": 5,
+   "huong_dan": "Điều kiện hoàn thành của gói và sprint, tiêu chí nghiệm thu sản phẩm theo đặc tả (kiểm tra đạt là chấp nhận theo Mục 20.1 E-ĐKCT), hoạt động bảo đảm chất lượng (chuẩn mã, xem xét tài liệu, quản lý lỗi), ngưỡng lỗi khi kiểm thử vận hành lấy từ dấu hiệu rủi ro trong rr, điều kiện quyết định cut over. Chỉ tiêu và ngưỡng dùng tham chiếu ct, rr, không tự đặt ngưỡng mới. Mã gói và sprint đúng theo lịch.",
+   "nguon": [
+    "ct",
+    "rfp",
+    "hsmt",
+    "lich",
+    "rr"
+   ],
    "cot": [
     "Đối tượng",
     "Tiêu chí, chỉ số",
@@ -345,21 +627,23 @@
     3200,
     2500,
     1600
-   ],
-   "toi_thieu": 5,
-   "huong_dan": "Điều kiện hoàn thành của gói và sprint, tiêu chí nghiệm thu sản phẩm theo đặc tả (kiểm tra đạt là chấp nhận theo RFP), yêu cầu phi chức năng 24 giờ 365 ngày và 2 giây, ngưỡng lỗi khi UAT, điều kiện go/no-go cho cut over.",
-   "nguon": [
-    "rfp",
-    "hsmt",
-    "lich"
    ]
   },
   {
-   "h1": "7. Truyền thông và kế hoạch họp"
+   "h1": "9. Truyền thông và kế hoạch họp"
   },
   {
    "soan": "TRUYEN_THONG",
    "dang": "dong_bang",
+   "toi_thieu": 6,
+   "huong_dan": "Họp khởi động, lập kế hoạch sprint, họp hằng ngày, trình diễn cuối sprint, họp cải tiến cuối sprint, rà soát rủi ro định kỳ theo kế hoạch quản lý rủi ro, họp xem xét đặc tả, họp kiểm tra chức năng chính tại mốc gắn Đợt 3, họp ban kiểm soát thay đổi theo kế hoạch quản lý thay đổi, họp quyết định cut over. Đối chiếu kế hoạch họp đã cam kết trong HSDT. Kênh liên lạc với đầu mối Chủ đầu tư.",
+   "nguon": [
+    "rfp",
+    "lich",
+    "tdb",
+    "rr",
+    "hb"
+   ],
    "cot": [
     "Hoạt động",
     "Tần suất",
@@ -371,16 +655,32 @@
     1500,
     2700,
     2700
-   ],
-   "toi_thieu": 4,
-   "huong_dan": "Họp khởi động, lập kế hoạch sprint, trình diễn cuối sprint, báo cáo tiến độ, họp ban kiểm soát thay đổi, họp quyết định cut over. Kênh liên lạc với đầu mối chủ đầu tư.",
-   "nguon": [
-    "rfp",
-    "lich"
    ]
   },
   {
-   "h1": "8. Rủi ro"
+   "soan": "BAO_CAO",
+   "dang": "dong_bang",
+   "toi_thieu": 4,
+   "huong_dan": "Ma trận báo cáo: báo cáo tiến độ cuối sprint, báo cáo mốc, báo cáo rủi ro mức cao, báo cáo yêu cầu thay đổi và vấn đề, báo cáo vượt cấp tới người có thẩm quyền khi chỉ số ở mức đỏ hoặc mốc gắn thanh toán có nguy cơ trễ. Người lập, người nhận theo vai trong ban kiểm soát thay đổi (tdb#vai_ban), hạn gửi, kênh.",
+   "nguon": [
+    "tdb",
+    "da"
+   ],
+   "cot": [
+    "Báo cáo",
+    "Người lập",
+    "Người nhận",
+    "Hạn gửi, kênh"
+   ],
+   "widths": [
+    2600,
+    1800,
+    2600,
+    2300
+   ]
+  },
+  {
+   "h1": "10. Rủi ro"
   },
   {
    "bang": {
@@ -415,17 +715,56 @@
    }
   },
   {
-   "doan": "Sổ rủi ro gồm {rr#tong_hop.so_rui_ro} rủi ro, tổng EMV {rr#tong_hop.tong_emv_tien|tien} đồng. Chi tiết tại kế hoạch quản lý rủi ro."
+   "doan": "Sổ rủi ro gồm {rr#tong_hop.so_rui_ro} rủi ro, tổng EMV {kb#emv}. Chi tiết tại kế hoạch quản lý rủi ro."
   },
   {
-   "h1": "9. Quản lý thay đổi và cấu hình"
+   "h1": "11. Quản lý vấn đề"
+  },
+  {
+   "soan": "VAN_DE",
+   "dang": "dong_bang",
+   "toi_thieu": 6,
+   "huong_dan": "Quy trình vấn đề theo tám bước: nhận diện, ghi sổ, giao rà soát, đánh giá, giao hành động, thực hiện, rà soát hành động, thống nhất đóng. Thẩm quyền theo cấp: nhóm tự xử lý khi không ảnh hưởng gói khác, quản trị dự án khi ảnh hưởng sprint hoặc nguồn lực, chuyển thành yêu cầu thay đổi khi cần đổi phạm vi, mốc, chi phí, ghi mã rủi ro khi vấn đề là rủi ro đã xảy ra. Người theo vai trong tdb#vai_ban, thời hạn không viết số tay.",
+   "nguon": [
+    "tdb",
+    "rr",
+    "lich"
+   ],
+   "bat_buoc": [
+    "yêu cầu thay đổi",
+    "cấp"
+   ],
+   "cot": [
+    "Bước",
+    "Nội dung",
+    "Người thực hiện",
+    "Thời hạn",
+    "Đầu ra"
+   ],
+   "widths": [
+    700,
+    3600,
+    1800,
+    1300,
+    1900
+   ]
+  },
+  {
+   "doan": "Sổ vấn đề (so_van_de.csv) và danh sách hành động (hanh_dong.csv) trong thư mục dữ liệu thực tế của dự án được mở từ ngày khởi động {lich#ngay_bat_dau|ngay}. Mỗi vấn đề có mã, người báo, mức ưu tiên, người phụ trách, hạn, trạng thái, mã rủi ro và mã yêu cầu thay đổi liên quan, báo cáo tiến độ lấy bảng vấn đề từ sổ."
+  },
+  {
+   "h1": "12. Quản lý thay đổi"
+  },
+  {
+   "bang_san": "tdb#tham_quyen"
   },
   {
    "soan": "THAY_DOI",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Tóm tắt quy trình thay đổi, thẩm quyền, cách lan truyền cập nhật giữa các tài liệu, quản lý phiên bản. Dẫn chiếu kế hoạch quản lý thay đổi và tài liệu quản lý phiên bản.",
+   "huong_dan": "Tóm tắt quy trình thay đổi, phân loại theo điểm tác động, thẩm quyền và thời hạn ở bảng trên, giá đề nghị Chủ đầu tư bên cạnh chi phí nội bộ, cách lan truyền cập nhật giữa các tài liệu, quản lý phiên bản. Dẫn chiếu kế hoạch quản lý thay đổi, không viết lại chi tiết.",
    "nguon": [
+    "tdb",
     "hsmt"
    ],
    "bat_buoc": [
@@ -434,24 +773,48 @@
    ]
   },
   {
-   "h1": "10. Chuyển giao và kết thúc"
+   "h1": "13. Quản lý cấu hình"
   },
   {
-   "soan": "CHUYEN_GIAO",
+   "bang_san": "tdb#cau_hinh"
+  },
+  {
+   "doan": "Quy tắc nhánh mã nguồn, nhãn phiên bản phát hành, kiểm tra cấu hình và báo cáo trạng thái cấu hình theo kế hoạch quản lý thay đổi. Phiên bản tài liệu theo tài liệu quản lý phiên bản."
+  },
+  {
+   "h1": "14. Lịch rà soát"
+  },
+  {
+   "doan": "Dự án được rà soát cuối mỗi sprint, tại mỗi mốc và khi kết thúc, vấn đề còn mở và quyết định đang chờ được xử lý tại các lần rà soát này."
+  },
+  {
+   "bang_san": "kb#ra_soat"
+  },
+  {
+   "h1": "15. Chuyển giao và kết thúc dự án"
+  },
+  {
+   "bang_san": "kb#ket_thuc"
+  },
+  {
+   "soan": "KET_THUC",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Chuẩn bị cut over (diễn tập, đối chiếu dữ liệu, phương án khôi phục), đào tạo, bàn giao mã nguồn và quyền sở hữu, bảo hành theo HSMT, hồ sơ kết thúc dự án.",
+   "huong_dan": "Chuẩn bị cut over (diễn tập, đối chiếu dữ liệu, phương án khôi phục), đào tạo, bàn giao mã nguồn và quyền sở hữu (Mục 14 E-ĐKCT), bảo hành theo HSMT. Đóng dự án: giải phóng nhân sự huy động, thanh toán đợt cuối, bảo lãnh bảo hành và nhận lại bảo đảm thực hiện hợp đồng, lưu trữ hồ sơ, báo cáo tổng kết, báo cáo đánh giá, bài học kinh nghiệm, người lập theo vai, thời điểm theo bảng trên.",
    "nguon": [
     "hsmt",
     "wbs",
-    "lich"
+    "lich",
+    "kb",
+    "tdb"
    ],
    "bat_buoc": [
-    "{hsmt#hop_dong.bao_hanh_thang} tháng"
+    "{hsmt#hop_dong.bao_hanh_thang} tháng",
+    "bài học"
    ]
   },
   {
-   "h1": "11. Đường cơ sở của dự án"
+   "h1": "16. Đường cơ sở của dự án"
   },
   {
    "bang_tinh": {
@@ -459,28 +822,33 @@
      [
       "Đường cơ sở",
       "Giá trị",
-      "Tài liệu gốc"
+      "Tài liệu gốc",
+      "Cách kiểm soát"
      ],
      [
       "Phạm vi",
       "{wbs#tong_md|md} MD, {wbs#so_goi_la} gói công việc",
-      "WBS"
+      "WBS, biên bản xác nhận đặc tả",
+      "Yêu cầu thay đổi theo mức, ma trận lan truyền"
      ],
      [
       "Tiến độ",
       "Cut over {lich#cut_over|ngay}, {lich#so_sprint} sprint",
-      "Master schedule"
+      "Master schedule",
+      "SPI cuối sprint, mốc so với hạn, dự trữ {lich#du_tru_den_cut_over_ngay} ngày"
      ],
      [
       "Chi phí",
-      "{cp#gia_chao|tien} đồng",
-      "Cost estimate"
+      "BAC {cp#A|tien} đồng (khoản A)",
+      "Cost estimate",
+      "CPI cuối sprint, theo dõi khoản B và chi phí lương theo quỹ huy động"
      ]
     ],
     "widths": [
-     2000,
-     4300,
-     3000
+     1500,
+     2900,
+     2100,
+     2800
     ]
    }
   }
@@ -492,12 +860,20 @@
     "bt": "{cp#gia_chao|tien}"
    },
    {
+    "mo_ta": "BAC (khoản A)",
+    "bt": "{cp#A|tien}"
+   },
+   {
     "mo_ta": "Cut over",
     "bt": "{lich#cut_over|ngay}"
    },
    {
     "mo_ta": "Tổng MD",
     "bt": "{wbs#tong_md|md}"
+   },
+   {
+    "mo_ta": "Người đại diện nhà thầu phê duyệt",
+    "bt": "{tdb#vai_ban.dai_dien_nt.ho_ten}"
    }
   ],
   "ma_phai_co": [
@@ -510,13 +886,124 @@
     "nguon": "wbs#nhom",
     "truong": "ten",
     "mo_ta": "Mọi nhóm WBS"
+   },
+   {
+    "nguon": "ct#chi_tieu",
+    "truong": "ma",
+    "mo_ta": "Mọi chỉ tiêu kỹ thuật"
+   }
+  ],
+  "tu_khoa": [
+   "BAC",
+   "6.4"
+  ],
+  "muc_bat_buoc": [
+   {
+    "ten": "Tích hợp: điều lệ dự án, mục tiêu SMART, ràng buộc, giả định, phê duyệt",
+    "tieu_de": "Điều lệ dự án",
+    "toi_thieu": 5,
+    "de_xuat": "Bổ sung mục tích hợp: điều lệ dự án, mục tiêu smart, ràng buộc, giả định, phê duyệt vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Các bên liên quan",
+    "tieu_de": "Các bên liên quan",
+    "toi_thieu": 2,
+    "de_xuat": "Bổ sung mục các bên liên quan vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Phạm vi",
+    "tieu_de": "Phạm vi",
+    "toi_thieu": 2,
+    "de_xuat": "Bổ sung mục phạm vi vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Thời gian",
+    "tieu_de": "Tiến độ",
+    "toi_thieu": 3,
+    "de_xuat": "Bổ sung mục thời gian vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Chi phí",
+    "tieu_de": "Chi phí",
+    "toi_thieu": 3,
+    "de_xuat": "Bổ sung mục chi phí vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Chất lượng",
+    "tieu_de": "Chất lượng",
+    "toi_thieu": 3,
+    "de_xuat": "Bổ sung mục chất lượng vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Nhân sự",
+    "tieu_de": "Tổ chức và nguồn lực",
+    "toi_thieu": 3,
+    "de_xuat": "Bổ sung mục nhân sự vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Truyền thông",
+    "tieu_de": "Truyền thông",
+    "toi_thieu": 2,
+    "de_xuat": "Bổ sung mục truyền thông vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Rủi ro",
+    "tieu_de": "Rủi ro",
+    "toi_thieu": 2,
+    "de_xuat": "Bổ sung mục rủi ro vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Mua sắm và thuê ngoài",
+    "tieu_de": "Mua sắm",
+    "toi_thieu": 3,
+    "de_xuat": "Bổ sung mục mua sắm và thuê ngoài vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Quản lý thay đổi",
+    "tieu_de": "Quản lý thay đổi",
+    "toi_thieu": 2,
+    "de_xuat": "Bổ sung mục quản lý thay đổi vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Quản lý cấu hình",
+    "tieu_de": "Quản lý cấu hình",
+    "toi_thieu": 2,
+    "de_xuat": "Bổ sung mục quản lý cấu hình vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Lịch rà soát",
+    "tieu_de": "Lịch rà soát",
+    "toi_thieu": 1,
+    "de_xuat": "Bổ sung mục lịch rà soát vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Kết thúc dự án",
+    "tieu_de": "Kết thúc dự án",
+    "toi_thieu": 2,
+    "de_xuat": "Bổ sung mục kết thúc dự án vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Quản lý vấn đề",
+    "tieu_de": "Quản lý vấn đề",
+    "toi_thieu": 2,
+    "de_xuat": "Bổ sung mục quản lý vấn đề vào đặc tả ke_hoach_tong_the.json"
+   },
+   {
+    "ten": "Đường cơ sở và cách kiểm soát",
+    "tieu_de": "Đường cơ sở",
+    "toi_thieu": 1,
+    "de_xuat": "Bổ sung mục đường cơ sở và cách kiểm soát vào đặc tả ke_hoach_tong_the.json"
    }
   ],
   "doc_hieu": [
    "Kế hoạch dựa trên HSMT, HSDT, WBS, lịch sprint, phân công: không mâu thuẫn số liệu với các tài liệu đó",
-   "Có tiêu chí nghiệm thu và điều kiện cut over kiểm chứng được",
-   "Có ba đường cơ sở và cách kiểm soát",
-   "Kế hoạch họp đáp ứng yêu cầu Meeting của RFP"
+   "Có điều lệ dự án: mục tiêu SMART dạng bảng (chỉ số, ngưỡng, hạn, người xác nhận), ràng buộc, giả định, người phê duyệt",
+   "Có đủ chín kế hoạch con (tích hợp, phạm vi, thời gian, chi phí, chất lượng, nhân sự, truyền thông, rủi ro, mua sắm) cùng quản lý thay đổi, cấu hình, vấn đề, lịch rà soát, kết thúc dự án",
+   "Bên liên quan lấy từ HSMT, dữ liệu nhà thầu và thành viên, không có người không có trong dữ liệu",
+   "Có tiêu chí nghiệm thu từ chỉ tiêu kỹ thuật và điều kiện cut over kiểm chứng được",
+   "Chỉ một đường cơ sở chi phí là BAC (khoản A), giá hợp đồng ghi riêng, có ba đường cơ sở kèm cách kiểm soát",
+   "Quy tắc dùng dự phòng dẫn chiếu bảng chung, không viết khác kế hoạch quản lý rủi ro và thuyết minh dự toán",
+   "Kế hoạch họp đáp ứng yêu cầu Meeting của RFP và kế hoạch họp đã cam kết trong HSDT, có ma trận báo cáo"
   ]
  }
 }

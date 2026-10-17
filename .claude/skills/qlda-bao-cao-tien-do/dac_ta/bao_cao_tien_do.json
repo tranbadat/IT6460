@@ -9,7 +9,9 @@
   "td": "du_lieu/tien_do/hien_tai.json",
   "ls": "du_lieu/tien_do/lich_su.json",
   "lich": "du_lieu/lich.json",
-  "rr": "du_lieu/rui_ro.json"
+  "rr": "du_lieu/rui_ro.json",
+  "cp": "du_lieu/chi_phi.json",
+  "dg": "dau_vao/don_gia.json"
  },
  "bia": {
   "tieu_de": "Báo cáo tiến độ",
@@ -45,9 +47,19 @@
       "{td#trang_thai_spi}"
      ],
      [
-      "Chỉ số chi phí CPI",
+      "Chỉ số chi phí CPI theo công",
       "{td#cpi|so2}",
       "{td#trang_thai_cpi}"
+     ],
+     [
+      "Chỉ số chi phí CPI theo chi phí thực",
+      "{td#cpi_thuc|so2}",
+      "{td#trang_thai_cpi_thuc}"
+     ],
+     [
+      "Sử dụng quỹ huy động",
+      "{td#AC_md|md}/{td#md_huy_dong|md} MD ({td#ty_le_su_dung_quy|pt})",
+      ""
      ],
      [
       "Dự báo hoàn thành",
@@ -71,13 +83,14 @@
    "soan": "TOM_TAT",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Đánh giá chung tình hình dự án trong kỳ dựa trên SPI, CPI, mốc, gói chậm, rủi ro và thay đổi. Nêu rõ trạng thái chung và nguyên nhân chính. Nếu dự báo hoàn thành sau ngày cut over thì nêu rõ số ngày và biện pháp.",
+   "huong_dan": "Đánh giá chung tình hình dự án trong kỳ dựa trên SPI, CPI theo công, CPI theo chi phí thực, tỷ lệ sử dụng quỹ huy động, mốc, gói chậm, vấn đề, rủi ro và thay đổi. Nêu rõ trạng thái chung (mức xấu nhất của ba chỉ số) và nguyên nhân chính. CPI theo chi phí thực thấp do ngày huy động không ghi công thì nêu số MD sẵn sàng và hướng xử lý. Nếu dự báo hoàn thành sau ngày cut over thì nêu rõ số ngày và biện pháp.",
    "nguon": [
     "td"
    ],
    "bat_buoc": [
     "{td#spi|so2}",
-    "{td#cpi|so2}"
+    "{td#cpi|so2}",
+    "{td#cpi_thuc|so2}"
    ]
   },
   {
@@ -107,7 +120,7 @@
       "{td#EV|tien}"
      ],
      [
-      "AC",
+      "AC theo công",
       "{td#AC_md|md}",
       "{td#AC|tien}"
      ],
@@ -154,7 +167,79 @@
    }
   },
   {
-   "doan": "Chi phí quy đổi theo đơn giá loại công việc của đường cơ sở chi phí nhân công. Ngưỡng cảnh báo: SPI hoặc CPI dưới {da#nguong_canh_bao.spi_vang|so2} là vàng, dưới {da#nguong_canh_bao.spi_do|so2} là đỏ."
+   "doan": "Bảng trên quy đổi chi phí theo đơn giá loại công việc của đường cơ sở chi phí nhân công (AC theo công là MD ghi nhận nhân đơn giá). Ngưỡng cảnh báo: SPI hoặc CPI dưới {da#nguong_canh_bao.spi_vang|so2} là vàng, dưới {da#nguong_canh_bao.spi_do|so2} là đỏ."
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Chỉ số chi phí thực",
+      "Giá trị, đồng"
+     ],
+     [
+      "Lương kế hoạch cả dự án theo cách trả lương, BAC nhân sự",
+      "{td#BAC_thuc_nhan_su|tien}"
+     ],
+     [
+      "Lương kế hoạch đến ngày báo cáo",
+      "{td#PV_thuc_nhan_su|tien}"
+     ],
+     [
+      "EV nhân sự (lương kế hoạch tại thời điểm kế hoạch đạt khối lượng EV)",
+      "{td#EV_thuc_nhan_su|tien}"
+     ],
+     [
+      "AC nhân sự, lương đến ngày báo cáo tính theo {td#co_so_luong_ac}",
+      "{td#AC_thuc_nhan_su|tien}"
+     ],
+     [
+      "CV nhân sự = EV nhân sự - AC nhân sự",
+      "{td#CV_thuc_nhan_su|tien}"
+     ],
+     [
+      "CPI theo chi phí thực = EV nhân sự / AC nhân sự",
+      "{td#cpi_thuc|so2} ({td#trang_thai_cpi_thuc})"
+     ],
+     [
+      "Chi phí khác đã chi, dự toán B + D",
+      "{td#AC_thuc_khac|tien}, dự toán {td#B_ke_hoach|tien}"
+     ],
+     [
+      "AC thực = AC nhân sự + chi phí khác đã chi",
+      "{td#AC_thuc|tien}"
+     ],
+     [
+      "BAC thực = BAC nhân sự + B + D",
+      "{td#BAC_thuc|tien}"
+     ],
+     [
+      "EAC thực (lương và chi phí khác còn lại theo kế hoạch)",
+      "{td#EAC_thuc|tien}"
+     ],
+     [
+      "VAC thực = BAC thực - EAC thực",
+      "{td#VAC_thuc|tien}"
+     ],
+     [
+      "Giá hợp đồng trước thuế trừ EAC thực",
+      "{td#chenh_lech_gia_du_bao|tien}"
+     ],
+     [
+      "MD ghi công, MD sẵn sàng không ghi công",
+      "{td#AC_md|md}, {td#md_san_sang|md} ({td#ty_le_su_dung_quy|pt} quỹ huy động có ghi công)"
+     ]
+    ],
+    "widths": [
+     5800,
+     3500
+    ],
+    "right_cols": [
+     1
+    ]
+   }
+  },
+  {
+   "doan": "Cách trả lương do nhóm khai báo: {td#cach_tra_luong_ten}. EV nhân sự và AC nhân sự cùng cơ sở lương với cost estimate (lương tham chiếu tháng chia {dg#ngay_lam_viec_moi_thang} ngày, nhân hệ số bảo hiểm {dg#he_so_bao_hiem|so3}). Khi thực hiện đúng kế hoạch, EV nhân sự bằng lương kế hoạch đến ngày báo cáo và CPI theo chi phí thực bằng 1. Chi phí khác chưa có kế hoạch chi theo thời gian nên so với dự toán, không tính vào CPI theo chi phí thực. Đến ngày báo cáo đã huy động {td#md_huy_dong|md} MD, lương của toàn bộ ngày huy động cả dự án là {td#chi_phi_huy_dong_ca_du_an|tien} đồng. {td#ghi_chu_san_sang}"
   },
   {
    "bang": {
@@ -163,49 +248,55 @@
      [
       "Kỳ",
       "ky",
-      1200,
+      1000,
       "c"
      ],
      [
       "Ngày",
       "ngay_bao_cao|ngay",
-      1400,
+      1300,
       "c"
      ],
      [
       "PV, MD",
       "PV_md|md",
-      1300,
+      1100,
       "r"
      ],
      [
       "EV, MD",
       "EV_md|md",
-      1300,
+      1100,
       "r"
      ],
      [
       "AC, MD",
       "AC_md|md",
-      1300,
+      1100,
       "r"
      ],
      [
       "SPI",
       "spi|so2",
-      900,
+      800,
       "r"
      ],
      [
       "CPI",
       "cpi|so2",
-      900,
+      800,
+      "r"
+     ],
+     [
+      "CPI thực",
+      "cpi_thuc|so2",
+      1000,
       "r"
      ],
      [
       "Trạng thái",
       "trang_thai_chung",
-      1000,
+      1100,
       "c"
      ]
     ]
@@ -227,27 +318,36 @@
      [
       "Nội dung",
       "ten",
-      3800
+      3000
      ],
      [
       "Kế hoạch",
       "ke_hoach|ngay",
-      1300,
+      1200,
+      "c"
+     ],
+     [
+      "Hạn",
+      "han|ngay",
+      1200,
       "c"
      ],
      [
       "Thực tế",
       "thuc_te|ngay",
-      1300,
+      1200,
       "c"
      ],
      [
       "Trạng thái",
       "trang_thai",
-      2200
+      2000
      ]
     ]
    }
+  },
+  {
+   "doan": "Mốc được so với hạn (hạn trong master schedule, mốc cut over theo ngày cut over của hợp đồng); cột Kế hoạch là ngày theo lịch hiện hành."
   },
   {
    "bang": {
@@ -311,31 +411,214 @@
      [
       "Thành viên",
       "ho_ten",
-      3200
+      2500
      ],
      [
       "Kế hoạch đến nay, MD",
       "ke_hoach|md",
-      2000,
+      1300,
       "r"
      ],
      [
       "Thực tế, MD",
       "thuc_te|md",
-      2000,
+      1300,
       "r"
      ],
      [
       "Chênh lệch, MD",
       "chenh_lech|md",
-      2100,
+      1300,
+      "r"
+     ],
+     [
+      "Huy động, MD",
+      "huy_dong|md",
+      1400,
+      "r"
+     ],
+     [
+      "Sẵn sàng không ghi công, MD",
+      "san_sang|md",
+      1500,
       "r"
      ]
-    ]
+    ],
+    "dong_tong": {
+     "nhan": "Tổng",
+     "cot": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    }
    }
   },
   {
    "h1": "5. Vấn đề, rủi ro và thay đổi"
+  },
+  {
+   "h2": "5.1. Vấn đề và hành động"
+  },
+  {
+   "bang_tinh": {
+    "rows": [
+     [
+      "Sổ vấn đề tại ngày báo cáo",
+      "Số lượng"
+     ],
+     [
+      "Vấn đề ghi nhận đến ngày báo cáo",
+      "{td#van_de_tong_hop.tong}"
+     ],
+     [
+      "Vấn đề chưa đóng",
+      "{td#van_de_tong_hop.so_mo}, trong đó ưu tiên cao {td#van_de_tong_hop.so_mo_uu_tien_cao}"
+     ],
+     [
+      "Vấn đề quá hạn",
+      "{td#van_de_tong_hop.so_qua_han}"
+     ],
+     [
+      "Vấn đề đóng trong kỳ",
+      "{td#van_de_tong_hop.so_dong_trong_ky}"
+     ],
+     [
+      "Hành động chưa hoàn thành",
+      "{td#van_de_tong_hop.so_hanh_dong_chua_xong}, trong đó quá hạn {td#van_de_tong_hop.so_hanh_dong_qua_han}"
+     ]
+    ],
+    "widths": [
+     5800,
+     3500
+    ]
+   }
+  },
+  {
+   "bang": {
+    "nguon": "td#van_de",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Vấn đề",
+      "mo_ta",
+      3100
+     ],
+     [
+      "Ưu tiên",
+      "uu_tien",
+      900,
+      "c"
+     ],
+     [
+      "Liên kết",
+      "lien_ket",
+      1000,
+      "c"
+     ],
+     [
+      "Phụ trách",
+      "phu_trach",
+      1500
+     ],
+     [
+      "Hạn",
+      "han|ngay",
+      1100,
+      "c"
+     ],
+     [
+      "Trạng thái",
+      "trang_thai_hien_thi",
+      1000
+     ]
+    ],
+    "rong_thi": "Không có vấn đề mở trong sổ vấn đề."
+   }
+  },
+  {
+   "bang": {
+    "nguon": "td#hanh_dong",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Vấn đề",
+      "ma_van_de",
+      800,
+      "c"
+     ],
+     [
+      "Hành động",
+      "viec",
+      3500
+     ],
+     [
+      "Người thực hiện",
+      "nguoi",
+      1700
+     ],
+     [
+      "Hạn",
+      "han|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Trạng thái",
+      "trang_thai_hien_thi",
+      1400
+     ]
+    ],
+    "rong_thi": "Không có hành động đang theo dõi."
+   }
+  },
+  {
+   "bang": {
+    "nguon": "td#van_de_phat_hien",
+    "cot": [
+     [
+      "Nguồn",
+      "nguon",
+      1800
+     ],
+     [
+      "Tín hiệu do script phát hiện",
+      "noi_dung",
+      5600
+     ],
+     [
+      "Vấn đề trong sổ",
+      "van_de_trong_so",
+      1900
+     ]
+    ],
+    "rong_thi": "Không có gói chậm, chỉ số dưới ngưỡng, rủi ro đã xảy ra hay mốc quá hạn trong kỳ."
+   }
+  },
+  {
+   "soan": "VAN_DE",
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1,
+   "huong_dan": "Nhận xét về vấn đề và hành động dựa trên các bảng lấy từ sổ vấn đề: vấn đề ưu tiên cao, quá hạn và hướng xử lý, liên kết với kế hoạch ứng phó trong sổ rủi ro (mã rủi ro) hoặc yêu cầu thay đổi (mã CR). Tín hiệu chưa ghi sổ thì đề nghị ghi nhận vào sổ kèm người phụ trách. Không lập lại bảng, không nêu vấn đề không có trong sổ hoặc bảng tín hiệu, mã và số liệu dùng tham chiếu dữ liệu. Sổ không có vấn đề mở thì nêu ngắn gọn.",
+   "nguon": [
+    "td",
+    "rr"
+   ]
+  },
+  {
+   "h2": "5.2. Rủi ro và yêu cầu thay đổi"
   },
   {
    "bang": {
@@ -414,37 +697,13 @@
    }
   },
   {
-   "soan": "VAN_DE",
-   "dang": "dong_bang",
-   "cot": [
-    "Vấn đề",
-    "Nguyên nhân",
-    "Hành động khắc phục",
-    "Người phụ trách",
-    "Hạn"
-   ],
-   "widths": [
-    2200,
-    2000,
-    2700,
-    1400,
-    1000
-   ],
-   "toi_thieu": 2,
-   "huong_dan": "Mỗi gói chậm, chỉ số dưới ngưỡng, rủi ro đã xảy ra là một dòng. Hành động gắn với kế hoạch ứng phó trong sổ rủi ro (ghi mã rủi ro) hoặc yêu cầu thay đổi (ghi mã CR).",
-   "nguon": [
-    "td",
-    "rr"
-   ]
-  },
-  {
    "h1": "6. Kế hoạch kỳ tới"
   },
   {
    "soan": "KY_TOI",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Mục tiêu sprint kế tiếp theo master schedule, gói ưu tiên (đường găng, gói chậm), mốc sắp tới, đề nghị đối với chủ đầu tư.",
+   "huong_dan": "Mục tiêu sprint kế tiếp theo master schedule, gói ưu tiên (đường găng, gói chậm), mốc sắp tới, hành động trong sổ vấn đề có hạn trong kỳ tới, đề nghị đối với chủ đầu tư.",
    "nguon": [
     "lich",
     "td"
@@ -464,6 +723,10 @@
    {
     "mo_ta": "EV",
     "bt": "{td#EV_md|md}"
+   },
+   {
+    "mo_ta": "CPI theo chi phí thực",
+    "bt": "{td#cpi_thuc|so2}"
    }
   ],
   "ma_phai_co": [
@@ -471,13 +734,19 @@
     "nguon": "td#goi_cham",
     "truong": "ma",
     "mo_ta": "Mọi gói chậm"
+   },
+   {
+    "nguon": "td#van_de",
+    "truong": "ma",
+    "mo_ta": "Mọi vấn đề trong sổ đưa vào kỳ"
    }
   ],
   "doc_hieu": [
-   "Nhận định khớp chỉ số SPI, CPI và trạng thái",
-   "Mỗi vấn đề có hành động, người, hạn",
+   "Nhận định khớp chỉ số SPI, CPI theo công, CPI theo chi phí thực và trạng thái",
+   "Nhận xét vấn đề khớp bảng sổ vấn đề, không thêm vấn đề ngoài sổ hoặc bảng tín hiệu",
+   "Tín hiệu chưa ghi sổ được nêu và đề nghị ghi nhận",
    "Hành động gắn với sổ rủi ro hoặc yêu cầu thay đổi",
-   "Kế hoạch kỳ tới ưu tiên đường găng và gói chậm"
+   "Kế hoạch kỳ tới ưu tiên đường găng, gói chậm và hành động đến hạn"
   ]
  }
 }

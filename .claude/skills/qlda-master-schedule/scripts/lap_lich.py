@@ -4,7 +4,12 @@ Dùng: python lap_lich.py [lam_viec/lich/moc_nhap.json]
 Đầu vào: du_lieu/wbs.json, du_lieu/phan_cong.json, dau_vao/thanh_vien.json, dau_vao/du_an.json, du_lieu/hsmt.json,
          lam_viec/lich/moc_nhap.json (agent Lập mốc viết: mốc, mục tiêu và sản phẩm demo của từng sprint).
 Cách tính:
-- Thời lượng gói = làm tròn lên (MD / tổng tỷ lệ tham gia của người thực hiện và người hỗ trợ) ngày làm việc.
+- Thời lượng gói = giá trị lớn hơn giữa làm tròn lên (MD / tổng tỷ lệ tham gia của người thực hiện và người hỗ trợ) và thời lượng
+  tối thiểu (ngày làm việc). Thời lượng tối thiểu lấy từ thoi_luong_toi_thieu của gói lá trong WBS và từ moc_nhap.json khóa
+  chu_dau_tu_tham_gia [{goi, loai}]: loai phe_duyet lấy du_an.thoi_gian_phe_duyet_tai_lieu_ngay, loai uat ghim gói vào khoảng
+  du_an.uat {tu, den} (không sớm hơn tu, thời lượng bằng số ngày làm việc của khoảng, lỗi L23 khi kết thúc sau den).
+  Người làm chỉ bận số ngày cần cho phần MD của mình (tính từ ngày bắt đầu gói), thời gian còn lại của thời lượng tối thiểu
+  là thời gian Chủ đầu tư xem xét, kiểm thử. Gói sau chỉ bắt đầu khi gói hết thời lượng tối thiểu.
 - Mỗi người làm lần lượt từng gói. Gói có người hỗ trợ được chia phần theo thời gian khả dụng, mỗi người làm phần của mình độc lập.
   Phần việc bắt đầu khi các gói phụ thuộc đã xong, người đó đã tham gia dự án và đang rảnh. Gói hoàn thành khi mọi phần xong.
   Thứ tự ưu tiên: gói có thời điểm bắt đầu muộn nhất (theo CPM) sớm hơn. Phần việc được chèn vào khoảng trống sớm nhất của người làm.
@@ -14,8 +19,15 @@ Cách tính:
 - Mốc: ngày cố định hoặc ngày hoàn thành của các gói nêu trong sau_goi. Kiểm tra hạn của mốc.
 - Ràng buộc không sớm hơn (moc_nhap.json, khóa khong_som_hon {mã gói: yyyy-mm-dd}): gói chỉ bắt đầu từ ngày đó, dùng cho
   công việc gắn ngày cố định như chuyển dữ liệu và hỗ trợ ngày đưa vào vận hành. Dự trữ đến cut over khi đó đo đến ngày bắt đầu
-  của gói bị ghim (khoảng chậm cho phép của các gói phía trước).
-Ra: du_lieu/lich.json. Lỗi khi lịch vượt ngày cut over, mốc trễ hạn, sprint thiếu mục tiêu. Mã thoát 0 đạt, 1 còn lỗi.
+  của gói bị ghim (khoảng chậm cho phép của các gói phía trước). Gói kiểm thử chấp nhận ghim theo khoảng uat cũng tính như vậy.
+- Phụ thuộc bên ngoài (moc_nhap.json, khóa dau_vao_ben_ngoai {mã cam kết: [mã gói hoặc mục cha]}): gói không bắt đầu trước hạn
+  của cam kết trong du_an.cam_ket_chu_dau_tu. Lỗi L17 khi gói bắt đầu trước hạn, cảnh báo L18 khi cam kết có hạn chưa ánh xạ gói.
+  Ràng buộc này không dùng để đo dự trữ đến cut over.
+- Sử dụng quỹ: cảnh báo L07 khi một người được huy động trong sprint nhưng dùng dưới NGUONG_SU_DUNG_NGUOI_SPRINT quỹ của sprint,
+  L08 khi tỷ lệ sử dụng quỹ toàn dự án thấp hơn du_an.nguong_su_dung_quy_toi_thieu (bước hsdt dừng ở ngưỡng này).
+Ra: du_lieu/lich.json (thêm ty_le_su_dung_quy, nhu_cau_theo_sprint, su_dung_theo_nguoi_sprint, cam_ket_chu_dau_tu,
+chu_dau_tu_tham_gia, rang_buoc của gói lá). Lỗi khi lịch vượt ngày cut over, mốc trễ hạn, sprint thiếu mục tiêu.
+Mã thoát 0 đạt, 1 còn lỗi.
 """
 import os as _os, sys as _sys  # noqa: E401
 _os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
@@ -51,6 +63,11 @@ N = len(days)
 sprints = loi.danh_sach_sprint(da)
 by, la = loi.nut_wbs(wbs)
 gv = {x['ma']: x for x in pc['giao_viec']}
+_thieu_gv = [g['ma'] for g in la if g['ma'] not in gv]
+if _thieu_gv:
+    loi.thoat_loi(f'Gói lá chưa có trong du_lieu/phan_cong.json (chạy lại bước giao_viec sau khi đổi WBS): {", ".join(_thieu_gv[:12])}')
+NGUONG_SU_DUNG_NGUOI_SPRINT = 0.3  # người huy động trong sprint dùng dưới tỷ lệ này của quỹ sprint thì cảnh báo L07
+LOAI_CHU_DAU_TU = ('phe_duyet', 'uat')
 F = []
 add = lambda ma, mo, vt='', md='loi': F.append({'ma': ma, 'muc_do': md, 'nhom': 'lich', 'vi_tri': vt, 'mo_ta': mo, 'cach_sua': 'can_nguoi_dung', 'de_xuat': ''})
 
@@ -90,6 +107,70 @@ def cua_so_sprint(x, p):
     return a, b
 
 
+def chi_so_tu(d):
+    """Chỉ số ngày làm việc đầu tiên không sớm hơn ngày d (yyyy-mm-dd hoặc date)."""
+    d = dt.date.fromisoformat(d) if isinstance(d, str) else d
+    return next((i for i, x in enumerate(ext) if x >= d), len(ext) - 1)
+
+
+def chi_so_den(d):
+    """Chỉ số ngày làm việc cuối cùng không muộn hơn ngày d."""
+    d = dt.date.fromisoformat(d) if isinstance(d, str) else d
+    return max((i for i, x in enumerate(ext) if x <= d), default=0)
+
+
+def la_cua(ma):
+    """Mã các gói lá thuộc mã ma (chính nó nếu là gói lá)."""
+    return [g['ma'] for g in la if g['ma'] == ma or g['ma'].startswith(str(ma) + '.')]
+
+
+# ràng buộc từ Chủ đầu tư: thời lượng tối thiểu (WBS, phê duyệt tài liệu, kiểm thử chấp nhận) và hạn cam kết đầu vào
+tmin = {g['ma']: int(g['thoi_luong_toi_thieu']) for g in la if g.get('thoi_luong_toi_thieu')}
+rb_goi = {m: [{'loai': 'thoi_luong_toi_thieu', 'so_ngay': n}] for m, n in tmin.items()}  # ràng buộc ngày của từng gói lá, ghi vào lich.json
+ghim_uat = {}  # gói kiểm thử chấp nhận: (chỉ số ngày đầu, cuối) của khoảng uat
+cdt_vao = []
+for x in moc_nhap.get('chu_dau_tu_tham_gia') or []:
+    m, loai_ = str(x.get('goi', '')), x.get('loai')
+    if m not in {g['ma'] for g in la} or loai_ not in LOAI_CHU_DAU_TU:
+        add('L24', f'chu_dau_tu_tham_gia: {m} không phải gói lá trong WBS hoặc loại {loai_} không thuộc {list(LOAI_CHU_DAU_TU)}', m); continue
+    if loai_ == 'phe_duyet':
+        n = da.get('thoi_gian_phe_duyet_tai_lieu_ngay')
+        if not n:
+            add('L24', 'du_an.json chưa có thoi_gian_phe_duyet_tai_lieu_ngay, đề nghị nhóm bổ sung', m); continue
+        rb = {'loai': 'phe_duyet', 'so_ngay': int(n)}
+    else:
+        uat = da.get('uat') or {}
+        if not (uat.get('tu') and uat.get('den')):
+            add('L24', 'du_an.json chưa có uat {tu, den}, đề nghị nhóm bổ sung', m); continue
+        a_, b_ = chi_so_tu(uat['tu']), chi_so_den(uat['den'])
+        ghim_uat[m] = (a_, b_)
+        rb = {'loai': 'uat', 'so_ngay': b_ - a_ + 1, 'tu': uat['tu'], 'den': uat['den']}
+    tmin[m] = max(tmin.get(m, 0), rb['so_ngay'])
+    rb_goi.setdefault(m, []).append(rb)
+    cdt_vao.append(dict(rb, goi=m))
+CAM_KET = {c['ma']: c for c in da.get('cam_ket_chu_dau_tu', [])}
+anh_xa_ck = moc_nhap.get('dau_vao_ben_ngoai') or {}
+ghim_ben_ngoai, ck_goi = {}, {}  # gói -> chỉ số ngày hạn cam kết muộn nhất; mã cam kết -> gói lá
+for ma_ck, ds_goi in anh_xa_ck.items():
+    if ma_ck not in CAM_KET:
+        add('L19', f'dau_vao_ben_ngoai dẫn chiếu cam kết {ma_ck} không có trong du_an.cam_ket_chu_dau_tu', ma_ck); continue
+    for ma_g in ds_goi:
+        if not la_cua(ma_g):
+            add('L19', f'dau_vao_ben_ngoai {ma_ck}: gói {ma_g} không có trong WBS', ma_g)
+        for m in la_cua(ma_g):
+            ck_goi.setdefault(ma_ck, []).append(m)
+            if CAM_KET[ma_ck].get('han'):
+                ghim_ben_ngoai[m] = max(ghim_ben_ngoai.get(m, 0), chi_so_tu(CAM_KET[ma_ck]['han']))
+            rb_goi.setdefault(m, []).append({'loai': 'cam_ket', 'ma': ma_ck, 'han': CAM_KET[ma_ck].get('han')})
+if not CHI_NGUON_LUC:
+    for c in CAM_KET.values():
+        if c.get('han') and not ck_goi.get(c['ma']):
+            add('L18', f'Cam kết {c["ma"]} ({c["noi_dung"]}) hạn {loi.ngay(c["han"])} chưa ánh xạ gói nào trong dau_vao_ben_ngoai', c['ma'], 'canh_bao')
+    for loai_, co in (('phe_duyet', da.get('thoi_gian_phe_duyet_tai_lieu_ngay')), ('uat', (da.get('uat') or {}).get('tu'))):
+        if co and not any(x['loai'] == loai_ for x in cdt_vao):
+            add('L22', f'du_an.json có tham số {loai_} nhưng chu_dau_tu_tham_gia chưa gắn gói nào loại {loai_}', loai_, 'canh_bao')
+
+
 # gói dàn trải (level of effort): chiếm một phần thời gian mỗi ngày trong cửa sổ, không chặn người thực hiện
 loe_md = {p: 0.0 for p in tv}
 for g in la:
@@ -113,23 +194,29 @@ for g in la:
     x = gv[g['ma']]
     ng = [x['R']] + x.get('ho_tro', [])
     t = {'ma': g['ma'], 'ten': g['ten'], 'md': float(g['md']), 'nguoi': ng, 'R': x['R'], 'dep': [p for p in g.get('phu_thuoc', []) if p in by],
-         'loe': bool(x.get('dan_trai'))}
+         'loe': bool(x.get('dan_trai')), 'loai': g.get('loai', ''), 'tmin': tmin.get(g['ma'], 0)}
     if t['loe']:
         a, b = cua_so_sprint(x, x['R'])
         t.update({'cua_so': (a, b), 'dur': b - a + 1, 'rate': t['md'] / (b - a + 1)})
+        if t['tmin']:
+            add('L24', f'Gói dàn trải {g["ma"]} không áp dụng thời lượng tối thiểu, thời lượng theo cửa sổ sprint', g['ma'])
     else:
         t['rate'] = sum(du[p] for p in ng)
-        t['dur'] = max(1, math.ceil(t['md'] / t['rate'] - 1e-9))
+        t['dur_md'] = max(1, math.ceil(t['md'] / t['rate'] - 1e-9))
+        t['dur'] = max(t['dur_md'], t['tmin'])
     task[g['ma']] = t
 
 
 # ràng buộc không sớm hơn: chỉ số ngày làm việc đầu tiên từ ngày khai báo
-ghim = {}
+ghim_co_dinh = {}  # gói phải bắt đầu đúng ngày (khong_som_hon, khoảng uat): lỗi L16 khi muộn hơn, dùng để đo dự trữ đến cut over
 for ma_g, ngay_g in (moc_nhap.get('khong_som_hon') or {}).items():
     if ma_g not in task or task[ma_g]['loe']:
         add('L15', f'Ràng buộc không sớm hơn dẫn chiếu gói {ma_g} không phải gói lá thường', ma_g); continue
-    d_g = dt.date.fromisoformat(ngay_g)
-    ghim[ma_g] = next((i for i, x in enumerate(ext) if x >= d_g), len(ext) - 1)
+    ghim_co_dinh[ma_g] = chi_so_tu(ngay_g)
+    rb_goi.setdefault(ma_g, []).append({'loai': 'khong_som_hon', 'ngay': ngay_g})
+for m, (a_, _) in ghim_uat.items():
+    ghim_co_dinh[m] = max(ghim_co_dinh.get(m, 0), a_)
+ghim = {m: max(ghim_co_dinh.get(m, 0), ghim_ben_ngoai.get(m, 0)) for m in set(ghim_co_dinh) | set(ghim_ben_ngoai)}
 
 # CPM theo phụ thuộc
 succ = {m: [] for m in task}
@@ -208,7 +295,7 @@ while con:
         s0 = a if s0 is None else min(s0, a); f0 = b if f0 is None else max(f0, b)
         if b > ket_thuc_tham_gia(p):
             add('L05', f'{tv[p]["ho_ten"]} được giao gói kết thúc sau thời gian tham gia dự án', m)
-    start[m], finish[m] = s0, f0
+    start[m], finish[m] = s0, max(f0, s0 + t['tmin'] - 1)  # gói kéo dài đủ thời lượng tối thiểu, người làm chỉ bận phần MD của mình
     con.discard(m)
 
 # gói dàn trải luôn kéo đến hết cửa sổ sprint nên không dùng để đo ngày kết thúc và dự trữ
@@ -218,30 +305,37 @@ if ket_thuc > N - 1:
     add('L01', f'Lịch có ràng buộc nguồn lực kết thúc {loi.ngay(ext[ket_thuc])}, sau ngày cut over {loi.ngay(days[-1])} '
                f'{ket_thuc - (N - 1)} ngày làm việc. Gói vượt: {", ".join(sorted(tre, key=loi.khoa_ma)[:12])}', '', 'loi')
 du_tru = (N - 1) - ket_thuc
-if ghim:
-    sau_ghim, hang = set(ghim), list(ghim)  # gói bị ghim và các gói đứng sau chúng
+if ghim_co_dinh:
+    sau_ghim, hang = set(ghim_co_dinh), list(ghim_co_dinh)  # gói bị ghim và các gói đứng sau chúng
     while hang:
         for s_ in succ[hang.pop()]:
             if s_ not in sau_ghim:
                 sau_ghim.add(s_); hang.append(s_)
     tu_do = [finish[m] for m in task if not task[m]['loe'] and m not in sau_ghim]
     ung = [(N - 1) - max(tu_do)] if tu_do else []
-    for m_g, i_g in ghim.items():  # khoảng chậm cho phép của các gói không ghim đứng ngay trước gói ghim
+    for m_g, i_g in ghim_co_dinh.items():  # khoảng chậm cho phép của các gói không ghim đứng ngay trước gói ghim
         truoc = [finish[p] + 1 for p in task[m_g]['dep'] if p not in sau_ghim]
         if truoc:
             ung.append(i_g - max(truoc))
     du_tru = min(ung + ([du_tru] if du_tru < 0 else []))
-for m_g, i_g in ghim.items():
+for m_g, i_g in ghim_co_dinh.items():
     if start[m_g] > i_g:
         add('L16', f'Gói {m_g} bắt đầu {loi.ngay(ext[start[m_g]])}, muộn hơn ngày ghim {loi.ngay(ext[i_g])} do gói trước chưa xong', m_g)
+for m_g, (_, i_den) in ghim_uat.items():
+    if finish[m_g] > i_den:
+        add('L23', f'Gói kiểm thử chấp nhận {m_g} kết thúc {loi.ngay(ext[finish[m_g]])}, sau khoảng UAT đến {loi.ngay(ext[i_den])}', m_g)
+for m_g, i_h in ghim_ben_ngoai.items():
+    if start[m_g] < i_h:
+        ck_ = ', '.join(c for c, ds in ck_goi.items() if m_g in ds and CAM_KET[c].get('han'))
+        add('L17', f'Gói {m_g} bắt đầu {loi.ngay(ext[start[m_g]])}, trước hạn cam kết {ck_} của Chủ đầu tư ({loi.ngay(ext[i_h])})', m_g)
 
 
 def sp_cua(i):
     return loi.sprint_cua_chi_so(sprints, i) or f'{da.get("sprint", {}).get("tien_to", "S")}+'
 
 
-# phân bổ MD theo người, sprint
-phan_bo = {}
+# phân bổ MD theo người, sprint và theo loại công việc, sprint
+phan_bo, nhu_cau = {}, {}
 for m, t in task.items():
     for p in t['nguoi']:
         if t['loe']:
@@ -251,6 +345,7 @@ for m, t in task.items():
         for i in range(a, b + 1):
             s_ = sp_cua(i)
             phan_bo[(p, s_)] = phan_bo.get((p, s_), 0) + md_p / (b - a + 1)
+            nhu_cau[(t['loai'], s_)] = nhu_cau.get((t['loai'], s_), 0) + md_p / (b - a + 1)
 quy = {t['id']: loi.quy_thoi_gian(t, sprints) for t in tvs}
 khoa_pb = [(t['id'], s['ma']) for t in tvs for s in sprints]
 pb_tron = dict(zip(khoa_pb, loi.lam_tron_tong([phan_bo.get(k, 0) for k in khoa_pb])))  # tổng các ô bằng tổng MD
@@ -262,6 +357,38 @@ for t in tvs:
         pb_rows.append({'thanh_vien': t['id'], 'ho_ten': t['ho_ten'], 'sprint': s['ma'], 'md': md_, 'quy': q, 'ty_le': round(md_ / q, 4) if q else 0})
         if md_ > q + 0.01:
             add('L06', f'{t["ho_ten"]} quá tải ở {s["ma"]}: {md_:.2f}/{q:.2f} MD', s['ma'])
+        elif q and md_ < NGUONG_SU_DUNG_NGUOI_SPRINT * q - 1e-9:
+            add('L07', f'{t["ho_ten"]} được huy động ở {s["ma"]} nhưng chỉ dùng {md_:.2f}/{q:.2f} MD ({md_ / q:.0%}), dưới {NGUONG_SU_DUNG_NGUOI_SPRINT:.0%} quỹ sprint',
+                f'{t["id"]} {s["ma"]}', 'canh_bao')
+
+
+def su_dung_theo_nguoi():
+    """MD, quỹ, tỷ lệ sử dụng của từng người theo sprint và cả dự án, các sprint dùng dưới ngưỡng."""
+    out_ = []
+    for t in tvs:
+        rows_t = [r for r in pb_rows if r['thanh_vien'] == t['id']]
+        md_t, q_t = round(sum(r['md'] for r in rows_t), 2), round(sum(r['quy'] for r in rows_t), 2)
+        out_.append({'thanh_vien': t['id'], 'ho_ten': t['ho_ten'], 'md': md_t, 'quy': q_t, 'ty_le': round(md_t / q_t, 4) if q_t else 0,
+                     'sprint': {r['sprint']: {'md': r['md'], 'quy': r['quy'], 'ty_le': r['ty_le']} for r in rows_t},
+                     'sprint_duoi_nguong': [r['sprint'] for r in rows_t if r['quy'] and r['md'] < NGUONG_SU_DUNG_NGUOI_SPRINT * r['quy'] - 1e-9]})
+    return out_
+
+
+def nhu_cau_sprint():
+    """MD theo loại công việc và sprint (làm tròn để tổng các ô bằng tổng MD), dùng để đề xuất huy động theo sprint."""
+    loai_ds = sorted({t['loai'] for t in task.values()})
+    khoa = [(lo, s['ma']) for s in sprints for lo in loai_ds]
+    tron = dict(zip(khoa, loi.lam_tron_tong([nhu_cau.get(k, 0) for k in khoa])))
+    return [{'sprint': s['ma'], 'theo_loai': {lo: tron[(lo, s['ma'])] for lo in loai_ds}, 'md': round(sum(tron[(lo, s['ma'])] for lo in loai_ds), 2)}
+            for s in sprints]
+
+
+tong_quy = round(sum(sum(q.values()) for q in quy.values()), 2)
+ty_le_su_dung_quy = round(float(wbs['tong_md']) / tong_quy, 4) if tong_quy else 0
+nguong_quy = da.get('nguong_su_dung_quy_toi_thieu')
+if nguong_quy is not None and ty_le_su_dung_quy < float(nguong_quy):
+    add('L08', f'Tỷ lệ sử dụng quỹ huy động {ty_le_su_dung_quy:.1%} thấp hơn ngưỡng {float(nguong_quy):.0%} của du_an.json, bước hsdt sẽ dừng. '
+               f'Xem su_dung_theo_nguoi_sprint và nhu_cau_theo_sprint để đề xuất huy động sát nhu cầu', '', 'canh_bao')
 
 # mốc
 moc = []
@@ -321,21 +448,39 @@ for g in wbs['goi']:
         r['phan_nguoi'] = dict(zip(t['nguoi'], loi.lam_tron_tong(md_nguoi)))  # MD từng người trong gói, dùng chung cho tài liệu phân công
         r.update({'nguoi': t['nguoi'], 'R': t['R'], 'ho_ten_R': tv[t['R']]['ho_ten'], 'phu_thuoc': t['dep'], 'thoi_luong': t['dur'],
                   'du_tru_cpm': ls[g['ma']] - es[g['ma']], 'gang': (ls[g['ma']] == es[g['ma']]) and not t['loe'], 'dan_trai': t['loe'], 'chi_so_bat_dau': start[g['ma']], 'chi_so_ket_thuc': finish[g['ma']]})
+        if t['tmin'] and not t['loe']:
+            r.update({'thoi_luong_toi_thieu': t['tmin'], 'thoi_luong_theo_md': t['dur_md']})
+        if rb_goi.get(g['ma']):
+            r['rang_buoc'] = rb_goi[g['ma']]
     goi_out.append(r)
+
+# cam kết của Chủ đầu tư và gói có Chủ đầu tư tham gia, dùng cho HSDT, master plan, rủi ro
+ck_out = []
+for c in CAM_KET.values():
+    ds = sorted(set(ck_goi.get(c['ma'], [])), key=loi.khoa_ma)
+    bd = min((start[m] for m in ds), default=None)
+    ck_out.append({'ma': c['ma'], 'noi_dung': c.get('noi_dung', ''), 'han': c.get('han'), 'goi': ds, 'bat_dau_som_nhat': ext[bd].isoformat() if bd is not None else '',
+                   'dat': (bd is None or not c.get('han') or ext[bd].isoformat() >= c['han'])})
+cdt_out = [dict(x, bat_dau=ext[start[x['goi']]].isoformat(), ket_thuc=ext[finish[x['goi']]].isoformat(),
+                so_ngay_lich=finish[x['goi']] - start[x['goi']] + 1) for x in cdt_vao if x['goi'] in start]  # so_ngay: thời lượng tối thiểu
 
 gang = [m for m in order if ls[m] == es[m] and not task[m]['loe']]
 loi_ = [f for f in F if f['muc_do'] == 'loi']
 out = {'ngay_bat_dau': days[0].isoformat(), 'cut_over': days[-1].isoformat(), 'so_ngay_lam_viec': N, 'ngay_nghi': da.get('ngay_nghi', []),
        'sprint': sp_rows, 'goi': goi_out, 'moc': moc, 'phan_bo': pb_rows, 'duong_gang': gang, 'do_dai_gang_ngay': proj + 1,
        'ket_thuc_du_kien': ext[ket_thuc].isoformat(), 'du_tru_den_cut_over_ngay': du_tru, 'khong_som_hon': moc_nhap.get('khong_som_hon', {}),
-       'tong_md': wbs['tong_md'], 'tong_quy': round(sum(sum(q.values()) for q in quy.values()), 2), 'so_sprint': len(sprints),
+       'tong_md': wbs['tong_md'], 'tong_quy': tong_quy, 'so_sprint': len(sprints),
+       'ty_le_su_dung_quy': ty_le_su_dung_quy, 'nguong_su_dung_quy_toi_thieu': nguong_quy, 'nguong_su_dung_nguoi_sprint': NGUONG_SU_DUNG_NGUOI_SPRINT,
+       'nhu_cau_theo_sprint': nhu_cau_sprint(), 'su_dung_theo_nguoi_sprint': su_dung_theo_nguoi(),
+       'cam_ket_chu_dau_tu': ck_out, 'chu_dau_tu_tham_gia': cdt_out,
        'kiem_tra': {'ket_luan': 'dat' if not loi_ else 'chua_dat', 'so_loi': len(loi_), 'so_canh_bao': len(F) - len(loi_), 'phat_hien': F}}
 loi.ghi_json('lam_viec/lich/bao_cao_kiem_tra.json', out['kiem_tra'])
 loi.ghi_json('lam_viec/lich/lich_du_thao.json', out)  # luôn ghi để agent chẩn đoán khi chưa đạt
 for f in F:
     print(f"[{f['muc_do']}] {f['ma']} {f['vi_tri']}: {f['mo_ta']}")
 print(f'{len(sprints)} sprint, {N} ngày làm việc. Kết thúc dự kiến {loi.ngay(ext[ket_thuc])}, dự trữ đến cut over {du_tru} ngày. '
-      f'Đường găng {proj + 1} ngày. Kết luận: {out["kiem_tra"]["ket_luan"]} ({len(loi_)} lỗi, {len(F) - len(loi_)} cảnh báo)')
+      f'Đường găng {proj + 1} ngày. Tỷ lệ sử dụng quỹ {ty_le_su_dung_quy:.1%}. '
+      f'Kết luận: {out["kiem_tra"]["ket_luan"]} ({len(loi_)} lỗi, {len(F) - len(loi_)} cảnh báo)')
 if loi_:
     print('Đường găng theo phụ thuộc: ' + ' -> '.join(f'{m}({task[m]["dur"]})' for m in sorted(gang, key=lambda m: es[m])))
     tai = sorted(((x['ho_ten'], round(sum(y['md'] for y in pb_rows if y['thanh_vien'] == x['thanh_vien']), 1)) for x in pb_rows if x['sprint'] == sprints[0]['ma']), key=lambda z: -z[1])

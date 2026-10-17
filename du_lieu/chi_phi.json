@@ -54,7 +54,7 @@
  "D": 0,
  "cach_tinh_du_phong": "nam_trong_chi_phi_khac",
  "du_phong_hien_co": 150000000,
- "tong_emv_rui_ro": 128287673,
+ "tong_emv_rui_ro": 131157364,
  "chi_phi_da_biet": 917000000,
  "gia_chao": 1750000000,
  "gia_truoc_thue": 1750000000,
@@ -71,16 +71,16 @@
   "gia_truoc_thue": 1590909091,
   "C": 673909091,
   "ty_le_C": 0.4236,
-  "C_sau_luong": 259519318,
-  "ty_le_C_sau_luong": 0.1631
+  "C_sau_luong": 187777045,
+  "ty_le_C_sau_luong": 0.118
  },
- "C_sau_luong": 418610227,
- "ty_le_C_sau_luong": 0.2392,
- "luong_binh_quan_md_huy_dong": 1729707,
- "nguong_chiu_dung_md": 242.0,
- "md_huy_dong_hoa_von": 443.43,
+ "C_sau_luong": 346867955,
+ "ty_le_C_sau_luong": 0.1982,
+ "luong_binh_quan_md_huy_dong": 1834747,
+ "nguong_chiu_dung_md": 189.1,
+ "md_huy_dong_hoa_von": 418.04,
  "ty_le_su_dung": 0.5139,
- "ty_le_su_dung_hoa_von": 0.7916,
+ "ty_le_su_dung_hoa_von": 0.8396,
  "thoi_han_thanh_toan_ngay": 15,
  "tong_md": 351.0,
  "tong_mm": 17.55,
@@ -143,18 +143,29 @@
   },
   {
    "id": "K",
-   "ho_ten": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
    "loai": "Vị trí bổ sung",
-   "vai_tro": "BAQA",
-   "luong": 27000000.0,
-   "don_gia_ngay": 1515682,
+   "vai_tro": "SA_BA",
+   "luong": 47000000.0,
+   "don_gia_ngay": 2638409,
    "md_huy_dong": 73.0,
    "md_giao": 48.0,
-   "chi_phi": 110644773
+   "chi_phi": 192603864
   },
   {
    "id": "D1",
-   "ho_ten": "D1",
+   "ho_ten": "Lê Quang Huy",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "BACKEND",
+   "luong": 30000000.0,
+   "don_gia_ngay": 1684091,
+   "md_huy_dong": 53.0,
+   "md_giao": 15.5,
+   "chi_phi": 89256818
+  },
+  {
+   "id": "D2",
+   "ho_ten": "Đỗ Minh Quân",
    "loai": "Vị trí bổ sung",
    "vai_tro": "BACKEND",
    "luong": 30000000.0,
@@ -164,19 +175,8 @@
    "chi_phi": 89256818
   },
   {
-   "id": "D2",
-   "ho_ten": "D2",
-   "loai": "Vị trí bổ sung",
-   "vai_tro": "FRONTEND",
-   "luong": 28000000.0,
-   "don_gia_ngay": 1571818,
-   "md_huy_dong": 53.0,
-   "md_giao": 15.5,
-   "chi_phi": 83306364
-  },
-  {
    "id": "D3",
-   "ho_ten": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
    "loai": "Vị trí bổ sung",
    "vai_tro": "BACKEND",
    "luong": 30000000.0,
@@ -187,35 +187,35 @@
   },
   {
    "id": "Q1",
-   "ho_ten": "Q1",
+   "ho_ten": "Trần Thu Hà",
    "loai": "Vị trí bổ sung",
-   "vai_tro": "BAQA",
-   "luong": 27000000.0,
-   "don_gia_ngay": 1515682,
+   "vai_tro": "TESTER",
+   "luong": 24000000.0,
+   "don_gia_ngay": 1347273,
    "md_huy_dong": 53.0,
    "md_giao": 20.5,
-   "chi_phi": 80331136
+   "chi_phi": 71405455
   },
   {
    "id": "Q2",
-   "ho_ten": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
    "loai": "Vị trí bổ sung",
-   "vai_tro": "BAQA",
-   "luong": 27000000.0,
-   "don_gia_ngay": 1515682,
+   "vai_tro": "TESTER",
+   "luong": 24000000.0,
+   "don_gia_ngay": 1347273,
    "md_huy_dong": 43.0,
    "md_giao": 16.5,
-   "chi_phi": 65174318
+   "chi_phi": 57932727
   }
  ],
- "tong_chi_phi_nguoi": 1181389772,
+ "tong_chi_phi_nguoi": 1253132045,
  "tong_md_huy_dong": 683.0,
- "chenh_lech_A_nguoi": -414389772,
- "ty_le_chenh_lech_A": -0.5403,
- "nang_suat_hoa_von": 1.5403,
+ "chenh_lech_A_nguoi": -486132045,
+ "ty_le_chenh_lech_A": -0.6338,
+ "nang_suat_hoa_von": 1.6338,
  "he_so_bao_hiem": 1.235,
  "ngay_lam_viec_moi_thang": 22.0,
- "nguon_luong": "Mức trung vị theo vị trí, báo cáo lương ITviec 2025-2026",
+ "nguon_luong": "Mức trung vị theo vị trí, báo cáo lương ITviec 2025-2026; mức SA_BA, TESTER do nhóm xác định trong bảng quyết toán lương",
  "nguon_don_gia": "Đơn giá trọn gói theo người-tháng của nhà thầu, đã gồm lương, bảo hiểm và chi phí quản lý trực tiếp của nhân sự",
  "theo_wbs": [
   {
@@ -431,75 +431,75 @@
  "dong_tien": [
   {
    "sprint": "S1",
-   "chi_luong": 51713380,
-   "chi_luong_huy_dong": 108343182,
+   "chi_luong": 57888380,
+   "chi_luong_huy_dong": 119570455,
    "thu": 0,
-   "luy_ke_chi": 108343182,
+   "luy_ke_chi": 119570455,
    "luy_ke_thu": 0,
-   "chenh_lech": -108343182
+   "chenh_lech": -119570455
   },
   {
    "sprint": "S2",
-   "chi_luong": 77408116,
-   "chi_luong_huy_dong": 108343182,
+   "chi_luong": 88635389,
+   "chi_luong_huy_dong": 119570455,
    "thu": 262500000,
-   "luy_ke_chi": 216686364,
+   "luy_ke_chi": 239140909,
    "luy_ke_thu": 262500000,
-   "chenh_lech": 45813636
+   "chenh_lech": 23359091
   },
   {
    "sprint": "S3",
-   "chi_luong": 104353570,
-   "chi_luong_huy_dong": 156059091,
+   "chi_luong": 115580843,
+   "chi_luong_huy_dong": 166725000,
    "thu": 0,
-   "luy_ke_chi": 372745455,
+   "luy_ke_chi": 405865909,
    "luy_ke_thu": 262500000,
-   "chenh_lech": -110245455
+   "chenh_lech": -143365909
   },
   {
    "sprint": "S4",
-   "chi_luong": 133508552,
-   "chi_luong_huy_dong": 188056818,
+   "chi_luong": 143837643,
+   "chi_luong_huy_dong": 197038636,
    "thu": 437500000,
-   "luy_ke_chi": 560802273,
+   "luy_ke_chi": 602904545,
    "luy_ke_thu": 700000000,
-   "chenh_lech": 139197727
+   "chenh_lech": 97095455
   },
   {
    "sprint": "S5",
-   "chi_luong": 105052468,
-   "chi_luong_huy_dong": 188056818,
+   "chi_luong": 110525202,
+   "chi_luong_huy_dong": 197038636,
    "thu": 0,
-   "luy_ke_chi": 748859091,
+   "luy_ke_chi": 799943182,
    "luy_ke_thu": 700000000,
-   "chenh_lech": -48859091
+   "chenh_lech": -99943182
   },
   {
    "sprint": "S6",
-   "chi_luong": 85341868,
-   "chi_luong_huy_dong": 188056818,
+   "chi_luong": 90890948,
+   "chi_luong_huy_dong": 197038636,
    "thu": 0,
-   "luy_ke_chi": 936915909,
+   "luy_ke_chi": 996981818,
    "luy_ke_thu": 700000000,
-   "chenh_lech": -236915909
+   "chenh_lech": -296981818
   },
   {
    "sprint": "S7",
-   "chi_luong": 52263516,
-   "chi_luong_huy_dong": 244473864,
+   "chi_luong": 51683066,
+   "chi_luong_huy_dong": 256150227,
    "thu": 525000000,
-   "luy_ke_chi": 1181389773,
+   "luy_ke_chi": 1253132045,
    "luy_ke_thu": 1225000000,
-   "chenh_lech": 43610227
+   "chenh_lech": -28132045
   },
   {
    "sprint": "Sau cut over",
    "chi_luong": 0,
    "chi_luong_huy_dong": 0,
    "thu": 525000000,
-   "luy_ke_chi": 1181389773,
+   "luy_ke_chi": 1253132045,
    "luy_ke_thu": 1750000000,
-   "chenh_lech": 568610227
+   "chenh_lech": 496867955
   }
  ],
  "kiem_tra": {
@@ -509,7 +509,7 @@
     "muc_do": "canh_bao",
     "nhom": "chi_phi",
     "vi_tri": "",
-    "mo_ta": "Chi phí lương theo người huy động (1.181.389.772 đồng) vượt dòng A (767.000.000 đồng). Giá chào vẫn bù được nhưng khoản C giảm",
+    "mo_ta": "Chi phí lương theo người huy động (1.253.132.045 đồng) vượt dòng A (767.000.000 đồng). Giá chào vẫn bù được nhưng khoản C giảm",
     "cach_sua": "can_nguoi_dung",
     "de_xuat": ""
    },
@@ -518,7 +518,7 @@
     "muc_do": "canh_bao",
     "nhom": "chi_phi",
     "vi_tri": "",
-    "mo_ta": "Dòng tiền lũy kế âm ở các sprint S1, S3, S5, S6, cần vốn lưu động",
+    "mo_ta": "Dòng tiền lũy kế âm ở các sprint S1, S3, S5, S6, S7, cần vốn lưu động",
     "cach_sua": "can_nguoi_dung",
     "de_xuat": ""
    }
