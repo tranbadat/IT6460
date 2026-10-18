@@ -98,7 +98,8 @@ def tep_dang_ky(p, reg):
     """Các tệp trong sổ phiên bản ứng với đầu ra p (tệp, hoặc mọi tệp con nếu p là thư mục)."""
     q = loi.tuong_doi(loi.duong_dan(p))
     if os.path.isdir(loi.duong_dan(p)):
-        return [k for k in reg if k.startswith(q.rstrip('/') + '/')]
+        # tệp đã chuyển khỏi thư mục đầu ra (bản cũ) giữ lịch sử trong sổ nhưng không tính vào trạng thái
+        return [k for k in reg if k.startswith(q.rstrip('/') + '/') and os.path.exists(loi.duong_dan(k))]
     return [q]
 
 

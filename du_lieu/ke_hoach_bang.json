@@ -1,0 +1,557 @@
+{
+ "muc_tieu": {
+  "cot": [
+   "Mục tiêu",
+   "Chỉ số, cách đo",
+   "Ngưỡng",
+   "Hạn",
+   "Người xác nhận"
+  ],
+  "dong": [
+   [
+    "Bàn giao đủ sản phẩm theo Mẫu số 01A",
+    "Số hạng mục Mẫu số 01A được nghiệm thu",
+    "13/13 hạng mục",
+    "01/07/2027",
+    "Tổng Giám đốc Công ty Cổ phần ABC Wear"
+   ],
+   [
+    "Đưa hệ thống vào vận hành đúng ngày cut over",
+    "Ngày cut over thực tế",
+    "Không muộn hơn 01/07/2027",
+    "01/07/2027",
+    "Tổng Giám đốc Công ty Cổ phần ABC Wear"
+   ],
+   [
+    "Đạt mốc M2: Đặc tả yêu cầu và giao diện ưu tiên được hai bên xác nhận",
+    "Ngày ký biên bản mốc, căn cứ thanh toán Đợt 2",
+    "Không muộn hơn 10/05/2027",
+    "10/05/2027",
+    "Yamada, Phòng Kế hoạch"
+   ],
+   [
+    "Đạt mốc M3: Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+    "Ngày ký biên bản mốc, căn cứ thanh toán Đợt 3",
+    "Không muộn hơn 17/06/2027",
+    "17/06/2027",
+    "Yamada, Phòng Kế hoạch"
+   ],
+   [
+    "Đạt mốc M7: Nhà thầu nộp bảo lãnh bảo hành, bàn giao hồ sơ dự án",
+    "Ngày ký biên bản mốc, căn cứ thanh toán Đợt 5",
+    "Không muộn hơn 01/07/2027",
+    "01/07/2027",
+    "Yamada, Phòng Kế hoạch"
+   ],
+   [
+    "Giữ tiến độ theo kế hoạch sprint",
+    "SPI lũy kế cuối mỗi sprint",
+    "Từ 0,95 trở lên",
+    "Cuối mỗi sprint đến 01/07/2027",
+    "Trần Bá Đạt"
+   ],
+   [
+    "Thực hiện trong đường cơ sở chi phí",
+    "Chi phí nhân công thực tế lũy kế so với BAC, CPI lũy kế",
+    "Không vượt 1.420.050.000 đồng, CPI từ 0,95 trở lên",
+    "01/07/2027",
+    "Lê Quốc Bảo"
+   ],
+   [
+    "KT01: Hoạt động liên tục 24 giờ mỗi ngày trong 365 ngày",
+    "Diễn tập chuyển đổi dự phòng trước cut over",
+    "Tỷ lệ sẵn sàng từ 99,5% mỗi tháng, không tính khung bảo trì đã thống nhất",
+    "29/06/2027",
+    "Yamada, Phòng Kế hoạch"
+   ],
+   [
+    "KT02: Thời gian phản hồi không quá 2 giây cho mỗi thao tác",
+    "Đo các thao tác cốt lõi trên môi trường thống nhất, báo cáo kèm phân vị 95",
+    "Mọi thao tác cốt lõi (tìm kiếm, xem sản phẩm, đăng nhập, giỏ hàng, đặt hàng) không quá 2 giây, báo cáo kèm phân vị 95",
+    "29/06/2027",
+    "Yamada, Phòng Kế hoạch"
+   ],
+   [
+    "KT03: Thời gian phản hồi không quá 2 giây cho mỗi thao tác",
+    "Thử tải 500 người dùng đồng thời, đo lại sau tối ưu",
+    "Chịu tải 500 người dùng đồng thời",
+    "29/06/2027",
+    "Yamada, Phòng Kế hoạch"
+   ],
+   [
+    "KT04: An toàn dữ liệu",
+    "Báo cáo rà soát lỗ hổng và kết quả kiểm thử lại",
+    "Rà soát lỗ hổng theo OWASP Top 10 và kiểm thử lại sau khắc phục",
+    "29/06/2027",
+    "Yamada, Phòng Kế hoạch"
+   ],
+   [
+    "KT05: Sao lưu, khôi phục",
+    "Chạy thử khôi phục trước nghiệm thu",
+    "Sao lưu toàn phần hằng ngày, sao lưu nhật ký giao dịch theo giờ",
+    "29/06/2027",
+    "Yamada, Phòng Kế hoạch"
+   ],
+   [
+    "Khắc phục sai sót trong thời hạn bảo hành",
+    "Thời gian phản hồi và khắc phục lỗi theo mức",
+    "Nghiêm trọng: phản hồi 2 giờ, khắc phục 8 giờ. Cao: khắc phục 1 ngày làm việc. Khác: khắc phục 3 ngày làm việc",
+    "12 tháng từ 01/07/2027",
+    "Yamada, Phòng Kế hoạch"
+   ]
+  ],
+  "widths": [
+   2300,
+   2300,
+   2300,
+   1100,
+   1300
+  ],
+  "center_cols": [
+   3
+  ]
+ },
+ "phe_duyet": {
+  "cot": [
+   "Vai trò",
+   "Họ tên, chức danh",
+   "Thời điểm"
+  ],
+  "dong": [
+   [
+    "Người lập",
+    "Trần Bá Đạt",
+    "18/03/2027"
+   ],
+   [
+    "Phê duyệt phía nhà thầu",
+    "Lê Quốc Bảo, Giám đốc",
+    "18/03/2027"
+   ],
+   [
+    "Xác nhận phía Chủ đầu tư",
+    "Tổng Giám đốc Công ty Cổ phần ABC Wear (họ tên ghi khi hoàn thiện hợp đồng theo Mục 1.3 E-ĐKCT)",
+    "Mốc M1, 14/04/2027"
+   ]
+  ],
+  "widths": [
+   2300,
+   4800,
+   2200
+  ],
+  "center_cols": [
+   2
+  ]
+ },
+ "ben_lien_quan": {
+  "cot": [
+   "Bên liên quan",
+   "Bên",
+   "Vai trò",
+   "Ảnh hưởng",
+   "Quan tâm",
+   "Cách tham gia"
+  ],
+  "dong": [
+   [
+    "Tổng Giám đốc Công ty Cổ phần ABC Wear (họ tên ghi khi hoàn thiện hợp đồng theo Mục 1.3 E-ĐKCT)",
+    "Chủ đầu tư",
+    "Đại diện Chủ đầu tư ký hợp đồng, phụ lục hợp đồng, nghiệm thu",
+    "Cao",
+    "Trung bình",
+    "Nhận báo cáo tại các mốc gắn đợt thanh toán, quyết định thay đổi mức lớn, ký nghiệm thu"
+   ],
+   [
+    "Công ty Cổ phần ABC Wear, đầu mối Yamada, Phòng Kế hoạch",
+    "Chủ đầu tư",
+    "Đầu mối Chủ đầu tư",
+    "Cao",
+    "Cao",
+    "Họp trình diễn cuối sprint, họp xem xét đặc tả, phê duyệt thay đổi mức trung bình, nhận báo cáo tiến độ"
+   ],
+   [
+    "Lê Quốc Bảo, Giám đốc",
+    "Nhà thầu",
+    "Đại diện nhà thầu ký hợp đồng, phụ lục hợp đồng, phê duyệt dùng dự phòng",
+    "Cao",
+    "Trung bình",
+    "Nhận báo cáo tiến độ và chi phí cuối sprint, quyết định thay đổi mức lớn"
+   ],
+   [
+    "Trần Bá Đạt, Trưởng nhóm, quản trị dự án",
+    "Nhà thầu",
+    "Điều hành dự án, đầu mối của nhà thầu",
+    "Cao",
+    "Cao",
+    "Chủ trì các cuộc họp, lập báo cáo, quản lý thay đổi, rủi ro và vấn đề"
+   ],
+   [
+    "Nhóm thực hiện: 5 thành viên nòng cốt, 7 vị trí bổ sung",
+    "Nhà thầu",
+    "Thực hiện các gói công việc theo phân công",
+    "Trung bình",
+    "Cao",
+    "Họp lập kế hoạch sprint, họp hằng ngày, họp cải tiến cuối sprint"
+   ]
+  ],
+  "widths": [
+   2100,
+   1000,
+   2000,
+   900,
+   900,
+   2400
+  ],
+  "center_cols": [
+   1,
+   3,
+   4
+  ]
+ },
+ "thue_ngoai": {
+  "cot": [
+   "Nội dung",
+   "Quy định",
+   "Căn cứ"
+  ],
+  "dong": [
+   [
+    "Nhà thầu phụ",
+    "Không sử dụng nhà thầu phụ theo E-HSDT",
+    "Mục 6.1, 6.2 E-ĐKCT, tối đa 40% giá hợp đồng"
+   ],
+   [
+    "Thuê ngoài",
+    "Mọi trường hợp thuê ngoài, kể cả sử dụng nhà thầu phụ chưa có trong E-HSDT, nhà thầu phải có văn bản đề nghị và chỉ được thực hiện sau khi được Chủ đầu tư chấp thuận bằng văn bản. Nhà thầu chịu trách nhiệm trước Chủ đầu tư về chất lượng, tiến độ và việc bảo mật thông tin đối với phần công việc thuê ngoài.",
+    "Mục 6.4 E-ĐKCT"
+   ]
+  ],
+  "widths": [
+   1700,
+   5400,
+   2200
+  ]
+ },
+ "huy_dong": {
+  "cot": [
+   "Người dự kiến",
+   "Vị trí",
+   "Huy động từ",
+   "Ngày bắt đầu",
+   "Hồ sơ năng lực"
+  ],
+  "dong": [
+   [
+    "Nguyễn Hoàng Nam",
+    "Kiến trúc sư kiêm phân tích nghiệp vụ",
+    "S1",
+    "18/03/2027",
+    "Chưa có trình độ, kinh nghiệm"
+   ],
+   [
+    "Lê Quang Huy",
+    "Kỹ sư phát triển frontend kiêm backend",
+    "S2",
+    "01/04/2027",
+    "Chưa có trình độ, kinh nghiệm"
+   ],
+   [
+    "Đỗ Minh Quân",
+    "Kỹ sư phát triển backend, thiết kế API",
+    "S2",
+    "01/04/2027",
+    "Chưa có trình độ, kinh nghiệm"
+   ],
+   [
+    "Bùi Anh Tuấn",
+    "Kỹ sư phát triển backend",
+    "S2",
+    "01/04/2027",
+    "Chưa có trình độ, kinh nghiệm"
+   ],
+   [
+    "Trần Thu Hà",
+    "Kỹ sư kiểm thử kỹ thuật, kiểm thử tự động",
+    "S2",
+    "01/04/2027",
+    "Chưa có trình độ, kinh nghiệm"
+   ],
+   [
+    "Phạm Ngọc Anh",
+    "Kỹ sư kiểm thử chức năng, hiệu năng và an toàn thông tin",
+    "S3",
+    "15/04/2027",
+    "Chưa có trình độ, kinh nghiệm"
+   ],
+   [
+    "Trương Quốc Việt",
+    "Kỹ sư phát triển backend kiêm DevOps",
+    "S3",
+    "15/04/2027",
+    "Chưa có trình độ, kinh nghiệm"
+   ]
+  ],
+  "widths": [
+   2000,
+   3100,
+   1100,
+   1300,
+   1800
+  ],
+  "center_cols": [
+   2,
+   3
+  ]
+ },
+ "bao_hanh": {
+  "cot": [
+   "Mức lỗi",
+   "Thời gian phản hồi",
+   "Thời hạn khắc phục"
+  ],
+  "dong": [
+   [
+    "Nghiêm trọng",
+    "2 giờ",
+    "8 giờ"
+   ],
+   [
+    "Cao",
+    "Trong thời hạn khắc phục",
+    "1 ngày làm việc"
+   ],
+   [
+    "Khác",
+    "Trong thời hạn khắc phục",
+    "3 ngày làm việc"
+   ]
+  ],
+  "widths": [
+   3100,
+   3100,
+   3100
+  ],
+  "center_cols": [
+   0,
+   1,
+   2
+  ]
+ },
+ "ra_soat": {
+  "cot": [
+   "Thời điểm",
+   "Hoạt động rà soát",
+   "Thành phần",
+   "Đầu ra"
+  ],
+  "dong": [
+   [
+    "31/03/2027",
+    "Rà soát cuối sprint S1: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+    "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+    "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+   ],
+   [
+    "14/04/2027",
+    "Rà soát cuối sprint S2: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+    "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+    "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+   ],
+   [
+    "14/04/2027",
+    "Rà soát giai đoạn tại mốc M1: Kế hoạch quản lý dự án được Chủ đầu tư xác nhận",
+    "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+    "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+   ],
+   [
+    "06/05/2027",
+    "Rà soát cuối sprint S3: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+    "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+    "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+   ],
+   [
+    "06/05/2027",
+    "Rà soát giai đoạn tại mốc M2: Đặc tả yêu cầu và giao diện ưu tiên được hai bên xác nhận",
+    "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+    "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+   ],
+   [
+    "20/05/2027",
+    "Rà soát cuối sprint S4: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+    "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+    "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+   ],
+   [
+    "03/06/2027",
+    "Rà soát cuối sprint S5: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+    "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+    "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+   ],
+   [
+    "16/06/2027",
+    "Rà soát giai đoạn tại mốc M3: Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+    "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+    "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+   ],
+   [
+    "16/06/2027",
+    "Rà soát giai đoạn tại mốc M4: Hoàn thành kiểm thử hệ thống, bản phát hành sẵn sàng kiểm thử chấp nhận",
+    "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+    "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+   ],
+   [
+    "17/06/2027",
+    "Rà soát cuối sprint S6: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+    "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+    "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+   ],
+   [
+    "29/06/2027",
+    "Rà soát giai đoạn tại mốc M5: Hoàn thành kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư",
+    "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+    "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+   ],
+   [
+    "01/07/2027",
+    "Rà soát cuối sprint S7: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+    "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+    "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+   ],
+   [
+    "01/07/2027",
+    "Rà soát giai đoạn tại mốc M6: Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+    "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+    "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+   ],
+   [
+    "01/07/2027",
+    "Rà soát giai đoạn tại mốc M7: Nhà thầu nộp bảo lãnh bảo hành, bàn giao hồ sơ dự án",
+    "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+    "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+   ],
+   [
+    "15/07/2027",
+    "Rà soát kết thúc dự án sau giai đoạn hỗ trợ tăng cường",
+    "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+    "Báo cáo tổng kết, báo cáo đánh giá, báo cáo bài học kinh nghiệm"
+   ]
+  ],
+  "widths": [
+   1200,
+   3300,
+   2400,
+   2400
+  ],
+  "center_cols": [
+   0
+  ]
+ },
+ "ket_thuc": {
+  "cot": [
+   "Việc",
+   "Thời điểm",
+   "Căn cứ"
+  ],
+  "dong": [
+   [
+    "Đạt mốc M6: Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+    "01/07/2027",
+    "Đợt 4, Mục 13.1 E-ĐKCT"
+   ],
+   [
+    "Đạt mốc M7: Nhà thầu nộp bảo lãnh bảo hành, bàn giao hồ sơ dự án",
+    "01/07/2027",
+    "Đợt 5, Mục 13.1 E-ĐKCT"
+   ],
+   [
+    "Hỗ trợ tăng cường sau cut over",
+    "02/07/2027 đến 15/07/2027",
+    "Cam kết bảo hành của nhà thầu"
+   ],
+   [
+    "Rà soát kết thúc dự án, báo cáo tổng kết, đánh giá, bài học kinh nghiệm",
+    "Sau 15/07/2027",
+    "Lịch rà soát"
+   ],
+   [
+    "Hồ sơ thanh toán Đợt 4, 437.500.000 đồng",
+    "Dự kiến nhận 16/07/2027",
+    "Mục 13.1 E-ĐKCT"
+   ],
+   [
+    "Hồ sơ thanh toán Đợt 5, 87.500.000 đồng",
+    "Dự kiến nhận 16/07/2027",
+    "Mục 13.1 E-ĐKCT"
+   ],
+   [
+    "Bảo hành, bảo lãnh bảo hành 5% giá hợp đồng",
+    "01/07/2027 đến 01/07/2028",
+    "12 tháng theo HSMT"
+   ],
+   [
+    "Nhận lại bảo đảm thực hiện hợp đồng 3% giá hợp đồng",
+    "Trong 14 ngày sau khi hoàn thành nghĩa vụ hợp đồng, bảo đảm có hiệu lực đến 31 tháng 07 năm 2027",
+    "Mục 5.2, 5.4 E-ĐKCT"
+   ]
+  ],
+  "widths": [
+   4300,
+   2900,
+   2100
+  ],
+  "center_cols": [
+   1
+  ]
+ },
+ "cam_ket_cdt": {
+  "cot": [
+   "Mã",
+   "Cam kết của Chủ đầu tư (giả định của kế hoạch)",
+   "Hạn"
+  ],
+  "dong": [
+   [
+    "CK1",
+    "Tài liệu đặc tả giao diện trao đổi dữ liệu của Main System",
+    "14/04/2027"
+   ],
+   [
+    "CK2",
+    "Môi trường thử của Main System",
+    "20/05/2027"
+   ],
+   [
+    "CK3",
+    "Dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi theo định dạng thống nhất",
+    "10/06/2027"
+   ],
+   [
+    "CK4",
+    "Bộ nhận diện thương hiệu, hình ảnh và nội dung sản phẩm",
+    "10/06/2027"
+   ],
+   [
+    "CK5",
+    "Chủ sản phẩm có thẩm quyền quyết định yêu cầu nghiệp vụ, làm rõ yêu cầu 2-3 buổi mỗi tuần trong sprint 1-3, dự demo cuối mỗi sprint",
+    "Theo nội dung cam kết"
+   ],
+   [
+    "CK6",
+    "Người dùng nghiệp vụ tham gia kiểm thử chấp nhận theo khoảng uat",
+    "Theo nội dung cam kết"
+   ]
+  ],
+  "widths": [
+   800,
+   6400,
+   2100
+  ],
+  "center_cols": [
+   0,
+   2
+  ]
+ },
+ "emv": "147 triệu đồng, khoảng từ 110 đến 183 triệu đồng",
+ "so_ben_ngoai": 1,
+ "so_khoan_b": 1
+}

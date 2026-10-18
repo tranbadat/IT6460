@@ -136,7 +136,7 @@ def ten_tep_tl(k):
 def ngay_gio(v):
     v = str(v or '')
     return (loi.ngay(v[:10]) + (' ' + v[11:16] if len(v) > 10 else '')) if v else ''
-danh_muc, du_lieu_ds, lich_su = [], [], []
+danh_muc, du_lieu_ds, lich_su, luu_tru = [], [], [], []
 thu_tu = {p: i for i, p in enumerate(p for b in sd['buoc'] for p in b['ra'].values())}
 
 
@@ -153,12 +153,14 @@ for p in sorted(reg['tai_lieu'], key=lambda p: (thu_tu_tep(p), p)):
         continue  # đầu ra của chính bước này không tự liệt kê
     doi = [] if b.get('anh_chup') else cu(last)  # báo cáo theo kỳ giữ số liệu tại thời điểm lập
     tinh_trang = ('Khóa' if b.get('khoa') and reg.get('hop_dong') else ('Cần cập nhật' if doi else 'Cập nhật'))
-    if not os.path.exists(loi.duong_dan(p)):
+    con_tep = os.path.exists(loi.duong_dan(p))
+    if not con_tep:
         tinh_trang = 'Không còn tệp'
     row = {'tep': p, 'ten_tep': os.path.basename(p), 'buoc': last['buoc'], 'ten': ten_buoc(last['buoc']), 'skill': b.get('skill', ''), 'nhom': b.get('nhom', ''),
            'phien_ban': last['phien_ban'], 'ngay': last['ngay'][:10], 'ngay_tai_lieu': last.get('ngay_tai_lieu', ''), 'nguoi': last.get('nguoi', ''), 'trang_thai': last.get('trang_thai', ''),
            'tinh_trang': tinh_trang, 'dau_vao_da_doi': ', '.join(ten_nut(n) for n in doi), 'so_phien_ban': len(lst), 'duong_co_so': last.get('duong_co_so', '')}
-    (danh_muc if p.startswith('ket_qua/') else du_lieu_ds).append(row)
+    # tài liệu đã chuyển khỏi ket_qua (bản thay thế) không tính vào danh mục nộp, lịch sử vẫn giữ
+    (danh_muc if p.startswith('ket_qua/') and con_tep else luu_tru if p.startswith('ket_qua/') else du_lieu_ds).append(row)
     for r in lst:
         lich_su.append({'tep': p, 'ten_tep': os.path.basename(p), 'phien_ban': r['phien_ban'], 'ngay': r['ngay'], 'thoi_diem': ngay_gio(r['ngay']), 'ngay_tai_lieu': r.get('ngay_tai_lieu', ''),
                         'nguoi': r.get('nguoi', ''), 'buoc': r['buoc'], 'ten_buoc': ten_buoc(r['buoc']), 'trang_thai': r.get('trang_thai', ''), 'ghi_chu': r.get('ghi_chu', ''), 'hash': r['hash'],
@@ -212,6 +214,7 @@ out = {'ngay_tong_hop': loi.bay_gio()[:10], 'ngay_tai_lieu': loi.ngay(max(_ngs).
                              'ghi_chu': x.get('ghi_chu', '')} for x in reg['duong_co_so']],
        'thay_doi': cr, 'nhat_ky': nhat_ky, 'so_lan_chay': len(nk), 'so_lan_agent': sum(1 for x in nk if x.get('loai') != 'script'),
        'git': git, 'co_git': bool(git), 'hop_dong': reg.get('hop_dong', {}), 'kho_luu_tru': loi.du_an().get('kho_luu_tru', ''),
+       'luu_tru': luu_tru, 'so_luu_tru': len(luu_tru),
        'so_tai_lieu': len(danh_muc), 'so_can_cap_nhat': sum(1 for r in danh_muc if r['tinh_trang'] == 'Cần cập nhật'),
        'so_phien_ban_tai_lieu': sum(1 for x in lich_su if x['la_tai_lieu']), 'quy_uoc': QU}
 loi.ghi_json('du_lieu/phien_ban_tong_hop.json', out)
