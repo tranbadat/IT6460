@@ -3,80 +3,110 @@
   "cot": [
    "Mức",
    "Xác suất",
-   "Giá trị dùng tính EMV"
+   "Giá trị dùng tính EMV",
+   "Cận tính khoảng EMV"
   ],
   "dong": [
    [
     "1",
     "Rất thấp, dưới 10%",
-    "5%"
+    "5%",
+    "0% đến 10%"
    ],
    [
     "2",
     "Thấp, 10% đến 30%",
-    "20%"
+    "20%",
+    "10% đến 30%"
    ],
    [
     "3",
     "Trung bình, 30% đến 50%",
-    "40%"
+    "40%",
+    "30% đến 50%"
    ],
    [
     "4",
     "Cao, 50% đến 70%",
-    "60%"
+    "60%",
+    "50% đến 70%"
    ],
    [
     "5",
     "Rất cao, trên 70%",
-    "80%"
+    "80%",
+    "70% đến 90%"
    ]
   ],
   "widths": [
-   900,
-   5500,
-   2900
+   800,
+   3900,
+   2200,
+   2400
   ],
   "center_cols": [
    0,
-   2
+   2,
+   3
   ]
  },
  "tac_dong": {
   "cot": [
    "Mức",
-   "Tác động"
+   "Tác động",
+   "Ngày chậm (ngày làm việc)",
+   "Chi phí trên giá chào",
+   "Điều kiện về mốc, hợp đồng"
   ],
   "dong": [
    [
     "1",
-    "Không đáng kể: chậm dưới 1 ngày, chi phí dưới 1%"
+    "Không đáng kể",
+    "dưới 1",
+    "dưới 1%",
+    ""
    ],
    [
     "2",
-    "Nhỏ: chậm 1 đến 3 ngày, chi phí 1% đến 3%"
+    "Nhỏ",
+    "1 đến 3",
+    "1% đến dưới 3%",
+    ""
    ],
    [
     "3",
-    "Trung bình: chậm 4 đến 7 ngày hoặc ảnh hưởng một chức năng"
+    "Trung bình, hoặc ảnh hưởng một chức năng",
+    "4 đến 7",
+    "3% đến dưới 5%",
+    ""
    ],
    [
     "4",
-    "Lớn: chậm trên 7 ngày, ảnh hưởng mốc thanh toán"
+    "Lớn, hoặc làm chậm mốc gắn đợt thanh toán",
+    "8 đến 15",
+    "5% đến dưới 8%",
+    "Làm chậm mốc gắn đợt thanh toán"
    ],
    [
     "5",
-    "Rất lớn: không đạt cut over hoặc vi phạm hợp đồng"
+    "Rất lớn, làm lùi ngày cut over hoặc vi phạm hợp đồng",
+    "từ 16",
+    "từ 8%",
+    "Làm lùi ngày cut over hoặc vi phạm hợp đồng"
    ]
   ],
   "widths": [
-   900,
-   8400
+   700,
+   2700,
+   1700,
+   1700,
+   2500
   ],
   "center_cols": [
    0
   ]
  },
+ "ghi_chu_tac_dong": "Mức tác động của mỗi rủi ro là mức cao nhất đạt được theo số ngày chậm, chi phí tác động so với giá chào 1.750 triệu đồng và điều kiện về mốc, hợp đồng. Mức chấm khác mức suy ra được ghi lý do trong sổ.",
  "muc": {
   "cot": [
    "Mức rủi ro",
@@ -110,6 +140,35 @@
    1
   ]
  },
+ "quy_doi_3x3": {
+  "cot": [
+   "Thang 5 mức",
+   "Xác suất theo thang 3 mức",
+   "Tác động theo thang 3 mức"
+  ],
+  "dong": [
+   [
+    "Mức 1 đến 2",
+    "Thấp",
+    "Nhỏ"
+   ],
+   [
+    "Mức 3",
+    "Trung bình",
+    "Trung bình"
+   ],
+   [
+    "Mức 4 đến 5",
+    "Cao",
+    "Lớn"
+   ]
+  ],
+  "widths": [
+   3100,
+   3100,
+   3100
+  ]
+ },
  "ma_tran": {
   "cot": [
    "Xác suất, tác động",
@@ -131,26 +190,26 @@
    [
     "4",
     "",
-    "",
-    "",
-    "1",
+    "RR05",
+    "RR13",
+    "RR02",
     ""
    ],
    [
     "3",
     "",
-    "",
-    "6",
-    "6",
-    "1"
+    "RR09, RR14",
+    "RR03, RR06, RR16",
+    "RR01",
+    "RR04, RR10"
    ],
    [
     "2",
+    "RR19",
+    "RR17, RR18",
     "",
-    "",
-    "1",
-    "2",
-    "2"
+    "RR07, RR11, RR12",
+    "RR08, RR15"
    ],
    [
     "1",
@@ -162,12 +221,12 @@
    ]
   ],
   "widths": [
-   2300,
-   1400,
-   1400,
-   1400,
-   1400,
-   1400
+   1700,
+   1520,
+   1520,
+   1520,
+   1520,
+   1520
   ],
   "center_cols": [
    0,
@@ -178,6 +237,43 @@
    5
   ]
  },
+ "ma_tran_3x3": {
+  "cot": [
+   "Xác suất, tác động",
+   "Lớn",
+   "Trung bình",
+   "Nhỏ"
+  ],
+  "dong": [
+   [
+    "Cao",
+    "A: RR02",
+    "A: RR13",
+    "B: RR05"
+   ],
+   [
+    "Trung bình",
+    "A: RR01, RR04, RR10",
+    "B: RR03, RR06, RR16",
+    "C: RR09, RR14"
+   ],
+   [
+    "Thấp",
+    "B: RR07, RR08, RR11, RR12, RR15",
+    "C",
+    "C: RR17, RR18, RR19"
+   ]
+  ],
+  "widths": [
+   1800,
+   2500,
+   2500,
+   2500
+  ],
+  "center_cols": [
+   0
+  ]
+ },
  "du_phong": {
   "cot": [
    "Chỉ tiêu",
@@ -186,36 +282,109 @@
   "dong": [
    [
     "Tổng EMV theo khối lượng",
-    "48 MD"
+    "45 MD (khoảng 32 đến 58 MD)"
    ],
    [
     "Tổng EMV theo chi phí",
-    "131.157.364 đồng"
-   ],
-   [
-    "Tổng EMV theo thời gian",
-    "22,2 ngày làm việc"
+    "147 triệu đồng (khoảng 110 đến 183 triệu đồng)"
    ],
    [
     "Dự phòng chi phí trong dự toán",
-    "150.000.000 đồng"
-   ],
-   [
-    "Dự trữ thời gian đến cut over theo master schedule",
-    "5 ngày làm việc"
+    "50.000.000 đồng, nằm trong khoản B 150.000.000 đồng"
    ],
    [
     "Đánh giá dự phòng chi phí",
-    "Đủ (khi toàn bộ khoản B được dùng làm dự phòng)"
+    "Thiếu 97 triệu đồng so với tổng EMV"
+   ],
+   [
+    "Tổng EMV theo thời gian",
+    "20,0 ngày làm việc (khoảng 14,7 đến 25,3)"
+   ],
+   [
+    "EMV thời gian của rủi ro trên đường găng hoặc gắn mốc cut over",
+    "5,4 ngày làm việc (khoảng 4,0 đến 6,8), 5 rủi ro"
+   ],
+   [
+    "Dự trữ thời gian đến cut over theo master schedule",
+    "4 ngày làm việc"
+   ],
+   [
+    "Đánh giá dự trữ thời gian",
+    "Thiếu 1,4 ngày làm việc, nhóm chọn chấp nhận và báo Chủ đầu tư"
    ]
   ],
   "widths": [
-   5300,
-   4000
+   5000,
+   4300
   ],
   "right_cols": [
    1
   ]
+ },
+ "du_tru": {
+  "emv_ngay_gang": 5.4,
+  "emv_ngay_gang_thap": 4.0,
+  "emv_ngay_gang_cao": 6.8,
+  "du_tru": 4.0,
+  "thieu": 1.4,
+  "du": false,
+  "ket_luan": "thiếu",
+  "ma_gang": "RR03, RR04, RR08, RR09, RR10",
+  "so_rui_ro_gang": 5,
+  "danh_gia": "Thiếu 1,4 ngày làm việc",
+  "cum_phuong_an": [
+   "tăng dự trữ",
+   "đưa việc lên sớm",
+   "thu hẹp phạm vi",
+   "chấp nhận"
+  ]
+ },
+ "phuong_an_du_tru": {
+  "cot": [
+   "Phương án",
+   "Cách thực hiện",
+   "Ảnh hưởng",
+   "Áp dụng"
+  ],
+  "dong": [
+   [
+    "Tăng dự trữ",
+    "Bổ sung nguồn lực hoặc điều chỉnh giao việc cho các gói trên đường găng để dự trữ đến cut over đạt tối thiểu 5,4 ngày làm việc",
+    "Tăng MD hoặc chi phí nhân công, cập nhật giao việc, master schedule và cost estimate",
+    "Không"
+   ],
+   [
+    "Đưa việc lên sớm",
+    "Bắt đầu sớm hoặc thực hiện song song các gói 5.3.5, 7.2.1, 7.2.4, 7.3.1, 7.3.2",
+    "Tăng tải các sprint trước, kiểm tra lại phụ thuộc và tải từng người",
+    "Không"
+   ],
+   [
+    "Thu hẹp phạm vi",
+    "Thống nhất với Chủ đầu tư hoãn chức năng không thiết yếu sang sau cut over",
+    "Cần yêu cầu thay đổi và phụ lục hợp đồng, ảnh hưởng nghiệm thu",
+    "Không"
+   ],
+   [
+    "Chấp nhận và báo Chủ đầu tư",
+    "Giữ kế hoạch, theo dõi dấu hiệu của RR04, RR10, RR08, RR03, RR09, thông báo Chủ đầu tư mức thiếu dự trữ và phương án khi rủi ro xảy ra",
+    "Có thể bị phạt chậm tiến độ theo E-ĐKC 15 trên giá trị đợt thanh toán gắn mốc cut over",
+    "Có"
+   ]
+  ],
+  "widths": [
+   2000,
+   3600,
+   2800,
+   900
+  ]
+ },
+ "emv": {
+  "tien_trieu": 147,
+  "tien_trieu_thap": 110,
+  "tien_trieu_cao": 183,
+  "md": 45,
+  "ngay": 20.0
  },
  "nguong": {
   "cot": [
@@ -251,6 +420,13 @@
    4800
   ]
  },
- "so_cao": 2,
- "ma_cao": "RR02, RR03"
+ "so_cao": 3,
+ "ma_cao": "RR02, RR04, RR10",
+ "so_hang": {
+  "A": 5,
+  "B": 9,
+  "C": 7
+ },
+ "ma_hang_a": "RR02, RR04, RR10, RR01, RR13",
+ "so_co_hoi": 2
 }

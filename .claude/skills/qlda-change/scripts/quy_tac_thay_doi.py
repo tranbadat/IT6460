@@ -114,7 +114,7 @@ def _ben_cdt(pc, hsmt, cb):
     if ky:
         out['tham_quyen_cdt'] = {'ten': ky['ten'], 'ho_ten': ky['ten'], 'ben': 'Chủ đầu tư', 'ky_phu_luc': True, 'nguon': 'Phân công, bên ngoài'}
         return out
-    m = re.search(r'đại diện:\s*([^.;]+)', e.get('E-ĐKC 1.3', ''))
+    m = re.search(r'đại diện:\s*([^.;]+)', e.get('E-ĐKC 1.3', ''), re.IGNORECASE)
     if m:
         cv = m.group(1).strip()
         out['tham_quyen_cdt'] = {'ten': f'{cv} {cdt} (họ tên ghi khi hoàn thiện hợp đồng theo Mục 1.3 E-ĐKCT)', 'ho_ten': f'{cv} {cdt}',

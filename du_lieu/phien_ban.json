@@ -263,6 +263,44 @@
     "thu_tu": 245,
     "thu_tu_kiem_tra": 249,
     "ngay_kiem_tra": "2026-10-17 00:11:53"
+   },
+   {
+    "phien_ban": "0.10",
+    "ngay": "2026-10-18 01:21:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "wbs",
+    "hash": "6b02e01cd0e3",
+    "vao": {
+     "hsmt": "24521a6dc131",
+     "rfp_yc": "2350be76d755",
+     "du_an": "23c07fe524d9",
+     "uoc_luong": "8c0c0283e2b8",
+     "nha_thau": "1747b650307d"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 304,
+    "thu_tu_kiem_tra": 311,
+    "ngay_kiem_tra": "2026-10-18 01:22:12"
+   },
+   {
+    "phien_ban": "0.11",
+    "ngay": "2026-10-18 07:28:28",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "wbs",
+    "hash": "e6849b90edc6",
+    "vao": {
+     "hsmt": "24521a6dc131",
+     "rfp_yc": "2350be76d755",
+     "du_an": "be16aa6a2db7",
+     "uoc_luong": "8c0c0283e2b8",
+     "nha_thau": "1747b650307d"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 328,
+    "thu_tu_kiem_tra": 335,
+    "ngay_kiem_tra": "2026-10-18 07:28:31"
    }
   ],
   "du_lieu/phan_cong.json": [
@@ -3219,6 +3257,24 @@
     "thu_tu": 279,
     "thu_tu_kiem_tra": 285,
     "ngay_kiem_tra": "2026-10-17 15:42:33"
+   },
+   {
+    "phien_ban": "0.185",
+    "ngay": "2026-10-18 01:21:46",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "giao_viec",
+    "hash": "bca29cf9f274",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "thanh_vien": "baf8c711209e",
+     "hsmt": "24521a6dc131",
+     "du_an": "be16aa6a2db7"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 305,
+    "thu_tu_kiem_tra": 336,
+    "ngay_kiem_tra": "2026-10-18 07:28:31"
    }
   ],
   "du_lieu/lich.json": [
@@ -3327,6 +3383,25 @@
     "thu_tu": 280,
     "thu_tu_kiem_tra": 286,
     "ngay_kiem_tra": "2026-10-17 15:42:33"
+   },
+   {
+    "phien_ban": "0.7",
+    "ngay": "2026-10-18 01:21:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "99d30b717db2",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "hsmt": "24521a6dc131"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 306,
+    "thu_tu_kiem_tra": 337,
+    "ngay_kiem_tra": "2026-10-18 07:28:31"
    }
   ],
   "ket_qua/04_Master_schedule/Master_schedule.xlsx": [
@@ -3474,6 +3549,74 @@
     "ghi_chu": "Cập nhật theo dữ kiện nhóm: họ tên vị trí bổ sung, mức lương SA_BA, TESTER, hoán đổi D1 và D2 theo chuyên môn",
     "trang_thai": "Dự thảo",
     "thu_tu": 287
+   },
+   {
+    "phien_ban": "0.9",
+    "ngay": "2026-10-18 01:21:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "99d30b717db2",
+    "vao": {
+     "wbs": "2b6b3a346e5a",
+     "phan_cong": "f3e8f003d296",
+     "thanh_vien": "b8fecc400c81",
+     "du_an": "23c07fe524d9",
+     "hsmt": "24521a6dc131"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 307
+   },
+   {
+    "phien_ban": "0.10",
+    "ngay": "2026-10-18 01:22:12",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "5e9ab6733673",
+    "vao": {
+     "wbs": "2b6b3a346e5a",
+     "phan_cong": "f3e8f003d296",
+     "thanh_vien": "b8fecc400c81",
+     "du_an": "23c07fe524d9",
+     "hsmt": "24521a6dc131"
+    },
+    "ghi_chu": "Lập lại kế hoạch 657 MD theo quyết định nhóm 17-18/10/2026: uoc_luong 657 MD, huy động sớm (D1, D2, D3, Q1 từ S2; Q2, D4 từ S3)",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 314
+   },
+   {
+    "phien_ban": "0.11",
+    "ngay": "2026-10-18 07:28:30",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "99d30b717db2",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "hsmt": "24521a6dc131"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 331
+   },
+   {
+    "phien_ban": "0.12",
+    "ngay": "2026-10-18 07:28:31",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "lich",
+    "hash": "c2dc9fbd1a33",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "hsmt": "24521a6dc131"
+    },
+    "ghi_chu": "Quyết định nhóm 18/10/2026: D4 xác nhận họ tên, phương án dự trữ thời gian chấp nhận và báo Chủ đầu tư, vốn lưu động 500 triệu; sửa căn cứ ước lượng nhóm 6, 7",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 338
    }
   ],
   "du_lieu/rui_ro.json": [
@@ -3590,6 +3733,27 @@
     "thu_tu": 275,
     "thu_tu_kiem_tra": 288,
     "ngay_kiem_tra": "2026-10-17 15:42:33"
+   },
+   {
+    "phien_ban": "0.7",
+    "ngay": "2026-10-18 01:21:47",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "rui_ro",
+    "hash": "96403b62cc35",
+    "vao": {
+     "hsmt": "24521a6dc131",
+     "rfp_yc": "2350be76d755",
+     "wbs": "7ac8d1e18e66",
+     "lich": "f33da400a977",
+     "phan_cong": "f3e8f003d296",
+     "thanh_vien": "baf8c711209e",
+     "don_gia": "2716ff4a1cdf"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 308,
+    "thu_tu_kiem_tra": 339,
+    "ngay_kiem_tra": "2026-10-18 07:28:31"
    }
   ],
   "du_lieu/chi_phi.json": [
@@ -3708,6 +3872,28 @@
     "ghi_chu": "",
     "trang_thai": "Dự thảo",
     "thu_tu": 283
+   },
+   {
+    "phien_ban": "0.7",
+    "ngay": "2026-10-18 01:21:48",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "cf20bd057990",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "thanh_vien": "baf8c711209e",
+     "don_gia": "2716ff4a1cdf",
+     "rui_ro": "2c49b811ea1f",
+     "hsmt": "24521a6dc131",
+     "quy_tac_thay_doi": "0d79cd0c89bc"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 309,
+    "thu_tu_kiem_tra": 333,
+    "ngay_kiem_tra": "2026-10-18 07:28:31"
    }
   ],
   "ket_qua/06_Cost_estimate/Cost_estimate.xlsx": [
@@ -3835,6 +4021,66 @@
     "ghi_chu": "",
     "trang_thai": "Dự thảo",
     "thu_tu": 284
+   },
+   {
+    "phien_ban": "0.7",
+    "ngay": "2026-10-18 01:21:48",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "cf20bd057990",
+    "vao": {
+     "wbs": "2b6b3a346e5a",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "thanh_vien": "b8fecc400c81",
+     "don_gia": "2716ff4a1cdf",
+     "rui_ro": "2c49b811ea1f",
+     "hsmt": "24521a6dc131",
+     "quy_tac_thay_doi": "0d79cd0c89bc"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 310
+   },
+   {
+    "phien_ban": "0.8",
+    "ngay": "2026-10-18 01:22:12",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "decec9fbb03a",
+    "vao": {
+     "wbs": "2b6b3a346e5a",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "thanh_vien": "b8fecc400c81",
+     "don_gia": "2716ff4a1cdf",
+     "rui_ro": "2c49b811ea1f",
+     "hsmt": "24521a6dc131",
+     "quy_tac_thay_doi": "0d79cd0c89bc"
+    },
+    "ghi_chu": "Lập lại kế hoạch 657 MD theo quyết định nhóm 17-18/10/2026: uoc_luong 657 MD, huy động sớm (D1, D2, D3, Q1 từ S2; Q2, D4 từ S3)",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 317
+   },
+   {
+    "phien_ban": "0.9",
+    "ngay": "2026-10-18 07:28:31",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "cf20bd057990",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "thanh_vien": "baf8c711209e",
+     "don_gia": "2716ff4a1cdf",
+     "rui_ro": "2c49b811ea1f",
+     "hsmt": "24521a6dc131",
+     "quy_tac_thay_doi": "0d79cd0c89bc"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 334
    }
   ],
   "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx": [
@@ -3890,6 +4136,42 @@
       "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
      }
     ]
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-18 01:24:11",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "baf5ce41febb",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "24521a6dc131",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "nha_thau": "1747b650307d",
+     "uoc_luong": "8c0c0283e2b8"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 319,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_1_Quan_ly_du_an.json",
+    "ngay_tai_lieu": "05/03/2027",
+    "ngay_theo_tham_so": false,
+    "hash_khoi": "eadb97833d07",
+    "thu_tu_kiem_tra": 340,
+    "ngay_kiem_tra": "2026-10-18 07:29:00",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-18 07:30:31",
+      "ghi_chu": ""
+     }
+    ]
    }
   ],
   "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx": [
@@ -3943,6 +4225,42 @@
       "nguoi": "agent Kiểm tra độc lập",
       "luc": "2026-10-17 00:17:40",
       "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-18 01:24:11",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "c5d7dc87c30f",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "24521a6dc131",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "nha_thau": "1747b650307d",
+     "uoc_luong": "8c0c0283e2b8"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 320,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_2_Phan_tich_va_thiet_ke_chung.json",
+    "ngay_tai_lieu": "05/03/2027",
+    "ngay_theo_tham_so": false,
+    "hash_khoi": "0f681bb08182",
+    "thu_tu_kiem_tra": 341,
+    "ngay_kiem_tra": "2026-10-18 07:29:01",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-18 07:30:31",
+      "ghi_chu": ""
      }
     ]
    }
@@ -4110,6 +4428,42 @@
       "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
      }
     ]
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-18 01:24:12",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "0a38463ef9cd",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "24521a6dc131",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "nha_thau": "1747b650307d",
+     "uoc_luong": "8c0c0283e2b8"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 323,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_5_Phan_he_dat_hang_Order.json",
+    "ngay_tai_lieu": "05/03/2027",
+    "ngay_theo_tham_so": false,
+    "hash_khoi": "3c8c05892fb7",
+    "thu_tu_kiem_tra": 344,
+    "ngay_kiem_tra": "2026-10-18 07:29:01",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-18 07:30:31",
+      "ghi_chu": ""
+     }
+    ]
    }
   ],
   "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx": [
@@ -4186,6 +4540,65 @@
     ],
     "thu_tu_kiem_tra": 294,
     "ngay_kiem_tra": "2026-10-17 15:42:35"
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-18 01:24:12",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "aea747636a96",
+    "vao": {
+     "wbs": "2b6b3a346e5a",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "24521a6dc131",
+     "thanh_vien": "b8fecc400c81",
+     "du_an": "23c07fe524d9",
+     "nha_thau": "1747b650307d",
+     "uoc_luong": "8c0c0283e2b8"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 324,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.json",
+    "ngay_tai_lieu": "05/03/2027",
+    "ngay_theo_tham_so": false,
+    "hash_khoi": "a2de487fcfe3"
+   },
+   {
+    "phien_ban": "0.5",
+    "ngay": "2026-10-18 07:29:01",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "99ccb07e603e",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "24521a6dc131",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "nha_thau": "1747b650307d",
+     "uoc_luong": "8c0c0283e2b8"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 345,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.json",
+    "ngay_tai_lieu": "05/03/2027",
+    "ngay_theo_tham_so": false,
+    "hash_khoi": "589264a41c3a",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-18 07:30:31",
+      "ghi_chu": ""
+     }
+    ]
    }
   ],
   "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx": [
@@ -4239,6 +4652,65 @@
       "nguoi": "agent Kiểm tra độc lập",
       "luc": "2026-10-17 00:17:40",
       "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-18 01:24:12",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "6bc4048911a5",
+    "vao": {
+     "wbs": "2b6b3a346e5a",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "24521a6dc131",
+     "thanh_vien": "b8fecc400c81",
+     "du_an": "23c07fe524d9",
+     "nha_thau": "1747b650307d",
+     "uoc_luong": "8c0c0283e2b8"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 325,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.json",
+    "ngay_tai_lieu": "05/03/2027",
+    "ngay_theo_tham_so": false,
+    "hash_khoi": "8e3ce96c5d10"
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-18 07:29:02",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "4eade0fac9e0",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "24521a6dc131",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "nha_thau": "1747b650307d",
+     "uoc_luong": "8c0c0283e2b8"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 346,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.json",
+    "ngay_tai_lieu": "05/03/2027",
+    "ngay_theo_tham_so": false,
+    "hash_khoi": "bb59cd39ea18",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-18 07:30:31",
+      "ghi_chu": ""
      }
     ]
    }
@@ -4317,6 +4789,42 @@
     ],
     "thu_tu_kiem_tra": 296,
     "ngay_kiem_tra": "2026-10-17 15:42:35"
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-18 01:24:12",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "91c010925a8a",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "24521a6dc131",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "nha_thau": "1747b650307d",
+     "uoc_luong": "8c0c0283e2b8"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 326,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_8_Trien_khai_va_chuyen_giao.json",
+    "ngay_tai_lieu": "05/03/2027",
+    "ngay_theo_tham_so": false,
+    "hash_khoi": "836989bb29b3",
+    "thu_tu_kiem_tra": 347,
+    "ngay_kiem_tra": "2026-10-18 07:29:02",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-18 07:30:31",
+      "ghi_chu": ""
+     }
+    ]
    }
   ],
   "ket_qua/03_WBS/WBS_tong_hop.docx": [
@@ -4370,6 +4878,65 @@
       "nguoi": "agent Kiểm tra độc lập",
       "luc": "2026-10-17 00:17:40",
       "ghi_chu": "Đạt kiểm tra lớp B, còn cảnh báo chờ nhóm quyết định"
+     }
+    ]
+   },
+   {
+    "phien_ban": "0.3",
+    "ngay": "2026-10-18 01:24:13",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "ceb1b0a0c12c",
+    "vao": {
+     "wbs": "2b6b3a346e5a",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "24521a6dc131",
+     "thanh_vien": "b8fecc400c81",
+     "du_an": "23c07fe524d9",
+     "nha_thau": "1747b650307d",
+     "uoc_luong": "8c0c0283e2b8"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 327,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_tong_hop.json",
+    "ngay_tai_lieu": "05/03/2027",
+    "ngay_theo_tham_so": false,
+    "hash_khoi": "e186b4aea6ff"
+   },
+   {
+    "phien_ban": "0.4",
+    "ngay": "2026-10-18 07:29:02",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "f0bbfedfce97",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "24521a6dc131",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "nha_thau": "1747b650307d",
+     "uoc_luong": "8c0c0283e2b8"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 348,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_tong_hop.json",
+    "ngay_tai_lieu": "05/03/2027",
+    "ngay_theo_tham_so": false,
+    "hash_khoi": "812f24792164",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-18 07:30:31",
+      "ghi_chu": ""
      }
     ]
    }
@@ -4493,6 +5060,81 @@
     "noi_dung": "lam_viec/chi_phi/noi_dung_Thuyet_minh_du_toan.json",
     "co_dinh": "",
     "ngay_tai_lieu": "05/03/2027"
+   },
+   {
+    "phien_ban": "0.6",
+    "ngay": "2026-10-18 01:22:12",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "cc1738a2af81",
+    "vao": {
+     "wbs": "2b6b3a346e5a",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "thanh_vien": "b8fecc400c81",
+     "don_gia": "2716ff4a1cdf",
+     "rui_ro": "2c49b811ea1f",
+     "hsmt": "24521a6dc131",
+     "quy_tac_thay_doi": "0d79cd0c89bc"
+    },
+    "ghi_chu": "Lập lại kế hoạch 657 MD theo quyết định nhóm 17-18/10/2026: uoc_luong 657 MD, huy động sớm (D1, D2, D3, Q1 từ S2; Q2, D4 từ S3)",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 318
+   },
+   {
+    "phien_ban": "0.7",
+    "ngay": "2026-10-18 07:31:09",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "299a489fcfdd",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "thanh_vien": "baf8c711209e",
+     "don_gia": "2716ff4a1cdf",
+     "rui_ro": "2c49b811ea1f",
+     "hsmt": "24521a6dc131",
+     "quy_tac_thay_doi": "0d79cd0c89bc"
+    },
+    "ghi_chu": "Lập lại theo 657 MD; quyết định nhóm: dự phòng 50 triệu, vốn lưu động 500 triệu, giữ dự trữ 4 ngày",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 350,
+    "noi_dung": "lam_viec/chi_phi/noi_dung_Thuyet_minh_du_toan.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "05/03/2027"
+   },
+   {
+    "phien_ban": "0.8",
+    "ngay": "2026-10-18 07:34:01",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "chi_phi",
+    "hash": "daa6249ee4d8",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "thanh_vien": "baf8c711209e",
+     "don_gia": "2716ff4a1cdf",
+     "rui_ro": "2c49b811ea1f",
+     "hsmt": "24521a6dc131",
+     "quy_tac_thay_doi": "0d79cd0c89bc"
+    },
+    "ghi_chu": "Sửa MH01-MH04 lớp B vòng 1",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 353,
+    "noi_dung": "lam_viec/chi_phi/noi_dung_Thuyet_minh_du_toan.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "05/03/2027",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-18 07:34:30",
+      "ghi_chu": ""
+     }
+    ]
    }
   ],
   "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx": [
@@ -4614,6 +5256,38 @@
     "noi_dung": "lam_viec/ke_hoach_rui_ro/noi_dung_Ke_hoach_quan_ly_rui_ro.json",
     "co_dinh": "",
     "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.6",
+    "ngay": "2026-10-18 07:31:18",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "ke_hoach_rui_ro",
+    "hash": "06c4655a6fef",
+    "vao": {
+     "rui_ro": "2c49b811ea1f",
+     "chi_phi": "67b58142b0a2",
+     "lich": "f33da400a977",
+     "phan_cong": "f3e8f003d296",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "hsmt": "24521a6dc131",
+     "quy_tac_thay_doi": "0d79cd0c89bc"
+    },
+    "ghi_chu": "Lập lại theo 657 MD; quyết định nhóm: giữ dự trữ 4 ngày, chấp nhận và báo Chủ đầu tư, dự phòng 50 triệu",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 351,
+    "noi_dung": "lam_viec/ke_hoach_rui_ro/noi_dung_Ke_hoach_quan_ly_rui_ro.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-18 07:32:38",
+      "ghi_chu": ""
+     }
+    ]
    }
   ],
   "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx": [
@@ -4709,6 +5383,57 @@
     "noi_dung": "lam_viec/phan_cong_tai_lieu/noi_dung_Phan_cong_nhiem_vu.json",
     "co_dinh": "",
     "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.5",
+    "ngay": "2026-10-18 07:29:09",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "phan_cong_tai_lieu",
+    "hash": "41b0d8a1e703",
+    "vao": {
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "wbs": "7ac8d1e18e66",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "hsmt": "24521a6dc131"
+    },
+    "ghi_chu": "Lập lại theo 657 MD, 12 nhân sự (D4 từ S3)",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 349,
+    "noi_dung": "lam_viec/phan_cong_tai_lieu/noi_dung_Phan_cong_nhiem_vu.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027"
+   },
+   {
+    "phien_ban": "0.6",
+    "ngay": "2026-10-18 07:31:59",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "phan_cong_tai_lieu",
+    "hash": "ea25290d84a1",
+    "vao": {
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "wbs": "7ac8d1e18e66",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "hsmt": "24521a6dc131"
+    },
+    "ghi_chu": "Sửa MH01 lớp B: mức sử dụng thấp thay cho quá tải",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 352,
+    "noi_dung": "lam_viec/phan_cong_tai_lieu/noi_dung_Phan_cong_nhiem_vu.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "18/03/2027",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-18 07:32:24",
+      "ghi_chu": ""
+     }
+    ]
    }
   ],
   "ket_qua/16_Bang_chung/Phu_luc_bang_chung_prompt_skill.docx": [
@@ -4726,8 +5451,112 @@
     "trang_thai": "Dự thảo",
     "thu_tu": 268
    }
+  ],
+  "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-18 01:24:11",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "b63a1696395e",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "24521a6dc131",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "nha_thau": "1747b650307d",
+     "uoc_luong": "8c0c0283e2b8"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 321,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.json",
+    "ngay_tai_lieu": "05/03/2027",
+    "ngay_theo_tham_so": false,
+    "hash_khoi": "07405b35c5aa",
+    "thu_tu_kiem_tra": 342,
+    "ngay_kiem_tra": "2026-10-18 07:29:01",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-18 07:30:31",
+      "ghi_chu": ""
+     }
+    ]
+   }
+  ],
+  "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-18 01:24:12",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "tai_lieu_wbs",
+    "hash": "1bc6006dba00",
+    "vao": {
+     "wbs": "7ac8d1e18e66",
+     "phan_cong": "f3e8f003d296",
+     "lich": "f33da400a977",
+     "rfp_yc": "2350be76d755",
+     "hsmt": "24521a6dc131",
+     "thanh_vien": "baf8c711209e",
+     "du_an": "be16aa6a2db7",
+     "nha_thau": "1747b650307d",
+     "uoc_luong": "8c0c0283e2b8"
+    },
+    "ghi_chu": "",
+    "trang_thai": "Đã kiểm tra",
+    "thu_tu": 322,
+    "noi_dung": "lam_viec/tai_lieu_wbs/WBS_4_Phan_he_thanh_vien_Member_Administration.json",
+    "ngay_tai_lieu": "05/03/2027",
+    "ngay_theo_tham_so": false,
+    "hash_khoi": "be1dbaa1d7b3",
+    "thu_tu_kiem_tra": 343,
+    "ngay_kiem_tra": "2026-10-18 07:29:01",
+    "lich_su_trang_thai": [
+     {
+      "tu": "Dự thảo",
+      "den": "Đã kiểm tra",
+      "nguoi": "agent Kiểm tra độc lập",
+      "luc": "2026-10-18 07:30:31",
+      "ghi_chu": ""
+     }
+    ]
+   }
+  ],
+  "ket_qua/02_HSDT/HSDT.docx": [
+   {
+    "phien_ban": "0.1",
+    "ngay": "2026-10-18 07:37:07",
+    "nguoi": "Trần Bá Đạt",
+    "buoc": "hsdt",
+    "hash": "47862cb495f2",
+    "vao": {
+     "hsmt": "24521a6dc131",
+     "rfp_yc": "2350be76d755",
+     "wbs": "7ac8d1e18e66",
+     "lich": "f33da400a977",
+     "phan_cong": "f3e8f003d296",
+     "chi_phi": "67b58142b0a2",
+     "rui_ro": "2c49b811ea1f",
+     "thanh_vien": "baf8c711209e",
+     "nha_thau": "1747b650307d",
+     "du_an": "be16aa6a2db7",
+     "chi_tieu": "0b3a3311771e"
+    },
+    "ghi_chu": "Lập lại theo 657 MD, 12 nhân sự, quyết định nhóm 18/10",
+    "trang_thai": "Dự thảo",
+    "thu_tu": 354,
+    "noi_dung": "lam_viec/hsdt/noi_dung_HSDT.json",
+    "co_dinh": "",
+    "ngay_tai_lieu": "05/03/2027"
+   }
   ]
  },
- "dem": 303,
+ "dem": 354,
  "duong_co_so": []
 }

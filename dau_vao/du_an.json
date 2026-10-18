@@ -71,5 +71,10 @@
  ],
  "_nguon_cam_ket": "Theo đề nghị của nhà thầu trong HSDT của nhóm (II.1, II.11). Lịch phải xếp các gói phụ thuộc không sớm hơn hạn cam kết.",
  "nguong_su_dung_quy_toi_thieu": 0.8,
- "_ghi_chu_nguong": "Tỷ lệ MD công việc trên quỹ huy động tối thiểu; thấp hơn thì bước hsdt dừng. Nhóm có thể đổi."
+ "_ghi_chu_nguong": "Tỷ lệ MD công việc trên quỹ huy động tối thiểu; thấp hơn thì bước hsdt dừng. Nhóm có thể đổi.",
+ "phuong_an_du_tru_thoi_gian": [
+  "chap_nhan_bao_cdt"
+ ],
+ "von_luu_dong_du_kien": 500000000,
+ "_quyet_dinh_18_10": "Quyết định của nhóm ngày 18/10/2026: (1) dự trữ thời gian 4 ngày giữ nguyên, chấp nhận phần EMV thời gian vượt dự trữ, theo dõi hằng tuần các rủi ro trên đường găng và báo Chủ đầu tư khi dự trữ còn dưới 2 ngày; (2) dự phòng rủi ro giữ 50.000.000 đồng trong khoản B, phần EMV vượt dự phòng được bù từ khoản còn lại sau lương theo quy tắc dùng dự phòng dùng chung; (3) vốn lưu động chuẩn bị 500.000.000 đồng, làm tròn lên từ mức âm lớn nhất của dòng tiền lũy kế, giả định chi phí vốn 10%/năm của RR19 giữ nguyên; (4) hạn các mốc M1 14/04, M2 10/05, M3 và M4 17/06/2027 giữ nguyên, cut over 01/07/2027 cố định."
 }

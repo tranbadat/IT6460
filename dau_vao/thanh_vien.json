@@ -142,7 +142,7 @@
     "DEV"
    ],
    "ty_le": 1.0,
-   "tu_sprint": 3,
+   "tu_sprint": 2,
    "den_sprint": null,
    "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
   },
@@ -161,7 +161,7 @@
     "DEV"
    ],
    "ty_le": 1.0,
-   "tu_sprint": 3,
+   "tu_sprint": 2,
    "den_sprint": null,
    "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
   },
@@ -181,7 +181,7 @@
     "DEVOPS"
    ],
    "ty_le": 1.0,
-   "tu_sprint": 4,
+   "tu_sprint": 2,
    "den_sprint": null,
    "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
   },
@@ -200,7 +200,7 @@
     "QA"
    ],
    "ty_le": 1.0,
-   "tu_sprint": 3,
+   "tu_sprint": 2,
    "den_sprint": null,
    "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
   },
@@ -219,9 +219,30 @@
     "QA"
    ],
    "ty_le": 1.0,
-   "tu_sprint": 4,
+   "tu_sprint": 3,
    "den_sprint": null,
    "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
+  },
+  {
+   "id": "D4",
+   "ho_ten": "Trương Quốc Việt",
+   "loai": "bo_sung",
+   "chuc_danh": "Kỹ sư phát triển backend kiêm DevOps",
+   "kiem_nhiem": "Hỗ trợ kiểm thử chấp nhận, chuyển đổi dữ liệu và cut over",
+   "trinh_do": "",
+   "so_nam_kinh_nghiem": null,
+   "kinh_nghiem": "",
+   "chung_chi": "",
+   "vai_tro": "BACKEND",
+   "loai_cong_viec": [
+    "DEV",
+    "DEVOPS"
+   ],
+   "ty_le": 1.0,
+   "tu_sprint": 3,
+   "den_sprint": null,
+   "_ghi_chu": "Nhóm quyết định ngày 18/10/2026 bổ sung vị trí này để lịch 657 MD kịp cut over (giảm tắc ở gói 7.3.x, 8.3.x và mốc M3, M5, M7). Chưa có trình độ, kinh nghiệm."
   }
- ]
+ ],
+ "_ghi_chu_huy_dong": "Quyết định của nhóm ngày 18/10/2026: huy động sớm hơn và thêm D4 để lịch 657 MD kịp cut over (D1, D2, D3, Q1 từ S2; Q2, D4 từ S3), quỹ 796 MD. Lương tính theo MD công việc nên quỹ tăng không làm tăng chi phí lương."
 }

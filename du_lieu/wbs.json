@@ -1,12 +1,16 @@
 {
- "tong_md": 351.0,
- "so_goi_la": 66,
+ "tong_md": 657.0,
+ "so_goi_la": 144,
  "goi": [
   {
    "ma": "1",
    "ten": "Quản lý dự án",
    "muc": 1,
-   "md": 35.0,
+   "can_cu_uoc_luong": {
+    "kich_thuoc": "1 họp khởi động, 1 kế hoạch quản lý dự án, 1 kế hoạch bảo đảm chất lượng, 7 sprint báo cáo, 5 đợt thanh toán, 2 lần Chủ đầu tư xác nhận (kế hoạch, chức năng chính), rà soát mã nguồn và giấy phép thư viện",
+    "cach_phan_ra": "Tổng nhóm 60 MD theo tong_theo_nhom của uoc_luong.json. Thuộc phần đầu việc phi chức năng ở bước 3 của uoc_luong.json (quản trị dự án, bảo đảm chất lượng, rà soát mã, nghiệm thu). Công việc quản lý liên tục (họp, báo cáo, rủi ro, thay đổi, cấu hình, hồ sơ thanh toán) dàn trải 73 ngày làm việc bằng một nửa thời gian của quản trị dự án, phần còn lại chia theo số kế hoạch và số lần xác nhận: khởi động và lập kế hoạch 13,5 MD (1.1); theo dõi, kiểm soát và bảo đảm chất lượng 33,5 MD (1.2); nghiệm thu và kết thúc dự án 13 MD (1.3)"
+   },
+   "md": 60.0,
    "so_muc_con": 3,
    "la": false,
    "cha": ""
@@ -15,15 +19,14 @@
    "ma": "1.1",
    "ten": "Khởi động và lập kế hoạch",
    "muc": 2,
-   "md": 6.0,
-   "so_muc_con": 2,
+   "md": 13.5,
+   "so_muc_con": 5,
    "la": false,
    "cha": "1"
   },
   {
    "ma": "1.1.1",
    "ten": "Họp khởi động, xác nhận phạm vi, điều kiện tiền đề, vai trò và trách nhiệm các bên",
-   "muc": 3,
    "md": 2,
    "loai": "PM",
    "san_pham": "Biên bản họp khởi động",
@@ -34,18 +37,19 @@
    "nguon": [
     "R15",
     "R17",
-    "R22"
+    "R22",
+    "R34"
    ],
+   "muc": 3,
    "la": true,
    "cha": "1.1"
   },
   {
    "ma": "1.1.2",
-   "ten": "Kế hoạch quản lý dự án, tiến độ, tổ chức thực hiện và kế hoạch họp",
-   "muc": 3,
+   "ten": "Kế hoạch quản lý dự án gồm phạm vi, tiến độ, tổ chức thực hiện, kế hoạch họp, quản lý rủi ro và thay đổi đặc tả",
    "md": 4,
    "loai": "PM",
-   "san_pham": "Kế hoạch quản lý dự án được Chủ đầu tư xác nhận",
+   "san_pham": "Kế hoạch quản lý dự án gồm sổ rủi ro ban đầu và quy trình thay đổi",
    "phu_thuoc": [
     "1.1.1"
    ],
@@ -55,27 +59,88 @@
    "nguon": [
     "R19",
     "R20",
-    "R21"
+    "R21",
+    "R35"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "1.1"
+  },
+  {
+   "ma": "1.1.3",
+   "ten": "Cập nhật sổ rủi ro, kế hoạch quản lý thay đổi và cấu hình theo đặc tả đã xác nhận",
+   "md": 2.5,
+   "loai": "PM",
+   "san_pham": "Sổ rủi ro, kế hoạch quản lý thay đổi và cấu hình cập nhật theo đường cơ sở đặc tả",
+   "phu_thuoc": [
+    "2.1.7"
+   ],
+   "hang_muc_01a": [
+    1
+   ],
+   "nguon": [
+    "HSMT E-ĐKC 17.1(c)",
+    "R35"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "1.1"
+  },
+  {
+   "ma": "1.1.4",
+   "ten": "Kế hoạch bảo đảm chất lượng, quy chuẩn mã nguồn và tiêu chí hoàn thành công việc",
+   "md": 3,
+   "loai": "QA",
+   "san_pham": "Kế hoạch bảo đảm chất lượng và tiêu chí hoàn thành",
+   "phu_thuoc": [
+    "1.1.1"
+   ],
+   "hang_muc_01a": [
+    1
+   ],
+   "nguon": [
+    "R13",
+    "R42"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "1.1"
+  },
+  {
+   "ma": "1.1.5",
+   "ten": "Chủ đầu tư xem xét, xác nhận kế hoạch quản lý dự án",
+   "md": 2,
+   "loai": "PM",
+   "san_pham": "Kế hoạch quản lý dự án được Chủ đầu tư xác nhận",
+   "phu_thuoc": [
+    "1.1.2"
+   ],
+   "hang_muc_01a": [
+    1
+   ],
+   "nguon": [
+    "R19",
+    "R20"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "1.1"
   },
   {
    "ma": "1.2",
-   "ten": "Theo dõi, kiểm soát và báo cáo",
+   "ten": "Theo dõi, kiểm soát và bảo đảm chất lượng",
    "muc": 2,
-   "md": 20.0,
-   "so_muc_con": 3,
+   "md": 33.5,
+   "so_muc_con": 5,
    "la": false,
    "cha": "1"
   },
   {
    "ma": "1.2.1",
-   "ten": "Họp tiến độ, trình diễn và báo cáo cuối sprint",
-   "muc": 3,
-   "md": 10,
+   "ten": "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint",
+   "md": 14,
    "loai": "PM",
-   "san_pham": "Biên bản họp và báo cáo tiến độ từng sprint",
+   "san_pham": "Biên bản họp, báo cáo tiến độ từng sprint",
    "phu_thuoc": [],
    "hang_muc_01a": [
     1,
@@ -95,16 +160,16 @@
    "nguon": [
     "R21"
    ],
+   "muc": 3,
    "la": true,
    "cha": "1.2"
   },
   {
    "ma": "1.2.2",
-   "ten": "Quản lý rủi ro và yêu cầu thay đổi đặc tả",
-   "muc": 3,
-   "md": 6,
+   "ten": "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả",
+   "md": 10,
    "loai": "PM",
-   "san_pham": "Sổ rủi ro và sổ yêu cầu thay đổi được cập nhật",
+   "san_pham": "Sổ rủi ro, sổ vấn đề và sổ yêu cầu thay đổi được cập nhật",
    "phu_thuoc": [],
    "hang_muc_01a": [
     1,
@@ -125,16 +190,16 @@
     "HSMT E-ĐKC 17.1(c)",
     "R35"
    ],
+   "muc": 3,
    "la": true,
    "cha": "1.2"
   },
   {
    "ma": "1.2.3",
-   "ten": "Quản lý chất lượng, cấu hình và phiên bản tài liệu",
-   "muc": 3,
-   "md": 4,
+   "ten": "Quản lý cấu hình, phiên bản tài liệu và hồ sơ dự án",
+   "md": 4.5,
    "loai": "PM",
-   "san_pham": "Kế hoạch chất lượng và sổ phiên bản tài liệu",
+   "san_pham": "Sổ phiên bản tài liệu và hồ sơ dự án",
    "phu_thuoc": [],
    "hang_muc_01a": [
     1,
@@ -152,8 +217,53 @@
     13
    ],
    "nguon": [
-    "HSMT Chương III Mục 3"
+    "R37"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "1.2"
+  },
+  {
+   "ma": "1.2.4",
+   "ten": "Rà soát mã nguồn và kiến trúc giai đoạn lập trình phân hệ",
+   "md": 3,
+   "loai": "DEV",
+   "san_pham": "Biên bản rà soát mã nguồn, danh sách khắc phục",
+   "phu_thuoc": [
+    "3.3.2",
+    "4.3.2",
+    "5.3.5"
+   ],
+   "hang_muc_01a": [
+    5,
+    6,
+    7
+   ],
+   "nguon": [
+    "R42",
+    "R13"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "1.2"
+  },
+  {
+   "ma": "1.2.5",
+   "ten": "Rà soát giấy phép thư viện mã nguồn mở và quyền sở hữu sản phẩm",
+   "md": 2,
+   "loai": "DEV",
+   "san_pham": "Danh mục thư viện kèm giấy phép đã rà soát",
+   "phu_thuoc": [
+    "6.1.1"
+   ],
+   "hang_muc_01a": [
+    12
+   ],
+   "nguon": [
+    "R40",
+    "R41"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "1.2"
   },
@@ -161,7 +271,7 @@
    "ma": "1.3",
    "ten": "Nghiệm thu và kết thúc dự án",
    "muc": 2,
-   "md": 9.0,
+   "md": 13.0,
    "so_muc_con": 3,
    "la": false,
    "cha": "1"
@@ -169,8 +279,7 @@
   {
    "ma": "1.3.1",
    "ten": "Hồ sơ nghiệm thu và thanh toán theo các đợt của hợp đồng",
-   "muc": 3,
-   "md": 4,
+   "md": 8,
    "loai": "PM",
    "san_pham": "Biên bản nghiệm thu và hồ sơ thanh toán từng đợt",
    "phu_thuoc": [],
@@ -193,38 +302,25 @@
     "R18",
     "HSMT E-ĐKC 13.1"
    ],
+   "muc": 3,
    "la": true,
    "cha": "1.3"
   },
   {
    "ma": "1.3.2",
-   "ten": "Báo cáo tổng kết và bàn giao hồ sơ dự án",
-   "muc": 3,
+   "ten": "Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System",
    "md": 3,
-   "loai": "PM",
-   "san_pham": "Báo cáo tổng kết dự án, biên bản bàn giao hồ sơ vào ngày cut over",
-   "phu_thuoc": [],
-   "hang_muc_01a": [
-    13
-   ],
-   "nguon": [
-    "R18"
-   ],
-   "la": true,
-   "cha": "1.3"
-  },
-  {
-   "ma": "1.3.3",
-   "ten": "Kiểm tra, xác nhận chức năng chính và tích hợp cùng Chủ đầu tư",
-   "muc": 3,
-   "md": 2,
    "loai": "BA",
-   "san_pham": "Biên bản Chủ đầu tư kiểm tra đạt chức năng chính và tích hợp với Main System",
+   "san_pham": "Biên bản Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
    "phu_thuoc": [
-    "3.5.1",
-    "4.5.1",
-    "5.5.1",
-    "6.2.5"
+    "3.4.4",
+    "3.4.6",
+    "4.4.4",
+    "4.4.6",
+    "5.4.5",
+    "5.4.7",
+    "5.4.8",
+    "6.2.11"
    ],
    "hang_muc_01a": [
     5,
@@ -238,6 +334,26 @@
     "R39",
     "HSMT E-ĐKC 13.1"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "1.3"
+  },
+  {
+   "ma": "1.3.3",
+   "ten": "Báo cáo tổng kết, bài học kinh nghiệm và bàn giao hồ sơ dự án",
+   "md": 2,
+   "loai": "PM",
+   "san_pham": "Báo cáo tổng kết dự án, biên bản bàn giao hồ sơ",
+   "phu_thuoc": [
+    "7.2.4"
+   ],
+   "hang_muc_01a": [
+    13
+   ],
+   "nguon": [
+    "R18"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "1.3"
   },
@@ -245,73 +361,135 @@
    "ma": "2",
    "ten": "Phân tích và thiết kế chung",
    "muc": 1,
-   "md": 58.0,
+   "can_cu_uoc_luong": {
+    "kich_thuoc": "3 nhóm chức năng (tìm kiếm, thành viên, đặt hàng) và đặc tả phi chức năng, 1 quy trình vận hành mới, 1 kiến trúc, 1 cấu trúc và 1 cấu hình cơ sở dữ liệu, 1 sơ đồ menu, 3 nhóm màn hình ưu tiên, 1 thư viện thành phần giao diện",
+    "cach_phan_ra": "Tổng nhóm 66 MD theo tong_theo_nhom của uoc_luong.json. Thuộc phần giải pháp (119,6 MD ở bước 2 của uoc_luong.json), dành cho sản phẩm chung của Đợt 2 (Mẫu 01A hạng mục 1 đến 4). Chia theo số sản phẩm và độ phức tạp, đặc tả đặt hàng lớn nhất vì gồm năm nghiệp vụ NV01 đến NV05: khảo sát và đặc tả hệ thống 28 MD (2.1); thiết kế quy trình, kiến trúc và cơ sở dữ liệu 17 MD (2.2); thiết kế giao diện 21 MD (2.3)"
+   },
+   "md": 66.0,
    "so_muc_con": 3,
    "la": false,
    "cha": ""
   },
   {
    "ma": "2.1",
-   "ten": "Phân tích hệ thống và đặc tả",
+   "ten": "Khảo sát và đặc tả hệ thống",
    "muc": 2,
-   "md": 20.0,
-   "so_muc_con": 4,
+   "md": 28.0,
+   "so_muc_con": 8,
    "la": false,
    "cha": "2"
   },
   {
    "ma": "2.1.1",
-   "ten": "Khảo sát nghiệp vụ bán hàng trực tuyến và hệ thống hiện có",
-   "muc": 3,
-   "md": 5,
+   "ten": "Khảo sát nghiệp vụ bán hàng trực tuyến và quy trình hiện tại của Chủ đầu tư",
+   "md": 4,
    "loai": "BA",
-   "san_pham": "Báo cáo khảo sát nghiệp vụ và hệ thống hiện có",
-   "phu_thuoc": [
-    "1.1.1"
-   ],
+   "san_pham": "Báo cáo khảo sát nghiệp vụ",
+   "phu_thuoc": [],
    "hang_muc_01a": [
     1
    ],
    "nguon": [
     "R02",
-    "R13",
-    "R10"
+    "R13"
    ],
+   "muc": 3,
    "la": true,
    "cha": "2.1"
   },
   {
    "ma": "2.1.2",
-   "ten": "Đặc tả chức năng (Function) của hệ thống",
-   "muc": 3,
-   "md": 8,
+   "ten": "Khảo sát hệ thống hiện có, Main System và luồng dữ liệu liên quan",
+   "md": 4,
    "loai": "BA",
-   "san_pham": "Tài liệu đặc tả chức năng",
+   "san_pham": "Báo cáo khảo sát hệ thống hiện có và luồng dữ liệu",
+   "phu_thuoc": [],
+   "hang_muc_01a": [
+    1
+   ],
+   "nguon": [
+    "R10",
+    "R11"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "2.1"
+  },
+  {
+   "ma": "2.1.3",
+   "ten": "Đặc tả chức năng (Function) tìm kiếm và hiển thị sản phẩm",
+   "md": 4,
+   "loai": "BA",
+   "san_pham": "Đặc tả chức năng tìm kiếm và hiển thị sản phẩm",
    "phu_thuoc": [
-    "2.1.1",
-    "1.1.2"
+    "2.1.1"
    ],
    "hang_muc_01a": [
     1
    ],
    "nguon": [
     "R44",
-    "R06",
-    "R07",
-    "R08"
+    "R06"
    ],
+   "muc": 3,
    "la": true,
    "cha": "2.1"
   },
   {
-   "ma": "2.1.3",
-   "ten": "Đặc tả yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi và thao tác",
+   "ma": "2.1.4",
+   "ten": "Đặc tả chức năng (Function) quản lý thành viên",
+   "md": 3,
+   "loai": "BA",
+   "san_pham": "Đặc tả chức năng quản lý thành viên",
+   "phu_thuoc": [
+    "2.1.1"
+   ],
+   "hang_muc_01a": [
+    1
+   ],
+   "nguon": [
+    "R44",
+    "R07"
+   ],
    "muc": 3,
-   "md": 4,
+   "la": true,
+   "cha": "2.1"
+  },
+  {
+   "ma": "2.1.5",
+   "ten": "Đặc tả chức năng (Function) đặt hàng gồm giỏ hàng, giữ tồn, phí vận chuyển, khuyến mại, hủy đơn, đổi trả",
+   "md": 5,
+   "loai": "BA",
+   "san_pham": "Đặc tả chức năng đặt hàng",
+   "phu_thuoc": [
+    "2.1.1",
+    "2.1.2"
+   ],
+   "hang_muc_01a": [
+    1
+   ],
+   "nguon": [
+    "R44",
+    "R08",
+    "R11",
+    "NV01",
+    "NV02",
+    "NV03",
+    "NV04",
+    "NV05"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "2.1"
+  },
+  {
+   "ma": "2.1.6",
+   "ten": "Đặc tả yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi, bảo mật và thao tác",
+   "md": 3,
    "loai": "BA",
    "san_pham": "Đặc tả yêu cầu phi chức năng",
    "phu_thuoc": [
-    "2.1.1"
+    "2.1.2"
    ],
    "hang_muc_01a": [
     1
@@ -321,22 +499,29 @@
     "R04",
     "R05"
    ],
+   "muc": 3,
    "la": true,
    "cha": "2.1"
   },
   {
-   "ma": "2.1.4",
-   "ten": "Xác nhận đặc tả yêu cầu và giao diện ưu tiên với Chủ đầu tư",
-   "muc": 3,
+   "ma": "2.1.7",
+   "ten": "Hai bên xác nhận đặc tả yêu cầu và giao diện ưu tiên",
    "md": 3,
    "loai": "BA",
-   "san_pham": "Biên bản xác nhận đặc tả yêu cầu và giao diện ưu tiên",
+   "san_pham": "Biên bản xác nhận đặc tả yêu cầu (baseline) và giao diện ưu tiên",
    "phu_thuoc": [
-    "2.1.2",
     "2.1.3",
+    "2.1.4",
+    "2.1.5",
+    "2.1.6",
     "2.2.1",
+    "2.2.2",
     "2.2.3",
-    "2.3.2"
+    "2.2.4",
+    "2.3.1",
+    "2.3.3",
+    "2.3.4",
+    "2.3.5"
    ],
    "hang_muc_01a": [
     1,
@@ -346,8 +531,32 @@
    ],
    "nguon": [
     "R44",
-    "R35"
+    "R35",
+    "R46",
+    "R47",
+    "R48"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "2.1"
+  },
+  {
+   "ma": "2.1.8",
+   "ten": "Cập nhật đặc tả hệ thống và cấu trúc cơ sở dữ liệu theo phiên bản bàn giao",
+   "md": 2,
+   "loai": "BA",
+   "san_pham": "Đặc tả hệ thống và cấu trúc cơ sở dữ liệu phiên bản bàn giao",
+   "phu_thuoc": [
+    "7.2.4"
+   ],
+   "hang_muc_01a": [
+    12
+   ],
+   "nguon": [
+    "R44",
+    "R47"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "2.1"
   },
@@ -355,16 +564,15 @@
    "ma": "2.2",
    "ten": "Thiết kế quy trình, kiến trúc và cơ sở dữ liệu",
    "muc": 2,
-   "md": 19.0,
-   "so_muc_con": 3,
+   "md": 17.0,
+   "so_muc_con": 4,
    "la": false,
    "cha": "2"
   },
   {
    "ma": "2.2.1",
-   "ten": "Quy trình vận hành mới (New Operational Flow)",
-   "muc": 3,
-   "md": 6,
+   "ten": "Quy trình vận hành mới (New Operational Flow) của kênh bán hàng trực tuyến",
+   "md": 4,
    "loai": "BA",
    "san_pham": "Tài liệu quy trình vận hành mới",
    "phu_thuoc": [
@@ -377,18 +585,18 @@
     "R46",
     "R11"
    ],
+   "muc": 3,
    "la": true,
    "cha": "2.2"
   },
   {
    "ma": "2.2.2",
    "ten": "Kiến trúc hệ thống, hạ tầng và phương án bảo đảm hoạt động liên tục",
-   "muc": 3,
-   "md": 6,
+   "md": 5,
    "loai": "DEV",
    "san_pham": "Tài liệu kiến trúc hệ thống",
    "phu_thuoc": [
-    "2.1.3"
+    "2.1.2"
    ],
    "hang_muc_01a": [
     1
@@ -397,28 +605,50 @@
     "R04",
     "R05"
    ],
+   "muc": 3,
    "la": true,
    "cha": "2.2"
   },
   {
    "ma": "2.2.3",
-   "ten": "Cấu trúc cơ sở dữ liệu (Database Structure) và cấu hình cơ sở dữ liệu (DB Configuration) của Selling DB",
-   "muc": 3,
-   "md": 7,
+   "ten": "Cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+   "md": 5,
    "loai": "DEV",
    "san_pham": "Tài liệu cấu trúc cơ sở dữ liệu Selling DB",
    "phu_thuoc": [
-    "2.1.2",
+    "2.1.3",
+    "2.1.4",
+    "2.1.5",
     "2.2.2"
    ],
    "hang_muc_01a": [
     3
    ],
    "nguon": [
-    "R09",
     "R47",
-    "R44"
+    "R09"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "2.2"
+  },
+  {
+   "ma": "2.2.4",
+   "ten": "Cấu hình cơ sở dữ liệu (DB Configuration) gồm dự phòng, sao lưu và phân quyền truy cập",
+   "md": 3,
+   "loai": "DEVOPS",
+   "san_pham": "Tài liệu cấu hình cơ sở dữ liệu",
+   "phu_thuoc": [
+    "2.2.2"
+   ],
+   "hang_muc_01a": [
+    1
+   ],
+   "nguon": [
+    "R44",
+    "R04"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "2.2"
   },
@@ -426,62 +656,121 @@
    "ma": "2.3",
    "ten": "Thiết kế giao diện",
    "muc": 2,
-   "md": 19.0,
-   "so_muc_con": 3,
+   "md": 21.0,
+   "so_muc_con": 6,
    "la": false,
    "cha": "2"
   },
   {
    "ma": "2.3.1",
    "ten": "Sơ đồ phân cấp menu (Menu Layer)",
-   "muc": 3,
-   "md": 4,
+   "md": 3,
    "loai": "BA",
    "san_pham": "Sơ đồ phân cấp menu",
    "phu_thuoc": [
-    "2.1.2"
+    "2.1.3"
    ],
    "hang_muc_01a": [
     4
    ],
    "nguon": [
-    "R48",
-    "R03"
+    "R48"
    ],
+   "muc": 3,
    "la": true,
    "cha": "2.3"
   },
   {
    "ma": "2.3.2",
-   "ten": "Thiết kế giao diện ưu tiên các màn hình chính",
-   "muc": 3,
-   "md": 8,
+   "ten": "Nghiên cứu hành vi người dùng và khung giao diện các trang chính",
+   "md": 3,
    "loai": "DEV",
-   "san_pham": "Bản thiết kế giao diện ưu tiên",
-   "phu_thuoc": [
-    "2.3.1"
-   ],
+   "san_pham": "Khung giao diện (wireframe) các trang chính",
+   "phu_thuoc": [],
    "hang_muc_01a": [
     4
    ],
    "nguon": [
     "R03"
    ],
+   "muc": 3,
    "la": true,
    "cha": "2.3"
   },
   {
    "ma": "2.3.3",
-   "ten": "Bộ thành phần giao diện dùng chung, tương thích thiết bị di động",
-   "muc": 3,
-   "md": 7,
+   "ten": "Thiết kế giao diện ưu tiên trang chủ, tìm kiếm và chi tiết sản phẩm",
+   "md": 4,
    "loai": "DEV",
-   "san_pham": "Thư viện thành phần giao diện",
+   "san_pham": "Bản thiết kế giao diện ưu tiên nhóm tìm kiếm sản phẩm",
    "phu_thuoc": [
+    "2.3.1",
     "2.3.2"
    ],
    "hang_muc_01a": [
-    4,
+    4
+   ],
+   "nguon": [
+    "R03",
+    "R06"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "2.3"
+  },
+  {
+   "ma": "2.3.4",
+   "ten": "Thiết kế giao diện ưu tiên đăng ký, đăng nhập và trang thành viên",
+   "md": 3,
+   "loai": "DEV",
+   "san_pham": "Bản thiết kế giao diện ưu tiên nhóm thành viên",
+   "phu_thuoc": [
+    "2.3.2",
+    "2.1.4"
+   ],
+   "hang_muc_01a": [
+    4
+   ],
+   "nguon": [
+    "R03",
+    "R07"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "2.3"
+  },
+  {
+   "ma": "2.3.5",
+   "ten": "Thiết kế giao diện ưu tiên giỏ hàng, đặt hàng và theo dõi đơn hàng",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Bản thiết kế giao diện ưu tiên nhóm đặt hàng",
+   "phu_thuoc": [
+    "2.3.2",
+    "2.1.5"
+   ],
+   "hang_muc_01a": [
+    4
+   ],
+   "nguon": [
+    "R03",
+    "R08"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "2.3"
+  },
+  {
+   "ma": "2.3.6",
+   "ten": "Thư viện thành phần giao diện dùng chung, tương thích thiết bị di động",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Thư viện thành phần giao diện",
+   "phu_thuoc": [
+    "2.3.3",
+    "6.1.3"
+   ],
+   "hang_muc_01a": [
     5,
     6,
     7
@@ -489,36 +778,40 @@
    "nguon": [
     "R03"
    ],
+   "muc": 3,
    "la": true,
    "cha": "2.3"
   },
   {
    "ma": "3",
-   "ten": "Phân hệ tìm kiếm sản phẩm (Product Search)",
+   "ten": "Phân hệ tìm kiếm và hiển thị sản phẩm (Product Search)",
    "muc": 1,
-   "md": 41.0,
+   "can_cu_uoc_luong": {
+    "kich_thuoc": "5 chức năng (chỉ mục tìm kiếm, tìm kiếm và gợi ý, lọc và sắp xếp, danh mục và chi tiết sản phẩm, bộ nhớ đệm), 3 màn hình (trang chủ và danh mục, kết quả tìm kiếm, chi tiết sản phẩm), 4 nhóm dịch vụ phía máy chủ",
+    "cach_phan_ra": "Tổng nhóm 95 MD theo tong_theo_nhom của uoc_luong.json. Chia theo tỷ lệ giải pháp, phát triển, kiểm thử của bước 2 (119,6, 285,4, 145,2 MD) và số chức năng, màn hình: phân tích yêu cầu phân hệ tìm kiếm và hiển thị sản phẩm 8 MD (3.1); thiết kế phân hệ tìm kiếm và hiển thị sản phẩm 9 MD (3.2); lập trình và kiểm thử đơn vị phân hệ tìm kiếm và hiển thị sản phẩm 39 MD (3.3); kiểm thử phân hệ tìm kiếm và hiển thị sản phẩm 30 MD (3.4); nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ tìm kiếm và hiển thị sản phẩm 9 MD (3.5)"
+   },
+   "md": 95.0,
    "so_muc_con": 5,
    "la": false,
    "cha": ""
   },
   {
    "ma": "3.1",
-   "ten": "Phân tích yêu cầu phân hệ tìm kiếm",
+   "ten": "Phân tích yêu cầu phân hệ tìm kiếm và hiển thị sản phẩm",
    "muc": 2,
-   "md": 4.0,
-   "so_muc_con": 1,
+   "md": 8.0,
+   "so_muc_con": 2,
    "la": false,
    "cha": "3"
   },
   {
    "ma": "3.1.1",
-   "ten": "Đặc tả use case tìm kiếm, lọc và xem chi tiết sản phẩm",
-   "muc": 3,
-   "md": 4,
+   "ten": "Đặc tả use case tìm kiếm, lọc và sắp xếp sản phẩm",
+   "md": 5,
    "loai": "BA",
-   "san_pham": "Đặc tả use case phân hệ tìm kiếm",
+   "san_pham": "Đặc tả use case tìm kiếm, lọc và sắp xếp",
    "phu_thuoc": [
-    "2.1.2"
+    "2.1.3"
    ],
    "hang_muc_01a": [
     5
@@ -526,58 +819,19 @@
    "nguon": [
     "R06"
    ],
+   "muc": 3,
    "la": true,
    "cha": "3.1"
   },
   {
-   "ma": "3.2",
-   "ten": "Thiết kế phân hệ tìm kiếm",
-   "muc": 2,
-   "md": 4.0,
-   "so_muc_con": 1,
-   "la": false,
-   "cha": "3"
-  },
-  {
-   "ma": "3.2.1",
-   "ten": "Thiết kế chi tiết chức năng tìm kiếm và chỉ mục dữ liệu sản phẩm",
-   "muc": 3,
-   "md": 4,
-   "loai": "DEV",
-   "san_pham": "Thiết kế chi tiết phân hệ tìm kiếm",
+   "ma": "3.1.2",
+   "ten": "Đặc tả use case trang chủ, danh mục và chi tiết sản phẩm",
+   "md": 3,
+   "loai": "BA",
+   "san_pham": "Đặc tả use case trang chủ, danh mục và chi tiết sản phẩm",
    "phu_thuoc": [
-    "3.1.1",
-    "2.2.3"
-   ],
-   "hang_muc_01a": [
-    5
-   ],
-   "nguon": [
-    "R06",
-    "R05"
-   ],
-   "la": true,
-   "cha": "3.2"
-  },
-  {
-   "ma": "3.3",
-   "ten": "Lập trình và kiểm thử đơn vị phân hệ tìm kiếm",
-   "muc": 2,
-   "md": 26.0,
-   "so_muc_con": 4,
-   "la": false,
-   "cha": "3"
-  },
-  {
-   "ma": "3.3.1",
-   "ten": "Trang chủ và điều hướng danh mục theo Menu Layer",
-   "muc": 3,
-   "md": 6,
-   "loai": "DEV",
-   "san_pham": "Trang chủ và điều hướng danh mục đã kiểm thử đơn vị",
-   "phu_thuoc": [
-    "3.2.1",
-    "2.3.3"
+    "2.1.3",
+    "2.3.1"
    ],
    "hang_muc_01a": [
     5
@@ -586,19 +840,50 @@
     "R06",
     "R48"
    ],
+   "muc": 3,
    "la": true,
-   "cha": "3.3"
+   "cha": "3.1"
   },
   {
-   "ma": "3.3.2",
-   "ten": "Dịch vụ tìm kiếm, lọc và sắp xếp sản phẩm",
-   "muc": 3,
-   "md": 8,
+   "ma": "3.2",
+   "ten": "Thiết kế phân hệ tìm kiếm và hiển thị sản phẩm",
+   "muc": 2,
+   "md": 9.0,
+   "so_muc_con": 2,
+   "la": false,
+   "cha": "3"
+  },
+  {
+   "ma": "3.2.1",
+   "ten": "Thiết kế chi tiết tìm kiếm, lọc, sắp xếp và chỉ mục tìm kiếm",
+   "md": 5,
    "loai": "DEV",
-   "san_pham": "Dịch vụ tìm kiếm đã kiểm thử đơn vị",
+   "san_pham": "Thiết kế chi tiết chức năng tìm kiếm",
    "phu_thuoc": [
-    "3.2.1",
-    "6.1.1"
+    "2.1.3",
+    "2.2.3"
+   ],
+   "hang_muc_01a": [
+    5
+   ],
+   "nguon": [
+    "R06",
+    "R05"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "3.2"
+  },
+  {
+   "ma": "3.2.2",
+   "ten": "Thiết kế chi tiết trang chủ, danh mục và chi tiết sản phẩm",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Thiết kế chi tiết chức năng hiển thị sản phẩm",
+   "phu_thuoc": [
+    "2.1.3",
+    "2.3.1",
+    "2.2.3"
    ],
    "hang_muc_01a": [
     5
@@ -606,19 +891,132 @@
    "nguon": [
     "R06"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "3.2"
+  },
+  {
+   "ma": "3.3",
+   "ten": "Lập trình và kiểm thử đơn vị phân hệ tìm kiếm và hiển thị sản phẩm",
+   "muc": 2,
+   "md": 39.0,
+   "so_muc_con": 8,
+   "la": false,
+   "cha": "3"
+  },
+  {
+   "ma": "3.3.1",
+   "ten": "Dịch vụ chỉ mục tìm kiếm và cập nhật chỉ mục từ Selling DB",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Dịch vụ chỉ mục tìm kiếm đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "3.2.1",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    5
+   ],
+   "nguon": [
+    "R06",
+    "R05"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "3.3"
+  },
+  {
+   "ma": "3.3.2",
+   "ten": "Dịch vụ tìm kiếm theo từ khóa và gợi ý tìm kiếm",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Dịch vụ tìm kiếm đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "3.2.1",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    5
+   ],
+   "nguon": [
+    "R06"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "3.3"
   },
   {
    "ma": "3.3.3",
-   "ten": "Giao diện kết quả tìm kiếm và chi tiết sản phẩm",
-   "muc": 3,
-   "md": 8,
+   "ten": "Dịch vụ lọc và sắp xếp kết quả tìm kiếm",
+   "md": 5,
    "loai": "DEV",
-   "san_pham": "Màn hình kết quả tìm kiếm và chi tiết sản phẩm đạt kiểm thử đơn vị, đã tích hợp vào nhánh chính",
+   "san_pham": "Dịch vụ lọc, sắp xếp đạt kiểm thử đơn vị",
    "phu_thuoc": [
-    "3.3.2",
-    "2.3.3"
+    "3.2.1",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    5
+   ],
+   "nguon": [
+    "R06"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "3.3"
+  },
+  {
+   "ma": "3.3.4",
+   "ten": "Dịch vụ danh mục, chi tiết sản phẩm, biến thể, tồn kho và giá khuyến mại hiển thị",
+   "md": 6,
+   "loai": "DEV",
+   "san_pham": "Dịch vụ danh mục và chi tiết sản phẩm đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "3.2.2",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    5
+   ],
+   "nguon": [
+    "R06",
+    "NV03"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "3.3"
+  },
+  {
+   "ma": "3.3.5",
+   "ten": "Giao diện trang chủ và điều hướng danh mục theo Menu Layer",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Trang chủ và điều hướng danh mục đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "3.2.2",
+    "2.3.6"
+   ],
+   "hang_muc_01a": [
+    5
+   ],
+   "nguon": [
+    "R06",
+    "R48",
+    "R03"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "3.3"
+  },
+  {
+   "ma": "3.3.6",
+   "ten": "Giao diện tìm kiếm, kết quả và bộ lọc",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Màn hình tìm kiếm đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "3.2.1",
+    "2.3.6"
    ],
    "hang_muc_01a": [
     5
@@ -627,18 +1025,39 @@
     "R06",
     "R03"
    ],
+   "muc": 3,
    "la": true,
    "cha": "3.3"
   },
   {
-   "ma": "3.3.4",
-   "ten": "Tối ưu thời gian phản hồi tìm kiếm",
+   "ma": "3.3.7",
+   "ten": "Giao diện chi tiết sản phẩm",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Màn hình chi tiết sản phẩm đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "3.2.2",
+    "2.3.6"
+   ],
+   "hang_muc_01a": [
+    5
+   ],
+   "nguon": [
+    "R06",
+    "R03"
+   ],
    "muc": 3,
+   "la": true,
+   "cha": "3.3"
+  },
+  {
+   "ma": "3.3.8",
+   "ten": "Bộ nhớ đệm và tối ưu thời gian phản hồi trang danh mục, chi tiết sản phẩm",
    "md": 4,
    "loai": "DEV",
-   "san_pham": "Báo cáo đo thời gian phản hồi tìm kiếm",
+   "san_pham": "Báo cáo đo thời gian phản hồi trang danh mục, chi tiết sản phẩm",
    "phu_thuoc": [
-    "3.3.2"
+    "3.3.4"
    ],
    "hang_muc_01a": [
     5
@@ -646,29 +1065,28 @@
    "nguon": [
     "R05"
    ],
+   "muc": 3,
    "la": true,
    "cha": "3.3"
   },
   {
    "ma": "3.4",
-   "ten": "Kiểm thử phân hệ tìm kiếm",
+   "ten": "Kiểm thử phân hệ tìm kiếm và hiển thị sản phẩm",
    "muc": 2,
-   "md": 5.0,
-   "so_muc_con": 1,
+   "md": 30.0,
+   "so_muc_con": 6,
    "la": false,
    "cha": "3"
   },
   {
    "ma": "3.4.1",
-   "ten": "Kịch bản và kiểm thử phân hệ tìm kiếm sản phẩm",
-   "muc": 3,
-   "md": 5,
+   "ten": "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ tìm kiếm và hiển thị sản phẩm",
+   "md": 6,
    "loai": "QA",
-   "san_pham": "Kịch bản và báo cáo kiểm thử phân hệ tìm kiếm",
+   "san_pham": "Kịch bản và bộ kiểm thử tự động phân hệ",
    "phu_thuoc": [
-    "3.3.1",
-    "3.3.3",
-    "3.3.4"
+    "3.1.1",
+    "3.1.2"
    ],
    "hang_muc_01a": [
     5
@@ -676,27 +1094,140 @@
    "nguon": [
     "R06"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "3.4"
+  },
+  {
+   "ma": "3.4.2",
+   "ten": "Kiểm thử tìm kiếm, lọc và sắp xếp sản phẩm",
+   "md": 7,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử tìm kiếm, lọc và sắp xếp",
+   "phu_thuoc": [
+    "3.4.1",
+    "3.3.1",
+    "3.3.2",
+    "3.3.3",
+    "3.3.6"
+   ],
+   "hang_muc_01a": [
+    5
+   ],
+   "nguon": [
+    "R06"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "3.4"
+  },
+  {
+   "ma": "3.4.3",
+   "ten": "Kiểm thử trang chủ, danh mục và chi tiết sản phẩm",
+   "md": 6,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử trang chủ, danh mục và chi tiết sản phẩm",
+   "phu_thuoc": [
+    "3.4.1",
+    "3.3.4",
+    "3.3.5",
+    "3.3.7",
+    "3.3.8"
+   ],
+   "hang_muc_01a": [
+    5
+   ],
+   "nguon": [
+    "R06",
+    "R05"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "3.4"
+  },
+  {
+   "ma": "3.4.4",
+   "ten": "Sửa lỗi và kiểm thử lại chức năng tìm kiếm, lọc và sắp xếp",
+   "md": 3,
+   "loai": "DEV",
+   "san_pham": "Chức năng tìm kiếm đã khắc phục lỗi kiểm thử phân hệ",
+   "phu_thuoc": [
+    "3.4.2"
+   ],
+   "hang_muc_01a": [
+    5
+   ],
+   "nguon": [
+    "R06",
+    "R42"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "3.4"
+  },
+  {
+   "ma": "3.4.5",
+   "ten": "Kiểm thử tương thích trình duyệt, thiết bị di động và thời gian phản hồi phân hệ tìm kiếm và hiển thị sản phẩm",
+   "md": 5,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử tương thích và thời gian phản hồi",
+   "phu_thuoc": [
+    "3.4.1",
+    "3.3.5",
+    "3.3.6",
+    "3.3.7",
+    "3.3.8"
+   ],
+   "hang_muc_01a": [
+    5
+   ],
+   "nguon": [
+    "R03",
+    "R05"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "3.4"
+  },
+  {
+   "ma": "3.4.6",
+   "ten": "Sửa lỗi và kiểm thử lại trang chủ, danh mục và chi tiết sản phẩm",
+   "md": 3,
+   "loai": "DEV",
+   "san_pham": "Chức năng hiển thị sản phẩm đã khắc phục lỗi kiểm thử phân hệ",
+   "phu_thuoc": [
+    "3.4.3",
+    "3.4.5"
+   ],
+   "hang_muc_01a": [
+    5
+   ],
+   "nguon": [
+    "R06",
+    "R42"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "3.4"
   },
   {
    "ma": "3.5",
-   "ten": "Tài liệu và nghiệm thu nội bộ phân hệ tìm kiếm",
+   "ten": "Nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ tìm kiếm và hiển thị sản phẩm",
    "muc": 2,
-   "md": 2.0,
-   "so_muc_con": 1,
+   "md": 9.0,
+   "so_muc_con": 2,
    "la": false,
    "cha": "3"
   },
   {
    "ma": "3.5.1",
-   "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ tìm kiếm",
-   "muc": 3,
-   "md": 2,
+   "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ tìm kiếm và hiển thị sản phẩm",
+   "md": 3,
    "loai": "BA",
-   "san_pham": "Tài liệu chức năng và biên bản nghiệm thu nội bộ phân hệ tìm kiếm",
+   "san_pham": "Tài liệu chức năng và biên bản nghiệm thu nội bộ phân hệ",
    "phu_thuoc": [
-    "3.4.1"
+    "3.4.4",
+    "3.4.6"
    ],
    "hang_muc_01a": [
     5
@@ -704,14 +1235,40 @@
    "nguon": [
     "R06"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "3.5"
+  },
+  {
+   "ma": "3.5.2",
+   "ten": "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ tìm kiếm và hiển thị sản phẩm",
+   "md": 6,
+   "loai": "DEV",
+   "san_pham": "Phiên bản phân hệ đã khắc phục lỗi kiểm thử chấp nhận",
+   "phu_thuoc": [
+    "7.2.4"
+   ],
+   "hang_muc_01a": [
+    11
+   ],
+   "nguon": [
+    "R06",
+    "R42",
+    "R13"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "3.5"
   },
   {
    "ma": "4",
-   "ten": "Phân hệ quản lý thành viên (Member Administration)",
+   "ten": "Phân hệ thành viên (Member Administration)",
    "muc": 1,
-   "md": 38.0,
+   "can_cu_uoc_luong": {
+    "kich_thuoc": "6 chức năng (đăng ký và xác thực thư điện tử, đăng nhập và phiên làm việc, khôi phục và đổi mật khẩu, thông tin thành viên và sổ địa chỉ, đồng ý điều khoản và bảo vệ dữ liệu cá nhân, bảo mật tài khoản), 2 nhóm màn hình",
+    "cach_phan_ra": "Tổng nhóm 91 MD theo tong_theo_nhom của uoc_luong.json. Chia theo tỷ lệ giải pháp, phát triển, kiểm thử của bước 2 và số chức năng. Đăng nhập và màn hình đăng ký, đăng nhập lớn nhất vì gồm phiên làm việc, giới hạn đăng nhập sai và kiểm soát dữ liệu đầu vào theo chỉ tiêu KT04: phân tích yêu cầu phân hệ thành viên 8 MD (4.1); thiết kế phân hệ thành viên 8 MD (4.2); lập trình và kiểm thử đơn vị phân hệ thành viên 35 MD (4.3); kiểm thử phân hệ thành viên 32 MD (4.4); nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ thành viên 8 MD (4.5)"
+   },
+   "md": 91.0,
    "so_muc_con": 5,
    "la": false,
    "cha": ""
@@ -720,20 +1277,19 @@
    "ma": "4.1",
    "ten": "Phân tích yêu cầu phân hệ thành viên",
    "muc": 2,
-   "md": 4.0,
-   "so_muc_con": 1,
+   "md": 8.0,
+   "so_muc_con": 2,
    "la": false,
    "cha": "4"
   },
   {
    "ma": "4.1.1",
-   "ten": "Đặc tả use case đăng ký, đăng nhập và quản lý thông tin thành viên",
-   "muc": 3,
-   "md": 4,
+   "ten": "Đặc tả use case đăng ký, xác thực thư điện tử, đăng nhập và khôi phục mật khẩu",
+   "md": 5,
    "loai": "BA",
-   "san_pham": "Đặc tả use case phân hệ thành viên",
+   "san_pham": "Đặc tả use case đăng ký và đăng nhập",
    "phu_thuoc": [
-    "2.1.2"
+    "2.1.4"
    ],
    "hang_muc_01a": [
     6
@@ -741,77 +1297,18 @@
    "nguon": [
     "R07"
    ],
+   "muc": 3,
    "la": true,
    "cha": "4.1"
   },
   {
-   "ma": "4.2",
-   "ten": "Thiết kế phân hệ thành viên",
-   "muc": 2,
-   "md": 4.0,
-   "so_muc_con": 1,
-   "la": false,
-   "cha": "4"
-  },
-  {
-   "ma": "4.2.1",
-   "ten": "Thiết kế chi tiết chức năng thành viên và bảo mật tài khoản",
-   "muc": 3,
-   "md": 4,
-   "loai": "DEV",
-   "san_pham": "Thiết kế chi tiết phân hệ thành viên",
+   "ma": "4.1.2",
+   "ten": "Đặc tả use case thông tin thành viên, sổ địa chỉ giao hàng và đổi mật khẩu",
+   "md": 3,
+   "loai": "BA",
+   "san_pham": "Đặc tả use case thông tin thành viên",
    "phu_thuoc": [
-    "4.1.1",
-    "2.2.3"
-   ],
-   "hang_muc_01a": [
-    6
-   ],
-   "nguon": [
-    "R07"
-   ],
-   "la": true,
-   "cha": "4.2"
-  },
-  {
-   "ma": "4.3",
-   "ten": "Lập trình và kiểm thử đơn vị phân hệ thành viên",
-   "muc": 2,
-   "md": 23.0,
-   "so_muc_con": 3,
-   "la": false,
-   "cha": "4"
-  },
-  {
-   "ma": "4.3.1",
-   "ten": "Dịch vụ đăng ký, đăng nhập, xác thực và khôi phục mật khẩu",
-   "muc": 3,
-   "md": 9,
-   "loai": "DEV",
-   "san_pham": "Dịch vụ xác thực thành viên đã kiểm thử đơn vị",
-   "phu_thuoc": [
-    "4.2.1",
-    "6.1.1"
-   ],
-   "hang_muc_01a": [
-    6
-   ],
-   "nguon": [
-    "R07"
-   ],
-   "la": true,
-   "cha": "4.3"
-  },
-  {
-   "ma": "4.3.2",
-   "ten": "Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
-   "muc": 3,
-   "md": 6,
-   "loai": "DEV",
-   "san_pham": "Dịch vụ thông tin thành viên đã kiểm thử đơn vị",
-   "phu_thuoc": [
-    "4.2.1",
-    "6.1.1"
+    "2.1.4"
    ],
    "hang_muc_01a": [
     6
@@ -820,19 +1317,178 @@
     "R07",
     "R11"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.1"
+  },
+  {
+   "ma": "4.2",
+   "ten": "Thiết kế phân hệ thành viên",
+   "muc": 2,
+   "md": 8.0,
+   "so_muc_con": 2,
+   "la": false,
+   "cha": "4"
+  },
+  {
+   "ma": "4.2.1",
+   "ten": "Thiết kế chi tiết đăng ký, đăng nhập, phiên làm việc và bảo mật tài khoản",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Thiết kế chi tiết chức năng đăng ký và đăng nhập",
+   "phu_thuoc": [
+    "2.1.4",
+    "2.2.3"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.2"
+  },
+  {
+   "ma": "4.2.2",
+   "ten": "Thiết kế chi tiết thông tin thành viên và sổ địa chỉ",
+   "md": 3,
+   "loai": "DEV",
+   "san_pham": "Thiết kế chi tiết chức năng thông tin thành viên",
+   "phu_thuoc": [
+    "2.1.4",
+    "2.2.3"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.2"
+  },
+  {
+   "ma": "4.3",
+   "ten": "Lập trình và kiểm thử đơn vị phân hệ thành viên",
+   "muc": 2,
+   "md": 35.0,
+   "so_muc_con": 7,
+   "la": false,
+   "cha": "4"
+  },
+  {
+   "ma": "4.3.1",
+   "ten": "Dịch vụ đăng ký thành viên và xác thực địa chỉ thư điện tử",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Dịch vụ đăng ký đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "4.2.1",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.3"
+  },
+  {
+   "ma": "4.3.2",
+   "ten": "Dịch vụ đăng nhập, phiên làm việc và giới hạn đăng nhập sai",
+   "md": 6,
+   "loai": "DEV",
+   "san_pham": "Dịch vụ đăng nhập đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "4.2.1",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "4.3"
   },
   {
    "ma": "4.3.3",
-   "ten": "Giao diện đăng ký, đăng nhập và trang thành viên",
-   "muc": 3,
-   "md": 8,
+   "ten": "Dịch vụ khôi phục và đổi mật khẩu",
+   "md": 4,
    "loai": "DEV",
-   "san_pham": "Màn hình đăng ký, đăng nhập và trang thành viên đạt kiểm thử đơn vị, đã tích hợp vào nhánh chính",
+   "san_pham": "Dịch vụ khôi phục mật khẩu đạt kiểm thử đơn vị",
    "phu_thuoc": [
-    "4.3.1",
-    "2.3.3"
+    "4.2.1",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.3"
+  },
+  {
+   "ma": "4.3.4",
+   "ten": "Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Dịch vụ thông tin thành viên đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "4.2.2",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07",
+    "R11"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.3"
+  },
+  {
+   "ma": "4.3.5",
+   "ten": "Dịch vụ đồng ý điều khoản và bảo vệ dữ liệu cá nhân của thành viên",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Dịch vụ đồng ý điều khoản đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "4.2.2",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.3"
+  },
+  {
+   "ma": "4.3.6",
+   "ten": "Giao diện đăng ký, đăng nhập và khôi phục mật khẩu",
+   "md": 6,
+   "loai": "DEV",
+   "san_pham": "Màn hình đăng ký, đăng nhập đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "4.2.1",
+    "2.3.6"
    ],
    "hang_muc_01a": [
     6
@@ -841,6 +1497,28 @@
     "R07",
     "R03"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.3"
+  },
+  {
+   "ma": "4.3.7",
+   "ten": "Giao diện trang thành viên và sổ địa chỉ",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Màn hình trang thành viên đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "4.2.2",
+    "2.3.6"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07",
+    "R03"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "4.3"
   },
@@ -848,21 +1526,20 @@
    "ma": "4.4",
    "ten": "Kiểm thử phân hệ thành viên",
    "muc": 2,
-   "md": 5.0,
-   "so_muc_con": 1,
+   "md": 32.0,
+   "so_muc_con": 6,
    "la": false,
    "cha": "4"
   },
   {
    "ma": "4.4.1",
-   "ten": "Kịch bản và kiểm thử phân hệ quản lý thành viên",
-   "muc": 3,
-   "md": 5,
+   "ten": "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ thành viên",
+   "md": 6,
    "loai": "QA",
-   "san_pham": "Kịch bản và báo cáo kiểm thử phân hệ thành viên",
+   "san_pham": "Kịch bản và bộ kiểm thử tự động phân hệ",
    "phu_thuoc": [
-    "4.3.2",
-    "4.3.3"
+    "4.1.1",
+    "4.1.2"
    ],
    "hang_muc_01a": [
     6
@@ -870,27 +1547,138 @@
    "nguon": [
     "R07"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.4"
+  },
+  {
+   "ma": "4.4.2",
+   "ten": "Kiểm thử đăng ký, đăng nhập và khôi phục mật khẩu",
+   "md": 7,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử đăng ký, đăng nhập",
+   "phu_thuoc": [
+    "4.4.1",
+    "4.3.1",
+    "4.3.2",
+    "4.3.3",
+    "4.3.6"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.4"
+  },
+  {
+   "ma": "4.4.3",
+   "ten": "Kiểm thử thông tin thành viên, sổ địa chỉ và đồng ý điều khoản",
+   "md": 6,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử thông tin thành viên",
+   "phu_thuoc": [
+    "4.4.1",
+    "4.3.4",
+    "4.3.5",
+    "4.3.7"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.4"
+  },
+  {
+   "ma": "4.4.4",
+   "ten": "Sửa lỗi và kiểm thử lại đăng ký, đăng nhập và bảo mật tài khoản",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Chức năng đăng ký, đăng nhập đã khắc phục lỗi kiểm thử phân hệ",
+   "phu_thuoc": [
+    "4.4.2",
+    "4.4.5"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07",
+    "R42"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.4"
+  },
+  {
+   "ma": "4.4.5",
+   "ten": "Kiểm thử bảo mật tài khoản theo OWASP Top 10 và tương thích thiết bị phân hệ thành viên",
+   "md": 6,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử bảo mật tài khoản và tương thích",
+   "phu_thuoc": [
+    "4.4.1",
+    "4.3.1",
+    "4.3.2",
+    "4.3.3",
+    "4.3.6"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07",
+    "R03"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.4"
+  },
+  {
+   "ma": "4.4.6",
+   "ten": "Sửa lỗi và kiểm thử lại thông tin thành viên và sổ địa chỉ",
+   "md": 3,
+   "loai": "DEV",
+   "san_pham": "Chức năng thông tin thành viên đã khắc phục lỗi kiểm thử phân hệ",
+   "phu_thuoc": [
+    "4.4.3"
+   ],
+   "hang_muc_01a": [
+    6
+   ],
+   "nguon": [
+    "R07",
+    "R42"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "4.4"
   },
   {
    "ma": "4.5",
-   "ten": "Tài liệu và nghiệm thu nội bộ phân hệ thành viên",
+   "ten": "Nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ thành viên",
    "muc": 2,
-   "md": 2.0,
-   "so_muc_con": 1,
+   "md": 8.0,
+   "so_muc_con": 2,
    "la": false,
    "cha": "4"
   },
   {
    "ma": "4.5.1",
    "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ thành viên",
-   "muc": 3,
-   "md": 2,
+   "md": 3,
    "loai": "BA",
-   "san_pham": "Tài liệu chức năng và biên bản nghiệm thu nội bộ phân hệ thành viên",
+   "san_pham": "Tài liệu chức năng và biên bản nghiệm thu nội bộ phân hệ",
    "phu_thuoc": [
-    "4.4.1"
+    "4.4.4",
+    "4.4.6"
    ],
    "hang_muc_01a": [
     6
@@ -898,6 +1686,28 @@
    "nguon": [
     "R07"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "4.5"
+  },
+  {
+   "ma": "4.5.2",
+   "ten": "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ thành viên",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Phiên bản phân hệ đã khắc phục lỗi kiểm thử chấp nhận",
+   "phu_thuoc": [
+    "7.2.4"
+   ],
+   "hang_muc_01a": [
+    11
+   ],
+   "nguon": [
+    "R07",
+    "R42",
+    "R13"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "4.5"
   },
@@ -905,7 +1715,11 @@
    "ma": "5",
    "ten": "Phân hệ đặt hàng (Order)",
    "muc": 1,
-   "md": 49.0,
+   "can_cu_uoc_luong": {
+    "kich_thuoc": "7 chức năng (giỏ hàng, giữ tồn, phí vận chuyển, khuyến mại và mã giảm giá, đặt hàng và xác nhận, theo dõi và hủy đơn, đổi trả và hoàn tiền), 3 nhóm màn hình",
+    "cach_phan_ra": "Tổng nhóm 129 MD theo tong_theo_nhom của uoc_luong.json. Phân hệ lớn nhất vì gồm năm nghiệp vụ NV01 đến NV05. Chia theo tỷ lệ giải pháp, phát triển, kiểm thử của bước 2 và số chức năng, đặt hàng và màn hình đặt hàng lớn nhất vì liên kết giỏ hàng, giữ tồn, phí vận chuyển, khuyến mại và thư điện tử xác nhận: phân tích yêu cầu phân hệ đặt hàng 11 MD (5.1); thiết kế phân hệ đặt hàng 12 MD (5.2); lập trình và kiểm thử đơn vị phân hệ đặt hàng 53 MD (5.3); kiểm thử phân hệ đặt hàng 42 MD (5.4); nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ đặt hàng 11 MD (5.5)"
+   },
+   "md": 129.0,
    "so_muc_con": 5,
    "la": false,
    "cha": ""
@@ -914,27 +1728,71 @@
    "ma": "5.1",
    "ten": "Phân tích yêu cầu phân hệ đặt hàng",
    "muc": 2,
-   "md": 5.0,
-   "so_muc_con": 1,
+   "md": 11.0,
+   "so_muc_con": 3,
    "la": false,
    "cha": "5"
   },
   {
    "ma": "5.1.1",
-   "ten": "Đặc tả use case giỏ hàng, đặt hàng và theo dõi đơn hàng",
-   "muc": 3,
-   "md": 5,
+   "ten": "Đặc tả use case giỏ hàng và giữ tồn kho khi đặt hàng",
+   "md": 3,
    "loai": "BA",
-   "san_pham": "Đặc tả use case phân hệ đặt hàng",
+   "san_pham": "Đặc tả use case giỏ hàng, giữ tồn",
    "phu_thuoc": [
-    "2.1.2"
+    "2.1.5"
    ],
    "hang_muc_01a": [
     7
    ],
    "nguon": [
-    "R08"
+    "R08",
+    "NV05"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.1"
+  },
+  {
+   "ma": "5.1.2",
+   "ten": "Đặc tả use case đặt hàng, phí vận chuyển, mã giảm giá và xác nhận đơn",
+   "md": 4,
+   "loai": "BA",
+   "san_pham": "Đặc tả use case đặt hàng",
+   "phu_thuoc": [
+    "2.1.5"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "NV03",
+    "NV04"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.1"
+  },
+  {
+   "ma": "5.1.3",
+   "ten": "Đặc tả use case theo dõi đơn hàng, hủy đơn, đổi trả và hoàn tiền",
+   "md": 4,
+   "loai": "BA",
+   "san_pham": "Đặc tả use case theo dõi, hủy đơn, đổi trả",
+   "phu_thuoc": [
+    "2.1.5"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "R11",
+    "NV01",
+    "NV02"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "5.1"
   },
@@ -942,28 +1800,73 @@
    "ma": "5.2",
    "ten": "Thiết kế phân hệ đặt hàng",
    "muc": 2,
-   "md": 5.0,
-   "so_muc_con": 1,
+   "md": 12.0,
+   "so_muc_con": 3,
    "la": false,
    "cha": "5"
   },
   {
    "ma": "5.2.1",
-   "ten": "Thiết kế chi tiết quy trình đặt hàng và trạng thái đơn hàng",
-   "muc": 3,
-   "md": 5,
+   "ten": "Thiết kế chi tiết giỏ hàng và giữ tồn kho",
+   "md": 4,
    "loai": "DEV",
-   "san_pham": "Thiết kế chi tiết phân hệ đặt hàng",
+   "san_pham": "Thiết kế chi tiết giỏ hàng, giữ tồn",
    "phu_thuoc": [
-    "5.1.1",
+    "2.1.5",
     "2.2.3"
    ],
    "hang_muc_01a": [
     7
    ],
    "nguon": [
-    "R08"
+    "R08",
+    "NV05"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.2"
+  },
+  {
+   "ma": "5.2.2",
+   "ten": "Thiết kế chi tiết đặt hàng, phí vận chuyển và khuyến mại",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Thiết kế chi tiết đặt hàng",
+   "phu_thuoc": [
+    "2.1.5",
+    "2.2.3"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "NV03",
+    "NV04"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.2"
+  },
+  {
+   "ma": "5.2.3",
+   "ten": "Thiết kế chi tiết trạng thái đơn hàng, hủy đơn và đổi trả",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Thiết kế chi tiết theo dõi, hủy đơn, đổi trả",
+   "phu_thuoc": [
+    "2.1.5",
+    "2.2.3"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "NV01",
+    "NV02"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "5.2"
   },
@@ -971,21 +1874,20 @@
    "ma": "5.3",
    "ten": "Lập trình và kiểm thử đơn vị phân hệ đặt hàng",
    "muc": 2,
-   "md": 31.0,
-   "so_muc_con": 4,
+   "md": 53.0,
+   "so_muc_con": 10,
    "la": false,
    "cha": "5"
   },
   {
    "ma": "5.3.1",
    "ten": "Dịch vụ giỏ hàng",
-   "muc": 3,
-   "md": 6,
+   "md": 5,
    "loai": "DEV",
-   "san_pham": "Dịch vụ giỏ hàng đã kiểm thử đơn vị",
+   "san_pham": "Dịch vụ giỏ hàng đạt kiểm thử đơn vị",
    "phu_thuoc": [
     "5.2.1",
-    "6.1.1"
+    "6.1.2"
    ],
    "hang_muc_01a": [
     7
@@ -993,59 +1895,144 @@
    "nguon": [
     "R08"
    ],
+   "muc": 3,
    "la": true,
    "cha": "5.3"
   },
   {
    "ma": "5.3.2",
-   "ten": "Dịch vụ đặt hàng và xác nhận đơn hàng",
-   "muc": 3,
-   "md": 9,
+   "ten": "Dịch vụ giữ tồn kho tạm thời khi đặt hàng và giải phóng tồn",
+   "md": 5,
    "loai": "DEV",
-   "san_pham": "Dịch vụ đặt hàng đã kiểm thử đơn vị",
+   "san_pham": "Dịch vụ giữ tồn đạt kiểm thử đơn vị",
    "phu_thuoc": [
-    "5.3.1",
-    "4.2.1"
-   ],
-   "hang_muc_01a": [
-    7
-   ],
-   "nguon": [
-    "R08"
-   ],
-   "la": true,
-   "cha": "5.3"
-  },
-  {
-   "ma": "5.3.3",
-   "ten": "Dịch vụ lịch sử và trạng thái đơn hàng của thành viên",
-   "muc": 3,
-   "md": 6,
-   "loai": "DEV",
-   "san_pham": "Dịch vụ lịch sử đơn hàng đã kiểm thử đơn vị",
-   "phu_thuoc": [
-    "5.3.2"
+    "5.2.1",
+    "6.1.2"
    ],
    "hang_muc_01a": [
     7
    ],
    "nguon": [
     "R08",
-    "R11"
+    "NV05"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.3"
+  },
+  {
+   "ma": "5.3.3",
+   "ten": "Dịch vụ tính phí vận chuyển",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Dịch vụ phí vận chuyển đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.2.2",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "NV04"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "5.3"
   },
   {
    "ma": "5.3.4",
-   "ten": "Giao diện giỏ hàng, đặt hàng và theo dõi đơn hàng",
-   "muc": 3,
-   "md": 10,
+   "ten": "Dịch vụ khuyến mại và mã giảm giá",
+   "md": 5,
    "loai": "DEV",
-   "san_pham": "Màn hình giỏ hàng, đặt hàng và theo dõi đơn hàng đạt kiểm thử đơn vị, đã tích hợp vào nhánh chính",
+   "san_pham": "Dịch vụ khuyến mại đạt kiểm thử đơn vị",
    "phu_thuoc": [
-    "5.3.1",
-    "2.3.3"
+    "5.2.2",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "NV03"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.3"
+  },
+  {
+   "ma": "5.3.5",
+   "ten": "Dịch vụ đặt hàng, xác nhận đơn và thư điện tử xác nhận",
+   "md": 6,
+   "loai": "DEV",
+   "san_pham": "Dịch vụ đặt hàng đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.2.2",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.3"
+  },
+  {
+   "ma": "5.3.6",
+   "ten": "Dịch vụ lịch sử, trạng thái đơn hàng và hủy đơn",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Dịch vụ theo dõi và hủy đơn đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.2.3",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "NV01"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.3"
+  },
+  {
+   "ma": "5.3.7",
+   "ten": "Dịch vụ yêu cầu đổi trả và hoàn tiền",
+   "md": 6,
+   "loai": "DEV",
+   "san_pham": "Dịch vụ đổi trả đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.2.3",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "NV02"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.3"
+  },
+  {
+   "ma": "5.3.8",
+   "ten": "Giao diện giỏ hàng",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Màn hình giỏ hàng đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.2.1",
+    "2.3.6"
    ],
    "hang_muc_01a": [
     7
@@ -1054,6 +2041,49 @@
     "R08",
     "R03"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.3"
+  },
+  {
+   "ma": "5.3.9",
+   "ten": "Giao diện đặt hàng gồm địa chỉ, phí vận chuyển, mã giảm giá và xác nhận",
+   "md": 6,
+   "loai": "DEV",
+   "san_pham": "Màn hình đặt hàng đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.2.2",
+    "2.3.6"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "R03"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.3"
+  },
+  {
+   "ma": "5.3.10",
+   "ten": "Giao diện theo dõi đơn hàng, hủy đơn và đổi trả",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Màn hình theo dõi đơn hàng đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.2.3",
+    "2.3.6"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "R03"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "5.3"
   },
@@ -1061,22 +2091,21 @@
    "ma": "5.4",
    "ten": "Kiểm thử phân hệ đặt hàng",
    "muc": 2,
-   "md": 6.0,
-   "so_muc_con": 1,
+   "md": 42.0,
+   "so_muc_con": 8,
    "la": false,
    "cha": "5"
   },
   {
    "ma": "5.4.1",
-   "ten": "Kịch bản và kiểm thử phân hệ đặt hàng",
-   "muc": 3,
-   "md": 6,
+   "ten": "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ đặt hàng",
+   "md": 7,
    "loai": "QA",
-   "san_pham": "Kịch bản và báo cáo kiểm thử phân hệ đặt hàng",
+   "san_pham": "Kịch bản và bộ kiểm thử tự động phân hệ",
    "phu_thuoc": [
-    "5.3.3",
-    "5.3.4",
-    "4.3.1"
+    "5.1.1",
+    "5.1.2",
+    "5.1.3"
    ],
    "hang_muc_01a": [
     7
@@ -1084,27 +2113,187 @@
    "nguon": [
     "R08"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.4"
+  },
+  {
+   "ma": "5.4.2",
+   "ten": "Kiểm thử giỏ hàng và giữ tồn kho",
+   "md": 6,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử giỏ hàng, giữ tồn",
+   "phu_thuoc": [
+    "5.4.1",
+    "5.3.1",
+    "5.3.2",
+    "5.3.8"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "NV05"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.4"
+  },
+  {
+   "ma": "5.4.3",
+   "ten": "Kiểm thử đặt hàng, phí vận chuyển và khuyến mại",
+   "md": 9,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử đặt hàng",
+   "phu_thuoc": [
+    "5.4.1",
+    "5.3.3",
+    "5.3.4",
+    "5.3.5",
+    "5.3.9"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "NV03",
+    "NV04"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.4"
+  },
+  {
+   "ma": "5.4.4",
+   "ten": "Kiểm thử theo dõi đơn hàng, hủy đơn và đổi trả",
+   "md": 6,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử theo dõi, hủy đơn, đổi trả",
+   "phu_thuoc": [
+    "5.4.1",
+    "5.3.6",
+    "5.3.7",
+    "5.3.10"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "NV01",
+    "NV02"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.4"
+  },
+  {
+   "ma": "5.4.5",
+   "ten": "Sửa lỗi và kiểm thử lại giỏ hàng và giữ tồn kho",
+   "md": 2,
+   "loai": "DEV",
+   "san_pham": "Chức năng giỏ hàng đã khắc phục lỗi kiểm thử phân hệ",
+   "phu_thuoc": [
+    "5.4.2"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "R42"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.4"
+  },
+  {
+   "ma": "5.4.6",
+   "ten": "Kiểm thử luồng đặt hàng đầu cuối của phân hệ với dữ liệu biên và đồng thời",
+   "md": 6,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử luồng đặt hàng đầu cuối của phân hệ",
+   "phu_thuoc": [
+    "5.4.1",
+    "5.3.2",
+    "5.3.5",
+    "5.3.6",
+    "5.3.9"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "NV01",
+    "NV05"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.4"
+  },
+  {
+   "ma": "5.4.7",
+   "ten": "Sửa lỗi và kiểm thử lại đặt hàng, phí vận chuyển và khuyến mại",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Chức năng đặt hàng đã khắc phục lỗi kiểm thử phân hệ",
+   "phu_thuoc": [
+    "5.4.3",
+    "5.4.6"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "R42"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.4"
+  },
+  {
+   "ma": "5.4.8",
+   "ten": "Sửa lỗi và kiểm thử lại theo dõi đơn hàng, hủy đơn và đổi trả",
+   "md": 2,
+   "loai": "DEV",
+   "san_pham": "Chức năng theo dõi đơn hàng đã khắc phục lỗi kiểm thử phân hệ",
+   "phu_thuoc": [
+    "5.4.4"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "R08",
+    "R42"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "5.4"
   },
   {
    "ma": "5.5",
-   "ten": "Tài liệu và nghiệm thu nội bộ phân hệ đặt hàng",
+   "ten": "Nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ đặt hàng",
    "muc": 2,
-   "md": 2.0,
-   "so_muc_con": 1,
+   "md": 11.0,
+   "so_muc_con": 2,
    "la": false,
    "cha": "5"
   },
   {
    "ma": "5.5.1",
    "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ đặt hàng",
-   "muc": 3,
-   "md": 2,
+   "md": 3,
    "loai": "BA",
-   "san_pham": "Tài liệu chức năng và biên bản nghiệm thu nội bộ phân hệ đặt hàng",
+   "san_pham": "Tài liệu chức năng và biên bản nghiệm thu nội bộ phân hệ",
    "phu_thuoc": [
-    "5.4.1"
+    "5.4.5",
+    "5.4.7",
+    "5.4.8"
    ],
    "hang_muc_01a": [
     7
@@ -1112,6 +2301,28 @@
    "nguon": [
     "R08"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "5.5"
+  },
+  {
+   "ma": "5.5.2",
+   "ten": "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ đặt hàng",
+   "md": 8,
+   "loai": "DEV",
+   "san_pham": "Phiên bản phân hệ đã khắc phục lỗi kiểm thử chấp nhận",
+   "phu_thuoc": [
+    "7.2.4"
+   ],
+   "hang_muc_01a": [
+    11
+   ],
+   "nguon": [
+    "R08",
+    "R42",
+    "R13"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "5.5"
   },
@@ -1119,29 +2330,54 @@
    "ma": "6",
    "ten": "Cơ sở dữ liệu bán hàng và tích hợp hệ thống",
    "muc": 1,
-   "md": 42.0,
-   "so_muc_con": 2,
+   "can_cu_uoc_luong": {
+    "kich_thuoc": "1 Selling DB, 2 khung ứng dụng (phía máy chủ, giao diện), 1 dịch vụ thư điện tử, 5 luồng tích hợp với Main System (sản phẩm và giá, tồn kho, chuyển đơn hàng, trạng thái vận chuyển, giám sát và gửi lại), 1 công cụ chuyển đổi dữ liệu, 1 lần chuyển đổi thử và 1 lần nạp nội dung",
+    "cach_phan_ra": "Mục tiêu theo tong_theo_nhom của uoc_luong.json là 95 MD, tổng các gói của nhóm là 93 MD, thấp hơn 2 MD và nằm trong dung sai của nhóm; tổng toàn dự án giữ 657 MD, phần chênh nằm ở nhóm 7. Gồm nền tảng dùng chung, Selling DB, tích hợp và chuyển đổi dữ liệu. Mỗi luồng tích hợp ước lượng theo số thực thể dữ liệu và chiều trao đổi: cơ sở dữ liệu bán hàng (Selling DB) và nền tảng dùng chung 22 MD (6.1); tích hợp với hệ thống chính (Main System) 58 MD (6.2); chuyển đổi dữ liệu và nội dung sản phẩm 13 MD (6.3)"
+   },
+   "md": 93.0,
+   "so_muc_con": 3,
    "la": false,
    "cha": ""
   },
   {
    "ma": "6.1",
-   "ten": "Cơ sở dữ liệu bán hàng (Selling DB)",
+   "ten": "Cơ sở dữ liệu bán hàng (Selling DB) và nền tảng dùng chung",
    "muc": 2,
-   "md": 9.0,
-   "so_muc_con": 2,
+   "md": 22.0,
+   "so_muc_con": 4,
    "la": false,
    "cha": "6"
   },
   {
    "ma": "6.1.1",
-   "ten": "Tạo lập Selling DB theo cấu trúc cơ sở dữ liệu đã thiết kế",
-   "muc": 3,
-   "md": 5,
+   "ten": "Khung ứng dụng phía máy chủ và thành phần dùng chung về xác thực, phân quyền, ghi nhật ký, xử lý lỗi",
+   "md": 8,
    "loai": "DEV",
-   "san_pham": "Selling DB trên môi trường phát triển và kiểm thử theo cấu trúc đã thiết kế",
+   "san_pham": "Khung ứng dụng phía máy chủ trên kho mã nguồn",
+   "phu_thuoc": [],
+   "hang_muc_01a": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "nguon": [
+    "R13",
+    "R04"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.1"
+  },
+  {
+   "ma": "6.1.2",
+   "ten": "Tạo lập Selling DB theo cấu trúc đã thiết kế và tầng truy cập dữ liệu",
+   "md": 6,
+   "loai": "DEV",
+   "san_pham": "Selling DB trên môi trường phát triển và kiểm thử",
    "phu_thuoc": [
     "2.2.3",
+    "6.1.1",
     "8.1.1"
    ],
    "hang_muc_01a": [
@@ -1151,26 +2387,47 @@
     "R09",
     "R47"
    ],
+   "muc": 3,
    "la": true,
    "cha": "6.1"
   },
   {
-   "ma": "6.1.2",
-   "ten": "Nạp dữ liệu sản phẩm ban đầu từ Main System và kiểm tra toàn vẹn",
-   "muc": 3,
-   "md": 4,
+   "ma": "6.1.3",
+   "ten": "Khung ứng dụng giao diện gồm định tuyến, quản lý trạng thái và gọi dịch vụ",
+   "md": 5,
    "loai": "DEV",
-   "san_pham": "Biên bản kiểm tra dữ liệu ban đầu của Selling DB",
-   "phu_thuoc": [
-    "6.2.2"
-   ],
+   "san_pham": "Khung ứng dụng giao diện trên kho mã nguồn",
+   "phu_thuoc": [],
    "hang_muc_01a": [
-    8
+    5,
+    6,
+    7
    ],
    "nguon": [
-    "R09",
-    "R10"
+    "R03"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.1"
+  },
+  {
+   "ma": "6.1.4",
+   "ten": "Dịch vụ gửi thư điện tử qua máy chủ thư của Chủ đầu tư",
+   "md": 3,
+   "loai": "DEV",
+   "san_pham": "Dịch vụ gửi thư điện tử đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "6.1.1"
+   ],
+   "hang_muc_01a": [
+    6,
+    7
+   ],
+   "nguon": [
+    "R07",
+    "R08"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "6.1"
   },
@@ -1178,40 +2435,40 @@
    "ma": "6.2",
    "ten": "Tích hợp với hệ thống chính (Main System)",
    "muc": 2,
-   "md": 33.0,
-   "so_muc_con": 5,
+   "md": 58.0,
+   "so_muc_con": 13,
    "la": false,
    "cha": "6"
   },
   {
    "ma": "6.2.1",
    "ten": "Đặc tả giao diện trao đổi dữ liệu với Main System",
-   "muc": 3,
    "md": 4,
    "loai": "BA",
-   "san_pham": "Đặc tả giao diện tích hợp được Chủ đầu tư xác nhận",
+   "san_pham": "Đặc tả giao diện trao đổi dữ liệu với Main System",
    "phu_thuoc": [
-    "2.1.1"
+    "2.1.2"
    ],
    "hang_muc_01a": [
     9
    ],
    "nguon": [
-    "R10"
+    "R10",
+    "R11"
    ],
+   "muc": 3,
    "la": true,
    "cha": "6.2"
   },
   {
    "ma": "6.2.2",
-   "ten": "Đồng bộ dữ liệu sản phẩm, giá và tồn kho từ Main System",
-   "muc": 3,
-   "md": 9,
+   "ten": "Thiết kế tích hợp gồm ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+   "md": 4,
    "loai": "DEV",
-   "san_pham": "Chức năng đồng bộ dữ liệu sản phẩm đã kiểm thử đơn vị",
+   "san_pham": "Thiết kế tích hợp với Main System",
    "phu_thuoc": [
     "6.2.1",
-    "6.1.1"
+    "2.2.3"
    ],
    "hang_muc_01a": [
     9
@@ -1219,20 +2476,60 @@
    "nguon": [
     "R10"
    ],
+   "muc": 3,
    "la": true,
    "cha": "6.2"
   },
   {
    "ma": "6.2.3",
-   "ten": "Chuyển đơn hàng sang Main System và nhận trạng thái xử lý",
-   "muc": 3,
-   "md": 9,
+   "ten": "Đồng bộ danh mục sản phẩm và giá từ Main System",
+   "md": 5,
    "loai": "DEV",
-   "san_pham": "Chức năng chuyển đơn hàng đã kiểm thử đơn vị",
+   "san_pham": "Chức năng đồng bộ sản phẩm, giá đạt kiểm thử đơn vị",
    "phu_thuoc": [
-    "6.2.1",
-    "5.2.1",
-    "6.1.1"
+    "6.2.2",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    9
+   ],
+   "nguon": [
+    "R10"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.2"
+  },
+  {
+   "ma": "6.2.4",
+   "ten": "Đồng bộ tồn kho từ Main System",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Chức năng đồng bộ tồn kho đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "6.2.2",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    9
+   ],
+   "nguon": [
+    "R10",
+    "NV05"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.2"
+  },
+  {
+   "ma": "6.2.5",
+   "ten": "Chuyển đơn hàng sang Main System và nhận trạng thái xử lý",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Chức năng chuyển đơn hàng đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "6.2.2",
+    "6.1.2"
    ],
    "hang_muc_01a": [
     9
@@ -1241,19 +2538,19 @@
     "R10",
     "R08"
    ],
+   "muc": 3,
    "la": true,
    "cha": "6.2"
   },
   {
-   "ma": "6.2.4",
-   "ten": "Nhận trạng thái vận chuyển từ Main System và hiển thị trên trang theo dõi đơn hàng",
-   "muc": 3,
+   "ma": "6.2.6",
+   "ten": "Nhận trạng thái vận chuyển từ Main System",
    "md": 5,
    "loai": "DEV",
    "san_pham": "Chức năng nhận trạng thái vận chuyển đạt kiểm thử đơn vị",
    "phu_thuoc": [
-    "6.2.3",
-    "5.3.3"
+    "6.2.2",
+    "6.1.2"
    ],
    "hang_muc_01a": [
     9
@@ -1261,19 +2558,58 @@
    "nguon": [
     "R11"
    ],
+   "muc": 3,
    "la": true,
    "cha": "6.2"
   },
   {
-   "ma": "6.2.5",
-   "ten": "Kiểm thử tích hợp với Main System",
-   "muc": 3,
-   "md": 6,
-   "loai": "QA",
-   "san_pham": "Báo cáo kiểm thử tích hợp",
+   "ma": "6.2.7",
+   "ten": "Giám sát tích hợp, cảnh báo lỗi đồng bộ và gửi lại",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Chức năng giám sát tích hợp đạt kiểm thử đơn vị",
    "phu_thuoc": [
-    "6.1.2",
-    "6.2.4"
+    "6.2.2",
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    9
+   ],
+   "nguon": [
+    "R10",
+    "R04"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.2"
+  },
+  {
+   "ma": "6.2.8",
+   "ten": "Dịch vụ giả lập Main System và dữ liệu kiểm thử tích hợp",
+   "md": 4,
+   "loai": "QA",
+   "san_pham": "Dịch vụ giả lập và bộ dữ liệu kiểm thử tích hợp",
+   "phu_thuoc": [
+    "6.2.2"
+   ],
+   "hang_muc_01a": [
+    9
+   ],
+   "nguon": [
+    "R10"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.2"
+  },
+  {
+   "ma": "6.2.9",
+   "ten": "Kịch bản kiểm thử tích hợp với Main System",
+   "md": 3,
+   "loai": "QA",
+   "san_pham": "Kịch bản kiểm thử tích hợp",
+   "phu_thuoc": [
+    "6.2.1"
    ],
    "hang_muc_01a": [
     9
@@ -1282,14 +2618,176 @@
     "R10",
     "R11"
    ],
+   "muc": 3,
    "la": true,
    "cha": "6.2"
+  },
+  {
+   "ma": "6.2.10",
+   "ten": "Kiểm thử tích hợp với Main System trên môi trường thử",
+   "md": 7,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử tích hợp",
+   "phu_thuoc": [
+    "6.2.9",
+    "6.2.13",
+    "6.2.3",
+    "6.2.4",
+    "6.2.5",
+    "6.2.6",
+    "6.2.7"
+   ],
+   "hang_muc_01a": [
+    9
+   ],
+   "nguon": [
+    "R10",
+    "R11"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.2"
+  },
+  {
+   "ma": "6.2.11",
+   "ten": "Sửa lỗi và kiểm thử lại tích hợp với Main System",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Phiên bản tích hợp đã khắc phục lỗi kiểm thử tích hợp",
+   "phu_thuoc": [
+    "6.2.10"
+   ],
+   "hang_muc_01a": [
+    9
+   ],
+   "nguon": [
+    "R10",
+    "R42"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.2"
+  },
+  {
+   "ma": "6.2.12",
+   "ten": "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận tích hợp với Main System",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Phiên bản tích hợp đã khắc phục lỗi kiểm thử chấp nhận",
+   "phu_thuoc": [
+    "7.2.4"
+   ],
+   "hang_muc_01a": [
+    11
+   ],
+   "nguon": [
+    "R10",
+    "R42",
+    "R13"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.2"
+  },
+  {
+   "ma": "6.2.13",
+   "ten": "Chủ đầu tư xem xét, xác nhận đặc tả giao diện tích hợp với Main System",
+   "md": 2,
+   "loai": "BA",
+   "san_pham": "Biên bản xác nhận đặc tả giao diện tích hợp",
+   "phu_thuoc": [
+    "6.2.1"
+   ],
+   "hang_muc_01a": [
+    9
+   ],
+   "nguon": [
+    "R10",
+    "R38"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.2"
+  },
+  {
+   "ma": "6.3",
+   "ten": "Chuyển đổi dữ liệu và nội dung sản phẩm",
+   "muc": 2,
+   "md": 13.0,
+   "so_muc_con": 3,
+   "la": false,
+   "cha": "6"
+  },
+  {
+   "ma": "6.3.1",
+   "ten": "Công cụ chuyển đổi dữ liệu sản phẩm, tồn kho và kiểm tra toàn vẹn",
+   "md": 5,
+   "loai": "DEV",
+   "san_pham": "Công cụ chuyển đổi dữ liệu đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "6.1.2"
+   ],
+   "hang_muc_01a": [
+    13
+   ],
+   "nguon": [
+    "R09",
+    "R12"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.3"
+  },
+  {
+   "ma": "6.3.2",
+   "ten": "Chuyển đổi thử dữ liệu sản phẩm, tồn kho do Chủ đầu tư cung cấp",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Biên bản chuyển đổi thử và kiểm tra toàn vẹn dữ liệu",
+   "phu_thuoc": [
+    "6.3.1"
+   ],
+   "hang_muc_01a": [
+    13
+   ],
+   "nguon": [
+    "R09",
+    "R12"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.3"
+  },
+  {
+   "ma": "6.3.3",
+   "ten": "Nạp hình ảnh và nội dung sản phẩm theo bộ nhận diện của Chủ đầu tư lên môi trường vận hành",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Nội dung sản phẩm trên môi trường vận hành",
+   "phu_thuoc": [
+    "6.1.2",
+    "8.1.3"
+   ],
+   "hang_muc_01a": [
+    13
+   ],
+   "nguon": [
+    "R06",
+    "R12"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "6.3"
   },
   {
    "ma": "7",
    "ten": "Kiểm thử hệ thống và kiểm thử vận hành",
    "muc": 1,
-   "md": 59.0,
+   "can_cu_uoc_luong": {
+    "kich_thuoc": "1 kế hoạch kiểm thử, 3 bộ kịch bản (hệ thống, chấp nhận, hiệu năng), 4 loại kiểm thử hệ thống (chức năng đầu cuối, khả năng sử dụng, hiệu năng, bảo mật), 2 luồng kiểm thử chấp nhận cùng Chủ đầu tư, kiểm thử hồi quy, kiểm thử bản phát hành, diễn tập chuyển đổi dự phòng",
+    "cach_phan_ra": "Mục tiêu theo tong_theo_nhom của uoc_luong.json là 71 MD, tổng các gói của nhóm là 73 MD, cao hơn 2 MD và nằm trong dung sai của nhóm, tương ứng phần chênh của nhóm 6. Thuộc phần kiểm thử ở bước 2 và hỗ trợ kiểm thử chấp nhận, vận hành thử ở bước 3 của uoc_luong.json. Chia theo số loại kiểm thử và số ngày của khoảng kiểm thử chấp nhận 18/06 đến 29/06/2027: kế hoạch và kịch bản kiểm thử 15 MD (7.1); kiểm thử hệ thống 24 MD (7.2); kiểm thử chấp nhận và kiểm thử vận hành (Operation Test) 34 MD (7.3)"
+   },
+   "md": 73.0,
    "so_muc_con": 3,
    "la": false,
    "cha": ""
@@ -1298,20 +2796,20 @@
    "ma": "7.1",
    "ten": "Kế hoạch và kịch bản kiểm thử",
    "muc": 2,
-   "md": 10.0,
-   "so_muc_con": 2,
+   "md": 15.0,
+   "so_muc_con": 4,
    "la": false,
    "cha": "7"
   },
   {
    "ma": "7.1.1",
-   "ten": "Kế hoạch kiểm thử hệ thống và kiểm thử vận hành",
-   "muc": 3,
-   "md": 4,
+   "ten": "Kế hoạch kiểm thử hệ thống, kiểm thử chấp nhận và tiêu chí đạt",
+   "md": 3,
    "loai": "QA",
    "san_pham": "Kế hoạch kiểm thử",
    "phu_thuoc": [
-    "2.1.4"
+    "2.1.6",
+    "1.1.4"
    ],
    "hang_muc_01a": [
     10,
@@ -1320,18 +2818,21 @@
    "nguon": [
     "R13"
    ],
+   "muc": 3,
    "la": true,
    "cha": "7.1"
   },
   {
    "ma": "7.1.2",
    "ten": "Kịch bản kiểm thử hệ thống đầu cuối",
-   "muc": 3,
-   "md": 6,
+   "md": 5,
    "loai": "QA",
    "san_pham": "Bộ kịch bản kiểm thử hệ thống",
    "phu_thuoc": [
-    "7.1.1"
+    "7.1.1",
+    "2.1.3",
+    "2.1.4",
+    "2.1.5"
    ],
    "hang_muc_01a": [
     10
@@ -1341,175 +2842,16 @@
     "R07",
     "R08"
    ],
+   "muc": 3,
    "la": true,
    "cha": "7.1"
   },
   {
-   "ma": "7.2",
-   "ten": "Kiểm thử hệ thống",
-   "muc": 2,
-   "md": 35.0,
-   "so_muc_con": 6,
-   "la": false,
-   "cha": "7"
-  },
-  {
-   "ma": "7.2.1",
-   "ten": "Kiểm thử chức năng đầu cuối",
-   "muc": 3,
-   "md": 8,
-   "loai": "QA",
-   "san_pham": "Báo cáo kiểm thử chức năng",
-   "phu_thuoc": [
-    "7.1.2",
-    "3.4.1",
-    "4.4.1",
-    "5.4.1",
-    "6.2.5"
-   ],
-   "hang_muc_01a": [
-    10
-   ],
-   "nguon": [
-    "R06",
-    "R07",
-    "R08"
-   ],
-   "la": true,
-   "cha": "7.2"
-  },
-  {
-   "ma": "7.2.2",
-   "ten": "Kiểm thử hiệu năng và thời gian phản hồi",
-   "muc": 3,
-   "md": 6,
-   "loai": "QA",
-   "san_pham": "Báo cáo kiểm thử hiệu năng",
-   "phu_thuoc": [
-    "7.1.2",
-    "3.4.1",
-    "4.4.1",
-    "5.4.1",
-    "6.2.5",
-    "8.1.2"
-   ],
-   "hang_muc_01a": [
-    10
-   ],
-   "nguon": [
-    "R05"
-   ],
-   "la": true,
-   "cha": "7.2"
-  },
-  {
-   "ma": "7.2.3",
-   "ten": "Kiểm thử hoạt động liên tục, sao lưu và phục hồi",
-   "muc": 3,
-   "md": 4,
-   "loai": "DEVOPS",
-   "san_pham": "Báo cáo kiểm thử hoạt động liên tục",
-   "phu_thuoc": [
-    "8.1.2",
-    "3.4.1",
-    "4.4.1",
-    "5.4.1",
-    "6.2.5"
-   ],
-   "hang_muc_01a": [
-    10
-   ],
-   "nguon": [
-    "R04"
-   ],
-   "la": true,
-   "cha": "7.2"
-  },
-  {
-   "ma": "7.2.4",
-   "ten": "Kiểm thử bảo mật ứng dụng",
-   "muc": 3,
-   "md": 4,
-   "loai": "QA",
-   "san_pham": "Báo cáo kiểm thử bảo mật",
-   "phu_thuoc": [
-    "7.1.2",
-    "4.4.1",
-    "5.4.1"
-   ],
-   "hang_muc_01a": [
-    10
-   ],
-   "nguon": [
-    "R07",
-    "R08"
-   ],
-   "la": true,
-   "cha": "7.2"
-  },
-  {
-   "ma": "7.2.5",
-   "ten": "Đánh giá khả năng sử dụng của giao diện (Easy Operation)",
-   "muc": 3,
+   "ma": "7.1.3",
+   "ten": "Kịch bản kiểm thử chấp nhận theo quy trình vận hành mới",
    "md": 3,
    "loai": "QA",
-   "san_pham": "Báo cáo đánh giá khả năng sử dụng",
-   "phu_thuoc": [
-    "7.1.2",
-    "3.4.1",
-    "4.4.1",
-    "5.4.1"
-   ],
-   "hang_muc_01a": [
-    10
-   ],
-   "nguon": [
-    "R03"
-   ],
-   "la": true,
-   "cha": "7.2"
-  },
-  {
-   "ma": "7.2.6",
-   "ten": "Khắc phục lỗi sau kiểm thử hệ thống",
-   "muc": 3,
-   "md": 10,
-   "loai": "DEV",
-   "san_pham": "Phiên bản đã khắc phục toàn bộ lỗi nghiêm trọng của kiểm thử hệ thống, kiểm thử hồi quy đạt",
-   "phu_thuoc": [
-    "7.2.1",
-    "7.2.2",
-    "7.2.3",
-    "7.2.4",
-    "7.2.5"
-   ],
-   "hang_muc_01a": [
-    10
-   ],
-   "nguon": [
-    "R06",
-    "R07",
-    "R08"
-   ],
-   "la": true,
-   "cha": "7.2"
-  },
-  {
-   "ma": "7.3",
-   "ten": "Kiểm thử vận hành (Operation Test)",
-   "muc": 2,
-   "md": 14.0,
-   "so_muc_con": 3,
-   "la": false,
-   "cha": "7"
-  },
-  {
-   "ma": "7.3.1",
-   "ten": "Kịch bản kiểm thử vận hành theo quy trình vận hành mới",
-   "muc": 3,
-   "md": 3,
-   "loai": "QA",
-   "san_pham": "Kịch bản kiểm thử vận hành",
+   "san_pham": "Kịch bản kiểm thử chấp nhận",
    "phu_thuoc": [
     "7.1.1",
     "2.2.1"
@@ -1521,40 +2863,227 @@
     "R13",
     "R46"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "7.1"
+  },
+  {
+   "ma": "7.1.4",
+   "ten": "Kịch bản và công cụ kiểm thử hiệu năng, chịu tải 500 người dùng đồng thời",
+   "md": 4,
+   "loai": "QA",
+   "san_pham": "Kịch bản kiểm thử tải",
+   "phu_thuoc": [
+    "7.1.1"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "R05"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "7.1"
+  },
+  {
+   "ma": "7.2",
+   "ten": "Kiểm thử hệ thống",
+   "muc": 2,
+   "md": 24.0,
+   "so_muc_con": 5,
+   "la": false,
+   "cha": "7"
+  },
+  {
+   "ma": "7.2.1",
+   "ten": "Kiểm thử chức năng đầu cuối",
+   "md": 10,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử chức năng đầu cuối",
+   "phu_thuoc": [
+    "7.1.2",
+    "3.4.2",
+    "3.4.3",
+    "4.4.2",
+    "4.4.3",
+    "5.4.2",
+    "5.4.3",
+    "5.4.4",
+    "5.4.6",
+    "6.2.10"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "R06",
+    "R07",
+    "R08",
+    "R10"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "7.2"
+  },
+  {
+   "ma": "7.2.2",
+   "ten": "Đánh giá khả năng sử dụng của giao diện (Easy Operation)",
+   "md": 2,
+   "loai": "QA",
+   "san_pham": "Báo cáo đánh giá khả năng sử dụng",
+   "phu_thuoc": [
+    "3.4.3",
+    "4.4.2",
+    "5.4.3"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "R03"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "7.2"
+  },
+  {
+   "ma": "7.2.3",
+   "ten": "Kiểm thử hiệu năng trên môi trường kiểm thử",
+   "md": 3,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử hiệu năng",
+   "phu_thuoc": [
+    "7.1.4",
+    "3.3.8",
+    "8.1.2"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "R05"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "7.2"
+  },
+  {
+   "ma": "7.2.4",
+   "ten": "Khắc phục lỗi sau kiểm thử hệ thống",
+   "md": 6,
+   "loai": "DEV",
+   "san_pham": "Phiên bản đã khắc phục lỗi kiểm thử hệ thống",
+   "phu_thuoc": [
+    "7.2.1",
+    "7.2.2",
+    "7.2.3",
+    "7.2.5",
+    "3.4.4",
+    "3.4.6",
+    "4.4.4",
+    "4.4.6",
+    "5.4.5",
+    "5.4.7",
+    "5.4.8",
+    "6.2.11"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "R42",
+    "R06",
+    "R07",
+    "R08"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "7.2"
+  },
+  {
+   "ma": "7.2.5",
+   "ten": "Rà soát lỗ hổng bảo mật theo OWASP Top 10 trên môi trường kiểm thử",
+   "md": 3,
+   "loai": "QA",
+   "san_pham": "Báo cáo rà soát lỗ hổng bảo mật",
+   "phu_thuoc": [
+    "4.4.5",
+    "5.4.3"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "R07",
+    "R08"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "7.2"
+  },
+  {
+   "ma": "7.3",
+   "ten": "Kiểm thử chấp nhận và kiểm thử vận hành (Operation Test)",
+   "muc": 2,
+   "md": 34.0,
+   "so_muc_con": 6,
+   "la": false,
+   "cha": "7"
+  },
+  {
+   "ma": "7.3.1",
+   "ten": "Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng tìm kiếm và thành viên",
+   "md": 8,
+   "loai": "QA",
+   "san_pham": "Biên bản kiểm thử chấp nhận luồng tìm kiếm và thành viên",
+   "phu_thuoc": [
+    "7.1.3",
+    "7.2.4",
+    "8.2.3"
+   ],
+   "hang_muc_01a": [
+    11
+   ],
+   "nguon": [
+    "R13",
+    "R38"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "7.3"
   },
   {
    "ma": "7.3.2",
-   "ten": "Kiểm thử vận hành cùng Chủ đầu tư",
-   "muc": 3,
-   "md": 6,
+   "ten": "Tổ chức và hỗ trợ kiểm thử vận hành cùng Chủ đầu tư luồng đặt hàng và giao nhận",
+   "md": 8,
    "loai": "QA",
-   "san_pham": "Biên bản kiểm thử vận hành",
+   "san_pham": "Biên bản kiểm thử vận hành luồng đặt hàng",
    "phu_thuoc": [
-    "7.3.1",
-    "7.2.6",
-    "8.2.2",
-    "8.2.1"
+    "7.1.3",
+    "7.2.4",
+    "8.2.3"
    ],
    "hang_muc_01a": [
     11
    ],
    "nguon": [
-    "R13"
+    "R13",
+    "R38",
+    "R11"
    ],
+   "muc": 3,
    "la": true,
    "cha": "7.3"
   },
   {
    "ma": "7.3.3",
-   "ten": "Khắc phục lỗi sau kiểm thử vận hành",
-   "muc": 3,
-   "md": 5,
-   "loai": "DEV",
-   "san_pham": "Phiên bản đã khắc phục lỗi kiểm thử vận hành, được Chủ đầu tư xác nhận sẵn sàng đưa vào vận hành",
+   "ten": "Kiểm thử hồi quy theo các đợt khắc phục lỗi kiểm thử chấp nhận",
+   "md": 7,
+   "loai": "QA",
+   "san_pham": "Báo cáo kiểm thử hồi quy bản phát hành",
    "phu_thuoc": [
-    "7.3.2"
+    "7.2.4"
    ],
    "hang_muc_01a": [
     11
@@ -1562,6 +3091,67 @@
    "nguon": [
     "R13"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "7.3"
+  },
+  {
+   "ma": "7.3.4",
+   "ten": "Kiểm thử hiệu năng và rà soát an toàn thông tin bản phát hành trên môi trường vận hành",
+   "md": 4,
+   "loai": "QA",
+   "san_pham": "Báo cáo hiệu năng và an toàn thông tin của bản phát hành",
+   "phu_thuoc": [
+    "7.2.4",
+    "8.1.3"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "R05",
+    "R04"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "7.3"
+  },
+  {
+   "ma": "7.3.5",
+   "ten": "Tối ưu hiệu năng và khắc phục lỗ hổng theo kết quả kiểm thử bản phát hành",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Phiên bản phát hành đạt chỉ tiêu hiệu năng và an toàn thông tin",
+   "phu_thuoc": [
+    "7.3.4"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "R05",
+    "R42"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "7.3"
+  },
+  {
+   "ma": "7.3.6",
+   "ten": "Diễn tập chuyển đổi dự phòng, sao lưu và khôi phục trên môi trường vận hành",
+   "md": 3,
+   "loai": "DEVOPS",
+   "san_pham": "Biên bản diễn tập chuyển đổi dự phòng và khôi phục",
+   "phu_thuoc": [
+    "8.1.3"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "R04"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "7.3"
   },
@@ -1569,7 +3159,11 @@
    "ma": "8",
    "ten": "Triển khai và chuyển giao",
    "muc": 1,
-   "md": 29.0,
+   "can_cu_uoc_luong": {
+    "kich_thuoc": "2 môi trường (phát triển và kiểm thử, vận hành), giám sát và sao lưu, 2 tài liệu hướng dẫn, 3 buổi hướng dẫn vận hành, 1 kế hoạch cut over, 1 lần diễn tập, 1 lần triển khai chính thức, bàn giao mã nguồn",
+    "cach_phan_ra": "Tổng nhóm 50 MD theo tong_theo_nhom của uoc_luong.json. Thuộc đầu việc phi chức năng ở bước 3 (triển khai, giám sát, đào tạo, hồ sơ kỹ thuật). Chia theo số môi trường, số tài liệu và số lần triển khai: môi trường và hạ tầng 17 MD (8.1); chuyển giao và hướng dẫn vận hành 18 MD (8.2); đưa hệ thống vào vận hành (cut over) 15 MD (8.3)"
+   },
+   "md": 50.0,
    "so_muc_con": 3,
    "la": false,
    "cha": ""
@@ -1578,21 +3172,18 @@
    "ma": "8.1",
    "ten": "Môi trường và hạ tầng",
    "muc": 2,
-   "md": 13.0,
-   "so_muc_con": 2,
+   "md": 17.0,
+   "so_muc_con": 3,
    "la": false,
    "cha": "8"
   },
   {
    "ma": "8.1.1",
-   "ten": "Môi trường phát triển, kiểm thử và quy trình triển khai tự động",
-   "muc": 3,
+   "ten": "Môi trường phát triển, kiểm thử và quy trình tích hợp, triển khai tự động",
    "md": 6,
    "loai": "DEVOPS",
-   "san_pham": "Môi trường phát triển, kiểm thử có cấu hình gửi thư điện tử và quy trình triển khai tự động",
-   "phu_thuoc": [
-    "1.1.1"
-   ],
+   "san_pham": "Môi trường phát triển, kiểm thử và quy trình triển khai tự động",
+   "phu_thuoc": [],
    "hang_muc_01a": [
     5,
     6,
@@ -1601,20 +3192,22 @@
     9
    ],
    "nguon": [
-    "HSMT Chương V mục 3.2"
+    "R13",
+    "R04"
    ],
+   "muc": 3,
    "la": true,
    "cha": "8.1"
   },
   {
    "ma": "8.1.2",
-   "ten": "Môi trường vận hành, giám sát và sao lưu",
-   "muc": 3,
+   "ten": "Môi trường vận hành gồm hai nút ứng dụng, cân bằng tải, cơ sở dữ liệu chính và dự phòng",
    "md": 7,
    "loai": "DEVOPS",
-   "san_pham": "Môi trường vận hành có giám sát, sao lưu và cấu hình gửi thư điện tử qua máy chủ thư của Chủ đầu tư",
+   "san_pham": "Môi trường vận hành",
    "phu_thuoc": [
     "2.2.2",
+    "2.2.4",
     "8.1.1"
    ],
    "hang_muc_01a": [
@@ -1623,6 +3216,26 @@
    "nguon": [
     "R04"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "8.1"
+  },
+  {
+   "ma": "8.1.3",
+   "ten": "Giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành",
+   "md": 4,
+   "loai": "DEVOPS",
+   "san_pham": "Cấu hình giám sát, cảnh báo và sao lưu",
+   "phu_thuoc": [
+    "8.1.2"
+   ],
+   "hang_muc_01a": [
+    13
+   ],
+   "nguon": [
+    "R04"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "8.1"
   },
@@ -1630,22 +3243,26 @@
    "ma": "8.2",
    "ten": "Chuyển giao và hướng dẫn vận hành",
    "muc": 2,
-   "md": 8.0,
-   "so_muc_con": 2,
+   "md": 18.0,
+   "so_muc_con": 5,
    "la": false,
    "cha": "8"
   },
   {
    "ma": "8.2.1",
-   "ten": "Tài liệu hướng dẫn sử dụng và vận hành hệ thống",
-   "muc": 3,
-   "md": 5,
+   "ten": "Tài liệu hướng dẫn sử dụng cho khách hàng và cán bộ bán hàng",
+   "md": 4,
    "loai": "BA",
-   "san_pham": "Tài liệu hướng dẫn sử dụng và vận hành",
+   "san_pham": "Tài liệu hướng dẫn sử dụng",
    "phu_thuoc": [
-    "3.5.1",
-    "4.5.1",
-    "5.5.1"
+    "3.3.5",
+    "3.3.6",
+    "3.3.7",
+    "4.3.6",
+    "4.3.7",
+    "5.3.8",
+    "5.3.9",
+    "5.3.10"
    ],
    "hang_muc_01a": [
     12
@@ -1653,19 +3270,39 @@
    "nguon": [
     "R46"
    ],
+   "muc": 3,
    "la": true,
    "cha": "8.2"
   },
   {
    "ma": "8.2.2",
-   "ten": "Hướng dẫn vận hành cho cán bộ Chủ đầu tư",
+   "ten": "Tài liệu hướng dẫn vận hành và quản trị kỹ thuật hệ thống",
+   "md": 4,
+   "loai": "DEVOPS",
+   "san_pham": "Tài liệu hướng dẫn vận hành kỹ thuật",
+   "phu_thuoc": [
+    "8.1.3"
+   ],
+   "hang_muc_01a": [
+    12
+   ],
+   "nguon": [
+    "R46",
+    "R04"
+   ],
    "muc": 3,
+   "la": true,
+   "cha": "8.2"
+  },
+  {
+   "ma": "8.2.3",
+   "ten": "Hướng dẫn vận hành cho cán bộ Chủ đầu tư theo quy trình vận hành mới, ba buổi theo lịch của Chủ đầu tư",
    "md": 3,
    "loai": "BA",
    "san_pham": "Biên bản hướng dẫn vận hành",
    "phu_thuoc": [
     "8.2.1",
-    "7.2.1"
+    "2.2.1"
    ],
    "hang_muc_01a": [
     12
@@ -1673,6 +3310,51 @@
    "nguon": [
     "R46"
    ],
+   "thoi_luong_toi_thieu": 3,
+   "muc": 3,
+   "la": true,
+   "cha": "8.2"
+  },
+  {
+   "ma": "8.2.4",
+   "ten": "Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện",
+   "md": 4,
+   "loai": "DEV",
+   "san_pham": "Biên bản bàn giao mã nguồn và tài liệu kỹ thuật",
+   "phu_thuoc": [
+    "3.5.2",
+    "4.5.2",
+    "5.5.2",
+    "6.2.12"
+   ],
+   "hang_muc_01a": [
+    12
+   ],
+   "nguon": [
+    "R18",
+    "R40"
+   ],
+   "muc": 3,
+   "la": true,
+   "cha": "8.2"
+  },
+  {
+   "ma": "8.2.5",
+   "ten": "Cập nhật tài liệu hướng dẫn sử dụng theo kết quả kiểm thử chấp nhận",
+   "md": 3,
+   "loai": "BA",
+   "san_pham": "Tài liệu hướng dẫn sử dụng phiên bản bàn giao",
+   "phu_thuoc": [
+    "8.2.1",
+    "7.2.4"
+   ],
+   "hang_muc_01a": [
+    12
+   ],
+   "nguon": [
+    "R46"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "8.2"
   },
@@ -1680,16 +3362,15 @@
    "ma": "8.3",
    "ten": "Đưa hệ thống vào vận hành (cut over)",
    "muc": 2,
-   "md": 8.0,
-   "so_muc_con": 3,
+   "md": 15.0,
+   "so_muc_con": 5,
    "la": false,
    "cha": "8"
   },
   {
    "ma": "8.3.1",
-   "ten": "Kế hoạch cut over và phương án khôi phục",
-   "muc": 3,
-   "md": 3,
+   "ten": "Kế hoạch cut over, danh sách kiểm tra và phương án khôi phục",
+   "md": 4,
    "loai": "DEVOPS",
    "san_pham": "Kế hoạch cut over được Chủ đầu tư xác nhận",
    "phu_thuoc": [
@@ -1701,19 +3382,20 @@
    "nguon": [
     "R12"
    ],
+   "muc": 3,
    "la": true,
    "cha": "8.3"
   },
   {
    "ma": "8.3.2",
-   "ten": "Triển khai phiên bản chính thức và chuyển dữ liệu vận hành",
-   "muc": 3,
+   "ten": "Diễn tập triển khai phiên bản chính thức và chuyển đổi dữ liệu trên môi trường vận hành",
    "md": 3,
    "loai": "DEVOPS",
-   "san_pham": "Hệ thống trên môi trường vận hành",
+   "san_pham": "Biên bản diễn tập triển khai",
    "phu_thuoc": [
     "8.3.1",
-    "7.3.3"
+    "8.1.3",
+    "6.3.2"
    ],
    "hang_muc_01a": [
     13
@@ -1721,18 +3403,39 @@
    "nguon": [
     "R12"
    ],
+   "muc": 3,
    "la": true,
    "cha": "8.3"
   },
   {
    "ma": "8.3.3",
-   "ten": "Hỗ trợ ngày đầu vận hành và biên bản bàn giao hệ thống",
+   "ten": "Chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức",
+   "md": 2,
+   "loai": "DEVOPS",
+   "san_pham": "Hệ thống và dữ liệu trên môi trường vận hành",
+   "phu_thuoc": [
+    "8.3.2",
+    "7.3.1",
+    "7.3.2"
+   ],
+   "hang_muc_01a": [
+    13
+   ],
+   "nguon": [
+    "R12"
+   ],
    "muc": 3,
+   "la": true,
+   "cha": "8.3"
+  },
+  {
+   "ma": "8.3.4",
+   "ten": "Hỗ trợ ngày đưa hệ thống vào vận hành và biên bản bàn giao hệ thống",
    "md": 2,
    "loai": "DEV",
    "san_pham": "Biên bản bàn giao hệ thống",
    "phu_thuoc": [
-    "8.3.2"
+    "8.3.3"
    ],
    "hang_muc_01a": [
     13
@@ -1741,6 +3444,28 @@
     "R12",
     "R18"
    ],
+   "muc": 3,
+   "la": true,
+   "cha": "8.3"
+  },
+  {
+   "ma": "8.3.5",
+   "ten": "Giám sát vận hành và chuẩn bị hỗ trợ tăng cường sau cut over",
+   "md": 4,
+   "loai": "DEVOPS",
+   "san_pham": "Phương án giám sát và lịch trực hỗ trợ sau cut over",
+   "phu_thuoc": [
+    "8.1.3",
+    "7.2.4"
+   ],
+   "hang_muc_01a": [
+    13
+   ],
+   "nguon": [
+    "R12",
+    "R04"
+   ],
+   "muc": 3,
    "la": true,
    "cha": "8.3"
   }
@@ -1749,50 +3474,50 @@
   {
    "ma": "1",
    "ten": "Quản lý dự án",
-   "md": 35.0,
-   "ty_trong": 0.09971509971509972
+   "md": 60.0,
+   "ty_trong": 0.091324200913242
   },
   {
    "ma": "2",
    "ten": "Phân tích và thiết kế chung",
-   "md": 58.0,
-   "ty_trong": 0.16524216524216523
+   "md": 66.0,
+   "ty_trong": 0.1004566210045662
   },
   {
    "ma": "3",
-   "ten": "Phân hệ tìm kiếm sản phẩm (Product Search)",
-   "md": 41.0,
-   "ty_trong": 0.1168091168091168
+   "ten": "Phân hệ tìm kiếm và hiển thị sản phẩm (Product Search)",
+   "md": 95.0,
+   "ty_trong": 0.1445966514459665
   },
   {
    "ma": "4",
-   "ten": "Phân hệ quản lý thành viên (Member Administration)",
-   "md": 38.0,
-   "ty_trong": 0.10826210826210826
+   "ten": "Phân hệ thành viên (Member Administration)",
+   "md": 91.0,
+   "ty_trong": 0.1385083713850837
   },
   {
    "ma": "5",
    "ten": "Phân hệ đặt hàng (Order)",
-   "md": 49.0,
-   "ty_trong": 0.1396011396011396
+   "md": 129.0,
+   "ty_trong": 0.1963470319634703
   },
   {
    "ma": "6",
    "ten": "Cơ sở dữ liệu bán hàng và tích hợp hệ thống",
-   "md": 42.0,
-   "ty_trong": 0.11965811965811966
+   "md": 93.0,
+   "ty_trong": 0.1415525114155251
   },
   {
    "ma": "7",
    "ten": "Kiểm thử hệ thống và kiểm thử vận hành",
-   "md": 59.0,
-   "ty_trong": 0.16809116809116809
+   "md": 73.0,
+   "ty_trong": 0.1111111111111111
   },
   {
    "ma": "8",
    "ten": "Triển khai và chuyển giao",
-   "md": 29.0,
-   "ty_trong": 0.08262108262108261
+   "md": 50.0,
+   "ty_trong": 0.076103500761035
   }
  ],
  "truy_vet_rfp": [
@@ -1809,57 +3534,57 @@
   {
    "ma": "R03",
    "yeu_cau": "Chính sách phát triển: khách hàng thao tác dễ dàng",
-   "goi": "2.1.3, 2.3.1, 2.3.2, 2.3.3, 3.3.3, 4.3.3, 5.3.4, 7.2.5"
+   "goi": "2.1.6, 2.3.2, 2.3.3, 2.3.4, 2.3.5, 2.3.6, 3.3.5, 3.3.6, 3.3.7, 3.4.5, 4.3.6, 4.3.7, 4.4.5, 5.3.8, 5.3.9, 5.3.10, 6.1.3, 7.2.2"
   },
   {
    "ma": "R04",
    "yeu_cau": "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
-   "goi": "2.1.3, 2.2.2, 7.2.3, 8.1.2"
+   "goi": "2.1.6, 2.2.2, 2.2.4, 6.1.1, 6.2.7, 7.3.4, 7.3.6, 8.1.1, 8.1.2, 8.1.3, 8.2.2, 8.3.5"
   },
   {
    "ma": "R05",
    "yeu_cau": "Thời gian phản hồi nhanh, không quá 2 giây",
-   "goi": "2.1.3, 2.2.2, 3.2.1, 3.3.4, 7.2.2"
+   "goi": "2.1.6, 2.2.2, 3.2.1, 3.3.1, 3.3.8, 3.4.3, 3.4.5, 7.1.4, 7.2.3, 7.3.4, 7.3.5"
   },
   {
    "ma": "R06",
    "yeu_cau": "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
-   "goi": "2.1.2, 3.1.1, 3.2.1, 3.3.1, 3.3.2, 3.3.3, 3.4.1, 3.5.1, 7.1.2, 7.2.1, 7.2.6"
+   "goi": "2.1.3, 2.3.3, 3.1.1, 3.1.2, 3.2.1, 3.2.2, 3.3.1, 3.3.2, 3.3.3, 3.3.4, 3.3.5, 3.3.6, 3.3.7, 3.4.1, 3.4.2, 3.4.3, 3.4.4, 3.4.6, 3.5.1, 3.5.2, 6.3.3, 7.1.2, 7.2.1, 7.2.4"
   },
   {
    "ma": "R07",
    "yeu_cau": "Hệ thống mới có chức năng quản lý thành viên",
-   "goi": "2.1.2, 4.1.1, 4.2.1, 4.3.1, 4.3.2, 4.3.3, 4.4.1, 4.5.1, 7.1.2, 7.2.1, 7.2.4, 7.2.6"
+   "goi": "2.1.4, 2.3.4, 4.1.1, 4.1.2, 4.2.1, 4.2.2, 4.3.1, 4.3.2, 4.3.3, 4.3.4, 4.3.5, 4.3.6, 4.3.7, 4.4.1, 4.4.2, 4.4.3, 4.4.4, 4.4.5, 4.4.6, 4.5.1, 4.5.2, 6.1.4, 7.1.2, 7.2.1, 7.2.4, 7.2.5"
   },
   {
    "ma": "R08",
    "yeu_cau": "Hệ thống mới có chức năng đặt hàng",
-   "goi": "2.1.2, 5.1.1, 5.2.1, 5.3.1, 5.3.2, 5.3.3, 5.3.4, 5.4.1, 5.5.1, 6.2.3, 7.1.2, 7.2.1, 7.2.4, 7.2.6"
+   "goi": "2.1.5, 2.3.5, 5.1.1, 5.1.2, 5.1.3, 5.2.1, 5.2.2, 5.2.3, 5.3.1, 5.3.2, 5.3.3, 5.3.4, 5.3.5, 5.3.6, 5.3.7, 5.3.8, 5.3.9, 5.3.10, 5.4.1, 5.4.2, 5.4.3, 5.4.4, 5.4.5, 5.4.6, 5.4.7, 5.4.8, 5.5.1, 5.5.2, 6.1.4, 6.2.5, 7.1.2, 7.2.1, 7.2.4, 7.2.5"
   },
   {
    "ma": "R09",
    "yeu_cau": "Hệ thống mới có cơ sở dữ liệu bán hàng Selling DB",
-   "goi": "2.2.3, 6.1.1, 6.1.2"
+   "goi": "2.2.3, 6.1.2, 6.3.1, 6.3.2"
   },
   {
    "ma": "R10",
    "yeu_cau": "Selling DB trao đổi dữ liệu với hệ thống chính hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch",
-   "goi": "2.1.1, 6.1.2, 6.2.1, 6.2.2, 6.2.3, 6.2.5"
+   "goi": "2.1.2, 6.2.1, 6.2.2, 6.2.3, 6.2.4, 6.2.5, 6.2.7, 6.2.8, 6.2.9, 6.2.10, 6.2.11, 6.2.12, 6.2.13, 7.2.1"
   },
   {
    "ma": "R11",
    "yeu_cau": "Nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng",
-   "goi": "2.2.1, 4.3.2, 5.3.3, 6.2.4, 6.2.5"
+   "goi": "2.1.2, 2.1.5, 2.2.1, 4.1.2, 4.3.4, 5.1.3, 6.2.1, 6.2.6, 6.2.9, 6.2.10, 7.3.2"
   },
   {
    "ma": "R12",
    "yeu_cau": "Đưa hệ thống vào vận hành ngày 01/07",
-   "goi": "8.3.1, 8.3.2, 8.3.3"
+   "goi": "6.3.1, 6.3.2, 6.3.3, 8.3.1, 8.3.2, 8.3.3, 8.3.4, 8.3.5"
   },
   {
    "ma": "R13",
    "yeu_cau": "Phạm vi: xây dựng hệ thống website bán hàng từ phân tích hệ thống đến kiểm thử vận hành",
-   "goi": "2.1.1, 7.1.1, 7.3.1, 7.3.2, 7.3.3"
+   "goi": "1.1.4, 1.2.4, 2.1.1, 3.5.2, 4.5.2, 5.5.2, 6.1.1, 6.2.12, 7.1.1, 7.1.3, 7.3.1, 7.3.2, 7.3.3, 8.1.1"
   },
   {
    "ma": "R14",
@@ -1884,17 +3609,17 @@
   {
    "ma": "R18",
    "yeu_cau": "Nhà thầu nêu sản phẩm bàn giao trong hợp đồng",
-   "goi": "1.3.1, 1.3.2, 8.3.3"
+   "goi": "1.3.1, 1.3.3, 8.2.4, 8.3.4"
   },
   {
    "ma": "R19",
    "yeu_cau": "Nhà thầu nêu tiến độ đến ngày cut over",
-   "goi": "1.1.2"
+   "goi": "1.1.2, 1.1.5"
   },
   {
    "ma": "R20",
    "yeu_cau": "Nhà thầu nêu tổ chức thực hiện dự án",
-   "goi": "1.1.2"
+   "goi": "1.1.2, 1.1.5"
   },
   {
    "ma": "R21",
@@ -1964,12 +3689,12 @@
   {
    "ma": "R34",
    "yeu_cau": "Nhà thầu bắt đầu xây dựng hệ thống ngay sau khi ký hợp đồng",
-   "goi": ""
+   "goi": "1.1.1"
   },
   {
    "ma": "R35",
    "yeu_cau": "Mỗi bên được đề xuất thay đổi đặc tả khi cần",
-   "goi": "1.2.2, 2.1.4"
+   "goi": "1.1.2, 1.1.3, 1.2.2, 2.1.7"
   },
   {
    "ma": "R36",
@@ -1979,32 +3704,32 @@
   {
    "ma": "R37",
    "yeu_cau": "Nhà thầu bàn giao sản phẩm đúng địa điểm và thời hạn đã thống nhất",
-   "goi": ""
+   "goi": "1.2.3"
   },
   {
    "ma": "R38",
    "yeu_cau": "Chủ đầu tư kiểm tra sản phẩm theo điều kiện trong đặc tả và thông báo kết quả cho nhà thầu",
-   "goi": "1.3.3"
+   "goi": "1.3.2, 6.2.13, 7.3.1, 7.3.2"
   },
   {
    "ma": "R39",
    "yeu_cau": "Kiểm tra đạt là chấp nhận sản phẩm",
-   "goi": "1.3.3"
+   "goi": "1.3.2"
   },
   {
    "ma": "R40",
    "yeu_cau": "Quyền sở hữu và bản quyền đối với sản phẩm và kết quả kỹ thuật của dự án thuộc Chủ đầu tư",
-   "goi": ""
+   "goi": "1.2.5, 8.2.4"
   },
   {
    "ma": "R41",
    "yeu_cau": "Nhà thầu sử dụng sản phẩm cho bên khác phải được Chủ đầu tư cho phép",
-   "goi": ""
+   "goi": "1.2.5"
   },
   {
    "ma": "R42",
    "yeu_cau": "Lỗi logic hoặc vấn đề thuộc trách nhiệm nhà thầu được nhà thầu sửa chữa, bổ sung bằng chi phí của mình trong thời gian sớm nhất",
-   "goi": ""
+   "goi": "1.1.4, 1.2.4, 3.4.4, 3.4.6, 3.5.2, 4.4.4, 4.4.6, 4.5.2, 5.4.5, 5.4.7, 5.4.8, 5.5.2, 6.2.11, 6.2.12, 7.2.4, 7.3.5"
   },
   {
    "ma": "R43",
@@ -2014,7 +3739,7 @@
   {
    "ma": "R44",
    "yeu_cau": "Sản phẩm: đặc tả hệ thống gồm cấu hình cơ sở dữ liệu và chức năng",
-   "goi": "2.1.2, 2.1.4, 2.2.3"
+   "goi": "2.1.3, 2.1.4, 2.1.5, 2.1.7, 2.1.8, 2.2.4"
   },
   {
    "ma": "R45",
@@ -2024,97 +3749,97 @@
   {
    "ma": "R46",
    "yeu_cau": "Sản phẩm: quy trình vận hành mới",
-   "goi": "2.2.1, 7.3.1, 8.2.1, 8.2.2"
+   "goi": "2.1.7, 2.2.1, 7.1.3, 8.2.1, 8.2.2, 8.2.3, 8.2.5"
   },
   {
    "ma": "R47",
    "yeu_cau": "Sản phẩm: cấu trúc cơ sở dữ liệu Selling DB",
-   "goi": "2.2.3, 6.1.1"
+   "goi": "2.1.7, 2.1.8, 2.2.3, 6.1.2"
   },
   {
    "ma": "R48",
    "yeu_cau": "Sản phẩm: sơ đồ phân cấp menu",
-   "goi": "2.3.1, 3.3.1"
+   "goi": "2.1.7, 2.3.1, 3.1.2, 3.3.5"
   }
  ],
  "phan_bo_01a": [
   {
    "stt": 1,
    "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
-   "goi": "1.1, 1.2, 1.3.1, 2.1, 2.2.2",
-   "md": 31.6
+   "goi": "1.1, 1.2.1, 1.2.2, 1.2.3, 1.3.1, 2.1.1, 2.1.2, 2.1.3, 2.1.4, 2.1.5, 2.1.6, 2.1.7, 2.2.2, 2.2.4",
+   "md": 48.06
   },
   {
    "stt": 2,
    "danh_muc": "Thiết kế quy trình vận hành mới (New Operational Flow)",
-   "goi": "1.2, 1.3.1, 2.1.4, 2.2.1",
-   "md": 8.59
+   "goi": "1.2.1, 1.2.2, 1.2.3, 1.3.1, 2.1.7, 2.2.1",
+   "md": 7.56
   },
   {
    "stt": 3,
    "danh_muc": "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
-   "goi": "1.2, 1.3.1, 2.1.4, 2.2.3",
-   "md": 9.59
+   "goi": "1.2.1, 1.2.2, 1.2.3, 1.3.1, 2.1.7, 2.2.3",
+   "md": 8.56
   },
   {
    "stt": 4,
    "danh_muc": "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
-   "goi": "1.2, 1.3.1, 2.1.4, 2.3",
-   "md": 16.35
+   "goi": "1.2.1, 1.2.2, 1.2.3, 1.3.1, 2.1.7, 2.3.1, 2.3.2, 2.3.3, 2.3.4, 2.3.5",
+   "md": 20.56
   },
   {
    "stt": 5,
    "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
-   "goi": "1.2, 1.3.1, 1.3.3, 2.3.3, 3.1, 3.2, 3.3, 3.4, 3.5, 8.1.1",
-   "md": 46.2
+   "goi": "1.2.1, 1.2.2, 1.2.3, 1.2.4, 1.3.1, 1.3.2, 2.3.6, 3.1, 3.2, 3.3, 3.4, 3.5.1, 6.1.1, 6.1.3, 8.1.1",
+   "md": 99.61
   },
   {
    "stt": 6,
    "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
-   "goi": "1.2, 1.3.1, 1.3.3, 2.3.3, 4.1, 4.2, 4.3, 4.4, 4.5, 8.1.1",
-   "md": 43.2
+   "goi": "1.2.1, 1.2.2, 1.2.3, 1.2.4, 1.3.1, 1.3.2, 2.3.6, 4.1, 4.2, 4.3, 4.4, 4.5.1, 6.1.1, 6.1.3, 6.1.4, 8.1.1",
+   "md": 98.11
   },
   {
    "stt": 7,
    "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
-   "goi": "1.2, 1.3.1, 1.3.3, 2.3.3, 5.1, 5.2, 5.3, 5.4, 5.5, 8.1.1",
-   "md": 54.2
+   "goi": "1.2.1, 1.2.2, 1.2.3, 1.2.4, 1.3.1, 1.3.2, 2.3.6, 5.1, 5.2, 5.3, 5.4, 5.5.1, 6.1.1, 6.1.3, 6.1.4, 8.1.1",
+   "md": 133.11
   },
   {
    "stt": 8,
    "danh_muc": "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
-   "goi": "1.2, 1.3.1, 1.3.3, 6.1, 8.1.1",
-   "md": 12.44
+   "goi": "1.2.1, 1.2.2, 1.2.3, 1.3.1, 1.3.2, 6.1.1, 6.1.2, 8.1.1",
+   "md": 12.61
   },
   {
    "stt": 9,
    "danh_muc": "Tích hợp với hệ thống chính (Main System)",
-   "goi": "1.2, 1.3.1, 1.3.3, 6.2, 8.1.1",
-   "md": 36.45
+   "goi": "1.2.1, 1.2.2, 1.2.3, 1.3.1, 1.3.2, 6.2.1, 6.2.2, 6.2.3, 6.2.4, 6.2.5, 6.2.6, 6.2.7, 6.2.8, 6.2.9, 6.2.10, 6.2.11, 6.2.13, 8.1.1",
+   "md": 57.61
   },
   {
    "stt": 10,
    "danh_muc": "Kiểm thử hệ thống",
-   "goi": "1.2, 1.3.1, 7.1, 7.2",
-   "md": 44.85
+   "goi": "1.2.1, 1.2.2, 1.2.3, 1.3.1, 7.1.1, 7.1.2, 7.1.4, 7.2, 7.3.4, 7.3.5, 7.3.6",
+   "md": 48.31
   },
   {
    "stt": 11,
    "danh_muc": "Kiểm thử vận hành (Operation Test)",
-   "goi": "1.2, 1.3.1, 7.1.1, 7.3",
-   "md": 17.85
+   "goi": "1.2.1, 1.2.2, 1.2.3, 1.3.1, 3.5.2, 4.5.2, 5.5.2, 6.2.12, 7.1.1, 7.1.3, 7.3.1, 7.3.2, 7.3.3",
+   "md": 54.3
   },
   {
    "stt": 12,
    "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
-   "goi": "1.2, 1.3.1, 8.2",
-   "md": 9.84
+   "goi": "1.2.1, 1.2.2, 1.2.3, 1.2.5, 1.3.1, 2.1.8, 8.2",
+   "md": 24.8
   },
   {
    "stt": 13,
    "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
-   "goi": "1.2, 1.3.1, 1.3.2, 8.1.2, 8.3",
-   "md": 19.84
+   "goi": "1.2.1, 1.2.2, 1.2.3, 1.3.1, 1.3.3, 6.3, 8.1.2, 8.1.3, 8.3",
+   "md": 43.8
   }
  ],
  "khong_can_goi": [
@@ -2141,22 +3866,180 @@
  ],
  "gia_dinh_ngoai_pham_vi": [
   "Chức năng quản trị nội bộ (The internal administrative function), RFP loại khỏi phạm vi",
-  "Quản trị danh mục sản phẩm, giá, tồn kho và xử lý giao vận nằm trong Main System hiện có, gói thầu chỉ đồng bộ và hiển thị dữ liệu",
-  "Thanh toán trực tuyến qua cổng thanh toán, RFP không nêu. Phương thức thanh toán đơn hàng theo quy tắc Chủ đầu tư xác nhận",
+  "Quản trị danh mục sản phẩm, giá, tồn kho, chương trình khuyến mại và xử lý giao vận nằm trong Main System hiện có, gói thầu chỉ đồng bộ, áp dụng và hiển thị dữ liệu",
+  "Thanh toán trực tuyến qua cổng thanh toán, RFP không nêu. Phương thức thanh toán đơn hàng và cách hoàn tiền khi đổi trả theo quy tắc Chủ đầu tư xác nhận tại 2.1.5",
+  "Biểu phí vận chuyển, điều kiện mã giảm giá, thời hạn giữ tồn khi đặt hàng, điều kiện hủy đơn và đổi trả theo quy tắc Chủ đầu tư xác nhận tại 2.1.5",
   "Mua sắm phần cứng, bản quyền phần mềm nền và hạ tầng máy chủ vận hành của Chủ đầu tư",
-  "Chủ đầu tư cung cấp tài liệu giao diện, dữ liệu mẫu và môi trường kiểm thử của Main System tại họp khởi động (1.1.1), mọi sửa đổi phía Main System do Chủ đầu tư thực hiện. Cần Chủ đầu tư xác nhận tại 1.1.1",
+  "Chủ đầu tư cung cấp tài liệu đặc tả giao diện trao đổi dữ liệu của Main System chậm nhất 14/04/2027, môi trường thử của Main System chậm nhất 20/05/2027, dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi và nội dung, hình ảnh sản phẩm chậm nhất 10/06/2027 (dau_vao/du_an.json, cam kết CK1 đến CK4). Mọi sửa đổi phía Main System do Chủ đầu tư thực hiện",
   "Luồng dữ liệu hai chiều (sản phẩm, giá, tồn kho từ Main System vào Selling DB và đơn hàng từ Selling DB sang Main System) theo quy tắc Chủ đầu tư xác nhận tại 6.2.1. RFP chỉ thể hiện chiều từ Main System vào Selling DB",
-  "Hạ tầng máy chủ vận hành do Chủ đầu tư bàn giao trước sprint S4 để thiết lập môi trường vận hành (8.1.2). Cần Chủ đầu tư xác nhận tại 1.1.1",
-  "Thư điện tử xác nhận (khôi phục mật khẩu, xác nhận đơn hàng) gửi qua máy chủ thư của Chủ đầu tư, cấu hình trong 8.1.2, theo quy tắc Chủ đầu tư xác nhận tại 2.1.2",
-  "Bảo hành 12 tháng sau nghiệm thu thực hiện ngoài thời gian dự án, chi phí nằm trong khoản B của dự toán, không lập gói trong WBS",
-  "Lập trình các phân hệ bắt đầu song song với bước xác nhận đặc tả (2.1.4). Thay đổi sau xác nhận đi qua quy trình yêu cầu thay đổi (rủi ro RR01)",
+  "Hạ tầng máy chủ vận hành do Chủ đầu tư bàn giao trước khi thiết lập môi trường vận hành (8.1.2). Cần Chủ đầu tư xác nhận tại 1.1.1",
+  "Thư điện tử xác nhận (khôi phục mật khẩu, xác nhận đơn hàng) gửi qua máy chủ thư của Chủ đầu tư, theo quy tắc Chủ đầu tư xác nhận tại 2.1.4 và 2.1.5",
+  "Bảo hành 12 tháng sau nghiệm thu và hỗ trợ tăng cường từ 02/07/2027 đến 15/07/2027 thực hiện ngoài thời gian dự án, chi phí nằm trong khoản B của dự toán, không lập gói trong WBS",
+  "Lập trình từng chức năng bắt đầu khi thiết kế chi tiết của chức năng đó hoàn thành, song song với bước xác nhận đặc tả (2.1.7). Thay đổi sau xác nhận đi qua quy trình yêu cầu thay đổi",
   "Khối lượng từng gói đã gồm thời gian tham gia họp hằng ngày và trình diễn cuối sprint của người thực hiện"
  ],
  "md_theo_loai": {
-  "BA": 63.0,
-  "DEV": 170.0,
-  "DEVOPS": 23.0,
-  "PM": 33.0,
-  "QA": 62.0
+  "BA": 90.0,
+  "DEV": 318.0,
+  "DEVOPS": 40.0,
+  "PM": 49.0,
+  "QA": 160.0
+ },
+ "can_cu_uoc_luong": {
+  "phuong_phap": "Ước lượng theo danh mục chức năng: phân loại từng chức năng theo thư viện định mức (giờ công chuẩn cho giải pháp, phát triển, kiểm thử đơn vị, kiểm thử), trừ phần tái sử dụng, cộng các đầu việc phi chức năng, sau đó đối chiếu với WBS và với hợp đồng tương tự",
+  "loai_uoc_luong": "Ước lượng sơ bộ giai đoạn dự thầu",
+  "nguon": "Bảng tính chi phí và báo giá của nhóm (106 chức năng, 25 đầu việc phi chức năng), tổng hợp tại HSDT của nhóm mục III.2 bảng 20 và III.5 bảng 26. Nhóm quyết định ngày 17/10/2026 dùng tổng 657 MD theo phương pháp này.",
+  "so_chuc_nang": 106,
+  "so_dau_viec_phi_chuc_nang": 25,
+  "khoang_sai_so": {
+   "duoi": -0.15,
+   "tren": 0.3,
+   "md_duoi": 558.45,
+   "md_tren": 854.1
+  },
+  "cac_buoc": [
+   {
+    "buoc": 1,
+    "noi_dung": "106 chức năng gắn mã WBS (khách hàng, sản phẩm, đơn hàng, tích hợp, nền tảng dùng chung, công cụ kiểm thử, triển khai) được phân loại theo thư viện định mức, nỗ lực trước hiệu chỉnh",
+    "md": 573.6
+   },
+   {
+    "buoc": 2,
+    "noi_dung": "Trừ phần tái sử dụng theo tỷ lệ của từng chức năng (thư viện, thành phần dùng chung). Sau hiệu chỉnh gồm giải pháp 119,6 MD, phát triển 285,4 MD, kiểm thử 145,2 MD",
+    "md": 550.3,
+    "thanh_phan": {
+     "giai_phap": 119.6,
+     "phat_trien": 285.4,
+     "kiem_thu": 145.2
+    }
+   },
+   {
+    "buoc": 3,
+    "noi_dung": "25 đầu việc phi chức năng: quản trị dự án, bảo đảm chất lượng, rà soát mã, kiểm thử tích hợp, nghiệm thu, hồ sơ kỹ thuật, triển khai, kiểm thử hiệu năng, rà soát an toàn thông tin, giám sát, đào tạo, hỗ trợ kiểm thử chấp nhận và vận hành thử, nghiên cứu tích hợp",
+    "md": 106.7
+   }
+  ],
+  "tong_md_muc_tieu": 657,
+  "tong_md_wbs": 657.0,
+  "chenh_lech_tong": 0.0,
+  "dung_sai_nhom": 0.1,
+  "theo_nhom": [
+   {
+    "ma": "1",
+    "ten": "Quản lý dự án",
+    "md_muc_tieu": 60,
+    "md_wbs": 60.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "can_cu": {
+     "kich_thuoc": "1 họp khởi động, 1 kế hoạch quản lý dự án, 1 kế hoạch bảo đảm chất lượng, 7 sprint báo cáo, 5 đợt thanh toán, 2 lần Chủ đầu tư xác nhận (kế hoạch, chức năng chính), rà soát mã nguồn và giấy phép thư viện",
+     "cach_phan_ra": "Tổng nhóm 60 MD theo tong_theo_nhom của uoc_luong.json. Thuộc phần đầu việc phi chức năng ở bước 3 của uoc_luong.json (quản trị dự án, bảo đảm chất lượng, rà soát mã, nghiệm thu). Công việc quản lý liên tục (họp, báo cáo, rủi ro, thay đổi, cấu hình, hồ sơ thanh toán) dàn trải 73 ngày làm việc bằng một nửa thời gian của quản trị dự án, phần còn lại chia theo số kế hoạch và số lần xác nhận: khởi động và lập kế hoạch 13,5 MD (1.1); theo dõi, kiểm soát và bảo đảm chất lượng 33,5 MD (1.2); nghiệm thu và kết thúc dự án 13 MD (1.3)"
+    }
+   },
+   {
+    "ma": "2",
+    "ten": "Phân tích và thiết kế chung",
+    "md_muc_tieu": 66,
+    "md_wbs": 66.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "can_cu": {
+     "kich_thuoc": "3 nhóm chức năng (tìm kiếm, thành viên, đặt hàng) và đặc tả phi chức năng, 1 quy trình vận hành mới, 1 kiến trúc, 1 cấu trúc và 1 cấu hình cơ sở dữ liệu, 1 sơ đồ menu, 3 nhóm màn hình ưu tiên, 1 thư viện thành phần giao diện",
+     "cach_phan_ra": "Tổng nhóm 66 MD theo tong_theo_nhom của uoc_luong.json. Thuộc phần giải pháp (119,6 MD ở bước 2 của uoc_luong.json), dành cho sản phẩm chung của Đợt 2 (Mẫu 01A hạng mục 1 đến 4). Chia theo số sản phẩm và độ phức tạp, đặc tả đặt hàng lớn nhất vì gồm năm nghiệp vụ NV01 đến NV05: khảo sát và đặc tả hệ thống 28 MD (2.1); thiết kế quy trình, kiến trúc và cơ sở dữ liệu 17 MD (2.2); thiết kế giao diện 21 MD (2.3)"
+    }
+   },
+   {
+    "ma": "3",
+    "ten": "Phân hệ tìm kiếm và hiển thị sản phẩm (Product Search)",
+    "md_muc_tieu": 95,
+    "md_wbs": 95.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "can_cu": {
+     "kich_thuoc": "5 chức năng (chỉ mục tìm kiếm, tìm kiếm và gợi ý, lọc và sắp xếp, danh mục và chi tiết sản phẩm, bộ nhớ đệm), 3 màn hình (trang chủ và danh mục, kết quả tìm kiếm, chi tiết sản phẩm), 4 nhóm dịch vụ phía máy chủ",
+     "cach_phan_ra": "Tổng nhóm 95 MD theo tong_theo_nhom của uoc_luong.json. Chia theo tỷ lệ giải pháp, phát triển, kiểm thử của bước 2 (119,6, 285,4, 145,2 MD) và số chức năng, màn hình: phân tích yêu cầu phân hệ tìm kiếm và hiển thị sản phẩm 8 MD (3.1); thiết kế phân hệ tìm kiếm và hiển thị sản phẩm 9 MD (3.2); lập trình và kiểm thử đơn vị phân hệ tìm kiếm và hiển thị sản phẩm 39 MD (3.3); kiểm thử phân hệ tìm kiếm và hiển thị sản phẩm 30 MD (3.4); nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ tìm kiếm và hiển thị sản phẩm 9 MD (3.5)"
+    }
+   },
+   {
+    "ma": "4",
+    "ten": "Phân hệ thành viên (Member Administration)",
+    "md_muc_tieu": 91,
+    "md_wbs": 91.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "can_cu": {
+     "kich_thuoc": "6 chức năng (đăng ký và xác thực thư điện tử, đăng nhập và phiên làm việc, khôi phục và đổi mật khẩu, thông tin thành viên và sổ địa chỉ, đồng ý điều khoản và bảo vệ dữ liệu cá nhân, bảo mật tài khoản), 2 nhóm màn hình",
+     "cach_phan_ra": "Tổng nhóm 91 MD theo tong_theo_nhom của uoc_luong.json. Chia theo tỷ lệ giải pháp, phát triển, kiểm thử của bước 2 và số chức năng. Đăng nhập và màn hình đăng ký, đăng nhập lớn nhất vì gồm phiên làm việc, giới hạn đăng nhập sai và kiểm soát dữ liệu đầu vào theo chỉ tiêu KT04: phân tích yêu cầu phân hệ thành viên 8 MD (4.1); thiết kế phân hệ thành viên 8 MD (4.2); lập trình và kiểm thử đơn vị phân hệ thành viên 35 MD (4.3); kiểm thử phân hệ thành viên 32 MD (4.4); nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ thành viên 8 MD (4.5)"
+    }
+   },
+   {
+    "ma": "5",
+    "ten": "Phân hệ đặt hàng (Order)",
+    "md_muc_tieu": 129,
+    "md_wbs": 129.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "can_cu": {
+     "kich_thuoc": "7 chức năng (giỏ hàng, giữ tồn, phí vận chuyển, khuyến mại và mã giảm giá, đặt hàng và xác nhận, theo dõi và hủy đơn, đổi trả và hoàn tiền), 3 nhóm màn hình",
+     "cach_phan_ra": "Tổng nhóm 129 MD theo tong_theo_nhom của uoc_luong.json. Phân hệ lớn nhất vì gồm năm nghiệp vụ NV01 đến NV05. Chia theo tỷ lệ giải pháp, phát triển, kiểm thử của bước 2 và số chức năng, đặt hàng và màn hình đặt hàng lớn nhất vì liên kết giỏ hàng, giữ tồn, phí vận chuyển, khuyến mại và thư điện tử xác nhận: phân tích yêu cầu phân hệ đặt hàng 11 MD (5.1); thiết kế phân hệ đặt hàng 12 MD (5.2); lập trình và kiểm thử đơn vị phân hệ đặt hàng 53 MD (5.3); kiểm thử phân hệ đặt hàng 42 MD (5.4); nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ đặt hàng 11 MD (5.5)"
+    }
+   },
+   {
+    "ma": "6",
+    "ten": "Cơ sở dữ liệu bán hàng và tích hợp hệ thống",
+    "md_muc_tieu": 95,
+    "md_wbs": 93.0,
+    "chenh_lech": -2.0,
+    "ty_le_chenh": -0.0211,
+    "can_cu": {
+     "kich_thuoc": "1 Selling DB, 2 khung ứng dụng (phía máy chủ, giao diện), 1 dịch vụ thư điện tử, 5 luồng tích hợp với Main System (sản phẩm và giá, tồn kho, chuyển đơn hàng, trạng thái vận chuyển, giám sát và gửi lại), 1 công cụ chuyển đổi dữ liệu, 1 lần chuyển đổi thử và 1 lần nạp nội dung",
+     "cach_phan_ra": "Mục tiêu theo tong_theo_nhom của uoc_luong.json là 95 MD, tổng các gói của nhóm là 93 MD, thấp hơn 2 MD và nằm trong dung sai của nhóm; tổng toàn dự án giữ 657 MD, phần chênh nằm ở nhóm 7. Gồm nền tảng dùng chung, Selling DB, tích hợp và chuyển đổi dữ liệu. Mỗi luồng tích hợp ước lượng theo số thực thể dữ liệu và chiều trao đổi: cơ sở dữ liệu bán hàng (Selling DB) và nền tảng dùng chung 22 MD (6.1); tích hợp với hệ thống chính (Main System) 58 MD (6.2); chuyển đổi dữ liệu và nội dung sản phẩm 13 MD (6.3)"
+    }
+   },
+   {
+    "ma": "7",
+    "ten": "Kiểm thử hệ thống và kiểm thử vận hành",
+    "md_muc_tieu": 71,
+    "md_wbs": 73.0,
+    "chenh_lech": 2.0,
+    "ty_le_chenh": 0.0282,
+    "can_cu": {
+     "kich_thuoc": "1 kế hoạch kiểm thử, 3 bộ kịch bản (hệ thống, chấp nhận, hiệu năng), 4 loại kiểm thử hệ thống (chức năng đầu cuối, khả năng sử dụng, hiệu năng, bảo mật), 2 luồng kiểm thử chấp nhận cùng Chủ đầu tư, kiểm thử hồi quy, kiểm thử bản phát hành, diễn tập chuyển đổi dự phòng",
+     "cach_phan_ra": "Mục tiêu theo tong_theo_nhom của uoc_luong.json là 71 MD, tổng các gói của nhóm là 73 MD, cao hơn 2 MD và nằm trong dung sai của nhóm, tương ứng phần chênh của nhóm 6. Thuộc phần kiểm thử ở bước 2 và hỗ trợ kiểm thử chấp nhận, vận hành thử ở bước 3 của uoc_luong.json. Chia theo số loại kiểm thử và số ngày của khoảng kiểm thử chấp nhận 18/06 đến 29/06/2027: kế hoạch và kịch bản kiểm thử 15 MD (7.1); kiểm thử hệ thống 24 MD (7.2); kiểm thử chấp nhận và kiểm thử vận hành (Operation Test) 34 MD (7.3)"
+    }
+   },
+   {
+    "ma": "8",
+    "ten": "Triển khai và chuyển giao",
+    "md_muc_tieu": 50,
+    "md_wbs": 50.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "can_cu": {
+     "kich_thuoc": "2 môi trường (phát triển và kiểm thử, vận hành), giám sát và sao lưu, 2 tài liệu hướng dẫn, 3 buổi hướng dẫn vận hành, 1 kế hoạch cut over, 1 lần diễn tập, 1 lần triển khai chính thức, bàn giao mã nguồn",
+     "cach_phan_ra": "Tổng nhóm 50 MD theo tong_theo_nhom của uoc_luong.json. Thuộc đầu việc phi chức năng ở bước 3 (triển khai, giám sát, đào tạo, hồ sơ kỹ thuật). Chia theo số môi trường, số tài liệu và số lần triển khai: môi trường và hạ tầng 17 MD (8.1); chuyển giao và hướng dẫn vận hành 18 MD (8.2); đưa hệ thống vào vận hành (cut over) 15 MD (8.3)"
+    }
+   }
+  ],
+  "hop_dong_tuong_tu": [
+   {
+    "ten": "Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng, số 12/2024/HĐ-HG",
+    "chu_dau_tu": "Công ty Cổ phần Thời trang Hoàng Gia",
+    "ngay_hoan_thanh": "2024-11-29",
+    "quy_mo_md": 550.0,
+    "ty_le_so_voi_wbs": 0.8371
+   },
+   {
+    "ten": "Website bán hàng trực tuyến và tích hợp ERP, số 03/2025/HĐ-AP",
+    "chu_dau_tu": "Công ty TNHH Nội thất An Phát",
+    "ngay_hoan_thanh": "2025-07-18",
+    "quy_mo_md": 420.0,
+    "ty_le_so_voi_wbs": 0.6393
+   }
+  ],
+  "trung_binh_tuong_tu_md": 485.0,
+  "ty_le_lech_trung_binh": 0.3546,
+  "nguong_lech_tuong_tu": 0.25,
+  "giai_trinh_tuong_tu": "Tổng 657 MD cao hơn trung bình 485 MD của hai hợp đồng tương tự (550 MD, 420 MD) vì phạm vi gói thầu rộng hơn mô tả của hai hợp đồng đó: (1) Selling DB là cơ sở dữ liệu riêng, trao đổi dữ liệu hai chiều với Main System gồm đồng bộ sản phẩm, giá, tồn kho, chuyển đơn hàng, nhận trạng thái vận chuyển và giám sát, gửi lại khi lỗi (nhóm 6); (2) yêu cầu hoạt động liên tục 24 giờ, 365 ngày và thời gian phản hồi không quá 2 giây với 500 người dùng đồng thời cần môi trường vận hành hai nút, cơ sở dữ liệu dự phòng, kiểm thử hiệu năng, diễn tập chuyển đổi dự phòng (8.1, 7.1.4, 7.2.3, 7.3.7, 8.3.2); (3) gói thầu gồm quy trình vận hành mới, kiểm thử vận hành cùng Chủ đầu tư và hỗ trợ cut over có chuyển đổi dữ liệu (2.2.1, 7.3, 6.3, 8.3); (4) phân hệ đặt hàng xử lý đủ các nghiệp vụ hủy đơn, đổi trả, khuyến mại, phí vận chuyển, giữ tồn (NV01 đến NV05). Hai hợp đồng tương tự chỉ mô tả website, ba phân hệ và tầng tích hợp với hệ thống nội bộ. Khối lượng 657 MD theo dau_vao/uoc_luong.json do nhóm quyết định"
  }
 }

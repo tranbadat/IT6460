@@ -19,9 +19,45 @@
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
-   "ly_do": "Phân tích nghiệp vụ hỗ trợ lập kế hoạch họp, tổ chức thực hiện và lịch làm việc với Chủ đầu tư",
-   "ten": "Kế hoạch quản lý dự án, tiến độ, tổ chức thực hiện và kế hoạch họp",
+   "ly_do": "",
+   "ten": "Kế hoạch quản lý dự án gồm phạm vi, tiến độ, tổ chức thực hiện, kế hoạch họp, quản lý rủi ro và thay đổi đặc tả",
    "md": 4,
+   "loai": "PM"
+  },
+  {
+   "ma": "1.1.3",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Cập nhật sổ rủi ro, kế hoạch quản lý thay đổi và cấu hình theo đặc tả đã xác nhận",
+   "md": 2.5,
+   "loai": "PM"
+  },
+  {
+   "ma": "1.1.4",
+   "R": "Q1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kế hoạch bảo đảm chất lượng, quy chuẩn mã nguồn và tiêu chí hoàn thành công việc",
+   "md": 3,
+   "loai": "QA"
+  },
+  {
+   "ma": "1.1.5",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Chủ đầu tư xem xét, xác nhận kế hoạch quản lý dự án",
+   "md": 2,
    "loai": "PM"
   },
   {
@@ -32,8 +68,8 @@
    "tu_sprint": 1,
    "den_sprint": 7,
    "ly_do": "",
-   "ten": "Họp tiến độ, trình diễn và báo cáo cuối sprint",
-   "md": 10,
+   "ten": "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint",
+   "md": 14,
    "loai": "PM"
   },
   {
@@ -44,8 +80,8 @@
    "tu_sprint": 1,
    "den_sprint": 7,
    "ly_do": "",
-   "ten": "Quản lý rủi ro và yêu cầu thay đổi đặc tả",
-   "md": 6,
+   "ten": "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả",
+   "md": 10,
    "loai": "PM"
   },
   {
@@ -56,9 +92,33 @@
    "tu_sprint": 1,
    "den_sprint": 7,
    "ly_do": "",
-   "ten": "Quản lý chất lượng, cấu hình và phiên bản tài liệu",
-   "md": 4,
+   "ten": "Quản lý cấu hình, phiên bản tài liệu và hồ sơ dự án",
+   "md": 4.5,
    "loai": "PM"
+  },
+  {
+   "ma": "1.2.4",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Rà soát mã nguồn và kiến trúc giai đoạn lập trình phân hệ",
+   "md": 3,
+   "loai": "DEV"
+  },
+  {
+   "ma": "1.2.5",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Rà soát giấy phép thư viện mã nguồn mở và quyền sở hữu sản phẩm",
+   "md": 2,
+   "loai": "DEV"
   },
   {
    "ma": "1.3.1",
@@ -69,85 +129,129 @@
    "den_sprint": 7,
    "ly_do": "",
    "ten": "Hồ sơ nghiệm thu và thanh toán theo các đợt của hợp đồng",
-   "md": 4,
+   "md": 8,
    "loai": "PM"
   },
   {
    "ma": "1.3.2",
-   "R": "dat",
-   "ho_tro": [],
-   "dan_trai": true,
-   "tu_sprint": 7,
-   "den_sprint": 7,
-   "ly_do": "",
-   "ten": "Báo cáo tổng kết và bàn giao hồ sơ dự án",
-   "md": 3,
-   "loai": "PM"
-  },
-  {
-   "ma": "1.3.3",
    "R": "lien",
-   "ho_tro": [
-    "K"
-   ],
+   "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Kiểm tra, xác nhận chức năng chính và tích hợp cùng Chủ đầu tư",
-   "md": 2,
+   "ten": "Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System",
+   "md": 3,
    "loai": "BA"
+  },
+  {
+   "ma": "1.3.3",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Báo cáo tổng kết, bài học kinh nghiệm và bàn giao hồ sơ dự án",
+   "md": 2,
+   "loai": "PM"
   },
   {
    "ma": "2.1.1",
    "R": "lien",
-   "ho_tro": [
-    "K"
-   ],
+   "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Khảo sát nghiệp vụ bán hàng trực tuyến và hệ thống hiện có",
-   "md": 5,
+   "ten": "Khảo sát nghiệp vụ bán hàng trực tuyến và quy trình hiện tại của Chủ đầu tư",
+   "md": 4,
    "loai": "BA"
   },
   {
    "ma": "2.1.2",
-   "R": "lien",
-   "ho_tro": [
-    "K"
-   ],
-   "dan_trai": false,
-   "tu_sprint": null,
-   "den_sprint": null,
-   "ly_do": "",
-   "ten": "Đặc tả chức năng (Function) của hệ thống",
-   "md": 8,
-   "loai": "BA"
-  },
-  {
-   "ma": "2.1.3",
    "R": "K",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Đặc tả yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi và thao tác",
+   "ten": "Khảo sát hệ thống hiện có, Main System và luồng dữ liệu liên quan",
+   "md": 4,
+   "loai": "BA"
+  },
+  {
+   "ma": "2.1.3",
+   "R": "K",
+   "ho_tro": [
+    "dat"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Đặc tả chức năng (Function) tìm kiếm và hiển thị sản phẩm",
    "md": 4,
    "loai": "BA"
   },
   {
    "ma": "2.1.4",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Đặc tả chức năng (Function) quản lý thành viên",
+   "md": 3,
+   "loai": "BA"
+  },
+  {
+   "ma": "2.1.5",
    "R": "lien",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Xác nhận đặc tả yêu cầu và giao diện ưu tiên với Chủ đầu tư",
+   "ten": "Đặc tả chức năng (Function) đặt hàng gồm giỏ hàng, giữ tồn, phí vận chuyển, khuyến mại, hủy đơn, đổi trả",
+   "md": 5,
+   "loai": "BA"
+  },
+  {
+   "ma": "2.1.6",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Đặc tả yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi, bảo mật và thao tác",
    "md": 3,
+   "loai": "BA"
+  },
+  {
+   "ma": "2.1.7",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Hai bên xác nhận đặc tả yêu cầu và giao diện ưu tiên",
+   "md": 3,
+   "loai": "BA"
+  },
+  {
+   "ma": "2.1.8",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Cập nhật đặc tả hệ thống và cấu trúc cơ sở dữ liệu theo phiên bản bàn giao",
+   "md": 2,
    "loai": "BA"
   },
   {
@@ -158,37 +262,45 @@
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Quy trình vận hành mới (New Operational Flow)",
-   "md": 6,
+   "ten": "Quy trình vận hành mới (New Operational Flow) của kênh bán hàng trực tuyến",
+   "md": 4,
    "loai": "BA"
   },
   {
    "ma": "2.2.2",
-   "R": "dat",
-   "ho_tro": [
-    "toan"
-   ],
+   "R": "toan",
+   "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
    "ten": "Kiến trúc hệ thống, hạ tầng và phương án bảo đảm hoạt động liên tục",
-   "md": 6,
+   "md": 5,
    "loai": "DEV"
   },
   {
    "ma": "2.2.3",
    "R": "tuananh",
-   "ho_tro": [
-    "toan"
-   ],
+   "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Cấu trúc cơ sở dữ liệu (Database Structure) và cấu hình cơ sở dữ liệu (DB Configuration) của Selling DB",
-   "md": 7,
+   "ten": "Cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+   "md": 5,
    "loai": "DEV"
+  },
+  {
+   "ma": "2.2.4",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Cấu hình cơ sở dữ liệu (DB Configuration) gồm dự phòng, sao lưu và phân quyền truy cập",
+   "md": 3,
+   "loai": "DEVOPS"
   },
   {
    "ma": "2.3.1",
@@ -199,7 +311,7 @@
    "den_sprint": null,
    "ly_do": "",
    "ten": "Sơ đồ phân cấp menu (Menu Layer)",
-   "md": 4,
+   "md": 3,
    "loai": "BA"
   },
   {
@@ -210,82 +322,142 @@
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Thiết kế giao diện ưu tiên các màn hình chính",
-   "md": 8,
+   "ten": "Nghiên cứu hành vi người dùng và khung giao diện các trang chính",
+   "md": 3,
    "loai": "DEV"
   },
   {
    "ma": "2.3.3",
+   "R": "minh",
+   "ho_tro": [
+    "D1"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Thiết kế giao diện ưu tiên trang chủ, tìm kiếm và chi tiết sản phẩm",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "2.3.4",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Thiết kế giao diện ưu tiên đăng ký, đăng nhập và trang thành viên",
+   "md": 3,
+   "loai": "DEV"
+  },
+  {
+   "ma": "2.3.5",
    "R": "minh",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Bộ thành phần giao diện dùng chung, tương thích thiết bị di động",
-   "md": 7,
+   "ten": "Thiết kế giao diện ưu tiên giỏ hàng, đặt hàng và theo dõi đơn hàng",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "2.3.6",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Thư viện thành phần giao diện dùng chung, tương thích thiết bị di động",
+   "md": 4,
    "loai": "DEV"
   },
   {
    "ma": "3.1.1",
-   "R": "dat",
-   "ho_tro": [],
-   "dan_trai": false,
-   "tu_sprint": null,
-   "den_sprint": null,
-   "ly_do": "",
-   "ten": "Đặc tả use case tìm kiếm, lọc và xem chi tiết sản phẩm",
-   "md": 4,
-   "loai": "BA"
-  },
-  {
-   "ma": "3.2.1",
-   "R": "D2",
-   "ho_tro": [],
-   "dan_trai": false,
-   "tu_sprint": null,
-   "den_sprint": null,
-   "ly_do": "",
-   "ten": "Thiết kế chi tiết chức năng tìm kiếm và chỉ mục dữ liệu sản phẩm",
-   "md": 4,
-   "loai": "DEV"
-  },
-  {
-   "ma": "3.3.1",
    "R": "K",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Trang chủ và điều hướng danh mục theo Menu Layer",
-   "md": 6,
-   "loai": "DEV"
+   "ten": "Đặc tả use case tìm kiếm, lọc và sắp xếp sản phẩm",
+   "md": 5,
+   "loai": "BA"
   },
   {
-   "ma": "3.3.2",
-   "R": "D2",
+   "ma": "3.1.2",
+   "R": "lien",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Dịch vụ tìm kiếm, lọc và sắp xếp sản phẩm",
-   "md": 8,
-   "loai": "DEV"
+   "ten": "Đặc tả use case trang chủ, danh mục và chi tiết sản phẩm",
+   "md": 3,
+   "loai": "BA"
   },
   {
-   "ma": "3.3.3",
-   "R": "D1",
-   "ho_tro": [
-    "minh"
-   ],
+   "ma": "3.2.1",
+   "R": "toan",
+   "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Giao diện kết quả tìm kiếm và chi tiết sản phẩm",
-   "md": 8,
+   "ten": "Thiết kế chi tiết tìm kiếm, lọc, sắp xếp và chỉ mục tìm kiếm",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "3.2.2",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Thiết kế chi tiết trang chủ, danh mục và chi tiết sản phẩm",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "3.3.1",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Dịch vụ chỉ mục tìm kiếm và cập nhật chỉ mục từ Selling DB",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "3.3.2",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Dịch vụ tìm kiếm theo từ khóa và gợi ý tìm kiếm",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "3.3.3",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Dịch vụ lọc và sắp xếp kết quả tìm kiếm",
+   "md": 5,
    "loai": "DEV"
   },
   {
@@ -296,23 +468,135 @@
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Tối ưu thời gian phản hồi tìm kiếm",
+   "ten": "Dịch vụ danh mục, chi tiết sản phẩm, biến thể, tồn kho và giá khuyến mại hiển thị",
+   "md": 6,
+   "loai": "DEV"
+  },
+  {
+   "ma": "3.3.5",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Giao diện trang chủ và điều hướng danh mục theo Menu Layer",
    "md": 4,
    "loai": "DEV"
   },
   {
-   "ma": "3.4.1",
-   "R": "Q1",
+   "ma": "3.3.6",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Giao diện tìm kiếm, kết quả và bộ lọc",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "3.3.7",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Giao diện chi tiết sản phẩm",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "3.3.8",
+   "R": "tuananh",
    "ho_tro": [
-    "Q2"
+    "D2"
    ],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Kịch bản và kiểm thử phân hệ tìm kiếm sản phẩm",
+   "ten": "Bộ nhớ đệm và tối ưu thời gian phản hồi trang danh mục, chi tiết sản phẩm",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "3.4.1",
+   "R": "minh",
+   "ho_tro": [
+    "toan"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ tìm kiếm và hiển thị sản phẩm",
+   "md": 6,
+   "loai": "QA"
+  },
+  {
+   "ma": "3.4.2",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kiểm thử tìm kiếm, lọc và sắp xếp sản phẩm",
+   "md": 7,
+   "loai": "QA"
+  },
+  {
+   "ma": "3.4.3",
+   "R": "Q1",
+   "ho_tro": [
+    "toan"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kiểm thử trang chủ, danh mục và chi tiết sản phẩm",
+   "md": 6,
+   "loai": "QA"
+  },
+  {
+   "ma": "3.4.4",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Sửa lỗi và kiểm thử lại chức năng tìm kiếm, lọc và sắp xếp",
+   "md": 3,
+   "loai": "DEV"
+  },
+  {
+   "ma": "3.4.5",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kiểm thử tương thích trình duyệt, thiết bị di động và thời gian phản hồi phân hệ tìm kiếm và hiển thị sản phẩm",
    "md": 5,
    "loai": "QA"
+  },
+  {
+   "ma": "3.4.6",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Sửa lỗi và kiểm thử lại trang chủ, danh mục và chi tiết sản phẩm",
+   "md": 3,
+   "loai": "DEV"
   },
   {
    "ma": "3.5.1",
@@ -322,32 +606,68 @@
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ tìm kiếm",
-   "md": 2,
+   "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ tìm kiếm và hiển thị sản phẩm",
+   "md": 3,
    "loai": "BA"
   },
   {
+   "ma": "3.5.2",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ tìm kiếm và hiển thị sản phẩm",
+   "md": 6,
+   "loai": "DEV"
+  },
+  {
    "ma": "4.1.1",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Đặc tả use case đăng ký, xác thực thư điện tử, đăng nhập và khôi phục mật khẩu",
+   "md": 5,
+   "loai": "BA"
+  },
+  {
+   "ma": "4.1.2",
    "R": "K",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Đặc tả use case đăng ký, đăng nhập và quản lý thông tin thành viên",
-   "md": 4,
+   "ten": "Đặc tả use case thông tin thành viên, sổ địa chỉ giao hàng và đổi mật khẩu",
+   "md": 3,
    "loai": "BA"
   },
   {
    "ma": "4.2.1",
-   "R": "K",
+   "R": "D2",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Thiết kế chi tiết chức năng thành viên và bảo mật tài khoản",
-   "md": 4,
+   "ten": "Thiết kế chi tiết đăng ký, đăng nhập, phiên làm việc và bảo mật tài khoản",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "4.2.2",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Thiết kế chi tiết thông tin thành viên và sổ địa chỉ",
+   "md": 3,
    "loai": "DEV"
   },
   {
@@ -358,34 +678,80 @@
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Dịch vụ đăng ký, đăng nhập, xác thực và khôi phục mật khẩu",
-   "md": 9,
+   "ten": "Dịch vụ đăng ký thành viên và xác thực địa chỉ thư điện tử",
+   "md": 5,
    "loai": "DEV"
   },
   {
    "ma": "4.3.2",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Dịch vụ đăng nhập, phiên làm việc và giới hạn đăng nhập sai",
+   "md": 6,
+   "loai": "DEV"
+  },
+  {
+   "ma": "4.3.3",
    "R": "D2",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
-   "md": 6,
+   "ten": "Dịch vụ khôi phục và đổi mật khẩu",
+   "md": 4,
    "loai": "DEV"
   },
   {
-   "ma": "4.3.3",
-   "R": "minh",
-   "ho_tro": [
-    "D1"
-   ],
+   "ma": "4.3.4",
+   "R": "tuananh",
+   "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Giao diện đăng ký, đăng nhập và trang thành viên",
-   "md": 8,
+   "ten": "Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "4.3.5",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Dịch vụ đồng ý điều khoản và bảo vệ dữ liệu cá nhân của thành viên",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "4.3.6",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Giao diện đăng ký, đăng nhập và khôi phục mật khẩu",
+   "md": 6,
+   "loai": "DEV"
+  },
+  {
+   "ma": "4.3.7",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Giao diện trang thành viên và sổ địa chỉ",
+   "md": 5,
    "loai": "DEV"
   },
   {
@@ -396,21 +762,95 @@
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Kịch bản và kiểm thử phân hệ quản lý thành viên",
-   "md": 5,
+   "ten": "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ thành viên",
+   "md": 6,
    "loai": "QA"
   },
   {
-   "ma": "4.5.1",
+   "ma": "4.4.2",
+   "R": "Q1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kiểm thử đăng ký, đăng nhập và khôi phục mật khẩu",
+   "md": 7,
+   "loai": "QA"
+  },
+  {
+   "ma": "4.4.3",
+   "R": "lien",
+   "ho_tro": [
+    "Q2"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kiểm thử thông tin thành viên, sổ địa chỉ và đồng ý điều khoản",
+   "md": 6,
+   "loai": "QA"
+  },
+  {
+   "ma": "4.4.4",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Sửa lỗi và kiểm thử lại đăng ký, đăng nhập và bảo mật tài khoản",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "4.4.5",
    "R": "lien",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
+   "ten": "Kiểm thử bảo mật tài khoản theo OWASP Top 10 và tương thích thiết bị phân hệ thành viên",
+   "md": 6,
+   "loai": "QA"
+  },
+  {
+   "ma": "4.4.6",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Sửa lỗi và kiểm thử lại thông tin thành viên và sổ địa chỉ",
+   "md": 3,
+   "loai": "DEV"
+  },
+  {
+   "ma": "4.5.1",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
    "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ thành viên",
-   "md": 2,
+   "md": 3,
    "loai": "BA"
+  },
+  {
+   "ma": "4.5.2",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ thành viên",
+   "md": 5,
+   "loai": "DEV"
   },
   {
    "ma": "5.1.1",
@@ -420,20 +860,68 @@
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Đặc tả use case giỏ hàng, đặt hàng và theo dõi đơn hàng",
-   "md": 5,
+   "ten": "Đặc tả use case giỏ hàng và giữ tồn kho khi đặt hàng",
+   "md": 3,
+   "loai": "BA"
+  },
+  {
+   "ma": "5.1.2",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Đặc tả use case đặt hàng, phí vận chuyển, mã giảm giá và xác nhận đơn",
+   "md": 4,
+   "loai": "BA"
+  },
+  {
+   "ma": "5.1.3",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Đặc tả use case theo dõi đơn hàng, hủy đơn, đổi trả và hoàn tiền",
+   "md": 4,
    "loai": "BA"
   },
   {
    "ma": "5.2.1",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Thiết kế chi tiết giỏ hàng và giữ tồn kho",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "5.2.2",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Thiết kế chi tiết đặt hàng, phí vận chuyển và khuyến mại",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "5.2.3",
    "R": "tuananh",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Thiết kế chi tiết quy trình đặt hàng và trạng thái đơn hàng",
-   "md": 5,
+   "ten": "Thiết kế chi tiết trạng thái đơn hàng, hủy đơn và đổi trả",
+   "md": 4,
    "loai": "DEV"
   },
   {
@@ -445,64 +933,212 @@
    "den_sprint": null,
    "ly_do": "",
    "ten": "Dịch vụ giỏ hàng",
-   "md": 6,
+   "md": 5,
    "loai": "DEV"
   },
   {
    "ma": "5.3.2",
-   "R": "tuananh",
-   "ho_tro": [
-    "K"
-   ],
+   "R": "K",
+   "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Dịch vụ đặt hàng và xác nhận đơn hàng",
-   "md": 9,
+   "ten": "Dịch vụ giữ tồn kho tạm thời khi đặt hàng và giải phóng tồn",
+   "md": 5,
    "loai": "DEV"
   },
   {
    "ma": "5.3.3",
-   "R": "D2",
-   "ho_tro": [
-    "D3"
-   ],
+   "R": "D3",
+   "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Dịch vụ lịch sử và trạng thái đơn hàng của thành viên",
-   "md": 6,
+   "ten": "Dịch vụ tính phí vận chuyển",
+   "md": 5,
    "loai": "DEV"
   },
   {
    "ma": "5.3.4",
-   "R": "D1",
-   "ho_tro": [
-    "minh"
-   ],
+   "R": "D4",
+   "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Giao diện giỏ hàng, đặt hàng và theo dõi đơn hàng",
-   "md": 10,
+   "ten": "Dịch vụ khuyến mại và mã giảm giá",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "5.3.5",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Dịch vụ đặt hàng, xác nhận đơn và thư điện tử xác nhận",
+   "md": 6,
+   "loai": "DEV"
+  },
+  {
+   "ma": "5.3.6",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Dịch vụ lịch sử, trạng thái đơn hàng và hủy đơn",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "5.3.7",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Dịch vụ yêu cầu đổi trả và hoàn tiền",
+   "md": 6,
+   "loai": "DEV"
+  },
+  {
+   "ma": "5.3.8",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Giao diện giỏ hàng",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "5.3.9",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Giao diện đặt hàng gồm địa chỉ, phí vận chuyển, mã giảm giá và xác nhận",
+   "md": 6,
+   "loai": "DEV"
+  },
+  {
+   "ma": "5.3.10",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Giao diện theo dõi đơn hàng, hủy đơn và đổi trả",
+   "md": 5,
    "loai": "DEV"
   },
   {
    "ma": "5.4.1",
    "R": "Q1",
-   "ho_tro": [
-    "lien"
-   ],
+   "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Kịch bản và kiểm thử phân hệ đặt hàng",
+   "ten": "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ đặt hàng",
+   "md": 7,
+   "loai": "QA"
+  },
+  {
+   "ma": "5.4.2",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kiểm thử giỏ hàng và giữ tồn kho",
    "md": 6,
    "loai": "QA"
+  },
+  {
+   "ma": "5.4.3",
+   "R": "Q1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kiểm thử đặt hàng, phí vận chuyển và khuyến mại",
+   "md": 9,
+   "loai": "QA"
+  },
+  {
+   "ma": "5.4.4",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kiểm thử theo dõi đơn hàng, hủy đơn và đổi trả",
+   "md": 6,
+   "loai": "QA"
+  },
+  {
+   "ma": "5.4.5",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Sửa lỗi và kiểm thử lại giỏ hàng và giữ tồn kho",
+   "md": 2,
+   "loai": "DEV"
+  },
+  {
+   "ma": "5.4.6",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kiểm thử luồng đặt hàng đầu cuối của phân hệ với dữ liệu biên và đồng thời",
+   "md": 6,
+   "loai": "QA"
+  },
+  {
+   "ma": "5.4.7",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Sửa lỗi và kiểm thử lại đặt hàng, phí vận chuyển và khuyến mại",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "5.4.8",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Sửa lỗi và kiểm thử lại theo dõi đơn hàng, hủy đơn và đổi trả",
+   "md": 2,
+   "loai": "DEV"
   },
   {
    "ma": "5.5.1",
@@ -513,19 +1149,31 @@
    "den_sprint": null,
    "ly_do": "",
    "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ đặt hàng",
-   "md": 2,
+   "md": 3,
    "loai": "BA"
   },
   {
-   "ma": "6.1.1",
-   "R": "toan",
+   "ma": "5.5.2",
+   "R": "D2",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Tạo lập Selling DB theo cấu trúc cơ sở dữ liệu đã thiết kế",
-   "md": 5,
+   "ten": "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ đặt hàng",
+   "md": 8,
+   "loai": "DEV"
+  },
+  {
+   "ma": "6.1.1",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Khung ứng dụng phía máy chủ và thành phần dùng chung về xác thực, phân quyền, ghi nhật ký, xử lý lỗi",
+   "md": 8,
    "loai": "DEV"
   },
   {
@@ -536,13 +1184,37 @@
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Nạp dữ liệu sản phẩm ban đầu từ Main System và kiểm tra toàn vẹn",
-   "md": 4,
+   "ten": "Tạo lập Selling DB theo cấu trúc đã thiết kế và tầng truy cập dữ liệu",
+   "md": 6,
+   "loai": "DEV"
+  },
+  {
+   "ma": "6.1.3",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Khung ứng dụng giao diện gồm định tuyến, quản lý trạng thái và gọi dịch vụ",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "6.1.4",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Dịch vụ gửi thư điện tử qua máy chủ thư của Chủ đầu tư",
+   "md": 3,
    "loai": "DEV"
   },
   {
    "ma": "6.2.1",
-   "R": "lien",
+   "R": "dat",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
@@ -554,14 +1226,14 @@
   },
   {
    "ma": "6.2.2",
-   "R": "toan",
+   "R": "tuananh",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Đồng bộ dữ liệu sản phẩm, giá và tồn kho từ Main System",
-   "md": 9,
+   "ten": "Thiết kế tích hợp gồm ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+   "md": 4,
    "loai": "DEV"
   },
   {
@@ -572,27 +1244,217 @@
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Chuyển đơn hàng sang Main System và nhận trạng thái xử lý",
-   "md": 9,
+   "ten": "Đồng bộ danh mục sản phẩm và giá từ Main System",
+   "md": 5,
    "loai": "DEV"
   },
   {
    "ma": "6.2.4",
-   "R": "D3",
-   "ho_tro": [
-    "tuananh"
-   ],
+   "R": "D4",
+   "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Nhận trạng thái vận chuyển từ Main System và hiển thị trên trang theo dõi đơn hàng",
+   "ten": "Đồng bộ tồn kho từ Main System",
    "md": 5,
    "loai": "DEV"
   },
   {
    "ma": "6.2.5",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Chuyển đơn hàng sang Main System và nhận trạng thái xử lý",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "6.2.6",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Nhận trạng thái vận chuyển từ Main System",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "6.2.7",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Giám sát tích hợp, cảnh báo lỗi đồng bộ và gửi lại",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "6.2.8",
    "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Dịch vụ giả lập Main System và dữ liệu kiểm thử tích hợp",
+   "md": 4,
+   "loai": "QA"
+  },
+  {
+   "ma": "6.2.9",
+   "R": "Q1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kịch bản kiểm thử tích hợp với Main System",
+   "md": 3,
+   "loai": "QA"
+  },
+  {
+   "ma": "6.2.10",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kiểm thử tích hợp với Main System trên môi trường thử",
+   "md": 7,
+   "loai": "QA"
+  },
+  {
+   "ma": "6.2.11",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Sửa lỗi và kiểm thử lại tích hợp với Main System",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "6.2.12",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận tích hợp với Main System",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "6.2.13",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Chủ đầu tư xem xét, xác nhận đặc tả giao diện tích hợp với Main System",
+   "md": 2,
+   "loai": "BA"
+  },
+  {
+   "ma": "6.3.1",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Công cụ chuyển đổi dữ liệu sản phẩm, tồn kho và kiểm tra toàn vẹn",
+   "md": 5,
+   "loai": "DEV"
+  },
+  {
+   "ma": "6.3.2",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Chuyển đổi thử dữ liệu sản phẩm, tồn kho do Chủ đầu tư cung cấp",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "6.3.3",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Nạp hình ảnh và nội dung sản phẩm theo bộ nhận diện của Chủ đầu tư lên môi trường vận hành",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "7.1.1",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kế hoạch kiểm thử hệ thống, kiểm thử chấp nhận và tiêu chí đạt",
+   "md": 3,
+   "loai": "QA"
+  },
+  {
+   "ma": "7.1.2",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kịch bản kiểm thử hệ thống đầu cuối",
+   "md": 5,
+   "loai": "QA"
+  },
+  {
+   "ma": "7.1.3",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kịch bản kiểm thử chấp nhận theo quy trình vận hành mới",
+   "md": 3,
+   "loai": "QA"
+  },
+  {
+   "ma": "7.1.4",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kịch bản và công cụ kiểm thử hiệu năng, chịu tải 500 người dùng đồng thời",
+   "md": 4,
+   "loai": "QA"
+  },
+  {
+   "ma": "7.2.1",
+   "R": "lien",
    "ho_tro": [
     "Q1"
    ],
@@ -600,155 +1462,132 @@
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Kiểm thử tích hợp với Main System",
-   "md": 6,
-   "loai": "QA"
-  },
-  {
-   "ma": "7.1.1",
-   "R": "lien",
-   "ho_tro": [],
-   "dan_trai": false,
-   "tu_sprint": null,
-   "den_sprint": null,
-   "ly_do": "",
-   "ten": "Kế hoạch kiểm thử hệ thống và kiểm thử vận hành",
-   "md": 4,
-   "loai": "QA"
-  },
-  {
-   "ma": "7.1.2",
-   "R": "Q1",
-   "ho_tro": [],
-   "dan_trai": false,
-   "tu_sprint": null,
-   "den_sprint": null,
-   "ly_do": "",
-   "ten": "Kịch bản kiểm thử hệ thống đầu cuối",
-   "md": 6,
-   "loai": "QA"
-  },
-  {
-   "ma": "7.2.1",
-   "R": "Q1",
-   "ho_tro": [
-    "Q2"
-   ],
-   "dan_trai": false,
-   "tu_sprint": null,
-   "den_sprint": null,
-   "ly_do": "",
    "ten": "Kiểm thử chức năng đầu cuối",
-   "md": 8,
+   "md": 10,
    "loai": "QA"
   },
   {
    "ma": "7.2.2",
    "R": "toan",
-   "ho_tro": [
-    "minh"
-   ],
-   "dan_trai": false,
-   "tu_sprint": null,
-   "den_sprint": null,
-   "ly_do": "Kỹ sư backend kiêm DevOps có năng lực QA, phụ trách kiểm thử hiệu năng trên môi trường vận hành",
-   "ten": "Kiểm thử hiệu năng và thời gian phản hồi",
-   "md": 6,
-   "loai": "QA"
-  },
-  {
-   "ma": "7.2.3",
-   "R": "D3",
-   "ho_tro": [],
-   "dan_trai": false,
-   "tu_sprint": null,
-   "den_sprint": null,
-   "ly_do": "",
-   "ten": "Kiểm thử hoạt động liên tục, sao lưu và phục hồi",
-   "md": 4,
-   "loai": "DEVOPS"
-  },
-  {
-   "ma": "7.2.4",
-   "R": "minh",
-   "ho_tro": [],
-   "dan_trai": false,
-   "tu_sprint": null,
-   "den_sprint": null,
-   "ly_do": "Kỹ sư frontend kiêm kiểm thử (năng lực QA), phụ trách kiểm thử bảo mật phía giao diện và phiên làm việc",
-   "ten": "Kiểm thử bảo mật ứng dụng",
-   "md": 4,
-   "loai": "QA"
-  },
-  {
-   "ma": "7.2.5",
-   "R": "lien",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
    "ten": "Đánh giá khả năng sử dụng của giao diện (Easy Operation)",
+   "md": 2,
+   "loai": "QA"
+  },
+  {
+   "ma": "7.2.3",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kiểm thử hiệu năng trên môi trường kiểm thử",
    "md": 3,
    "loai": "QA"
   },
   {
-   "ma": "7.2.6",
-   "R": "D2",
+   "ma": "7.2.4",
+   "R": "minh",
    "ho_tro": [
-    "D1",
-    "D3",
-    "tuananh"
+    "D2",
+    "D1"
    ],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
    "ten": "Khắc phục lỗi sau kiểm thử hệ thống",
-   "md": 10,
+   "md": 6,
    "loai": "DEV"
   },
   {
+   "ma": "7.2.5",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Rà soát lỗ hổng bảo mật theo OWASP Top 10 trên môi trường kiểm thử",
+   "md": 3,
+   "loai": "QA"
+  },
+  {
    "ma": "7.3.1",
+   "R": "Q1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng tìm kiếm và thành viên",
+   "md": 8,
+   "loai": "QA"
+  },
+  {
+   "ma": "7.3.2",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Tổ chức và hỗ trợ kiểm thử vận hành cùng Chủ đầu tư luồng đặt hàng và giao nhận",
+   "md": 8,
+   "loai": "QA"
+  },
+  {
+   "ma": "7.3.3",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kiểm thử hồi quy theo các đợt khắc phục lỗi kiểm thử chấp nhận",
+   "md": 7,
+   "loai": "QA"
+  },
+  {
+   "ma": "7.3.4",
    "R": "lien",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Kịch bản kiểm thử vận hành theo quy trình vận hành mới",
-   "md": 3,
+   "ten": "Kiểm thử hiệu năng và rà soát an toàn thông tin bản phát hành trên môi trường vận hành",
+   "md": 4,
    "loai": "QA"
   },
   {
-   "ma": "7.3.2",
-   "R": "lien",
-   "ho_tro": [
-    "Q1",
-    "Q2"
-   ],
+   "ma": "7.3.5",
+   "R": "D4",
+   "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Kiểm thử vận hành cùng Chủ đầu tư",
-   "md": 6,
-   "loai": "QA"
-  },
-  {
-   "ma": "7.3.3",
-   "R": "tuananh",
-   "ho_tro": [
-    "D3",
-    "D2"
-   ],
-   "dan_trai": false,
-   "tu_sprint": null,
-   "den_sprint": null,
-   "ly_do": "",
-   "ten": "Khắc phục lỗi sau kiểm thử vận hành",
-   "md": 5,
+   "ten": "Tối ưu hiệu năng và khắc phục lỗ hổng theo kết quả kiểm thử bản phát hành",
+   "md": 4,
    "loai": "DEV"
+  },
+  {
+   "ma": "7.3.6",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Diễn tập chuyển đổi dự phòng, sao lưu và khôi phục trên môi trường vận hành",
+   "md": 3,
+   "loai": "DEVOPS"
   },
   {
    "ma": "8.1.1",
@@ -758,78 +1597,136 @@
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Môi trường phát triển, kiểm thử và quy trình triển khai tự động",
+   "ten": "Môi trường phát triển, kiểm thử và quy trình tích hợp, triển khai tự động",
    "md": 6,
    "loai": "DEVOPS"
   },
   {
    "ma": "8.1.2",
-   "R": "toan",
+   "R": "D3",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Môi trường vận hành, giám sát và sao lưu",
+   "ten": "Môi trường vận hành gồm hai nút ứng dụng, cân bằng tải, cơ sở dữ liệu chính và dự phòng",
    "md": 7,
+   "loai": "DEVOPS"
+  },
+  {
+   "ma": "8.1.3",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành",
+   "md": 4,
    "loai": "DEVOPS"
   },
   {
    "ma": "8.2.1",
    "R": "K",
-   "ho_tro": [
-    "lien"
-   ],
-   "dan_trai": false,
-   "tu_sprint": null,
-   "den_sprint": null,
-   "ly_do": "",
-   "ten": "Tài liệu hướng dẫn sử dụng và vận hành hệ thống",
-   "md": 5,
-   "loai": "BA"
-  },
-  {
-   "ma": "8.2.2",
-   "R": "K",
-   "ho_tro": [
-    "lien"
-   ],
-   "dan_trai": false,
-   "tu_sprint": null,
-   "den_sprint": null,
-   "ly_do": "",
-   "ten": "Hướng dẫn vận hành cho cán bộ Chủ đầu tư",
-   "md": 3,
-   "loai": "BA"
-  },
-  {
-   "ma": "8.3.1",
-   "R": "toan",
    "ho_tro": [],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Kế hoạch cut over và phương án khôi phục",
-   "md": 3,
+   "ten": "Tài liệu hướng dẫn sử dụng cho khách hàng và cán bộ bán hàng",
+   "md": 4,
+   "loai": "BA"
+  },
+  {
+   "ma": "8.2.2",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Tài liệu hướng dẫn vận hành và quản trị kỹ thuật hệ thống",
+   "md": 4,
    "loai": "DEVOPS"
   },
   {
-   "ma": "8.3.2",
-   "R": "toan",
+   "ma": "8.2.3",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Hướng dẫn vận hành cho cán bộ Chủ đầu tư theo quy trình vận hành mới, ba buổi theo lịch của Chủ đầu tư",
+   "md": 3,
+   "loai": "BA"
+  },
+  {
+   "ma": "8.2.4",
+   "R": "D2",
    "ho_tro": [
-    "D3"
+    "D1"
    ],
    "dan_trai": false,
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Triển khai phiên bản chính thức và chuyển dữ liệu vận hành",
+   "ten": "Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện",
+   "md": 4,
+   "loai": "DEV"
+  },
+  {
+   "ma": "8.2.5",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Cập nhật tài liệu hướng dẫn sử dụng theo kết quả kiểm thử chấp nhận",
+   "md": 3,
+   "loai": "BA"
+  },
+  {
+   "ma": "8.3.1",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Kế hoạch cut over, danh sách kiểm tra và phương án khôi phục",
+   "md": 4,
+   "loai": "DEVOPS"
+  },
+  {
+   "ma": "8.3.2",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Diễn tập triển khai phiên bản chính thức và chuyển đổi dữ liệu trên môi trường vận hành",
    "md": 3,
    "loai": "DEVOPS"
   },
   {
    "ma": "8.3.3",
+   "R": "D3",
+   "ho_tro": [
+    "D4"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức",
+   "md": 2,
+   "loai": "DEVOPS"
+  },
+  {
+   "ma": "8.3.4",
    "R": "D3",
    "ho_tro": [
     "toan"
@@ -838,9 +1735,21 @@
    "tu_sprint": null,
    "den_sprint": null,
    "ly_do": "",
-   "ten": "Hỗ trợ ngày đầu vận hành và biên bản bàn giao hệ thống",
+   "ten": "Hỗ trợ ngày đưa hệ thống vào vận hành và biên bản bàn giao hệ thống",
    "md": 2,
    "loai": "DEV"
+  },
+  {
+   "ma": "8.3.5",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": "",
+   "ten": "Giám sát vận hành và chuẩn bị hỗ trợ tăng cường sau cut over",
+   "md": 4,
+   "loai": "DEVOPS"
   }
  ],
  "trach_nhiem": [
@@ -865,6 +1774,9 @@
     "cdt"
    ],
    "I": [],
+   "phe_duyet": [
+    "cdt"
+   ],
    "ten": "Khởi động và lập kế hoạch",
    "muc": 2
   },
@@ -877,7 +1789,7 @@
    "I": [
     "cdt"
    ],
-   "ten": "Theo dõi, kiểm soát và báo cáo",
+   "ten": "Theo dõi, kiểm soát và bảo đảm chất lượng",
    "muc": 2
   },
   {
@@ -889,6 +1801,9 @@
    "I": [
     "cdt"
    ],
+   "phe_duyet": [
+    "cdt"
+   ],
    "ten": "Nghiệm thu và kết thúc dự án",
    "muc": 2
   },
@@ -897,6 +1812,7 @@
    "A": "lien",
    "C": [
     "dat",
+    "K",
     "cdt"
    ],
    "I": [],
@@ -907,18 +1823,23 @@
    "ma": "2.1",
    "A": "lien",
    "C": [
+    "K",
     "cdt"
    ],
    "I": [
     "dat"
    ],
-   "ten": "Phân tích hệ thống và đặc tả",
+   "phe_duyet": [
+    "cdt"
+   ],
+   "ten": "Khảo sát và đặc tả hệ thống",
    "muc": 2
   },
   {
    "ma": "2.2",
-   "A": "dat",
+   "A": "K",
    "C": [
+    "dat",
     "tuananh",
     "toan"
    ],
@@ -946,7 +1867,7 @@
     "dat"
    ],
    "I": [],
-   "ten": "Phân hệ tìm kiếm sản phẩm (Product Search)",
+   "ten": "Phân hệ tìm kiếm và hiển thị sản phẩm (Product Search)",
    "muc": 1
   },
   {
@@ -956,7 +1877,7 @@
     "dat"
    ],
    "I": [],
-   "ten": "Phân tích yêu cầu phân hệ tìm kiếm",
+   "ten": "Phân tích yêu cầu phân hệ tìm kiếm và hiển thị sản phẩm",
    "muc": 2
   },
   {
@@ -966,7 +1887,7 @@
     "dat"
    ],
    "I": [],
-   "ten": "Thiết kế phân hệ tìm kiếm",
+   "ten": "Thiết kế phân hệ tìm kiếm và hiển thị sản phẩm",
    "muc": 2
   },
   {
@@ -976,7 +1897,7 @@
     "dat"
    ],
    "I": [],
-   "ten": "Lập trình và kiểm thử đơn vị phân hệ tìm kiếm",
+   "ten": "Lập trình và kiểm thử đơn vị phân hệ tìm kiếm và hiển thị sản phẩm",
    "muc": 2
   },
   {
@@ -986,7 +1907,7 @@
     "dat"
    ],
    "I": [],
-   "ten": "Kiểm thử phân hệ tìm kiếm",
+   "ten": "Kiểm thử phân hệ tìm kiếm và hiển thị sản phẩm",
    "muc": 2
   },
   {
@@ -996,7 +1917,7 @@
     "dat"
    ],
    "I": [],
-   "ten": "Tài liệu và nghiệm thu nội bộ phân hệ tìm kiếm",
+   "ten": "Nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ tìm kiếm và hiển thị sản phẩm",
    "muc": 2
   },
   {
@@ -1006,7 +1927,7 @@
     "dat"
    ],
    "I": [],
-   "ten": "Phân hệ quản lý thành viên (Member Administration)",
+   "ten": "Phân hệ thành viên (Member Administration)",
    "muc": 1
   },
   {
@@ -1056,7 +1977,7 @@
     "dat"
    ],
    "I": [],
-   "ten": "Tài liệu và nghiệm thu nội bộ phân hệ thành viên",
+   "ten": "Nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ thành viên",
    "muc": 2
   },
   {
@@ -1116,7 +2037,7 @@
     "dat"
    ],
    "I": [],
-   "ten": "Tài liệu và nghiệm thu nội bộ phân hệ đặt hàng",
+   "ten": "Nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ đặt hàng",
    "muc": 2
   },
   {
@@ -1124,6 +2045,7 @@
    "A": "toan",
    "C": [
     "dat",
+    "K",
     "cdt"
    ],
    "I": [],
@@ -1137,11 +2059,27 @@
     "dat"
    ],
    "I": [],
-   "ten": "Cơ sở dữ liệu bán hàng (Selling DB)",
+   "ten": "Cơ sở dữ liệu bán hàng (Selling DB) và nền tảng dùng chung",
    "muc": 2
   },
   {
    "ma": "6.2",
+   "A": "toan",
+   "C": [
+    "K",
+    "cdt"
+   ],
+   "I": [
+    "dat"
+   ],
+   "phe_duyet": [
+    "cdt"
+   ],
+   "ten": "Tích hợp với hệ thống chính (Main System)",
+   "muc": 2
+  },
+  {
+   "ma": "6.3",
    "A": "toan",
    "C": [
     "cdt"
@@ -1149,7 +2087,7 @@
    "I": [
     "dat"
    ],
-   "ten": "Tích hợp với hệ thống chính (Main System)",
+   "ten": "Chuyển đổi dữ liệu và nội dung sản phẩm",
    "muc": 2
   },
   {
@@ -1193,7 +2131,10 @@
    "I": [
     "dat"
    ],
-   "ten": "Kiểm thử vận hành (Operation Test)",
+   "phe_duyet": [
+    "cdt"
+   ],
+   "ten": "Kiểm thử chấp nhận và kiểm thử vận hành (Operation Test)",
    "muc": 2
   },
   {
@@ -1220,10 +2161,14 @@
    "ma": "8.2",
    "A": "lien",
    "C": [
+    "K",
     "cdt"
    ],
    "I": [
     "dat"
+   ],
+   "phe_duyet": [
+    "cdt"
    ],
    "ten": "Chuyển giao và hướng dẫn vận hành",
    "muc": 2
@@ -1237,6 +2182,9 @@
    ],
    "I": [
     "lien"
+   ],
+   "phe_duyet": [
+    "cdt"
    ],
    "ten": "Đưa hệ thống vào vận hành (cut over)",
    "muc": 2
@@ -1287,13 +2235,13 @@
    "ho_ten": "Trần Bá Đạt",
    "loai": "nhom",
    "chuc_danh": "Trưởng nhóm, quản trị dự án",
-   "md_giao": 40.0,
+   "md_giao": 64.0,
    "quy": 73.0,
-   "ty_le_su_dung": 0.5479,
+   "ty_le_su_dung": 0.8767,
    "theo_loai": {
-    "PM": 33.0,
-    "DEV": 3.0,
-    "BA": 4.0
+    "PM": 49.0,
+    "BA": 11.0,
+    "DEV": 4.0
    }
   },
   {
@@ -1301,11 +2249,11 @@
    "ho_ten": "Phạm Tuấn Anh",
    "loai": "nhom",
    "chuc_danh": "Kỹ sư phát triển backend",
-   "md_giao": 28.67,
+   "md_giao": 59.0,
    "quy": 73.0,
-   "ty_le_su_dung": 0.3927,
+   "ty_le_su_dung": 0.8082,
    "theo_loai": {
-    "DEV": 28.67
+    "DEV": 59.0
    }
   },
   {
@@ -1313,12 +2261,12 @@
    "ho_ten": "Vũ Đức Minh",
    "loai": "nhom",
    "chuc_danh": "Kỹ sư phát triển frontend",
-   "md_giao": 35.0,
+   "md_giao": 50.0,
    "quy": 73.0,
-   "ty_le_su_dung": 0.4795,
+   "ty_le_su_dung": 0.6849,
    "theo_loai": {
-    "DEV": 28.0,
-    "QA": 7.0
+    "DEV": 36.0,
+    "QA": 14.0
    }
   },
   {
@@ -1326,13 +2274,13 @@
    "ho_ten": "Ninh Đức Toàn",
    "loai": "nhom",
    "chuc_danh": "Kỹ sư phát triển backend",
-   "md_giao": 42.0,
+   "md_giao": 59.0,
    "quy": 73.0,
-   "ty_le_su_dung": 0.5753,
+   "ty_le_su_dung": 0.8082,
    "theo_loai": {
-    "DEV": 21.5,
-    "QA": 3.0,
-    "DEVOPS": 17.5
+    "DEV": 29.0,
+    "QA": 24.0,
+    "DEVOPS": 6.0
    }
   },
   {
@@ -1340,12 +2288,12 @@
    "ho_ten": "Nguyễn Thị Phương Liên",
    "loai": "nhom",
    "chuc_danh": "Phân tích nghiệp vụ",
-   "md_giao": 46.5,
+   "md_giao": 68.0,
    "quy": 73.0,
-   "ty_le_su_dung": 0.637,
+   "ty_le_su_dung": 0.9315,
    "theo_loai": {
-    "BA": 31.5,
-    "QA": 15.0
+    "BA": 39.0,
+    "QA": 29.0
    }
   },
   {
@@ -1353,12 +2301,12 @@
    "ho_ten": "Nguyễn Hoàng Nam",
    "loai": "bo_sung",
    "chuc_danh": "Kiến trúc sư kiêm phân tích nghiệp vụ",
-   "md_giao": 48.0,
+   "md_giao": 55.0,
    "quy": 73.0,
-   "ty_le_su_dung": 0.6575,
+   "ty_le_su_dung": 0.7534,
    "theo_loai": {
-    "BA": 27.5,
-    "DEV": 20.5
+    "BA": 40.0,
+    "DEV": 15.0
    }
   },
   {
@@ -1366,11 +2314,11 @@
    "ho_ten": "Lê Quang Huy",
    "loai": "bo_sung",
    "chuc_danh": "Kỹ sư phát triển frontend kiêm backend",
-   "md_giao": 15.5,
-   "quy": 53.0,
-   "ty_le_su_dung": 0.2925,
+   "md_giao": 51.0,
+   "quy": 63.0,
+   "ty_le_su_dung": 0.8095,
    "theo_loai": {
-    "DEV": 15.5
+    "DEV": 51.0
    }
   },
   {
@@ -1378,11 +2326,11 @@
    "ho_ten": "Đỗ Minh Quân",
    "loai": "bo_sung",
    "chuc_danh": "Kỹ sư phát triển backend, thiết kế API",
-   "md_giao": 29.17,
-   "quy": 53.0,
-   "ty_le_su_dung": 0.5503,
+   "md_giao": 53.0,
+   "quy": 63.0,
+   "ty_le_su_dung": 0.8413,
    "theo_loai": {
-    "DEV": 29.17
+    "DEV": 53.0
    }
   },
   {
@@ -1390,12 +2338,12 @@
    "ho_ten": "Bùi Anh Tuấn",
    "loai": "bo_sung",
    "chuc_danh": "Kỹ sư phát triển backend",
-   "md_giao": 29.17,
-   "quy": 43.0,
-   "ty_le_su_dung": 0.6783,
+   "md_giao": 56.0,
+   "quy": 63.0,
+   "ty_le_su_dung": 0.8889,
    "theo_loai": {
-    "DEV": 23.67,
-    "DEVOPS": 5.5
+    "DEVOPS": 22.0,
+    "DEV": 34.0
    }
   },
   {
@@ -1403,11 +2351,11 @@
    "ho_ten": "Trần Thu Hà",
    "loai": "bo_sung",
    "chuc_danh": "Kỹ sư kiểm thử kỹ thuật, kiểm thử tự động",
-   "md_giao": 20.5,
-   "quy": 53.0,
-   "ty_le_su_dung": 0.3868,
+   "md_giao": 45.0,
+   "quy": 63.0,
+   "ty_le_su_dung": 0.7143,
    "theo_loai": {
-    "QA": 20.5
+    "QA": 45.0
    }
   },
   {
@@ -1415,15 +2363,28 @@
    "ho_ten": "Phạm Ngọc Anh",
    "loai": "bo_sung",
    "chuc_danh": "Kỹ sư kiểm thử chức năng, hiệu năng và an toàn thông tin",
-   "md_giao": 16.5,
-   "quy": 43.0,
-   "ty_le_su_dung": 0.3837,
+   "md_giao": 48.0,
+   "quy": 53.0,
+   "ty_le_su_dung": 0.9057,
    "theo_loai": {
-    "QA": 16.5
+    "QA": 48.0
+   }
+  },
+  {
+   "id": "D4",
+   "ho_ten": "Trương Quốc Việt",
+   "loai": "bo_sung",
+   "chuc_danh": "Kỹ sư phát triển backend kiêm DevOps",
+   "md_giao": 49.0,
+   "quy": 53.0,
+   "ty_le_su_dung": 0.9245,
+   "theo_loai": {
+    "DEV": 37.0,
+    "DEVOPS": 12.0
    }
   }
  ],
- "tong_md_giao": 351.01,
- "tong_quy": 683.0,
- "du_quy": 331.99
+ "tong_md_giao": 657.0,
+ "tong_quy": 796.0,
+ "du_quy": 139.0
 }
