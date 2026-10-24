@@ -1,0 +1,20 @@
+{
+ "da_sua": [
+  {
+   "vi_tri": "noi_dung.json.blocks[34].rows[57][6]",
+   "truoc": "Lập lần đầu trong lần chạy thử bộ skill",
+   "sau": "Lập lần đầu trong lần vận hành thử bộ skill"
+  },
+  {
+   "vi_tri": "noi_dung.json.blocks[34].rows[67][6]",
+   "truoc": "Lập lần đầu trong lần chạy thử bộ skill",
+   "sau": "Lập lần đầu trong lần vận hành thử bộ skill"
+  },
+  {
+   "vi_tri": "noi_dung.json.blocks[34].rows[75][6]",
+   "truoc": "Lập lần đầu trong lần chạy thử bộ skill",
+   "sau": "Lập lần đầu trong lần vận hành thử bộ skill"
+  }
+ ],
+ "con_lai": []
+}

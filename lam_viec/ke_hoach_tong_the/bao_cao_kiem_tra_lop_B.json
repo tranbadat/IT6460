@@ -1,0 +1,115 @@
+{
+ "tai_lieu": "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx",
+ "phien_ban": "0.1",
+ "dac_ta": "ke_hoach_tong_the",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 7,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 16 mục, điều lệ, chín kế hoạch con, thay đổi, cấu hình, vấn đề, rà soát, kết thúc."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Giá 1.750.000.000, A 1.420.050.000, B 150.000.000, C 179.950.000, C sau lương 414.157.491, lương 1.185.842.510, EMV 147 triệu (146.583.750), 21 rủi ro, 657 MD, 144 gói, 796 MD quỹ, đường găng 16 gói, dự trữ 4 ngày, đường găng 52 ngày, mốc và hạn M1-M7 khớp du_lieu và quyết định 18/10. Rủi ro mức cao RR02, RR04, RR10 khớp bộ lọc."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Ràng buộc dẫn R12, R36, R45, Mục 13.1, 21.2, 6.4 E-ĐKCT, bên liên quan dẫn R02, R03, R10, R11, R46, tiêu chí dẫn gói WBS và mã rủi ro."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục tiêu SMART có chỉ số, ngưỡng, hạn, người xác nhận. KT01-KT05 khớp chi_tieu_ky_thuat.json, có cách kiểm chứng, điều kiện cut over và ngưỡng lỗi kích hoạt RR03, RR10."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Ngưỡng SPI, CPI 0,95/0,85, báo Chủ đầu tư khi dự trữ dưới 2 ngày, phân cấp thay đổi với thời hạn, quy tắc dự phòng dùng chung, ma trận báo cáo vượt cấp."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Trình bày đạt, còn hai điểm nhỏ (MH06, MH07)."
+  },
+  {
+   "tieu_chi": "DH_BAC",
+   "ket_qua": "dat",
+   "nhan_xet": "Chỉ một đường cơ sở chi phí BAC = khoản A, giá hợp đồng ghi riêng không dùng làm đường cơ sở, có ba đường cơ sở kèm cách kiểm soát."
+  },
+  {
+   "tieu_chi": "DH_BLQ",
+   "ket_qua": "dat",
+   "nhan_xet": "Bên liên quan chỉ gồm người có trong dữ liệu, nhóm chưa có người ghi bổ sung tại họp khởi động."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "hien_trang_du_lieu",
+   "vi_tri": "Mục 6, bảng khoản B: B | Môi trường, công cụ, bảo hành 12 tháng và dự phòng | 150.000.000",
+   "mo_ta": "Khoản B chỉ có tổng, tài liệu đã ghi đúng hiện trạng và nêu danh mục được lập trước khi chi.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Bổ sung danh mục khoản B trong du_lieu/chi_phi.json khi nhóm có số liệu"
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "hien_trang_du_lieu",
+   "vi_tri": "Mục 2, bảng bên liên quan: chỉ một dòng Công ty Cổ phần ABC Wear, đầu mối Yamada",
+   "mo_ta": "Phía Chủ đầu tư chỉ có Tổng Giám đốc (chức danh) và đầu mối Yamada, các nhóm khác ghi bổ sung tại họp khởi động. Đúng hiện trạng.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Bổ sung người cụ thể vào dau_vao khi có"
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "hien_trang_du_lieu",
+   "vi_tri": "Mục 6, bảng huy động: Chưa có trình độ, kinh nghiệm",
+   "mo_ta": "7 vị trí bổ sung chưa có trình độ, kinh nghiệm, tài liệu đã ghi đúng.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Bổ sung trình độ trong dau_vao/thanh_vien.json"
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "hien_trang_du_lieu",
+   "vi_tri": "Mục 1, bảng phê duyệt: Tổng Giám đốc Công ty Cổ phần ABC Wear (họ tên ghi khi hoàn thiện hợp đồng theo Mục 1.3 E-ĐKCT)",
+   "mo_ta": "Người có thẩm quyền của Chủ đầu tư chỉ có chức danh, tài liệu ghi đúng hiện trạng.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Bổ sung họ tên khi hoàn thiện hợp đồng"
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 16, dòng Chi phí: theo dõi khoản B và chi phí lương theo quỹ huy động",
+   "mo_ta": "Mục 7 ghi chi phí lương kế hoạch theo cách trả theo công sức (MD công việc), lương toàn bộ ngày huy động chỉ để theo dõi năng lực. Cụm theo quỹ huy động ở mục 16 dễ hiểu là cơ sở chi phí lương khác với mục 7. Không phải lỗi số liệu.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Sửa cách kiểm soát dòng Chi phí trong kb (đường cơ sở) thành: CPI cuối sprint, theo dõi khoản B và chi phí lương theo công sức, tỷ lệ sử dụng quỹ huy động"
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Bảng cam kết Chủ đầu tư, CK6: kiểm thử chấp nhận theo khoảng uat",
+   "mo_ta": "Mã nội bộ uat lọt vào lời văn, chưa ghi ngày cụ thể (master schedule là 18/06 đến 29/06/2027).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Sửa nội dung CK6 trong dữ liệu thành: theo khoảng kiểm thử chấp nhận 18/06/2027 đến 29/06/2027"
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 1, bảng ràng buộc, căn cứ: trọn gói, E-ĐKC 17.1",
+   "mo_ta": "Căn cứ ghi trọn gói là loại hợp đồng, không phải điều khoản.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Ghi căn cứ: Loại hợp đồng trọn gói theo E-BDL/E-ĐKCT, E-ĐKC 17.1"
+  }
+ ]
+}

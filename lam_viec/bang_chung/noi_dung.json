@@ -1,0 +1,6746 @@
+{
+ "meta": {
+  "ten": "Phụ lục bằng chứng prompt và skill",
+  "header": "Phụ lục bằng chứng prompt và skill",
+  "size_bang_pt": 10,
+  "phien_ban": "0.2",
+  "ngay": "18/10/2026"
+ },
+ "blocks": [
+  {
+   "text": "PM_26I_02",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "text": "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "text": "Phụ lục bằng chứng prompt và skill",
+   "size": 20,
+   "t": "center"
+  },
+  {
+   "text": "Quy trình, công cụ và nhật ký tạo các tài liệu dự án",
+   "size": 14,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "rows": [
+    [
+     "Môn học",
+     "Quản trị dự án và Quản lý thay đổi"
+    ],
+    [
+     "Nhóm",
+     "PM_26I_02"
+    ],
+    [
+     "Giảng viên",
+     "Vũ Thị Hương Giang"
+    ],
+    [
+     "Người lập",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Ngày xuất",
+     "18/10/2026"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ],
+   "t": "table"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "text": "1. Mục đích",
+   "t": "h1"
+  },
+  {
+   "text": "Phụ lục này chứng minh cách các tài liệu của dự án được tạo ra: skill và phiên bản đã dùng, prompt giao cho từng agent, thứ tự các bước, kết quả kiểm tra và sửa lỗi, cùng mã băm của tệp đầu vào và đầu ra ở từng bước. Mã băm cho phép đối chiếu một tài liệu nộp kèm với đúng lần chạy đã tạo ra nó.",
+   "t": "p"
+  },
+  {
+   "text": "2. Danh sách skill",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Skill",
+     "Phiên bản",
+     "Mô tả",
+     "Băm SKILL.md"
+    ],
+    [
+     "hsmt-mau-5a",
+     "3.3.0",
+     "Lập hồ sơ mời thầu (E-HSMT) theo Mẫu số 5A, Thông tư 79/2025/TT-BTC, từ file mẫu và file RFP của khách hàng, bằng chuỗi agent phân tích RFP, soạn thảo, kiểm tra độc lập và sửa lỗi, ra file Word. Dùng skill này khi người dùng muốn lập, xuất, kiểm tra hoặc sửa H",
+     "507707bf239b"
+    ],
+    [
+     "qlda-bai-hoc",
+     "1.0.0",
+     "Rút và lập báo cáo bài học kinh nghiệm của dự án - mỗi bài học có tình huống, nguyên nhân gốc, bài học, khuyến nghị, phạm vi áp dụng và mã bằng chứng (CR, RR, ghi chép họp cải tiến R-Sx-nn, nghiệm thu NT, lỗi L, KPI K, mốc, sprint, gói WBS), kiểm tra phủ đủ nh",
+     "b54395cc7ab9"
+    ],
+    [
+     "qlda-bang-luong",
+     "1.3.0",
+     "Lập bảng phân chia lương của nhóm theo cách trả lương nhóm khai báo (theo ngày huy động, theo công sức thực tế hoặc kết hợp) - ngày huy động cùng nguồn với cost estimate, MD thực tế trong nhật ký công việc, đơn giá ngày của vai trò, bảo hiểm phần doanh nghiệp,",
+     "9c085b3317d8"
+    ],
+    [
+     "qlda-bao-cao-tien-do",
+     "1.3.0",
+     "Lập báo cáo tiến độ theo kỳ (cuối sprint hoặc ngày bất kỳ) bằng phương pháp giá trị thu được - PV, EV, AC theo MD và tiền, SPI, CPI theo công và CPI theo chi phí thực (lương theo cách trả lương nhóm khai báo cộng chi phí khác), tỷ lệ sử dụng quỹ huy động, EAC,",
+     "e7abd4d6a82e"
+    ],
+    [
+     "qlda-change",
+     "1.1.0",
+     "Lập kế hoạch quản lý thay đổi (change management plan) và vận hành quy trình yêu cầu thay đổi (CR) - phân loại theo điểm tác động 1 đến 10 và điều kiện hợp đồng (cut over, mốc thanh toán, đặc tả đã xác nhận, phạm vi, giá), ban kiểm soát thay đổi có người ký ph",
+     "0b9d53f3006a"
+    ],
+    [
+     "qlda-cost-estimate",
+     "1.3.0",
+     "Lập cost estimate (dự toán, giá dự thầu) từ WBS, đơn giá vai trò, giao việc, lịch và sổ rủi ro - nhân công theo loại công việc, chi phí khác, dự phòng so với EMV, giá chào, thuế GTGT có căn cứ, đối chiếu lương từng người theo cách trả lương nhóm khai báo, phân",
+     "c8a26f5affe2"
+    ],
+    [
+     "qlda-danh-gia",
+     "1.0.0",
+     "Lập báo cáo đánh giá dự án - kết quả theo bộ chỉ tiêu KPI và xếp loại, đánh giá nghiệm thu theo từng yêu cầu RFP và tiêu chí kỹ thuật HSMT, hiệu quả quản lý thay đổi (thời hạn xử lý, đúng cấp, cập nhật tài liệu), hiệu quả quản lý rủi ro (EMV so với tác động th",
+     "8d008cdfe476"
+    ],
+    [
+     "qlda-hsdt",
+     "1.1.0",
+     "Lập hồ sơ dự thầu (HSDT) của nhà thầu (thông tin tại dau_vao/nha_thau.json) đáp ứng HSMT Mẫu 5A cho gói thầu ABC Wear Web Selling Site System - đơn dự thầu, bảng đáp ứng HSMT, năng lực và kinh nghiệm, nhân sự chủ chốt, đề xuất kỹ thuật, Mẫu 10A giá dự thầu, li",
+     "22fca1d9d076"
+    ],
+    [
+     "qlda-loi",
+     "1.2.0",
+     "Lõi dùng chung của bộ skill quản lý dự án BTL_QLDA (ABC Wear Web Selling Site System) - điều phối các bước, xem trạng thái và tài liệu nào đã cũ, phân tích ảnh hưởng khi có thay đổi, dựng và kiểm tra tài liệu Word, ghi nhật ký và xuất phụ lục bằng chứng prompt",
+     "44f9857a5658"
+    ],
+    [
+     "qlda-master-plan",
+     "1.1.0",
+     "Lập kế hoạch tổng thể dự án (master plan) tổng hợp từ HSMT, HSDT, WBS, master schedule, phân công, cost estimate, kế hoạch rủi ro và kế hoạch thay đổi - điều lệ dự án với mục tiêu SMART và người phê duyệt, các bên liên quan, phạm vi, tiến độ, tổ chức, mua sắm ",
+     "fd07e8c6d08c"
+    ],
+    [
+     "qlda-master-schedule",
+     "1.1.0",
+     "Lập master schedule có ràng buộc nguồn lực từ WBS, giao việc, lịch làm việc và mốc hợp đồng - đường găng, dự trữ, mốc gắn đợt thanh toán, mục tiêu và sản phẩm demo từng sprint, xuất Excel Gantt có công thức. Dùng khi người dùng muốn lập, kiểm tra hoặc cập nhật",
+     "cd9af8c9dccd"
+    ],
+    [
+     "qlda-phan-cong",
+     "1.2.0",
+     "Giao việc cho thành viên nhóm theo gói WBS và lập danh sách phân chia công việc (responsibilities) - người thực hiện, người hỗ trợ, ma trận RACI mục mức 1 và mức 2, nhân sự chủ chốt theo HSMT, tải từng người theo sprint so với quỹ thời gian. Dùng khi người dùn",
+     "d27fbda5182e"
+    ],
+    [
+     "qlda-phien-ban",
+     "1.0.0",
+     "Quản lý phiên bản bộ tài liệu dự án (version control) - sổ phiên bản tự động theo băm nội dung và băm đầu vào, trạng thái dự thảo, đã kiểm tra, đã duyệt, đường cơ sở, khóa hồ sơ đấu thầu sau ký hợp đồng, liên kết yêu cầu thay đổi với phiên bản sau thay đổi, lị",
+     "1ca589b47634"
+    ],
+    [
+     "qlda-risk",
+     "1.1.1",
+     "Lập sổ đăng ký rủi ro và kế hoạch quản lý rủi ro (risk management plan) cho dự án - nhận diện theo nhóm bắt buộc gồm cả cơ hội, chấm xác suất có căn cứ và tác động theo ngưỡng định lượng thang 1 đến 5, tiền tác động do script tính (MD nhân đơn giá, phạt chậm E",
+     "2cf87803e584"
+    ],
+    [
+     "qlda-tong-ket",
+     "1.3.0",
+     "Tổng hợp số liệu kết thúc dự án và lập báo cáo tổng kết dự án - kế hoạch so với thực tế về phạm vi, sản phẩm bàn giao theo Mẫu 01A, mốc so với hạn, SPI và CPI các kỳ, chi phí nhân sự theo cách trả lương nhóm khai báo (MD công việc hoặc ngày huy động, ngày sẵn ",
+     "5def3ed4a21b"
+    ],
+    [
+     "qlda-wbs",
+     "1.1.0",
+     "Lập cấu trúc phân rã công việc (WBS) cho gói thầu từ HSMT và RFP - phân rã ba mức, ước lượng MD từng gói, loại công việc, sản phẩm, phụ thuộc, truy vết yêu cầu RFP và hạng mục Mẫu 01A, kiểm tra quy tắc 100%, xuất tài liệu WBS từng nhóm và tổng hợp. Dùng khi ng",
+     "eda8fef930ba"
+    ]
+   ],
+   "widths": [
+    1900,
+    900,
+    5300,
+    1300
+   ],
+   "size": 11,
+   "t": "table"
+  },
+  {
+   "text": "3. Quy trình và sơ đồ phụ thuộc",
+   "t": "h1"
+  },
+  {
+   "text": "Mỗi tài liệu do một skill tạo. Đầu vào của một bước là tệp do nhóm cung cấp hoặc đầu ra của bước trước. Khi một đầu vào thay đổi, các bước phía sau được đánh dấu cũ và phải chạy lại. Mỗi tài liệu đi qua vòng tạo, kiểm tra tự động (lớp A), kiểm tra đọc hiểu độc lập (lớp B) và sửa lỗi.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Bước",
+     "Tài liệu",
+     "Skill",
+     "Đầu vào",
+     "Đầu ra"
+    ],
+    [
+     "hsmt",
+     "Hồ sơ mời thầu",
+     "hsmt-mau-5a",
+     "rfp, mau_5a, tham_so_hsmt",
+     [
+      "ket_qua/01_HSMT/HSMT.docx",
+      "du_lieu/hsmt.json",
+      "du_lieu/rfp_yeu_cau.json"
+     ]
+    ],
+    [
+     "wbs",
+     "WBS (dữ liệu)",
+     "qlda-wbs",
+     "hsmt, rfp_yc, du_an, uoc_luong, nha_thau",
+     [
+      "du_lieu/wbs.json"
+     ]
+    ],
+    [
+     "giao_viec",
+     "Giao việc theo gói WBS (dữ liệu)",
+     "qlda-phan-cong",
+     "wbs, thanh_vien, hsmt, du_an",
+     [
+      "du_lieu/phan_cong.json"
+     ]
+    ],
+    [
+     "lich",
+     "Master schedule",
+     "qlda-master-schedule",
+     "wbs, phan_cong, thanh_vien, du_an, hsmt",
+     [
+      "du_lieu/lich.json",
+      "ket_qua/04_Master_schedule/Master_schedule.xlsx"
+     ]
+    ],
+    [
+     "tai_lieu_wbs",
+     "WBS (tài liệu)",
+     "qlda-wbs",
+     "wbs, phan_cong, lich, rfp_yc, hsmt, thanh_vien, du_an, nha_thau, uoc_luong",
+     [
+      "ket_qua/03_WBS"
+     ]
+    ],
+    [
+     "rui_ro",
+     "Sổ đăng ký rủi ro (dữ liệu)",
+     "qlda-risk",
+     "hsmt, rfp_yc, wbs, lich, phan_cong, thanh_vien, don_gia",
+     [
+      "du_lieu/rui_ro.json"
+     ]
+    ],
+    [
+     "chi_phi",
+     "Cost estimate",
+     "qlda-cost-estimate",
+     "wbs, phan_cong, lich, thanh_vien, don_gia, rui_ro, hsmt, quy_tac_thay_doi",
+     [
+      "du_lieu/chi_phi.json",
+      "ket_qua/06_Cost_estimate/Cost_estimate.xlsx",
+      "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx"
+     ]
+    ],
+    [
+     "hsdt",
+     "Hồ sơ dự thầu",
+     "qlda-hsdt",
+     "hsmt, rfp_yc, wbs, lich, phan_cong, chi_phi, rui_ro, thanh_vien, nha_thau, du_an, chi_tieu",
+     [
+      "ket_qua/02_HSDT/HSDT.docx"
+     ]
+    ],
+    [
+     "ke_hoach_rui_ro",
+     "Risk management plan",
+     "qlda-risk",
+     "rui_ro, chi_phi, lich, phan_cong, thanh_vien, du_an, hsmt, quy_tac_thay_doi",
+     [
+      "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx"
+     ]
+    ],
+    [
+     "ke_hoach_thay_doi",
+     "Change management plan",
+     "qlda-change",
+     "hsmt, doc_hsdt, phan_cong, thanh_vien, lich, chi_phi, don_gia, du_an, rui_ro, wbs, nha_thau, rfp_yc, chi_tieu, quy_tac_thay_doi",
+     [
+      "ket_qua/08_Change_management_plan/Ke_hoach_quan_ly_thay_doi.docx"
+     ]
+    ],
+    [
+     "ke_hoach_tong_the",
+     "Master plan",
+     "qlda-master-plan",
+     "hsmt, doc_hsdt, wbs, lich, phan_cong, chi_phi, rui_ro, doc_rui_ro, doc_thay_doi, thanh_vien, du_an, rfp_yc, chi_tieu, nha_thau, quy_tac_thay_doi",
+     [
+      "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx"
+     ]
+    ],
+    [
+     "phan_cong_tai_lieu",
+     "Danh sách phân chia công việc (responsibilities)",
+     "qlda-phan-cong",
+     "phan_cong, lich, wbs, thanh_vien, du_an, hsmt",
+     [
+      "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx"
+     ]
+    ],
+    [
+     "bao_cao_tien_do",
+     "Báo cáo tiến độ",
+     "qlda-bao-cao-tien-do",
+     "lich, wbs, phan_cong, chi_phi, don_gia, thanh_vien, tt_nhat_ky, tt_hoan_thanh, rui_ro, tt_rui_ro, thay_doi, du_an, tt_van_de, tt_hanh_dong, tt_chi_phi, tt_moc",
+     [
+      "du_lieu/tien_do",
+      "ket_qua/09_Bao_cao_tien_do"
+     ]
+    ],
+    [
+     "so_lieu_ket_thuc",
+     "Số liệu kết thúc dự án (dữ liệu)",
+     "qlda-tong-ket",
+     "wbs, lich, chi_phi, phan_cong, thanh_vien, don_gia, tt_nhat_ky, tt_hoan_thanh, tt_moc, tt_nghiem_thu, tt_loi, rui_ro, tt_rui_ro, thay_doi, hsmt, rfp_yc, tt_chi_phi, tien_do, kpi, tt_van_de, tt_hanh_dong, chi_tieu, du_an",
+     [
+      "du_lieu/ket_thuc.json"
+     ]
+    ],
+    [
+     "tong_ket",
+     "Báo cáo tổng kết dự án",
+     "qlda-tong-ket",
+     "ket_thuc, hsmt, doc_hsdt, doc_ke_hoach, lich, chi_phi, du_an, tt_moc, tt_van_de",
+     [
+      "ket_qua/11_Bao_cao_tong_ket/Bao_cao_tong_ket_du_an.docx"
+     ]
+    ],
+    [
+     "danh_gia",
+     "Báo cáo đánh giá dự án",
+     "qlda-danh-gia",
+     "ket_thuc, hsmt, rfp_yc, doc_tong_ket, tt_nghiem_thu, du_an, rui_ro, tt_rui_ro",
+     [
+      "ket_qua/12_Bao_cao_danh_gia/Bao_cao_danh_gia_du_an.docx"
+     ]
+    ],
+    [
+     "bai_hoc",
+     "Báo cáo bài học kinh nghiệm",
+     "qlda-bai-hoc",
+     "ket_thuc, rui_ro, tt_rui_ro, thay_doi, tt_retro, doc_danh_gia, du_an, lich, wbs, rfp_yc, tt_loi, tt_nghiem_thu, tt_van_de",
+     [
+      "du_lieu/bai_hoc.json",
+      "ket_qua/13_Bai_hoc_kinh_nghiem/Bao_cao_bai_hoc_kinh_nghiem.docx"
+     ]
+    ],
+    [
+     "bang_luong",
+     "Bảng phân chia lương",
+     "qlda-bang-luong",
+     "tt_nhat_ky, thanh_vien, don_gia, chi_phi, lich, du_an",
+     [
+      "du_lieu/luong.json",
+      "ket_qua/14_Bang_phan_chia_luong/Bang_phan_chia_luong.xlsx"
+     ]
+    ],
+    [
+     "phien_ban",
+     "Tài liệu quản lý phiên bản",
+     "qlda-phien-ban",
+     "phien_ban_reg, nhat_ky_chay, thay_doi, du_an",
+     [
+      "du_lieu/phien_ban_tong_hop.json",
+      "ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
+      "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx"
+     ]
+    ],
+    [
+     "bang_chung",
+     "Phụ lục bằng chứng prompt và skill",
+     "qlda-loi",
+     "phien_ban_reg, nhat_ky_chay",
+     [
+      "ket_qua/16_Bang_chung/Phu_luc_bang_chung_prompt_skill.docx"
+     ]
+    ]
+   ],
+   "widths": [
+    1500,
+    1900,
+    1500,
+    2300,
+    2100
+   ],
+   "size": 10,
+   "t": "table"
+  },
+  {
+   "text": "4. Tài liệu đầu ra và phiên bản",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Tệp",
+     "Phiên bản",
+     "Ngày",
+     "Bước",
+     "Băm nội dung",
+     "Ghi chú"
+    ],
+    [
+     "du_lieu/chi_phi.json",
+     "0.7",
+     "2026-10-18 01:21",
+     "chi_phi",
+     "cf20bd057990",
+     ""
+    ],
+    [
+     "du_lieu/hsmt.json",
+     "0.3",
+     "2026-10-17 23:56",
+     "hsmt",
+     "b5dc7df2b203",
+     ""
+    ],
+    [
+     "du_lieu/lich.json",
+     "0.7",
+     "2026-10-18 01:21",
+     "lich",
+     "99d30b717db2",
+     ""
+    ],
+    [
+     "du_lieu/phan_cong.json",
+     "0.185",
+     "2026-10-18 01:21",
+     "giao_viec",
+     "bca29cf9f274",
+     ""
+    ],
+    [
+     "du_lieu/phien_ban_tong_hop.json",
+     "0.3",
+     "2026-10-18 08:26",
+     "phien_ban",
+     "e5933ceaf9f9",
+     ""
+    ],
+    [
+     "du_lieu/rfp_yeu_cau.json",
+     "0.1",
+     "2026-10-16 23:12",
+     "hsmt",
+     "053f860dbf01",
+     ""
+    ],
+    [
+     "du_lieu/rui_ro.json",
+     "0.7",
+     "2026-10-18 01:21",
+     "rui_ro",
+     "96403b62cc35",
+     ""
+    ],
+    [
+     "du_lieu/wbs.json",
+     "0.11",
+     "2026-10-18 07:28",
+     "wbs",
+     "e6849b90edc6",
+     ""
+    ],
+    [
+     "ket_qua/01_HSMT/HSMT.docx",
+     "0.3",
+     "2026-10-17 23:56",
+     "hsmt",
+     "34fbfca0a43a",
+     ""
+    ],
+    [
+     "ket_qua/02_HSDT/HSDT.docx",
+     "0.2",
+     "2026-10-18 08:10",
+     "hsdt",
+     "0e5b623817ae",
+     "Sửa MH01, MH04, MH08 lớp B vòng 1; giải trình MH02, MH03, MH05, MH07"
+    ],
+    [
+     "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+     "0.3",
+     "2026-10-18 01:24",
+     "tai_lieu_wbs",
+     "baf5ce41febb",
+     ""
+    ],
+    [
+     "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+     "0.3",
+     "2026-10-18 01:24",
+     "tai_lieu_wbs",
+     "c5d7dc87c30f",
+     ""
+    ],
+    [
+     "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.docx",
+     "0.2",
+     "2026-10-16 23:58",
+     "tai_lieu_wbs",
+     "23f69bf33a41",
+     ""
+    ],
+    [
+     "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+     "0.1",
+     "2026-10-18 01:24",
+     "tai_lieu_wbs",
+     "b63a1696395e",
+     ""
+    ],
+    [
+     "ket_qua/03_WBS/WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.docx",
+     "0.2",
+     "2026-10-16 23:58",
+     "tai_lieu_wbs",
+     "45782d9b2595",
+     ""
+    ],
+    [
+     "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+     "0.1",
+     "2026-10-18 01:24",
+     "tai_lieu_wbs",
+     "1bc6006dba00",
+     ""
+    ],
+    [
+     "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+     "0.3",
+     "2026-10-18 01:24",
+     "tai_lieu_wbs",
+     "0a38463ef9cd",
+     ""
+    ],
+    [
+     "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+     "0.5",
+     "2026-10-18 07:29",
+     "tai_lieu_wbs",
+     "99ccb07e603e",
+     ""
+    ],
+    [
+     "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+     "0.4",
+     "2026-10-18 07:29",
+     "tai_lieu_wbs",
+     "4eade0fac9e0",
+     ""
+    ],
+    [
+     "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx",
+     "0.4",
+     "2026-10-18 01:24",
+     "tai_lieu_wbs",
+     "91c010925a8a",
+     ""
+    ],
+    [
+     "ket_qua/03_WBS/WBS_tong_hop.docx",
+     "0.4",
+     "2026-10-18 07:29",
+     "tai_lieu_wbs",
+     "f0bbfedfce97",
+     ""
+    ],
+    [
+     "ket_qua/04_Master_schedule/Master_schedule.xlsx",
+     "0.12",
+     "2026-10-18 07:28",
+     "lich",
+     "c2dc9fbd1a33",
+     "Quyết định nhóm 18/10/2026: D4 xác nhận họ tên, phương án dự trữ thời gian chấp nhận và báo Chủ đầu tư, vốn lưu động 500 triệu; sửa căn cứ ước lượng nhóm 6, 7"
+    ],
+    [
+     "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx",
+     "0.1",
+     "2026-10-18 08:15",
+     "ke_hoach_tong_the",
+     "5141d4b14eda",
+     "Lập theo 657 MD, tổng hợp 01-04, 06-08, 10, quyết định nhóm 18/10"
+    ],
+    [
+     "ket_qua/06_Cost_estimate/Cost_estimate.xlsx",
+     "0.9",
+     "2026-10-18 07:28",
+     "chi_phi",
+     "cf20bd057990",
+     ""
+    ],
+    [
+     "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+     "0.8",
+     "2026-10-18 07:34",
+     "chi_phi",
+     "daa6249ee4d8",
+     "Sửa MH01-MH04 lớp B vòng 1"
+    ],
+    [
+     "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx",
+     "0.6",
+     "2026-10-18 07:31",
+     "ke_hoach_rui_ro",
+     "06c4655a6fef",
+     "Lập lại theo 657 MD; quyết định nhóm: giữ dự trữ 4 ngày, chấp nhận và báo Chủ đầu tư, dự phòng 50 triệu"
+    ],
+    [
+     "ket_qua/08_Change_management_plan/Ke_hoach_quan_ly_thay_doi.docx",
+     "0.1",
+     "2026-10-18 08:11",
+     "ke_hoach_thay_doi",
+     "cc3d52d55812",
+     "Lập theo 657 MD, HSDT 0.2, quyết định nhóm 18/10"
+    ],
+    [
+     "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+     "0.6",
+     "2026-10-18 07:31",
+     "phan_cong_tai_lieu",
+     "ea25290d84a1",
+     "Sửa MH01 lớp B: mức sử dụng thấp thay cho quá tải"
+    ],
+    [
+     "ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
+     "0.3",
+     "2026-10-18 08:26",
+     "phien_ban",
+     "e5933ceaf9f9",
+     ""
+    ],
+    [
+     "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx",
+     "0.2",
+     "2026-10-18 08:27",
+     "phien_ban",
+     "2b9f0d5ebfc3",
+     "Sửa MH01, MH02, MH07 lớp B vòng 1; tách tài liệu lưu trữ"
+    ],
+    [
+     "ket_qua/16_Bang_chung/Phu_luc_bang_chung_prompt_skill.docx",
+     "0.1",
+     "2026-10-17 00:17",
+     "bang_chung",
+     "e209557d5efe",
+     ""
+    ]
+   ],
+   "widths": [
+    3000,
+    900,
+    1500,
+    1300,
+    1300,
+    1300
+   ],
+   "size": 10,
+   "t": "table"
+  },
+  {
+   "text": "5. Kết quả kiểm tra tài liệu",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Báo cáo",
+     "Tài liệu",
+     "Kết luận",
+     "Số lỗi",
+     "Số cảnh báo"
+    ],
+    [
+     "chi_phi_Cost_estimate_v0.9_lopB.json",
+     "ket_qua/06_Cost_estimate/Cost_estimate.xlsx",
+     "Đạt",
+     "0",
+     "3"
+    ],
+    [
+     "chi_phi_v0.1_lopA.json",
+     "lam_viec/chi_phi/chi_phi_vong1.docx",
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "chi_phi_v0.2_lopA.json",
+     "lam_viec/chi_phi/chi_phi_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "chi_phi_v0.3_lopA.json",
+     "lam_viec/chi_phi/chi_phi_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "chi_phi_v0.4_lopA.json",
+     "lam_viec/chi_phi/chi_phi_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "chi_phi_v0.5_lopA.json",
+     "lam_viec/chi_phi/chi_phi_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "chi_phi_v0.7_lopA.json",
+     "lam_viec/chi_phi/chi_phi_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "chi_phi_v0.7_lopB.json",
+     "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+     "Chưa đạt",
+     "1",
+     "3"
+    ],
+    [
+     "chi_phi_v0.8_lopA.json",
+     "lam_viec/chi_phi/chi_phi_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "chi_phi_v0.8_lopB.json",
+     "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "chi_phi_vong1_lopB.json",
+     "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+     "Chưa đạt",
+     "5",
+     "7"
+    ],
+    [
+     "chi_phi_vong2_lopB.json",
+     "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+     "Chưa đạt",
+     "1",
+     "11"
+    ],
+    [
+     "chi_phi_vong3_lopB.json",
+     "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+     "Đạt",
+     "0",
+     "8"
+    ],
+    [
+     "hsdt_v0.1_lopA.json",
+     "lam_viec/hsdt/hsdt_vong1.docx",
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "hsdt_v0.1_lopB.json",
+     "ket_qua/02_HSDT/HSDT.docx",
+     "Chưa đạt",
+     "2",
+     "6"
+    ],
+    [
+     "hsdt_v0.2_lopA.json",
+     "lam_viec/hsdt/hsdt_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "hsdt_v0.2_lopB.json",
+     "ket_qua/02_HSDT/HSDT.docx",
+     "Đạt",
+     "0",
+     "2"
+    ],
+    [
+     "hsmt_bao_cao_kiem_tra.json",
+     "",
+     "Đạt",
+     "0",
+     "4"
+    ],
+    [
+     "hsmt_bao_cao_kiem_tra_lop_b_vong1.json",
+     "",
+     "Chưa đạt",
+     "3",
+     "11"
+    ],
+    [
+     "hsmt_bao_cao_kiem_tra_lop_b_vong3.json",
+     "",
+     "Đạt",
+     "0",
+     "5"
+    ],
+    [
+     "hsmt_bao_cao_kiem_tra_v1.json",
+     "",
+     "cho_nguoi_dung",
+     "0",
+     "3"
+    ],
+    [
+     "hsmt_vong3_lopB.json",
+     "",
+     "Đạt",
+     "0",
+     "5"
+    ],
+    [
+     "ke_hoach_rui_ro_v0.1_lopA.json",
+     "lam_viec/ke_hoach_rui_ro/ke_hoach_rui_ro_vong1.docx",
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "ke_hoach_rui_ro_v0.2_lopA.json",
+     "lam_viec/ke_hoach_rui_ro/ke_hoach_rui_ro_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "ke_hoach_rui_ro_v0.3_lopA.json",
+     "lam_viec/ke_hoach_rui_ro/ke_hoach_rui_ro_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "ke_hoach_rui_ro_v0.4_lopA.json",
+     "lam_viec/ke_hoach_rui_ro/ke_hoach_rui_ro_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "ke_hoach_rui_ro_v0.5_lopA.json",
+     "lam_viec/ke_hoach_rui_ro/ke_hoach_rui_ro_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "ke_hoach_rui_ro_v0.6_lopA.json",
+     "lam_viec/ke_hoach_rui_ro/ke_hoach_rui_ro_vong1.docx",
+     "Đạt",
+     "0",
+     "2"
+    ],
+    [
+     "ke_hoach_rui_ro_v0.6_lopB.json",
+     "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx",
+     "Đạt",
+     "0",
+     "4"
+    ],
+    [
+     "ke_hoach_rui_ro_vong1_lopB.json",
+     "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx",
+     "Chưa đạt",
+     "3",
+     "15"
+    ],
+    [
+     "ke_hoach_rui_ro_vong2_lopB.json",
+     "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx",
+     "Đạt",
+     "0",
+     "10"
+    ],
+    [
+     "ke_hoach_rui_ro_vong3_lopB.json",
+     "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx",
+     "Đạt",
+     "0",
+     "6"
+    ],
+    [
+     "ke_hoach_thay_doi_v0.1_lopA.json",
+     "lam_viec/ke_hoach_thay_doi/ke_hoach_thay_doi_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "ke_hoach_thay_doi_v0.1_lopB.json",
+     "ket_qua/08_Change_management_plan/Ke_hoach_quan_ly_thay_doi.docx",
+     "Đạt",
+     "0",
+     "5"
+    ],
+    [
+     "ke_hoach_tong_the_v0.1_lopA.json",
+     "lam_viec/ke_hoach_tong_the/ke_hoach_tong_the_vong1.docx",
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "ke_hoach_tong_the_v0.1_lopB.json",
+     "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx",
+     "Đạt",
+     "0",
+     "7"
+    ],
+    [
+     "lich_v0.12_lopB.json",
+     "ket_qua/04_Master_schedule/Master_schedule.xlsx",
+     "Đạt",
+     "0",
+     "5"
+    ],
+    [
+     "lich_vong1_lopB.json",
+     "ket_qua/04_Master_schedule/Master_schedule.xlsx",
+     "Chưa đạt",
+     "1",
+     "10"
+    ],
+    [
+     "lich_vong2_lopB.json",
+     "ket_qua/04_Master_schedule/Master_schedule.xlsx",
+     "Chưa đạt",
+     "3",
+     "6"
+    ],
+    [
+     "lich_vong3_lopB.json",
+     "ket_qua/04_Master_schedule/Master_schedule.xlsx",
+     "Đạt",
+     "0",
+     "6"
+    ],
+    [
+     "phan_cong_tai_lieu_v0.1_lopA.json",
+     "lam_viec/phan_cong_tai_lieu/phan_cong_tai_lieu_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "phan_cong_tai_lieu_v0.2_lopA.json",
+     "lam_viec/phan_cong_tai_lieu/phan_cong_tai_lieu_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "phan_cong_tai_lieu_v0.3_lopA.json",
+     "lam_viec/phan_cong_tai_lieu/phan_cong_tai_lieu_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "phan_cong_tai_lieu_v0.4_lopA.json",
+     "lam_viec/phan_cong_tai_lieu/phan_cong_tai_lieu_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "phan_cong_tai_lieu_v0.5_lopA.json",
+     "lam_viec/phan_cong_tai_lieu/phan_cong_tai_lieu_vong1.docx",
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "phan_cong_tai_lieu_v0.5_lopB.json",
+     "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+     "Chưa đạt",
+     "1",
+     "2"
+    ],
+    [
+     "phan_cong_tai_lieu_v0.6_lopA.json",
+     "lam_viec/phan_cong_tai_lieu/phan_cong_tai_lieu_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "phan_cong_tai_lieu_v0.6_lopB.json",
+     "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+     "Đạt",
+     "0",
+     "2"
+    ],
+    [
+     "phan_cong_tai_lieu_vong1_lopB.json",
+     "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+     "Chưa đạt",
+     "3",
+     "9"
+    ],
+    [
+     "phan_cong_tai_lieu_vong2_lopB.json",
+     "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+     "Chưa đạt",
+     "1",
+     "7"
+    ],
+    [
+     "phan_cong_tai_lieu_vong3_lopB.json",
+     "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+     "Đạt",
+     "0",
+     "3"
+    ],
+    [
+     "phien_ban_v0.1_lopA.json",
+     "lam_viec/phien_ban/phien_ban_vong2.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "phien_ban_v0.1_lopB.json",
+     "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx (0.1), ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
+     "Chưa đạt",
+     "2",
+     "5"
+    ],
+    [
+     "phien_ban_v0.2_lopA.json",
+     "lam_viec/phien_ban/phien_ban_vong2.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "phien_ban_v0.2_lopB.json",
+     "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx (0.2), ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
+     "Đạt",
+     "0",
+     "6"
+    ],
+    [
+     "tai_lieu_wbs_WBS_1_Quan_ly_du_an_v0.1_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_1_Quan_ly_du_an.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_1_Quan_ly_du_an_v0.2_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_1_Quan_ly_du_an.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_1_Quan_ly_du_an_v0.3_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_1_Quan_ly_du_an.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_1_Quan_ly_du_an_v0.3_lopB.json",
+     [
+      "ket_qua/03_WBS/WBS_tong_hop.docx",
+      "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+      "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+      "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+      "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+      "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+      "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+      "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+      "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+     ],
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "tai_lieu_wbs_WBS_2_Phan_tich_va_thiet_ke_chung_v0.1_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_2_Phan_tich_va_thiet_ke_chung_v0.2_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_2_Phan_tich_va_thiet_ke_chung_v0.3_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_2_Phan_tich_va_thiet_ke_chung_v0.3_lopB.json",
+     [
+      "ket_qua/03_WBS/WBS_tong_hop.docx",
+      "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+      "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+      "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+      "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+      "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+      "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+      "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+      "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+     ],
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "tai_lieu_wbs_WBS_3_Phan_he_tim_kiem_san_pham_Product_Search_v0.1_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_3_Phan_he_tim_kiem_san_pham_Product_Search_v0.2_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search_v0.1_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "tai_lieu_wbs_WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search_v0.1_lopB.json",
+     [
+      "ket_qua/03_WBS/WBS_tong_hop.docx",
+      "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+      "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+      "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+      "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+      "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+      "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+      "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+      "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+     ],
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "tai_lieu_wbs_WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration_v0.1_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration_v0.2_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_4_Phan_he_thanh_vien_Member_Administration_v0.1_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "tai_lieu_wbs_WBS_4_Phan_he_thanh_vien_Member_Administration_v0.1_lopB.json",
+     [
+      "ket_qua/03_WBS/WBS_tong_hop.docx",
+      "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+      "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+      "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+      "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+      "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+      "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+      "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+      "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+     ],
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "tai_lieu_wbs_WBS_5_Phan_he_dat_hang_Order_v0.1_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_5_Phan_he_dat_hang_Order.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_5_Phan_he_dat_hang_Order_v0.2_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_5_Phan_he_dat_hang_Order.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_5_Phan_he_dat_hang_Order_v0.3_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_5_Phan_he_dat_hang_Order.docx",
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "tai_lieu_wbs_WBS_5_Phan_he_dat_hang_Order_v0.3_lopB.json",
+     [
+      "ket_qua/03_WBS/WBS_tong_hop.docx",
+      "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+      "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+      "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+      "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+      "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+      "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+      "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+      "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+     ],
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "tai_lieu_wbs_WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong_v0.1_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong_v0.2_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong_v0.3_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong_v0.4_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong_v0.4_lopB.json",
+     [
+      "ket_qua/03_WBS/WBS_tong_hop.docx",
+      "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+      "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+      "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+      "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+      "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+      "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+      "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+      "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+     ],
+     "Chưa đạt",
+     "2",
+     "2"
+    ],
+    [
+     "tai_lieu_wbs_WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong_v0.5_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong_v0.5_lopB.json",
+     [
+      "ket_qua/03_WBS/WBS_tong_hop.docx",
+      "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+      "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+      "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+      "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+      "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+      "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+      "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+      "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+     ],
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "tai_lieu_wbs_WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh_v0.1_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh_v0.2_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh_v0.3_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh_v0.3_lopB.json",
+     [
+      "ket_qua/03_WBS/WBS_tong_hop.docx",
+      "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+      "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+      "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+      "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+      "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+      "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+      "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+      "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+     ],
+     "Chưa đạt",
+     "2",
+     "2"
+    ],
+    [
+     "tai_lieu_wbs_WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh_v0.4_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh_v0.4_lopB.json",
+     [
+      "ket_qua/03_WBS/WBS_tong_hop.docx",
+      "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+      "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+      "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+      "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+      "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+      "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+      "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+      "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+     ],
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "tai_lieu_wbs_WBS_8_Trien_khai_va_chuyen_giao_v0.1_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_8_Trien_khai_va_chuyen_giao.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_8_Trien_khai_va_chuyen_giao_v0.2_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_8_Trien_khai_va_chuyen_giao.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_8_Trien_khai_va_chuyen_giao_v0.3_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_8_Trien_khai_va_chuyen_giao.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_8_Trien_khai_va_chuyen_giao_v0.4_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_8_Trien_khai_va_chuyen_giao.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_8_Trien_khai_va_chuyen_giao_v0.4_lopB.json",
+     [
+      "ket_qua/03_WBS/WBS_tong_hop.docx",
+      "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+      "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+      "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+      "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+      "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+      "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+      "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+      "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+     ],
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "tai_lieu_wbs_WBS_tong_hop_v0.1_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_tong_hop.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_tong_hop_v0.2_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_tong_hop.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tai_lieu_wbs_WBS_tong_hop_v0.3_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_tong_hop.docx",
+     "Đạt",
+     "0",
+     "3"
+    ],
+    [
+     "tai_lieu_wbs_WBS_tong_hop_v0.3_lopB.json",
+     [
+      "ket_qua/03_WBS/WBS_tong_hop.docx",
+      "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+      "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+      "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+      "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+      "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+      "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+      "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+      "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+     ],
+     "Chưa đạt",
+     "2",
+     "2"
+    ],
+    [
+     "tai_lieu_wbs_WBS_tong_hop_v0.4_lopA.json",
+     "lam_viec/tai_lieu_wbs/WBS_tong_hop.docx",
+     "Đạt",
+     "0",
+     "3"
+    ],
+    [
+     "tai_lieu_wbs_WBS_tong_hop_v0.4_lopB.json",
+     [
+      "ket_qua/03_WBS/WBS_tong_hop.docx",
+      "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+      "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+      "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+      "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+      "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+      "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+      "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+      "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+     ],
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "wbs_vong1_lopB.json",
+     "ket_qua/03_WBS",
+     "Chưa đạt",
+     "2",
+     "11"
+    ],
+    [
+     "wbs_vong2_lopB.json",
+     "ket_qua/03_WBS",
+     "Chưa đạt",
+     "1",
+     "3"
+    ],
+    [
+     "wbs_vong3_lopB.json",
+     "ket_qua/03_WBS",
+     "Đạt",
+     "0",
+     "1"
+    ]
+   ],
+   "widths": [
+    3000,
+    3000,
+    1100,
+    1000,
+    1200
+   ],
+   "size": 10,
+   "t": "table"
+  },
+  {
+   "text": "6. Nhật ký chạy",
+   "t": "h1"
+  },
+  {
+   "text": "Tổng số bước đã ghi: 429. Bước do agent thực hiện: 52. Bước do script thực hiện: 377.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Thời gian",
+     "Skill",
+     "Bước",
+     "Loại",
+     "Nội dung",
+     "Prompt",
+     "Kết quả"
+    ],
+    [
+     "16/10/2026 23:12",
+     "hsmt-mau-5a",
+     "hsmt.phan_tich_rfp",
+     "agent",
+     "Phân tích RFP: Xem ảnh 5 trang RFP, lập 48 yêu cầu R01-R48, 6 điểm lệch có căn cứ (R26, R27, R29, R30, R32, R33). Thực hiện ngày 07/10/2026, R29 chuyển thành điểm lệch sau kiểm tra lớp B vòng 1",
+     "8fb36b0bdd1d",
+     "hoàn thành"
+    ],
+    [
+     "16/10/2026 23:12",
+     "hsmt-mau-5a",
+     "hsmt.soan",
+     "agent",
+     "Soạn thảo: Soạn 22 mục (Chương V, Mẫu 01A, tiêu chí kỹ thuật, 38.2 E-BDL, các mục E-ĐKCT, dòng bổ sung). Thực hiện ngày 07/10/2026",
+     "8ed7b9fa4864",
+     "hoàn thành"
+    ],
+    [
+     "16/10/2026 23:12",
+     "hsmt-mau-5a",
+     "hsmt.kiem_tra_lop_B",
+     "agent",
+     "Kiểm tra độc lập (agent con): Vòng 1: 3 lỗi, 11 cảnh báo. Vòng 2: 2 lỗi (phần script lập), 7 cảnh báo. Thực hiện ngày 07/10/2026",
+     "855f2ad8b87b",
+     "chưa đạt"
+    ],
+    [
+     "16/10/2026 23:12",
+     "hsmt-mau-5a",
+     "hsmt.sua",
+     "agent",
+     "Sửa: Sửa 8 điểm ở bản soạn (vòng 2, 3). Ngày 16/10/2026 sửa lap_khung.py theo nguyên văn Mẫu 5A: 5.1(c), 18.2, Mục 2.1 Chương III, cột Cách thức thực hiện Chương IV, E-ĐKC 15. Hai lựa chọn của chủ đầu tư tại E-ĐKC 15 để ",
+     "b9da03735469",
+     "hoàn thành"
+    ],
+    [
+     "16/10/2026 23:12",
+     "hsmt-mau-5a",
+     "hsmt",
+     "script",
+     "Trích dữ liệu HSMT dùng chung, sao chép HSMT đạt kiểm tra vào ket_qua",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:16",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Kiểm tra và chuẩn hóa WBS: 349 MD, 65 gói lá",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:16",
+     "qlda-wbs",
+     "wbs.lap",
+     "agent",
+     "agent Lập WBS: 65 gói lá, 349 MD, 8 nhóm mức 1. Bổ sung nhóm B: trang chủ và điều hướng danh mục, bộ thành phần giao diện tương thích di động, nạp dữ liệu sản phẩm ban đầu, kiểm thử bảo mật. Giả định ngoài phạm vi: quản ",
+     "5606a28d3fa7",
+     "hoàn thành"
+    ],
+    [
+     "16/10/2026 23:17",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 348.99 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:17",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Kiểm tra và chuẩn hóa WBS: 349 MD, 65 gói lá",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:17",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 348.99 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:18",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Kiểm tra và chuẩn hóa WBS: 349 MD, 65 gói lá",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:18",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 348.99 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:19",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 348.99 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:19",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 348.99 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:19",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Kiểm tra và chuẩn hóa WBS: 349 MD, 65 gói lá",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:19",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 348.99 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:20",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:20",
+     "qlda-phan-cong",
+     "giao_viec.lap",
+     "agent",
+     "agent Giao việc: Giao 65 gói lá, 349 MD trên quỹ 683 MD. 13 gói có người hỗ trợ để rút ngắn đường găng. 5 lần điều chỉnh giao việc và phụ thuộc WBS đến khi lịch nguồn lực kết thúc đúng ngày cut over 01/07/2027. 6 vị trí ",
+     "2f94e528a4c4",
+     "hoàn thành"
+    ],
+    [
+     "16/10/2026 23:20",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Kiểm tra và chuẩn hóa WBS: 349 MD, 65 gói lá",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:20",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "hsmt-mau-5a",
+     "hsmt.kiem_tra_lop_B",
+     "agent",
+     "Kiểm tra độc lập (agent con): Kiểm tra lại các phần script sửa (5.1(c), 18.2, Mục 2.1 Chương III, Chương IV, E-ĐKC 15): đạt, 0 lỗi, 5 cảnh báo. Đã sửa tiêu đề cột Trách nhiệm thực hiện. Còn 4 cảnh báo chờ chủ đầu tư",
+     "855f2ad8b87b",
+     "hoàn thành"
+    ],
+    [
+     "16/10/2026 23:21",
+     "hsmt-mau-5a",
+     "hsmt",
+     "script",
+     "Trích dữ liệu HSMT dùng chung, sao chép HSMT đạt kiểm tra vào ket_qua",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Kiểm tra và chuẩn hóa WBS: 349 MD, 65 gói lá",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:22",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:22",
+     "qlda-master-schedule",
+     "lich",
+     "script",
+     "Lập lịch có ràng buộc nguồn lực và xuất master schedule Excel. Đã tính lại công thức, 0 lỗi, đối chiếu tổng MD 349, 73 ngày làm việc, MD từng sprint khớp lich.json.",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:23",
+     "qlda-master-schedule",
+     "lich.lap_moc",
+     "agent",
+     "agent Lập mốc: 8 mốc M0-M7, 5 mốc gắn đợt thanh toán 1-5, mục tiêu và sản phẩm trình diễn 7 sprint. Lịch kết thúc 01/07/2027, dự trữ 0 ngày ở chuỗi cuối",
+     "c849be3f12b6",
+     "hoàn thành"
+    ],
+    [
+     "16/10/2026 23:24",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Kiểm tra sổ rủi ro: 15 rủi ro, EMV 112.380.000 đồng",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:24",
+     "qlda-risk",
+     "rui_ro.lap",
+     "agent",
+     "agent Phân tích rủi ro: 15 rủi ro: 2 cao (RR02 tích hợp Main System, RR03 chuỗi cuối không dự trữ), 12 trung bình, 1 thấp. EMV 42 MD, 112.380.000 đồng",
+     "b982a1639220",
+     "hoàn thành"
+    ],
+    [
+     "16/10/2026 23:24",
+     "qlda-cost-estimate",
+     "chi_phi",
+     "script",
+     "Lập cost estimate và Excel công thức. Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (A, B, C, giá chào, lương theo người, tổng Mẫu 11A).",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:25",
+     "qlda-wbs",
+     "tai_lieu_wbs",
+     "script",
+     "Xuất 9 tài liệu WBS, đạt kiểm tra trình bày",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:25",
+     "qlda-cost-estimate",
+     "chi_phi.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:25",
+     "qlda-risk",
+     "ke_hoach_rui_ro.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:25",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:28",
+     "qlda-loi",
+     "chi_phi.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 1 cảnh báo)"
+    ],
+    [
+     "16/10/2026 23:28",
+     "qlda-cost-estimate",
+     "chi_phi.hoan_thien",
+     "script",
+     "Tạo tài liệu Cost estimate, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:28",
+     "qlda-loi",
+     "ke_hoach_rui_ro.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 1 cảnh báo)"
+    ],
+    [
+     "16/10/2026 23:28",
+     "qlda-risk",
+     "ke_hoach_rui_ro.hoan_thien",
+     "script",
+     "Tạo tài liệu Risk management plan, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:28",
+     "qlda-loi",
+     "phan_cong_tai_lieu.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "16/10/2026 23:28",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.hoan_thien",
+     "script",
+     "Tạo tài liệu Danh sách phân chia công việc (responsibilities), đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:29",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Kiểm tra sổ rủi ro: 15 rủi ro, EMV 112.380.000 đồng",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:29",
+     "qlda-cost-estimate",
+     "chi_phi",
+     "script",
+     "Lập cost estimate và Excel công thức. Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (A, B, C, giá chào, lương theo người, tổng Mẫu 11A).",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:29",
+     "qlda-cost-estimate",
+     "chi_phi.chuan_bi",
+     "script",
+     "Lập lại khung do dữ liệu nguồn đã đổi",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:29",
+     "qlda-loi",
+     "chi_phi.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "16/10/2026 23:29",
+     "qlda-cost-estimate",
+     "chi_phi.hoan_thien",
+     "script",
+     "Tạo tài liệu Cost estimate, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:29",
+     "qlda-risk",
+     "ke_hoach_rui_ro.chuan_bi",
+     "script",
+     "Lập lại khung do dữ liệu nguồn đã đổi",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:29",
+     "qlda-loi",
+     "ke_hoach_rui_ro.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "16/10/2026 23:29",
+     "qlda-risk",
+     "ke_hoach_rui_ro.hoan_thien",
+     "script",
+     "Tạo tài liệu Risk management plan, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:29",
+     "qlda-cost-estimate",
+     "chi_phi.soan",
+     "agent",
+     "agent Soạn thảo: Soạn 6 mục thuyết minh dự toán. Nêu dòng B gộp dự phòng với môi trường, công cụ, bảo hành và dòng tiền chỉ tính lương theo MD kế hoạch",
+     "a098eadfb618",
+     "hoàn thành"
+    ],
+    [
+     "16/10/2026 23:29",
+     "qlda-risk",
+     "ke_hoach_rui_ro.soan",
+     "agent",
+     "agent Soạn thảo: Soạn 7 mục kế hoạch quản lý rủi ro. Nêu dự trữ thời gian 0 ngày thấp hơn EMV thời gian",
+     "a098eadfb618",
+     "hoàn thành"
+    ],
+    [
+     "16/10/2026 23:29",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.soan",
+     "agent",
+     "agent Soạn thảo: Soạn 2 mục nguyên tắc phân công, RACI, điều chỉnh và thay thế nhân sự",
+     "a098eadfb618",
+     "hoàn thành"
+    ],
+    [
+     "16/10/2026 23:30",
+     "qlda-hsdt",
+     "hsdt.truoc",
+     "script",
+     "Chạy script tính trước khi lập khung: qlda-hsdt/scripts/tinh_hsdt.py",
+     "",
+     "lỗi"
+    ],
+    [
+     "16/10/2026 23:46",
+     "qlda-cost-estimate",
+     "chi_phi",
+     "script",
+     "Lập cost estimate và Excel công thức. Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (A, B, C, giá chào, lương theo người, tổng Mẫu 11A, khoản còn lại sau lương, dòng tiền).",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:49",
+     "hsmt-mau-5a",
+     "hsmt",
+     "script",
+     "Trích dữ liệu HSMT dùng chung, sao chép HSMT đạt kiểm tra vào ket_qua",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:49",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Kiểm tra và chuẩn hóa WBS: 349 MD, 65 gói lá",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:49",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 349.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Kiểm tra và chuẩn hóa WBS: 351 MD, 66 gói lá",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.02 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.00 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.02 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.00 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:50",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:51",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.02 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.00 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.02 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.00 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:52",
+     "qlda-master-schedule",
+     "lich",
+     "script",
+     "Lập lịch có ràng buộc nguồn lực và xuất master schedule Excel. Đã tính lại công thức, 0 lỗi, đối chiếu tổng MD 351, 73 ngày làm việc, MD từng sprint khớp lich.json.",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:53",
+     "qlda-master-schedule",
+     "lich",
+     "script",
+     "Lập lịch có ràng buộc nguồn lực và xuất master schedule Excel. Đã tính lại công thức, 0 lỗi, đối chiếu tổng MD 351, 73 ngày làm việc, MD từng sprint khớp lich.json.",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:55",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Kiểm tra sổ rủi ro: 18 rủi ro, EMV 125.750.173 đồng",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:55",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Kiểm tra sổ rủi ro: 18 rủi ro, EMV 125.750.173 đồng",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:55",
+     "qlda-cost-estimate",
+     "chi_phi",
+     "script",
+     "Lập cost estimate và Excel công thức. Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (A, B, C, giá chào, lương theo người, tổng Mẫu 11A, khoản còn lại sau lương, dòng tiền).",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:56",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:58",
+     "qlda-wbs",
+     "tai_lieu_wbs",
+     "script",
+     "Xuất 9 tài liệu WBS, đạt kiểm tra trình bày",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:58",
+     "qlda-cost-estimate",
+     "chi_phi.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:58",
+     "qlda-risk",
+     "ke_hoach_rui_ro.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:58",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:58",
+     "qlda-loi",
+     "chi_phi.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "16/10/2026 23:58",
+     "qlda-cost-estimate",
+     "chi_phi.hoan_thien",
+     "script",
+     "Tạo tài liệu Cost estimate, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:58",
+     "qlda-loi",
+     "ke_hoach_rui_ro.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "16/10/2026 23:58",
+     "qlda-risk",
+     "ke_hoach_rui_ro.hoan_thien",
+     "script",
+     "Tạo tài liệu Risk management plan, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:58",
+     "qlda-loi",
+     "phan_cong_tai_lieu.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "16/10/2026 23:58",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.hoan_thien",
+     "script",
+     "Tạo tài liệu Danh sách phân chia công việc (responsibilities), đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "16/10/2026 23:59",
+     "qlda-wbs",
+     "tai_lieu_wbs.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 1: chưa đạt, 2 lỗi (làm tròn phân bổ 01A, ngày bìa do thiếu ngay_ky_don), 11 cảnh báo",
+     "24e2f43660f0",
+     "chưa đạt"
+    ],
+    [
+     "16/10/2026 23:59",
+     "qlda-master-schedule",
+     "lich.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 1: chưa đạt, 1 lỗi (công thức số sprint), 10 cảnh báo (dự trữ 0, hạn mốc, mục tiêu sprint, cân bằng tải)",
+     "24e2f43660f0",
+     "chưa đạt"
+    ],
+    [
+     "16/10/2026 23:59",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 1: chưa đạt, 3 lỗi (MD theo người, chia phần việc lệch lịch, cột bên ngoài thiếu C, I), 9 cảnh báo",
+     "24e2f43660f0",
+     "chưa đạt"
+    ],
+    [
+     "16/10/2026 23:59",
+     "qlda-cost-estimate",
+     "chi_phi.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 1: chưa đạt, 5 lỗi (dòng tiền theo MD kế hoạch, bỏ qua thời hạn thanh toán, thiếu ngưỡng chịu đựng, làm tròn hệ số bảo hiểm, dự phòng mâu thuẫn), 7 cảnh báo",
+     "24e2f43660f0",
+     "chưa đạt"
+    ],
+    [
+     "16/10/2026 23:59",
+     "qlda-risk",
+     "ke_hoach_rui_ro.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 1: chưa đạt, 3 lỗi (RR13 đánh giá thấp vấn đề đã biết, dự phòng mâu thuẫn, viện dẫn sai Mục 18), 15 cảnh báo",
+     "24e2f43660f0",
+     "chưa đạt"
+    ],
+    [
+     "16/10/2026 23:59",
+     "qlda-loi",
+     "ke_hoach.sua",
+     "agent",
+     "agent Sửa: Vòng 2. Sửa dữ liệu: phụ thuộc kiểm thử, gói 1.3.3 trước M3, giả định ngoài phạm vi, giao việc tạo dự trữ 5 ngày, hạn mốc, sổ rủi ro 18 rủi ro. Sửa script: dòng tiền theo huy động và thời hạn thanh toán, khoản",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "17/10/2026 00:07",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Kiểm tra và chuẩn hóa WBS: 351 MD, 66 gói lá",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:07",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:09",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Kiểm tra sổ rủi ro: 19 rủi ro, EMV 127.500.173 đồng",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:09",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Kiểm tra sổ rủi ro: 19 rủi ro, EMV 127.500.173 đồng",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:11",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Kiểm tra và chuẩn hóa WBS: 351 MD, 66 gói lá",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:11",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:11",
+     "qlda-master-schedule",
+     "lich",
+     "script",
+     "Lập lịch có ràng buộc nguồn lực và xuất master schedule Excel. Đã tính lại công thức, 0 lỗi, đối chiếu tổng MD 351, 73 ngày làm việc, MD từng sprint khớp lich.json.",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:11",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Kiểm tra sổ rủi ro: 19 rủi ro, EMV 128.287.673 đồng",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:11",
+     "qlda-cost-estimate",
+     "chi_phi",
+     "script",
+     "Lập cost estimate và Excel công thức. Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (A, B, C, giá chào, lương theo người, tổng Mẫu 11A, khoản còn lại sau lương, dòng tiền).",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:12",
+     "qlda-wbs",
+     "tai_lieu_wbs",
+     "script",
+     "Xuất 9 tài liệu WBS, đạt kiểm tra trình bày",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:12",
+     "qlda-cost-estimate",
+     "chi_phi.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:12",
+     "qlda-risk",
+     "ke_hoach_rui_ro.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:12",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:12",
+     "qlda-loi",
+     "chi_phi.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "17/10/2026 00:12",
+     "qlda-cost-estimate",
+     "chi_phi.hoan_thien",
+     "script",
+     "Tạo tài liệu Cost estimate, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:12",
+     "qlda-loi",
+     "ke_hoach_rui_ro.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "17/10/2026 00:12",
+     "qlda-risk",
+     "ke_hoach_rui_ro.hoan_thien",
+     "script",
+     "Tạo tài liệu Risk management plan, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:12",
+     "qlda-loi",
+     "phan_cong_tai_lieu.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "17/10/2026 00:12",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.hoan_thien",
+     "script",
+     "Tạo tài liệu Danh sách phân chia công việc (responsibilities), đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 00:13",
+     "qlda-wbs",
+     "tai_lieu_wbs.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 2: chưa đạt, 1 lỗi mới (gói cut over xếp trước ngày đưa vào vận hành), 3 cảnh báo; 12/13 phát hiện vòng 1 đã xử lý",
+     "24e2f43660f0",
+     "chưa đạt"
+    ],
+    [
+     "17/10/2026 00:13",
+     "qlda-master-schedule",
+     "lich.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 2: chưa đạt, 3 lỗi (đếm sprint, ô dự trữ tính gói dàn trải, gói cut over trước 01/07), 6 cảnh báo",
+     "24e2f43660f0",
+     "chưa đạt"
+    ],
+    [
+     "17/10/2026 00:13",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 2: chưa đạt, 1 lỗi (vai trò Chủ đầu tư ở 1.1, 1.2), 7 cảnh báo; 3 lỗi vòng 1 đã khắc phục",
+     "24e2f43660f0",
+     "chưa đạt"
+    ],
+    [
+     "17/10/2026 00:13",
+     "qlda-cost-estimate",
+     "chi_phi.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 2: chưa đạt, 1 lỗi hiển thị (làm tròn MD hòa vốn), 11 cảnh báo; 4 lỗi vòng 1 đã khắc phục, 1 chuyển nhóm quyết định",
+     "24e2f43660f0",
+     "chưa đạt"
+    ],
+    [
+     "17/10/2026 00:13",
+     "qlda-risk",
+     "ke_hoach_rui_ro.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 2: đạt, 0 lỗi, 10 cảnh báo; EMV tính lại độc lập khớp",
+     "24e2f43660f0",
+     "hoàn thành"
+    ],
+    [
+     "17/10/2026 00:13",
+     "qlda-loi",
+     "ke_hoach.sua",
+     "agent",
+     "agent Sửa: Vòng 3. Script: ràng buộc không sớm hơn cho gói cut over, dự trữ đo trước gói ghim, đếm sprint loại tiêu đề, ô dự trữ Excel lấy từ lịch, tô đỏ quá tải, làm tròn khoản còn lại theo lương chưa làm tròn, ngày thu",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/01_HSMT/HSMT.docx 0.2: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx 0.2: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx 0.2: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.docx 0.2: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.docx 0.2: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx 0.2: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx 0.3: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx 0.2: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx 0.3: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_tong_hop.docx 0.2: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/04_Master_schedule/Master_schedule.xlsx 0.4: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/06_Cost_estimate/Cost_estimate.xlsx 0.4: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx 0.4: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx 0.4: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx 0.3: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-wbs",
+     "tai_lieu_wbs.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 3: đạt, 0 lỗi, 1 cảnh báo chờ nhóm (ngày ký đơn)",
+     "24e2f43660f0",
+     "hoàn thành"
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-master-schedule",
+     "lich.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 3: đạt, 0 lỗi, 6 cảnh báo",
+     "24e2f43660f0",
+     "hoàn thành"
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 3: đạt, 0 lỗi, 3 cảnh báo",
+     "24e2f43660f0",
+     "hoàn thành"
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-cost-estimate",
+     "chi_phi.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 3: đạt, 0 lỗi, 8 cảnh báo (5 chờ nhóm)",
+     "24e2f43660f0",
+     "hoàn thành"
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-risk",
+     "ke_hoach_rui_ro.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 3: đạt, 0 lỗi, 6 cảnh báo; EMV 19 rủi ro tính lại khớp",
+     "24e2f43660f0",
+     "hoàn thành"
+    ],
+    [
+     "17/10/2026 00:17",
+     "qlda-loi",
+     "bang_chung",
+     "script",
+     "Xuất phụ lục bằng chứng prompt và skill",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:39",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:39",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Đăng ký đầu ra của bước Giao việc theo gói WBS (dữ liệu)",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:39",
+     "qlda-master-schedule",
+     "lich",
+     "script",
+     "Lập lịch có ràng buộc nguồn lực và xuất master schedule Excel. Đã tính lại công thức, 0 lỗi, đối chiếu tổng MD 351, 73 ngày làm việc, MD từng sprint khớp lich.json.",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:39",
+     "qlda-master-schedule",
+     "lich",
+     "script",
+     "Đăng ký đầu ra của bước Master schedule",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:39",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Kiểm tra sổ rủi ro: 19 rủi ro, EMV 131.157.364 đồng",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:39",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Đăng ký đầu ra của bước Sổ đăng ký rủi ro (dữ liệu)",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:40",
+     "qlda-cost-estimate",
+     "chi_phi.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:40",
+     "qlda-cost-estimate",
+     "chi_phi",
+     "script",
+     "Lập cost estimate và Excel công thức. Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (A, B, C, giá chào, lương theo người, tổng Mẫu 11A, khoản còn lại sau lương, dòng tiền).",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 351.01 MD trên quỹ 683.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-master-schedule",
+     "lich",
+     "script",
+     "Lập lịch có ràng buộc nguồn lực và xuất master schedule Excel. Đã tính lại công thức, 0 lỗi, đối chiếu tổng MD 351, 73 ngày làm việc, MD từng sprint khớp lich.json.",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Kiểm tra sổ rủi ro: 19 rủi ro, EMV 131.157.364 đồng",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-cost-estimate",
+     "chi_phi",
+     "script",
+     "Lập cost estimate và Excel công thức. Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (A, B, C, giá chào, lương theo người, tổng Mẫu 11A, khoản còn lại sau lương, dòng tiền).",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Đăng ký đầu ra của bước Giao việc theo gói WBS (dữ liệu)",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-master-schedule",
+     "lich",
+     "script",
+     "Đăng ký đầu ra của bước Master schedule",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Đăng ký đầu ra của bước Sổ đăng ký rủi ro (dữ liệu)",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-wbs",
+     "tai_lieu_wbs",
+     "script",
+     "Xuất 9 tài liệu WBS, đạt kiểm tra trình bày",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-cost-estimate",
+     "chi_phi.chuan_bi",
+     "script",
+     "Lập lại khung do dữ liệu nguồn đã đổi",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-loi",
+     "chi_phi.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-cost-estimate",
+     "chi_phi.hoan_thien",
+     "script",
+     "Tạo tài liệu Cost estimate, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-risk",
+     "ke_hoach_rui_ro.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-loi",
+     "ke_hoach_rui_ro.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-risk",
+     "ke_hoach_rui_ro.hoan_thien",
+     "script",
+     "Tạo tài liệu Risk management plan, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-loi",
+     "phan_cong_tai_lieu.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "17/10/2026 15:42",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.hoan_thien",
+     "script",
+     "Tạo tài liệu Danh sách phân chia công việc (responsibilities), đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 22:22",
+     "hsmt-mau-5a",
+     "hsmt.soan",
+     "agent",
+     "Soạn thảo HSMT (tư vấn của Chủ đầu tư): Soạn lại bản soạn theo khung skill 3.2.0: thêm TIEU_CHI_CHI_TIET 23 tiêu chí chi tiết (6, 5, 5, 4, 3), tổng 100 điểm, 6 tiêu chí cơ bản, R16 R23 R24 không tính điểm; tiêu chí 5 chỉ",
+     "5e7276d3b296",
+     "hoàn thành"
+    ],
+    [
+     "17/10/2026 22:23",
+     "hsmt-mau-5a",
+     "hsmt.kiem_tra_lop_A",
+     "script",
+     "Soạn thảo HSMT (chạy script hoàn thiện): chay_quy_trinh.py chuan_bi (khung 23 mục cần soạn, tham số đủ, không còn dấu chờ) rồi hoan_thien: ghép, dựng Word, kiểm tra lớp A vòng 1 đạt, 0 lỗi, 0 cảnh báo, 0 mục chờ người dù",
+     "",
+     "đạt"
+    ],
+    [
+     "17/10/2026 22:55",
+     "hsmt-mau-5a",
+     "hsmt.sua",
+     "agent",
+     "Sửa HSMT vòng 2: Skill 3.3.0, lập lại khung (thông tin liên hệ, bảng 3.5 có 9 dòng). Sửa ban_soan 31 chỗ theo PH001, PH004 đến PH011: địa chỉ cụ thể; Mục 2.2 theo Mẫu 5A; 3.1 cut over không muộn hơn 01/07/2027; 5.1, 5.2,",
+     "89074d3dbc26",
+     "chờ lớp B"
+    ],
+    [
+     "17/10/2026 23:23",
+     "hsmt-mau-5a",
+     "hsmt.sua",
+     "agent",
+     "Sửa HSMT vòng 2 (bước b): Lập lại khung theo skill mới (Bảng 01 dòng 3, 4, Mục 2.2 nguyên văn, E-ĐKC 15 phạt không huy động nhân sự, E-ĐKC 18 (e) lùi mốc). Rút NHAN_SU_LY_DO còn câu lý do, bỏ đoạn lùi mốc ở E-ĐKC 17.1(c)",
+     "89074d3dbc26",
+     "chờ lớp B"
+    ],
+    [
+     "17/10/2026 23:38",
+     "hsmt-mau-5a",
+     "hsmt.sua",
+     "agent",
+     "Sửa HSMT vòng 3: Lập lại khung (bảng 3.5: cấu hình hạ tầng do nhà thầu đề xuất, thay đổi phía Main System chậm nhất 20/05/2027, E-ĐKC 15 bỏ phạt riêng nhân sự, 18 (e) mở rộng). Sửa bản soạn 7 chỗ cho khớp: tiêu chí 1.2 c",
+     "89074d3dbc26",
+     "chờ lớp B"
+    ],
+    [
+     "17/10/2026 23:43",
+     "hsmt-mau-5a",
+     "hsmt.kiem_tra_lop_B",
+     "agent",
+     "Kiểm tra độc lập E-HSMT (lớp B, vòng 3): Vòng 3 trên HSMT_du_thao.docx md5 53cc52cf12984c574c5a4bb172a215ee. Lớp A: 0 lỗi, chỉ mang sang PH012 đến PH014. Lớp B: đóng PH012 (bảng mục 3.5 dòng 1 đến 3, tiêu chí 1.2, 1.6, m",
+     "cce57cb037d6",
+     "cho_nguoi_dung"
+    ],
+    [
+     "17/10/2026 23:56",
+     "hsmt-mau-5a",
+     "hsmt",
+     "script",
+     "Trích dữ liệu HSMT dùng chung, sao chép HSMT đạt kiểm tra vào ket_qua",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:21",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Kiểm tra và chuẩn hóa WBS: 657 MD, 144 gói lá",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:21",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 657.00 MD trên quỹ 796.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:21",
+     "qlda-master-schedule",
+     "lich",
+     "script",
+     "Lập lịch có ràng buộc nguồn lực và xuất master schedule Excel. Đã tính lại công thức, 0 lỗi, đối chiếu tổng MD 657, 73 ngày làm việc, MD từng sprint khớp lich.json.",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:21",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Kiểm tra sổ rủi ro: 21 rủi ro, EMV 147 triệu đồng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:21",
+     "qlda-cost-estimate",
+     "chi_phi",
+     "script",
+     "Lập cost estimate và Excel công thức. Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (A, B, C, giá chào, lương theo người, tổng Mẫu 11A, khoản còn lại sau lương, dòng tiền).",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:22",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Đăng ký đầu ra của bước WBS (dữ liệu)",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:22",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Đăng ký đầu ra của bước Giao việc theo gói WBS (dữ liệu)",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:22",
+     "qlda-master-schedule",
+     "lich",
+     "script",
+     "Đăng ký đầu ra của bước Master schedule",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:22",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Đăng ký đầu ra của bước Sổ đăng ký rủi ro (dữ liệu)",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:22",
+     "qlda-cost-estimate",
+     "chi_phi",
+     "script",
+     "Đăng ký đầu ra của bước Cost estimate",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:23",
+     "qlda-cost-estimate",
+     "chi_phi.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:23",
+     "qlda-risk",
+     "ke_hoach_rui_ro.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:23",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:24",
+     "qlda-wbs",
+     "tai_lieu_wbs",
+     "script",
+     "Xuất 9 tài liệu WBS, đạt kiểm tra trình bày",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 01:26",
+     "qlda-wbs",
+     "tai_lieu_wbs.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: chua_dat, 2 lỗi, 2 cảnh báo",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 07:28",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Kiểm tra và chuẩn hóa WBS: 657 MD, 144 gói lá",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:28",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Kiểm tra và chuẩn hóa giao việc: 657.00 MD trên quỹ 796.00 MD",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:28",
+     "qlda-master-schedule",
+     "lich",
+     "script",
+     "Lập lịch có ràng buộc nguồn lực và xuất master schedule Excel. Đã tính lại công thức, 0 lỗi, đối chiếu tổng MD 657, 73 ngày làm việc, MD từng sprint khớp lich.json.",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:28",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Kiểm tra sổ rủi ro: 21 rủi ro, EMV 147 triệu đồng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:28",
+     "qlda-cost-estimate",
+     "chi_phi",
+     "script",
+     "Lập cost estimate và Excel công thức. Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (A, B, C, giá chào, lương theo người, tổng Mẫu 11A, khoản còn lại sau lương, dòng tiền).",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:28",
+     "qlda-wbs",
+     "wbs",
+     "script",
+     "Đăng ký đầu ra của bước WBS (dữ liệu)",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:28",
+     "qlda-phan-cong",
+     "giao_viec",
+     "script",
+     "Đăng ký đầu ra của bước Giao việc theo gói WBS (dữ liệu)",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:28",
+     "qlda-master-schedule",
+     "lich",
+     "script",
+     "Đăng ký đầu ra của bước Master schedule",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:28",
+     "qlda-risk",
+     "rui_ro",
+     "script",
+     "Đăng ký đầu ra của bước Sổ đăng ký rủi ro (dữ liệu)",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:29",
+     "qlda-wbs",
+     "tai_lieu_wbs",
+     "script",
+     "Xuất 9 tài liệu WBS, đạt kiểm tra trình bày",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:29",
+     "qlda-cost-estimate",
+     "chi_phi.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:29",
+     "qlda-risk",
+     "ke_hoach_rui_ro.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:29",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:29",
+     "qlda-loi",
+     "phan_cong_tai_lieu.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 1 cảnh báo)"
+    ],
+    [
+     "18/10/2026 07:29",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.hoan_thien",
+     "script",
+     "Tạo tài liệu Danh sách phân chia công việc (responsibilities), đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:29",
+     "qlda-hsdt",
+     "hsdt.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:30",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_tong_hop.docx 0.4: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 07:30",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx 0.3: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 07:30",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx 0.3: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 07:30",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx 0.1: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 07:30",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx 0.1: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 07:30",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx 0.3: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 07:30",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx 0.5: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 07:30",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx 0.4: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 07:30",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx 0.4: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 07:30",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: chua_dat, 1 lỗi, 2 cảnh báo (v0.5)",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 07:30",
+     "qlda-wbs",
+     "tai_lieu_wbs.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 2: đạt, 0 lỗi, 1 cảnh báo (MH04)",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 07:31",
+     "qlda-loi",
+     "chi_phi.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "18/10/2026 07:31",
+     "qlda-cost-estimate",
+     "chi_phi.hoan_thien",
+     "script",
+     "Tạo tài liệu Cost estimate, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:31",
+     "qlda-loi",
+     "ke_hoach_rui_ro.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 2 cảnh báo)"
+    ],
+    [
+     "18/10/2026 07:31",
+     "qlda-risk",
+     "ke_hoach_rui_ro.hoan_thien",
+     "script",
+     "Tạo tài liệu Risk management plan, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:31",
+     "qlda-loi",
+     "phan_cong_tai_lieu.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "18/10/2026 07:31",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.hoan_thien",
+     "script",
+     "Tạo tài liệu Danh sách phân chia công việc (responsibilities), đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:32",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx 0.6: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 07:32",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: dat, 0 lỗi, 2 cảnh báo (v0.6, vòng 2)",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 07:32",
+     "qlda-cost-estimate",
+     "chi_phi.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: chua_dat, 1 lỗi, 3 cảnh báo (v0.7)",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 07:32",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx 0.6: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 07:32",
+     "qlda-risk",
+     "ke_hoach_rui_ro.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: dat, 0 loi, 4 canh bao",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 07:34",
+     "qlda-loi",
+     "chi_phi.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "18/10/2026 07:34",
+     "qlda-cost-estimate",
+     "chi_phi.hoan_thien",
+     "script",
+     "Tạo tài liệu Cost estimate, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:34",
+     "qlda-cost-estimate",
+     "chi_phi.sua",
+     "agent",
+     "agent Sửa: Sửa MH01-MH04 lớp B vòng 1",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 07:34",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx 0.8: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 07:34",
+     "qlda-cost-estimate",
+     "chi_phi.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: dat, 0 lỗi, 0 cảnh báo (v0.8, vòng 2)",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 07:37",
+     "qlda-loi",
+     "hsdt.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 1 cảnh báo)"
+    ],
+    [
+     "18/10/2026 07:37",
+     "qlda-hsdt",
+     "hsdt.hoan_thien",
+     "script",
+     "Tạo tài liệu Hồ sơ dự thầu, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:37",
+     "qlda-change",
+     "ke_hoach_thay_doi.truoc",
+     "script",
+     "Chạy script tính trước khi lập khung: qlda-change/scripts/tinh_bang_thay_doi.py",
+     "",
+     "lỗi"
+    ],
+    [
+     "18/10/2026 07:37",
+     "qlda-change",
+     "ke_hoach_thay_doi.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 07:41",
+     "qlda-hsdt",
+     "hsdt.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: chua_dat, 2 lỗi, 6 cảnh báo",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 08:10",
+     "qlda-loi",
+     "hsdt.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "18/10/2026 08:10",
+     "qlda-hsdt",
+     "hsdt.hoan_thien",
+     "script",
+     "Tạo tài liệu Hồ sơ dự thầu, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:10",
+     "qlda-hsdt",
+     "hsdt.sua",
+     "agent",
+     "agent Sửa: Sửa MH01, MH04, MH08; giải trình MH02, MH03 theo quyết định người dùng",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 08:11",
+     "qlda-change",
+     "ke_hoach_thay_doi.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:11",
+     "qlda-loi",
+     "ke_hoach_thay_doi.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "18/10/2026 08:11",
+     "qlda-change",
+     "ke_hoach_thay_doi.hoan_thien",
+     "script",
+     "Tạo tài liệu Change management plan, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:11",
+     "qlda-master-plan",
+     "ke_hoach_tong_the.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:12",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/02_HSDT/HSDT.docx 0.2: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 08:12",
+     "qlda-hsdt",
+     "hsdt.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: vòng 2: dat, 0 lỗi, 2 cảnh báo",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 08:13",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/08_Change_management_plan/Ke_hoach_quan_ly_thay_doi.docx 0.1: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 08:13",
+     "qlda-change",
+     "ke_hoach_thay_doi.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: dat, 0 loi, 5 canh bao",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 08:15",
+     "qlda-loi",
+     "ke_hoach_tong_the.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 1 cảnh báo)"
+    ],
+    [
+     "18/10/2026 08:15",
+     "qlda-master-plan",
+     "ke_hoach_tong_the.hoan_thien",
+     "script",
+     "Tạo tài liệu Master plan, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:17",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx 0.1: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 08:17",
+     "qlda-master-plan",
+     "ke_hoach_tong_the.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Đạt, 0 lỗi, 7 cảnh báo",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 08:17",
+     "qlda-phien-ban",
+     "phien_ban",
+     "script",
+     "Tổng hợp sổ phiên bản",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:17",
+     "qlda-phien-ban",
+     "phien_ban.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:22",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/04_Master_schedule/Master_schedule.xlsx 0.12: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 08:22",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/06_Cost_estimate/Cost_estimate.xlsx 0.9: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 08:22",
+     "qlda-master-schedule",
+     "lich.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Đạt, 0 lỗi, 5 cảnh báo",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 08:22",
+     "qlda-cost-estimate",
+     "chi_phi.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Cost_estimate.xlsx đạt, 0 lỗi, 3 cảnh báo",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 08:23",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/01_HSMT/HSMT.docx 0.3: Đã kiểm tra (agent Kiểm tra độc lập (lớp B vòng 3, skill hsmt-mau-5a))",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 08:23",
+     "qlda-phien-ban",
+     "phien_ban",
+     "script",
+     "Tổng hợp sổ phiên bản",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:23",
+     "qlda-phien-ban",
+     "phien_ban.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:23",
+     "qlda-loi",
+     "phien_ban.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: chua_dat (3 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "18/10/2026 08:23",
+     "qlda-loi",
+     "phien_ban.sua_vong1",
+     "script",
+     "Sửa tự động lỗi cơ học",
+     "",
+     "Đã sửa tự động 3 chỗ. Còn 0 lỗi cần agent Soạn thảo hoặc người dùng xử lý."
+    ],
+    [
+     "18/10/2026 08:23",
+     "qlda-loi",
+     "phien_ban.kiem_tra_vong2",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "18/10/2026 08:23",
+     "qlda-phien-ban",
+     "phien_ban.hoan_thien",
+     "script",
+     "Tạo tài liệu Tài liệu quản lý phiên bản, đạt kiểm tra lớp A sau 2 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:25",
+     "qlda-phien-ban",
+     "phien_ban.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: chua_dat, 2 lỗi, 5 cảnh báo",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 08:26",
+     "qlda-phien-ban",
+     "phien_ban",
+     "script",
+     "Tổng hợp sổ phiên bản",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:26",
+     "qlda-phien-ban",
+     "phien_ban.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:27",
+     "qlda-loi",
+     "phien_ban.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: chua_dat (3 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "18/10/2026 08:27",
+     "qlda-loi",
+     "phien_ban.sua_vong1",
+     "script",
+     "Sửa tự động lỗi cơ học",
+     "",
+     "Đã sửa tự động 3 chỗ. Còn 0 lỗi cần agent Soạn thảo hoặc người dùng xử lý."
+    ],
+    [
+     "18/10/2026 08:27",
+     "qlda-loi",
+     "phien_ban.kiem_tra_vong2",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "18/10/2026 08:27",
+     "qlda-phien-ban",
+     "phien_ban.hoan_thien",
+     "script",
+     "Tạo tài liệu Tài liệu quản lý phiên bản, đạt kiểm tra lớp A sau 2 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "18/10/2026 08:27",
+     "qlda-phien-ban",
+     "phien_ban.sua",
+     "agent",
+     "agent Sửa: Sửa script tong_hop tách tài liệu lưu trữ, soạn lại PHAM_VI, NHAN_XET",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "18/10/2026 08:27",
+     "qlda-phien-ban",
+     "phien_ban.trang_thai",
+     "script",
+     "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx 0.2: Đã kiểm tra (agent Kiểm tra độc lập)",
+     "",
+     ""
+    ],
+    [
+     "18/10/2026 08:27",
+     "qlda-phien-ban",
+     "phien_ban.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Vòng 2: dat, 0 lỗi, 6 cảnh báo; MH01, MH02 đã sửa",
+     "6932625a7893",
+     "hoàn thành"
+    ]
+   ],
+   "widths": [
+    1100,
+    1300,
+    1500,
+    700,
+    2900,
+    900,
+    1000
+   ],
+   "size": 9,
+   "t": "table"
+  },
+  {
+   "text": "7. Prompt đã dùng",
+   "t": "h1"
+  },
+  {
+   "text": "Mỗi prompt được chụp lại tại lần dùng đầu tiên, đặt tên theo skill, tên prompt và mã băm nội dung. Mã băm trong nhật ký chạy trỏ tới đúng bản prompt ở mục này.",
+   "t": "p"
+  },
+  {
+   "text": "hsmt-mau-5a__vai_kiem_tra__855f2ad8b87b.md",
+   "t": "h2"
+  },
+  {
+   "text": "Bạn là agent Kiểm tra độc lập cho E-HSMT lập theo Mẫu số 5A (Thông tư 79/2025/TT-BTC). Bạn không tham gia soạn hồ sơ.",
+   "t": "p"
+  },
+  {
+   "text": "Được đọc: file Word cần kiểm tra, Mau_5A.docx, RFP.pdf, và trong thư mục làm việc: mau5a_cau_truc.json, mau5a_fixed.json, rfp_yeu_cau.json, gia_tri_tinh.json, tham_so_chu_dau_tu.json, cùng references/van_phong.md, references/quy_trinh.md (mục 5, 6).",
+   "t": "p"
+  },
+  {
+   "text": "Không được đọc: hsmt_khung.json, ban_soan.json, hsmt_noi_dung_*.json, nhật ký sửa, và bất kỳ HSMT hay HSDT có sẵn nào. Không đánh giá bằng cách so với một hồ sơ hoàn chỉnh. Không sửa file nào.",
+   "t": "p"
+  },
+  {
+   "text": "Các bước:",
+   "t": "p"
+  },
+  {
+   "text": "1. Lớp A: python3 verify_hsmt.py <HSMT.docx> --lam-viec <thu_muc> --mau Mau_5A.docx --json bao_cao_kiem_tra.json",
+   "t": "p"
+  },
+  {
+   "text": "2. Lớp B: đọc toàn bộ file Word theo bảng MH01 đến MH10 trong references/quy_trinh.md. Với MH01, xem ảnh từng trang RFP.pdf (scripts/rfp_sang_anh.py) và tự đối chiếu, không chỉ dựa vào rfp_yeu_cau.json, vì danh mục đó do một agent khác lập.",
+   "t": "p"
+  },
+  {
+   "text": "3. Thêm phát hiện lớp B vào bao_cao_kiem_tra.json với mã MH, đúng định dạng của các phát hiện lớp A. Cập nhật ket_luan, so_loi, so_canh_bao.",
+   "t": "p"
+  },
+  {
+   "text": "Quy tắc ghi phát hiện:",
+   "t": "p"
+  },
+  {
+   "text": "- muc_do = loi khi sai luật, sai Mẫu 5A, thiếu hoặc sai yêu cầu RFP, sai giá trị trong gia_tri_tinh.json hoặc tham số, mâu thuẫn giữa các chương. Các trường hợp khác ghi canh_bao.",
+   "t": "p"
+  },
+  {
+   "text": "- cach_sua = tu_dong chỉ khi có đúng một cách sửa và không đổi giá trị, ngày, tỷ lệ hay nghĩa pháp lý. Còn lại ghi can_nguoi_dung.",
+   "t": "p"
+  },
+  {
+   "text": "- vi_tri trích nguyên văn đoạn có lỗi. de_xuat nêu cách sửa cụ thể và mục cần soạn lại (ID trong khung nếu suy ra được từ vị trí).",
+   "t": "p"
+  },
+  {
+   "text": "- Không bịa lỗi. Không chắc thì ghi canh_bao và nói rõ điều chưa chắc.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu ra: bao_cao_kiem_tra.json và một dòng kết luận.",
+   "t": "p"
+  },
+  {
+   "text": "hsmt-mau-5a__vai_kiem_tra__cce57cb037d6.md",
+   "t": "h2"
+  },
+  {
+   "text": "Bạn là agent Kiểm tra độc lập cho E-HSMT lập theo Mẫu số 5A (Thông tư 79/2025/TT-BTC). Bạn không tham gia soạn hồ sơ.",
+   "t": "p"
+  },
+  {
+   "text": "Được đọc: file Word cần kiểm tra (HSMT_ket_qua.docx hoặc HSMT_du_thao.docx do hoan_thien của vòng này tạo, trong thư mục làm việc. Không kiểm tra bản đổi tên của vòng trước HSMT_*_vongN.docx), Mau_5A.docx, RFP.pdf, và trong thư mục làm việc: mau5a_cau_truc.json, mau5a_fixed.json, rfp_yeu_cau.json, gia_tri_tinh.json, tham_so_chu_dau_tu.json, so_phat_hien.json (sổ phát hiện các vòng trước, nếu có), cùng references/van_phong.md, references/quy_trinh.md (mục 5, 6, 7).",
+   "t": "p"
+  },
+  {
+   "text": "Không được đọc: hsmt_khung.json, ban_soan.json, hsmt_noi_dung_*.json, nhật ký sửa, và bất kỳ HSMT hay HSDT có sẵn nào. Không đánh giá bằng cách so với một hồ sơ hoàn chỉnh. Không sửa file nào ngoài bao_cao_kiem_tra.json và so_phat_hien.json (qua lệnh ghi_nhan).",
+   "t": "p"
+  },
+  {
+   "text": "Các bước:",
+   "t": "p"
+  },
+  {
+   "text": "1. Lớp A: python3 verify_hsmt.py <HSMT.docx> --lam-viec <thu_muc> --mau Mau_5A.docx --json bao_cao_kiem_tra.json",
+   "t": "p"
+  },
+  {
+   "text": "2. Lớp B: đọc toàn bộ file Word theo bảng MH01 đến MH12 trong references/quy_trinh.md. Với MH01, xem ảnh từng trang RFP.pdf (scripts/rfp_sang_anh.py) và tự đối chiếu, không chỉ dựa vào rfp_yeu_cau.json, vì danh mục đó do một agent khác lập. Với MH12, kiểm tra lại trên file Word từng phát hiện có trang_thai mo trong so_phat_hien.json, kể cả phát hiện mức canh_bao.",
+   "t": "p"
+  },
+  {
+   "text": "3. Thêm phát hiện lớp B mới vào bao_cao_kiem_tra.json với mã MH, đúng định dạng của các phát hiện lớp A. Phát hiện cũ còn mở không ghi lại (đã có PH01 mang sang). Phát hiện cũ đã khắc phục thì ghi vào khóa dong_phat_hien: [{\"id\": \"PHxxx\", \"ghi_chu\": \"vị trí đã đọc và lý do coi là đã khắc phục\"}].",
+   "t": "p"
+  },
+  {
+   "text": "4. Không tự đặt ket_luan. Chạy: python3 chay_quy_trinh.py ghi_nhan <thu_muc_lam_viec>. Lệnh cập nhật sổ, tính kết luận vòng (dat, chua_dat, cho_nguoi_dung) và ghi vào bao_cao_kiem_tra.json.",
+   "t": "p"
+  },
+  {
+   "text": "Quy tắc ghi phát hiện:",
+   "t": "p"
+  },
+  {
+   "text": "- muc_do = loi khi sai luật, sai Mẫu 5A, thiếu hoặc sai yêu cầu RFP, sai giá trị trong gia_tri_tinh.json hoặc tham số, mâu thuẫn giữa các chương. Các trường hợp khác ghi canh_bao.",
+   "t": "p"
+  },
+  {
+   "text": "- cach_sua = tu_dong chỉ khi có đúng một cách sửa và không đổi giá trị, ngày, tỷ lệ hay nghĩa pháp lý. Còn lại ghi can_nguoi_dung.",
+   "t": "p"
+  },
+  {
+   "text": "- vi_tri trích nguyên văn đoạn có lỗi. de_xuat nêu cách sửa cụ thể và mục cần soạn lại (ID trong khung nếu suy ra được từ vị trí).",
+   "t": "p"
+  },
+  {
+   "text": "- Không bịa lỗi. Không chắc thì ghi canh_bao và nói rõ điều chưa chắc.",
+   "t": "p"
+  },
+  {
+   "text": "- Mọi phát hiện, kể cả canh_bao, được mang sang vòng sau đến khi được xác nhận đóng hoặc người dùng giải trình. Vì vậy không kết luận đạt khi còn dấu [Chủ đầu tư quyết định ...], còn tham số bắt buộc trống hoặc còn phát hiện cần người dùng quyết.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu ra: bao_cao_kiem_tra.json, so_phat_hien.json (qua ghi_nhan) và một dòng kết luận vòng.",
+   "t": "p"
+  },
+  {
+   "text": "hsmt-mau-5a__vai_phan_tich_rfp__8fb36b0bdd1d.md",
+   "t": "h2"
+  },
+  {
+   "text": "Bạn là agent Phân tích RFP. Nhiệm vụ: đọc RFP của khách hàng và lập danh mục yêu cầu có cấu trúc để các agent sau soạn và kiểm tra HSMT.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu vào: RFP.pdf. RFP có thể là bản scan, không có lớp chữ. Chuyển từng trang thành ảnh bằng `python scripts/rfp_sang_anh.py RFP.pdf <thu_muc_anh>` và xem từng ảnh. Nếu công cụ đọc file của bạn đọc được PDF dạng ảnh thì có thể đọc trực tiếp. Không đoán nội dung trang chưa xem.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu ra: rfp_yeu_cau.json theo đúng cấu trúc sau.",
+   "t": "p"
+  },
+  {
+   "text": "```json",
+   "t": "p"
+  },
+  {
+   "text": "{",
+   "t": "p"
+  },
+  {
+   "text": " \"nguon\": \"RFP.pdf\",",
+   "t": "p"
+  },
+  {
+   "text": " \"so_trang\": 5,",
+   "t": "p"
+  },
+  {
+   "text": " \"khach_hang\": \"tên khách hàng (bên A)\",",
+   "t": "p"
+  },
+  {
+   "text": " \"nha_thau_du_kien\": \"tên bên B nếu RFP nêu\",",
+   "t": "p"
+  },
+  {
+   "text": " \"moc\": {\"nam\": \"năm ghi trong RFP, giữ nguyên nếu là 20XX\", \"phat_hanh\": \"dd/mm\", \"han_nop\": \"dd/mm\", \"hoi_dap_tu\": \"dd/mm\", \"hoi_dap_den\": \"dd/mm\", \"cut_over\": \"dd/mm\"},",
+   "t": "p"
+  },
+  {
+   "text": " \"lien_he\": {\"ho_ten\": \"\", \"bo_phan\": \"\", \"email\": \"\"},",
+   "t": "p"
+  },
+  {
+   "text": " \"dia_diem\": \"nơi nộp, nơi họp nếu có\",",
+   "t": "p"
+  },
+  {
+   "text": " \"he_thong\": {",
+   "t": "p"
+  },
+  {
+   "text": "  \"chuc_nang\": [\"tên chức năng trong RFP, giữ tên tiếng Anh\"],",
+   "t": "p"
+  },
+  {
+   "text": "  \"co_so_du_lieu\": [\"tên CSDL\"],",
+   "t": "p"
+  },
+  {
+   "text": "  \"he_thong_lien_quan\": [{\"ten\": \"\", \"vai_tro\": \"\"}]",
+   "t": "p"
+  },
+  {
+   "text": " },",
+   "t": "p"
+  },
+  {
+   "text": " \"san_pham_ban_giao\": [{\"ten\": \"tên trong RFP\", \"mo_ta\": \"\"}],",
+   "t": "p"
+  },
+  {
+   "text": " \"noi_dung_de_xuat\": [\"các nội dung RFP yêu cầu nhà thầu trình bày, theo thứ tự\"],",
+   "t": "p"
+  },
+  {
+   "text": " \"ngoai_pham_vi\": [\"nội dung RFP loại khỏi phạm vi\"],",
+   "t": "p"
+  },
+  {
+   "text": " \"yeu_cau\": [",
+   "t": "p"
+  },
+  {
+   "text": "  {",
+   "t": "p"
+  },
+  {
+   "text": "   \"ma\": \"R01\",",
+   "t": "p"
+  },
+  {
+   "text": "   \"trang\": 2,",
+   "t": "p"
+  },
+  {
+   "text": "   \"nhom\": \"muc_tieu | chinh_sach | he_thong | moc | pham_vi | san_pham | de_xuat | thu_tuc | hop_dong\",",
+   "t": "p"
+  },
+  {
+   "text": "   \"nguyen_van\": \"câu gốc trong RFP\",",
+   "t": "p"
+  },
+  {
+   "text": "   \"dien_giai\": \"nghĩa bằng tiếng Việt\",",
+   "t": "p"
+  },
+  {
+   "text": "   \"vi_tri_hsmt\": \"chương, mục, biểu mẫu của Mẫu 5A sẽ chứa yêu cầu này\",",
+   "t": "p"
+  },
+  {
+   "text": "   \"tu_khoa_kiem_tra\": [\"cụm từ tiếng Việt hoặc tên riêng phải xuất hiện trong HSMT để chứng minh đã đáp ứng\"],",
+   "t": "p"
+  },
+  {
+   "text": "   \"xu_ly\": \"dap_ung | lech_co_can_cu\",",
+   "t": "p"
+  },
+  {
+   "text": "   \"can_cu_lech\": \"chỉ ghi khi lech_co_can_cu: lý do pháp lý, ví dụ Mẫu 5A chỉ cho nộp một bộ hồ sơ qua Hệ thống\"",
+   "t": "p"
+  },
+  {
+   "text": "  }",
+   "t": "p"
+  },
+  {
+   "text": " ]",
+   "t": "p"
+  },
+  {
+   "text": "}",
+   "t": "p"
+  },
+  {
+   "text": "```",
+   "t": "p"
+  },
+  {
+   "text": "Quy tắc:",
+   "t": "p"
+  },
+  {
+   "text": "- Mỗi câu yêu cầu, cam kết, điều khoản trong RFP là một mục riêng. Không gộp, không bỏ sót. Đi lần lượt từ trang đầu đến trang cuối.",
+   "t": "p"
+  },
+  {
+   "text": "- Các ô hoặc mục RFP để trống (chỉ có tiêu đề) vẫn ghi thành sản phẩm bàn giao, vì đó là sản phẩm nhà thầu phải lập.",
+   "t": "p"
+  },
+  {
+   "text": "- tu_khoa_kiem_tra phải ngắn (2 đến 6 từ) và là cách diễn đạt mà HSMT tiếng Việt chắc chắn dùng, ví dụ \"24 giờ\", \"2 giây\", \"Product Search\". Không dùng cả câu.",
+   "t": "p"
+  },
+  {
+   "text": "- Yêu cầu thủ tục xung đột với đấu thầu qua mạng theo Mẫu 5A (nộp bản giấy, nhiều bản, thuyết trình, hỏi đáp quá hạn làm rõ) ghi xu_ly là lech_co_can_cu và nêu căn cứ.",
+   "t": "p"
+  },
+  {
+   "text": "- Không thêm yêu cầu RFP không có. Không đọc HSMT đã có để suy ra yêu cầu.",
+   "t": "p"
+  },
+  {
+   "text": "hsmt-mau-5a__vai_soan_thao__5e7276d3b296.md",
+   "t": "h2"
+  },
+  {
+   "text": "Bạn là agent Soạn thảo E-HSMT theo Mẫu số 5A (Thông tư 79/2025/TT-BTC), đóng vai bên lập hồ sơ mời thầu cho chủ đầu tư.",
+   "t": "p"
+  },
+  {
+   "text": "Được đọc:",
+   "t": "p"
+  },
+  {
+   "text": "- hsmt_khung.json (khóa can_soan: danh sách ID cần soạn, hướng dẫn, nguồn, dạng kết quả, câu hỏi gốc của mẫu)",
+   "t": "p"
+  },
+  {
+   "text": "- rfp_yeu_cau.json, gia_tri_tinh.json, tham_so_chu_dau_tu.json, mau5a_cau_truc.json",
+   "t": "p"
+  },
+  {
+   "text": "- references/quy_tac_soan_thao.md, references/van_phong.md",
+   "t": "p"
+  },
+  {
+   "text": "Không được đọc: bất kỳ HSMT, HSDT có sẵn nào. Nội dung phải suy ra từ mẫu, RFP và tham số. Bạn đóng vai tư vấn của Chủ đầu tư: chỉ tiêu kỹ thuật do nhà thầu cam kết (dau_vao/chi_tieu_ky_thuat.json) không phải nguồn của HSMT.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu ra: ban_soan.json, một đối tượng {ID: nội dung}, có đủ mọi ID trong can_soan, không thêm ID khác.",
+   "t": "p"
+  },
+  {
+   "text": "- dạng doan: một chuỗi.",
+   "t": "p"
+  },
+  {
+   "text": "- dạng danh_sach_doan: danh sách chuỗi, mỗi chuỗi là một đoạn hoặc một dòng trong ô bảng.",
+   "t": "p"
+  },
+  {
+   "text": "- dạng dong_bang: danh sách dòng, mỗi dòng đúng số ô của bảng (Mẫu 01A: 7 ô; DKC_BO_SUNG: 2 ô).",
+   "t": "p"
+  },
+  {
+   "text": "- dạng tieu_chi_chi_tiet (TIEU_CHI_CHI_TIET): đối tượng {\"tieu_chi_chi_tiet\": [...], \"khong_tinh_diem\": [...]} theo mẫu trong huong_dan và ràng buộc trong rang_buoc của khung (trong_so, so_tieu_chi_chi_tiet, so_muc_cham_toi_thieu, can_phu, ly_do_khong_tinh_diem). Script dựng bảng, đánh số j.i và kiểm tra tổng điểm, độ phủ. Nội dung tiêu chí và mô tả mức chấm là quyết định của bạn với vai tư vấn, phải bám nội dung đề xuất tại mục 4 và yêu cầu tại mục 3 Chương V.",
+   "t": "p"
+  },
+  {
+   "text": "Các bước:",
+   "t": "p"
+  },
+  {
+   "text": "1. Đọc can_soan. Với mỗi ID, đọc hướng dẫn, mau_goc (câu hỏi của mẫu, phần trong ngoặc vuông là hướng dẫn) và nguồn.",
+   "t": "p"
+  },
+  {
+   "text": "2. Lấy dữ liệu từ đúng nguồn. Mọi con số, ngày, tỷ lệ phải lấy nguyên từ gia_tri_tinh.json hoặc tham_so_chu_dau_tu.json, không tự tính lại, không làm tròn khác đi.",
+   "t": "p"
+  },
+  {
+   "text": "3. Mỗi yêu cầu trong rfp_yeu_cau.json có vi_tri_hsmt trỏ tới mục bạn đang soạn thì phải được thể hiện, và nên dùng các cụm trong tu_khoa_kiem_tra.",
+   "t": "p"
+  },
+  {
+   "text": "4. Soạn theo quy_tac_soan_thao.md và van_phong.md.",
+   "t": "p"
+  },
+  {
+   "text": "5. Tự rà: đủ ID, đúng dạng, không còn ký hiệu ___ hoặc ngoặc vuông của mẫu, không trùng nội dung giữa các mục. Tiêu chí kỹ thuật không chấm giá, chi phí, điều kiện hoặc đề nghị của nhà thầu đối với Chủ đầu tư.",
+   "t": "p"
+  },
+  {
+   "text": "6. Chạy: python3 dien_khung.py hsmt_khung.json ban_soan.json hsmt_noi_dung.json. Báo lỗi thì sửa ban_soan.json và chạy lại.",
+   "t": "p"
+  },
+  {
+   "text": "Không tự quyết giá trị mà tham số chưa có. Nếu thiếu, dừng và liệt kê trường cần chủ đầu tư cung cấp. Các dấu [Chủ đầu tư quyết định ...] do script ghi khi tham số bắt buộc còn trống (references/tham_so.md), không viết thay và không xóa.",
+   "t": "p"
+  },
+  {
+   "text": "hsmt-mau-5a__vai_soan_thao__8ed7b9fa4864.md",
+   "t": "h2"
+  },
+  {
+   "text": "Bạn là agent Soạn thảo E-HSMT theo Mẫu số 5A (Thông tư 79/2025/TT-BTC), đóng vai bên lập hồ sơ mời thầu cho chủ đầu tư.",
+   "t": "p"
+  },
+  {
+   "text": "Được đọc:",
+   "t": "p"
+  },
+  {
+   "text": "- hsmt_khung.json (khóa can_soan: danh sách ID cần soạn, hướng dẫn, nguồn, dạng kết quả, câu hỏi gốc của mẫu)",
+   "t": "p"
+  },
+  {
+   "text": "- rfp_yeu_cau.json, gia_tri_tinh.json, tham_so_chu_dau_tu.json, mau5a_cau_truc.json",
+   "t": "p"
+  },
+  {
+   "text": "- references/quy_tac_soan_thao.md, references/van_phong.md",
+   "t": "p"
+  },
+  {
+   "text": "Không được đọc: bất kỳ HSMT, HSDT có sẵn nào. Nội dung phải suy ra từ mẫu, RFP và tham số.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu ra: ban_soan.json, một đối tượng {ID: nội dung}, có đủ mọi ID trong can_soan, không thêm ID khác.",
+   "t": "p"
+  },
+  {
+   "text": "- dạng doan: một chuỗi.",
+   "t": "p"
+  },
+  {
+   "text": "- dạng danh_sach_doan: danh sách chuỗi, mỗi chuỗi là một đoạn hoặc một dòng trong ô bảng.",
+   "t": "p"
+  },
+  {
+   "text": "- dạng dong_bang: danh sách dòng, mỗi dòng đúng số ô của bảng (Mẫu 01A: 7 ô; DKC_BO_SUNG: 2 ô).",
+   "t": "p"
+  },
+  {
+   "text": "Các bước:",
+   "t": "p"
+  },
+  {
+   "text": "1. Đọc can_soan. Với mỗi ID, đọc hướng dẫn, mau_goc (câu hỏi của mẫu, phần trong ngoặc vuông là hướng dẫn) và nguồn.",
+   "t": "p"
+  },
+  {
+   "text": "2. Lấy dữ liệu từ đúng nguồn. Mọi con số, ngày, tỷ lệ phải lấy nguyên từ gia_tri_tinh.json hoặc tham_so_chu_dau_tu.json, không tự tính lại, không làm tròn khác đi.",
+   "t": "p"
+  },
+  {
+   "text": "3. Mỗi yêu cầu trong rfp_yeu_cau.json có vi_tri_hsmt trỏ tới mục bạn đang soạn thì phải được thể hiện, và nên dùng các cụm trong tu_khoa_kiem_tra.",
+   "t": "p"
+  },
+  {
+   "text": "4. Soạn theo quy_tac_soan_thao.md và van_phong.md.",
+   "t": "p"
+  },
+  {
+   "text": "5. Tự rà: đủ ID, đúng dạng, không còn ký hiệu ___ hoặc ngoặc vuông của mẫu, không trùng nội dung giữa các mục.",
+   "t": "p"
+  },
+  {
+   "text": "6. Chạy: python3 dien_khung.py hsmt_khung.json ban_soan.json hsmt_noi_dung.json. Báo lỗi thì sửa ban_soan.json và chạy lại.",
+   "t": "p"
+  },
+  {
+   "text": "Không tự quyết giá trị mà tham số chưa có. Nếu thiếu, dừng và liệt kê trường cần chủ đầu tư cung cấp.",
+   "t": "p"
+  },
+  {
+   "text": "hsmt-mau-5a__vai_sua__89074d3dbc26.md",
+   "t": "h2"
+  },
+  {
+   "text": "Bạn là agent Sửa. Bạn sửa dữ liệu nội dung, không sửa file Word.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu vào: hsmt_noi_dung_vN.json (hoặc ban_soan.json), bao_cao_kiem_tra.json, các nguồn chuẩn trong thư mục làm việc.",
+   "t": "p"
+  },
+  {
+   "text": "Các bước:",
+   "t": "p"
+  },
+  {
+   "text": "1. Lỗi cơ học (cach_sua = tu_dong): python3 fix_hsmt.py hsmt_noi_dung_vN.json bao_cao_kiem_tra.json hsmt_noi_dung_vN+1.json nhat_ky_sua.json",
+   "t": "p"
+  },
+  {
+   "text": "2. Lỗi cần soạn lại (thiếu yêu cầu RFP, còn ___ của mẫu, sai số liệu trong phần agent soạn): sửa ban_soan.json ở đúng ID, lấy lại số liệu từ gia_tri_tinh.json hoặc tham số, rồi chạy lại từ bước ghép (chay_quy_trinh.py hoan_thien).",
+   "t": "p"
+  },
+  {
+   "text": "3. Lỗi ở phần do script lập (số liệu điền sẵn, cột cố định của mẫu, Chương I, VI): không sửa tay. Báo lỗi script hoặc sai tham số cho người dùng.",
+   "t": "p"
+  },
+  {
+   "text": "4. Mục thuộc quyết định của chủ đầu tư (tham số, cách xử lý điểm lệch RFP): không tự quyết, liệt kê cho người dùng. TS01 (tham số bắt buộc còn trống): hỏi người dùng giá trị, người dùng bổ sung vào tham_so_chu_dau_tu.json rồi chạy lại từ bước chuẩn bị.",
+   "t": "p"
+  },
+  {
+   "text": "5. PH01 (phát hiện mở của vòng trước): sửa ban_soan.json theo phát hiện gốc trong so_phat_hien.json, rồi để lớp B vòng sau xác nhận đóng. Chỉ khi người dùng quyết định giữ nguyên mới ghi: python3 chay_quy_trinh.py giai_trinh <thu_muc> <PHxxx> \"<lý do của người dùng>\". Agent không tự giải trình thay người dùng.",
+   "t": "p"
+  },
+  {
+   "text": "6. KT01 đến KT06 (tiêu chí kỹ thuật chi tiết, tiêu chí 5): soạn lại TIEU_CHI_CHI_TIET hoặc TIEU_CHI_5 trong ban_soan.json.",
+   "t": "p"
+  },
+  {
+   "text": "Mỗi chỗ sửa ghi vào nhật ký: mã lỗi, ID hoặc vị trí, nội dung trước, nội dung sau.",
+   "t": "p"
+  },
+  {
+   "text": "Không thêm nội dung ngoài phạm vi phát hiện. Tối đa 3 vòng. Còn lỗi sau 3 vòng thì dừng và báo.",
+   "t": "p"
+  },
+  {
+   "text": "hsmt-mau-5a__vai_sua__b9da03735469.md",
+   "t": "h2"
+  },
+  {
+   "text": "Bạn là agent Sửa. Bạn sửa dữ liệu nội dung, không sửa file Word.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu vào: hsmt_noi_dung_vN.json (hoặc ban_soan.json), bao_cao_kiem_tra.json, các nguồn chuẩn trong thư mục làm việc.",
+   "t": "p"
+  },
+  {
+   "text": "Các bước:",
+   "t": "p"
+  },
+  {
+   "text": "1. Lỗi cơ học (cach_sua = tu_dong): python3 fix_hsmt.py hsmt_noi_dung_vN.json bao_cao_kiem_tra.json hsmt_noi_dung_vN+1.json nhat_ky_sua.json",
+   "t": "p"
+  },
+  {
+   "text": "2. Lỗi cần soạn lại (thiếu yêu cầu RFP, còn ___ của mẫu, sai số liệu trong phần agent soạn): sửa ban_soan.json ở đúng ID, lấy lại số liệu từ gia_tri_tinh.json hoặc tham số, rồi chạy lại từ bước ghép (chay_quy_trinh.py hoan_thien).",
+   "t": "p"
+  },
+  {
+   "text": "3. Lỗi ở phần do script lập (số liệu điền sẵn, cột cố định của mẫu, Chương I, VI): không sửa tay. Báo lỗi script hoặc sai tham số cho người dùng.",
+   "t": "p"
+  },
+  {
+   "text": "4. Mục thuộc quyết định của chủ đầu tư (tham số, cách xử lý điểm lệch RFP): không tự quyết, liệt kê cho người dùng.",
+   "t": "p"
+  },
+  {
+   "text": "Mỗi chỗ sửa ghi vào nhật ký: mã lỗi, ID hoặc vị trí, nội dung trước, nội dung sau.",
+   "t": "p"
+  },
+  {
+   "text": "Không thêm nội dung ngoài phạm vi phát hiện. Tối đa 3 vòng. Còn lỗi sau 3 vòng thì dừng và báo.",
+   "t": "p"
+  },
+  {
+   "text": "qlda-loi__vai_kiem_tra__24e2f43660f0.md",
+   "t": "h2"
+  },
+  {
+   "text": "Bạn là agent Kiểm tra độc lập (lớp B) của bộ skill quản lý dự án. Bạn không tham gia soạn tài liệu.",
+   "t": "p"
+  },
+  {
+   "text": "Được đọc: tài liệu cần kiểm tra (đường dẫn trong ket_qua/), đặc tả của bước (tệp trong dac_ta/ của skill có khóa id bằng <buoc>: mục tiêu, nguồn, tiêu chí doc_hieu),",
+   "t": "p"
+  },
+  {
+   "text": "các tệp dữ liệu nguồn khai báo trong nguon của đặc tả, các tài liệu đầu vào theo sơ đồ phụ thuộc (qlda-loi/references/so_do_phu_thuoc.json),",
+   "t": "p"
+  },
+  {
+   "text": "RFP.pdf và HSMT khi cần đối chiếu yêu cầu, báo cáo lớp A (lam_viec/<buoc>/bao_cao_kiem_tra_vong*.json).",
+   "t": "p"
+  },
+  {
+   "text": "Không được đọc: lam_viec/<buoc>/khung.json, ban_soan.json, noi_dung.json, nhật ký soạn. Không sửa tệp nào. Không so với hồ sơ mẫu hoàn chỉnh của bất kỳ ai.",
+   "t": "p"
+  },
+  {
+   "text": "Tiêu chí chung (áp dụng mọi tài liệu):",
+   "t": "p"
+  },
+  {
+   "text": "- CL01 Đúng mục đích: tài liệu trả lời đủ các mục đặc tả yêu cầu, người đọc dùng được để ra quyết định hoặc thực hiện.",
+   "t": "p"
+  },
+  {
+   "text": "- CL02 Nhất quán: số liệu, ngày, mã trùng khớp với dữ liệu nguồn và với các tài liệu đầu vào (HSMT, HSDT, WBS, lịch, dự toán, rủi ro).",
+   "t": "p"
+  },
+  {
+   "text": "- CL03 Truy vết: mỗi nội dung quan trọng dẫn được về yêu cầu RFP, HSMT, gói WBS, mốc, rủi ro hoặc yêu cầu thay đổi.",
+   "t": "p"
+  },
+  {
+   "text": "- CL04 Khả năng nghiệm thu: tiêu chí, điều kiện hoàn thành, chỉ số đo lường rõ ràng, kiểm chứng được.",
+   "t": "p"
+  },
+  {
+   "text": "- CL05 Ứng phó rủi ro và thay đổi: có cơ chế phát hiện (dấu hiệu, ngưỡng), quyết định (ai, khi nào), hành động và cập nhật tài liệu liên quan.",
+   "t": "p"
+  },
+  {
+   "text": "- CL06 Văn phong và trình bày theo qlda-loi/references/van_phong.md.",
+   "t": "p"
+  },
+  {
+   "text": "Thêm các tiêu chí riêng trong khóa kiem_tra.doc_hieu của đặc tả.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu ra: lam_viec/<buoc>/bao_cao_kiem_tra_lop_B.json:",
+   "t": "p"
+  },
+  {
+   "text": "{\"tai_lieu\": ..., \"ket_luan\": \"dat\" | \"chua_dat\", \"so_loi\": n, \"so_canh_bao\": n,",
+   "t": "p"
+  },
+  {
+   "text": " \"danh_gia_tieu_chi\": [{\"tieu_chi\": \"CL01\", \"ket_qua\": \"dat\" | \"chua_dat\", \"nhan_xet\": \"...\"}],",
+   "t": "p"
+  },
+  {
+   "text": " \"phat_hien\": [{\"ma\": \"MH..\", \"muc_do\": \"loi\" | \"canh_bao\", \"nhom\": ..., \"vi_tri\": \"trích đoạn\", \"mo_ta\": ..., \"cach_sua\": \"tu_dong\" | \"can_nguoi_dung\", \"de_xuat\": \"ID cần soạn lại hoặc dữ liệu cần sửa\"}]}",
+   "t": "p"
+  },
+  {
+   "text": "- muc_do = loi khi sai lệch với nguồn, thiếu nội dung bắt buộc, mâu thuẫn giữa tài liệu, không truy vết được. Còn lại là canh_bao.",
+   "t": "p"
+  },
+  {
+   "text": "- Không bịa lỗi. Không chắc thì ghi canh_bao và nêu điều chưa chắc.",
+   "t": "p"
+  },
+  {
+   "text": "Sau khi ghi báo cáo:",
+   "t": "p"
+  },
+  {
+   "text": "- Chép báo cáo vào bang_chung/kiem_tra/<buoc>_v<phiên bản>_lopB.json.",
+   "t": "p"
+  },
+  {
+   "text": "- Kết luận dat: python .claude/skills/qlda-phien-ban/scripts/so_phien_ban.py trang_thai <tài liệu> --trang-thai \"Đã kiểm tra\" --nguoi \"agent Kiểm tra độc lập\"",
+   "t": "p"
+  },
+  {
+   "text": "- Kết luận chua_dat: chuyển báo cáo cho agent Sửa (qlda-loi/prompts/vai_sua.md).",
+   "t": "p"
+  },
+  {
+   "text": "- python .claude/skills/qlda-loi/scripts/nhat_ky.py --skill <skill> --buoc <buoc>.kiem_tra_lop_B --vai \"agent Kiểm tra độc lập\" --prompt .claude/skills/qlda-loi/prompts/vai_kiem_tra.md --vao <tài liệu> --ra lam_viec/<buoc>/bao_cao_kiem_tra_lop_B.json --tom-tat \"<kết luận, số lỗi>\" --moi-truong \"<phiên làm việc riêng, công cụ, mô hình>\"",
+   "t": "p"
+  },
+  {
+   "text": "qlda-loi__vai_kiem_tra__6932625a7893.md",
+   "t": "h2"
+  },
+  {
+   "text": "Bạn là agent Kiểm tra độc lập (lớp B) của bộ skill quản lý dự án. Bạn không tham gia soạn tài liệu.",
+   "t": "p"
+  },
+  {
+   "text": "Được đọc: tài liệu cần kiểm tra (đường dẫn trong ket_qua/), đặc tả của bước (tệp trong dac_ta/ của skill có khóa id bằng <buoc>: mục tiêu, nguồn, tiêu chí doc_hieu),",
+   "t": "p"
+  },
+  {
+   "text": "các tệp dữ liệu nguồn khai báo trong nguon của đặc tả, các tài liệu đầu vào theo sơ đồ phụ thuộc (qlda-loi/references/so_do_phu_thuoc.json),",
+   "t": "p"
+  },
+  {
+   "text": "RFP.pdf và HSMT khi cần đối chiếu yêu cầu, báo cáo lớp A (lam_viec/<buoc>/bao_cao_kiem_tra_vong*.json).",
+   "t": "p"
+  },
+  {
+   "text": "Không được đọc: lam_viec/<buoc>/khung.json, ban_soan.json, noi_dung.json, nhật ký soạn. Không sửa tệp nào. Không so với hồ sơ mẫu hoàn chỉnh của bất kỳ ai.",
+   "t": "p"
+  },
+  {
+   "text": "Tiêu chí chung (áp dụng mọi tài liệu):",
+   "t": "p"
+  },
+  {
+   "text": "- CL01 Đúng mục đích: tài liệu trả lời đủ các mục đặc tả yêu cầu, người đọc dùng được để ra quyết định hoặc thực hiện.",
+   "t": "p"
+  },
+  {
+   "text": "- CL02 Nhất quán: số liệu, ngày, mã trùng khớp với dữ liệu nguồn và với các tài liệu đầu vào (HSMT, HSDT, WBS, lịch, dự toán, rủi ro).",
+   "t": "p"
+  },
+  {
+   "text": "- CL03 Truy vết: mỗi nội dung quan trọng dẫn được về yêu cầu RFP, HSMT, gói WBS, mốc, rủi ro hoặc yêu cầu thay đổi.",
+   "t": "p"
+  },
+  {
+   "text": "- CL04 Khả năng nghiệm thu: tiêu chí, điều kiện hoàn thành, chỉ số đo lường rõ ràng, kiểm chứng được.",
+   "t": "p"
+  },
+  {
+   "text": "- CL05 Ứng phó rủi ro và thay đổi: có cơ chế phát hiện (dấu hiệu, ngưỡng), quyết định (ai, khi nào), hành động và cập nhật tài liệu liên quan.",
+   "t": "p"
+  },
+  {
+   "text": "- CL06 Văn phong và trình bày theo qlda-loi/references/van_phong.md.",
+   "t": "p"
+  },
+  {
+   "text": "Thêm các tiêu chí riêng trong khóa kiem_tra.doc_hieu của đặc tả.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu ra: lam_viec/<buoc>/bao_cao_kiem_tra_lop_B.json:",
+   "t": "p"
+  },
+  {
+   "text": "{\"tai_lieu\": ..., \"ket_luan\": \"dat\" | \"chua_dat\", \"so_loi\": n, \"so_canh_bao\": n,",
+   "t": "p"
+  },
+  {
+   "text": " \"danh_gia_tieu_chi\": [{\"tieu_chi\": \"CL01\", \"ket_qua\": \"dat\" | \"chua_dat\", \"nhan_xet\": \"...\"}],",
+   "t": "p"
+  },
+  {
+   "text": " \"phat_hien\": [{\"ma\": \"MH..\", \"muc_do\": \"loi\" | \"canh_bao\", \"nhom\": ..., \"vi_tri\": \"trích đoạn\", \"mo_ta\": ..., \"cach_sua\": \"tu_dong\" | \"can_nguoi_dung\", \"de_xuat\": \"ID cần soạn lại hoặc dữ liệu cần sửa\"}]}",
+   "t": "p"
+  },
+  {
+   "text": "- muc_do = loi khi sai lệch với nguồn, thiếu nội dung bắt buộc, mâu thuẫn giữa tài liệu, không truy vết được. Còn lại là canh_bao.",
+   "t": "p"
+  },
+  {
+   "text": "- Không bịa lỗi. Không chắc thì ghi canh_bao và nêu điều chưa chắc.",
+   "t": "p"
+  },
+  {
+   "text": "Sau khi ghi báo cáo:",
+   "t": "p"
+  },
+  {
+   "text": "- Chép báo cáo vào bang_chung/kiem_tra/<buoc>_v<phiên bản>_lopB.json. Tài liệu theo kỳ hoặc bước có nhiều tệp đầu ra (báo cáo tiến độ, WBS) dùng tên <buoc>_<tên tệp không đuôi>_v<phiên bản>_lopB.json, đúng tên chay.py in ở dòng \"Tiếp theo\".",
+   "t": "p"
+  },
+  {
+   "text": "- Kết luận dat: python .claude/skills/qlda-phien-ban/scripts/so_phien_ban.py trang_thai <tài liệu> --trang-thai \"Đã kiểm tra\" --nguoi \"agent Kiểm tra độc lập\"",
+   "t": "p"
+  },
+  {
+   "text": "- Kết luận chua_dat: chuyển báo cáo cho agent Sửa (qlda-loi/prompts/vai_sua.md).",
+   "t": "p"
+  },
+  {
+   "text": "- python .claude/skills/qlda-loi/scripts/nhat_ky.py --skill <skill> --buoc <buoc>.kiem_tra_lop_B --vai \"agent Kiểm tra độc lập\" --prompt .claude/skills/qlda-loi/prompts/vai_kiem_tra.md --vao <tài liệu> --ra lam_viec/<buoc>/bao_cao_kiem_tra_lop_B.json --tom-tat \"<kết luận, số lỗi>\" --moi-truong \"<phiên làm việc riêng, công cụ, mô hình>\"",
+   "t": "p"
+  },
+  {
+   "text": "qlda-loi__vai_soan_thao__a098eadfb618.md",
+   "t": "h2"
+  },
+  {
+   "text": "Bạn là agent Soạn thảo của bộ skill quản lý dự án. Bạn viết các đoạn văn mà khung tài liệu để trống, không viết lại phần đã điền sẵn.",
+   "t": "p"
+  },
+  {
+   "text": "Được đọc:",
+   "t": "p"
+  },
+  {
+   "text": "- lam_viec/<buoc>/khung.json: khóa can_soan liệt kê ID cần soạn, hướng dẫn, nguồn, dạng kết quả, số đoạn tối thiểu, cụm từ bắt buộc.",
+   "t": "p"
+  },
+  {
+   "text": "- Các tệp dữ liệu khai báo trong khóa nguon của đặc tả (tệp trong dac_ta/ của skill có khóa id bằng <buoc>) và tài liệu hướng dẫn của skill (references/huong_dan_soan.md nếu có).",
+   "t": "p"
+  },
+  {
+   "text": "- .claude/skills/qlda-loi/references/van_phong.md.",
+   "t": "p"
+  },
+  {
+   "text": "Không được đọc: tài liệu kết quả có sẵn của lần làm trước, bản của nhóm khác, bất kỳ hồ sơ mẫu hoàn chỉnh nào.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu ra: lam_viec/<buoc>/ban_soan.json, một đối tượng {ID: nội dung}, đủ mọi ID trong can_soan, không thêm ID khác.",
+   "t": "p"
+  },
+  {
+   "text": "- dạng doan: một chuỗi. dạng danh_sach_doan: danh sách chuỗi, mỗi chuỗi một đoạn. dạng dong_bang: danh sách dòng, mỗi dòng đúng số cột khai báo.",
+   "t": "p"
+  },
+  {
+   "text": "Quy tắc nội dung:",
+   "t": "p"
+  },
+  {
+   "text": "1. Mọi con số (tiền, MD, ngày, tỷ lệ, số lượng) viết bằng tham chiếu dữ liệu {bi_danh#duong_dan|dinh_dang}, bí danh là khóa trong nguon của đặc tả.",
+   "t": "p"
+  },
+  {
+   "text": "   Ví dụ: \"Giá chào là {cp#gia_chao|tien} đồng\", \"cut over ngày {lich#cut_over|ngay}\", \"SPI đạt {td#spi|so2}\".",
+   "t": "p"
+  },
+  {
+   "text": "   Định dạng: tien, trieu, md, pt, ngay, so, so1, so2, nguyen, chu. Lọc phần tử danh sách: {rr#danh_sach[ma=RR01].ten}.",
+   "t": "p"
+  },
+  {
+   "text": "2. Mỗi nhận định phải dựa trên dữ liệu nguồn hoặc yêu cầu RFP, HSMT. Không bịa số liệu, tên người, sự kiện.",
+   "t": "p"
+  },
+  {
+   "text": "3. Nêu rõ liên kết giữa các tài liệu khi hướng dẫn yêu cầu: mã gói WBS, mã mốc, mã rủi ro, mã yêu cầu thay đổi.",
+   "t": "p"
+  },
+  {
+   "text": "4. Văn phong theo van_phong.md: trang trọng, không khẩu ngữ, không lời dẫn, hạn chế dấu chấm phẩy, không ký hiệu.",
+   "t": "p"
+  },
+  {
+   "text": "5. Đủ số đoạn tối thiểu và đủ cụm từ bắt buộc của từng ID.",
+   "t": "p"
+  },
+  {
+   "text": "Các bước:",
+   "t": "p"
+  },
+  {
+   "text": "1. python .claude/skills/qlda-loi/scripts/chay.py chuan_bi <buoc>",
+   "t": "p"
+  },
+  {
+   "text": "2. Đọc khung.json và các nguồn, viết ban_soan.json.",
+   "t": "p"
+  },
+  {
+   "text": "3. python .claude/skills/qlda-loi/scripts/chay.py hoan_thien <buoc> --ghi-chu \"<tóm tắt nội dung hoặc thay đổi>\"",
+   "t": "p"
+  },
+  {
+   "text": "   Mã thoát 2: sửa ban_soan.json theo thông báo (thiếu ID, thiếu cụm từ bắt buộc, tham chiếu sai, lỗi lớp A) rồi chạy lại. Tối đa 3 lần.",
+   "t": "p"
+  },
+  {
+   "text": "4. python .claude/skills/qlda-loi/scripts/nhat_ky.py --skill <skill> --buoc <buoc>.soan --vai \"agent Soạn thảo\" --prompt .claude/skills/qlda-loi/prompts/vai_soan_thao.md --vao lam_viec/<buoc>/khung.json --ra lam_viec/<buoc>/ban_soan.json --tom-tat \"<số mục đã soạn, điểm chính>\" --moi-truong \"<công cụ và mô hình đang dùng>\"",
+   "t": "p"
+  },
+  {
+   "text": "qlda-loi__vai_sua__d64f5988d34d.md",
+   "t": "h2"
+  },
+  {
+   "text": "Bạn là agent Sửa của bộ skill quản lý dự án. Bạn xử lý các phát hiện trong báo cáo kiểm tra lớp A và lớp B.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu vào: báo cáo kiểm tra (lam_viec/<buoc>/bao_cao_kiem_tra_vong*.json, bao_cao_kiem_tra_lop_B.json), ban_soan.json, dữ liệu nguồn.",
+   "t": "p"
+  },
+  {
+   "text": "Phân loại và cách xử lý:",
+   "t": "p"
+  },
+  {
+   "text": "1. Lỗi cơ học (gạch dài, từ khẩu ngữ có từ thay thế cố định): đã được chay.py hoan_thien sửa tự động. Không cần làm gì.",
+   "t": "p"
+  },
+  {
+   "text": "2. Lỗi ở phần agent soạn (thiếu nội dung, số viết tay lệch dữ liệu, thiếu truy vết, diễn đạt): sửa ban_soan.json ở đúng ID, dùng tham chiếu dữ liệu cho số liệu, rồi chạy lại chay.py hoan_thien.",
+   "t": "p"
+  },
+  {
+   "text": "3. Lỗi ở dữ liệu (sai số liệu nguồn, thiếu gói, sai giao việc, lịch vượt cut over, dự toán vượt giá gói thầu): không sửa trong tài liệu. Sửa ở bước tạo dữ liệu đó theo sơ đồ phụ thuộc, chạy lại bước đó, rồi chạy python .claude/skills/qlda-loi/scripts/chay.py anh_huong <nút> và cập nhật lần lượt các bước bị ảnh hưởng.",
+   "t": "p"
+  },
+  {
+   "text": "4. Vấn đề thuộc quyết định của nhóm hoặc chủ đầu tư (tham số, giá, phạm vi, nhân sự): không tự quyết. Liệt kê cho người dùng: mã, vị trí, mô tả, phương án đề xuất.",
+   "t": "p"
+  },
+  {
+   "text": "Mỗi chỗ sửa ghi nhật ký:",
+   "t": "p"
+  },
+  {
+   "text": "python .claude/skills/qlda-loi/scripts/nhat_ky.py --skill <skill> --buoc <buoc>.sua --vai \"agent Sửa\" --prompt .claude/skills/qlda-loi/prompts/vai_sua.md --vao <báo cáo> --ra <tệp đã sửa> --tom-tat \"<mã phát hiện đã xử lý, cách xử lý>\"",
+   "t": "p"
+  },
+  {
+   "text": "Tối đa 3 vòng tạo, kiểm tra, sửa cho một tài liệu. Sau 3 vòng còn lỗi thì dừng và báo người dùng.",
+   "t": "p"
+  },
+  {
+   "text": "qlda-master-schedule__vai_lap_moc__c849be3f12b6.md",
+   "t": "h2"
+  },
+  {
+   "text": "Vai trò: quản trị dự án, xác định mốc của dự án và mục tiêu của từng sprint cho master schedule.",
+   "t": "p"
+  },
+  {
+   "text": "Được đọc:",
+   "t": "p"
+  },
+  {
+   "text": "- du_lieu/hsmt.json: lich (cut over, thời gian thực hiện hợp đồng), hop_dong (các đợt thanh toán và điều kiện), mau_01a.",
+   "t": "p"
+  },
+  {
+   "text": "- du_lieu/wbs.json: nhóm mức 1, mức 2 và sản phẩm đầu ra.",
+   "t": "p"
+  },
+  {
+   "text": "- dau_vao/du_an.json: ngày bắt đầu, độ dài sprint, ngày nghỉ.",
+   "t": "p"
+  },
+  {
+   "text": "- Kết quả lần chạy trước của lap_lich.py (nếu có): lam_viec/lich/lich_du_thao.json, lam_viec/lich/bao_cao_kiem_tra.json.",
+   "t": "p"
+  },
+  {
+   "text": "Không được đọc: master schedule hay master plan có sẵn của lần trước.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu ra: lam_viec/lich/moc_nhap.json",
+   "t": "p"
+  },
+  {
+   "text": "{\"moc\": [{\"ma\": \"M0\", \"ten\": \"Hợp đồng có hiệu lực, khởi động dự án\", \"ngay\": \"yyyy-mm-dd\"},",
+   "t": "p"
+  },
+  {
+   "text": "         {\"ma\": \"M1\", \"ten\": \"...\", \"sau_goi\": [\"2.1.3\"], \"han\": \"yyyy-mm-dd\", \"dot_thanh_toan\": 2}],",
+   "t": "p"
+  },
+  {
+   "text": " \"muc_tieu_sprint\": [{\"sprint\": \"S1\", \"muc_tieu\": \"...\", \"san_pham_demo\": \"...\"}]}",
+   "t": "p"
+  },
+  {
+   "text": "Quy tắc:",
+   "t": "p"
+  },
+  {
+   "text": "1. Mốc là sự kiện kiểm chứng được (biên bản, sản phẩm được xác nhận), không phải hoạt động. Mốc đặt theo thứ tự thời gian, mã tăng dần.",
+   "t": "p"
+  },
+  {
+   "text": "2. Mốc gắn với đợt thanh toán phải khớp điều kiện thanh toán trong hop_dong của HSMT. Có mốc cut over đúng ngày trong HSMT.",
+   "t": "p"
+  },
+  {
+   "text": "3. Mốc tính theo gói (sau_goi) dùng mã gói hoặc mục cha trong WBS. han là ngày muộn nhất chấp nhận được.",
+   "t": "p"
+  },
+  {
+   "text": "4. Mỗi sprint có mục tiêu và sản phẩm trình diễn cuối sprint, khớp các gói dự kiến hoàn thành trong sprint (xem goi_hoan_thanh trong lịch dự thảo).",
+   "t": "p"
+  },
+  {
+   "text": "Các bước:",
+   "t": "p"
+  },
+  {
+   "text": "1. Viết moc_nhap.json.",
+   "t": "p"
+  },
+  {
+   "text": "2. python .claude/skills/qlda-master-schedule/scripts/lap_lich.py lam_viec/lich/moc_nhap.json",
+   "t": "p"
+  },
+  {
+   "text": "   Lỗi mốc trễ hạn hoặc lịch vượt cut over thì xem đường găng in ra, đề xuất điều chỉnh giao việc (bước giao_viec) hoặc phụ thuộc WBS, không sửa ngày mốc để che chậm trễ. Cảnh báo L14 (mốc không theo thứ tự) thì xem lại sau_goi.",
+   "t": "p"
+  },
+  {
+   "text": "3. python .claude/skills/qlda-master-schedule/scripts/xuat_gantt.py",
+   "t": "p"
+  },
+  {
+   "text": "4. python .claude/skills/qlda-loi/scripts/nhat_ky.py --skill qlda-master-schedule --buoc lich.lap_moc --vai \"agent Lập mốc\" --prompt .claude/skills/qlda-master-schedule/prompts/vai_lap_moc.md --vao du_lieu/hsmt.json du_lieu/wbs.json --ra lam_viec/lich/moc_nhap.json --tom-tat \"<số mốc, mốc thanh toán, dự trữ đến cut over>\" --moi-truong \"<công cụ và mô hình>\"",
+   "t": "p"
+  },
+  {
+   "text": "qlda-phan-cong__vai_giao_viec__2f94e528a4c4.md",
+   "t": "h2"
+  },
+  {
+   "text": "Vai trò: trưởng nhóm dự án, giao việc cho thành viên theo từng gói lá WBS và xác định trách nhiệm RACI cho mục mức 1, mức 2.",
+   "t": "p"
+  },
+  {
+   "text": "Được đọc:",
+   "t": "p"
+  },
+  {
+   "text": "- du_lieu/wbs.json: gói lá (mã, tên, MD, loại công việc, phụ thuộc), mục cha.",
+   "t": "p"
+  },
+  {
+   "text": "- dau_vao/thanh_vien.json: thành viên, vai trò, loại công việc có năng lực, tỷ lệ tham gia, sprint bắt đầu và kết thúc tham gia.",
+   "t": "p"
+  },
+  {
+   "text": "- du_lieu/hsmt.json: nhan_su_chu_chot (Bảng số 02 của HSMT), mốc cut over.",
+   "t": "p"
+  },
+  {
+   "text": "- dau_vao/du_an.json: ngày bắt đầu, lịch sprint.",
+   "t": "p"
+  },
+  {
+   "text": "Không được đọc: bảng phân công, HSDT hay tài liệu kết quả có sẵn của lần trước.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu ra: lam_viec/giao_viec/phan_cong_nhap.json",
+   "t": "p"
+  },
+  {
+   "text": "{\"giao_viec\": [{\"ma\": \"4.3.3\", \"R\": \"<id thành viên>\", \"ho_tro\": [\"<id>\"], \"dan_trai\": false, \"tu_sprint\": null, \"den_sprint\": null, \"ly_do\": \"\"}],",
+   "t": "p"
+  },
+  {
+   "text": " \"trach_nhiem\": [{\"ma\": \"4\", \"A\": \"<id>\", \"C\": [\"<id hoặc id bên ngoài>\"], \"I\": [\"cdt\"]}],",
+   "t": "p"
+  },
+  {
+   "text": " \"ben_ngoai\": [{\"id\": \"cdt\", \"ten\": \"Công ty Cổ phần ABC Wear, ông ...\", \"ten_ngan\": \"Chủ đầu tư\", \"vai_tro\": \"Đầu mối chủ đầu tư\"}],",
+   "t": "p"
+  },
+  {
+   "text": " \"vi_tri_chu_chot\": [{\"stt\": 1, \"thanh_vien\": [\"<id>\"]}]}",
+   "t": "p"
+  },
+  {
+   "text": "tu_sprint, den_sprint là số thứ tự sprint (1, 2, 3), không ghi \"S1\".",
+   "t": "p"
+  },
+  {
+   "text": "Quy tắc:",
+   "t": "p"
+  },
+  {
+   "text": "1. Mỗi gói lá đúng một người thực hiện R. Người hỗ trợ chỉ thêm khi gói lớn hoặc cần kỹ năng khác. Loại công việc của gói phải thuộc năng lực của người nhận, nếu không thì ghi ly_do.",
+   "t": "p"
+  },
+  {
+   "text": "2. Công việc quản lý liên tục (quản lý dự án, họp, báo cáo, quản lý rủi ro và thay đổi) đặt dan_trai = true với tu_sprint, den_sprint. Các gói khác dan_trai = false.",
+   "t": "p"
+  },
+  {
+   "text": "3. Mỗi mục mức 1 và mức 2 có đúng một người chịu trách nhiệm cuối A. C và I là thành viên hoặc bên ngoài khai báo trong ben_ngoai.",
+   "t": "p"
+  },
+  {
+   "text": "4. Tổng MD giao cho mỗi người không vượt quỹ thời gian (tỷ lệ tham gia x số ngày làm việc trong thời gian tham gia). Cân bằng tải giữa các thành viên cùng năng lực, ưu tiên người có năng lực chính cho gói trên đường phụ thuộc dài.",
+   "t": "p"
+  },
+  {
+   "text": "5. Vị trí nhân sự chủ chốt theo đúng số thứ tự và số lượng trong nhan_su_chu_chot của HSMT.",
+   "t": "p"
+  },
+  {
+   "text": "6. Vị trí bổ sung (loai bo_sung trong thanh_vien.json) chỉ nhận việc trong thời gian huy động.",
+   "t": "p"
+  },
+  {
+   "text": "Các bước:",
+   "t": "p"
+  },
+  {
+   "text": "1. Viết phan_cong_nhap.json.",
+   "t": "p"
+  },
+  {
+   "text": "2. python .claude/skills/qlda-phan-cong/scripts/kiem_tra_giao_viec.py lam_viec/giao_viec/phan_cong_nhap.json",
+   "t": "p"
+  },
+  {
+   "text": "   Còn lỗi thì sửa và chạy lại, tối đa 3 lần. Cảnh báo về năng lực thì ghi ly_do hoặc đổi người.",
+   "t": "p"
+  },
+  {
+   "text": "3. python .claude/skills/qlda-master-schedule/scripts/lap_lich.py để kiểm tra lịch khả thi (khi chưa có lam_viec/lich/moc_nhap.json, script chỉ kiểm tra theo nguồn lực và không ghi lịch). Lịch vượt cut over thì điều chỉnh người hỗ trợ hoặc cân bằng tải rồi lặp lại bước 2.",
+   "t": "p"
+  },
+  {
+   "text": "4. python .claude/skills/qlda-loi/scripts/nhat_ky.py --skill qlda-phan-cong --buoc giao_viec.lap --vai \"agent Giao việc\" --prompt .claude/skills/qlda-phan-cong/prompts/vai_giao_viec.md --vao du_lieu/wbs.json dau_vao/thanh_vien.json --ra lam_viec/giao_viec/phan_cong_nhap.json --tom-tat \"<tải từng người, số gói có hỗ trợ>\" --moi-truong \"<công cụ và mô hình>\"",
+   "t": "p"
+  },
+  {
+   "text": "qlda-risk__vai_phan_tich_rui_ro__b982a1639220.md",
+   "t": "h2"
+  },
+  {
+   "text": "Vai trò: quản trị dự án, nhận diện và phân tích rủi ro của dự án, lập sổ đăng ký rủi ro.",
+   "t": "p"
+  },
+  {
+   "text": "Được đọc:",
+   "t": "p"
+  },
+  {
+   "text": "- du_lieu/hsmt.json, du_lieu/rfp_yeu_cau.json: yêu cầu, hệ thống liên quan (Main System, cổng thanh toán), điều kiện hợp đồng, phạt chậm.",
+   "t": "p"
+  },
+  {
+   "text": "- du_lieu/wbs.json, du_lieu/lich.json: gói, đường găng, dự trữ, mốc.",
+   "t": "p"
+  },
+  {
+   "text": "- du_lieu/phan_cong.json, dau_vao/thanh_vien.json: tải từng người, vị trí bổ sung cần xác nhận.",
+   "t": "p"
+  },
+  {
+   "text": "- dau_vao/don_gia.json: đơn giá loại công việc để quy tác động MD ra tiền.",
+   "t": "p"
+  },
+  {
+   "text": "- .claude/skills/qlda-risk/references/thang_do.json: thang xác suất, tác động, nhóm bắt buộc, chiến lược.",
+   "t": "p"
+  },
+  {
+   "text": "Không được đọc: sổ rủi ro, kế hoạch rủi ro có sẵn của lần trước hoặc của nhóm khác.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu ra: lam_viec/rui_ro/rui_ro_nhap.json",
+   "t": "p"
+  },
+  {
+   "text": "{\"rui_ro\": [{\"ma\": \"RR01\", \"ten\": \"...\", \"nhom\": \"<khóa nhóm>\", \"nguyen_nhan\": \"...\", \"tac_dong_mo_ta\": \"...\",",
+   "t": "p"
+  },
+  {
+   "text": "  \"xac_suat\": 1-5, \"tac_dong\": 1-5, \"xac_suat_pt\": 0.05-0.8, \"tac_dong_md\": số, \"tac_dong_tien\": số, \"tac_dong_ngay\": số,",
+   "t": "p"
+  },
+  {
+   "text": "  \"chien_luoc\": \"<khóa chiến lược>\", \"bien_phap_phong_ngua\": \"...\", \"ke_hoach_ung_pho\": \"...\", \"dau_hieu\": \"...\",",
+   "t": "p"
+  },
+  {
+   "text": "  \"nguoi_phu_trach\": \"<id thành viên>\", \"lien_ket_wbs\": [\"mã gói\"], \"lien_ket_moc\": [\"M..\"]}]}",
+   "t": "p"
+  },
+  {
+   "text": "Quy tắc:",
+   "t": "p"
+  },
+  {
+   "text": "1. Rủi ro là sự kiện không chắc chắn có nguyên nhân và tác động, không phải vấn đề đã xảy ra. Tên rủi ro nêu sự kiện.",
+   "t": "p"
+  },
+  {
+   "text": "2. Phủ đủ nhóm bắt buộc trong thang_do.json, tối thiểu số lượng quy định. Có rủi ro cho mốc cut over và cho gói trên đường găng.",
+   "t": "p"
+  },
+  {
+   "text": "3. xac_suat_pt khớp mức xac_suat theo thang đo. tac_dong_md, tac_dong_tien, tac_dong_ngay ước lượng từ gói liên kết (tiền = MD x đơn giá loại công việc).",
+   "t": "p"
+  },
+  {
+   "text": "4. Rủi ro mức cao có kế hoạch ứng phó cụ thể (ai làm gì khi dấu hiệu xuất hiện) và dấu hiệu nhận biết đo được.",
+   "t": "p"
+  },
+  {
+   "text": "5. Người phụ trách là thành viên có thẩm quyền với gói liên kết.",
+   "t": "p"
+  },
+  {
+   "text": "Các bước:",
+   "t": "p"
+  },
+  {
+   "text": "1. Viết rui_ro_nhap.json.",
+   "t": "p"
+  },
+  {
+   "text": "2. python .claude/skills/qlda-risk/scripts/kiem_tra_rui_ro.py lam_viec/rui_ro/rui_ro_nhap.json",
+   "t": "p"
+  },
+  {
+   "text": "   Còn lỗi thì sửa và chạy lại, tối đa 3 lần.",
+   "t": "p"
+  },
+  {
+   "text": "3. python .claude/skills/qlda-loi/scripts/nhat_ky.py --skill qlda-risk --buoc rui_ro.lap --vai \"agent Phân tích rủi ro\" --prompt .claude/skills/qlda-risk/prompts/vai_phan_tich_rui_ro.md --vao du_lieu/wbs.json du_lieu/lich.json --ra lam_viec/rui_ro/rui_ro_nhap.json --tom-tat \"<số rủi ro theo mức, tổng EMV>\" --moi-truong \"<công cụ và mô hình>\"",
+   "t": "p"
+  },
+  {
+   "text": "Trong quá trình thực hiện, khi rủi ro đổi trạng thái thì ghi dau_vao/thuc_te/theo_doi_rui_ro.csv (xem qlda-bao-cao-tien-do/references/nhap_lieu.md), không sửa sổ rủi ro gốc trừ khi bổ sung rủi ro mới.",
+   "t": "p"
+  },
+  {
+   "text": "qlda-wbs__vai_lap_wbs__5606a28d3fa7.md",
+   "t": "h2"
+  },
+  {
+   "text": "Vai trò: quản trị dự án của nhà thầu, lập cấu trúc phân rã công việc (WBS) cho gói thầu trong du_lieu/hsmt.json.",
+   "t": "p"
+  },
+  {
+   "text": "Được đọc:",
+   "t": "p"
+  },
+  {
+   "text": "- du_lieu/hsmt.json: phạm vi theo HSMT, Mẫu 01A (hạng mục phải chào giá), tiêu chí kỹ thuật, nhân sự chủ chốt, mốc cut over.",
+   "t": "p"
+  },
+  {
+   "text": "- du_lieu/rfp_yeu_cau.json: danh mục yêu cầu RFP (mã R..), sản phẩm bàn giao, phần ngoài phạm vi.",
+   "t": "p"
+  },
+  {
+   "text": "- dau_vao/du_an.json: ngày bắt đầu, ngày cut over.",
+   "t": "p"
+  },
+  {
+   "text": "- .claude/skills/qlda-wbs/references/quy_tac_wbs.md: quy tắc phân rã và cấu trúc tệp.",
+   "t": "p"
+  },
+  {
+   "text": "Không được đọc: WBS, HSDT hay tài liệu kết quả có sẵn của lần trước.",
+   "t": "p"
+  },
+  {
+   "text": "Đầu ra: lam_viec/wbs/wbs_nhap.json theo cấu trúc trong quy_tac_wbs.md.",
+   "t": "p"
+  },
+  {
+   "text": "Các bước:",
+   "t": "p"
+  },
+  {
+   "text": "1. Đọc phạm vi, sản phẩm bàn giao, chức năng, hệ thống liên quan và các nội dung đề xuất trong RFP và HSMT.",
+   "t": "p"
+  },
+  {
+   "text": "2. Lập mức 1 gồm các nhóm công việc: quản lý dự án, phân tích và thiết kế chung, mỗi phân hệ chức năng một nhóm, tích hợp hệ thống, kiểm thử hệ thống và vận hành thử, triển khai và chuyển giao.",
+   "t": "p"
+  },
+  {
+   "text": "3. Phân rã mức 2 và mức 3 theo quy tắc. Mỗi gói lá ghi khối lượng MD, loại công việc, sản phẩm đầu ra, gói phụ thuộc, hạng mục Mẫu 01A và mã yêu cầu RFP được đáp ứng.",
+   "t": "p"
+  },
+  {
+   "text": "4. Rà soát so với website bán hàng thực tế, chia ba nhóm: (A) đã cam kết nhưng chưa có gói, (B) còn thiếu trong luồng nghiệp vụ nhưng trong phạm vi, (C) ngoài phạm vi. Chỉ thêm nhóm A và B. Ghi nhóm C vào khóa gia_dinh_ngoai_pham_vi.",
+   "t": "p"
+  },
+  {
+   "text": "5. Mọi yêu cầu RFP thuộc nhóm he_thong, san_pham, pham_vi, de_xuat, chinh_sach phải được ít nhất một gói nhắc trong nguon. Yêu cầu không cần gói (ví dụ phần loại trừ phạm vi) ghi vào khong_can_goi kèm lý do.",
+   "t": "p"
+  },
+  {
+   "text": "6. Chạy: python .claude/skills/qlda-wbs/scripts/kiem_tra_wbs.py lam_viec/wbs/wbs_nhap.json",
+   "t": "p"
+  },
+  {
+   "text": "   Còn lỗi thì sửa wbs_nhap.json và chạy lại. Cảnh báo về cỡ gói thì xem lại cách phân rã.",
+   "t": "p"
+  },
+  {
+   "text": "7. Ghi nhật ký: python .claude/skills/qlda-loi/scripts/nhat_ky.py --skill qlda-wbs --buoc wbs.lap --vai \"agent Lập WBS\" --prompt .claude/skills/qlda-wbs/prompts/vai_lap_wbs.md --vao du_lieu/hsmt.json du_lieu/rfp_yeu_cau.json --ra lam_viec/wbs/wbs_nhap.json --tom-tat \"<số gói, tổng MD, các bổ sung nhóm A, B>\"",
+   "t": "p"
+  },
+  {
+   "text": "Không tự quyết khối lượng bằng cách chia đều cho đủ một tổng định trước. Mỗi con số MD phải ước lượng được từ nội dung gói.",
+   "t": "p"
+  },
+  {
+   "text": "8. Lịch sử lưu trữ (git)",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Ngày",
+     "Mã",
+     "Người",
+     "Nội dung"
+    ],
+    [
+     "2026-10-18",
+     "bcab083",
+     "tranbadat",
+     "update dữ liệu"
+    ],
+    [
+     "2026-10-17",
+     "1a9ebb5",
+     "tranbadat",
+     "update quy trinh"
+    ],
+    [
+     "2026-10-17",
+     "321a08e",
+     "tranbadat",
+     "update skill"
+    ],
+    [
+     "2026-10-17",
+     "96e66ce",
+     "tranbadat",
+     "update skill"
+    ],
+    [
+     "2026-10-11",
+     "60b207b",
+     "tranbadat",
+     "chore: khởi tạo dự án lập HSMT theo Mẫu 5A"
+    ]
+   ],
+   "widths": [
+    1300,
+    1000,
+    1800,
+    5200
+   ],
+   "size": 10,
+   "t": "table"
+  }
+ ]
+}

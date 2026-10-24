@@ -1,0 +1,713 @@
+{
+ "nguon": "Mau_5A.docx",
+ "bia": [
+  "Số hiệu gói thầu và số E-TBMT (trên Hệ thống):",
+  "Tên gói thầu (theo nội dung E-TBMT trên Hệ thống):",
+  "Dự án/Dự toán mua sắm (theo nội dung E-TBMT trên Hệ thống):",
+  "Phát hành ngày (theo nội dung E-TBMT trên Hệ thống):",
+  "Ban hành kèm theo Quyết định (theo nội dung E-TBMT trên Hệ thống):"
+ ],
+ "e_bdl": [
+  {
+   "ma": "E-CDNT 1.1",
+   "noi_dung_mau": "Tên Chủ đầu tư:___ [Hệ thống tự động trích xuất]."
+  },
+  {
+   "ma": "E-CDNT 1.2",
+   "noi_dung_mau": "Tên gói thầu:___ [Hệ thống tự động trích xuất]. Tên dự án/dự toán mua sắm:___ [Hệ thống tự động trích xuất]. Số lượng, số hiệu các phần thuộc gói thầu: Theo quy định tại mục E-CDNT 18.2 Chương này."
+  },
+  {
+   "ma": "E-CDNT 3",
+   "noi_dung_mau": "Nguồn vốn: ___[Theo E-TBMT]."
+  },
+  {
+   "ma": "E-CDNT 5.1 (c)",
+   "noi_dung_mau": "Bảo đảm cạnh tranh trong đấu thầu theo quy định như sau: Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp trên 30% với:___[ghi đầy đủ tên và địa chỉ Chủ đầu tư]. + Trường hợp nhà thầu, chủ đầu tư là công ty mẹ, công ty con, công ty thành viên trong tập đoàn kinh tế nhà nước, tổng công ty nhà nước, nhà thầu được tham dự gói thầu của chủ đầu tư nếu sản phẩm, dịch vụ thuộc gói thầu đó thuộc ngành, nghề sản xuất, kinh doanh chính của tập đoàn kinh tế nhà nước, tổng công ty nhà nước. + Trường hợp nhà thầu là đơn vị sự nghiệp công lập, nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với Chủ đầu tư, trừ trường hợp: nhà thầu là đơn vị sự nghiệp công lập thuộc cơ quan quản lý nhà nước có chức năng, nhiệm vụ được giao phù hợp với tính chất gói thầu của cơ quan quản lý nhà nước đó; các đơn vị sự nghiệp công lập có cùng một cơ quan trực tiếp quản lý. + Đơn vị sự nghiệp công lập và doanh nghiệp có cùng một cơ quan trực tiếp quản lý, góp vốn khi tham dự thầu các gói thầu của nhau không phải đáp ứng quy định độc lập về pháp lý và độc lập về tài chính giữa nhà thầu với chủ đầu tư. - Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp với các nhà thầu tư vấn; không cùng có cổ phần hoặc vốn góp trên 20% của một tổ chức, cá nhân khác với từng bên, cụ thể như sau: + Tư vấn lập thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán:___[ghi đầy đủ tên và địa chỉ của đơn vị tư vấn (nếu có)]; + Tư vấn thẩm tra thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán:___[ghi đầy đủ tên và địa chỉ của đơn vị tư vấn (nếu có)]; + Tư vấn thẩm định giá:___[ghi đầy đủ tên và địa chỉ của đơn vị tư vấn (nếu có)]; + Tư vấn giám sát thực hiện hợp đồng, kiểm định:___[ghi đầy đủ tên và địa chỉ của đơn vị tư vấn (nếu có)]; + Tư vấn lập E-HSMT:___[ghi đầy đủ tên và địa chỉ của đơn vị tư vấn (nếu có)]; + Tư vấn thẩm định E-HSMT:___[ghi đầy đủ tên và địa chỉ của đơn vị tư vấn (nếu có)]; + Tư vấn đánh giá E-HSDT:___[ghi đầy đủ tên và địa chỉ của đơn vị tư vấn (nếu có)]; + Tư vấn thẩm định kết quả lựa chọn nhà thầu:___[ghi đầy đủ tên và địa chỉ của đơn vị tư vấn (nếu có)]; + Tư vấn quản lý dự án, quản lý hợp đồng, tư vấn khác mà các dịch vụ tư vấn này có phần công việc liên quan trực tiếp tới gói thầu:___[ghi đầy đủ tên và địa chỉ của đơn vị tư vấn (nếu có)]; Nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với nhà thầu tư vấn (đã nêu trên). Tỷ lệ cổ phần, vốn góp giữa các bên được xác định tại thời điểm đóng thầu và theo tỷ lệ ghi trong giấy chứng nhận đăng ký doanh nghiệp, quyết định thành lập, các giấy tờ khác có giá trị tương đương. Trường hợp nhà thầu tham dự thầu với tư cách liên danh hoặc nhà thầu tư vấn được lựa chọn với tư cách liên danh, tỷ lệ sở hữu vốn của tổ chức, cá nhân khác trong liên danh được xác định theo công thức sau: Trong đó: Xi: Tỷ lệ sở hữu vốn của tổ chức, cá nhân khác trong thành viên liên danh thứ i; Yi: Tỷ lệ phần trăm (%) khối lượng công việc của thành viên liên danh thứ i trong thỏa thuận liên danh; n: Số thành viên tham gia trong liên danh. - Nhà thầu trong nước thuộc trường hợp quy định tại điểm g khoản 1 Điều 10 của Luật Đấu thầu khi chào thầu dịch vụ do nhà thầu đó cung cấp không phải đáp ứng quy định về bảo đảm cạnh tranh quy định tại Mục này."
+  },
+  {
+   "ma": "E-CDNT 7.5",
+   "noi_dung_mau": "Hội nghị tiền đấu thầu: _____ [ghi \"Có\" hoặc \"Không\". Trường hợp \"Có\" thì ghi rõ thời gian, địa điểm tổ chức hội nghị tiền đấu thầu, số điện thoại của người chịu trách nhiệm tổ chức hội nghị tiền đấu thầu]"
+  },
+  {
+   "ma": "E-CDNT 8",
+   "noi_dung_mau": "Chi phí nộp E-HSDT:___ [Hệ thống tự trích xuất theo quy định hiện hành]"
+  },
+  {
+   "ma": "E-CDNT 10.8",
+   "noi_dung_mau": "Nhà thầu phải nộp cùng với E-HSDT các tài liệu sau đây:___[ghi tên các tài liệu cần thiết khác mà nhà thầu cần nộp cùng với E-HSDT theo yêu cầu trên cơ sở phù hợp với quy mô, tính chất của gói thầu và không làm hạn chế sự tham dự thầu của nhà thầu. Nếu không có yêu cầu thì phải ghi rõ là “không yêu cầu”]."
+  },
+  {
+   "ma": "E-CDNT 12.1",
+   "noi_dung_mau": "Nhà thầu____ [ghi “Được phép” hoặc “Không được phép”] nộp đề xuất phương án kỹ thuật thay thế. [trường hợp chỉ cho phép đề xuất phương án kỹ thuật thay thế đối với phần công việc cụ thể của gói thầu thì phải nêu rõ các phần công việc mà nhà thầu được phép chào phương án kỹ thuật thay thế]."
+  },
+  {
+   "ma": "E-CDNT 17.1",
+   "noi_dung_mau": "Thời hạn hiệu lực của E-HSDT là: ≥ ____ ngày [trích xuất theo E-TBMT], kể từ ngày có thời điểm đóng thầu."
+  },
+  {
+   "ma": "E-CDNT 18.2",
+   "noi_dung_mau": "Nội dung bảo đảm dự thầu: - Giá trị bảo đảm dự thầu: _____[Hệ thống trích xuất từ E-TBMT]. Đối với nhà thầu có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP và được đăng tải trên Hệ thống mạng đấu thầu quốc gia phải thực hiện biện pháp bảo đảm dự thầu với giá trị gấp 03 lần giá trị yêu cầu nêu trên trong thời hạn 02 năm kể từ lần cuối cùng thực hiện các hành vi này. Trường hợp nhà thầu liên danh, thành viên liên danh có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP như nêu trên phải thực hiện biện pháp bảo đảm dự thầu với giá trị gấp 03 lần giá trị bảo đảm dự thầu tương ứng với tỷ lệ giá trị công việc thành viên đó đảm nhận trong liên danh trong thời hạn 02 năm kể từ lần cuối cùng thực hiện hành vi này. - Thời gian có hiệu lực của bảo đảm dự thầu:________ [Hệ thống trích xuất từ E-TBMT] (Trường hợp gói thầu được chia làm nhiều phần thì phải nêu rõ giá trị bảo đảm dự thầu của từng phần)."
+  },
+  {
+   "ma": "E-CDNT 18.4",
+   "noi_dung_mau": "Thời gian hoàn trả hoặc giải tỏa bảo đảm dự thầu đối với nhà thầu không được lựa chọn: _____ ngày, kể từ ngày kết quả lựa chọn nhà thầu được phê duyệt [ghi cụ thể số ngày nhưng không quá 14 ngày kể từ ngày kết quả lựa chọn nhà thầu được phê duyệt]."
+  },
+  {
+   "ma": "E-CDNT 18.9",
+   "noi_dung_mau": "Bảo đảm dự thầu:______[ghi “Không áp dụng”. Trường hợp pháp luật cho phép, ghi nội dung theo quy định của văn bản quy phạm pháp luật đó]."
+  },
+  {
+   "ma": "E-CDNT 27.2",
+   "noi_dung_mau": "Giá trị tối đa dành cho nhà thầu phụ:______giá dự thầu của nhà thầu [tùy theo quy mô, tính chất gói thầu, Chủ đầu tư ghi tỷ lệ % tối đa dành cho nhà thầu phụ. Việc kê khai sử dụng nhà thầu phụ thực hiện theo Mẫu số 09A Chương IV]."
+  },
+  {
+   "ma": "E-CDNT 28.2",
+   "noi_dung_mau": "Cách tính ưu đãi: __ Sản phẩm đổi mới sáng tạo quy định tại khoản 4 Điều 6 của Nghị định số 214/2025/NĐ-CP là dịch vụ phi tư vấn của doanh nghiệp khởi nghiệp sáng tạo trong nước được hưởng ưu đãi như sau: - Chọn phương pháp giá thấp nhất thì trích xuất: “Nhà thầu không thuộc đối tượng được hưởng ưu đãi phải cộng thêm một khoản tiền bằng 7,5% giá dự thầu trừ đi giá trị giảm giá (nếu có) vào giá dự thầu trừ đi giá trị giảm giá (nếu có) của nhà thầu đó để so sánh, xếp hạng”; - Chọn phương pháp giá đánh giá thì trích xuất: “Nhà thầu không thuộc đối tượng được hưởng ưu đãi phải cộng thêm một khoản tiền bằng 7,5% giá dự thầu trừ đi giá trị giảm giá (nếu có) vào giá đánh giá của nhà thầu đó để so sánh, xếp hạng”."
+  },
+  {
+   "ma": "E-CDNT 28.8",
+   "noi_dung_mau": "Các ưu đãi khác (nếu có): _________ [Chủ đầu tư ghi rõ đối tượng, điều kiện ưu đãi theo quy định tại Nghị quyết của Quốc hội hoặc văn bản quy phạm pháp luật (nếu có).]."
+  },
+  {
+   "ma": "E-CDNT 29.1",
+   "noi_dung_mau": "Phương pháp đánh giá E-HSDT là: - Đánh giá về năng lực và kinh nghiệm: Đạt/Không đạt. - Đánh giá về kỹ thuật:____ [Căn cứ quy mô, tính chất của gói thầu mà áp dụng phương pháp “Đạt/Không đạt” hoặc “Chấm điểm”]. - Đánh giá về tài chính____ [Căn cứ quy mô, tính chất của gói thầu mà áp dụng phương pháp giá thấp nhất, phương pháp giá đánh giá cho phù hợp với tiêu chuẩn đánh giá quy định tại Chương III]."
+  },
+  {
+   "ma": "E-CDNT 29.3 (đ)",
+   "noi_dung_mau": "Xếp hạng nhà thầu: [Hệ thống trích xuất khi chọn phương pháp đánh giá tại Mục 29.1 E-BDL như sau: - Chọn phương pháp giá thấp nhất thì trích xuất: “Nhà thầu có giá dự thầu sau khi trừ đi giá trị giảm giá (nếu có) thấp nhất được xếp hạng thứ nhất”; - Chọn phương pháp giá đánh giá thì trích xuất: “Nhà thầu có giá đánh giá thấp nhất được xếp hạng thứ nhất”]."
+  },
+  {
+   "ma": "E-CDNT 31.4",
+   "noi_dung_mau": "[Hệ thống trích xuất khi chọn phương pháp đánh giá tại Mục 29.1 E-BDL như sau: - Chọn phương pháp giá thấp nhất thì trích xuất: “Nhà thầu có giá dự thầu sau khi trừ đi giá trị giảm giá (nếu có) thấp nhất”; - Chọn phương pháp giá đánh giá thì trích xuất: “Nhà thầu có giá đánh giá thấp nhất”]. Đối với gói thầu được chia làm nhiều phần (lô), việc đánh giá E-HSDT và xét duyệt trúng thầu sẽ được thực hiện trên cơ sở bảo đảm: giá đề nghị trúng thầu của cả gói thầu không vượt giá gói thầu được duyệt mà không so sánh với ước tính chi phí của từng phần."
+  },
+  {
+   "ma": "E-CDNT 31.5",
+   "noi_dung_mau": "Giá gói thầu để làm căn cứ xét duyệt trúng thầu:_________ [- Đối với gói thầu áp dụng loại hợp đồng trọn gói, hợp đồng theo đơn giá cố định, hợp đồng theo đơn giá điều chỉnh, hợp đồng theo thời gian thì ghi \"giá gói thầu được phê duyệt trong kế hoạch lựa chọn nhà thầu. Trường hợp dự toán của gói thầu được phê duyệt thấp hơn hoặc cao hơn giá gói thầu được phê duyệt thì dự toán này sẽ thay thế giá gói thầu để làm cơ sở xét duyệt trúng thầu\". - Đối với gói thầu áp dụng loại hợp đồng theo kết quả đầu ra, hợp đồng theo tỷ lệ phần trăm thì ghi \"giá gói thầu không bao gồm chi phí dự phòng phát sinh khối lượng và chi phí dự phòng trượt giá có thể xảy ra trong quá trình thực hiện hợp đồng. Trường hợp dự toán của gói thầu được phê duyệt thấp hơn hoặc cao hơn giá gói thầu được phê duyệt thì dự toán này (không bao gồm chi phí dự phòng phát sinh khối lượng và chi phí dự phòng trượt giá) sẽ thay thế giá gói thầu để làm cơ sở xét duyệt trúng thầu\"]."
+  },
+  {
+   "ma": "E-CDNT 34.1",
+   "noi_dung_mau": "Tỷ lệ tăng khối lượng tối đa là:___[ghi tỷ lệ % nhưng không vượt 10%]; Tỷ lệ giảm khối lượng tối đa là:___[ghi tỷ lệ % nhưng không vượt 10%]."
+  },
+  {
+   "ma": "E-CDNT 34.2",
+   "noi_dung_mau": "- Tùy chọn mua thêm: _____ [ghi \"có áp dụng\" hoặc \"không áp dụng\" theo kế hoạch lựa chọn nhà thầu được duyệt. Trường hợp \"có áp dụng\" thì ghi rõ tỷ lệ của khối lượng, số lượng mua thêm nhưng không vượt quá 30% của khối lượng hạng mục dịch vụ tương ứng nêu trong Chương IV và phù hợp với kế hoạch lựa chọn nhà thầu]; - Tỷ lệ tùy chọn mua thêm tối đa là:___[ghi tỷ lệ %]."
+  },
+  {
+   "ma": "E-CDNT 38.1",
+   "noi_dung_mau": "- Người có thẩm quyền:_________ [ghi đầy đủ tên người có thẩm quyền] + Địa chỉ:_________ [ghi đầy đủ địa chỉ, số điện thoại, số fax của người có thẩm quyền]; + E-mail:__________ [ghi rõ Email của người có thẩm quyền để nhận đơn kiến nghị của nhà thầu]. - Bộ phận thường trực giúp việc cho Chủ tịch Hội đồng giải quyết kiến nghị: + Địa chỉ:_________ [ghi đầy đủ tên, địa chỉ, số điện thoại, số fax của Bộ phận thường trực giúp việc cho Chủ tịch Hội đồng giải quyết kiến nghị]; + E-mail:__________ [ghi rõ Email của Bộ phận thường trực giúp việc cho Chủ tịch Hội đồng giải quyết kiến nghị để nhận đơn kiến nghị của nhà thầu]."
+  },
+  {
+   "ma": "E-CDNT 38.2",
+   "noi_dung_mau": "Khi thấy quyền và lợi ích hợp pháp bị ảnh hưởng, nhà thầu, cơ quan, tổ chức được kiến nghị theo quy trình sau:_________(ghi cụ thể quy trình, thủ tục của việc giải quyết kiến nghị của đơn vị, tổ chức đồng thời ghi rõ Email, địa chỉ của cá nhân/tổ chức/đơn vị giải quyết kiến nghị)"
+  }
+ ],
+ "e_dkct": [
+  {
+   "ma": "E-ĐKC 1.3",
+   "noi_dung_mau": "Chủ đầu tư:_______ [ghi tên, địa chỉ, số tài khoản, mã số thuế, điện thoại, fax, email của Chủ đầu tư và đại diện ủy quyền (nếu có)]."
+  },
+  {
+   "ma": "E-ĐKC 1.5",
+   "noi_dung_mau": "Địa điểm cung cấp dịch vụ là:________ [ghi tên và thông tin chi tiết về địa điểm]."
+  },
+  {
+   "ma": "E-ĐKC 1.11",
+   "noi_dung_mau": "Nhà thầu:________ [ghi tên, địa chỉ, số tài khoản, mã số thuế, điện thoại, fax, email của Nhà thầu]."
+  },
+  {
+   "ma": "E-ĐKC 2.2 (i)",
+   "noi_dung_mau": "Các tài liệu sau đây cũng là một phần của Hợp đồng:_____ [liệt kê tài liệu]."
+  },
+  {
+   "ma": "E-ĐKC 4.1",
+   "noi_dung_mau": "Các thông báo cần gửi về Chủ đầu tư theo địa chỉ dưới đây: Người nhận:______ [ghi tên đầy đủ của người nhận, nếu có]. Địa chỉ:______ [ghi đầy đủ địa chỉ]. Điện thoại:_____ [ghi số điện thoại, bao gồm mã quốc gia và mã thành phố]. Fax:______ [ghi số fax, bao gồm mã quốc gia và mã thành phố]. Địa chỉ email:______ [ghi địa chỉ email (nếu có)]."
+  },
+  {
+   "ma": "E-ĐKC 5.2",
+   "noi_dung_mau": "- Giá trị bảo đảm thực hiện hợp đồng:_____ _% giá hợp đồng. [ghi giá trị cụ thể căn cứ yêu cầu của gói thầu, từ 2% đến 10% giá hợp đồng]. - Hiệu lực của bảo đảm thực hiện hợp đồng: Bảo đảm thực hiện hợp đồng có hiệu lực kể từ ngày hợp đồng có hiệu lực cho đến hết ngày____ tháng______ năm________ [căn cứ tính chất và yêu cầu của gói thầu mà quy định thời hạn này]."
+  },
+  {
+   "ma": "E-ĐKC 5.4",
+   "noi_dung_mau": "Thời hạn hoàn trả bảo đảm thực hiện hợp đồng:_____ [ghi cụ thể thời hạn hoàn trả bảo đảm thực hiện hợp đồng sau khi Nhà thầu hoàn thành các nghĩa vụ hợp đồng, căn cứ tính chất và yêu cầu của gói thầu]."
+  },
+  {
+   "ma": "E-ĐKC 6.1",
+   "noi_dung_mau": "Danh sách nhà thầu phụ: [ghi danh sách nhà thầu phụ phù hợp với danh sách nhà thầu phụ nêu trong E-HSDT]."
+  },
+  {
+   "ma": "E-ĐKC 6.2",
+   "noi_dung_mau": "Giá trị công việc mà nhà thầu phụ thực hiện không vượt quá: ____ giá hợp đồng [Hệ thống trích xuất theo Mục 27.2 E-CDNT]."
+  },
+  {
+   "ma": "E-ĐKC 6.4",
+   "noi_dung_mau": "Nêu các yêu cầu cần thiết khác về nhà thầu phụ [ghi yêu cầu khác về nhà thầu phụ (nếu có)]."
+  },
+  {
+   "ma": "E-ĐKC 10.1",
+   "noi_dung_mau": "Loại hợp đồng:_____ [ghi loại hợp đồng theo kế hoạch lựa chọn nhà thầu được duyệt]."
+  },
+  {
+   "ma": "E-ĐKC 10.2",
+   "noi_dung_mau": "Giá hợp đồng: ___ [ghi “Cố định” đối với hợp đồng trọn gói, hợp đồng theo đơn giá cố định, hợp đồng theo thời gian hoặc “được trượt giá” đối với hợp đồng theo đơn giá điều chỉnh hoặc “theo kết quả đầu ra” đối với loại hợp đồng theo kết quả đầu ra hoặc “theo tỷ lệ phần trăm giá trị công trình xây dựng/hạng mục công trình” đối với loại hợp đồng theo tỷ lệ phần trăm phù hợp với loại hợp đồng nêu tại Mục 10.1 E-ĐKCT.] - Đối với hợp đồng hỗn hợp, giá hợp đồng đối với từng phần hợp đồng thực hiện theo loại hợp đồng áp dụng. - Trường hợp áp dụng loại hợp đồng theo đơn giá điều chỉnh, giá hợp đồng được tính trượt giá và thực hiện như sau: + Trượt giá hợp đồng được tính từ thời điểm phát sinh yếu tố làm thay đổi giá và chỉ áp dụng đối với khối lượng được thực hiện theo đúng tiến độ ghi trong hợp đồng hoặc tiến độ được điều chỉnh theo quy định tại Mục 18 E-ĐKC. Không tính trượt giá cho các khối lượng công việc trong hợp đồng tương ứng với số tiền đã tạm ứng hợp đồng; + Trượt giá hợp đồng trong thời gian thực hiện gói thầu nhằm phản ánh những thay đổi về chi phí nhân công, thiết bị, vật tư. Việc tính trượt giá hợp đồng sẽ được thực hiện theo công thức cụ thể______ [nêu rõ công thức tính trượt giá]. - Trường hợp áp dụng loại hợp đồng theo kết quả đầu ra: Chủ đầu tư đưa ra các nội dung để xác định giá trị thanh toán trên cơ sở kết quả đầu ra như sau: + Yêu cầu về chất lượng đầu ra và mức độ chất lượng có thể chấp nhận được; + Biện pháp kiểm tra, đánh giá, xác định mức độ đáp ứng về chất lượng của dịch vụ do nhà thầu cung cấp (ví dụ lấy mẫu phân tích); + Mức độ giảm trừ thanh toán hoặc tăng giá trị thanh toán theo kỳ thanh toán; + Các nội dung cần thiết khác. - Trường hợp áp dụng loại hợp đồng theo tỷ lệ phần trăm: Chủ đầu tư ghi công thức xác định giá hợp đồng. - Trường hợp áp dụng loại hợp đồng theo thời gian: Chủ đầu tư ghi công thức xác định giá hợp đồng."
+  },
+  {
+   "ma": "E-ĐKC 11",
+   "noi_dung_mau": "Điều chỉnh thuế:_______ [ghi “Được phép” hoặc “Không được phép” áp dụng điều chỉnh thuế. Trường hợp được phép áp dụng điều chỉnh thuế thì ghi: \"Trong quá trình thực hiện hợp đồng, trường hợp tại thời điểm thanh toán nếu chính sách về thuế có sự thay đổi (tăng hoặc giảm) và trong hợp đồng có quy định được điều chỉnh thuế, đồng thời Nhà thầu xuất trình được các tài liệu xác định rõ số thuế phát sinh thì khoản chênh lệch của chính sách về thuế sẽ được điều chỉnh theo quy định trong hợp đồng\"]."
+  },
+  {
+   "ma": "E-ĐKC 12.1",
+   "noi_dung_mau": "Tạm ứng:_______ [ghi số tiền tạm ứng, các chứng từ để tạm ứng, phương thức tạm ứng… phù hợp quy định của pháp luật. Trong trường hợp cần thiết, có thể yêu cầu Nhà thầu xuất trình bảo lãnh tiền tạm ứng theo Mẫu số 16 Chương VIII hoặc mẫu khác được Chủ đầu tư chấp thuận]."
+  },
+  {
+   "ma": "E-ĐKC 13.1",
+   "noi_dung_mau": "Phương thức thanh toán:_____ [căn cứ tính chất và yêu cầu của gói thầu mà quy định cụ thể nội dung này. Việc thanh toán cho Nhà thầu có thể quy định thanh toán bằng tiền mặt, chuyển khoản, số lần thanh toán là nhiều lần trong quá trình thực hiện hoặc thanh toán một lần khi hoàn thành hợp đồng. Thời hạn thanh toán có thể quy định thanh toán ngay hoặc trong vòng không quá một số ngày nhất định kể từ khi Nhà thầu xuất trình đầy đủ các chứng từ theo yêu cầu. Đồng thời, cần quy định cụ thể về chứng từ thanh toán phù hợp với quy định của pháp luật]."
+  },
+  {
+   "ma": "E-ĐKC 13.2",
+   "noi_dung_mau": "Giảm trừ thanh toán:______________ [ghi “có áp dụng” hoặc “không áp dụng”]. Trường hợp áp dụng thì phải dẫn chiếu tới phụ lục Hợp đồng về giảm trừ thanh toán."
+  },
+  {
+   "ma": "E-ĐKC 15",
+   "noi_dung_mau": "Căn cứ quy mô, tính chất và yêu cầu của gói thầu mà quy định cụ thể nội dung này theo một trong các cách thức sau: - Chỉ áp dụng phạt vi phạm hợp đồng. - Chỉ áp dụng bồi thường thiệt hại. - Vừa áp dụng phạt vi phạm hợp đồng vừa áp dụng bồi thường thiệt hại. 1. Phạt vi phạm hợp đồng :___ [ghi “Áp dụng” hoặc “Không áp dụng]. Trường hợp áp dụng phạt vi phạm hợp đồng thì quy định như sau: Trừ trường hợp bất khả kháng theo quy định tại Mục 16 E-ĐKC, nếu Nhà thầu không thực hiện một phần hay toàn bộ nội dung công việc theo đúng thời hạn đã nêu trong hợp đồng thì Chủ đầu tư có thể khấu trừ vào giá hợp đồng một khoản tiền phạt tương ứng với :_____%/tuần (hoặc ngày, tháng...) [ghi cụ thể mức khấu trừ là bao nhiêu % giá trị công việc chậm thực hiện] cho đến khi nội dung công việc đó được thực hiện. Chủ đầu tư sẽ khấu trừ đến ____ % [ghi mức phạt tối đa]. Khi đạt đến mức phạt tối đa, Chủ đầu tư có thể xem xét chấm dứt hợp đồng theo quy định tại Mục 19 E-ĐKC. Trường hợp không kịp thời khắc phục sai sót theo thông báo của Chủ đầu tư, Nhà thầu có trách nhiệm nộp tiền phạt thực hiện hợp đồng tương ứng với ____ % [ghi cụ thể tỷ lệ %] chi phí cần thiết để khắc phục sai sót. 2. Bồi thường thiệt hại:___ [ghi “Áp dụng” hoặc “Không áp dụng”]. Trường hợp áp dụng bồi thường thiệt hại thì quy định về bồi thường thiệt hại theo một trong các cách thức sau: - Bồi thường thiệt hại trên cơ sở toàn bộ thiệt hại thực tế; - Bồi thường thiệt hại trên cơ sở một mức xác định. Trong trường hợp này nêu rõ mức bồi thường, phương thức bồi thường… phù hợp với pháp luật dân sự."
+  },
+  {
+   "ma": "E-ĐKC 17.1(c)",
+   "noi_dung_mau": "Các nội dung khác về sửa đổi hợp đồng:_____ [nêu cụ thể các nội dung khác (nếu có)]."
+  },
+  {
+   "ma": "E-ĐKC 17.4",
+   "noi_dung_mau": "Trường hợp đề xuất giải pháp tiết kiệm chi phí được Chủ đầu tư chấp thuận và giúp giảm giá hợp đồng, Chủ đầu tư thanh toán cho Nhà thầu ___% [nêu tỷ lệ thanh toán, thường không quá 50%] giá trị giảm giá hợp đồng."
+  },
+  {
+   "ma": "E-ĐKC 18 (e)",
+   "noi_dung_mau": "Các trường hợp khác:___________[ghi các trường hợp khác (nếu có) phù hợp với quy định của pháp luật]"
+  },
+  {
+   "ma": "E-ĐKC 20.1",
+   "noi_dung_mau": "Chủ đầu tư thực hiện đánh giá chất lượng dịch vụ phi tư vấn theo nguyên tắc và cách thức như sau:________ [nêu cụ thể nguyên tắc và cách thức] Thời hạn trách nhiệm đối với sai sót:________ [nêu cụ thể thời gian]."
+  },
+  {
+   "ma": "E-ĐKC 21.2",
+   "noi_dung_mau": "Thời gian Nhà thầu thực hiện việc thay thế nhân sự:________ [ghi cụ thể thời gian là bao nhiêu ngày kể từ ngày nhận được yêu cầu thay thế nhân sự của Chủ đầu tư]."
+  },
+  {
+   "ma": "E-ĐKC 22.2",
+   "noi_dung_mau": "- Thời gian để tiến hành hòa giải:_______ [ghi số ngày tiến hành hòa giải tối đa]. - Giải quyết tranh chấp:_____ [ghi cụ thể thời gian và cơ chế xử lý tranh chấp căn cứ quy mô, tính chất của gói thầu. Trong đó cần nêu rõ thời gian gửi yêu cầu giải quyết tranh chấp, tổ chức giải quyết tranh chấp, chi phí cho việc giải quyết tranh chấp...]."
+  }
+ ],
+ "bang01": [
+  [
+   "Bảng số 01 (Webform trên Hệ thống) BẢNG TIÊU CHUẨN ĐÁNH GIÁ VỀ NĂNG LỰC VÀ KINH NGHIỆM"
+  ],
+  [
+   "Các tiêu chí năng lực và kinh nghiệm",
+   "Các yêu cầu cần tuân thủ",
+   "Tài liệu cần nộp"
+  ],
+  [
+   "TT",
+   "Mô tả",
+   "Yêu cầu",
+   "Nhà thầu độc lập",
+   "Nhà thầu liên danh",
+   "Tài liệu cần nộp"
+  ],
+  [
+   "TT",
+   "Mô tả",
+   "Yêu cầu",
+   "Nhà thầu độc lập",
+   "Tổng các thành viên liên danh",
+   "Từng thành viên liên danh",
+   ""
+  ],
+  [
+   "1",
+   "Lịch sử không hoàn thành hợp đồng do lỗi của nhà thầu",
+   "Từ ngày 01 tháng 01 năm ___(1) đến thời điểm đóng thầu, nhà thầu không có từ 02 hợp đồng trở lên (cung cấp dịch vụ phi tư vấn) không hoàn thành do lỗi của nhà thầu (2).",
+   "Phải thỏa mãn yêu cầu này",
+   "Không áp dụng",
+   "Phải thỏa mãn yêu cầu này",
+   "Mẫu số 07"
+  ],
+  [
+   "2",
+   "Thực hiện nghĩa vụ kê khai thuế và nộp thuế",
+   "Đã thực hiện nghĩa vụ kê khai thuế và nộp thuế(3) của năm tài chính gần nhất so với thời điểm đóng thầu.",
+   "Phải thỏa mãn yêu cầu này",
+   "Không áp dụng",
+   "Phải thỏa mãn yêu cầu này",
+   "Cam kết trong đơn dự thầu"
+  ],
+  [
+   "3",
+   "Doanh thu bình quân hằng năm (không bao gồm thuế VAT)(4)",
+   "Căn cứ vào tính chất, điều kiện cụ thể của gói thầu, chủ đầu tư yêu cầu về Doanh thu bình quân hằng năm hoặc không yêu cầu về Doanh thu bình quân hằng năm - Trường hợp không yêu cầu về Doanh thu bình quân hằng năm thì chọn “Không áp dụng”. - Trường hợp có yêu cầu về Doanh thu bình quân hằng năm thì chọn “Áp dụng” và quy định như sau: Doanh thu bình quân hằng năm (không bao gồm thuế VAT) của ___ (5)năm tài chính gần nhất so với thời điểm đóng thầu của nhà thầu có giá trị tối thiểu là ____(6)VND.",
+   "Phải thỏa mãn yêu cầu này",
+   "Phải thỏa mãn yêu cầu này",
+   "Không áp dụng",
+   "Mẫu số 08"
+  ],
+  [
+   "4",
+   "Kinh nghiệm cụ thể trong thực hiện hợp đồng tương tự",
+   "Căn cứ vào tính chất, điều kiện cụ thể của gói thầu, chủ đầu tư yêu cầu về kinh nghiệm thực hiện hợp đồng tương tự hoặc không yêu cầu về kinh nghiệm thực hiện hợp đồng tương tự. - Trường hợp không yêu cầu về kinh nghiệm thực hiện hợp đồng tương tự thì chọn “Không áp dụng”. - Trường hợp có yêu cầu về kinh nghiệm thực hiện hợp đồng tương tự thì chọn “Áp dụng” và quy định như sau: Nhà thầu đã hoàn thành(7) tối thiểu 01 hợp đồng tương tự với tư cách là nhà thầu chính (độc lập hoặc thành viên liên danh) hoặc nhà thầu phụ(8) trong khoảng thời gian kể từ ngày 01 tháng 01 năm ____(9) đến thời điểm đóng thầu Trong đó hợp đồng tương tự là: - Có tính chất tương tự:____(10); - Có quy mô (giá trị) tối thiểu:___ (11) VND. Trường hợp gói thầu có nhiều loại dịch vụ khác nhau thì việc đưa ra yêu cầu về hợp đồng tương tự được thực hiện theo Bảng Y.",
+   "Phải thỏa mãn yêu cầu này",
+   "Không áp dụng",
+   "Phải thỏa mãn yêu cầu (tương đương với phần công việc đảm nhận)",
+   "Mẫu số 05"
+  ]
+ ],
+ "bang02": [
+  [
+   "STT",
+   "Vị trí công việc",
+   "Số lượng",
+   "Kinh nghiệm trong các công việc tương tự",
+   "Chứng chỉ/trình độ chuyên môn(2)"
+  ],
+  [
+   "1",
+   "",
+   "",
+   "tối thiểu__năm hoặc tối thiểu___hợp đồng",
+   ""
+  ],
+  [
+   "2",
+   "",
+   "",
+   "tối thiểu__năm hoặc tối thiểu___hợp đồng",
+   ""
+  ],
+  [
+   "…",
+   "",
+   "",
+   "",
+   ""
+  ]
+ ],
+ "chuong4_bieu_mau": [
+  [
+   "STT",
+   "Biểu mẫu",
+   "Cách thức thực hiện",
+   "Trách nhiệm thực hiện"
+  ],
+  [
+   "STT",
+   "Biểu mẫu",
+   "Cách thức thực hiện",
+   "Chủ đầu tư",
+   "Nhà thầu"
+  ],
+  [
+   "1",
+   "Mẫu số 01A. Phạm vi cung cấp (áp dụng đối với loại hợp đồng trọn gói, hợp đồng theo kết quả đầu ra)",
+   "Webform",
+   "X",
+   ""
+  ],
+  [
+   "2",
+   "Mẫu số 01B. Phạm vi cung cấp (áp dụng đối với loại hợp đồng theo đơn giá cố định)",
+   "Webform",
+   "X",
+   ""
+  ],
+  [
+   "3",
+   "Mẫu số 01C. Phạm vi cung cấp (áp dụng đối với loại hợp đồng theo đơn giá điều chỉnh)",
+   "Webform",
+   "X",
+   ""
+  ],
+  [
+   "4",
+   "Mẫu số 01D. Phạm vi cung cấp (áp dụng đối với loại hợp đồng theo tỷ lệ phần trăm)",
+   "Webform",
+   "X",
+   ""
+  ],
+  [
+   "5",
+   "Mẫu số 01E. Phạm vi cung cấp (áp dụng đối với loại hợp đồng theo thời gian)",
+   "Webform",
+   "X",
+   ""
+  ],
+  [
+   "6",
+   "Mẫu số 01G. Phạm vi cung cấp (áp dụng đối với loại hợp đồng hỗn hợp)",
+   "Webform",
+   "X",
+   ""
+  ],
+  [
+   "7",
+   "Mẫu số 02. Đơn dự thầu",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "8",
+   "Mẫu số 03. Thỏa thuận liên danh",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "9",
+   "Mẫu số 04A. Bảo lãnh dự thầu (áp dụng trong trường hợp nhà thầu độc lập)",
+   "Scan đính kèm lên Hệ thống hoặc bảo lãnh điện tử",
+   "",
+   "X"
+  ],
+  [
+   "10",
+   "Mẫu số 04B. Bảo lãnh dự thầu (áp dụng trong trường hợp nhà thầu liên danh)",
+   "Scan đính kèm lên Hệ thống hoặc bảo lãnh điện tử",
+   "",
+   "X"
+  ],
+  [
+   "11",
+   "Mẫu số 05. Hợp đồng tương tự do nhà thầu thực hiện",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "12",
+   "Mẫu số 06A. Bảng đề xuất nhân sự chủ chốt",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "13",
+   "Mẫu số 06B. Bảng lý lịch chuyên môn của nhân sự chủ chốt",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "14",
+   "Mẫu số 06C. Bảng kinh nghiệm chuyên môn",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "15",
+   "Mẫu số 06D. Bảng kê khai thiết bị chủ yếu",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "16",
+   "Mẫu số 07. Hợp đồng cung cấp dịch vụ phi tư vấn không hoàn thành do lỗi của nhà thầu trong quá khứ",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "17",
+   "Mẫu số 08. Tình hình tài chính của nhà thầu",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "18",
+   "Mẫu số 09A. Phạm vi công việc sử dụng nhà thầu phụ",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "19",
+   "Mẫu số 09B. Danh sách các công ty con, công ty thành viên đảm nhận phần công việc của gói thầu",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "20",
+   "Mẫu số 10A. Bảng tiến độ thực hiện (áp dụng đối với loại hợp đồng trọn gói, hợp đồng theo kết quả đầu ra, hợp đồng theo đơn giá cố định, hợp đồng theo đơn giá điều chỉnh)",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "21",
+   "Mẫu số 10B. Bảng tiến độ thực hiện (áp dụng đối với loại hợp đồng theo tỷ lệ phần trăm)",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "22",
+   "Mẫu số 10C. Bảng tiến độ thực hiện (áp dụng đối với loại hợp đồng theo thời gian)",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "23",
+   "Mẫu số 10D. Bảng tiến độ thực hiện (áp dụng đối với loại hợp đồng hỗn hợp)",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "24",
+   "Mẫu số 11A. Bảng giá dự thầu (áp dụng đối với loại hợp đồng trọn gói, hợp đồng theo kết quả đầu ra)",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "25",
+   "Mẫu số 11B. Bảng giá dự thầu (áp dụng đối với loại hợp đồng theo đơn giá cố định)",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "26",
+   "Mẫu số 11C. Bảng giá dự thầu (áp dụng đối với loại hợp đồng theo đơn giá điều chỉnh)",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "27",
+   "Mẫu số 11D. Bảng giá dự thầu (áp dụng đối với loại hợp đồng theo tỷ lệ phần trăm)",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "28",
+   "Mẫu số 11E. Bảng giá dự thầu (áp dụng đối với loại hợp đồng theo thời gian)",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "29",
+   "Mẫu số 11G. Bảng giá dự thầu (áp dụng đối với loại hợp đồng hỗn hợp)",
+   "Webform",
+   "",
+   "X"
+  ],
+  [
+   "30",
+   "Mẫu số 12. Bảng kê khai dịch vụ được hưởng ưu đãi",
+   "Webform",
+   "",
+   "X"
+  ]
+ ],
+ "mau01a_cot": [
+  "STT",
+  "Danh mục dịch vụ",
+  "Mô tả dịch vụ(*)",
+  "Khối lượng mời thầu",
+  "Đơn vị tính",
+  "Địa điểm thực hiện dịch vụ",
+  "Ngày hoàn thành dịch vụ"
+ ],
+ "huong_dan_chuong3": [
+  "Mục 2. Tiêu chuẩn đánh giá về năng lực và kinh nghiệm",
+  "2.1. Tiêu chuẩn đánh giá về năng lực và kinh nghiệm",
+  "Tiêu chuẩn đánh giá năng lực và kinh nghiệm thực hiện theo quy định tại Bảng số 01 Chương này và được số hóa dưới dạng webform trên Hệ thống. Sử dụng tiêu chí đạt, không đạt để xây dựng tiêu chuẩn đánh giá về năng lực và kinh nghiệm, trong đó quy định mức yêu cầu tối thiểu để đánh giá là đạt đối với từng nội dung về năng lực và kinh nghiệm của nhà thầu, gồm: kinh nghiệm thực hiện các gói thầu tương tự; năng lực kỹ thuật: số lượng, trình độ chuyên môn của cán bộ chủ chốt, số lượng thiết bị chủ yếu có khả năng huy động để thực hiện gói thầu (nếu có yêu cầu); doanh thu bình quân hằng năm; việc thực hiện nghĩa vụ kê khai thuế, nộp thuế và các chỉ tiêu cần thiết khác để đánh giá về năng lực tài chính của nhà thầu.",
+  "Việc xác định mức độ yêu cầu cụ thể đối với từng tiêu chuẩn quy định tại Mục này căn cứ theo yêu cầu của từng gói thầu cụ thể. Nhà thầu được đánh giá đạt tất cả nội dung quy định tại Bảng số 01 thì đáp ứng yêu cầu về năng lực và kinh nghiệm. Năng lực và kinh nghiệm của nhà thầu phụ sẽ không được xem xét khi đánh giá E-HSDT của nhà thầu. Bản thân nhà thầu phải đáp ứng các tiêu chí đánh giá về năng lực và kinh nghiệm.",
+  "Không đưa ra yêu cầu nhà thầu đã từng thực hiện một hoặc nhiều hợp đồng trên một địa bàn cụ thể hoặc nhà thầu phải có kinh nghiệm cung cấp dịch vụ trên một địa bàn cụ thể như là tiêu chí để loại bỏ nhà thầu.",
+  "Trường hợp đồng tiền nêu trong các hợp đồng tương tự hoặc xác nhận thanh toán của Chủ đầu tư đối với những hợp đồng cung cấp dịch vụ phi tư vấn đã thực hiện hoặc tờ khai nộp thuế hoặc các tài liệu liên quan chứng minh năng lực, kinh nghiệm của nhà thầu không phải VND thì khi lập E-HSDT, nhà thầu phải quy đổi về VND để làm cơ sở đánh giá E-HSDT. Việc quy đổi được áp dụng tỷ giá quy đổi của……..[ghi căn cứ xác định tỷ giá quy đổi, thông thường áp dụng tỷ giá bán ra của một ngân hàng thương mại hoạt động tại Việt Nam] tại ngày ký hợp đồng tương tự đó.",
+  "Trường hợp nhà thầu tham dự thầu là công ty mẹ (ví dụ như Tổng công ty) có huy động công ty con, công ty thành viên thực hiện một phần công việc của gói thầu thì nhà thầu phải kê khai cụ thể phần công việc dành cho các công ty con, công ty thành viên theo Mẫu số 09B Chương IV. Việc đánh giá kinh nghiệm thực hiện hợp đồng tương tự căn cứ vào giá trị, khối lượng công việc do công ty mẹ, công ty con, công ty thành viên đảm nhiệm trong gói thầu.",
+  "Ghi chú:",
+  "(1) Ghi thời gian yêu cầu, thông thường là 03 năm trước năm có thời điểm đóng thầu. Ví dụ: từ ngày 01 tháng 01 năm 2022 đến thời điểm đóng thầu.",
+  "(2) Hợp đồng cung cấp dịch vụ phi tư vấn không hoàn thành do lỗi của nhà thầu bao gồm:",
+  "- Hợp đồng cung cấp dịch vụ phi tư vấn bị Chủ đầu tư kết luận nhà thầu không hoàn thành và nhà thầu không phản đối;",
+  "- Hợp đồng cung cấp dịch vụ phi tư vấn bị Chủ đầu tư kết luận nhà thầu không hoàn thành, không được nhà thầu chấp thuận nhưng đã được trọng tài hoặc Tòa án kết luận theo hướng bất lợi cho nhà thầu.",
+  "Các hợp đồng cung cấp dịch vụ phi tư vấn không hoàn thành không bao gồm các hợp đồng mà quyết định của Chủ đầu tư đã bị bác bỏ bằng cơ chế giải quyết tranh chấp. Việc xác định hợp đồng không hoàn thành phải dựa trên tất cả những thông tin về tranh chấp hoặc kiện tụng được giải quyết theo quy định của cơ chế giải quyết tranh chấp của hợp đồng tương ứng và khi mà nhà thầu đã hết tất cả các cơ hội có thể khiếu nại. Đối với các hợp đồng chậm tiến độ do lỗi của nhà thầu nhưng vẫn hoàn thành hợp đồng thì không được coi là hợp đồng không hoàn thành.",
+  "Đối với nhà thầu liên danh mà chỉ có một hoặc một số thành viên trong liên danh vi phạm và bị cấm tham gia hoạt động đấu thầu theo quy định tại khoản 1 Điều 133 của Nghị định số 214/2025/NĐ-CP thì thành viên liên danh còn lại không bị coi là không hoàn thành hợp đồng do lỗi của nhà thầu. Trường hợp một hoặc một số thành viên liên danh vi phạm hợp đồng, không còn năng lực để tiếp tục thực hiện hợp đồng, làm ảnh hưởng nghiêm trọng đến tiến độ, chất lượng, hiệu quả của gói thầu thì chỉ một hoặc một số thành viên liên danh vi phạm hợp đồng bị coi là không hoàn thành hợp đồng, thành viên còn lại không bị coi là không hoàn thành hợp đồng do lỗi của nhà thầu.",
+  "(3) Nhà thầu cung cấp tài liệu chứng minh đã thực hiện nghĩa vụ kê khai thuế và nộp thuế thu nhập doanh nghiệp (thuế thu nhập cá nhân đối với nhà thầu là hộ kinh doanh) của năm tài chính gần nhất so với thời điểm đóng thầu (đối với trường hợp Hệ thống chưa cập nhật thông tin về nghĩa vụ nộp thuế) để đối chiếu khi được mời vào đối chiếu tài liệu. Nghĩa vụ kê khai thuế và nộp thuế phải được thực hiện trước thời điểm đóng thầu. Nghĩa vụ nộp thuế là nộp thuế với giá trị thuế tương ứng với thuế suất, thu nhập chịu thuế, doanh thu tính thuế nhà thầu kê khai trên Hệ thống thuế điện tử (số thuế đã nộp tương ứng với số thuế phải nộp); trường hợp được chậm nộp thuế, miễn thuế, giảm thuế theo chính sách của Nhà nước thì thực hiện theo quy định này. Trường hợp Hệ thống chưa trích xuất tự động thông tin về nghĩa vụ nộp thuế của nhà thầu thì nhà thầu nộp các tài liệu như sau:",
+  "- Tờ khai thuế (hoặc thông báo nộp tiền của cơ quan thuế đối với hộ kinh doanh) và Giấy nộp tiền có xác nhận của cơ quan thuế được in từ Hệ thống thuế điện tử hoặc",
+  "- Tờ khai thuế (hoặc thông báo nộp tiền của cơ quan thuế đối với hộ kinh doanh) và xác nhận của cơ quan thuế về việc thực hiện nghĩa vụ thuế.",
+  "Trường hợp thời điểm đóng thầu sau ngày kết thúc năm tài chính của nhà thầu (năm Y) và trước hoặc trong ngày cuối cùng của tháng thứ 3 tính từ ngày kết thúc năm Y, yêu cầu đã thực hiện nghĩa vụ kê khai thuế và nộp thuế áp dụng đối với năm tài chính trước năm Y (năm Y-1)",
+  "(Ví dụ: Thời điểm đóng thầu là ngày 20/3/2024, năm tài chính của nhà thầu kết thúc vào ngày 31/12 thì nhà thầu phải chứng minh đã thực hiện nghĩa vụ kê khai thuế và nộp thuế của năm 2022).",
+  "(4) Đối với doanh nghiệp khởi nghiệp sáng tạo trong nước khi chào thầu sản phẩm đổi mới sáng tạo là dịch vụ phi tư vấn của doanh nghiệp đó theo quy định tại khoản 4 Điều 6 của Nghị định số 214/2025/NĐ-CP không phải đáp ứng tiêu chí này trong thời hạn 06 năm kể từ khi sản phẩm lần đầu được sản xuất và đủ điều kiện để đưa ra thị trường. Nhà thầu trong nước thuộc trường hợp quy định tại điểm g khoản 1 Điều 10 của Luật Đấu thầu khi chào thầu dịch vụ do nhà thầu đó cung cấp không phải đáp ứng tiêu chí này trong thời hạn 05 năm kể từ khi được cơ quan có thẩm quyền công nhận. Trường hợp sau khi đánh giá mà nhà thầu không đáp ứng về đối tượng được hưởng ưu đãi thì Chủ đầu tư yêu cầu nhà thầu cung cấp tài liệu chứng minh đáp ứng yêu cầu về doanh thu.",
+  "(5) Ghi thời gian yêu cầu, thông thường từ 03 đến 05 năm trước năm có thời điểm đóng thầu. Trường hợp nhà thầu có số năm thành lập ít hơn số năm theo yêu cầu của E-HSMT thì doanh thu bình quân hằng năm (không bao gồm thuế VAT) được tính trên số năm mà nhà thầu thành lập. Trong trường hợp này, nếu doanh thu bình quân hằng năm (không bao gồm thuế VAT) của nhà thầu đáp ứng yêu cầu về giá trị của E-HSMT thì nhà thầu vẫn được đánh giá tiếp mà không bị loại.",
+  "Đối với nhà thầu là hộ kinh doanh, không bắt buộc phải nộp báo cáo tài chính nhưng nhà thầu phải cung cấp tài liệu chứng minh doanh thu tương ứng với nghĩa vụ thuế.",
+  "Trường hợp thời điểm đóng thầu sau ngày kết thúc năm tài chính của nhà thầu (năm Y) và trước hoặc trong ngày cuối cùng của tháng thứ 3 tính từ ngày kết thúc năm Y, yêu cầu về nộp báo cáo tài chính áp dụng đối với các năm trước của năm Y (năm Y-1; Y-2…).",
+  "Ví dụ 1: Thời điểm đóng thầu là vào ngày 20/3/2024, năm tài chính của nhà thầu kết thúc vào ngày 31/12 và E-HSMT yêu cầu nhà thầu nộp báo cáo tài chính của 03 năm gần nhất thì nhà thầu phải nộp báo cáo tài chính của các năm 2020, 2021, 2022).",
+  "Ví dụ 2: Doanh thu bình quân hằng năm (không bao gồm thuế VAT) của 03 năm tài chính gần nhất so với thời điểm đóng thầu. Trong trường hợp này, thời điểm đóng thầu là ngày 15/11/2024 thì nhà thầu phải nộp báo cáo tài chính của các năm 2021, 2022, 2023. Nhà thầu được thành lập vào năm 2022 nhưng doanh thu trung bình của năm 2022 và năm 2023 đáp ứng yêu cầu thì nhà thầu được tiếp tục đánh giá.",
+  "(6) Cách tính toán thông thường về mức yêu cầu doanh thu bình quân hằng năm (không bao gồm thuế VAT):",
+  "a) Trường hợp thời gian thực hiện gói thầu từ 12 tháng trở lên thì cách tính doanh thu như sau:",
+  "Yêu cầu tối thiểu về mức doanh thu bình quân hằng năm (không bao gồm thuế VAT) = [(Giá gói thầu – giá trị thuế VAT)/thời gian thực hiện gói thầu theo năm] x k. Thông thường yêu cầu hệ số “k” trong công thức này là từ 1 đến 1,5.",
+  "b) Trường hợp thời gian thực hiện gói thầu dưới 12 tháng thì cách tính doanh thu như sau:",
+  "Yêu cầu tối thiểu về mức doanh thu bình quân hằng năm (không bao gồm thuế VAT) = (Giá gói thầu – giá trị thuế VAT) x k. Thông thường yêu cầu hệ số “k” trong công thức này là 1,0.",
+  "Đối với gói thầu bảo hiểm thì có thể đưa ra yêu cầu về doanh thu bình quân hằng năm cao hơn so với cách tính theo công thức nêu trên nhưng phải bảo đảm không được làm hạn chế sự tham gia của nhà thầu.",
+  "(7) Đối với các hợp đồng mà nhà thầu đã tham gia với tư cách là thành viên liên danh hoặc nhà thầu phụ thì chỉ tính giá trị phần việc do nhà thầu thực hiện.",
+  "(8) Đối với các hợp đồng mà Chủ đầu tư, tổ chuyên gia có bằng chứng cho thấy nhà thầu đã thực hiện với tư cách nhà thầu phụ do được chuyển nhượng thầu bất hợp pháp, vi phạm quy định tại khoản 8 Điều 16 của Luật Đấu thầu thì hợp đồng này sẽ không được xem xét, đánh giá.",
+  "(9) Ghi thời gian yêu cầu, thông thường là từ 03 đến 05 năm trước năm có thời điểm đóng thầu. Ví dụ: từ ngày 01 tháng 01 năm 2019 đến thời điểm đóng thầu.",
+  "(10) Chủ đầu tư, tổ chuyên gia căn cứ vào nội dung, phạm vi công việc của gói thầu đang xét để đưa ra yêu cầu về tính chất của hợp đồng tương tự. Trường hợp gói thầu có nhiều hạng mục thì có thể chỉ quy định về tính chất tương tự cho các hạng mục chính của gói thầu.",
+  "(11) Quy mô của Hợp đồng tương tự:",
+  "Trường hợp gói thầu có nhiều hạng mục công việc thì phải ghi giá trị tương ứng của từng hạng mục công việc để làm cơ sở đánh giá kinh nghiệm thực hiện hợp đồng tương tự của nhà thầu.",
+  "Trường hợp gói thầu bao gồm nhiều hạng mục công việc khác nhau thì tùy theo tính chất, quy mô gói thầu, Chủ đầu tư, tổ chuyên gia đưa ra yêu cầu về quy mô tương tự trên cơ sở các hạng mục chính của gói thầu (phải nêu rõ các hạng mục chính) hoặc yêu cầu về quy mô tương tự trên cơ sở tất cả các hạng mục của gói thầu, trong đó ghi quy mô yêu cầu đối với mỗi hạng mục chính hoặc mỗi hạng mục công việc.",
+  "Quy mô của hợp đồng tương tự thông thường khoảng 30% giá trị của gói thầu đang xét (hoặc 30% tổng giá trị của các hạng mục chính trong trường hợp gói thầu nhiều hạng mục công việc khác nhau và Chủ đầu tư yêu cầu quy mô trên cơ sở các hạng mục chính của gói thầu); đối với các công việc đặc thù hoặc ở các địa phương mà năng lực của nhà thầu trên địa bàn còn hạn chế hoặc mua sắm tập trung hoặc gói thầu có khối lượng mời thầu lớn thì có thể điều chỉnh giảm yêu cầu về quy mô của hợp đồng tương tự xuống trong khoảng 20% giá trị của gói thầu đang xét (hoặc 20% tổng giá trị của các hạng mục chính trong trường hợp gói thầu nhiều hạng mục công việc khác nhau và Chủ đầu tư yêu cầu quy mô trên cơ sở các hạng mục chính của gói thầu).Việc đánh giá về quy mô của hợp đồng tương tự căn cứ vào giá trị hoàn thành, được nghiệm thu như sau:",
+  "(i) Có ít nhất 01 hợp đồng hoàn thành cung cấp đầy đủ các hạng mục tương tự có giá trị đáp ứng tối thiểu là đáp ứng tối thiểu 30% (hoặc 20% trong trường hợp gói thầu có công việc đặc thù hoặc ở các địa phương mà năng lực của nhà thầu trên địa bàn còn hạn chế hoặc mua sắm tập trung hoặc gói thầu có khối lượng mời thầu lớn) giá trị của gói thầu đang xét (hoặc tổng giá trị của các hạng mục chính trong trường hợp gói thầu nhiều hạng mục công việc khác nhau và Chủ đầu tư yêu cầu quy mô trên cơ sở các hạng mục chính của gói thầu), trong đó từng hạng mục tương tự trong hợp đồng không cần có giá trị đáp ứng 30% (hoặc 20% trong trường hợp gói thầu có công việc đặc thù hoặc ở các địa phương mà năng lực của nhà thầu trên địa bàn còn hạn chế hoặc mua sắm tập trung hoặc gói thầu có khối lượng mời thầu lớn) giá trị tương ứng của hạng mục đó trong gói thầu (hoặc giá trị tương ứng của từng hạng mục chính trong trường hợp gói thầu nhiều hạng mục công việc khác nhau và Chủ đầu tư yêu cầu quy mô trên cơ sở các hạng mục chính của gói thầu); hoặc",
+  "(ii) Có các hạng mục công việc tương tự đã thực hiện trong các hợp đồng khác nhau (hợp đồng có thể đã hoàn thành hoặc đang thực hiện, chưa nghiệm thu, thanh lý) hoặc trong một hợp đồng (hợp đồng chưa hoàn thành) và bảo đảm tổng giá trị của từng hạng mục công việc tương tự đã thực hiện đáp ứng tối thiểu 30% (hoặc 20% trong trường hợp gói thầu có công việc đặc thù hoặc ở các địa phương mà năng lực của nhà thầu trên địa bàn còn hạn chế hoặc mua sắm tập trung hoặc gói thầu có khối lượng mời thầu lớn) giá trị của từng hạng mục công việc tương ứng trong gói thầu đang xét (hoặc giá trị của từng hạng mục chính tương ứng trong trường hợp gói thầu nhiều hạng mục công việc khác nhau và Chủ đầu tư yêu cầu quy mô trên cơ sở các hạng mục chính của gói thầu) và tổng giá trị các hạng mục đã thực hiện phải đáp ứng tối thiểu 30% (hoặc 20% trong trường hợp gói thầu có công việc đặc thù hoặc ở các địa phương mà năng lực của nhà thầu trên địa bàn còn hạn chế hoặc mua sắm tập trung hoặc gói thầu có khối lượng mời thầu lớn) giá trị của gói thầu đang xét (hoặc tổng giá trị của các hạng mục chính trong trường hợp gói thầu nhiều hạng mục công việc khác nhau và Chủ đầu tư yêu cầu quy mô trên cơ sở các hạng mục chính của gói thầu). Được cộng gộp giá trị của hạng mục tương tự trong các hợp đồng khác nhau để xác định tổng giá trị hạng mục tương tự đáp ứng yêu cầu mà không yêu cầu giá trị của hạng mục tương tự trong mỗi hợp đồng phải đáp ứng tối thiểu 30% (hoặc 20% trong trường hợp gói thầu có công việc đặc thù hoặc ở các địa phương mà năng lực của nhà thầu trên địa bàn còn hạn chế hoặc mua sắm tập trung hoặc gói thầu có khối lượng mời thầu lớn) giá trị hạng mục của gói thầu đang xét (hoặc giá trị của hạng mục chính trong trường hợp gói thầu nhiều hạng mục công việc khác nhau và Chủ đầu tư yêu cầu quy mô trên cơ sở các hạng mục chính của gói thầu).",
+  "Trong đó:",
+  "+ Hạng mục công việc đã thực hiện là một phần hoặc toàn bộ khối lượng công việc trong hạng mục đã được nghiệm thu trong khoảng thời gian quy định mà không xét đến thời gian ký kết hợp đồng. Thời điểm xác nhận hạng mục công việc đã thực hiện để xác định hạng mục công việc tương tự là thời điểm nghiệm thu công việc, không căn cứ vào thời điểm ký kết hợp đồng.",
+  "+ Hợp đồng hoàn thành là hợp đồng có toàn bộ công việc đã được nghiệm thu hoặc hợp đồng đã được thanh lý. Thời điểm xác nhận hợp đồng hoàn thành để xác định hợp đồng tương tự là thời điểm nghiệm thu công việc, không căn cứ vào thời điểm ký kết hợp đồng.",
+  "Đối với gói thầu phi tư vấn có tính chất công việc lặp lại theo chu kỳ qua các năm dẫn đến thời gian thực hiện hợp đồng kéo dài thì giá trị hợp đồng tương tự được xác định khoảng 30% (hoặc 20% trong trường hợp gói thầu có công việc đặc thù hoặc ở các địa phương mà năng lực của nhà thầu trên địa bàn còn hạn chế hoặc gói thầu có khối lượng mời thầu lớn) giá trị của phần công việc tính theo 01 chu kỳ (01 năm) mà không tính theo tổng giá trị gói thầu qua các năm. Trong trường hợp này, việc đánh giá về quy mô, tính chất của hợp đồng tương tự cũng được xét theo 01 chu kỳ (01 năm) tương ứng.",
+  "Nhà thầu trong nước thuộc trường hợp quy định tại điểm g khoản 1 Điều 10 của Luật Đấu thầu khi chào thầu dịch vụ do nhà thầu đó cung cấp không phải đáp ứng tiêu chí này trong thời hạn 05 năm kể từ khi được cơ quan có thẩm quyền công nhận.",
+  "Ví dụ 1: Gói thầu đang xét là gói thầu thuê dịch vụ dọn vệ sinh tòa nhà trong 04 năm với giá trị 8.800.000.000 đồng thì E-HSMT có thể yêu cầu về giá trị của hợp đồng tương tự trong 01 chu kỳ (01 năm) là 660.000.000 đồng. Trong cả 02 trường hợp sau đây, nhà thầu X đều được đánh giá là đáp ứng yêu cầu về giá trị hợp đồng tương tự của gói thầu này:",
+  "- Nhà thầu X có hợp đồng dọn vệ sinh tòa nhà trong 48 tháng với Chủ đầu tư A (đang trong quá trình thực hiện, chưa hoàn thành, chưa được thanh lý), nhưng tính đến thời điểm tham dự thầu, nhà thầu X đã thực hiện được 16 tháng, trong đó giá trị công việc đã được nghiệm thu 12 tháng đầu là 660.000.000 đồng;",
+  "- Nhà thầu X có hợp đồng hoàn thành N1 dọn vệ sinh tòa nhà, thời gian thực hiện hợp đồng trong 06 tháng với giá trị là 300.000.000 đồng; hợp đồng N2 dọn vệ sinh tòa nhà, thời gian thực hiện hợp đồng trong 24 tháng với giá trị là 800.000.000 đồng, trong đó giá trị công việc đã được nghiệm thu 12 tháng đầu là 400.000.000 đồng. Như vậy, tổng giá trị hạng mục dọn vệ sinh tòa nhà của nhà thầu X là 700.000.000 đồng.",
+  "Ví dụ 2: Gói thầu đang xét là gói thầu cung cấp dịch vụ giặt là, giá gói thầu là 10 tỷ đồng, thời gian thực hiện là 06 tháng yêu cầu hợp đồng tương tự có giá trị 30% là 03 tỷ đồng. Nhà thầu X có hợp đồng A (chưa hoàn thành, chưa được thanh lý) có giá trị công việc cung cấp dịch vụ giặt là (đã được nghiệm thu) là 02 tỷ đồng; hợp đồng B (chưa hoàn thành, chưa được thanh lý) có giá trị công việc cung cấp dịch vụ giặt là (đã được nghiệm thu) là 01 tỷ đồng thì nhà thầu X được đánh giá là đáp ứng yêu cầu về giá trị hợp đồng tương tự của gói thầu này.",
+  "Ví dụ 3: Gói thầu đang xét là gói thầu cung cấp dịch vụ gồm 02 hạng mục công việc khác nhau (N1, N2) với giá gói thầu là 07 tỷ đồng (trong đó, hạng mục N1 giá trị 04 tỷ đồng; hạng mục N2 giá trị 03 tỷ đồng), thời gian thực hiện 60 ngày, yêu cầu hợp đồng tương tự có giá trị 30% là 2,1 tỷ đồng. Trong cả 02 trường hợp sau đây, nhà thầu X đều được đánh giá là đáp ứng yêu cầu về giá trị hợp đồng tương tự của gói thầu này:",
+  "- Nhà thầu X có 1 hợp đồng đã hoàn thành có đầy đủ 02 hạng mục N1, N2 và tổng giá trị 02 hạng mục N1, N2 là 2,5 tỷ đồng.",
+  "- Nhà thầu X có các hợp đồng sau:",
+  "+ Hợp đồng A (chưa hoàn thành, chưa được thanh lý) có giá trị công việc N1 (đã được nghiệm thu) là 0,5 tỷ đồng; hợp đồng B (chưa hoàn thành, chưa được thanh lý) có giá trị công việc N1 (đã được nghiệm thu) là 0,8 tỷ đồng, tổng giá trị hạng mục công việc N1 đã được nghiệm thu là 1,3 tỷ đồng, lớn hơn yêu cầu hạng mục N1 (30% x 04 tỷ đồng).",
+  "+ Hợp đồng C (chưa hoàn thành, chưa được thanh lý) có giá trị công việc N2 (đã được nghiệm thu) là 0,6 tỷ đồng; hợp đồng D (chưa hoàn thành, chưa được thanh lý) có giá trị công việc N2 (đã được nghiệm thu) là 0,5 tỷ đồng. Như vậy, tổng giá trị hạng mục công việc N2 là 1,1 tỷ đồng, lớn hơn yêu cầu hạng mục N2 (30% x 03 tỷ đồng).",
+  "Bảng X (Webform trên Hệ thống)",
+  "BẢNG TIÊU CHUẨN ĐÁNH GIÁ VỀ NĂNG LỰC TÀI CHÍNH VÀ KINH NGHIỆM",
+  "(Áp dụng đối với gói thầu cung cấp dịch vụ phi tư vấn chia thành nhiều phần)",
+  "Đối với các nội dung lịch sử không hoàn thành hợp đồng do lỗi của nhà thầu, thực hiện nghĩa vụ kê khai thuế và nộp thuế áp dụng theo quy định tại Bảng số 01 Chương này.",
+  "Đối với gói thầu áp dụng chào hàng cạnh tranh, không yêu cầu về năng lực, kinh nghiệm theo quy định của Mục này nhưng nhà thầu tham dự thầu phải cam kết có đủ năng lực, kinh nghiệm để thực hiện gói thầu (nội dung về cam kết được thực hiện cùng với đơn dự thầu khi nhà thầu nộp E-HSDT), trong trường hợp này, nhà thầu không phải cung cấp tài liệu chứng minh năng lực, kinh nghiệm.",
+  "Ghi chú:",
+  "(5) Trường hợp không yêu cầu về doanh thu thì bỏ nội dung này. Trường hợp có yêu cầu về doanh thu và nhà thầu tham dự nhiều phần, việc đánh giá về doanh thu căn cứ trên tổng giá trị doanh thu bình quân yêu cầu đối với các phần mà nhà thầu tham dự. Trường hợp nhà thầu tham dự 01 phần thì chỉ cần đáp ứng yêu cầu doanh thu của phần đó.",
+  "(6), (7) Trường hợp nhà thầu tham dự nhiều phần, việc đánh giá về hợp đồng tương tự tương ứng với từng phần mà nhà thầu tham dự, nhà thầu không phải đáp ứng tổng quy mô hợp đồng tương tự đối với các phần mà nhà thầu tham dự.",
+  "Bảng Y (Webform trên Hệ thống)",
+  "BẢNG YÊU CẦU VỀ HỢP ĐỒNG TƯƠNG TỰ",
+  "(Áp dụng đối với gói thầu có nhiều hạng mục dịch vụ)",
+  "Ghi chú:",
+  "Giá trị tại cột này được Chủ đầu tư xác định theo nguyên tắc nêu tại ghi chú số (10), (11) Bảng số 01 Chương này.",
+  "2.2. Tiêu chuẩn đánh giá về nhân sự chủ chốt và thiết bị chủ yếu:",
+  "a) Nhân sự chủ chốt:",
+  "Không yêu cầu về nhân sự chủ chốt đối với gói thầu dịch vụ phi tư vấn không đòi hỏi nhân sự có chuyên môn cao, trừ trường hợp cần lao động có trình độ cao, lao động lành nghề thực hiện công việc đặc thù. Trường hợp dịch vụ phi tư vấn có yếu tố đặc thù, phức tạp cần thiết phải có nhân sự có trình độ cao, lao động lành nghề, nhiều kinh nghiệm đảm nhận thì có thể đưa ra yêu cầu về huy động nhân sự chủ chốt để thực hiện các công việc đặc thù, phức tạp này. Ngoài ra, không yêu cầu nhân sự chủ chốt là lao động phổ thông.",
+  "Trường hợp E-HSMT có yêu cầu về nhân sự chủ chốt thì nhà thầu phải chứng minh khả năng huy động các nhân sự chủ chốt đã đề xuất. Nhân sự chủ chốt có thể thuộc biên chế của nhà thầu hoặc do nhà thầu huy động.",
+  "Trường hợp nhân sự chủ chốt mà nhà thầu kê khai trong E-HSDT không đáp ứng yêu cầu hoặc không chứng minh được khả năng huy động nhân sự (bao gồm cả trường hợp nhân sự chủ chốt đã huy động cho hợp đồng khác có thời gian làm việc trùng với thời gian thực hiện gói thầu này), Chủ đầu tư cho phép nhà thầu bổ sung, thay thế. Nhà thầu chỉ được phép bổ sung, thay thế một lần đối với từng vị trí nhân sự chủ chốt trong một khoảng thời gian phù hợp nhưng không ít hơn 03 ngày làm việc. Trường hợp nhà thầu không có nhân sự chủ chốt thay thế đáp ứng yêu cầu của E-HSMT thì nhà thầu bị loại. Trường hợp nhà thầu cố ý kê khai nhân sự chủ chốt không trung thực trong E-HSDT nhằm làm sai lệch kết quả lựa chọn nhà thầu thì nhà thầu không được thay thế nhân sự khác, E-HSDT của nhà thầu bị loại và nhà thầu sẽ bị coi là gian lận theo quy định tại điểm b khoản 4 Điều 16 của Luật Đấu thầu và bị xử lý theo quy định tại khoản 1 Điều 133 của Nghị định số 214/2025/NĐ-CP.",
+  "Yêu cầu về nhân sự chủ chốt được số hóa dưới dạng Webform trên Hệ thống. Kinh nghiệm trong các công việc tương tự được thể hiện ở số năm tối thiểu nhân sự thực hiện các công việc tương tự hoặc số hợp đồng tối thiểu trong các công việc tương tự. Số năm kinh nghiệm của nhân sự chủ chốt được tính từ thời điểm nhân sự bắt đầu thực hiện công việc tương tự đó đến thời điểm đóng thầu. Nhà thầu phải cung cấp thông tin chi tiết về các nhân sự chủ chốt được đề xuất theo các Mẫu số 06A, 06B và 06C Chương IV để chứng minh rằng mình có đầy đủ nhân sự cho các vị trí chủ chốt đáp ứng những yêu cầu sau đây:",
+  "Bảng số 02: Yêu cầu về nhân sự chủ chốt (Webform trên Hệ thống)(1)",
+  "Ghi chú:",
+  "(1) Trường hợp gói thầu không có yêu cầu về nhân sự chủ chốt thì Chủ đầu tư không nhập Bảng này.",
+  "(2) Chỉ quy định trong trường hợp pháp luật quản lý ngành, lĩnh vực có yêu cầu về bằng cấp/chứng chỉ chuyên môn.",
+  "b) Thiết bị chủ yếu dự kiến huy động để thực hiện gói thầu:",
+  "Căn cứ vào quy mô, tính chất của gói thầu, Chủ đầu tư đưa ra yêu cầu về thiết bị chủ yếu dự kiến huy động và số lượng để thực hiện gói thầu cho phù hợp. Chỉ quy định về thiết bị chủ yếu đối với các thiết bị đặc chủng, đặc thù bắt buộc phải có để triển khai thực hiện gói thầu.Thiết bị chủ yếu có thể thuộc sở hữu của nhà thầu hoặc do nhà thầu huy động.",
+  "Trường hợp thiết bị chủ yếu mà nhà thầu kê khai trong E-HSDT không đáp ứng yêu cầu hoặc không chứng minh được khả năng huy động thiết bị (bao gồm cả trường hợp thiết bị đã huy động cho hợp đồng khác có thời gian làm việc trùng với thời gian thực hiện gói thầu này), Chủ đầu tư cho phép nhà thầu bổ sung, thay thế. Nhà thầu chỉ được phép bổ sung, thay thế một lần đối với từng thiết bị chủ yếu trong thời hạn phù hợp nhưng không ít hơn 03 ngày làm việc. Trường hợp nhà thầu không có thiết bị thay thế đáp ứng yêu cầu của E-HSMT thì nhà thầu bị loại. Trường hợp nhà thầu cố ý kê khai thiết bị chủ yếu không trung thực trong E-HSDT nhằm làm sai lệch kết quả lựa chọn nhà thầu thì nhà thầu không được thay thế thiết bị khác, E-HSDT của nhà thầu bị loại và nhà thầu sẽ bị coi là gian lận theo quy định tại điểm b khoản 4 Điều 16 của Luật Đấu thầu và bị xử lý theo quy định tại khoản 1 Điều 133 của Nghị định số 214/2025/NĐ-CP.",
+  "Yêu cầu về thiết bị chủ yếu được số hóa dưới dạng Webform trên Hệ thống. Nhà thầu phải cung cấp thông tin chi tiết về các thiết bị chủ yếu được đề xuất theo Mẫu số 06D Chương IV để chứng minh rằng mình có đầy đủ thiết bị đáp ứng những yêu cầu sau đây:",
+  "Bảng số 03: Yêu cầu về thiết bị chủ yếu (Webform trên Hệ thống)",
+  "c) Trường hợp nhà thầu trúng thầu và ký kết hợp đồng, nhà thầu có nghĩa vụ huy động nhân sự chủ chốt, thiết bị chủ yếu như đã đề xuất ban đầu hoặc đề xuất thay đổi theo quy định tại Mục này. Trường hợp không huy động được nhân sự chủ chốt, thiết bị chủ yếu, nhà thầu bị phạt hợp đồng.",
+  "Mục 3. Tiêu chuẩn đánh giá về kỹ thuật",
+  "Sử dụng tiêu chí đạt/không đạt hoặc phương pháp chấm điểm để xây dựng tiêu chuẩn đánh giá về kỹ thuật.",
+  "Việc xây dựng tiêu chuẩn đánh giá về kỹ thuật dựa trên yêu cầu về các sản phẩm đầu ra được nêu tại Chương V, thông tin về kết quả thực hiện hợp đồng của nhà thầu theo quy định tại Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP và các yêu cầu khác nêu trong E-HSMT. Căn cứ vào từng gói thầu cụ thể, khi lập E-HSMT, Chủ đầu tư phải cụ thể hóa các tiêu chí làm cơ sở đánh giá về kỹ thuật bao gồm:",
+  "- Tính hiệu quả của việc cung cấp dịch vụ;",
+  "- Mức độ hiểu biết về tính chất và mục đích công việc;",
+  "- Tính hợp lý và khả thi của kế hoạch, các giải pháp kỹ thuật, biện pháp tổ chức cung cấp dịch vụ;",
+  "- Mức độ đáp ứng hệ thống đảm bảo chất lượng và phương pháp thực hiện;",
+  "- Mức độ đáp ứng các yêu cầu về tiêu chuẩn thực hiện dịch vụ;",
+  "- Tiến độ thực hiện gói thầu đáp ứng yêu cầu của E-HSMT;",
+  "- Bảo đảm điều kiện vệ sinh môi trường và các điều kiện khác như phòng cháy, chữa cháy, an toàn lao động (nếu có);",
+  "- Mức độ đáp ứng các yêu cầu về bảo hành, bảo trì (nếu có);",
+  "- Tiêu chí đấu thầu bền vững (nếu có): các yếu tố thân thiện môi trường (nếu có) như: việc sử dụng các vật tư, vật liệu; biện pháp tổ chức thi công; dây chuyền, công nghệ thi công và các yếu tố khác (nếu có);",
+  "- Thông tin về kết quả thực hiện hợp đồng của nhà thầu theo quy định tại Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP;",
+  "- Trường hợp cần yêu cầu về xuất xứ vật tư, vật liệu, nguyên liệu phục vụ cho gói thầu dịch vụ phi tư vấn thì Chủ đầu tư quy định xuất xứ của vật tư, vật liệu, nguyên liệu theo nhóm nước, vùng lãnh thổ quy định tại khoản 2 Điều 44 của Luật Đấu thầu. Nhà thầu phải chào vật tư, vật liệu, nguyên liệu theo đúng yêu cầu về xuất xứ hoặc xuất xứ Việt Nam, kể cả trong trường hợp xuất xứ theo nhóm nước, vùng lãnh thổ mà Chủ đầu tư yêu cầu không có Việt Nam; nhà thầu chào vật tư, vật liệu, nguyên liệu không có xuất xứ theo yêu cầu của E-HSMT hoặc không phải xuất xứ Việt Nam thì sẽ bị loại. Trường hợp Chủ đầu tư yêu cầu nhà thầu chào vật tư, vật liệu, nguyên liệu xuất xứ Việt Nam theo quy định tại điểm e khoản 3 Điều 10 của Luật Đấu thầu thì nhà thầu chào vật tư, vật liệu, nguyên liệu không phải là xuất xứ Việt Nam sẽ bị loại;",
+  "- Các yếu tố cần thiết khác.",
+  "3.1. Đánh giá theo phương pháp chấm điểm:",
+  "Căn cứ quy mô, tính chất của gói thầu, Chủ đầu tư quy định mức điểm tối thiểu và mức điểm tối đa đối với từng tiêu chí tổng quát. Có thể quy định mức điểm tối thiểu đối với tiêu chí chi tiết cơ bản trong tiêu chí tổng quát; không được quy định mức điểm tối thiểu đối với các tiêu chí chi tiết không cơ bản. Mức điểm yêu cầu tối thiểu về kỹ thuật quy định không thấp hơn 70% tổng số điểm tối đa về kỹ thuật. Đối với gói thầu cần xem xét trên cơ sở chú trọng tới các yếu tố kỹ thuật, Chủ đầu tư có thể quy định mức điểm yêu cầu tối thiểu về kỹ thuật không thấp hơn 80% tổng số điểm tối đa về kỹ thuật. E-HSDT có tổng số điểm (cũng như số điểm của một số tiêu chuẩn tổng quát) bằng hoặc vượt mức điểm yêu cầu tối thiểu sẽ được đánh giá là đạt yêu cầu về kỹ thuật và được tiếp tục xem xét về tài chính.",
+  "Điểm kỹ thuật của từng tiêu chuẩn tổng quát được tính theo điểm kỹ thuật của các tiêu chuẩn chi tiết theo công thức sau:",
+  "Trong đó:",
+  "tji = điểm kỹ thuật của tiêu chuẩn chi tiết “i” trong tiêu chuẩn tổng quát “j”,",
+  "wji = tỷ trọng của tiêu chuẩn chi tiết “i” trong tiêu chuẩn tổng quát “j”,",
+  "k = số lượng tiêu chuẩn chi tiết trong tiêu chuẩn tổng quát “j”, và",
+  "Tổng điểm kỹ thuật được tính theo công thức sau:",
+  "Trong đó:",
+  "Sj = điểm kỹ thuật của tiêu chuẩn tổng quát “j”,",
+  "Wj = tỷ trọng của tiêu chuẩn tổng quát “j”,",
+  "N = số lượng tiêu chuẩn tổng quát, và",
+  "3.2. Đánh giá theo phương pháp đạt/không đạt:",
+  "Căn cứ quy mô, tính chất của gói thầu mà xác định mức độ yêu cầu đối với từng nội dung. Đối với các tiêu chí đánh giá tổng quát, chỉ sử dụng tiêu chí đạt, không đạt. Đối với các tiêu chí chi tiết cơ bản trong tiêu chí tổng quát, chỉ sử dụng tiêu chí đạt, không đạt; đối với các tiêu chí chi tiết không cơ bản trong tiêu chí tổng quát, ngoài tiêu chí đạt, không đạt, được áp dụng thêm tiêu chí chấp nhận được nhưng không được vượt quá 30% tổng số các tiêu chí chi tiết trong tiêu chí tổng quát đó.",
+  "Tiêu chí tổng quát được đánh giá là đạt khi tất cả các tiêu chí chi tiết cơ bản được đánh giá là đạt và các tiêu chí chi tiết không cơ bản được đánh giá là đạt hoặc chấp nhận được.",
+  "E-HSDT được đánh giá là đáp ứng yêu cầu về kỹ thuật khi có tất cả các tiêu chí tổng quát đều được đánh giá là đạt.",
+  "Mục 4. Tiêu chuẩn đánh giá về tài chính",
+  "Căn cứ tính chất, quy mô của từng gói thầu cụ thể mà lựa chọn một trong các phương pháp dưới đây cho phù hợp:",
+  "4.1. Phương pháp giá thấp nhất:",
+  "Cách xác định giá thấp nhất theo các bước sau đây:",
+  "Bước 1. Xác định giá dự thầu, trừ đi giá trị giảm giá (nếu có);",
+  "Bước 2. Xác định ưu đãi (nếu có) theo quy định tại Mục 28 E-CDNT",
+  "Bước 3. Xếp hạng nhà thầu: E-HSDT có giá dự thầu, trừ đi giá trị giảm giá (nếu có), sau ưu đãi (nếu có) thấp nhất được xếp hạng thứ nhất.",
+  "4.2. Phương pháp giá đánh giá:",
+  "Cách xác định giá đánh giá theo các bước sau đây:",
+  "Bước 1. Xác định giá dự thầu, trừ đi giá trị giảm giá (nếu có);",
+  "Bước 2. Xác định giá đánh giá:",
+  "Việc xác định giá đánh giá được thực hiện theo công thức sau đây:",
+  "GĐG = G ± ΔG + ΔƯĐ",
+  "Trong đó:",
+  "- G là giá dự thầu sau khi trừ đi giá trị giảm giá (nếu có);",
+  "- ΔƯĐ là giá trị phải cộng thêm đối với đối tượng không được hưởng ưu đãi theo quy định tại Mục 28 E-CDNT;",
+  "- ΔG là giá trị các yếu tố được quy về một mặt bằng, bao gồm :",
+  "+ Chi phí lãi vay (nếu có);",
+  "+ Chất lượng dịch vụ;",
+  "+ Đấu thầu bền vững (nếu có):____[Trường hợp áp dụng tiêu chí này, Chủ đầu tư, tổ chuyên gia cần lượng hóa thành tiền một đơn vị chênh lệch của thông số, chỉ số về môi trường, xã hội…so với mức yêu cầu tối thiểu. Trường hợp ưu tiên dịch vụ được chứng nhận nhãn sinh thái và tương đương thì cần quy định cụ thể];",
+  "+ Thông tin về kết quả thực hiện hợp đồng của nhà thầu theo quy định tại Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP;",
+  "+ Các yếu tố khác (nếu có).",
+  "Bước 3. Xếp hạng nhà thầu: E-HSDT có giá đánh giá thấp nhất được xếp hạng thứ nhất.",
+  "Mục 5. Phương án kỹ thuật thay thế trong E-HSDT (nếu có)",
+  "Trường hợp cho phép nhà thầu đề xuất phương án kỹ thuật thay thế theo quy định tại Mục 12 E-CDNT, E-HSDT sẽ được đánh giá như sau:______ [ghi các tiêu chí, tiêu chuẩn đánh giá đối với phương án kỹ thuật thay thế].",
+  "Mục 6. Trường hợp gói thầu chia thành nhiều phần độc lập (nếu có)",
+  "Trường hợp gói thầu được chia thành nhiều phần độc lập thì trong E-HSMT phải nêu rõ tiêu chuẩn và phương pháp đánh giá đối với từng phần hoặc nhiều phần để các nhà thầu tính toán phương án chào thầu theo khả năng của mình. Việc đánh giá E-HSDT và xét duyệt trúng thầu sẽ được thực hiện trên cơ sở bảo đảm tổng giá đề nghị trúng thầu của gói thầu là thấp nhất (đối với gói thầu áp dụng phương pháp giá thấp nhất); tổng giá đánh giá của gói thầu là thấp nhất (đối với gói thầu áp dụng phương pháp giá đánh giá) và giá đề nghị trúng thầu của cả gói thầu không vượt giá gói thầu được duyệt mà không so sánh với ước tính chi phí của từng phần."
+ ],
+ "huong_dan_chuong5": [
+  "Yêu cầu về kỹ thuật mang tính kỹ thuật thuần túy và các yêu cầu khác liên quan đến việc cung cấp dịch vụ (trừ giá). Yêu cầu về kỹ thuật phải được nêu đầy đủ, rõ ràng và cụ thể để làm cơ sở cho nhà thầu lập E-HSDT.",
+  "Trong yêu cầu về kỹ thuật không được đưa ra các điều kiện nhằm hạn chế sự tham gia của nhà thầu hoặc nhằm tạo lợi thế cho một hoặc một số nhà thầu gây ra sự cạnh tranh không bình đẳng.",
+  "Yêu cầu về kỹ thuật bao gồm các nội dung cơ bản như sau:",
+  "1. Giới thiệu chung về dự án/dự toán mua sắm, gói thầu:",
+  "Mục này nêu thông tin tóm tắt về dự án/ dự toán mua sắm, gói thầu như: địa điểm thực hiện dự án/ dự toán mua sắm, quy mô của dự án/ dự toán mua sắm, yêu cầu về cung cấp dịch vụ, thời gian thực hiện và những thông tin khác tùy theo tính chất và yêu cầu của gói thầu.",
+  "2. Mục tiêu công việc:",
+  "Trong mục này Chủ đầu tư cần cung cấp đầy đủ, chi tiết thông tin về các dịch vụ sẽ được thực hiện để bảo đảm nhà thầu có thể lập E-HSDT một cách hiệu quả, chính xác và cạnh tranh nhất có thể.",
+  "3. Yêu cầu kỹ thuật của gói thầu:",
+  "Mục này đưa ra các yêu cầu về kỹ thuật đối với việc cung cấp dịch vụ nhằm đảm bảo chất lượng dịch vụ đáp ứng mục tiêu ban đầu của Chủ đầu tư. Trong đó, các yêu cầu do Chủ đầu tư đưa ra cần chú trọng vào sản phẩm đầu ra như tiêu chuẩn, quy cách, thông số kỹ thuật, chất lượng... của dịch vụ. Chủ đầu tư cũng cần nêu các tiêu chuẩn về dịch vụ mà nhà thầu phải đáp ứng, tuy nhiên, các tiêu chuẩn này không nhằm mục đích hạn chế sự tham gia của nhà thầu. Nhà thầu có thể áp dụng các tiêu chuẩn dịch vụ khác nhưng phải chứng minh các tiêu chuẩn này tương đương hoặc cao hơn tiêu chuẩn do Chủ đầu tư yêu cầu. Về cơ bản, Chủ đầu tư không cần nêu quy trình, phương pháp thực hiện dịch vụ cụ thể mà nhà thầu phải tuân theo. Nhà thầu được quyền đề xuất quy trình, phương pháp thực hiện mà nhà thầu thấy là thích hợp để thực hiện gói thầu.",
+  "Chủ đầu tư có thể đưa ra các yêu cầu về đấu thầu bền vững để bảo đảm dịch vụ cung cấp cho gói thầu thân thiện với môi trường, xã hội (việc sử dụng các vật tư, vật liệu được chứng nhận nhãn sinh thái và tương đương; sử dụng vật liệu không nung, vật liệu bền vững, thân thiện môi trường có khả năng tái chế, tái sử dụng; hạn chế mức độ xả thải, rác thải, ô nhiễm môi trường, hạn chế lượng bê tông sử dụng trong công trình; biện pháp tổ chức thi công; dây chuyền, công nghệ thi công và các yếu tố khác) nhưng phải bảo đảm các quy định này là rõ ràng, không làm hạn chế nhà thầu.",
+  "4. Giải pháp và phương pháp luận:",
+  "Nhà thầu chuẩn bị đề xuất giải pháp, phương pháp luận tổng quát thực hiện dịch vụ theo các nội dung quy định tại Chương này, gồm các phần như sau:",
+  "1. Giải pháp và phương pháp luận;",
+  "2. Kế hoạch công tác.",
+  "5. Quy định về kiểm tra, nghiệm thu sản phẩm:",
+  "Mục này quy định về quy trình kiểm tra, nghiệm thu sản phẩm, trình tự giao nộp sản phẩm (nếu có)... để phục vụ công tác thanh, quyết toán hợp đồng."
+ ],
+ "phan4": [
+  {
+   "ma": "Mẫu số 13",
+   "tieu_de": "THƯ CHẤP THUẬN E-HSDT VÀ TRAO HỢP ĐỒNG(1)"
+  },
+  {
+   "ma": "Mẫu số 14A",
+   "tieu_de": "HỢP ĐỒNG ĐIỆN TỬ()"
+  },
+  {
+   "ma": "Mẫu số 14B",
+   "tieu_de": "HỢP ĐỒNG ĐIỆN TỬ()"
+  },
+  {
+   "ma": "Mẫu số 15",
+   "tieu_de": "BẢO LÃNH THỰC HIỆN HỢP ĐỒNG"
+  },
+  {
+   "ma": "Mẫu số 16",
+   "tieu_de": "BẢO LÃNH TIỀN TẠM ỨNG (1)"
+  },
+  {
+   "ma": "Mẫu số 17",
+   "tieu_de": "GIẤY ỦY QUYỀN (1)"
+  }
+ ]
+}

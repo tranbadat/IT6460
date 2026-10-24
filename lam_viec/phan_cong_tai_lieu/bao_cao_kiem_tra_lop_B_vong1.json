@@ -1,0 +1,68 @@
+{
+ "tai_lieu": "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+ "phien_ban": "0.5",
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 2,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 7 mục theo đặc tả: nguyên tắc, thành viên, nhân sự chủ chốt, RACI, tải theo sprint, giao việc, phối hợp và thay thế."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Tổng 657 MD, quỹ 796 MD, 82,5%, dự trữ 4 ngày, cut over 01/07/2027 khớp lich.json. Bảng tải không có ô nào vượt quỹ, nhưng mục 7 nêu cảnh báo cân tải và yêu cầu cân lại tải cho Vũ Đức Minh, Lê Quang Huy trong ngữ cảnh quá tải, trái với dữ liệu (chỉ có cảnh báo L07 sử dụng dưới 30% quỹ)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Giao việc theo mã gói WBS, thời gian theo master schedule, nhân sự chủ chốt theo Bảng số 02, thay thế theo E-ĐKC 21.2."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi hạng mục mức 1, mức 2 có đúng một A (kiểm tra 38 dòng RACI). Tải từng người theo sprint đo được."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có quy tắc xử lý quá tải, vắng mặt, thay thế 7 ngày và cập nhật giao việc, chạy lại lịch, ghi phiên bản khi có thay đổi."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Văn phong trang trọng. Lớp A còn cảnh báo VP02 từ chốt."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 7, đoạn 3: Lịch hiện tại có cảnh báo cân tải đối với Vũ Đức Minh và Lê Quang Huy ở các sprint cuối, nhóm cần rà soát và cân lại tải cho hai người này trước khi chốt đường cơ sở.",
+   "mo_ta": "Dữ liệu nguồn không có người quá tải: bảng tải mục 5 và lich.json không có ô vượt quỹ. lich.json kiem_tra chỉ có 3 cảnh báo L07 về sử dụng thấp dưới 30% quỹ (Minh S6 2/10, S7 0/10, Huy S6 2/10). Câu văn đặt trong ngữ cảnh quá tải nên gây hiểu sai, và Huy S7 dùng 8/10 nên cụm các sprint cuối không đúng với Huy.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại DIEU_CHINH: bỏ câu cảnh báo cân tải, hoặc nêu đúng là Vũ Đức Minh (S6, S7) và Lê Quang Huy (S6) có mức sử dụng quỹ dưới 30%, việc điều chỉnh huy động thuộc quyết định của nhóm; thay từ chốt bằng xác lập."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "truy_vet",
+   "vi_tri": "Mục 3, bảng nhân sự chủ chốt",
+   "mo_ta": "Khớp nhan_su_chu_chot của hsmt.json (1 quản trị dự án, 3 kỹ sư phát triển, 1 BA hoặc kiểm thử). Chưa đối chiếu được HSDT Mẫu 06A vì HSDT chưa xuất (lam_viec/hsdt chỉ có khung).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Đối chiếu lại khi HSDT được lập."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "nguon",
+   "vi_tri": "Mục 5, dòng Vũ Đức Minh S6 2/10, S7 0/10",
+   "mo_ta": "Thành viên được huy động nhưng gần như không giao việc ở S6, S7 (L07 của lịch). Không phải lỗi tài liệu, là tham số huy động cần nhóm quyết định.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xem xét điều chỉnh huy động hoặc giao việc trong phan_cong."
+  }
+ ]
+}

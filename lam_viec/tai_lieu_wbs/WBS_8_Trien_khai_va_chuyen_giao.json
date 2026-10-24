@@ -1,0 +1,378 @@
+{
+ "meta": {
+  "ten": "WBS 8 - Triển khai và chuyển giao",
+  "header": "Lập kế hoạch - WBS 8, Triển khai và chuyển giao",
+  "size_bang_pt": 12,
+  "phien_ban": "0.4",
+  "ngay": "05/03/2027"
+ },
+ "blocks": [
+  {
+   "t": "center",
+   "text": "Cấu trúc phân rã công việc",
+   "size": 18
+  },
+  {
+   "t": "center",
+   "text": "Triển khai và chuyển giao, mã WBS 8",
+   "size": 15
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+  },
+  {
+   "t": "center",
+   "text": "Khách hàng: Công ty Cổ phần ABC Wear"
+  },
+  {
+   "t": "center",
+   "text": "Tài liệu kế hoạch dự án, kèm theo Phần III. Đề xuất kỹ thuật của hồ sơ dự thầu"
+  },
+  {
+   "t": "center",
+   "text": "Phiên bản {{PHIEN_BAN}}, ngày {{NGAY}}"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "h2",
+   "text": "1. Thông tin chung"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Tổng khối lượng",
+     "50 người-ngày"
+    ],
+    [
+     "Căn cứ ước lượng",
+     "2 môi trường (phát triển và kiểm thử, vận hành), giám sát và sao lưu, 2 tài liệu hướng dẫn, 3 buổi hướng dẫn vận hành, 1 kế hoạch cut over, 1 lần diễn tập, 1 lần triển khai chính thức, bàn giao mã nguồn. Tổng nhóm 50 MD theo tong_theo_nhom của uoc_luong.json. Thuộc đầu việc phi chức năng ở bước 3 (triển khai, giám sát, đào tạo, hồ sơ kỹ thuật). Chia theo số môi trường, số tài liệu và số lần triển khai: môi trường và hạ tầng 17 MD (8.1); chuyển giao và hướng dẫn vận hành 18 MD (8.2); đưa hệ thống vào vận hành (cut over) 15 MD (8.3)."
+    ],
+    [
+     "Thời gian thực hiện",
+     "31/03/2027 - 01/07/2027 (sprint S1 đến S7)"
+    ],
+    [
+     "Người chịu trách nhiệm",
+     "Ninh Đức Toàn"
+    ],
+    [
+     "Phụ thuộc đầu vào",
+     "Hoàn thành các gói 2.2.1 (Quy trình vận hành mới (New Operational Flow) của kênh bán hàng trực tuyến), 2.2.2 (Kiến trúc hệ thống, hạ tầng và phương án bảo đảm hoạt động liên tục), 2.2.4 (Cấu hình cơ sở dữ liệu (DB Configuration) gồm dự phòng, sao lưu và phân quyền truy cập), 3.3.5 (Giao diện trang chủ và điều hướng danh mục theo Menu Layer), 3.3.6 (Giao diện tìm kiếm, kết quả và bộ lọc), 3.3.7 (Giao diện chi tiết sản phẩm), 3.5.2 (Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ tìm kiếm và hiển thị sản phẩm), 4.3.6 (Giao diện đăng ký, đăng nhập và khôi phục mật khẩu), 4.3.7 (Giao diện trang thành viên và sổ địa chỉ), 4.5.2 (Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ thành viên), 5.3.8 (Giao diện giỏ hàng), 5.3.9 (Giao diện đặt hàng gồm địa chỉ, phí vận chuyển, mã giảm giá và xác nhận), 5.3.10 (Giao diện theo dõi đơn hàng, hủy đơn và đổi trả), 5.5.2 (Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ đặt hàng), 6.2.12 (Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận tích hợp với Main System), 6.3.2 (Chuyển đổi thử dữ liệu sản phẩm, tồn kho do Chủ đầu tư cung cấp), 7.2.4 (Khắc phục lỗi sau kiểm thử hệ thống), 7.3.1 (Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng tìm kiếm và thành viên), 7.3.2 (Tổ chức và hỗ trợ kiểm thử vận hành cùng Chủ đầu tư luồng đặt hàng và giao nhận)"
+    ],
+    [
+     "Đơn vị khối lượng",
+     "Người-ngày, viết tắt MD, tính theo 8 giờ làm việc"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "2. Sơ đồ WBS dạng cây phân cấp"
+  },
+  {
+   "t": "p",
+   "text": "Sơ đồ dùng để trao đổi với Chủ đầu tư. Bảng chi tiết ở mục 3 dùng để ước lượng, giao việc và theo dõi tiến độ."
+  },
+  {
+   "t": "p",
+   "text": "8. Triển khai và chuyển giao",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "8.1. Môi trường và hạ tầng",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "8.1.1. Môi trường phát triển, kiểm thử và quy trình tích hợp, triển khai tự động",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "8.1.2. Môi trường vận hành gồm hai nút ứng dụng, cân bằng tải, cơ sở dữ liệu chính và dự phòng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "8.1.3. Giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "8.2. Chuyển giao và hướng dẫn vận hành",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "8.2.1. Tài liệu hướng dẫn sử dụng cho khách hàng và cán bộ bán hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "8.2.2. Tài liệu hướng dẫn vận hành và quản trị kỹ thuật hệ thống",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "8.2.3. Hướng dẫn vận hành cho cán bộ Chủ đầu tư theo quy trình vận hành mới, ba buổi theo lịch của Chủ đầu tư",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "8.2.4. Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "8.2.5. Cập nhật tài liệu hướng dẫn sử dụng theo kết quả kiểm thử chấp nhận",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "8.3. Đưa hệ thống vào vận hành (cut over)",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "8.3.1. Kế hoạch cut over, danh sách kiểm tra và phương án khôi phục",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "8.3.2. Diễn tập triển khai phiên bản chính thức và chuyển đổi dữ liệu trên môi trường vận hành",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "8.3.3. Chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "8.3.4. Hỗ trợ ngày đưa hệ thống vào vận hành và biên bản bàn giao hệ thống",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "8.3.5. Giám sát vận hành và chuẩn bị hỗ trợ tăng cường sau cut over",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h2",
+   "text": "3. Bảng chi tiết"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi gói công việc gắn với một sản phẩm kiểm tra được, có khối lượng ước lượng được và giao được cho một người."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã WBS",
+     "Tên công việc",
+     "Mức",
+     "Khối lượng, MD",
+     "Loại công việc",
+     "Sản phẩm đầu ra"
+    ],
+    [
+     "8.1",
+     "Môi trường và hạ tầng",
+     "2",
+     "17",
+     "",
+     ""
+    ],
+    [
+     "8.1.1",
+     "Môi trường phát triển, kiểm thử và quy trình tích hợp, triển khai tự động",
+     "3",
+     "6",
+     "DEVOPS",
+     "Môi trường phát triển, kiểm thử và quy trình triển khai tự động"
+    ],
+    [
+     "8.1.2",
+     "Môi trường vận hành gồm hai nút ứng dụng, cân bằng tải, cơ sở dữ liệu chính và dự phòng",
+     "3",
+     "7",
+     "DEVOPS",
+     "Môi trường vận hành"
+    ],
+    [
+     "8.1.3",
+     "Giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành",
+     "3",
+     "4",
+     "DEVOPS",
+     "Cấu hình giám sát, cảnh báo và sao lưu"
+    ],
+    [
+     "8.2",
+     "Chuyển giao và hướng dẫn vận hành",
+     "2",
+     "18",
+     "",
+     ""
+    ],
+    [
+     "8.2.1",
+     "Tài liệu hướng dẫn sử dụng cho khách hàng và cán bộ bán hàng",
+     "3",
+     "4",
+     "BA",
+     "Tài liệu hướng dẫn sử dụng"
+    ],
+    [
+     "8.2.2",
+     "Tài liệu hướng dẫn vận hành và quản trị kỹ thuật hệ thống",
+     "3",
+     "4",
+     "DEVOPS",
+     "Tài liệu hướng dẫn vận hành kỹ thuật"
+    ],
+    [
+     "8.2.3",
+     "Hướng dẫn vận hành cho cán bộ Chủ đầu tư theo quy trình vận hành mới, ba buổi theo lịch của Chủ đầu tư",
+     "3",
+     "3",
+     "BA",
+     "Biên bản hướng dẫn vận hành"
+    ],
+    [
+     "8.2.4",
+     "Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện",
+     "3",
+     "4",
+     "DEV",
+     "Biên bản bàn giao mã nguồn và tài liệu kỹ thuật"
+    ],
+    [
+     "8.2.5",
+     "Cập nhật tài liệu hướng dẫn sử dụng theo kết quả kiểm thử chấp nhận",
+     "3",
+     "3",
+     "BA",
+     "Tài liệu hướng dẫn sử dụng phiên bản bàn giao"
+    ],
+    [
+     "8.3",
+     "Đưa hệ thống vào vận hành (cut over)",
+     "2",
+     "15",
+     "",
+     ""
+    ],
+    [
+     "8.3.1",
+     "Kế hoạch cut over, danh sách kiểm tra và phương án khôi phục",
+     "3",
+     "4",
+     "DEVOPS",
+     "Kế hoạch cut over được Chủ đầu tư xác nhận"
+    ],
+    [
+     "8.3.2",
+     "Diễn tập triển khai phiên bản chính thức và chuyển đổi dữ liệu trên môi trường vận hành",
+     "3",
+     "3",
+     "DEVOPS",
+     "Biên bản diễn tập triển khai"
+    ],
+    [
+     "8.3.3",
+     "Chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức",
+     "3",
+     "2",
+     "DEVOPS",
+     "Hệ thống và dữ liệu trên môi trường vận hành"
+    ],
+    [
+     "8.3.4",
+     "Hỗ trợ ngày đưa hệ thống vào vận hành và biên bản bàn giao hệ thống",
+     "3",
+     "2",
+     "DEV",
+     "Biên bản bàn giao hệ thống"
+    ],
+    [
+     "8.3.5",
+     "Giám sát vận hành và chuẩn bị hỗ trợ tăng cường sau cut over",
+     "3",
+     "4",
+     "DEVOPS",
+     "Phương án giám sát và lịch trực hỗ trợ sau cut over"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "",
+     "50",
+     "",
+     ""
+    ]
+   ],
+   "widths": [
+    1000,
+    3600,
+    600,
+    1100,
+    1000,
+    2000
+   ],
+   "center_cols": [
+    2,
+    4
+   ],
+   "right_cols": [
+    3
+   ],
+   "dong_dam": [
+    1,
+    5,
+    11
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Kiểm tra quy tắc 100%"
+  },
+  {
+   "t": "p",
+   "text": "Tổng khối lượng các hạng mục mức 2, 17 cộng 18 cộng 15, bằng 50 người-ngày, khớp với khối lượng khai báo ở mức 1. Kết luận: cân bằng."
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "tai_lieu": "ket_qua/06_Cost_estimate/Cost_estimate.xlsx",
+ "buoc": "chi_phi",
+ "phien_ban": "0.9",
+ "thoi_gian": "2026-10-18",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 3,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "11 sheet: tổng hợp, tham số, MD theo WBS, nhân công, chi phí khác, đối chiếu người, Mẫu 01A, 11A, dòng tiền, huy động, phân bổ lương."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "MD theo loại (PM 49, BA 90, QA 160, DEV 318, DEVOPS 40) khớp wbs.json, đơn giá khớp don_gia.json, A 1.420.050.000, B 150.000.000, giá chào 1.750.000.000, C 179.950.000, EMV 146.583.750 khớp rui_ro.json, MD huy động và MD giao từng người khớp lich.json, chi lương theo sprint tính lại từ phan_bo khớp đến đồng."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Theo WBS mục 1 và Mẫu 11A 13 hạng mục, tổng A và giá chào khớp."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "884 công thức, tính lại bằng LibreOffice không lỗi, trùng giá trị lưu sẵn. Các ô kiểm tra giá, tỷ lệ C, dự phòng có kết quả."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có so sánh dự phòng với EMV, độ nhạy thuế, dòng tiền lũy kế."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Trình bày rõ, có chú giải màu chữ."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "CE01",
+   "muc_do": "canh_bao",
+   "nhom": "chi_phi",
+   "vi_tri": "Tong_hop, Kiểm tra dự phòng so với EMV",
+   "mo_ta": "Dự phòng 50.000.000 đồng thấp hơn EMV 146.583.750 đồng, ô kiểm tra ghi Thiếu (C10 lớp A).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định mức dự phòng"
+  },
+  {
+   "ma": "CE02",
+   "muc_do": "canh_bao",
+   "nhom": "chi_phi",
+   "vi_tri": "Dong_tien S1-S6",
+   "mo_ta": "Chênh lệch lũy kế âm từ S1 đến S6, thấp nhất -464.736.486 đồng ở S4, cần vốn lưu động (C41).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận nguồn vốn lưu động"
+  },
+  {
+   "ma": "CE03",
+   "muc_do": "canh_bao",
+   "nhom": "chi_phi",
+   "vi_tri": "Dong_tien, lũy kế chi",
+   "mo_ta": "Tổng chi lương trên sheet 1.185.842.509 đồng, chi_phi.json làm tròn tổng 1.185.842.510 đồng, lệch 1 đồng do làm tròn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Không cần sửa, hoặc làm tròn thống nhất"
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "tai_lieu": "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+ "buoc": "phan_cong_tai_lieu",
+ "dac_ta": ".claude/skills/qlda-phan-cong/dac_ta/phan_cong_tai_lieu.json",
+ "vong": 3,
+ "thoi_gian": "2026-10-17",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 3,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Có đủ 7 mục theo đặc tả. RACI có vai trò của Chủ đầu tư ở từng hạng mục. Mục 6 tách MD gói và MD của người."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "RACI khớp trach_nhiem ở 37 dòng và 11 thành viên, cột Bên ngoài khớp dữ liệu. 93 dòng mục 6 khớp lich.json. Mục 5 khớp Master_schedule Tai_nguon. Câu dự trữ 5 ngày khớp Tong_quan!B11. Chỉ còn lệch làm tròn 0,01 (MH05)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Giao việc dẫn về mã WBS và thời gian theo lịch. Thay thế nhân sự dẫn chiếu E-ĐKC 21.2."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Có thời hạn thay thế 7 ngày, ngưỡng theo tải thực tế so với kế hoạch (vượt 1/10 hoặc vượt quỹ), ngưỡng chậm 1 ngày cho gói găng."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Ngưỡng đo trên số thực tế nên không bị kích hoạt ngay từ kế hoạch. Người dự phòng cho K là Trần Bá Đạt, còn 4,43/10 ở S3. Gói của K trong S2, S3 còn 6 ngày dự trữ."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Câu ở mục 7 đã viết lại. Không có từ trong danh sách cần tránh. Định dạng đúng quy ước."
+  },
+  {
+   "tieu_chi": "TR1 Mỗi hạng mục mức 1, mức 2 có đúng một A",
+   "ket_qua": "dat",
+   "nhan_xet": "37/37."
+  },
+  {
+   "tieu_chi": "TR2 Không ai quá tải trong sprint",
+   "ket_qua": "dat",
+   "nhan_xet": "Cao nhất 10/10."
+  },
+  {
+   "tieu_chi": "TR3 Nhân sự chủ chốt khớp Bảng số 02 HSMT và HSDT Mẫu 06A",
+   "ket_qua": "dat",
+   "nhan_xet": "Vị trí và số lượng khớp. Kinh nghiệm và Mẫu 06A chờ dữ liệu (MH06)."
+  },
+  {
+   "tieu_chi": "TR4 Có quy tắc thay thế và điều chỉnh khi thay đổi",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục 7 đủ nội dung."
+  }
+ ],
+ "doi_chieu_vong2": [
+  {
+   "ma_vong2": "MH01",
+   "muc_do_vong2": "loi",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "RACI 1.1 'Chủ đầu tư (C)', 1.2 'Chủ đầu tư (I)'",
+   "ghi_chu": "Điểm nhỏ, không tính phát hiện: câu ở mục 1 liệt kê các hạng mục Chủ đầu tư được tham vấn chưa nêu kế hoạch (M1)."
+  },
+  {
+   "ma_vong2": "MH02",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "RACI: Đạt I ở 2.3, 6.2, 7.3, 8.2; 8.3 'Chủ đầu tư (C)'"
+  },
+  {
+   "ma_vong2": "MH03",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 6: 8.3.2 29/06-30/06, 8.3.3 01/07; mục 1: 'dự trữ 5 ngày làm việc trước các gói gắn ngày cut over 01/07/2027'",
+   "ghi_chu": "Khớp Master_schedule."
+  },
+  {
+   "ma_vong2": "MH04",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 7 đoạn 3"
+  },
+  {
+   "ma_vong2": "MH05",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "Mục 1, 2: '351 MD'",
+   "ghi_chu": "Phần lời đã dùng tổng 351. Còn lệch 0,01 và định dạng tỷ lệ, giữ ở MH05."
+  },
+  {
+   "ma_vong2": "MH06",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "chua_khac_phuc",
+   "vi_tri_moi": "Mục 3",
+   "ghi_chu": "Chờ dữ liệu nhóm."
+  },
+  {
+   "ma_vong2": "MH07",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "chua_khac_phuc",
+   "vi_tri_moi": "Mục 2, 4, 5, 6",
+   "ghi_chu": "Chờ dữ liệu nhóm."
+  },
+  {
+   "ma_vong2": "MH08",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 7 đoạn 1: 'Nhóm trao đổi với Chủ đầu tư qua...'"
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH05",
+   "vong2": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "CL02, CL06 Làm tròn và định dạng",
+   "vi_tri": "Mục 6: Trần Bá Đạt tổng 39,32, D1 tổng 29,16; mục 5: 39,31 và 29,17; cột Sử dụng 'D1 ... 55%'",
+   "mo_ta": "Phần MD của người trong lich.json được làm tròn riêng lẻ (2.2.2 Đạt 2,32; 7.3.3 D1 1,66), trong khi phân bổ theo sprint được làm tròn giữ tổng. Vì vậy tổng ở mục 6 lệch mục 5 0,01 MD ở hai người. Tỷ lệ 55% chưa cùng định dạng 1 chữ số thập phân với các dòng khác.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Làm tròn phan_nguoi sao cho tổng theo người bằng phan_bo, hoặc lấy cột Giao từ tổng phan_nguoi. Định dạng tỷ lệ cố định 1 chữ số thập phân (55,0%)."
+  },
+  {
+   "ma": "MH06",
+   "vong2": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "TR3 Nhân sự chủ chốt",
+   "vi_tri": "Mục 3",
+   "mo_ta": "Chưa có dữ liệu trình độ và kinh nghiệm của 5 nhân sự chủ chốt để so với yêu cầu Bảng số 02. Chưa có HSDT Mẫu 06A để đối chiếu.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm bổ sung dữ liệu trong thanh_vien.json. Đối chiếu lại khi lập HSDT."
+  },
+  {
+   "ma": "MH07",
+   "vong2": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "Dữ liệu nhóm chưa cung cấp",
+   "vi_tri": "Mục 2, 4, 5, 6 và bảng chú giải: 'K', 'D1', 'D2', 'D3', 'Q1', 'Q2'",
+   "mo_ta": "Sáu vị trí bổ sung chưa có họ tên thật. Đây không phải lỗi của tài liệu.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm bổ sung ho_ten trong dau_vao/thanh_vien.json."
+  }
+ ],
+ "nhan_xet_lop_A": "bao_cao_kiem_tra_vong1.json (00:12:42) kiểm tra tệp có MD5 trùng tệp ket_qua (45d9cf85...). Kết luận dat."
+}

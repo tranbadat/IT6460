@@ -1,0 +1,1422 @@
+{
+ "meta": {
+  "ten": "Tài liệu quản lý phiên bản",
+  "id": "phien_ban",
+  "header": "Kết thúc dự án - Tài liệu quản lý phiên bản",
+  "huong": "doc",
+  "font": "Times New Roman",
+  "size_pt": 13,
+  "size_bang_pt": 12,
+  "nguon": {
+   "pb": "du_lieu/phien_ban_tong_hop.json",
+   "da": "dau_vao/du_an.json"
+  }
+ },
+ "can_soan": {
+  "PHAM_VI": {
+   "huong_dan": "Nêu phạm vi áp dụng (tài liệu nộp trong ket_qua, dữ liệu chuẩn trong du_lieu), vai trò người quản lý cấu hình, người phê duyệt, nơi lưu trữ và cách truy cập.",
+   "nguon": [
+    "pb"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2
+  },
+  "DUONG_CO_SO": {
+   "huong_dan": "Nêu các thời điểm lập đường cơ sở (ký hợp đồng, phê duyệt kế hoạch, nghiệm thu), tài liệu thuộc từng đường cơ sở và quy định thay đổi sau đường cơ sở.",
+   "nguon": [
+    "pb"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1
+  },
+  "NHAN_XET": {
+   "huong_dan": "Nhận xét tình hình kiểm soát phiên bản: số lần cập nhật của các tài liệu chính, tài liệu thay đổi nhiều nhất và lý do (mã CR), tài liệu còn cần cập nhật, đề xuất cải tiến.",
+   "nguon": [
+    "pb"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2
+  }
+ },
+ "blocks": [
+  {
+   "text": "PM_26I_02",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "text": "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "text": "Tài liệu quản lý phiên bản",
+   "size": 20,
+   "t": "center"
+  },
+  {
+   "text": "Tổng hợp ngày 18/03/2027",
+   "size": 14,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "rows": [
+    [
+     "Dự án",
+     "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+    ],
+    [
+     "Khách hàng",
+     "Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Đơn vị thực hiện",
+     "PM_26I_02"
+    ],
+    [
+     "Môn học",
+     "Quản trị dự án và Quản lý thay đổi"
+    ],
+    [
+     "Nhóm",
+     "PM_26I_02"
+    ],
+    [
+     "Giảng viên",
+     "Vũ Thị Hương Giang"
+    ],
+    [
+     "Người lập",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Phiên bản",
+     "{{PHIEN_BAN}}"
+    ],
+    [
+     "Ngày",
+     "{{NGAY}}"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ],
+   "t": "table"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "text": "1. Mục đích và phạm vi",
+   "t": "h1"
+  },
+  {
+   "text": "Tài liệu quy định cách đánh số, trạng thái, lưu trữ và kiểm soát phiên bản của bộ tài liệu dự án, đồng thời ghi lại danh mục tài liệu, các đường cơ sở và lịch sử thay đổi. Sổ phiên bản được cập nhật tự động mỗi khi script hoặc lệnh hoàn thiện tạo tệp, kèm băm nội dung và băm đầu vào để phát hiện tài liệu cũ. Bản đầy đủ ở tệp So_phien_ban.xlsx cùng thư mục.",
+   "t": "p"
+  },
+  {
+   "text": "<<SOẠN:PHAM_VI>>",
+   "t": "p"
+  },
+  {
+   "text": "2. Quy ước",
+   "t": "h1"
+  },
+  {
+   "text": "2.1. Đánh số phiên bản",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Trường hợp",
+     "Phiên bản",
+     "Giải thích"
+    ],
+    [
+     "Tạo lần đầu",
+     "0.1",
+     "Bản dự thảo đầu tiên do script hoặc agent tạo ra"
+    ],
+    [
+     "Nội dung thay đổi trước đường cơ sở",
+     "0.2, 0.3",
+     "Tăng 0.1 khi băm nội dung thay đổi, không tăng khi chạy lại cho cùng nội dung"
+    ],
+    [
+     "Lập đường cơ sở",
+     "1.0, 2.0",
+     "Tăng số chính khi tài liệu được đưa vào đường cơ sở (ký hợp đồng, phê duyệt kế hoạch, nghiệm thu)"
+    ],
+    [
+     "Thay đổi sau đường cơ sở",
+     "1.1, 1.2",
+     "Chỉ thực hiện theo yêu cầu thay đổi đã phê duyệt, ghi mã CR trong ghi chú"
+    ]
+   ],
+   "widths": [
+    2800,
+    1500,
+    5000
+   ],
+   "center_cols": [
+    1
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "2.2. Trạng thái",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Trạng thái",
+     "Ý nghĩa"
+    ],
+    [
+     "Dự thảo",
+     "Đã tạo, chưa qua kiểm tra độc lập"
+    ],
+    [
+     "Đã kiểm tra",
+     "Đạt kiểm tra lớp A (script) và lớp B (agent độc lập)"
+    ],
+    [
+     "Đã duyệt",
+     "Trưởng nhóm hoặc chủ đầu tư phê duyệt"
+    ],
+    [
+     "Đường cơ sở",
+     "Thuộc một đường cơ sở, chỉ thay đổi qua quy trình yêu cầu thay đổi"
+    ],
+    [
+     "Khóa",
+     "Hồ sơ đấu thầu sau ký hợp đồng, không sửa, thay đổi ghi bằng phụ lục hoặc biên bản"
+    ]
+   ],
+   "widths": [
+    2300,
+    7000
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "2.3. Lưu trữ và kiểm soát",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Nội dung",
+     "Quy định"
+    ],
+    [
+     "Đặt tên tệp",
+     "Tên tệp cố định theo tài liệu, không ghi số phiên bản trong tên. Phiên bản ghi ở bìa, đầu trang và sổ phiên bản"
+    ],
+    [
+     "Cấu trúc thư mục",
+     "Tách riêng đầu vào do nhóm cung cấp, dữ liệu chuẩn do công cụ tính, tài liệu nộp, bản nháp và báo cáo kiểm tra, nhật ký bằng chứng. Tài liệu nộp được đánh số theo thứ tự lập"
+    ],
+    [
+     "Đăng ký phiên bản",
+     "Tự động mỗi khi công cụ tạo tệp, lưu băm nội dung, băm đầu vào, bước, người lập"
+    ],
+    [
+     "Phát hiện tài liệu cũ",
+     "So mã băm đầu vào đã lưu với đầu vào hiện tại. Công cụ điều phối liệt kê tài liệu cần cập nhật và thứ tự cập nhật"
+    ],
+    [
+     "Kho lưu trữ",
+     "Thư mục dự án quản lý bằng git. Mỗi lần hoàn thiện tài liệu commit kèm mã bước và phiên bản, lập đường cơ sở thì gắn thẻ"
+    ],
+    [
+     "Thay đổi sau đường cơ sở",
+     "Yêu cầu thay đổi được phê duyệt, cập nhật dữ liệu nguồn, chạy lại các bước bị ảnh hưởng, đóng yêu cầu thay đổi khi mọi tài liệu đã cập nhật"
+    ]
+   ],
+   "widths": [
+    2500,
+    6800
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "3. Danh mục tài liệu và phiên bản hiện hành",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Tài liệu",
+     "Tệp",
+     "Phiên bản",
+     "Ngày tài liệu",
+     "Trạng thái"
+    ],
+    [
+     "TL01",
+     "Hồ sơ mời thầu",
+     "HSMT.docx",
+     "0.3",
+     "",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL02",
+     "Master schedule",
+     "Master_schedule.xlsx",
+     "0.12",
+     "",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL03",
+     "WBS (tài liệu)",
+     "WBS_1_Quan_ly_du_an.docx",
+     "0.3",
+     "05/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL04",
+     "WBS (tài liệu)",
+     "WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+     "0.3",
+     "05/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL05",
+     "WBS (tài liệu)",
+     "WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+     "0.1",
+     "05/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL06",
+     "WBS (tài liệu)",
+     "WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+     "0.1",
+     "05/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL07",
+     "WBS (tài liệu)",
+     "WBS_5_Phan_he_dat_hang_Order.docx",
+     "0.3",
+     "05/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL08",
+     "WBS (tài liệu)",
+     "WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+     "0.5",
+     "05/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL09",
+     "WBS (tài liệu)",
+     "WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+     "0.4",
+     "05/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL10",
+     "WBS (tài liệu)",
+     "WBS_8_Trien_khai_va_chuyen_giao.docx",
+     "0.4",
+     "05/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL11",
+     "WBS (tài liệu)",
+     "WBS_tong_hop.docx",
+     "0.4",
+     "05/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL12",
+     "Cost estimate",
+     "Cost_estimate.xlsx",
+     "0.9",
+     "",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL13",
+     "Cost estimate",
+     "Thuyet_minh_du_toan.docx",
+     "0.8",
+     "05/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL14",
+     "Hồ sơ dự thầu",
+     "HSDT.docx",
+     "0.2",
+     "05/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL15",
+     "Risk management plan",
+     "Ke_hoach_quan_ly_rui_ro.docx",
+     "0.6",
+     "18/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL16",
+     "Change management plan",
+     "Ke_hoach_quan_ly_thay_doi.docx",
+     "0.1",
+     "18/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL17",
+     "Master plan",
+     "Ke_hoach_tong_the.docx",
+     "0.1",
+     "18/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL18",
+     "Danh sách phân chia công việc (responsibilities)",
+     "Phan_cong_nhiem_vu.docx",
+     "0.6",
+     "18/03/2027",
+     "Đã kiểm tra"
+    ],
+    [
+     "TL19",
+     "Phụ lục bằng chứng prompt và skill",
+     "Phu_luc_bang_chung_prompt_skill.docx",
+     "0.1",
+     "",
+     "Dự thảo"
+    ]
+   ],
+   "widths": [
+    700,
+    2700,
+    2600,
+    1000,
+    1200,
+    1100
+   ],
+   "center_cols": [
+    0,
+    3,
+    4
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Số tài liệu: 19, tổng số phiên bản tài liệu đã đăng ký: 81, số tài liệu cần cập nhật theo đầu vào mới: 0.",
+   "t": "p"
+  },
+  {
+   "text": "Mọi tài liệu đang dùng đầu vào mới nhất.",
+   "t": "p"
+  },
+  {
+   "text": "4. Đường cơ sở",
+   "t": "h1"
+  },
+  {
+   "text": "Chưa lập đường cơ sở.",
+   "t": "p"
+  },
+  {
+   "text": "<<SOẠN:DUONG_CO_SO>>",
+   "t": "p"
+  },
+  {
+   "text": "5. Thay đổi và phiên bản",
+   "t": "h1"
+  },
+  {
+   "text": "Không có yêu cầu thay đổi.",
+   "t": "p"
+  },
+  {
+   "huong": "ngang",
+   "t": "section"
+  },
+  {
+   "text": "6. Lịch sử phiên bản tài liệu",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Tệp",
+     "Phiên bản",
+     "Ngày tài liệu",
+     "Thời điểm tạo",
+     "Tài liệu",
+     "Trạng thái",
+     "Ghi chú"
+    ],
+    [
+     "HSMT.docx",
+     "0.1",
+     "",
+     "16/10/2026 23:12",
+     "Hồ sơ mời thầu",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "HSMT.docx",
+     "0.2",
+     "",
+     "16/10/2026 23:21",
+     "Hồ sơ mời thầu",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "HSMT.docx",
+     "0.3",
+     "",
+     "17/10/2026 23:56",
+     "Hồ sơ mời thầu",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "Master_schedule.xlsx",
+     "0.1",
+     "",
+     "16/10/2026 23:22",
+     "Master schedule",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Master_schedule.xlsx",
+     "0.2",
+     "",
+     "16/10/2026 23:52",
+     "Master schedule",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Master_schedule.xlsx",
+     "0.3",
+     "",
+     "16/10/2026 23:53",
+     "Master schedule",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Master_schedule.xlsx",
+     "0.4",
+     "",
+     "17/10/2026 00:11",
+     "Master schedule",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "Master_schedule.xlsx",
+     "0.5",
+     "",
+     "17/10/2026 15:39",
+     "Master schedule",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Master_schedule.xlsx",
+     "0.6",
+     "",
+     "17/10/2026 15:39",
+     "Master schedule",
+     "Dự thảo",
+     "Cập nhật họ tên theo dữ kiện nhóm"
+    ],
+    [
+     "Master_schedule.xlsx",
+     "0.7",
+     "",
+     "17/10/2026 15:42",
+     "Master schedule",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Master_schedule.xlsx",
+     "0.8",
+     "",
+     "17/10/2026 15:42",
+     "Master schedule",
+     "Dự thảo",
+     "Cập nhật theo dữ kiện nhóm: họ tên vị trí bổ sung, mức lương SA_BA, TESTER, hoán đổi D1 và D2 theo chuyên môn"
+    ],
+    [
+     "Master_schedule.xlsx",
+     "0.9",
+     "",
+     "18/10/2026 01:21",
+     "Master schedule",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Master_schedule.xlsx",
+     "0.10",
+     "",
+     "18/10/2026 01:22",
+     "Master schedule",
+     "Dự thảo",
+     "Lập lại kế hoạch 657 MD theo quyết định nhóm 17-18/10/2026: uoc_luong 657 MD, huy động sớm (D1, D2, D3, Q1 từ S2; Q2, D4 từ S3)"
+    ],
+    [
+     "Master_schedule.xlsx",
+     "0.11",
+     "",
+     "18/10/2026 07:28",
+     "Master schedule",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Master_schedule.xlsx",
+     "0.12",
+     "",
+     "18/10/2026 07:28",
+     "Master schedule",
+     "Đã kiểm tra",
+     "Quyết định nhóm 18/10/2026: D4 xác nhận họ tên, phương án dự trữ thời gian chấp nhận và báo Chủ đầu tư, vốn lưu động 500 triệu; sửa căn cứ ước lượng nhóm 6, 7"
+    ],
+    [
+     "WBS_1_Quan_ly_du_an.docx",
+     "0.1",
+     "18/03/2027",
+     "16/10/2026 23:25",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_1_Quan_ly_du_an.docx",
+     "0.2",
+     "18/03/2027",
+     "16/10/2026 23:58",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_1_Quan_ly_du_an.docx",
+     "0.3",
+     "05/03/2027",
+     "18/10/2026 01:24",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+     "0.1",
+     "18/03/2027",
+     "16/10/2026 23:25",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+     "0.2",
+     "18/03/2027",
+     "16/10/2026 23:58",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+     "0.3",
+     "05/03/2027",
+     "18/10/2026 01:24",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.docx",
+     "0.1",
+     "18/03/2027",
+     "16/10/2026 23:25",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.docx",
+     "0.2",
+     "18/03/2027",
+     "16/10/2026 23:58",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+     "0.1",
+     "05/03/2027",
+     "18/10/2026 01:24",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.docx",
+     "0.1",
+     "18/03/2027",
+     "16/10/2026 23:25",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.docx",
+     "0.2",
+     "18/03/2027",
+     "16/10/2026 23:58",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+     "0.1",
+     "05/03/2027",
+     "18/10/2026 01:24",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_5_Phan_he_dat_hang_Order.docx",
+     "0.1",
+     "18/03/2027",
+     "16/10/2026 23:25",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_5_Phan_he_dat_hang_Order.docx",
+     "0.2",
+     "18/03/2027",
+     "16/10/2026 23:58",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_5_Phan_he_dat_hang_Order.docx",
+     "0.3",
+     "05/03/2027",
+     "18/10/2026 01:24",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+     "0.1",
+     "18/03/2027",
+     "16/10/2026 23:25",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+     "0.2",
+     "18/03/2027",
+     "16/10/2026 23:58",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+     "0.3",
+     "18/03/2027",
+     "17/10/2026 00:12",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+     "0.4",
+     "05/03/2027",
+     "18/10/2026 01:24",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+     "0.5",
+     "05/03/2027",
+     "18/10/2026 07:29",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+     "0.1",
+     "18/03/2027",
+     "16/10/2026 23:25",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+     "0.2",
+     "18/03/2027",
+     "16/10/2026 23:58",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+     "0.3",
+     "05/03/2027",
+     "18/10/2026 01:24",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+     "0.4",
+     "05/03/2027",
+     "18/10/2026 07:29",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_8_Trien_khai_va_chuyen_giao.docx",
+     "0.1",
+     "18/03/2027",
+     "16/10/2026 23:25",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_8_Trien_khai_va_chuyen_giao.docx",
+     "0.2",
+     "18/03/2027",
+     "16/10/2026 23:58",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_8_Trien_khai_va_chuyen_giao.docx",
+     "0.3",
+     "18/03/2027",
+     "17/10/2026 00:12",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_8_Trien_khai_va_chuyen_giao.docx",
+     "0.4",
+     "05/03/2027",
+     "18/10/2026 01:24",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_tong_hop.docx",
+     "0.1",
+     "18/03/2027",
+     "16/10/2026 23:25",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_tong_hop.docx",
+     "0.2",
+     "18/03/2027",
+     "16/10/2026 23:58",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "WBS_tong_hop.docx",
+     "0.3",
+     "05/03/2027",
+     "18/10/2026 01:24",
+     "WBS (tài liệu)",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "WBS_tong_hop.docx",
+     "0.4",
+     "05/03/2027",
+     "18/10/2026 07:29",
+     "WBS (tài liệu)",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "Cost_estimate.xlsx",
+     "0.1",
+     "",
+     "16/10/2026 23:24",
+     "Cost estimate",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Cost_estimate.xlsx",
+     "0.2",
+     "",
+     "16/10/2026 23:46",
+     "Cost estimate",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Cost_estimate.xlsx",
+     "0.3",
+     "",
+     "16/10/2026 23:55",
+     "Cost estimate",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Cost_estimate.xlsx",
+     "0.4",
+     "",
+     "17/10/2026 00:11",
+     "Cost estimate",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "Cost_estimate.xlsx",
+     "0.5",
+     "",
+     "17/10/2026 15:40",
+     "Cost estimate",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Cost_estimate.xlsx",
+     "0.6",
+     "",
+     "17/10/2026 15:42",
+     "Cost estimate",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Cost_estimate.xlsx",
+     "0.7",
+     "",
+     "18/10/2026 01:21",
+     "Cost estimate",
+     "Dự thảo",
+     ""
+    ],
+    [
+     "Cost_estimate.xlsx",
+     "0.8",
+     "",
+     "18/10/2026 01:22",
+     "Cost estimate",
+     "Dự thảo",
+     "Lập lại kế hoạch 657 MD theo quyết định nhóm 17-18/10/2026: uoc_luong 657 MD, huy động sớm (D1, D2, D3, Q1 từ S2; Q2, D4 từ S3)"
+    ],
+    [
+     "Cost_estimate.xlsx",
+     "0.9",
+     "",
+     "18/10/2026 07:28",
+     "Cost estimate",
+     "Đã kiểm tra",
+     ""
+    ],
+    [
+     "Thuyet_minh_du_toan.docx",
+     "0.1",
+     "18/03/2027",
+     "16/10/2026 23:28",
+     "Cost estimate",
+     "Dự thảo",
+     "Lập lần đầu trong lần chạy thử bộ skill"
+    ],
+    [
+     "Thuyet_minh_du_toan.docx",
+     "0.2",
+     "18/03/2027",
+     "16/10/2026 23:29",
+     "Cost estimate",
+     "Dự thảo",
+     "Sửa văn phong theo kiểm tra lớp A"
+    ],
+    [
+     "Thuyet_minh_du_toan.docx",
+     "0.3",
+     "18/03/2027",
+     "16/10/2026 23:58",
+     "Cost estimate",
+     "Dự thảo",
+     "Vòng 2: sửa theo kiểm tra lớp B"
+    ],
+    [
+     "Thuyet_minh_du_toan.docx",
+     "0.4",
+     "18/03/2027",
+     "17/10/2026 00:12",
+     "Cost estimate",
+     "Đã kiểm tra",
+     "Vòng 3: sửa theo kiểm tra lớp B vòng 2"
+    ],
+    [
+     "Thuyet_minh_du_toan.docx",
+     "0.5",
+     "05/03/2027",
+     "17/10/2026 15:42",
+     "Cost estimate",
+     "Dự thảo",
+     "Cập nhật theo dữ kiện nhóm: họ tên vị trí bổ sung, mức lương SA_BA, TESTER, hoán đổi D1 và D2 theo chuyên môn"
+    ],
+    [
+     "Thuyet_minh_du_toan.docx",
+     "0.6",
+     "",
+     "18/10/2026 01:22",
+     "Cost estimate",
+     "Dự thảo",
+     "Lập lại kế hoạch 657 MD theo quyết định nhóm 17-18/10/2026: uoc_luong 657 MD, huy động sớm (D1, D2, D3, Q1 từ S2; Q2, D4 từ S3)"
+    ],
+    [
+     "Thuyet_minh_du_toan.docx",
+     "0.7",
+     "05/03/2027",
+     "18/10/2026 07:31",
+     "Cost estimate",
+     "Dự thảo",
+     "Lập lại theo 657 MD; quyết định nhóm: dự phòng 50 triệu, vốn lưu động 500 triệu, giữ dự trữ 4 ngày"
+    ],
+    [
+     "Thuyet_minh_du_toan.docx",
+     "0.8",
+     "05/03/2027",
+     "18/10/2026 07:34",
+     "Cost estimate",
+     "Đã kiểm tra",
+     "Sửa MH01-MH04 lớp B vòng 1"
+    ],
+    [
+     "HSDT.docx",
+     "0.1",
+     "05/03/2027",
+     "18/10/2026 07:37",
+     "Hồ sơ dự thầu",
+     "Dự thảo",
+     "Lập lại theo 657 MD, 12 nhân sự, quyết định nhóm 18/10"
+    ],
+    [
+     "HSDT.docx",
+     "0.2",
+     "05/03/2027",
+     "18/10/2026 08:10",
+     "Hồ sơ dự thầu",
+     "Đã kiểm tra",
+     "Sửa MH01, MH04, MH08 lớp B vòng 1; giải trình MH02, MH03, MH05, MH07"
+    ],
+    [
+     "Ke_hoach_quan_ly_rui_ro.docx",
+     "0.1",
+     "18/03/2027",
+     "16/10/2026 23:28",
+     "Risk management plan",
+     "Dự thảo",
+     "Lập lần đầu trong lần chạy thử bộ skill"
+    ],
+    [
+     "Ke_hoach_quan_ly_rui_ro.docx",
+     "0.2",
+     "18/03/2027",
+     "16/10/2026 23:29",
+     "Risk management plan",
+     "Dự thảo",
+     "Sửa văn phong theo kiểm tra lớp A"
+    ],
+    [
+     "Ke_hoach_quan_ly_rui_ro.docx",
+     "0.3",
+     "18/03/2027",
+     "16/10/2026 23:58",
+     "Risk management plan",
+     "Dự thảo",
+     "Vòng 2: sửa theo kiểm tra lớp B"
+    ],
+    [
+     "Ke_hoach_quan_ly_rui_ro.docx",
+     "0.4",
+     "18/03/2027",
+     "17/10/2026 00:12",
+     "Risk management plan",
+     "Đã kiểm tra",
+     "Vòng 3: sửa theo kiểm tra lớp B vòng 2"
+    ],
+    [
+     "Ke_hoach_quan_ly_rui_ro.docx",
+     "0.5",
+     "18/03/2027",
+     "17/10/2026 15:42",
+     "Risk management plan",
+     "Dự thảo",
+     "Cập nhật theo dữ kiện nhóm: họ tên vị trí bổ sung, mức lương SA_BA, TESTER, hoán đổi D1 và D2 theo chuyên môn"
+    ],
+    [
+     "Ke_hoach_quan_ly_rui_ro.docx",
+     "0.6",
+     "18/03/2027",
+     "18/10/2026 07:31",
+     "Risk management plan",
+     "Đã kiểm tra",
+     "Lập lại theo 657 MD; quyết định nhóm: giữ dự trữ 4 ngày, chấp nhận và báo Chủ đầu tư, dự phòng 50 triệu"
+    ],
+    [
+     "Ke_hoach_quan_ly_thay_doi.docx",
+     "0.1",
+     "18/03/2027",
+     "18/10/2026 08:11",
+     "Change management plan",
+     "Đã kiểm tra",
+     "Lập theo 657 MD, HSDT 0.2, quyết định nhóm 18/10"
+    ],
+    [
+     "Ke_hoach_tong_the.docx",
+     "0.1",
+     "18/03/2027",
+     "18/10/2026 08:15",
+     "Master plan",
+     "Đã kiểm tra",
+     "Lập theo 657 MD, tổng hợp 01-04, 06-08, 10, quyết định nhóm 18/10"
+    ],
+    [
+     "Phan_cong_nhiem_vu.docx",
+     "0.1",
+     "18/03/2027",
+     "16/10/2026 23:28",
+     "Danh sách phân chia công việc (responsibilities)",
+     "Dự thảo",
+     "Lập lần đầu trong lần chạy thử bộ skill"
+    ],
+    [
+     "Phan_cong_nhiem_vu.docx",
+     "0.2",
+     "18/03/2027",
+     "16/10/2026 23:58",
+     "Danh sách phân chia công việc (responsibilities)",
+     "Dự thảo",
+     "Vòng 2: sửa theo kiểm tra lớp B"
+    ],
+    [
+     "Phan_cong_nhiem_vu.docx",
+     "0.3",
+     "18/03/2027",
+     "17/10/2026 00:12",
+     "Danh sách phân chia công việc (responsibilities)",
+     "Đã kiểm tra",
+     "Vòng 3: sửa theo kiểm tra lớp B vòng 2"
+    ],
+    [
+     "Phan_cong_nhiem_vu.docx",
+     "0.4",
+     "18/03/2027",
+     "17/10/2026 15:42",
+     "Danh sách phân chia công việc (responsibilities)",
+     "Dự thảo",
+     "Cập nhật theo dữ kiện nhóm: họ tên vị trí bổ sung, mức lương SA_BA, TESTER, hoán đổi D1 và D2 theo chuyên môn"
+    ],
+    [
+     "Phan_cong_nhiem_vu.docx",
+     "0.5",
+     "18/03/2027",
+     "18/10/2026 07:29",
+     "Danh sách phân chia công việc (responsibilities)",
+     "Dự thảo",
+     "Lập lại theo 657 MD, 12 nhân sự (D4 từ S3)"
+    ],
+    [
+     "Phan_cong_nhiem_vu.docx",
+     "0.6",
+     "18/03/2027",
+     "18/10/2026 07:31",
+     "Danh sách phân chia công việc (responsibilities)",
+     "Đã kiểm tra",
+     "Sửa MH01 lớp B: mức sử dụng thấp thay cho quá tải"
+    ],
+    [
+     "Phu_luc_bang_chung_prompt_skill.docx",
+     "0.1",
+     "",
+     "17/10/2026 00:17",
+     "Phụ lục bằng chứng prompt và skill",
+     "Dự thảo",
+     ""
+    ]
+   ],
+   "widths": [
+    3200,
+    900,
+    1300,
+    1800,
+    2200,
+    1300,
+    2300
+   ],
+   "center_cols": [
+    1,
+    2,
+    3
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "huong": "doc",
+   "t": "section"
+  },
+  {
+   "text": "7. Truy vết quá trình tạo tài liệu",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Skill",
+     "Phiên bản skill",
+     "Lần chạy script",
+     "Lần agent",
+     "Prompt"
+    ],
+    [
+     "hsmt-mau-5a",
+     "3.1.0",
+     "5",
+     "10",
+     "hsmt-mau-5a__vai_kiem_tra__855f2ad8b87b.md, hsmt-mau-5a__vai_kiem_tra__cce57cb037d6.md, hsmt-mau-5a__vai_phan_tich_rfp__8fb36b0bdd1d.md, hsmt-mau-5a__vai_soan_thao__5e7276d3b296.md, hsmt-mau-5a__vai_soan_thao__8ed7b9fa4864.md, hsmt-mau-5a__vai_sua__89074d3dbc26.md, hsmt-mau-5a__vai_sua__b9da03735469.md"
+    ],
+    [
+     "qlda-wbs",
+     "1.0.0",
+     "20",
+     "6",
+     "qlda-loi__vai_kiem_tra__24e2f43660f0.md, qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-wbs__vai_lap_wbs__5606a28d3fa7.md"
+    ],
+    [
+     "qlda-phan-cong",
+     "1.0.0",
+     "205",
+     "7",
+     "qlda-loi__vai_kiem_tra__24e2f43660f0.md, qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a098eadfb618.md, qlda-phan-cong__vai_giao_viec__2f94e528a4c4.md"
+    ],
+    [
+     "qlda-master-schedule",
+     "1.0.0",
+     "12",
+     "5",
+     "qlda-loi__vai_kiem_tra__24e2f43660f0.md, qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-master-schedule__vai_lap_moc__c849be3f12b6.md"
+    ],
+    [
+     "qlda-risk",
+     "1.0.0",
+     "28",
+     "6",
+     "qlda-loi__vai_kiem_tra__24e2f43660f0.md, qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a098eadfb618.md, qlda-risk__vai_phan_tich_rui_ro__b982a1639220.md"
+    ],
+    [
+     "qlda-cost-estimate",
+     "1.0.0",
+     "25",
+     "8",
+     "qlda-loi__vai_kiem_tra__24e2f43660f0.md, qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a098eadfb618.md, qlda-loi__vai_sua__d64f5988d34d.md"
+    ],
+    [
+     "qlda-loi",
+     "1.0.0",
+     "27",
+     "2",
+     "qlda-loi__vai_sua__d64f5988d34d.md"
+    ],
+    [
+     "qlda-hsdt",
+     "1.0.0",
+     "4",
+     "3",
+     "qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_sua__d64f5988d34d.md"
+    ],
+    [
+     "qlda-phien-ban",
+     "1.0.0",
+     "38",
+     "1",
+     "qlda-loi__vai_kiem_tra__6932625a7893.md"
+    ],
+    [
+     "qlda-change",
+     "1.1.0",
+     "4",
+     "1",
+     "qlda-loi__vai_kiem_tra__6932625a7893.md"
+    ],
+    [
+     "qlda-master-plan",
+     "1.1.0",
+     "2",
+     "1",
+     "qlda-loi__vai_kiem_tra__6932625a7893.md"
+    ]
+   ],
+   "widths": [
+    2300,
+    1300,
+    1300,
+    1100,
+    3300
+   ],
+   "center_cols": [
+    1,
+    2,
+    3
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Nhật ký chạy ghi 420 lần chạy, trong đó 50 lần do agent thực hiện. Chi tiết prompt, đầu vào, đầu ra và băm nội dung của từng lần chạy ở Phụ lục bằng chứng prompt và skill.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Commit",
+     "Ngày",
+     "Tác giả",
+     "Nội dung"
+    ],
+    [
+     "bcab083",
+     "18/10/2026",
+     "tranbadat",
+     "update dữ liệu"
+    ],
+    [
+     "1a9ebb5",
+     "17/10/2026",
+     "tranbadat",
+     "update quy trinh"
+    ],
+    [
+     "321a08e",
+     "17/10/2026",
+     "tranbadat",
+     "update skill"
+    ],
+    [
+     "96e66ce",
+     "17/10/2026",
+     "tranbadat",
+     "update skill"
+    ],
+    [
+     "60b207b",
+     "11/10/2026",
+     "tranbadat",
+     "chore: khởi tạo dự án lập HSMT theo Mẫu 5A"
+    ]
+   ],
+   "widths": [
+    1100,
+    1300,
+    1900,
+    5000
+   ],
+   "center_cols": [
+    0,
+    1
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "8. Nhận xét",
+   "t": "h1"
+  },
+  {
+   "text": "<<SOẠN:NHAN_XET>>",
+   "t": "p"
+  }
+ ]
+}

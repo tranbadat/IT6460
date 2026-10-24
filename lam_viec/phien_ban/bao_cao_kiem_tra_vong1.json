@@ -1,0 +1,42 @@
+{
+ "tai_lieu": "lam_viec/phien_ban/phien_ban_vong1.docx",
+ "dac_ta": "phien_ban",
+ "thoi_gian": "2026-10-18 08:27:15",
+ "ket_luan": "chua_dat",
+ "so_loi": 3,
+ "so_canh_bao": 0,
+ "phat_hien": [
+  {
+   "ma": "VP01",
+   "muc_do": "loi",
+   "nhom": "van_phong",
+   "vi_tri": " estimate Dự thảo Lập lần đầu trong lần chạy thử bộ skill Thuyet_minh_du_toan.docx 0.2 1",
+   "mo_ta": "Từ không phù hợp văn phong: chạy thử",
+   "cach_sua": "tu_dong",
+   "de_xuat": "vận hành thử"
+  },
+  {
+   "ma": "VP01",
+   "muc_do": "loi",
+   "nhom": "van_phong",
+   "vi_tri": "ment plan Dự thảo Lập lần đầu trong lần chạy thử bộ skill Ke_hoach_quan_ly_rui_ro.docx 0",
+   "mo_ta": "Từ không phù hợp văn phong: chạy thử",
+   "cach_sua": "tu_dong",
+   "de_xuat": "vận hành thử"
+  },
+  {
+   "ma": "VP01",
+   "muc_do": "loi",
+   "nhom": "van_phong",
+   "vi_tri": "bilities) Dự thảo Lập lần đầu trong lần chạy thử bộ skill Phan_cong_nhiem_vu.docx 0.2 18",
+   "mo_ta": "Từ không phù hợp văn phong: chạy thử",
+   "cach_sua": "tu_dong",
+   "de_xuat": "vận hành thử"
+  }
+ ],
+ "tieu_chi_doc_hieu": [
+  "Quy ước nhất quán với sổ phiên bản",
+  "Nhận xét dựa trên số liệu sổ phiên bản và mã CR",
+  "Nêu rõ tài liệu còn cần cập nhật nếu có"
+ ]
+}

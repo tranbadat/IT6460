@@ -1,0 +1,144 @@
+{
+ "CAN_CU": [
+  "Kế hoạch quản lý thay đổi quy định cách tiếp nhận, đánh giá, quyết định, thực hiện và đóng mọi yêu cầu thay đổi trong quá trình thực hiện gói thầu, bảo đảm mỗi thay đổi về phạm vi, đặc tả, tiến độ hoặc giá đều có đánh giá tác động định lượng, có người có thẩm quyền quyết định và có văn bản làm căn cứ trước khi thực hiện. Kế hoạch đồng thời bảo vệ ngày cut over {lich#cut_over|ngay} cố định và các mốc gắn đợt thanh toán của hợp đồng.",
+  "Căn cứ hợp đồng gồm: Mục 17.1(a) E-ĐKC về bổ sung hạng mục công việc ngoài phạm vi hợp đồng, Mục 17.1(b) E-ĐKC về thay đổi thời gian thực hiện hợp đồng, Mục 17.1(c) E-ĐKCT quy định {hsmt#e_dkct['E-ĐKC 17.1(c)']} Mục 17.2 E-ĐKC quy định hai bên thương thảo để ký văn bản sửa đổi hợp đồng khi có thay đổi. Mục 17.3 E-ĐKC và Mục 17.4 E-ĐKCT về đề xuất tiết kiệm chi phí: {hsmt#e_dkct['E-ĐKC 17.4']} Mục 18 E-ĐKC về điều chỉnh tiến độ, trong đó Mục 18(e) E-ĐKCT quy định {hsmt#e_dkct['E-ĐKC 18 (e)']}",
+  "Mục 2.2(i) E-ĐKCT quy định {hsmt#e_dkct['E-ĐKC 2.2 (i)']} Như vậy văn bản thống nhất thay đổi đặc tả là một phần của hợp đồng và phải được lưu cùng hồ sơ hợp đồng. Mục 20.1 E-ĐKCT quy định Chủ đầu tư kiểm tra sản phẩm theo đặc tả đã được hai bên xác nhận, lỗi logic hoặc vấn đề khác thuộc trách nhiệm của nhà thầu do nhà thầu sửa chữa, bổ sung bằng chi phí của mình.",
+  "Căn cứ RFP: {rfp#yeu_cau[ma=R35].dien_giai} ({rfp#yeu_cau[ma=R35].ma}), {rfp#yeu_cau[ma=R38].dien_giai} ({rfp#yeu_cau[ma=R38].ma}), {rfp#yeu_cau[ma=R42].dien_giai} ({rfp#yeu_cau[ma=R42].ma}). Kế hoạch thực hiện cam kết đã nêu trong hồ sơ dự thầu (ket_qua/02_HSDT/HSDT.docx) tại Mục 13 về vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành, và đáp ứng tiêu chí kỹ thuật về quản lý thay đổi của HSMT.",
+  "Mọi đề nghị liên quan đến nội dung công việc được phân biệt thành ba loại. Làm rõ yêu cầu là việc giải thích hoặc chi tiết hóa yêu cầu đã có trong HSMT và đặc tả, không làm tăng khối lượng và không đi qua quy trình yêu cầu thay đổi. Sửa lỗi thuộc trách nhiệm nhà thầu là việc khắc phục sản phẩm chưa đạt đặc tả đã xác nhận, do nhà thầu tự chịu chi phí theo Mục 20.1 E-ĐKCT. Yêu cầu thay đổi là đề nghị bổ sung, bớt hoặc sửa nội dung so với phạm vi, đặc tả, tiến độ hoặc giá đã thống nhất, phải đi qua quy trình tại mục 4.",
+  "Phạm vi áp dụng của kế hoạch gồm thay đổi về phạm vi, đặc tả, lịch và mốc, nhân sự (thay thế nhân sự trong {hsmt#hop_dong.thay_the_nhan_su_ngay} ngày theo Mục 21.2 E-ĐKCT), đơn giá, quy trình làm việc, và thay đổi về con người phía Chủ đầu tư khi đưa hệ thống mới vào sử dụng."
+ ],
+ "VAI_TRO": [
+  "Người đề xuất là thành viên nhóm nhà thầu hoặc cán bộ Chủ đầu tư, có trách nhiệm nêu nội dung, lý do và căn cứ của thay đổi trên phiếu yêu cầu thay đổi. Người tiếp nhận và phân loại sơ bộ là quản trị dự án {tdb#vai_ban.qtda.ho_ten}, có trách nhiệm cấp mã, phân biệt làm rõ, sửa lỗi và yêu cầu thay đổi, xác định thay đổi nội bộ hay chạm cam kết với Chủ đầu tư để xác định thời hạn đánh giá. Người đánh giá tác động là người phụ trách gói WBS bị ảnh hưởng do quản trị dự án chỉ định, có trách nhiệm xác định gói bị ảnh hưởng, MD tăng, mốc và rủi ro liên quan bằng công cụ của nhóm. Người cập nhật tài liệu là người phụ trách từng tài liệu trong ma trận lan truyền tại mục 6, chịu trách nhiệm tạo lại tài liệu với đầu vào mới sau khi thay đổi được phê duyệt.",
+  "Ban kiểm soát thay đổi gồm quản trị dự án {tdb#vai_ban.qtda.ho_ten} chủ trì, người đại diện ký hợp đồng của nhà thầu {tdb#vai_ban.dai_dien_nt.ho_ten}, {tdb#vai_ban.dau_moi_cdt.ten} và người có thẩm quyền của Chủ đầu tư là {tdb#vai_ban.tham_quyen_cdt.ho_ten}. Họ tên người có thẩm quyền của Chủ đầu tư được ghi khi hoàn thiện hợp đồng theo Mục 1.3 E-ĐKCT. Người có thẩm quyền ký văn bản thống nhất hoặc phụ lục hợp đồng là {tdb#vai_ban.dai_dien_nt.ho_ten} phía nhà thầu và {tdb#vai_ban.tham_quyen_cdt.ho_ten} phía Chủ đầu tư.",
+  "Ban kiểm soát thay đổi xem xét đánh giá tác động và đưa ra khuyến nghị. Quyết định đối với yêu cầu mức lớn thuộc người đại diện ký hợp đồng của hai bên, không quyết định theo đa số thành viên của ban. Mọi thay đổi chạm đặc tả đã được hai bên xác nhận đều cần văn bản thống nhất của Chủ đầu tư theo Mục 17.1(c) E-ĐKCT, dù ở mức nào. Thay đổi phạm vi, giá, thời gian thực hiện hoặc mốc thanh toán được ký phụ lục hợp đồng.",
+  "Để kiểm soát thay đổi không chính thức, thành viên nhóm không thực hiện nội dung ngoài đặc tả khi chưa có quyết định theo kế hoạch này, không tự thêm tính năng theo đề nghị trao đổi miệng. Đề nghị nhận được ngoài quy trình được chuyển cho quản trị dự án để lập phiếu yêu cầu thay đổi."
+ ],
+ "QUY_TRINH": [
+  [
+   "1",
+   "Tiếp nhận đề nghị, cấp mã và lập phiếu theo mẫu ở mục 5. Trạng thái Mới",
+   "Quản trị dự án",
+   "Ngày tiếp nhận",
+   "Phiếu yêu cầu thay đổi, mã yêu cầu"
+  ],
+  [
+   "2",
+   "Phân biệt làm rõ, sửa lỗi thuộc trách nhiệm nhà thầu và yêu cầu thay đổi. Làm rõ và sửa lỗi được xử lý theo kế hoạch sprint, không đi tiếp quy trình",
+   "Quản trị dự án",
+   "Ngày tiếp nhận",
+   "Kết luận loại đề nghị ghi trên phiếu"
+  ],
+  [
+   "3",
+   "Thực hiện phân loại sơ bộ thay đổi nội bộ hay chạm cam kết với Chủ đầu tư, điều kiện của mức lớn, để xác định thời hạn đánh giá. Trạng thái Đang đánh giá",
+   "Quản trị dự án",
+   "Ngày tiếp nhận",
+   "Mức sơ bộ, hạn đánh giá"
+  ],
+  [
+   "4",
+   "Đánh giá tác động định lượng bằng công cụ của nhóm: MD tăng, chi phí nội bộ, giá đề nghị Chủ đầu tư, số ngày chậm, mốc bị ảnh hưởng, điểm tác động và mức. Trạng thái Chờ phê duyệt",
+   "Người đánh giá tác động",
+   "Mức nhỏ: {tdb#tham_quyen.dong[0][2]}. Mức trung bình: {tdb#tham_quyen.dong[1][2]}. Mức lớn: {tdb#tham_quyen.dong[2][2]}",
+   "Đánh giá tác động trong sổ yêu cầu thay đổi"
+  ],
+  [
+   "5",
+   "Họp ban kiểm soát thay đổi đối với yêu cầu mức lớn, xem xét đánh giá tác động và khuyến nghị",
+   "Ban kiểm soát thay đổi",
+   "{tdb#tham_quyen.dong[2][3]}",
+   "Biên bản họp, khuyến nghị"
+  ],
+  [
+   "6",
+   "Quyết định theo thẩm quyền ở mục 3: Đã phê duyệt, Từ chối hoặc Hoãn",
+   "Người phê duyệt theo mức",
+   "Mức nhỏ: {tdb#tham_quyen.dong[0][3]}. Mức trung bình: {tdb#tham_quyen.dong[1][3]}",
+   "Quyết định ghi trên phiếu"
+  ],
+  [
+   "7",
+   "Lập văn bản thống nhất thay đổi đặc tả hoặc phụ lục hợp đồng khi thay đổi phạm vi, giá, thời gian thực hiện hoặc mốc thanh toán",
+   "Người đại diện ký hợp đồng của hai bên",
+   "Trước khi thực hiện thay đổi",
+   "Văn bản thống nhất, phụ lục hợp đồng"
+  ],
+  [
+   "8",
+   "Cập nhật dữ liệu nguồn và tạo lại tài liệu theo ma trận lan truyền ở mục 6, ghi phiên bản sau thay đổi vào sổ phiên bản",
+   "Người cập nhật tài liệu",
+   "Trước khi thực hiện thay đổi",
+   "Tài liệu phiên bản mới"
+  ],
+  [
+   "9",
+   "Thực hiện, kiểm thử phần thay đổi và Chủ đầu tư kiểm tra đạt theo đặc tả đã cập nhật (Mục 20.1 E-ĐKCT), thay đổi nội bộ do quản trị dự án kiểm tra. Trạng thái Đã thực hiện",
+   "Người phụ trách gói WBS, Chủ đầu tư",
+   "Theo kế hoạch sprint đã cập nhật",
+   "Biên bản kiểm tra đạt"
+  ],
+  [
+   "10",
+   "Thông báo kết quả cho các bên liên quan và đóng yêu cầu theo bảng nhánh đóng, gồm nhánh từ chối và hoãn. Trạng thái Đã đóng",
+   "Quản trị dự án",
+   "Khi đủ điều kiện đóng",
+   "Sổ yêu cầu thay đổi đã cập nhật"
+  ]
+ ],
+ "TAC_DONG": [
+  "Người đánh giá xác định các gói WBS bị ảnh hưởng và gói mới, MD tăng theo từng gói, sau đó công cụ của nhóm tính lại lịch để xác định ảnh hưởng đến đường găng. Các gói trên đường găng hiện tại gồm {lich#duong_gang}. Thay đổi chạm các gói này làm tiêu hao trực tiếp dự trữ đến cut over, hiện còn {lich#du_tru_den_cut_over_ngay} ngày. Theo quyết định của nhóm ngày 18/10/2026, dự trữ được giữ nguyên và nhà thầu báo Chủ đầu tư khi dự trữ còn dưới 2 ngày.",
+  "Đánh giá xác định các mốc gắn đợt thanh toán bị dời hoặc vượt hạn. Theo lịch, mốc M2 có hạn {lich#moc[ma=M2].han|ngay}, mốc M3 có hạn {lich#moc[ma=M3].han|ngay}. Thay đổi làm chậm cut over hoặc làm mốc gắn thanh toán vượt hạn được xếp mức lớn theo bảng điều kiện ở mục 3.",
+  "Đánh giá nêu rủi ro mới hoặc rủi ro trong sổ bị tác động, dẫn chiếu mã rủi ro, ví dụ {rr#danh_sach[ma=RR01].ma} về đặc tả thay đổi sau khi xác nhận và {rr#danh_sach[ma=RR11].ma} về yêu cầu bổ sung thanh toán trực tuyến. Đánh giá chất lượng xác định phạm vi kiểm thử hồi quy đối với các chức năng liên quan đến phần thay đổi.",
+  "Tài liệu phải cập nhật được xác định theo sơ đồ phụ thuộc giữa các bước: từ loại dữ liệu bị thay đổi, ma trận lan truyền dưới đây liệt kê theo thứ tự các tài liệu phải tạo lại và đường cơ sở đấu thầu bị ảnh hưởng. Tài liệu đấu thầu đã khóa không sửa, thay đổi được ghi nhận bằng văn bản thống nhất hoặc phụ lục hợp đồng."
+ ],
+ "CAU_HINH": [
+  "Quản lý cấu hình gồm năm việc. Nhận diện hạng mục cấu hình gồm các sản phẩm Mẫu 01A trong bảng trên, mã nguồn, cấu hình môi trường và dữ liệu chuyển đổi. Kiểm soát thay đổi đối với hạng mục đã đặt đường cơ sở thực hiện theo quy trình tại mục 4. Kiểm soát phiên bản ghi mỗi phiên bản của tài liệu và mã nguồn. Kiểm tra cấu hình đối chiếu hạng mục với đặc tả và yêu cầu thay đổi đã phê duyệt. Báo cáo trạng thái cấu hình được nêu trong báo cáo tiến độ.",
+  "Đường cơ sở kế hoạch dự án gồm WBS, master schedule và cost estimate được đặt khi ký hợp đồng. Đặc tả và giao diện ưu tiên được đặt đường cơ sở tại mốc M2 ({lich#moc[ma=M2].ngay|ngay}) bằng biên bản xác nhận đặc tả, là một phần của hợp đồng theo Mục 2.2(i) E-ĐKCT. Các hạng mục khác được đặt đường cơ sở tại mốc ghi trong bảng.",
+  "Quy tắc nhánh mã nguồn: nhánh chính chỉ nhận thay đổi thuộc kế hoạch sprint hoặc thuộc yêu cầu thay đổi đã phê duyệt, ghi mã yêu cầu thay đổi trong ghi chú thay đổi. Bản phát hành được gắn nhãn phiên bản tại các mốc. Kiểm tra cấu hình được thực hiện trước mốc M3 ({lich#moc[ma=M3].ngay|ngay}) và trước cut over {lich#cut_over|ngay}.",
+  "Phiên bản tài liệu được quản lý theo sổ phiên bản, tài liệu đấu thầu đã khóa không sửa. Người phụ trách từng hạng mục ghi trong bảng trên. Gói {pc#giao_viec[ma=1.2.3].ma} ({pc#giao_viec[ma=1.2.3].ten}) do quản trị dự án {tdb#vai_ban.qtda.ho_ten} thực hiện."
+ ],
+ "CON_NGUOI": [
+  [
+   "Khách hàng mua qua internet ({rfp#yeu_cau[ma=R02].ma}, {rfp#yeu_cau[ma=R03].ma})",
+   "Tìm kiếm sản phẩm, đăng ký thành viên và đặt hàng qua website",
+   "Chưa xác định, đánh giá lại sau khảo sát nghiệp vụ ({wbs#goi[ma=2.1.1].ma})",
+   "Hợp lý - thực chứng, thích ứng môi trường",
+   "Tài liệu hướng dẫn sử dụng cho khách hàng ({wbs#goi[ma=8.2.1].ma}), giao diện thao tác dễ dàng",
+   "Ngưỡng do hai bên thống nhất tại họp khởi động"
+  ],
+  [
+   "Bộ phận vận hành bán hàng của Chủ đầu tư ({rfp#yeu_cau[ma=R46].ma})",
+   "Làm việc theo quy trình vận hành mới của kênh bán hàng trực tuyến",
+   "Chưa xác định, đánh giá lại sau khảo sát nghiệp vụ ({wbs#goi[ma=2.1.1].ma})",
+   "Tái giáo dục chuẩn mực, hợp lý - thực chứng",
+   "Hướng dẫn vận hành ({wbs#goi[ma=8.2.3].ma}), tham gia kiểm thử chấp nhận từ {da#uat.tu|ngay} đến {da#uat.den|ngay}",
+   "Tỷ lệ kịch bản kiểm thử chấp nhận cán bộ tự thực hiện, dấu hiệu theo {rr#danh_sach[ma=RR09].ma}"
+  ],
+  [
+   "Bộ phận quản lý Main System ({rfp#yeu_cau[ma=R10].ma})",
+   "Trao đổi dữ liệu giữa Main System và Selling DB",
+   "Chưa xác định, đánh giá lại sau khảo sát hệ thống hiện có ({wbs#goi[ma=2.1.2].ma})",
+   "Hợp lý - thực chứng",
+   "Tài liệu hướng dẫn vận hành và quản trị kỹ thuật ({wbs#goi[ma=8.2.2].ma}), kiểm thử vận hành ({wbs#goi[ma=7.3.2].ma})",
+   "Ngưỡng do hai bên thống nhất tại họp khởi động"
+  ],
+  [
+   "Nghiệp vụ vận chuyển ({rfp#yeu_cau[ma=R11].ma})",
+   "Nhận thông tin đơn hàng từ Main System để giao hàng tới khách hàng",
+   "Chưa xác định, đánh giá lại sau khảo sát nghiệp vụ ({wbs#goi[ma=2.1.1].ma})",
+   "Thích ứng môi trường, hợp lý - thực chứng",
+   "Kiểm thử vận hành luồng đặt hàng và giao nhận ({wbs#goi[ma=7.3.2].ma})",
+   "Ngưỡng do hai bên thống nhất tại họp khởi động"
+  ]
+ ],
+ "CON_NGUOI_TRIEN_KHAI": [
+  "Bước thứ nhất đánh giá mức sẵn lòng, mức sẵn sàng và khả năng thay đổi của từng nhóm người dùng trong khảo sát nghiệp vụ ({wbs#goi[ma=2.1.1].ma}). Nhà tài trợ thay đổi là người có thẩm quyền của Chủ đầu tư, {tdb#vai_ban.tham_quyen_cdt.ho_ten}. Tác nhân thay đổi là quản trị dự án {tdb#vai_ban.qtda.ho_ten} và nhóm dự án. Đối tượng thay đổi là người dùng thuộc các nhóm trong bảng trên.",
+  "Bước thứ hai chọn chiến lược cho từng nhóm theo bảng trên. Bước thứ ba thực hiện và theo dõi với truyền thông hai chiều: mời cán bộ Chủ đầu tư dự trình diễn cuối sprint, gửi tài liệu hướng dẫn trước buổi hướng dẫn vận hành ({wbs#goi[ma=8.2.3].ma}), tổ chức đào tạo và hỗ trợ trong kiểm thử chấp nhận từ {da#uat.tu|ngay} đến {da#uat.den|ngay}, ghi nhận ý kiến người dùng để xử lý theo quy trình làm rõ hoặc yêu cầu thay đổi.",
+  "Bước thứ tư đánh giá mức sẵn sàng trước cut over {lich#cut_over|ngay}, theo dõi trong thời gian hỗ trợ tăng cường từ {ct#bao_hanh.ho_tro_tang_cuong.tu|ngay} đến {ct#bao_hanh.ho_tro_tang_cuong.den|ngay} và rút bài học. Rủi ro cán bộ Chủ đầu tư chưa sẵn sàng được quản lý theo {rr#danh_sach[ma=RR09].ma}: {rr#danh_sach[ma=RR09].bien_phap_phong_ngua}. Khi dấu hiệu xuất hiện, áp dụng kế hoạch ứng phó: {rr#danh_sach[ma=RR09].ke_hoach_ung_pho}."
+ ],
+ "THEO_DOI": [
+  "Kết quả quyết định của mỗi yêu cầu thay đổi được thông báo bằng văn bản cho người đề xuất, ban kiểm soát thay đổi và người phụ trách các gói WBS bị ảnh hưởng. Mỗi kỳ báo cáo tiến độ nêu số yêu cầu thay đổi phát sinh, đang mở và đã đóng cùng tác động đến MD, chi phí và mốc. Các yêu cầu đang mở được rà soát trong họp tiến độ hằng tuần và họp cuối sprint ({wbs#goi[ma=1.2.1].ma}).",
+  "Chỉ số theo dõi gồm số yêu cầu đang mở, MD tăng và giá đề nghị Chủ đầu tư lũy kế của các yêu cầu đã phê duyệt, thời gian xử lý so với hạn quyết định của từng mức. Hiện sổ yêu cầu thay đổi có {tdb#so_cr|nguyen} yêu cầu.",
+  "Khi thay đổi phát sinh rủi ro mới, người đánh giá đề xuất bổ sung vào sổ đăng ký rủi ro theo kế hoạch quản lý rủi ro. Khi một vấn đề trong sổ vấn đề cần thay đổi kế hoạch, vấn đề được chuyển thành yêu cầu thay đổi theo quy trình tại mục 4. Việc dùng dự phòng cho rủi ro và thay đổi theo quy tắc tại mục 9."
+ ]
+}

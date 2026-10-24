@@ -1,0 +1,29 @@
+{
+ "tai_lieu": "lam_viec/ke_hoach_tong_the/ke_hoach_tong_the_vong1.docx",
+ "dac_ta": "ke_hoach_tong_the",
+ "thoi_gian": "2026-10-18 08:15:51",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 1,
+ "phat_hien": [
+  {
+   "ma": "VP02",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": ", yêu cầu mức lớn gửi ngay khi đánh giá xong Báo cáo vượt cấp Trần Bá Đạt Lê Quốc Bả",
+   "mo_ta": "Cách diễn đạt cần xem lại: xong",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "hoàn thành"
+  }
+ ],
+ "tieu_chi_doc_hieu": [
+  "Kế hoạch dựa trên HSMT, HSDT, WBS, lịch sprint, phân công: không mâu thuẫn số liệu với các tài liệu đó",
+  "Có điều lệ dự án: mục tiêu SMART dạng bảng (chỉ số, ngưỡng, hạn, người xác nhận), ràng buộc, giả định, người phê duyệt",
+  "Có đủ chín kế hoạch con (tích hợp, phạm vi, thời gian, chi phí, chất lượng, nhân sự, truyền thông, rủi ro, mua sắm) cùng quản lý thay đổi, cấu hình, vấn đề, lịch rà soát, kết thúc dự án",
+  "Bên liên quan lấy từ HSMT, dữ liệu nhà thầu và thành viên, không có người không có trong dữ liệu",
+  "Có tiêu chí nghiệm thu từ chỉ tiêu kỹ thuật và điều kiện cut over kiểm chứng được",
+  "Chỉ một đường cơ sở chi phí là BAC (khoản A), giá hợp đồng ghi riêng, có ba đường cơ sở kèm cách kiểm soát",
+  "Quy tắc dùng dự phòng dẫn chiếu bảng chung, không viết khác kế hoạch quản lý rủi ro và thuyết minh dự toán",
+  "Kế hoạch họp đáp ứng yêu cầu Meeting của RFP và kế hoạch họp đã cam kết trong HSDT, có ma trận báo cáo"
+ ]
+}

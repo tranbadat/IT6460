@@ -1,0 +1,1036 @@
+{
+ "meta": {
+  "ten": "Thuyết minh dự toán chi phí",
+  "id": "chi_phi",
+  "header": "Cost estimate - Thuyết minh dự toán chi phí",
+  "huong": "doc",
+  "font": "Times New Roman",
+  "size_pt": 13,
+  "size_bang_pt": 12,
+  "nguon": {
+   "cp": "du_lieu/chi_phi.json",
+   "wbs": "du_lieu/wbs.json",
+   "hsmt": "du_lieu/hsmt.json",
+   "rr": "du_lieu/rui_ro.json",
+   "lich": "du_lieu/lich.json",
+   "nt": "dau_vao/nha_thau.json",
+   "da": "dau_vao/du_an.json"
+  }
+ },
+ "can_soan": {
+  "CAN_CU": {
+   "huong_dan": "Nêu căn cứ: phạm vi theo HSMT và WBS, đơn giá trọn gói theo loại công việc và nguồn của đơn giá, lương tham chiếu dùng để đối chiếu. Nêu phương pháp: dòng A tính từ MD theo loại công việc, dòng B theo danh mục, dự phòng so với EMV của sổ rủi ro, khoản C và thuế. Nêu quan hệ với Mẫu 11A của HSDT.",
+   "nguon": [
+    "cp",
+    "wbs",
+    "hsmt"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 3,
+   "bat_buoc": [
+    "{wbs#tong_md|md} MD",
+    "Mẫu 11A"
+   ]
+  },
+  "GIA_CHAO": {
+   "huong_dan": "Giải thích cách xác định giá chào (mục tiêu hay cộng dồn), khoản C gồm những gì, vì sao mức C đủ cho chi phí quản lý, bảo hành và lợi nhuận, và vị trí giá so với giá gói thầu.",
+   "nguon": [
+    "cp"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1
+  },
+  "DU_PHONG": {
+   "huong_dan": "Đánh giá dự phòng đủ hay thiếu so với EMV, các rủi ro đóng góp EMV lớn nhất (dùng mã rủi ro). Không viết lại quy tắc sử dụng dự phòng, chỉ dẫn chiếu bảng quy tắc ngay sau đoạn này.",
+   "nguon": [
+    "cp",
+    "rr"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "bat_buoc": [
+    "{rr#danh_sach[0].ma}"
+   ]
+  },
+  "DOI_CHIEU": {
+   "huong_dan": "Nhận xét kết quả đối chiếu: dòng A theo loại công việc so với chi phí lương kế hoạch theo người theo cách trả lương đã khai báo, ý nghĩa của MD tính lương hòa vốn, tỷ lệ sử dụng quỹ huy động như chỉ số năng lực, biện pháp khi tỷ lệ sử dụng thấp.",
+   "nguon": [
+    "cp"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1
+  },
+  "DONG_TIEN": {
+   "huong_dan": "Nhận xét dòng tiền: dòng chi lũy kế tính theo cách trả lương đã khai báo, dòng thu theo ngày sự kiện cộng thời hạn thanh toán của HSMT. Nêu sprint có lũy kế âm và mức âm lớn nhất, nhu cầu vốn lưu động, quan hệ giữa các mốc trong master schedule và các đợt thanh toán, rủi ro khi mốc trễ.",
+   "nguon": [
+    "cp",
+    "lich"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1
+  },
+  "DO_NHAY": {
+   "huong_dan": "Phân tích các yếu tố làm chi phí tăng (khối lượng tăng, năng suất giảm, thuế, rủi ro tích hợp), ngưỡng chịu đựng của giá chào, và cách kiểm soát chi phí khi thực hiện (CPI theo sprint, quy trình thay đổi).",
+   "nguon": [
+    "cp",
+    "rr"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "bat_buoc": [
+    "CPI"
+   ]
+  }
+ },
+ "blocks": [
+  {
+   "text": "PM_26I_02",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "text": "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "text": "Thuyết minh dự toán chi phí",
+   "size": 20,
+   "t": "center"
+  },
+  {
+   "text": "Cost estimate, kèm tệp Cost_estimate.xlsx",
+   "size": 14,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "rows": [
+    [
+     "Dự án",
+     "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+    ],
+    [
+     "Khách hàng",
+     "Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Đơn vị thực hiện",
+     "PM_26I_02"
+    ],
+    [
+     "Môn học",
+     "Quản trị dự án và Quản lý thay đổi"
+    ],
+    [
+     "Nhóm",
+     "PM_26I_02"
+    ],
+    [
+     "Giảng viên",
+     "Vũ Thị Hương Giang"
+    ],
+    [
+     "Người lập",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Phiên bản",
+     "{{PHIEN_BAN}}"
+    ],
+    [
+     "Ngày",
+     "{{NGAY}}"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ],
+   "t": "table"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "muc": [
+    "1. Căn cứ và phương pháp",
+    "2. Nhân công theo loại công việc",
+    "3. Tổng hợp dự toán và giá chào",
+    "4. Chi phí khác và dự phòng rủi ro",
+    "5. Đối chiếu chi phí lương theo người",
+    "6. Phân bổ giá theo hạng mục Mẫu 01A",
+    "7. Phân bổ theo nhóm WBS",
+    "8. Dòng tiền theo sprint",
+    "9. Độ nhạy và rủi ro chi phí"
+   ],
+   "t": "muc_luc"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "text": "1. Căn cứ và phương pháp",
+   "t": "h1"
+  },
+  {
+   "text": "<<SOẠN:CAN_CU>>",
+   "t": "p"
+  },
+  {
+   "text": "2. Nhân công theo loại công việc",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Loại",
+     "Loại công việc",
+     "MD",
+     "Người-tháng",
+     "Đơn giá, đồng/người-tháng",
+     "Thành tiền, đồng"
+    ],
+    [
+     "PM",
+     "Quản lý dự án",
+     "49",
+     "2,45",
+     "55.000.000",
+     "134.750.000"
+    ],
+    [
+     "BA",
+     "Phân tích nghiệp vụ, kiến trúc",
+     "90",
+     "4,50",
+     "43.000.000",
+     "193.500.000"
+    ],
+    [
+     "QA",
+     "Kiểm thử, bảo đảm chất lượng",
+     "160",
+     "8,00",
+     "40.000.000",
+     "320.000.000"
+    ],
+    [
+     "DEV",
+     "Phát triển phần mềm",
+     "318",
+     "15,90",
+     "42.000.000",
+     "667.800.000"
+    ],
+    [
+     "DEVOPS",
+     "Triển khai và vận hành",
+     "40",
+     "2,00",
+     "52.000.000",
+     "104.000.000"
+    ],
+    [
+     "",
+     "A. Tổng nhân công",
+     "657",
+     "",
+     "",
+     "1.420.050.000"
+    ]
+   ],
+   "widths": [
+    1100,
+    2700,
+    1000,
+    1200,
+    1700,
+    1800
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Một người-tháng tính bằng 20 MD. Tổng khối lượng 657 MD, tương đương 32,85 người-tháng. Nguồn đơn giá: Đơn giá trọn gói theo người-tháng của nhà thầu, đã gồm lương, bảo hiểm và chi phí quản lý trực tiếp của nhân sự.",
+   "t": "p"
+  },
+  {
+   "text": "3. Tổng hợp dự toán và giá chào",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Khoản mục",
+     "Giá trị, đồng"
+    ],
+    [
+     "A. Nhân công theo loại công việc",
+     "1.420.050.000"
+    ],
+    [
+     "B. Chi phí khác",
+     "150.000.000"
+    ],
+    [
+     "D. Dự phòng rủi ro tách riêng",
+     "0"
+    ],
+    [
+     "Chi phí đã biết (A + B + D)",
+     "1.570.050.000"
+    ],
+    [
+     "C. Chi phí chung và lợi nhuận",
+     "179.950.000"
+    ],
+    [
+     "Giá trước thuế",
+     "1.750.000.000"
+    ],
+    [
+     "Thuế GTGT",
+     "0"
+    ],
+    [
+     "Giá chào trọn gói",
+     "1.750.000.000"
+    ],
+    [
+     "Giá gói thầu theo HSMT",
+     "2.000.000.000"
+    ]
+   ],
+   "widths": [
+    6300,
+    3000
+   ],
+   "center_cols": [],
+   "right_cols": [
+    1
+   ],
+   "t": "table"
+  },
+  {
+   "text": "Giá chào thấp hơn giá gói thầu 250.000.000 đồng, tương đương 12,5%. Khoản C bằng 10,3% giá trước thuế. Căn cứ thuế: Dịch vụ phần mềm thuộc đối tượng không chịu thuế GTGT (Luật Thuế GTGT số 48/2024/QH15, khoản 21 Điều 5; Nghị định số 181/2025/NĐ-CP, khoản 13 Điều 4).",
+   "t": "p"
+  },
+  {
+   "text": "<<SOẠN:GIA_CHAO>>",
+   "t": "p"
+  },
+  {
+   "text": "4. Chi phí khác và dự phòng rủi ro",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Khoản mục",
+     "Số tiền, đồng",
+     "Căn cứ"
+    ],
+    [
+     "B",
+     "Môi trường, công cụ, bảo hành 12 tháng và dự phòng",
+     "150.000.000",
+     "Ước tính của nhà thầu"
+    ],
+    [
+     "",
+     "B. Tổng chi phí khác",
+     "150.000.000",
+     ""
+    ]
+   ],
+   "widths": [
+    800,
+    4300,
+    1800,
+    2400
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    2
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Tổng EMV của sổ đăng ký rủi ro là 146.583.750 đồng. Dự phòng hiện có là 50.000.000 đồng.",
+   "t": "p"
+  },
+  {
+   "text": "<<SOẠN:DU_PHONG>>",
+   "t": "p"
+  },
+  {
+   "text": "Quy tắc sử dụng dự phòng rủi ro lấy từ nguồn chung với kế hoạch quản lý rủi ro, kế hoạch quản lý thay đổi và master plan.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Nội dung",
+     "Quy định"
+    ],
+    [
+     "Điều kiện sử dụng",
+     "Một rủi ro trong sổ đăng ký rủi ro xảy ra hoặc kế hoạch ứng phó của rủi ro được kích hoạt"
+    ],
+    [
+     "Người đề xuất",
+     "Người phụ trách rủi ro, nêu mã rủi ro, số tiền, MD hoặc ngày cần dùng"
+    ],
+    [
+     "Người phê duyệt",
+     "Quản trị dự án phê duyệt khoản dùng cho rủi ro do thành viên khác phụ trách. Người đại diện ký hợp đồng của nhà thầu phê duyệt khoản dùng cho rủi ro do quản trị dự án phụ trách và khoản làm giảm phần chi phí chung và lợi nhuận"
+    ],
+    [
+     "Ghi nhận",
+     "Ghi vào sổ yêu cầu thay đổi kèm mã rủi ro, cập nhật sổ rủi ro, dự toán và lịch theo ma trận lan truyền"
+    ],
+    [
+     "Không áp dụng",
+     "Không dùng dự phòng để bù thay đổi phạm vi theo yêu cầu của Chủ đầu tư, các thay đổi này xử lý theo mức lớn bằng văn bản thống nhất hoặc phụ lục hợp đồng"
+    ]
+   ],
+   "widths": [
+    2300,
+    7000
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "5. Đối chiếu chi phí lương theo người",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Họ tên",
+     "Nhóm",
+     "Lương tham chiếu, đồng/tháng",
+     "Đơn giá ngày gồm bảo hiểm, đồng",
+     "MD huy động",
+     "MD công việc giao",
+     "Chi phí lương kế hoạch, đồng"
+    ],
+    [
+     "Trần Bá Đạt",
+     "Thành viên nhóm",
+     "51.000.000",
+     "2.862.955",
+     "73",
+     "63,33",
+     "181.310.911"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "Thành viên nhóm",
+     "30.000.000",
+     "1.684.091",
+     "73",
+     "59,00",
+     "99.361.364"
+    ],
+    [
+     "Vũ Đức Minh",
+     "Thành viên nhóm",
+     "28.000.000",
+     "1.571.818",
+     "73",
+     "50,00",
+     "78.590.909"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "Thành viên nhóm",
+     "30.000.000",
+     "1.684.091",
+     "73",
+     "59,00",
+     "99.361.364"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "Thành viên nhóm",
+     "27.000.000",
+     "1.515.682",
+     "73",
+     "68,00",
+     "103.066.364"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "Vị trí bổ sung",
+     "47.000.000",
+     "2.638.409",
+     "73",
+     "55,67",
+     "146.880.234"
+    ],
+    [
+     "Lê Quang Huy",
+     "Vị trí bổ sung",
+     "30.000.000",
+     "1.684.091",
+     "63",
+     "51,00",
+     "85.888.636"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "Vị trí bổ sung",
+     "30.000.000",
+     "1.684.091",
+     "63",
+     "53,00",
+     "89.256.818"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "Vị trí bổ sung",
+     "30.000.000",
+     "1.684.091",
+     "63",
+     "56,00",
+     "94.309.091"
+    ],
+    [
+     "Trần Thu Hà",
+     "Vị trí bổ sung",
+     "24.000.000",
+     "1.347.273",
+     "63",
+     "45,00",
+     "60.627.273"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "Vị trí bổ sung",
+     "24.000.000",
+     "1.347.273",
+     "53",
+     "48,00",
+     "64.669.091"
+    ],
+    [
+     "Trương Quốc Việt",
+     "Vị trí bổ sung",
+     "30.000.000",
+     "1.684.091",
+     "53",
+     "49,00",
+     "82.520.455"
+    ],
+    [
+     "Tổng",
+     "",
+     "",
+     "",
+     "796",
+     "657,00",
+     "1.185.842.510"
+    ]
+   ],
+   "widths": [
+    2000,
+    1300,
+    1400,
+    1300,
+    1000,
+    1000,
+    1300
+   ],
+   "center_cols": [],
+   "right_cols": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Lương tham chiếu: Mức trung vị theo vị trí, báo cáo lương ITviec 2025-2026; mức SA_BA, TESTER do nhóm xác định trong bảng quyết toán lương, hệ số bảo hiểm 1,235, 22 ngày làm việc mỗi tháng. Cách trả lương do nhóm khai báo: trả theo công sức (MD công việc), MD tính lương là MD công việc (kế hoạch là MD giao, thực tế là MD nhật ký). Chi phí lương kế hoạch theo người là 1.185.842.510 đồng cho 657 MD tính lương, bình quân 1.804.935 đồng mỗi MD. Dòng A trừ chi phí này còn 234.207.490 đồng, bằng 16,5% so với dòng A. Dòng A đủ chi trả lương khi tổng MD tính lương không vượt 786,76 MD.",
+   "t": "p"
+  },
+  {
+   "text": "Về năng lực, quỹ huy động theo master schedule là 796 MD cho 657 MD công việc, tỷ lệ sử dụng quỹ 82,5%, còn 139 MD sẵn sàng không ghi công.",
+   "t": "p"
+  },
+  {
+   "text": "Theo cách trả lương đã khai báo, ngày sẵn sàng không ghi công (139 MD) không tính lương. Lương của toàn bộ ngày huy động (1.436.697.954 đồng) chỉ dùng để theo dõi năng lực.",
+   "t": "p"
+  },
+  {
+   "text": "<<SOẠN:DOI_CHIEU>>",
+   "t": "p"
+  },
+  {
+   "text": "6. Phân bổ giá theo hạng mục Mẫu 01A",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "STT",
+     "Danh mục dịch vụ",
+     "Khối lượng",
+     "Đơn vị",
+     "Thành tiền, đồng"
+    ],
+    [
+     "1",
+     "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "1",
+     "Gói",
+     "137.972.356"
+    ],
+    [
+     "2",
+     "Thiết kế quy trình vận hành mới (New Operational Flow)",
+     "1",
+     "Gói",
+     "22.100.556"
+    ],
+    [
+     "3",
+     "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+     "1",
+     "Gói",
+     "24.442.023"
+    ],
+    [
+     "4",
+     "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+     "1",
+     "Gói",
+     "55.682.120"
+    ],
+    [
+     "5",
+     "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "1",
+     "Gói",
+     "258.524.009"
+    ],
+    [
+     "6",
+     "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "1",
+     "Gói",
+     "254.518.869"
+    ],
+    [
+     "7",
+     "Xây dựng chức năng đặt hàng (Order)",
+     "1",
+     "Gói",
+     "344.172.402"
+    ],
+    [
+     "8",
+     "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+     "1",
+     "Gói",
+     "35.653.336"
+    ],
+    [
+     "9",
+     "Tích hợp với hệ thống chính (Main System)",
+     "1",
+     "Gói",
+     "150.754.917"
+    ],
+    [
+     "10",
+     "Kiểm thử hệ thống",
+     "1",
+     "Gói",
+     "125.109.693"
+    ],
+    [
+     "11",
+     "Kiểm thử vận hành (Operation Test)",
+     "1",
+     "Gói",
+     "139.404.964"
+    ],
+    [
+     "12",
+     "Chuyển giao và hướng dẫn vận hành hệ thống",
+     "1",
+     "Gói",
+     "69.653.899"
+    ],
+    [
+     "13",
+     "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "1",
+     "Gói",
+     "132.010.856"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "",
+     "",
+     "1.750.000.000"
+    ]
+   ],
+   "widths": [
+    600,
+    4200,
+    900,
+    800,
+    2800
+   ],
+   "center_cols": [
+    0,
+    2,
+    3
+   ],
+   "right_cols": [
+    4
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Thành tiền phân bổ theo tỷ trọng chi phí nhân công của từng hạng mục, tổng bằng giá chào 1.750.000.000 đồng.",
+   "t": "p"
+  },
+  {
+   "text": "7. Phân bổ theo nhóm WBS",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Nhóm công việc",
+     "MD",
+     "Chi phí nhân công, đồng",
+     "Giá phân bổ, đồng"
+    ],
+    [
+     "1",
+     "Quản lý dự án",
+     "60",
+     "157.700.000",
+     "194.341.748"
+    ],
+    [
+     "2",
+     "Phân tích và thiết kế chung",
+     "66",
+     "141.850.000",
+     "174.808.986"
+    ],
+    [
+     "3",
+     "Phân hệ tìm kiếm và hiển thị sản phẩm (Product Search)",
+     "95",
+     "197.650.000",
+     "243.574.170"
+    ],
+    [
+     "4",
+     "Phân hệ thành viên (Member Administration)",
+     "91",
+     "189.150.000",
+     "233.099.187"
+    ],
+    [
+     "5",
+     "Phân hệ đặt hàng (Order)",
+     "129",
+     "268.200.000",
+     "330.516.531"
+    ],
+    [
+     "6",
+     "Cơ sở dữ liệu bán hàng và tích hợp hệ thống",
+     "93",
+     "194.200.000",
+     "239.322.559"
+    ],
+    [
+     "7",
+     "Kiểm thử hệ thống và kiểm thử vận hành",
+     "73",
+     "148.800.000",
+     "183.373.825"
+    ],
+    [
+     "8",
+     "Triển khai và chuyển giao",
+     "50",
+     "122.500.000",
+     "150.962.994"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "657",
+     "1.420.050.000",
+     "1.750.000.000"
+    ]
+   ],
+   "widths": [
+    700,
+    4000,
+    1000,
+    1800,
+    1800
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    2,
+    3,
+    4
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "8. Dòng tiền theo sprint",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Đợt",
+     "Tỷ lệ, %",
+     "Sự kiện",
+     "Ngày sự kiện",
+     "Ngày thu dự kiến",
+     "Sprint thu",
+     "Số tiền, đồng"
+    ],
+    [
+     "1",
+     "15",
+     "tạm ứng",
+     "18/03/2027",
+     "02/04/2027",
+     "S2",
+     "262.500.000"
+    ],
+    [
+     "2",
+     "25",
+     "hai bên xác nhận đặc tả yêu cầu (baseline) và giao diện ưu tiên",
+     "06/05/2027",
+     "21/05/2027",
+     "S5",
+     "437.500.000"
+    ],
+    [
+     "3",
+     "30",
+     "hoàn thành các chức năng chính của hệ thống và tích hợp với các hệ thống liên quan",
+     "16/06/2027",
+     "01/07/2027",
+     "S7",
+     "525.000.000"
+    ],
+    [
+     "4",
+     "25",
+     "hệ thống đưa vào vận hành và được nghiệm thu",
+     "01/07/2027",
+     "16/07/2027",
+     "Sau cut over",
+     "437.500.000"
+    ],
+    [
+     "5",
+     "5",
+     "nhà thầu nộp bảo lãnh bảo hành",
+     "01/07/2027",
+     "16/07/2027",
+     "Sau cut over",
+     "87.500.000"
+    ]
+   ],
+   "widths": [
+    600,
+    700,
+    3300,
+    1200,
+    1200,
+    1000,
+    1500
+   ],
+   "center_cols": [
+    0,
+    1,
+    3,
+    4,
+    5
+   ],
+   "right_cols": [
+    6
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Sprint",
+     "Chi lương theo MD công việc, đồng",
+     "Chi lương theo huy động, đồng",
+     "Thu, đồng",
+     "Lũy kế chi theo cách trả lương, đồng",
+     "Lũy kế thu, đồng",
+     "Chênh lệch, đồng"
+    ],
+    [
+     "S1",
+     "106.536.714",
+     "119.570.455",
+     "0",
+     "106.536.714",
+     "0",
+     "âm 106.536.714"
+    ],
+    [
+     "S2",
+     "163.020.000",
+     "183.565.909",
+     "262.500.000",
+     "269.556.714",
+     "262.500.000",
+     "âm 7.056.714"
+    ],
+    [
+     "S3",
+     "261.876.136",
+     "278.043.409",
+     "0",
+     "531.432.850",
+     "262.500.000",
+     "âm 268.932.850"
+    ],
+    [
+     "S4",
+     "195.803.636",
+     "213.879.545",
+     "0",
+     "727.236.486",
+     "262.500.000",
+     "âm 464.736.486"
+    ],
+    [
+     "S5",
+     "178.710.114",
+     "213.879.545",
+     "437.500.000",
+     "905.946.600",
+     "700.000.000",
+     "âm 205.946.600"
+    ],
+    [
+     "S6",
+     "143.091.591",
+     "213.879.545",
+     "0",
+     "1.049.038.191",
+     "700.000.000",
+     "âm 349.038.191"
+    ],
+    [
+     "S7",
+     "136.804.318",
+     "213.879.545",
+     "525.000.000",
+     "1.185.842.509",
+     "1.225.000.000",
+     "39.157.491"
+    ],
+    [
+     "Sau cut over",
+     "0",
+     "0",
+     "525.000.000",
+     "1.185.842.509",
+     "1.750.000.000",
+     "564.157.491"
+    ]
+   ],
+   "widths": [
+    900,
+    1350,
+    1350,
+    1300,
+    1400,
+    1400,
+    1400
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "<<SOẠN:DONG_TIEN>>",
+   "t": "p"
+  },
+  {
+   "text": "9. Độ nhạy và rủi ro chi phí",
+   "t": "h1"
+  },
+  {
+   "text": "Sau khi trừ chi phí lương kế hoạch theo người, chi phí khác và dự phòng, khoản còn lại của giá trước thuế là 414.157.491 đồng, bằng 23,7%, tương đương khoảng 230 MD tính lương theo lương bình quân. Nếu áp thuế suất 10%, giá trước thuế là 1.590.909.091 đồng, khoản C còn 20.859.091 đồng (1,3%) và khoản còn lại sau chi phí lương kế hoạch còn 255.066.582 đồng (16%).",
+   "t": "p"
+  },
+  {
+   "text": "<<SOẠN:DO_NHAY>>",
+   "t": "p"
+  }
+ ]
+}

@@ -1,0 +1,317 @@
+{
+ "MUC_DICH": [
+  "Công ty Cổ phần ABC Wear đặt mục tiêu mở rộng khách hàng qua internet và tạo kênh bán hàng mới ({rfp#yeu_cau[ma=R02].ma}). Hệ thống website bán hàng trực tuyến (Web Selling Site System) được xây dựng theo chính sách khách hàng thao tác dễ dàng ({rfp#yeu_cau[ma=R03].ma}), hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm ({rfp#yeu_cau[ma=R04].ma}) và thời gian phản hồi nhanh ({rfp#yeu_cau[ma=R05].ma}), đưa vào vận hành ngày {lich#cut_over|ngay} ({rfp#yeu_cau[ma=R12].ma}).",
+  "Mục tiêu chính của dự án là bàn giao đủ sản phẩm theo Mẫu số 01A và đưa hệ thống vào vận hành đúng ngày cut over {lich#cut_over|ngay}. Mục tiêu phụ là đạt các mốc gắn đợt thanh toán đúng hạn và các chỉ tiêu kỹ thuật nhà thầu đã cam kết. Mục tiêu của nhà thầu là hoàn thành khối lượng {wbs#tong_md|md} MD trong đường cơ sở chi phí và giữ uy tín với Chủ đầu tư. Chỉ số, ngưỡng, hạn và người xác nhận của từng mục tiêu ghi tại bảng mục tiêu dưới đây."
+ ],
+ "RANG_BUOC": [
+  [
+   "Ràng buộc",
+   "Ngày cut over {lich#cut_over|ngay} cố định, hạn các mốc gắn đợt thanh toán giữ nguyên theo master schedule",
+   "{rfp#yeu_cau[ma=R12].ma}, Mục 13.1 E-ĐKCT"
+  ],
+  [
+   "Ràng buộc",
+   "Hợp đồng trọn gói, giá hợp đồng không điều chỉnh, phần phát sinh xử lý theo quy trình yêu cầu thay đổi",
+   "{hsmt#goi_thau.loai_hop_dong}, E-ĐKC 17.1"
+  ],
+  [
+   "Ràng buộc",
+   "Nhân sự chủ chốt theo HSMT, thay thế nhân sự trong {hsmt#hop_dong.thay_the_nhan_su_ngay} ngày khi Chủ đầu tư yêu cầu",
+   "Mục 21.2 E-ĐKCT"
+  ],
+  [
+   "Ràng buộc",
+   "Thuê ngoài chỉ thực hiện sau khi Chủ đầu tư chấp thuận bằng văn bản",
+   "{rfp#yeu_cau[ma=R36].ma}, Mục 6.4 E-ĐKCT"
+  ],
+  [
+   "Ràng buộc",
+   "Chức năng quản trị nội bộ và các nội dung khác trong danh mục ngoài phạm vi của WBS không thuộc gói thầu",
+   "{rfp#yeu_cau[ma=R45].ma}, tài liệu WBS"
+  ],
+  [
+   "Giả định",
+   "Chủ đầu tư thực hiện đúng hạn các cam kết ở bảng cam kết của Chủ đầu tư, chậm do Chủ đầu tư được xem xét điều chỉnh tiến độ",
+   "{rfp#yeu_cau[ma=R15].ma}, {rfp#yeu_cau[ma=R24].ma}, {da#cam_ket_chu_dau_tu[ma=CK1].ma} đến {da#cam_ket_chu_dau_tu[ma=CK6].ma}"
+  ],
+  [
+   "Giả định",
+   "Vị trí bổ sung được huy động đúng sprint theo bảng huy động, trong đó Trương Quốc Việt huy động từ {lich#sprint[ma=S3].ma}",
+   "Bảng huy động, tài liệu phân công"
+  ]
+ ],
+ "BEN_LIEN_QUAN": [
+  [
+   "Khách hàng mua hàng qua internet",
+   "Tìm kiếm, đặt hàng dễ dàng, phản hồi nhanh, hệ thống luôn sẵn sàng",
+   "Không tham gia trực tiếp, yêu cầu được Chủ đầu tư đại diện xác nhận trong đặc tả",
+   "Gián tiếp qua đặc tả và kiểm thử chấp nhận do Chủ đầu tư thực hiện",
+   "{rfp#yeu_cau[ma=R02].ma}, {rfp#yeu_cau[ma=R03].ma}"
+  ],
+  [
+   "Bộ phận vận hành bán hàng của Chủ đầu tư",
+   "Quy trình vận hành mới rõ ràng, được hướng dẫn trước cut over",
+   "Chủ sản phẩm làm rõ yêu cầu, người dùng nghiệp vụ tham gia kiểm thử chấp nhận ({da#cam_ket_chu_dau_tu[ma=CK5].ma}, {da#cam_ket_chu_dau_tu[ma=CK6].ma})",
+   "Họp làm rõ yêu cầu, trình diễn cuối sprint, kiểm thử chấp nhận, buổi hướng dẫn vận hành. Người cụ thể được bổ sung tại họp khởi động",
+   "{rfp#yeu_cau[ma=R46].ma}, Chương V HSMT"
+  ],
+  [
+   "Bộ phận quản lý Main System",
+   "Trao đổi dữ liệu với Selling DB không ảnh hưởng hệ thống hiện có",
+   "Tài liệu giao diện, môi trường thử, dữ liệu chuyển đổi ({da#cam_ket_chu_dau_tu[ma=CK1].ma} đến {da#cam_ket_chu_dau_tu[ma=CK3].ma})",
+   "Họp tích hợp, kiểm tra chức năng chính tại mốc {lich#moc[ma=M3].ma}. Người cụ thể được bổ sung tại họp khởi động",
+   "{rfp#yeu_cau[ma=R10].ma}"
+  ],
+  [
+   "Nghiệp vụ vận chuyển",
+   "Nhận đủ thông tin đơn hàng qua Main System để giao hàng",
+   "Xác nhận thông tin giao nhận cần trao đổi",
+   "Tham gia kiểm thử vận hành luồng đặt hàng và giao nhận. Người cụ thể được bổ sung tại họp khởi động",
+   "{rfp#yeu_cau[ma=R11].ma}"
+  ]
+ ],
+ "PHAM_VI": [
+  "Phạm vi dự án là xây dựng hệ thống website bán hàng trực tuyến từ phân tích hệ thống đến kiểm thử vận hành ({rfp#yeu_cau[ma=R13].ma}), gồm ba phân hệ Product Search, Member Administration, Order và cơ sở dữ liệu Selling DB tích hợp với Main System. Sản phẩm bàn giao gồm {hsmt#mau_01a|dem} hạng mục theo Mẫu số 01A, phân rã thành {wbs#nhom|dem} nhóm công việc và {wbs#so_goi_la} gói công việc với tổng {wbs#tong_md|md} MD. Chi tiết phân rã, truy vết yêu cầu RFP và hạng mục Mẫu số 01A tại tài liệu WBS.",
+  "Nội dung ngoài phạm vi và giả định gồm {wbs#gia_dinh_ngoai_pham_vi|dem} mục ghi tại tài liệu WBS, trong đó chức năng quản trị nội bộ nằm ngoài phạm vi theo {rfp#yeu_cau[ma=R45].ma}. Đường cơ sở phạm vi là WBS tại ngày ký hợp đồng và đặc tả được hai bên xác nhận tại mốc {lich#moc[ma=M2].ma}. Mọi bổ sung hoặc thay đổi phạm vi sau đó đi qua quy trình yêu cầu thay đổi ở mục 12."
+ ],
+ "TIEN_DO": [
+  "Lịch được lập theo {lich#so_sprint} sprint, mỗi sprint có mục tiêu và sản phẩm trình diễn, có ràng buộc nguồn lực theo quỹ huy động của từng thành viên. Các gói trên đường găng gồm {lich#duong_gang}. Chi tiết ngày bắt đầu, kết thúc của từng gói tại master schedule.",
+  "Tiến độ được theo dõi cuối mỗi sprint bằng SPI và ngày dự kiến của từng mốc so với hạn. SPI dưới {da#nguong_canh_bao.spi_vang|so2} ở mức vàng, dưới {da#nguong_canh_bao.spi_do|so2} ở mức đỏ. Các rủi ro trên đường găng được theo dõi hằng tuần.",
+  "Để bảo vệ mốc cut over, nhóm giữ dự trữ {lich#du_tru_den_cut_over_ngay} ngày làm việc trước các gói gắn ngày cut over, chấp nhận phần EMV thời gian vượt dự trữ và báo Chủ đầu tư khi dự trữ còn dưới hai ngày làm việc theo quyết định của nhóm. Hạn các mốc {lich#moc[ma=M1].ma}, {lich#moc[ma=M2].ma}, {lich#moc[ma=M3].ma}, {lich#moc[ma=M4].ma} giữ nguyên, cut over {lich#cut_over|ngay} cố định."
+ ],
+ "TO_CHUC": [
+  "Dự án do quản trị dự án {tdb#vai_ban.qtda.ho_ten} điều hành, người đại diện ký hợp đồng của nhà thầu là {tdb#vai_ban.dai_dien_nt.ho_ten}. Đầu mối với Chủ đầu tư là {tdb#vai_ban.dau_moi_cdt.ho_ten}, người có thẩm quyền của Chủ đầu tư là {tdb#vai_ban.tham_quyen_cdt.ho_ten}, họ tên được ghi khi hoàn thiện hợp đồng. Nhóm gồm {tv#thanh_vien|dem} nhân sự, người giữ các vị trí nhân sự chủ chốt theo bảng trên. Ma trận trách nhiệm và giao việc theo gói tại tài liệu phân công.",
+  "Khi Chủ đầu tư yêu cầu thay thế nhân sự chủ chốt, nhà thầu thay thế trong {hsmt#hop_dong.thay_the_nhan_su_ngay} ngày theo Mục 21.2 E-ĐKCT bằng người có năng lực tương đương và xử lý như yêu cầu thay đổi mức trung bình. Trương Quốc Việt được huy động từ {lich#sprint[ma=S3].ma} để lịch {wbs#tong_md|md} MD kịp cut over.",
+  "Tải theo sprint ở bảng sử dụng quỹ. Sprint {lich#sprint[ma=S3].ma} và {lich#sprint[ma=S4].ma} có tỷ lệ sử dụng cao nhất ({lich#sprint[ma=S3].ty_le_su_dung|pt} và {lich#sprint[ma=S4].ty_le_su_dung|pt}), quản trị dự án theo dõi hằng tuần và chuyển gói không thuộc đường găng sang người còn quỹ. Sprint {lich#sprint[ma=S6].ma}, {lich#sprint[ma=S7].ma} còn dư quỹ, phần dư dùng cho khắc phục lỗi và hỗ trợ kiểm thử chấp nhận."
+ ],
+ "MUA_SAM": [
+  "Nhà thầu tự thực hiện toàn bộ công việc, không sử dụng nhà thầu phụ. Thuê ngoài phát sinh chỉ thực hiện khi Chủ đầu tư chấp thuận bằng văn bản theo Mục 6.4 E-ĐKCT và đi qua quy trình yêu cầu thay đổi.",
+  "Hạng mục cần mua hoặc thuê thuộc khoản B ({cp#B|tien} đồng) gồm môi trường, công cụ, bảo hành và dự phòng. Khoản B hiện chỉ có tổng, chưa có danh mục chi tiết theo hạng mục, đơn giá và nhà cung cấp, danh mục được lập trước khi chi. Môi trường phát triển, kiểm thử cần có tại gói {lich#goi[ma=8.1.1].ma}, môi trường vận hành tại gói {lich#goi[ma=8.1.2].ma}. Khoản chi được quản trị dự án {tdb#vai_ban.qtda.ho_ten} phê duyệt, khoản làm giảm phần chi phí chung và lợi nhuận do {tdb#vai_ban.dai_dien_nt.ho_ten} phê duyệt."
+ ],
+ "CHI_PHI": [
+  "Chi phí được theo dõi bằng CPI trên BAC cuối mỗi sprint, CPI dưới {da#nguong_canh_bao.cpi_vang|so2} ở mức vàng, dưới {da#nguong_canh_bao.cpi_do|so2} ở mức đỏ. Chi phí lương kế hoạch theo cách {cp#cach_tra_luong_ten} là {cp#tong_chi_phi_nguoi|tien} đồng, thấp hơn khoản A {cp#chenh_lech_A_nguoi|tien} đồng. Lương của toàn bộ ngày huy động {cp#tong_chi_phi_huy_dong|tien} đồng chỉ dùng để theo dõi năng lực, không thay BAC.",
+  "Dòng tiền thu theo {hsmt#hop_dong.thanh_toan|dem} đợt thanh toán, Đợt 2 dự kiến nhận ngày {cp#thanh_toan[dot=2].ngay|ngay}, Đợt 3 ngày {cp#thanh_toan[dot=3].ngay|ngay}, Đợt 4 và Đợt 5 ngày {cp#thanh_toan[dot=4].ngay|ngay}. Nhà thầu chuẩn bị vốn lưu động {da#von_luu_dong_du_kien|tien} đồng cho mức âm lớn nhất của dòng tiền lũy kế. Dự phòng {cp#du_phong_hien_co|tien} đồng nằm trong khoản B, phần EMV vượt dự phòng được bù từ khoản C còn lại sau lương ({cp#C_sau_luong|tien} đồng), việc dùng dự phòng theo bảng quy tắc trên. Chi tiết tại cost estimate và thuyết minh dự toán."
+ ],
+ "CHAT_LUONG": [
+  [
+   "Gói công việc",
+   "Sản phẩm đúng đặc tả, mã nguồn đạt quy chuẩn mã nguồn và tiêu chí hoàn thành công việc",
+   "Rà soát mã nguồn, xem xét tài liệu theo kế hoạch bảo đảm chất lượng (gói {lich#goi[ma=1.1.4].ma})",
+   "Khi đóng gói"
+  ],
+  [
+   "Sprint",
+   "Gói kế hoạch của sprint hoàn thành, sản phẩm trình diễn được đầu mối Chủ đầu tư ghi nhận",
+   "Trình diễn cuối sprint, báo cáo tiến độ",
+   "Cuối mỗi sprint"
+  ],
+  [
+   "Đặc tả và giao diện ưu tiên",
+   "Hai bên ký biên bản xác nhận",
+   "Họp xem xét đặc tả (gói {lich#goi[ma=2.1.7].ma})",
+   "Mốc {lich#moc[ma=M2].ma}, hạn {lich#moc[ma=M2].han|ngay}"
+  ],
+  [
+   "Chức năng chính và tích hợp Main System",
+   "Chủ đầu tư kiểm tra đạt, kiểm tra đạt là chấp nhận theo Mục 20.1 E-ĐKCT",
+   "Kiểm tra chức năng chính (gói {lich#goi[ma=1.3.2].ma})",
+   "Mốc {lich#moc[ma=M3].ma}, hạn {lich#moc[ma=M3].han|ngay}"
+  ],
+  [
+   "Hiệu năng",
+   "{ct#chi_tieu[ma=KT02].chi_tieu}. {ct#chi_tieu[ma=KT03].chi_tieu}",
+   "Gói {lich#goi[ma=7.2.3].ma}, {lich#goi[ma=7.3.4].ma}",
+   "{lich#sprint[ma=S6].ma}, {lich#sprint[ma=S7].ma}"
+  ],
+  [
+   "Tính sẵn sàng",
+   "{ct#chi_tieu[ma=KT01].chi_tieu}",
+   "{ct#chi_tieu[ma=KT01].cach_kiem_chung} (gói {lich#goi[ma=7.3.6].ma})",
+   "{lich#sprint[ma=S6].ma}"
+  ],
+  [
+   "Lỗi kiểm thử hệ thống",
+   "{rr#danh_sach[ma=RR03].dau_hieu} thì kích hoạt ứng phó {rr#danh_sach[ma=RR03].ma}",
+   "Quản lý lỗi, khắc phục tại gói {lich#goi[ma=7.2.4].ma}",
+   "Trước mốc {lich#moc[ma=M4].ma}"
+  ],
+  [
+   "Lỗi kiểm thử chấp nhận",
+   "{rr#danh_sach[ma=RR10].dau_hieu} thì kích hoạt ứng phó {rr#danh_sach[ma=RR10].ma}",
+   "Kiểm thử hồi quy (gói {lich#goi[ma=7.3.3].ma})",
+   "Mốc {lich#moc[ma=M5].ma}"
+  ],
+  [
+   "Quyết định cut over",
+   "{ct#dieu_kien_cut_over}",
+   "Họp quyết định cut over theo kế hoạch cut over (gói {lich#goi[ma=8.3.1].ma})",
+   "Sau mốc {lich#moc[ma=M5].ma}"
+  ]
+ ],
+ "TRUYEN_THONG": [
+  [
+   "Họp khởi động",
+   "Một lần",
+   "Quản trị dự án, nhân sự chủ chốt, {tdb#vai_ban.dau_moi_cdt.ho_ten}, chủ sản phẩm",
+   "Biên bản họp khởi động (gói {lich#goi[ma=1.1.1].ma})"
+  ],
+  [
+   "Họp lập kế hoạch sprint",
+   "Đầu mỗi sprint",
+   "Quản trị dự án và các thành viên nhà thầu",
+   "Danh sách công việc của sprint"
+  ],
+  [
+   "Họp hằng ngày",
+   "Hằng ngày làm việc",
+   "Các thành viên nhà thầu",
+   "Vướng mắc được ghi vào sổ vấn đề"
+  ],
+  [
+   "Họp tiến độ",
+   "Hằng tuần",
+   "Quản trị dự án, nhà thầu, {tdb#vai_ban.dau_moi_cdt.ho_ten}",
+   "Biên bản họp, rà soát rủi ro trên đường găng (gói {lich#goi[ma=1.2.1].ma})"
+  ],
+  [
+   "Họp làm rõ và xem xét đặc tả",
+   "Hằng tuần trong giai đoạn đặc tả theo {da#cam_ket_chu_dau_tu[ma=CK5].ma}",
+   "Phân tích nghiệp vụ, kiến trúc sư, chủ sản phẩm",
+   "Biên bản thống nhất từng phần, xác nhận đặc tả tại mốc {lich#moc[ma=M2].ma}"
+  ],
+  [
+   "Trình diễn cuối sprint",
+   "Cuối mỗi sprint",
+   "Nhà thầu, chủ sản phẩm và cán bộ Chủ đầu tư",
+   "Biên bản trình diễn, báo cáo tiến độ"
+  ],
+  [
+   "Họp cải tiến cuối sprint",
+   "Cuối mỗi sprint",
+   "Quản trị dự án và các thành viên nhà thầu",
+   "Ghi chép họp cải tiến"
+  ],
+  [
+   "Rà soát rủi ro",
+   "Cuối mỗi sprint, rủi ro trên đường găng hằng tuần",
+   "Quản trị dự án, người phụ trách rủi ro",
+   "Sổ rủi ro cập nhật theo kế hoạch quản lý rủi ro"
+  ],
+  [
+   "Họp kiểm tra chức năng chính",
+   "Tại mốc {lich#moc[ma=M3].ma} gắn Đợt 3",
+   "Quản trị dự án, {tdb#vai_ban.dau_moi_cdt.ho_ten}, người đại diện của Chủ đầu tư",
+   "Biên bản kiểm tra (gói {lich#goi[ma=1.3.2].ma})"
+  ],
+  [
+   "Họp ban kiểm soát thay đổi",
+   "Khi có yêu cầu thay đổi mức lớn",
+   "Thành viên ban theo kế hoạch quản lý thay đổi",
+   "Văn bản thống nhất hoặc phụ lục hợp đồng"
+  ],
+  [
+   "Họp quyết định cut over",
+   "Một lần, sau mốc {lich#moc[ma=M5].ma}",
+   "Quản trị dự án, nhân sự chủ chốt, {tdb#vai_ban.tham_quyen_cdt.ho_ten}",
+   "Quyết định đưa hệ thống vào vận hành ngày {lich#cut_over|ngay}"
+  ]
+ ],
+ "BAO_CAO": [
+  [
+   "Báo cáo tiến độ cuối sprint",
+   "{tdb#vai_ban.qtda.ho_ten}",
+   "{tdb#vai_ban.dau_moi_cdt.ho_ten}",
+   "Ngày cuối sprint, thư điện tử"
+  ],
+  [
+   "Báo cáo mốc",
+   "{tdb#vai_ban.qtda.ho_ten}",
+   "{tdb#vai_ban.dau_moi_cdt.ho_ten}, {tdb#vai_ban.tham_quyen_cdt.ho_ten} với mốc gắn đợt thanh toán",
+   "Tại ngày đạt mốc, văn bản kèm biên bản"
+  ],
+  [
+   "Báo cáo rủi ro mức cao",
+   "Người phụ trách rủi ro",
+   "{tdb#vai_ban.qtda.ho_ten}, {tdb#vai_ban.dau_moi_cdt.ho_ten} khi ảnh hưởng cam kết",
+   "Khi dấu hiệu xuất hiện, thư điện tử"
+  ],
+  [
+   "Báo cáo yêu cầu thay đổi và vấn đề",
+   "{tdb#vai_ban.qtda.ho_ten}",
+   "{tdb#vai_ban.dau_moi_cdt.ho_ten}",
+   "Kèm báo cáo tiến độ, yêu cầu mức lớn gửi ngay khi đánh giá xong"
+  ],
+  [
+   "Báo cáo vượt cấp",
+   "{tdb#vai_ban.qtda.ho_ten}",
+   "{tdb#vai_ban.dai_dien_nt.ho_ten}, {tdb#vai_ban.tham_quyen_cdt.ho_ten}",
+   "Khi SPI hoặc CPI ở mức đỏ, mốc gắn thanh toán có nguy cơ trễ hoặc dự trữ còn dưới hai ngày làm việc, văn bản"
+  ]
+ ],
+ "VAN_DE": [
+  [
+   "1",
+   "Nhận diện vấn đề phát sinh trong họp hằng ngày, họp tiến độ hoặc trao đổi với Chủ đầu tư",
+   "Mọi thành viên",
+   "Trong ngày phát hiện",
+   "Thông tin vấn đề"
+  ],
+  [
+   "2",
+   "Ghi sổ vấn đề, ghi mã rủi ro khi vấn đề là rủi ro đã xảy ra (ví dụ {rr#danh_sach[ma=RR02].ma})",
+   "{tdb#vai_ban.qtda.ho_ten}",
+   "Trong ngày phát hiện",
+   "Dòng sổ vấn đề"
+  ],
+  [
+   "3",
+   "Giao người rà soát theo nhóm công việc liên quan",
+   "{tdb#vai_ban.qtda.ho_ten}",
+   "Họp tiến độ gần nhất",
+   "Người phụ trách"
+  ],
+  [
+   "4",
+   "Đánh giá ảnh hưởng và phân cấp: nhóm tự xử lý khi không ảnh hưởng gói khác, quản trị dự án xử lý khi ảnh hưởng sprint hoặc nguồn lực, chuyển thành yêu cầu thay đổi khi cần đổi phạm vi, mốc, chi phí",
+   "Người phụ trách",
+   "Theo thời hạn đánh giá của mức yêu cầu thay đổi tương ứng",
+   "Cấp xử lý"
+  ],
+  [
+   "5",
+   "Giao hành động, người thực hiện, hạn",
+   "{tdb#vai_ban.qtda.ho_ten}, cấp cao hơn theo thẩm quyền",
+   "Ngay sau đánh giá",
+   "Danh sách hành động"
+  ],
+  [
+   "6",
+   "Thực hiện hành động",
+   "Người được giao",
+   "Theo hạn của hành động",
+   "Kết quả thực hiện"
+  ],
+  [
+   "7",
+   "Rà soát hành động",
+   "{tdb#vai_ban.qtda.ho_ten}",
+   "Họp tiến độ hằng tuần",
+   "Trạng thái cập nhật"
+  ],
+  [
+   "8",
+   "Thống nhất đóng vấn đề với người báo, với vấn đề do Chủ đầu tư nêu thì thống nhất với đầu mối",
+   "{tdb#vai_ban.qtda.ho_ten}, {tdb#vai_ban.dau_moi_cdt.ho_ten}",
+   "Rà soát cuối sprint",
+   "Vấn đề đóng"
+  ]
+ ],
+ "THAY_DOI": [
+  "Mọi đề xuất đổi phạm vi, đặc tả, mốc, chi phí hoặc nhân sự được lập phiếu yêu cầu thay đổi, ghi sổ, đánh giá tác động và phân loại theo điểm tác động thành mức nhỏ, trung bình, lớn. Thẩm quyền và thời hạn của từng mức theo bảng trên, thay đổi chạm ngày cut over, mốc gắn đợt thanh toán, đặc tả đã xác nhận, phạm vi hoặc giá luôn ở mức lớn và do người đại diện ký hợp đồng của hai bên quyết định.",
+  "Mỗi yêu cầu thay đổi nêu chi phí nội bộ và giá đề nghị Chủ đầu tư tính theo đơn giá suy từ giá dự thầu. Thay đổi được duyệt được lan truyền theo ma trận cập nhật tài liệu, mỗi tài liệu cập nhật có phiên bản mới liên kết với mã yêu cầu thay đổi trong sổ phiên bản. Chi tiết tại kế hoạch quản lý thay đổi."
+ ],
+ "KET_THUC": [
+  "Chuẩn bị cut over gồm kế hoạch cut over, danh sách kiểm tra và phương án khôi phục (gói {lich#goi[ma=8.3.1].ma}), diễn tập triển khai và chuyển đổi dữ liệu (gói {lich#goi[ma=8.3.2].ma}), đối chiếu dữ liệu chuyển đổi trước khi triển khai chính thức (gói {lich#goi[ma=8.3.3].ma}). Cán bộ Chủ đầu tư được hướng dẫn vận hành theo quy trình vận hành mới (gói {lich#goi[ma=8.2.3].ma}). Mã nguồn, tài liệu kỹ thuật và danh mục thư viện được bàn giao tại gói {lich#goi[ma=8.2.4].ma}, quyền sở hữu thuộc Chủ đầu tư theo Mục 14 E-ĐKCT. Nhà thầu bảo hành {hsmt#hop_dong.bao_hanh_thang} tháng kể từ ngày cut over theo HSMT.",
+  "Đóng dự án gồm giải phóng nhân sự huy động sau hỗ trợ tăng cường, lập hồ sơ thanh toán đợt cuối, nộp bảo lãnh bảo hành và nhận lại bảo đảm thực hiện hợp đồng, lưu trữ hồ sơ dự án. Quản trị dự án {tdb#vai_ban.qtda.ho_ten} lập báo cáo tổng kết, báo cáo đánh giá và báo cáo bài học kinh nghiệm, thời điểm theo bảng trên."
+ ]
+}

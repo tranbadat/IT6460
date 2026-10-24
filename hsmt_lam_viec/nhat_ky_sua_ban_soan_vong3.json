@@ -1,0 +1,220 @@
+[
+ {
+  "ma": "PH012",
+  "id": "TIEU_CHI_CHI_TIET[1: Giải pháp kiến trúc, công nghệ và tích hợp với Main System]",
+  "truoc": {
+   "tieu_chi": 1,
+   "ten": "Giải pháp kiến trúc, công nghệ và tích hợp với Main System",
+   "noi_dung": "Kiến trúc ứng dụng, công nghệ, thiết kế Selling DB, phương án tích hợp với Main System, bảo mật dữ liệu khách hàng, sự phù hợp với phân định tại mục 3.5 Chương V về hạ tầng vận hành do Chủ đầu tư cung cấp, môi trường thử và thay đổi phía Main System (mục 3.1 và 3.5 Chương V).",
+   "diem": 7,
+   "co_ban": true,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 7,
+     "mo_ta": "Giải pháp đầy đủ, nhất quán về kiến trúc, công nghệ, Selling DB, tích hợp với Main System và bảo mật dữ liệu khách hàng, có lý do lựa chọn, có phương án dự phòng cho rủi ro tích hợp và phù hợp phân định tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 5,
+     "mo_ta": "Giải pháp đủ các thành phần nêu trên, khả thi và phù hợp phân định tại mục 3.5 Chương V nhưng chưa nêu lý do lựa chọn hoặc phương án dự phòng cho rủi ro tích hợp."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 3,
+     "mo_ta": "Thiếu một trong các thành phần kiến trúc, tích hợp với Main System, bảo mật dữ liệu khách hàng, hoặc giải pháp chưa phù hợp phân định tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Không có giải pháp hoặc giải pháp không khả thi."
+    }
+   ],
+   "phu": [],
+   "diem_toi_thieu": 5
+  },
+  "sau": {
+   "tieu_chi": 1,
+   "ten": "Giải pháp kiến trúc, công nghệ và tích hợp với Main System",
+   "noi_dung": "Kiến trúc ứng dụng, công nghệ, thiết kế Selling DB, phương án tích hợp với Main System, bảo mật dữ liệu khách hàng, đề xuất cấu hình tối thiểu của hạ tầng vận hành (máy chủ, đường truyền, phần mềm nền) đủ để đáp ứng yêu cầu tại mục 3.4, sự phù hợp với phân định tại mục 3.5 Chương V (mục 3.1, 3.4 và 3.5 Chương V).",
+   "diem": 7,
+   "co_ban": true,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 7,
+     "mo_ta": "Giải pháp đầy đủ, nhất quán về kiến trúc, công nghệ, Selling DB, tích hợp với Main System và bảo mật dữ liệu khách hàng, có lý do lựa chọn, có phương án dự phòng cho rủi ro tích hợp, cấu hình hạ tầng đề xuất cụ thể, có thuyết minh đáp ứng mục 3.4 và phù hợp phân định tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 5,
+     "mo_ta": "Giải pháp đủ các thành phần nêu trên, có cấu hình hạ tầng đề xuất, khả thi và phù hợp phân định tại mục 3.5 Chương V nhưng chưa nêu lý do lựa chọn, phương án dự phòng cho rủi ro tích hợp hoặc thuyết minh cấu hình đáp ứng mục 3.4."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 3,
+     "mo_ta": "Thiếu một trong các thành phần kiến trúc, tích hợp với Main System, bảo mật dữ liệu khách hàng, cấu hình hạ tầng đề xuất, hoặc giải pháp chưa phù hợp phân định tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Không có giải pháp hoặc giải pháp không khả thi."
+    }
+   ],
+   "phu": [],
+   "diem_toi_thieu": 5
+  }
+ },
+ {
+  "ma": "PH012",
+  "id": "TIEU_CHI_CHI_TIET[1: Điều kiện tiền đề (Precondition) của giải pháp]",
+  "truoc": {
+   "tieu_chi": 1,
+   "ten": "Điều kiện tiền đề (Precondition) của giải pháp",
+   "noi_dung": "Mức độ rõ ràng của các điều kiện tiền đề và giả định kỹ thuật mà giải pháp dựa vào, sự nhất quán với phân định trách nhiệm và giả định tại mục 3.5 Chương V (mục 3.5 và mục 4 Chương V).",
+   "diem": 2,
+   "co_ban": false,
+   "muc_cham": [
+    {
+     "muc": "Đạt đủ",
+     "diem": 2,
+     "mo_ta": "Nêu rõ từng điều kiện tiền đề, gắn với nội dung của giải pháp, nhất quán với mục 3.5 Chương V và không phát sinh nghĩa vụ mới cho Chủ đầu tư."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 1,
+     "mo_ta": "Có nêu điều kiện tiền đề nhưng chung chung, chưa gắn với nội dung của giải pháp hoặc có nội dung chưa nhất quán với mục 3.5 Chương V."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Không nêu điều kiện tiền đề."
+    }
+   ],
+   "phu": [
+    "R15"
+   ]
+  },
+  "sau": {
+   "tieu_chi": 1,
+   "ten": "Điều kiện tiền đề (Precondition) của giải pháp",
+   "noi_dung": "Mức độ rõ ràng của các điều kiện tiền đề và giả định kỹ thuật mà giải pháp dựa vào, sự nhất quán với phân định trách nhiệm và giả định tại mục 3.5 Chương V (mục 3.5 và mục 4 Chương V).",
+   "diem": 2,
+   "co_ban": false,
+   "muc_cham": [
+    {
+     "muc": "Đạt đủ",
+     "diem": 2,
+     "mo_ta": "Nêu rõ từng điều kiện tiền đề, gắn với nội dung của giải pháp, nhất quán với mục 3.5 Chương V và không phát sinh nghĩa vụ cho Chủ đầu tư ngoài phân định tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 1,
+     "mo_ta": "Có nêu điều kiện tiền đề nhưng chung chung, chưa gắn với nội dung của giải pháp hoặc có nội dung chưa nhất quán với mục 3.5 Chương V."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Không nêu điều kiện tiền đề."
+    }
+   ],
+   "phu": [
+    "R15"
+   ]
+  }
+ },
+ {
+  "ma": "PH013",
+  "id": "TIEU_CHI_CHI_TIET[3: Tiến độ (Schedule) đến ngày cut over]",
+  "truoc": {
+   "tieu_chi": 3,
+   "ten": "Tiến độ (Schedule) đến ngày cut over",
+   "noi_dung": "Tính hợp lý và khả thi của tiến độ từ ngày hợp đồng có hiệu lực đến ngày đưa hệ thống vào vận hành (cut over) 01/07/2027: các giai đoạn, mốc gắn với sản phẩm bàn giao và đợt thanh toán tại Mục 13.1 E-ĐKCT, công việc găng, thời gian dự phòng, sự phù hợp với các thời hạn Chủ đầu tư cung cấp tài liệu, môi trường thử của hệ thống hiện có và hạ tầng vận hành (mục 3.5 và mục 4 Chương V).",
+   "diem": 6,
+   "co_ban": true,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 6,
+     "mo_ta": "Tiến độ đưa hệ thống vào vận hành (cut over) không muộn hơn ngày 01/07/2027, đủ mốc gắn với sản phẩm và đợt thanh toán, xác định công việc găng, có thời gian dự phòng và phù hợp các thời hạn tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 4,
+     "mo_ta": "Tiến độ đưa hệ thống vào vận hành (cut over) không muộn hơn ngày 01/07/2027, đủ mốc gắn với sản phẩm nhưng chưa xác định công việc găng hoặc thời gian dự phòng."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 2,
+     "mo_ta": "Tiến độ đưa hệ thống vào vận hành (cut over) không muộn hơn ngày 01/07/2027 nhưng thiếu mốc gắn với sản phẩm hoặc không phù hợp các thời hạn tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Tiến độ đưa hệ thống vào vận hành muộn hơn ngày 01/07/2027 hoặc không trình bày."
+    }
+   ],
+   "phu": [
+    "R19"
+   ],
+   "diem_toi_thieu": 4
+  },
+  "sau": {
+   "tieu_chi": 3,
+   "ten": "Tiến độ (Schedule) đến ngày cut over",
+   "noi_dung": "Tính hợp lý và khả thi của tiến độ từ ngày hợp đồng có hiệu lực đến ngày đưa hệ thống vào vận hành (cut over) 01/07/2027: các giai đoạn, mốc gắn với sản phẩm bàn giao và đợt thanh toán tại Mục 13.1 E-ĐKCT, công việc găng, thời gian dự phòng, sự phù hợp với các thời hạn Chủ đầu tư cung cấp tài liệu, môi trường thử của hệ thống hiện có, hạ tầng vận hành và hoàn thành thay đổi phía Main System (mục 3.5 và mục 4 Chương V).",
+   "diem": 6,
+   "co_ban": true,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 6,
+     "mo_ta": "Tiến độ đưa hệ thống vào vận hành (cut over) không muộn hơn ngày 01/07/2027, đủ mốc gắn với sản phẩm và đợt thanh toán, xác định công việc găng, có thời gian dự phòng và phù hợp các thời hạn tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 4,
+     "mo_ta": "Tiến độ đưa hệ thống vào vận hành (cut over) không muộn hơn ngày 01/07/2027, đủ mốc gắn với sản phẩm nhưng chưa xác định công việc găng hoặc thời gian dự phòng."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 2,
+     "mo_ta": "Tiến độ đưa hệ thống vào vận hành (cut over) không muộn hơn ngày 01/07/2027 nhưng thiếu mốc gắn với sản phẩm hoặc không phù hợp các thời hạn tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Tiến độ đưa hệ thống vào vận hành muộn hơn ngày 01/07/2027 hoặc không trình bày."
+    }
+   ],
+   "phu": [
+    "R19"
+   ],
+   "diem_toi_thieu": 4
+  }
+ },
+ {
+  "ma": "PH012",
+  "id": "C5_4[2]",
+  "truoc": "Đề xuất nêu điều kiện đo các yêu cầu phi chức năng tại mục 3.4 theo mục 3.5.",
+  "sau": "Đề xuất nêu điều kiện đo các yêu cầu phi chức năng tại mục 3.4 và cấu hình tối thiểu của hạ tầng vận hành (máy chủ, đường truyền, phần mềm nền) theo mục 3.5."
+ },
+ {
+  "ma": "PH012",
+  "id": "DKC_2_2_i[1]",
+  "truoc": "- Biên bản xác nhận đặc tả yêu cầu giữa Chủ đầu tư và nhà thầu, gồm điều kiện đo các yêu cầu phi chức năng theo mục 3.5 Chương V.",
+  "sau": "- Biên bản xác nhận đặc tả yêu cầu giữa Chủ đầu tư và nhà thầu, gồm điều kiện đo các yêu cầu phi chức năng và cấu hình hạ tầng vận hành theo mục 3.5 Chương V."
+ },
+ {
+  "ma": "PH012",
+  "id": "DKC_13_1[2]",
+  "truoc": "- Đợt 2: 25% giá hợp đồng, sau khi hai bên xác nhận đặc tả yêu cầu (baseline) và giao diện ưu tiên, gồm đặc tả hệ thống (Specification) kèm điều kiện đo các yêu cầu phi chức năng, quy trình vận hành mới (New Operational Flow), cấu trúc cơ sở dữ liệu (Database Structure), sơ đồ phân cấp menu (Menu Layer) và thiết kế giao diện các màn hình chính của chức năng tìm kiếm sản phẩm, quản lý thành viên, đặt hàng (hạng mục 1 đến 4 Mẫu số 01A).",
+  "sau": "- Đợt 2: 25% giá hợp đồng, sau khi hai bên xác nhận đặc tả yêu cầu (baseline) và giao diện ưu tiên, gồm đặc tả hệ thống (Specification) kèm điều kiện đo các yêu cầu phi chức năng và cấu hình hạ tầng vận hành, quy trình vận hành mới (New Operational Flow), cấu trúc cơ sở dữ liệu (Database Structure), sơ đồ phân cấp menu (Menu Layer) và thiết kế giao diện các màn hình chính của chức năng tìm kiếm sản phẩm, quản lý thành viên, đặt hàng (hạng mục 1 đến 4 Mẫu số 01A)."
+ },
+ {
+  "ma": "PH012",
+  "id": "MAU_01A[1] mô tả",
+  "truoc": "Chương V mục 3.1, 3.3 và 3.5. Phân tích yêu cầu, lập đặc tả Web Selling Site System gồm cấu hình cơ sở dữ liệu (DB Configuration), chức năng (Function) và điều kiện đo các yêu cầu phi chức năng, được hai bên xác nhận",
+  "sau": "Chương V mục 3.1, 3.3 và 3.5. Phân tích yêu cầu, lập đặc tả Web Selling Site System gồm cấu hình cơ sở dữ liệu (DB Configuration), chức năng (Function) điều kiện đo các yêu cầu phi chức năng và cấu hình hạ tầng vận hành, được hai bên xác nhận"
+ }
+]

@@ -1,0 +1,90 @@
+{
+ "file": "hsmt_lam_viec/HSMT_ket_qua.docx",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 5,
+ "phat_hien": [
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "Bảo đảm cạnh tranh trong đấu thầu theo quy định như sau: Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp trên 30% với: Công ty Cổ phần ABC Wear, trụ sở chính Công ty Cổ phần ABC Wear.",
+   "mo_ta": "Mục 5.1 (c) E-BDL: chỗ trống của mẫu yêu cầu ghi đầy đủ tên và địa chỉ Chủ đầu tư. Tên điền đúng. Phần địa chỉ là cụm trụ sở chính Công ty Cổ phần ABC Wear, lấy nguyên từ tham số chu_dau_tu.dia_chi, không phải một địa chỉ cụ thể. Lỗi không do script, đã được nêu ở lớp B vòng 1 và vẫn chờ dữ liệu.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Chủ đầu tư cung cấp địa chỉ trụ sở cụ thể (số nhà, đường, phường, thành phố) để cập nhật chu_dau_tu.dia_chi trong tham_so_chu_dau_tu.json, sau đó lập lại HSMT. Mục 5.1 (c), 38.1 E-BDL và E-ĐKCT 1.3, 4.1 sẽ cùng được cập nhật."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "+ Tư vấn thẩm định giá: không có.",
+   "mo_ta": "Mục 5.1 (c) E-BDL ghi không có cho cả 9 loại tư vấn. Tham số dung_tu_van_dau_thau = false chỉ trực tiếp xác nhận 4 loại tư vấn đấu thầu: lập E-HSMT, thẩm định E-HSMT, đánh giá E-HSDT, thẩm định kết quả lựa chọn nhà thầu. Không có tham số nào cho 5 loại còn lại: lập thiết kế, dự toán; thẩm tra; thẩm định giá; giám sát thực hiện hợp đồng, kiểm định; quản lý dự án, quản lý hợp đồng, tư vấn khác. Vì vậy ghi không có cho 5 loại này là suy luận. references/tham_so.md cũng chưa mô tả trường dung_tu_van_dau_thau. RFP không nhắc đến đơn vị tư vấn nên chưa có căn cứ để coi đây là sai.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Chủ đầu tư xác nhận gói thầu không sử dụng đơn vị tư vấn ở cả 9 loại, nhất là tư vấn thẩm định giá hoặc lập dự toán làm căn cứ giá gói thầu 2.000.000.000 đồng. Nếu có đơn vị nào thì ghi đầy đủ tên và địa chỉ. Nên bổ sung giải thích trường dung_tu_van_dau_thau vào references/tham_so.md, hoặc tách thành tham số riêng cho từng loại tư vấn."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "STT | Biểu mẫu | Cách thức thực hiện | Trách nhiệm | Áp dụng",
+   "mo_ta": "Chương IV danh mục biểu mẫu: cột Cách thức thực hiện đã được khôi phục và khớp mẫu ở cả 30 dòng: Webform, riêng Mẫu số 04A và 04B là Scan đính kèm lên Hệ thống hoặc bảo lãnh điện tử. Trách nhiệm từng dòng cũng khớp. Chỉ còn tiêu đề cột ghi Trách nhiệm, trong khi mẫu ghi Trách nhiệm thực hiện (gộp hai cột con Chủ đầu tư, Nhà thầu). Đây là sai khác nhỏ về tiêu đề, không đổi nội dung.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Đổi tiêu đề cột Trách nhiệm thành Trách nhiệm thực hiện cho đúng nguyên văn mẫu. Giữ nguyên giá trị các dòng."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "1. Phạt vi phạm hợp đồng: Áp dụng. Trừ trường hợp bất khả kháng theo quy định tại Mục 16 E-ĐKC, nếu Nhà thầu không thực hiện một phần hay toàn bộ nội dung công việc theo đúng thời hạn đã nêu trong hợp đồng thì Chủ đầu tư có thể khấu trừ vào giá hợp đồng một khoản tiền phạt tương ứng với 0,1%/ngày giá trị công việc chậm thực hiện cho đến khi nội dung công việc đó được thực hiện. Chủ đầu tư sẽ khấu trừ đến 8% giá trị phần hợp đồng bị vi phạm. Khi đạt đến mức phạt tối đa, Chủ đầu tư có thể xem xét chấm dứt hợp đồng theo quy định tại Mục 19 E-ĐKC.",
+   "mo_ta": "Mục chờ Chủ đầu tư. E-ĐKCT 15 không có câu của mẫu: Trường hợp không kịp thời khắc phục sai sót theo thông báo của Chủ đầu tư, Nhà thầu có trách nhiệm nộp tiền phạt thực hiện hợp đồng tương ứng với ___% chi phí cần thiết để khắc phục sai sót. Lý do là tham số phat_khac_phuc_sai_sot_phan_tram đang null. HSMT không tự đặt tỷ lệ, đúng yêu cầu. Tuy vậy, Mục 20.2 E-ĐKC (Chương VI) vẫn dẫn chiếu: đồng thời phạt thực hiện hợp đồng đối với Nhà thầu như quy định tại Mục 15 E-ĐKC. Vì E-ĐKCT 15 không có mức phạt này, khoản phạt khi không kịp thời khắc phục sai sót chưa xác định được.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Chủ đầu tư quyết định tỷ lệ phần trăm chi phí khắc phục sai sót và ghi vào chinh_sach.phat_khac_phuc_sai_sot_phan_tram. Sau đó lập lại để E-ĐKCT 15 có lại câu của mẫu với tỷ lệ đã chọn. Phải hoàn tất trước khi phát hành E-HSMT."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "2. Bồi thường thiệt hại: Áp dụng theo quy định của pháp luật dân sự.",
+   "mo_ta": "Mục chờ Chủ đầu tư. Khi áp dụng bồi thường thiệt hại, mẫu yêu cầu chọn một trong hai cách: bồi thường trên cơ sở toàn bộ thiệt hại thực tế, hoặc bồi thường trên cơ sở một mức xác định có nêu rõ mức và phương thức. HSMT không chọn cách nào và cũng không tự đặt mức bồi thường. Cách ghi theo quy định của pháp luật dân sự đúng với mặc định khi tham số boi_thuong_thiet_hai là null (references/tham_so.md). Lưu ý thêm: dòng Vừa áp dụng phạt vi phạm hợp đồng vừa áp dụng bồi thường thiệt hại và chữ Áp dụng tại điểm 2 cũng là lựa chọn mặc định, chưa được Chủ đầu tư xác nhận trong tham số.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Chủ đầu tư xác nhận có áp dụng bồi thường thiệt hại hay không và chọn cách bồi thường. Ghi toan_bo_thiet_hai_thuc_te, hoặc một câu ngắn nêu mức và phương thức bồi thường xác định, vào chinh_sach.boi_thuong_thiet_hai, rồi lập lại E-ĐKCT 15. Phải hoàn tất trước khi phát hành E-HSMT."
+  }
+ ],
+ "da_kiem_tra": [
+  {
+   "muc": 1,
+   "ket_qua": "co_phat_hien",
+   "ghi_chu": "Mục 5.1 (c) E-BDL đã đủ mọi đoạn cố định của mẫu và các đoạn này khớp nguyên văn: tập đoàn, đơn vị sự nghiệp công lập, 9 loại tư vấn, thời điểm đóng thầu, công thức liên danh với Xi, Yi, n, điểm g khoản 1 Điều 10. Công thức viết X1 x Y1 + X2 x Y2 + ... + Xn x Yn, đúng nghĩa tổng Xi x Yi với i từ 1 đến n. Còn hai cảnh báo chờ người dùng: địa chỉ Chủ đầu tư chưa cụ thể, và việc ghi không có cho 5 loại tư vấn ngoài tư vấn đấu thầu chưa có tham số làm căn cứ."
+  },
+  {
+   "muc": 2,
+   "ket_qua": "dat",
+   "ghi_chu": "Mục 18.2 E-BDL đã có đủ, nguyên văn, hai câu cố định của mẫu về mức gấp 03 lần: một câu cho nhà thầu, một câu cho thành viên liên danh tính theo tỷ lệ công việc. Giá trị 30.000.000 đồng (1,5% của 2.000.000.000 đồng) và hiệu lực 120 ngày khớp gia_tri_tinh.json."
+  },
+  {
+   "muc": 3,
+   "ket_qua": "dat",
+   "ghi_chu": "Chương III Mục 2.1 đã trở lại đúng nguyên văn mẫu: quy đổi theo tỷ giá bán ra của một ngân hàng thương mại hoạt động tại Việt Nam tại ngày ký hợp đồng tương tự đó. Đoạn công ty mẹ huy động công ty con, công ty thành viên theo Mẫu số 09B Chương IV cũng đã có đủ. Câu sai cũ về tỷ giá tại ngày có thời điểm đóng thầu đã được bỏ. Các câu hướng dẫn người lập của mẫu được lược hợp lý."
+  },
+  {
+   "muc": 4,
+   "ket_qua": "co_phat_hien",
+   "ghi_chu": "Cột Cách thức thực hiện đã được khôi phục, và cả 30 dòng khớp mẫu về tên mẫu, cách thức thực hiện (Webform, Mẫu số 04A, 04B là Scan đính kèm lên Hệ thống hoặc bảo lãnh điện tử) và bên chịu trách nhiệm. Chỉ còn tiêu đề cột ghi Trách nhiệm thay vì Trách nhiệm thực hiện."
+  },
+  {
+   "muc": 5,
+   "ket_qua": "co_phat_hien",
+   "ghi_chu": "E-ĐKCT 15 đã đúng cấu trúc mẫu với 0,1%/ngày và tối đa 8%, khớp tham số. Câu chấm dứt hợp đồng theo Mục 19 E-ĐKC đã có, và các dẫn chiếu Mục 16, Mục 19 E-ĐKC đúng với Chương VI. HSMT không tự bịa giá trị cho tỷ lệ phạt khắc phục sai sót và cách bồi thường. Hai mục này đang chờ Chủ đầu tư."
+  },
+  {
+   "muc": 6,
+   "ket_qua": "dat",
+   "ghi_chu": "Đã so văn bản và định dạng của từng đoạn, ô bảng, thuộc tính bảng và section. Chỉ có 5 vùng thay đổi, đúng các mục 1 đến 5 (60 đoạn hoặc ô). Bảng Chương IV từ 4 cột thành 5 cột, giữ tổng bề rộng 9600. Ngoài word/document.xml chỉ có siêu dữ liệu thay đổi (bỏ thumbnail, đổi tên tác giả, bỏ mô tả generated by python-docx), không ảnh hưởng nội dung."
+  },
+  {
+   "muc": 7,
+   "ket_qua": "dat",
+   "ghi_chu": "Các đoạn mới không có mũi tên, gạch dài, ngoặc kép hay từ cấm. Mỗi đoạn có tối đa 1 dấu chấm phẩy và dấu này vốn có trong mẫu. Định dạng Times New Roman cỡ 13, không in đậm, nghiêng hay viết hoa. Các dấu =, +, ... chỉ xuất hiện trong dòng công thức."
+  }
+ ]
+}

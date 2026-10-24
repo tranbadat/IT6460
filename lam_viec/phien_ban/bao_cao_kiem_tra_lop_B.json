@@ -1,0 +1,122 @@
+{
+ "tai_lieu": "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx (0.2), ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
+ "vong": 2,
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 6,
+ "xac_nhan_vong_truoc": [
+  {
+   "ma": "MH01",
+   "ket_qua": "da_sua",
+   "nhan_xet": "Danh mục còn 19 tài liệu khớp 19 tệp trong ket_qua; 2 tệp WBS cũ tách sang mục lưu trữ, nêu rõ ở mục 1; Nhận xét ghi 18 Đã kiểm tra, 1 Dự thảo."
+  },
+  {
+   "ma": "MH02",
+   "ket_qua": "da_sua",
+   "nhan_xet": "Bảng tài liệu cần cập nhật hiển thị 'Mọi tài liệu đang dùng đầu vào mới nhất.', khớp so_can_cap_nhat 0."
+  }
+ ],
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 8 mục theo đặc tả."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Số liệu khớp phien_ban_tong_hop.json (19 tài liệu, 2 lưu trữ, 81 phiên bản, 0 cần cập nhật, 0 đường cơ sở, 0 CR, 420/50 lần chạy, 5 commit) và khớp tệp thực tế."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Có lịch sử, nhật ký skill, prompt, git; lưu ý MH08."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Quy ước kiểm chứng được qua băm."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Đúng bối cảnh chưa ký hợp đồng, chưa BL1, chưa CR."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Văn phong trang trọng."
+  },
+  {
+   "tieu_chi": "Quy ước nhất quán với sổ phiên bản",
+   "ket_qua": "dat",
+   "nhan_xet": "Trùng quy_uoc.json."
+  },
+  {
+   "tieu_chi": "Nhận xét dựa trên số liệu sổ phiên bản và mã CR",
+   "ket_qua": "dat",
+   "nhan_xet": "TL02 12, TL12 9, TL13 8 phiên bản, 0 CR."
+  },
+  {
+   "tieu_chi": "Nêu rõ tài liệu còn cần cập nhật nếu có",
+   "ket_qua": "dat",
+   "nhan_xet": "0 cần cập nhật, nêu phụ lục còn Dự thảo và 2 tài liệu lưu trữ."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "CL06 Văn phong",
+   "vi_tri": "Đầu trang: 'Kết thúc dự án - Tài liệu quản lý phiên bản'",
+   "mo_ta": "Vẫn còn. Đầu trang lấy theo đặc tả, dự án đang ở giai đoạn lập kế hoạch.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Xem lại tieu_de_dau_trang trong đặc tả nếu muốn."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 Nhất quán",
+   "vi_tri": "Bìa 18/03/2027; mục 3 ngày 05/03/2027 và 18/03/2027 lẫn lộn, TL01, TL02, TL12, TL19 để trống",
+   "mo_ta": "Vẫn còn. Ngày theo quy ước lịch dự án, một số tài liệu không có ngày tài liệu.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Ghi ngay_tai_lieu cho tệp xlsx, HSMT và phụ lục."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "CL01 Đúng mục đích",
+   "vi_tri": "Mục 3: danh mục TL01-TL19",
+   "mo_ta": "Tài liệu quản lý phiên bản và So_phien_ban.xlsx chưa có trong danh mục.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Cân nhắc đăng ký ở lần tổng hợp sau."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 Nhất quán",
+   "vi_tri": "Mục 7: 'Nhật ký chạy ghi 420 lần chạy, trong đó 50 lần do agent'",
+   "mo_ta": "Khớp phien_ban_tong_hop.json; nhật ký hiện có 427 dòng do các lần chạy sau tổng hợp.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Chạy lại tong_hop ngay trước khi nộp."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "CL03 Truy vết",
+   "vi_tri": "Mục 7 bảng git: 5 commit nội dung chung chung",
+   "mo_ta": "Commit chưa mang mã bước và phiên bản, thay đổi hiện tại chưa commit. Tài liệu đã tự nêu trong Nhận xét.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Commit theo quy ước mục 2.3."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "CL03 Truy vết",
+   "vi_tri": "Mục 3: TL05 nay là WBS_3_..._tim_kiem_va_hien_thi..., TL12 là Cost_estimate.xlsx (bản 0.1: TL05 là tệp WBS cũ, TL14 là Cost_estimate.xlsx)",
+   "mo_ta": "Mã TL được đánh lại sau khi tách tài liệu lưu trữ, nên mã của cùng một tài liệu khác nhau giữa bản 0.1 và 0.2 và tài liệu lưu trữ không có mã. Nếu tài liệu khác đã trích mã TL thì có thể lệch.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Cân nhắc giữ mã TL cố định theo tệp, gán mã riêng cho tài liệu lưu trữ."
+  }
+ ]
+}

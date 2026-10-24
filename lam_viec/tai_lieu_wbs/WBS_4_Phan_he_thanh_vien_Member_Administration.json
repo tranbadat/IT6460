@@ -1,0 +1,492 @@
+{
+ "meta": {
+  "ten": "WBS 4 - Phân hệ thành viên (Member Administration)",
+  "header": "Lập kế hoạch - WBS 4, Phân hệ thành viên (Member Administration)",
+  "size_bang_pt": 12,
+  "phien_ban": "0.1",
+  "ngay": "05/03/2027"
+ },
+ "blocks": [
+  {
+   "t": "center",
+   "text": "Cấu trúc phân rã công việc",
+   "size": 18
+  },
+  {
+   "t": "center",
+   "text": "Phân hệ thành viên (Member Administration), mã WBS 4",
+   "size": 15
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+  },
+  {
+   "t": "center",
+   "text": "Khách hàng: Công ty Cổ phần ABC Wear"
+  },
+  {
+   "t": "center",
+   "text": "Tài liệu kế hoạch dự án, kèm theo Phần III. Đề xuất kỹ thuật của hồ sơ dự thầu"
+  },
+  {
+   "t": "center",
+   "text": "Phiên bản {{PHIEN_BAN}}, ngày {{NGAY}}"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "h2",
+   "text": "1. Thông tin chung"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Tổng khối lượng",
+     "91 người-ngày"
+    ],
+    [
+     "Căn cứ ước lượng",
+     "6 chức năng (đăng ký và xác thực thư điện tử, đăng nhập và phiên làm việc, khôi phục và đổi mật khẩu, thông tin thành viên và sổ địa chỉ, đồng ý điều khoản và bảo vệ dữ liệu cá nhân, bảo mật tài khoản), 2 nhóm màn hình. Tổng nhóm 91 MD theo tong_theo_nhom của uoc_luong.json. Chia theo tỷ lệ giải pháp, phát triển, kiểm thử của bước 2 và số chức năng. Đăng nhập và màn hình đăng ký, đăng nhập lớn nhất vì gồm phiên làm việc, giới hạn đăng nhập sai và kiểm soát dữ liệu đầu vào theo chỉ tiêu KT04: phân tích yêu cầu phân hệ thành viên 8 MD (4.1); thiết kế phân hệ thành viên 8 MD (4.2); lập trình và kiểm thử đơn vị phân hệ thành viên 35 MD (4.3); kiểm thử phân hệ thành viên 32 MD (4.4); nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ thành viên 8 MD (4.5)."
+    ],
+    [
+     "Thời gian thực hiện",
+     "08/04/2027 - 24/06/2027 (sprint S2 đến S7)"
+    ],
+    [
+     "Người chịu trách nhiệm",
+     "Phạm Tuấn Anh"
+    ],
+    [
+     "Phụ thuộc đầu vào",
+     "Hoàn thành các gói 2.1.4 (Đặc tả chức năng (Function) quản lý thành viên), 2.2.3 (Cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB), 2.3.6 (Thư viện thành phần giao diện dùng chung, tương thích thiết bị di động), 6.1.2 (Tạo lập Selling DB theo cấu trúc đã thiết kế và tầng truy cập dữ liệu), 7.2.4 (Khắc phục lỗi sau kiểm thử hệ thống)"
+    ],
+    [
+     "Đơn vị khối lượng",
+     "Người-ngày, viết tắt MD, tính theo 8 giờ làm việc"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "2. Sơ đồ WBS dạng cây phân cấp"
+  },
+  {
+   "t": "p",
+   "text": "Sơ đồ dùng để trao đổi với Chủ đầu tư. Bảng chi tiết ở mục 3 dùng để ước lượng, giao việc và theo dõi tiến độ."
+  },
+  {
+   "t": "p",
+   "text": "4. Phân hệ thành viên (Member Administration)",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.1. Phân tích yêu cầu phân hệ thành viên",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.1.1. Đặc tả use case đăng ký, xác thực thư điện tử, đăng nhập và khôi phục mật khẩu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.1.2. Đặc tả use case thông tin thành viên, sổ địa chỉ giao hàng và đổi mật khẩu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.2. Thiết kế phân hệ thành viên",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.2.1. Thiết kế chi tiết đăng ký, đăng nhập, phiên làm việc và bảo mật tài khoản",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.2.2. Thiết kế chi tiết thông tin thành viên và sổ địa chỉ",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3. Lập trình và kiểm thử đơn vị phân hệ thành viên",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.3.1. Dịch vụ đăng ký thành viên và xác thực địa chỉ thư điện tử",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.2. Dịch vụ đăng nhập, phiên làm việc và giới hạn đăng nhập sai",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.3. Dịch vụ khôi phục và đổi mật khẩu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.4. Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.5. Dịch vụ đồng ý điều khoản và bảo vệ dữ liệu cá nhân của thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.6. Giao diện đăng ký, đăng nhập và khôi phục mật khẩu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.7. Giao diện trang thành viên và sổ địa chỉ",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4. Kiểm thử phân hệ thành viên",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.4.1. Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.2. Kiểm thử đăng ký, đăng nhập và khôi phục mật khẩu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.3. Kiểm thử thông tin thành viên, sổ địa chỉ và đồng ý điều khoản",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.4. Sửa lỗi và kiểm thử lại đăng ký, đăng nhập và bảo mật tài khoản",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.5. Kiểm thử bảo mật tài khoản theo OWASP Top 10 và tương thích thiết bị phân hệ thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.6. Sửa lỗi và kiểm thử lại thông tin thành viên và sổ địa chỉ",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.5. Nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ thành viên",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.5.1. Tài liệu chức năng và nghiệm thu nội bộ phân hệ thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.5.2. Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h2",
+   "text": "3. Bảng chi tiết"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi gói công việc gắn với một sản phẩm kiểm tra được, có khối lượng ước lượng được và giao được cho một người."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã WBS",
+     "Tên công việc",
+     "Mức",
+     "Khối lượng, MD",
+     "Loại công việc",
+     "Sản phẩm đầu ra"
+    ],
+    [
+     "4.1",
+     "Phân tích yêu cầu phân hệ thành viên",
+     "2",
+     "8",
+     "",
+     ""
+    ],
+    [
+     "4.1.1",
+     "Đặc tả use case đăng ký, xác thực thư điện tử, đăng nhập và khôi phục mật khẩu",
+     "3",
+     "5",
+     "BA",
+     "Đặc tả use case đăng ký và đăng nhập"
+    ],
+    [
+     "4.1.2",
+     "Đặc tả use case thông tin thành viên, sổ địa chỉ giao hàng và đổi mật khẩu",
+     "3",
+     "3",
+     "BA",
+     "Đặc tả use case thông tin thành viên"
+    ],
+    [
+     "4.2",
+     "Thiết kế phân hệ thành viên",
+     "2",
+     "8",
+     "",
+     ""
+    ],
+    [
+     "4.2.1",
+     "Thiết kế chi tiết đăng ký, đăng nhập, phiên làm việc và bảo mật tài khoản",
+     "3",
+     "5",
+     "DEV",
+     "Thiết kế chi tiết chức năng đăng ký và đăng nhập"
+    ],
+    [
+     "4.2.2",
+     "Thiết kế chi tiết thông tin thành viên và sổ địa chỉ",
+     "3",
+     "3",
+     "DEV",
+     "Thiết kế chi tiết chức năng thông tin thành viên"
+    ],
+    [
+     "4.3",
+     "Lập trình và kiểm thử đơn vị phân hệ thành viên",
+     "2",
+     "35",
+     "",
+     ""
+    ],
+    [
+     "4.3.1",
+     "Dịch vụ đăng ký thành viên và xác thực địa chỉ thư điện tử",
+     "3",
+     "5",
+     "DEV",
+     "Dịch vụ đăng ký đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.3.2",
+     "Dịch vụ đăng nhập, phiên làm việc và giới hạn đăng nhập sai",
+     "3",
+     "6",
+     "DEV",
+     "Dịch vụ đăng nhập đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.3.3",
+     "Dịch vụ khôi phục và đổi mật khẩu",
+     "3",
+     "4",
+     "DEV",
+     "Dịch vụ khôi phục mật khẩu đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.3.4",
+     "Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
+     "3",
+     "5",
+     "DEV",
+     "Dịch vụ thông tin thành viên đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.3.5",
+     "Dịch vụ đồng ý điều khoản và bảo vệ dữ liệu cá nhân của thành viên",
+     "3",
+     "4",
+     "DEV",
+     "Dịch vụ đồng ý điều khoản đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.3.6",
+     "Giao diện đăng ký, đăng nhập và khôi phục mật khẩu",
+     "3",
+     "6",
+     "DEV",
+     "Màn hình đăng ký, đăng nhập đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.3.7",
+     "Giao diện trang thành viên và sổ địa chỉ",
+     "3",
+     "5",
+     "DEV",
+     "Màn hình trang thành viên đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.4",
+     "Kiểm thử phân hệ thành viên",
+     "2",
+     "32",
+     "",
+     ""
+    ],
+    [
+     "4.4.1",
+     "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ thành viên",
+     "3",
+     "6",
+     "QA",
+     "Kịch bản và bộ kiểm thử tự động phân hệ"
+    ],
+    [
+     "4.4.2",
+     "Kiểm thử đăng ký, đăng nhập và khôi phục mật khẩu",
+     "3",
+     "7",
+     "QA",
+     "Báo cáo kiểm thử đăng ký, đăng nhập"
+    ],
+    [
+     "4.4.3",
+     "Kiểm thử thông tin thành viên, sổ địa chỉ và đồng ý điều khoản",
+     "3",
+     "6",
+     "QA",
+     "Báo cáo kiểm thử thông tin thành viên"
+    ],
+    [
+     "4.4.4",
+     "Sửa lỗi và kiểm thử lại đăng ký, đăng nhập và bảo mật tài khoản",
+     "3",
+     "4",
+     "DEV",
+     "Chức năng đăng ký, đăng nhập đã khắc phục lỗi kiểm thử phân hệ"
+    ],
+    [
+     "4.4.5",
+     "Kiểm thử bảo mật tài khoản theo OWASP Top 10 và tương thích thiết bị phân hệ thành viên",
+     "3",
+     "6",
+     "QA",
+     "Báo cáo kiểm thử bảo mật tài khoản và tương thích"
+    ],
+    [
+     "4.4.6",
+     "Sửa lỗi và kiểm thử lại thông tin thành viên và sổ địa chỉ",
+     "3",
+     "3",
+     "DEV",
+     "Chức năng thông tin thành viên đã khắc phục lỗi kiểm thử phân hệ"
+    ],
+    [
+     "4.5",
+     "Nghiệm thu nội bộ và hỗ trợ kiểm thử chấp nhận phân hệ thành viên",
+     "2",
+     "8",
+     "",
+     ""
+    ],
+    [
+     "4.5.1",
+     "Tài liệu chức năng và nghiệm thu nội bộ phân hệ thành viên",
+     "3",
+     "3",
+     "BA",
+     "Tài liệu chức năng và biên bản nghiệm thu nội bộ phân hệ"
+    ],
+    [
+     "4.5.2",
+     "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ thành viên",
+     "3",
+     "5",
+     "DEV",
+     "Phiên bản phân hệ đã khắc phục lỗi kiểm thử chấp nhận"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "",
+     "91",
+     "",
+     ""
+    ]
+   ],
+   "widths": [
+    1000,
+    3600,
+    600,
+    1100,
+    1000,
+    2000
+   ],
+   "center_cols": [
+    2,
+    4
+   ],
+   "right_cols": [
+    3
+   ],
+   "dong_dam": [
+    1,
+    4,
+    7,
+    15,
+    22
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Kiểm tra quy tắc 100%"
+  },
+  {
+   "t": "p",
+   "text": "Tổng khối lượng các hạng mục mức 2, 8 cộng 8 cộng 35 cộng 32 cộng 8, bằng 91 người-ngày, khớp với khối lượng khai báo ở mức 1. Kết luận: cân bằng."
+  }
+ ]
+}

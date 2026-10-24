@@ -1,0 +1,229 @@
+{
+ "tai_lieu": "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+ "tai_lieu_kem": "ket_qua/06_Cost_estimate/Cost_estimate.xlsx",
+ "dac_ta": "chi_phi",
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "vong": 3,
+ "thoi_gian": "2026-10-17",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 8,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ các mục theo đặc tả. Có ngưỡng chịu đựng, dòng tiền theo huy động và thời hạn thanh toán, nêu rõ các điểm chờ nhóm quyết định."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Tính lại độc lập khớp dữ liệu nguồn và Excel: A 767.000.000, C 833.000.000, lương theo người 1.181.389.772 (683 MD), hòa vốn 443,43 MD, tỷ lệ 79,2% và 51,4%, khoản còn lại 418.610.227 (23,9%), thuế 10% còn 259.519.318 (16,3%), Mẫu 11A và nhóm WBS tổng 1.750.000.000, EMV 128.287.673 (19 rủi ro, ba rủi ro lớn nhất RR13, RR02, RR04), ngày thu theo E-ĐKC 13.1, dòng tiền từng sprint (S7 lệch 1 đồng do làm tròn). Mọi tham chiếu Tham_so sau khi chèn dòng trỏ đúng."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Truy về gói WBS, Mẫu 01A, mốc M0 đến M7, E-ĐKC 11, 12.1, 13.1, mã rủi ro gồm RR19. Mục 7 chưa có sheet (MH11)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Chỉ tiêu hòa vốn và ngưỡng kiểm chứng được bằng công thức Excel. Ngưỡng CPI có số."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có ngưỡng chịu đựng bằng tiền và MD, ngưỡng CPI 0,95 và 0,85, quy tắc dùng dự phòng có cấp phê duyệt, theo dõi mốc thanh toán hằng tuần gắn RR19."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Đúng trình bày, không từ cấm, không in đậm, cách viết về thuế phù hợp E-CDNT 13.4."
+  },
+  {
+   "tieu_chi": "Phương pháp tính giải thích được từng dòng của Excel",
+   "ket_qua": "dat",
+   "nhan_xet": "Giải thích được các sheet Tong_hop, Doi_chieu_nguoi, Huy_dong_luong, Dong_tien, Mau_11A."
+  },
+  {
+   "tieu_chi": "Dự phòng được so với EMV và có quy tắc sử dụng",
+   "ket_qua": "dat",
+   "nhan_xet": "So với EMV 128.287.673 đồng, có điều kiện của kết luận và quy tắc sử dụng."
+  },
+  {
+   "tieu_chi": "Nhận xét dòng tiền gắn với mốc thanh toán",
+   "ket_qua": "dat",
+   "nhan_xet": "Gắn mốc M2, M3, M6, M7, thời hạn thanh toán, giả định trả lương. Còn cảnh báo về mức âm trong sprint (MH14)."
+  },
+  {
+   "tieu_chi": "Độ nhạy nêu ngưỡng chịu đựng cụ thể",
+   "ket_qua": "dat",
+   "nhan_xet": "418.610.227 đồng, khoảng 242 MD. Với thuế 10% còn 259.519.318 đồng."
+  },
+  {
+   "tieu_chi": "Số liệu trong Word khớp tệp Cost_estimate.xlsx",
+   "ket_qua": "dat",
+   "nhan_xet": "Khớp toàn bộ, kể cả 443,43 MD và hai khoản còn lại sau lương."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "quyet_dinh_huy_dong",
+   "vi_tri": "Mục 5, DOI_CHIEU 'Phương án để nhóm quyết định...'",
+   "mo_ta": "Tỷ lệ sử dụng quỹ huy động 51,4%, mức hòa vốn 79,2% (443,43 MD). Tài liệu nêu đúng là vấn đề chờ nhóm quyết định.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định mức huy động trong dau_vao/thanh_vien.json và xác nhận giá chào mục tiêu."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "du_phong",
+   "vi_tri": "Mục 4, DU_PHONG",
+   "mo_ta": "Dòng B chưa tách. Kết luận đủ dự phòng chỉ đúng khi chi phí không phải dự phòng trong B không vượt 21.712.327 đồng. Tài liệu nêu đúng là chờ nhóm quyết định.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm tách chi_phi_khac trong dau_vao/don_gia.json."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "thue",
+   "vi_tri": "Mục 1, đoạn thuế",
+   "mo_ta": "Căn cứ không chịu thuế GTGT và số hiệu điều khoản chờ nhóm xác nhận. Lớp B không kiểm chứng được điều khoản.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận thue_gtgt.can_cu trong dau_vao/don_gia.json."
+  },
+  {
+   "ma": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "quyet_dinh_don_gia",
+   "vi_tri": "Mục 1, đơn giá trọn gói",
+   "mo_ta": "Đơn giá tự xác định. Đơn giá PM thấp hơn chi phí lương của người giữ vị trí quản trị dự án. Tài liệu đã nêu, chờ nhóm xác nhận.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận hoặc điều chỉnh loai_cong_viec trong dau_vao/don_gia.json."
+  },
+  {
+   "ma": "MH10",
+   "muc_do": "canh_bao",
+   "nhom": "ngay_tai_lieu",
+   "vi_tri": "Bìa 'Ngày 18/03/2027'",
+   "mo_ta": "Ngày tài liệu sau thời điểm đóng thầu 08/03/2027 vì ngay_ky_don trong dau_vao/nha_thau.json còn trống.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm điền ngay_ky_don trong khoảng 22/02/2027 đến 08/03/2027 rồi tạo lại tài liệu."
+  },
+  {
+   "ma": "MH11",
+   "muc_do": "canh_bao",
+   "nhom": "excel",
+   "vi_tri": "Excel Dong_tien!D2:D6; Tong_hop!B6; Doi_chieu_nguoi!H13, B15; mục 7",
+   "mo_ta": "Sprint thu D2:D6 vẫn nhập tay, nên đổi ngày sự kiện ở cột G không đổi phân bổ thu theo sprint (SUMIFS dòng 10 đến 17 dùng cột D). Mục 7 chưa có sheet đối chiếu. Tong_hop!B6 là hằng số 0. H13 = 351,01 MD. Nhãn B15 còn sót.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "tinh_chi_phi.py: sprint thu bằng công thức tra cứu theo ngày thu (bảng ngày bắt đầu, kết thúc sprint), thêm sheet Theo_WBS, D tính theo tham số, bỏ nhãn năng suất."
+  },
+  {
+   "ma": "MH14",
+   "muc_do": "canh_bao",
+   "nhom": "dong_tien",
+   "vi_tri": "Mục 8, DONG_TIEN 'mức âm lớn nhất là -236.915.909 đồng ở cuối S6'",
+   "mo_ta": "Theo đúng giả định tài liệu nêu (lương trả theo ngày làm việc), chênh lệch lũy kế ngày 24/06/2027, trước khi nhận Đợt 3, là khoảng -387.361.364 đồng, lớn hơn mức tính tại cuối sprint. Tài liệu viết 'tối thiểu bằng mức này' nên không sai, nhưng chưa nêu mức trong sprint để nhóm chuẩn bị hạn mức vốn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Bổ sung một câu trong DONG_TIEN: trong S7, trước ngày nhận Đợt 3, mức âm có thể tới khoảng 387 triệu đồng nếu lương trả theo ngày làm việc."
+  },
+  {
+   "ma": "MH19",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan_rui_ro",
+   "vi_tri": "du_lieu/rui_ro.json RR19, dấu hiệu 'muộn hơn ngày dự kiến trong master schedule quá 2 ngày làm việc'; mục 8 dẫn RR19",
+   "mo_ta": "Với M2 ngày 29/04/2027, các ngày 30/04 đến 03/05 là ngày nghỉ, nên trễ một ngày làm việc (sang 04/05/2027) đã đưa Đợt 2 sang S5 (ngày thu 19/05/2027). Lũy kế cuối S4 khi đó là -298.302.272 đồng. Dấu hiệu của RR19 (trễ quá 2 ngày làm việc) chỉ xuất hiện sau khi khoản thu đã dời. Với M3, ngày muộn nhất để Đợt 3 còn trong S7 là 16/06/2027. Điểm này thuộc sổ rủi ro, không làm sai thuyết minh dự toán.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Bước rủi ro: đặt dấu hiệu RR19 theo ngày muộn nhất của mốc (M2 không muộn hơn 02/05/2027, M3 không muộn hơn 16/06/2027)."
+  }
+ ],
+ "trang_thai_phat_hien_vong_2": [
+  {
+   "ma": "MH13",
+   "muc_do_vong2": "loi",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 5 '443,43 MD' (hai chỗ); mục 9 '418.610.227 đồng', '259.519.318 đồng'",
+   "nhan_xet": "Khớp Excel Doi_chieu_nguoi!I16, Tong_hop!B24, B28."
+  },
+  {
+   "ma": "MH05",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "cho_nhom_quyet_dinh",
+   "vi_tri_moi": "Mục 5, DOI_CHIEU",
+   "nhan_xet": "Tài liệu nêu đúng là chờ quyết định. Dữ liệu huy động chưa đổi."
+  },
+  {
+   "ma": "MH07",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "cho_nhom_quyet_dinh",
+   "vi_tri_moi": "Mục 4, DU_PHONG",
+   "nhan_xet": "Tài liệu nêu đúng là chờ tách dòng B. Chênh lệch B so với EMV mới là 21.712.327 đồng."
+  },
+  {
+   "ma": "MH08",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "cho_nhom_quyet_dinh",
+   "vi_tri_moi": "Mục 1, đoạn thuế",
+   "nhan_xet": "Tài liệu nêu đúng là cần nhóm xác nhận căn cứ."
+  },
+  {
+   "ma": "MH09",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "cho_nhom_quyet_dinh",
+   "vi_tri_moi": "Mục 1 '...đơn giá loại công việc quản lý dự án thấp hơn chi phí lương gồm bảo hiểm của người giữ vị trí quản trị dự án'",
+   "nhan_xet": "Đã nêu điểm đơn giá PM. Còn chờ nhóm xác nhận đơn giá."
+  },
+  {
+   "ma": "MH10",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "chua_khac_phuc",
+   "vi_tri_moi": "Bìa 'Ngày 18/03/2027'",
+   "nhan_xet": "dau_vao/nha_thau.json ngay_ky_don vẫn trống, cần nhóm điền."
+  },
+  {
+   "ma": "MH11",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "Excel Dong_tien!E2:E6 = G + Tham_so!B10; Dong_tien!D2:D6; Tong_hop!B6; mục 7",
+   "nhan_xet": "Ngày thu đã là công thức, tham số thời hạn thanh toán có tại Tham_so!B10. Mọi tham chiếu Tham_so sau khi chèn dòng đều trỏ đúng. Còn tồn: sprint thu D2:D6 vẫn nhập tay, nên khi đổi ngày sự kiện thì ngày thu đổi nhưng phân bổ thu theo sprint không đổi. Mục 7 chưa có sheet. B6 là hằng số 0. H13 = 351,01. Nhãn B15 'Năng suất tối thiểu' còn sót."
+  },
+  {
+   "ma": "MH14",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "khac_phuc_mot_phan",
+   "vi_tri_moi": "Mục 8 'Dòng chi giả định lương được trả theo ngày làm việc của thời gian huy động trong từng sprint, chưa gồm phần chi trong dự án của dòng B. Nếu lương trả một lần cuối tháng, mức âm lớn nhất thấp hơn.'",
+   "nhan_xet": "Đã nêu giả định trả lương và việc chưa gồm dòng B. Còn tồn: theo đúng giả định trả theo ngày làm việc, trước ngày nhận Đợt 3 (25/06/2027) mức âm lên khoảng -387 triệu đồng, lớn hơn mức -236.915.909 đồng tính tại cuối sprint. Câu 'tối thiểu bằng mức này' vẫn đúng nhưng chưa cho người đọc biết mức trong sprint."
+  },
+  {
+   "ma": "MH15",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 8 'Khoản thu có thể dời sang sprint sau ngay cả khi mốc trễ vài ngày và vẫn trong hạn của mốc... theo dõi ngày dự kiến của M2, M3 hằng tuần (rủi ro RR19, RR01, RR02)'",
+   "nhan_xet": "Đã sửa. Dấu hiệu của RR19 trong sổ rủi ro lỏng hơn độ nhạy thực tế, xem MH19."
+  },
+  {
+   "ma": "MH16",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 3 '...chi phí các bảo lãnh (dự thầu, thực hiện hợp đồng, tiền tạm ứng, bảo hành)'; mục 4 bỏ bảo lãnh khỏi dòng B",
+   "nhan_xet": "Thống nhất trong khoản C. Ghi chú nhỏ: theo du_lieu/hsdt_bang.json, bảo đảm dự thầu là cam kết trong đơn dự thầu (giá trị dưới 50 triệu đồng), không phát sinh phí bảo lãnh dự thầu."
+  },
+  {
+   "ma": "MH17",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 9 'ngưỡng vàng 0,95, ngưỡng đỏ 0,85'",
+   "nhan_xet": "Khớp dau_vao/du_an.json nguong_canh_bao."
+  },
+  {
+   "ma": "MH18",
+   "muc_do_vong2": "canh_bao",
+   "trang_thai": "da_khac_phuc",
+   "vi_tri_moi": "Mục 1 'Giá chào đã gồm các loại thuế, phí theo quy định... nên khoản thuế giá trị gia tăng trong giá chào bằng không'",
+   "nhan_xet": "Phù hợp E-CDNT 13.4."
+  }
+ ],
+ "ghi_chu": "Vòng 3 (vòng cuối). Báo cáo vòng 1 và vòng 2 lưu tại lam_viec/chi_phi/bao_cao_kiem_tra_lop_B_vong1.json, _vong2.json. Không còn lỗi. Năm cảnh báo chờ nhóm quyết định (MH05, MH07, MH08, MH09, MH10) đã được tài liệu nêu đúng là chờ quyết định, riêng MH10 là dữ liệu bìa. Ba cảnh báo sửa tự động được (MH11, MH14, MH19), không ảnh hưởng tính đúng của số liệu. Không đọc khung.json, khung_nguon.json, ban_soan.json, noi_dung*.json, nhật ký soạn, script trong /private/tmp."
+}

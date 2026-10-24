@@ -1,0 +1,118 @@
+{
+ "tai_lieu": "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx (0.1), ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
+ "ket_luan": "chua_dat",
+ "so_loi": 2,
+ "so_canh_bao": 5,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Đủ 8 mục theo đặc tả; bảng tài liệu cần cập nhật gây hiểu nhầm (MH02)."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Số liệu khớp phien_ban_tong_hop.json (21 tài liệu, 81 phiên bản, 0 cần cập nhật, 0 đường cơ sở, 0 CR, 413/49 lần chạy, 5 commit), nhưng không khớp trạng thái thực tế ket_qua do TL05, TL07 đã chuyển đi (MH01)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi tài liệu có mã TL, lịch sử phiên bản, nhật ký skill, prompt và commit git."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Quy ước đánh số và trạng thái rõ, kiểm chứng được qua băm nội dung và băm đầu vào."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Nêu đúng chưa ký hợp đồng, chưa có BL1, chưa có CR; quy trình thay đổi sau đường cơ sở rõ."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Văn phong trang trọng; lưu ý đầu trang 'Kết thúc dự án' (MH03)."
+  },
+  {
+   "tieu_chi": "Quy ước nhất quán với sổ phiên bản",
+   "ket_qua": "dat",
+   "nhan_xet": "Bảng 2.1-2.3 trùng quy_uoc.json."
+  },
+  {
+   "tieu_chi": "Nhận xét dựa trên số liệu sổ phiên bản và mã CR",
+   "ket_qua": "dat",
+   "nhan_xet": "TL02 12 phiên bản, TL14 9, TL15 8, 0 CR khớp lịch sử."
+  },
+  {
+   "tieu_chi": "Nêu rõ tài liệu còn cần cập nhật nếu có",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Nêu TL21 Dự thảo và hai tệp WBS cũ, nhưng vẫn đếm hai tệp cũ là tài liệu hiện hành (MH01, MH02)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "CL02 Nhất quán",
+   "vi_tri": "Mục 1: 'Tài liệu áp dụng cho 21 tài liệu nộp trong thư mục ket_qua'; Mục 3: TL05, TL07 trạng thái Đã kiểm tra; Mục 8: '20 tài liệu ở trạng thái Đã kiểm tra'",
+   "mo_ta": "TL05 và TL07 đã chuyển sang lam_viec/tai_lieu_wbs/cu_351md/ (tinh_trang 'Không còn tệp') nhưng vẫn được đếm trong 21 tài liệu nộp và mang trạng thái Đã kiểm tra như tài liệu hiện hành. Thực tế ket_qua chỉ còn 19 tài liệu thuộc danh mục. Số liệu này đi ra từ so_tai_lieu và danh_muc của phien_ban_tong_hop.json.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa so_phien_ban.py tong_hop: tách tài liệu 'Không còn tệp' khỏi so_tai_lieu (hoặc thêm trường so_tai_lieu_hien_hanh) và gán trạng thái Thay thế/Lưu trữ; soạn lại PHAM_VI, NHAN_XET."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "CL01 Đúng mục đích",
+   "vi_tri": "Mục 3: câu 'số tài liệu cần cập nhật theo đầu vào mới: 0' và ngay sau là bảng 'Tài liệu cần cập nhật' liệt kê TL05, TL07 với cột 'Đầu vào đã đổi' dài 10 đầu vào",
+   "mo_ta": "Bảng lọc cả tinh_trang 'Không còn tệp' nhưng tiêu đề cột ghi 'Tài liệu cần cập nhật' và 'Đầu vào đã đổi', không hiển thị tình trạng, mâu thuẫn với câu số 0 và người đọc hiểu nhầm hai tệp cần chạy lại.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa đặc tả tai_lieu_phien_ban.json: thêm cột Tình trạng (tinh_trang), đổi tiêu đề thành 'Tài liệu cần cập nhật hoặc không còn tệp', hoặc tách bảng riêng cho tài liệu đã thay thế."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "CL06 Văn phong",
+   "vi_tri": "Đầu trang: 'Kết thúc dự án - Tài liệu quản lý phiên bản'",
+   "mo_ta": "Dự án đang ở giai đoạn lập kế hoạch, chưa ký hợp đồng. Đầu trang theo đặc tả gắn giai đoạn Kết thúc, có thể gây hiểu nhầm. Chưa chắc đây có phải quy ước cố định của nhóm.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Xem lại tieu_de_dau_trang trong đặc tả (ví dụ 'Quản lý dự án - Tài liệu quản lý phiên bản')."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 Nhất quán",
+   "vi_tri": "Bìa 'Tổng hợp ngày 18/03/2027'; Mục 3 ngày tài liệu 05/03/2027 và 18/03/2027 lẫn lộn, TL01, TL02, TL14, TL21 để trống; Mục 6: WBS_1 0.2 ngày 18/03/2027, 0.3 ngày 05/03/2027",
+   "mo_ta": "Ngày tài liệu (ngày giả định của dự án) lấy max các ngay_tai_lieu, khác ngày tổng hợp thực 18/10/2026; ngày phiên bản sau lùi so với phiên bản trước; nhiều tài liệu không có ngày. Chưa chắc là sai quy ước, cần nhóm xác nhận cách ghi ngày tài liệu.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Thống nhất ngày tài liệu trong thông tin dự án, ghi ngay_tai_lieu cho tệp xlsx và HSMT."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "CL01 Đúng mục đích",
+   "vi_tri": "Mục 3: danh mục TL01-TL21",
+   "mo_ta": "Bản thân Tai_lieu_quan_ly_phien_ban.docx và So_phien_ban.xlsx không có trong danh mục, nên phiên bản của tài liệu này không được sổ quản lý.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Cân nhắc đăng ký tài liệu phiên bản vào danh mục ở lần tổng hợp sau."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 Nhất quán",
+   "vi_tri": "Mục 7: 'Nhật ký chạy ghi 413 lần chạy'",
+   "mo_ta": "bang_chung/nhat_ky_chay.jsonl hiện có 419 dòng (6 lần chạy ghi sau thời điểm tổng hợp). Số 413 đúng tại thời điểm tong_hop, chỉ cần chạy lại tong_hop trước khi nộp.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Chạy lại so_phien_ban.py tong_hop và xuất lại trước khi nộp."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "CL03 Truy vết",
+   "vi_tri": "Mục 7 bảng git: 5 commit, nội dung 'update skill', 'update dữ liệu'",
+   "mo_ta": "Commit chưa mang mã bước, phiên bản như quy tắc Kho lưu trữ ở mục 2.3; các thay đổi hiện tại (phien_ban.json, phien_ban_tong_hop.json, ke_hoach_bang.json) chưa commit. Tài liệu đã tự nêu trong Nhận xét, ghi để theo dõi.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Commit kèm mã bước và phiên bản theo quy ước."
+  }
+ ]
+}

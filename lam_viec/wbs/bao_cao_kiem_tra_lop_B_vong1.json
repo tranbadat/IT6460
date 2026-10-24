@@ -1,0 +1,197 @@
+{
+ "tai_lieu": "ket_qua/03_WBS",
+ "tai_lieu_kem": [
+  "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+  "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+  "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.docx",
+  "ket_qua/03_WBS/WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.docx",
+  "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+  "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+  "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+  "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx",
+  "ket_qua/03_WBS/WBS_tong_hop.docx"
+ ],
+ "dac_ta": "tai_lieu_wbs",
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "thoi_gian": "2026-10-16 23:55",
+ "ket_luan": "chua_dat",
+ "so_loi": 2,
+ "so_canh_bao": 11,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Chín tệp có đủ các mục theo quy_tac_wbs.md: thông tin chung (tổng MD, thời gian theo lịch, người chịu trách nhiệm, phụ thuộc đầu vào), sơ đồ cây, bảng chi tiết, kiểm tra quy tắc 100%. Tệp tổng hợp có khối lượng theo nhóm và theo loại, ma trận truy vết 48 yêu cầu RFP, phân bổ 13 hạng mục Mẫu 01A, giả định ngoài phạm vi. Phạm vi đối chiếu trực tiếp với RFP.pdf (5 trang ảnh) và HSMT Chương V: đủ ba chức năng Product Search, Member Administration, Order, Selling DB, tích hợp Main System, luồng vận chuyển qua Main System, bốn sản phẩm bàn giao (Specification gồm DB Configuration và Function, New Operational Flow, Database Structure, Menu Layer), ba yêu cầu phi chức năng (24 giờ 365 ngày, 2 giây, thao tác dễ dàng), phạm vi từ phân tích hệ thống đến kiểm thử vận hành và cut over 01/07/2027. Cả 13 hạng mục Mẫu 01A có gói. Không có gói quản trị nội bộ. Khối lượng 349 MD trong 73 ngày làm việc tương đương 4,8 người toàn thời gian, phù hợp 5 nhân sự chủ chốt của HSMT. Cơ cấu: phân tích và thiết kế 88 MD (25,2%), xây dựng 112 MD (32,1%), kiểm thử và sửa lỗi 81 MD (23,2%), quản lý 33 MD (9,5%), triển khai và chuyển giao 29 MD (8,3%), tài liệu và nghiệm thu nội bộ 6 MD, là hợp lý. Không thấy gói ước lượng quá cao có căn cứ. Có nguy cơ thiếu khối lượng ở công họp sprint của nhóm và bảo hành (MH07, MH10), mức không chắc chắn cao ở tích hợp Main System (MH06), nguy cơ trùng khối lượng ở 6.2.4 (MH09)."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Đối chiếu bằng script: tên, mức, MD, loại, sản phẩm của 65 gói lá và 23 mục cha trong sơ đồ cây và bảng chi tiết khớp du_lieu/wbs.json. Tổng từng nhóm, tổng theo loại (BA 61, DEV 170, DEVOPS 23, PM 33, QA 62) khớp wbs.json và tổng giao việc trong phan_cong.json. Thời gian và sprint của 8 nhóm khớp lich.json. Người chịu trách nhiệm khớp vai trò A mức 1 trong phan_cong.json. Danh sách phụ thuộc đầu vào của 8 nhóm khớp phụ thuộc ngoài nhóm trong wbs.json. Ma trận truy vết khớp truy_vet_rfp. Sai lệch: tổng phân bổ 01A 349,05 MD khác tổng 349 MD và tỷ trọng nhóm 3 làm tròn sai (MH01), ngày tài liệu 18/03/2027 sau thời điểm đóng thầu 08/03/2027 trong khi tài liệu ghi kèm theo hồ sơ dự thầu (MH02)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mọi gói lá gắn ít nhất một hạng mục Mẫu 01A. 43 yêu cầu RFP về hệ thống, sản phẩm, phạm vi, đề xuất được gắn gói hoặc có lý do không cần gói (R14, R16, R23, R24, R45). Yêu cầu thủ tục và hợp đồng được ghi là đáp ứng trong HSDT. Hai dẫn chiếu chưa chính xác: nguồn của 7.2.4 và gói thực hiện R35 (MH12). R42, R43 có phát sinh công việc thực tế nhưng chưa có gói hoặc giả định (MH07)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi gói lá có sản phẩm đầu ra cụ thể, phần lớn kiểm chứng được (biên bản, báo cáo kiểm thử, tài liệu được Chủ đầu tư xác nhận, dịch vụ đã kiểm thử đơn vị, báo cáo đo thời gian phản hồi). Một số sản phẩm thiếu điều kiện hoàn thành hoặc không khớp tên gói (MH11)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "WBS có gói 1.2.2 quản lý rủi ro và yêu cầu thay đổi đặc tả, gói 2.1.4 xác nhận đặc tả gắn Đợt 2, gói 8.3.1 kế hoạch cut over và phương án khôi phục. Tuy vậy các giả định ngoài phạm vi chưa nêu ai xác nhận, khi nào (MH06), và việc thực hiện gối đầu trước khi đặc tả được xác nhận trên đường găng không dự trữ chưa được nêu (MH03)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman cỡ 13, bảng cỡ 12, khổ A4, bảng kẻ lưới đơn, dòng tiêu đề bảng lặp lại. Chỉ mục cha WBS in đậm, dòng tiêu đề và dòng tổng không in đậm. Ngày dạng dd/mm/yyyy, số thập phân dùng dấu phẩy, gạch ngang đơn. Quét theo van_phong.json không phát hiện từ cần thay, ký hiệu máy sinh hay câu quá ba dấu chấm phẩy. Còn một điểm viết hoa không thống nhất (MH13). Tiêu đề bìa cỡ 18 và 15 là trình bày trang bìa."
+  },
+  {
+   "tieu_chi": "doc_hieu: Tên gói dạng danh từ, gắn sản phẩm kiểm tra được",
+   "ket_qua": "dat",
+   "nhan_xet": "Tên gói là cụm danh từ hoặc danh động từ theo cách đặt tên trong ví dụ của quy_tac_wbs.md, văn phong trang trọng, mỗi gói lá có sản phẩm. Lưu ý MH11: tên 3.5.1, 4.5.1, 5.5.1 có tài liệu chức năng nhưng sản phẩm chỉ có biên bản."
+  },
+  {
+   "tieu_chi": "doc_hieu: Mức 2 của phân hệ theo vòng đời",
+   "ket_qua": "dat",
+   "nhan_xet": "Nhóm 3, 4, 5 đều có đủ năm mục mức 2: phân tích yêu cầu, thiết kế, lập trình và kiểm thử đơn vị, kiểm thử phân hệ, tài liệu và nghiệm thu nội bộ."
+  },
+  {
+   "tieu_chi": "doc_hieu: Không có gói thuộc chức năng quản trị nội bộ",
+   "ket_qua": "dat",
+   "nhan_xet": "Không có gói quản trị danh mục, giá, tồn kho, đơn hàng phía nội bộ. Dữ liệu từ Main System dùng động từ đồng bộ, hiển thị, nạp. Phân hệ thành viên chỉ gồm chức năng khách hàng tự thực hiện. Giả định 1 và 2 ghi rõ phần loại trừ."
+  },
+  {
+   "tieu_chi": "doc_hieu: Gói tích hợp tách riêng cho mỗi hệ thống bên ngoài",
+   "ket_qua": "dat",
+   "nhan_xet": "Main System có mục 6.2 riêng gồm đặc tả giao diện, đồng bộ sản phẩm, chuyển đơn hàng, trạng thái vận chuyển, kiểm thử tích hợp. Transportation Operation nhận thông tin qua Main System nên không cần gói riêng. Thanh toán trực tuyến được loại bằng giả định. Chưa chắc chắn về dịch vụ gửi thư điện tử (MH08)."
+  },
+  {
+   "tieu_chi": "doc_hieu: Sơ đồ cây và bảng chi tiết khớp nhau",
+   "ket_qua": "dat",
+   "nhan_xet": "Kiểm tra bằng script trên 8 tệp nhóm: mã và tên mọi mục trong sơ đồ cây khớp bảng chi tiết và wbs.json, không thừa, không thiếu. Sơ đồ thể hiện phân cấp bằng thụt lề 0,635 cm và 1,27 cm, mục cha in đậm."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan_so_lieu",
+   "vi_tri": "WBS_tong_hop.docx mục 5 'Phân bổ theo hạng mục Mẫu 01A', dòng Tổng cộng '349,05'. Mục 1, dòng nhóm 3, tỷ trọng '11,8%'",
+   "mo_ta": "Tổng cột khối lượng mục 5 là 349,05 MD, khác tổng 349 MD tại mục 1 cùng tài liệu và tong_md 349,0 trong du_lieu/wbs.json. Nguyên nhân là làm tròn từng dòng: 1.2 (20 MD) và 1.3.1 (4 MD) chia đều 13 hạng mục, mỗi hạng mục 1,846 MD, cộng phần chia của 2.1.4, 2.3.3, 7.1.1, 8.1.1, sau đó mỗi dòng làm tròn hai chữ số (ví dụ hạng mục 1 bằng 31,596 ghi 31,60), tổng các số đã làm tròn lệch 0,05 MD. Bảng này được ghi là dùng để lập Mẫu 10A và Mẫu 11A nên sai lệch sẽ lan sang phân bổ giá. Ngoài ra tỷ trọng nhóm 3 ghi 11,8% trong khi 41/349 bằng 11,748%, làm tròn một chữ số là 11,7%, do làm tròn hai lần từ giá trị 0,1175 trong wbs.json.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa script lập phan_bo_01a và ty_trong của du_lieu/wbs.json: phân bổ phần dư làm tròn theo phương pháp phần dư lớn nhất để tổng các dòng bằng đúng tong_md, tính tỷ trọng trực tiếp từ md/tong_md không làm tròn trung gian. Xuất lại WBS_tong_hop.docx."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "ngay_tai_lieu",
+   "vi_tri": "Trang bìa cả 9 tệp: 'Tài liệu kế hoạch dự án, kèm theo Phần III. Đề xuất kỹ thuật của hồ sơ dự thầu' và 'Phiên bản 0.1, ngày 18/03/2027'",
+   "mo_ta": "Tài liệu ghi là kèm theo hồ sơ dự thầu nhưng đề ngày 18/03/2027, là ngày hợp đồng dự kiến có hiệu lực (du_an.json ngay_bat_dau), sau thời điểm đóng thầu 08/03/2027 (hsmt.json lich.dong_thau). Tài liệu thuộc E-HSDT không thể lập sau thời điểm đóng thầu. SKILL.md của qlda-wbs quy định mặc định đề ngày ký đơn dự thầu. Trường ngay_ky_don trong dau_vao/nha_thau.json đang để trống nên script xuất lấy ngày bắt đầu dự án.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm điền ngay_ky_don trong dau_vao/nha_thau.json (trong khoảng 22/02/2027 đến 08/03/2027) rồi chạy lại xuat_wbs.py. Nếu nhóm muốn dùng tài liệu làm kế hoạch sau ký hợp đồng thì sửa dòng 'kèm theo Phần III...' cho phù hợp và xuất với --ngay. Rà soát cùng vấn đề ở các tài liệu khác lấy ngày theo cách tương tự."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "phu_thuoc_xac_nhan_dac_ta",
+   "vi_tri": "WBS_6 gói 6.1.1 'Tạo lập Selling DB theo cấu trúc cơ sở dữ liệu được xác nhận', phụ thuộc đầu vào nhóm 3, 4, 5, 6",
+   "mo_ta": "Tên gói 6.1.1 và Mẫu 01A hạng mục 8 của HSMT ('Xây dựng Selling DB theo cấu trúc cơ sở dữ liệu được xác nhận tại hạng mục 3') đòi hỏi cấu trúc đã được xác nhận. Tuy nhiên 6.1.1 chỉ phụ thuộc 2.2.3 và 8.1.1, không phụ thuộc 2.1.4 (Xác nhận đặc tả yêu cầu và giao diện ưu tiên). Theo lich.json, 6.1.1 thực hiện 13/04 - 20/04/2027, 6.2.2 và 6.2.3 bắt đầu 21/04 và 22/04, 3.3.2, 4.3.1, 5.3.1 bắt đầu 04/05, trong khi 2.1.4 thực hiện 29/04 - 05/05/2027 (mốc M2, Đợt 2). Tạo lập cơ sở dữ liệu và lập trình bắt đầu trước khi đặc tả được xác nhận. 6.1.1 nằm trên đường găng, dự trữ đến cut over bằng 0 ngày, nên điều chỉnh sau xác nhận tác động trực tiếp tới ngày 01/07/2027. Có thể đây là lựa chọn gối đầu có chủ ý, nhưng tài liệu không nêu và tên gói mâu thuẫn với phụ thuộc.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm chọn một trong hai cách: (1) thêm 2.1.4 vào phụ thuộc của 6.1.1 (xem xét cả 6.2.2, 6.2.3) và lập lại lịch, hoặc (2) giữ gối đầu, đổi tên 6.1.1 thành 'Tạo lập Selling DB theo cấu trúc cơ sở dữ liệu thiết kế', bổ sung khối lượng điều chỉnh Selling DB theo đặc tả được xác nhận phụ thuộc 2.1.4, ghi rủi ro làm lại vào sổ rủi ro."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "phu_thuoc_kiem_thu_phi_chuc_nang",
+   "vi_tri": "WBS_7 gói 7.2.2 'Kiểm thử hiệu năng và thời gian phản hồi', 7.2.3 'Kiểm thử hoạt động liên tục, sao lưu và phục hồi', 7.2.6 'Khắc phục lỗi sau kiểm thử hệ thống'",
+   "mo_ta": "7.2.3 chỉ phụ thuộc 8.1.2 và được xếp 17/05 - 20/05/2027, trước khi các phân hệ hoàn thành (M3 ngày 11/06/2027). Kết quả chỉ kiểm được hạ tầng, chưa chứng minh hệ thống hoàn chỉnh đáp ứng 24 giờ mỗi ngày, 365 ngày mỗi năm (R04, HSMT Chương V mục 3.4 yêu cầu nêu cách kiểm thử chứng minh). 7.2.6 không nhận kết quả 7.2.3. 7.2.2 (08/06 - 11/06/2027) không phụ thuộc 4.4.1 và 6.2.5 nên chưa bao quát thao tác của phân hệ thành viên và thao tác đặt hàng có trao đổi với Main System, trong khi HSMT yêu cầu không quá 2 giây đối với mỗi thao tác của khách hàng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa phụ thuộc trong wbs: 7.2.3 thêm 6.2.5 (hoặc 7.2.1), 7.2.2 thêm 4.4.1 và 6.2.5, 7.2.6 thêm 7.2.3. 7.2.3 có dự trữ 27 ngày, 7.2.2 có dự trữ 5 ngày, nhưng hai gói cùng do Ninh Đức Toàn thực hiện, nên phải chạy lại lịch. Nếu lịch cho dự trữ âm đến cut over thì chuyển nhóm quyết định."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "phu_thuoc_ket_thuc_chuyen_giao",
+   "vi_tri": "WBS_1 gói 1.3.2 'Báo cáo tổng kết và bàn giao hồ sơ dự án' (phụ thuộc đầu vào nhóm 1 chỉ có 7.2.6). WBS_7 gói 7.3.2 'Kiểm thử vận hành cùng Chủ đầu tư'. WBS_8 gói 8.2.2 'Hướng dẫn vận hành cho cán bộ Chủ đầu tư'",
+   "mo_ta": "1.3.2 chỉ phụ thuộc 7.2.6, được xếp 23/06 - 29/06/2027, không phụ thuộc 7.3.3 và kết thúc trước triển khai phiên bản chính thức (8.3.2, 29/06 - 30/06) và cut over (8.3.3, 01/07). Báo cáo tổng kết và biên bản bàn giao hồ sơ vì vậy không phản ánh được kết quả kiểm thử vận hành và cut over, trong khi mốc M7 lấy 1.3.2 và 8.3.3 làm căn cứ. Ngoài ra 7.3.2 (23/06 - 24/06) không phụ thuộc 8.2.2 (23/06 - 25/06), nên cán bộ Chủ đầu tư tham gia kiểm thử vận hành theo quy trình vận hành mới (Mẫu 01A hạng mục 11) trước khi được hướng dẫn vận hành (hạng mục 12).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "1.3.2: thêm phụ thuộc 7.3.3 và 8.3.2, hoặc tách thành dự thảo báo cáo tổng kết trước cut over và hoàn thiện hồ sơ bàn giao sau 8.3.3. 7.3.2: thêm phụ thuộc 8.2.2 hoặc tách phần hướng dẫn cho người tham gia kiểm thử vận hành lên trước 7.3.2. Vì 7.3.2 nằm trên đường găng và dự trữ bằng 0, nhóm cần quyết định cách sắp xếp rồi chạy lại lịch."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "gia_dinh_ngoai_pham_vi",
+   "vi_tri": "WBS_tong_hop.docx mục 6 'Giả định ngoài phạm vi'. WBS_6 mục 6.2 (6.2.1 - 6.2.5)",
+   "mo_ta": "Mục 6 có bốn giả định nhưng không nêu giả định nào cần Chủ đầu tư xác nhận và xác nhận tại gói nào. Giả định 4 (hạ tầng, bản quyền phần mềm nền do Chủ đầu tư mua sắm) không có trong RFP và HSMT nên cần Chủ đầu tư xác nhận. Thiếu các điều kiện tiền đề mà nhóm 6 phụ thuộc: (1) Chủ đầu tư cung cấp tài liệu giao diện, môi trường kiểm thử và dữ liệu kiểm thử của Main System, cử đầu mối kỹ thuật (HSMT Chương V mục 1 chỉ cam kết cung cấp tài liệu, dữ liệu sau khi hợp đồng có hiệu lực, không nêu môi trường kiểm thử cho 6.2.5), (2) sửa đổi phía Main System, nếu có, do Chủ đầu tư thực hiện, (3) chiều trao đổi dữ liệu: hình vẽ RFP trang 2 chỉ có mũi tên từ Main System vào Selling DB (R10 nguyên văn 'data flow to Selling DB'), HSMT Chương V mục 3.1 để luồng dữ liệu cụ thể xác định trong đặc tả, trong khi 6.2.3 giả định hệ thống chuyển đơn hàng sang Main System và nhận trạng thái, (4) thời điểm Chủ đầu tư bàn giao hạ tầng vận hành cho 8.1.2 (bắt đầu 06/05/2027). Khối lượng 6.2.2 và 6.2.3 (9 MD mỗi gói) được ước lượng khi chưa có tài liệu Main System nên mức không chắc chắn cao.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Bổ sung gia_dinh_ngoai_pham_vi (hoặc điều kiện tiền đề) các ý (1) đến (4), ghi 'theo quy tắc Chủ đầu tư xác nhận' kèm gói xác nhận (1.1.1 cho điều kiện tiền đề, 6.2.1 cho chiều trao đổi dữ liệu). Liên kết rủi ro tích hợp Main System trong sổ rủi ro với 6.2.2, 6.2.3."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "pham_vi_bao_hanh",
+   "vi_tri": "WBS_tong_hop.docx mục 4, dòng R42, R43 'Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng'. Mục 6. WBS_8 gói 8.3.3",
+   "mo_ta": "RFP trang 3 yêu cầu nhà thầu sửa lỗi logic bằng chi phí của mình, thời hạn trách nhiệm một năm (R42, R43). HSMT Chương III tiêu chí 4 chấm cam kết khắc phục sai sót 12 tháng kể từ ngày nghiệm thu, E-ĐKCT 13.1 Đợt 5 gắn với bảo lãnh bảo hành. Đây là công việc phát sinh công sức thực tế, nhưng WBS không có gói và mục 6 không có giả định nêu công việc này nằm ngoài 349 MD và được bù bằng khoản nào. Hỗ trợ sau cut over chỉ có 8.3.3 trong ngày 01/07/2027. Dự toán thiếu căn cứ khối lượng cho chi phí bảo hành.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Thêm giả định 'Khắc phục sai sót trong thời hạn 12 tháng sau nghiệm thu không thuộc khối lượng 349 MD, chi phí tính trong dự phòng hoặc khoản bảo hành của dự toán', hoặc thêm gói bảo hành ngoài lịch 15 tuần có khối lượng ước tính. Cập nhật lời giải R42, R43 trong ma trận truy vết cho tương ứng."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "tich_hop_dich_vu_ngoai",
+   "vi_tri": "WBS_4 gói 4.3.1 'Dịch vụ đăng ký, đăng nhập, xác thực và khôi phục mật khẩu'. WBS_5 gói 5.3.2 'Dịch vụ đặt hàng và xác nhận đơn hàng'. WBS_6 mục 6.2",
+   "mo_ta": "Khôi phục mật khẩu và xác nhận đơn hàng thường cần gửi thư điện tử hoặc tin nhắn qua dịch vụ bên ngoài. quy_tac_wbs.md yêu cầu kết nối dịch vụ email tách thành gói riêng trong nhóm tích hợp khi có cấu hình, xử lý lỗi, kiểm thử độc lập. WBS không có gói này và mục 6 không có giả định về dịch vụ gửi thư (bên cung cấp máy chủ thư, tên miền gửi). Điều chưa chắc: nếu đặc tả chỉ xác nhận đơn hàng trên màn hình và khôi phục mật khẩu không qua thư điện tử thì không cần gói.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác định cách khôi phục mật khẩu và thông báo đơn hàng. Nếu dùng thư điện tử, thêm gói trong mục 6.2 'Kết nối dịch vụ gửi thư điện tử' (loại DEV, khoảng 2 - 4 MD, phụ thuộc 8.1.1, là đầu vào của 4.3.1 và 5.3.2) và giả định Chủ đầu tư cung cấp máy chủ thư hoặc tài khoản dịch vụ."
+  },
+  {
+   "ma": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "khoi_luong_trung_lap",
+   "vi_tri": "WBS_6 gói 6.2.4 'Hiển thị trạng thái vận chuyển đơn hàng từ Main System' (5 MD, sản phẩm 'Màn hình trạng thái vận chuyển đơn hàng'). WBS_5 gói 5.3.3, 5.3.4. WBS_6 gói 6.2.3",
+   "mo_ta": "Bốn gói cùng xử lý trạng thái đơn hàng: 5.3.3 dịch vụ lịch sử và trạng thái đơn hàng, 5.3.4 màn hình theo dõi đơn hàng, 6.2.3 nhận trạng thái xử lý từ Main System, 6.2.4 màn hình trạng thái vận chuyển. Ranh giới giữa màn hình theo dõi đơn hàng (5.3.4) và màn hình trạng thái vận chuyển (6.2.4) không rõ, có nguy cơ tính trùng khối lượng. RFP không yêu cầu trực tiếp hiển thị trạng thái vận chuyển cho khách hàng (R11 chỉ mô tả nghiệp vụ vận chuyển nhận thông tin từ Main System để giao hàng), trong khi 6.2.4 nằm trên đường găng theo lich.json.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Làm rõ phạm vi 6.2.4: chỉ gồm nhận và xử lý dữ liệu trạng thái vận chuyển từ Main System, phần hiển thị dùng màn hình 5.3.4, hoặc gộp phần hiển thị vào 5.3.4 và giảm khối lượng. Ghi giả định hiển thị trạng thái vận chuyển là đề xuất của nhà thầu, theo quy tắc Chủ đầu tư xác nhận."
+  },
+  {
+   "ma": "MH10",
+   "muc_do": "canh_bao",
+   "nhom": "khoi_luong_hop_nhom",
+   "vi_tri": "WBS_1 gói 1.2.1 'Họp tiến độ, trình diễn và báo cáo cuối sprint' (10 MD, loại PM)",
+   "mo_ta": "1.2.1 chỉ tính công của quản trị dự án (phan_cong.json: người thực hiện Trần Bá Đạt, không có người hỗ trợ). Công tham gia lập kế hoạch sprint, trình diễn, họp cải tiến của các thành viên khác trong 7 sprint (11 người theo phan_cong.json) không có trong gói nào. Nếu nhóm họp theo sprint như mô tả thì 349 MD thấp hơn công sức thực tế, với mức 0,5 MD mỗi người mỗi sprint tham gia (58 lượt người - sprint theo quỹ trong lich.json, trừ quản trị dự án) phần thiếu khoảng 29 MD (khoảng 8% của 349 MD). Điều chưa chắc: công họp có thể đã được tính ngầm trong định mức từng gói, nhưng tài liệu không nêu.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Bổ sung người hỗ trợ và khối lượng họp sprint của nhóm vào 1.2.1, hoặc ghi giả định công họp sprint đã gồm trong định mức từng gói, để dự toán và bảng lương dùng thống nhất."
+  },
+  {
+   "ma": "MH11",
+   "muc_do": "canh_bao",
+   "nhom": "san_pham_kiem_chung",
+   "vi_tri": "WBS_3 gói 3.3.3, 3.5.1. WBS_4 gói 4.3.3, 4.5.1. WBS_5 gói 5.3.4, 5.5.1. WBS_6 gói 6.2.4. WBS_7 gói 7.2.6, 7.3.3",
+   "mo_ta": "Các gói giao diện thuộc mục lập trình và kiểm thử đơn vị (3.3.3, 4.3.3, 5.3.4) và 6.2.4 có sản phẩm 'Màn hình ...' không kèm điều kiện hoàn thành, khác với gói dịch vụ cùng mục ghi 'đã kiểm thử đơn vị'. 3.5.1, 4.5.1, 5.5.1 có tên 'Tài liệu chức năng và nghiệm thu nội bộ' nhưng sản phẩm chỉ có 'Biên bản nghiệm thu nội bộ', thiếu tài liệu chức năng là đầu vào của 8.2.1. 7.2.6 và 7.3.3 có sản phẩm 'Phiên bản đã khắc phục lỗi ...' không nêu điều kiện kiểm chứng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa san_pham: 'Màn hình ... đã kiểm thử đơn vị, khớp thiết kế giao diện ưu tiên được xác nhận'. 'Tài liệu chức năng và biên bản nghiệm thu nội bộ phân hệ ...'. 'Phiên bản đã khắc phục lỗi và báo cáo kiểm thử lại, không còn lỗi nghiêm trọng chưa khắc phục'. Xuất lại tài liệu."
+  },
+  {
+   "ma": "MH12",
+   "muc_do": "canh_bao",
+   "nhom": "truy_vet",
+   "vi_tri": "du_lieu/wbs.json gói 7.2.4 'Kiểm thử bảo mật ứng dụng', nguồn 'HSMT Chương V mục 3.4'. WBS_tong_hop.docx mục 4, dòng R35 '2.1.4'",
+   "mo_ta": "HSMT Chương V mục 3.4 chỉ nêu hoạt động liên tục, thời gian phản hồi, thao tác dễ dàng, không có yêu cầu bảo mật ứng dụng. Gói 7.2.4 (và nội dung bảo mật tài khoản của 4.2.1) là bổ sung hợp lý của nhà thầu nhưng dẫn chiếu nguồn không đúng. R35 (mỗi bên được đề xuất thay đổi đặc tả) chỉ gắn với 2.1.4 Xác nhận đặc tả, trong khi gói thực hiện quản lý yêu cầu thay đổi đặc tả là 1.2.2, có nguồn HSMT E-ĐKC 17.1(c), chính là vị trí của R35 trong HSMT.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Đổi nguồn 7.2.4 thành R07 (tài khoản thành viên) và R14 (nội dung cần thiết cho thành công của dự án). Thêm R35 vào nguồn của 1.2.2. Chạy lại kiểm tra và xuất lại WBS_tong_hop.docx."
+  },
+  {
+   "ma": "MH13",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "WBS_1 đến WBS_8, mục 2, câu 'Sơ đồ dùng để trao đổi với chủ đầu tư.'",
+   "mo_ta": "Viết thường 'chủ đầu tư' trong khi các phần khác của bộ tài liệu và HSMT dùng 'Chủ đầu tư' như tên gọi bên hợp đồng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa chuỗi trong xuat_wbs.py thành 'Chủ đầu tư' rồi xuất lại 8 tệp nhóm."
+  }
+ ],
+ "ghi_chu": "Báo cáo lớp A (lam_viec/wbs/bao_cao_kiem_tra_wbs.json) kiểm tra dữ liệu wbs_nhap.json, kết luận đạt, 0 lỗi, 65 gói lá, 349 MD. Lớp B đối chiếu độc lập 9 tệp Word với du_lieu/wbs.json, hsmt.json, rfp_yeu_cau.json, phan_cong.json, lich.json, dau_vao/du_an.json, RFP.pdf (chuyển 5 trang sang ảnh bằng PyMuPDF và xem trực tiếp, gồm phóng to hình mô hình hệ thống trang 2) và HSMT.docx (Chương V, Mẫu 01A, E-ĐKCT 13.1, 17.1(c), Chương III tiêu chí kỹ thuật). Để xác định nguyên nhân MH02 có xem hai dòng lấy ngày trong xuat_wbs.py và trường ngay_ky_don của dau_vao/nha_thau.json. Có mở lam_viec/chi_phi/bao_cao_kiem_tra_lop_B.json chỉ để theo cùng định dạng báo cáo, không dùng nội dung làm căn cứ. Không đọc lam_viec/wbs/wbs_nhap.json, khung.json, ban_soan.json, noi_dung*.json, nhật ký soạn và các script tạo dữ liệu trong /private/tmp. Không sửa tệp nào ngoài báo cáo này. Chưa chạy so_phien_ban.py, nhat_ky.py và chưa chép vào bang_chung theo yêu cầu của agent điều phối."
+}

@@ -1,0 +1,2141 @@
+{
+ "meta": {
+  "ten": "Kế hoạch tổng thể dự án",
+  "id": "ke_hoach_tong_the",
+  "header": "Lập kế hoạch - Master plan",
+  "huong": "doc",
+  "font": "Times New Roman",
+  "size_pt": 13,
+  "size_bang_pt": 12,
+  "nguon": {
+   "hsmt": "du_lieu/hsmt.json",
+   "rfp": "du_lieu/rfp_yeu_cau.json",
+   "wbs": "du_lieu/wbs.json",
+   "lich": "du_lieu/lich.json",
+   "pc": "du_lieu/phan_cong.json",
+   "cp": "du_lieu/chi_phi.json",
+   "rr": "du_lieu/rui_ro.json",
+   "tv": "dau_vao/thanh_vien.json",
+   "ct": "dau_vao/chi_tieu_ky_thuat.json",
+   "nt": "dau_vao/nha_thau.json",
+   "tdb": "du_lieu/thay_doi_bang.json",
+   "kb": "du_lieu/ke_hoach_bang.json",
+   "hb": "du_lieu/hsdt_bang.json",
+   "da": "dau_vao/du_an.json"
+  }
+ },
+ "can_soan": {
+  "MUC_DICH": {
+   "huong_dan": "Bối cảnh và mục đích dự án theo RFP (rfp#yeu_cau R02, R03 đến R05, R12), mục tiêu chính và mục tiêu phụ, mục tiêu của nhà thầu. Không nêu lại các ngưỡng đã có trong bảng mục tiêu, chỉ dẫn chiếu bảng.",
+   "nguon": [
+    "rfp",
+    "hsmt",
+    "kb"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "bat_buoc": [
+    "{lich#cut_over|ngay}"
+   ]
+  },
+  "RANG_BUOC": {
+   "huong_dan": "Ràng buộc của dự án (ngày cut over cố định, hợp đồng trọn gói giá cố định, nhân sự chủ chốt theo HSMT và thay thế trong {hsmt#hop_dong.thay_the_nhan_su_ngay} ngày, thuê ngoài cần Chủ đầu tư chấp thuận, phần ngoài phạm vi theo wbs#gia_dinh_ngoai_pham_vi) và giả định (điều kiện tiền đề, cam kết của Chủ đầu tư ở bảng sau). Mỗi dòng có căn cứ là điều khoản HSMT, mã yêu cầu RFP hoặc mã cam kết. Số liệu viết bằng tham chiếu.",
+   "nguon": [
+    "hsmt",
+    "rfp",
+    "wbs",
+    "kb"
+   ],
+   "dang": "dong_bang",
+   "cot": [
+    "Loại",
+    "Nội dung",
+    "Căn cứ"
+   ],
+   "toi_thieu": 5,
+   "widths": [
+    1300,
+    5600,
+    2400
+   ]
+  },
+  "BEN_LIEN_QUAN": {
+   "huong_dan": "Các nhóm bên liên quan có căn cứ trong RFP và HSMT nhưng chưa có người cụ thể: khách hàng mua qua internet (R02, R03), bộ phận vận hành bán hàng, bộ phận quản lý Main System (R10), nghiệp vụ vận chuyển (R11). Không đặt tên người, không thêm nhóm không có căn cứ. Với mỗi nhóm nêu lợi ích hoặc yêu cầu của họ, điều dự án cần từ họ, cách tham gia, căn cứ. Thông tin còn thiếu ghi rõ được bổ sung tại họp khởi động.",
+   "nguon": [
+    "rfp",
+    "hsmt",
+    "kb",
+    "pc"
+   ],
+   "dang": "dong_bang",
+   "cot": [
+    "Nhóm bên liên quan",
+    "Lợi ích, yêu cầu",
+    "Điều dự án cần",
+    "Cách tham gia",
+    "Căn cứ"
+   ],
+   "toi_thieu": 3,
+   "widths": [
+    1900,
+    2000,
+    2000,
+    2200,
+    1200
+   ]
+  },
+  "PHAM_VI": {
+   "huong_dan": "Phạm vi theo RFP và HSMT, sản phẩm bàn giao theo Mẫu số 01A, phần ngoài phạm vi và giả định (wbs#gia_dinh_ngoai_pham_vi), cách quản lý phạm vi (đường cơ sở đặc tả tại mốc xác nhận đặc tả, quy trình thay đổi). Dẫn chiếu tài liệu WBS.",
+   "nguon": [
+    "wbs",
+    "rfp",
+    "hsmt"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "bat_buoc": [
+    "ngoài phạm vi"
+   ]
+  },
+  "TIEN_DO": {
+   "huong_dan": "Phương pháp lập lịch theo sprint, các gói trên đường găng (liệt kê đúng mã trong lich#duong_gang, không viết khoảng mã), cách theo dõi tiến độ (SPI, mốc so với hạn), biện pháp bảo vệ mốc cut over. Dẫn chiếu master schedule.",
+   "nguon": [
+    "lich"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "bat_buoc": [
+    "đường găng"
+   ]
+  },
+  "TO_CHUC": {
+   "huong_dan": "Cơ cấu tổ chức dự án, vai trò chính, người giữ từng vị trí nhân sự chủ chốt (bảng trên), nghĩa vụ thay thế nhân sự trong {hsmt#hop_dong.thay_the_nhan_su_ngay} ngày theo Mục 21.2 E-ĐKCT, đầu mối với Chủ đầu tư, tải theo sprint (bảng sử dụng quỹ theo sprint) và cách xử lý sprint quá tải hoặc dư quỹ. Gọi người bằng họ tên, không dùng mã nội bộ. Dẫn chiếu tài liệu phân công.",
+   "nguon": [
+    "pc",
+    "tv",
+    "lich",
+    "hsmt"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "bat_buoc": [
+    "{hsmt#hop_dong.thay_the_nhan_su_ngay} ngày"
+   ]
+  },
+  "MUA_SAM": {
+   "huong_dan": "Quyết định tự làm hay thuê ngoài, hạng mục cần mua hoặc thuê thuộc khoản B (môi trường, công cụ), thời điểm cần có theo gói WBS, người phê duyệt chi theo vai trong ban kiểm soát thay đổi (tdb#vai_ban). Thuê ngoài phát sinh chỉ thực hiện khi Chủ đầu tư chấp thuận bằng văn bản theo Mục 6.4 E-ĐKCT và đi qua quy trình yêu cầu thay đổi. Không nêu tên nhà cung cấp không có trong dữ liệu, khoản B chưa có danh mục chi tiết thì ghi rõ.",
+   "nguon": [
+    "kb",
+    "cp",
+    "tdb",
+    "wbs"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "bat_buoc": [
+    "6.4"
+   ]
+  },
+  "CHI_PHI": {
+   "huong_dan": "Theo dõi CPI trên BAC, chi phí lương kế hoạch theo cách trả lương nhóm khai báo (cp#tong_chi_phi_nguoi; lương của toàn bộ ngày huy động là cp#tong_chi_phi_huy_dong, chỉ dùng để theo dõi năng lực) so với khoản A, dòng tiền theo đợt thanh toán (cp#thanh_toan). Không viết lại quy tắc dùng dự phòng, chỉ dẫn chiếu bảng quy tắc. Không gọi giá hợp đồng là đường cơ sở. Dẫn chiếu cost estimate.",
+   "nguon": [
+    "cp",
+    "tdb"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 1,
+   "bat_buoc": [
+    "CPI",
+    "BAC"
+   ]
+  },
+  "CHAT_LUONG": {
+   "huong_dan": "Điều kiện hoàn thành của gói và sprint, tiêu chí nghiệm thu sản phẩm theo đặc tả (kiểm tra đạt là chấp nhận theo Mục 20.1 E-ĐKCT), hoạt động bảo đảm chất lượng (chuẩn mã, xem xét tài liệu, quản lý lỗi), ngưỡng lỗi khi kiểm thử vận hành lấy từ dấu hiệu rủi ro trong rr, điều kiện quyết định cut over. Chỉ tiêu và ngưỡng dùng tham chiếu ct, rr, không tự đặt ngưỡng mới. Mã gói và sprint đúng theo lịch.",
+   "nguon": [
+    "ct",
+    "rfp",
+    "hsmt",
+    "lich",
+    "rr"
+   ],
+   "dang": "dong_bang",
+   "cot": [
+    "Đối tượng",
+    "Tiêu chí, chỉ số",
+    "Cách kiểm tra",
+    "Thời điểm"
+   ],
+   "toi_thieu": 5,
+   "widths": [
+    2000,
+    3200,
+    2500,
+    1600
+   ]
+  },
+  "TRUYEN_THONG": {
+   "huong_dan": "Họp khởi động, lập kế hoạch sprint, họp hằng ngày, trình diễn cuối sprint, họp cải tiến cuối sprint, rà soát rủi ro định kỳ theo kế hoạch quản lý rủi ro, họp xem xét đặc tả, họp kiểm tra chức năng chính tại mốc gắn Đợt 3, họp ban kiểm soát thay đổi theo kế hoạch quản lý thay đổi, họp quyết định cut over. Đối chiếu kế hoạch họp đã cam kết trong HSDT. Kênh liên lạc với đầu mối Chủ đầu tư.",
+   "nguon": [
+    "rfp",
+    "lich",
+    "tdb",
+    "rr",
+    "hb"
+   ],
+   "dang": "dong_bang",
+   "cot": [
+    "Hoạt động",
+    "Tần suất",
+    "Thành phần",
+    "Đầu ra"
+   ],
+   "toi_thieu": 6,
+   "widths": [
+    2400,
+    1500,
+    2700,
+    2700
+   ]
+  },
+  "BAO_CAO": {
+   "huong_dan": "Ma trận báo cáo: báo cáo tiến độ cuối sprint, báo cáo mốc, báo cáo rủi ro mức cao, báo cáo yêu cầu thay đổi và vấn đề, báo cáo vượt cấp tới người có thẩm quyền khi chỉ số ở mức đỏ hoặc mốc gắn thanh toán có nguy cơ trễ. Người lập, người nhận theo vai trong ban kiểm soát thay đổi (tdb#vai_ban), hạn gửi, kênh.",
+   "nguon": [
+    "tdb",
+    "da"
+   ],
+   "dang": "dong_bang",
+   "cot": [
+    "Báo cáo",
+    "Người lập",
+    "Người nhận",
+    "Hạn gửi, kênh"
+   ],
+   "toi_thieu": 4,
+   "widths": [
+    2600,
+    1800,
+    2600,
+    2300
+   ]
+  },
+  "VAN_DE": {
+   "huong_dan": "Quy trình vấn đề theo tám bước: nhận diện, ghi sổ, giao rà soát, đánh giá, giao hành động, thực hiện, rà soát hành động, thống nhất đóng. Thẩm quyền theo cấp: nhóm tự xử lý khi không ảnh hưởng gói khác, quản trị dự án khi ảnh hưởng sprint hoặc nguồn lực, chuyển thành yêu cầu thay đổi khi cần đổi phạm vi, mốc, chi phí, ghi mã rủi ro khi vấn đề là rủi ro đã xảy ra. Người theo vai trong tdb#vai_ban, thời hạn không viết số tay.",
+   "nguon": [
+    "tdb",
+    "rr",
+    "lich"
+   ],
+   "dang": "dong_bang",
+   "cot": [
+    "Bước",
+    "Nội dung",
+    "Người thực hiện",
+    "Thời hạn",
+    "Đầu ra"
+   ],
+   "toi_thieu": 6,
+   "bat_buoc": [
+    "yêu cầu thay đổi",
+    "cấp"
+   ],
+   "widths": [
+    700,
+    3600,
+    1800,
+    1300,
+    1900
+   ]
+  },
+  "THAY_DOI": {
+   "huong_dan": "Tóm tắt quy trình thay đổi, phân loại theo điểm tác động, thẩm quyền và thời hạn ở bảng trên, giá đề nghị Chủ đầu tư bên cạnh chi phí nội bộ, cách lan truyền cập nhật giữa các tài liệu, quản lý phiên bản. Dẫn chiếu kế hoạch quản lý thay đổi, không viết lại chi tiết.",
+   "nguon": [
+    "tdb",
+    "hsmt"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "bat_buoc": [
+    "yêu cầu thay đổi",
+    "phiên bản"
+   ]
+  },
+  "KET_THUC": {
+   "huong_dan": "Chuẩn bị cut over (diễn tập, đối chiếu dữ liệu, phương án khôi phục), đào tạo, bàn giao mã nguồn và quyền sở hữu (Mục 14 E-ĐKCT), bảo hành theo HSMT. Đóng dự án: giải phóng nhân sự huy động, thanh toán đợt cuối, bảo lãnh bảo hành và nhận lại bảo đảm thực hiện hợp đồng, lưu trữ hồ sơ, báo cáo tổng kết, báo cáo đánh giá, bài học kinh nghiệm, người lập theo vai, thời điểm theo bảng trên.",
+   "nguon": [
+    "hsmt",
+    "wbs",
+    "lich",
+    "kb",
+    "tdb"
+   ],
+   "dang": "danh_sach_doan",
+   "toi_thieu": 2,
+   "bat_buoc": [
+    "{hsmt#hop_dong.bao_hanh_thang} tháng",
+    "bài học"
+   ]
+  }
+ },
+ "blocks": [
+  {
+   "text": "PM_26I_02",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "text": "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "text": "Kế hoạch tổng thể dự án",
+   "size": 20,
+   "t": "center"
+  },
+  {
+   "text": "Master plan, lập trên cơ sở HSMT, HSDT, WBS, master schedule, phân công, cost estimate, kế hoạch quản lý rủi ro và kế hoạch quản lý thay đổi",
+   "size": 14,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "rows": [
+    [
+     "Dự án",
+     "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+    ],
+    [
+     "Khách hàng",
+     "Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Đơn vị thực hiện",
+     "PM_26I_02"
+    ],
+    [
+     "Môn học",
+     "Quản trị dự án và Quản lý thay đổi"
+    ],
+    [
+     "Nhóm",
+     "PM_26I_02"
+    ],
+    [
+     "Giảng viên",
+     "Vũ Thị Hương Giang"
+    ],
+    [
+     "Người lập",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Phiên bản",
+     "{{PHIEN_BAN}}"
+    ],
+    [
+     "Ngày",
+     "{{NGAY}}"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ],
+   "t": "table"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "muc": [
+    "1. Điều lệ dự án",
+    "2. Các bên liên quan",
+    "3. Phạm vi và cấu trúc phân rã công việc",
+    "4. Tiến độ và mốc",
+    "5. Tổ chức và nguồn lực",
+    "6. Mua sắm và thuê ngoài",
+    "7. Chi phí và ngân sách",
+    "8. Chất lượng và nghiệm thu",
+    "9. Truyền thông và kế hoạch họp",
+    "10. Rủi ro",
+    "11. Quản lý vấn đề",
+    "12. Quản lý thay đổi",
+    "13. Quản lý cấu hình",
+    "14. Lịch rà soát",
+    "15. Chuyển giao và kết thúc dự án",
+    "16. Đường cơ sở của dự án"
+   ],
+   "t": "muc_luc"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "text": "1. Điều lệ dự án",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Nội dung",
+     "Thông tin"
+    ],
+    [
+     "Dự án",
+     "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+    ],
+    [
+     "Chủ đầu tư",
+     "Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Nhà thầu",
+     "PM_26I_02"
+    ],
+    [
+     "Loại hợp đồng",
+     "trọn gói"
+    ],
+    [
+     "Giá hợp đồng dự kiến",
+     "1.750.000.000 đồng"
+    ],
+    [
+     "Thời gian",
+     "18/03/2027 đến 01/07/2027, 73 ngày làm việc, 7 sprint"
+    ],
+    [
+     "Khối lượng",
+     "657 MD, 144 gói công việc"
+    ],
+    [
+     "Nhân sự",
+     "796 MD quỹ thời gian"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "<<SOẠN:MUC_DICH>>",
+   "t": "p"
+  },
+  {
+   "text": "Mục tiêu của dự án được đo bằng chỉ số, ngưỡng, hạn và người xác nhận trong bảng sau, số liệu lấy từ HSMT, chỉ tiêu kỹ thuật nhà thầu cam kết, master schedule và cost estimate.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Mục tiêu",
+     "Chỉ số, cách đo",
+     "Ngưỡng",
+     "Hạn",
+     "Người xác nhận"
+    ],
+    [
+     "Bàn giao đủ sản phẩm theo Mẫu số 01A",
+     "Số hạng mục Mẫu số 01A được nghiệm thu",
+     "13/13 hạng mục",
+     "01/07/2027",
+     "Tổng Giám đốc Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Đưa hệ thống vào vận hành đúng ngày cut over",
+     "Ngày cut over thực tế",
+     "Không muộn hơn 01/07/2027",
+     "01/07/2027",
+     "Tổng Giám đốc Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Đạt mốc M2: Đặc tả yêu cầu và giao diện ưu tiên được hai bên xác nhận",
+     "Ngày ký biên bản mốc, căn cứ thanh toán Đợt 2",
+     "Không muộn hơn 10/05/2027",
+     "10/05/2027",
+     "Yamada, Phòng Kế hoạch"
+    ],
+    [
+     "Đạt mốc M3: Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+     "Ngày ký biên bản mốc, căn cứ thanh toán Đợt 3",
+     "Không muộn hơn 17/06/2027",
+     "17/06/2027",
+     "Yamada, Phòng Kế hoạch"
+    ],
+    [
+     "Đạt mốc M7: Nhà thầu nộp bảo lãnh bảo hành, bàn giao hồ sơ dự án",
+     "Ngày ký biên bản mốc, căn cứ thanh toán Đợt 5",
+     "Không muộn hơn 01/07/2027",
+     "01/07/2027",
+     "Yamada, Phòng Kế hoạch"
+    ],
+    [
+     "Giữ tiến độ theo kế hoạch sprint",
+     "SPI lũy kế cuối mỗi sprint",
+     "Từ 0,95 trở lên",
+     "Cuối mỗi sprint đến 01/07/2027",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Thực hiện trong đường cơ sở chi phí",
+     "Chi phí nhân công thực tế lũy kế so với BAC, CPI lũy kế",
+     "Không vượt 1.420.050.000 đồng, CPI từ 0,95 trở lên",
+     "01/07/2027",
+     "Lê Quốc Bảo"
+    ],
+    [
+     "KT01: Hoạt động liên tục 24 giờ mỗi ngày trong 365 ngày",
+     "Diễn tập chuyển đổi dự phòng trước cut over",
+     "Tỷ lệ sẵn sàng từ 99,5% mỗi tháng, không tính khung bảo trì đã thống nhất",
+     "29/06/2027",
+     "Yamada, Phòng Kế hoạch"
+    ],
+    [
+     "KT02: Thời gian phản hồi không quá 2 giây cho mỗi thao tác",
+     "Đo các thao tác cốt lõi trên môi trường thống nhất, báo cáo kèm phân vị 95",
+     "Mọi thao tác cốt lõi (tìm kiếm, xem sản phẩm, đăng nhập, giỏ hàng, đặt hàng) không quá 2 giây, báo cáo kèm phân vị 95",
+     "29/06/2027",
+     "Yamada, Phòng Kế hoạch"
+    ],
+    [
+     "KT03: Thời gian phản hồi không quá 2 giây cho mỗi thao tác",
+     "Thử tải 500 người dùng đồng thời, đo lại sau tối ưu",
+     "Chịu tải 500 người dùng đồng thời",
+     "29/06/2027",
+     "Yamada, Phòng Kế hoạch"
+    ],
+    [
+     "KT04: An toàn dữ liệu",
+     "Báo cáo rà soát lỗ hổng và kết quả kiểm thử lại",
+     "Rà soát lỗ hổng theo OWASP Top 10 và kiểm thử lại sau khắc phục",
+     "29/06/2027",
+     "Yamada, Phòng Kế hoạch"
+    ],
+    [
+     "KT05: Sao lưu, khôi phục",
+     "Chạy thử khôi phục trước nghiệm thu",
+     "Sao lưu toàn phần hằng ngày, sao lưu nhật ký giao dịch theo giờ",
+     "29/06/2027",
+     "Yamada, Phòng Kế hoạch"
+    ],
+    [
+     "Khắc phục sai sót trong thời hạn bảo hành",
+     "Thời gian phản hồi và khắc phục lỗi theo mức",
+     "Nghiêm trọng: phản hồi 2 giờ, khắc phục 8 giờ. Cao: khắc phục 1 ngày làm việc. Khác: khắc phục 3 ngày làm việc",
+     "12 tháng từ 01/07/2027",
+     "Yamada, Phòng Kế hoạch"
+    ]
+   ],
+   "widths": [
+    2300,
+    2300,
+    2300,
+    1100,
+    1300
+   ],
+   "center_cols": [
+    3
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Loại",
+     "Nội dung",
+     "Căn cứ"
+    ],
+    "<<SOẠN:RANG_BUOC>>"
+   ],
+   "widths": [
+    1300,
+    5600,
+    2400
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Cam kết của Chủ đầu tư (giả định của kế hoạch)",
+     "Hạn"
+    ],
+    [
+     "CK1",
+     "Tài liệu đặc tả giao diện trao đổi dữ liệu của Main System",
+     "14/04/2027"
+    ],
+    [
+     "CK2",
+     "Môi trường thử của Main System",
+     "20/05/2027"
+    ],
+    [
+     "CK3",
+     "Dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi theo định dạng thống nhất",
+     "10/06/2027"
+    ],
+    [
+     "CK4",
+     "Bộ nhận diện thương hiệu, hình ảnh và nội dung sản phẩm",
+     "10/06/2027"
+    ],
+    [
+     "CK5",
+     "Chủ sản phẩm có thẩm quyền quyết định yêu cầu nghiệp vụ, làm rõ yêu cầu 2-3 buổi mỗi tuần trong sprint 1-3, dự demo cuối mỗi sprint",
+     "Theo nội dung cam kết"
+    ],
+    [
+     "CK6",
+     "Người dùng nghiệp vụ tham gia kiểm thử chấp nhận theo khoảng uat",
+     "Theo nội dung cam kết"
+    ]
+   ],
+   "widths": [
+    800,
+    6400,
+    2100
+   ],
+   "center_cols": [
+    0,
+    2
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Điều lệ dự án và kế hoạch tổng thể được lập, phê duyệt và xác nhận theo bảng sau.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Vai trò",
+     "Họ tên, chức danh",
+     "Thời điểm"
+    ],
+    [
+     "Người lập",
+     "Trần Bá Đạt",
+     "18/03/2027"
+    ],
+    [
+     "Phê duyệt phía nhà thầu",
+     "Lê Quốc Bảo, Giám đốc",
+     "18/03/2027"
+    ],
+    [
+     "Xác nhận phía Chủ đầu tư",
+     "Tổng Giám đốc Công ty Cổ phần ABC Wear (họ tên ghi khi hoàn thiện hợp đồng theo Mục 1.3 E-ĐKCT)",
+     "Mốc M1, 14/04/2027"
+    ]
+   ],
+   "widths": [
+    2300,
+    4800,
+    2200
+   ],
+   "center_cols": [
+    2
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "2. Các bên liên quan",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Bên liên quan",
+     "Bên",
+     "Vai trò",
+     "Ảnh hưởng",
+     "Quan tâm",
+     "Cách tham gia"
+    ],
+    [
+     "Tổng Giám đốc Công ty Cổ phần ABC Wear (họ tên ghi khi hoàn thiện hợp đồng theo Mục 1.3 E-ĐKCT)",
+     "Chủ đầu tư",
+     "Đại diện Chủ đầu tư ký hợp đồng, phụ lục hợp đồng, nghiệm thu",
+     "Cao",
+     "Trung bình",
+     "Nhận báo cáo tại các mốc gắn đợt thanh toán, quyết định thay đổi mức lớn, ký nghiệm thu"
+    ],
+    [
+     "Công ty Cổ phần ABC Wear, đầu mối Yamada, Phòng Kế hoạch",
+     "Chủ đầu tư",
+     "Đầu mối Chủ đầu tư",
+     "Cao",
+     "Cao",
+     "Họp trình diễn cuối sprint, họp xem xét đặc tả, phê duyệt thay đổi mức trung bình, nhận báo cáo tiến độ"
+    ],
+    [
+     "Lê Quốc Bảo, Giám đốc",
+     "Nhà thầu",
+     "Đại diện nhà thầu ký hợp đồng, phụ lục hợp đồng, phê duyệt dùng dự phòng",
+     "Cao",
+     "Trung bình",
+     "Nhận báo cáo tiến độ và chi phí cuối sprint, quyết định thay đổi mức lớn"
+    ],
+    [
+     "Trần Bá Đạt, Trưởng nhóm, quản trị dự án",
+     "Nhà thầu",
+     "Điều hành dự án, đầu mối của nhà thầu",
+     "Cao",
+     "Cao",
+     "Chủ trì các cuộc họp, lập báo cáo, quản lý thay đổi, rủi ro và vấn đề"
+    ],
+    [
+     "Nhóm thực hiện: 5 thành viên nòng cốt, 7 vị trí bổ sung",
+     "Nhà thầu",
+     "Thực hiện các gói công việc theo phân công",
+     "Trung bình",
+     "Cao",
+     "Họp lập kế hoạch sprint, họp hằng ngày, họp cải tiến cuối sprint"
+    ]
+   ],
+   "widths": [
+    2100,
+    1000,
+    2000,
+    900,
+    900,
+    2400
+   ],
+   "center_cols": [
+    1,
+    3,
+    4
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Nhóm bên liên quan",
+     "Lợi ích, yêu cầu",
+     "Điều dự án cần",
+     "Cách tham gia",
+     "Căn cứ"
+    ],
+    "<<SOẠN:BEN_LIEN_QUAN>>"
+   ],
+   "widths": [
+    1900,
+    2000,
+    2000,
+    2200,
+    1200
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "3. Phạm vi và cấu trúc phân rã công việc",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Nhóm công việc",
+     "MD",
+     "Tỷ trọng"
+    ],
+    [
+     "1",
+     "Quản lý dự án",
+     "60",
+     "9,1%"
+    ],
+    [
+     "2",
+     "Phân tích và thiết kế chung",
+     "66",
+     "10,0%"
+    ],
+    [
+     "3",
+     "Phân hệ tìm kiếm và hiển thị sản phẩm (Product Search)",
+     "95",
+     "14,5%"
+    ],
+    [
+     "4",
+     "Phân hệ thành viên (Member Administration)",
+     "91",
+     "13,9%"
+    ],
+    [
+     "5",
+     "Phân hệ đặt hàng (Order)",
+     "129",
+     "19,6%"
+    ],
+    [
+     "6",
+     "Cơ sở dữ liệu bán hàng và tích hợp hệ thống",
+     "93",
+     "14,2%"
+    ],
+    [
+     "7",
+     "Kiểm thử hệ thống và kiểm thử vận hành",
+     "73",
+     "11,1%"
+    ],
+    [
+     "8",
+     "Triển khai và chuyển giao",
+     "50",
+     "7,6%"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "657",
+     "100,0%"
+    ]
+   ],
+   "widths": [
+    800,
+    5300,
+    1500,
+    1700
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    2,
+    3
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "<<SOẠN:PHAM_VI>>",
+   "t": "p"
+  },
+  {
+   "text": "4. Tiến độ và mốc",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mốc",
+     "Nội dung",
+     "Ngày dự kiến",
+     "Hạn",
+     "Thanh toán"
+    ],
+    [
+     "M0",
+     "Hợp đồng có hiệu lực, khởi động dự án",
+     "18/03/2027",
+     "",
+     "1"
+    ],
+    [
+     "M1",
+     "Kế hoạch quản lý dự án được Chủ đầu tư xác nhận",
+     "14/04/2027",
+     "14/04/2027",
+     ""
+    ],
+    [
+     "M2",
+     "Đặc tả yêu cầu và giao diện ưu tiên được hai bên xác nhận",
+     "06/05/2027",
+     "10/05/2027",
+     "2"
+    ],
+    [
+     "M3",
+     "Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+     "16/06/2027",
+     "17/06/2027",
+     "3"
+    ],
+    [
+     "M4",
+     "Hoàn thành kiểm thử hệ thống, bản phát hành sẵn sàng kiểm thử chấp nhận",
+     "16/06/2027",
+     "17/06/2027",
+     ""
+    ],
+    [
+     "M5",
+     "Hoàn thành kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư",
+     "29/06/2027",
+     "29/06/2027",
+     ""
+    ],
+    [
+     "M6",
+     "Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+     "01/07/2027",
+     "",
+     "4"
+    ],
+    [
+     "M7",
+     "Nhà thầu nộp bảo lãnh bảo hành, bàn giao hồ sơ dự án",
+     "01/07/2027",
+     "01/07/2027",
+     "5"
+    ]
+   ],
+   "widths": [
+    700,
+    4100,
+    1400,
+    1300,
+    1100
+   ],
+   "center_cols": [
+    0,
+    2,
+    3,
+    4
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Sprint",
+     "Từ",
+     "Đến",
+     "Mục tiêu",
+     "Sản phẩm trình diễn"
+    ],
+    [
+     "S1",
+     "18/03/2027",
+     "31/03/2027",
+     "Khởi động dự án, khảo sát nghiệp vụ và hệ thống hiện có, đặc tả chức năng ba phân hệ, kiến trúc hệ thống, khung ứng dụng phía máy chủ và giao diện, môi trường phát triển, kiểm thử có quy trình triển khai tự động",
+     "Biên bản khởi động, báo cáo khảo sát, khung ứng dụng chạy trên môi trường phát triển qua quy trình triển khai tự động"
+    ],
+    [
+     "S2",
+     "01/04/2027",
+     "14/04/2027",
+     "Kế hoạch quản lý dự án được Chủ đầu tư xác nhận (M1), cấu trúc và cấu hình Selling DB, sơ đồ phân cấp menu, thiết kế giao diện ưu tiên, thư viện thành phần giao diện, Selling DB trên môi trường phát triển, đặc tả use case",
+     "Cấu trúc Selling DB, sơ đồ phân cấp menu (Menu Layer), mẫu giao diện ưu tiên ba nhóm chức năng"
+    ],
+    [
+     "S3",
+     "15/04/2027",
+     "06/05/2027",
+     "Đặc tả giao diện tích hợp sau khi nhận tài liệu Main System (CK1), thiết kế chi tiết và lập trình đợt đầu các chức năng tìm kiếm, thành viên, đặt hàng, kịch bản kiểm thử phân hệ, trình Chủ đầu tư xác nhận đặc tả và giao diện ưu tiên",
+     "Tìm kiếm sản phẩm, đăng ký, đăng nhập và giỏ hàng trên môi trường phát triển"
+    ],
+    [
+     "S4",
+     "07/05/2027",
+     "20/05/2027",
+     "Hai bên xác nhận đặc tả và giao diện ưu tiên (M2), lập trình các chức năng còn lại của ba phân hệ, đồng bộ dữ liệu và chuyển đơn hàng với dịch vụ giả lập Main System, kiểm thử phân hệ theo từng nhóm chức năng",
+     "Luồng đăng ký, tìm kiếm, đặt hàng có phí vận chuyển và mã giảm giá trên dữ liệu giả lập"
+    ],
+    [
+     "S5",
+     "21/05/2027",
+     "03/06/2027",
+     "Kiểm thử tích hợp trên môi trường thử của Main System (CK2), hoàn thành kiểm thử và sửa lỗi phân hệ, môi trường vận hành, kịch bản kiểm thử hệ thống và kiểm thử chấp nhận",
+     "Luồng đặt hàng đầu cuối có chuyển đơn hàng sang Main System thử và nhận trạng thái vận chuyển"
+    ],
+    [
+     "S6",
+     "04/06/2027",
+     "17/06/2027",
+     "Kiểm thử hệ thống (chức năng đầu cuối, hiệu năng, bảo mật, khả năng sử dụng) và khắc phục lỗi (M4), Chủ đầu tư kiểm tra chức năng chính (M3), hướng dẫn vận hành, chuyển đổi thử dữ liệu (CK3)",
+     "Bản phát hành ứng viên cho kiểm thử chấp nhận, báo cáo kiểm thử hệ thống"
+    ],
+    [
+     "S7",
+     "18/06/2027",
+     "01/07/2027",
+     "Kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư (M5), khắc phục lỗi trong khoảng kiểm thử chấp nhận, kiểm thử hiệu năng và an toàn bản phát hành trên môi trường vận hành, diễn tập triển khai, chuyển đổi dữ liệu chính thức, cut over 01/07/2027 (M6), bàn giao (M7)",
+     "Hệ thống trên môi trường vận hành, biên bản kiểm thử chấp nhận và biên bản bàn giao"
+    ]
+   ],
+   "widths": [
+    800,
+    1150,
+    1150,
+    3300,
+    2900
+   ],
+   "center_cols": [
+    0,
+    1,
+    2
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Lịch có ràng buộc nguồn lực hoàn thành ngày 01/07/2027 theo ràng buộc ngày cut over 01/07/2027. Chuỗi công việc trước các gói gắn ngày cut over có dự trữ 4 ngày làm việc. Đường găng theo phụ thuộc dài 52 ngày làm việc.",
+   "t": "p"
+  },
+  {
+   "text": "<<SOẠN:TIEN_DO>>",
+   "t": "p"
+  },
+  {
+   "text": "5. Tổ chức và nguồn lực",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Vị trí nhân sự chủ chốt theo HSMT",
+     "Số lượng",
+     "Người đảm nhận"
+    ],
+    [
+     "Quản trị dự án",
+     "1",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Kỹ sư phát triển phần mềm",
+     "3",
+     "Phạm Tuấn Anh, Ninh Đức Toàn, Vũ Đức Minh"
+    ],
+    [
+     "Kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử",
+     "1",
+     "Nguyễn Thị Phương Liên"
+    ]
+   ],
+   "widths": [
+    4300,
+    1200,
+    3800
+   ],
+   "center_cols": [
+    1
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Thành viên",
+     "Chức danh",
+     "MD giao",
+     "Quỹ, MD",
+     "Sử dụng"
+    ],
+    [
+     "Trần Bá Đạt",
+     "Trưởng nhóm, quản trị dự án",
+     "64",
+     "73",
+     "87,7%"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "Kỹ sư phát triển backend",
+     "59",
+     "73",
+     "80,8%"
+    ],
+    [
+     "Vũ Đức Minh",
+     "Kỹ sư phát triển frontend",
+     "50",
+     "73",
+     "68,5%"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "Kỹ sư phát triển backend",
+     "59",
+     "73",
+     "80,8%"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "Phân tích nghiệp vụ",
+     "68",
+     "73",
+     "93,2%"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "Kiến trúc sư kiêm phân tích nghiệp vụ",
+     "55",
+     "73",
+     "75,3%"
+    ],
+    [
+     "Lê Quang Huy",
+     "Kỹ sư phát triển frontend kiêm backend",
+     "51",
+     "63",
+     "81,0%"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "Kỹ sư phát triển backend, thiết kế API",
+     "53",
+     "63",
+     "84,1%"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "Kỹ sư phát triển backend",
+     "56",
+     "63",
+     "88,9%"
+    ],
+    [
+     "Trần Thu Hà",
+     "Kỹ sư kiểm thử kỹ thuật, kiểm thử tự động",
+     "45",
+     "63",
+     "71,4%"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "Kỹ sư kiểm thử chức năng, hiệu năng và an toàn thông tin",
+     "48",
+     "53",
+     "90,6%"
+    ],
+    [
+     "Trương Quốc Việt",
+     "Kỹ sư phát triển backend kiêm DevOps",
+     "49",
+     "53",
+     "92,5%"
+    ],
+    [
+     "Tổng cộng",
+     "",
+     "657",
+     "796",
+     ""
+    ]
+   ],
+   "widths": [
+    2400,
+    3200,
+    1200,
+    1200,
+    1300
+   ],
+   "center_cols": [],
+   "right_cols": [
+    2,
+    3,
+    4
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Sprint",
+     "MD kế hoạch",
+     "Quỹ huy động, MD",
+     "Sử dụng"
+    ],
+    [
+     "S1",
+     "52,50",
+     "60",
+     "87,5%"
+    ],
+    [
+     "S2",
+     "87,00",
+     "100",
+     "87,0%"
+    ],
+    [
+     "S3",
+     "145,00",
+     "156",
+     "93,0%"
+    ],
+    [
+     "S4",
+     "112,00",
+     "120",
+     "93,3%"
+    ],
+    [
+     "S5",
+     "103,50",
+     "120",
+     "86,2%"
+    ],
+    [
+     "S6",
+     "79,00",
+     "120",
+     "65,8%"
+    ],
+    [
+     "S7",
+     "78,00",
+     "120",
+     "65,0%"
+    ]
+   ],
+   "widths": [
+    1500,
+    2600,
+    2600,
+    2600
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    1,
+    2,
+    3
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "<<SOẠN:TO_CHUC>>",
+   "t": "p"
+  },
+  {
+   "text": "6. Mua sắm và thuê ngoài",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Nội dung",
+     "Quy định",
+     "Căn cứ"
+    ],
+    [
+     "Nhà thầu phụ",
+     "Không sử dụng nhà thầu phụ theo E-HSDT",
+     "Mục 6.1, 6.2 E-ĐKCT, tối đa 40% giá hợp đồng"
+    ],
+    [
+     "Thuê ngoài",
+     "Mọi trường hợp thuê ngoài, kể cả sử dụng nhà thầu phụ chưa có trong E-HSDT, nhà thầu phải có văn bản đề nghị và chỉ được thực hiện sau khi được Chủ đầu tư chấp thuận bằng văn bản. Nhà thầu chịu trách nhiệm trước Chủ đầu tư về chất lượng, tiến độ và việc bảo mật thông tin đối với phần công việc thuê ngoài.",
+     "Mục 6.4 E-ĐKCT"
+    ]
+   ],
+   "widths": [
+    1700,
+    5400,
+    2200
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Vị trí bổ sung được huy động theo sprint, hồ sơ năng lực được hoàn thiện trước sprint huy động.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Người dự kiến",
+     "Vị trí",
+     "Huy động từ",
+     "Ngày bắt đầu",
+     "Hồ sơ năng lực"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "Kiến trúc sư kiêm phân tích nghiệp vụ",
+     "S1",
+     "18/03/2027",
+     "Chưa có trình độ, kinh nghiệm"
+    ],
+    [
+     "Lê Quang Huy",
+     "Kỹ sư phát triển frontend kiêm backend",
+     "S2",
+     "01/04/2027",
+     "Chưa có trình độ, kinh nghiệm"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "Kỹ sư phát triển backend, thiết kế API",
+     "S2",
+     "01/04/2027",
+     "Chưa có trình độ, kinh nghiệm"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "Kỹ sư phát triển backend",
+     "S2",
+     "01/04/2027",
+     "Chưa có trình độ, kinh nghiệm"
+    ],
+    [
+     "Trần Thu Hà",
+     "Kỹ sư kiểm thử kỹ thuật, kiểm thử tự động",
+     "S2",
+     "01/04/2027",
+     "Chưa có trình độ, kinh nghiệm"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "Kỹ sư kiểm thử chức năng, hiệu năng và an toàn thông tin",
+     "S3",
+     "15/04/2027",
+     "Chưa có trình độ, kinh nghiệm"
+    ],
+    [
+     "Trương Quốc Việt",
+     "Kỹ sư phát triển backend kiêm DevOps",
+     "S3",
+     "15/04/2027",
+     "Chưa có trình độ, kinh nghiệm"
+    ]
+   ],
+   "widths": [
+    2000,
+    3100,
+    1100,
+    1300,
+    1800
+   ],
+   "center_cols": [
+    2,
+    3
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Khoản chi phí khác (khoản B) gồm các hạng mục sau.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Hạng mục",
+     "Số tiền, đồng",
+     "Căn cứ"
+    ],
+    [
+     "B",
+     "Môi trường, công cụ, bảo hành 12 tháng và dự phòng",
+     "150.000.000",
+     "Ước tính của nhà thầu"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "150.000.000",
+     ""
+    ]
+   ],
+   "widths": [
+    800,
+    4300,
+    1800,
+    2400
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    2
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "<<SOẠN:MUA_SAM>>",
+   "t": "p"
+  },
+  {
+   "text": "7. Chi phí và ngân sách",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Khoản mục",
+     "Giá trị"
+    ],
+    [
+     "Đường cơ sở chi phí (BAC), khoản A nhân công",
+     "1.420.050.000 đồng"
+    ],
+    [
+     "Khoản B chi phí khác, gồm dự phòng, theo dõi theo danh mục",
+     "150.000.000 đồng"
+    ],
+    [
+     "Khoản C chi phí chung và lợi nhuận",
+     "179.950.000 đồng"
+    ],
+    [
+     "Giá hợp đồng dự kiến, không dùng làm đường cơ sở chi phí",
+     "1.750.000.000 đồng"
+    ],
+    [
+     "Tổng EMV rủi ro",
+     "147 triệu đồng, khoảng từ 110 đến 183 triệu đồng"
+    ]
+   ],
+   "widths": [
+    5300,
+    4000
+   ],
+   "center_cols": [],
+   "right_cols": [
+    1
+   ],
+   "t": "table"
+  },
+  {
+   "text": "Dự án dùng một đường cơ sở chi phí là BAC bằng khoản nhân công 1.420.050.000 đồng, phân bổ theo sprint theo MD kế hoạch và dùng để tính CPI. Giá hợp đồng 1.750.000.000 đồng là giá trị thanh toán theo hợp đồng, khoản chi phí khác được theo dõi theo danh mục ở mục 6.",
+   "t": "p"
+  },
+  {
+   "text": "Dự phòng rủi ro được dùng theo bảng quy tắc chung với kế hoạch quản lý thay đổi, kế hoạch quản lý rủi ro và thuyết minh dự toán.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Nội dung",
+     "Quy định"
+    ],
+    [
+     "Dự phòng hiện có",
+     "50.000.000 đồng, nằm trong khoản chi phí khác"
+    ],
+    [
+     "Tổng EMV của sổ rủi ro",
+     "147 triệu đồng, khoảng từ 110 đến 183 triệu đồng"
+    ],
+    [
+     "Điều kiện sử dụng",
+     "Một rủi ro trong sổ đăng ký rủi ro xảy ra hoặc kế hoạch ứng phó của rủi ro được kích hoạt"
+    ],
+    [
+     "Người đề xuất",
+     "Người phụ trách rủi ro, nêu mã rủi ro, số tiền, MD hoặc ngày cần dùng"
+    ],
+    [
+     "Người phê duyệt",
+     "Quản trị dự án Trần Bá Đạt phê duyệt khoản dùng cho rủi ro do thành viên khác phụ trách. Người đại diện ký hợp đồng của nhà thầu Lê Quốc Bảo phê duyệt khoản dùng cho rủi ro do quản trị dự án phụ trách và khoản làm giảm phần chi phí chung và lợi nhuận"
+    ],
+    [
+     "Ghi nhận",
+     "Ghi vào sổ yêu cầu thay đổi kèm mã rủi ro, cập nhật sổ rủi ro, dự toán và lịch theo ma trận lan truyền"
+    ],
+    [
+     "Không áp dụng",
+     "Không dùng dự phòng để bù thay đổi phạm vi theo yêu cầu của Chủ đầu tư, các thay đổi này xử lý theo mức lớn bằng văn bản thống nhất hoặc phụ lục hợp đồng"
+    ]
+   ],
+   "widths": [
+    2300,
+    7000
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "<<SOẠN:CHI_PHI>>",
+   "t": "p"
+  },
+  {
+   "text": "8. Chất lượng và nghiệm thu",
+   "t": "h1"
+  },
+  {
+   "text": "Các chỉ tiêu kỹ thuật nhà thầu cam kết được dùng làm tiêu chí nghiệm thu chất lượng.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Yêu cầu HSMT",
+     "Chỉ tiêu",
+     "Cách kiểm chứng"
+    ],
+    [
+     "KT01",
+     "Hoạt động liên tục 24 giờ mỗi ngày trong 365 ngày",
+     "Tỷ lệ sẵn sàng từ 99,5% mỗi tháng, không tính khung bảo trì đã thống nhất",
+     "Diễn tập chuyển đổi dự phòng trước cut over"
+    ],
+    [
+     "KT02",
+     "Thời gian phản hồi không quá 2 giây cho mỗi thao tác",
+     "Mọi thao tác cốt lõi (tìm kiếm, xem sản phẩm, đăng nhập, giỏ hàng, đặt hàng) không quá 2 giây, báo cáo kèm phân vị 95",
+     "Đo các thao tác cốt lõi trên môi trường thống nhất, báo cáo kèm phân vị 95"
+    ],
+    [
+     "KT03",
+     "Thời gian phản hồi không quá 2 giây cho mỗi thao tác",
+     "Chịu tải 500 người dùng đồng thời",
+     "Thử tải 500 người dùng đồng thời, đo lại sau tối ưu"
+    ],
+    [
+     "KT04",
+     "An toàn dữ liệu",
+     "Rà soát lỗ hổng theo OWASP Top 10 và kiểm thử lại sau khắc phục",
+     "Báo cáo rà soát lỗ hổng và kết quả kiểm thử lại"
+    ],
+    [
+     "KT05",
+     "Sao lưu, khôi phục",
+     "Sao lưu toàn phần hằng ngày, sao lưu nhật ký giao dịch theo giờ",
+     "Chạy thử khôi phục trước nghiệm thu"
+    ]
+   ],
+   "widths": [
+    700,
+    2300,
+    3300,
+    3000
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Điều kiện quyết định cut over: Kiểm thử chấp nhận đạt, không còn lỗi nghiêm trọng hoặc cao làm gián đoạn luồng đặt hàng, có báo cáo hiệu năng và an toàn thông tin của bản phát hành.",
+   "t": "p"
+  },
+  {
+   "text": "Bảo hành 12 tháng kể từ ngày cut over, thời gian phản hồi và khắc phục theo mức lỗi như sau.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Mức lỗi",
+     "Thời gian phản hồi",
+     "Thời hạn khắc phục"
+    ],
+    [
+     "Nghiêm trọng",
+     "2 giờ",
+     "8 giờ"
+    ],
+    [
+     "Cao",
+     "Trong thời hạn khắc phục",
+     "1 ngày làm việc"
+    ],
+    [
+     "Khác",
+     "Trong thời hạn khắc phục",
+     "3 ngày làm việc"
+    ]
+   ],
+   "widths": [
+    3100,
+    3100,
+    3100
+   ],
+   "center_cols": [
+    0,
+    1,
+    2
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Đối tượng",
+     "Tiêu chí, chỉ số",
+     "Cách kiểm tra",
+     "Thời điểm"
+    ],
+    "<<SOẠN:CHAT_LUONG>>"
+   ],
+   "widths": [
+    2000,
+    3200,
+    2500,
+    1600
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "9. Truyền thông và kế hoạch họp",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Hoạt động",
+     "Tần suất",
+     "Thành phần",
+     "Đầu ra"
+    ],
+    "<<SOẠN:TRUYEN_THONG>>"
+   ],
+   "widths": [
+    2400,
+    1500,
+    2700,
+    2700
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Báo cáo",
+     "Người lập",
+     "Người nhận",
+     "Hạn gửi, kênh"
+    ],
+    "<<SOẠN:BAO_CAO>>"
+   ],
+   "widths": [
+    2600,
+    1800,
+    2600,
+    2300
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "10. Rủi ro",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Rủi ro",
+     "Phụ trách",
+     "Ứng phó"
+    ],
+    [
+     "RR02",
+     "Tài liệu giao diện hoặc môi trường thử của Main System đến muộn hơn cam kết hoặc không đủ thông tin",
+     "Ninh Đức Toàn",
+     "Khi dấu hiệu xuất hiện, Ninh Đức Toàn lập danh sách thông tin còn thiếu, Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư trong 1 ngày làm việc. Nhóm tích hợp tiếp tục lập trình trên dịch vụ giả lập. Sau 5 ngày làm việc chưa có phản hồi, trưởng nhóm báo cáo người đại diện của Chủ đầu tư và đề nghị điều chỉnh tiến độ theo Mục 18 E-ĐKC do nguyên nhân thuộc Chủ đầu tư"
+    ],
+    [
+     "RR04",
+     "Vị trí bổ sung không có mặt đúng sprint huy động đã thống nhất",
+     "Trần Bá Đạt",
+     "Khi một vị trí chưa có mặt đúng sprint, Trần Bá Đạt chuyển gói của vị trí đó cho thành viên cùng năng lực còn dư quỹ và kích hoạt người dự phòng trong 3 ngày làm việc"
+    ],
+    [
+     "RR10",
+     "Số lỗi phát hiện trong kiểm thử chấp nhận vượt khả năng khắc phục trong khoảng 18/06 đến 29/06/2027",
+     "Nguyễn Thị Phương Liên",
+     "Khi dấu hiệu xuất hiện, Nguyễn Thị Phương Liên phân loại lỗi theo mức độ, Trần Bá Đạt điều thêm kỹ sư phát triển sang khắc phục lỗi nghiêm trọng, lỗi nhỏ đưa vào danh sách khắc phục trong bảo hành khi Chủ đầu tư đồng ý bằng văn bản"
+    ]
+   ],
+   "widths": [
+    700,
+    3800,
+    2000,
+    2800
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Sổ rủi ro gồm 21 rủi ro, tổng EMV 147 triệu đồng, khoảng từ 110 đến 183 triệu đồng. Chi tiết tại kế hoạch quản lý rủi ro.",
+   "t": "p"
+  },
+  {
+   "text": "11. Quản lý vấn đề",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Bước",
+     "Nội dung",
+     "Người thực hiện",
+     "Thời hạn",
+     "Đầu ra"
+    ],
+    "<<SOẠN:VAN_DE>>"
+   ],
+   "widths": [
+    700,
+    3600,
+    1800,
+    1300,
+    1900
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "Sổ vấn đề (so_van_de.csv) và danh sách hành động (hanh_dong.csv) trong thư mục dữ liệu thực tế của dự án được mở từ ngày khởi động 18/03/2027. Mỗi vấn đề có mã, người báo, mức ưu tiên, người phụ trách, hạn, trạng thái, mã rủi ro và mã yêu cầu thay đổi liên quan, báo cáo tiến độ lấy bảng vấn đề từ sổ.",
+   "t": "p"
+  },
+  {
+   "text": "12. Quản lý thay đổi",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mức",
+     "Người phê duyệt",
+     "Thời hạn đánh giá",
+     "Thời hạn quyết định",
+     "Văn bản"
+    ],
+    [
+     "Nhỏ",
+     "Quản trị dự án",
+     "1 ngày làm việc từ khi tiếp nhận",
+     "1 ngày làm việc sau khi có đánh giá",
+     "Ghi sổ yêu cầu thay đổi, nêu trong báo cáo tiến độ"
+    ],
+    [
+     "Trung bình",
+     "Quản trị dự án và đầu mối Chủ đầu tư",
+     "3 ngày làm việc từ khi tiếp nhận",
+     "5 ngày làm việc sau khi có đánh giá",
+     "Văn bản thống nhất của đầu mối hai bên (thư điện tử hoặc biên bản họp)"
+    ],
+    [
+     "Lớn",
+     "Ban kiểm soát thay đổi xem xét, người đại diện ký hợp đồng của hai bên quyết định và ký văn bản thống nhất hoặc phụ lục hợp đồng",
+     "3 ngày làm việc từ khi tiếp nhận",
+     "Họp ban kiểm soát thay đổi trong 3 ngày làm việc từ khi nhận yêu cầu, quyết định 5 ngày làm việc sau khi có đánh giá",
+     "Văn bản thống nhất thay đổi đặc tả, phụ lục hợp đồng khi đổi phạm vi, giá, thời gian thực hiện hoặc mốc thanh toán"
+    ]
+   ],
+   "widths": [
+    900,
+    2600,
+    1500,
+    2000,
+    2300
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "<<SOẠN:THAY_DOI>>",
+   "t": "p"
+  },
+  {
+   "text": "13. Quản lý cấu hình",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Hạng mục cấu hình",
+     "Nhóm WBS tạo ra",
+     "Đường cơ sở tại mốc",
+     "Người phụ trách"
+    ],
+    [
+     "Kế hoạch dự án: WBS, master schedule, cost estimate (đường cơ sở phạm vi, tiến độ, chi phí)",
+     "1.1",
+     "Ký hợp đồng",
+     "Trần Bá Đạt"
+    ],
+    [
+     "1. Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "2.1, 2.2",
+     "M2, 06/05/2027",
+     "Ninh Đức Toàn"
+    ],
+    [
+     "2. Thiết kế quy trình vận hành mới (New Operational Flow)",
+     "2.1, 2.2",
+     "M2, 06/05/2027",
+     "Nguyễn Thị Phương Liên"
+    ],
+    [
+     "3. Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+     "2.1, 2.2",
+     "M2, 06/05/2027",
+     "Phạm Tuấn Anh"
+    ],
+    [
+     "4. Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+     "2.1, 2.3",
+     "M2, 06/05/2027",
+     "Vũ Đức Minh"
+    ],
+    [
+     "5. Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "2.3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.1, 8.1",
+     "M3, 16/06/2027",
+     "Phạm Tuấn Anh"
+    ],
+    [
+     "6. Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "2.3, 4.1, 4.2, 4.3, 4.4, 4.5, 6.1, 8.1",
+     "M3, 16/06/2027",
+     "Phạm Tuấn Anh"
+    ],
+    [
+     "7. Xây dựng chức năng đặt hàng (Order)",
+     "2.3, 5.1, 5.2, 5.3, 5.4, 5.5, 6.1, 8.1",
+     "M3, 16/06/2027",
+     "Trần Thu Hà"
+    ],
+    [
+     "8. Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+     "6.1, 8.1",
+     "M3, 16/06/2027",
+     "Phạm Tuấn Anh"
+    ],
+    [
+     "9. Tích hợp với hệ thống chính (Main System)",
+     "6.2, 8.1",
+     "M3, 16/06/2027",
+     "Phạm Ngọc Anh"
+    ],
+    [
+     "10. Kiểm thử hệ thống",
+     "7.1, 7.2, 7.3",
+     "M4, 16/06/2027",
+     "Nguyễn Thị Phương Liên"
+    ],
+    [
+     "11. Kiểm thử vận hành (Operation Test)",
+     "3.5, 4.5, 5.5, 6.2, 7.1, 7.3",
+     "M6, 01/07/2027",
+     "Phạm Ngọc Anh"
+    ],
+    [
+     "12. Chuyển giao và hướng dẫn vận hành hệ thống",
+     "2.1, 8.2",
+     "M6, 01/07/2027",
+     "Đỗ Minh Quân"
+    ],
+    [
+     "13. Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "6.3, 8.1, 8.3",
+     "M6, 01/07/2027",
+     "Bùi Anh Tuấn"
+    ]
+   ],
+   "widths": [
+    4100,
+    1800,
+    1700,
+    1700
+   ],
+   "center_cols": [
+    1,
+    2
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Quy tắc nhánh mã nguồn, nhãn phiên bản phát hành, kiểm tra cấu hình và báo cáo trạng thái cấu hình theo kế hoạch quản lý thay đổi. Phiên bản tài liệu theo tài liệu quản lý phiên bản.",
+   "t": "p"
+  },
+  {
+   "text": "14. Lịch rà soát",
+   "t": "h1"
+  },
+  {
+   "text": "Dự án được rà soát cuối mỗi sprint, tại mỗi mốc và khi kết thúc, vấn đề còn mở và quyết định đang chờ được xử lý tại các lần rà soát này.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Thời điểm",
+     "Hoạt động rà soát",
+     "Thành phần",
+     "Đầu ra"
+    ],
+    [
+     "31/03/2027",
+     "Rà soát cuối sprint S1: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+     "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+     "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+    ],
+    [
+     "14/04/2027",
+     "Rà soát cuối sprint S2: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+     "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+     "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+    ],
+    [
+     "14/04/2027",
+     "Rà soát giai đoạn tại mốc M1: Kế hoạch quản lý dự án được Chủ đầu tư xác nhận",
+     "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+     "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+    ],
+    [
+     "06/05/2027",
+     "Rà soát cuối sprint S3: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+     "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+     "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+    ],
+    [
+     "06/05/2027",
+     "Rà soát giai đoạn tại mốc M2: Đặc tả yêu cầu và giao diện ưu tiên được hai bên xác nhận",
+     "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+     "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+    ],
+    [
+     "20/05/2027",
+     "Rà soát cuối sprint S4: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+     "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+     "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+    ],
+    [
+     "03/06/2027",
+     "Rà soát cuối sprint S5: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+     "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+     "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+    ],
+    [
+     "16/06/2027",
+     "Rà soát giai đoạn tại mốc M3: Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+     "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+     "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+    ],
+    [
+     "16/06/2027",
+     "Rà soát giai đoạn tại mốc M4: Hoàn thành kiểm thử hệ thống, bản phát hành sẵn sàng kiểm thử chấp nhận",
+     "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+     "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+    ],
+    [
+     "17/06/2027",
+     "Rà soát cuối sprint S6: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+     "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+     "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+    ],
+    [
+     "29/06/2027",
+     "Rà soát giai đoạn tại mốc M5: Hoàn thành kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư",
+     "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+     "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+    ],
+    [
+     "01/07/2027",
+     "Rà soát cuối sprint S7: trình diễn sản phẩm, họp cải tiến, báo cáo tiến độ, rà soát rủi ro, yêu cầu thay đổi, vấn đề",
+     "quản trị dự án, đầu mối Chủ đầu tư, nhóm thực hiện",
+     "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"
+    ],
+    [
+     "01/07/2027",
+     "Rà soát giai đoạn tại mốc M6: Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+     "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+     "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+    ],
+    [
+     "01/07/2027",
+     "Rà soát giai đoạn tại mốc M7: Nhà thầu nộp bảo lãnh bảo hành, bàn giao hồ sơ dự án",
+     "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+     "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"
+    ],
+    [
+     "15/07/2027",
+     "Rà soát kết thúc dự án sau giai đoạn hỗ trợ tăng cường",
+     "quản trị dự án, người đại diện ký hợp đồng của nhà thầu, đầu mối Chủ đầu tư",
+     "Báo cáo tổng kết, báo cáo đánh giá, báo cáo bài học kinh nghiệm"
+    ]
+   ],
+   "widths": [
+    1200,
+    3300,
+    2400,
+    2400
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "15. Chuyển giao và kết thúc dự án",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Việc",
+     "Thời điểm",
+     "Căn cứ"
+    ],
+    [
+     "Đạt mốc M6: Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+     "01/07/2027",
+     "Đợt 4, Mục 13.1 E-ĐKCT"
+    ],
+    [
+     "Đạt mốc M7: Nhà thầu nộp bảo lãnh bảo hành, bàn giao hồ sơ dự án",
+     "01/07/2027",
+     "Đợt 5, Mục 13.1 E-ĐKCT"
+    ],
+    [
+     "Hỗ trợ tăng cường sau cut over",
+     "02/07/2027 đến 15/07/2027",
+     "Cam kết bảo hành của nhà thầu"
+    ],
+    [
+     "Rà soát kết thúc dự án, báo cáo tổng kết, đánh giá, bài học kinh nghiệm",
+     "Sau 15/07/2027",
+     "Lịch rà soát"
+    ],
+    [
+     "Hồ sơ thanh toán Đợt 4, 437.500.000 đồng",
+     "Dự kiến nhận 16/07/2027",
+     "Mục 13.1 E-ĐKCT"
+    ],
+    [
+     "Hồ sơ thanh toán Đợt 5, 87.500.000 đồng",
+     "Dự kiến nhận 16/07/2027",
+     "Mục 13.1 E-ĐKCT"
+    ],
+    [
+     "Bảo hành, bảo lãnh bảo hành 5% giá hợp đồng",
+     "01/07/2027 đến 01/07/2028",
+     "12 tháng theo HSMT"
+    ],
+    [
+     "Nhận lại bảo đảm thực hiện hợp đồng 3% giá hợp đồng",
+     "Trong 14 ngày sau khi hoàn thành nghĩa vụ hợp đồng, bảo đảm có hiệu lực đến 31 tháng 07 năm 2027",
+     "Mục 5.2, 5.4 E-ĐKCT"
+    ]
+   ],
+   "widths": [
+    4300,
+    2900,
+    2100
+   ],
+   "center_cols": [
+    1
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "<<SOẠN:KET_THUC>>",
+   "t": "p"
+  },
+  {
+   "text": "16. Đường cơ sở của dự án",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Đường cơ sở",
+     "Giá trị",
+     "Tài liệu gốc",
+     "Cách kiểm soát"
+    ],
+    [
+     "Phạm vi",
+     "657 MD, 144 gói công việc",
+     "WBS, biên bản xác nhận đặc tả",
+     "Yêu cầu thay đổi theo mức, ma trận lan truyền"
+    ],
+    [
+     "Tiến độ",
+     "Cut over 01/07/2027, 7 sprint",
+     "Master schedule",
+     "SPI cuối sprint, mốc so với hạn, dự trữ 4 ngày"
+    ],
+    [
+     "Chi phí",
+     "BAC 1.420.050.000 đồng (khoản A)",
+     "Cost estimate",
+     "CPI cuối sprint, theo dõi khoản B và chi phí lương theo quỹ huy động"
+    ]
+   ],
+   "widths": [
+    1500,
+    2900,
+    2100,
+    2800
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  }
+ ]
+}

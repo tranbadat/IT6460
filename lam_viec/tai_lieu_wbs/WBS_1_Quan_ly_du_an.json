@@ -1,0 +1,378 @@
+{
+ "meta": {
+  "ten": "WBS 1 - Quản lý dự án",
+  "header": "Lập kế hoạch - WBS 1, Quản lý dự án",
+  "size_bang_pt": 12,
+  "phien_ban": "0.3",
+  "ngay": "05/03/2027"
+ },
+ "blocks": [
+  {
+   "t": "center",
+   "text": "Cấu trúc phân rã công việc",
+   "size": 18
+  },
+  {
+   "t": "center",
+   "text": "Quản lý dự án, mã WBS 1",
+   "size": 15
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+  },
+  {
+   "t": "center",
+   "text": "Khách hàng: Công ty Cổ phần ABC Wear"
+  },
+  {
+   "t": "center",
+   "text": "Tài liệu kế hoạch dự án, kèm theo Phần III. Đề xuất kỹ thuật của hồ sơ dự thầu"
+  },
+  {
+   "t": "center",
+   "text": "Phiên bản {{PHIEN_BAN}}, ngày {{NGAY}}"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "h2",
+   "text": "1. Thông tin chung"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Tổng khối lượng",
+     "60 người-ngày"
+    ],
+    [
+     "Căn cứ ước lượng",
+     "1 họp khởi động, 1 kế hoạch quản lý dự án, 1 kế hoạch bảo đảm chất lượng, 7 sprint báo cáo, 5 đợt thanh toán, 2 lần Chủ đầu tư xác nhận (kế hoạch, chức năng chính), rà soát mã nguồn và giấy phép thư viện. Tổng nhóm 60 MD theo tong_theo_nhom của uoc_luong.json. Thuộc phần đầu việc phi chức năng ở bước 3 của uoc_luong.json (quản trị dự án, bảo đảm chất lượng, rà soát mã, nghiệm thu). Công việc quản lý liên tục (họp, báo cáo, rủi ro, thay đổi, cấu hình, hồ sơ thanh toán) dàn trải 73 ngày làm việc bằng một nửa thời gian của quản trị dự án, phần còn lại chia theo số kế hoạch và số lần xác nhận: khởi động và lập kế hoạch 13,5 MD (1.1); theo dõi, kiểm soát và bảo đảm chất lượng 33,5 MD (1.2); nghiệm thu và kết thúc dự án 13 MD (1.3)."
+    ],
+    [
+     "Thời gian thực hiện",
+     "18/03/2027 - 01/07/2027 (sprint S1 đến S7)"
+    ],
+    [
+     "Người chịu trách nhiệm",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Phụ thuộc đầu vào",
+     "Hoàn thành các gói 2.1.7 (Hai bên xác nhận đặc tả yêu cầu và giao diện ưu tiên), 3.3.2 (Dịch vụ tìm kiếm theo từ khóa và gợi ý tìm kiếm), 3.4.4 (Sửa lỗi và kiểm thử lại chức năng tìm kiếm, lọc và sắp xếp), 3.4.6 (Sửa lỗi và kiểm thử lại trang chủ, danh mục và chi tiết sản phẩm), 4.3.2 (Dịch vụ đăng nhập, phiên làm việc và giới hạn đăng nhập sai), 4.4.4 (Sửa lỗi và kiểm thử lại đăng ký, đăng nhập và bảo mật tài khoản), 4.4.6 (Sửa lỗi và kiểm thử lại thông tin thành viên và sổ địa chỉ), 5.3.5 (Dịch vụ đặt hàng, xác nhận đơn và thư điện tử xác nhận), 5.4.5 (Sửa lỗi và kiểm thử lại giỏ hàng và giữ tồn kho), 5.4.7 (Sửa lỗi và kiểm thử lại đặt hàng, phí vận chuyển và khuyến mại), 5.4.8 (Sửa lỗi và kiểm thử lại theo dõi đơn hàng, hủy đơn và đổi trả), 6.1.1 (Khung ứng dụng phía máy chủ và thành phần dùng chung về xác thực, phân quyền, ghi nhật ký, xử lý lỗi), 6.2.11 (Sửa lỗi và kiểm thử lại tích hợp với Main System), 7.2.4 (Khắc phục lỗi sau kiểm thử hệ thống)"
+    ],
+    [
+     "Đơn vị khối lượng",
+     "Người-ngày, viết tắt MD, tính theo 8 giờ làm việc"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "2. Sơ đồ WBS dạng cây phân cấp"
+  },
+  {
+   "t": "p",
+   "text": "Sơ đồ dùng để trao đổi với Chủ đầu tư. Bảng chi tiết ở mục 3 dùng để ước lượng, giao việc và theo dõi tiến độ."
+  },
+  {
+   "t": "p",
+   "text": "1. Quản lý dự án",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "1.1. Khởi động và lập kế hoạch",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "1.1.1. Họp khởi động, xác nhận phạm vi, điều kiện tiền đề, vai trò và trách nhiệm các bên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.1.2. Kế hoạch quản lý dự án gồm phạm vi, tiến độ, tổ chức thực hiện, kế hoạch họp, quản lý rủi ro và thay đổi đặc tả",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.1.3. Cập nhật sổ rủi ro, kế hoạch quản lý thay đổi và cấu hình theo đặc tả đã xác nhận",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.1.4. Kế hoạch bảo đảm chất lượng, quy chuẩn mã nguồn và tiêu chí hoàn thành công việc",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.1.5. Chủ đầu tư xem xét, xác nhận kế hoạch quản lý dự án",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.2. Theo dõi, kiểm soát và bảo đảm chất lượng",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "1.2.1. Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.2.2. Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.2.3. Quản lý cấu hình, phiên bản tài liệu và hồ sơ dự án",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.2.4. Rà soát mã nguồn và kiến trúc giai đoạn lập trình phân hệ",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.2.5. Rà soát giấy phép thư viện mã nguồn mở và quyền sở hữu sản phẩm",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.3. Nghiệm thu và kết thúc dự án",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "1.3.1. Hồ sơ nghiệm thu và thanh toán theo các đợt của hợp đồng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.3.2. Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.3.3. Báo cáo tổng kết, bài học kinh nghiệm và bàn giao hồ sơ dự án",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h2",
+   "text": "3. Bảng chi tiết"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi gói công việc gắn với một sản phẩm kiểm tra được, có khối lượng ước lượng được và giao được cho một người."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã WBS",
+     "Tên công việc",
+     "Mức",
+     "Khối lượng, MD",
+     "Loại công việc",
+     "Sản phẩm đầu ra"
+    ],
+    [
+     "1.1",
+     "Khởi động và lập kế hoạch",
+     "2",
+     "13,50",
+     "",
+     ""
+    ],
+    [
+     "1.1.1",
+     "Họp khởi động, xác nhận phạm vi, điều kiện tiền đề, vai trò và trách nhiệm các bên",
+     "3",
+     "2",
+     "PM",
+     "Biên bản họp khởi động"
+    ],
+    [
+     "1.1.2",
+     "Kế hoạch quản lý dự án gồm phạm vi, tiến độ, tổ chức thực hiện, kế hoạch họp, quản lý rủi ro và thay đổi đặc tả",
+     "3",
+     "4",
+     "PM",
+     "Kế hoạch quản lý dự án gồm sổ rủi ro ban đầu và quy trình thay đổi"
+    ],
+    [
+     "1.1.3",
+     "Cập nhật sổ rủi ro, kế hoạch quản lý thay đổi và cấu hình theo đặc tả đã xác nhận",
+     "3",
+     "2,50",
+     "PM",
+     "Sổ rủi ro, kế hoạch quản lý thay đổi và cấu hình cập nhật theo đường cơ sở đặc tả"
+    ],
+    [
+     "1.1.4",
+     "Kế hoạch bảo đảm chất lượng, quy chuẩn mã nguồn và tiêu chí hoàn thành công việc",
+     "3",
+     "3",
+     "QA",
+     "Kế hoạch bảo đảm chất lượng và tiêu chí hoàn thành"
+    ],
+    [
+     "1.1.5",
+     "Chủ đầu tư xem xét, xác nhận kế hoạch quản lý dự án",
+     "3",
+     "2",
+     "PM",
+     "Kế hoạch quản lý dự án được Chủ đầu tư xác nhận"
+    ],
+    [
+     "1.2",
+     "Theo dõi, kiểm soát và bảo đảm chất lượng",
+     "2",
+     "33,50",
+     "",
+     ""
+    ],
+    [
+     "1.2.1",
+     "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint",
+     "3",
+     "14",
+     "PM",
+     "Biên bản họp, báo cáo tiến độ từng sprint"
+    ],
+    [
+     "1.2.2",
+     "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả",
+     "3",
+     "10",
+     "PM",
+     "Sổ rủi ro, sổ vấn đề và sổ yêu cầu thay đổi được cập nhật"
+    ],
+    [
+     "1.2.3",
+     "Quản lý cấu hình, phiên bản tài liệu và hồ sơ dự án",
+     "3",
+     "4,50",
+     "PM",
+     "Sổ phiên bản tài liệu và hồ sơ dự án"
+    ],
+    [
+     "1.2.4",
+     "Rà soát mã nguồn và kiến trúc giai đoạn lập trình phân hệ",
+     "3",
+     "3",
+     "DEV",
+     "Biên bản rà soát mã nguồn, danh sách khắc phục"
+    ],
+    [
+     "1.2.5",
+     "Rà soát giấy phép thư viện mã nguồn mở và quyền sở hữu sản phẩm",
+     "3",
+     "2",
+     "DEV",
+     "Danh mục thư viện kèm giấy phép đã rà soát"
+    ],
+    [
+     "1.3",
+     "Nghiệm thu và kết thúc dự án",
+     "2",
+     "13",
+     "",
+     ""
+    ],
+    [
+     "1.3.1",
+     "Hồ sơ nghiệm thu và thanh toán theo các đợt của hợp đồng",
+     "3",
+     "8",
+     "PM",
+     "Biên bản nghiệm thu và hồ sơ thanh toán từng đợt"
+    ],
+    [
+     "1.3.2",
+     "Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System",
+     "3",
+     "3",
+     "BA",
+     "Biên bản Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System"
+    ],
+    [
+     "1.3.3",
+     "Báo cáo tổng kết, bài học kinh nghiệm và bàn giao hồ sơ dự án",
+     "3",
+     "2",
+     "PM",
+     "Báo cáo tổng kết dự án, biên bản bàn giao hồ sơ"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "",
+     "60",
+     "",
+     ""
+    ]
+   ],
+   "widths": [
+    1000,
+    3600,
+    600,
+    1100,
+    1000,
+    2000
+   ],
+   "center_cols": [
+    2,
+    4
+   ],
+   "right_cols": [
+    3
+   ],
+   "dong_dam": [
+    1,
+    7,
+    13
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Kiểm tra quy tắc 100%"
+  },
+  {
+   "t": "p",
+   "text": "Tổng khối lượng các hạng mục mức 2, 13,50 cộng 33,50 cộng 13, bằng 60 người-ngày, khớp với khối lượng khai báo ở mức 1. Kết luận: cân bằng."
+  }
+ ]
+}

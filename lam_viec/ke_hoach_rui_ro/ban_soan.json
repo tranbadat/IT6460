@@ -1,0 +1,49 @@
+{
+ "MUC_DICH": [
+  "Kế hoạch quản lý rủi ro quy định cách nhận diện, phân tích, ứng phó và theo dõi các rủi ro và cơ hội của dự án xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System) cho Công ty Cổ phần ABC Wear. Kế hoạch áp dụng cho toàn bộ vòng đời dự án, từ ngày bắt đầu {lich#ngay_bat_dau|ngay} đến ngày cut over {lich#cut_over|ngay}, và tiếp tục áp dụng cho các rủi ro còn mở trong thời hạn bảo hành theo hợp đồng.",
+  "Kế hoạch là một phần của master plan. Các rủi ro gắn với gói WBS và mốc của master schedule, tiền tác động và EMV được đối chiếu với khoản dự phòng của cost estimate, còn mọi ứng phó làm thay đổi phạm vi, lịch hoặc chi phí được xử lý theo kế hoạch quản lý thay đổi."
+ ],
+ "TO_CHUC": [
+  [
+   "Chủ trì quản lý rủi ro",
+   "Trần Bá Đạt, quản trị dự án",
+   "Duy trì sổ đăng ký rủi ro, chủ trì rà soát rủi ro trong các cuộc họp sprint, phê duyệt kích hoạt kế hoạch ứng phó, đề xuất dùng dự phòng và báo cáo rủi ro trong báo cáo tiến độ"
+  ],
+  [
+   "Người phụ trách rủi ro",
+   "Trần Bá Đạt, Phạm Tuấn Anh, Ninh Đức Toàn, Nguyễn Thị Phương Liên theo cột người phụ trách của sổ rủi ro",
+   "Theo dõi dấu hiệu, thực hiện biện pháp phòng ngừa và kế hoạch ứng phó của rủi ro được giao, cập nhật trạng thái và đề xuất đóng rủi ro khi đạt điều kiện đóng"
+  ],
+  [
+   "Nhóm phát triển và kiểm thử",
+   "Phạm Tuấn Anh, Ninh Đức Toàn, Vũ Đức Minh, Nguyễn Thị Phương Liên",
+   "Báo cáo sớm dấu hiệu rủi ro phát sinh trong phát triển, tích hợp, kiểm thử và triển khai, đề xuất rủi ro mới cho quản trị dự án"
+  ],
+  [
+   "Chủ đầu tư",
+   "Công ty Cổ phần ABC Wear, đầu mối Yamada, Phòng Kế hoạch",
+   "Phối hợp xử lý các rủi ro thuộc phía Chủ đầu tư như xác nhận đặc tả, bàn giao tài liệu và môi trường của Main System, hạ tầng máy chủ, dữ liệu chuyển đổi, nhận thông báo và tham gia quyết định khi ứng phó ảnh hưởng hợp đồng"
+  ]
+ ],
+ "PHUONG_PHAP": [
+  "Quy trình quản lý rủi ro gồm các bước nhận diện, phân tích định tính theo điểm xác suất nhân tác động, phân tích định lượng theo EMV, lập kế hoạch ứng phó và theo dõi. Nguồn nhận diện gồm RFP, HSMT, WBS, đường găng của master schedule, bảng phân công và các bên liên quan. Sổ rủi ro được rà soát trong mỗi cuộc họp sprint, rủi ro mức cao được theo dõi hằng tuần.",
+  "Mức tác động của mỗi rủi ro là mức cao nhất theo số ngày chậm, chi phí tác động so với giá chào và điều kiện về mốc, hợp đồng trong bảng thang tác động. Tiền tác động do script tính bằng MD tác động nhân đơn giá ngày của loại công việc, cộng phạt chậm theo E-ĐKC 15 khi rủi ro làm chậm mốc và khoản tiền thêm có ghi lý do.",
+  "EMV là ước tính định hướng. Xác suất lấy giá trị đại diện của khoảng trong thang xác suất, mỗi rủi ro có căn cứ xác suất ghi trong sổ. Tổng EMV theo chi phí là {rb#emv.tien_trieu|so} triệu đồng, khoảng từ {rb#emv.tien_trieu_thap|so} đến {rb#emv.tien_trieu_cao|so} triệu đồng theo cận của mức xác suất, dùng để so với dự phòng chi phí và dự trữ thời gian, không phải giá trị chắc chắn phát sinh.",
+  "Kết quả thang 5 mức được đối chiếu với ma trận 3x3 xếp hạng A, B, C: mức 1 đến 2 quy về thấp, mức 3 quy về trung bình, mức 4 đến 5 quy về cao. Theo quy đổi này sổ có {rb#so_hang.A|nguyen} rủi ro hạng A, {rb#so_hang.B|nguyen} rủi ro hạng B và {rb#so_hang.C|nguyen} rủi ro hạng C. Nhóm dùng thang 5 mức làm thang chính vì phân biệt rõ hơn giữa các rủi ro, có ngưỡng định lượng cho từng mức, tính được EMV để so với dự phòng và dự trữ, đồng thời vẫn quy đổi được về hạng A, B, C khi trình bày cho Chủ đầu tư."
+ ],
+ "NHAN_XET_MA_TRAN": [
+  "Trên ma trận 5x5, các rủi ro tập trung ở vùng xác suất thấp đến cao, không có rủi ro ở mức xác suất rất cao. Có {rb#so_cao|nguyen} rủi ro mức cao là {rb#ma_cao}. Trên ma trận 3x3 có {rb#so_hang.A|nguyen} rủi ro hạng A gồm {rb#ma_hang_a}, tập trung vào tích hợp với Main System, nhân sự bổ sung, chất lượng kiểm thử chấp nhận, đặc tả yêu cầu và chi phí nhân sự. Phần đánh giá dự trữ thời gian tính cho các rủi ro {rb#du_tru.ma_gang} gắn với đường găng hoặc mốc cut over {lich#cut_over|ngay}. Trong sổ rủi ro, RR17 cũng được đánh dấu trên đường găng nhưng không thuộc danh sách dùng để đánh giá dự trữ, hai danh sách được đối chiếu lại khi cập nhật sổ. RR04 và RR10 thuộc hạng A và có trong cả hai danh sách nên được ưu tiên theo dõi hằng tuần. Sổ có {rb#so_co_hoi|nguyen} cơ hội, được theo dõi cùng sổ để tận dụng khi điều kiện xuất hiện."
+ ],
+ "DU_PHONG": [
+  "Dự phòng chi phí trong dự toán là {cp#du_phong_hien_co|tien} đồng, nằm trong khoản B và thấp hơn tổng EMV theo chi phí {rb#emv.tien_trieu|so} triệu đồng (khoảng {rb#emv.tien_trieu_thap|so} đến {rb#emv.tien_trieu_cao|so} triệu đồng). Theo quyết định của nhóm, mức dự phòng này được giữ nguyên, phần tác động vượt dự phòng khi rủi ro xảy ra được bù từ khoản còn lại sau lương {cp#C_sau_luong|tien} đồng. Việc sử dụng dự phòng và khoản bù thực hiện theo bảng quy tắc dùng dự phòng dùng chung ở trên. Vốn lưu động chuẩn bị là {da#von_luu_dong_du_kien|tien} đồng, giả định chi phí vốn của RR19 giữ nguyên.",
+  "Dự trữ thời gian đến cut over là {rb#du_tru.du_tru|so1} ngày làm việc, trong khi EMV thời gian của {rb#du_tru.so_rui_ro_gang|nguyen} rủi ro trên đường găng hoặc gắn cut over ({rb#du_tru.ma_gang}) là {rb#du_tru.emv_ngay_gang|so1} ngày (khoảng {rb#du_tru.emv_ngay_gang_thap|so1} đến {rb#du_tru.emv_ngay_gang_cao|so1} ngày). Dự trữ thiếu {rb#du_tru.thieu|so1} ngày làm việc.",
+  "Bảng phương án nêu bốn hướng xử lý: {rb#du_tru.cum_phuong_an[0]}, {rb#du_tru.cum_phuong_an[1]}, {rb#du_tru.cum_phuong_an[2]} và {rb#du_tru.cum_phuong_an[3]} kèm báo Chủ đầu tư. Theo cột Áp dụng, nhóm đã chọn phương án chấp nhận và báo Chủ đầu tư: giữ dự trữ {rb#du_tru.du_tru|so1} ngày làm việc, chấp nhận phần EMV thời gian vượt dự trữ, giữ nguyên hạn các mốc và ngày cut over {lich#cut_over|ngay}. Quản trị dự án theo dõi hằng tuần các rủi ro {rb#du_tru.ma_gang} và thông báo Chủ đầu tư khi dự trữ còn dưới 2 ngày làm việc. Khi cần đẩy nhanh các gói trên đường găng, Trương Quốc Việt, kỹ sư phát triển backend kiêm DevOps, là nguồn lực có thể điều chuyển."
+ ],
+ "THEO_DOI": [
+  "Sổ rủi ro được rà soát trong cuộc họp mỗi sprint và tổng hợp trong báo cáo tiến độ cuối sprint. Người phụ trách cập nhật trạng thái, dấu hiệu đã quan sát, xác suất và tác động còn lại. Rủi ro được đóng khi đạt điều kiện đóng ghi trong sổ và được quản trị dự án xác nhận. Rủi ro mới do thành viên hoặc Chủ đầu tư phát hiện được bổ sung vào sổ, chấm điểm và giao người phụ trách ngay trong kỳ.",
+  "Báo cáo tiến độ dùng SPI và CPI làm tín hiệu cảnh báo theo bảng ngưỡng: khi chạm ngưỡng vàng hoặc đỏ, quản trị dự án rà soát các rủi ro tiến độ, chi phí liên quan và kích hoạt kế hoạch ứng phó. Mức dự trữ thời gian còn lại được báo cáo trong mỗi kỳ cùng tình hình rủi ro hạng A và rủi ro thuộc phía Chủ đầu tư, và được báo cáo cho Chủ đầu tư trong mỗi kỳ. Ứng phó cần thay đổi được chuyển sang quy trình của kế hoạch quản lý thay đổi."
+ ],
+ "THAY_DOI": [
+  "Khi ứng phó rủi ro làm thay đổi phạm vi, lịch hoặc chi phí, người phụ trách rủi ro lập yêu cầu thay đổi ghi kèm mã rủi ro. Yêu cầu thay đổi được đánh giá tác động và phê duyệt theo kế hoạch quản lý thay đổi, sau đó các tài liệu bị ảnh hưởng như WBS, master schedule, cost estimate và sổ rủi ro được cập nhật theo sơ đồ phụ thuộc và ghi phiên bản mới trong sổ phiên bản."
+ ]
+}

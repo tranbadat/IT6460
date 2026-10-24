@@ -1,0 +1,86 @@
+{
+ "tai_lieu": [
+  "ket_qua/03_WBS/WBS_tong_hop.docx",
+  "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+  "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+  "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+  "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
+  "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+  "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+  "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+  "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+ ],
+ "ket_luan": "chua_dat",
+ "so_loi": 2,
+ "so_canh_bao": 2,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ khối lượng theo nhóm, theo loại, căn cứ ước lượng, cấu trúc mức 1-2, truy vết RFP R01-R48, phân bổ Mẫu 01A, giả định ngoài phạm vi; 8 tệp nhóm có thông tin chung, sơ đồ cây, bảng chi tiết, kiểm tra quy tắc 100%."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Tổng 657 MD, 144 gói, các bước 573,6/550,3/106,7, khoảng sai số 558,45-854,10 khớp wbs.json và uoc_luong.json. Riêng lời văn căn cứ nhóm 6 và 7 ghi sai tổng nhóm theo tong_theo_nhom (MH01, MH02)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mọi yêu cầu RFP có gói đáp ứng hoặc lý do không cần gói; hạng mục Mẫu 01A cộng 657,00 MD."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi gói lá có sản phẩm đầu ra kiểm tra được (biên bản, báo cáo, chức năng đạt kiểm thử đơn vị). Mỗi mục kiểm thử phân hệ 3.4, 4.4, 5.4 và 6.2, 7.2 có gói sửa lỗi, kiểm thử lại."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có gói quản lý rủi ro, thay đổi đặc tả (1.1.3, 1.2.2), giả định về cam kết CK1-CK4 của Chủ đầu tư và thay đổi sau xác nhận qua quy trình yêu cầu thay đổi."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Văn phong trang trọng, tên gói dạng danh từ; ngày tài liệu 05/03/2027 khớp ngay_ky_don. Không phát hiện khẩu ngữ hay ghi chú nháp."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "CL02 nhất quán số liệu",
+   "vi_tri": "WBS_tong_hop mục 3 bảng căn cứ từng nhóm, dòng 6 và WBS_6 mục 1 Căn cứ ước lượng: 'Tổng nhóm 93 MD theo tong_theo_nhom của uoc_luong.json'",
+   "mo_ta": "uoc_luong.json tong_theo_nhom nhóm 6 là 95 MD; bảng đối chiếu ngay trên ghi ước lượng 95, WBS 93, chênh -2. Lời văn đồng nhất số WBS với số ước lượng nên mâu thuẫn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "du_lieu/wbs.json can_cu_uoc_luong.theo_nhom[ma=6].can_cu.cach_phan_ra (nguồn ở bước wbs): sửa thành 'Tổng nhóm 95 MD theo tong_theo_nhom của uoc_luong.json, WBS phân rã 93 MD, chênh -2 MD trong dung sai 10%'"
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "CL02 nhất quán số liệu",
+   "vi_tri": "WBS_tong_hop mục 3 dòng 7 và WBS_7 mục 1: 'Tổng nhóm 73 MD theo tong_theo_nhom của uoc_luong.json'",
+   "mo_ta": "uoc_luong.json ghi nhóm 7 là 71 MD; WBS 73 MD, chênh +2.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "du_lieu/wbs.json can_cu_uoc_luong.theo_nhom[ma=7].can_cu.cach_phan_ra: sửa thành 'Tổng nhóm 71 MD theo tong_theo_nhom ..., WBS phân rã 73 MD, chênh +2 MD trong dung sai 10%'"
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 phụ thuộc",
+   "vi_tri": "WBS_2 mục 1 Phụ thuộc đầu vào: '6.1.3 ..., 7.2.4 (Khắc phục lỗi sau kiểm thử hệ thống)'; thời gian 18/03-25/06/2027",
+   "mo_ta": "Nhóm phân tích và thiết kế chung phụ thuộc gói khắc phục lỗi kiểm thử hệ thống. Có thể đúng nếu một gói cập nhật đặc tả cuối (ví dụ 2.1.8) đi sau 7.2.4, nhưng người đọc khó hiểu; chưa đối chiếu được gói cụ thể.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Kiểm tra phụ thuộc trong du_lieu/wbs.json của các gói nhóm 2; nếu đúng thì nêu rõ gói nào phụ thuộc 7.2.4"
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "CL01 căn cứ ước lượng",
+   "vi_tri": "WBS_tong_hop mục 3: 'cao hơn 35,5% so với quy mô trung bình 485 người-ngày ..., vượt ngưỡng 25% cần giải trình'",
+   "mo_ta": "Có giải trình bốn lý do, nhưng lời văn lặp ý (hai câu liền nêu cùng so sánh 657 với 485) và chưa lượng hóa phần MD do từng lý do. Chấp nhận được với ước lượng sơ bộ.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Gộp hai câu so sánh; tùy chọn nêu MD của các gói dẫn chứng (nhóm 6, 7.2.3, 8.1.2...)"
+  }
+ ]
+}

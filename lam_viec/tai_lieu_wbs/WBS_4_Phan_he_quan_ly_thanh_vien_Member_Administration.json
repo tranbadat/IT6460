@@ -1,0 +1,320 @@
+{
+ "meta": {
+  "ten": "WBS 4 - Phân hệ quản lý thành viên (Member Administration)",
+  "header": "Lập kế hoạch - WBS 4, Phân hệ quản lý thành viên (Member Administration)",
+  "size_bang_pt": 12,
+  "phien_ban": "0.2",
+  "ngay": "18/03/2027"
+ },
+ "blocks": [
+  {
+   "t": "center",
+   "text": "Cấu trúc phân rã công việc",
+   "size": 18
+  },
+  {
+   "t": "center",
+   "text": "Phân hệ quản lý thành viên (Member Administration), mã WBS 4",
+   "size": 15
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+  },
+  {
+   "t": "center",
+   "text": "Khách hàng: Công ty Cổ phần ABC Wear"
+  },
+  {
+   "t": "center",
+   "text": "Tài liệu kế hoạch dự án, kèm theo Phần III. Đề xuất kỹ thuật của hồ sơ dự thầu"
+  },
+  {
+   "t": "center",
+   "text": "Phiên bản {{PHIEN_BAN}}, ngày {{NGAY}}"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "h2",
+   "text": "1. Thông tin chung"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Tổng khối lượng",
+     "38 người-ngày"
+    ],
+    [
+     "Thời gian thực hiện",
+     "14/04/2027 - 31/05/2027 (sprint S2 đến S5)"
+    ],
+    [
+     "Người chịu trách nhiệm",
+     "Phạm Tuấn Anh"
+    ],
+    [
+     "Phụ thuộc đầu vào",
+     "Hoàn thành các gói 2.1.2 (Đặc tả chức năng (Function) của hệ thống), 2.2.3 (Cấu trúc cơ sở dữ liệu (Database Structure) và cấu hình cơ sở dữ liệu (DB Configuration) của Selling DB), 2.3.3 (Bộ thành phần giao diện dùng chung, tương thích thiết bị di động), 6.1.1 (Tạo lập Selling DB theo cấu trúc cơ sở dữ liệu đã thiết kế)"
+    ],
+    [
+     "Đơn vị khối lượng",
+     "Người-ngày, viết tắt MD, tính theo 8 giờ làm việc"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "2. Sơ đồ WBS dạng cây phân cấp"
+  },
+  {
+   "t": "p",
+   "text": "Sơ đồ dùng để trao đổi với Chủ đầu tư. Bảng chi tiết ở mục 3 dùng để ước lượng, giao việc và theo dõi tiến độ."
+  },
+  {
+   "t": "p",
+   "text": "4. Phân hệ quản lý thành viên (Member Administration)",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.1. Phân tích yêu cầu phân hệ thành viên",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.1.1. Đặc tả use case đăng ký, đăng nhập và quản lý thông tin thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.2. Thiết kế phân hệ thành viên",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.2.1. Thiết kế chi tiết chức năng thành viên và bảo mật tài khoản",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3. Lập trình và kiểm thử đơn vị phân hệ thành viên",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.3.1. Dịch vụ đăng ký, đăng nhập, xác thực và khôi phục mật khẩu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.2. Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.3. Giao diện đăng ký, đăng nhập và trang thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4. Kiểm thử phân hệ thành viên",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.4.1. Kịch bản và kiểm thử phân hệ quản lý thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.5. Tài liệu và nghiệm thu nội bộ phân hệ thành viên",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.5.1. Tài liệu chức năng và nghiệm thu nội bộ phân hệ thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h2",
+   "text": "3. Bảng chi tiết"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi gói công việc gắn với một sản phẩm kiểm tra được, có khối lượng ước lượng được và giao được cho một người."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã WBS",
+     "Tên công việc",
+     "Mức",
+     "Khối lượng, MD",
+     "Loại công việc",
+     "Sản phẩm đầu ra"
+    ],
+    [
+     "4.1",
+     "Phân tích yêu cầu phân hệ thành viên",
+     "2",
+     "4",
+     "",
+     ""
+    ],
+    [
+     "4.1.1",
+     "Đặc tả use case đăng ký, đăng nhập và quản lý thông tin thành viên",
+     "3",
+     "4",
+     "BA",
+     "Đặc tả use case phân hệ thành viên"
+    ],
+    [
+     "4.2",
+     "Thiết kế phân hệ thành viên",
+     "2",
+     "4",
+     "",
+     ""
+    ],
+    [
+     "4.2.1",
+     "Thiết kế chi tiết chức năng thành viên và bảo mật tài khoản",
+     "3",
+     "4",
+     "DEV",
+     "Thiết kế chi tiết phân hệ thành viên"
+    ],
+    [
+     "4.3",
+     "Lập trình và kiểm thử đơn vị phân hệ thành viên",
+     "2",
+     "23",
+     "",
+     ""
+    ],
+    [
+     "4.3.1",
+     "Dịch vụ đăng ký, đăng nhập, xác thực và khôi phục mật khẩu",
+     "3",
+     "9",
+     "DEV",
+     "Dịch vụ xác thực thành viên đã kiểm thử đơn vị"
+    ],
+    [
+     "4.3.2",
+     "Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
+     "3",
+     "6",
+     "DEV",
+     "Dịch vụ thông tin thành viên đã kiểm thử đơn vị"
+    ],
+    [
+     "4.3.3",
+     "Giao diện đăng ký, đăng nhập và trang thành viên",
+     "3",
+     "8",
+     "DEV",
+     "Màn hình đăng ký, đăng nhập và trang thành viên đạt kiểm thử đơn vị, đã tích hợp vào nhánh chính"
+    ],
+    [
+     "4.4",
+     "Kiểm thử phân hệ thành viên",
+     "2",
+     "5",
+     "",
+     ""
+    ],
+    [
+     "4.4.1",
+     "Kịch bản và kiểm thử phân hệ quản lý thành viên",
+     "3",
+     "5",
+     "QA",
+     "Kịch bản và báo cáo kiểm thử phân hệ thành viên"
+    ],
+    [
+     "4.5",
+     "Tài liệu và nghiệm thu nội bộ phân hệ thành viên",
+     "2",
+     "2",
+     "",
+     ""
+    ],
+    [
+     "4.5.1",
+     "Tài liệu chức năng và nghiệm thu nội bộ phân hệ thành viên",
+     "3",
+     "2",
+     "BA",
+     "Tài liệu chức năng và biên bản nghiệm thu nội bộ phân hệ thành viên"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "",
+     "38",
+     "",
+     ""
+    ]
+   ],
+   "widths": [
+    1000,
+    3600,
+    600,
+    1100,
+    1000,
+    2000
+   ],
+   "center_cols": [
+    2,
+    4
+   ],
+   "right_cols": [
+    3
+   ],
+   "dong_dam": [
+    1,
+    3,
+    5,
+    9,
+    11
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Kiểm tra quy tắc 100%"
+  },
+  {
+   "t": "p",
+   "text": "Tổng khối lượng các hạng mục mức 2, 4 cộng 4 cộng 23 cộng 5 cộng 2, bằng 38 người-ngày, khớp với khối lượng khai báo ở mức 1. Kết luận: cân bằng."
+  }
+ ]
+}

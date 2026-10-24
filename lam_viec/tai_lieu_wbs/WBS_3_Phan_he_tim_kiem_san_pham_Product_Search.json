@@ -1,0 +1,334 @@
+{
+ "meta": {
+  "ten": "WBS 3 - Phân hệ tìm kiếm sản phẩm (Product Search)",
+  "header": "Lập kế hoạch - WBS 3, Phân hệ tìm kiếm sản phẩm (Product Search)",
+  "size_bang_pt": 12,
+  "phien_ban": "0.2",
+  "ngay": "18/03/2027"
+ },
+ "blocks": [
+  {
+   "t": "center",
+   "text": "Cấu trúc phân rã công việc",
+   "size": 18
+  },
+  {
+   "t": "center",
+   "text": "Phân hệ tìm kiếm sản phẩm (Product Search), mã WBS 3",
+   "size": 15
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+  },
+  {
+   "t": "center",
+   "text": "Khách hàng: Công ty Cổ phần ABC Wear"
+  },
+  {
+   "t": "center",
+   "text": "Tài liệu kế hoạch dự án, kèm theo Phần III. Đề xuất kỹ thuật của hồ sơ dự thầu"
+  },
+  {
+   "t": "center",
+   "text": "Phiên bản {{PHIEN_BAN}}, ngày {{NGAY}}"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "h2",
+   "text": "1. Thông tin chung"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Tổng khối lượng",
+     "41 người-ngày"
+    ],
+    [
+     "Thời gian thực hiện",
+     "08/04/2027 - 03/06/2027 (sprint S2 đến S6)"
+    ],
+    [
+     "Người chịu trách nhiệm",
+     "Vũ Đức Minh"
+    ],
+    [
+     "Phụ thuộc đầu vào",
+     "Hoàn thành các gói 2.1.2 (Đặc tả chức năng (Function) của hệ thống), 2.2.3 (Cấu trúc cơ sở dữ liệu (Database Structure) và cấu hình cơ sở dữ liệu (DB Configuration) của Selling DB), 2.3.3 (Bộ thành phần giao diện dùng chung, tương thích thiết bị di động), 6.1.1 (Tạo lập Selling DB theo cấu trúc cơ sở dữ liệu đã thiết kế)"
+    ],
+    [
+     "Đơn vị khối lượng",
+     "Người-ngày, viết tắt MD, tính theo 8 giờ làm việc"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "2. Sơ đồ WBS dạng cây phân cấp"
+  },
+  {
+   "t": "p",
+   "text": "Sơ đồ dùng để trao đổi với Chủ đầu tư. Bảng chi tiết ở mục 3 dùng để ước lượng, giao việc và theo dõi tiến độ."
+  },
+  {
+   "t": "p",
+   "text": "3. Phân hệ tìm kiếm sản phẩm (Product Search)",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "3.1. Phân tích yêu cầu phân hệ tìm kiếm",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "3.1.1. Đặc tả use case tìm kiếm, lọc và xem chi tiết sản phẩm",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "3.2. Thiết kế phân hệ tìm kiếm",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "3.2.1. Thiết kế chi tiết chức năng tìm kiếm và chỉ mục dữ liệu sản phẩm",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "3.3. Lập trình và kiểm thử đơn vị phân hệ tìm kiếm",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "3.3.1. Trang chủ và điều hướng danh mục theo Menu Layer",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "3.3.2. Dịch vụ tìm kiếm, lọc và sắp xếp sản phẩm",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "3.3.3. Giao diện kết quả tìm kiếm và chi tiết sản phẩm",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "3.3.4. Tối ưu thời gian phản hồi tìm kiếm",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "3.4. Kiểm thử phân hệ tìm kiếm",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "3.4.1. Kịch bản và kiểm thử phân hệ tìm kiếm sản phẩm",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "3.5. Tài liệu và nghiệm thu nội bộ phân hệ tìm kiếm",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "3.5.1. Tài liệu chức năng và nghiệm thu nội bộ phân hệ tìm kiếm",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h2",
+   "text": "3. Bảng chi tiết"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi gói công việc gắn với một sản phẩm kiểm tra được, có khối lượng ước lượng được và giao được cho một người."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã WBS",
+     "Tên công việc",
+     "Mức",
+     "Khối lượng, MD",
+     "Loại công việc",
+     "Sản phẩm đầu ra"
+    ],
+    [
+     "3.1",
+     "Phân tích yêu cầu phân hệ tìm kiếm",
+     "2",
+     "4",
+     "",
+     ""
+    ],
+    [
+     "3.1.1",
+     "Đặc tả use case tìm kiếm, lọc và xem chi tiết sản phẩm",
+     "3",
+     "4",
+     "BA",
+     "Đặc tả use case phân hệ tìm kiếm"
+    ],
+    [
+     "3.2",
+     "Thiết kế phân hệ tìm kiếm",
+     "2",
+     "4",
+     "",
+     ""
+    ],
+    [
+     "3.2.1",
+     "Thiết kế chi tiết chức năng tìm kiếm và chỉ mục dữ liệu sản phẩm",
+     "3",
+     "4",
+     "DEV",
+     "Thiết kế chi tiết phân hệ tìm kiếm"
+    ],
+    [
+     "3.3",
+     "Lập trình và kiểm thử đơn vị phân hệ tìm kiếm",
+     "2",
+     "26",
+     "",
+     ""
+    ],
+    [
+     "3.3.1",
+     "Trang chủ và điều hướng danh mục theo Menu Layer",
+     "3",
+     "6",
+     "DEV",
+     "Trang chủ và điều hướng danh mục đã kiểm thử đơn vị"
+    ],
+    [
+     "3.3.2",
+     "Dịch vụ tìm kiếm, lọc và sắp xếp sản phẩm",
+     "3",
+     "8",
+     "DEV",
+     "Dịch vụ tìm kiếm đã kiểm thử đơn vị"
+    ],
+    [
+     "3.3.3",
+     "Giao diện kết quả tìm kiếm và chi tiết sản phẩm",
+     "3",
+     "8",
+     "DEV",
+     "Màn hình kết quả tìm kiếm và chi tiết sản phẩm đạt kiểm thử đơn vị, đã tích hợp vào nhánh chính"
+    ],
+    [
+     "3.3.4",
+     "Tối ưu thời gian phản hồi tìm kiếm",
+     "3",
+     "4",
+     "DEV",
+     "Báo cáo đo thời gian phản hồi tìm kiếm"
+    ],
+    [
+     "3.4",
+     "Kiểm thử phân hệ tìm kiếm",
+     "2",
+     "5",
+     "",
+     ""
+    ],
+    [
+     "3.4.1",
+     "Kịch bản và kiểm thử phân hệ tìm kiếm sản phẩm",
+     "3",
+     "5",
+     "QA",
+     "Kịch bản và báo cáo kiểm thử phân hệ tìm kiếm"
+    ],
+    [
+     "3.5",
+     "Tài liệu và nghiệm thu nội bộ phân hệ tìm kiếm",
+     "2",
+     "2",
+     "",
+     ""
+    ],
+    [
+     "3.5.1",
+     "Tài liệu chức năng và nghiệm thu nội bộ phân hệ tìm kiếm",
+     "3",
+     "2",
+     "BA",
+     "Tài liệu chức năng và biên bản nghiệm thu nội bộ phân hệ tìm kiếm"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "",
+     "41",
+     "",
+     ""
+    ]
+   ],
+   "widths": [
+    1000,
+    3600,
+    600,
+    1100,
+    1000,
+    2000
+   ],
+   "center_cols": [
+    2,
+    4
+   ],
+   "right_cols": [
+    3
+   ],
+   "dong_dam": [
+    1,
+    3,
+    5,
+    10,
+    12
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Kiểm tra quy tắc 100%"
+  },
+  {
+   "t": "p",
+   "text": "Tổng khối lượng các hạng mục mức 2, 4 cộng 4 cộng 26 cộng 5 cộng 2, bằng 41 người-ngày, khớp với khối lượng khai báo ở mức 1. Kết luận: cân bằng."
+  }
+ ]
+}

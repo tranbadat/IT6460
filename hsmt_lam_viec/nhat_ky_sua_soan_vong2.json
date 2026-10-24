@@ -1,0 +1,48 @@
+[
+ {
+  "id": "C5_1",
+  "truoc": "E-HSMT có các thông tin bảo mật của Chủ đầu tư. Nhà thầu có trách nhiệm bảo mật thông tin, quản lý chặt chẽ các tài liệu này và chỉ sử dụng cho mục đích lập E-HSDT và thực hiện hợp đồng.",
+  "sau": "Các tài liệu, dữ liệu về hệ thống hiện có của Chủ đầu tư cần cho việc thực hiện gói thầu được cung cấp cho nhà thầu trúng thầu sau khi hợp đồng có hiệu lực. Nhà thầu có trách nhiệm bảo mật thông tin này theo Mục 14 E-ĐKC và Chương VII."
+ },
+ {
+  "id": "DKC_BO_SUNG[E-ĐKC 14]",
+  "sau": "bảo mật dữ liệu do Chủ đầu tư cung cấp trong thực hiện hợp đồng"
+ },
+ {
+  "id": "DKC_12_1",
+  "truoc": "- Thu hồi tạm ứng: khoản tạm ứng là Đợt 1 tại Mục 13.1 E-ĐKCT và được thu hồi khi Chủ đầu tư nghiệm thu sản phẩm của Đợt 2.",
+  "sau": "- Thu hồi tạm ứng: khoản tạm ứng được tính là Đợt 1 tại Mục 13.1 E-ĐKCT và được thu hồi toàn bộ khi thanh toán Đợt 2 bằng cách bù trừ vào giá trị sản phẩm được nghiệm thu. Tỷ lệ nêu cho từng đợt tại Mục 13.1 E-ĐKCT là số tiền thực trả của đợt đó, tổng các đợt kể cả tạm ứng bằng 100% giá hợp đồng."
+ },
+ {
+  "id": "DKC_13_1",
+  "truoc": "sau khi hai bên xác nhận đặc tả yêu cầu (baseline) và giao diện ưu tiên, trên cơ sở các sản phẩm đặc tả hệ thống (Specification), quy trình vận hành mới (New Operational Flow), cấu trúc cơ sở dữ liệu (Database Structure) và sơ đồ phân cấp menu (Menu Layer) được Chủ đầu tư chấp nhận.",
+  "sau": "sau khi hai bên xác nhận đặc tả yêu cầu và giao diện ưu tiên, gồm đặc tả hệ thống (Specification), quy trình vận hành mới (New Operational Flow), cấu trúc cơ sở dữ liệu (Database Structure), sơ đồ phân cấp menu (Menu Layer) và thiết kế giao diện các màn hình chính của chức năng tìm kiếm sản phẩm, quản lý thành viên, đặt hàng (giao diện ưu tiên)."
+ },
+ {
+  "id": "C5_3",
+  "truoc": "(4) sơ đồ phân cấp menu (Menu Layer),",
+  "sau": "(4) sơ đồ phân cấp menu (Menu Layer) kèm thiết kế giao diện các màn hình chính của chức năng tìm kiếm sản phẩm, quản lý thành viên và đặt hàng (giao diện ưu tiên),"
+ },
+ {
+  "id": "MAU_01A[4]",
+  "sau": "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên"
+ },
+ {
+  "id": "MAU_01A cột địa điểm",
+  "sau": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear (hạng mục 1-8, 10)"
+ },
+ {
+  "id": "MAU_01A[13]",
+  "sau": "Chương V mục 3.2. Chuyển hệ thống sang vận hành chính thức vào ngày cut over"
+ },
+ {
+  "id": "TIEU_CHI_3",
+  "truoc": "tiến độ đến ngày cut over 01/07/2027",
+  "sau": "tiến độ đến ngày đưa hệ thống vào vận hành (cut over) 01/07/2027"
+ },
+ {
+  "id": "C5_4",
+  "truoc": "tiến độ đến ngày cut over (Schedule)",
+  "sau": "tiến độ đến ngày đưa hệ thống vào vận hành (Schedule)"
+ }
+]

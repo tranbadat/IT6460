@@ -1,0 +1,695 @@
+{
+ "nguon": "RFP.pdf",
+ "so_trang": 5,
+ "khach_hang": "ABC Wear",
+ "nha_thau_du_kien": "Inter Solution",
+ "moc": {
+  "nam": "20XX",
+  "phat_hanh": "22/02",
+  "han_nop": "08/03",
+  "hoi_dap_tu": "22/02",
+  "hoi_dap_den": "07/03",
+  "cut_over": "01/07"
+ },
+ "lien_he": {
+  "ho_ten": "Yamada",
+  "bo_phan": "Phòng Kế hoạch",
+  "email": "yamada@abc.com"
+ },
+ "dia_diem": "Phòng họp A (Meeting room A), trụ sở chính của ABC Wear: nơi tổ chức buổi trình bày đề xuất. RFP yêu cầu nộp 10 bản đề xuất trước ngày 08/03, không nêu nơi nộp riêng.",
+ "he_thong": {
+  "chuc_nang": [
+   "Product Search",
+   "Member Administration",
+   "Order"
+  ],
+  "co_so_du_lieu": [
+   "Selling DB"
+  ],
+  "he_thong_lien_quan": [
+   {
+    "ten": "Internet",
+    "vai_tro": "kênh để khách hàng (Customer) truy cập Web Site Selling System"
+   },
+   {
+    "ten": "Main System",
+    "vai_tro": "hệ thống hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch (Administration of Selling, Products, Logistics, Dealing), trao đổi dữ liệu với Selling DB"
+   },
+   {
+    "ten": "Transportation Operation",
+    "vai_tro": "nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng"
+   }
+  ]
+ },
+ "san_pham_ban_giao": [
+  {
+   "ten": "Web Selling Site System",
+   "mo_ta": "Hệ thống website bán hàng được xây dựng từ phân tích hệ thống đến kiểm thử vận hành (System Analysis to Operation Test)"
+  },
+  {
+   "ten": "Specification",
+   "mo_ta": "Đặc tả hệ thống Web Selling Site System, gồm bảng cấu hình cơ sở dữ liệu (DB Configuration) và chức năng (Function). RFP để trống nội dung bảng, nhà thầu lập"
+  },
+  {
+   "ten": "New Operational Flow",
+   "mo_ta": "Quy trình vận hành mới. RFP chỉ có tiêu đề, nhà thầu lập"
+  },
+  {
+   "ten": "Database Structure (Selling DB)",
+   "mo_ta": "Cấu trúc cơ sở dữ liệu bán hàng Selling DB. RFP chỉ có tiêu đề, nhà thầu lập"
+  },
+  {
+   "ten": "Menu Layer",
+   "mo_ta": "Sơ đồ phân cấp menu. RFP chỉ có tiêu đề, nhà thầu lập"
+  }
+ ],
+ "noi_dung_de_xuat": [
+  "Precondition: điều kiện tiền đề của đề xuất",
+  "Estimated Cost: chi phí ước tính cho dự án kèm lý do",
+  "Project Scope: phạm vi công việc gắn với tiêu chuẩn của Chủ đầu tư",
+  "Deliverables: sản phẩm bàn giao trong hợp đồng",
+  "Schedule: tiến độ đến ngày cut over",
+  "Organization: tổ chức của nhà thầu cho dự án",
+  "Meeting: kế hoạch họp phù hợp",
+  "Roles: vai trò và trách nhiệm",
+  "Other Conditions: các điều kiện khác liên quan đến hợp đồng",
+  "Request for us: đề nghị của nhà thầu đối với Chủ đầu tư",
+  "Các nội dung khác cần thiết cho thành công của dự án"
+ ],
+ "ngoai_pham_vi": [
+  "Chức năng quản trị nội bộ (The internal administrative function)"
+ ],
+ "yeu_cau": [
+  {
+   "ma": "R01",
+   "trang": 1,
+   "nhom": "moc",
+   "nguyen_van": "20XX.Feb.22 ABC Wear",
+   "dien_giai": "RFP phát hành ngày 22/02 năm 20XX",
+   "vi_tri_hsmt": "Bìa, Thông tin chính của E-TBMT (ngày phát hành E-HSMT)",
+   "tu_khoa_kiem_tra": [
+    "22/02"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R02",
+   "trang": 2,
+   "nhom": "muc_tieu",
+   "nguyen_van": "The Goal of the Project: Expand customers using internet, new selling channel.",
+   "dien_giai": "Mục tiêu dự án: mở rộng khách hàng qua internet, tạo kênh bán hàng mới",
+   "vi_tri_hsmt": "Chương V mục 2 (C5_2), Tiêu chí kỹ thuật 1",
+   "tu_khoa_kiem_tra": [
+    "mở rộng khách hàng",
+    "internet",
+    "kênh bán hàng mới"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R03",
+   "trang": 2,
+   "nhom": "chinh_sach",
+   "nguyen_van": "Basic Policy of Development: Easy Operation for the Customer",
+   "dien_giai": "Chính sách phát triển: khách hàng thao tác dễ dàng",
+   "vi_tri_hsmt": "Chương V mục 2 và 3.4 (C5_2, C5_3), Tiêu chí kỹ thuật 1",
+   "tu_khoa_kiem_tra": [
+    "Easy Operation",
+    "thao tác dễ dàng"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R04",
+   "trang": 2,
+   "nhom": "chinh_sach",
+   "nguyen_van": "Use anytime (24hours and 365Days running)",
+   "dien_giai": "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+   "vi_tri_hsmt": "Chương V mục 2 và 3.4 (C5_2, C5_3), Tiêu chí kỹ thuật 1",
+   "tu_khoa_kiem_tra": [
+    "24 giờ",
+    "365 ngày"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R05",
+   "trang": 2,
+   "nhom": "chinh_sach",
+   "nguyen_van": "Quick response time (within 2 seconds)",
+   "dien_giai": "Thời gian phản hồi nhanh, không quá 2 giây",
+   "vi_tri_hsmt": "Chương V mục 2 và 3.4 (C5_2, C5_3), Tiêu chí kỹ thuật 1",
+   "tu_khoa_kiem_tra": [
+    "2 giây"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R06",
+   "trang": 2,
+   "nhom": "he_thong",
+   "nguyen_van": "The Image of New Systems: Web Site Selling System - Product Search",
+   "dien_giai": "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+   "vi_tri_hsmt": "Chương V mục 3.1 (C5_3), Mẫu số 01A",
+   "tu_khoa_kiem_tra": [
+    "tìm kiếm sản phẩm",
+    "Product Search"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R07",
+   "trang": 2,
+   "nhom": "he_thong",
+   "nguyen_van": "The Image of New Systems: Web Site Selling System - Member Administration",
+   "dien_giai": "Hệ thống mới có chức năng quản lý thành viên",
+   "vi_tri_hsmt": "Chương V mục 3.1 (C5_3), Mẫu số 01A",
+   "tu_khoa_kiem_tra": [
+    "quản lý thành viên",
+    "Member Administration"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R08",
+   "trang": 2,
+   "nhom": "he_thong",
+   "nguyen_van": "The Image of New Systems: Web Site Selling System - Order",
+   "dien_giai": "Hệ thống mới có chức năng đặt hàng",
+   "vi_tri_hsmt": "Chương V mục 3.1 (C5_3), Mẫu số 01A",
+   "tu_khoa_kiem_tra": [
+    "đặt hàng",
+    "Order"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R09",
+   "trang": 2,
+   "nhom": "he_thong",
+   "nguyen_van": "The Image of New Systems: Web Site Selling System - Selling DB",
+   "dien_giai": "Hệ thống mới có cơ sở dữ liệu bán hàng Selling DB",
+   "vi_tri_hsmt": "Chương V mục 3.1 (C5_3), Mẫu số 01A",
+   "tu_khoa_kiem_tra": [
+    "cơ sở dữ liệu bán hàng",
+    "Selling DB"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R10",
+   "trang": 2,
+   "nhom": "he_thong",
+   "nguyen_van": "Main System: Administration Of Selling, Products, Logistics, Dealing (data flow to Selling DB)",
+   "dien_giai": "Selling DB trao đổi dữ liệu với hệ thống chính hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch",
+   "vi_tri_hsmt": "Chương V mục 3.1 (C5_3), Mẫu số 01A (hạng mục tích hợp)",
+   "tu_khoa_kiem_tra": [
+    "Main System",
+    "tích hợp"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R11",
+   "trang": 2,
+   "nhom": "he_thong",
+   "nguyen_van": "Transportation: Operation (delivery to Customer)",
+   "dien_giai": "Nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng",
+   "vi_tri_hsmt": "Chương V mục 3.1 (C5_3)",
+   "tu_khoa_kiem_tra": [
+    "Transportation",
+    "vận chuyển"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R12",
+   "trang": 2,
+   "nhom": "moc",
+   "nguyen_van": "Cut over: 20XX. July. 1",
+   "dien_giai": "Đưa hệ thống vào vận hành ngày 01/07",
+   "vi_tri_hsmt": "Thông tin chính của E-TBMT, Chương III tiêu chí 3, Mẫu số 01A, Chương V mục 1",
+   "tu_khoa_kiem_tra": [
+    "01/07",
+    "cut over"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R13",
+   "trang": 2,
+   "nhom": "pham_vi",
+   "nguyen_van": "Project Scope: Develop the Web Selling Sit System (System Analysis to Operation Test)",
+   "dien_giai": "Phạm vi: xây dựng hệ thống website bán hàng từ phân tích hệ thống đến kiểm thử vận hành",
+   "vi_tri_hsmt": "Chương V mục 1 và 3.2 (C5_1, C5_3), Mẫu số 01A",
+   "tu_khoa_kiem_tra": [
+    "phân tích hệ thống",
+    "kiểm thử vận hành",
+    "Web Selling Site System"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R14",
+   "trang": 2,
+   "nhom": "de_xuat",
+   "nguyen_van": "Please includes the following information in your proposal. Also, please add another points which are needed to project success, if any.",
+   "dien_giai": "Đề xuất phải gồm các nội dung liệt kê và nhà thầu được bổ sung các nội dung cần thiết cho thành công của dự án",
+   "vi_tri_hsmt": "Chương V mục 4 (C5_4), Chương III tiêu chí 5",
+   "tu_khoa_kiem_tra": [
+    "thành công của dự án"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R15",
+   "trang": 2,
+   "nhom": "de_xuat",
+   "nguyen_van": "Precondition: Please show us your precondition in proposal.",
+   "dien_giai": "Nhà thầu nêu điều kiện tiền đề của đề xuất",
+   "vi_tri_hsmt": "Chương V mục 4 (C5_4), Chương III tiêu chí 1",
+   "tu_khoa_kiem_tra": [
+    "điều kiện tiền đề"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R16",
+   "trang": 2,
+   "nhom": "de_xuat",
+   "nguyen_van": "Estimated Cost: Please show us your estimated cost for this project with reason.",
+   "dien_giai": "Nhà thầu nêu chi phí ước tính kèm lý do. Theo Mẫu 5A, chi phí nằm trong đề xuất tài chính (Mẫu số 11A), không chấm điểm kỹ thuật",
+   "vi_tri_hsmt": "Chương V mục 4 (C5_4), Mẫu số 11A",
+   "tu_khoa_kiem_tra": [
+    "chi phí ước tính",
+    "Mẫu số 11A"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R17",
+   "trang": 2,
+   "nhom": "de_xuat",
+   "nguyen_van": "Project Scope: Please show us your scope of activities which relate to our standard.",
+   "dien_giai": "Nhà thầu nêu phạm vi công việc gắn với tiêu chuẩn của Chủ đầu tư",
+   "vi_tri_hsmt": "Chương V mục 4 (C5_4), Chương III tiêu chí 2",
+   "tu_khoa_kiem_tra": [
+    "phạm vi công việc"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R18",
+   "trang": 2,
+   "nhom": "de_xuat",
+   "nguyen_van": "Deliverables: Please show us the deliverables in contract.",
+   "dien_giai": "Nhà thầu nêu sản phẩm bàn giao trong hợp đồng",
+   "vi_tri_hsmt": "Chương V mục 4 (C5_4), Chương III tiêu chí 2",
+   "tu_khoa_kiem_tra": [
+    "sản phẩm bàn giao"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R19",
+   "trang": 2,
+   "nhom": "de_xuat",
+   "nguyen_van": "Schedule: Please show us the schedule until the day of cut over.",
+   "dien_giai": "Nhà thầu nêu tiến độ đến ngày cut over",
+   "vi_tri_hsmt": "Chương V mục 4 (C5_4), Chương III tiêu chí 3",
+   "tu_khoa_kiem_tra": [
+    "tiến độ"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R20",
+   "trang": 2,
+   "nhom": "de_xuat",
+   "nguyen_van": "Organization: Please show us your companies organization for this project.",
+   "dien_giai": "Nhà thầu nêu tổ chức thực hiện dự án",
+   "vi_tri_hsmt": "Chương V mục 4 (C5_4), Chương III tiêu chí 3",
+   "tu_khoa_kiem_tra": [
+    "tổ chức thực hiện"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R21",
+   "trang": 2,
+   "nhom": "de_xuat",
+   "nguyen_van": "Meeting: Please suggest us the appropriate meeting plan.",
+   "dien_giai": "Nhà thầu đề xuất kế hoạch họp",
+   "vi_tri_hsmt": "Chương V mục 4 (C5_4), Chương III tiêu chí 3",
+   "tu_khoa_kiem_tra": [
+    "kế hoạch họp"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R22",
+   "trang": 2,
+   "nhom": "de_xuat",
+   "nguyen_van": "Roles: Please show us the roles and responsibilities.",
+   "dien_giai": "Nhà thầu nêu vai trò và trách nhiệm",
+   "vi_tri_hsmt": "Chương V mục 4 (C5_4), Chương III tiêu chí 4",
+   "tu_khoa_kiem_tra": [
+    "vai trò và trách nhiệm"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R23",
+   "trang": 2,
+   "nhom": "de_xuat",
+   "nguyen_van": "Other Conditions: Show us if you have any other conditions relate to contract.",
+   "dien_giai": "Nhà thầu nêu các điều kiện khác liên quan đến hợp đồng",
+   "vi_tri_hsmt": "Chương V mục 4 (C5_4), Chương III tiêu chí 5",
+   "tu_khoa_kiem_tra": [
+    "điều kiện khác"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R24",
+   "trang": 2,
+   "nhom": "de_xuat",
+   "nguyen_van": "Request for us: If you have any request for us, please tell us.",
+   "dien_giai": "Nhà thầu nêu đề nghị đối với Chủ đầu tư",
+   "vi_tri_hsmt": "Chương V mục 4 (C5_4), Chương III tiêu chí 5",
+   "tu_khoa_kiem_tra": [
+    "đề nghị đối với Chủ đầu tư"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R25",
+   "trang": 3,
+   "nhom": "moc",
+   "nguyen_van": "Presentation - Date: proposal should be submitted by March 8th.",
+   "dien_giai": "Hạn nộp đề xuất ngày 08/03",
+   "vi_tri_hsmt": "Thông tin chính của E-TBMT (thời điểm đóng thầu)",
+   "tu_khoa_kiem_tra": [
+    "08/03",
+    "đóng thầu"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R26",
+   "trang": 3,
+   "nhom": "thu_tuc",
+   "nguyen_van": "10 copies of proposal should be submitted",
+   "dien_giai": "Nộp 10 bản đề xuất",
+   "vi_tri_hsmt": "Thông tin chính của E-TBMT, Chương V mục 4 (C5_4)",
+   "tu_khoa_kiem_tra": [
+    "qua Hệ thống"
+   ],
+   "xu_ly": "lech_co_can_cu",
+   "can_cu_lech": "Đấu thầu qua mạng theo Mẫu số 5A: nhà thầu nộp một bộ E-HSDT trên Hệ thống mạng đấu thầu quốc gia, không yêu cầu nộp nhiều bản hay hồ sơ giấy. Giải pháp tương đương: nộp E-HSDT qua Hệ thống trước thời điểm đóng thầu"
+  },
+  {
+   "ma": "R27",
+   "trang": 3,
+   "nhom": "thu_tuc",
+   "nguyen_van": "We would tell you the accurate time for presentation.",
+   "dien_giai": "Chủ đầu tư sẽ báo thời gian chính xác của buổi trình bày đề xuất",
+   "vi_tri_hsmt": "Thông tin chính của E-TBMT, Mục 7.5 E-BDL",
+   "tu_khoa_kiem_tra": [
+    "hội nghị tiền đấu thầu"
+   ],
+   "xu_ly": "lech_co_can_cu",
+   "can_cu_lech": "Phương thức một giai đoạn một túi hồ sơ đánh giá trên E-HSDT nộp qua Hệ thống, không có bước thuyết trình đề xuất. Giải pháp tương đương: tổ chức hội nghị tiền đấu thầu với thời gian xác định trước trong E-TBMT và Mục 7.5 E-BDL (theo tham số chủ đầu tư)"
+  },
+  {
+   "ma": "R28",
+   "trang": 3,
+   "nhom": "thu_tuc",
+   "nguyen_van": "Place: Our headquarter) Meeting room A",
+   "dien_giai": "Địa điểm trình bày: phòng họp A, trụ sở chính",
+   "vi_tri_hsmt": "Thông tin chính của E-TBMT, Mục 7.5 E-BDL (địa điểm hội nghị tiền đấu thầu)",
+   "tu_khoa_kiem_tra": [
+    "phòng họp A",
+    "trụ sở chính"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R29",
+   "trang": 3,
+   "nhom": "thu_tuc",
+   "nguyen_van": "How to deal with RFP: RFP includes our confidential information. Please keep secure and manage well.",
+   "dien_giai": "RFP có thông tin bảo mật, nhà thầu phải giữ an toàn và quản lý chặt chẽ",
+   "vi_tri_hsmt": "Chương V mục 1 (C5_1), E-ĐKCT bổ sung Điều 14 (DKC_BO_SUNG), E-ĐKC 6.4",
+   "tu_khoa_kiem_tra": [
+    "bảo mật",
+    "Mục 14 E-ĐKC"
+   ],
+   "xu_ly": "lech_co_can_cu",
+   "can_cu_lech": "E-HSMT được phát hành công khai, miễn phí trên Hệ thống theo Luật Đấu thầu và Mẫu số 5A, nên nội dung E-HSMT không thể giữ bí mật (Mục 14.3 điểm b E-ĐKC loại trừ thông tin đã công bố). Giải pháp tương đương: tài liệu, dữ liệu về hệ thống hiện có chỉ cung cấp cho nhà thầu trúng thầu sau khi hợp đồng có hiệu lực và được bảo vệ bằng nghĩa vụ bảo mật tại Mục 14 E-ĐKC và dòng E-ĐKC 14 (bổ sung)"
+  },
+  {
+   "ma": "R30",
+   "trang": 3,
+   "nhom": "thu_tuc",
+   "nguyen_van": "If you have any questions about RFP, ask us by e-mail or coming to our home.",
+   "dien_giai": "Nhà thầu hỏi qua e-mail hoặc đến trụ sở Chủ đầu tư",
+   "vi_tri_hsmt": "Thông tin chính của E-TBMT (làm rõ E-HSMT, hội nghị tiền đấu thầu)",
+   "tu_khoa_kiem_tra": [
+    "đề nghị làm rõ",
+    "hội nghị tiền đấu thầu"
+   ],
+   "xu_ly": "lech_co_can_cu",
+   "can_cu_lech": "Theo Mẫu số 5A và Luật Đấu thầu, đề nghị làm rõ E-HSMT gửi qua Hệ thống và Chủ đầu tư trả lời trên Hệ thống để mọi nhà thầu cùng nhận thông tin. Giải pháp tương đương: làm rõ qua Hệ thống, trao đổi trực tiếp tại hội nghị tiền đấu thầu"
+  },
+  {
+   "ma": "R31",
+   "trang": 3,
+   "nhom": "thu_tuc",
+   "nguyen_van": "Person in charge: Planning Division) Yamada (yamada@abc.com)",
+   "dien_giai": "Đầu mối: Yamada, Phòng Kế hoạch, e-mail yamada@abc.com",
+   "vi_tri_hsmt": "Thông tin chính của E-TBMT, Mục 7.5, 38.1 E-BDL, E-ĐKC 4.1",
+   "tu_khoa_kiem_tra": [
+    "Yamada",
+    "yamada@abc.com"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R32",
+   "trang": 3,
+   "nhom": "thu_tuc",
+   "nguyen_van": "Duration February 22th to March 7th",
+   "dien_giai": "Thời gian hỏi đáp từ 22/02 đến 07/03",
+   "vi_tri_hsmt": "Thông tin chính của E-TBMT (làm rõ E-HSMT)",
+   "tu_khoa_kiem_tra": [
+    "đề nghị làm rõ",
+    "chậm nhất ngày"
+   ],
+   "xu_ly": "lech_co_can_cu",
+   "can_cu_lech": "Luật Đấu thầu và Mẫu số 5A: nhà thầu gửi đề nghị làm rõ tối thiểu 03 ngày làm việc trước ngày có thời điểm đóng thầu, Chủ đầu tư trả lời tối thiểu 02 ngày làm việc trước ngày có thời điểm đóng thầu. Ngày 07/03 muộn hơn hạn này. Giải pháp tương đương: nhận đề nghị làm rõ từ ngày phát hành E-HSMT đến hạn làm rõ hợp lệ trong gia_tri_tinh.json"
+  },
+  {
+   "ma": "R33",
+   "trang": 3,
+   "nhom": "hop_dong",
+   "nguyen_van": "(Party A is ABC Wear, Party B is Inter Solution)",
+   "dien_giai": "Bên A là ABC Wear, bên B là Inter Solution",
+   "vi_tri_hsmt": "E-ĐKC 1.3, 1.11",
+   "tu_khoa_kiem_tra": [
+    "nhà thầu trúng thầu"
+   ],
+   "xu_ly": "lech_co_can_cu",
+   "can_cu_lech": "Đấu thầu rộng rãi phải bảo đảm cạnh tranh, công bằng (Luật Đấu thầu số 22/2023/QH15). E-HSMT không được nêu trước tên nhà thầu. Giải pháp tương đương: bên B là nhà thầu trúng thầu theo kết quả lựa chọn nhà thầu"
+  },
+  {
+   "ma": "R34",
+   "trang": 3,
+   "nhom": "hop_dong",
+   "nguyen_van": "Party B start to develop the system just after we get the contract agreement.",
+   "dien_giai": "Nhà thầu bắt đầu xây dựng hệ thống ngay sau khi ký hợp đồng",
+   "vi_tri_hsmt": "E-ĐKCT bổ sung Điều 8 (DKC_BO_SUNG)",
+   "tu_khoa_kiem_tra": [
+    "ngay sau khi hợp đồng có hiệu lực"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R35",
+   "trang": 3,
+   "nhom": "hop_dong",
+   "nguyen_van": "Party A or Party B can change specifications if needed.",
+   "dien_giai": "Mỗi bên được đề xuất thay đổi đặc tả khi cần",
+   "vi_tri_hsmt": "E-ĐKC 17.1(c), E-ĐKC 2.2(i)",
+   "tu_khoa_kiem_tra": [
+    "thay đổi đặc tả"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R36",
+   "trang": 3,
+   "nhom": "hop_dong",
+   "nguyen_van": "When Party B need to out source, Party B have to request Party A by paper to be permitted about it.",
+   "dien_giai": "Nhà thầu thuê ngoài phải đề nghị bằng văn bản và được Chủ đầu tư cho phép",
+   "vi_tri_hsmt": "E-ĐKC 6.4",
+   "tu_khoa_kiem_tra": [
+    "thuê ngoài",
+    "chấp thuận bằng văn bản"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R37",
+   "trang": 3,
+   "nhom": "hop_dong",
+   "nguyen_van": "Party B have to delivery the deliverables by the agreed place and date.",
+   "dien_giai": "Nhà thầu bàn giao sản phẩm đúng địa điểm và thời hạn đã thống nhất",
+   "vi_tri_hsmt": "E-ĐKCT bổ sung Điều 8 (DKC_BO_SUNG), Chương V mục 5",
+   "tu_khoa_kiem_tra": [
+    "địa điểm và thời hạn"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R38",
+   "trang": 3,
+   "nhom": "hop_dong",
+   "nguyen_van": "Party A inspect the deliverables in the condition which are written in the specifications and tell the result Party B.",
+   "dien_giai": "Chủ đầu tư kiểm tra sản phẩm theo điều kiện trong đặc tả và thông báo kết quả cho nhà thầu",
+   "vi_tri_hsmt": "E-ĐKC 20.1, Chương V mục 5 (C5_5)",
+   "tu_khoa_kiem_tra": [
+    "theo đặc tả",
+    "thông báo kết quả"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R39",
+   "trang": 3,
+   "nhom": "hop_dong",
+   "nguyen_van": "Pass of this inspection means acceptance.",
+   "dien_giai": "Kiểm tra đạt là chấp nhận sản phẩm",
+   "vi_tri_hsmt": "E-ĐKC 20.1, Chương V mục 5 (C5_5)",
+   "tu_khoa_kiem_tra": [
+    "chấp nhận sản phẩm"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R40",
+   "trang": 3,
+   "nhom": "hop_dong",
+   "nguyen_van": "All of the ownership and copyright relate to developed deliverables and technical performance throughout this project belong to Party A.",
+   "dien_giai": "Quyền sở hữu và bản quyền đối với sản phẩm và kết quả kỹ thuật của dự án thuộc Chủ đầu tư",
+   "vi_tri_hsmt": "E-ĐKCT bổ sung Điều 14 (DKC_BO_SUNG)",
+   "tu_khoa_kiem_tra": [
+    "quyền sở hữu",
+    "bản quyền"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R41",
+   "trang": 3,
+   "nhom": "hop_dong",
+   "nguyen_van": "When Party B need to use those for someone else need to be permitted by Party A.",
+   "dien_giai": "Nhà thầu sử dụng sản phẩm cho bên khác phải được Chủ đầu tư cho phép",
+   "vi_tri_hsmt": "E-ĐKCT bổ sung Điều 14 (DKC_BO_SUNG)",
+   "tu_khoa_kiem_tra": [
+    "bên thứ ba"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R42",
+   "trang": 3,
+   "nhom": "hop_dong",
+   "nguyen_van": "The logical mistake in the deliverables or other problems which should be attributed to Party B, Party B have to modify or add with Party B's responsibility and cost as soon as possible.",
+   "dien_giai": "Lỗi logic hoặc vấn đề thuộc trách nhiệm nhà thầu được nhà thầu sửa chữa, bổ sung bằng chi phí của mình trong thời gian sớm nhất",
+   "vi_tri_hsmt": "E-ĐKC 20.1",
+   "tu_khoa_kiem_tra": [
+    "lỗi logic",
+    "chi phí của mình"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R43",
+   "trang": 3,
+   "nhom": "hop_dong",
+   "nguyen_van": "The duration that Party B have to take a responsibility are in one year.",
+   "dien_giai": "Thời hạn trách nhiệm của nhà thầu là một năm",
+   "vi_tri_hsmt": "E-ĐKC 20.1, Chương III tiêu chí 4",
+   "tu_khoa_kiem_tra": [
+    "12 tháng"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R44",
+   "trang": 4,
+   "nhom": "san_pham",
+   "nguyen_van": "Deliverables: Specification - Web Selling Site System (DB Configuration | Function)",
+   "dien_giai": "Sản phẩm: đặc tả hệ thống gồm cấu hình cơ sở dữ liệu và chức năng",
+   "vi_tri_hsmt": "Chương V mục 3.3 (C5_3), Mẫu số 01A",
+   "tu_khoa_kiem_tra": [
+    "Specification",
+    "DB Configuration"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R45",
+   "trang": 4,
+   "nhom": "pham_vi",
+   "nguyen_van": "The internal administrative function are out of scope in this project.",
+   "dien_giai": "Chức năng quản trị nội bộ nằm ngoài phạm vi dự án",
+   "vi_tri_hsmt": "Chương V mục 3.2 (C5_3)",
+   "tu_khoa_kiem_tra": [
+    "quản trị nội bộ",
+    "ngoài phạm vi"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R46",
+   "trang": 4,
+   "nhom": "san_pham",
+   "nguyen_van": "New Operational Flow",
+   "dien_giai": "Sản phẩm: quy trình vận hành mới",
+   "vi_tri_hsmt": "Chương V mục 3.3 (C5_3), Mẫu số 01A",
+   "tu_khoa_kiem_tra": [
+    "quy trình vận hành mới",
+    "New Operational Flow"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R47",
+   "trang": 5,
+   "nhom": "san_pham",
+   "nguyen_van": "Database Structure (Selling DB)",
+   "dien_giai": "Sản phẩm: cấu trúc cơ sở dữ liệu Selling DB",
+   "vi_tri_hsmt": "Chương V mục 3.3 (C5_3), Mẫu số 01A",
+   "tu_khoa_kiem_tra": [
+    "cấu trúc cơ sở dữ liệu",
+    "Database Structure"
+   ],
+   "xu_ly": "dap_ung"
+  },
+  {
+   "ma": "R48",
+   "trang": 5,
+   "nhom": "san_pham",
+   "nguyen_van": "Menu Layer",
+   "dien_giai": "Sản phẩm: sơ đồ phân cấp menu",
+   "vi_tri_hsmt": "Chương V mục 3.3 (C5_3), Mẫu số 01A",
+   "tu_khoa_kiem_tra": [
+    "phân cấp menu",
+    "Menu Layer"
+   ],
+   "xu_ly": "dap_ung"
+  }
+ ]
+}

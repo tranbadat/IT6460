@@ -1,0 +1,406 @@
+{
+ "meta": {
+  "ten": "WBS 7 - Kiểm thử hệ thống và kiểm thử vận hành",
+  "header": "Lập kế hoạch - WBS 7, Kiểm thử hệ thống và kiểm thử vận hành",
+  "size_bang_pt": 12,
+  "phien_ban": "0.4",
+  "ngay": "05/03/2027"
+ },
+ "blocks": [
+  {
+   "t": "center",
+   "text": "Cấu trúc phân rã công việc",
+   "size": 18
+  },
+  {
+   "t": "center",
+   "text": "Kiểm thử hệ thống và kiểm thử vận hành, mã WBS 7",
+   "size": 15
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+  },
+  {
+   "t": "center",
+   "text": "Khách hàng: Công ty Cổ phần ABC Wear"
+  },
+  {
+   "t": "center",
+   "text": "Tài liệu kế hoạch dự án, kèm theo Phần III. Đề xuất kỹ thuật của hồ sơ dự thầu"
+  },
+  {
+   "t": "center",
+   "text": "Phiên bản {{PHIEN_BAN}}, ngày {{NGAY}}"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "h2",
+   "text": "1. Thông tin chung"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Tổng khối lượng",
+     "73 người-ngày"
+    ],
+    [
+     "Căn cứ ước lượng",
+     "1 kế hoạch kiểm thử, 3 bộ kịch bản (hệ thống, chấp nhận, hiệu năng), 4 loại kiểm thử hệ thống (chức năng đầu cuối, khả năng sử dụng, hiệu năng, bảo mật), 2 luồng kiểm thử chấp nhận cùng Chủ đầu tư, kiểm thử hồi quy, kiểm thử bản phát hành, diễn tập chuyển đổi dự phòng. Mục tiêu theo tong_theo_nhom của uoc_luong.json là 71 MD, tổng các gói của nhóm là 73 MD, cao hơn 2 MD và nằm trong dung sai của nhóm, tương ứng phần chênh của nhóm 6. Thuộc phần kiểm thử ở bước 2 và hỗ trợ kiểm thử chấp nhận, vận hành thử ở bước 3 của uoc_luong.json. Chia theo số loại kiểm thử và số ngày của khoảng kiểm thử chấp nhận 18/06 đến 29/06/2027: kế hoạch và kịch bản kiểm thử 15 MD (7.1); kiểm thử hệ thống 24 MD (7.2); kiểm thử chấp nhận và kiểm thử vận hành (Operation Test) 34 MD (7.3)."
+    ],
+    [
+     "Thời gian thực hiện",
+     "28/04/2027 - 29/06/2027 (sprint S3 đến S7)"
+    ],
+    [
+     "Người chịu trách nhiệm",
+     "Nguyễn Thị Phương Liên"
+    ],
+    [
+     "Phụ thuộc đầu vào",
+     "Hoàn thành các gói 1.1.4 (Kế hoạch bảo đảm chất lượng, quy chuẩn mã nguồn và tiêu chí hoàn thành công việc), 2.1.3 (Đặc tả chức năng (Function) tìm kiếm và hiển thị sản phẩm), 2.1.4 (Đặc tả chức năng (Function) quản lý thành viên), 2.1.5 (Đặc tả chức năng (Function) đặt hàng gồm giỏ hàng, giữ tồn, phí vận chuyển, khuyến mại, hủy đơn, đổi trả), 2.1.6 (Đặc tả yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi, bảo mật và thao tác), 2.2.1 (Quy trình vận hành mới (New Operational Flow) của kênh bán hàng trực tuyến), 3.3.8 (Bộ nhớ đệm và tối ưu thời gian phản hồi trang danh mục, chi tiết sản phẩm), 3.4.2 (Kiểm thử tìm kiếm, lọc và sắp xếp sản phẩm), 3.4.3 (Kiểm thử trang chủ, danh mục và chi tiết sản phẩm), 3.4.4 (Sửa lỗi và kiểm thử lại chức năng tìm kiếm, lọc và sắp xếp), 3.4.6 (Sửa lỗi và kiểm thử lại trang chủ, danh mục và chi tiết sản phẩm), 4.4.2 (Kiểm thử đăng ký, đăng nhập và khôi phục mật khẩu), 4.4.3 (Kiểm thử thông tin thành viên, sổ địa chỉ và đồng ý điều khoản), 4.4.4 (Sửa lỗi và kiểm thử lại đăng ký, đăng nhập và bảo mật tài khoản), 4.4.5 (Kiểm thử bảo mật tài khoản theo OWASP Top 10 và tương thích thiết bị phân hệ thành viên), 4.4.6 (Sửa lỗi và kiểm thử lại thông tin thành viên và sổ địa chỉ), 5.4.2 (Kiểm thử giỏ hàng và giữ tồn kho), 5.4.3 (Kiểm thử đặt hàng, phí vận chuyển và khuyến mại), 5.4.4 (Kiểm thử theo dõi đơn hàng, hủy đơn và đổi trả), 5.4.5 (Sửa lỗi và kiểm thử lại giỏ hàng và giữ tồn kho), 5.4.6 (Kiểm thử luồng đặt hàng đầu cuối của phân hệ với dữ liệu biên và đồng thời), 5.4.7 (Sửa lỗi và kiểm thử lại đặt hàng, phí vận chuyển và khuyến mại), 5.4.8 (Sửa lỗi và kiểm thử lại theo dõi đơn hàng, hủy đơn và đổi trả), 6.2.10 (Kiểm thử tích hợp với Main System trên môi trường thử), 6.2.11 (Sửa lỗi và kiểm thử lại tích hợp với Main System), 8.1.2 (Môi trường vận hành gồm hai nút ứng dụng, cân bằng tải, cơ sở dữ liệu chính và dự phòng), 8.1.3 (Giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành), 8.2.3 (Hướng dẫn vận hành cho cán bộ Chủ đầu tư theo quy trình vận hành mới, ba buổi theo lịch của Chủ đầu tư)"
+    ],
+    [
+     "Đơn vị khối lượng",
+     "Người-ngày, viết tắt MD, tính theo 8 giờ làm việc"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "2. Sơ đồ WBS dạng cây phân cấp"
+  },
+  {
+   "t": "p",
+   "text": "Sơ đồ dùng để trao đổi với Chủ đầu tư. Bảng chi tiết ở mục 3 dùng để ước lượng, giao việc và theo dõi tiến độ."
+  },
+  {
+   "t": "p",
+   "text": "7. Kiểm thử hệ thống và kiểm thử vận hành",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "7.1. Kế hoạch và kịch bản kiểm thử",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "7.1.1. Kế hoạch kiểm thử hệ thống, kiểm thử chấp nhận và tiêu chí đạt",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.1.2. Kịch bản kiểm thử hệ thống đầu cuối",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.1.3. Kịch bản kiểm thử chấp nhận theo quy trình vận hành mới",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.1.4. Kịch bản và công cụ kiểm thử hiệu năng, chịu tải 500 người dùng đồng thời",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.2. Kiểm thử hệ thống",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "7.2.1. Kiểm thử chức năng đầu cuối",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.2.2. Đánh giá khả năng sử dụng của giao diện (Easy Operation)",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.2.3. Kiểm thử hiệu năng trên môi trường kiểm thử",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.2.4. Khắc phục lỗi sau kiểm thử hệ thống",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.2.5. Rà soát lỗ hổng bảo mật theo OWASP Top 10 trên môi trường kiểm thử",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.3. Kiểm thử chấp nhận và kiểm thử vận hành (Operation Test)",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "7.3.1. Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng tìm kiếm và thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.3.2. Tổ chức và hỗ trợ kiểm thử vận hành cùng Chủ đầu tư luồng đặt hàng và giao nhận",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.3.3. Kiểm thử hồi quy theo các đợt khắc phục lỗi kiểm thử chấp nhận",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.3.4. Kiểm thử hiệu năng và rà soát an toàn thông tin bản phát hành trên môi trường vận hành",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.3.5. Tối ưu hiệu năng và khắc phục lỗ hổng theo kết quả kiểm thử bản phát hành",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "7.3.6. Diễn tập chuyển đổi dự phòng, sao lưu và khôi phục trên môi trường vận hành",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h2",
+   "text": "3. Bảng chi tiết"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi gói công việc gắn với một sản phẩm kiểm tra được, có khối lượng ước lượng được và giao được cho một người."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã WBS",
+     "Tên công việc",
+     "Mức",
+     "Khối lượng, MD",
+     "Loại công việc",
+     "Sản phẩm đầu ra"
+    ],
+    [
+     "7.1",
+     "Kế hoạch và kịch bản kiểm thử",
+     "2",
+     "15",
+     "",
+     ""
+    ],
+    [
+     "7.1.1",
+     "Kế hoạch kiểm thử hệ thống, kiểm thử chấp nhận và tiêu chí đạt",
+     "3",
+     "3",
+     "QA",
+     "Kế hoạch kiểm thử"
+    ],
+    [
+     "7.1.2",
+     "Kịch bản kiểm thử hệ thống đầu cuối",
+     "3",
+     "5",
+     "QA",
+     "Bộ kịch bản kiểm thử hệ thống"
+    ],
+    [
+     "7.1.3",
+     "Kịch bản kiểm thử chấp nhận theo quy trình vận hành mới",
+     "3",
+     "3",
+     "QA",
+     "Kịch bản kiểm thử chấp nhận"
+    ],
+    [
+     "7.1.4",
+     "Kịch bản và công cụ kiểm thử hiệu năng, chịu tải 500 người dùng đồng thời",
+     "3",
+     "4",
+     "QA",
+     "Kịch bản kiểm thử tải"
+    ],
+    [
+     "7.2",
+     "Kiểm thử hệ thống",
+     "2",
+     "24",
+     "",
+     ""
+    ],
+    [
+     "7.2.1",
+     "Kiểm thử chức năng đầu cuối",
+     "3",
+     "10",
+     "QA",
+     "Báo cáo kiểm thử chức năng đầu cuối"
+    ],
+    [
+     "7.2.2",
+     "Đánh giá khả năng sử dụng của giao diện (Easy Operation)",
+     "3",
+     "2",
+     "QA",
+     "Báo cáo đánh giá khả năng sử dụng"
+    ],
+    [
+     "7.2.3",
+     "Kiểm thử hiệu năng trên môi trường kiểm thử",
+     "3",
+     "3",
+     "QA",
+     "Báo cáo kiểm thử hiệu năng"
+    ],
+    [
+     "7.2.4",
+     "Khắc phục lỗi sau kiểm thử hệ thống",
+     "3",
+     "6",
+     "DEV",
+     "Phiên bản đã khắc phục lỗi kiểm thử hệ thống"
+    ],
+    [
+     "7.2.5",
+     "Rà soát lỗ hổng bảo mật theo OWASP Top 10 trên môi trường kiểm thử",
+     "3",
+     "3",
+     "QA",
+     "Báo cáo rà soát lỗ hổng bảo mật"
+    ],
+    [
+     "7.3",
+     "Kiểm thử chấp nhận và kiểm thử vận hành (Operation Test)",
+     "2",
+     "34",
+     "",
+     ""
+    ],
+    [
+     "7.3.1",
+     "Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng tìm kiếm và thành viên",
+     "3",
+     "8",
+     "QA",
+     "Biên bản kiểm thử chấp nhận luồng tìm kiếm và thành viên"
+    ],
+    [
+     "7.3.2",
+     "Tổ chức và hỗ trợ kiểm thử vận hành cùng Chủ đầu tư luồng đặt hàng và giao nhận",
+     "3",
+     "8",
+     "QA",
+     "Biên bản kiểm thử vận hành luồng đặt hàng"
+    ],
+    [
+     "7.3.3",
+     "Kiểm thử hồi quy theo các đợt khắc phục lỗi kiểm thử chấp nhận",
+     "3",
+     "7",
+     "QA",
+     "Báo cáo kiểm thử hồi quy bản phát hành"
+    ],
+    [
+     "7.3.4",
+     "Kiểm thử hiệu năng và rà soát an toàn thông tin bản phát hành trên môi trường vận hành",
+     "3",
+     "4",
+     "QA",
+     "Báo cáo hiệu năng và an toàn thông tin của bản phát hành"
+    ],
+    [
+     "7.3.5",
+     "Tối ưu hiệu năng và khắc phục lỗ hổng theo kết quả kiểm thử bản phát hành",
+     "3",
+     "4",
+     "DEV",
+     "Phiên bản phát hành đạt chỉ tiêu hiệu năng và an toàn thông tin"
+    ],
+    [
+     "7.3.6",
+     "Diễn tập chuyển đổi dự phòng, sao lưu và khôi phục trên môi trường vận hành",
+     "3",
+     "3",
+     "DEVOPS",
+     "Biên bản diễn tập chuyển đổi dự phòng và khôi phục"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "",
+     "73",
+     "",
+     ""
+    ]
+   ],
+   "widths": [
+    1000,
+    3600,
+    600,
+    1100,
+    1000,
+    2000
+   ],
+   "center_cols": [
+    2,
+    4
+   ],
+   "right_cols": [
+    3
+   ],
+   "dong_dam": [
+    1,
+    6,
+    12
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Kiểm tra quy tắc 100%"
+  },
+  {
+   "t": "p",
+   "text": "Tổng khối lượng các hạng mục mức 2, 15 cộng 24 cộng 34, bằng 73 người-ngày, khớp với khối lượng khai báo ở mức 1. Kết luận: cân bằng."
+  }
+ ]
+}

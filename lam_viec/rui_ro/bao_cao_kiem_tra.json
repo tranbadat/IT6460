@@ -1,0 +1,363 @@
+{
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 1,
+ "phat_hien": [
+  {
+   "ma": "R13",
+   "muc_do": "canh_bao",
+   "nhom": "rui_ro",
+   "vi_tri": "RR07",
+   "mo_ta": "Mức tác động 4 khác mức suy ra 2, lý do: Vi phạm chỉ tiêu kỹ thuật KT01 của HSDT là tác động định tính đến nghiệm thu, không đo hết bằng ngày và tiền",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": ""
+  }
+ ],
+ "tinh_toan": [
+  {
+   "ma": "RR01",
+   "tac_dong": 4,
+   "muc_suy_ra": 4,
+   "can_cu": [
+    "chậm 5 ngày (mức 3)",
+    "chi phí bằng 1,44% giá chào (mức 2)",
+    "làm chậm mốc gắn đợt thanh toán M2 (mức 4)"
+   ],
+   "tien_dung": 25200000,
+   "tien_tu_tinh": 25200000,
+   "nhan_cong": 25200000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR02",
+   "tac_dong": 4,
+   "muc_suy_ra": 4,
+   "can_cu": [
+    "chậm 6 ngày (mức 3)",
+    "chi phí bằng 1,2% giá chào (mức 2)",
+    "làm chậm mốc gắn đợt thanh toán M3 (mức 4)"
+   ],
+   "tien_dung": 21000000,
+   "tien_tu_tinh": 21000000,
+   "nhan_cong": 21000000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR03",
+   "tac_dong": 3,
+   "muc_suy_ra": 3,
+   "can_cu": [
+    "chậm 4 ngày (mức 3)",
+    "chi phí bằng 1,2% giá chào (mức 2)"
+   ],
+   "tien_dung": 21000000,
+   "tien_tu_tinh": 21000000,
+   "nhan_cong": 21000000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR04",
+   "tac_dong": 5,
+   "muc_suy_ra": 5,
+   "can_cu": [
+    "chậm 5 ngày (mức 3)",
+    "chi phí bằng 1,82% giá chào (mức 2)",
+    "làm lùi ngày cut over (mức 5)",
+    "làm chậm mốc gắn đợt thanh toán M3 (mức 4)"
+   ],
+   "tien_dung": 31937500,
+   "tien_tu_tinh": 31937500,
+   "nhan_cong": 31500000,
+   "phat": 437500,
+   "ngay_phat": 1.0,
+   "ngay_phat_lich": 1.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR05",
+   "tac_dong": 2,
+   "muc_suy_ra": 2,
+   "can_cu": [
+    "chậm 3 ngày (mức 2)",
+    "chi phí bằng 0,63% giá chào (mức 1)"
+   ],
+   "tien_dung": 11000000,
+   "tien_tu_tinh": 11000000,
+   "nhan_cong": 11000000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR06",
+   "tac_dong": 3,
+   "muc_suy_ra": 3,
+   "can_cu": [
+    "chậm 4 ngày (mức 3)",
+    "chi phí bằng 0,96% giá chào (mức 1)"
+   ],
+   "tien_dung": 16800000,
+   "tien_tu_tinh": 16800000,
+   "nhan_cong": 16800000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR07",
+   "tac_dong": 4,
+   "muc_suy_ra": 2,
+   "can_cu": [
+    "chậm 3 ngày (mức 2)",
+    "chi phí bằng 0,89% giá chào (mức 1)"
+   ],
+   "tien_dung": 15600000,
+   "tien_tu_tinh": 15600000,
+   "nhan_cong": 15600000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR08",
+   "tac_dong": 5,
+   "muc_suy_ra": 5,
+   "can_cu": [
+    "chậm 1 ngày (mức 2)",
+    "chi phí bằng 0,62% giá chào (mức 1)",
+    "làm lùi ngày cut over (mức 5)"
+   ],
+   "tien_dung": 10837500,
+   "tien_tu_tinh": 10837500,
+   "nhan_cong": 10400000,
+   "phat": 437500,
+   "ngay_phat": 1.0,
+   "ngay_phat_lich": 1.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR09",
+   "tac_dong": 2,
+   "muc_suy_ra": 2,
+   "can_cu": [
+    "chậm 2 ngày (mức 2)",
+    "chi phí bằng 0,49% giá chào (mức 1)"
+   ],
+   "tien_dung": 8600000,
+   "tien_tu_tinh": 8600000,
+   "nhan_cong": 8600000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR10",
+   "tac_dong": 5,
+   "muc_suy_ra": 5,
+   "can_cu": [
+    "chậm 2 ngày (mức 2)",
+    "chi phí bằng 1,3% giá chào (mức 2)",
+    "làm lùi ngày cut over (mức 5)"
+   ],
+   "tien_dung": 22750000,
+   "tien_tu_tinh": 22750000,
+   "nhan_cong": 21000000,
+   "phat": 1750000,
+   "ngay_phat": 2.0,
+   "ngay_phat_lich": 4.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR11",
+   "tac_dong": 4,
+   "muc_suy_ra": 4,
+   "can_cu": [
+    "chậm 5 ngày (mức 3)",
+    "chi phí bằng 1,44% giá chào (mức 2)",
+    "làm chậm mốc gắn đợt thanh toán M3 (mức 4)"
+   ],
+   "tien_dung": 25200000,
+   "tien_tu_tinh": 25200000,
+   "nhan_cong": 25200000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR12",
+   "tac_dong": 4,
+   "muc_suy_ra": 4,
+   "can_cu": [
+    "chậm 1 ngày (mức 2)",
+    "chi phí bằng 0,36% giá chào (mức 1)",
+    "làm chậm mốc gắn đợt thanh toán M7 (mức 4)"
+   ],
+   "tien_dung": 6300000,
+   "tien_tu_tinh": 6300000,
+   "nhan_cong": 6300000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR13",
+   "tac_dong": 3,
+   "muc_suy_ra": 3,
+   "can_cu": [
+    "chậm 0 ngày (mức 1)",
+    "chi phí bằng 4,32% giá chào (mức 3)"
+   ],
+   "tien_dung": 75643750,
+   "tien_tu_tinh": 75643750,
+   "nhan_cong": 0,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 75643750
+  },
+  {
+   "ma": "RR14",
+   "tac_dong": 2,
+   "muc_suy_ra": 2,
+   "can_cu": [
+    "chậm 3 ngày (mức 2)",
+    "chi phí bằng 0,48% giá chào (mức 1)"
+   ],
+   "tien_dung": 8400000,
+   "tien_tu_tinh": 8400000,
+   "nhan_cong": 8400000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR15",
+   "tac_dong": 5,
+   "muc_suy_ra": 5,
+   "can_cu": [
+    "chậm 2 ngày (mức 2)",
+    "chi phí bằng 0,6% giá chào (mức 1)",
+    "vi phạm hợp đồng (mức 5)"
+   ],
+   "tien_dung": 10500000,
+   "tien_tu_tinh": 10500000,
+   "nhan_cong": 10500000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR16",
+   "tac_dong": 3,
+   "muc_suy_ra": 3,
+   "can_cu": [
+    "chậm 4 ngày (mức 3)",
+    "chi phí bằng 0,89% giá chào (mức 1)"
+   ],
+   "tien_dung": 15600000,
+   "tien_tu_tinh": 15600000,
+   "nhan_cong": 15600000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR17",
+   "tac_dong": 2,
+   "muc_suy_ra": 2,
+   "can_cu": [
+    "chậm 0 ngày (mức 1)",
+    "chi phí bằng 1,2% giá chào (mức 2)"
+   ],
+   "tien_dung": 21000000,
+   "tien_tu_tinh": 21000000,
+   "nhan_cong": 21000000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR18",
+   "tac_dong": 2,
+   "muc_suy_ra": 2,
+   "can_cu": [
+    "chậm 3 ngày (mức 2)",
+    "chi phí bằng 0,89% giá chào (mức 1)"
+   ],
+   "tien_dung": 15600000,
+   "tien_tu_tinh": 15600000,
+   "nhan_cong": 15600000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR19",
+   "tac_dong": 1,
+   "muc_suy_ra": 1,
+   "can_cu": [
+    "chậm 0 ngày (mức 1)",
+    "chi phí bằng 0,25% giá chào (mức 1)"
+   ],
+   "tien_dung": 4375000,
+   "tien_tu_tinh": 4375000,
+   "nhan_cong": 0,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 4375000
+  },
+  {
+   "ma": "RR20",
+   "tac_dong": 2,
+   "muc_suy_ra": 2,
+   "can_cu": [
+    "sớm 3 ngày (mức 2)",
+    "lợi ích bằng 0,96% giá chào (mức 1)"
+   ],
+   "tien_dung": 16800000,
+   "tien_tu_tinh": 16800000,
+   "nhan_cong": 16800000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  },
+  {
+   "ma": "RR21",
+   "tac_dong": 2,
+   "muc_suy_ra": 2,
+   "can_cu": [
+    "sớm 3 ngày (mức 2)",
+    "lợi ích bằng 0,34% giá chào (mức 1)"
+   ],
+   "tien_dung": 6000000,
+   "tien_tu_tinh": 6000000,
+   "nhan_cong": 6000000,
+   "phat": 0,
+   "ngay_phat": 0.0,
+   "ngay_phat_lich": 0.0,
+   "tien_them": 0
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+{
+ "tai_lieu": "ket_qua/02_HSDT/HSDT.docx",
+ "phien_ban": "0.1",
+ "dac_ta": "hsdt",
+ "ket_luan": "chua_dat",
+ "so_loi": 2,
+ "so_canh_bao": 6,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ các phần bắt buộc: bảng chỉ dẫn vị trí, Mẫu 02, 05, 06A, 06B, 06C, 07, 08, 09A, 10A, 11A. Đề xuất kỹ thuật trả lời 5 tiêu chí theo đúng thứ tự (mục 10 đến 14)."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Giá 1.750.000.000 đồng, tổng 11A, mốc, cut over 01/07/2027, dự trữ 4 ngày, hiệu lực 90 ngày, bảo đảm dự thầu 30.000.000 đồng, bảo hành 12 tháng, huy động 796 MD khớp nguồn. Sai hạng rủi ro A và mâu thuẫn sprint của mốc M2."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Nội dung dẫn về gói WBS, mốc, mã RR, KT, CK, mục HSMT. Mẫu 06A khớp mục 3 tài liệu phân công, giao trách nhiệm nhóm WBS khớp ma trận RACI."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "KT01 đến KT05 có chỉ tiêu, giải pháp, cách kiểm chứng. Có điều kiện cut over và thời hạn khắc phục lỗi bảo hành."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Rủi ro chính có dấu hiệu, kế hoạch ứng phó, người phụ trách lấy đúng từ sổ rủi ro. Quy trình thay đổi theo Mục 17.1(c). Thời hạn đánh giá CR 3 ngày chưa truy vết được (MH07)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Thứ tự đoạn và bảng trong mục 13 sai, có câu lặp, nhiều dấu chấm phẩy (cảnh báo)."
+  },
+  {
+   "tieu_chi": "DH-tieu_chi_ky_thuat",
+   "ket_qua": "dat",
+   "nhan_xet": "5 tiêu chí đúng thứ tự, bảng chỉ dẫn khớp điểm tối đa và tối thiểu HSMT."
+  },
+  {
+   "tieu_chi": "DH-mau_01a_10a_11a",
+   "ket_qua": "dat",
+   "nhan_xet": "13/13 hạng mục, cột 10A và 11A đúng Mẫu 5A, tổng 11A = 1.750.000.000 = giá chào."
+  },
+  {
+   "tieu_chi": "DH-bang01_bang02",
+   "ket_qua": "dat",
+   "nhan_xet": "Doanh thu bình quân 26.366.666.667 đồng, 2 hợp đồng tương tự từ 600 triệu, 5 nhân sự chủ chốt đáp ứng Bảng 02."
+  },
+  {
+   "tieu_chi": "DH-khong_cong_khai_C",
+   "ket_qua": "dat",
+   "nhan_xet": "Không nêu chi phí chung, lợi nhuận, không có bảng nhân lực theo người. Tuy vậy mục 17 cho phép suy ra phần này (MH03)."
+  },
+  {
+   "tieu_chi": "DH-bien_phap_trong_nguon",
+   "ket_qua": "dat",
+   "nhan_xet": "Biện pháp RR02, RR04, RR05, RR08, RR10, RR16, RR17, RR18 trích đúng sổ rủi ro, giải pháp KT trích đúng chi_tieu_ky_thuat.json."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 13: Sổ rủi ro nhận diện 21 rủi ro gồm 2 cơ hội, trong đó 5 rủi ro hạng A, bao quát tích hợp với Main System (RR02), thời gian đến ngày cut over (RR03, RR10), hiệu năng (RR06) và hoạt động liên tục (RR07).",
+   "mo_ta": "Theo du_lieu/rui_ro.json, 5 rủi ro hạng A là RR02, RR04, RR10, RR01, RR13. RR03, RR06, RR07 là hạng B. Câu liệt kê sai hạng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại đoạn tổng hợp rủi ro mục 13 theo rui_ro.json danh_sach hang=A (RR01, RR02, RR04, RR10, RR13), hoặc bỏ cụm hạng A khỏi câu liệt kê các lĩnh vực."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 12, bảng sprint dòng S4: Hai bên xác nhận đặc tả và giao diện ưu tiên (M2)... ; bảng mốc: M2 06/05/2027, sprint S3",
+   "mo_ta": "Mục tiêu S4 nêu M2 trong khi mốc M2 ngày 06/05/2027 thuộc S3 (15/04 đến 06/05). Mục tiêu S3 cũng nêu trình xác nhận. Mâu thuẫn bắt nguồn từ du_lieu/lich.json sprint[S4].muc_tieu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa muc_tieu của S3, S4 ở bước tạo master schedule (lich.json) cho khớp moc M2.sprint=S3, chạy lại HSDT."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "chi_phi",
+   "vi_tri": "Mục 17: ...Quản lý dự án 49 MD, ... Đơn giá theo người-tháng ... 55.000.000 đồng, 43.000.000 đồng...",
+   "mo_ta": "Công bố MD và đơn giá theo loại công việc cho phép tính khoản A = 1.420.050.000 đồng, từ đó suy ra phần còn lại khoảng 180 triệu đồng (chi phí chung và lợi nhuận). Câu dự phòng 50 triệu cạnh EMV 147 triệu cũng cho thấy dự phòng thấp hơn EMV. Không vi phạm câu chữ nhưng trái tinh thần tiêu chí không công khai chi phí chung, lợi nhuận.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định có giữ bảng đơn giá theo người-tháng và số tiền dự phòng trong HSDT hay chỉ nêu cơ sở tính giá ở mức định tính."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "trinh_bay",
+   "vi_tri": "Mục 13: bảng RR02, RR04, RR10 đứng trước đoạn ...Các rủi ro chính như bảng sau.; đoạn ...theo thời hạn của bảng sau. tiếp ngay đoạn Thời hạn bảo hành 12 tháng kể từ ngày hệ thống được nghiệm thu...",
+   "mo_ta": "Bảng rủi ro chính đặt trước câu dẫn, đoạn bảo hành lặp ý thời hạn 12 tháng và hai câu cùng dẫn tới bảng mức lỗi.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Đặt bảng rủi ro sau câu dẫn, gộp hai đoạn bảo hành."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "noi_dung",
+   "vi_tri": "Bảng đáp ứng dòng Lịch sử không hoàn thành hợp đồng; mục 7; mục 14: Nhà thầu kê khai: không có hoặc có 01 hợp đồng...",
+   "mo_ta": "Giữ nguyên cả hai lựa chọn của mẫu, chưa nêu rõ nhà thầu chọn phương án nào (câu tiếp theo ở mục 7 cho thấy là không có).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "hsdt_bang.json mau_07_lua_chon: chọn một phương án, ví dụ Nhà thầu kê khai: không có hợp đồng... không hoàn thành do lỗi của nhà thầu."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "nhan_su",
+   "vi_tri": "Mẫu 06B: Căn cước công dân/Hộ chiếu, Số năm làm việc, Người liên lạc = Theo hồ sơ nhân sự trên Hệ thống; Ngày sinh chỉ ghi năm",
+   "mo_ta": "Thiếu dữ liệu nhân sự trong thanh_vien.json, cột Mẫu 06B chưa điền thực chất. Kinh nghiệm Trần Bá Đạt chỉ chứng minh 3 năm (đủ tối thiểu, có thêm 2 hợp đồng tương tự).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm bổ sung can_cuoc, ngay_sinh đầy đủ, nguoi_lien_lac, so_nam_lam_viec_hien_tai trong dau_vao/thanh_vien.json."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "truy_vet",
+   "vi_tri": "Mục 13: nhà thầu đánh giá ảnh hưởng tới phạm vi, tiến độ và giá trong 3 ngày",
+   "mo_ta": "Thời hạn 3 ngày không tìm thấy trong các tệp nguồn được phép đọc (hsmt.json, du_an.json, lich.json, rui_ro.json). Chưa chắc có thể nằm trong dữ liệu kế hoạch thay đổi.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Đưa thời hạn đánh giá CR vào dữ liệu nguồn (du_an.json hoặc dữ liệu thay đổi) và tham chiếu, hoặc bỏ con số."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 10: Bảo mật dữ liệu khách hàng theo chỉ tiêu KT04: HTTPS; băm mật khẩu; ... và Tối thiểu 02 nút ứng dụng sau bộ cân bằng tải; ...",
+   "mo_ta": "Câu dùng nhiều dấu chấm phẩy (giải pháp KT ghép nguyên văn), trái hướng dẫn hạn chế dấu chấm phẩy.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Khi ghép giai_phap vào lời văn, thay dấu chấm phẩy bằng dấu phẩy hoặc liệt kê."
+  }
+ ]
+}

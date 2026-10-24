@@ -1,0 +1,41 @@
+{
+ "tai_lieu": "lam_viec/ke_hoach_rui_ro/ke_hoach_rui_ro_vong1.docx",
+ "dac_ta": "ke_hoach_rui_ro",
+ "thoi_gian": "2026-10-18 07:31:18",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 2,
+ "phat_hien": [
+  {
+   "ma": "VP02",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "hận gắn ngày bắt đầu 18/06/2027 và phải xong trong khoảng kiểm thử chấp nhận, Chủ đầ",
+   "mo_ta": "Cách diễn đạt cần xem lại: xong",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "hoàn thành"
+  },
+  {
+   "ma": "VP02",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": " từng luồng ngay khi luồng đó lập trình xong Chủ đầu tư thông báo môi trường thử sẵn",
+   "mo_ta": "Cách diễn đạt cần xem lại: xong",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "hoàn thành"
+  }
+ ],
+ "tieu_chi_doc_hieu": [
+  "Mỗi rủi ro mức cao có kế hoạch ứng phó khả thi, dấu hiệu, người phụ trách",
+  "Rủi ro bao phủ đường găng, mốc cut over, tích hợp Main System, nhân sự bổ sung",
+  "Dự phòng chi phí và thời gian được so sánh với EMV",
+  "Ngưỡng cảnh báo có hành động cụ thể",
+  "Liên kết với quy trình thay đổi",
+  "Mức tác động khớp thang định lượng (ngày chậm, chi phí trên giá, mốc) hoặc có lý do",
+  "Xác suất có căn cứ, EMV được nêu là ước tính định hướng",
+  "Có đối chiếu ma trận 3x3 hạng A, B, C và lý do dùng thang 5 mức",
+  "Dự trữ thời gian thiếu thì có phương án để nhóm chốt",
+  "Có cơ hội hoặc nêu lý do sổ chỉ gồm đe dọa",
+  "Nguyên nhân không viện dẫn số tổng hợp của chính sổ"
+ ]
+}

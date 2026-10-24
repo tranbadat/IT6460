@@ -1,0 +1,1682 @@
+{
+ "meta": {
+  "ten": "E-HSMT Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+  "header": "E-HSMT - Gói thầu dịch vụ phi tư vấn (Mẫu số 5A, TT 79/2025/TT-BTC)",
+  "font": "Times New Roman",
+  "size_pt": 13,
+  "page": "A4",
+  "margin_twip": {
+   "top": 1134,
+   "bottom": 1134,
+   "left": 1417,
+   "right": 1134
+  }
+ },
+ "can_soan": {
+  "DIA_DIEM_HOI_NGHI": {
+   "huong_dan": "Địa điểm tổ chức hội nghị tiền đấu thầu, lấy theo nơi RFP tổ chức thuyết trình. Chỉ ghi địa điểm, ví dụ dạng: phòng họp ..., trụ sở ...",
+   "nguon": [
+    "rfp_yeu_cau.json: dia_diem"
+   ],
+   "dang": "doan",
+   "mau_goc": ""
+  },
+  "BDL_38_2": {
+   "huong_dan": "Điền mục E-CDNT 38.2 theo hướng dẫn trong ngoặc vuông của mẫu, dùng tên, email, địa chỉ trong tham số và RFP.",
+   "nguon": [
+    "mau5a_cau_truc.json",
+    "tham_so_chu_dau_tu.json",
+    "rfp_yeu_cau.json"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": "Khi thấy quyền và lợi ích hợp pháp bị ảnh hưởng, nhà thầu, cơ quan, tổ chức được kiến nghị theo quy trình sau:_________(ghi cụ thể quy trình, thủ tục của việc giải quyết kiến nghị của đơn vị, tổ chức đồng thời ghi rõ Email, địa chỉ của cá nhân/tổ chức/đơn vị giải quyết kiến nghị)"
+  },
+  "NHAN_SU_LY_DO": {
+   "huong_dan": "Một đến hai câu nêu lý do gói thầu cần nhân sự chủ chốt, căn cứ tính chất công việc trong RFP (xây dựng hệ thống, tích hợp hệ thống hiện có). Không nhắc lại các đoạn quy phạm của Mục 2.2 Mẫu 5A về chứng minh khả năng huy động, bổ sung thay thế, kê khai không trung thực, cách tính số năm kinh nghiệm, Mẫu số 06A, 06B, 06C (script chép nguyên văn ngay sau câu này).",
+   "nguon": [
+    "rfp_yeu_cau.json: he_thong, pham_vi",
+    "mau5a_cau_truc.json: huong_dan_chuong3"
+   ],
+   "dang": "doan",
+   "mau_goc": ""
+  },
+  "TIEU_CHI_1": {
+   "huong_dan": "Tên tiêu chí tổng quát thứ 1 (tối đa 30 điểm), một cụm danh từ ngắn nêu phạm vi chấm, chi tiết đặt ở TIEU_CHI_CHI_TIET. Chủ đề: hiểu biết mục tiêu và giải pháp kỹ thuật tổng thể, gồm các yêu cầu phi chức năng. Không đưa giá, chi phí, điều kiện hoặc đề nghị của nhà thầu đối với Chủ đầu tư vào tiêu chí kỹ thuật.",
+   "nguon": [
+    "rfp_yeu_cau.json: noi_dung_de_xuat, yeu_cau nhóm de_xuat, chinh_sach"
+   ],
+   "dang": "doan",
+   "mau_goc": ""
+  },
+  "TIEU_CHI_2": {
+   "huong_dan": "Tên tiêu chí tổng quát thứ 2 (tối đa 20 điểm), một cụm danh từ ngắn nêu phạm vi chấm, chi tiết đặt ở TIEU_CHI_CHI_TIET. Chủ đề: phạm vi, sản phẩm đầu ra, phương pháp thực hiện và bảo đảm chất lượng. Không đưa giá, chi phí, điều kiện hoặc đề nghị của nhà thầu đối với Chủ đầu tư vào tiêu chí kỹ thuật.",
+   "nguon": [
+    "rfp_yeu_cau.json: noi_dung_de_xuat, yeu_cau nhóm de_xuat, chinh_sach"
+   ],
+   "dang": "doan",
+   "mau_goc": ""
+  },
+  "TIEU_CHI_3": {
+   "huong_dan": "Tên tiêu chí tổng quát thứ 3 (tối đa 20 điểm), một cụm danh từ ngắn nêu phạm vi chấm, chi tiết đặt ở TIEU_CHI_CHI_TIET. Chủ đề: kế hoạch, tiến độ đến ngày cut over, tổ chức, nhân sự, kế hoạch họp. Không đưa giá, chi phí, điều kiện hoặc đề nghị của nhà thầu đối với Chủ đầu tư vào tiêu chí kỹ thuật.",
+   "nguon": [
+    "rfp_yeu_cau.json: noi_dung_de_xuat, yeu_cau nhóm de_xuat, chinh_sach"
+   ],
+   "dang": "doan",
+   "mau_goc": ""
+  },
+  "TIEU_CHI_4": {
+   "huong_dan": "Tên tiêu chí tổng quát thứ 4 (tối đa 15 điểm), một cụm danh từ ngắn nêu phạm vi chấm, chi tiết đặt ở TIEU_CHI_CHI_TIET. Chủ đề: vai trò, trách nhiệm, quản lý thay đổi, rủi ro, bảo hành. Không đưa giá, chi phí, điều kiện hoặc đề nghị của nhà thầu đối với Chủ đầu tư vào tiêu chí kỹ thuật.",
+   "nguon": [
+    "rfp_yeu_cau.json: noi_dung_de_xuat, yeu_cau nhóm de_xuat, chinh_sach"
+   ],
+   "dang": "doan",
+   "mau_goc": ""
+  },
+  "TIEU_CHI_5": {
+   "huong_dan": "Tên tiêu chí tổng quát thứ 5 (tối đa 15 điểm), một cụm danh từ ngắn nêu phạm vi chấm, chi tiết đặt ở TIEU_CHI_CHI_TIET. Chủ đề: đề xuất khác có lợi cho thành công của dự án và thông tin về kết quả thực hiện hợp đồng theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP. Không đưa giá, chi phí, điều kiện hoặc đề nghị của nhà thầu đối với Chủ đầu tư vào tiêu chí kỹ thuật.",
+   "nguon": [
+    "rfp_yeu_cau.json: noi_dung_de_xuat, yeu_cau nhóm de_xuat, chinh_sach"
+   ],
+   "dang": "doan",
+   "mau_goc": ""
+  },
+  "TIEU_CHI_CHI_TIET": {
+   "huong_dan": "Tiêu chí chi tiết của từng tiêu chí tổng quát (cấu trúc Mục 3, 3.1 Chương III Mẫu số 5A). Mỗi tiêu chí tổng quát có từ 3 đến 6 tiêu chí chi tiết, tổng điểm tối đa của các tiêu chí chi tiết bằng điểm tối đa của tiêu chí tổng quát. Mỗi tiêu chí chi tiết có tên, nội dung được chấm (dẫn chiếu nội dung đề xuất tại mục 4 hoặc yêu cầu tại mục 3 Chương V), điểm tối đa, đánh dấu cơ bản, và ít nhất 3 mức chấm (ví dụ đạt đủ, đạt một phần, không đạt) có điểm và mô tả, mức cao nhất bằng điểm tối đa, mức thấp nhất 0 điểm, điểm giảm dần. Chỉ tiêu chí cơ bản được có diem_toi_thieu. Mỗi mã trong rang_buoc.can_phu phải được ít nhất một tiêu chí chi tiết ghi trong phu và dùng các cụm tu_khoa của mã đó, trừ mã thuộc một lý do trong rang_buoc.ly_do_khong_tinh_diem thì ghi vào khong_tinh_diem. Không chấm giá, chi phí, điều kiện hoặc đề nghị của nhà thầu đối với Chủ đầu tư. Không chép chỉ tiêu kỹ thuật do nhà thầu cam kết. Dạng: {\"tieu_chi_chi_tiet\": [{\"tieu_chi\": 1, \"ten\": \"\", \"noi_dung\": \"\", \"diem\": 8, \"co_ban\": true, \"diem_toi_thieu\": 4, \"muc_cham\": [{\"muc\": \"Đạt đủ\", \"diem\": 8, \"mo_ta\": \"\"}, {\"muc\": \"Đạt một phần\", \"diem\": 4, \"mo_ta\": \"\"}, {\"muc\": \"Không đạt\", \"diem\": 0, \"mo_ta\": \"\"}], \"phu\": [\"R15\"]}], \"khong_tinh_diem\": [{\"ma\": \"R16\", \"ly_do\": \"tai_chinh\"}]}.",
+   "nguon": [
+    "rfp_yeu_cau.json: yeu_cau nhóm de_xuat, chinh_sach",
+    "mau5a_cau_truc.json: huong_dan_chuong3 (Mục 3, 3.1)",
+    "gia_tri_tinh.json: ky_thuat"
+   ],
+   "dang": "tieu_chi_chi_tiet",
+   "mau_goc": "",
+   "rang_buoc": {
+    "trong_so": [
+     30,
+     20,
+     20,
+     15,
+     15
+    ],
+    "diem_toi_thieu": [
+     18,
+     12,
+     12,
+     9,
+     9
+    ],
+    "so_tieu_chi_chi_tiet": [
+     3,
+     6
+    ],
+    "so_muc_cham_toi_thieu": 3,
+    "can_phu": [
+     {
+      "ma": "R03",
+      "nhom": "chinh_sach",
+      "noi_dung": "Chính sách phát triển: khách hàng thao tác dễ dàng",
+      "tu_khoa": [
+       "Easy Operation",
+       "thao tác dễ dàng"
+      ]
+     },
+     {
+      "ma": "R04",
+      "nhom": "chinh_sach",
+      "noi_dung": "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+      "tu_khoa": [
+       "24 giờ",
+       "365 ngày"
+      ]
+     },
+     {
+      "ma": "R05",
+      "nhom": "chinh_sach",
+      "noi_dung": "Thời gian phản hồi nhanh, không quá 2 giây",
+      "tu_khoa": [
+       "2 giây"
+      ]
+     },
+     {
+      "ma": "R14",
+      "nhom": "de_xuat",
+      "noi_dung": "Đề xuất phải gồm các nội dung liệt kê và nhà thầu được bổ sung các nội dung cần thiết cho thành công của dự án",
+      "tu_khoa": [
+       "thành công của dự án"
+      ]
+     },
+     {
+      "ma": "R15",
+      "nhom": "de_xuat",
+      "noi_dung": "Nhà thầu nêu điều kiện tiền đề của đề xuất",
+      "tu_khoa": [
+       "điều kiện tiền đề"
+      ]
+     },
+     {
+      "ma": "R16",
+      "nhom": "de_xuat",
+      "noi_dung": "Nhà thầu nêu chi phí ước tính kèm lý do. Theo Mẫu 5A, chi phí nằm trong đề xuất tài chính (Mẫu số 11A), không chấm điểm kỹ thuật",
+      "tu_khoa": [
+       "chi phí ước tính",
+       "Mẫu số 11A"
+      ]
+     },
+     {
+      "ma": "R17",
+      "nhom": "de_xuat",
+      "noi_dung": "Nhà thầu nêu phạm vi công việc gắn với tiêu chuẩn của Chủ đầu tư",
+      "tu_khoa": [
+       "phạm vi công việc"
+      ]
+     },
+     {
+      "ma": "R18",
+      "nhom": "de_xuat",
+      "noi_dung": "Nhà thầu nêu sản phẩm bàn giao trong hợp đồng",
+      "tu_khoa": [
+       "sản phẩm bàn giao"
+      ]
+     },
+     {
+      "ma": "R19",
+      "nhom": "de_xuat",
+      "noi_dung": "Nhà thầu nêu tiến độ đến ngày cut over",
+      "tu_khoa": [
+       "tiến độ"
+      ]
+     },
+     {
+      "ma": "R20",
+      "nhom": "de_xuat",
+      "noi_dung": "Nhà thầu nêu tổ chức thực hiện dự án",
+      "tu_khoa": [
+       "tổ chức thực hiện"
+      ]
+     },
+     {
+      "ma": "R21",
+      "nhom": "de_xuat",
+      "noi_dung": "Nhà thầu đề xuất kế hoạch họp",
+      "tu_khoa": [
+       "kế hoạch họp"
+      ]
+     },
+     {
+      "ma": "R22",
+      "nhom": "de_xuat",
+      "noi_dung": "Nhà thầu nêu vai trò và trách nhiệm",
+      "tu_khoa": [
+       "vai trò và trách nhiệm"
+      ]
+     },
+     {
+      "ma": "R23",
+      "nhom": "de_xuat",
+      "noi_dung": "Nhà thầu nêu các điều kiện khác liên quan đến hợp đồng",
+      "tu_khoa": [
+       "điều kiện khác"
+      ]
+     },
+     {
+      "ma": "R24",
+      "nhom": "de_xuat",
+      "noi_dung": "Nhà thầu nêu đề nghị đối với Chủ đầu tư",
+      "tu_khoa": [
+       "đề nghị đối với Chủ đầu tư"
+      ]
+     }
+    ],
+    "ly_do_khong_tinh_diem": {
+     "tai_chinh": "chi phí, giá thuộc đề xuất tài chính (Mẫu số 11A), đánh giá theo Mục 4 Chương III",
+     "dieu_kien_nha_thau": "điều kiện khác, đề nghị của nhà thầu đối với Chủ đầu tư, xét theo Mục 24 và Mục 25 E-CDNT, không tính điểm"
+    }
+   }
+  },
+  "MAU_01A": {
+   "huong_dan": "Các dòng của Mẫu 01A, mỗi dòng 7 ô: STT, danh mục dịch vụ, mô tả dịch vụ (dẫn chiếu mục Chương V), khối lượng (1), đơn vị tính (Gói), địa điểm thực hiện, ngày hoàn thành. Lập một hạng mục cho mỗi sản phẩm bàn giao của RFP, mỗi chức năng của hệ thống mới, việc tích hợp với hệ thống liên quan, kiểm thử hệ thống và kiểm thử vận hành, đào tạo chuyển giao và hỗ trợ cut over. Ngày hoàn thành ghi theo tiến độ được duyệt, trước ngày cut over, riêng hạng mục cut over ghi đúng ngày cut over.",
+   "nguon": [
+    "rfp_yeu_cau.json: san_pham_ban_giao, he_thong, moc.cut_over",
+    "gia_tri_tinh.json: lich.cut_over"
+   ],
+   "dang": "dong_bang",
+   "mau_goc": ""
+  },
+  "C5_1": {
+   "huong_dan": "Thông tin tóm tắt về dự án và gói thầu: chủ đầu tư, tên dự án, nội dung gói thầu, địa điểm thực hiện, thời gian từ ngày hợp đồng có hiệu lực đến ngày cut over. Thêm một câu về trách nhiệm bảo mật thông tin của Chủ đầu tư nêu trong E-HSMT nếu RFP có yêu cầu bảo mật.",
+   "nguon": [
+    "rfp_yeu_cau.json",
+    "mau5a_cau_truc.json: huong_dan_chuong5",
+    "gia_tri_tinh.json: lich"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": ""
+  },
+  "C5_2": {
+   "huong_dan": "Mục tiêu dự án và chính sách phát triển trong RFP, nêu đủ từng yêu cầu chính sách với con số cụ thể.",
+   "nguon": [
+    "rfp_yeu_cau.json",
+    "mau5a_cau_truc.json: huong_dan_chuong5",
+    "gia_tri_tinh.json: lich"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": ""
+  },
+  "C5_3": {
+   "huong_dan": "Các đoạn đánh số 3.1 mô hình hệ thống mới (chức năng, cơ sở dữ liệu, hệ thống liên quan, giữ tên tiếng Anh của RFP trong ngoặc, nêu chiều của từng luồng dữ liệu có trong sơ đồ RFP), 3.2 phạm vi (nêu rõ phạm vi theo RFP và phần ngoài phạm vi), 3.3 sản phẩm đầu ra (đủ các sản phẩm bàn giao của RFP. Khi phạm vi có chuyển giao, đào tạo thì nêu tài liệu bàn giao kèm theo để hạng mục chuyển giao có đối tượng nghiệm thu), 3.4 yêu cầu phi chức năng (giữ con số của RFP, điều kiện đo đã nêu tại mục 3.5 do script lập). Không viết mục 3.5.",
+   "nguon": [
+    "rfp_yeu_cau.json",
+    "mau5a_cau_truc.json: huong_dan_chuong5",
+    "gia_tri_tinh.json: lich"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": ""
+  },
+  "C5_4": {
+   "huong_dan": "Nêu nhà thầu chuẩn bị đề xuất gồm (1) giải pháp và phương pháp luận, (2) kế hoạch công tác theo hướng dẫn của mẫu, và phải trình bày đủ các nội dung đề xuất RFP yêu cầu. Chi phí ước tính kèm lý do trình bày trong đề xuất tài chính theo Mẫu số 11A, không chấm điểm kỹ thuật. Viết thành các câu ngắn, hạn chế dấu chấm phẩy.",
+   "nguon": [
+    "rfp_yeu_cau.json",
+    "mau5a_cau_truc.json: huong_dan_chuong5",
+    "gia_tri_tinh.json: lich"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": ""
+  },
+  "C5_5": {
+   "huong_dan": "Quy trình bàn giao, kiểm tra theo đặc tả, thông báo kết quả, kiểm tra đạt là chấp nhận sản phẩm, biên bản nghiệm thu là căn cứ thanh toán theo Mục 13.1 E-ĐKCT.",
+   "nguon": [
+    "rfp_yeu_cau.json",
+    "mau5a_cau_truc.json: huong_dan_chuong5",
+    "gia_tri_tinh.json: lich"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": ""
+  },
+  "DKC_1_5": {
+   "huong_dan": "Địa điểm cung cấp dịch vụ: nơi nhà thầu làm việc và nơi hệ thống được triển khai, theo RFP.",
+   "nguon": [
+    "rfp_yeu_cau.json: dia_diem, he_thong"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": "Địa điểm cung cấp dịch vụ là:________ [ghi tên và thông tin chi tiết về địa điểm]."
+  },
+  "DKC_2_2_i": {
+   "huong_dan": "Các tài liệu khác là một phần của hợp đồng, gắn với các yêu cầu RFP về đặc tả và thay đổi đặc tả.",
+   "nguon": [
+    "rfp_yeu_cau.json: nhóm hop_dong, san_pham"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": "Các tài liệu sau đây cũng là một phần của Hợp đồng:_____ [liệt kê tài liệu]."
+  },
+  "DKC_6_4": {
+   "huong_dan": "Yêu cầu khác về nhà thầu phụ, chuyển yêu cầu thuê ngoài của RFP thành điều khoản.",
+   "nguon": [
+    "rfp_yeu_cau.json: nhóm hop_dong"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": "Nêu các yêu cầu cần thiết khác về nhà thầu phụ [ghi yêu cầu khác về nhà thầu phụ (nếu có)]."
+  },
+  "DKC_12_1": {
+   "huong_dan": "Tạm ứng 15% giá hợp đồng, điều kiện cấp, hồ sơ tạm ứng, bảo lãnh tiền tạm ứng theo Mẫu số 16 Phần 4 nếu tham số yêu cầu, cách thu hồi vào thanh toán theo Mục 13.1 và thời hạn hiệu lực bảo lãnh tạm ứng.",
+   "nguon": [
+    "tham_so_chu_dau_tu.json: chinh_sach.tam_ung_phan_tram, bao_lanh_tam_ung",
+    "gia_tri_tinh.json: hop_dong"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": "Tạm ứng:_______ [ghi số tiền tạm ứng, các chứng từ để tạm ứng, phương thức tạm ứng… phù hợp quy định của pháp luật. Trong trường hợp cần thiết, có thể yêu cầu Nhà thầu xuất trình bảo lãnh tiền tạm ứng theo Mẫu số 16 Chương VIII hoặc mẫu khác được Chủ đầu tư chấp thuận]."
+  },
+  "DKC_13_1": {
+   "huong_dan": "Phương thức thanh toán (chuyển khoản), số đợt, mỗi đợt một dòng bắt đầu bằng \"- Đợt n: x% giá hợp đồng\" kèm sự kiện kích hoạt theo tham số, diễn đạt gắn với sản phẩm của RFP. Đợt gắn sản phẩm nêu các hạng mục được thanh toán theo dạng (hạng mục 1, 2 và 4 Mẫu số 01A) hoặc (hạng mục 5 đến 9 Mẫu số 01A). Mỗi hạng mục của MAU_01A thuộc đúng một đợt, đợt tạm ứng và đợt bảo hành không gắn hạng mục. Mọi bảo lãnh không có biểu mẫu trong Phần 4 (ví dụ bảo lãnh bảo hành) nêu bên phát hành (ngân hàng, tổ chức tín dụng hoặc chi nhánh ngân hàng nước ngoài được thành lập theo pháp luật Việt Nam), giá trị, hiệu lực đến hết thời hạn trách nhiệm đối với sai sót và hình thức, nội dung theo mẫu được Chủ đầu tư chấp thuận. Dòng cuối: hồ sơ thanh toán và thời hạn thanh toán. Tổng các đợt bằng 100%.",
+   "nguon": [
+    "gia_tri_tinh.json: hop_dong.thanh_toan",
+    "tham_so_chu_dau_tu.json: chinh_sach.thanh_toan_trong_ngay, bao_lanh_bao_hanh_phan_tram"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": "Phương thức thanh toán:_____ [căn cứ tính chất và yêu cầu của gói thầu mà quy định cụ thể nội dung này. Việc thanh toán cho Nhà thầu có thể quy định thanh toán bằng tiền mặt, chuyển khoản, số lần thanh toán là nhiều lần trong quá trình thực hiện hoặc thanh toán một lần khi hoàn thành hợp đồng. Thời hạn thanh toán có thể quy định thanh toán ngay hoặc trong vòng không quá một số ngày nhất định kể từ khi Nhà thầu xuất trình đầy đủ các chứng từ theo yêu cầu. Đồng thời, cần quy định cụ thể về chứng từ thanh toán phù hợp với quy định của pháp luật]."
+  },
+  "DKC_17_1_c": {
+   "huong_dan": "Nội dung khác về sửa đổi hợp đồng, chuyển yêu cầu thay đổi đặc tả của RFP thành điều khoản: thay đổi chỉ thực hiện khi hai bên thống nhất bằng văn bản.",
+   "nguon": [
+    "rfp_yeu_cau.json: nhóm hop_dong"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": "Các nội dung khác về sửa đổi hợp đồng:_____ [nêu cụ thể các nội dung khác (nếu có)]."
+  },
+  "DKC_20_1": {
+   "huong_dan": "Nguyên tắc và cách thức đánh giá chất lượng theo điều khoản kiểm tra, chấp nhận và sửa lỗi của RFP. Thời hạn trách nhiệm đối với sai sót theo RFP (quy đổi ra tháng) kể từ ngày nghiệm thu, bàn giao, và việc duy trì bảo lãnh bảo hành nếu có đợt thanh toán bảo hành.",
+   "nguon": [
+    "rfp_yeu_cau.json: nhóm hop_dong",
+    "tham_so_chu_dau_tu.json: chinh_sach.bao_hanh"
+   ],
+   "dang": "danh_sach_doan",
+   "mau_goc": "Chủ đầu tư thực hiện đánh giá chất lượng dịch vụ phi tư vấn theo nguyên tắc và cách thức như sau:________ [nêu cụ thể nguyên tắc và cách thức] Thời hạn trách nhiệm đối với sai sót:________ [nêu cụ thể thời gian]."
+  },
+  "DKC_BO_SUNG": {
+   "huong_dan": "Các dòng bổ sung cho điều khoản hợp đồng của RFP không có mục tương ứng trong E-ĐKCT (ví dụ bắt đầu thực hiện ngay sau khi ký, bàn giao đúng địa điểm và thời hạn, quyền sở hữu và bản quyền, bảo mật). Mỗi dòng 2 ô: ô đầu ghi \"E-ĐKC <số Điều liên quan của Chương VI> (bổ sung)\", ô sau là nội dung. Không lặp nội dung đã có ở các mục khác.",
+   "nguon": [
+    "rfp_yeu_cau.json: nhóm hop_dong, thu_tuc"
+   ],
+   "dang": "dong_bang",
+   "mau_goc": ""
+  }
+ },
+ "canh_bao": [],
+ "blocks": [
+  {
+   "t": "center",
+   "text": "Mẫu số 5A",
+   "size": 14
+  },
+  {
+   "t": "center",
+   "text": "Hồ sơ mời thầu",
+   "size": 18
+  },
+  {
+   "t": "center",
+   "text": "Dịch vụ phi tư vấn qua mạng",
+   "size": 15
+  },
+  {
+   "t": "center",
+   "text": "Một giai đoạn một túi hồ sơ",
+   "size": 15
+  },
+  {
+   "t": "center",
+   "text": "(Ban hành kèm theo Thông tư số 79/2025/TT-BTC ngày 04 tháng 8 năm 2025 của Bộ trưởng Bộ Tài chính)",
+   "size": 13
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Chủ đầu tư: Công ty Cổ phần ABC Wear",
+   "size": 14
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Số hiệu gói thầu và số E-TBMT (trên Hệ thống):",
+     "Theo E-TBMT trên Hệ thống"
+    ],
+    [
+     "Tên gói thầu (theo nội dung E-TBMT trên Hệ thống):",
+     "Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+    ],
+    [
+     "Dự án/Dự toán mua sắm (theo nội dung E-TBMT trên Hệ thống):",
+     "Phát triển kênh bán hàng trực tuyến của Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Phát hành ngày (theo nội dung E-TBMT trên Hệ thống):",
+     "22/02/2027"
+    ],
+    [
+     "Ban hành kèm theo Quyết định (theo nội dung E-TBMT trên Hệ thống):",
+     "Quyết định phê duyệt E-HSMT của Công ty Cổ phần ABC Wear, theo E-TBMT trên Hệ thống"
+    ]
+   ],
+   "widths": [
+    4300,
+    5300
+   ],
+   "center_cols": []
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Hà Nội, 2027",
+   "size": 13
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "center",
+   "text": "Thông tin chính của E-TBMT",
+   "size": 15
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Nội dung",
+     "Thông tin"
+    ],
+    [
+     "Chủ đầu tư",
+     "Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Tên gói thầu",
+     "Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+    ],
+    [
+     "Dự án",
+     "Phát triển kênh bán hàng trực tuyến của Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Căn cứ áp dụng",
+     "Chủ đầu tư sử dụng vốn tự có và lựa chọn áp dụng Luật Đấu thầu số 22/2023/QH15 (đã được sửa đổi, bổ sung bởi Luật số 57/2024/QH15 và Luật số 90/2025/QH15), Nghị định số 214/2025/NĐ-CP (đã được sửa đổi, bổ sung bởi các Nghị định số 165/2026/NĐ-CP, 170/2026/NĐ-CP và 349/2026/NĐ-CP) và Thông tư số 79/2025/TT-BTC"
+    ],
+    [
+     "Hình thức lựa chọn nhà thầu",
+     "Đấu thầu rộng rãi trong nước, qua mạng"
+    ],
+    [
+     "Phương thức lựa chọn nhà thầu",
+     "Một giai đoạn một túi hồ sơ"
+    ],
+    [
+     "Loại hợp đồng",
+     "Trọn gói"
+    ],
+    [
+     "Giá gói thầu",
+     "2.000.000.000 đồng, đã bao gồm các loại thuế, phí và lệ phí theo quy định (nếu có)"
+    ],
+    [
+     "Thời gian thực hiện hợp đồng",
+     "Từ ngày hợp đồng có hiệu lực, dự kiến ngày 18/03/2027, đến hết ngày 01/07/2027, tương đương khoảng 15 tuần"
+    ],
+    [
+     "Phát hành E-HSMT",
+     "Ngày 22/02/2027, phát hành miễn phí trên Hệ thống"
+    ],
+    [
+     "Thời gian chuẩn bị E-HSDT",
+     "14 ngày, kể từ ngày phát hành E-HSMT đến thời điểm đóng thầu"
+    ],
+    [
+     "Làm rõ E-HSMT",
+     "Nhà thầu gửi đề nghị làm rõ qua Hệ thống chậm nhất ngày 03/03/2027. Chủ đầu tư trả lời trên Hệ thống chậm nhất ngày 04/03/2027"
+    ],
+    [
+     "Hội nghị tiền đấu thầu",
+     "9 giờ 00, ngày 01/03/2027, tại <<SOẠN:DIA_DIEM_HOI_NGHI>>"
+    ],
+    [
+     "Thời điểm đóng thầu",
+     "9 giờ 00, ngày 08/03/2027"
+    ],
+    [
+     "Thời điểm mở thầu",
+     "9 giờ 30, ngày 08/03/2027"
+    ],
+    [
+     "Hiệu lực E-HSDT",
+     "≥ 90 ngày, kể từ ngày có thời điểm đóng thầu"
+    ],
+    [
+     "Bảo đảm dự thầu",
+     "30.000.000 đồng, bằng 1,5% giá gói thầu. Hiệu lực ≥ 120 ngày kể từ ngày có thời điểm đóng thầu"
+    ],
+    [
+     "Mốc đưa hệ thống vào vận hành (cut over)",
+     "Ngày 01/07/2027"
+    ],
+    [
+     "Đầu mối liên hệ",
+     "Yamada, Phòng Kế hoạch, email yamada@abc.com"
+    ]
+   ],
+   "widths": [
+    3300,
+    6300
+   ],
+   "center_cols": []
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "center",
+   "text": "Mục lục",
+   "size": 15
+  },
+  {
+   "t": "toc",
+   "muc": [
+    "Mô tả tóm tắt",
+    "Phần 1. Thủ tục đấu thầu",
+    "    Chương I. Chỉ dẫn nhà thầu",
+    "    Chương II. Bảng dữ liệu đấu thầu",
+    "    Chương III. Tiêu chuẩn đánh giá E-HSDT",
+    "    Chương IV. Biểu mẫu mời thầu và dự thầu",
+    "Phần 2. Yêu cầu về kỹ thuật",
+    "    Chương V. Yêu cầu về kỹ thuật",
+    "Phần 3A. Điều kiện hợp đồng",
+    "    Chương VI. Điều kiện chung của hợp đồng",
+    "    Chương VII. Điều kiện cụ thể của hợp đồng",
+    "Phần 4. Biểu mẫu hợp đồng"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Phần 3B (thỏa thuận khung) và phụ lục các ví dụ của Mẫu số 5A không áp dụng cho gói thầu này."
+  },
+  {
+   "t": "h2",
+   "text": "Mô tả tóm tắt"
+  },
+  {
+   "t": "p",
+   "text": "Phần 1. Thủ tục đấu thầu. Chương I cung cấp thông tin giúp nhà thầu chuẩn bị E-HSDT, được sử dụng mà không sửa đổi. Chương II quy định cụ thể nội dung của Chương I khi áp dụng cho gói thầu này. Chương III gồm các tiêu chuẩn đánh giá E-HSDT. Chương IV gồm các biểu mẫu mà Chủ đầu tư và nhà thầu hoàn chỉnh trên Hệ thống."
+  },
+  {
+   "t": "p",
+   "text": "Phần 2. Yêu cầu về kỹ thuật. Chương V nêu các yêu cầu về kỹ thuật của dịch vụ."
+  },
+  {
+   "t": "p",
+   "text": "Phần 3A. Điều kiện hợp đồng. Chương VI là điều kiện chung áp dụng cho mọi hợp đồng, được sử dụng mà không sửa đổi. Chương VII là điều kiện cụ thể của hợp đồng này, chi tiết hóa và bổ sung nhưng không thay thế điều kiện chung."
+  },
+  {
+   "t": "p",
+   "text": "Phần 4. Biểu mẫu hợp đồng gồm các biểu mẫu sau khi hoàn chỉnh sẽ trở thành một bộ phận cấu thành của hợp đồng."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "center",
+   "text": "Phần 1. Thủ tục đấu thầu",
+   "size": 16
+  },
+  {
+   "t": "h1",
+   "text": "Chương I. Chỉ dẫn nhà thầu"
+  },
+  {
+   "t": "p",
+   "text": "Chương này được sử dụng nguyên văn theo Mẫu số 5A ban hành kèm theo Thông tư số 79/2025/TT-BTC, không sửa đổi, và được cố định dạng tệp tin PDF trên Hệ thống. Các nội dung áp dụng cụ thể cho gói thầu được quy định tại Chương II."
+  },
+  {
+   "t": "fixed_table",
+   "key": "c1",
+   "widths": [
+    2300,
+    7300
+   ]
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "text": "Chương II. Bảng dữ liệu đấu thầu"
+  },
+  {
+   "t": "p",
+   "text": "Các nội dung dưới đây được nhập vào webform E-BDL trên Hệ thống."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "E-CDNT 1.1",
+     "Tên Chủ đầu tư: Công ty Cổ phần ABC Wear."
+    ],
+    [
+     "E-CDNT 1.2",
+     [
+      "Tên gói thầu: Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System).",
+      "Tên dự án: Phát triển kênh bán hàng trực tuyến của Công ty Cổ phần ABC Wear.",
+      "Số lượng, số hiệu các phần thuộc gói thầu: gói thầu không chia phần."
+     ]
+    ],
+    [
+     "E-CDNT 3",
+     "Nguồn vốn: vốn tự có, vốn chủ sở hữu của Công ty Cổ phần ABC Wear."
+    ],
+    [
+     "E-CDNT 5.1 (c)",
+     [
+      "Bảo đảm cạnh tranh trong đấu thầu theo quy định như sau: Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp trên 30% với: Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội.",
+      "+ Trường hợp nhà thầu, chủ đầu tư là công ty mẹ, công ty con, công ty thành viên trong tập đoàn kinh tế nhà nước, tổng công ty nhà nước, nhà thầu được tham dự gói thầu của chủ đầu tư nếu sản phẩm, dịch vụ thuộc gói thầu đó thuộc ngành, nghề sản xuất, kinh doanh chính của tập đoàn kinh tế nhà nước, tổng công ty nhà nước.",
+      "+ Trường hợp nhà thầu là đơn vị sự nghiệp công lập, nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với Chủ đầu tư, trừ trường hợp: nhà thầu là đơn vị sự nghiệp công lập thuộc cơ quan quản lý nhà nước có chức năng, nhiệm vụ được giao phù hợp với tính chất gói thầu của cơ quan quản lý nhà nước đó; các đơn vị sự nghiệp công lập có cùng một cơ quan trực tiếp quản lý.",
+      "+ Đơn vị sự nghiệp công lập và doanh nghiệp có cùng một cơ quan trực tiếp quản lý, góp vốn khi tham dự thầu các gói thầu của nhau không phải đáp ứng quy định độc lập về pháp lý và độc lập về tài chính giữa nhà thầu với chủ đầu tư.",
+      "- Nhà thầu tham dự thầu không có cổ phần hoặc vốn góp với các nhà thầu tư vấn; không cùng có cổ phần hoặc vốn góp trên 20% của một tổ chức, cá nhân khác với từng bên, cụ thể như sau:",
+      "+ Tư vấn lập thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán: không có.",
+      "+ Tư vấn thẩm tra thiết kế kỹ thuật, thiết kế bản vẽ thi công, dự toán: không có.",
+      "+ Tư vấn thẩm định giá: không có.",
+      "+ Tư vấn giám sát thực hiện hợp đồng, kiểm định: không có.",
+      "+ Tư vấn lập E-HSMT: không có.",
+      "+ Tư vấn thẩm định E-HSMT: không có.",
+      "+ Tư vấn đánh giá E-HSDT: không có.",
+      "+ Tư vấn thẩm định kết quả lựa chọn nhà thầu: không có.",
+      "+ Tư vấn quản lý dự án, quản lý hợp đồng, tư vấn khác mà các dịch vụ tư vấn này có phần công việc liên quan trực tiếp tới gói thầu: không có.",
+      "Nhà thầu tham dự thầu không cùng thuộc một cơ quan hoặc tổ chức trực tiếp quản lý với nhà thầu tư vấn (đã nêu trên).",
+      "Tỷ lệ cổ phần, vốn góp giữa các bên được xác định tại thời điểm đóng thầu và theo tỷ lệ ghi trong giấy chứng nhận đăng ký doanh nghiệp, quyết định thành lập, các giấy tờ khác có giá trị tương đương.",
+      "Trường hợp nhà thầu tham dự thầu với tư cách liên danh hoặc nhà thầu tư vấn được lựa chọn với tư cách liên danh, tỷ lệ sở hữu vốn của tổ chức, cá nhân khác trong liên danh được xác định theo công thức sau:",
+      "Tỷ lệ sở hữu vốn = X1 x Y1 + X2 x Y2 + ... + Xn x Yn",
+      "Trong đó:",
+      "Xi: Tỷ lệ sở hữu vốn của tổ chức, cá nhân khác trong thành viên liên danh thứ i.",
+      "Yi: Tỷ lệ phần trăm (%) khối lượng công việc của thành viên liên danh thứ i trong thỏa thuận liên danh.",
+      "n: Số thành viên tham gia trong liên danh.",
+      "- Nhà thầu trong nước thuộc trường hợp quy định tại điểm g khoản 1 Điều 10 của Luật Đấu thầu khi chào thầu dịch vụ do nhà thầu đó cung cấp không phải đáp ứng quy định về bảo đảm cạnh tranh quy định tại Mục này."
+     ]
+    ],
+    [
+     "E-CDNT 7.5",
+     "Hội nghị tiền đấu thầu: Có. Thời gian: 9 giờ 00, ngày 01/03/2027. Địa điểm: <<SOẠN:DIA_DIEM_HOI_NGHI>>. Người chịu trách nhiệm tổ chức: Yamada, Phòng Kế hoạch, điện thoại 024 0000 1010, email yamada@abc.com."
+    ],
+    [
+     "E-CDNT 8",
+     "Chi phí nộp E-HSDT: theo quy định hiện hành, do Hệ thống trích xuất."
+    ],
+    [
+     "E-CDNT 10.8",
+     "Nhà thầu phải nộp cùng với E-HSDT các tài liệu sau đây: không yêu cầu."
+    ],
+    [
+     "E-CDNT 12.1",
+     "Nhà thầu không được phép nộp đề xuất phương án kỹ thuật thay thế."
+    ],
+    [
+     "E-CDNT 17.1",
+     "Thời hạn hiệu lực của E-HSDT là: ≥ 90 ngày, kể từ ngày có thời điểm đóng thầu."
+    ],
+    [
+     "E-CDNT 18.2",
+     [
+      "Nội dung bảo đảm dự thầu:",
+      "- Giá trị bảo đảm dự thầu: 30.000.000 đồng. Do giá trị bảo đảm dự thầu nhỏ hơn 50 triệu đồng, nhà thầu thực hiện cam kết trong đơn dự thầu theo quy định tại Mục 18.8 E-CDNT. Đối với nhà thầu có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP và được đăng tải trên Hệ thống mạng đấu thầu quốc gia phải thực hiện biện pháp bảo đảm dự thầu với giá trị gấp 03 lần giá trị yêu cầu nêu trên trong thời hạn 02 năm kể từ lần cuối cùng thực hiện các hành vi này. Trường hợp nhà thầu liên danh, thành viên liên danh có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP như nêu trên phải thực hiện biện pháp bảo đảm dự thầu với giá trị gấp 03 lần giá trị bảo đảm dự thầu tương ứng với tỷ lệ giá trị công việc thành viên đó đảm nhận trong liên danh trong thời hạn 02 năm kể từ lần cuối cùng thực hiện hành vi này.",
+      "- Thời gian có hiệu lực của bảo đảm dự thầu: ≥ 120 ngày, kể từ ngày có thời điểm đóng thầu."
+     ]
+    ],
+    [
+     "E-CDNT 18.4",
+     "Thời gian hoàn trả hoặc giải tỏa bảo đảm dự thầu đối với nhà thầu không được lựa chọn: 14 ngày, kể từ ngày kết quả lựa chọn nhà thầu được phê duyệt."
+    ],
+    [
+     "E-CDNT 18.9",
+     "Bảo đảm dự thầu: không áp dụng."
+    ],
+    [
+     "E-CDNT 27.2",
+     "Giá trị tối đa dành cho nhà thầu phụ: 40% giá dự thầu của nhà thầu. Việc kê khai sử dụng nhà thầu phụ thực hiện theo Mẫu số 09A Chương IV."
+    ],
+    [
+     "E-CDNT 28.2",
+     [
+      "Cách tính ưu đãi: sản phẩm đổi mới sáng tạo quy định tại khoản 4 Điều 6 của Nghị định số 214/2025/NĐ-CP là dịch vụ phi tư vấn của doanh nghiệp khởi nghiệp sáng tạo trong nước được hưởng ưu đãi như sau:",
+      "Nhà thầu không thuộc đối tượng được hưởng ưu đãi phải cộng thêm một khoản tiền bằng 7,5% giá dự thầu trừ đi giá trị giảm giá (nếu có) vào giá dự thầu trừ đi giá trị giảm giá (nếu có) của nhà thầu đó để so sánh, xếp hạng."
+     ]
+    ],
+    [
+     "E-CDNT 28.8",
+     "Các ưu đãi khác: không có."
+    ],
+    [
+     "E-CDNT 29.1",
+     [
+      "Phương pháp đánh giá E-HSDT là:",
+      "- Đánh giá về năng lực và kinh nghiệm: Đạt/Không đạt.",
+      "- Đánh giá về kỹ thuật: chấm điểm, theo Mục 3 Chương III.",
+      "- Đánh giá về tài chính: phương pháp giá thấp nhất, theo Mục 4 Chương III."
+     ]
+    ],
+    [
+     "E-CDNT 29.3 (đ)",
+     "Xếp hạng nhà thầu: nhà thầu có giá dự thầu sau khi trừ đi giá trị giảm giá (nếu có) thấp nhất được xếp hạng thứ nhất."
+    ],
+    [
+     "E-CDNT 31.4",
+     "Nhà thầu có giá dự thầu sau khi trừ đi giá trị giảm giá (nếu có) thấp nhất."
+    ],
+    [
+     "E-CDNT 31.5",
+     "Giá gói thầu để làm căn cứ xét duyệt trúng thầu: giá gói thầu được phê duyệt trong kế hoạch lựa chọn nhà thầu là 2.000.000.000 đồng. Trường hợp dự toán của gói thầu được phê duyệt thấp hơn hoặc cao hơn giá gói thầu được phê duyệt thì dự toán này sẽ thay thế giá gói thầu để làm cơ sở xét duyệt trúng thầu."
+    ],
+    [
+     "E-CDNT 34.1",
+     "Tỷ lệ tăng khối lượng tối đa là: 0%. Tỷ lệ giảm khối lượng tối đa là: 0%. Thay đổi đặc tả, khối lượng sau khi ký hợp đồng thực hiện theo Mục 17 E-ĐKC và Mục 17.1 E-ĐKCT."
+    ],
+    [
+     "E-CDNT 34.2",
+     "Tùy chọn mua thêm: không áp dụng."
+    ],
+    [
+     "E-CDNT 38.1",
+     [
+      "- Người có thẩm quyền: Tổng Giám đốc Công ty Cổ phần ABC Wear.",
+      "+ Địa chỉ: Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội, điện thoại 024 0000 1010, fax 024 0000 1011.",
+      "+ E-mail nhận đơn kiến nghị: yamada@abc.com (Phòng Kế hoạch tiếp nhận và chuyển người có thẩm quyền).",
+      "- Bộ phận thường trực giúp việc cho Chủ tịch Hội đồng giải quyết kiến nghị: không thành lập, do gói thầu sử dụng vốn tự có của doanh nghiệp. Kiến nghị do người có thẩm quyền giải quyết."
+     ]
+    ],
+    [
+     "E-CDNT 38.2",
+     "<<SOẠN:BDL_38_2>>"
+    ]
+   ],
+   "widths": [
+    2000,
+    7600
+   ],
+   "center_cols": []
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "text": "Chương III. Tiêu chuẩn đánh giá E-HSDT"
+  },
+  {
+   "t": "h2",
+   "text": "Mục 1. Đánh giá tính hợp lệ của E-HSDT"
+  },
+  {
+   "t": "fixed_paras",
+   "key": "muc1"
+  },
+  {
+   "t": "h2",
+   "text": "Mục 2. Tiêu chuẩn đánh giá về năng lực và kinh nghiệm"
+  },
+  {
+   "t": "h2",
+   "text": "2.1. Tiêu chuẩn đánh giá về năng lực và kinh nghiệm"
+  },
+  {
+   "t": "p",
+   "text": "Tiêu chuẩn đánh giá năng lực và kinh nghiệm thực hiện theo quy định tại Bảng số 01 Chương này và được số hóa dưới dạng webform trên Hệ thống, sử dụng tiêu chí đạt, không đạt. Nhà thầu được đánh giá đạt tất cả nội dung quy định tại Bảng số 01 thì đáp ứng yêu cầu về năng lực và kinh nghiệm. Năng lực và kinh nghiệm của nhà thầu phụ sẽ không được xem xét khi đánh giá E-HSDT của nhà thầu. Bản thân nhà thầu phải đáp ứng các tiêu chí đánh giá về năng lực và kinh nghiệm."
+  },
+  {
+   "t": "p",
+   "text": "Trường hợp đồng tiền nêu trong các hợp đồng tương tự hoặc xác nhận thanh toán của Chủ đầu tư đối với những hợp đồng cung cấp dịch vụ phi tư vấn đã thực hiện hoặc tờ khai nộp thuế hoặc các tài liệu liên quan chứng minh năng lực, kinh nghiệm của nhà thầu không phải VND thì khi lập E-HSDT, nhà thầu phải quy đổi về VND để làm cơ sở đánh giá E-HSDT. Việc quy đổi được áp dụng tỷ giá bán ra của một ngân hàng thương mại hoạt động tại Việt Nam tại ngày ký hợp đồng tương tự đó."
+  },
+  {
+   "t": "p",
+   "text": "Trường hợp nhà thầu tham dự thầu là công ty mẹ (ví dụ như Tổng công ty) có huy động công ty con, công ty thành viên thực hiện một phần công việc của gói thầu thì nhà thầu phải kê khai cụ thể phần công việc dành cho các công ty con, công ty thành viên theo Mẫu số 09B Chương IV. Việc đánh giá kinh nghiệm thực hiện hợp đồng tương tự căn cứ vào giá trị, khối lượng công việc do công ty mẹ, công ty con, công ty thành viên đảm nhiệm trong gói thầu."
+  },
+  {
+   "t": "p",
+   "text": "Bảng số 01. Bảng tiêu chuẩn đánh giá về năng lực và kinh nghiệm (webform trên Hệ thống)"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "TT",
+     "Mô tả",
+     "Yêu cầu",
+     "Nhà thầu độc lập",
+     "Liên danh: tổng các thành viên",
+     "Liên danh: từng thành viên",
+     "Tài liệu cần nộp"
+    ],
+    [
+     "1",
+     "Lịch sử không hoàn thành hợp đồng do lỗi của nhà thầu",
+     "Từ ngày 01 tháng 01 năm 2024 đến thời điểm đóng thầu, nhà thầu không có từ 02 hợp đồng trở lên (cung cấp dịch vụ phi tư vấn) không hoàn thành do lỗi của nhà thầu.",
+     "Phải thỏa mãn yêu cầu này",
+     "Không áp dụng",
+     "Phải thỏa mãn yêu cầu này",
+     "Mẫu số 07"
+    ],
+    [
+     "2",
+     "Thực hiện nghĩa vụ kê khai thuế và nộp thuế",
+     "Đã thực hiện nghĩa vụ kê khai thuế và nộp thuế của năm tài chính gần nhất so với thời điểm đóng thầu (năm 2025).",
+     "Phải thỏa mãn yêu cầu này",
+     "Không áp dụng",
+     "Phải thỏa mãn yêu cầu này",
+     "Cam kết trong đơn dự thầu"
+    ],
+    [
+     "3",
+     "Doanh thu bình quân hằng năm (không bao gồm thuế VAT)",
+     "Áp dụng. Doanh thu bình quân hằng năm (không bao gồm thuế VAT) của 03 năm tài chính gần nhất so với thời điểm đóng thầu (các năm 2023, 2024, 2025) tối thiểu là 2.000.000.000 đồng, bằng (giá gói thầu trừ giá trị thuế GTGT) nhân hệ số k bằng 1,0 theo cách tính đối với gói thầu có thời gian thực hiện dưới 12 tháng. Giá trị thuế GTGT bằng 0 do dịch vụ phần mềm thuộc đối tượng không chịu thuế GTGT (Luật Thuế GTGT số 48/2024/QH15, khoản 21 Điều 5).",
+     "Phải thỏa mãn yêu cầu này",
+     "Phải thỏa mãn yêu cầu này",
+     "Không áp dụng",
+     "Mẫu số 08"
+    ],
+    [
+     "4",
+     "Kinh nghiệm cụ thể trong thực hiện hợp đồng tương tự",
+     "Áp dụng. Từ ngày 01 tháng 01 năm 2024 đến thời điểm đóng thầu, nhà thầu đã hoàn thành tối thiểu 01 hợp đồng tương tự với tư cách là nhà thầu chính (độc lập hoặc thành viên liên danh) hoặc nhà thầu phụ, có giá trị tối thiểu 600.000.000 đồng (30% giá gói thầu). Đối với hợp đồng nhà thầu tham gia với tư cách thành viên liên danh hoặc nhà thầu phụ thì chỉ tính giá trị phần việc do nhà thầu thực hiện. Hợp đồng tương tự là hợp đồng xây dựng, triển khai website bán hàng, thương mại điện tử hoặc phần mềm ứng dụng web có tích hợp với hệ thống khác.",
+     "Phải thỏa mãn yêu cầu này",
+     "Không áp dụng",
+     "Phải thỏa mãn yêu cầu (tương đương với phần công việc đảm nhận)",
+     "Mẫu số 05"
+    ]
+   ],
+   "widths": [
+    560,
+    1450,
+    2950,
+    1150,
+    1150,
+    1250,
+    1090
+   ],
+   "center_cols": []
+  },
+  {
+   "t": "h2",
+   "text": "2.2. Tiêu chuẩn đánh giá về nhân sự chủ chốt và thiết bị chủ yếu"
+  },
+  {
+   "t": "p",
+   "text": "a) Nhân sự chủ chốt. <<SOẠN:NHAN_SU_LY_DO>>"
+  },
+  {
+   "t": "p",
+   "text": "Trường hợp E-HSMT có yêu cầu về nhân sự chủ chốt thì nhà thầu phải chứng minh khả năng huy động các nhân sự chủ chốt đã đề xuất. Nhân sự chủ chốt có thể thuộc biên chế của nhà thầu hoặc do nhà thầu huy động."
+  },
+  {
+   "t": "p",
+   "text": "Trường hợp nhân sự chủ chốt mà nhà thầu kê khai trong E-HSDT không đáp ứng yêu cầu hoặc không chứng minh được khả năng huy động nhân sự (bao gồm cả trường hợp nhân sự chủ chốt đã huy động cho hợp đồng khác có thời gian làm việc trùng với thời gian thực hiện gói thầu này), Chủ đầu tư cho phép nhà thầu bổ sung, thay thế. Nhà thầu chỉ được phép bổ sung, thay thế một lần đối với từng vị trí nhân sự chủ chốt trong một khoảng thời gian phù hợp nhưng không ít hơn 03 ngày làm việc. Trường hợp nhà thầu không có nhân sự chủ chốt thay thế đáp ứng yêu cầu của E-HSMT thì nhà thầu bị loại. Trường hợp nhà thầu cố ý kê khai nhân sự chủ chốt không trung thực trong E-HSDT nhằm làm sai lệch kết quả lựa chọn nhà thầu thì nhà thầu không được thay thế nhân sự khác, E-HSDT của nhà thầu bị loại và nhà thầu sẽ bị coi là gian lận theo quy định tại điểm b khoản 4 Điều 16 của Luật Đấu thầu và bị xử lý theo quy định tại khoản 1 Điều 133 của Nghị định số 214/2025/NĐ-CP."
+  },
+  {
+   "t": "p",
+   "text": "Yêu cầu về nhân sự chủ chốt được số hóa dưới dạng Webform trên Hệ thống. Kinh nghiệm trong các công việc tương tự được thể hiện ở số năm tối thiểu nhân sự thực hiện các công việc tương tự hoặc số hợp đồng tối thiểu trong các công việc tương tự. Số năm kinh nghiệm của nhân sự chủ chốt được tính từ thời điểm nhân sự bắt đầu thực hiện công việc tương tự đó đến thời điểm đóng thầu. Nhà thầu phải cung cấp thông tin chi tiết về các nhân sự chủ chốt được đề xuất theo các Mẫu số 06A, 06B và 06C Chương IV để chứng minh rằng mình có đầy đủ nhân sự cho các vị trí chủ chốt đáp ứng những yêu cầu sau đây:"
+  },
+  {
+   "t": "p",
+   "text": "Bảng số 02. Yêu cầu về nhân sự chủ chốt (webform trên Hệ thống)"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "STT",
+     "Vị trí công việc",
+     "Số lượng",
+     "Kinh nghiệm trong các công việc tương tự",
+     "Chứng chỉ/trình độ chuyên môn"
+    ],
+    [
+     "1",
+     "Quản trị dự án",
+     "1",
+     "Tối thiểu 03 năm quản lý dự án phần mềm hoặc tối thiểu 02 hợp đồng tương tự",
+     "Không yêu cầu"
+    ],
+    [
+     "2",
+     "Kỹ sư phát triển phần mềm",
+     "3",
+     "Tối thiểu 02 năm lập trình ứng dụng web",
+     "Không yêu cầu"
+    ],
+    [
+     "3",
+     "Kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử",
+     "1",
+     "Tối thiểu 02 năm phân tích nghiệp vụ hoặc kiểm thử phần mềm",
+     "Không yêu cầu"
+    ]
+   ],
+   "widths": [
+    600,
+    2400,
+    900,
+    3800,
+    1900
+   ],
+   "center_cols": [
+    0,
+    2
+   ]
+  },
+  {
+   "t": "p",
+   "text": "b) Thiết bị chủ yếu: không yêu cầu, do gói thầu không cần thiết bị đặc chủng."
+  },
+  {
+   "t": "p",
+   "text": "c) Trường hợp nhà thầu trúng thầu và ký kết hợp đồng, nhà thầu có nghĩa vụ huy động nhân sự chủ chốt, thiết bị chủ yếu như đã đề xuất ban đầu hoặc đề xuất thay đổi theo quy định tại Mục này. Trường hợp không huy động được nhân sự chủ chốt, thiết bị chủ yếu, nhà thầu bị phạt hợp đồng. Việc thay thế nhân sự chủ chốt thực hiện theo Mục 21 E-ĐKC và Mục 21.2 E-ĐKCT. Chậm thực hiện công việc do không huy động nhân sự chủ chốt bị phạt theo Mục 15 E-ĐKCT."
+  },
+  {
+   "t": "h2",
+   "text": "Mục 3. Tiêu chuẩn đánh giá về kỹ thuật"
+  },
+  {
+   "t": "p",
+   "text": "Áp dụng phương pháp chấm điểm theo thang điểm 100. Mức điểm yêu cầu tối thiểu về kỹ thuật là 70 điểm, bằng 70% tổng số điểm tối đa. Mỗi tiêu chí tổng quát phải đạt tối thiểu mức điểm nêu tại bảng dưới đây. Tiêu chuẩn đánh giá được xây dựng trên các sản phẩm đầu ra nêu tại Chương V. Đề xuất kỹ thuật của nhà thầu trình bày đủ các nội dung nêu tại mục 4 Chương V."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "STT",
+     "Tiêu chí tổng quát",
+     "Điểm tối đa",
+     "Điểm tối thiểu"
+    ],
+    [
+     "1",
+     "<<SOẠN:TIEU_CHI_1>>",
+     "30",
+     "18"
+    ],
+    [
+     "2",
+     "<<SOẠN:TIEU_CHI_2>>",
+     "20",
+     "12"
+    ],
+    [
+     "3",
+     "<<SOẠN:TIEU_CHI_3>>",
+     "20",
+     "12"
+    ],
+    [
+     "4",
+     "<<SOẠN:TIEU_CHI_4>>",
+     "15",
+     "9"
+    ],
+    [
+     "5",
+     "<<SOẠN:TIEU_CHI_5>>",
+     "15",
+     "9"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "100",
+     "70"
+    ]
+   ],
+   "widths": [
+    600,
+    6000,
+    1500,
+    1500
+   ],
+   "center_cols": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Điểm của mỗi tiêu chí tổng quát bằng tổng điểm của các tiêu chí chi tiết thuộc tiêu chí đó, chấm theo các mức nêu tại Bảng tiêu chí chi tiết dưới đây. Tổng điểm kỹ thuật bằng tổng điểm của các tiêu chí tổng quát. Cách tính này tương đương công thức tại Mục 3.1 Chương III Mẫu số 5A, trong đó tỷ trọng của mỗi tiêu chí chi tiết bằng điểm tối đa của tiêu chí chi tiết chia cho điểm tối đa của tiêu chí tổng quát chứa nó."
+  },
+  {
+   "t": "p",
+   "text": "Tiêu chí chi tiết cơ bản được đánh dấu tại cột Tiêu chí cơ bản. Mức điểm tối thiểu chỉ quy định đối với tiêu chí chi tiết cơ bản."
+  },
+  {
+   "t": "p",
+   "text": "Bảng tiêu chí chi tiết"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "STT",
+     "Tiêu chí chi tiết",
+     "Điểm tối đa",
+     "Tiêu chí cơ bản",
+     "Mức chấm điểm"
+    ],
+    "<<SOẠN:TIEU_CHI_CHI_TIET>>"
+   ],
+   "widths": [
+    700,
+    3300,
+    900,
+    1100,
+    3600
+   ],
+   "center_cols": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Điều kiện khác, đề nghị đối với Chủ đầu tư mà nhà thầu nêu trong E-HSDT không được tính điểm kỹ thuật. Các nội dung này được xem xét theo Mục 24 và Mục 25 E-CDNT về sai khác, đặt điều kiện và tính đáp ứng của E-HSDT."
+  },
+  {
+   "t": "p",
+   "text": "E-HSDT đạt yêu cầu về kỹ thuật khi tổng điểm kỹ thuật không thấp hơn 70 điểm, từng tiêu chí tổng quát không thấp hơn mức điểm tối thiểu và từng tiêu chí chi tiết cơ bản có quy định mức điểm tối thiểu không thấp hơn mức đó."
+  },
+  {
+   "t": "h2",
+   "text": "Mục 4. Tiêu chuẩn đánh giá về tài chính"
+  },
+  {
+   "t": "p",
+   "text": "Áp dụng phương pháp giá thấp nhất. Bước 1: xác định giá dự thầu, trừ đi giá trị giảm giá (nếu có). Bước 2: xác định ưu đãi (nếu có) theo Mục 28 E-CDNT. Bước 3: xếp hạng nhà thầu, E-HSDT có giá dự thầu trừ đi giá trị giảm giá (nếu có), sau ưu đãi (nếu có) thấp nhất được xếp hạng thứ nhất. Chỉ E-HSDT đáp ứng yêu cầu về năng lực, kinh nghiệm và về kỹ thuật mới được xem xét về giá. Giá đề nghị trúng thầu không vượt giá gói thầu."
+  },
+  {
+   "t": "h2",
+   "text": "Mục 5. Phương án kỹ thuật thay thế trong E-HSDT"
+  },
+  {
+   "t": "p",
+   "text": "Không áp dụng, do nhà thầu không được phép nộp phương án kỹ thuật thay thế theo Mục 12.1 E-BDL."
+  },
+  {
+   "t": "h2",
+   "text": "Mục 6. Trường hợp gói thầu chia thành nhiều phần độc lập"
+  },
+  {
+   "t": "p",
+   "text": "Không áp dụng, do gói thầu không chia phần."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "text": "Chương IV. Biểu mẫu mời thầu và dự thầu"
+  },
+  {
+   "t": "h2",
+   "text": "1. Danh mục biểu mẫu"
+  },
+  {
+   "t": "p",
+   "text": "Các biểu mẫu được số hóa dưới dạng webform và sử dụng theo Mẫu số 5A ban hành kèm theo Thông tư số 79/2025/TT-BTC."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "STT",
+     "Biểu mẫu",
+     "Cách thức thực hiện",
+     "Trách nhiệm thực hiện",
+     "Áp dụng"
+    ],
+    [
+     "1",
+     "Mẫu số 01A. Phạm vi cung cấp (áp dụng đối với loại hợp đồng trọn gói, hợp đồng theo kết quả đầu ra)",
+     "Webform",
+     "Chủ đầu tư",
+     "Áp dụng, nội dung tại mục 2 Chương này"
+    ],
+    [
+     "2",
+     "Mẫu số 01B. Phạm vi cung cấp (áp dụng đối với loại hợp đồng theo đơn giá cố định)",
+     "Webform",
+     "Chủ đầu tư",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "3",
+     "Mẫu số 01C. Phạm vi cung cấp (áp dụng đối với loại hợp đồng theo đơn giá điều chỉnh)",
+     "Webform",
+     "Chủ đầu tư",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "4",
+     "Mẫu số 01D. Phạm vi cung cấp (áp dụng đối với loại hợp đồng theo tỷ lệ phần trăm)",
+     "Webform",
+     "Chủ đầu tư",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "5",
+     "Mẫu số 01E. Phạm vi cung cấp (áp dụng đối với loại hợp đồng theo thời gian)",
+     "Webform",
+     "Chủ đầu tư",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "6",
+     "Mẫu số 01G. Phạm vi cung cấp (áp dụng đối với loại hợp đồng hỗn hợp)",
+     "Webform",
+     "Chủ đầu tư",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "7",
+     "Mẫu số 02. Đơn dự thầu",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng"
+    ],
+    [
+     "8",
+     "Mẫu số 03. Thỏa thuận liên danh",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng đối với nhà thầu liên danh"
+    ],
+    [
+     "9",
+     "Mẫu số 04A. Bảo lãnh dự thầu (áp dụng trong trường hợp nhà thầu độc lập)",
+     "Scan đính kèm lên Hệ thống hoặc bảo lãnh điện tử",
+     "Nhà thầu",
+     "Áp dụng khi được mời đối chiếu tài liệu hoặc khi vi phạm theo Mục 18.8 E-CDNT"
+    ],
+    [
+     "10",
+     "Mẫu số 04B. Bảo lãnh dự thầu (áp dụng trong trường hợp nhà thầu liên danh)",
+     "Scan đính kèm lên Hệ thống hoặc bảo lãnh điện tử",
+     "Nhà thầu",
+     "Áp dụng khi được mời đối chiếu tài liệu hoặc khi vi phạm theo Mục 18.8 E-CDNT"
+    ],
+    [
+     "11",
+     "Mẫu số 05. Hợp đồng tương tự do nhà thầu thực hiện",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng"
+    ],
+    [
+     "12",
+     "Mẫu số 06A. Bảng đề xuất nhân sự chủ chốt",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng"
+    ],
+    [
+     "13",
+     "Mẫu số 06B. Bảng lý lịch chuyên môn của nhân sự chủ chốt",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng"
+    ],
+    [
+     "14",
+     "Mẫu số 06C. Bảng kinh nghiệm chuyên môn",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng"
+    ],
+    [
+     "15",
+     "Mẫu số 06D. Bảng kê khai thiết bị chủ yếu",
+     "Webform",
+     "Nhà thầu",
+     "Không áp dụng, do không yêu cầu thiết bị chủ yếu"
+    ],
+    [
+     "16",
+     "Mẫu số 07. Hợp đồng cung cấp dịch vụ phi tư vấn không hoàn thành do lỗi của nhà thầu trong quá khứ",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng"
+    ],
+    [
+     "17",
+     "Mẫu số 08. Tình hình tài chính của nhà thầu",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng"
+    ],
+    [
+     "18",
+     "Mẫu số 09A. Phạm vi công việc sử dụng nhà thầu phụ",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng khi sử dụng nhà thầu phụ"
+    ],
+    [
+     "19",
+     "Mẫu số 09B. Danh sách các công ty con, công ty thành viên đảm nhận phần công việc của gói thầu",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng khi có"
+    ],
+    [
+     "20",
+     "Mẫu số 10A. Bảng tiến độ thực hiện (áp dụng đối với loại hợp đồng trọn gói, hợp đồng theo kết quả đầu ra, hợp đồng theo đơn giá cố định, hợp đồng theo đơn giá điều chỉnh)",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng"
+    ],
+    [
+     "21",
+     "Mẫu số 10B. Bảng tiến độ thực hiện (áp dụng đối với loại hợp đồng theo tỷ lệ phần trăm)",
+     "Webform",
+     "Nhà thầu",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "22",
+     "Mẫu số 10C. Bảng tiến độ thực hiện (áp dụng đối với loại hợp đồng theo thời gian)",
+     "Webform",
+     "Nhà thầu",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "23",
+     "Mẫu số 10D. Bảng tiến độ thực hiện (áp dụng đối với loại hợp đồng hỗn hợp)",
+     "Webform",
+     "Nhà thầu",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "24",
+     "Mẫu số 11A. Bảng giá dự thầu (áp dụng đối với loại hợp đồng trọn gói, hợp đồng theo kết quả đầu ra)",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng"
+    ],
+    [
+     "25",
+     "Mẫu số 11B. Bảng giá dự thầu (áp dụng đối với loại hợp đồng theo đơn giá cố định)",
+     "Webform",
+     "Nhà thầu",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "26",
+     "Mẫu số 11C. Bảng giá dự thầu (áp dụng đối với loại hợp đồng theo đơn giá điều chỉnh)",
+     "Webform",
+     "Nhà thầu",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "27",
+     "Mẫu số 11D. Bảng giá dự thầu (áp dụng đối với loại hợp đồng theo tỷ lệ phần trăm)",
+     "Webform",
+     "Nhà thầu",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "28",
+     "Mẫu số 11E. Bảng giá dự thầu (áp dụng đối với loại hợp đồng theo thời gian)",
+     "Webform",
+     "Nhà thầu",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "29",
+     "Mẫu số 11G. Bảng giá dự thầu (áp dụng đối với loại hợp đồng hỗn hợp)",
+     "Webform",
+     "Nhà thầu",
+     "Không áp dụng, do hợp đồng trọn gói"
+    ],
+    [
+     "30",
+     "Mẫu số 12. Bảng kê khai dịch vụ được hưởng ưu đãi",
+     "Webform",
+     "Nhà thầu",
+     "Áp dụng khi có"
+    ]
+   ],
+   "widths": [
+    600,
+    3600,
+    1800,
+    1200,
+    2400
+   ],
+   "center_cols": [
+    0
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "2. Mẫu số 01A. Phạm vi cung cấp (hợp đồng trọn gói)"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "STT",
+     "Danh mục dịch vụ",
+     "Mô tả dịch vụ",
+     "Khối lượng mời thầu",
+     "Đơn vị tính",
+     "Địa điểm thực hiện dịch vụ",
+     "Ngày hoàn thành dịch vụ"
+    ],
+    "<<SOẠN:MAU_01A>>"
+   ],
+   "widths": [
+    500,
+    1900,
+    2200,
+    900,
+    800,
+    1800,
+    1500
+   ],
+   "center_cols": [
+    0,
+    3,
+    4
+   ]
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "center",
+   "text": "Phần 2. Yêu cầu về kỹ thuật",
+   "size": 16
+  },
+  {
+   "t": "h1",
+   "text": "Chương V. Yêu cầu về kỹ thuật"
+  },
+  {
+   "t": "h2",
+   "text": "1. Giới thiệu chung về dự án và gói thầu"
+  },
+  {
+   "t": "p",
+   "text": "<<SOẠN:C5_1>>"
+  },
+  {
+   "t": "h2",
+   "text": "2. Mục tiêu công việc"
+  },
+  {
+   "t": "p",
+   "text": "<<SOẠN:C5_2>>"
+  },
+  {
+   "t": "h2",
+   "text": "3. Yêu cầu kỹ thuật của gói thầu"
+  },
+  {
+   "t": "p",
+   "text": "<<SOẠN:C5_3>>"
+  },
+  {
+   "t": "p",
+   "text": "3.5. Phân định trách nhiệm và giả định. Giá dự thầu trọn gói được lập trên cơ sở phân định dưới đây. Trường hợp Chủ đầu tư cung cấp hoặc hoàn thành chậm so với thời hạn nêu tại bảng, các mốc liên quan được lùi tương ứng số ngày chậm theo Mục 18 (e) E-ĐKCT."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "STT",
+     "Nội dung",
+     "Phân định"
+    ],
+    [
+     "1",
+     "Máy chủ vận hành hệ thống",
+     "Chủ đầu tư cung cấp theo cấu hình đã thống nhất, chậm nhất ngày 10/06/2027. Cấu hình tối thiểu do nhà thầu đề xuất trong E-HSDT, hai bên thống nhất khi xác nhận đặc tả yêu cầu trước khi thanh toán Đợt 2 theo Mục 13.1 E-ĐKCT"
+    ],
+    [
+     "2",
+     "Đường truyền kết nối internet và kết nối tới hệ thống hiện có",
+     "Chủ đầu tư cung cấp theo cấu hình đã thống nhất, chậm nhất ngày 10/06/2027. Cấu hình tối thiểu do nhà thầu đề xuất trong E-HSDT, hai bên thống nhất khi xác nhận đặc tả yêu cầu trước khi thanh toán Đợt 2 theo Mục 13.1 E-ĐKCT"
+    ],
+    [
+     "3",
+     "Phần mềm nền (hệ điều hành, hệ quản trị cơ sở dữ liệu, máy chủ ứng dụng) và bản quyền",
+     "Chủ đầu tư cung cấp theo cấu hình đã thống nhất, chậm nhất ngày 10/06/2027. Cấu hình tối thiểu do nhà thầu đề xuất trong E-HSDT, hai bên thống nhất khi xác nhận đặc tả yêu cầu trước khi thanh toán Đợt 2 theo Mục 13.1 E-ĐKCT"
+    ],
+    [
+     "4",
+     "Môi trường phát triển và kiểm thử hệ thống",
+     "Nhà thầu cung cấp, chi phí tính trong giá dự thầu"
+    ],
+    [
+     "5",
+     "Thông tin, giao diện trao đổi dữ liệu của hệ thống hiện có (Main System)",
+     "Chủ đầu tư cung cấp tài liệu đặc tả giao diện trao đổi dữ liệu sản phẩm, bán hàng, giao dịch của Main System chậm nhất ngày 14/04/2027, tức 27 ngày kể từ ngày hợp đồng có hiệu lực."
+    ],
+    [
+     "6",
+     "Môi trường thử của hệ thống hiện có (Main System)",
+     "Chủ đầu tư cung cấp chậm nhất ngày 20/05/2027"
+    ],
+    [
+     "7",
+     "Thay đổi phía hệ thống hiện có (Main System) để trao đổi dữ liệu với hệ thống mới",
+     "Chủ đầu tư thực hiện, nhà thầu chịu trách nhiệm phía hệ thống mới. Chủ đầu tư hoàn thành thay đổi chậm nhất ngày 20/05/2027"
+    ],
+    [
+     "8",
+     "Môi trường kiểm thử vận hành và đo các yêu cầu phi chức năng",
+     "Thực hiện trên hạ tầng vận hành chính thức"
+    ],
+    [
+     "9",
+     "Điều kiện đo các yêu cầu phi chức năng tại mục 3.4",
+     "Nhà thầu đề xuất điều kiện đo trong E-HSDT (tải, số người dùng đồng thời, cách tính thời gian hoạt động liên tục, điểm đo). Hai bên xác nhận điều kiện đo trong đặc tả yêu cầu trước khi thanh toán Đợt 2 theo Mục 13.1 E-ĐKCT."
+    ]
+   ],
+   "widths": [
+    600,
+    3800,
+    5200
+   ],
+   "center_cols": [
+    0
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Giải pháp và phương pháp luận"
+  },
+  {
+   "t": "p",
+   "text": "<<SOẠN:C5_4>>"
+  },
+  {
+   "t": "h2",
+   "text": "5. Quy định về kiểm tra, nghiệm thu sản phẩm"
+  },
+  {
+   "t": "p",
+   "text": "<<SOẠN:C5_5>>"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "center",
+   "text": "Phần 3A. Điều kiện hợp đồng",
+   "size": 16
+  },
+  {
+   "t": "h1",
+   "text": "Chương VI. Điều kiện chung của hợp đồng"
+  },
+  {
+   "t": "p",
+   "text": "Chương này được sử dụng nguyên văn theo Mẫu số 5A ban hành kèm theo Thông tư số 79/2025/TT-BTC, không sửa đổi, và được cố định dạng tệp tin PDF trên Hệ thống."
+  },
+  {
+   "t": "fixed_table",
+   "key": "c6",
+   "widths": [
+    2300,
+    7300
+   ]
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "text": "Chương VII. Điều kiện cụ thể của hợp đồng"
+  },
+  {
+   "t": "p",
+   "text": "Các nội dung dưới đây được nhập vào webform E-ĐKCT trên Hệ thống, chi tiết hóa và bổ sung nhưng không thay thế điều kiện chung của hợp đồng."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "E-ĐKC 1.3",
+     "Chủ đầu tư: Công ty Cổ phần ABC Wear. Địa chỉ: Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội. Số tài khoản: 0000001010 tại Ngân hàng giả định, chi nhánh Hà Nội. Mã số thuế: 0000001010. Điện thoại: 024 0000 1010. Fax: 024 0000 1011. E-mail: yamada@abc.com. Đại diện: Tổng Giám đốc."
+    ],
+    [
+     "E-ĐKC 1.5",
+     "<<SOẠN:DKC_1_5>>"
+    ],
+    [
+     "E-ĐKC 1.11",
+     "Nhà thầu: nhà thầu trúng thầu. Tên, địa chỉ, số tài khoản, mã số thuế được ghi khi hoàn thiện hợp đồng."
+    ],
+    [
+     "E-ĐKC 2.2 (i)",
+     "<<SOẠN:DKC_2_2_i>>"
+    ],
+    [
+     "E-ĐKC 4.1",
+     "Các thông báo gửi về Chủ đầu tư theo địa chỉ dưới đây. Người nhận: Yamada, Phòng Kế hoạch. Địa chỉ: Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội. Điện thoại: +84 24 0000 1010. Fax: +84 24 0000 1011. Địa chỉ email: yamada@abc.com."
+    ],
+    [
+     "E-ĐKC 5.2",
+     [
+      "- Giá trị bảo đảm thực hiện hợp đồng: 3% giá hợp đồng.",
+      "- Hiệu lực của bảo đảm thực hiện hợp đồng: kể từ ngày hợp đồng có hiệu lực cho đến hết ngày 31 tháng 07 năm 2027."
+     ]
+    ],
+    [
+     "E-ĐKC 5.4",
+     "Thời hạn hoàn trả bảo đảm thực hiện hợp đồng: trong vòng 14 ngày kể từ ngày nhà thầu hoàn thành các nghĩa vụ hợp đồng, sau khi hệ thống được nghiệm thu và đưa vào vận hành."
+    ],
+    [
+     "E-ĐKC 6.1",
+     "Danh sách nhà thầu phụ: theo danh sách nhà thầu phụ nêu trong E-HSDT được Chủ đầu tư chấp thuận."
+    ],
+    [
+     "E-ĐKC 6.2",
+     "Giá trị công việc mà nhà thầu phụ thực hiện không vượt quá: 40% giá hợp đồng."
+    ],
+    [
+     "E-ĐKC 6.4",
+     "<<SOẠN:DKC_6_4>>"
+    ],
+    [
+     "E-ĐKC 10.1",
+     "Loại hợp đồng: trọn gói."
+    ],
+    [
+     "E-ĐKC 10.2",
+     "Giá hợp đồng: cố định."
+    ],
+    [
+     "E-ĐKC 11",
+     "Điều chỉnh thuế: không được phép."
+    ],
+    [
+     "E-ĐKC 12.1",
+     "<<SOẠN:DKC_12_1>>"
+    ],
+    [
+     "E-ĐKC 13.1",
+     "<<SOẠN:DKC_13_1>>"
+    ],
+    [
+     "E-ĐKC 13.2",
+     "Giảm trừ thanh toán: không áp dụng."
+    ],
+    [
+     "E-ĐKC 15",
+     [
+      "Vừa áp dụng phạt vi phạm hợp đồng vừa áp dụng bồi thường thiệt hại.",
+      "1. Phạt vi phạm hợp đồng: Áp dụng. Trừ trường hợp bất khả kháng theo quy định tại Mục 16 E-ĐKC, nếu Nhà thầu không thực hiện một phần hay toàn bộ nội dung công việc theo đúng thời hạn đã nêu trong hợp đồng thì Chủ đầu tư có thể khấu trừ vào giá hợp đồng một khoản tiền phạt tương ứng với 0,1%/ngày giá trị công việc chậm thực hiện cho đến khi nội dung công việc đó được thực hiện. Chủ đầu tư sẽ khấu trừ đến 8% giá trị phần hợp đồng bị vi phạm. Khi đạt đến mức phạt tối đa, Chủ đầu tư có thể xem xét chấm dứt hợp đồng theo quy định tại Mục 19 E-ĐKC. Trường hợp không kịp thời khắc phục sai sót theo thông báo của Chủ đầu tư, Nhà thầu có trách nhiệm nộp tiền phạt thực hiện hợp đồng tương ứng với 10% chi phí cần thiết để khắc phục sai sót.",
+      "2. Bồi thường thiệt hại: Áp dụng. Bồi thường thiệt hại trên cơ sở toàn bộ thiệt hại thực tế."
+     ]
+    ],
+    [
+     "E-ĐKC 17.1(c)",
+     "<<SOẠN:DKC_17_1_c>>"
+    ],
+    [
+     "E-ĐKC 17.4",
+     "Trường hợp đề xuất giải pháp tiết kiệm chi phí được Chủ đầu tư chấp thuận và giúp giảm giá hợp đồng, Chủ đầu tư thanh toán cho nhà thầu 30% giá trị giảm giá hợp đồng."
+    ],
+    [
+     "E-ĐKC 18 (e)",
+     "Các trường hợp khác: Chủ đầu tư cung cấp chậm tài liệu, hạ tầng, môi trường hoặc hoàn thành chậm thay đổi phía hệ thống hiện có so với thời hạn tại mục 3.5 Chương V thì các mốc liên quan được lùi tương ứng số ngày chậm."
+    ],
+    [
+     "E-ĐKC 20.1",
+     "<<SOẠN:DKC_20_1>>"
+    ],
+    [
+     "E-ĐKC 21.2",
+     "Thời gian nhà thầu thực hiện việc thay thế nhân sự: 07 ngày kể từ ngày nhận được yêu cầu thay thế nhân sự của Chủ đầu tư."
+    ],
+    [
+     "E-ĐKC 22.2",
+     [
+      "- Thời gian để tiến hành hòa giải: tối đa 30 ngày.",
+      "- Giải quyết tranh chấp: nếu hòa giải không thành, một trong hai bên gửi yêu cầu giải quyết tới Tòa án nhân dân có thẩm quyền tại Hà Nội. Chi phí giải quyết tranh chấp do bên có lỗi chịu theo phán quyết."
+     ]
+    ],
+    "<<SOẠN:DKC_BO_SUNG>>"
+   ],
+   "widths": [
+    2100,
+    7500
+   ],
+   "center_cols": []
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "center",
+   "text": "Phần 4. Biểu mẫu hợp đồng",
+   "size": 16
+  },
+  {
+   "t": "p",
+   "text": "Các biểu mẫu dưới đây áp dụng theo Mẫu số 5A ban hành kèm theo Thông tư số 79/2025/TT-BTC. Bảo lãnh thực hiện hợp đồng do nhà thầu trúng thầu hoàn chỉnh trước khi hợp đồng có hiệu lực."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "STT",
+     "Biểu mẫu",
+     "Áp dụng"
+    ],
+    [
+     "1",
+     "Mẫu số 13. Thư chấp thuận E-HSDT và trao hợp đồng",
+     "Áp dụng"
+    ],
+    [
+     "2",
+     "Mẫu số 14A. Hợp đồng điện tử",
+     "Áp dụng"
+    ],
+    [
+     "3",
+     "Mẫu số 14B. Hợp đồng điện tử (mua sắm tập trung theo thỏa thuận khung)",
+     "Không áp dụng"
+    ],
+    [
+     "4",
+     "Mẫu số 15. Bảo lãnh thực hiện hợp đồng",
+     "Áp dụng"
+    ],
+    [
+     "5",
+     "Mẫu số 16. Bảo lãnh tiền tạm ứng",
+     "Áp dụng, theo Mục 12.1 E-ĐKCT"
+    ],
+    [
+     "6",
+     "Mẫu số 17. Giấy ủy quyền",
+     "Áp dụng khi có ủy quyền"
+    ]
+   ],
+   "widths": [
+    600,
+    6300,
+    2700
+   ],
+   "center_cols": [
+    0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1715 @@
+{
+ "giao_viec": [
+  {
+   "ma": "1.1.1",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "1.1.2",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "1.1.3",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "1.1.4",
+   "R": "Q1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "1.1.5",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "1.2.1",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": true,
+   "tu_sprint": 1,
+   "den_sprint": 7,
+   "ly_do": ""
+  },
+  {
+   "ma": "1.2.2",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": true,
+   "tu_sprint": 1,
+   "den_sprint": 7,
+   "ly_do": ""
+  },
+  {
+   "ma": "1.2.3",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": true,
+   "tu_sprint": 1,
+   "den_sprint": 7,
+   "ly_do": ""
+  },
+  {
+   "ma": "1.2.4",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "1.2.5",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "1.3.1",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": true,
+   "tu_sprint": 1,
+   "den_sprint": 7,
+   "ly_do": ""
+  },
+  {
+   "ma": "1.3.2",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "1.3.3",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.1.1",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.1.2",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.1.3",
+   "R": "K",
+   "ho_tro": [
+    "dat"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.1.4",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.1.5",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.1.6",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.1.7",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.1.8",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.2.1",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.2.2",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.2.3",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.2.4",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.3.1",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.3.2",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.3.3",
+   "R": "minh",
+   "ho_tro": [
+    "D1"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.3.4",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.3.5",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "2.3.6",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.1.1",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.1.2",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.2.1",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.2.2",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.3.1",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.3.2",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.3.3",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.3.4",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.3.5",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.3.6",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.3.7",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.3.8",
+   "R": "tuananh",
+   "ho_tro": [
+    "D2"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.4.1",
+   "R": "minh",
+   "ho_tro": [
+    "toan"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.4.2",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.4.3",
+   "R": "Q1",
+   "ho_tro": [
+    "toan"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.4.5",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.4.4",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.4.6",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.5.1",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "3.5.2",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.1.1",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.1.2",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.2.1",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.2.2",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.3.1",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.3.2",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.3.3",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.3.4",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.3.5",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.3.6",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.3.7",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.4.1",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.4.2",
+   "R": "Q1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.4.3",
+   "R": "lien",
+   "ho_tro": [
+    "Q2"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.4.5",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.4.4",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.4.6",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.5.1",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "4.5.2",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.1.1",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.1.2",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.1.3",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.2.1",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.2.2",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.2.3",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.3.1",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.3.2",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.3.3",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.3.4",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.3.5",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.3.6",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.3.7",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.3.8",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.3.9",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.3.10",
+   "R": "D1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.4.1",
+   "R": "Q1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.4.2",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.4.3",
+   "R": "Q1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.4.4",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.4.6",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.4.5",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.4.7",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.4.8",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.5.1",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "5.5.2",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.1.1",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.1.2",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.1.3",
+   "R": "minh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.1.4",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.1",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.2",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.3",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.4",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.5",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.6",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.7",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.8",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.9",
+   "R": "Q1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.10",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.11",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.12",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.2.13",
+   "R": "dat",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.3.1",
+   "R": "D2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.3.2",
+   "R": "tuananh",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "6.3.3",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.1.1",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.1.2",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.1.3",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.1.4",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.2.1",
+   "R": "lien",
+   "ho_tro": [
+    "Q1"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.2.2",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.2.3",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.2.4",
+   "R": "minh",
+   "ho_tro": [
+    "D2",
+    "D1"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.2.5",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.3.1",
+   "R": "Q1",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.3.2",
+   "R": "Q2",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.3.3",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.3.4",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.3.5",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "7.3.6",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.1.1",
+   "R": "toan",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.1.2",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.1.3",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.2.1",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.2.2",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.2.3",
+   "R": "K",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.2.4",
+   "R": "D2",
+   "ho_tro": [
+    "D1"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.2.5",
+   "R": "lien",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.3.1",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.3.2",
+   "R": "D3",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.3.3",
+   "R": "D3",
+   "ho_tro": [
+    "D4"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.3.4",
+   "R": "D3",
+   "ho_tro": [
+    "toan"
+   ],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  },
+  {
+   "ma": "8.3.5",
+   "R": "D4",
+   "ho_tro": [],
+   "dan_trai": false,
+   "tu_sprint": null,
+   "den_sprint": null,
+   "ly_do": ""
+  }
+ ],
+ "trach_nhiem": [
+  {
+   "ma": "1",
+   "A": "dat",
+   "C": [
+    "lien",
+    "tuananh"
+   ],
+   "I": [
+    "cdt"
+   ]
+  },
+  {
+   "ma": "1.1",
+   "A": "dat",
+   "C": [
+    "lien",
+    "cdt"
+   ],
+   "I": [],
+   "phe_duyet": [
+    "cdt"
+   ]
+  },
+  {
+   "ma": "1.2",
+   "A": "dat",
+   "C": [
+    "lien"
+   ],
+   "I": [
+    "cdt"
+   ]
+  },
+  {
+   "ma": "1.3",
+   "A": "dat",
+   "C": [
+    "lien"
+   ],
+   "I": [
+    "cdt"
+   ],
+   "phe_duyet": [
+    "cdt"
+   ]
+  },
+  {
+   "ma": "2",
+   "A": "lien",
+   "C": [
+    "dat",
+    "K",
+    "cdt"
+   ],
+   "I": []
+  },
+  {
+   "ma": "2.1",
+   "A": "lien",
+   "C": [
+    "K",
+    "cdt"
+   ],
+   "I": [
+    "dat"
+   ],
+   "phe_duyet": [
+    "cdt"
+   ]
+  },
+  {
+   "ma": "2.2",
+   "A": "K",
+   "C": [
+    "dat",
+    "tuananh",
+    "toan"
+   ],
+   "I": []
+  },
+  {
+   "ma": "2.3",
+   "A": "minh",
+   "C": [
+    "lien",
+    "cdt"
+   ],
+   "I": [
+    "dat"
+   ]
+  },
+  {
+   "ma": "3",
+   "A": "minh",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "3.1",
+   "A": "lien",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "3.2",
+   "A": "tuananh",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "3.3",
+   "A": "minh",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "3.4",
+   "A": "lien",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "3.5",
+   "A": "lien",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "4",
+   "A": "tuananh",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "4.1",
+   "A": "lien",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "4.2",
+   "A": "tuananh",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "4.3",
+   "A": "tuananh",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "4.4",
+   "A": "lien",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "4.5",
+   "A": "lien",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "5",
+   "A": "tuananh",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "5.1",
+   "A": "lien",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "5.2",
+   "A": "tuananh",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "5.3",
+   "A": "tuananh",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "5.4",
+   "A": "lien",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "5.5",
+   "A": "lien",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "6",
+   "A": "toan",
+   "C": [
+    "dat",
+    "K",
+    "cdt"
+   ],
+   "I": []
+  },
+  {
+   "ma": "6.1",
+   "A": "toan",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "6.2",
+   "A": "toan",
+   "C": [
+    "K",
+    "cdt"
+   ],
+   "I": [
+    "dat"
+   ],
+   "phe_duyet": [
+    "cdt"
+   ]
+  },
+  {
+   "ma": "6.3",
+   "A": "toan",
+   "C": [
+    "cdt"
+   ],
+   "I": [
+    "dat"
+   ]
+  },
+  {
+   "ma": "7",
+   "A": "lien",
+   "C": [
+    "dat"
+   ],
+   "I": [
+    "cdt"
+   ]
+  },
+  {
+   "ma": "7.1",
+   "A": "lien",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "7.2",
+   "A": "lien",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "7.3",
+   "A": "lien",
+   "C": [
+    "cdt"
+   ],
+   "I": [
+    "dat"
+   ],
+   "phe_duyet": [
+    "cdt"
+   ]
+  },
+  {
+   "ma": "8",
+   "A": "toan",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "8.1",
+   "A": "toan",
+   "C": [
+    "dat"
+   ],
+   "I": []
+  },
+  {
+   "ma": "8.2",
+   "A": "lien",
+   "C": [
+    "K",
+    "cdt"
+   ],
+   "I": [
+    "dat"
+   ],
+   "phe_duyet": [
+    "cdt"
+   ]
+  },
+  {
+   "ma": "8.3",
+   "A": "toan",
+   "C": [
+    "dat",
+    "cdt"
+   ],
+   "I": [
+    "lien"
+   ],
+   "phe_duyet": [
+    "cdt"
+   ]
+  }
+ ],
+ "ben_ngoai": [
+  {
+   "id": "cdt",
+   "ten": "Công ty Cổ phần ABC Wear, đầu mối Yamada, Phòng Kế hoạch",
+   "ten_ngan": "Chủ đầu tư",
+   "vai_tro": "Đầu mối Chủ đầu tư"
+  }
+ ],
+ "vi_tri_chu_chot": [
+  {
+   "stt": 1,
+   "thanh_vien": [
+    "dat"
+   ]
+  },
+  {
+   "stt": 2,
+   "thanh_vien": [
+    "tuananh",
+    "toan",
+    "minh"
+   ]
+  },
+  {
+   "stt": 3,
+   "thanh_vien": [
+    "lien"
+   ]
+  }
+ ]
+}

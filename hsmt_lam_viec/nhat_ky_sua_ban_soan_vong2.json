@@ -1,0 +1,557 @@
+[
+ {
+  "ma": "PH001",
+  "id": "DIA_DIEM_HOI_NGHI",
+  "truoc": "phòng họp A, trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "phòng họp A, trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH001",
+  "id": "BDL_38_2[2]",
+  "truoc": "- Trường hợp Chủ đầu tư không trả lời trong thời hạn quy định hoặc nhà thầu không đồng ý với kết quả giải quyết, nhà thầu gửi kiến nghị tới người có thẩm quyền nêu tại Mục 38.1 E-BDL qua e-mail yamada@abc.com hoặc theo địa chỉ trụ sở chính Công ty Cổ phần ABC Wear.",
+  "sau": "- Trường hợp Chủ đầu tư không trả lời trong thời hạn quy định hoặc nhà thầu không đồng ý với kết quả giải quyết, nhà thầu gửi kiến nghị tới người có thẩm quyền nêu tại Mục 38.1 E-BDL qua e-mail yamada@abc.com hoặc theo địa chỉ Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội."
+ },
+ {
+  "ma": "PH001",
+  "id": "BDL_38_2[3]",
+  "truoc": "- Đầu mối tiếp nhận và theo dõi kiến nghị: Yamada, Phòng Kế hoạch, e-mail yamada@abc.com.",
+  "sau": "- Đầu mối tiếp nhận và theo dõi kiến nghị: Yamada, Phòng Kế hoạch, điện thoại 024 0000 1010, e-mail yamada@abc.com."
+ },
+ {
+  "ma": "PH001",
+  "id": "DKC_1_5[0]",
+  "truoc": "Địa điểm cung cấp dịch vụ là: trụ sở chính Công ty Cổ phần ABC Wear, nơi bàn giao sản phẩm, tích hợp với Main System, kiểm thử vận hành, chuyển giao và đưa hệ thống vào vận hành.",
+  "sau": "Địa điểm cung cấp dịch vụ là: trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội, nơi bàn giao sản phẩm, tích hợp với Main System, kiểm thử vận hành, chuyển giao và đưa hệ thống vào vận hành."
+ },
+ {
+  "ma": "PH001",
+  "id": "DKC_1_5[1]",
+  "truoc": "Các công việc phân tích, thiết kế và xây dựng phần mềm được thực hiện tại nơi làm việc của nhà thầu hoặc tại trụ sở chính Công ty Cổ phần ABC Wear theo kế hoạch được hai bên thống nhất.",
+  "sau": "Các công việc phân tích, thiết kế và xây dựng phần mềm được thực hiện tại nơi làm việc của nhà thầu hoặc tại trụ sở chính nêu trên theo kế hoạch được hai bên thống nhất."
+ },
+ {
+  "ma": "PH004",
+  "id": "NHAN_SU_LY_DO",
+  "truoc": "Gói thầu gồm phân tích, thiết kế, xây dựng hệ thống website bán hàng hoạt động liên tục và tích hợp với hệ thống chính hiện có (Main System) của Chủ đầu tư trong thời gian khoảng 15 tuần, vì vậy nhà thầu cần bố trí nhân sự chủ chốt có kinh nghiệm quản lý dự án, phát triển ứng dụng web và phân tích nghiệp vụ hoặc kiểm thử phần mềm. Nhân sự chủ chốt có thể thuộc biên chế của nhà thầu hoặc do nhà thầu huy động, được kê khai theo Mẫu số 06A, 06B, 06C Chương IV, và nhà thầu phải chứng minh khả năng huy động nhân sự để thực hiện gói thầu.",
+  "sau": "Gói thầu gồm phân tích, thiết kế, xây dựng hệ thống website bán hàng hoạt động liên tục và tích hợp với hệ thống chính hiện có (Main System) của Chủ đầu tư trong thời gian khoảng 15 tuần, vì vậy nhà thầu cần bố trí nhân sự chủ chốt có kinh nghiệm quản lý dự án, phát triển ứng dụng web và phân tích nghiệp vụ hoặc kiểm thử phần mềm. Nhà thầu phải chứng minh khả năng huy động các nhân sự chủ chốt đã đề xuất. Nhân sự chủ chốt có thể thuộc biên chế của nhà thầu hoặc do nhà thầu huy động. Trường hợp nhân sự chủ chốt mà nhà thầu kê khai trong E-HSDT không đáp ứng yêu cầu hoặc không chứng minh được khả năng huy động nhân sự (bao gồm cả trường hợp nhân sự chủ chốt đã huy động cho hợp đồng khác có thời gian làm việc trùng với thời gian thực hiện gói thầu này), Chủ đầu tư cho phép nhà thầu bổ sung, thay thế. Nhà thầu chỉ được phép bổ sung, thay thế một lần đối với từng vị trí nhân sự chủ chốt trong một khoảng thời gian phù hợp nhưng không ít hơn 03 ngày làm việc. Trường hợp nhà thầu không có nhân sự chủ chốt thay thế đáp ứng yêu cầu của E-HSMT thì nhà thầu bị loại. Trường hợp nhà thầu cố ý kê khai nhân sự chủ chốt không trung thực trong E-HSDT nhằm làm sai lệch kết quả lựa chọn nhà thầu thì nhà thầu không được thay thế nhân sự khác, E-HSDT của nhà thầu bị loại và nhà thầu sẽ bị coi là gian lận theo quy định tại điểm b khoản 4 Điều 16 của Luật Đấu thầu và bị xử lý theo quy định tại khoản 1 Điều 133 của Nghị định số 214/2025/NĐ-CP. Trường hợp nhà thầu trúng thầu và ký kết hợp đồng, nhà thầu có nghĩa vụ huy động nhân sự chủ chốt như đã đề xuất ban đầu hoặc đề xuất thay đổi theo quy định tại Mục này. Trường hợp không huy động được nhân sự chủ chốt, nhà thầu bị phạt hợp đồng. Yêu cầu về nhân sự chủ chốt được số hóa dưới dạng Webform trên Hệ thống. Kinh nghiệm trong các công việc tương tự được thể hiện ở số năm tối thiểu nhân sự thực hiện các công việc tương tự hoặc số hợp đồng tối thiểu trong các công việc tương tự. Số năm kinh nghiệm của nhân sự chủ chốt được tính từ thời điểm nhân sự bắt đầu thực hiện công việc tương tự đó đến thời điểm đóng thầu. Nhà thầu phải cung cấp thông tin chi tiết về các nhân sự chủ chốt được đề xuất theo các Mẫu số 06A, 06B và 06C Chương IV để chứng minh rằng mình có đầy đủ nhân sự cho các vị trí chủ chốt đáp ứng những yêu cầu sau đây:"
+ },
+ {
+  "ma": "PH008",
+  "id": "TIEU_CHI_CHI_TIET[1: Giải pháp kiến trúc, công nghệ và tích hợp với Main System]",
+  "truoc": {
+   "tieu_chi": 1,
+   "ten": "Giải pháp kiến trúc, công nghệ và tích hợp với Main System",
+   "noi_dung": "Kiến trúc ứng dụng, công nghệ, thiết kế Selling DB, phương án tích hợp với Main System, bảo mật dữ liệu khách hàng, sự phù hợp với hạ tầng do Chủ đầu tư cung cấp và tài liệu giao diện của Main System (mục 3.1 và 3.5 Chương V).",
+   "diem": 7,
+   "co_ban": true,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 7,
+     "mo_ta": "Giải pháp đầy đủ, nhất quán về kiến trúc, công nghệ, Selling DB, tích hợp với Main System và bảo mật dữ liệu khách hàng, có lý do lựa chọn, có phương án dự phòng cho rủi ro tích hợp và phù hợp hạ tầng tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 5,
+     "mo_ta": "Giải pháp đủ các thành phần nêu trên, khả thi và phù hợp hạ tầng tại mục 3.5 Chương V nhưng chưa nêu lý do lựa chọn hoặc phương án dự phòng cho rủi ro tích hợp."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 3,
+     "mo_ta": "Thiếu một trong các thành phần kiến trúc, tích hợp với Main System, bảo mật dữ liệu khách hàng, hoặc giải pháp chưa phù hợp hạ tầng tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Không có giải pháp hoặc giải pháp không khả thi."
+    }
+   ],
+   "phu": [],
+   "diem_toi_thieu": 5
+  },
+  "sau": {
+   "tieu_chi": 1,
+   "ten": "Giải pháp kiến trúc, công nghệ và tích hợp với Main System",
+   "noi_dung": "Kiến trúc ứng dụng, công nghệ, thiết kế Selling DB, phương án tích hợp với Main System, bảo mật dữ liệu khách hàng, sự phù hợp với phân định tại mục 3.5 Chương V về hạ tầng vận hành do Chủ đầu tư cung cấp, môi trường thử và thay đổi phía Main System (mục 3.1 và 3.5 Chương V).",
+   "diem": 7,
+   "co_ban": true,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 7,
+     "mo_ta": "Giải pháp đầy đủ, nhất quán về kiến trúc, công nghệ, Selling DB, tích hợp với Main System và bảo mật dữ liệu khách hàng, có lý do lựa chọn, có phương án dự phòng cho rủi ro tích hợp và phù hợp phân định tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 5,
+     "mo_ta": "Giải pháp đủ các thành phần nêu trên, khả thi và phù hợp phân định tại mục 3.5 Chương V nhưng chưa nêu lý do lựa chọn hoặc phương án dự phòng cho rủi ro tích hợp."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 3,
+     "mo_ta": "Thiếu một trong các thành phần kiến trúc, tích hợp với Main System, bảo mật dữ liệu khách hàng, hoặc giải pháp chưa phù hợp phân định tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Không có giải pháp hoặc giải pháp không khả thi."
+    }
+   ],
+   "phu": [],
+   "diem_toi_thieu": 5
+  }
+ },
+ {
+  "ma": "PH008",
+  "id": "TIEU_CHI_CHI_TIET[2: Phương pháp kiểm thử và kiểm thử vận hành]",
+  "truoc": {
+   "tieu_chi": 2,
+   "ten": "Phương pháp kiểm thử và kiểm thử vận hành",
+   "noi_dung": "Kế hoạch kiểm thử chức năng, kiểm thử tích hợp với Main System, kiểm thử các yêu cầu phi chức năng theo điều kiện đo, kiểm thử vận hành (Operation Test) có sự tham gia của Chủ đầu tư, tiêu chí đạt và quản lý lỗi (mục 3.2, 3.4 và 3.5 Chương V).",
+   "diem": 4,
+   "co_ban": false,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 4,
+     "mo_ta": "Đủ các loại kiểm thử nêu trên, mỗi loại có phạm vi, dữ liệu, môi trường kiểm thử do nhà thầu cung cấp theo mục 3.5 Chương V, tiêu chí đạt và quy trình xử lý lỗi."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 3,
+     "mo_ta": "Đủ các loại kiểm thử nêu trên nhưng tiêu chí đạt hoặc môi trường kiểm thử chưa cụ thể."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 1,
+     "mo_ta": "Thiếu kiểm thử tích hợp, kiểm thử phi chức năng hoặc kiểm thử vận hành."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Không trình bày."
+    }
+   ],
+   "phu": []
+  },
+  "sau": {
+   "tieu_chi": 2,
+   "ten": "Phương pháp kiểm thử và kiểm thử vận hành",
+   "noi_dung": "Kế hoạch kiểm thử chức năng, kiểm thử tích hợp với Main System, kiểm thử các yêu cầu phi chức năng theo điều kiện đo, kiểm thử vận hành (Operation Test) có sự tham gia của Chủ đầu tư, tiêu chí đạt và quản lý lỗi (mục 3.2, 3.4 và 3.5 Chương V).",
+   "diem": 4,
+   "co_ban": false,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 4,
+     "mo_ta": "Đủ các loại kiểm thử nêu trên, mỗi loại có phạm vi, dữ liệu, môi trường kiểm thử theo phân định tại mục 3.5 Chương V (môi trường do nhà thầu cung cấp, môi trường thử của Main System, hạ tầng vận hành chính thức), tiêu chí đạt và quy trình xử lý lỗi."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 3,
+     "mo_ta": "Đủ các loại kiểm thử nêu trên nhưng tiêu chí đạt hoặc môi trường kiểm thử chưa cụ thể."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 1,
+     "mo_ta": "Thiếu kiểm thử tích hợp, kiểm thử phi chức năng hoặc kiểm thử vận hành."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Không trình bày."
+    }
+   ],
+   "phu": []
+  }
+ },
+ {
+  "ma": "PH005",
+  "id": "TIEU_CHI_CHI_TIET[3: Tiến độ (Schedule) đến ngày cut over]",
+  "truoc": {
+   "tieu_chi": 3,
+   "ten": "Tiến độ (Schedule) đến ngày cut over",
+   "noi_dung": "Tính hợp lý và khả thi của tiến độ từ ngày hợp đồng có hiệu lực đến ngày đưa hệ thống vào vận hành (cut over) 01/07/2027: các giai đoạn, mốc gắn với sản phẩm bàn giao và đợt thanh toán tại Mục 13.1 E-ĐKCT, công việc găng, thời gian dự phòng, sự phù hợp với thời hạn Chủ đầu tư cung cấp thông tin hệ thống hiện có (mục 3.5 và mục 4 Chương V).",
+   "diem": 6,
+   "co_ban": true,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 6,
+     "mo_ta": "Tiến độ hoàn thành trước ngày 01/07/2027, đủ mốc gắn với sản phẩm và đợt thanh toán, xác định công việc găng, có thời gian dự phòng và phù hợp thời hạn tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 4,
+     "mo_ta": "Tiến độ hoàn thành trước ngày 01/07/2027, đủ mốc gắn với sản phẩm nhưng chưa xác định công việc găng hoặc thời gian dự phòng."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 2,
+     "mo_ta": "Tiến độ đáp ứng ngày 01/07/2027 nhưng thiếu mốc gắn với sản phẩm hoặc không phù hợp thời hạn tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Tiến độ không đáp ứng ngày 01/07/2027 hoặc không trình bày."
+    }
+   ],
+   "phu": [
+    "R19"
+   ],
+   "diem_toi_thieu": 4
+  },
+  "sau": {
+   "tieu_chi": 3,
+   "ten": "Tiến độ (Schedule) đến ngày cut over",
+   "noi_dung": "Tính hợp lý và khả thi của tiến độ từ ngày hợp đồng có hiệu lực đến ngày đưa hệ thống vào vận hành (cut over) 01/07/2027: các giai đoạn, mốc gắn với sản phẩm bàn giao và đợt thanh toán tại Mục 13.1 E-ĐKCT, công việc găng, thời gian dự phòng, sự phù hợp với các thời hạn Chủ đầu tư cung cấp tài liệu, môi trường thử của hệ thống hiện có và hạ tầng vận hành (mục 3.5 và mục 4 Chương V).",
+   "diem": 6,
+   "co_ban": true,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 6,
+     "mo_ta": "Tiến độ đưa hệ thống vào vận hành (cut over) không muộn hơn ngày 01/07/2027, đủ mốc gắn với sản phẩm và đợt thanh toán, xác định công việc găng, có thời gian dự phòng và phù hợp các thời hạn tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 4,
+     "mo_ta": "Tiến độ đưa hệ thống vào vận hành (cut over) không muộn hơn ngày 01/07/2027, đủ mốc gắn với sản phẩm nhưng chưa xác định công việc găng hoặc thời gian dự phòng."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 2,
+     "mo_ta": "Tiến độ đưa hệ thống vào vận hành (cut over) không muộn hơn ngày 01/07/2027 nhưng thiếu mốc gắn với sản phẩm hoặc không phù hợp các thời hạn tại mục 3.5 Chương V."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Tiến độ đưa hệ thống vào vận hành muộn hơn ngày 01/07/2027 hoặc không trình bày."
+    }
+   ],
+   "phu": [
+    "R19"
+   ],
+   "diem_toi_thieu": 4
+  }
+ },
+ {
+  "ma": "PH006",
+  "id": "TIEU_CHI_CHI_TIET[5: Đề xuất bổ sung cần thiết cho thành công của dự án]",
+  "truoc": {
+   "tieu_chi": 5,
+   "ten": "Đề xuất bổ sung cần thiết cho thành công của dự án",
+   "noi_dung": "Các nội dung nhà thầu bổ sung ngoài nội dung bắt buộc tại mục 4 Chương V, cần thiết cho thành công của dự án, có phân tích lợi ích và cách thực hiện, không làm thay đổi phạm vi, thời gian thực hiện hợp đồng và không phát sinh nghĩa vụ cho Chủ đầu tư (mục 4 Chương V).",
+   "diem": 3,
+   "co_ban": false,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 3,
+     "mo_ta": "Có từ hai đề xuất trở lên gắn với rủi ro hoặc mục tiêu cụ thể của dự án, mỗi đề xuất có phân tích lợi ích và cách thực hiện."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 2,
+     "mo_ta": "Có một đề xuất gắn với rủi ro hoặc mục tiêu cụ thể của dự án, có phân tích lợi ích và cách thực hiện."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 1,
+     "mo_ta": "Có đề xuất nhưng nêu chung, chưa phân tích lợi ích."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Không có đề xuất, hoặc đề xuất làm thay đổi phạm vi, thời gian thực hiện hợp đồng hay phát sinh nghĩa vụ cho Chủ đầu tư."
+    }
+   ],
+   "phu": [
+    "R14"
+   ]
+  },
+  "sau": {
+   "tieu_chi": 5,
+   "ten": "Đề xuất bổ sung cần thiết cho thành công của dự án",
+   "noi_dung": "Các nội dung nhà thầu bổ sung ngoài nội dung bắt buộc tại mục 4 Chương V, cần thiết cho thành công của dự án, có phân tích lợi ích và cách thực hiện, không làm thay đổi phạm vi, thời gian thực hiện hợp đồng và không phát sinh nghĩa vụ cho Chủ đầu tư (mục 4 Chương V).",
+   "diem": 5,
+   "co_ban": false,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 5,
+     "mo_ta": "Có từ hai đề xuất trở lên gắn với rủi ro hoặc mục tiêu cụ thể của dự án, mỗi đề xuất có phân tích lợi ích và cách thực hiện."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 4.5,
+     "mo_ta": "Có một đề xuất gắn với rủi ro hoặc mục tiêu cụ thể của dự án, có phân tích lợi ích và cách thực hiện."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 2,
+     "mo_ta": "Có đề xuất nhưng nêu chung, chưa phân tích lợi ích hoặc cách thực hiện."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Không có đề xuất, hoặc đề xuất làm thay đổi phạm vi, thời gian thực hiện hợp đồng hay phát sinh nghĩa vụ cho Chủ đầu tư."
+    }
+   ],
+   "phu": [
+    "R14"
+   ]
+  }
+ },
+ {
+  "ma": "PH006",
+  "id": "TIEU_CHI_CHI_TIET[5: Đề xuất nâng cao hiệu quả của kênh bán hàng trực tuyến]",
+  "truoc": {
+   "tieu_chi": 5,
+   "ten": "Đề xuất nâng cao hiệu quả của kênh bán hàng trực tuyến",
+   "noi_dung": "Đề xuất giúp mở rộng khách hàng qua internet và nâng cao hiệu quả của kênh bán hàng mới trong phạm vi hệ thống, ví dụ khả năng truy cập từ nhiều loại thiết bị, khả năng mở rộng khi số lượng khách hàng tăng (mục 2 và mục 3 Chương V).",
+   "diem": 3,
+   "co_ban": false,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 3,
+     "mo_ta": "Đề xuất cụ thể, gắn với mục tiêu mở rộng khách hàng qua internet, nêu rõ cách thực hiện trong phạm vi hệ thống và lợi ích dự kiến."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 2,
+     "mo_ta": "Đề xuất gắn với mục tiêu của dự án nhưng lợi ích dự kiến chưa rõ."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 1,
+     "mo_ta": "Đề xuất nêu chung, chưa gắn với mục tiêu của dự án."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Không có đề xuất."
+    }
+   ],
+   "phu": []
+  },
+  "sau": {
+   "tieu_chi": 5,
+   "ten": "Đề xuất nâng cao hiệu quả của kênh bán hàng trực tuyến",
+   "noi_dung": "Đề xuất giúp mở rộng khách hàng qua internet và nâng cao hiệu quả của kênh bán hàng mới trong phạm vi hệ thống, ví dụ khả năng truy cập từ nhiều loại thiết bị, khả năng mở rộng khi số lượng khách hàng tăng (mục 2 và mục 3 Chương V).",
+   "diem": 5,
+   "co_ban": false,
+   "muc_cham": [
+    {
+     "muc": "Tốt",
+     "diem": 5,
+     "mo_ta": "Đề xuất cụ thể, gắn với mục tiêu mở rộng khách hàng qua internet, nêu rõ cách thực hiện trong phạm vi hệ thống và lợi ích dự kiến."
+    },
+    {
+     "muc": "Đạt",
+     "diem": 4.5,
+     "mo_ta": "Đề xuất gắn với mục tiêu của dự án, có cách thực hiện trong phạm vi hệ thống nhưng lợi ích dự kiến chưa rõ."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 2,
+     "mo_ta": "Đề xuất nêu chung, chưa gắn với mục tiêu của dự án."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Không có đề xuất."
+    }
+   ],
+   "phu": []
+  }
+ },
+ {
+  "ma": "PH007",
+  "id": "TIEU_CHI_CHI_TIET[5: Thông tin về kết quả thực hiện hợp đồng của nhà thầu]",
+  "truoc": {
+   "tieu_chi": 5,
+   "ten": "Thông tin về kết quả thực hiện hợp đồng của nhà thầu",
+   "noi_dung": "Thông tin về kết quả thực hiện hợp đồng của nhà thầu trên Hệ thống mạng đấu thầu quốc gia theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP. Đối với nhà thầu liên danh, xét thông tin của tất cả thành viên liên danh.",
+   "diem": 9,
+   "co_ban": false,
+   "muc_cham": [
+    {
+     "muc": "Đạt đủ",
+     "diem": 9,
+     "mo_ta": "Thông tin trên Hệ thống không ghi nhận hợp đồng nào của nhà thầu hoặc thành viên liên danh chậm tiến độ, chất lượng không đạt yêu cầu hoặc bị chấm dứt do lỗi của nhà thầu, và nhà thầu không có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 5,
+     "mo_ta": "Thông tin trên Hệ thống ghi nhận hợp đồng của nhà thầu hoặc thành viên liên danh chậm tiến độ hoặc chất lượng không đạt yêu cầu do lỗi của nhà thầu, nhưng nhà thầu không có tên trong danh sách nêu trên."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Nhà thầu hoặc thành viên liên danh có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP được đăng tải trên Hệ thống, trong thời hạn 02 năm kể từ lần cuối cùng thực hiện hành vi."
+    }
+   ],
+   "phu": []
+  },
+  "sau": {
+   "tieu_chi": 5,
+   "ten": "Thông tin về kết quả thực hiện hợp đồng của nhà thầu",
+   "noi_dung": "Thông tin về kết quả thực hiện hợp đồng của nhà thầu trên Hệ thống mạng đấu thầu quốc gia theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP, xét từ ngày 01 tháng 01 năm 2024 đến thời điểm đóng thầu. Việc nhà thầu có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP được xét trong thời hạn 02 năm kể từ lần cuối cùng thực hiện hành vi, như Mục 18.2 E-BDL. Đối với nhà thầu liên danh, xét thông tin của tất cả thành viên liên danh. Trường hợp thông tin của nhà thầu thuộc nhiều mức thì áp dụng mức có điểm thấp nhất.",
+   "diem": 5,
+   "co_ban": false,
+   "muc_cham": [
+    {
+     "muc": "Đạt đủ",
+     "diem": 5,
+     "mo_ta": "Thông tin trên Hệ thống không ghi nhận hợp đồng nào của nhà thầu chậm tiến độ, chất lượng không đạt yêu cầu hoặc bị chấm dứt do lỗi của nhà thầu. Nhà thầu không có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP, hoặc có tên nhưng đã quá 02 năm kể từ lần cuối cùng thực hiện hành vi."
+    },
+    {
+     "muc": "Đạt một phần",
+     "diem": 3,
+     "mo_ta": "Thông tin trên Hệ thống ghi nhận hợp đồng của nhà thầu chậm tiến độ hoặc chất lượng không đạt yêu cầu do lỗi của nhà thầu, không có hợp đồng bị chấm dứt do lỗi của nhà thầu."
+    },
+    {
+     "muc": "Đạt mức thấp",
+     "diem": 1,
+     "mo_ta": "Thông tin trên Hệ thống ghi nhận hợp đồng của nhà thầu bị chấm dứt do lỗi của nhà thầu."
+    },
+    {
+     "muc": "Không đạt",
+     "diem": 0,
+     "mo_ta": "Nhà thầu có tên trong danh sách nhà thầu có các hành vi quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP, chưa quá 02 năm kể từ lần cuối cùng thực hiện hành vi."
+    }
+   ],
+   "phu": []
+  }
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[1] địa điểm",
+  "truoc": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[2] địa điểm",
+  "truoc": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[3] địa điểm",
+  "truoc": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[4] địa điểm",
+  "truoc": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[5] địa điểm",
+  "truoc": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[6] địa điểm",
+  "truoc": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[7] địa điểm",
+  "truoc": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[8] địa điểm",
+  "truoc": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[9] địa điểm",
+  "truoc": "Trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH008",
+  "id": "MAU_01A[10] mô tả",
+  "truoc": "Chương V mục 3.2, 3.4 và 3.5. Kiểm thử chức năng, kiểm thử tích hợp với Main System và kiểm thử các yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi theo điều kiện đo đã xác nhận, trên môi trường kiểm thử do nhà thầu cung cấp",
+  "sau": "Chương V mục 3.2, 3.4 và 3.5. Kiểm thử chức năng trên môi trường kiểm thử do nhà thầu cung cấp, kiểm thử tích hợp trên môi trường thử của Main System, kiểm thử các yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi theo điều kiện đo đã xác nhận trên hạ tầng vận hành chính thức"
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[10] địa điểm",
+  "truoc": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH008",
+  "id": "MAU_01A[11] mô tả",
+  "truoc": "Chương V mục 3.2. Kiểm thử hệ thống trong điều kiện vận hành theo quy trình vận hành mới, có sự tham gia của Chủ đầu tư",
+  "sau": "Chương V mục 3.2 và 3.5. Kiểm thử hệ thống trên hạ tầng vận hành chính thức theo quy trình vận hành mới, có sự tham gia của Chủ đầu tư"
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[11] địa điểm",
+  "truoc": "Trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[12] địa điểm",
+  "truoc": "Trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH001",
+  "id": "MAU_01A[13] địa điểm",
+  "truoc": "Trụ sở chính Công ty Cổ phần ABC Wear",
+  "sau": "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội"
+ },
+ {
+  "ma": "PH009",
+  "id": "C5_3[3.1]",
+  "truoc": "3.1. Mô hình hệ thống mới (The Image of New Systems). Hệ thống website bán hàng (Web Site Selling System) gồm các chức năng tìm kiếm sản phẩm (Product Search), quản lý thành viên (Member Administration), đặt hàng (Order) và cơ sở dữ liệu bán hàng (Selling DB). Theo sơ đồ của RFP, khách hàng (Customer) truy cập hệ thống qua internet (Internet) và dữ liệu giữa khách hàng với hệ thống đi theo hai chiều. Hệ thống chính hiện có của Chủ đầu tư (Main System), là hệ thống quản trị bán hàng, sản phẩm, logistics và giao dịch (Administration of Selling, Products, Logistics, Dealing), chuyển dữ liệu theo chiều từ Main System sang Selling DB. Main System chuyển thông tin theo chiều từ Main System sang nghiệp vụ vận chuyển (Transportation Operation), nghiệp vụ vận chuyển giao hàng tới khách hàng. Do đơn hàng được giao qua nghiệp vụ vận chuyển nhận thông tin từ Main System, việc tích hợp gồm cả chuyển dữ liệu đơn hàng từ hệ thống mới về Main System. Nội dung dữ liệu, tần suất và phương thức của từng luồng được xác định trong đặc tả hệ thống trên cơ sở tài liệu giao diện nêu tại mục 3.5.",
+  "sau": "3.1. Mô hình hệ thống mới (The Image of New Systems). Hệ thống website bán hàng (Web Site Selling System) gồm các chức năng tìm kiếm sản phẩm (Product Search), quản lý thành viên (Member Administration), đặt hàng (Order) và cơ sở dữ liệu bán hàng (Selling DB). Theo sơ đồ của RFP, khách hàng (Customer) truy cập hệ thống qua internet (Internet) và dữ liệu giữa khách hàng với hệ thống đi theo hai chiều. Hệ thống chính hiện có của Chủ đầu tư (Main System), là hệ thống quản trị bán hàng, sản phẩm, logistics và giao dịch (Administration of Selling, Products, Logistics, Dealing), chuyển dữ liệu theo chiều từ Main System sang Selling DB. Main System chuyển thông tin theo chiều từ Main System sang nghiệp vụ vận chuyển (Transportation Operation), nghiệp vụ vận chuyển giao hàng tới khách hàng. Do đơn hàng được giao qua nghiệp vụ vận chuyển nhận thông tin từ Main System, việc tích hợp gồm cả chuyển dữ liệu đơn hàng từ hệ thống mới về Main System. Thay đổi phía Main System để trao đổi dữ liệu với hệ thống mới do Chủ đầu tư thực hiện, nhà thầu chịu trách nhiệm phía hệ thống mới theo mục 3.5. Nội dung dữ liệu, tần suất và phương thức của từng luồng được xác định trong đặc tả hệ thống trên cơ sở tài liệu giao diện và môi trường thử của Main System nêu tại mục 3.5."
+ },
+ {
+  "ma": "PH011",
+  "id": "C5_3[3.2]",
+  "truoc": "3.2. Phạm vi gói thầu (Project Scope). Nhà thầu xây dựng hệ thống Web Selling Site System từ phân tích hệ thống đến kiểm thử vận hành (System Analysis to Operation Test), gồm phân tích hệ thống và lập đặc tả, thiết kế, xây dựng các chức năng và cơ sở dữ liệu nêu tại mục 3.1, tích hợp với Main System, kiểm thử hệ thống, kiểm thử vận hành, chuyển giao, hướng dẫn vận hành và hỗ trợ đưa hệ thống vào vận hành ngày 01/07/2027. Chức năng quản trị nội bộ (The internal administrative function) nằm ngoài phạm vi gói thầu. Hạ tầng vận hành, môi trường kiểm thử và thông tin về hệ thống hiện có được phân định tại mục 3.5.",
+  "sau": "3.2. Phạm vi gói thầu (Project Scope). Nhà thầu xây dựng hệ thống Web Selling Site System từ phân tích hệ thống đến kiểm thử vận hành (System Analysis to Operation Test), gồm phân tích hệ thống và lập đặc tả, thiết kế, xây dựng các chức năng và cơ sở dữ liệu nêu tại mục 3.1, tích hợp với Main System, kiểm thử hệ thống, kiểm thử vận hành, chuyển giao, hướng dẫn vận hành và hỗ trợ đưa hệ thống vào vận hành ngày 01/07/2027. Chuyển giao, hướng dẫn vận hành, hỗ trợ đưa hệ thống vào vận hành và bàn giao mã nguồn thuộc phạm vi gói thầu, căn cứ yêu cầu đưa hệ thống vào vận hành (cut over) ngày 01/07/2027 và điều khoản của RFP về quyền sở hữu, bản quyền đối với sản phẩm và kết quả kỹ thuật của dự án thuộc Chủ đầu tư. Chức năng quản trị nội bộ (The internal administrative function) nằm ngoài phạm vi gói thầu. Hạ tầng vận hành, môi trường phát triển và kiểm thử, môi trường thử của Main System, thay đổi phía Main System và thông tin về hệ thống hiện có được phân định tại mục 3.5."
+ },
+ {
+  "ma": "PH008",
+  "id": "C5_3[3.4]",
+  "truoc": "3.4. Yêu cầu phi chức năng. Hệ thống phải hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm (24 hours and 365 days running), có thời gian phản hồi không quá 2 giây (within 2 seconds) đối với mỗi thao tác của khách hàng và có giao diện giúp khách hàng thao tác dễ dàng (Easy Operation for the Customer). Điều kiện đo các yêu cầu này theo mục 3.5. Nhà thầu nêu giải pháp kỹ thuật và phương pháp kiểm thử để chứng minh hệ thống đáp ứng các yêu cầu này. Nhà thầu có thể áp dụng tiêu chuẩn khác nếu chứng minh được tiêu chuẩn đó tương đương hoặc cao hơn yêu cầu nêu trên.",
+  "sau": "3.4. Yêu cầu phi chức năng. Hệ thống phải hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm (24 hours and 365 days running), có thời gian phản hồi không quá 2 giây (within 2 seconds) đối với mỗi thao tác của khách hàng và có giao diện giúp khách hàng thao tác dễ dàng (Easy Operation for the Customer). Điều kiện đo các yêu cầu này theo mục 3.5. Kiểm thử vận hành và đo các yêu cầu này thực hiện trên hạ tầng vận hành chính thức theo mục 3.5. Nhà thầu nêu giải pháp kỹ thuật và phương pháp kiểm thử để chứng minh hệ thống đáp ứng các yêu cầu này. Nhà thầu có thể áp dụng tiêu chuẩn khác nếu chứng minh được tiêu chuẩn đó tương đương hoặc cao hơn yêu cầu nêu trên."
+ },
+ {
+  "ma": "PH010",
+  "id": "DKC_17_1_c[2]",
+  "truoc": "",
+  "sau": "Trường hợp Chủ đầu tư cung cấp tài liệu, hạ tầng hoặc môi trường chậm so với thời hạn nêu tại mục 3.5 Chương V, hai bên sửa đổi thời gian thực hiện hợp đồng theo Mục 17.1 (b) và Mục 17.2 E-ĐKC, các mốc liên quan được lùi tương ứng với số ngày chậm."
+ },
+ {
+  "ma": "PH004",
+  "id": "NHAN_SU_LY_DO",
+  "truoc": "Gói thầu gồm phân tích, thiết kế, xây dựng hệ thống website bán hàng hoạt động liên tục và tích hợp với hệ thống chính hiện có (Main System) của Chủ đầu tư trong thời gian khoảng 15 tuần, vì vậy nhà thầu cần bố trí nhân sự chủ chốt có kinh nghiệm quản lý dự án, phát triển ứng dụng web và phân tích nghiệp vụ hoặc kiểm thử phần mềm. Nhà thầu phải chứng minh khả năng huy động các nhân sự chủ chốt đã đề xuất. Nhân sự chủ chốt có thể thuộc biên chế của nhà thầu hoặc do nhà thầu huy động. Trường hợp nhân sự chủ chốt mà nhà thầu kê khai trong E-HSDT không đáp ứng yêu cầu hoặc không chứng minh được khả năng huy động nhân sự (bao gồm cả trường hợp nhân sự chủ chốt đã huy động cho hợp đồng khác có thời gian làm việc trùng với thời gian thực hiện gói thầu này), Chủ đầu tư cho phép nhà thầu bổ sung, thay thế. Nhà thầu chỉ được phép bổ sung, thay thế một lần đối với từng vị trí nhân sự chủ chốt trong một khoảng thời gian phù hợp nhưng không ít hơn 03 ngày làm việc. Trường hợp nhà thầu không có nhân sự chủ chốt thay thế đáp ứng yêu cầu của E-HSMT thì nhà thầu bị loại. Trường hợp nhà thầu cố ý kê khai nhân sự chủ chốt không trung thực trong E-HSDT nhằm làm sai lệch kết quả lựa chọn nhà thầu thì nhà thầu không được thay thế nhân sự khác, E-HSDT của nhà thầu bị loại và nhà thầu sẽ bị coi là gian lận theo quy định tại điểm b khoản 4 Điều 16 của Luật Đấu thầu và bị xử lý theo quy định tại khoản 1 Điều 133 của Nghị định số 214/2025/NĐ-CP. Trường hợp nhà thầu trúng thầu và ký kết hợp đồng, nhà thầu có nghĩa vụ huy động nhân sự chủ chốt như đã đề xuất ban đầu hoặc đề xuất thay đổi theo quy định tại Mục này. Trường hợp không huy động được nhân sự chủ chốt, nhà thầu bị phạt hợp đồng. Yêu cầu về nhân sự chủ chốt được số hóa dưới dạng Webform trên Hệ thống. Kinh nghiệm trong các công việc tương tự được thể hiện ở số năm tối thiểu nhân sự thực hiện các công việc tương tự hoặc số hợp đồng tối thiểu trong các công việc tương tự. Số năm kinh nghiệm của nhân sự chủ chốt được tính từ thời điểm nhân sự bắt đầu thực hiện công việc tương tự đó đến thời điểm đóng thầu. Nhà thầu phải cung cấp thông tin chi tiết về các nhân sự chủ chốt được đề xuất theo các Mẫu số 06A, 06B và 06C Chương IV để chứng minh rằng mình có đầy đủ nhân sự cho các vị trí chủ chốt đáp ứng những yêu cầu sau đây:",
+  "sau": "Gói thầu gồm phân tích, thiết kế, xây dựng hệ thống website bán hàng hoạt động liên tục và tích hợp với hệ thống chính hiện có (Main System) của Chủ đầu tư trong thời gian khoảng 15 tuần, vì vậy nhà thầu cần bố trí nhân sự chủ chốt có kinh nghiệm quản lý dự án, phát triển ứng dụng web và phân tích nghiệp vụ hoặc kiểm thử phần mềm.",
+  "ghi_chu": "Script chép nguyên văn đoạn quy phạm Mục 2.2 và điểm c, bản soạn chỉ giữ lý do (tránh NV03 lặp)"
+ },
+ {
+  "ma": "PH010",
+  "id": "DKC_17_1_c[2]",
+  "truoc": "Trường hợp Chủ đầu tư cung cấp tài liệu, hạ tầng hoặc môi trường chậm so với thời hạn nêu tại mục 3.5 Chương V, hai bên sửa đổi thời gian thực hiện hợp đồng theo Mục 17.1 (b) và Mục 17.2 E-ĐKC, các mốc liên quan được lùi tương ứng với số ngày chậm.",
+  "sau": "",
+  "ghi_chu": "Bỏ, do E-ĐKC 18 (e) và câu dẫn mục 3.5 do script lập đã quy định lùi mốc khi Chủ đầu tư cung cấp chậm"
+ }
+]

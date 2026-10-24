@@ -1,0 +1,12 @@
+{
+ "tai_lieu": "ket_qua/02_HSDT/HSDT.docx",
+ "phien_ban_kiem_tra": "0.1",
+ "ngay": "2026-10-18",
+ "giai_trinh": [
+  {"ma": "MH02", "quyet_dinh": "giu_nguyen", "nguoi_quyet_dinh": "nhóm (người dùng)", "ly_do": "M2 có ngày trình 06/05/2027 (hoàn thành gói 2.1.7, sprint S3) và hạn xác nhận 10/05/2027 trong thời gian phê duyệt tài liệu 5 ngày, rơi vào S4. Bảng mốc ghi sprint trình, mục tiêu S4 ghi việc hai bên xác nhận. Hai cách ghi nhất quán, không chạy lại lịch."},
+  {"ma": "MH03", "quyet_dinh": "giu_nguyen", "nguoi_quyet_dinh": "nhóm (người dùng)", "ly_do": "Giữ công bố MD và đơn giá theo loại công việc tại mục 17 để minh bạch cơ sở tính giá theo yêu cầu Estimated Cost của RFP."},
+  {"ma": "MH05", "quyet_dinh": "khong_sua", "nguoi_quyet_dinh": "điều phối", "ly_do": "Câu lựa chọn Mẫu số 07 là nguyên văn ý thứ nhất của Mẫu 5A (nhà thầu không có hợp đồng không hoàn thành, nha_thau.json hop_dong_khong_hoan_thanh rỗng)."},
+  {"ma": "MH07", "quyet_dinh": "khong_sua", "nguoi_quyet_dinh": "điều phối", "ly_do": "Thời hạn đánh giá 3 ngày lấy từ .claude/skills/qlda-change/references/phan_loai.json (thoi_han_danh_gia_ngay mức trung bình)."},
+  {"ma": "MH06", "quyet_dinh": "cho_nhom_bo_sung", "nguoi_quyet_dinh": "nhóm", "ly_do": "Căn cước, người liên lạc, số năm làm việc hiện tại của nhân sự chủ chốt do nhóm bổ sung vào thanh_vien.json khi có."}
+ ]
+}

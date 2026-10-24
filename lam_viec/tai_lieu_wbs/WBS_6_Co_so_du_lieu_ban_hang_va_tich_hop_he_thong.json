@@ -1,0 +1,476 @@
+{
+ "meta": {
+  "ten": "WBS 6 - Cơ sở dữ liệu bán hàng và tích hợp hệ thống",
+  "header": "Lập kế hoạch - WBS 6, Cơ sở dữ liệu bán hàng và tích hợp hệ thống",
+  "size_bang_pt": 12,
+  "phien_ban": "0.5",
+  "ngay": "05/03/2027"
+ },
+ "blocks": [
+  {
+   "t": "center",
+   "text": "Cấu trúc phân rã công việc",
+   "size": 18
+  },
+  {
+   "t": "center",
+   "text": "Cơ sở dữ liệu bán hàng và tích hợp hệ thống, mã WBS 6",
+   "size": 15
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+  },
+  {
+   "t": "center",
+   "text": "Khách hàng: Công ty Cổ phần ABC Wear"
+  },
+  {
+   "t": "center",
+   "text": "Tài liệu kế hoạch dự án, kèm theo Phần III. Đề xuất kỹ thuật của hồ sơ dự thầu"
+  },
+  {
+   "t": "center",
+   "text": "Phiên bản {{PHIEN_BAN}}, ngày {{NGAY}}"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "h2",
+   "text": "1. Thông tin chung"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Tổng khối lượng",
+     "93 người-ngày"
+    ],
+    [
+     "Căn cứ ước lượng",
+     "1 Selling DB, 2 khung ứng dụng (phía máy chủ, giao diện), 1 dịch vụ thư điện tử, 5 luồng tích hợp với Main System (sản phẩm và giá, tồn kho, chuyển đơn hàng, trạng thái vận chuyển, giám sát và gửi lại), 1 công cụ chuyển đổi dữ liệu, 1 lần chuyển đổi thử và 1 lần nạp nội dung. Mục tiêu theo tong_theo_nhom của uoc_luong.json là 95 MD, tổng các gói của nhóm là 93 MD, thấp hơn 2 MD và nằm trong dung sai của nhóm; tổng toàn dự án giữ 657 MD, phần chênh nằm ở nhóm 7. Gồm nền tảng dùng chung, Selling DB, tích hợp và chuyển đổi dữ liệu. Mỗi luồng tích hợp ước lượng theo số thực thể dữ liệu và chiều trao đổi: cơ sở dữ liệu bán hàng (Selling DB) và nền tảng dùng chung 22 MD (6.1); tích hợp với hệ thống chính (Main System) 58 MD (6.2); chuyển đổi dữ liệu và nội dung sản phẩm 13 MD (6.3)."
+    ],
+    [
+     "Thời gian thực hiện",
+     "18/03/2027 - 24/06/2027 (sprint S1 đến S7)"
+    ],
+    [
+     "Người chịu trách nhiệm",
+     "Ninh Đức Toàn"
+    ],
+    [
+     "Phụ thuộc đầu vào",
+     "Hoàn thành các gói 2.1.2 (Khảo sát hệ thống hiện có, Main System và luồng dữ liệu liên quan), 2.2.3 (Cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB), 7.2.4 (Khắc phục lỗi sau kiểm thử hệ thống), 8.1.1 (Môi trường phát triển, kiểm thử và quy trình tích hợp, triển khai tự động), 8.1.3 (Giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành)"
+    ],
+    [
+     "Đơn vị khối lượng",
+     "Người-ngày, viết tắt MD, tính theo 8 giờ làm việc"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "2. Sơ đồ WBS dạng cây phân cấp"
+  },
+  {
+   "t": "p",
+   "text": "Sơ đồ dùng để trao đổi với Chủ đầu tư. Bảng chi tiết ở mục 3 dùng để ước lượng, giao việc và theo dõi tiến độ."
+  },
+  {
+   "t": "p",
+   "text": "6. Cơ sở dữ liệu bán hàng và tích hợp hệ thống",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "6.1. Cơ sở dữ liệu bán hàng (Selling DB) và nền tảng dùng chung",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "6.1.1. Khung ứng dụng phía máy chủ và thành phần dùng chung về xác thực, phân quyền, ghi nhật ký, xử lý lỗi",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.1.2. Tạo lập Selling DB theo cấu trúc đã thiết kế và tầng truy cập dữ liệu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.1.3. Khung ứng dụng giao diện gồm định tuyến, quản lý trạng thái và gọi dịch vụ",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.1.4. Dịch vụ gửi thư điện tử qua máy chủ thư của Chủ đầu tư",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2. Tích hợp với hệ thống chính (Main System)",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "6.2.1. Đặc tả giao diện trao đổi dữ liệu với Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2.2. Thiết kế tích hợp gồm ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2.3. Đồng bộ danh mục sản phẩm và giá từ Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2.4. Đồng bộ tồn kho từ Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2.5. Chuyển đơn hàng sang Main System và nhận trạng thái xử lý",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2.6. Nhận trạng thái vận chuyển từ Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2.7. Giám sát tích hợp, cảnh báo lỗi đồng bộ và gửi lại",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2.8. Dịch vụ giả lập Main System và dữ liệu kiểm thử tích hợp",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2.9. Kịch bản kiểm thử tích hợp với Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2.10. Kiểm thử tích hợp với Main System trên môi trường thử",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2.11. Sửa lỗi và kiểm thử lại tích hợp với Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2.12. Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận tích hợp với Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.2.13. Chủ đầu tư xem xét, xác nhận đặc tả giao diện tích hợp với Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.3. Chuyển đổi dữ liệu và nội dung sản phẩm",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "6.3.1. Công cụ chuyển đổi dữ liệu sản phẩm, tồn kho và kiểm tra toàn vẹn",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.3.2. Chuyển đổi thử dữ liệu sản phẩm, tồn kho do Chủ đầu tư cung cấp",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "6.3.3. Nạp hình ảnh và nội dung sản phẩm theo bộ nhận diện của Chủ đầu tư lên môi trường vận hành",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h2",
+   "text": "3. Bảng chi tiết"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi gói công việc gắn với một sản phẩm kiểm tra được, có khối lượng ước lượng được và giao được cho một người."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã WBS",
+     "Tên công việc",
+     "Mức",
+     "Khối lượng, MD",
+     "Loại công việc",
+     "Sản phẩm đầu ra"
+    ],
+    [
+     "6.1",
+     "Cơ sở dữ liệu bán hàng (Selling DB) và nền tảng dùng chung",
+     "2",
+     "22",
+     "",
+     ""
+    ],
+    [
+     "6.1.1",
+     "Khung ứng dụng phía máy chủ và thành phần dùng chung về xác thực, phân quyền, ghi nhật ký, xử lý lỗi",
+     "3",
+     "8",
+     "DEV",
+     "Khung ứng dụng phía máy chủ trên kho mã nguồn"
+    ],
+    [
+     "6.1.2",
+     "Tạo lập Selling DB theo cấu trúc đã thiết kế và tầng truy cập dữ liệu",
+     "3",
+     "6",
+     "DEV",
+     "Selling DB trên môi trường phát triển và kiểm thử"
+    ],
+    [
+     "6.1.3",
+     "Khung ứng dụng giao diện gồm định tuyến, quản lý trạng thái và gọi dịch vụ",
+     "3",
+     "5",
+     "DEV",
+     "Khung ứng dụng giao diện trên kho mã nguồn"
+    ],
+    [
+     "6.1.4",
+     "Dịch vụ gửi thư điện tử qua máy chủ thư của Chủ đầu tư",
+     "3",
+     "3",
+     "DEV",
+     "Dịch vụ gửi thư điện tử đạt kiểm thử đơn vị"
+    ],
+    [
+     "6.2",
+     "Tích hợp với hệ thống chính (Main System)",
+     "2",
+     "58",
+     "",
+     ""
+    ],
+    [
+     "6.2.1",
+     "Đặc tả giao diện trao đổi dữ liệu với Main System",
+     "3",
+     "4",
+     "BA",
+     "Đặc tả giao diện trao đổi dữ liệu với Main System"
+    ],
+    [
+     "6.2.2",
+     "Thiết kế tích hợp gồm ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+     "3",
+     "4",
+     "DEV",
+     "Thiết kế tích hợp với Main System"
+    ],
+    [
+     "6.2.3",
+     "Đồng bộ danh mục sản phẩm và giá từ Main System",
+     "3",
+     "5",
+     "DEV",
+     "Chức năng đồng bộ sản phẩm, giá đạt kiểm thử đơn vị"
+    ],
+    [
+     "6.2.4",
+     "Đồng bộ tồn kho từ Main System",
+     "3",
+     "5",
+     "DEV",
+     "Chức năng đồng bộ tồn kho đạt kiểm thử đơn vị"
+    ],
+    [
+     "6.2.5",
+     "Chuyển đơn hàng sang Main System và nhận trạng thái xử lý",
+     "3",
+     "5",
+     "DEV",
+     "Chức năng chuyển đơn hàng đạt kiểm thử đơn vị"
+    ],
+    [
+     "6.2.6",
+     "Nhận trạng thái vận chuyển từ Main System",
+     "3",
+     "5",
+     "DEV",
+     "Chức năng nhận trạng thái vận chuyển đạt kiểm thử đơn vị"
+    ],
+    [
+     "6.2.7",
+     "Giám sát tích hợp, cảnh báo lỗi đồng bộ và gửi lại",
+     "3",
+     "4",
+     "DEV",
+     "Chức năng giám sát tích hợp đạt kiểm thử đơn vị"
+    ],
+    [
+     "6.2.8",
+     "Dịch vụ giả lập Main System và dữ liệu kiểm thử tích hợp",
+     "3",
+     "4",
+     "QA",
+     "Dịch vụ giả lập và bộ dữ liệu kiểm thử tích hợp"
+    ],
+    [
+     "6.2.9",
+     "Kịch bản kiểm thử tích hợp với Main System",
+     "3",
+     "3",
+     "QA",
+     "Kịch bản kiểm thử tích hợp"
+    ],
+    [
+     "6.2.10",
+     "Kiểm thử tích hợp với Main System trên môi trường thử",
+     "3",
+     "7",
+     "QA",
+     "Báo cáo kiểm thử tích hợp"
+    ],
+    [
+     "6.2.11",
+     "Sửa lỗi và kiểm thử lại tích hợp với Main System",
+     "3",
+     "5",
+     "DEV",
+     "Phiên bản tích hợp đã khắc phục lỗi kiểm thử tích hợp"
+    ],
+    [
+     "6.2.12",
+     "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận tích hợp với Main System",
+     "3",
+     "5",
+     "DEV",
+     "Phiên bản tích hợp đã khắc phục lỗi kiểm thử chấp nhận"
+    ],
+    [
+     "6.2.13",
+     "Chủ đầu tư xem xét, xác nhận đặc tả giao diện tích hợp với Main System",
+     "3",
+     "2",
+     "BA",
+     "Biên bản xác nhận đặc tả giao diện tích hợp"
+    ],
+    [
+     "6.3",
+     "Chuyển đổi dữ liệu và nội dung sản phẩm",
+     "2",
+     "13",
+     "",
+     ""
+    ],
+    [
+     "6.3.1",
+     "Công cụ chuyển đổi dữ liệu sản phẩm, tồn kho và kiểm tra toàn vẹn",
+     "3",
+     "5",
+     "DEV",
+     "Công cụ chuyển đổi dữ liệu đạt kiểm thử đơn vị"
+    ],
+    [
+     "6.3.2",
+     "Chuyển đổi thử dữ liệu sản phẩm, tồn kho do Chủ đầu tư cung cấp",
+     "3",
+     "4",
+     "DEV",
+     "Biên bản chuyển đổi thử và kiểm tra toàn vẹn dữ liệu"
+    ],
+    [
+     "6.3.3",
+     "Nạp hình ảnh và nội dung sản phẩm theo bộ nhận diện của Chủ đầu tư lên môi trường vận hành",
+     "3",
+     "4",
+     "DEV",
+     "Nội dung sản phẩm trên môi trường vận hành"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "",
+     "93",
+     "",
+     ""
+    ]
+   ],
+   "widths": [
+    1000,
+    3600,
+    600,
+    1100,
+    1000,
+    2000
+   ],
+   "center_cols": [
+    2,
+    4
+   ],
+   "right_cols": [
+    3
+   ],
+   "dong_dam": [
+    1,
+    6,
+    20
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Kiểm tra quy tắc 100%"
+  },
+  {
+   "t": "p",
+   "text": "Tổng khối lượng các hạng mục mức 2, 22 cộng 58 cộng 13, bằng 93 người-ngày, khớp với khối lượng khai báo ở mức 1. Kết luận: cân bằng."
+  }
+ ]
+}

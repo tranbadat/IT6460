@@ -1,0 +1,82 @@
+{
+ "tai_lieu": "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+ "phien_ban": "0.7",
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 3,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục theo đặc tả, có các đoạn soạn CAN_CU, GIA_CHAO, DU_PHONG, DOI_CHIEU, DONG_TIEN, DO_NHAY."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "A, B, C, giá chào, EMV, dự phòng, lương theo người, C sau lương, dòng tiền khớp chi_phi.json và Cost_estimate.xlsx; 657 MD khớp WBS; mốc khớp lich.json. Lưu ý làm tròn MH03."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Dẫn mã rủi ro RR13, RR04, RR02, RR01, RR19, mốc M2, M3, M6, M7, Mẫu 01A, Mẫu 11A."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Có ngưỡng hòa vốn 786,76 MD, năng suất hòa vốn 83,5%, ngưỡng chịu đựng 229,5 MD."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Quyết định dự phòng 50 triệu, bù phần vượt EMV từ C sau lương, vốn lưu động 500 triệu, chi phí vốn RR19 đã phản ánh đúng. Quyết định giữ dự trữ 4 ngày phản ánh thiếu ngưỡng dưới 2 ngày (MH01)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Văn phong trang trọng, còn ghi chú mã kiểm tra nội bộ và đoạn trùng lặp (MH02, MH04)."
+  },
+  {
+   "tieu_chi": "DH",
+   "ket_qua": "dat",
+   "nhan_xet": "Phương pháp giải thích từng dòng Excel; dự phòng so EMV, quy tắc lấy từ bảng nguồn chung; dòng tiền gắn mốc thanh toán; cách trả lương theo công sức, ngày sẵn sàng chỉ là chỉ số năng lực."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "CL05",
+   "vi_tri": "Mục 8: 'theo dõi hằng tuần các rủi ro trên đường găng và báo Chủ đầu tư khi dự trữ giảm'",
+   "mo_ta": "Quyết định 18/10 (dau_vao/du_an.json, _quyet_dinh_18_10 mục 1) đặt ngưỡng báo Chủ đầu tư khi dự trữ còn dưới 2 ngày. Tài liệu bỏ ngưỡng này, phương án chap_nhan_bao_cdt không có điều kiện kích hoạt kiểm chứng được.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "DONG_TIEN: ghi rõ báo Chủ đầu tư khi dự trữ còn dưới 2 ngày, lấy ngưỡng từ dữ liệu quyết định"
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "CL06",
+   "vi_tri": "Mục 4: 'Kiểm tra lớp A ghi nhận cảnh báo C10 cho nội dung này.'; Mục 8: 'ứng với cảnh báo C41 của kiểm tra lớp A'",
+   "mo_ta": "Dẫn chiếu mã cảnh báo của kiểm tra nội bộ là ghi chú quy trình, không phù hợp văn phong tài liệu chính thức (van_phong.md, nguyên tắc 5).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "DU_PHONG, DONG_TIEN: bỏ câu nhắc C10, C41"
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "CL02",
+   "vi_tri": "Mục 9: 'tương đương khoảng 230 MD' và 'Ngưỡng chịu đựng ... khoảng 229,50 MD'",
+   "mo_ta": "Cùng chỉ số nguong_chiu_dung_md = 229,5 được trình bày hai cách làm tròn khác nhau trong cùng mục.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thống nhất định dạng (khung dùng |nguyen, DO_NHAY dùng số thập phân)"
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "CL06",
+   "vi_tri": "Mục 9, đoạn 'Về thuế, nếu áp thuế suất 10% ...'",
+   "mo_ta": "Đoạn DO_NHAY lặp nguyên số liệu độ nhạy thuế của đoạn tham chiếu ngay trước, gây trùng lặp.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "DO_NHAY: chỉ giữ kết luận về việc giữ căn cứ không chịu thuế"
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "tai_lieu": "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+ "phien_ban": "0.6",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 2,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 7 mục theo đặc tả."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "657 MD, 796 MD, 82,5%, dự trữ 4 ngày, cut over 01/07/2027 khớp lich.json. MH01 vòng 1 đã sửa: mục 7 nêu không ai vượt quỹ và đúng 3 cảnh báo L07 (Minh S6 2/10, S7 0/10, Huy S6 2/10), khớp lich.json kiem_tra và bảng tải mục 5."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Truy vết mã gói WBS, master schedule, Bảng số 02, E-ĐKC 21.2."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi hạng mục mức 1, mức 2 có đúng một A. Không ô tải nào vượt quỹ. Đủ 12 thành viên."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có quy tắc quá tải, vắng mặt, thay thế 7 ngày, cập nhật khi thay đổi."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Văn phong trang trọng, từ chốt đã được thay."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "truy_vet",
+   "vi_tri": "Mục 3, bảng nhân sự chủ chốt",
+   "mo_ta": "Khớp nhan_su_chu_chot của hsmt.json. Chưa đối chiếu được HSDT Mẫu 06A vì HSDT chưa lập.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Đối chiếu khi HSDT được lập."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "nguon",
+   "vi_tri": "Mục 5, Vũ Đức Minh S6, S7; Lê Quang Huy S6",
+   "mo_ta": "Mức sử dụng dưới 30% quỹ sprint (L07). Tài liệu đã nêu đúng, việc điều chỉnh huy động do nhóm quyết định.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xem xét huy động trong phan_cong."
+  }
+ ]
+}

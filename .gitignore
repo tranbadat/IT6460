@@ -8,9 +8,9 @@ __pycache__/
 
 # Tệp tạm khi script tính lại công thức Excel
 _tinh_lai/
-/hsmt_lam_viec
-/ket_qua
-/lam_viec
+# /hsmt_lam_viec
+# /ket_qua
+# /lam_viec
 # Cấu hình Claude Code cá nhân
 .claude/settings.local.json
 /slide_tai_lieu

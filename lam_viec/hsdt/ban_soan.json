@@ -1,0 +1,141 @@
+{
+ "NHAN_SU": [
+  "Nhà thầu bố trí đủ nhân sự chủ chốt theo Bảng số 02 Chương III. Vị trí quản trị dự án do {hb#nhan_su_chu_chot[id=dat].ho_ten} đảm nhiệm với {hb#nhan_su_chu_chot[id=dat].so_nam} năm kinh nghiệm tính từ kinh nghiệm liệt kê sớm nhất đến ngày đóng thầu, đã quản trị {hb#hop_dong_tuong_tu|dem} hợp đồng tương tự kê khai tại Mẫu số 05 về website bán hàng trực tuyến tích hợp hệ thống bán hàng nội bộ. Các vị trí kỹ sư phát triển phần mềm do {hb#nhan_su_chu_chot[id=tuananh].ho_ten} ({hb#nhan_su_chu_chot[id=tuananh].so_nam} năm), {hb#nhan_su_chu_chot[id=toan].ho_ten} ({hb#nhan_su_chu_chot[id=toan].so_nam} năm) và {hb#nhan_su_chu_chot[id=minh].ho_ten} ({hb#nhan_su_chu_chot[id=minh].so_nam} năm) đảm nhiệm. Vị trí kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử do {hb#nhan_su_chu_chot[id=lien].ho_ten} ({hb#nhan_su_chu_chot[id=lien].so_nam} năm) đảm nhiệm. Mọi nhân sự chủ chốt đều đáp ứng yêu cầu tối thiểu của Bảng số 02 theo bảng đối chiếu tại mục 6.4. Chi tiết quá trình công tác và kinh nghiệm của từng người theo Mẫu số 06B, 06C và hồ sơ nhân sự kèm theo.",
+  "Nhân sự chủ chốt được giao phụ trách các nhóm công việc phù hợp với kinh nghiệm: {hb#nhan_su_chu_chot[id=dat].ho_ten} chịu trách nhiệm quản lý dự án (nhóm WBS 1), {hb#nhan_su_chu_chot[id=lien].ho_ten} chịu trách nhiệm khảo sát, đặc tả, kiểm thử và chuyển giao (nhóm 2, 7 và gói 8.2), {hb#nhan_su_chu_chot[id=minh].ho_ten} chịu trách nhiệm thiết kế giao diện và phân hệ tìm kiếm sản phẩm (gói 2.3, nhóm 3), {hb#nhan_su_chu_chot[id=tuananh].ho_ten} chịu trách nhiệm phân hệ thành viên và phân hệ đặt hàng (nhóm 4, 5), {hb#nhan_su_chu_chot[id=toan].ho_ten} chịu trách nhiệm Selling DB, tích hợp với Main System và triển khai (nhóm 6, 8). Toàn bộ nhân sự chủ chốt được huy động từ sprint đầu tiên đến ngày cut over {lich#cut_over|ngay}.",
+  "Nhà thầu cam kết huy động đúng nhân sự chủ chốt đã kê khai. Trường hợp phải thay thế, nhà thầu đề xuất người thay thế có trình độ, kinh nghiệm tương đương hoặc cao hơn và chỉ thay thế khi được Chủ đầu tư chấp thuận, trong thời hạn {hsmt#hop_dong.thay_the_nhan_su_ngay} ngày theo quy định của E-HSMT. Đối với các vị trí bổ sung, nhà thầu áp dụng biện pháp phòng ngừa của rủi ro RR04: {rr#danh_sach[ma=RR04].bien_phap_phong_ngua}."
+ ],
+ "GIAI_PHAP": [
+  "Mục tiêu của dự án là mở rộng khách hàng của {rfp#khach_hang} qua internet và tạo kênh bán hàng mới. Hệ thống Web Selling Site System gồm {rfp#he_thong.chuc_nang|dem} chức năng {rfp#he_thong.chuc_nang} cùng cơ sở dữ liệu bán hàng {rfp#he_thong.co_so_du_lieu}. Khách hàng truy cập hệ thống qua internet. Main System là {rfp#he_thong.he_thong_lien_quan[ten=Main System].vai_tro}. Nghiệp vụ vận chuyển (Transportation Operation) là {rfp#he_thong.he_thong_lien_quan[ten=Transportation Operation].vai_tro}. Chức năng quản trị nội bộ nằm ngoài phạm vi theo RFP. Các yếu tố này quyết định giải pháp: mục tiêu kênh bán hàng mới đòi hỏi giao diện dễ thao tác và khả năng truy cập liên tục, vai trò của Main System đòi hỏi Selling DB đồng bộ sản phẩm, giá, tồn kho và chuyển đơn hàng hai chiều, nghiệp vụ vận chuyển đòi hỏi hệ thống nhận trạng thái vận chuyển từ Main System để khách hàng theo dõi đơn hàng (gói 6.2.6).",
+  "Kiến trúc hệ thống gồm khung ứng dụng phía máy chủ với các thành phần dùng chung về xác thực, phân quyền, ghi nhật ký, xử lý lỗi (gói 6.1.1), khung ứng dụng giao diện (6.1.3), Selling DB và tầng truy cập dữ liệu (6.1.2), tầng tích hợp với Main System (6.2). Tài liệu kiến trúc, cấu trúc và cấu hình Selling DB được lập tại các gói 2.2.2, 2.2.3, 2.2.4. Tích hợp với Main System gồm đặc tả giao diện trao đổi dữ liệu (6.2.1), thiết kế ánh xạ dữ liệu, xử lý lỗi và gửi lại (6.2.2), đồng bộ sản phẩm, giá, tồn kho (6.2.3, 6.2.4), chuyển đơn hàng và nhận trạng thái (6.2.5, 6.2.6), giám sát tích hợp và cảnh báo lỗi đồng bộ (6.2.7). Phương án dự phòng cho rủi ro tích hợp RR02: {rr#danh_sach[ma=RR02].bien_phap_phong_ngua}. Cấu hình hạ tầng vận hành đề xuất gồm hai nút ứng dụng sau bộ cân bằng tải, cơ sở dữ liệu chính và dự phòng (gói 8.1.2), giám sát, cảnh báo và sao lưu tự động (8.1.3), theo giải pháp của chỉ tiêu KT01. Máy chủ, đường truyền và phần mềm nền do Chủ đầu tư cung cấp theo cấu hình hai bên thống nhất khi xác nhận đặc tả, phù hợp phân định tại mục 3.5 Chương V. Bảo mật dữ liệu khách hàng theo chỉ tiêu KT04. Kết nối dùng HTTPS, mật khẩu được băm, quyền truy cập phân theo vai trò. Dữ liệu đầu vào được kiểm soát, phiên làm việc được bảo vệ và số lần đăng nhập sai được giới hạn. Khóa và cấu hình bí mật được tách khỏi mã nguồn, thao tác nhạy cảm được ghi nhật ký. Giải pháp được kiểm chứng bằng báo cáo rà soát lỗ hổng và kết quả kiểm thử lại (gói 7.2.5).",
+  "Yêu cầu hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm được đáp ứng theo chỉ tiêu KT01: {kt#chi_tieu[ma=KT01].chi_tieu}. Cách tính thời gian hoạt động liên tục là tỷ lệ thời gian hệ thống sẵn sàng phục vụ trong tháng, không tính khung bảo trì đã thống nhất, dùng làm điều kiện đo trong đặc tả. Giải pháp gồm tối thiểu hai nút ứng dụng sau bộ cân bằng tải và cơ sở dữ liệu cấu hình chính và dự phòng. Phiên bản mới được triển khai cuốn chiếu không dừng dịch vụ. Hệ thống có kiểm tra sức khỏe và cảnh báo tự động. Sao lưu và khôi phục theo chỉ tiêu KT05: {kt#chi_tieu[ma=KT05].chi_tieu}. Thời gian khôi phục mục tiêu và điểm khôi phục mục tiêu do hai bên thống nhất khi xác nhận đặc tả. Trước khi đưa hệ thống vào vận hành, nhà thầu kiểm thử chứng minh bằng diễn tập chuyển đổi dự phòng, sao lưu và khôi phục trên môi trường vận hành (gói 7.3.6).",
+  "Yêu cầu thời gian phản hồi không quá 2 giây được đáp ứng theo chỉ tiêu KT02: {kt#chi_tieu[ma=KT02].chi_tieu}. Giải pháp hiệu năng áp dụng cho tìm kiếm sản phẩm, quản lý thành viên, đặt hàng và truy cập Selling DB như sau. Tìm kiếm sản phẩm dùng chỉ mục tìm kiếm riêng. Trang danh mục và chi tiết sản phẩm dùng bộ nhớ đệm. Truy vấn và chỉ mục cơ sở dữ liệu được tối ưu. Các tác vụ gọi hệ thống ngoài được xử lý bất đồng bộ. Điều kiện đo về tải theo chỉ tiêu KT03: {kt#chi_tieu[ma=KT03].chi_tieu}, đạt được nhờ mở rộng theo chiều ngang ở lớp ứng dụng. Điểm đo là các thao tác cốt lõi nêu tại KT02. Phương pháp kiểm thử hiệu năng: đo thời gian phản hồi trong kiểm thử phân hệ, thử tải {kt#chi_tieu[ma=KT03].gia_tri|nguyen} người dùng đồng thời và đo lại sau tối ưu trên môi trường kiểm thử (gói 7.1.4, 7.2.3) và kiểm thử lại trên môi trường vận hành (7.3.4). Tiêu chí đạt là mọi thao tác cốt lõi không quá 2 giây với {kt#chi_tieu[ma=KT03].gia_tri|nguyen} người dùng đồng thời, báo cáo kèm phân vị 95. Điều kiện đo được hai bên xác nhận trong đặc tả yêu cầu trước khi thanh toán Đợt 2.",
+  "Giao diện được thiết kế theo chính sách khách hàng thao tác dễ dàng (Easy Operation for the Customer): lập sơ đồ phân cấp menu (Menu Layer, gói 2.3.1), nghiên cứu hành vi người dùng và khung giao diện các trang chính (2.3.2), thiết kế giao diện ưu tiên cho ba trình tự thao tác tìm kiếm và xem chi tiết sản phẩm (2.3.3), đăng ký, đăng nhập và trang thành viên (2.3.4), giỏ hàng, đặt hàng và theo dõi đơn hàng (2.3.5), thư viện thành phần giao diện dùng chung tương thích thiết bị di động (2.3.6). Chủ đầu tư tham gia xem xét giao diện ưu tiên tại trình diễn cuối sprint và xác nhận tại mốc M2. Mức độ thao tác dễ dàng được đánh giá tại gói 7.2.2 và trong kiểm thử chấp nhận cùng người dùng nghiệp vụ của Chủ đầu tư.",
+  "Giải pháp dựa trên các điều kiện tiền đề nhất quán với phân định tại mục 3.5 Chương V: Chủ đầu tư cung cấp tài liệu đặc tả giao diện trao đổi dữ liệu của Main System chậm nhất {lich#cam_ket_chu_dau_tu[ma=CK1].han|ngay} (tiền đề của gói 6.2.1), môi trường thử của Main System chậm nhất {lich#cam_ket_chu_dau_tu[ma=CK2].han|ngay} (tiền đề của gói 6.2.10), hạ tầng vận hành chính thức chậm nhất {hsmt#phan_dinh.thoi_han_ha_tang_iso.ha_tang_van_hanh_chinh_thuc|ngay}, dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi và nội dung, hình ảnh sản phẩm chậm nhất {lich#cam_ket_chu_dau_tu[ma=CK3].han|ngay} (tiền đề của gói 6.3.2, 6.3.3). Chủ đầu tư thực hiện thay đổi phía Main System, nhà thầu chịu trách nhiệm phía hệ thống mới. Môi trường phát triển và kiểm thử do nhà thầu cung cấp. Chủ sản phẩm của Chủ đầu tư tham gia làm rõ yêu cầu và trình diễn cuối sprint (CK5), người dùng nghiệp vụ tham gia kiểm thử chấp nhận (CK6). Các tiền đề này không phát sinh nghĩa vụ cho Chủ đầu tư ngoài phân định tại mục 3.5 Chương V."
+ ],
+ "PHUONG_PHAP": [
+  "Phạm vi công việc là xây dựng Web Selling Site System từ phân tích hệ thống đến kiểm thử vận hành theo Chương V, gồm đủ {hsmt#mau_01a|dem} hạng mục Mẫu số 01A. Phạm vi được phân rã thành {wbs#nhom|dem} nhóm công việc và {wbs#so_goi_la} gói công việc với tổng khối lượng {wbs#tong_md|md} MD. Mỗi gói có sản phẩm cụ thể và truy vết tới yêu cầu RFP và hạng mục Mẫu số 01A. Phần ngoài phạm vi là chức năng quản trị nội bộ (The internal administrative function).",
+  "Sản phẩm bàn giao gồm đặc tả hệ thống (Specification) với cấu hình cơ sở dữ liệu (DB Configuration) và chức năng (Function), quy trình vận hành mới (New Operational Flow), cấu trúc cơ sở dữ liệu (Database Structure), sơ đồ phân cấp menu (Menu Layer), hệ thống đã hoàn thành kiểm thử vận hành, tài liệu hướng dẫn sử dụng, tài liệu hướng dẫn vận hành kỹ thuật, mã nguồn và danh mục thư viện. Sản phẩm thiết kế bàn giao dưới dạng tài liệu và được hai bên xác nhận tại mốc M2 ngày {lich#moc[ma=M2].ngay|ngay}. Các chức năng chính và tích hợp với Main System được Chủ đầu tư kiểm tra tại mốc M3 ngày {lich#moc[ma=M3].ngay|ngay}. Hệ thống đưa vào vận hành và được nghiệm thu tại mốc M6 ngày {lich#moc[ma=M6].ngay|ngay}. Mã nguồn, tài liệu kỹ thuật được bàn giao bằng biên bản tại mốc M7 (gói 8.2.4). Chủ đầu tư kiểm tra sản phẩm theo đặc tả đã xác nhận và thông báo kết quả bằng văn bản theo E-ĐKC 20.1.",
+  "Dự án thực hiện theo {lich#so_sprint} sprint. Yêu cầu được thu thập qua khảo sát nghiệp vụ và hệ thống hiện có (gói 2.1.1, 2.1.2), đặc tả theo từng phân hệ (2.1.3 đến 2.1.6) và trình chủ sản phẩm xem xét trong buổi làm rõ yêu cầu hằng tuần trước khi hai bên xác nhận (2.1.7). Lập trình từng chức năng bắt đầu khi thiết kế chi tiết của chức năng đó hoàn thành. Mỗi sprint kết thúc bằng trình diễn sản phẩm với Chủ đầu tư. Một công việc được coi là hoàn thành khi đạt tiêu chí hoàn thành trong kế hoạch bảo đảm chất lượng (1.1.4), đã rà soát mã nguồn (1.2.4) và đạt kiểm thử đơn vị. Mã nguồn và tài liệu được quản lý cấu hình và phiên bản (1.2.3).",
+  "Kiểm thử gồm kiểm thử phân hệ cho từng chức năng (3.4, 4.4, 5.4), kiểm thử tích hợp với Main System trên dịch vụ giả lập (6.2.8) và trên môi trường thử của Main System (6.2.10), kiểm thử hệ thống gồm chức năng đầu cuối, khả năng sử dụng, hiệu năng và rà soát lỗ hổng bảo mật trên môi trường kiểm thử do nhà thầu cung cấp (7.2.1, 7.2.2, 7.2.3, 7.2.5), kiểm thử chấp nhận và kiểm thử vận hành (Operation Test) cùng Chủ đầu tư từ {lich#chu_dau_tu_tham_gia[loai=uat].tu|ngay} đến {lich#chu_dau_tu_tham_gia[loai=uat].den|ngay} (7.3.1, 7.3.2), kiểm thử hiệu năng và an toàn thông tin bản phát hành trên hạ tầng vận hành chính thức (7.3.4). Tiêu chí đạt của từng loại kiểm thử nêu trong kế hoạch kiểm thử (7.1.1). Lỗi được ghi nhận, phân loại theo mức nghiêm trọng thống nhất với Chủ đầu tư, khắc phục ngay trong từng đợt kiểm thử và kiểm thử hồi quy (7.3.3), theo biện pháp phòng ngừa của rủi ro RR10.",
+  "Bảo đảm chất lượng áp dụng cho từng sản phẩm bàn giao gồm kế hoạch bảo đảm chất lượng, quy chuẩn mã nguồn (1.1.4), rà soát mã nguồn và kiến trúc (1.2.4), rà soát giấy phép thư viện mã nguồn mở (1.2.5), theo dõi số lỗi theo mức độ trong báo cáo tiến độ từng sprint. Người chịu trách nhiệm theo ma trận trách nhiệm của tài liệu phân công. Giả định và phần ngoài phạm vi của giải pháp: (1) {wbs#gia_dinh_ngoai_pham_vi[0]}. (2) {wbs#gia_dinh_ngoai_pham_vi[1]}. (3) {wbs#gia_dinh_ngoai_pham_vi[2]}. (4) {wbs#gia_dinh_ngoai_pham_vi[3]}. (5) {wbs#gia_dinh_ngoai_pham_vi[4]}. (6) {wbs#gia_dinh_ngoai_pham_vi[5]}. (7) {wbs#gia_dinh_ngoai_pham_vi[6]}. (8) {wbs#gia_dinh_ngoai_pham_vi[7]}. (9) {wbs#gia_dinh_ngoai_pham_vi[8]}. (10) {wbs#gia_dinh_ngoai_pham_vi[9]}. (11) {wbs#gia_dinh_ngoai_pham_vi[10]}. (12) {wbs#gia_dinh_ngoai_pham_vi[11]}."
+ ],
+ "KE_HOACH_HOP": [
+  [
+   "Họp khởi động",
+   "Một lần, ngày {lich#moc[ma=M0].ngay|ngay}",
+   "Quản trị dự án, nhân sự chủ chốt của nhà thầu, đầu mối và chủ sản phẩm của Chủ đầu tư",
+   "Xác nhận phạm vi, điều kiện tiền đề, vai trò và trách nhiệm các bên, thời điểm bàn giao tài liệu Main System và hạ tầng. Đầu ra là biên bản họp khởi động (gói 1.1.1)"
+  ],
+  [
+   "Họp lập kế hoạch sprint",
+   "Đầu mỗi sprint",
+   "Quản trị dự án và các thành viên nhà thầu",
+   "Thống nhất mục tiêu và sản phẩm trình diễn của sprint theo master schedule. Đầu ra là danh sách công việc của sprint"
+  ],
+  [
+   "Họp làm rõ yêu cầu",
+   "Hằng tuần trong giai đoạn đặc tả theo cam kết CK5",
+   "Kỹ sư phân tích nghiệp vụ, kiến trúc sư của nhà thầu, chủ sản phẩm của Chủ đầu tư",
+   "Xem xét đặc tả từng phân hệ, ghi biên bản thống nhất từng phần trước khi thiết kế chi tiết, chuẩn bị xác nhận đặc tả tại mốc M2"
+  ],
+  [
+   "Họp tiến độ",
+   "Hằng tuần",
+   "Quản trị dự án, nhà thầu và đầu mối Chủ đầu tư",
+   "Tiến độ, rủi ro, vấn đề, yêu cầu thay đổi, dự trữ thời gian đến cut over. Đầu ra là biên bản họp (gói 1.2.1)"
+  ],
+  [
+   "Trình diễn và báo cáo cuối sprint",
+   "Cuối mỗi sprint",
+   "Nhà thầu, chủ sản phẩm và cán bộ Chủ đầu tư",
+   "Trình diễn sản phẩm của sprint, ghi nhận góp ý, báo cáo tiến độ sprint gửi Chủ đầu tư (gói 1.2.1)"
+  ],
+  [
+   "Họp xác nhận sản phẩm theo mốc",
+   "Tại các mốc M1, M2, M3",
+   "Quản trị dự án, người đại diện của Chủ đầu tư",
+   "Xác nhận kế hoạch quản lý dự án (M1), đặc tả và giao diện ưu tiên (M2), kết quả kiểm tra chức năng chính và tích hợp (M3). Chủ đầu tư xem xét trong {da#thoi_gian_phe_duyet_tai_lieu_ngay} ngày, đầu ra là biên bản xác nhận"
+  ],
+  [
+   "Họp quyết định cut over",
+   "Một lần, sau kiểm thử chấp nhận (M5)",
+   "Quản trị dự án, nhân sự chủ chốt, người đại diện của Chủ đầu tư",
+   "Đối chiếu điều kiện cut over, danh sách kiểm tra và phương án khôi phục trong kế hoạch cut over (gói 8.3.1), quyết định đưa hệ thống vào vận hành ngày {lich#cut_over|ngay}"
+  ]
+ ],
+ "TO_CHUC": [
+  "Tiến độ bắt đầu từ ngày hợp đồng có hiệu lực {lich#ngay_bat_dau|ngay} và đưa hệ thống vào vận hành (cut over) ngày {lich#cut_over|ngay}, gồm {lich#so_sprint} sprint và {lich#moc|dem} mốc ({lich#moc.ma}) gắn với sản phẩm bàn giao và các đợt thanh toán tại Mục 13.1 E-ĐKCT. Đường găng gồm các gói {lich#duong_gang}. Tiến độ có {lich#du_tru_den_cut_over_ngay} ngày dự trữ đến cut over. Nhà thầu theo dõi hằng tuần các rủi ro trên đường găng ({rr#tong_hop.ma_gang}) và báo Chủ đầu tư khi dự trữ còn dưới hai ngày. Các công việc phụ thuộc Chủ đầu tư được xếp không sớm hơn thời hạn cung cấp tại mục 3.5 Chương V (CK1 đến CK4).",
+  "Về tổ chức thực hiện, {nt#dai_dien} ({nt#chuc_vu_dai_dien}) là người đại diện ký hợp đồng của nhà thầu. {pc#vi_tri_chu_chot[stt=1].ho_ten} là quản trị dự án, đầu mối làm việc với Chủ đầu tư ({pc#ben_ngoai[id=cdt].ten}), chịu trách nhiệm chung về tiến độ, chất lượng, báo cáo và ra quyết định trong phạm vi được giao. {tv#thanh_vien[id=K].ho_ten} ({tv#thanh_vien[id=K].chuc_danh}) chủ trì thiết kế kiến trúc, cơ sở dữ liệu (gói 2.2) và họp kỹ thuật. Các nhóm công việc do nhân sự chủ chốt phụ trách như mục 6, các thành viên bổ sung tham gia lập trình và kiểm thử theo tài liệu phân công. Cơ chế phối hợp gồm họp hằng ngày nội bộ, họp tiến độ hằng tuần và trình diễn cuối sprint theo kế hoạch họp. Vấn đề vượt thẩm quyền của quản trị dự án được báo cáo người đại diện của nhà thầu. Nhà thầu không sử dụng nhà thầu phụ.",
+  "Nhân sự được huy động theo sprint như bảng huy động, từ {hb#huy_dong[ma=S1].so_nguoi} người ở S1 đến {hb#huy_dong[ma=S3].so_nguoi} người từ S3, tổng {hb#tong_md_huy_dong|md} MD huy động. {tv#thanh_vien[id=D4].ho_ten} tham gia từ sprint {tv#thanh_vien[id=D4].tu_sprint}. Dự phòng nhân lực theo kế hoạch ứng phó của rủi ro RR04: {rr#danh_sach[ma=RR04].ke_hoach_ung_pho}. Đối với rủi ro RR18 về phụ thuộc người triển khai hạ tầng: {rr#danh_sach[ma=RR18].bien_phap_phong_ngua}. Đối với rủi ro RR05: {rr#danh_sach[ma=RR05].bien_phap_phong_ngua}.",
+  "Kế hoạch chuyển giao gồm tài liệu hướng dẫn sử dụng cho khách hàng và cán bộ bán hàng (gói 8.2.1, 8.2.5), tài liệu hướng dẫn vận hành kỹ thuật (8.2.2), hướng dẫn vận hành cho cán bộ Chủ đầu tư theo quy trình vận hành mới (8.2.3), bàn giao mã nguồn và tài liệu kỹ thuật (8.2.4). Các bước chuyển sang vận hành chính thức gồm kế hoạch cut over được Chủ đầu tư xác nhận (8.3.1), diễn tập triển khai và chuyển đổi dữ liệu (8.3.2), chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức (8.3.3), hỗ trợ ngày cut over (8.3.4). Phương án quay lui theo rủi ro RR08: {rr#danh_sach[ma=RR08].ke_hoach_ung_pho}. Sau cut over, nhà thầu hỗ trợ tăng cường từ {kt#bao_hanh.ho_tro_tang_cuong.tu|ngay} đến {kt#bao_hanh.ho_tro_tang_cuong.den|ngay}, gồm trực hỗ trợ trong giờ hành chính, theo dõi cảnh báo và xử lý sự cố, nằm trong chi phí bảo hành."
+ ],
+ "VAI_TRO": [
+  [
+   "Cung cấp thông tin và môi trường",
+   "Lập danh sách thông tin cần cung cấp, cung cấp môi trường phát triển và kiểm thử, lập dịch vụ giả lập Main System",
+   "Cung cấp tài liệu đặc tả giao diện Main System, môi trường thử của Main System, dữ liệu sản phẩm, tồn kho và nội dung sản phẩm theo thời hạn tại mục 3.5 Chương V"
+  ],
+  [
+   "Hạ tầng vận hành",
+   "Đề xuất cấu hình tối thiểu, thiết lập môi trường vận hành, giám sát và sao lưu (gói 8.1.2, 8.1.3)",
+   "Cung cấp máy chủ, đường truyền, phần mềm nền và bản quyền theo cấu hình đã thống nhất"
+  ],
+  [
+   "Thay đổi phía Main System",
+   "Chịu trách nhiệm phía hệ thống mới, cung cấp đặc tả giao diện tích hợp (gói 6.2.1)",
+   "Thực hiện thay đổi phía Main System để trao đổi dữ liệu với hệ thống mới, xác nhận đặc tả giao diện tích hợp (gói 6.2.13)"
+  ],
+  [
+   "Xác nhận đặc tả",
+   "Lập đặc tả, trình xem xét từng phân hệ, cập nhật theo góp ý. Quản trị dự án ký biên bản",
+   "Chủ sản phẩm làm rõ yêu cầu, người đại diện xác nhận đặc tả và giao diện ưu tiên tại mốc M2"
+  ],
+  [
+   "Kiểm tra và chấp nhận sản phẩm",
+   "Bàn giao sản phẩm kèm kết quả kiểm thử nội bộ, sửa lỗi thuộc trách nhiệm của nhà thầu bằng chi phí của mình",
+   "Kiểm tra sản phẩm theo đặc tả đã xác nhận, thông báo kết quả bằng văn bản, người dùng nghiệp vụ tham gia kiểm thử chấp nhận"
+  ],
+  [
+   "Quản lý thay đổi",
+   "Tiếp nhận, đánh giá ảnh hưởng tới phạm vi, tiến độ, giá và đề xuất phương án",
+   "Đề xuất thay đổi khi cần, thống nhất thay đổi bằng văn bản theo E-ĐKC 17.1(c)"
+  ],
+  [
+   "Quyền sở hữu và bản quyền",
+   "Rà soát giấy phép thư viện mã nguồn mở, chỉ dùng thư viện có giấy phép cho phép sử dụng thương mại, bàn giao mã nguồn và danh mục thư viện",
+   "Sở hữu sản phẩm theo hợp đồng, tiếp nhận mã nguồn và tài liệu"
+  ],
+  [
+   "Bảo mật",
+   "Áp dụng giải pháp an toàn dữ liệu theo KT04, bảo mật thông tin của Chủ đầu tư, thông báo Chủ đầu tư khi phát hiện sự cố",
+   "Cung cấp quyền truy cập cần thiết, quản lý tài khoản quản trị sau bàn giao"
+  ],
+  [
+   "Nghiệm thu",
+   "Lập hồ sơ nghiệm thu và thanh toán từng đợt (gói 1.3.1)",
+   "Tổ chức nghiệm thu, thanh toán trong {hsmt#hop_dong.thanh_toan_trong_ngay} ngày kể từ khi nhận đủ hồ sơ hợp lệ"
+  ],
+  [
+   "Bảo hành",
+   "Khắc phục lỗi trong thời hạn bảo hành theo thời hạn phản hồi và khắc phục, duy trì bảo lãnh bảo hành",
+   "Thông báo lỗi qua đầu mối, xác nhận kết quả khắc phục"
+  ]
+ ],
+ "THAY_DOI_BAO_HANH": [
+  "Mỗi bên được đề xuất thay đổi đặc tả khi cần thiết. Yêu cầu thay đổi được ghi vào sổ yêu cầu thay đổi (gói 1.2.2), nhà thầu đánh giá ảnh hưởng tới phạm vi, tiến độ và giá trong {kt#thoi_han_danh_gia_thay_doi_ngay} ngày, trình Chủ đầu tư quyết định. Thay đổi chỉ được thực hiện sau khi hai bên thống nhất bằng văn bản nêu rõ nội dung và ảnh hưởng đến tiến độ, giá hợp đồng theo Mục 17.1(c) E-ĐKCT. Đặc tả, tài liệu và mã nguồn được quản lý phiên bản, sổ rủi ro và kế hoạch quản lý thay đổi được cập nhật theo đường cơ sở đặc tả (gói 1.1.3, 1.2.3).",
+  "Sổ rủi ro nhận diện {rr#tong_hop.so_rui_ro} rủi ro gồm {rr#tong_hop.so_co_hoi} cơ hội, trong đó {rr#tong_hop.so_hang.A} rủi ro hạng A ({rr#danh_sach[?hang=A].ma}). Sổ rủi ro bao quát các rủi ro chính của gói thầu về tích hợp với Main System (RR02), thời gian đến ngày cut over (RR03, RR10), hiệu năng (RR06) và hoạt động liên tục (RR07). Tổng giá trị kỳ vọng (EMV) của sổ rủi ro là {rr#tong_hop.tong_emv_trieu} triệu đồng, trong khoảng {rr#tong_hop.tong_emv_trieu_thap} đến {rr#tong_hop.tong_emv_trieu_cao} triệu đồng. Mỗi rủi ro có biện pháp phòng ngừa, dấu hiệu, kế hoạch ứng phó và người phụ trách, được theo dõi trong họp tiến độ hằng tuần và báo cáo tiến độ từng sprint (gói 1.2.2). Kế hoạch ứng phó của các rủi ro chính nêu tại bảng rủi ro chính của mục này.",
+  "Trong thời hạn {hsmt#hop_dong.bao_hanh_thang} tháng kể từ ngày hệ thống được nghiệm thu, nhà thầu sửa chữa lỗi logic và sai sót thuộc trách nhiệm của mình bằng chi phí của nhà thầu theo Mục 20.1 E-ĐKCT và duy trì bảo lãnh bảo hành {hsmt#hop_dong.bao_lanh_bao_hanh_phan_tram}% giá hợp đồng. Lỗi được tiếp nhận qua đầu mối của nhà thầu, phân loại theo mức lỗi, phản hồi và khắc phục theo thời hạn của bảng sau. Đối với rủi ro RR17: {rr#danh_sach[ma=RR17].bien_phap_phong_ngua}."
+ ],
+ "DIEU_KIEN": [
+  "Về điều kiện khác liên quan đến hợp đồng, giá dự thầu là giá trọn gói, thanh toán theo {hsmt#hop_dong.thanh_toan|dem} đợt gắn với các mốc tại Mục 13.1 E-ĐKCT. Thời hạn thực hiện được xem xét điều chỉnh khi Chủ đầu tư cung cấp thông tin, môi trường, hạ tầng chậm hơn thời hạn tại mục 3.5 Chương V. Thay đổi đặc tả sau xác nhận thực hiện theo Mục 17.1(c) E-ĐKCT. Bảo hành, hỗ trợ tăng cường sau cut over nằm trong giá dự thầu.",
+  "Nhà thầu đề nghị Chủ đầu tư: cử đầu mối và chủ sản phẩm có thẩm quyền quyết định yêu cầu nghiệp vụ, tham gia làm rõ yêu cầu và trình diễn cuối sprint (CK5). Xác nhận phương thức thanh toán đơn hàng tại họp khởi động và ghi vào biên bản xác nhận đặc tả (biện pháp của rủi ro RR11). Bàn giao tài liệu giao diện và dữ liệu mẫu của Main System tại họp khởi động, môi trường thử của Main System theo từng phần ngay khi sẵn sàng (biện pháp của rủi ro RR02, RR21). Thống nhất cấu hình và thời điểm bàn giao hạ tầng tại họp khởi động (biện pháp của rủi ro RR16). Bố trí người dùng nghiệp vụ tham gia kiểm thử chấp nhận (CK6).",
+  "Đề xuất bổ sung cho thành công của dự án, không làm thay đổi phạm vi, thời gian thực hiện hợp đồng và không phát sinh nghĩa vụ cho Chủ đầu tư. Thứ nhất, lập dịch vụ giả lập Main System (gói 6.2.8) để lập trình và kiểm thử tích hợp không phụ thuộc thời điểm có môi trường thử, giảm tác động của rủi ro RR02 tới đường găng. Thứ hai, diễn tập triển khai, chuyển đổi dữ liệu và khôi phục trên môi trường vận hành trước cut over (gói 7.3.6, 8.3.2), giảm rủi ro RR07, RR08 trong ngày đưa hệ thống vào vận hành. Thứ ba, mời cán bộ Chủ đầu tư dự trình diễn cuối sprint từ S4 và gửi tài liệu hướng dẫn trước buổi hướng dẫn vận hành (biện pháp của rủi ro RR09), giúp cán bộ sẵn sàng vận hành theo quy trình vận hành mới. Thứ tư, tái sử dụng khung ứng dụng và thư viện giao diện nhà thầu có quyền sử dụng từ hai hợp đồng tương tự (cơ hội RR20), thời gian tiết kiệm được chuyển sang lập trình phân hệ và kiểm thử.",
+  "Để nâng cao hiệu quả của kênh bán hàng trực tuyến, giao diện dùng thư viện thành phần tương thích thiết bị di động (gói 2.3.6) giúp khách hàng truy cập từ nhiều loại thiết bị, góp phần mở rộng khách hàng qua internet. Lớp ứng dụng mở rộng theo chiều ngang (KT03) cho phép tăng số nút ứng dụng khi số lượng khách hàng tăng mà không thay đổi kiến trúc. Giám sát tích hợp và cảnh báo lỗi đồng bộ (gói 6.2.7) bảo đảm sản phẩm, giá, tồn kho hiển thị cho khách hàng nhất quán với Main System.",
+  "Thông tin về kết quả thực hiện hợp đồng của nhà thầu theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP: nhà thầu kê khai {hb#so_hop_dong_dat} hợp đồng tương tự đã hoàn thành tại Mẫu số 05. {hb#mau_07_lua_chon} Thông tin được đối chiếu trên Hệ thống mạng đấu thầu quốc gia."
+ ],
+ "THUYET_MINH_GIA": [
+  "Chi phí ước tính của gói thầu được lập từ khối lượng {wbs#tong_md|md} MD theo WBS, phân theo loại công việc: {cp#nhan_cong[loai=PM].ten} {cp#nhan_cong[loai=PM].md|md} MD, {cp#nhan_cong[loai=BA].ten} {cp#nhan_cong[loai=BA].md|md} MD, {cp#nhan_cong[loai=DEV].ten} {cp#nhan_cong[loai=DEV].md|md} MD, {cp#nhan_cong[loai=QA].ten} {cp#nhan_cong[loai=QA].md|md} MD, {cp#nhan_cong[loai=DEVOPS].ten} {cp#nhan_cong[loai=DEVOPS].md|md} MD. Đơn giá theo người-tháng của từng loại công việc lần lượt là {cp#nhan_cong[loai=PM].don_gia_thang|tien} đồng, {cp#nhan_cong[loai=BA].don_gia_thang|tien} đồng, {cp#nhan_cong[loai=DEV].don_gia_thang|tien} đồng, {cp#nhan_cong[loai=QA].don_gia_thang|tien} đồng, {cp#nhan_cong[loai=DEVOPS].don_gia_thang|tien} đồng. {cp#nguon_don_gia}. Chi phí khác gồm {cp#chi_phi_khac[ma=B].ten}, trong đó dự phòng rủi ro {cp#du_phong_hien_co|tien} đồng.",
+  "Dự phòng được đối chiếu với sổ rủi ro. Tổng giá trị kỳ vọng (EMV) của sổ rủi ro là {rr#tong_hop.tong_emv_trieu} triệu đồng, trong khoảng {rr#tong_hop.tong_emv_trieu_thap} đến {rr#tong_hop.tong_emv_trieu_cao} triệu đồng. Dự phòng chỉ dùng khi một rủi ro trong sổ xảy ra hoặc kế hoạch ứng phó được kích hoạt, không dùng để bù thay đổi phạm vi theo yêu cầu của Chủ đầu tư.",
+  "Giá dự thầu {cp#gia_chao|tien} đồng thấp hơn giá gói thầu {cp#thap_hon_goi_thau|tien} đồng, được phân bổ cho {hsmt#mau_01a|dem} hạng mục Mẫu số 11A theo khối lượng các gói WBS của từng hạng mục. Giá hợp lý vì khối lượng được ước lượng theo danh mục chức năng, đối chiếu với hai hợp đồng tương tự, đơn giá theo loại công việc và bao gồm bảo hành {hsmt#hop_dong.bao_hanh_thang} tháng. {cp#can_cu_thue}. Chi tiết cơ sở tính giá theo tệp cost estimate kèm theo."
+ ]
+}

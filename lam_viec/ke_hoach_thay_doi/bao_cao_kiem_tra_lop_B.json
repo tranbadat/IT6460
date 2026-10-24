@@ -1,0 +1,92 @@
+{
+ "tai_lieu": "ket_qua/08_Change_management_plan/Ke_hoach_quan_ly_thay_doi.docx",
+ "phien_ban": "0.1",
+ "dac_ta": "ke_hoach_thay_doi",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 5,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 11 mục theo đặc tả, có quy trình 10 bước, bảng thẩm quyền, mẫu phiếu, nhánh đóng."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Khớp nguồn: đường găng 16 gói đúng lich#duong_gang, dự trữ 4 ngày, hạn M2 10/05/2027, M3 17/06/2027, UAT 18/06-29/06/2027, thay thế nhân sự 7 ngày, quyết định 18/10/2026 khớp du_an#_quyet_dinh_18_10, ngày tài liệu 18/03/2027 bằng ngay_bat_dau."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Dẫn Mục 17.1(a)(b)(c), 17.2-17.4, 18, 2.2(i), 20.1, 21.2, R35, R38, R42, RR01, RR09, RR11, gói WBS."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Điều kiện đóng có Chủ đầu tư kiểm tra đạt, ngưỡng mức định lượng, chỉ số theo dõi."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có phân loại sơ bộ, thẩm quyền, thời hạn, ma trận lan truyền, liên kết rủi ro và dự phòng dùng chung."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Đạt cơ bản, còn lặp cụm và trích nguyên văn chưa biên tập (MH02, MH03)."
+  },
+  {
+   "tieu_chi": "doc_hieu",
+   "ket_qua": "dat",
+   "nhan_xet": "Đạt cả 11 tiêu chí riêng: mức nhỏ chỉ cho thay đổi nội bộ, điều kiện mức lớn, thang 1-10, ban có người ký hai bên, quy tắc không theo đa số, thời hạn đánh giá không quá 3 ngày khớp HSDT, cấu hình có nhánh, nhãn, đường cơ sở M2, con người có đủ cột, chi phí nội bộ và giá đề nghị."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "Quy trình",
+   "vi_tri": "Mục 4, bước 6, cột Thời hạn: 'Mức nhỏ: 1 ngày làm việc sau khi có đánh giá. Mức trung bình: 5 ngày làm việc sau khi có đánh giá'",
+   "mo_ta": "Bước 6 không ghi thời hạn quyết định cho mức lớn, chỉ có ở bước 5. Nên thêm để mỗi bước đủ thời hạn theo mọi mức.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "QUY_TRINH: thêm 'Mức lớn: 5 ngày làm việc sau khi có đánh giá' vào bước 6 (tham chiếu tdb#tham_quyen)"
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "Văn phong",
+   "vi_tri": "Mục 8: 'Khi dấu hiệu xuất hiện, áp dụng kế hoạch ứng phó: Khi dấu hiệu xuất hiện, Nguyễn Thị Phương Liên...'",
+   "mo_ta": "Lặp cụm 'Khi dấu hiệu xuất hiện' do ghép nguyên văn trường kế hoạch ứng phó của RR09.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "CON_NGUOI_TRIEN_KHAI: bỏ cụm dẫn trước khi chèn rr#RR09.ung_pho"
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "Văn phong",
+   "vi_tri": "Mục 1: 'quy định Các nội dung khác về sửa đổi hợp đồng: Chủ đầu tư...', 'Mục 2.2(i) E-ĐKCT quy định Các tài liệu sau đây ... - Biên bản...', 'Căn cứ RFP: Mỗi bên...'",
+   "mo_ta": "Trích nguyên văn giữ chữ hoa đầu câu và gạch đầu dòng giữa câu, đọc như lời dẫn chưa biên tập.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "CAN_CU: diễn đạt lại phần trích hoặc tách thành câu riêng"
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "Nhất quán với HSDT",
+   "vi_tri": "HSDT Mục 13: 'đánh giá ảnh hưởng ... trong 3 ngày'; kế hoạch: '3 ngày làm việc từ khi tiếp nhận'",
+   "mo_ta": "HSDT ghi 3 ngày, kế hoạch ghi 3 ngày làm việc. Không mâu thuẫn rõ nhưng đơn vị khác nhau, chưa chắc cách hiểu của Chủ đầu tư.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định giữ ngày làm việc hay đổi sang ngày theo HSDT"
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "Dữ liệu giả định",
+   "vi_tri": "Mục 2: 'Tổng Giám đốc Công ty Cổ phần ABC Wear (họ tên ghi khi hoàn thiện hợp đồng theo Mục 1.3 E-ĐKCT)'",
+   "mo_ta": "Người có thẩm quyền của Chủ đầu tư chưa có họ tên (TD07), dữ liệu giả định của HSMT. Trình bày hợp lý, cần bổ sung khi có.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "hsmt E-ĐKCT 1.3 khi có họ tên"
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+{
+ "tai_lieu": "ket_qua/03_WBS",
+ "tai_lieu_kem": [
+  "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
+  "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
+  "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.docx",
+  "ket_qua/03_WBS/WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.docx",
+  "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
+  "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
+  "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
+  "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx",
+  "ket_qua/03_WBS/WBS_tong_hop.docx"
+ ],
+ "dac_ta": "tai_lieu_wbs",
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "vong": 2,
+ "thoi_gian": "2026-10-17 00:05",
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 3,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Chín tệp phiên bản 0.2 có đủ các mục theo quy_tac_wbs.md. Phạm vi vẫn phủ đủ RFP và 13 hạng mục Mẫu 01A, không có gói quản trị nội bộ. Gói mới 1.3.3 đáp ứng sự kiện Đợt 3 của E-ĐKCT 13.1 (Chủ đầu tư kiểm tra đạt chức năng chính và tích hợp) và R38, R39. Tổng 351 MD trong 73 ngày làm việc, tương đương 4,8 người toàn thời gian, phù hợp 5 nhân sự chủ chốt. Mục giả định đã nêu điều kiện tiền đề về Main System, chiều luồng dữ liệu, hạ tầng, thư điện tử, bảo hành, lập trình song song với xác nhận đặc tả, công họp, kèm gói và thời điểm Chủ đầu tư xác nhận."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Đối chiếu bằng script trên 9 tệp với du_lieu/wbs.json, lich.json, phan_cong.json đã cập nhật: tên, mức, MD, loại, sản phẩm của 66 gói lá và các mục cha khớp. Tổng nhóm, tổng theo loại (BA 63, DEV 170, DEVOPS 23, PM 33, QA 62) khớp. Thời gian và sprint 8 nhóm khớp lich.json. Người chịu trách nhiệm khớp vai trò A mức 1. Phụ thuộc đầu vào 8 nhóm khớp. Ma trận truy vết, phân bổ 01A (tổng 351,00), tỷ trọng, 11 giả định khớp wbs.json. Danh sách giao việc trong phan_cong.json khớp 66 gói. Giả định bảo hành khớp khoản B trong chi_phi.json, giả định gối đầu khớp rủi ro RR01 (liên kết 6.1.1, M2). Sai lệch mới: nhóm 8 gồm các gói cut over kết thúc 24/06/2027, trái với ngày đưa hệ thống vào vận hành 01/07/2027 (MH14). Tỷ trọng các nhóm sau làm tròn cộng lại 100,1%, mỗi giá trị làm tròn đúng nên không ghi thành phát hiện."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Nguồn 7.2.4 đã đổi sang R07, R08. R35 gắn 1.2.2 và 2.1.4. R38, R39 gắn 1.3.3. Mọi gói lá gắn ít nhất một hạng mục Mẫu 01A, các yêu cầu không cần gói có lý do. Bảo hành R42, R43 được giải thích tại giả định và khoản B của dự toán."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Sản phẩm các gói giao diện, tài liệu chức năng, khắc phục lỗi, nhận trạng thái vận chuyển đã có điều kiện hoàn thành kiểm chứng được. Còn hai điểm nhỏ: sản phẩm 6.1.1 nêu điều kiện không thể kiểm tại thời điểm kết thúc gói (MH03), sản phẩm 8.1.2 chưa phản ánh cấu hình thư điện tử mà giả định giao cho gói này (MH08)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Giả định nêu rõ gói và thời điểm Chủ đầu tư xác nhận (1.1.1, 2.1.2, 6.2.1). Lựa chọn lập trình song song với xác nhận đặc tả được nêu công khai và gắn rủi ro RR01, thay đổi sau xác nhận đi qua quy trình yêu cầu thay đổi (1.2.2, R35, E-ĐKC 17.1(c))."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Định dạng không đổi so với vòng 1 và đạt: Times New Roman 13, bảng 12, A4, bảng lưới, tiêu đề bảng lặp lại, chỉ mục cha in đậm. Quét theo van_phong.json không có từ cần thay, ký hiệu máy sinh. Đã viết hoa thống nhất Chủ đầu tư trên cả 9 tệp."
+  },
+  {
+   "tieu_chi": "doc_hieu: Tên gói dạng danh từ, gắn sản phẩm kiểm tra được",
+   "ket_qua": "dat",
+   "nhan_xet": "Tên gói đổi (6.1.1, 6.2.4) và gói mới 1.3.3 đúng dạng, có sản phẩm. Tên và sản phẩm 3.5.1, 4.5.1, 5.5.1 đã khớp nhau."
+  },
+  {
+   "tieu_chi": "doc_hieu: Mức 2 của phân hệ theo vòng đời",
+   "ket_qua": "dat",
+   "nhan_xet": "Nhóm 3, 4, 5 giữ đủ năm mục mức 2 theo vòng đời."
+  },
+  {
+   "tieu_chi": "doc_hieu: Không có gói thuộc chức năng quản trị nội bộ",
+   "ket_qua": "dat",
+   "nhan_xet": "Không có gói quản trị nội bộ. 6.2.4 đã đổi thành nhận trạng thái vận chuyển và hiển thị trên trang theo dõi đơn hàng của khách hàng."
+  },
+  {
+   "tieu_chi": "doc_hieu: Gói tích hợp tách riêng cho mỗi hệ thống bên ngoài",
+   "ket_qua": "dat",
+   "nhan_xet": "Main System có mục 6.2 riêng. Thư điện tử được xử lý bằng giả định dùng máy chủ thư của Chủ đầu tư, cấu hình trong 8.1.2, theo quy tắc Chủ đầu tư xác nhận tại 2.1.2. Cách xử lý này chấp nhận được với mức cấu hình đơn giản, còn lưu ý MH08."
+  },
+  {
+   "tieu_chi": "doc_hieu: Sơ đồ cây và bảng chi tiết khớp nhau",
+   "ket_qua": "dat",
+   "nhan_xet": "Kiểm tra bằng script trên 8 tệp nhóm: mã và tên trong sơ đồ cây khớp bảng chi tiết và wbs.json, kể cả gói mới 1.3.3 và hai gói đổi tên."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH14",
+   "muc_do": "loi",
+   "nhom": "nhat_quan_ngay_cut_over",
+   "vi_tri": "WBS_8_Trien_khai_va_chuyen_giao.docx mục 1, 'Thời gian thực hiện | 24/03/2027 - 24/06/2027 (sprint S1 đến S7)'. Nguồn: lich.json gói 8.3.2 (22/06 - 23/06/2027), 8.3.3 (24/06/2027), ket_thuc_du_kien 2027-06-24",
+   "mo_ta": "Nhóm 8 gồm mục 8.3 Đưa hệ thống vào vận hành (cut over), trong đó 8.3.3 là 'Hỗ trợ ngày đầu vận hành và biên bản bàn giao hệ thống'. Tài liệu ghi nhóm 8 kết thúc 24/06/2027, trong khi ngày đưa hệ thống vào vận hành là 01/07/2027 (RFP trang 2, R12 gắn 8.3.1 - 8.3.3, HSMT Mẫu 01A hạng mục 13, mốc M6 ngày cố định 01/07/2027). Hỗ trợ ngày đầu vận hành vì vậy rơi trước ngày vận hành 5 ngày làm việc, biên bản bàn giao hệ thống (8.3.3) lập trước ngày cut over, mâu thuẫn với mốc M7 lấy 1.3.2 và 8.3.3 làm căn cứ ngày 01/07/2027. Nguyên nhân: lịch sau khi sửa tính sớm nhất cho cả nhóm cut over, dự trữ 5 ngày nằm sau 8.3.3 thay vì trước ngày vận hành. Vòng 1 không có lỗi này vì 8.3.3 rơi đúng 01/07/2027.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Bước master schedule (qlda-master-schedule): ràng buộc 8.3.3 bắt đầu đúng ngày cut over 01/07/2027 và 8.3.2 kết thúc liền trước, để dự trữ 5 ngày nằm giữa 7.3.3 và 8.3.2. Chạy lại lịch rồi xuất lại WBS bằng xuat_wbs.py. Kiểm tra lại thời gian nhóm 8 trong WBS_8 là 24/03/2027 - 01/07/2027."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "ngay_tai_lieu",
+   "vi_tri": "Trang bìa cả 9 tệp: 'Tài liệu kế hoạch dự án, kèm theo Phần III. Đề xuất kỹ thuật của hồ sơ dự thầu', 'Phiên bản 0.2, ngày 18/03/2027'",
+   "mo_ta": "Chưa khắc phục: ngay_ky_don trong dau_vao/nha_thau.json vẫn để trống nên tài liệu vẫn đề ngày bắt đầu dự án 18/03/2027, sau thời điểm đóng thầu 08/03/2027, trong khi ghi là kèm theo hồ sơ dự thầu. Vòng 1 ghi mức lỗi. Vòng 2 hạ xuống cảnh báo theo hướng dẫn của agent điều phối, vì nguyên nhân là dữ liệu do nhóm quyết định chưa có. Nếu đến khi lập HSDT trường này vẫn trống thì tài liệu mâu thuẫn với HSMT và phải tính là lỗi.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm điền ngay_ky_don (từ 22/02/2027 đến 08/03/2027) trong dau_vao/nha_thau.json rồi chạy lại xuat_wbs.py."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "san_pham_kiem_chung",
+   "vi_tri": "WBS_6 bảng chi tiết, gói 6.1.1, sản phẩm 'Selling DB trên môi trường phát triển và kiểm thử, điều chỉnh theo đặc tả được xác nhận'",
+   "mo_ta": "Khắc phục phần lớn: tên gói đã đổi thành 'theo cấu trúc cơ sở dữ liệu đã thiết kế', giả định gối đầu đã nêu công khai, rủi ro RR01 liên kết 6.1.1 và M2. Còn lại: sản phẩm 6.1.1 nêu điều kiện 'điều chỉnh theo đặc tả được xác nhận', nhưng 6.1.1 không phụ thuộc 2.1.4 và kết thúc 21/04/2027, trước khi đặc tả được xác nhận (2.1.4 ngày 27/04 - 29/04/2027). Điều kiện này không thể kiểm tại thời điểm hoàn thành gói. Theo giả định và RR01, phần điều chỉnh sau xác nhận được xử lý bằng quy trình yêu cầu thay đổi và dự phòng, không thuộc 6.1.1.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa sản phẩm 6.1.1 thành 'Selling DB theo cấu trúc đã thiết kế trên môi trường phát triển và kiểm thử, có tập lệnh tạo lập' (hoặc tương đương). Không ghi điều kiện điều chỉnh sau xác nhận trong gói này."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "san_pham_kiem_chung",
+   "vi_tri": "WBS_tong_hop mục 6, giả định 'Thư điện tử xác nhận ... cấu hình trong 8.1.2'. WBS_8 gói 8.1.2, sản phẩm 'Môi trường vận hành có giám sát và sao lưu'",
+   "mo_ta": "Khắc phục phần lớn: giả định về thư điện tử đã nêu bên cung cấp máy chủ thư và gói xác nhận 2.1.2. Còn lại: giả định giao cấu hình thư cho 8.1.2 nhưng sản phẩm 8.1.2 không nêu nội dung này nên không kiểm được khi nghiệm thu gói. Ngoài ra 8.1.2 là môi trường vận hành (07/05 - 17/05/2027), trong khi 4.3.1 và 5.3.2 cần gửi thư để kiểm thử trên môi trường phát triển, kiểm thử của 8.1.1.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa sản phẩm 8.1.2 thành 'Môi trường vận hành có giám sát, sao lưu và cấu hình gửi thư điện tử', và ghi cấu hình thư thử nghiệm trong sản phẩm 8.1.1 (hoặc nêu trong giả định cách gửi thư trên môi trường kiểm thử)."
+  }
+ ],
+ "doi_chieu_vong_1": [
+  {"ma": "MH01", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_tong_hop mục 5 dòng Tổng cộng '351,00'. Mục 1 nhóm 3 '11,7%'", "nhan_xet": "Phân bổ 01A làm tròn theo phần dư lớn nhất, tổng 351,00 bằng tong_md. Tỷ trọng tính từ giá trị không làm tròn trung gian (41/351 bằng 11,68%, ghi 11,7%)."},
+  {"ma": "MH02", "trang_thai": "chua_khac_phuc", "vi_tri_moi": "Bìa 9 tệp, 'Phiên bản 0.2, ngày 18/03/2027'", "nhan_xet": "ngay_ky_don vẫn trống. Hạ từ lỗi xuống cảnh báo can_nguoi_dung theo hướng dẫn của agent điều phối, giữ trong phat_hien."},
+  {"ma": "MH03", "trang_thai": "khac_phuc_mot_phan", "vi_tri_moi": "WBS_6 gói 6.1.1 'Tạo lập Selling DB theo cấu trúc cơ sở dữ liệu đã thiết kế'. WBS_tong_hop mục 6 giả định gối đầu (RR01)", "nhan_xet": "Tên gói, giả định, liên kết RR01 đã xử lý. Còn điều kiện trong sản phẩm 6.1.1, giữ trong phat_hien."},
+  {"ma": "MH04", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_7 gói 7.2.2, 7.2.3, 7.2.6. Phụ thuộc đầu vào nhóm 7", "nhan_xet": "7.2.2 thêm 4.4.1, 6.2.5. 7.2.3 thêm 3.4.1, 4.4.1, 5.4.1, 6.2.5, nay thực hiện 07/06 - 10/06/2027 sau tích hợp. 7.2.6 nhận 7.2.3."},
+  {"ma": "MH05", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_1 gói 1.3.2, sản phẩm 'Báo cáo tổng kết dự án, biên bản bàn giao hồ sơ vào ngày cut over'. WBS_7 phụ thuộc đầu vào có 8.2.2", "nhan_xet": "1.3.2 trải đều S7 (15/06 - 01/07/2027), kết thúc đúng ngày cut over. 7.3.2 phụ thuộc 8.2.2, hướng dẫn vận hành (11/06 - 14/06) trước kiểm thử vận hành (16/06 - 17/06)."},
+  {"ma": "MH06", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_tong_hop mục 6, giả định 5, 6, 7", "nhan_xet": "Đã nêu tài liệu, dữ liệu mẫu, môi trường kiểm thử Main System, sửa đổi phía Main System, chiều luồng dữ liệu (ghi rõ RFP chỉ thể hiện một chiều), thời điểm bàn giao hạ tầng trước S4, kèm gói xác nhận 1.1.1 và 6.2.1."},
+  {"ma": "MH07", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_tong_hop mục 6, giả định 9", "nhan_xet": "Bảo hành 12 tháng ngoài thời gian dự án, chi phí trong khoản B. Khớp chi_phi.json (khoản B 'Môi trường, công cụ, bảo hành 12 tháng và dự phòng')."},
+  {"ma": "MH08", "trang_thai": "khac_phuc_mot_phan", "vi_tri_moi": "WBS_tong_hop mục 6, giả định 8", "nhan_xet": "Đã có giả định về máy chủ thư và gói xác nhận. Còn sản phẩm 8.1.2 chưa phản ánh cấu hình thư, giữ trong phat_hien."},
+  {"ma": "MH09", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_6 gói 6.2.4 'Nhận trạng thái vận chuyển từ Main System và hiển thị trên trang theo dõi đơn hàng', sản phẩm 'Chức năng nhận trạng thái vận chuyển đạt kiểm thử đơn vị'", "nhan_xet": "Bỏ màn hình riêng, hiển thị trên trang theo dõi đơn hàng của 5.3.4, ranh giới với 5.3.3, 5.3.4 đã rõ."},
+  {"ma": "MH10", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_tong_hop mục 6, giả định 11", "nhan_xet": "Nhóm quyết định khối lượng từng gói đã gồm công họp hằng ngày và trình diễn cuối sprint. Quyết định được ghi rõ nên chấp nhận."},
+  {"ma": "MH11", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_3, 4, 5 gói 3.3.3, 4.3.3, 5.3.4, 3.5.1, 4.5.1, 5.5.1. WBS_7 gói 7.2.6, 7.3.3", "nhan_xet": "Sản phẩm đã có điều kiện: đạt kiểm thử đơn vị và tích hợp vào nhánh chính, tài liệu chức năng kèm biên bản, khắc phục toàn bộ lỗi nghiêm trọng và kiểm thử hồi quy đạt, Chủ đầu tư xác nhận sẵn sàng vận hành."},
+  {"ma": "MH12", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_tong_hop mục 4 dòng R07, R08 có 7.2.4, dòng R35 '1.2.2, 2.1.4'", "nhan_xet": "Nguồn 7.2.4 đổi sang R07, R08. R35 gắn thêm 1.2.2."},
+  {"ma": "MH13", "trang_thai": "da_khac_phuc", "vi_tri_moi": "WBS_1 đến WBS_8 mục 2", "nhan_xet": "Không còn 'chủ đầu tư' viết thường trong 9 tệp."}
+ ],
+ "ghi_chu": "Vòng 2. Báo cáo lớp A (lam_viec/wbs/bao_cao_kiem_tra_wbs.json) kết luận đạt, 0 lỗi, 66 gói lá, 351 MD. Lớp B đối chiếu độc lập 9 tệp phiên bản 0.2 với du_lieu/wbs.json, lich.json, phan_cong.json đã cập nhật, hsmt.json, rfp_yeu_cau.json, dau_vao/du_an.json, RFP.pdf và HSMT.docx đã xem ở vòng 1. Để kiểm tra hai giả định có dẫn chiếu, đã đọc khoản B trong du_lieu/chi_phi.json và rủi ro RR01 trong du_lieu/rui_ro.json. Đọc lại trường ngay_ky_don của dau_vao/nha_thau.json. Báo cáo vòng 1 tại lam_viec/wbs/bao_cao_kiem_tra_lop_B_vong1.json. Không đọc lam_viec/wbs/wbs_nhap.json, khung.json, ban_soan.json, noi_dung*.json, nhật ký soạn và các script tạo dữ liệu trong /private/tmp. Không sửa tệp nào ngoài báo cáo này. Chưa chạy so_phien_ban.py, nhat_ky.py và chưa chép vào bang_chung theo yêu cầu của agent điều phối. chi_phi.json đã dùng tổng 351 MD (BA 63), khớp WBS."
+}

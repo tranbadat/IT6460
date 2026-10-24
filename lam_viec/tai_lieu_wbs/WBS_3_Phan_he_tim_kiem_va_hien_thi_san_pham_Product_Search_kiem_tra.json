@@ -1,0 +1,29 @@
+{
+ "tai_lieu": "lam_viec/tai_lieu_wbs/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
+ "dac_ta": "tai_lieu_wbs",
+ "thoi_gian": "2026-10-18 07:29:01",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 1,
+ "phat_hien": [
+  {
+   "ma": "VP03",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "5 chức năng (chỉ mục tìm kiếm, tìm kiếm và gợi ý, lọc và sắp xếp, danh mục và chi tiết sản phẩm, bộ nhớ đệm), 3 màn hình",
+   "mo_ta": "Câu có 4 dấu chấm phẩy",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Tách câu hoặc dùng từ nối"
+  }
+ ],
+ "tieu_chi_doc_hieu": [
+  "Tên gói dạng danh từ, gắn sản phẩm kiểm tra được",
+  "Mức 2 của phân hệ theo vòng đời",
+  "Không có gói thuộc chức năng quản trị nội bộ",
+  "Gói tích hợp tách riêng cho mỗi hệ thống bên ngoài",
+  "Sơ đồ cây và bảng chi tiết khớp nhau",
+  "Mục Căn cứ ước lượng của tệp tổng hợp nêu phương pháp, loại ước lượng, các bước, bảng theo nhóm, căn cứ từng nhóm, đối chiếu hợp đồng tương tự và khoảng sai số, số liệu khớp khối can_cu_uoc_luong của du_lieu/wbs.json",
+  "Mỗi mục kiểm thử phân hệ có gói sửa lỗi, kiểm thử lại",
+  "Ngày tài liệu là ngày ký đơn dự thầu hiện hành, trừ bản cập nhật theo yêu cầu thay đổi"
+ ]
+}

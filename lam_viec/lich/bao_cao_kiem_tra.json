@@ -1,0 +1,34 @@
+{
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 3,
+ "phat_hien": [
+  {
+   "ma": "L07",
+   "muc_do": "canh_bao",
+   "nhom": "lich",
+   "vi_tri": "minh S6",
+   "mo_ta": "Vũ Đức Minh được huy động ở S6 nhưng chỉ dùng 2.00/10.00 MD (20%), dưới 30% quỹ sprint",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": ""
+  },
+  {
+   "ma": "L07",
+   "muc_do": "canh_bao",
+   "nhom": "lich",
+   "vi_tri": "minh S7",
+   "mo_ta": "Vũ Đức Minh được huy động ở S7 nhưng chỉ dùng 0.00/10.00 MD (0%), dưới 30% quỹ sprint",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": ""
+  },
+  {
+   "ma": "L07",
+   "muc_do": "canh_bao",
+   "nhom": "lich",
+   "vi_tri": "D1 S6",
+   "mo_ta": "Lê Quang Huy được huy động ở S6 nhưng chỉ dùng 2.00/10.00 MD (20%), dưới 30% quỹ sprint",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": ""
+  }
+ ]
+}
