@@ -11,6 +11,12 @@
 
 Sơ đồ phụ thuộc giữa các bước: references/so_do_phu_thuoc.json. Mỗi bước khai báo đầu vào (vao) và đầu ra (ra). Sổ phiên bản du_lieu/phien_ban.json lưu băm đầu vào của từng phiên bản, nhờ đó chay.py biết tài liệu nào đã cũ.
 
+Giai đoạn dự án (loi.giai_doan_du_an, loi.phan_giai_doan): Khởi động (du_an.giai_doan.khoi_dong {tu, den}, mặc định SO_NGAY_KHOI_DONG_MAC_DINH = 5 ngày làm việc đầu), Thực hiện (các sprint đến cut over), Kết thúc (du_an.giai_doan.ket_thuc.so_ngay_lam_viec ngày làm việc sau cut over, mặc định SO_NGAY_KET_THUC_MAC_DINH = 10). Gói lá thuộc một trong khoi_dong, thuc_hien, xuyen_suot (gói quản lý dàn trải suốt dự án), ket_thuc, theo giai_doan của WBS hoặc suy từ nhóm WBS 1 và loại PM, QA. du_lieu/lich.json ghi giai_doan, giai_doan_hien_thi của mỗi gói, danh sách giai_doan, ngay_dong_du_an và kỳ KT (sau cut over) trong phan_bo, nhu_cau_theo_sprint.
+
+Bản phát hành: du_lieu/phat_hanh.json (qlda-master-schedule/scripts/phat_hanh.py), mỗi sprint một bản R<n> {ma, sprint, ngay, loai, chinh_thuc, nguon thuc_te hoặc ke_hoach, goi, hang_muc_01a, yeu_cau_rfp, loi_da_sua, loi_con_mo, cr_dua_vao, ghi_chu}. loi.ban_phat_hanh_hien_hanh(ngày) trả mã bản hiện hành. Sau ký hợp đồng, loi.dang_ky_phien_ban ghi khóa phat_hanh vào phiên bản mới theo ngày tài liệu.
+
+Ngày hiện hành: loi.ngay_hien_hanh() là biến môi trường QLDA_NGAY (yyyy-mm-dd) khi mô phỏng dự án, không có thì ngày máy. Dùng cho ngày tài liệu mặc định của chay.py hoan_thien, bản phát hành hiện hành, phat_hanh.py tat_ca.
+
 Định dạng tham chiếu dữ liệu trong bản soạn: {bi_danh#duong_dan|dinh_dang}
 - bi_danh: khóa trong nguon của đặc tả, ví dụ cp cho du_lieu/chi_phi.json.
 - duong_dan:

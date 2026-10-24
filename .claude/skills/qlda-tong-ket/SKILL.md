@@ -13,7 +13,14 @@ description: Tổng hợp số liệu kết thúc dự án và lập báo cáo t
 - Yêu cầu thay đổi đúng hạn khi ngày quyết định không muộn hơn han_quyet_dinh của CR (qlda-change ghi khi tiếp nhận). CR cũ không có khóa này thì so số ngày xử lý với thời hạn đánh giá trong qlda-change/references/phan_loai.json.
 - Khoản B, cùng quy ước với cost estimate: du_phong_rui_ro.so_tien để trống hoặc null là cả khoản B làm dự phòng (cảnh báo K14), 0 là không có dự phòng, số từ 0 đến B được tách khỏi B làm dự phòng, ngoài khoảng là lỗi K19. Tỷ lệ dùng dự phòng (K13) tính trên số dự phòng này.
 - chi_phi_thuc_te.csv: dòng loai cam_ket là nghĩa vụ đã cam kết chưa chi (bảo hành), cộng vào chi phí thực tế. Không có dòng cam kết thì cảnh báo K15.
-- MD kế hoạch theo người lấy lich.json phan_bo, làm tròn sao cho tổng bằng tổng MD của WBS.
+- MD kế hoạch theo người lấy lich.json phan_bo (gồm kỳ KT), làm tròn sao cho tổng bằng tổng MD của WBS.
+
+## Kỳ KT và số liệu mô phỏng
+
+- Lịch có giai đoạn Kết thúc (lich.json giai_doan mã ket_thuc, ngay_dong_du_an) thì ngày làm việc tính đến ngày đóng dự án (qlda-bao-cao-tien-do/scripts/thuc_te.py ngay_lam_viec_du_an). Ngày chốt thuộc giai đoạn này thì kỳ cuối là KT (`tinh_tien_do.py --ky KT` khi ngày chốt là ngày đóng dự án).
+- Không truyền --ngay: ngày chốt là ngày ghi nhận cuối của nhật ký. Ngày đó thuộc kỳ KT thì chốt tại ngày đóng dự án khi ngày hiện hành (QLDA_NGAY khi mô phỏng) đã đến, để trùng báo cáo tiến độ kỳ KT.
+- ket_thuc.json ghi ngay_dong_du_an, so_lieu_mo_phong, can_cu_mo_phong, dùng chung cho tổng kết, đánh giá, bài học.
+- Số liệu mô phỏng: có du_lieu/mo_phong.json (dữ liệu thực tế do qlda-mo-phong sinh) thì đặc tả dùng bí danh nguồn tùy chọn mo_phong (nguon_tuy_chon), khối doan_ds kt#can_cu_mo_phong in ở phần đầu câu "Số liệu thực tế trong báo cáo là số liệu mô phỏng" kèm {mo_phong#_ghi_chu}. Không có tệp thì không in gì. Agent Soạn thảo không viết lại câu này.
 
 ## Quy trình
 

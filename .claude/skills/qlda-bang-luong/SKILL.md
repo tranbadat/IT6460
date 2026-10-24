@@ -15,6 +15,10 @@ Cách trả lương là quyết định của nhóm, khai báo trong dau_vao/don
 
 Đơn giá ngày = lương tham chiếu tháng của vai trò / số ngày làm việc mỗi tháng. Chi phí doanh nghiệp = lương x hệ số bảo hiểm. Ngày huy động theo lich.json phan_bo[].quy (kế hoạch huy động của master schedule), tính đến ngày --den. Tỷ trọng đóng góp = MD thực tế của thành viên / tổng MD thực tế, áp dụng cho mọi cách trả lương. Ngày sẵn sàng không ghi công = ngày huy động - MD thực tế, là cột riêng để đối chiếu, không dùng để trừ lương. luong.json doi_chieu.chi_phi_ke_hoach và chenh_chi_phi tính cùng cách trả lương (ngày huy động hoặc MD công việc kế hoạch, cắt đến --den), chi_phi_theo_md_ke_hoach để tham khảo.
 
+Kỳ KT: lịch có giai đoạn Kết thúc (lich.json giai_doan mã ket_thuc, ngay_dong_du_an) thì ngày làm việc tính đến ngày đóng dự án, kỳ KT là một cột như sprint (sheet Sprint, Theo_sprint, luong.json theo_sprint), nhật ký sau cut over không bị L03. Lương kỳ KT theo cách trả lương: cong_suc trả theo MD nhật ký, huy_dong và ket_hop theo quỹ kỳ KT trong phan_bo (lịch ghi 0 khi nhóm chưa quyết định huy động sau cut over, cảnh báo L28 của master schedule).
+
+Số liệu mô phỏng: có du_lieu/mo_phong.json (dữ liệu do qlda-mo-phong sinh) thì sheet Thuyet_minh thêm mục căn cứ số liệu thực tế là số liệu mô phỏng kèm ghi chú của tệp, luong.json ghi so_lieu_mo_phong và can_cu_mo_phong.
+
 Đầu vào: dau_vao/thuc_te/nhat_ky_cong_viec.csv (cách ghi ở qlda-bao-cao-tien-do/references/nhap_lieu.md), dau_vao/thanh_vien.json, don_gia.json, du_lieu/lich.json (sprint, MD kế hoạch và MD huy động theo người), du_lieu/chi_phi.json (khoản A, tong_chi_phi_nguoi), dau_vao/du_an.json.
 
 ## Quy trình

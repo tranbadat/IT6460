@@ -122,6 +122,11 @@
    "tep": ".claude/skills/qlda-change/references/phan_loai.json",
    "mo_ta": "Quy tắc phân loại thay đổi và quy tắc dùng dự phòng dùng chung (tệp tham chiếu của skill qlda-change)",
    "bat_buoc": true
+  },
+  "mp_kich_ban": {
+   "tep": "lam_viec/mo_phong",
+   "mo_ta": "Kịch bản biến cố mô phỏng từng sprint (qlda-mo-phong)",
+   "bat_buoc": false
   }
  },
  "buoc": [
@@ -361,6 +366,29 @@
    }
   },
   {
+   "id": "mo_phong",
+   "skill": "qlda-mo-phong",
+   "nhom": "Thực hiện",
+   "ten": "Số liệu thực tế mô phỏng",
+   "vao": [
+    "lich",
+    "phan_cong",
+    "wbs",
+    "rui_ro",
+    "thay_doi",
+    "thanh_vien",
+    "du_an",
+    "don_gia",
+    "chi_tieu",
+    "mp_kich_ban"
+   ],
+   "ra": {
+    "mo_phong": "du_lieu/mo_phong.json"
+   },
+   "anh_chup": true,
+   "ra_tuy_chon": true
+  },
+  {
    "id": "bao_cao_tien_do",
    "skill": "qlda-bao-cao-tien-do",
    "nhom": "Kế hoạch thực hiện",
@@ -381,7 +409,8 @@
     "tt_van_de",
     "tt_hanh_dong",
     "tt_chi_phi",
-    "tt_moc"
+    "tt_moc",
+    "mo_phong"
    ],
    "ra": {
     "tien_do": "du_lieu/tien_do",
@@ -389,6 +418,25 @@
    },
    "anh_chup": true,
    "_ghi_chu": "Báo cáo theo kỳ giữ nguyên số liệu tại thời điểm lập, không bị đánh dấu cũ khi có dữ liệu kỳ sau."
+  },
+  {
+   "id": "phat_hanh",
+   "skill": "qlda-master-schedule",
+   "nhom": "Thực hiện",
+   "ten": "Bản phát hành theo sprint",
+   "vao": [
+    "lich",
+    "wbs",
+    "hsmt",
+    "tt_hoan_thanh",
+    "tt_loi",
+    "thay_doi"
+   ],
+   "ra": {
+    "phat_hanh": "du_lieu/phat_hanh.json"
+   },
+   "anh_chup": true,
+   "ra_tuy_chon": true
   },
   {
    "id": "so_lieu_ket_thuc",
@@ -418,7 +466,8 @@
     "tt_van_de",
     "tt_hanh_dong",
     "chi_tieu",
-    "du_an"
+    "du_an",
+    "mo_phong"
    ],
    "ra": {
     "ket_thuc": "du_lieu/ket_thuc.json"
@@ -438,7 +487,8 @@
     "chi_phi",
     "du_an",
     "tt_moc",
-    "tt_van_de"
+    "tt_van_de",
+    "mo_phong"
    ],
    "ra": {
     "doc_tong_ket": "ket_qua/11_Bao_cao_tong_ket/Bao_cao_tong_ket_du_an.docx"
@@ -457,7 +507,8 @@
     "tt_nghiem_thu",
     "du_an",
     "rui_ro",
-    "tt_rui_ro"
+    "tt_rui_ro",
+    "mo_phong"
    ],
    "ra": {
     "doc_danh_gia": "ket_qua/12_Bao_cao_danh_gia/Bao_cao_danh_gia_du_an.docx"
@@ -481,7 +532,8 @@
     "rfp_yc",
     "tt_loi",
     "tt_nghiem_thu",
-    "tt_van_de"
+    "tt_van_de",
+    "mo_phong"
    ],
    "ra": {
     "bai_hoc": "du_lieu/bai_hoc.json",
@@ -499,7 +551,8 @@
     "don_gia",
     "chi_phi",
     "lich",
-    "du_an"
+    "du_an",
+    "mo_phong"
    ],
    "ra": {
     "luong": "du_lieu/luong.json",
@@ -515,7 +568,8 @@
     "phien_ban_reg",
     "nhat_ky_chay",
     "thay_doi",
-    "du_an"
+    "du_an",
+    "phat_hanh"
    ],
    "ra": {
     "phien_ban_th": "du_lieu/phien_ban_tong_hop.json",
@@ -537,5 +591,6 @@
    }
   }
  ],
- "_ghi_chu_khoa": "Bước có khóa khoa là đường cơ sở đấu thầu. Sau lệnh so_phien_ban.py duong_co_so ... --hop-dong (ký hợp đồng), bước này không tạo lại, thay đổi ghi bằng phụ lục hoặc biên bản."
+ "_ghi_chu_khoa": "Bước có khóa khoa là đường cơ sở đấu thầu. Sau lệnh so_phien_ban.py duong_co_so ... --hop-dong (ký hợp đồng), bước này không tạo lại, thay đổi ghi bằng phụ lục hoặc biên bản.",
+ "_ghi_chu_ra_tuy_chon": "Bước có ra_tuy_chon: đầu ra không bắt buộc với bước sau (số liệu mô phỏng, bản phát hành chỉ có khi đã thực hiện hoặc mô phỏng)."
 }

@@ -4,6 +4,8 @@ ma trận 5x5 và 3x3 ghi mã rủi ro, đối chiếu dự phòng chi phí và 
 EMV in theo triệu đồng, làm tròn, kèm khoảng tính từ cận dưới, cận trên của mức xác suất (ước tính định hướng).
 EMV thời gian dùng đánh giá dự trữ chỉ gồm rủi ro liên kết gói trên đường găng, gói ghim ngày cut over hoặc mốc cut over.
 Phương án khi dự trữ thiếu do nhóm chốt, ghi dau_vao/du_an.json khóa phuong_an_du_tru_thoi_gian (một hoặc nhiều khóa của PHUONG_AN).
+Trong thực hiện, đối chiếu dự phòng và dự trữ dùng EMV còn lại (tong_emv_*_con_lai của rui_ro.json: bỏ rủi ro đã xảy ra, đã đóng),
+bảng EMV ghi cả tổng EMV của sổ khi có rủi ro đã xảy ra. Bảng rủi ro đã xảy ra (xay_ra) ghi ngày, trạng thái, tác động thực tế.
 
 Dùng: python tinh_bang_rui_ro.py      (chay.py chuan_bi ke_hoach_rui_ro tự gọi)
 Ra: du_lieu/rui_ro_bang.json
@@ -24,6 +26,9 @@ T = rr['thang_do']; th = rr['tong_hop']; ds = rr['danh_sach']
 NG = T.get('nguong_tac_dong', {})
 Q = T.get('quy_doi_3x3', {})
 ty = lambda v: loi.so(float(v) / 1e6, 0)  # triệu đồng, làm tròn
+CL = '_con_lai' if 'tong_emv_tien_con_lai' in th else ''  # EMV còn lại (rủi ro chưa xảy ra, chưa đóng) khi sổ có trạng thái theo dõi
+CO_XAY_RA = bool(th.get('so_da_xay_ra') or th.get('so_da_dong'))
+cl = lambda k: th.get(k + CL, th.get(k, 0))  # noqa: E731
 khoang = lambda a, b, f: f'khoảng {f(a)} đến {f(b)}'
 so1 = lambda v: loi.so(v, 1)
 PHUONG_AN = {
@@ -78,9 +83,9 @@ def bang_ma_tran_3x3():
 
 def danh_gia_du_tru():
     du_tru = float(lich['du_tru_den_cut_over_ngay'])
-    emv = float(th.get('tong_emv_ngay_gang', th['tong_emv_ngay']))
+    emv = float(th.get('tong_emv_ngay_gang' + CL, th.get('tong_emv_ngay_gang', th['tong_emv_ngay'])))
     thieu = round(max(0.0, emv - du_tru), 2)
-    return {'emv_ngay_gang': emv, 'emv_ngay_gang_thap': th.get('tong_emv_ngay_gang_thap', emv), 'emv_ngay_gang_cao': th.get('tong_emv_ngay_gang_cao', emv),
+    return {'emv_ngay_gang': emv, 'emv_ngay_gang_thap': th.get('tong_emv_ngay_gang_thap' + CL, emv), 'emv_ngay_gang_cao': th.get('tong_emv_ngay_gang_cao' + CL, emv),
             'du_tru': du_tru, 'thieu': thieu, 'du': thieu == 0, 'ket_luan': 'đủ' if thieu == 0 else 'thiếu', 'ma_gang': ', '.join(th.get('ma_gang', [])),
             'so_rui_ro_gang': len(th.get('ma_gang', [])),
             'danh_gia': 'Đủ' if thieu == 0 else f'Thiếu {so1(thieu)} ngày làm việc',
@@ -113,7 +118,8 @@ def bang_phuong_an(dt):
 def danh_gia_du_phong_chi_phi():
     """Giá trị và lời đánh giá dự phòng chi phí theo chi_phi.json: du_phong_hien_co, cach_tinh_du_phong, khoản B.
     Dự phòng là cả khoản B theo khóa du_phong_ca_khoan_b của chi_phi.json; chi_phi.json cũ chưa có khóa thì suy từ du_phong_hien_co bằng B."""
-    dp, emv_ = float(cp['du_phong_hien_co']), float(th['tong_emv_tien'])
+    dp, emv_ = float(cp['du_phong_hien_co']), float(cl('tong_emv_tien'))
+    ten = 'EMV còn lại' if CO_XAY_RA else 'tổng EMV'
     cach, b = cp.get('cach_tinh_du_phong'), cp.get('B')
     ca_b = cp.get('du_phong_ca_khoan_b')
     if not isinstance(ca_b, bool):
@@ -123,9 +129,9 @@ def danh_gia_du_phong_chi_phi():
     else:
         gia_tri = f'{loi.tien(dp)} đồng, ' + ('dòng dự phòng bằng tổng EMV' if cach == 'emv' else 'dòng dự phòng theo tỷ lệ')
     if dp >= emv_:
-        dg_ = 'Đủ so với tổng EMV' + (f', thấp hơn cận trên {ty(th["tong_emv_tien_cao"])} triệu đồng' if dp < th.get('tong_emv_tien_cao', 0) else '')
+        dg_ = f'Đủ so với {ten}' + (f', thấp hơn cận trên {ty(cl("tong_emv_tien_cao"))} triệu đồng' if dp < cl('tong_emv_tien_cao') else '')
     else:
-        dg_ = f'Thiếu {ty(emv_ - dp)} triệu đồng so với tổng EMV'
+        dg_ = f'Thiếu {ty(emv_ - dp)} triệu đồng so với {ten}'
     return gia_tri, dg_ + (' (khi toàn bộ khoản B được dùng làm dự phòng)' if cach == 'nam_trong_chi_phi_khac' and ca_b else '')
 
 
@@ -133,12 +139,17 @@ def bang_du_phong(dt, chon):
     md0 = lambda v: loi.so(v, 0)
     dp_gia_tri, dp_danh_gia = danh_gia_du_phong_chi_phi()
     ten_pa = ', '.join(PHUONG_AN[k][0][:1].lower() + PHUONG_AN[k][0][1:] for k in chon if k in PHUONG_AN)
-    dong = [
-        ['Tổng EMV theo khối lượng', f'{md0(th["tong_emv_md"])} MD ({khoang(th.get("tong_emv_md_thap", 0), th.get("tong_emv_md_cao", 0), md0)} MD)'],
-        ['Tổng EMV theo chi phí', f'{ty(th["tong_emv_tien"])} triệu đồng ({khoang(th.get("tong_emv_tien_thap", 0), th.get("tong_emv_tien_cao", 0), ty)} triệu đồng)'],
+    dong = ([['Tổng EMV của sổ (gồm rủi ro đã xảy ra, đã đóng)', f'{md0(th["tong_emv_md"])} MD, {ty(th["tong_emv_tien"])} triệu đồng'],
+             ['Rủi ro đã xảy ra hoặc đã đóng, tác động thực tế', f'{th.get("so_da_xay_ra", 0) + th.get("so_da_dong", 0)} rủi ro, '
+              f'{loi.md(th.get("tac_dong_thuc_te_md", 0))} MD, {loi.tien(th.get("tac_dong_thuc_te_tien", 0))} đồng']] if CO_XAY_RA else []) + [
+        [('EMV còn lại' if CO_XAY_RA else 'Tổng EMV') + ' theo khối lượng',
+         f'{md0(cl("tong_emv_md"))} MD ({khoang(cl("tong_emv_md_thap"), cl("tong_emv_md_cao"), md0)} MD)'],
+        [('EMV còn lại' if CO_XAY_RA else 'Tổng EMV') + ' theo chi phí',
+         f'{ty(cl("tong_emv_tien"))} triệu đồng ({khoang(cl("tong_emv_tien_thap"), cl("tong_emv_tien_cao"), ty)} triệu đồng)'],
         ['Dự phòng chi phí trong dự toán', dp_gia_tri],
         ['Đánh giá dự phòng chi phí', dp_danh_gia],
-        ['Tổng EMV theo thời gian', f'{so1(th["tong_emv_ngay"])} ngày làm việc ({khoang(th.get("tong_emv_ngay_thap", 0), th.get("tong_emv_ngay_cao", 0), so1)})'],
+        [('EMV còn lại' if CO_XAY_RA else 'Tổng EMV') + ' theo thời gian', f'{so1(cl("tong_emv_ngay"))} ngày làm việc'
+         + ('' if CO_XAY_RA else f' ({khoang(th.get("tong_emv_ngay_thap", 0), th.get("tong_emv_ngay_cao", 0), so1)})')],
         ['EMV thời gian của rủi ro trên đường găng hoặc gắn mốc cut over', f'{so1(dt["emv_ngay_gang"])} ngày làm việc '
          f'({khoang(dt["emv_ngay_gang_thap"], dt["emv_ngay_gang_cao"], so1)}), {dt["so_rui_ro_gang"]} rủi ro'],
         ['Dự trữ thời gian đến cut over theo master schedule', f'{loi.so(dt["du_tru"], 0)} ngày làm việc'],
@@ -167,14 +178,21 @@ chon_pa = pa.pop('chon')
 cao = [r for r in ds if r['muc'] == 'cao']
 hang = th.get('so_hang', {})
 emv = {'tien_trieu': round(th['tong_emv_tien'] / 1e6), 'tien_trieu_thap': round(th.get('tong_emv_tien_thap', 0) / 1e6),
-       'tien_trieu_cao': round(th.get('tong_emv_tien_cao', 0) / 1e6), 'md': round(th['tong_emv_md']), 'ngay': th['tong_emv_ngay']}
+       'tien_trieu_cao': round(th.get('tong_emv_tien_cao', 0) / 1e6), 'md': round(th['tong_emv_md']), 'ngay': th['tong_emv_ngay'],
+       'con_lai_trieu': round(cl('tong_emv_tien') / 1e6), 'con_lai_trieu_thap': round(cl('tong_emv_tien_thap') / 1e6),
+       'con_lai_trieu_cao': round(cl('tong_emv_tien_cao') / 1e6), 'con_lai_md': round(cl('tong_emv_md')), 'co_xay_ra': CO_XAY_RA}
+xay_ra = {'cot': ['Mã', 'Rủi ro', 'Trạng thái', 'Ngày xảy ra', 'Tác động thực tế', 'EMV đã đánh giá, triệu đồng'],
+          'dong': [[r['ma'], r['ten'], r.get('trang_thai', ''), loi.ngay(r.get('ngay_xay_ra')), r.get('tac_dong_thuc_te_hien_thi', ''), loi.so(r['emv_trieu'], 1)]
+                   for r in sorted(ds, key=lambda r: r['ma']) if r.get('ngay_xay_ra') or r.get('trang_thai') in ('Đã xảy ra', 'Đã đóng')],
+          'widths': [700, 3300, 1300, 1200, 1700, 1100], 'center_cols': [0, 2, 3], 'right_cols': [5]}
 ghi_chu_td = (f'Mức tác động của mỗi rủi ro là mức cao nhất đạt được theo số ngày chậm, chi phí tác động so với {th.get("nguon_gia_co_so", "giá chào")} '
               f'{ty(th.get("gia_co_so", 0))} triệu đồng và điều kiện về mốc, hợp đồng. Mức chấm khác mức suy ra được ghi lý do trong sổ.') if NG else ''
 loi.ghi_json('du_lieu/rui_ro_bang.json', {
     'xac_suat': xs, 'tac_dong': bang_tac_dong() if NG else {'cot': ['Mức', 'Tác động'], 'dong': [[k, v] for k, v in T['tac_dong'].items()]},
     'ghi_chu_tac_dong': ghi_chu_td, 'muc': muc, 'quy_doi_3x3': bang_quy_doi() if Q else {'cot': [''], 'dong': []},
     'ma_tran': mt, 'ma_tran_3x3': bang_ma_tran_3x3() if rr.get('ma_tran_3x3') else {'cot': [''], 'dong': []},
-    'du_phong': bang_du_phong(dt, chon_pa), 'du_tru': dt, 'phuong_an_du_tru': pa, 'emv': emv, 'nguong': kpi, 'so_cao': len(cao),
+    'du_phong': bang_du_phong(dt, chon_pa), 'du_tru': dt, 'phuong_an_du_tru': pa, 'emv': emv, 'nguong': kpi, 'so_cao': len(cao), 'xay_ra': xay_ra,
+    'so_xay_ra': len(xay_ra['dong']), 'ngay_trang_thai': loi.ngay(th.get('ngay_trang_thai', '')),
     'ma_cao': ', '.join(r['ma'] for r in cao), 'so_hang': hang, 'ma_hang_a': ', '.join(r['ma'] for r in ds if r.get('hang') == 'A'),
     'so_co_hoi': th.get('so_co_hoi', 0)})
 print(f'Đã tính bảng rủi ro: {len(ds)} rủi ro, {len(cao)} mức cao, hạng A {hang.get("A", 0)}. EMV {emv["tien_trieu"]} triệu đồng '

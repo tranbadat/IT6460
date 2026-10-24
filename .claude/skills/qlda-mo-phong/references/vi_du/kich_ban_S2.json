@@ -1,0 +1,140 @@
+{
+ "sprint": "S2",
+ "tom_tat": "Huy động vị trí bổ sung. Một vị trí bổ sung đến muộn (RR04 xảy ra), thiết kế cơ sở dữ liệu vượt công, kế hoạch quản lý dự án được Chủ đầu tư xác nhận.",
+ "bien_co": [
+  {
+   "loai": "nghi",
+   "thanh_vien": "D3",
+   "so_ngay": 2,
+   "tu_ngay": "2027-04-01",
+   "lien_ket": [
+    "RR04"
+   ],
+   "ly_do": "Bùi Anh Tuấn bàn giao công việc ở đơn vị cũ, có mặt muộn 2 ngày so với sprint huy động"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR04",
+   "ngay": "2027-04-01",
+   "trang_thai": "Đã xảy ra",
+   "ma_goi": "2.2.4",
+   "md_tac_dong": 1,
+   "ngay_tac_dong": 0,
+   "hanh_dong": "Toàn hỗ trợ bàn giao kiến trúc, D3 làm bù cấu hình cơ sở dữ liệu trong sprint",
+   "ngay_dong": "2027-04-07",
+   "ly_do": "Vị trí bổ sung không có mặt đúng ngày đầu sprint huy động"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD02",
+   "ngay_ghi_nhan": "2027-04-01",
+   "nguoi_bao": "dat",
+   "mo_ta": "Gói 2.2.4 chậm bắt đầu do Bùi Anh Tuấn có mặt muộn 2 ngày",
+   "phan_loai": "Nhân sự",
+   "uu_tien": "Cao",
+   "ma_rui_ro": "RR04",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-04-07",
+   "hanh_dong": [
+    {
+     "viec": "Toàn bàn giao tài liệu kiến trúc và cấu hình cho Bùi Anh Tuấn",
+     "nguoi": "toan",
+     "han": "2027-04-05",
+     "ngay_xong": "2027-04-05",
+     "bang_chung": "Biên bản bàn giao ngày 05/04/2027"
+    }
+   ],
+   "ngay_dong": "2027-04-07",
+   "ket_qua": "Gói 2.2.4 hoàn thành, không ảnh hưởng 6.1.2",
+   "nguoi_dong": "dat",
+   "ly_do": "Ghi sổ vấn đề cho rủi ro đã xảy ra"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "2.3.4",
+   "ty_le_md": 0.25,
+   "ly_do": "Thiết kế giao diện đăng ký, đăng nhập phải làm lại một phần theo góp ý của Chủ sản phẩm tại buổi làm rõ yêu cầu"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD03",
+   "ngay_ghi_nhan": "2027-04-12",
+   "nguoi_bao": "dat",
+   "mo_ta": "Các gói 2.3.4, 3.2.1, 4.1.1, 4.2.1, 5.3.9, 5.4.1, 6.1.2 chậm 1 đến 2 ngày do đặc tả S1 xong muộn và gói 2.3.4 phải làm lại một phần",
+   "phan_loai": "Tiến độ",
+   "uu_tien": "Trung bình",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-04-23",
+   "hanh_dong": [
+    {
+     "viec": "Điều chỉnh thứ tự công việc S3, ưu tiên gói găng 6.1.2 và các gói thiết kế chi tiết",
+     "nguoi": "dat",
+     "han": "2027-04-15",
+     "ngay_xong": "2027-04-15",
+     "bang_chung": "Biên bản họp lập kế hoạch S3 ngày 15/04/2027"
+    }
+   ],
+   "ngay_dong": "2027-04-23",
+   "ket_qua": "Các gói chậm hoàn thành trong tuần đầu S3, không ảnh hưởng mốc M2",
+   "nguoi_dong": "dat",
+   "ly_do": "Ghi sổ vấn đề cho tín hiệu gói chậm cuối S2"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "6.1.1",
+   "so_loi": {
+    "Trung bình": 2,
+    "Thấp": 1
+   },
+   "mo_ta": "Lỗi khung ứng dụng phía máy chủ phát hiện khi tích hợp liên tục",
+   "ly_do": "Lỗi phát sinh khi đưa khung ứng dụng lên quy trình tích hợp"
+  },
+  {
+   "loai": "chi_phi",
+   "ngay": "2027-04-02",
+   "khoan_muc": "B",
+   "so_tien": 6000000,
+   "ghi_chu": "Thuê máy chủ môi trường phát triển và kiểm thử tháng 4",
+   "lien_ket": [
+    "8.1.1"
+   ],
+   "ly_do": "Chi phí môi trường theo khoản B"
+  },
+  {
+   "loai": "moc",
+   "ma_moc": "M1",
+   "ngay_dat": "2027-04-14",
+   "ghi_chu": "Biên bản xác nhận kế hoạch quản lý dự án ngày 14/04/2027",
+   "ly_do": "Chủ đầu tư xác nhận kế hoạch"
+  },
+  {
+   "loai": "retro",
+   "y": [
+    {
+     "loai": "tốt",
+     "noi_dung": "Bàn giao kiến trúc cho vị trí bổ sung trong 1 ngày nhờ tài liệu kiến trúc đã lập ở S1",
+     "lien_ket": [
+      "2.2.2",
+      "RR04"
+     ]
+    },
+    {
+     "loai": "cần cải thiện",
+     "noi_dung": "Ước lượng gói 2.2.3 chưa tính bảng đồng bộ tồn kho với Main System",
+     "lien_ket": [
+      "2.2.3"
+     ]
+    },
+    {
+     "loai": "hành động",
+     "noi_dung": "Xác nhận ngày có mặt của vị trí bổ sung S3 trước 1 tuần",
+     "lien_ket": [
+      "RR04",
+      "S3"
+     ]
+    }
+   ],
+   "ly_do": "Họp cải tiến cuối sprint S2"
+  }
+ ]
+}

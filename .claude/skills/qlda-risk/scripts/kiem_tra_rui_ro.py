@@ -7,6 +7,11 @@ hạng A, B, C của ma trận 3x3, EMV theo MD, tiền, ngày kèm khoảng the
 hoặc gắn cut over, ma trận 5x5 và 3x3 ghi mã rủi ro. Kiểm tra: đủ trường, người phụ trách là thành viên, liên kết WBS và mốc hợp lệ,
 mức tác động khớp mức suy ra hoặc có lý do, tiền khai khớp tiền tự tính, có căn cứ xác suất, rủi ro mức cao có kế hoạch ứng phó và
 dấu hiệu, đủ nhóm bắt buộc, mốc cut over có rủi ro liên kết, gói trên đường găng có rủi ro tiến độ, có cơ hội.
+Trạng thái theo dõi: dau_vao/thuc_te/theo_doi_rui_ro.csv (đến ngày hiện hành, QLDA_NGAY khi mô phỏng) khi có, thiếu thì trang_thai của dữ liệu
+nhập, mặc định Đang theo dõi. Rủi ro đã xảy ra hoặc đã đóng ghi ngày xảy ra, ngày đóng, tác động thực tế (MD, tiền trong CSV) và không tính
+EMV còn lại (emv_*_con_lai bằng 0). tong_hop giữ tổng EMV của toàn sổ (tong_emv_*, dùng đánh giá cuối dự án) và thêm tổng EMV còn lại
+(tong_emv_*_con_lai, dùng cho dự phòng của cost estimate, đánh giá dự trữ của kế hoạch rủi ro), số rủi ro theo trạng thái, tổng tác động thực tế.
+Rủi ro trong CSV không có trong sổ báo R27 (cảnh báo), trạng thái ngoài danh mục báo R28.
 Đạt thì ghi du_lieu/rui_ro.json, đăng ký phiên bản, ghi nhật ký. Mã thoát 0 đạt, 1 còn lỗi.
 """
 import os as _os, sys as _sys  # noqa: E401
@@ -37,6 +42,23 @@ add = lambda ma, mo, vt='', md='loi': F.append({'ma': ma, 'muc_do': md, 'nhom': 
 BAT_BUOC = ['ma', 'ten', 'nhom', 'nguyen_nhan', 'tac_dong_mo_ta', 'xac_suat', 'tac_dong', 'xac_suat_pt', 'can_cu_xac_suat', 'chien_luoc',
             'bien_phap_phong_ngua', 'ke_hoach_ung_pho', 'dau_hieu', 'nguoi_phu_trach']
 TT = []  # bảng tính tiền và mức suy ra của từng rủi ro, ghi vào báo cáo kiểm tra
+NGAY_TT = loi.ngay_hien_hanh()  # trạng thái theo dõi tính đến ngày hiện hành
+TDRR, SU_KIEN_RR = loi.theo_doi_rui_ro(NGAY_TT)
+DONG = ('Đã xảy ra', 'Đã đóng')  # trạng thái không còn tính EMV còn lại
+
+
+def trang_thai_theo_doi(r):
+    """Trạng thái, ngày xảy ra, ngày đóng, tác động thực tế của một rủi ro theo theo_doi_rui_ro.csv (đến NGAY_TT)."""
+    m = r.get('ma')
+    ev = [x for x in SU_KIEN_RR if x.get('ma_rui_ro') == m]
+    so = lambda v: float(v) if str(v or '').strip() else 0.0  # noqa: E731
+    xr = [x for x in ev if x.get('trang_thai') == 'Đã xảy ra']
+    tt = TDRR[m]['trang_thai'] if m in TDRR else (r.get('trang_thai') or 'Đang theo dõi')
+    return {'trang_thai': tt, 'nguon_trang_thai': f'theo dõi rủi ro đến {loi.ngay(NGAY_TT)}' if m in TDRR else 'sổ rủi ro',
+            'ngay_xay_ra': xr[0]['ngay'] if xr else '', 'ngay_dong': next((x['ngay'] for x in reversed(ev) if x.get('trang_thai') == 'Đã đóng'), ''),
+            'tac_dong_thuc_te_md': round(sum(so(x.get('md_tac_dong')) for x in ev), 2),
+            'tac_dong_thuc_te_tien': round(sum(so(x.get('chi_phi_tac_dong')) for x in ev)),
+            'hanh_dong_gan_nhat': ev[-1].get('hanh_dong', '') if ev else ''}
 
 
 def kiem_truong(r, m):
@@ -140,7 +162,14 @@ def tinh_rui_ro(r, tien, tinh, muc_sr, can_cu):
              hang=rc.hang_3x3(xs, td, CFG))
     x['muc_ten'] = CFG['ten_muc'][x['muc']]
     x['xs_khop'] = abs(p - CFG['xac_suat_pt'][str(xs)]) <= CFG['dung_sai_xac_suat']
-    x.setdefault('trang_thai', 'Đang theo dõi')
+    x.update(trang_thai_theo_doi(r))
+    con = x['trang_thai'] not in DONG  # rủi ro đã xảy ra hoặc đã đóng: tác động đã vào số liệu thực tế, không cần dự phòng nữa
+    x.update({k + '_con_lai': (x[k] if con else 0) for k in ('emv_md', 'emv_tien', 'emv_ngay', 'emv_tien_thap', 'emv_tien_cao', 'emv_md_thap',
+                                                            'emv_md_cao', 'emv_ngay_thap', 'emv_ngay_cao')})
+    x['trang_thai_hien_thi'] = x['trang_thai'] + (f' ngày {loi.ngay(x["ngay_xay_ra"])}' if x['trang_thai'] == 'Đã xảy ra' and x['ngay_xay_ra'] else '') \
+        + (f' ngày {loi.ngay(x["ngay_dong"])}' if x['trang_thai'] == 'Đã đóng' and x['ngay_dong'] else '')
+    x['tac_dong_thuc_te_hien_thi'] = (f'{loi.md(x["tac_dong_thuc_te_md"])} MD, {loi.tien(x["tac_dong_thuc_te_tien"])} đồng'
+                                      if x['ngay_xay_ra'] else '')
     x['ho_ten_phu_trach'] = tv.get(r.get('nguoi_phu_trach'), {}).get('ho_ten', '')
     x['nhom_ten'] = CFG['nhom'].get(r.get('nhom'), '')
     x['loai_ten'] = CFG['loai'].get(x['loai'], '')
@@ -181,6 +210,11 @@ def xu_ly(r):
 
 
 ds_nhap = rr.get('rui_ro', [])
+for m_ in sorted(set(TDRR) - {r.get('ma') for r in ds_nhap}):
+    add('R27', f'theo_doi_rui_ro.csv có rủi ro {m_} chưa có trong sổ, bổ sung vào dữ liệu nhập nếu là rủi ro cần theo dõi', m_, 'canh_bao')
+for m_, x_ in TDRR.items():
+    if x_.get('trang_thai') not in loi.TRANG_THAI_RUI_RO:
+        add('R28', f'trạng thái "{x_.get("trang_thai")}" trong theo_doi_rui_ro.csv không thuộc {", ".join(loi.TRANG_THAI_RUI_RO)}', m_)
 ma_seen = set()
 for r in ds_nhap:
     if r.get('ma', '?') in ma_seen:
@@ -225,11 +259,26 @@ tom = {'so_rui_ro': len(ds), 'so_de_doa': len(de_doa), 'so_co_hoi': len(co_hoi),
        'tong_emv_ngay_gang_cao': round(tong('emv_ngay_cao', gang_ds), 2), 'ma_gang': [r['ma'] for r in gang_ds],
        'tong_emv_tien_co_hoi': round(tong('emv_tien', co_hoi)), 'tong_emv_md_co_hoi': round(tong('emv_md', co_hoi), 2),
        'gia_co_so': BC['gia'], 'nguon_gia_co_so': BC['nguon_gia'], 'co_so_phat': round(BC['co_so_phat']),
+       'ngay_trang_thai': NGAY_TT, 'so_theo_trang_thai': {t: sum(1 for r in ds if r['trang_thai'] == t) for t in loi.TRANG_THAI_RUI_RO},
+       'so_da_xay_ra': sum(1 for r in ds if r['trang_thai'] == 'Đã xảy ra'), 'so_da_dong': sum(1 for r in ds if r['trang_thai'] == 'Đã đóng'),
+       'so_con_mo': sum(1 for r in ds if r['trang_thai'] not in DONG),
+       'tac_dong_thuc_te_md': round(sum(r['tac_dong_thuc_te_md'] for r in ds), 2), 'tac_dong_thuc_te_tien': round(sum(r['tac_dong_thuc_te_tien'] for r in ds)),
+       'tong_emv_md_con_lai': round(tong('emv_md_con_lai'), 2), 'tong_emv_tien_con_lai': round(tong('emv_tien_con_lai')),
+       'tong_emv_ngay_con_lai': round(tong('emv_ngay_con_lai'), 2),
+       'tong_emv_tien_thap_con_lai': round(tong('emv_tien_thap_con_lai')), 'tong_emv_tien_cao_con_lai': round(tong('emv_tien_cao_con_lai')),
+       'tong_emv_md_thap_con_lai': round(tong('emv_md_thap_con_lai'), 2), 'tong_emv_md_cao_con_lai': round(tong('emv_md_cao_con_lai'), 2),
+       'tong_emv_trieu_con_lai': round(tong('emv_tien_con_lai') / 1e6), 'tong_emv_trieu_thap_con_lai': round(tong('emv_tien_thap_con_lai') / 1e6),
+       'tong_emv_trieu_cao_con_lai': round(tong('emv_tien_cao_con_lai') / 1e6),
+       'tong_emv_ngay_gang_con_lai': round(tong('emv_ngay_con_lai', gang_ds), 2), 'tong_emv_ngay_gang_thap_con_lai': round(tong('emv_ngay_thap_con_lai', gang_ds), 2),
+       'tong_emv_ngay_gang_cao_con_lai': round(tong('emv_ngay_cao_con_lai', gang_ds), 2),
+       'ma_da_xay_ra': [r['ma'] for r in ds if r['ngay_xay_ra']],
        'phan_bo_xac_suat': {str(k): pb_xs.get(k, 0) for k in range(1, 6)}}
 print(f'{tom["so_rui_ro"]} rủi ro ({tom["so_co_hoi"]} cơ hội): {tom["so_cao"]} cao, {tom["so_trung_binh"]} trung bình, {tom["so_thap"]} thấp; '
       f'hạng A {tom["so_hang"]["A"]}, B {tom["so_hang"]["B"]}, C {tom["so_hang"]["C"]}. EMV {tom["tong_emv_md"]:g} MD, '
       f'{loi.trieu(tom["tong_emv_tien"], 0)} triệu đồng (khoảng {loi.trieu(tom["tong_emv_tien_thap"], 0)} đến {loi.trieu(tom["tong_emv_tien_cao"], 0)}), '
       f'EMV thời gian trên đường găng hoặc cut over {loi.so(tom["tong_emv_ngay_gang"], 1)} ngày, dự trữ {loi.so(BC["du_tru"], 0)} ngày. '
+      f'Trạng thái đến {loi.ngay(NGAY_TT)}: {tom["so_da_xay_ra"]} đã xảy ra, {tom["so_da_dong"]} đã đóng, EMV còn lại '
+      f'{loi.trieu(tom["tong_emv_tien_con_lai"], 0)} triệu đồng. '
       f'Kết luận: {"dat" if not loi_ else "chua_dat"} ({len(loi_)} lỗi, {len(F) - len(loi_)} cảnh báo)')
 loi.ghi_json('lam_viec/rui_ro/bao_cao_kiem_tra.json', {'ket_luan': 'dat' if not loi_ else 'chua_dat', 'so_loi': len(loi_), 'so_canh_bao': len(F) - len(loi_),
                                                      'phat_hien': F, 'tinh_toan': TT})

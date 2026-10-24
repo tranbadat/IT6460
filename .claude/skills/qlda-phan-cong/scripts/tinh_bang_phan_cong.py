@@ -3,7 +3,9 @@
 Dùng: python tinh_bang_phan_cong.py      (chay.py chuan_bi phan_cong_tai_lieu tự gọi)
 Ra: du_lieu/phan_cong_bang.json (bảng tính sẵn cho đặc tả, khóa raci, tai_sprint, theo_nguoi).
 RACI có cột Phê duyệt bên ngoài lấy từ trach_nhiem[].phe_duyet (ví dụ Chủ đầu tư xác nhận đặc tả, kiểm thử vận hành, nghiệm thu).
-Tải theo sprint có dòng tổng, MD theo người cộng đúng tổng WBS (loi.khop_tong khi chỉ lệch do làm tròn).
+Tải theo sprint có dòng tổng, MD theo người cộng đúng tổng WBS (loi.khop_tong khi chỉ lệch do làm tròn). Lịch có giai đoạn Kết thúc thì thêm
+cột kỳ KT (MD sau cut over, không có quỹ huy động nên ghi MD). Lịch lập lại (lap_lai_tu) thì ghi ngày lập lại để câu dẫn nêu sprint trước
+ngày này là MD thực tế.
 """
 import os as _os, sys as _sys  # noqa: E401
 _os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
@@ -49,7 +51,7 @@ for g in wbs['goi']:
 raci = {'cot': ['Mã', 'Hạng mục'] + [ten_ngan[p] for p in ids] + ['Bên ngoài', 'Phê duyệt bên ngoài'], 'dong': raci_rows,
         'widths': [700, 3000] + [800] * len(ids) + [1300, 1200], 'center_cols': list(range(2, 2 + len(ids))), 'dong_dam': dam}
 
-sp = [s['ma'] for s in lich['sprint']]
+sp = [s['ma'] for s in lich['sprint']] + sorted({r['sprint'] for r in lich['phan_bo']} - {s['ma'] for s in lich['sprint']})  # kỳ KT sau cut over
 pbm = {(r['thanh_vien'], r['sprint']): r for r in lich['phan_bo']}
 giao_tho = [sum(r['md'] for r in lich['phan_bo'] if r['thanh_vien'] == t['id']) for t in tvs]  # khớp master schedule
 giao_khop = loi.khop_tong(giao_tho, wbs['tong_md'])  # tổng theo người bằng tổng WBS khi chỉ lệch do làm tròn
@@ -62,15 +64,16 @@ for t in tvs:
     row = [t['ho_ten']]
     for s in sp:
         r = pbm.get((t['id'], s))
-        row.append(f'{loi.md(r["md"])}/{loi.md(r["quy"])}' if r and r['quy'] else '-')
+        row.append(f'{loi.md(r["md"])}/{loi.md(r["quy"])}' if r and r['quy'] else (loi.md(r['md']) if r and r['md'] else '-'))
     q = quy_nguoi[t['id']]
     row += [loi.md(giao_lich[t['id']]), loi.md(q), loi.pt(giao_lich[t['id']] / q if q else 0)]
     tai_rows.append(row)
 tong_sp = [(sum(r['md'] for r in lich['phan_bo'] if r['sprint'] == s), sum(r['quy'] for r in lich['phan_bo'] if r['sprint'] == s)) for s in sp]
 tong_giao, tong_quy = sum(giao_lich.values()), sum(quy_nguoi.values())
-tai_rows.append(['Tổng cộng'] + [f'{loi.md(round(m, 2))}/{loi.md(round(q, 2))}' for m, q in tong_sp]
+tai_rows.append(['Tổng cộng'] + [f'{loi.md(round(m, 2))}/{loi.md(round(q, 2))}' if q else loi.md(round(m, 2)) for m, q in tong_sp]
                 + [loi.md(round(tong_giao, 2)), loi.md(round(tong_quy, 2)), loi.pt(tong_giao / tong_quy if tong_quy else 0)])
-tai = {'cot': ['Thành viên'] + sp + ['Giao, MD', 'Quỹ, MD', 'Sử dụng'], 'dong': tai_rows, 'widths': [2200] + [950] * len(sp) + [900, 900, 900],
+W_SP = min(950, (13400 - 2200 - 2700) // max(1, len(sp)))  # khổ ngang: thu hẹp cột sprint khi có thêm kỳ KT
+tai = {'cot': ['Thành viên'] + sp + ['Giao, MD', 'Quỹ, MD', 'Sử dụng'], 'dong': tai_rows, 'widths': [2200] + [W_SP] * len(sp) + [900, 900, 900],
        'center_cols': list(range(1, 1 + len(sp))), 'right_cols': [len(sp) + 1, len(sp) + 2, len(sp) + 3]}
 
 lich_goi = {x['ma']: x for x in lich['goi']}
@@ -84,7 +87,18 @@ for t in tvs:
         phan = lg.get('phan_nguoi', {}).get(t['id'], chia.get(t['id'], 0))
         theo_nguoi.append({'ho_ten': t['ho_ten'], 'ma': x['ma'], 'ten': x['ten'], 'md': x['md'], 'md_nguoi': phan, 'vai': 'Thực hiện' if x['R'] == t['id'] else 'Hỗ trợ',
                            'thoi_gian': f'{loi.ngay(lg.get("bat_dau"))} - {loi.ngay(lg.get("ket_thuc"))}' if lg else '', 'sprint': lg.get('sprint_bat_dau', '')})
+LAP_LAI = lich.get('lap_lai_tu') or {}
+_sp_tt = [s['ma'] for s in lich['sprint'] if LAP_LAI.get('ngay') and s['den'] < LAP_LAI['ngay']]
+_kt = [x for x in sp if x not in {s['ma'] for s in lich['sprint']}]
+chu_thich_tai = ('Mỗi ô ghi MD trên quỹ thời gian của thành viên trong sprint theo master schedule'
+                 + (f'. Lịch được lập lại từ ngày {loi.ngay(LAP_LAI["ngay"])}, các sprint {", ".join(_sp_tt)} ghi MD thực tế đã làm (có thể vượt quỹ do '
+                    'làm thêm trong sprint đã qua), các sprint sau ghi MD kế hoạch' if _sp_tt else ', là MD kế hoạch')
+                 + (f'. Cột {", ".join(_kt)} là MD của giai đoạn Kết thúc sau cut over, chưa có quỹ huy động nên chỉ ghi MD' if _kt else '')
+                 + '. Cột Giao bằng tổng các ô của thành viên, dòng cuối là tổng của các thành viên.')
 loi.ghi_json('du_lieu/phan_cong_bang.json', {'raci': raci, 'tai_sprint': tai, 'theo_nguoi': theo_nguoi,
+                                              'ngay_lap_lai': loi.ngay(LAP_LAI.get('ngay')) if LAP_LAI.get('ngay') else '',
+                                              'sprint_thuc_te': ', '.join(s['ma'] for s in lich['sprint'] if LAP_LAI.get('ngay') and s['den'] < LAP_LAI['ngay']),
+                                              'co_ky_kt': bool(_kt), 'chu_thich_tai': chu_thich_tai,
                                               'chu_giai_ten': [{'ten_ngan': ten_ngan[p], 'ho_ten': next(t['ho_ten'] for t in tvs if t['id'] == p)} for p in ids]
                                               + [{'ten_ngan': ten_ngoai(b), 'ho_ten': b['ten']} for b in ngoai],
                                               'thanh_vien': [dict(t, loai_ten='Thành viên nhóm' if t['loai'] == 'nhom' else 'Vị trí bổ sung',

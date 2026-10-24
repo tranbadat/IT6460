@@ -117,6 +117,9 @@ def bang_du_phong():
     emv = (f'{loi.so(th["tong_emv_trieu"], 0)} triệu đồng, khoảng từ {loi.so(th["tong_emv_trieu_thap"], 0)} đến {loi.so(th["tong_emv_trieu_cao"], 0)} triệu đồng'
            if all(k in th for k in ('tong_emv_trieu', 'tong_emv_trieu_thap', 'tong_emv_trieu_cao')) else f'{loi.tien(cp["tong_emv_rui_ro"])} đồng')
     rows = [['Dự phòng hiện có', dp], ['Tổng EMV của sổ rủi ro', emv]]
+    if th.get('so_da_xay_ra') or th.get('so_da_dong'):
+        rows.append(['EMV còn lại (rủi ro chưa xảy ra, chưa đóng)', f'{loi.so(th.get("tong_emv_trieu_con_lai", 0), 0)} triệu đồng của {th.get("so_con_mo", 0)} rủi ro, '
+                     f'{th.get("so_da_xay_ra", 0) + th.get("so_da_dong", 0)} rủi ro đã xảy ra hoặc đã đóng'])
     rows += [[x['noi_dung'], x['quy_dinh'].format_map(ten)] for x in PL['du_phong']['quy_tac']]
     return {'cot': ['Nội dung', 'Quy định'], 'dong': rows, 'widths': [2300, 7000]}
 
@@ -154,8 +157,11 @@ def bang_cau_hinh():
     pm = min((g for g in wbs['goi'] if g.get('la') and g.get('loai') == 'PM'), key=lambda g: loi.khoa_ma(g['ma']), default={'cha': ''})
     rows = [['Kế hoạch dự án: WBS, master schedule, cost estimate (đường cơ sở phạm vi, tiến độ, chi phí)', pm['cha'], 'Ký hợp đồng', VAI['qtda']['ho_ten']]]
     mbd = moc_va_bao_dong()
+    cr_ap = [c for c in so['yeu_cau'] if c.get('phu_luc') and (c.get('ap_dung') or {}).get('da_ghi') and c.get('goi_moi')]
+    goi_cr = {g['ma'] for c in cr_ap for g in c['goi_moi']}  # gói mới của CR có đường cơ sở riêng theo phụ lục
     for h in hsmt['mau_01a']:
-        goi = [g for g in wbs['goi'] if g.get('la') and h['stt'] in g.get('hang_muc_01a', []) and g['ma'].split('.')[0] not in nhom_qldt]
+        goi = [g for g in wbs['goi'] if g.get('la') and h['stt'] in g.get('hang_muc_01a', []) and g['ma'].split('.')[0] not in nhom_qldt
+               and g['ma'] not in goi_cr]
         tong = sum(float(g['md']) for g in goi)
         if not goi or not tong:
             continue
@@ -163,14 +169,30 @@ def bang_cau_hinh():
         chinh = max(goi, key=lambda g: (float(g['md']), loi.khoa_ma(g['ma'])))
         nhom = sorted({g['cha'] for g in goi}, key=loi.khoa_ma)
         rows.append([f'{h["stt"]}. {h["danh_muc"]}', ', '.join(nhom), f'{m["ma"]}, {loi.ngay(m["ngay"])}', lg.get(chinh['ma'], {}).get('ho_ten_R', '')])
+    for c in cr_ap:
+        gm = [g['ma'] for g in c['goi_moi'] if g['ma'] in lg]
+        xn = next((m for m in gm if 'xác nhận' in lg[m].get('ten', '').lower()), '')
+        chinh = max(gm, key=lambda m: (float(lg[m].get('md') or 0), loi.khoa_ma(m)), default='')
+        rows.append([f'Phần thay đổi {c["ma"]}: {c["tieu_de"]}', ', '.join(sorted({m.rsplit('.', 1)[0] for m in gm}, key=loi.khoa_ma)),
+                     f'Phụ lục {c["phu_luc"].get("so", "")}, {loi.ngay(c["phu_luc"].get("ngay"))}' + (f'; đặc tả tại gói {xn}, {loi.ngay(lg[xn]["ket_thuc"])}' if xn else ''),
+                     lg.get(chinh, {}).get('ho_ten_R', '')])
     return {'cot': ['Hạng mục cấu hình', 'Nhóm WBS tạo ra', 'Đường cơ sở tại mốc', 'Người phụ trách'], 'dong': rows,
             'widths': [4100, 1800, 1700, 1700], 'center_cols': [1, 2]}
 
 
 def so_thay_doi():
     return [{'ma': c['ma'], 'tieu_de': c['tieu_de'], 'ngay': c['ngay_de_xuat'], 'md_tang': c['md_tang'], 'chi_phi_tang': c['chi_phi_tang'],
-             'gia_de_nghi': c.get('gia_de_nghi'), 'ngay_cham': c['ngay_cham'], 'diem_tac_dong': c.get('diem_tac_dong'), 'muc_ten': c['muc_ten'],
-             'trang_thai': c['trang_thai']} for c in so['yeu_cau']]
+             'gia_de_nghi': c.get('gia_de_nghi'), 'ngay_cham': c['ngay_cham'], 'ngay_cham_cut_over': c.get('ngay_cham_cut_over', 0),
+             'tieu_hao_du_tru': c.get('tieu_hao_du_tru', 0), 'diem_tac_dong': c.get('diem_tac_dong'), 'muc_ten': c['muc_ten'],
+             'trang_thai': c['trang_thai'], 'van_ban': c.get('van_ban', ''), 'phu_luc_so': (c.get('phu_luc') or {}).get('so', ''),
+             'gia_hop_dong_sau': (c.get('phu_luc') or {}).get('gia_hop_dong_sau'),
+             'ma_rui_ro': ', '.join(rui_ro_cua(c)) or 'Không'} for c in so['yeu_cau']]
+
+
+def rui_ro_cua(c):
+    """Rủi ro liên kết CR: mã rủi ro của phiếu và rủi ro trong sổ ghi lien_ket_cr là mã CR (rủi ro mới phát sinh từ CR)."""
+    ds = loi.doc_json('du_lieu/rui_ro.json', {'danh_sach': []}).get('danh_sach', [])
+    return list(dict.fromkeys(list(c.get('ma_rui_ro', [])) + sorted(r['ma'] for r in ds if c['ma'] in (r.get('lien_ket_cr') or []))))
 
 
 cr = so_thay_doi()

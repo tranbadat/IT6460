@@ -26,6 +26,10 @@ ct = loi.doc_json('dau_vao/chi_tieu_ky_thuat.json', {}); tdb = loi.doc_json('du_
 tv = loi.doc_json('dau_vao/thanh_vien.json')['thanh_vien']
 VAI = tdb.get('vai_ban', {})
 CUT = lich['cut_over']
+NGAY_HH = loi.ngay_hien_hanh()
+# phụ lục hợp đồng đã ký (CR đã áp dụng): giá hợp đồng sau phụ lục, phê duyệt phiên bản sau thay đổi, đường cơ sở sau thay đổi
+PHU_LUC = [dict(c['phu_luc'], ma_cr=c['ma']) for c in loi.doc_json('du_lieu/thay_doi.json', {'yeu_cau': []}).get('yeu_cau', [])
+           if c.get('phu_luc') and (c.get('ap_dung') or {}).get('da_ghi')]
 loi_ds, canh_bao = [], []
 
 
@@ -66,7 +70,7 @@ def bang_muc_tieu():
         if m.get('dot_thanh_toan') and str(m.get('can_cu', ''))[:1].isdigit():
             han = m.get('han') or m['ngay']
             rows.append([f'Đạt mốc {m["ma"]}: {m["ten"]}', f'Ngày ký biên bản mốc, căn cứ thanh toán Đợt {m["dot_thanh_toan"]}', f'Không muộn hơn {loi.ngay(han)}',
-                         loi.ngay(han), nx['moc']])
+                         loi.ngay(han), nx['moc'], tinh_trang_moc(m, han)])
     rows.append(['Giữ tiến độ theo kế hoạch sprint', 'SPI lũy kế cuối mỗi sprint', f'Từ {loi.so(ng.get("spi_vang", 0.95), 2)} trở lên',
                  f'Cuối mỗi sprint đến {loi.ngay(CUT)}', nx['spi']])
     rows.append(['Thực hiện trong đường cơ sở chi phí', 'Chi phí nhân công thực tế lũy kế so với BAC, CPI lũy kế',
@@ -79,8 +83,17 @@ def bang_muc_tieu():
                     for x in bh.get('muc_loi', []))
     rows.append(['Khắc phục sai sót trong thời hạn bảo hành', 'Thời gian phản hồi và khắc phục lỗi theo mức', muc or 'Theo HSMT',
                  f'{thang} tháng từ {loi.ngay(CUT)}', nx['bao_hanh']])
-    return {'cot': ['Mục tiêu', 'Chỉ số, cách đo', 'Ngưỡng', 'Hạn', 'Người xác nhận'], 'dong': rows,
-            'widths': [2300, 2300, 2300, 1100, 1300], 'center_cols': [3]}
+    rows = [r if len(r) == 6 else r + [''] for r in rows]
+    return {'cot': ['Mục tiêu', 'Chỉ số, cách đo', 'Ngưỡng', 'Hạn', 'Người xác nhận', f'Tình trạng đến {loi.ngay(NGAY_HH)}'], 'dong': rows,
+            'widths': [2000, 2000, 2000, 1050, 1150, 1100], 'center_cols': [3]}
+
+
+def tinh_trang_moc(m, han):
+    """Tình trạng của mục tiêu mốc tại ngày lập: đã đạt (đúng hạn hoặc trễ, số ngày làm việc trễ) hoặc chưa đến hạn."""
+    if m['ngay'] > NGAY_HH:
+        return 'Chưa đến mốc'
+    tre = loi.ngay_lam_viec_giua(loi.ngay_lam_viec(da), han, m['ngay']) if han and m['ngay'] > han else 0
+    return f'Đạt {loi.ngay(m["ngay"])}' + (f', trễ {tre} ngày làm việc so với hạn, hồ sơ thanh toán Đợt {m["dot_thanh_toan"]} lập từ ngày đạt' if tre else ', đúng hạn')
 
 
 def bang_phe_duyet():
@@ -89,6 +102,10 @@ def bang_phe_duyet():
     rows = [['Người lập', da.get('nguoi_lap', ''), loi.ngay(lich['ngay_bat_dau'])],
             ['Phê duyệt phía nhà thầu', VAI.get('dai_dien_nt', {}).get('ten', ''), loi.ngay(lich['ngay_bat_dau'])],
             ['Xác nhận phía Chủ đầu tư', VAI.get('tham_quyen_cdt', VAI.get('dau_moi_cdt', {})).get('ten', ''), tg_cdt]]
+    for x in PHU_LUC:  # phiên bản sau yêu cầu thay đổi được phê duyệt cùng phụ lục hợp đồng
+        rows += [[f'Phê duyệt phiên bản sau {x["ma_cr"]}, phía nhà thầu', VAI.get('dai_dien_nt', {}).get('ten', ''), loi.ngay(x['ngay'])],
+                 [f'Xác nhận phía Chủ đầu tư theo phụ lục hợp đồng {x.get("so", "")}', VAI.get('tham_quyen_cdt', VAI.get('dau_moi_cdt', {})).get('ten', ''),
+                  loi.ngay(x['ngay'])]]
     return {'cot': ['Vai trò', 'Họ tên, chức danh', 'Thời điểm'], 'dong': rows, 'widths': [2300, 4800, 2200], 'center_cols': [2]}
 
 
@@ -167,7 +184,7 @@ def bang_ra_soat():
     c = CFG['ra_soat']
     rows = [(s['den'], c['sprint']['noi_dung'].format(**s), thanh_phan(c['sprint']), c['sprint']['dau_ra']) for s in lich['sprint']]
     rows += [(m['ngay'], c['moc']['noi_dung'].format(**m), thanh_phan(c['moc']), c['moc']['dau_ra']) for m in lich['moc'] if m['ngay'] > lich['ngay_bat_dau']]
-    kt = ct.get('bao_hanh', {}).get('ho_tro_tang_cuong', {}).get('den') or CUT
+    kt = lich.get('ngay_dong_du_an') or ct.get('bao_hanh', {}).get('ho_tro_tang_cuong', {}).get('den') or CUT  # ngày đóng dự án của giai đoạn Kết thúc
     rows.append((kt, c['ket_thuc']['noi_dung'], thanh_phan(c['ket_thuc']), c['ket_thuc']['dau_ra']))
     return {'cot': ['Thời điểm', 'Hoạt động rà soát', 'Thành phần', 'Đầu ra'],
             'dong': [[loi.ngay(r[0])] + list(r[1:]) for r in sorted(rows, key=lambda r: r[0])], 'widths': [1200, 3300, 2400, 2400], 'center_cols': [0]}
@@ -178,12 +195,16 @@ def bang_ket_thuc():
     thang = bh.get('thoi_han_thang') or hd.get('bao_hanh_thang')
     rows = [(m['ngay'], f'Đạt mốc {m["ma"]}: {m["ten"]}', loi.ngay(m['ngay']), f'Đợt {m["dot_thanh_toan"]}, Mục 13.1 E-ĐKCT' if m.get('dot_thanh_toan') else 'Lịch dự án')
             for m in lich['moc'] if m['ngay'] >= CUT]
-    rows += [(t['ngay'], f'Hồ sơ thanh toán Đợt {t["dot"]}, {loi.tien(t["so_tien"])} đồng', f'Dự kiến nhận {loi.ngay(t["ngay"])}', 'Mục 13.1 E-ĐKCT')
+    so_pl = {x['ma_cr']: x.get('so', '') for x in PHU_LUC}
+    rows += [(t['ngay'], f'Hồ sơ thanh toán Đợt {t["dot"]}, {loi.tien(t["so_tien"])} đồng', f'Dự kiến nhận {loi.ngay(t["ngay"])}',
+              f'Phụ lục hợp đồng {so_pl.get(t["ma_cr"], "")}' if t.get('ma_cr') else 'Mục 13.1 E-ĐKCT')
              for t in cp.get('thanh_toan', []) if t.get('ngay_su_kien', '') >= CUT]
     ht = bh.get('ho_tro_tang_cuong')
     if ht:
         rows.append((ht['tu'], 'Hỗ trợ tăng cường sau cut over', f'{loi.ngay(ht["tu"])} đến {loi.ngay(ht["den"])}', 'Cam kết bảo hành của nhà thầu'))
-        rows.append((ht['den'], 'Rà soát kết thúc dự án, báo cáo tổng kết, đánh giá, bài học kinh nghiệm', f'Sau {loi.ngay(ht["den"])}', 'Lịch rà soát'))
+        dong = lich.get('ngay_dong_du_an') or ht['den']
+        rows.append((dong, 'Rà soát kết thúc dự án, báo cáo tổng kết, đánh giá, bài học kinh nghiệm',
+                     f'Ngày đóng dự án {loi.ngay(dong)}' if lich.get('ngay_dong_du_an') else f'Sau {loi.ngay(ht["den"])}', 'Lịch rà soát'))
     het_bh = cong_thang(CUT, int(thang))
     rows.append((het_bh, f'Bảo hành, bảo lãnh bảo hành {hd.get("bao_lanh_bao_hanh_phan_tram", "")}% giá hợp đồng', f'{loi.ngay(CUT)} đến {loi.ngay(het_bh)}',
                  f'{thang} tháng theo HSMT'))
@@ -201,11 +222,24 @@ def bang_cam_ket_cdt():
 
 
 def emv():
-    """Tổng EMV theo triệu đồng kèm khoảng khi sổ rủi ro có, ngược lại theo đồng."""
+    """Tổng EMV theo triệu đồng kèm khoảng khi sổ rủi ro có, ngược lại theo đồng. Có rủi ro đã xảy ra hoặc đã đóng thì nêu thêm EMV còn lại."""
     th = loi.doc_json('du_lieu/rui_ro.json', {}).get('tong_hop', {})
     if all(k in th for k in ('tong_emv_trieu', 'tong_emv_trieu_thap', 'tong_emv_trieu_cao')):
-        return f'{loi.so(th["tong_emv_trieu"], 0)} triệu đồng, khoảng từ {loi.so(th["tong_emv_trieu_thap"], 0)} đến {loi.so(th["tong_emv_trieu_cao"], 0)} triệu đồng'
+        s_ = f'{loi.so(th["tong_emv_trieu"], 0)} triệu đồng, khoảng từ {loi.so(th["tong_emv_trieu_thap"], 0)} đến {loi.so(th["tong_emv_trieu_cao"], 0)} triệu đồng'
+        if th.get('so_da_xay_ra') or th.get('so_da_dong'):
+            s_ += (f'. EMV còn lại của {th.get("so_con_mo", 0)} rủi ro chưa xảy ra, chưa đóng là {loi.so(th.get("tong_emv_trieu_con_lai", 0), 0)} triệu đồng')
+        return s_
     return f'{loi.tien(th.get("tong_emv_tien", cp.get("tong_emv_rui_ro", 0)))} đồng'
+
+
+def bang_duong_co_so():
+    """Đường cơ sở đã lập (du_lieu/phien_ban.json): BL1 khi ký hợp đồng, BLn sau yêu cầu thay đổi kèm phụ lục."""
+    pl = {x['ma_cr']: x for x in PHU_LUC}
+    rows = [[x['ma'], x.get('ten', ''), loi.ngay(x['ngay']), 'Ký hợp đồng' if x.get('hop_dong') else
+             (f'Yêu cầu thay đổi {x["ma_cr"]}' + (f', phụ lục hợp đồng {pl[x["ma_cr"]].get("so", "")}' if x['ma_cr'] in pl else '')
+              if x.get('ma_cr') else 'Quyết định của nhóm'), str(len(x.get('tai_lieu', {})))]
+            for x in loi.doc_json('du_lieu/phien_ban.json', {}).get('duong_co_so', [])]
+    return {'cot': ['Mã', 'Đường cơ sở', 'Ngày', 'Căn cứ', 'Số tài liệu'], 'dong': rows, 'widths': [700, 3600, 1200, 3000, 800], 'center_cols': [0, 2, 4]}
 
 
 loi_ds += kiem_tra_muc_bat_buoc()
@@ -217,7 +251,10 @@ if loi_ds:
 kiem_tra_khoan_b()
 out = {'muc_tieu': bang_muc_tieu(), 'phe_duyet': bang_phe_duyet(), 'ben_lien_quan': bang_ben_lien_quan(), 'thue_ngoai': bang_thue_ngoai(),
        'huy_dong': bang_huy_dong(), 'bao_hanh': bang_bao_hanh(), 'ra_soat': bang_ra_soat(), 'ket_thuc': bang_ket_thuc(), 'cam_ket_cdt': bang_cam_ket_cdt(),
-       'emv': emv(),
+       'emv': emv(), 'duong_co_so': bang_duong_co_so(),
+       'nhan_gia': 'Giá hợp đồng sau phụ lục' if PHU_LUC else ('Giá hợp đồng' if loi.da_ky_hop_dong() else 'Giá hợp đồng dự kiến'),
+       'phu_luc_goc': ''.join(f', phụ lục hợp đồng {x.get("so", "")}' for x in PHU_LUC),
+       'duong_co_so_hien_hanh': (loi.doc_json('du_lieu/phien_ban.json', {}).get('duong_co_so') or [{}])[-1].get('ma', ''),
        'so_ben_ngoai': len(pc.get('ben_ngoai', [])), 'so_khoan_b': len(cp.get('chi_phi_khac', []))}
 for c in canh_bao:
     print('CẢNH BÁO: ' + c)

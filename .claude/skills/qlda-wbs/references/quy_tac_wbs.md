@@ -22,6 +22,7 @@
 - hang_muc_01a: danh sách số nguyên (ví dụ [5, 6], không ghi "5"), là số thứ tự hạng mục Mẫu 01A của HSMT mà gói đóng góp (dùng để lập Mẫu 10A, 11A). Mọi hạng mục 01A phải có ít nhất một gói.
 - nguon: mã yêu cầu RFP (R..) hoặc dẫn chiếu HSMT (ví dụ "HSMT Chương V 3.4") mà gói đáp ứng. Gói xử lý nghiệp vụ bán hàng thông dụng ghi thêm mã nghiệp vụ (NV01 đến NV05, references/nghiep_vu_ban_hang.json).
 - thoi_luong_toi_thieu (không bắt buộc, chỉ gói lá): số nguyên dương, ngày làm việc. Lịch lấy giá trị lớn hơn giữa thời lượng tính từ MD và giá trị này. Dùng cho gói mà thời gian trôi qua không phụ thuộc số người (vận hành thử theo số ngày cam kết, chờ bên ngoài xem xét). Thời gian Chủ đầu tư phê duyệt tài liệu và khoảng kiểm thử chấp nhận không ghi ở đây mà do agent lập mốc gắn trong moc_nhap.json (khóa chu_dau_tu_tham_gia), lấy số ngày từ dau_vao/du_an.json.
+- giai_doan (không bắt buộc, chỉ gói lá): khoi_dong, thuc_hien, xuyen_suot hoặc ket_thuc. Để trống thì lịch suy ra: gói nhóm 1 (Quản lý dự án) loại PM, QA thuộc mục mức 2 đầu là Khởi động, dàn trải là Suốt dự án, thuộc mục mức 2 cuối là Kết thúc, gói khác là Thực hiện. Chỉ ghi khi cần khác cách suy ra (ví dụ gói cập nhật kế hoạch giữa dự án là xuyen_suot). Gói Kết thúc được xếp sau cut over, gói phải xong trước cut over không được phụ thuộc gói Kết thúc. Giá trị sai là lỗi W66.
 - can_cu_uoc_luong (bắt buộc ở mỗi nhóm mức 1 khi có dau_vao/uoc_luong.json): kich_thuoc (số chức năng, màn hình, API, giao diện tích hợp, đầu việc phi chức năng của nhóm nếu suy được), cach_phan_ra (cách chia tổng nhóm theo phương pháp trong uoc_luong.json xuống mục mức 2 và gói).
 - giai_trinh_tuong_tu: lý do khi tổng WBS lệch quá 25% so với quy mô trung bình (quy_mo_md) của hợp đồng tương tự trong dau_vao/nha_thau.json, nêu phạm vi khác biệt cụ thể.
 
@@ -46,6 +47,6 @@
 
 ## Trình bày tài liệu (script xuất)
 - Mỗi nhóm mức 1 một file WBS_n_Ten_khong_dau.docx và một file tổng hợp WBS_tong_hop.docx.
-- File nhóm: thông tin chung (tổng MD, căn cứ ước lượng của nhóm, thời gian theo lịch, người chịu trách nhiệm theo phân công, phụ thuộc đầu vào), sơ đồ cây, bảng chi tiết (mục cha in đậm), kiểm tra quy tắc 100%.
+- File nhóm: thông tin chung (tổng MD, căn cứ ước lượng của nhóm, thời gian theo lịch, theo giai đoạn với nhóm quản lý dự án, người chịu trách nhiệm theo phân công, phụ thuộc đầu vào), sơ đồ cây, bảng chi tiết (mục cha in đậm, cột Giai đoạn, sprint khi có lịch), kiểm tra quy tắc 100%.
 - File tổng hợp: khối lượng theo nhóm mức 1 và theo loại công việc, căn cứ ước lượng (phương pháp, các bước, bảng theo nhóm, căn cứ từng nhóm, đối chiếu hợp đồng tương tự, khoảng sai số quy ra MD), cấu trúc mức 1 và mức 2, ma trận truy vết yêu cầu RFP sang gói, phân bổ theo hạng mục Mẫu 01A, giả định ngoài phạm vi.
 - Ngày tài liệu: ngày ký đơn dự thầu hiện hành (nha_thau.json ngay_ky_don), đổi ngày ký đơn thì tài liệu đổi ngày và tăng phiên bản. Cập nhật theo yêu cầu thay đổi dùng --ngay, ngày này được giữ khi xuất lại mà nội dung không đổi.

@@ -144,7 +144,7 @@
    "h1": "5. Tải công việc theo sprint"
   },
   {
-   "doan": "Mỗi ô ghi MD kế hoạch trên quỹ thời gian của thành viên trong sprint, theo master schedule. Dòng cuối là tổng của các thành viên."
+   "doan": "{pcb#chu_thich_tai}"
   },
   {
    "bang_san": "pcb#tai_sprint"

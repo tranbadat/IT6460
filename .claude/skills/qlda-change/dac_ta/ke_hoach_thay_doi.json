@@ -116,7 +116,7 @@
     1900
    ],
    "toi_thieu": 8,
-   "huong_dan": "Các bước: tiếp nhận, lập phiếu theo mẫu ở mục 5, phân biệt làm rõ, sửa lỗi thuộc trách nhiệm nhà thầu, yêu cầu thay đổi, phân loại sơ bộ để xác định thời hạn đánh giá (trạng thái Mới, Đang đánh giá); đánh giá tác động định lượng bằng công cụ của nhóm (MD, chi phí nội bộ, giá đề nghị, ngày chậm, mốc, điểm, mức), trạng thái Chờ phê duyệt; họp ban kiểm soát thay đổi với mức lớn; quyết định theo thẩm quyền; lập văn bản thống nhất hoặc phụ lục hợp đồng; cập nhật dữ liệu nguồn và tạo lại tài liệu theo ma trận lan truyền; thực hiện, kiểm thử và Chủ đầu tư kiểm tra đạt phần thay đổi (Mục 20.1 E-ĐKCT), trạng thái Đã thực hiện; thông báo các bên; đóng theo bảng nhánh đóng, gồm nhánh từ chối và hoãn. Thời hạn lấy theo bảng thẩm quyền ở mục 3, viết bằng tham chiếu, không viết số tay.",
+   "huong_dan": "Các bước: tiếp nhận, lập phiếu theo mẫu ở mục 5, phân biệt làm rõ, sửa lỗi thuộc trách nhiệm nhà thầu, yêu cầu thay đổi, phân loại sơ bộ để xác định thời hạn đánh giá (trạng thái Mới, Đang đánh giá); đánh giá tác động định lượng bằng công cụ của nhóm (MD, chi phí nội bộ, giá đề nghị, đưa gói mới vào lịch có ràng buộc nguồn lực để tính ngày cut over mới, mốc thanh toán bị dời và nhu cầu thêm người, điểm, mức), trạng thái Chờ phê duyệt; họp ban kiểm soát thay đổi với mức lớn; quyết định theo thẩm quyền; lập văn bản thống nhất hoặc phụ lục hợp đồng (số, ngày, giá điều chỉnh, cut over mới, mốc thanh toán điều chỉnh); áp dụng vào dữ liệu nguồn bằng công cụ của nhóm (căn cứ ước lượng, WBS, giao việc, dự án, mốc, đơn giá) và tạo lại tài liệu theo ma trận lan truyền, lập đường cơ sở mới sau thay đổi; thực hiện, kiểm thử và Chủ đầu tư kiểm tra đạt phần thay đổi (Mục 20.1 E-ĐKCT), trạng thái Đã thực hiện; thông báo các bên; đóng theo bảng nhánh đóng, gồm nhánh từ chối và hoãn. Thời hạn lấy theo bảng thẩm quyền ở mục 3, viết bằng tham chiếu, không viết số tay.",
    "nguon": [
     "tdb",
     "hsmt"
@@ -260,7 +260,7 @@
      [
       "Nội dung",
       "tieu_de",
-      2300
+      2200
      ],
      [
       "Ngày",
@@ -287,9 +287,9 @@
       "r"
      ],
      [
-      "Chậm, ngày",
-      "ngay_cham",
-      650,
+      "Cut over lùi, ngày làm việc",
+      "ngay_cham_cut_over",
+      750,
       "c"
      ],
      [
@@ -314,7 +314,7 @@
    "soan": "THEO_DOI",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Thông báo kết quả cho các bên, báo cáo số yêu cầu thay đổi và tác động trong báo cáo tiến độ, rà soát trong họp sprint, chỉ số theo dõi (số yêu cầu mở, MD tăng và giá đề nghị lũy kế, thời gian xử lý so với hạn quyết định). Liên kết với quản lý rủi ro khi thay đổi phát sinh rủi ro mới, với sổ vấn đề khi vấn đề cần thay đổi kế hoạch. Dự phòng chỉ dẫn chiếu mục 9, không viết lại quy tắc.",
+   "huong_dan": "Thông báo kết quả cho các bên, báo cáo số yêu cầu thay đổi và tác động trong báo cáo tiến độ, rà soát trong họp sprint, chỉ số theo dõi (số yêu cầu mở, MD tăng và giá đề nghị lũy kế, thời gian xử lý so với hạn quyết định). Liên kết với quản lý rủi ro khi thay đổi phát sinh rủi ro mới, với sổ vấn đề khi vấn đề cần thay đổi kế hoạch. Dự phòng chỉ dẫn chiếu mục 9, không viết lại quy tắc. Yêu cầu thay đổi đã có phụ lục nêu số, ngày phụ lục và giá hợp đồng sau phụ lục (tdb#so_thay_doi phu_luc_so, gia_hop_dong_sau), rủi ro mới liên kết (ma_rui_ro).",
    "nguon": [
     "tdb",
     "rr"

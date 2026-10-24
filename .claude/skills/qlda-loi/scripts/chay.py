@@ -3,7 +3,7 @@
 Dùng (chạy từ thư mục gốc dự án):
   python .claude/skills/qlda-loi/scripts/chay.py trang_thai            trạng thái mọi tài liệu, bước nên làm tiếp
   python .../chay.py chuan_bi <buoc>                                    kiểm tra đầu vào, lập khung cho agent Soạn thảo
-  python .../chay.py hoan_thien <buoc> [--ghi-chu "..."]                ghép bản soạn, vòng tạo, kiểm tra, sửa (tối đa 3 vòng)
+  python .../chay.py hoan_thien <buoc> [--ghi-chu "..."] [--ngay ...]   ghép bản soạn, vòng tạo, kiểm tra, sửa (tối đa 3 vòng)
   python .../chay.py dang_ky <buoc> [--ghi-chu "..."]                   đăng ký phiên bản đầu ra do script riêng tạo (xlsx, json)
   python .../chay.py anh_huong <mã nút hoặc đường dẫn tệp>              các tài liệu phải cập nhật khi nút này thay đổi
   python .../chay.py bang_chung                                         xuất phụ lục bằng chứng prompt và skill
@@ -12,6 +12,8 @@ Tài liệu theo kỳ (đầu ra là thư mục, ví dụ báo cáo tiến độ
 lam_viec/<buoc>/<tên tệp đầu ra>/, bằng chứng lớp A là bang_chung/kiem_tra/<buoc>_<tên tệp>_v<phiên bản>_lopA.json.
 CSV trong dau_vao/thuc_te/ chỉ có dòng tiêu đề coi như chưa có. Bước có đầu vào thực tế mà chưa tệp nào có dữ liệu
 ở trạng thái "chờ dữ liệu thực tế", không được gợi ý làm tiếp.
+Sau ký hợp đồng, phiên bản mới (hoan_thien, dang_ky) ghi khóa phat_hanh: bản phát hành hiện hành tại ngày tài liệu
+(du_lieu/phat_hanh.json). Khi mô phỏng dự án, đặt biến môi trường QLDA_NGAY=yyyy-mm-dd làm ngày hiện hành.
 Mã thoát: 0 đạt, 2 cần agent Soạn thảo hoặc người dùng xử lý, 1 lỗi.
 """
 import os as _os, sys as _sys  # noqa: E401
@@ -79,7 +81,10 @@ def cho_thuc_te(b):
 
 
 def bat_buoc(nut):
-    return sd['dau_vao'][nut].get('bat_buoc', True) if nut in sd['dau_vao'] else True
+    """Đầu vào nhóm theo khóa bat_buoc; đầu ra của bước khai báo ra_tuy_chon (ví dụ số liệu mô phỏng) không bắt buộc với bước sau."""
+    if nut in sd['dau_vao']:
+        return sd['dau_vao'][nut].get('bat_buoc', True)
+    return not any(b.get('ra_tuy_chon') and nut in b['ra'] for b in sd['buoc'])
 
 
 def nguon_cua(nut):
@@ -157,6 +162,11 @@ if a.lenh == 'trang_thai':
     if a.json:
         print(json.dumps(rows, ensure_ascii=False, indent=1)); sys.exit(0)
     print(f'Thư mục dự án: {loi.GOC}')
+    hd_ = loi.doc_json('du_lieu/phien_ban.json', {}).get('hop_dong')
+    if hd_:  # giai đoạn thực hiện: phiên bản mới gắn bản phát hành hiện hành
+        ph_ = loi.ban_phat_hanh_hien_hanh()
+        print(f'Đã ký hợp đồng (đường cơ sở {hd_["duong_co_so"]}, {loi.ngay(hd_["ngay"])}). Ngày hiện hành {loi.ngay(loi.ngay_hien_hanh())}, '
+              f'bản phát hành hiện hành: {ph_ or "chưa có"}. Phiên bản tài liệu mới ghi khóa phat_hanh theo ngày tài liệu.')
     for k, v in sd['dau_vao'].items():
         if not ton_tai(k):
             trong = ', chưa có dòng dữ liệu' if os.path.exists(loi.duong_dan(v['tep'])) else ''
@@ -290,7 +300,7 @@ if a.lenh == 'hoan_thien':
     # tài liệu theo kỳ: tên bằng chứng có tên tệp đầu ra để kỳ sau không ghi đè kỳ trước
     tien_to_bc = f'{b["id"]}_{ten_ra}' if theo_ky else b['id']
     nguon_ng = loi.nap_nguon(dict({'da': 'dau_vao/du_an.json'}, **spec.get('nguon', {})))
-    ngay_tl = loi.ngay(loi.bay_gio()[:10])
+    ngay_tl = loi.ngay(loi.ngay_hien_hanh())  # ngày máy, hoặc QLDA_NGAY khi mô phỏng dự án
     if a.ngay:
         try:
             ngay_tl = loi.ngay(dt.date.fromisoformat(a.ngay).isoformat())

@@ -16,11 +16,13 @@ description: Lập sổ đăng ký rủi ro và kế hoạch quản lý rủi ro
    - Tính điểm, mức, hạng A, B, C (quy đổi 3x3), EMV kèm khoảng theo cận mức xác suất, EMV thời gian của rủi ro trên đường găng hoặc gắn cut over, ma trận 5x5 và 3x3 ghi mã.
    - Kiểm tra đủ trường (gồm can_cu_xac_suat), người phụ trách, liên kết WBS và mốc, rủi ro mức cao có kế hoạch ứng phó và dấu hiệu, đủ nhóm bắt buộc, rủi ro cho cut over và đường găng; cảnh báo dồn xác suất (R24), thiếu cơ hội (R25), thiếu rủi ro còn lại, điều kiện đóng (R26), nguyên nhân viện dẫn số tổng hợp của sổ (R19).
 
+   - Trạng thái (từ 1.2.0): lấy từ dau_vao/thuc_te/theo_doi_rui_ro.csv đến ngày hiện hành (QLDA_NGAY khi mô phỏng) khi có, thiếu thì trang_thai của dữ liệu nhập, mặc định Đang theo dõi. Mỗi rủi ro ghi trang_thai, ngay_xay_ra, ngay_dong, tac_dong_thuc_te_md, tac_dong_thuc_te_tien (cộng từ CSV), emv_*_con_lai (bằng 0 khi Đã xảy ra hoặc Đã đóng). tong_hop giữ tong_emv_* của toàn sổ (dùng cho đánh giá cuối dự án) và thêm tong_emv_*_con_lai, so_da_xay_ra, so_da_dong, so_con_mo, tac_dong_thuc_te_*, ngay_trang_thai. Cost estimate, kế hoạch rủi ro, kế hoạch thay đổi, master plan dùng EMV còn lại. R27 (cảnh báo) rủi ro trong CSV chưa có trong sổ, R28 trạng thái ngoài danh mục. Rủi ro mới phát sinh từ yêu cầu thay đổi ghi lien_ket_cr ["CRxx"] để sổ thay đổi liên kết được.
+
 Mã kiểm tra mới từ 1.1.0: R13 mức tác động lệch mức suy ra, R14 thiếu hoặc sai loai_cong_viec, R15 tiền khai lệch tiền tự tính, R16 loại rủi ro sai, R17 tien_them thiếu lý do hoặc sai công thức, R18 chiến lược không hợp loại, R19 nguyên nhân tự tham chiếu, R24 dồn xác suất, R25 thiếu cơ hội, R26 thiếu rủi ro còn lại hoặc điều kiện đóng.
 
 ## Bước tài liệu (ke_hoach_rui_ro)
 
-1. `python .claude/skills/qlda-loi/scripts/chay.py chuan_bi ke_hoach_rui_ro` (tự chạy scripts/tinh_bang_rui_ro.py: thang tác động có ngưỡng, quy đổi 3x3, ma trận ghi mã, EMV theo triệu đồng kèm khoảng, dòng đánh giá dự trữ thời gian, bảng phương án khi dự trữ thiếu).
+1. `python .claude/skills/qlda-loi/scripts/chay.py chuan_bi ke_hoach_rui_ro` (tự chạy scripts/tinh_bang_rui_ro.py: thang tác động có ngưỡng, quy đổi 3x3, ma trận ghi mã, EMV theo triệu đồng kèm khoảng, dòng đánh giá dự trữ thời gian, bảng phương án khi dự trữ thiếu). Khi sổ có rủi ro đã xảy ra hoặc đã đóng: đối chiếu dự phòng và dự trữ dùng EMV còn lại, bảng dự phòng ghi thêm tổng EMV của sổ và tác động thực tế, bảng xay_ra liệt kê rủi ro đã xảy ra; sổ trong tài liệu có cột Trạng thái.
 2. Agent Soạn thảo viết bản soạn: phương pháp (EMV là ước tính định hướng, đoạn đối chiếu 3x3 và lý do dùng thang 5 mức), vai trò, nhận xét ma trận, dự phòng (khi dự trữ thời gian thiếu nêu bốn phương án để nhóm quyết định), chu kỳ rà soát, ngưỡng kích hoạt, báo cáo.
 3. `python .claude/skills/qlda-loi/scripts/chay.py hoan_thien ke_hoach_rui_ro --ghi-chu "..."`
 4. Agent Kiểm tra lớp B với `dac_ta/ke_hoach_rui_ro.json`, chú trọng CL05 (phát hiện, quyết định, hành động).

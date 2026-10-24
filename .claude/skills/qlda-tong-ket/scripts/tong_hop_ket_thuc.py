@@ -2,7 +2,8 @@
 nghiệm thu, lỗi, thay đổi, rủi ro và bộ chỉ tiêu đánh giá (KPI).
 
 Dùng: python tong_hop_ket_thuc.py [--ngay yyyy-mm-dd]
-  --ngay  ngày chốt số liệu, mặc định là ngày ghi nhận cuối cùng trong nhật ký công việc.
+  --ngay  ngày chốt số liệu, mặc định là ngày ghi nhận cuối cùng trong nhật ký công việc. Ngày đó thuộc kỳ KT (giai đoạn Kết thúc) thì
+          chốt tại ngày đóng dự án khi ngày hiện hành (QLDA_NGAY khi mô phỏng) đã đến ngày đó, để trùng báo cáo tiến độ kỳ KT.
 Đầu vào: du_lieu/{wbs,lich,phan_cong,chi_phi,rui_ro,hsmt,rfp_yeu_cau}.json, du_lieu/thay_doi.json (nếu có),
          dau_vao/{du_an,thanh_vien,don_gia}.json, dau_vao/thuc_te/*.csv (xem qlda-bao-cao-tien-do/references/nhap_lieu.md).
 Bước này gọi tinh_tien_do.py cho kỳ cuối để có SPI, CPI (theo công và theo chi phí thực), sổ vấn đề tại ngày chốt và kiểm tra dữ liệu nhật ký.
@@ -13,7 +14,9 @@ Yêu cầu thay đổi đúng hạn khi ngày quyết định không muộn hơn
 đánh giá trong qlda-change/references/phan_loai.json.
 Khoản B: khi don_gia.json du_phong_rui_ro có so_tien thì tách dự phòng rủi ro khỏi khoản B, chưa có thì giữ cả khoản B làm dự phòng kèm cảnh báo.
 chi_phi_thuc_te.csv có cột loai thì tách đã chi (da_chi) và nghĩa vụ đã cam kết chưa chi (cam_ket, ví dụ bảo hành).
-MD kế hoạch theo người lấy lich.json phan_bo, làm tròn sao cho tổng bằng tổng MD của WBS.
+MD kế hoạch theo người lấy lich.json phan_bo (gồm kỳ KT), làm tròn sao cho tổng bằng tổng MD của WBS.
+Ngày làm việc tính đến ngay_dong_du_an khi lịch có giai đoạn Kết thúc (thuc_te.ngay_lam_viec_du_an). Ngày chốt trong kỳ KT thì kỳ cuối là KT.
+Có du_lieu/mo_phong.json (qlda-mo-phong) thì ghi so_lieu_mo_phong và can_cu_mo_phong cho phần căn cứ của báo cáo tổng kết, đánh giá, bài học.
 Mốc so với hạn (han của mốc, mốc cut over lấy ngày cut over hợp đồng), kèm lệch so với ngày kế hoạch hiện hành.
 KPI mặc định: references/kpi_mac_dinh.json, ghi đè ngưỡng trong dau_vao/kpi.json (kèm lý do).
 Kiểm tra: K01 đến K10 như cũ; K11 định dạng ô CSV (lỗi); K12 MD kế hoạch theo người lệch tổng WBS; K13 chi phí huy động lệch cost estimate;
@@ -70,16 +73,20 @@ cptt, sai_cp, co_loai = thuc_te.doc_chi_phi_thuc_te()
 if sai_o + sai_cp:
     loi.thoat_loi('Dữ liệu thực tế sai định dạng (K11), sửa rồi chạy lại:\n- ' + '\n- '.join(sai_o + sai_cp))
 ngay_chot = D(a.ngay) if a.ngay else max(D(r['ngay']) for r in nk)
+ky_kt = thuc_te.ky_ket_thuc(lich, da)
+if not a.ngay and ky_kt and D(ky_kt['tu']) <= ngay_chot <= D(ky_kt['den']):  # ghi nhận cuối trong kỳ KT: chốt tại ngày đóng dự án khi đã đến
+    ngay_chot = max(ngay_chot, min(D(ky_kt['den']), D(loi.ngay_hien_hanh())))
 F = []
 add = lambda ma, mo, md='loi': F.append({'ma': ma, 'muc_do': md, 'mo_ta': mo})  # noqa: E731
-days = loi.ngay_lam_viec(da)
+days = thuc_te.ngay_lam_viec_du_an(da, lich)  # đến ngay_dong_du_an khi lịch có giai đoạn Kết thúc
 by, la = loi.nut_wbs(wbs)
 
 # 1. Chốt EVM kỳ cuối bằng tinh_tien_do.py
-sp_cuoi = [s for s in lich['sprint'] if D(s['tu']) <= ngay_chot]
-ky = sp_cuoi[-1]['ma'] if sp_cuoi and D(sp_cuoi[-1]['den']) == ngay_chot else 'KT'
+KT = thuc_te.KY_KET_THUC
+sp_cuoi = [s for s in thuc_te.cac_ky(lich, da) if D(s['tu']) <= ngay_chot]
+ky = sp_cuoi[-1]['ma'] if sp_cuoi and D(sp_cuoi[-1]['den']) == ngay_chot else KT
 r = subprocess.run([sys.executable, os.path.join(loi.THU_MUC_SKILLS, 'qlda-bao-cao-tien-do', 'scripts', 'tinh_tien_do.py'), '--ky',
-                    ky if ky != 'KT' else ngay_chot.isoformat()] + (['--ma', 'KT'] if ky == 'KT' else []),
+                    ky if ky != KT else ngay_chot.isoformat()] + (['--ma', KT] if ky == KT else []),
                    cwd=loi.GOC, capture_output=True, text=True, encoding='utf-8', errors='replace')
 if r.returncode != 0:
     print(r.stdout, r.stderr)
@@ -421,6 +428,8 @@ out = {'ngay_chot': ngay_chot.isoformat(), 'ky_cuoi': ky, 'pham_vi': pham_vi, 't
        'nghiem_thu': nghiem_thu, 'loi': loi_, 'thay_doi': thay_doi, 'rui_ro': rui_ro, 'kpi': kpi, 'so_kpi': len(kpi), 'so_kpi_dat': so_dat,
        'ty_le_kpi_dat': ty_le_kpi, 'xep_loai': xep_loai, 'kpi_theo_nhom': theo_nhom_kpi,
        'xep_loai_thang': KPI_CFG['xep_loai'], 'kpi_khong_dat': [k for k in kpi if k['ket_qua'] != 'Đạt'],
+       'ngay_dong_du_an': lich.get('ngay_dong_du_an', ''), 'so_lieu_mo_phong': bool(thuc_te.mo_phong()),
+       'can_cu_mo_phong': thuc_te.can_cu_mo_phong('báo cáo'),
        'kiem_tra': {'ket_luan': 'dat' if not loi_ds else 'chua_dat', 'phat_hien': F}}
 for x in F:
     print(f"[{x['muc_do']}] {x['ma']}: {x['mo_ta']}")

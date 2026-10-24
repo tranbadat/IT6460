@@ -33,6 +33,7 @@ Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tu
 | | Ký hợp đồng | `qlda-phien-ban/scripts/so_phien_ban.py duong_co_so BL1 --ten "..." --hop-dong` |
 | Thực hiện | Báo cáo tiến độ mỗi sprint | qlda-bao-cao-tien-do |
 | | Yêu cầu thay đổi | qlda-change |
+| | Số liệu thực tế mô phỏng mỗi sprint, bản phát hành | qlda-mo-phong (chu_trinh.py), qlda-master-schedule (phat_hanh.py) |
 | Kết thúc | Số liệu kết thúc, tổng kết | qlda-tong-ket |
 | | Đánh giá, bài học | qlda-danh-gia, qlda-bai-hoc |
 | | Bảng phân chia lương | qlda-bang-luong |

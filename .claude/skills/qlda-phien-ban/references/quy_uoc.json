@@ -68,6 +68,18 @@
   {
    "noi_dung": "Thay đổi sau đường cơ sở",
    "quy_dinh": "Yêu cầu thay đổi được phê duyệt, cập nhật dữ liệu nguồn, chạy lại các bước bị ảnh hưởng, đóng yêu cầu thay đổi khi mọi tài liệu đã cập nhật"
+  },
+  {
+   "noi_dung": "Bản phát hành",
+   "quy_dinh": "Cuối mỗi sprint lập một bản phát hành R<n> gồm gói hoàn thành, tính năng theo hạng mục Mẫu 01A và yêu cầu RFP, lỗi đã sửa, lỗi còn mở, yêu cầu thay đổi đã đưa vào và ghi chú phát hành. Bản của sprint có cut over là bản phát hành chính thức"
+  },
+  {
+   "noi_dung": "Phiên bản gắn bản phát hành",
+   "quy_dinh": "Sau ký hợp đồng, mỗi phiên bản tài liệu ghi bản phát hành hiện hành tại ngày tài liệu để truy được tài liệu mô tả đúng bản phần mềm nào"
+  },
+  {
+   "noi_dung": "Đường cơ sở",
+   "quy_dinh": "BL1 lập khi ký hợp đồng, chỉ một lần. BL2 và các đường cơ sở sau lập khi yêu cầu thay đổi được phê duyệt và các tài liệu bị ảnh hưởng đã cập nhật, ghi mã CR làm căn cứ. Phiên bản đường cơ sở không bị ghi đè hay đổi trạng thái"
   }
  ]
 }

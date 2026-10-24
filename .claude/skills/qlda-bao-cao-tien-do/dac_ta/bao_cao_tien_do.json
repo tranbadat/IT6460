@@ -11,8 +11,12 @@
   "lich": "du_lieu/lich.json",
   "rr": "du_lieu/rui_ro.json",
   "cp": "du_lieu/chi_phi.json",
-  "dg": "dau_vao/don_gia.json"
+  "dg": "dau_vao/don_gia.json",
+  "mo_phong": "du_lieu/mo_phong.json"
  },
+ "nguon_tuy_chon": [
+  "mo_phong"
+ ],
  "bia": {
   "tieu_de": "Báo cáo tiến độ",
   "dong_phu": [
@@ -78,6 +82,9 @@
      1700
     ]
    }
+  },
+  {
+   "doan_ds": "td#can_cu_mo_phong"
   },
   {
    "soan": "TOM_TAT",
@@ -667,28 +674,40 @@
      [
       "Mã",
       "ma",
-      800,
+      700,
       "c"
      ],
      [
       "Yêu cầu thay đổi",
       "tieu_de",
-      4300
+      3000
      ],
      [
       "Trạng thái",
       "trang_thai",
-      1600
+      1300
      ],
      [
       "MD",
       "md_tang|md",
-      900,
+      700,
       "r"
      ],
      [
-      "Chậm, ngày",
-      "ngay_cham",
+      "Giá đề nghị, đồng",
+      "gia_de_nghi|tien",
+      1400,
+      "r"
+     ],
+     [
+      "Cut over lùi, ngày làm việc",
+      "ngay_cham_cut_over",
+      1100,
+      "c"
+     ],
+     [
+      "Mức",
+      "muc_ten",
       1100,
       "c"
      ]

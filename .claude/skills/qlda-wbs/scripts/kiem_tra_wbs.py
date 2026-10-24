@@ -111,11 +111,18 @@ for g in la:
             add('W19', 'thoi_luong_toi_thieu phải là số nguyên dương (ngày làm việc)', m)
         else:
             g['thoi_luong_toi_thieu'] = tl
+    if g.get('giai_doan') and g['giai_doan'] not in loi.GIAI_DOAN:
+        add('W66', f'giai_doan {g["giai_doan"]!r} phải là một trong {list(loi.GIAI_DOAN)}, để trống thì suy theo nhóm WBS 1 (loi.phan_giai_doan)', m)
+    if m.split('.')[0] == loi.NHOM_QUAN_LY and not g.get('giai_doan'):
+        add('W67', 'Gói quản lý dự án (nhóm WBS 1) nên ghi giai_doan tường minh (khoi_dong, xuyen_suot, ket_thuc theo nội dung gói), '
+                   'không gắn sprint phát triển', m, 'canh_bao')
 for g in goi:
     if g['ma'] in co_con and g.get('md') not in (None, ''):
         add('W17', 'Mục cha không ghi md (script tự tính theo quy tắc 100%)', g['ma'], 'canh_bao', 'tu_dong')
     if g['ma'] in co_con and 'thoi_luong_toi_thieu' in g:
         add('W19', 'Chỉ gói lá ghi thoi_luong_toi_thieu', g['ma'])
+    if g['ma'] in co_con and g.get('giai_doan'):
+        add('W66', 'Chỉ gói lá ghi giai_doan', g['ma'])
 
 # vòng phụ thuộc
 dep = {g['ma']: [p for p in g.get('phu_thuoc', []) if p in la_ma] for g in la}

@@ -7,8 +7,12 @@
  "tieu_de_dau_trang": "Kết thúc dự án - Báo cáo bài học kinh nghiệm",
  "nguon": {
   "bh": "du_lieu/bai_hoc.json",
-  "kt": "du_lieu/ket_thuc.json"
+  "kt": "du_lieu/ket_thuc.json",
+  "mo_phong": "du_lieu/mo_phong.json"
  },
+ "nguon_tuy_chon": [
+  "mo_phong"
+ ],
  "bia": {
   "tieu_de": "Báo cáo bài học kinh nghiệm",
   "dong_phu": [
@@ -22,6 +26,9 @@
   },
   {
    "doan": "Báo cáo tổng hợp bài học kinh nghiệm của dự án để áp dụng cho các dự án sau của nhóm và của nhà thầu. Mỗi bài học được rút từ sự kiện có ghi nhận trong dữ liệu dự án và dẫn mã bằng chứng: yêu cầu thay đổi (CR), rủi ro (RR), ghi chép họp cải tiến cuối sprint (R-Sx-nn), nghiệm thu (NT), lỗi (L), chỉ tiêu đánh giá (K), mốc (M), sprint (S) và gói WBS."
+  },
+  {
+   "doan_ds": "kt#can_cu_mo_phong"
   },
   {
    "bang": {

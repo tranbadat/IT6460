@@ -7,6 +7,11 @@ Ra: ket_qua/03_WBS/WBS_n_<ten>.docx, ket_qua/03_WBS/WBS_tong_hop.docx. Mỗi fil
 (đặc tả dac_ta/tai_lieu_wbs.json), đăng ký phiên bản và ghi nhật ký.
 Tệp tổng hợp có mục Căn cứ ước lượng khi wbs.json có khối can_cu_uoc_luong (kiem_tra_wbs.py lập từ dau_vao/uoc_luong.json).
 Ngày tài liệu: --ngay nếu có, giữ ngày đặt bằng --ngay ở phiên bản trước khi nội dung không đổi, còn lại theo ngày ký đơn hiện hành.
+Lời căn cứ ước lượng, giả định ngoài phạm vi, giải trình hợp đồng tương tự (dữ liệu nhập) được thay tham chiếu dữ liệu {wbs#...}, {lich#...},
+{da#...}, {cr#CRxx....}, {nhom#<mã nhóm>.md}, {cc#<mã nhóm>.md_muc_tieu}, {buoc#<số bước>....}, {ct#...} (chỉ tiêu kỹ thuật), {kl#truoc_cr}
+(tổng tại hồ sơ dự thầu) bằng loi.giai_bieu_thuc để số liệu theo dữ liệu hiện hành. Yêu cầu thay đổi có phụ lục (du_lieu/thay_doi.json): bìa ghi
+căn cứ là phụ lục và đường cơ sở hiện hành thay cho hồ sơ dự thầu, thông tin chung của nhóm có dòng Yêu cầu thay đổi (gói mới, gói tăng MD),
+tệp tổng hợp có bảng truy vết yêu cầu thay đổi và ghi bước ước lượng theo phiếu yêu cầu thay đổi.
 """
 import os as _os, sys as _sys  # noqa: E401
 _os.environ.setdefault('PYTHONUTF8', '1')  # tiến trình con đọc, ghi UTF-8 (Windows)
@@ -49,7 +54,42 @@ by = {g['ma']: g for g in wbs['goi']}
 giao = {x['ma']: x for x in pc.get('giao_viec', [])}
 tn = {x['ma']: x for x in pc.get('trach_nhiem', [])}
 lich_goi = {x['ma']: x for x in lich.get('goi', [])}
+CR_PL = [c for c in loi.doc_json('du_lieu/thay_doi.json', {'yeu_cau': []}).get('yeu_cau', [])
+         if c.get('phu_luc') and (c.get('ap_dung') or {}).get('da_ghi')]  # yêu cầu thay đổi đã ký phụ lục và áp dụng vào dữ liệu
+_CC = wbs.get('can_cu_uoc_luong') or {}
+NGUON_TC = {'wbs': wbs, 'lich': lich, 'da': da, 'cr': {c['ma']: c for c in CR_PL}, 'nhom': {n['ma']: n for n in wbs['nhom']},
+            'cc': {x['ma']: x for x in _CC.get('theo_nhom', [])}, 'buoc': {str(b['buoc']): b for b in _CC.get('cac_buoc', [])},
+            'ct': loi.doc_json('dau_vao/chi_tieu_ky_thuat.json', {}),
+            'kl': {'truoc_cr': round(wbs['tong_md'] - sum(float(c.get('md_tang') or 0) for c in CR_PL), 2)}}  # tổng tại hồ sơ dự thầu
+BL_HH = (loi.doc_json('du_lieu/phien_ban.json', {}).get('duong_co_so') or [{}])[-1].get('ma', '')
 SPEC = os.path.join(HERE, '..', 'dac_ta', 'tai_lieu_wbs.json')
+
+
+def bt(s):
+    """Thay tham chiếu dữ liệu trong lời văn của dữ liệu nhập (căn cứ, giả định, giải trình)."""
+    loi_ = []
+    out = loi.giai_bieu_thuc(str(s or ''), NGUON_TC, loi_)
+    if loi_:
+        loi.thoat_loi('Tham chiếu không giải được trong lời văn WBS: ' + ', '.join(map(str, loi_[:6])))
+    return out
+
+
+def cr_cua_nhom(ma):
+    """[(CR, [(mã gói, MD tăng, mới)])] của các yêu cầu thay đổi có gói thuộc nhóm mức 1 ma."""
+    out = []
+    for c in CR_PL:
+        g = [(x['ma'], float(x['md_tang']), bool(x.get('moi'))) for x in c.get('chi_tiet_goi', []) if x['ma'].split('.')[0] == ma]
+        if g:
+            out.append((c, sorted(g, key=lambda x: loi.khoa_ma(x[0]))))
+    return out
+
+
+def mo_ta_cr(c, g):
+    moi = [m for m, _, mo in g if mo]
+    tang = [f'{m} tăng {loi.md(d)} MD' for m, d, mo in g if not mo]
+    return (f'{c["ma"]} {c["tieu_de"][:1].lower() + c["tieu_de"][1:]}, phụ lục hợp đồng {c["phu_luc"].get("so", "")} ngày {loi.ngay(c["phu_luc"].get("ngay"))}: '
+            + '; '.join(x for x in ((f'{len(moi)} gói mới {moi[0]} đến {moi[-1]}' if len(moi) > 1 else (f'gói mới {moi[0]}' if moi else '')),
+                                   ', '.join(tang)) if x))
 OUT = loi.duong_dan('ket_qua/03_WBS')
 WD = loi.duong_dan('lam_viec/tai_lieu_wbs')
 os.makedirs(OUT, exist_ok=True); os.makedirs(WD, exist_ok=True)
@@ -122,28 +162,51 @@ def cau(s):
 def van_ban_can_cu(v):
     """can_cu_uoc_luong của nhóm mức 1 (chuỗi hoặc {kich_thuoc, cach_phan_ra}) thành (kích thước, cách phân rã)."""
     if isinstance(v, dict):
-        return cau(v.get('kich_thuoc')), cau(v.get('cach_phan_ra'))
-    return '', cau(v)
+        return cau(bt(v.get('kich_thuoc'))), cau(bt(v.get('cach_phan_ra')))
+    return '', cau(bt(v))
 
 
 def bia(tieu_de_phu):
     return [{'t': 'center', 'text': 'Cấu trúc phân rã công việc', 'size': 18}, {'t': 'center', 'text': tieu_de_phu, 'size': 15},
             {'t': 'blank'}, {'t': 'center', 'text': f'Dự án: {da["ten_du_an"]}'}, {'t': 'center', 'text': f'Khách hàng: {da["khach_hang"]}'},
-            {'t': 'center', 'text': 'Tài liệu kế hoạch dự án, kèm theo Phần III. Đề xuất kỹ thuật của hồ sơ dự thầu'},
+            {'t': 'center', 'text': ('Tài liệu kế hoạch dự án, đường cơ sở ' + BL_HH + ''.join(f', cập nhật theo yêu cầu thay đổi {c["ma"]}, phụ lục hợp đồng '
+                                                                                       f'{c["phu_luc"].get("so", "")}' for c in CR_PL))
+             if loi.da_ky_hop_dong() and BL_HH else 'Tài liệu kế hoạch dự án, kèm theo Phần III. Đề xuất kỹ thuật của hồ sơ dự thầu'},
             {'t': 'center', 'text': 'Phiên bản {{PHIEN_BAN}}, ngày {{NGAY}}'}, {'t': 'blank'}]
 
 
+CO_GIAI_DOAN = bool(lich_goi) and all('giai_doan_hien_thi' in x for x in lich_goi.values())  # lịch có giai đoạn dự án
+
+
 def bang_chi_tiet(ma_goc):
-    rows = [['Mã WBS', 'Tên công việc', 'Mức', 'Khối lượng, MD', 'Loại công việc', 'Sản phẩm đầu ra']]
+    """Bảng chi tiết của một nhóm mức 1. Khi có lịch: cột Giai đoạn, sprint ghi sprint của gói phát triển và tên giai đoạn
+    (Khởi động, Suốt dự án, Kết thúc) của gói quản lý dự án thay cho sprint."""
+    rows = [['Mã WBS', 'Tên công việc', 'Mức', 'Khối lượng, MD', 'Loại công việc'] + (['Giai đoạn, sprint'] if CO_GIAI_DOAN else []) + ['Sản phẩm đầu ra']]
     dam = []
     for g in con_chau(ma_goc):
         if g['ma'] == ma_goc:
             continue
-        rows.append([g['ma'], g['ten'], str(g['muc']), loi.md(g['md']), g.get('loai', '') if g['la'] else '', g.get('san_pham', '')])
+        gd_ = [lich_goi.get(g['ma'], {}).get('giai_doan_hien_thi', '')] if CO_GIAI_DOAN else []
+        rows.append([g['ma'], g['ten'], str(g['muc']), loi.md(g['md']), g.get('loai', '') if g['la'] else ''] + gd_ + [g.get('san_pham', '')])
         if not g['la']:
             dam.append(len(rows) - 1)
-    rows.append(['', 'Tổng cộng', '', loi.md(by[ma_goc]['md']), '', ''])
+    rows.append(['', 'Tổng cộng', '', loi.md(by[ma_goc]['md']), ''] + ([''] if CO_GIAI_DOAN else []) + [''])
+    if CO_GIAI_DOAN:
+        return {'t': 'table', 'rows': rows, 'widths': [900, 3000, 600, 1000, 900, 1200, 1700], 'center_cols': [2, 4, 5], 'right_cols': [3], 'dong_dam': dam}
     return {'t': 'table', 'rows': rows, 'widths': [1000, 3600, 600, 1100, 1000, 2000], 'center_cols': [2, 4], 'right_cols': [3], 'dong_dam': dam}
+
+
+def thoi_gian_nhom(leaves):
+    """Thời gian thực hiện của nhóm mức 1 theo lịch: sprint với gói phát triển, giai đoạn với gói quản lý dự án."""
+    tu = min(lich_goi[g['ma']]['bat_dau'] for g in leaves); den = max(lich_goi[g['ma']]['ket_thuc'] for g in leaves)
+    gd_ = {lich_goi[g['ma']].get('giai_doan', 'thuc_hien') for g in leaves}
+    if gd_ != {'thuc_hien'}:
+        ten = [loi.GIAI_DOAN[k] for k in ('khoi_dong', 'xuyen_suot', 'thuc_hien', 'ket_thuc') if k in gd_]
+        noi = ', '.join(ten[:-1]) + ' và ' + ten[-1] if len(ten) > 1 else ten[0]
+        return f'{loi.ngay(tu)} - {loi.ngay(den)} (giai đoạn {noi})'
+    khoa_sp = lambda s: (not s[1:].isdigit(), int(s[1:]) if s[1:].isdigit() else 0, s)
+    sp = sorted({lich_goi[g['ma']]['sprint_bat_dau'] for g in leaves} | {lich_goi[g['ma']]['sprint_ket_thuc'] for g in leaves}, key=khoa_sp)
+    return f'{loi.ngay(tu)} - {loi.ngay(den)} (sprint {sp[0]} đến {sp[-1]})' if len(sp) > 1 else f'{loi.ngay(tu)} - {loi.ngay(den)} (sprint {sp[0]})'
 
 
 tep_da_tao = []
@@ -161,9 +224,7 @@ for n in wbs['nhom']:
                 md_nguoi[r] = md_nguoi.get(r, 0) + float(g['md'])
         nguoi = max(md_nguoi, key=md_nguoi.get) if md_nguoi else None
     if lich_goi and all(g['ma'] in lich_goi for g in leaves):
-        tu = min(lich_goi[g['ma']]['bat_dau'] for g in leaves); den = max(lich_goi[g['ma']]['ket_thuc'] for g in leaves)
-        sp = sorted({lich_goi[g['ma']]['sprint_bat_dau'] for g in leaves} | {lich_goi[g['ma']]['sprint_ket_thuc'] for g in leaves}, key=lambda s: int(s[1:]))
-        thoi_gian = f'{loi.ngay(tu)} - {loi.ngay(den)} (sprint {sp[0]} đến {sp[-1]})' if len(sp) > 1 else f'{loi.ngay(tu)} - {loi.ngay(den)} (sprint {sp[0]})'
+        thoi_gian = thoi_gian_nhom(leaves)
     else:
         thoi_gian = 'Theo master schedule'
     info = [['Tổng khối lượng', f'{loi.md(goc["md"])} người-ngày'], ['Thời gian thực hiện', thoi_gian],
@@ -172,6 +233,8 @@ for n in wbs['nhom']:
             ['Đơn vị khối lượng', f'Người-ngày, viết tắt MD, tính theo {da.get("gio_moi_md", 8)} giờ làm việc']]
     if goc.get('can_cu_uoc_luong'):
         info.insert(1, ['Căn cứ ước lượng', ' '.join(x for x in van_ban_can_cu(goc['can_cu_uoc_luong']) if x)])
+    for c, g in cr_cua_nhom(ma):
+        info.insert(2, ['Yêu cầu thay đổi', cau(mo_ta_cr(c, g))])
     blocks = bia(f'{goc["ten"]}, mã WBS {ma}')
     blocks += [{'t': 'h2', 'text': '1. Thông tin chung'}, {'t': 'table', 'rows': info, 'widths': [3000, 6300]},
                {'t': 'h2', 'text': '2. Sơ đồ WBS dạng cây phân cấp'},
@@ -225,7 +288,7 @@ def doan_tuong_tu(cc):
     muc = 'trong' if abs(lech) <= cc['nguong_lech_tuong_tu'] else 'vượt'
     s = (f'Tổng khối lượng WBS {loi.md(cc["tong_md_wbs"])} người-ngày {huong} {loi.pt(abs(lech))} so với quy mô trung bình '
          f'{loi.md(cc["trung_binh_tuong_tu_md"])} người-ngày của các hợp đồng tương tự, {muc} ngưỡng {loi.pt(cc["nguong_lech_tuong_tu"])} cần giải trình.')
-    return s + (' ' + cau(cc['giai_trinh_tuong_tu']) if cc.get('giai_trinh_tuong_tu') else '')
+    return s + (' ' + cau(bt(cc['giai_trinh_tuong_tu'])) if cc.get('giai_trinh_tuong_tu') else '')
 
 
 def bang_tuong_tu(cc):
@@ -246,6 +309,10 @@ def muc_can_cu(cc, tieu_de):
            {'t': 'p', 'text': f'Loại ước lượng là {chu_thuong_dau(cc["loai_uoc_luong"])}' + (f', quy mô gồm {quy_mo}.' if quy_mo else '.')}]
     if cc.get('cac_buoc'):
         out += [{'t': 'p', 'text': 'Các bước ước lượng như sau.'}, bang_buoc(cc)]
+        b_cr = [b for b in cc['cac_buoc'] if b.get('ma_cr')]
+        if b_cr:
+            out.append({'t': 'p', 'text': ' '.join(f'Bước {b["buoc"]} là ước lượng theo phiếu yêu cầu thay đổi {b["ma_cr"]} sau ký hợp đồng'
+                                                   + (f', ghi nhận bằng phụ lục hợp đồng {b["phu_luc"]}' if b.get('phu_luc') else '') + '.' for b in b_cr)})
     khop = 'bằng tổng ước lượng' if abs(cc['chenh_lech_tong']) < 1e-9 else f'chênh lệch {loi.md(cc["chenh_lech_tong"])} người-ngày do làm tròn'
     out += [{'t': 'p', 'text': f'Tổng ước lượng {loi.md(cc["tong_md_muc_tieu"])} người-ngày được phân rã cho các nhóm công việc mức 1, '
                                f'dung sai mỗi nhóm {loi.pt(cc["dung_sai_nhom"] or 0)}. Tổng WBS {loi.md(cc["tong_md_wbs"])} người-ngày, {khop}.'},
@@ -291,6 +358,15 @@ rows = [['Mã yêu cầu', 'Yêu cầu RFP', 'Gói công việc đáp ứng']] +
 blocks += [{'t': 'pagebreak'}, tieu_de_muc('Ma trận truy vết yêu cầu RFP'),
            {'t': 'p', 'text': 'Mỗi yêu cầu về hệ thống, sản phẩm, phạm vi và nội dung đề xuất của RFP được gắn với gói công việc đáp ứng. Yêu cầu về thủ tục và hợp đồng được đáp ứng trong hồ sơ dự thầu và kế hoạch quản lý.'},
            {'t': 'table', 'rows': rows, 'widths': [1100, 4600, 3600]}]
+if CR_PL:  # truy vết yêu cầu thay đổi đã ký phụ lục tới gói công việc
+    rows = [['Yêu cầu thay đổi', 'Phụ lục hợp đồng', 'Gói công việc', 'MD tăng']]
+    for c in CR_PL:
+        for x in sorted(c.get('chi_tiet_goi', []), key=lambda x: loi.khoa_ma(x['ma'])):
+            rows.append([c['ma'], f'{c["phu_luc"].get("so", "")}, {loi.ngay(c["phu_luc"].get("ngay"))}',
+                         f'{x["ma"]} {x["ten"]}' + (' (gói mới)' if x.get('moi') else ' (tăng khối lượng)'), loi.md(x['md_tang'])])
+    blocks += [tieu_de_muc('Truy vết yêu cầu thay đổi'),
+               {'t': 'p', 'text': 'Gói công việc thêm mới hoặc tăng khối lượng theo yêu cầu thay đổi đã được phê duyệt và ghi nhận bằng phụ lục hợp đồng.'},
+               {'t': 'table', 'rows': rows, 'widths': [1300, 2300, 4700, 1000], 'center_cols': [0], 'right_cols': [3]}]
 _md = loi.dinh_dang_cot([x['md'] for x in wbs['phan_bo_01a']] + [sum(x['md'] for x in wbs['phan_bo_01a'])], 'md')
 rows = [['STT', 'Hạng mục Mẫu 01A', 'Gói công việc', 'Khối lượng, MD']] + [[str(x['stt']), x['danh_muc'], x['goi'], _md[i]] for i, x in enumerate(wbs['phan_bo_01a'])]
 rows.append(['', 'Tổng cộng', '', _md[-1]])
@@ -298,7 +374,7 @@ blocks += [tieu_de_muc('Phân bổ theo hạng mục Mẫu 01A'),
            {'t': 'p', 'text': 'Bảng dùng để lập bảng tiến độ Mẫu 10A và bảng giá Mẫu 11A theo đúng danh mục dịch vụ của HSMT. Gói gắn nhiều hạng mục được chia đều khối lượng. Khi mọi gói của một mục đều thuộc hạng mục, bảng ghi mã mục thay cho từng gói.'},
            {'t': 'table', 'rows': rows, 'widths': [600, 3200, 4300, 1200], 'right_cols': [3]}, tieu_de_muc('Giả định ngoài phạm vi')]
 for x in wbs['gia_dinh_ngoai_pham_vi'] or ['Không có']:
-    blocks.append({'t': 'p', 'text': '- ' + x})
+    blocks.append({'t': 'p', 'text': '- ' + bt(x)})
 meta = {'ten': 'WBS tổng hợp', 'header': 'Lập kế hoạch - WBS tổng hợp', 'size_bang_pt': 12}
 tep_da_tao.append(tao({'meta': meta, 'blocks': blocks}, 'WBS_tong_hop.docx'))
 loi.ghi_nhat_ky('qlda-wbs', 'tai_lieu_wbs', 'script', f'Xuất {len(tep_da_tao)} tài liệu WBS, đạt kiểm tra trình bày',

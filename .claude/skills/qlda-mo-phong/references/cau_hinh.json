@@ -1,0 +1,21 @@
+{
+ "_ghi_chu": "Tham số kỹ thuật của mô phỏng, không phải tham số dự án thuộc quyền nhóm. Đổi tham số thì ghi phiên bản skill. Mức biến cố theo quyết định nhóm 24/10/2026: biến cố vừa phải, 2 đến 3 rủi ro trong sổ xảy ra, dự án vẫn hoàn thành.",
+ "hat_giong_mac_dinh": 2027,
+ "don_vi_md": 0.25,
+ "_don_vi_md": "Nhật ký ghi công theo bội số 0,25 MD (2 giờ).",
+ "nhieu_md": 0.03,
+ "_nhieu_md": "Biên độ chênh lệch ngẫu nhiên MD thực tế so với kế hoạch của gói không có biến cố (từ -nhieu_md đến +nhieu_md), theo hạt giống. Kịch bản có thể ghi đè bằng khóa nhieu_md.",
+ "ngay_sua_loi_mac_dinh": {"Nghiêm trọng": 1, "Cao": 2, "Trung bình": 3, "Thấp": 5},
+ "nguong_cham": 0.1,
+ "_nguong_cham": "Cùng ngưỡng với tinh_tien_do.py: gói chậm khi tỷ lệ hoàn thành thấp hơn tỷ lệ kế hoạch quá 10 điểm phần trăm.",
+ "muc_vua_phai": {
+  "ty_le_md_toi_da": 0.5,
+  "ty_le_md_toi_thieu": -0.3,
+  "so_ngay_tre_toi_da": 5,
+  "so_ngay_nghi_toi_da": 5,
+  "rui_ro_xay_ra_toi_thieu": 2,
+  "rui_ro_xay_ra_toi_da": 3,
+  "mat_do_loi_toi_da": 2.0,
+  "_mat_do_loi_toi_da": "Lỗi trên 10 MD thực tế, cùng ngưỡng K10 của qlda-tong-ket/references/kpi_mac_dinh.json"
+ }
+}

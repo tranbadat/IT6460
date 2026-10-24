@@ -115,7 +115,7 @@
    "h1": "4. Sổ đăng ký rủi ro"
   },
   {
-   "doan": "Sổ gồm {rr#tong_hop.so_rui_ro} rủi ro ({rr#tong_hop.so_de_doa} đe dọa, {rr#tong_hop.so_co_hoi} cơ hội): {rr#tong_hop.so_cao} mức cao, {rr#tong_hop.so_trung_binh} mức trung bình, {rr#tong_hop.so_thap} mức thấp. Theo ma trận 3x3 có {rr#tong_hop.so_hang.A} rủi ro hạng A, {rr#tong_hop.so_hang.B} rủi ro hạng B, {rr#tong_hop.so_hang.C} rủi ro hạng C. EMV của từng rủi ro tính theo triệu đồng."
+   "doan": "Sổ gồm {rr#tong_hop.so_rui_ro} rủi ro ({rr#tong_hop.so_de_doa} đe dọa, {rr#tong_hop.so_co_hoi} cơ hội): {rr#tong_hop.so_cao} mức cao, {rr#tong_hop.so_trung_binh} mức trung bình, {rr#tong_hop.so_thap} mức thấp. Theo ma trận 3x3 có {rr#tong_hop.so_hang.A} rủi ro hạng A, {rr#tong_hop.so_hang.B} rủi ro hạng B, {rr#tong_hop.so_hang.C} rủi ro hạng C. EMV của từng rủi ro tính theo triệu đồng. Cột Trạng thái theo nhật ký theo dõi rủi ro đến ngày {rb#ngay_trang_thai}: rủi ro đã xảy ra hoặc đã đóng không còn tính EMV còn lại, tác động thực tế ghi ở bảng rủi ro đã xảy ra."
   },
   {
    "section": "ngang"
@@ -133,7 +133,7 @@
      [
       "Rủi ro",
       "ten",
-      2600
+      1500
      ],
      [
       "Nhóm",
@@ -168,6 +168,12 @@
       "Hạng",
       "hang",
       600,
+      "c"
+     ],
+     [
+      "Trạng thái",
+      "trang_thai",
+      1100,
       "c"
      ],
      [
@@ -260,6 +266,13 @@
      ]
     ]
    }
+  },
+  {
+   "doan": "Rủi ro đã xảy ra hoặc đã đóng và tác động thực tế:"
+  },
+  {
+   "bang_san": "rb#xay_ra",
+   "rong_thi": "Đến ngày lập tài liệu chưa có rủi ro nào xảy ra."
   },
   {
    "section": "doc"
@@ -398,7 +411,7 @@
    "soan": "DU_PHONG",
    "dang": "danh_sach_doan",
    "toi_thieu": 3,
-   "huong_dan": "Đánh giá dự phòng chi phí so với EMV và dự trữ thời gian so với EMV thời gian của rủi ro trên đường găng hoặc gắn cut over (không dùng tổng EMV thời gian của cả sổ). Khi dự trữ thời gian thiếu: nêu đủ bốn phương án trong bảng (tăng dự trữ, đưa việc lên sớm, thu hẹp phạm vi, chấp nhận và báo Chủ đầu tư) và phương án nhóm đã chọn theo cột Áp dụng; khi bảng chưa có cột Áp dụng, nêu người quyết định, thời hạn chốt trước khi lập đường cơ sở, không tự chọn thay nhóm. Không viết lại quy tắc dùng dự phòng, chỉ dẫn chiếu bảng quy tắc dùng chung ở trên.",
+   "huong_dan": "Đánh giá dự phòng chi phí so với EMV và dự trữ thời gian so với EMV thời gian của rủi ro trên đường găng hoặc gắn cut over (không dùng tổng EMV thời gian của cả sổ). Khi dự trữ thời gian thiếu: nêu đủ bốn phương án trong bảng (tăng dự trữ, đưa việc lên sớm, thu hẹp phạm vi, chấp nhận và báo Chủ đầu tư) và phương án nhóm đã chọn theo cột Áp dụng; khi bảng chưa có cột Áp dụng, nêu người quyết định, thời hạn chốt trước khi lập đường cơ sở, không tự chọn thay nhóm. Không viết lại quy tắc dùng dự phòng, chỉ dẫn chiếu bảng quy tắc dùng chung ở trên. Trong giai đoạn thực hiện, so dự phòng và dự trữ với EMV còn lại (bỏ rủi ro đã xảy ra, đã đóng), nêu tác động thực tế của rủi ro đã xảy ra và phần dự phòng đã dùng hay chưa.",
    "nguon": [
     "rb",
     "cp",
@@ -424,7 +437,7 @@
    "soan": "THEO_DOI",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Chu kỳ rà soát (họp sprint, báo cáo tiến độ), cách cập nhật trạng thái rủi ro, đóng rủi ro, bổ sung rủi ro mới, báo cáo cho chủ đầu tư. Liên kết với báo cáo tiến độ (SPI, CPI) và kế hoạch quản lý thay đổi.",
+   "huong_dan": "Chu kỳ rà soát (họp sprint, báo cáo tiến độ), cách cập nhật trạng thái rủi ro, đóng rủi ro, bổ sung rủi ro mới, báo cáo cho chủ đầu tư. Liên kết với báo cáo tiến độ (SPI, CPI) và kế hoạch quản lý thay đổi. Trạng thái lấy từ nhật ký theo dõi rủi ro (Đang theo dõi, Đã kích hoạt ứng phó, Đã xảy ra, Đã đóng), nêu các rủi ro đã xảy ra hoặc đã đóng đến ngày lập.",
    "nguon": [
     "rr"
    ],

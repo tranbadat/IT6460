@@ -1,0 +1,40 @@
+{
+ "_ghi_chu": "Lệnh chạy lại từng bước sau khi áp dụng yêu cầu thay đổi (yeu_cau_thay_doi.py ap_dung). Thứ tự theo sơ đồ phụ thuộc (tai_lieu_cap_nhat). Bước không có ở đây dùng mac_dinh. {ma} là mã CR, {ngay} là ngày áp dụng theo lịch dự án. Khi skill đổi lệnh thì sửa tệp này. duong_co_so: bước cuối với CR có phụ lục hoặc mức lớn, {bl} là mã đường cơ sở kế tiếp. sau_duong_co_so: bước chạy sau khi lập đường cơ sở mới. giao_viec chạy sau khi ap_dung --ghi đã ghi lap_lai_tu vào moc_nhap.json và trước lich, để tải theo người tính như lịch lập lại.",
+ "buoc": {
+  "wbs": [
+   "python .claude/skills/qlda-wbs/scripts/kiem_tra_wbs.py lam_viec/wbs/wbs_nhap.json"
+  ],
+  "giao_viec": [
+   "python .claude/skills/qlda-phan-cong/scripts/kiem_tra_giao_viec.py lam_viec/giao_viec/phan_cong_nhap.json"
+  ],
+  "lich": [
+   "python .claude/skills/qlda-master-schedule/scripts/lap_lich.py lam_viec/lich/moc_nhap.json",
+   "python .claude/skills/qlda-master-schedule/scripts/xuat_gantt.py"
+  ],
+  "tai_lieu_wbs": [
+   "python .claude/skills/qlda-wbs/scripts/xuat_wbs.py --ngay {ngay}"
+  ],
+  "rui_ro": [
+   "agent Lập rủi ro cập nhật lam_viec/rui_ro/rui_ro_nhap.json (rủi ro mới của {ma})",
+   "python .claude/skills/qlda-risk/scripts/kiem_tra_rui_ro.py lam_viec/rui_ro/rui_ro_nhap.json"
+  ],
+  "chi_phi": [
+   "python .claude/skills/qlda-cost-estimate/scripts/tinh_chi_phi.py",
+   "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi chi_phi",
+   "agent Soạn thảo cập nhật bản soạn",
+   "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien chi_phi --ghi-chu \"{ma}\" --ngay {ngay}"
+  ]
+ },
+ "mac_dinh": [
+  "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi {buoc}",
+  "agent Soạn thảo cập nhật bản soạn",
+  "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien {buoc} --ghi-chu \"{ma}\" --ngay {ngay}"
+ ],
+ "duong_co_so": [
+  "python .claude/skills/qlda-phien-ban/scripts/so_phien_ban.py duong_co_so {bl} --ten \"Đường cơ sở sau yêu cầu thay đổi {ma}\" --cr {ma} --ngay {ngay}"
+ ],
+ "sau_duong_co_so": [
+  "phien_ban",
+  "bang_chung"
+ ]
+}

@@ -415,8 +415,15 @@ def bam_obj(obj):
     return hashlib.sha256(json.dumps(obj, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:12]
 
 
+# khóa của bản ghi phiên bản không bị ghi đè khi đăng ký lại cùng nội dung (giữ nguyên bản ghi đường cơ sở, bản phát hành)
+KHOA_PHIEN_BAN_GIU = ('phien_ban', 'ngay', 'nguoi', 'buoc', 'hash', 'trang_thai', 'thu_tu', 'ghi_chu', 'duong_co_so', 'phat_hanh',
+                      'vao_duong_co_so', 'lich_su_trang_thai')
+
+
 def dang_ky_phien_ban(buoc_id, tep, vao_ids, ghi_chu='', nguoi=None, trang_thai='Dự thảo', hash_noi_dung=None, them=None):
-    """Ghi phiên bản cho một tệp đầu ra. Tăng số phiên bản khi nội dung đổi. Lưu băm đầu vào để phát hiện tài liệu cũ."""
+    """Ghi phiên bản cho một tệp đầu ra. Tăng số phiên bản khi nội dung đổi. Lưu băm đầu vào để phát hiện tài liệu cũ.
+    Sau ký hợp đồng (giai đoạn thực hiện), phiên bản mới ghi khóa phat_hanh: bản phát hành hiện hành tại ngày tài liệu
+    (them.ngay_tai_lieu, không có thì ngày hiện hành, xem ngay_hien_hanh), rỗng khi chưa có bản phát hành."""
     reg = _so_phien_ban()
     key = tuong_doi(duong_dan(tep))
     h = hash_noi_dung or bam(tep)
@@ -429,9 +436,17 @@ def dang_ky_phien_ban(buoc_id, tep, vao_ids, ghi_chu='', nguoi=None, trang_thai=
         lst[-1]['thu_tu_kiem_tra'] = reg['dem']
         lst[-1]['vao'] = vao
         lst[-1]['ngay_kiem_tra'] = bay_gio()
-        lst[-1].update(them or {})
+        lst[-1].update({k: v for k, v in (them or {}).items() if k not in KHOA_PHIEN_BAN_GIU})
         ghi_json('du_lieu/phien_ban.json', reg)
         return pb
+    if reg.get('hop_dong') and key.startswith('ket_qua/') and not (them or {}).get('ngay_tai_lieu'):
+        them = dict(them or {}, ngay_tai_lieu=ngay(ngay_hien_hanh()))  # tệp không có ngày trên bìa (Excel): ngày hiện hành của dự án
+    if reg.get('hop_dong') and 'phat_hanh' not in (them or {}):
+        them = dict(them or {}, phat_hanh=ban_phat_hanh_hien_hanh((them or {}).get('ngay_tai_lieu')))
+    ma_cr = cr_dang_ap_dung(buoc_id, reg) if reg.get('hop_dong') and 'ma_cr' not in (them or {}) else ''
+    if ma_cr:  # phiên bản tạo do yêu cầu thay đổi đang áp dụng: gắn mã CR (quy ước 2.1 của qlda-phien-ban)
+        them = dict(them or {}, ma_cr=ma_cr)
+        ghi_chu = ghi_chu if ma_cr in str(ghi_chu) else (f'{ma_cr}. {ghi_chu}' if ghi_chu else ma_cr)
     try:
         nguoi = nguoi or du_an().get('nguoi_lap', '')
     except FileNotFoundError:
@@ -440,6 +455,16 @@ def dang_ky_phien_ban(buoc_id, tep, vao_ids, ghi_chu='', nguoi=None, trang_thai=
                 'ghi_chu': ghi_chu, 'trang_thai': trang_thai, 'thu_tu': reg['dem'], **(them or {})})
     ghi_json('du_lieu/phien_ban.json', reg)
     return pb
+
+
+def cr_dang_ap_dung(buoc_id, reg=None):
+    """Mã yêu cầu thay đổi đang áp dụng mà bước buoc_id thuộc danh sách tài liệu phải cập nhật: CR đã phê duyệt, đã ghi áp dụng vào
+    dữ liệu nguồn, chưa đóng (bản sửa sau đường cơ sở sau thay đổi vẫn gắn mã CR). Không có thì trả ''."""
+    for c in doc_json('du_lieu/thay_doi.json', {'yeu_cau': []}).get('yeu_cau', []):
+        if c.get('trang_thai') in ('Đã phê duyệt', 'Đã thực hiện') and (c.get('ap_dung') or {}).get('da_ghi') \
+                and buoc_id in {x.split(' ')[0] for x in c.get('tai_lieu_cap_nhat', [])}:
+            return c['ma']
+    return ''
 
 
 def hoan_tat_buoc(buoc_id, mo_ta, ghi_chu='', ket_qua='đạt', chi_tiet=None, bo_qua=(), hash_tep=None):
@@ -491,8 +516,35 @@ def ngay_lam_viec(da=None):
 
 
 def danh_sach_sprint(da=None):
-    """[{ma, so, tu, den, so_ngay, chi_so_dau, chi_so_cuoi}] theo du_an.sprint."""
+    """[{ma, so, tu, den, so_ngay, chi_so_dau, chi_so_cuoi}] theo du_an.sprint.
+    Khi cut over lùi theo phụ lục (du_an.sprint.cut_over_goc sớm hơn ngay_cut_over): các sprint đến cut over gốc giữ nguyên như lập
+    ban đầu (kể cả sprint_nhan_phan_du), phần ngày thêm chia thành sprint mới theo so_ngay_lam_viec, phần dư dồn vào sprint cuối mới."""
     da = da or du_an()
+    goc = (da.get('sprint') or {}).get('cut_over_goc')
+    if goc and str(goc) < str(da['ngay_cut_over']):
+        return _sprint_keo_dai(da, goc)
+    return _chia_sprint(da)
+
+
+def _sprint_keo_dai(da, goc):
+    sp = _chia_sprint(dict(da, ngay_cut_over=goc))
+    days = ngay_lam_viec(da)
+    cfg = da.get('sprint', {})
+    n, tt = int(cfg.get('so_ngay_lam_viec', 10)), cfg.get('tien_to', 'S')
+    i = sp[-1]['chi_so_cuoi'] + 1 if sp else 0
+    con = len(days) - i
+    k = max(1, con // n) if con > 0 else 0
+    for s in range(k):
+        size = n if s < k - 1 else con - n * (k - 1)
+        so_ = len(sp) + 1
+        sp.append({'ma': f'{tt}{so_}', 'so': so_, 'tu': days[i].isoformat(), 'den': days[i + size - 1].isoformat(),
+                   'so_ngay': size, 'chi_so_dau': i, 'chi_so_cuoi': i + size - 1, 'keo_dai': True})
+        i += size
+    return sp
+
+
+def _chia_sprint(da):
+    """Chia ngày làm việc từ ngay_bat_dau đến ngay_cut_over thành sprint theo du_an.sprint."""
     days = ngay_lam_viec(da)
     cfg = da.get('sprint', {})
     n = int(cfg.get('so_ngay_lam_viec', 10))
@@ -531,6 +583,129 @@ def quy_thoi_gian(tv, sprints):
              (tv.get('den_sprint') in (None, '') or s['so'] <= int(tv['den_sprint']))
         out[s['ma']] = round(s['so_ngay'] * float(tv.get('ty_le', 1.0)), 2) if ok else 0.0
     return out
+
+
+# ---------------------------------------------------------------- giai đoạn dự án
+GIAI_DOAN = {'khoi_dong': 'Khởi động', 'thuc_hien': 'Thực hiện', 'xuyen_suot': 'Suốt dự án', 'ket_thuc': 'Kết thúc'}
+THU_TU_GIAI_DOAN = ('khoi_dong', 'xuyen_suot', 'thuc_hien', 'ket_thuc')
+NHOM_QUAN_LY = '1'  # nhóm WBS mức 1 Quản lý dự án, không gắn sprint phát triển
+LOAI_QUAN_LY = ('PM', 'QA')  # loại công việc quản lý dự án (lập kế hoạch, giám sát, bảo đảm chất lượng)
+SO_NGAY_KHOI_DONG_MAC_DINH = 5  # ngày làm việc đầu dự án khi du_an.json chưa khai báo giai_doan.khoi_dong
+SO_NGAY_KET_THUC_MAC_DINH = 10  # ngày làm việc sau cut over khi du_an.json chưa khai báo giai_doan.ket_thuc
+
+
+def ngay_iso(v):
+    """Ngày dạng yyyy-mm-dd từ yyyy-mm-dd, dd/mm/yyyy hoặc date. Trả về '' khi không đọc được."""
+    if not v:
+        return ''
+    if isinstance(v, (_dt.date, _dt.datetime)):
+        return v.isoformat()[:10]
+    s = str(v).strip()
+    try:
+        return _dt.date.fromisoformat(s[:10]).isoformat()
+    except ValueError:
+        pass
+    try:
+        return _dt.datetime.strptime(s[:10], '%d/%m/%Y').date().isoformat()
+    except ValueError:
+        return ''
+
+
+def ngay_hien_hanh():
+    """Ngày hiện hành (yyyy-mm-dd): biến môi trường QLDA_NGAY khi mô phỏng dự án, không có thì ngày máy."""
+    return ngay_iso(os.environ.get('QLDA_NGAY')) or bay_gio()[:10]
+
+
+def ngay_lam_viec_sau(da, ngay_goc, so_ngay):
+    """so_ngay ngày làm việc liền sau ngay_goc (date), trừ thứ Bảy, Chủ nhật và ngày nghỉ của du_an.json."""
+    nghi = {_dt.date.fromisoformat(x) for x in da.get('ngay_nghi', [])}
+    out, d = [], ngay_goc
+    while len(out) < so_ngay:
+        d += _dt.timedelta(days=1)
+        if d.weekday() < 5 and d not in nghi:
+            out.append(d)
+    return out
+
+
+def giai_doan_du_an(da=None):
+    """Lịch giai đoạn theo du_an.giai_doan {khoi_dong: {tu, den}, ket_thuc: {so_ngay_lam_viec}}.
+    Thiếu khóa thì mặc định: Khởi động là SO_NGAY_KHOI_DONG_MAC_DINH ngày làm việc đầu, Kết thúc là SO_NGAY_KET_THUC_MAC_DINH
+    ngày làm việc sau cut over. Thực hiện từ ngày bắt đầu đến cut over (các sprint).
+    Trả về ({khoi_dong, thuc_hien, ket_thuc: {ma, ten, tu, den, so_ngay, mac_dinh}}, danh sách lỗi khai báo)."""
+    da = da or du_an()
+    days = ngay_lam_viec(da)
+    cfg = da.get('giai_doan') or {}
+    loi_ = []
+    kd = cfg.get('khoi_dong') or {}
+    kd_tu = ngay_iso(kd.get('tu')) or days[0].isoformat()
+    kd_den = ngay_iso(kd.get('den')) or days[min(SO_NGAY_KHOI_DONG_MAC_DINH, len(days)) - 1].isoformat()
+    if not (days[0].isoformat() <= kd_tu <= kd_den <= days[-1].isoformat()):
+        loi_.append(f'giai_doan.khoi_dong {kd_tu} đến {kd_den} phải nằm trong {days[0].isoformat()} đến cut over {days[-1].isoformat()}, ngày bắt đầu không sau ngày kết thúc')
+    kt = cfg.get('ket_thuc') or {}
+    so_kt = kt.get('so_ngay_lam_viec', SO_NGAY_KET_THUC_MAC_DINH)
+    if not (isinstance(so_kt, int) and so_kt > 0):
+        loi_.append(f'giai_doan.ket_thuc.so_ngay_lam_viec = {so_kt!r} phải là số nguyên dương')
+        so_kt = SO_NGAY_KET_THUC_MAC_DINH
+    ds_kt = ngay_lam_viec_sau(da, days[-1], so_kt)
+    so_kd = sum(1 for d in days if kd_tu <= d.isoformat() <= kd_den)
+    gd = {'khoi_dong': {'tu': kd_tu, 'den': kd_den, 'so_ngay': so_kd, 'mac_dinh': not (kd.get('tu') and kd.get('den'))},
+          'thuc_hien': {'tu': days[0].isoformat(), 'den': days[-1].isoformat(), 'so_ngay': len(days), 'mac_dinh': False},
+          'ket_thuc': {'tu': ds_kt[0].isoformat(), 'den': ds_kt[-1].isoformat(), 'so_ngay': so_kt, 'mac_dinh': 'so_ngay_lam_viec' not in kt}}
+    return {k: dict(v, ma=k, ten=GIAI_DOAN[k]) for k, v in gd.items()}, loi_
+
+
+def phan_giai_doan(wbs, giao_viec=None):
+    """Giai đoạn của từng gói lá: {mã: khoi_dong | thuc_hien | xuyen_suot | ket_thuc}.
+    Gói lá ghi giai_doan trong WBS thì dùng giá trị đó (nên ghi tường minh cho mọi gói lá nhóm NHOM_QUAN_LY). Không ghi thì suy ra:
+    mọi gói thuộc nhóm NHOM_QUAN_LY (quản lý dự án, không gắn sprint phát triển, kể cả gói loại khác PM, QA như rà soát mã nguồn,
+    Chủ đầu tư kiểm tra) là Suốt dự án khi dàn trải (giao_viec dan_trai), Khởi động khi thuộc mục mức 2 đầu tiên của nhóm (khởi động,
+    lập kế hoạch), Kết thúc khi là gói lá cuối cùng của mục mức 2 cuối cùng (báo cáo tổng kết, đóng dự án), còn lại Suốt dự án.
+    Gói khác là Thực hiện. Giá trị ghi sai trả về nguyên văn để bước kiểm tra báo lỗi."""
+    gv = {x['ma']: x for x in (giao_viec or [])}
+    _, la = nut_wbs(wbs)
+    ql = [g for g in la if g['ma'].split('.')[0] == NHOM_QUAN_LY]
+    muc2 = sorted({'.'.join(g['ma'].split('.')[:2]) for g in ql if g['ma'].count('.') >= 2}, key=khoa_ma)
+    cuoi = max((g['ma'] for g in ql if muc2 and len(muc2) > 1 and g['ma'].startswith(muc2[-1] + '.')), key=khoa_ma, default='')
+    out = {}
+    for g in la:
+        if g.get('giai_doan'):
+            out[g['ma']] = g['giai_doan']; continue
+        if g['ma'].split('.')[0] != NHOM_QUAN_LY:
+            out[g['ma']] = 'thuc_hien'; continue
+        m2 = '.'.join(g['ma'].split('.')[:2])
+        if gv.get(g['ma'], {}).get('dan_trai'):
+            out[g['ma']] = 'xuyen_suot'
+        elif muc2 and m2 == muc2[0]:
+            out[g['ma']] = 'khoi_dong'
+        elif g['ma'] == cuoi:
+            out[g['ma']] = 'ket_thuc'
+        else:
+            out[g['ma']] = 'xuyen_suot'
+    return out
+
+
+def hien_thi_giai_doan(gd_la, sprint_la):
+    """Chuỗi cột Giai đoạn của một gói từ giai đoạn và sprint (bắt đầu, kết thúc) của các gói lá thuộc nó:
+    gói Thực hiện ghi sprint (S2 hoặc S2-S3), gói quản lý dự án ghi tên giai đoạn, mục cha gồm nhiều giai đoạn quản lý ghi Suốt dự án."""
+    ds = set(gd_la)
+    if ds == {'thuc_hien'}:
+        sp = sorted({s for ab in sprint_la for s in ab if s}, key=lambda s: (not s[1:].isdigit(), int(s[1:]) if s[1:].isdigit() else 0, s))
+        return sp[0] if len(sp) == 1 else f'{sp[0]}-{sp[-1]}'
+    if len(ds) == 1:
+        return GIAI_DOAN.get(next(iter(ds)), next(iter(ds)))
+    if ds <= {'khoi_dong', 'thuc_hien'}:
+        return GIAI_DOAN['khoi_dong']
+    if ds <= {'ket_thuc', 'thuc_hien'}:
+        return GIAI_DOAN['ket_thuc']
+    return GIAI_DOAN['xuyen_suot']
+
+
+def ban_phat_hanh_hien_hanh(ngay_tl=None):
+    """Mã bản phát hành hiện hành tại ngày ngay_tl (bản mới nhất có ngày không sau ngay_tl) theo du_lieu/phat_hanh.json.
+    Trả về '' khi chưa có bản phát hành nào đến ngày đó."""
+    d = ngay_iso(ngay_tl) or ngay_hien_hanh()
+    ds = [x for x in doc_json('du_lieu/phat_hanh.json', {}).get('ban_phat_hanh', []) if x.get('ngay', '') <= d]
+    return max(ds, key=lambda x: (x['ngay'], khoa_ma(x['ma'][1:] or '0')))['ma'] if ds else ''
 
 
 def nut_wbs(wbs):

@@ -26,7 +26,7 @@
              "vai": ["qtda", "dau_moi_cdt"], "them": "nhóm thực hiện", "dau_ra": "Báo cáo tiến độ, biên bản trình diễn, ghi chép họp cải tiến"},
   "moc": {"noi_dung": "Rà soát giai đoạn tại mốc {ma}: {ten}", "vai": ["qtda", "dai_dien_nt", "dau_moi_cdt"], "them": "",
           "dau_ra": "Biên bản rà soát mốc, quyết định chuyển giai đoạn, bài học của giai đoạn"},
-  "ket_thuc": {"noi_dung": "Rà soát kết thúc dự án sau giai đoạn hỗ trợ tăng cường", "vai": ["qtda", "dai_dien_nt", "dau_moi_cdt"], "them": "",
+  "ket_thuc": {"noi_dung": "Rà soát kết thúc dự án tại ngày đóng dự án, khi kết thúc hỗ trợ tăng cường sau cut over", "vai": ["qtda", "dai_dien_nt", "dau_moi_cdt"], "them": "",
                "dau_ra": "Báo cáo tổng kết, báo cáo đánh giá, báo cáo bài học kinh nghiệm"}
  }
 }

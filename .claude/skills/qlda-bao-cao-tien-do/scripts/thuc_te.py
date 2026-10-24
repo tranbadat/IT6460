@@ -19,6 +19,8 @@ import re
 import loi
 
 D = dt.date.fromisoformat
+KY_KET_THUC = 'KT'  # mã kỳ giai đoạn Kết thúc sau cut over, cùng mã với lich.json phan_bo (lap_lich.py MA_KET_THUC)
+TEP_MO_PHONG = 'du_lieu/mo_phong.json'  # số liệu thực tế do qlda-mo-phong sinh
 LOAI_CHI_PHI = ('da_chi', 'cam_ket')
 CACH_TRA_LUONG = {'huy_dong': 'trả theo ngày huy động', 'cong_suc': 'trả theo công sức (MD công việc)',
                   'ket_hop': 'trả theo ngày huy động, cộng phần chia theo tỷ trọng đóng góp'}
@@ -74,10 +76,47 @@ def quy_sprint(lich, tvs):
     return {(t['id'], s): q for t in tvs for s, q in loi.quy_thoi_gian(t, lich['sprint']).items()}
 
 
+def _ngay_ky_ket_thuc(lich, da):
+    """Ngày làm việc (date) của giai đoạn Kết thúc: từ ngày đầu giai đoạn ket_thuc trong lich.json (giai_doan) đến ngay_dong_du_an
+    (không có thì ngày cuối giai đoạn), trừ thứ Bảy, Chủ nhật và ngày nghỉ của du_an.json. Lịch không có giai đoạn này thì rỗng."""
+    k = next((x for x in lich.get('giai_doan') or [] if x.get('ma') == 'ket_thuc'), None)
+    if not k or not k.get('tu'):
+        return []
+    den = D(lich.get('ngay_dong_du_an') or k.get('den') or k['tu'])
+    nghi = set(da.get('ngay_nghi', []))
+    d, ds = D(k['tu']), []
+    while d <= den:
+        if d.weekday() < 5 and d.isoformat() not in nghi:
+            ds.append(d)
+        d += dt.timedelta(days=1)
+    return ds
+
+
+def ky_ket_thuc(lich, da=None):
+    """Kỳ KT {ma, ten, tu, den, so_ngay} của giai đoạn Kết thúc sau cut over, lịch không có giai đoạn này thì None."""
+    ds = _ngay_ky_ket_thuc(lich, da or loi.du_an())
+    if not ds:
+        return None
+    return {'ma': KY_KET_THUC, 'ten': 'Kết thúc', 'tu': ds[0].isoformat(), 'den': ds[-1].isoformat(), 'so_ngay': len(ds)}
+
+
+def cac_ky(lich, da=None):
+    """Các kỳ của lịch theo thứ tự thời gian: sprint, sau đó kỳ KT khi lịch có giai đoạn Kết thúc."""
+    kt = ky_ket_thuc(lich, da)
+    return list(lich['sprint']) + ([kt] if kt else [])
+
+
+def ngay_lam_viec_du_an(da, lich):
+    """Ngày làm việc của dự án: từ ngày bắt đầu đến cut over (loi.ngay_lam_viec), cộng ngày làm việc của giai đoạn Kết thúc đến
+    ngay_dong_du_an khi lịch có giai đoạn này. Dùng cho kiểm tra ngày nhật ký, PV, huy động và báo cáo kỳ KT."""
+    days = loi.ngay_lam_viec(da)
+    return days + [d for d in _ngay_ky_ket_thuc(lich, da) if not days or d > days[-1]]
+
+
 def ty_le_sprint_da_qua(lich, days, den):
-    """{sprint: tỷ lệ ngày làm việc của sprint đã qua tính đến ngày den}."""
+    """{kỳ: tỷ lệ ngày làm việc của kỳ (sprint, kỳ KT) đã qua tính đến ngày den}."""
     out = {}
-    for s in lich['sprint']:
+    for s in cac_ky(lich):
         a, b = D(s['tu']), D(s['den'])
         n = int(s.get('so_ngay') or 0) or sum(1 for d in days if a <= d <= b) or 1
         out[s['ma']] = min(1.0, sum(1 for d in days if a <= d <= min(b, den)) / n)
@@ -148,7 +187,10 @@ def chi_phi_luong_luy_ke(cach, lich, tvs, dg, days, den, tong_wbs):
 
 def ev_luong(ev_md, khoi_luong_ke_hoach, chi_phi_ke_hoach):
     """EV nhân sự theo thời điểm thu được: tìm thời điểm kế hoạch có khối lượng lũy kế bằng EV (MD), trả chi phí lương kế hoạch lũy kế
-    tại thời điểm đó (nội suy tuyến tính trong ngày). khoi_luong_ke_hoach, chi_phi_ke_hoach: giá trị lũy kế cuối mỗi ngày làm việc."""
+    tại thời điểm đó (nội suy tuyến tính trong ngày). khoi_luong_ke_hoach, chi_phi_ke_hoach: giá trị lũy kế cuối mỗi ngày làm việc.
+    EV bằng toàn bộ khối lượng thì trả toàn bộ chi phí kế hoạch (lương kỳ KT trải đến ngày đóng dự án, sau ngày gói Kết thúc xong)."""
+    if khoi_luong_ke_hoach and ev_md >= khoi_luong_ke_hoach[-1] - 1e-9:
+        return chi_phi_ke_hoach[-1]
     w0, c0 = 0.0, 0.0
     for w, c in zip(khoi_luong_ke_hoach, chi_phi_ke_hoach):
         if w >= ev_md - 1e-9:
@@ -204,3 +246,19 @@ def doc_chi_phi_thuc_te():
 def tong_chi_phi_khac(ds, den=None, loai='da_chi'):
     """Tổng chi phí khác theo loại, tính đến ngày den (date) nếu có."""
     return sum(x['so_tien'] for x in ds if x['loai'] == loai and (den is None or D(x['ngay']) <= den))
+
+
+# ---------------------------------------------------------------- số liệu mô phỏng
+def mo_phong():
+    """Nội dung du_lieu/mo_phong.json khi số liệu thực tế do qlda-mo-phong sinh, rỗng khi không có."""
+    mp = loi.doc_json(TEP_MO_PHONG, {})
+    return mp if (mp.get('so_lieu_mo_phong') or mp.get('_ghi_chu')) else {}
+
+
+def can_cu_mo_phong(chu_the='báo cáo'):
+    """Đoạn căn cứ khi số liệu thực tế là số liệu mô phỏng, rỗng khi không có du_lieu/mo_phong.json. Đoạn dẫn chiếu {mo_phong#_ghi_chu}
+    để lap_khung.py (khối doan_ds) giải từ bí danh nguồn tùy chọn mo_phong của đặc tả, không chép lời văn của tệp vào dữ liệu."""
+    mp = mo_phong()
+    if not mp:
+        return []
+    return [f'Số liệu thực tế trong {chu_the} là số liệu mô phỏng.' + (' {mo_phong#_ghi_chu}' if mp.get('_ghi_chu') else '')]

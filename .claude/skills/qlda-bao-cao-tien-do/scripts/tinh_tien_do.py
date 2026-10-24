@@ -1,12 +1,16 @@
 """Tính số liệu báo cáo tiến độ theo phương pháp giá trị thu được (EVM) cho một kỳ.
 
 Dùng: python tinh_tien_do.py --ky S3            (ngày báo cáo là ngày cuối sprint S3)
+      python tinh_tien_do.py --ky KT            (kỳ Kết thúc sau cut over, ngày báo cáo là ngay_dong_du_an của lịch)
       python tinh_tien_do.py --ky 2027-04-30 [--ma KT]   (ngày báo cáo bất kỳ, --ma đặt mã kỳ)
 Đầu vào: du_lieu/lich.json, du_lieu/wbs.json, du_lieu/chi_phi.json, dau_vao/don_gia.json, dau_vao/thanh_vien.json,
          dau_vao/thuc_te/nhat_ky_cong_viec.csv (ngay, thanh_vien, ma_goi, md, ghi_chu),
          dau_vao/thuc_te/hoan_thanh.csv (ngay_cap_nhat, ma_goi, phan_tram, ghi_chu),
          dau_vao/thuc_te/moc_thuc_te.csv, theo_doi_rui_ro.csv, chi_phi_thuc_te.csv, so_van_de.csv, hanh_dong.csv,
          du_lieu/rui_ro.json, du_lieu/thay_doi.json (nếu có).
+Ngày làm việc của dự án tính đến ngay_dong_du_an khi lịch có giai đoạn Kết thúc (thuc_te.ngay_lam_viec_du_an): nhật ký kỳ KT không bị
+T04, T05, PV gồm gói Kết thúc, MD kế hoạch theo người gồm phan_bo kỳ KT.
+Số liệu mô phỏng: có du_lieu/mo_phong.json (qlda-mo-phong) thì đầu ra ghi can_cu_mo_phong để báo cáo nêu số liệu thực tế là số liệu mô phỏng.
 Cách tính:
 - BAC theo MD là tổng MD gói lá, theo tiền là MD x đơn giá loại công việc (đường cơ sở chi phí nhân công).
 - PV: phần kế hoạch của từng gói tính tuyến tính theo ngày làm việc đã qua trong khoảng bắt đầu, kết thúc của gói.
@@ -22,7 +26,9 @@ Cách tính:
   + chi phí khác đã chi + chi phí khác còn lại theo dự toán (không nhỏ hơn cam kết). VAC thực = BAC thực - EAC thực.
   Chênh lệch giữa khoản A và lương kế hoạch thuộc cost estimate (chenh_lech_A_nguoi), không vào trạng thái.
   Tỷ lệ sử dụng quỹ huy động = MD thực tế/MD huy động đến ngày báo cáo, là chỉ số năng lực.
-- Dự báo ngày hoàn thành: phần thời lượng kế hoạch còn lại chia SPI, cộng vào ngày báo cáo. Dự báo vượt cut over thì trạng thái chung tối thiểu là vàng.
+- Dự báo ngày hoàn thành: phần thời lượng kế hoạch còn lại chia SPI, cộng vào ngày báo cáo. Ngày báo cáo sau ngày kết thúc kế hoạch
+  (kỳ KT): gói trước cut over đã xong thì lấy ngày xong thực tế của gói cuối, chưa xong thì MD còn lại chia nhịp EV bình quân mỗi ngày.
+  Gói Kết thúc không vào dự báo. Dự báo vượt cut over thì trạng thái chung tối thiểu là vàng.
 - Trạng thái theo ngưỡng trong du_an.json: xanh, vàng, đỏ. Trạng thái chung lấy mức xấu nhất của SPI, CPI theo công, CPI thực.
 - Mốc: so ngày đạt (chỉ tính ngày đạt đến ngày báo cáo) với hạn của mốc (han, mốc cut over lấy ngày cut over hợp đồng,
   không có hạn thì lấy ngày kế hoạch), kèm lệch so với ngày kế hoạch hiện hành.
@@ -42,6 +48,7 @@ for _s in (_sys.stdout, _sys.stderr):
         pass
 import argparse
 import datetime as dt
+import math
 import os
 import sys
 
@@ -57,14 +64,16 @@ cp = loi.doc_json('du_lieu/chi_phi.json', {})
 da = loi.du_an(); tvs = loi.doc_json('dau_vao/thanh_vien.json')['thanh_vien']; tv = {t['id']: t for t in tvs}
 rr = loi.doc_json('du_lieu/rui_ro.json', {'danh_sach': []}); so_td = loi.doc_json('du_lieu/thay_doi.json', {'yeu_cau': []})
 D = dt.date.fromisoformat
-sp = {s['ma']: s for s in lich['sprint']}
+sp = {s['ma']: s for s in thuc_te.cac_ky(lich, da)}  # sprint và kỳ KT (giai đoạn Kết thúc) khi lịch có
+if a.ky == thuc_te.KY_KET_THUC and a.ky not in sp:
+    loi.thoat_loi('Lịch chưa có giai đoạn Kết thúc (lich.json giai_doan ket_thuc, ngay_dong_du_an), lập lại master schedule hoặc dùng --ky <ngày> --ma KT.')
 if a.ky in sp:
     ngay_bc = D(sp[a.ky]['den']); ky = a.ky; tu_ngay = sp[a.ky]['tu']
 else:
     ngay_bc = D(a.ky); ky = a.ky if not a.ma else a.ma
-    tu_ngay = next((s['tu'] for s in lich['sprint'] if s['tu'] <= a.ky <= s['den']), lich['ngay_bat_dau'])
+    tu_ngay = next((s['tu'] for s in sp.values() if s['tu'] <= a.ky <= s['den']), lich['ngay_bat_dau'])
 NBC = ngay_bc.isoformat()
-days = loi.ngay_lam_viec(da)
+days = thuc_te.ngay_lam_viec_du_an(da, lich)  # đến ngay_dong_du_an khi lịch có giai đoạn Kết thúc
 idx = {d: i for i, d in enumerate(days)}
 n_qua = sum(1 for d in days if d <= ngay_bc)
 by, la = loi.nut_wbs(wbs)
@@ -102,7 +111,7 @@ for i, r in enumerate(nk, 2):
 for (p, d), m in ngay_nguoi.items():
     if p in tv and m > float(tv[p].get('ty_le', 1)) + 0.01:
         add('T06', f'{tv[p]["ho_ten"]} ghi {m:g} MD ngày {loi.ngay(d)}, vượt thời gian tham gia mỗi ngày')
-pt = {}
+pt, ngay_xong = {}, {}  # tỷ lệ mới nhất, ngày đạt 100% đến ngày báo cáo
 for i, r in enumerate(sorted(ht, key=lambda r: r['ngay_cap_nhat']), 2):
     if r['ma_goi'] not in rate:
         add('T07', f'hoan_thanh.csv: mã gói {r["ma_goi"]} không phải gói lá'); continue
@@ -116,6 +125,8 @@ for i, r in enumerate(sorted(ht, key=lambda r: r['ngay_cap_nhat']), 2):
         if r['ma_goi'] in pt and v < pt[r['ma_goi']] - 1e-9:
             add('T10', f'hoan_thanh.csv: tỷ lệ hoàn thành của {r["ma_goi"]} giảm từ {pt[r["ma_goi"]]:g} xuống {v:g}', 'canh_bao')
         pt[r['ma_goi']] = v
+        if v >= 100:
+            ngay_xong.setdefault(r['ma_goi'], d)
 tdrr, _ = loi.theo_doi_rui_ro(NBC)
 ma_rr = {r['ma'] for r in rr['danh_sach']}
 for m in tdrr:
@@ -218,11 +229,18 @@ tong = 'Đỏ' if 'Đỏ' in tt3 else ('Vàng' if 'Vàng' in tt3 else 'Xanh')
 # Dự báo theo SPI: thời lượng còn lại của kế hoạch kéo dài theo 1/SPI
 kt_kh = dt.date.fromisoformat(lich['ket_thuc_du_kien'])
 idx_kt = max(i for i, d in enumerate(days) if d <= kt_kh) if any(d <= kt_kh for d in days) else len(days) - 1
-du_bao_idx = n_qua - 1 + int(round(max(0, idx_kt - (n_qua - 1)) / spi)) if spi else idx_kt
+goi_truoc_cut = [g for g in la if lg[g['ma']].get('giai_doan') != 'ket_thuc']  # gói Kết thúc làm sau cut over, không vào dự báo
+md_con = sum(float(g['md']) * (1 - pt.get(g['ma'], 0) / 100) for g in goi_truoc_cut)
+if n_qua - 1 <= idx_kt:
+    du_bao_idx = n_qua - 1 + int(round(max(0, idx_kt - (n_qua - 1)) / spi)) if spi else idx_kt
+else:  # ngày báo cáo sau ngày kết thúc kế hoạch (kỳ KT): phần việc còn lại chia nhịp EV bình quân mỗi ngày đã qua
+    du_bao_idx = n_qua - 1 + (math.ceil(md_con / (EV / n_qua)) if EV and md_con > 1e-6 else 0)
 ext = list(days)
 while len(ext) <= du_bao_idx:
     ext.append(ext[-1] + dt.timedelta(days=1 if ext[-1].weekday() < 4 else 3))
 du_bao = ext[max(0, du_bao_idx)]
+if n_qua - 1 > idx_kt and md_con <= 1e-6:  # gói trước cut over đã xong: ngày xong thực tế của gói cuối
+    du_bao = max((ngay_xong[g['ma']] for g in goi_truoc_cut if g['ma'] in ngay_xong), default=du_bao)
 if du_bao.isoformat() > lich['cut_over'] and tong == 'Xanh':
     tong = 'Vàng'  # chỉ số đạt ngưỡng nhưng dự báo vượt cut over
 
@@ -261,8 +279,17 @@ for r in rr['danh_sach']:
     if r['muc'] == 'cao' or tt not in ('Đang theo dõi',):
         rui_ro.append({'ma': r['ma'], 'ten': r['ten'], 'muc': r.get('muc_ten', r['muc']), 'trang_thai': tt, 'hanh_dong': t.get('hanh_dong', ''),
                        'phu_trach': r.get('ho_ten_phu_trach', '')})
-cr = [{'ma': c['ma'], 'tieu_de': c['tieu_de'], 'trang_thai': c['trang_thai'], 'md_tang': c['md_tang'], 'ngay_cham': c['ngay_cham']} for c in so_td['yeu_cau']
-      if c['ngay_de_xuat'] <= NBC]
+
+
+def trang_thai_cr_tai(c, ngay):
+    """Trạng thái của CR tại ngày báo cáo theo lịch sử (báo cáo lập lại sau quyết định vẫn ghi trạng thái tại thời điểm của kỳ)."""
+    ls_ = [x for x in c.get('lich_su', []) if x.get('ngay', '') <= ngay]
+    return ls_[-1]['trang_thai'] if ls_ else c['trang_thai']
+
+
+cr = [{'ma': c['ma'], 'tieu_de': c['tieu_de'], 'trang_thai': trang_thai_cr_tai(c, NBC), 'md_tang': c['md_tang'], 'ngay_cham': c['ngay_cham'],
+       'ngay_cham_cut_over': c.get('ngay_cham_cut_over', 0), 'cut_over_moi': c.get('cut_over_moi', ''), 'gia_de_nghi': c.get('gia_de_nghi'),
+       'muc_ten': c.get('muc_ten', ''), 'phu_luc_hop_dong': bool(c.get('phu_luc_hop_dong'))} for c in so_td['yeu_cau'] if c['ngay_de_xuat'] <= NBC]
 
 # tín hiệu tự động đối chiếu với sổ vấn đề
 ten_rr = {r['ma']: r['ten'] for r in rr['danh_sach']}
@@ -280,14 +307,16 @@ for f in F_th:
     print(f'[{f["muc_do"]}] {f["ma"]}: {f["mo_ta"]}')
 F += F_th
 
+# chỉ số lưu 4 chữ số thập phân, chỉ làm tròn khi hiển thị (so2): làm tròn hai lần (0,9349 -> 0,935 -> 0,94) làm lệch số trong tài liệu
+SO_LE_CHI_SO = 4
 gia = float(cp.get('gia_truoc_thue', 0))
 out = {'ky': ky, 'ngay_bao_cao': NBC, 'tu_ngay': tu_ngay, 'so_ngay_da_qua': n_qua, 'so_ngay_lam_viec': len(days), 'ty_le_thoi_gian': round(n_qua / len(days), 4),
        'BAC_md': BAC, 'PV_md': round(PV, 2), 'EV_md': round(EV, 2), 'AC_md': round(AC, 2), 'SV_md': round(EV - PV, 2), 'CV_md': round(EV - AC, 2),
        'BAC': round(BACv), 'PV': round(PVv), 'EV': round(EVv), 'AC': round(ACv), 'SV': round(EVv - PVv), 'CV': round(EVv - ACv),
-       'spi': round(spi, 3), 'cpi': round(cpi, 3), 'EAC_md': round(eac, 2), 'ETC_md': round(eac - AC, 2), 'VAC_md': round(BAC - eac, 2), 'EAC': round(eacv), 'tcpi': round(tcpi, 3),
+       'spi': round(spi, SO_LE_CHI_SO), 'cpi': round(cpi, SO_LE_CHI_SO), 'EAC_md': round(eac, 2), 'ETC_md': round(eac - AC, 2), 'VAC_md': round(BAC - eac, 2), 'EAC': round(eacv), 'tcpi': round(tcpi, SO_LE_CHI_SO),
        'md_huy_dong': round(md_hd, 2), 'md_san_sang': round(md_hd - AC, 2), 'ty_le_su_dung_quy': round(ty_le_su_dung, 4),
        'BAC_thuc_nhan_su': round(BAC_ns), 'PV_thuc_nhan_su': round(PV_ns), 'EV_thuc_nhan_su': round(EV_ns), 'AC_thuc_nhan_su': round(AC_ns),
-       'CV_thuc_nhan_su': round(EV_ns - AC_ns), 'cpi_thuc': round(cpi_thuc, 3), 'B_ke_hoach': round(B_kh), 'AC_thuc_khac': round(AC_khac),
+       'CV_thuc_nhan_su': round(EV_ns - AC_ns), 'cpi_thuc': round(cpi_thuc, SO_LE_CHI_SO), 'B_ke_hoach': round(B_kh), 'AC_thuc_khac': round(AC_khac),
        'AC_thuc': round(AC_thuc), 'BAC_thuc': round(BAC_thuc), 'EAC_thuc': round(EAC_thuc), 'VAC_thuc': round(BAC_thuc - EAC_thuc),
        'chi_phi_huy_dong_ca_du_an': round(sum(cp_hd_ca.values())), 'chi_phi_luong_ke_hoach_ca_du_an': round(sum(cp_kh_ca.values())),
        'cach_tra_luong': CACH, 'cach_tra_luong_ten': thuc_te.CACH_TRA_LUONG[CACH],
@@ -301,7 +330,8 @@ out = {'ky': ky, 'ngay_bao_cao': NBC, 'tu_ngay': tu_ngay, 'so_ngay_da_qua': n_qu
        'goi_cham': [x for x in goi if x['trang_thai'] == 'Chậm'],
        'so_goi_cham': sum(1 for x in goi if x['trang_thai'] == 'Chậm'), 'moc': moc, 'nguoi': nguoi, 'rui_ro': rui_ro, 'thay_doi': cr, 'so_thay_doi': len(cr),
        'van_de': vd['van_de'], 'hanh_dong': vd['hanh_dong'], 'van_de_tong_hop': vd['van_de_tong_hop'], 'van_de_phat_hien': van_de_phat_hien,
-       'canh_bao_du_lieu': F}
+       'ngay_dong_du_an': lich.get('ngay_dong_du_an', ''), 'so_lieu_mo_phong': bool(thuc_te.mo_phong()),
+       'can_cu_mo_phong': thuc_te.can_cu_mo_phong('báo cáo'), 'canh_bao_du_lieu': F}
 os.makedirs(loi.duong_dan('du_lieu/tien_do'), exist_ok=True)
 loi.ghi_json(f'du_lieu/tien_do/{ky}.json', out)
 loi.ghi_json('du_lieu/tien_do/hien_tai.json', out)

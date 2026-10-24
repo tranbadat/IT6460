@@ -2,6 +2,10 @@
 
 Các skill báo cáo tiến độ, tổng kết, đánh giá, bài học, bảng lương đọc dữ liệu thực tế trong dau_vao/thuc_te/. Mỗi thành viên ghi hằng ngày hoặc cuối tuần.
 
+Dữ liệu có thể sinh bằng skill qlda-mo-phong (mô phỏng dự án chạy theo kế hoạch đã duyệt, kịch bản biến cố từng sprint và kỳ KT). Khi đó du_lieu/mo_phong.json ghi so_lieu_mo_phong, các tài liệu ghi ở phần căn cứ rằng số liệu thực tế là số liệu mô phỏng. Không sửa tay tệp do mô phỏng sinh, dùng `mo_phong_sprint.py --lam-lai` để làm lại một sprint.
+
+Nhật ký và hoàn thành của giai đoạn Kết thúc (sau cut over đến ngay_dong_du_an của lịch) ghi như các sprint, báo cáo kỳ bằng `tinh_tien_do.py --ky KT`.
+
 Quy ước chung: ngày dạng yyyy-mm-dd; số dùng dấu chấm thập phân, không dấu phân cách hàng nghìn (45000000, 0.5); ô có dấu phẩy đặt trong ngoặc kép. Script báo lỗi kèm tệp, dòng, cột khi sai định dạng.
 
 | Tệp | Cột | Cách ghi |

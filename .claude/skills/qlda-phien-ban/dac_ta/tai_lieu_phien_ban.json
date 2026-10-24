@@ -121,17 +121,17 @@
      [
       "Tài liệu",
       "ten",
-      2700
+      2400
      ],
      [
       "Tệp",
       "ten_tep",
-      2600
+      2300
      ],
      [
       "Phiên bản",
       "phien_ban",
-      1000,
+      900,
       "c"
      ],
      [
@@ -141,12 +141,21 @@
       "c"
      ],
      [
+      "Bản phát hành",
+      "phat_hanh",
+      900,
+      "c"
+     ],
+     [
       "Trạng thái",
       "trang_thai",
-      1100
+      1000
      ]
     ]
    }
+  },
+  {
+   "doan": "Cột Bản phát hành ghi bản phát hành sản phẩm hiện hành tại ngày tài liệu, chỉ ghi với phiên bản lập sau khi ký hợp đồng. Ô trống là phiên bản lập trước ký hợp đồng hoặc trước bản phát hành đầu tiên."
   },
   {
    "doan": "Số tài liệu: {pb#so_tai_lieu}, tổng số phiên bản tài liệu đã đăng ký: {pb#so_phien_ban_tai_lieu}, số tài liệu cần cập nhật theo đầu vào mới: {pb#so_can_cap_nhat}."
@@ -191,46 +200,194 @@
      [
       "Mã",
       "ma",
-      800,
+      700,
       "c"
      ],
      [
       "Tên",
       "ten",
-      3500
+      2600
      ],
      [
       "Ngày",
       "ngay|ngay",
-      1300,
+      1200,
+      "c"
+     ],
+     [
+      "Căn cứ",
+      "can_cu",
+      2000
+     ],
+     [
+      "Bản phát hành",
+      "phat_hanh",
+      1000,
       "c"
      ],
      [
       "Số tài liệu",
       "so_tai_lieu",
-      1200,
+      900,
       "c"
      ],
      [
       "Người lập",
       "nguoi",
-      2500
+      900
      ]
     ],
     "rong_thi": "Chưa lập đường cơ sở."
    }
   },
   {
+   "doan": "Tài liệu thuộc từng đường cơ sở như sau. BL1 lập khi ký hợp đồng, đường cơ sở tiếp theo lập sau yêu cầu thay đổi được phê duyệt, các tài liệu thuộc đường cơ sở chỉ thay đổi qua quy trình yêu cầu thay đổi."
+  },
+  {
+   "bang": {
+    "nguon": "pb#duong_co_so_tai_lieu",
+    "cot": [
+     [
+      "Đường cơ sở",
+      "ma_bl",
+      1000,
+      "c"
+     ],
+     [
+      "Mã TL",
+      "ma_tl",
+      700,
+      "c"
+     ],
+     [
+      "Tài liệu",
+      "ten",
+      3000
+     ],
+     [
+      "Tệp",
+      "ten_tep",
+      2400
+     ],
+     [
+      "Phiên bản",
+      "phien_ban",
+      900,
+      "c"
+     ],
+     [
+      "Bản phát hành",
+      "phat_hanh",
+      1000,
+      "c"
+     ]
+    ],
+    "rong_thi": "Chưa có tài liệu thuộc đường cơ sở."
+   }
+  },
+  {
    "soan": "DUONG_CO_SO",
    "dang": "danh_sach_doan",
    "toi_thieu": 1,
-   "huong_dan": "Nêu các thời điểm lập đường cơ sở (ký hợp đồng, phê duyệt kế hoạch, nghiệm thu), tài liệu thuộc từng đường cơ sở và quy định thay đổi sau đường cơ sở.",
+   "huong_dan": "Nêu các thời điểm lập đường cơ sở (BL1 khi ký hợp đồng, BL2 sau yêu cầu thay đổi được phê duyệt, khi nghiệm thu nếu có), căn cứ và bản phát hành tại thời điểm lập, tài liệu thuộc từng đường cơ sở và quy định thay đổi sau đường cơ sở.",
    "nguon": [
     "pb"
    ]
   },
   {
-   "h1": "5. Thay đổi và phiên bản"
+   "h1": "5. Bản phát hành"
+  },
+  {
+   "doan": "Cuối mỗi sprint nhà thầu lập một bản phát hành gồm các gói công việc hoàn thành, tính năng theo hạng mục Mẫu 01A và yêu cầu RFP, lỗi đã sửa, lỗi còn mở và yêu cầu thay đổi đã đưa vào. Bản của sprint có ngày cut over là bản phát hành chính thức. Số bản phát hành: {pb#so_ban_phat_hanh}."
+  },
+  {
+   "bang": {
+    "nguon": "pb#phat_hanh",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      600,
+      "c"
+     ],
+     [
+      "Sprint",
+      "sprint",
+      700,
+      "c"
+     ],
+     [
+      "Ngày",
+      "ngay|ngay",
+      1200,
+      "c"
+     ],
+     [
+      "Loại",
+      "loai",
+      2100
+     ],
+     [
+      "Nguồn số liệu",
+      "nguon",
+      1000,
+      "c"
+     ],
+     [
+      "Số gói",
+      "so_goi",
+      700,
+      "c"
+     ],
+     [
+      "Lỗi đã sửa",
+      "so_loi_da_sua",
+      800,
+      "c"
+     ],
+     [
+      "Lỗi còn mở",
+      "so_loi_con_mo",
+      800,
+      "c"
+     ],
+     [
+      "CR đưa vào",
+      "cr",
+      700,
+      "c"
+     ],
+     [
+      "Phiên bản tài liệu",
+      "so_phien_ban_tai_lieu",
+      700,
+      "c"
+     ]
+    ],
+    "rong_thi": "Chưa lập bản phát hành."
+   }
+  },
+  {
+   "bang": {
+    "nguon": "pb#phat_hanh",
+    "cot": [
+     [
+      "Mã",
+      "ma",
+      700,
+      "c"
+     ],
+     [
+      "Ghi chú phát hành",
+      "ghi_chu",
+      8600
+     ]
+    ],
+    "rong_thi": "Chưa có ghi chú phát hành."
+   }
+  },
+  {
+   "h1": "6. Thay đổi và phiên bản"
   },
   {
    "bang": {
@@ -270,7 +427,7 @@
    "section": "ngang"
   },
   {
-   "h1": "6. Lịch sử phiên bản tài liệu"
+   "h1": "7. Lịch sử phiên bản tài liệu"
   },
   {
    "bang": {
@@ -279,7 +436,7 @@
      [
       "Tệp",
       "ten_tep",
-      3200
+      3000
      ],
      [
       "Phiên bản",
@@ -296,13 +453,13 @@
      [
       "Thời điểm tạo",
       "thoi_diem",
-      1800,
+      1700,
       "c"
      ],
      [
       "Tài liệu",
       "ten_buoc",
-      2200
+      2000
      ],
      [
       "Trạng thái",
@@ -310,9 +467,15 @@
       1300
      ],
      [
+      "Bản phát hành",
+      "phat_hanh",
+      1000,
+      "c"
+     ],
+     [
       "Ghi chú",
       "ghi_chu",
-      2300
+      2100
      ]
     ]
    }
@@ -321,7 +484,7 @@
    "section": "doc"
   },
   {
-   "h1": "7. Truy vết quá trình tạo tài liệu"
+   "h1": "8. Truy vết quá trình tạo tài liệu"
   },
   {
    "bang": {
@@ -392,13 +555,13 @@
    }
   },
   {
-   "h1": "8. Nhận xét"
+   "h1": "9. Nhận xét"
   },
   {
    "soan": "NHAN_XET",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Nhận xét tình hình kiểm soát phiên bản: số lần cập nhật của các tài liệu chính, tài liệu thay đổi nhiều nhất và lý do (mã CR), tài liệu còn cần cập nhật, đề xuất cải tiến.",
+   "huong_dan": "Nhận xét tình hình kiểm soát phiên bản: số lần cập nhật của các tài liệu chính, tài liệu thay đổi nhiều nhất và lý do (mã CR), phiên bản tài liệu gắn từng bản phát hành, tài liệu còn cần cập nhật, đề xuất cải tiến.",
    "nguon": [
     "pb"
    ]
@@ -421,12 +584,19 @@
     "nguon": "pb#thay_doi",
     "truong": "ma",
     "mo_ta": "Mọi yêu cầu thay đổi"
+   },
+   {
+    "nguon": "pb#phat_hanh",
+    "truong": "ma",
+    "mo_ta": "Mọi bản phát hành"
    }
   ],
   "doc_hieu": [
    "Quy ước nhất quán với sổ phiên bản",
    "Nhận xét dựa trên số liệu sổ phiên bản và mã CR",
-   "Nêu rõ tài liệu còn cần cập nhật nếu có"
+   "Nêu rõ tài liệu còn cần cập nhật nếu có",
+   "Mỗi bản phát hành ghi ngày, gói, lỗi, yêu cầu thay đổi khớp du_lieu/phat_hanh.json, bản cut over là bản chính thức",
+   "Tài liệu thuộc từng đường cơ sở khớp sổ phiên bản, BL2 có căn cứ là yêu cầu thay đổi đã phê duyệt"
   ]
  }
 }

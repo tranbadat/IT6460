@@ -9,8 +9,12 @@
   "kt": "du_lieu/ket_thuc.json",
   "hsmt": "du_lieu/hsmt.json",
   "cp": "du_lieu/chi_phi.json",
-  "lich": "du_lieu/lich.json"
+  "lich": "du_lieu/lich.json",
+  "mo_phong": "du_lieu/mo_phong.json"
  },
+ "nguon_tuy_chon": [
+  "mo_phong"
+ ],
  "bia": {
   "tieu_de": "Báo cáo tổng kết dự án",
   "dong_phu": [
@@ -77,6 +81,9 @@
      3000
     ]
    }
+  },
+  {
+   "doan_ds": "kt#can_cu_mo_phong"
   },
   {
    "soan": "TOM_TAT",

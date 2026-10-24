@@ -9,8 +9,12 @@
   "kt": "du_lieu/ket_thuc.json",
   "hsmt": "du_lieu/hsmt.json",
   "rfp": "du_lieu/rfp_yeu_cau.json",
-  "rr": "du_lieu/rui_ro.json"
+  "rr": "du_lieu/rui_ro.json",
+  "mo_phong": "du_lieu/mo_phong.json"
  },
+ "nguon_tuy_chon": [
+  "mo_phong"
+ ],
  "bia": {
   "tieu_de": "Báo cáo đánh giá dự án",
   "dong_phu": [
@@ -24,6 +28,9 @@
   },
   {
    "doan": "Báo cáo đánh giá mức độ đạt mục tiêu của dự án theo bộ chỉ tiêu định lượng, kết quả nghiệm thu so với yêu cầu RFP và HSMT, hiệu quả quản lý thay đổi và quản lý rủi ro. Số liệu lấy từ báo cáo tổng kết dự án và dữ liệu thực tế của nhóm (nhật ký công việc, tỷ lệ hoàn thành, mốc, nghiệm thu, lỗi, theo dõi rủi ro, sổ yêu cầu thay đổi)."
+  },
+  {
+   "doan_ds": "kt#can_cu_mo_phong"
   },
   {
    "bang": {

@@ -12,7 +12,8 @@ Tài liệu WBS còn dùng giao việc và master schedule (nếu đã có) đ�
 
 1. Agent Lập WBS theo `prompts/vai_lap_wbs.md` và `references/quy_tac_wbs.md`, viết lam_viec/wbs/wbs_nhap.json.
 2. `python .claude/skills/qlda-wbs/scripts/kiem_tra_wbs.py lam_viec/wbs/wbs_nhap.json`
-   Kiểm tra mã phân cấp, quy tắc 100%, gói lá có MD, loại công việc, sản phẩm, thời lượng tối thiểu (W19), phụ thuộc không vòng, mọi hạng mục Mẫu 01A được phủ, mọi yêu cầu RFP được truy vết, nghiệp vụ bán hàng thông dụng (W33), cỡ gói 2 đến 14 MD, gói sửa lỗi của kiểm thử phân hệ (W65).
+   Kiểm tra mã phân cấp, quy tắc 100%, gói lá có MD, loại công việc, sản phẩm, thời lượng tối thiểu (W19), phụ thuộc không vòng, mọi hạng mục Mẫu 01A được phủ, mọi yêu cầu RFP được truy vết, nghiệp vụ bán hàng thông dụng (W33), cỡ gói 2 đến 14 MD, gói sửa lỗi của kiểm thử phân hệ (W65), giai_doan của gói lá (W66, chỉ gói lá, giá trị khoi_dong, thuc_hien, xuyen_suot, ket_thuc; W67 cảnh báo khi gói lá nhóm WBS 1 chưa ghi giai_doan tường minh: nhóm quản lý dự án không gắn sprint phát triển, kể cả gói loại DEV, BA như rà soát mã nguồn, Chủ đầu tư kiểm tra).
+   Lời căn cứ ước lượng của nhóm, gia_dinh_ngoai_pham_vi, giai_trinh_tuong_tu viết số liệu bằng tham chiếu ({nhom#7.md|md}, {cc#7.md_muc_tieu|md}, {wbs#goi[ma=7.2].md|md}, {buoc#2.thanh_phan.giai_phap|md}, {lich#so_sprint}, {da#uat.tu|ngay}, {ct#bao_hanh.ho_tro_tang_cuong.tu|ngay}, {cr#CR01.chi_tiet_goi[ma=7.2.1].md_tang|md}, {kl#truoc_cr|md}), không ghi tên tệp hay tên khóa dữ liệu trong lời văn; xuat_wbs.py thay khi xuất.
    Căn cứ ước lượng:
    - thiếu uoc_luong.json: cảnh báo W60, bỏ qua các kiểm tra dưới (dữ liệu cũ vẫn chạy);
    - nhóm mức 1 thiếu can_cu_uoc_luong: lỗi W61;
@@ -26,7 +27,7 @@ Tài liệu WBS còn dùng giao việc và master schedule (nếu đã có) đ�
 
 Sau khi có giao việc (qlda-phan-cong) và master schedule (qlda-master-schedule):
 1. `python .claude/skills/qlda-wbs/scripts/xuat_wbs.py [--ngay yyyy-mm-dd]`
-   Mỗi nhóm mức 1 một tệp và một tệp tổng hợp trong ket_qua/03_WBS/. Tệp tổng hợp có mục Căn cứ ước lượng khi wbs.json có can_cu_uoc_luong. Mục cha WBS in đậm, còn lại theo van_phong.md. Mỗi tệp được kiểm tra lớp A theo `dac_ta/tai_lieu_wbs.json`.
+   Mỗi nhóm mức 1 một tệp và một tệp tổng hợp trong ket_qua/03_WBS/. Tệp tổng hợp có mục Căn cứ ước lượng khi wbs.json có can_cu_uoc_luong. Khi lịch có giai đoạn, bảng chi tiết có cột Giai đoạn, sprint: gói phát triển ghi sprint, gói quản lý dự án ghi giai đoạn (Khởi động, Suốt dự án, Kết thúc) thay cho sprint, thời gian thực hiện của nhóm quản lý dự án ghi theo giai đoạn. Sau yêu cầu thay đổi có phụ lục (du_lieu/thay_doi.json): bìa ghi đường cơ sở hiện hành và phụ lục thay cho dòng kèm theo HSDT, thông tin chung của nhóm có dòng Yêu cầu thay đổi (gói mới, gói tăng MD), tệp tổng hợp có mục Truy vết yêu cầu thay đổi và câu nêu bước ước lượng theo phiếu yêu cầu thay đổi. Mục cha WBS in đậm, còn lại theo van_phong.md. Mỗi tệp được kiểm tra lớp A theo `dac_ta/tai_lieu_wbs.json`.
 2. Agent Kiểm tra lớp B (qlda-loi/prompts/vai_kiem_tra.md): phạm vi đủ theo RFP, khối lượng hợp lý và có căn cứ, sản phẩm kiểm chứng được.
 
 ## Khi WBS thay đổi

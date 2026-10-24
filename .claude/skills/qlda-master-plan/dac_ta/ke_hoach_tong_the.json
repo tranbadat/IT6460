@@ -65,7 +65,7 @@
       "{hsmt#goi_thau.loai_hop_dong}"
      ],
      [
-      "Giá hợp đồng dự kiến",
+      "{kb#nhan_gia}",
       "{cp#gia_chao|tien} đồng"
      ],
      [
@@ -215,7 +215,7 @@
    "soan": "PHAM_VI",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Phạm vi theo RFP và HSMT, sản phẩm bàn giao theo Mẫu số 01A, phần ngoài phạm vi và giả định (wbs#gia_dinh_ngoai_pham_vi), cách quản lý phạm vi (đường cơ sở đặc tả tại mốc xác nhận đặc tả, quy trình thay đổi). Dẫn chiếu tài liệu WBS.",
+   "huong_dan": "Phạm vi theo RFP và HSMT, sản phẩm bàn giao theo Mẫu số 01A, phần ngoài phạm vi và giả định (wbs#gia_dinh_ngoai_pham_vi), cách quản lý phạm vi (đường cơ sở đặc tả tại mốc xác nhận đặc tả, quy trình thay đổi). Dẫn chiếu tài liệu WBS. Sau yêu cầu thay đổi có phụ lục, nêu đường cơ sở phạm vi hiện hành (đường cơ sở sau thay đổi, phụ lục hợp đồng) so với đường cơ sở khi ký hợp đồng.",
    "nguon": [
     "wbs",
     "rfp",
@@ -521,7 +521,7 @@
       "{cp#C|tien} đồng"
      ],
      [
-      "Giá hợp đồng dự kiến, không dùng làm đường cơ sở chi phí",
+      "{kb#nhan_gia}, không dùng làm đường cơ sở chi phí",
       "{cp#gia_chao|tien} đồng"
      ],
      [
@@ -828,19 +828,19 @@
      [
       "Phạm vi",
       "{wbs#tong_md|md} MD, {wbs#so_goi_la} gói công việc",
-      "WBS, biên bản xác nhận đặc tả",
+      "WBS, biên bản xác nhận đặc tả{kb#phu_luc_goc}",
       "Yêu cầu thay đổi theo mức, ma trận lan truyền"
      ],
      [
       "Tiến độ",
       "Cut over {lich#cut_over|ngay}, {lich#so_sprint} sprint",
-      "Master schedule",
+      "Master schedule{kb#phu_luc_goc}",
       "SPI cuối sprint, mốc so với hạn, dự trữ {lich#du_tru_den_cut_over_ngay} ngày"
      ],
      [
       "Chi phí",
       "BAC {cp#A|tien} đồng (khoản A)",
-      "Cost estimate",
+      "Cost estimate{kb#phu_luc_goc}",
       "CPI cuối sprint, theo dõi khoản B và chi phí lương theo quỹ huy động"
      ]
     ],
@@ -851,6 +851,13 @@
      2800
     ]
    }
+  },
+  {
+   "doan": "Các đường cơ sở đã lập theo sổ phiên bản, đường cơ sở hiện hành là {kb#duong_co_so_hien_hanh}:"
+  },
+  {
+   "bang_san": "kb#duong_co_so",
+   "rong_thi": "Chưa lập đường cơ sở."
   }
  ],
  "kiem_tra": {

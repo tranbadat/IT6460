@@ -21,4 +21,6 @@ description: Rút và lập báo cáo bài học kinh nghiệm của dự án - 
 3. `python .claude/skills/qlda-loi/scripts/chay.py hoan_thien bai_hoc --ghi-chu "..."`. Bảng bài học in trang ngang.
 4. Agent Kiểm tra lớp B với `dac_ta/bao_cao_bai_hoc.json`.
 
+Số liệu mô phỏng: đặc tả có bí danh nguồn tùy chọn mo_phong (du_lieu/mo_phong.json). Khi tệp có, khối doan_ds kt#can_cu_mo_phong in ở mục 1 câu số liệu thực tế là số liệu mô phỏng kèm {mo_phong#_ghi_chu}. Không có tệp thì không in gì. Ghi chép họp cải tiến và biến cố do qlda-mo-phong sinh vẫn là bằng chứng hợp lệ để rút bài học.
+
 Đầu ra: du_lieu/bai_hoc.json, ket_qua/13_Bai_hoc_kinh_nghiem/Bao_cao_bai_hoc_kinh_nghiem.docx.

@@ -1,23 +1,131 @@
 {
- "_ghi_chu": "Trường của phiếu yêu cầu thay đổi theo ICTPM03 tr. 16 (phần yêu cầu, phần đánh giá và phê duyệt), bổ sung mã WBS, mã rủi ro, căn cứ HSMT, giá đề nghị Chủ đầu tư và điều kiện đóng. khoa là trường tương ứng trong du_lieu/thay_doi.json hoặc lam_viec/thay_doi/cr_nhap.json, giữ đồng bộ với scripts/yeu_cau_thay_doi.py. tinh_bang_thay_doi.py sinh bảng tdb#mau_phieu từ tệp này.",
+ "_ghi_chu": "Trường của phiếu yêu cầu thay đổi theo ICTPM03 tr. 16 (phần yêu cầu, phần đánh giá và phê duyệt), bổ sung mã WBS, mã rủi ro, căn cứ HSMT, giá đề nghị Chủ đầu tư và điều kiện đóng. khoa là trường tương ứng trong du_lieu/thay_doi.json hoặc lam_viec/thay_doi/cr_nhap.json, giữ đồng bộ với scripts/yeu_cau_thay_doi.py, lich_thay_doi.py, ap_dung_thay_doi.py. tinh_bang_thay_doi.py sinh bảng tdb#mau_phieu từ tệp này.",
  "truong": [
-  {"phan": "Yêu cầu", "ten": "Mã yêu cầu thay đổi, ngày đề xuất", "khoa": "ma, ngay_de_xuat", "nguoi_dien": "Công cụ của nhóm cấp mã, người đề xuất ghi ngày"},
-  {"phan": "Yêu cầu", "ten": "Người đề xuất, bên đề xuất, nguồn (Chủ đầu tư, nhà thầu, rủi ro)", "khoa": "nguoi_de_xuat, nguon", "nguoi_dien": "Người đề xuất"},
-  {"phan": "Yêu cầu", "ten": "Mô tả thay đổi và lý do", "khoa": "tieu_de, mo_ta, ly_do", "nguoi_dien": "Người đề xuất"},
-  {"phan": "Yêu cầu", "ten": "Căn cứ HSMT, điều khoản hợp đồng liên quan", "khoa": "can_cu_hsmt", "nguoi_dien": "Người tiếp nhận"},
-  {"phan": "Yêu cầu", "ten": "Thay đổi nội bộ hay chạm cam kết với Chủ đầu tư, điều kiện của mức lớn", "khoa": "noi_bo, dieu_kien", "nguoi_dien": "Người tiếp nhận, phân loại sơ bộ"},
-  {"phan": "Yêu cầu", "ten": "Nhận định ban đầu về ảnh hưởng, công sức đánh giá dự kiến", "khoa": "nhan_dinh_ban_dau", "nguoi_dien": "Người tiếp nhận"},
-  {"phan": "Đánh giá", "ten": "Mã gói WBS bị ảnh hưởng, gói mới, MD tăng theo từng gói", "khoa": "chi_tiet_goi, md_tang", "nguoi_dien": "Người đánh giá tác động ước lượng, công cụ của nhóm tổng hợp"},
-  {"phan": "Đánh giá", "ten": "Mã rủi ro liên quan, rủi ro mới phát sinh", "khoa": "ma_rui_ro, rui_ro_moi", "nguoi_dien": "Người đánh giá tác động"},
-  {"phan": "Đánh giá", "ten": "Chi phí nội bộ và giá đề nghị Chủ đầu tư", "khoa": "chi_phi_noi_bo, gia_de_nghi", "nguoi_dien": "Công cụ của nhóm tính"},
-  {"phan": "Đánh giá", "ten": "Số ngày chậm, tiêu hao dự trữ, chậm cut over, mốc bị ảnh hưởng", "khoa": "ngay_cham, ngay_cham_cut_over, moc_anh_huong", "nguoi_dien": "Công cụ của nhóm tính"},
-  {"phan": "Đánh giá", "ten": "Điểm tác động, mức, người phê duyệt theo quy định", "khoa": "diem_tac_dong, muc_ten, nguoi_phe_duyet_theo_quy_dinh", "nguoi_dien": "Công cụ của nhóm tính"},
-  {"phan": "Đánh giá", "ten": "Tài liệu phải cập nhật, tài liệu khóa, cần phụ lục hợp đồng", "khoa": "tai_lieu_cap_nhat, tai_lieu_khoa, phu_luc_hop_dong", "nguoi_dien": "Công cụ của nhóm tính"},
-  {"phan": "Đánh giá", "ten": "Hạn đánh giá, hạn quyết định", "khoa": "han_danh_gia, han_quyet_dinh", "nguoi_dien": "Công cụ của nhóm tính"},
-  {"phan": "Quyết định", "ten": "Kết quả (phê duyệt, từ chối, hoãn), người quyết định, chữ ký đại diện có thẩm quyền", "khoa": "trang_thai, nguoi_quyet_dinh", "nguoi_dien": "Người có thẩm quyền theo mức"},
-  {"phan": "Quyết định", "ten": "Ngày quyết định, số văn bản thống nhất hoặc phụ lục hợp đồng", "khoa": "ngay_quyet_dinh, van_ban", "nguoi_dien": "Người có thẩm quyền theo mức"},
-  {"phan": "Quyết định", "ten": "Ngày xem xét lại khi hoãn", "khoa": "ngay_xem_lai", "nguoi_dien": "Người có thẩm quyền theo mức"},
-  {"phan": "Đóng", "ten": "Kết quả kiểm tra phần thay đổi của Chủ đầu tư, người và ngày kiểm tra", "khoa": "kiem_tra_dat, ngay_thuc_hien", "nguoi_dien": "Chủ đầu tư, quản trị dự án ghi nhận"},
-  {"phan": "Đóng", "ten": "Phiên bản tài liệu sau thay đổi, ngày đóng, người đóng", "khoa": "phien_ban_sau, ngay_dong, nguoi_dong", "nguoi_dien": "Công cụ của nhóm ghi, quản trị dự án đóng"}
+  {
+   "phan": "Yêu cầu",
+   "ten": "Mã yêu cầu thay đổi, ngày đề xuất",
+   "khoa": "ma, ngay_de_xuat",
+   "nguoi_dien": "Công cụ của nhóm cấp mã, người đề xuất ghi ngày"
+  },
+  {
+   "phan": "Yêu cầu",
+   "ten": "Người đề xuất, bên đề xuất, nguồn (Chủ đầu tư, nhà thầu, rủi ro)",
+   "khoa": "nguoi_de_xuat, nguon",
+   "nguoi_dien": "Người đề xuất"
+  },
+  {
+   "phan": "Yêu cầu",
+   "ten": "Mô tả thay đổi và lý do",
+   "khoa": "tieu_de, mo_ta, ly_do",
+   "nguoi_dien": "Người đề xuất"
+  },
+  {
+   "phan": "Yêu cầu",
+   "ten": "Căn cứ HSMT, điều khoản hợp đồng liên quan",
+   "khoa": "can_cu_hsmt",
+   "nguoi_dien": "Người tiếp nhận"
+  },
+  {
+   "phan": "Yêu cầu",
+   "ten": "Thay đổi nội bộ hay chạm cam kết với Chủ đầu tư, điều kiện của mức lớn",
+   "khoa": "noi_bo, dieu_kien",
+   "nguoi_dien": "Người tiếp nhận, phân loại sơ bộ"
+  },
+  {
+   "phan": "Yêu cầu",
+   "ten": "Nhận định ban đầu về ảnh hưởng, công sức đánh giá dự kiến",
+   "khoa": "nhan_dinh_ban_dau",
+   "nguoi_dien": "Người tiếp nhận"
+  },
+  {
+   "phan": "Đánh giá",
+   "ten": "Mã gói WBS bị ảnh hưởng, gói mới, MD tăng theo từng gói",
+   "khoa": "chi_tiet_goi, md_tang",
+   "nguoi_dien": "Người đánh giá tác động ước lượng, công cụ của nhóm tổng hợp"
+  },
+  {
+   "phan": "Đánh giá",
+   "ten": "Mã rủi ro liên quan, rủi ro mới phát sinh",
+   "khoa": "ma_rui_ro, rui_ro_moi",
+   "nguoi_dien": "Người đánh giá tác động"
+  },
+  {
+   "phan": "Đánh giá",
+   "ten": "Chi phí nội bộ và giá đề nghị Chủ đầu tư",
+   "khoa": "chi_phi_noi_bo, gia_de_nghi",
+   "nguoi_dien": "Công cụ của nhóm tính"
+  },
+  {
+   "phan": "Đánh giá",
+   "ten": "Số ngày chậm, tiêu hao dự trữ, số ngày cut over lùi, ngày cut over mới, mốc bị ảnh hưởng",
+   "khoa": "ngay_cham, tieu_hao_du_tru, ngay_cham_cut_over, cut_over_moi, moc_anh_huong",
+   "nguoi_dien": "Công cụ của nhóm tính"
+  },
+  {
+   "phan": "Đánh giá",
+   "ten": "Lịch có gói mới (ngày bắt đầu, kết thúc từng gói), có cần thêm người, phương án thêm nhân sự",
+   "khoa": "lich_thay_doi, can_them_nguoi, ket_luan_nhan_su",
+   "nguoi_dien": "Công cụ của nhóm tính, người đánh giá đề xuất phương án thêm nhân sự"
+  },
+  {
+   "phan": "Đánh giá",
+   "ten": "Điểm tác động, mức, người phê duyệt theo quy định",
+   "khoa": "diem_tac_dong, muc_ten, nguoi_phe_duyet_theo_quy_dinh",
+   "nguoi_dien": "Công cụ của nhóm tính"
+  },
+  {
+   "phan": "Đánh giá",
+   "ten": "Tài liệu phải cập nhật, tài liệu khóa, cần phụ lục hợp đồng",
+   "khoa": "tai_lieu_cap_nhat, tai_lieu_khoa, phu_luc_hop_dong",
+   "nguoi_dien": "Công cụ của nhóm tính"
+  },
+  {
+   "phan": "Đánh giá",
+   "ten": "Hạn đánh giá, hạn quyết định",
+   "khoa": "han_danh_gia, han_quyet_dinh",
+   "nguoi_dien": "Công cụ của nhóm tính"
+  },
+  {
+   "phan": "Quyết định",
+   "ten": "Kết quả (phê duyệt, từ chối, hoãn), người quyết định, chữ ký đại diện có thẩm quyền",
+   "khoa": "trang_thai, nguoi_quyet_dinh",
+   "nguoi_dien": "Người có thẩm quyền theo mức"
+  },
+  {
+   "phan": "Quyết định",
+   "ten": "Ngày quyết định, số văn bản thống nhất hoặc phụ lục hợp đồng",
+   "khoa": "ngay_quyet_dinh, van_ban",
+   "nguoi_dien": "Người có thẩm quyền theo mức"
+  },
+  {
+   "phan": "Quyết định",
+   "ten": "Ngày xem xét lại khi hoãn",
+   "khoa": "ngay_xem_lai",
+   "nguoi_dien": "Người có thẩm quyền theo mức"
+  },
+  {
+   "phan": "Quyết định",
+   "ten": "Phương án được chọn, phụ lục hợp đồng (số, ngày, giá điều chỉnh, cut over mới, mốc thanh toán điều chỉnh)",
+   "khoa": "phuong_an_chon, phu_luc",
+   "nguoi_dien": "Người có thẩm quyền theo mức, công cụ của nhóm ghi phụ lục khi áp dụng"
+  },
+  {
+   "phan": "Quyết định",
+   "ten": "Áp dụng vào dữ liệu nguồn, thứ tự chạy lại các bước",
+   "khoa": "ap_dung",
+   "nguoi_dien": "Công cụ của nhóm, quản trị dự án xác nhận ghi"
+  },
+  {
+   "phan": "Đóng",
+   "ten": "Kết quả kiểm tra phần thay đổi của Chủ đầu tư, người và ngày kiểm tra",
+   "khoa": "kiem_tra_dat, ngay_thuc_hien",
+   "nguoi_dien": "Chủ đầu tư, quản trị dự án ghi nhận"
+  },
+  {
+   "phan": "Đóng",
+   "ten": "Phiên bản tài liệu sau thay đổi, ngày đóng, người đóng",
+   "khoa": "phien_ban_sau, ngay_dong, nguoi_dong",
+   "nguoi_dien": "Công cụ của nhóm ghi, quản trị dự án đóng"
+  }
  ]
 }

@@ -25,6 +25,14 @@ Mọi lệnh chạy từ thư mục gốc của dự án (thư mục có `dau_va
 | `python .claude/skills/qlda-loi/scripts/chay.py bang_chung` | Xuất Phụ lục bằng chứng prompt và skill vào ket_qua/16_Bang_chung |
 | `python .claude/skills/qlda-loi/scripts/nhat_ky.py --skill ... --buoc ... --vai ... --prompt ... --vao ... --ra ... --tom-tat ...` | Ghi nhật ký một bước do agent thực hiện |
 
+## Giai đoạn, bản phát hành, ngày mô phỏng
+
+- loi.py có hàm dùng chung cho giai đoạn dự án (giai_doan_du_an, phan_giai_doan, hien_thi_giai_doan) và bản phát hành (ban_phat_hanh_hien_hanh), xem `references/du_lieu.md`. phan_giai_doan (từ 1.5.0): gói lá nhóm WBS 1 không ghi giai_doan được suy theo nhóm, mọi loại công việc (gói DEV, BA của quản lý dự án không còn bị xếp Thực hiện), chỉ gói lá cuối của mục mức 2 cuối là Kết thúc; nên ghi giai_doan tường minh trong WBS.
+- dang_ky_phien_ban (từ 1.5.0): sau ký hợp đồng, phiên bản của bước thuộc tai_lieu_cap_nhat của một CR đã phê duyệt, đã áp dụng và chưa đóng được gắn ma_cr và mã CR trong ghi chú (cr_dang_ap_dung); tệp trong ket_qua chưa có ngày tài liệu (Excel) ghi ngày hiện hành của dự án.
+- Sau ký hợp đồng (đường cơ sở hợp đồng BL1), mỗi phiên bản tài liệu mới ghi khóa phat_hanh theo ngày tài liệu. `chay.py trang_thai` in bản phát hành hiện hành.
+- Khi mô phỏng dự án, đặt biến môi trường `QLDA_NGAY=yyyy-mm-dd` cho mọi lệnh để ngày hiện hành là ngày mô phỏng.
+- Bản ghi phiên bản đường cơ sở, khóa không bị ghi đè khi đăng ký lại cùng nội dung (loi.KHOA_PHIEN_BAN_GIU).
+
 ## Vai agent
 
 - Soạn thảo: `prompts/vai_soan_thao.md`. Chỉ viết lời văn vào `lam_viec/<buoc>/ban_soan.json`, mọi con số bằng tham chiếu dữ liệu.

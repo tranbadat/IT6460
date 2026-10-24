@@ -19,6 +19,9 @@ Cách tính:
 Kiểm tra dữ liệu (lỗi chặn): L01 thành viên không có trong danh sách, L02 vai trò không có đơn giá, L04 vượt tỷ lệ tham gia trong ngày,
   L05 MD không hợp lệ, L09 chưa khai báo cach_tra_luong hoặc giá trị không hợp lệ, L10 ket_hop thiếu quy_chia_theo_dong_gop.so_tien.
   Cảnh báo: L03 ngày ngoài lịch dự án, L06 ngày nghỉ, L07 ghi công ngoài thời gian huy động, L08 chi phí lương kế hoạch lệch cost estimate.
+Kỳ KT: lịch có giai đoạn Kết thúc thì ngày làm việc tính đến ngay_dong_du_an (thuc_te.ngay_lam_viec_du_an), kỳ KT là một cột như sprint
+  (sheet Sprint, Theo_sprint), nhật ký sau cut over không bị L03. Có du_lieu/mo_phong.json (qlda-mo-phong) thì sheet Thuyet_minh ghi
+  căn cứ số liệu mô phỏng.
 Ra: du_lieu/luong.json, ket_qua/14_Bang_phan_chia_luong/Bang_phan_chia_luong.xlsx (công thức SUMIFS, INDEX/MATCH, đã tính lại và đối chiếu).
 """
 import os as _os, sys as _sys  # noqa: E401
@@ -73,8 +76,8 @@ den = D(a.den) if a.den else max(D(r['ngay']) for r in nk)
 nk = [r for r in nk if D(r['ngay']) <= den]
 F = []
 add = lambda ma, mo, md='loi': F.append({'ma': ma, 'muc_do': md, 'mo_ta': mo})  # noqa: E731
-ds_ngay = loi.ngay_lam_viec(da); days = set(ds_ngay); nghi = set(da.get('ngay_nghi', []))
-sp = lich['sprint']
+ds_ngay = thuc_te.ngay_lam_viec_du_an(da, lich); days = set(ds_ngay); nghi = set(da.get('ngay_nghi', []))
+sp = thuc_te.cac_ky(lich, da)  # sprint, cộng kỳ KT khi lịch có giai đoạn Kết thúc
 sp_idx = {s['ma']: i for i, s in enumerate(sp, 1)}
 
 
@@ -186,6 +189,8 @@ OUT = os.path.join(OUT_DIR, 'Bang_phan_chia_luong.xlsx')
 wb = Workbook()
 wb.properties.creator = wb.properties.lastModifiedBy = loi.du_an().get('nguoi_lap', '')
 tm = wb.active; tm.title = 'Thuyet_minh'
+MP = thuc_te.mo_phong()
+CAN_CU_MP = ([('Số liệu thực tế trong bảng là số liệu mô phỏng. ' + MP.get('_ghi_chu', '')).strip()] if MP else [])
 nl_txt = 'ngày huy động' if THEO_HD else 'MD thực tế'
 dong = [('Bảng phân chia lương', X.F_TEN), (da['ten_du_an'], None), (f'Nhóm {da.get("ma_nhom", "")}, {da.get("don_vi_thuc_hien", "")}', None),
         (f'Số liệu tính đến ngày {loi.ngay(den)}. Cách trả lương do nhóm khai báo: {CACH[cach]}.', None), ('', None),
@@ -198,6 +203,7 @@ dong = [('Bảng phân chia lương', X.F_TEN), (da['ten_du_an'], None), (f'Nhó
          + (' Phần chia theo đóng góp bằng quỹ chia (sheet Tham_so) nhân tỷ trọng đóng góp, không nhân hệ số bảo hiểm.' if cach == 'ket_hop' else ''), None),
         ('6. Ngày sẵn sàng không ghi công bằng ngày huy động trừ MD thực tế, trình bày riêng để đối chiếu, không dùng để trừ lương.', None),
         ('7. Bảng đối chiếu MD kế hoạch theo master schedule, khoản A và chi phí lương theo huy động của cost estimate (sheet Doi_chieu).', None),
+        ] + [('8. ' + t, None) for t in CAN_CU_MP] + [
         ('', None), ('Ký hiệu', X.F_TIEU_DE), ('Chữ xanh dương: số liệu nhập. Chữ xanh lá: tham chiếu sheet khác. Chữ đen: công thức.', None),
         ('', None), ('Xác nhận', X.F_TIEU_DE), ('Thành viên ký xác nhận tại cột cuối của sheet Bang_luong.', None),
         (f'Người lập: {da.get("nguoi_lap", "")}', None)]
@@ -331,7 +337,7 @@ if kq and kq.get('status'):
             loi.thoat_loi(f'Đối chiếu thu nhập của {x["ho_ten"]} lệch giữa Excel và Python')
     ghi = 'Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (MD, ngày huy động, lương, thu nhập từng người, tổng theo sprint).'
 
-out = {'den': den.isoformat(), 'cach_tra_luong': cach, 'cach_tra_luong_ten': CACH[cach], 'quy_chia_theo_dong_gop': QUY,
+out = {'den': den.isoformat(), 'so_lieu_mo_phong': bool(MP), 'can_cu_mo_phong': CAN_CU_MP, 'cach_tra_luong': cach, 'cach_tra_luong_ten': CACH[cach], 'quy_chia_theo_dong_gop': QUY,
        'nguoi': nguoi, 'tong': tong, 'doi_chieu': doi_chieu, 'theo_sprint': theo_sprint,
        'don_gia': [{'vai_tro': k, 'ten': v['ten'], 'luong_thang': v['luong'], 'don_gia_ngay': round(dgn[k])} for k, v in vt],
        'kiem_tra': {'ket_luan': 'dat', 'phat_hien': F, 'doi_chieu_excel': ghi}}

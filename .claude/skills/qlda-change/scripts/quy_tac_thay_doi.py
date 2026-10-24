@@ -4,8 +4,8 @@
 - vai_ban: người giữ từng vai của ban kiểm soát thay đổi (quản trị dự án, đại diện nhà thầu, đầu mối và người có thẩm quyền của Chủ đầu tư).
 - kiem_tra_ky_phu_luc: mức đòi phụ lục hợp đồng phải có người ký được ở cả hai bên.
 - cham_diem: điểm tác động 1 đến 10 và mức theo ngưỡng định lượng và điều kiện hợp đồng.
-- moc_bi_anh_huong: ước tính mốc gắn đợt thanh toán bị dời khi gói tăng thời lượng.
 - he_so_gia: hệ số từ chi phí nội bộ sang giá đề nghị Chủ đầu tư.
+Mốc gắn đợt thanh toán bị dời, ngày cut over mới tính bằng lịch thật trong lich_thay_doi.py (bỏ gói dàn trải và gói giai đoạn Kết thúc).
 Mã kiểm tra TD01 đến TD11. Lỗi thì script gọi dừng, cảnh báo thì in.
 """
 import datetime as dt
@@ -193,45 +193,6 @@ def cham_diem(chi_so, dieu_kien, pl):
     d = min(max(diem), pl['thang_diem']['den'])
     muc = next(m for m in pl['muc'] if m['diem'][0] <= d <= m['diem'][1])
     return d, muc, ly_do
-
-
-# ---------------------------------------------------------------- mốc gắn đợt thanh toán
-def _chi_so_ngay(days, ngay):
-    """Chỉ số ngày làm việc cuối cùng không muộn hơn ngày (ISO)."""
-    return loi.ngay_lam_viec_giua(days, days[0], ngay) if days else 0
-
-
-def _cham_den(them, dich, truoc, lg, lf_moc):
-    """Số ngày gói tăng thời lượng đẩy mốc quá chỉ số lf_moc: duyệt ngược theo phụ thuộc, tính kết thúc muộn nhất của gói đứng trước."""
-    lf, hang = {g: lf_moc for g in dich}, list(dich)
-    while hang:
-        g = hang.pop()
-        ls = lf[g] - (lg[g]['chi_so_ket_thuc'] - lg[g]['chi_so_bat_dau'])
-        for p in truoc.get(g, []):
-            if p in lg and ls - 1 < lf.get(p, 10 ** 9):
-                lf[p] = ls - 1
-                hang.append(p)
-    return max([n - max(0, lf[g] - lg[g]['chi_so_ket_thuc']) for g, n in them.items() if g in lf] + [0])
-
-
-def moc_bi_anh_huong(them, wbs, lich, days):
-    """them: {mã gói lá: số ngày làm việc tăng}. Trả [{ma, ten, dot, ngay_doi, vuot_han}] cho mốc gắn đợt thanh toán bị ảnh hưởng.
-    Mốc có ngày cố định (M0, cut over) không xét ở đây, chậm cut over tính riêng."""
-    lg = {g['ma']: g for g in lich['goi'] if g.get('la') and 'chi_so_ket_thuc' in g}
-    truoc = {g['ma']: [p if isinstance(p, str) else p.get('ma') for p in g.get('phu_thuoc', [])] for g in wbs['goi'] if g.get('la')}
-    out = []
-    for m in lich['moc']:
-        cc = str(m.get('can_cu', ''))
-        if not m.get('dot_thanh_toan') or not re.match(r'^\d', cc):
-            continue
-        dich = [g for c in cc.split(',') for g in lg if g == c.strip() or g.startswith(c.strip() + '.')]
-        if not dich:
-            continue
-        doi = _cham_den(them, dich, truoc, lg, _chi_so_ngay(days, m['ngay']))
-        vuot = _cham_den(them, dich, truoc, lg, _chi_so_ngay(days, m.get('han') or m['ngay']))
-        if doi or vuot:
-            out.append({'ma': m['ma'], 'ten': m['ten'], 'dot': m['dot_thanh_toan'], 'ngay_doi': doi, 'vuot_han': vuot})
-    return out
 
 
 # ---------------------------------------------------------------- giá đề nghị, ngày

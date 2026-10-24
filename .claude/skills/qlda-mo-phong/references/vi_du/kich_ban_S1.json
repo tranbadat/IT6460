@@ -1,0 +1,98 @@
+{
+ "sprint": "S1",
+ "tom_tat": "Sprint khởi động và khảo sát. Khảo sát hệ thống hiện có tốn thêm công do thiếu tài liệu Main System, khung ứng dụng giao diện tái sử dụng được thư viện có sẵn nên nhanh hơn kế hoạch.",
+ "bien_co": [
+  {
+   "loai": "moc",
+   "ma_moc": "M0",
+   "ngay_dat": "2027-03-18",
+   "ghi_chu": "Hợp đồng có hiệu lực, biên bản họp khởi động ngày 18/03/2027",
+   "ly_do": "Mốc ngày cố định theo hợp đồng"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "2.1.2",
+   "ty_le_md": 0.1,
+   "ly_do": "Chủ đầu tư chưa có tài liệu luồng dữ liệu Main System, phải phỏng vấn bổ sung, dấu hiệu sớm của RR02"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "6.1.3",
+   "ty_le_md": -0.2,
+   "ly_do": "Tái sử dụng khung giao diện từ hợp đồng tương tự (cơ hội RR20)"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD01",
+   "ngay_ghi_nhan": "2027-03-22",
+   "nguoi_bao": "K",
+   "mo_ta": "Gói 2.1.2 khảo sát Main System thiếu tài liệu luồng dữ liệu, xong muộn 1 ngày, kéo theo 2.1.5, 2.2.2 và các gói sau 2.3.5, 5.1.2, 8.1.1 bắt đầu muộn",
+   "phan_loai": "Tiến độ",
+   "uu_tien": "Trung bình",
+   "ma_rui_ro": "RR02",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-03-31",
+   "hanh_dong": [
+    {
+     "viec": "Gửi văn bản đề nghị Chủ đầu tư bố trí buổi làm việc về Main System",
+     "nguoi": "dat",
+     "han": "2027-03-23",
+     "ngay_xong": "2027-03-23",
+     "bang_chung": "Văn bản đề nghị ngày 23/03/2027"
+    },
+    {
+     "viec": "Phỏng vấn bổ sung cán bộ vận hành Main System",
+     "nguoi": "K",
+     "han": "2027-03-26",
+     "ngay_xong": "2027-03-25",
+     "bang_chung": "Biên bản làm việc ngày 25/03/2027"
+    }
+   ],
+   "ngay_dong": "2027-03-31",
+   "ket_qua": "Đã có mô tả luồng dữ liệu Main System, các gói bị ảnh hưởng chuyển làm bù đầu S2",
+   "nguoi_dong": "dat",
+   "ly_do": "Theo dõi xử lý thiếu tài liệu khảo sát"
+  },
+  {
+   "loai": "chi_phi",
+   "ngay": "2027-03-19",
+   "khoan_muc": "B",
+   "so_tien": 6000000,
+   "ghi_chu": "Thuê máy chủ môi trường phát triển và kiểm thử tháng 3",
+   "lien_ket": [
+    "8.1.1"
+   ],
+   "ly_do": "Chi phí môi trường theo khoản B"
+  },
+  {
+   "loai": "retro",
+   "y": [
+    {
+     "loai": "tốt",
+     "noi_dung": "Khung giao diện tái sử dụng thư viện có sẵn, gói 6.1.3 xong trước kế hoạch",
+     "lien_ket": [
+      "6.1.3",
+      "RR20"
+     ]
+    },
+    {
+     "loai": "cần cải thiện",
+     "noi_dung": "Khảo sát Main System thiếu tài liệu, cần đưa danh sách tài liệu cần cung cấp vào biên bản khởi động",
+     "lien_ket": [
+      "2.1.2",
+      "VD01"
+     ]
+    },
+    {
+     "loai": "hành động",
+     "noi_dung": "Lập danh sách tài liệu Main System cần Chủ đầu tư cung cấp trước 14/04/2027 (CK1)",
+     "lien_ket": [
+      "6.2.1",
+      "RR02"
+     ]
+    }
+   ],
+   "ly_do": "Họp cải tiến cuối sprint S1"
+  }
+ ]
+}

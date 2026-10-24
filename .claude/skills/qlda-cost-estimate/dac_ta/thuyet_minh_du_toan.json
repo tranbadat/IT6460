@@ -31,7 +31,7 @@
    "soan": "CAN_CU",
    "dang": "danh_sach_doan",
    "toi_thieu": 3,
-   "huong_dan": "Nêu căn cứ: phạm vi theo HSMT và WBS, đơn giá trọn gói theo loại công việc và nguồn của đơn giá, lương tham chiếu dùng để đối chiếu. Nêu phương pháp: dòng A tính từ MD theo loại công việc, dòng B theo danh mục, dự phòng so với EMV của sổ rủi ro, khoản C và thuế. Nêu quan hệ với Mẫu 11A của HSDT.",
+   "huong_dan": "Nêu căn cứ: phạm vi theo HSMT và WBS, đơn giá trọn gói theo loại công việc và nguồn của đơn giá, lương tham chiếu dùng để đối chiếu. Nêu phương pháp: dòng A tính từ MD theo loại công việc, dòng B theo danh mục, dự phòng so với EMV của sổ rủi ro, khoản C và thuế. Nêu quan hệ với Mẫu 11A của HSDT theo đoạn {cp#doan_mau_11a} (đoạn này đặt ngay sau phần soạn): trước ký hợp đồng bảng phân bổ là số liệu Mẫu 11A; sau đường cơ sở hợp đồng không viết rằng số liệu điền vào Mẫu 11A, HSDT đã khóa giữ giá dự thầu ban đầu, giá hợp đồng điều chỉnh qua phụ lục.",
    "nguon": [
     "cp",
     "wbs",
@@ -41,6 +41,9 @@
     "{wbs#tong_md|md} MD",
     "Mẫu 11A"
    ]
+  },
+  {
+   "doan": "{cp#doan_mau_11a}"
   },
   {
    "h1": "2. Nhân công theo loại công việc"
@@ -136,7 +139,7 @@
       "{cp#thue|tien}"
      ],
      [
-      "Giá chào trọn gói",
+      "{cp#nhan_gia_chao}",
       "{cp#gia_chao|tien}"
      ],
      [
@@ -154,7 +157,10 @@
    }
   },
   {
-   "doan": "Giá chào thấp hơn giá gói thầu {cp#thap_hon_goi_thau|tien} đồng, tương đương {cp#ty_le_thap_hon|pt}. Khoản C bằng {cp#ty_le_C|pt} giá trước thuế. Căn cứ thuế: {cp#can_cu_thue}."
+   "doan": "Giá dự thầu ban đầu thấp hơn giá gói thầu {cp#thap_hon_goi_thau|tien} đồng, tương đương {cp#ty_le_thap_hon|pt}. Khoản C bằng {cp#ty_le_C|pt} giá trước thuế. Căn cứ thuế: {cp#can_cu_thue}."
+  },
+  {
+   "doan_ds": "cp#doan_phu_luc"
   },
   {
    "soan": "GIA_CHAO",
@@ -204,13 +210,13 @@
    }
   },
   {
-   "doan": "Tổng EMV của sổ đăng ký rủi ro là {cp#tong_emv_rui_ro|tien} đồng. Dự phòng hiện có là {cp#du_phong_hien_co|tien} đồng."
+   "doan": "EMV còn lại của sổ đăng ký rủi ro (rủi ro chưa xảy ra, chưa đóng) là {cp#tong_emv_rui_ro|tien} đồng, tổng EMV của toàn sổ là {cp#tong_emv_rui_ro_ban_dau|tien} đồng. Dự phòng hiện có là {cp#du_phong_hien_co|tien} đồng."
   },
   {
    "soan": "DU_PHONG",
    "dang": "danh_sach_doan",
    "toi_thieu": 2,
-   "huong_dan": "Đánh giá dự phòng đủ hay thiếu so với EMV, các rủi ro đóng góp EMV lớn nhất (dùng mã rủi ro). Không viết lại quy tắc sử dụng dự phòng, chỉ dẫn chiếu bảng quy tắc ngay sau đoạn này.",
+   "huong_dan": "Đánh giá dự phòng đủ hay thiếu so với EMV còn lại, các rủi ro đóng góp EMV lớn nhất (dùng mã rủi ro). Rủi ro đã xảy ra hoặc đã đóng (cp#rui_ro_da_xay_ra) nêu tác động thực tế và dự phòng đã dùng hay chưa. Không viết lại quy tắc sử dụng dự phòng, chỉ dẫn chiếu bảng quy tắc ngay sau đoạn này.",
    "nguon": [
     "cp",
     "rr"
@@ -349,7 +355,7 @@
    }
   },
   {
-   "doan": "Thành tiền phân bổ theo tỷ trọng chi phí nhân công của từng hạng mục, tổng bằng giá chào {cp#gia_chao|tien} đồng."
+   "doan": "Thành tiền phân bổ theo tỷ trọng chi phí nhân công của từng hạng mục, tổng bằng {cp#gia_chao|tien} đồng ({cp#nhan_gia_chao})."
   },
   {
    "h1": "7. Phân bổ theo nhóm WBS"
@@ -414,36 +420,41 @@
      [
       "Tỷ lệ, %",
       "phan_tram",
-      700,
+      650,
       "c"
+     ],
+     [
+      "Cơ sở tính",
+      "co_so_ten",
+      1700
      ],
      [
       "Sự kiện",
       "su_kien",
-      3300
+      2500
      ],
      [
       "Ngày sự kiện",
       "ngay_su_kien|ngay",
-      1200,
+      1100,
       "c"
      ],
      [
       "Ngày thu dự kiến",
       "ngay|ngay",
-      1200,
+      1100,
       "c"
      ],
      [
       "Sprint thu",
       "sprint",
-      1000,
+      900,
       "c"
      ],
      [
       "Số tiền, đồng",
       "so_tien|tien",
-      1500,
+      1350,
       "r"
      ]
     ]
@@ -502,7 +513,7 @@
    "soan": "DONG_TIEN",
    "dang": "danh_sach_doan",
    "toi_thieu": 1,
-   "huong_dan": "Nhận xét dòng tiền: dòng chi lũy kế tính theo cách trả lương đã khai báo, dòng thu theo ngày sự kiện cộng thời hạn thanh toán của HSMT. Nêu sprint có lũy kế âm và mức âm lớn nhất, nhu cầu vốn lưu động, quan hệ giữa các mốc trong master schedule và các đợt thanh toán, rủi ro khi mốc trễ.",
+   "huong_dan": "Nhận xét dòng tiền: dòng chi lũy kế tính theo cách trả lương đã khai báo, dòng thu theo ngày sự kiện cộng thời hạn thanh toán của HSMT. Nêu sprint có lũy kế âm và mức âm lớn nhất, nhu cầu vốn lưu động, quan hệ giữa các mốc trong master schedule và các đợt thanh toán, rủi ro khi mốc trễ. Khi có phụ lục hợp đồng: đợt gốc tính trên giá hợp đồng ban đầu hay giá sau phụ lục theo cột Cơ sở tính, đợt đã thu trước ngày phụ lục không tính lại, đợt riêng của phần giá điều chỉnh (nếu có) gắn mốc nào.",
    "nguon": [
     "cp",
     "lich"
