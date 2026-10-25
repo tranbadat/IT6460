@@ -1,0 +1,180 @@
+{
+ "sprint": "S2",
+ "tom_tat": "Huy động các vị trí bổ sung của S2. Kỹ sư kiểm thử Trần Thu Hà có mặt muộn 2 ngày (RR04 xảy ra), đặc tả use case tìm kiếm phải bổ sung quy tắc lọc nên vượt công, cấu hình cơ sở dữ liệu dùng lại mẫu có sẵn nên nhanh hơn kế hoạch. Kế hoạch quản lý dự án được Chủ đầu tư xác nhận (M1). Cuối sprint chưa nhận tài liệu đặc tả giao diện Main System (CK1), kế hoạch ứng phó RR02 được kích hoạt.",
+ "bien_co": [
+  {
+   "loai": "nghi",
+   "thanh_vien": "Q1",
+   "so_ngay": 2,
+   "tu_ngay": "2027-04-01",
+   "lien_ket": [
+    "RR04",
+    "2.1.1"
+   ],
+   "ly_do": "Trần Thu Hà hoàn thành bàn giao công việc ở dự án trước, có mặt muộn 2 ngày so với sprint huy động S2"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR04",
+   "ngay": "2027-04-01",
+   "trang_thai": "Đã xảy ra",
+   "ma_goi": "2.1.1",
+   "md_tac_dong": 0.5,
+   "ngay_tac_dong": 0,
+   "hanh_dong": "Trần Bá Đạt xác nhận ngày có mặt của Trần Thu Hà, Nguyễn Thị Phương Liên chuẩn bị khung kế hoạch bảo đảm chất lượng để bàn giao, gói 2.1.1 làm bù trong tuần đầu sprint",
+   "ngay_dong": "2027-04-19",
+   "ly_do": "Vị trí bổ sung không có mặt đúng ngày đầu sprint huy động, dấu hiệu bàn giao công việc chưa xong trước sprint huy động"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD03",
+   "ngay_ghi_nhan": "2027-04-01",
+   "nguoi_bao": "dat",
+   "mo_ta": "Gói 2.1.1 kế hoạch bảo đảm chất lượng bắt đầu muộn do Trần Thu Hà có mặt muộn 2 ngày so với sprint huy động",
+   "phan_loai": "Nhân sự",
+   "uu_tien": "Trung bình",
+   "ma_rui_ro": "RR04",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-04-07",
+   "hanh_dong": [
+    {
+     "viec": "Bàn giao quy chuẩn mã nguồn và khung kế hoạch bảo đảm chất lượng cho Trần Thu Hà",
+     "nguoi": "lien",
+     "han": "2027-04-05",
+     "ngay_xong": "2027-04-05",
+     "bang_chung": "Biên bản bàn giao ngày 05/04/2027"
+    }
+   ],
+   "ngay_dong": "2027-04-07",
+   "ket_qua": "Gói 2.1.1 hoàn thành trong sprint, không ảnh hưởng các gói kiểm thử",
+   "nguoi_dong": "dat",
+   "ly_do": "Ghi sổ vấn đề cho rủi ro RR04 đã xảy ra"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "1.2.5",
+   "ty_le_md": 0.2,
+   "ly_do": "Chủ sản phẩm bổ sung quy tắc lọc theo kích cỡ, màu sắc và bộ sưu tập tại buổi làm rõ yêu cầu, đặc tả use case tìm kiếm phải viết thêm luồng thay thế"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "4.2.4",
+   "ty_le_md": -0.15,
+   "ly_do": "Dùng lại mẫu cấu hình dự phòng và sao lưu cơ sở dữ liệu đã kiểm chứng ở hợp đồng tương tự"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "4.3.2",
+   "so_loi": {
+    "Trung bình": 1,
+    "Thấp": 1
+   },
+   "mo_ta": "Lỗi ràng buộc khóa ngoại và chỉ mục của bảng tồn kho phát hiện khi chạy kiểm thử tầng truy cập dữ liệu",
+   "ly_do": "Lỗi phát sinh khi tạo lập Selling DB trên môi trường phát triển"
+  },
+  {
+   "loai": "chi_phi",
+   "ngay": "2027-04-01",
+   "khoan_muc": "B1",
+   "so_tien": 7500000,
+   "ghi_chu": "Phí môi trường phát triển, kiểm thử kỳ S2 theo phân bổ kỳ chi của dự toán",
+   "loai_chi": "da_chi",
+   "lien_ket": [
+    "1.5.1"
+   ],
+   "ly_do": "Chi phí khoản B1 theo phân bổ kỳ chi S2 của dự toán"
+  },
+  {
+   "loai": "moc",
+   "ma_moc": "M1",
+   "ngay_dat": "2027-04-14",
+   "ghi_chu": "Biên bản xác nhận kế hoạch quản lý dự án ngày 14/04/2027",
+   "ly_do": "Chủ đầu tư xác nhận kế hoạch quản lý dự án (gói 3.1.2)"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR02",
+   "ngay": "2027-04-14",
+   "trang_thai": "Đã kích hoạt ứng phó",
+   "hanh_dong": "Đến 9 giờ 00 ngày 14/04/2027 chưa nhận tài liệu đặc tả giao diện của Main System. Ninh Đức Toàn lập danh sách thông tin còn thiếu, Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư trong ngày, nhóm tích hợp chuẩn bị dịch vụ giả lập",
+   "ly_do": "Dấu hiệu của RR02 xuất hiện tại hạn cam kết CK1"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD04",
+   "ngay_ghi_nhan": "2027-04-14",
+   "nguoi_bao": "toan",
+   "mo_ta": "Chưa nhận tài liệu đặc tả giao diện trao đổi dữ liệu của Main System theo cam kết CK1 hạn 14/04/2027, gói 4.2.5 có nguy cơ bắt đầu muộn",
+   "phan_loai": "Chủ đầu tư",
+   "uu_tien": "Cao",
+   "ma_rui_ro": "RR02",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-04-21",
+   "hanh_dong": [
+    {
+     "viec": "Gửi văn bản đề nghị Chủ đầu tư cung cấp tài liệu đặc tả giao diện Main System kèm danh sách thông tin còn thiếu",
+     "nguoi": "dat",
+     "han": "2027-04-14",
+     "ngay_xong": "2027-04-14",
+     "bang_chung": "Văn bản đề nghị ngày 14/04/2027"
+    }
+   ],
+   "ly_do": "Ghi sổ vấn đề khi kế hoạch ứng phó RR02 được kích hoạt"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD05",
+   "ngay_ghi_nhan": "2027-04-14",
+   "nguoi_bao": "dat",
+   "mo_ta": "Các gói 1.2.7, 2.2.7 và 3.2.8 bắt đầu muộn 1 đến 2 ngày do đặc tả use case tìm kiếm 1.2.5 vượt công và tạo lập Selling DB 4.3.2 phải sửa lỗi ràng buộc dữ liệu",
+   "phan_loai": "Tiến độ",
+   "uu_tien": "Trung bình",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-04-23",
+   "hanh_dong": [
+    {
+     "viec": "Điều chỉnh thứ tự công việc đầu S3, ưu tiên các gói thiết kế chi tiết 1.2.7, 2.2.7 và đặc tả 3.2.8 trước gói lập trình",
+     "nguoi": "dat",
+     "han": "2027-04-15",
+     "ngay_xong": "2027-04-15",
+     "bang_chung": "Biên bản họp lập kế hoạch S3 ngày 15/04/2027"
+    }
+   ],
+   "ngay_dong": "2027-04-23",
+   "ket_qua": "Các gói 1.2.7, 2.2.7, 3.2.8 hoàn thành trong tuần đầu S3, không ảnh hưởng mốc M2",
+   "nguoi_dong": "dat",
+   "ly_do": "Ghi sổ vấn đề cho tín hiệu gói chậm cuối S2"
+  },
+  {
+   "loai": "retro",
+   "y": [
+    {
+     "loai": "tốt",
+     "noi_dung": "Mốc M1 đạt đúng hạn, kế hoạch quản lý dự án được Chủ đầu tư xác nhận trong thời gian phê duyệt",
+     "lien_ket": [
+      "M1",
+      "3.1.2"
+     ]
+    },
+    {
+     "loai": "cần cải thiện",
+     "noi_dung": "Ngày có mặt của vị trí bổ sung chưa được xác nhận lại trước sprint huy động, kỹ sư kiểm thử có mặt muộn 2 ngày",
+     "lien_ket": [
+      "RR04",
+      "VD03"
+     ]
+    },
+    {
+     "loai": "hành động",
+     "noi_dung": "Xác nhận ngày có mặt của Phạm Ngọc Anh và Trương Quốc Việt trước sprint S3 một tuần, theo dõi phản hồi của Chủ đầu tư về tài liệu Main System hằng ngày",
+     "lien_ket": [
+      "RR04",
+      "RR02",
+      "S3"
+     ]
+    }
+   ],
+   "ly_do": "Họp cải tiến cuối sprint S2"
+  }
+ ]
+}

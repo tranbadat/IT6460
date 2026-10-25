@@ -1,0 +1,303 @@
+{
+ "sprint": "S9",
+ "tom_tat": "Kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư diễn ra từ 16/07 đến 27/07/2027, lỗi phát hiện ở mức hợp lý và được khắc phục trong khoảng kiểm thử chấp nhận bằng quỹ chưa giao và hỗ trợ tăng cường. Phần bán hàng trên sàn được nghiệm thu (M9). Hệ thống đưa vào vận hành ngày 29/07/2027 theo phụ lục hợp đồng, bàn giao mã nguồn và tài liệu.",
+ "bien_co": [
+  {
+   "loai": "huy_dong",
+   "thanh_vien": "D4",
+   "so_md": 2.5,
+   "lien_ket": [
+    "1.4.10",
+    "1.5.2"
+   ],
+   "ly_do": "Huy động bổ sung theo nhu cầu (quyết định của quản trị dự án theo ủy quyền của nhóm, lương trả theo công sức thực tế): Trương Quốc Việt hoàn thành tối ưu hiệu năng 1.4.10 và triển khai chính thức 1.5.2 trước cut over"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "3.4.13",
+   "so_loi": {
+    "Cao": 1,
+    "Trung bình": 3,
+    "Thấp": 3
+   },
+   "mo_ta": "Lỗi trong kiểm thử vận hành luồng đặt hàng: thông báo xác nhận đơn gửi trùng khi Main System phản hồi chậm, sai định dạng hóa đơn điện tử theo mẫu của Chủ đầu tư và các lỗi hiển thị nhỏ",
+   "ly_do": "Lỗi phát hiện trong kiểm thử vận hành cùng Chủ đầu tư"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "2.4.12",
+   "so_loi": {
+    "Trung bình": 1,
+    "Thấp": 2
+   },
+   "mo_ta": "Lỗi gửi lại thư xác nhận đăng ký và các lỗi nội dung trang thành viên",
+   "ly_do": "Lỗi phát hiện trong kiểm thử chấp nhận luồng thành viên"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "5.4.5",
+   "so_loi": {
+    "Thấp": 2
+   },
+   "mo_ta": "Lỗi hiển thị tên kho trên báo cáo đồng bộ sàn và lỗi sắp xếp danh sách đơn hàng sàn",
+   "ly_do": "Lỗi phát hiện trong kiểm thử chấp nhận bán hàng trên sàn"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD14",
+   "hanh_dong": [
+    {
+     "ma": "HD17",
+     "viec": "Trương Quốc Việt hoàn thành 5.5.1 và 4.5.6 đầu S9, Bùi Anh Tuấn hoàn thành 2.5.2",
+     "nguoi": "D4",
+     "han": "2027-07-19",
+     "ngay_xong": "2027-07-19",
+     "bang_chung": "Cấu hình kết nối sàn trên môi trường vận hành ngày 19/07/2027"
+    }
+   ],
+   "ngay_dong": "2027-07-20",
+   "ket_qua": "Các gói 2.5.2, 4.5.6 và 5.5.1 hoàn thành, điều kiện của mốc M9 về cấu hình trên môi trường vận hành đạt",
+   "nguoi_dong": "dat",
+   "ly_do": "Đóng vấn đề khi các gói chậm cuối S8 hoàn thành"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R05 Thời gian phản hồi các thao tác cốt lõi không quá 2 giây, phân vị 95 (KT02)",
+   "hang_muc": 10,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-21",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản kiểm thử hiệu năng bản phát hành kiểm thử chấp nhận 4.4.7",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R05 Chịu tải 500 người dùng đồng thời (KT03)",
+   "hang_muc": 10,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-21",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản kiểm thử hiệu năng bản phát hành kiểm thử chấp nhận 4.4.7",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R04 Hoạt động liên tục với hai nút ứng dụng và cân bằng tải, chuyển đổi dự phòng đạt (KT01)",
+   "hang_muc": 11,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-21",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Kết quả diễn tập chuyển đổi dự phòng 4.4.8 và kiểm tra lại trên môi trường vận hành",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R04 An toàn dữ liệu khi vận hành liên tục: rà soát lỗ hổng theo OWASP Top 10 và kiểm thử lại sau khắc phục (KT04)",
+   "hang_muc": 10,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-21",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản rà soát an toàn thông tin 4.4.7, không còn lỗ hổng mức cao",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R04 Sao lưu toàn phần hằng ngày và sao lưu nhật ký giao dịch theo giờ, khôi phục thử đạt (KT05)",
+   "hang_muc": 11,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-22",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Kết quả khôi phục thử trên môi trường vận hành",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R03 Khách hàng thao tác dễ dàng theo kết quả đánh giá khả năng sử dụng và kiểm thử chấp nhận",
+   "hang_muc": 10,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-27",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Kết quả đánh giá khả năng sử dụng 2.4.9 và biên bản kiểm thử chấp nhận",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R06 Chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet theo đặc tả đã xác nhận",
+   "hang_muc": 5,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-27",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản kiểm thử chấp nhận luồng tìm kiếm 1.4.11",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R07 Chức năng quản lý thành viên theo đặc tả đã xác nhận",
+   "hang_muc": 6,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-27",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản kiểm thử chấp nhận luồng thành viên 2.4.12",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R08 Chức năng đặt hàng theo đặc tả đã xác nhận",
+   "hang_muc": 7,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-27",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản kiểm thử vận hành luồng đặt hàng 3.4.13",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R09 Cơ sở dữ liệu bán hàng Selling DB vận hành trên môi trường vận hành",
+   "hang_muc": 8,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-27",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản kiểm thử vận hành 3.4.13 và chuyển đổi dữ liệu thử 4.5.3",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R10 Tích hợp với Main System: đồng bộ sản phẩm, tồn kho, chuyển đơn hàng và nhận trạng thái",
+   "hang_muc": 9,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-27",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản kiểm thử vận hành 3.4.13",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R11 Nghiệp vụ vận chuyển nhận thông tin đơn hàng từ Main System và cập nhật trạng thái giao hàng",
+   "hang_muc": 9,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-27",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản kiểm thử vận hành luồng giao hàng 3.4.13",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R46 Quy trình vận hành mới chạy được trên hệ thống trong kiểm thử vận hành",
+   "hang_muc": 2,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-27",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản kiểm thử vận hành 3.4.13",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R13 Hệ thống được xây dựng từ phân tích đến kiểm thử vận hành theo phạm vi hợp đồng",
+   "hang_muc": 11,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-29",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản bàn giao ngày 29/07/2027",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R12 Hệ thống đưa vào vận hành đúng ngày cut over theo phụ lục hợp đồng",
+   "hang_muc": 13,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-29",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản bàn giao ngày 29/07/2027",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R44 Bàn giao đặc tả hệ thống gồm cấu hình cơ sở dữ liệu và chức năng",
+   "hang_muc": 1,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-29",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản bàn giao tài liệu ngày 29/07/2027",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R47 Bàn giao cấu trúc cơ sở dữ liệu Selling DB",
+   "hang_muc": 3,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-29",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản bàn giao tài liệu ngày 29/07/2027",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R48 Bàn giao sơ đồ phân cấp menu và giao diện ưu tiên",
+   "hang_muc": 4,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-29",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản bàn giao tài liệu ngày 29/07/2027",
+   "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
+  },
+  {
+   "loai": "moc",
+   "ma_moc": "M9",
+   "ngay_dat": "2027-07-27",
+   "ghi_chu": "Biên bản nghiệm thu phần bán hàng trên sàn thương mại điện tử ngày 27/07/2027 theo phụ lục hợp đồng 01/2027/PL-ABCW, căn cứ thanh toán Đợt 6",
+   "ly_do": "Kiểm thử chấp nhận bán hàng trên sàn 5.4.5 và cấu hình kết nối sàn trên môi trường vận hành 5.5.1 hoàn thành"
+  },
+  {
+   "loai": "moc",
+   "ma_moc": "M5",
+   "ngay_dat": "2027-07-27",
+   "ghi_chu": "Biên bản kiểm thử chấp nhận và kiểm thử vận hành ngày 27/07/2027",
+   "ly_do": "Kiểm thử chấp nhận các phân hệ 1.4.11, 2.4.12 và kiểm thử vận hành 3.4.13 hoàn thành"
+  },
+  {
+   "loai": "moc",
+   "ma_moc": "M6",
+   "ngay_dat": "2027-07-29",
+   "ghi_chu": "Hệ thống đưa vào vận hành ngày 29/07/2027 theo phụ lục hợp đồng 01/2027/PL-ABCW",
+   "ly_do": "Cut over theo ngày đã cam kết trong phụ lục"
+  },
+  {
+   "loai": "moc",
+   "ma_moc": "M7",
+   "ngay_dat": "2027-07-29",
+   "ghi_chu": "Biên bản bàn giao mã nguồn, tài liệu và hệ thống ngày 29/07/2027",
+   "ly_do": "Bàn giao 1.5.3 và hỗ trợ ngày đưa vào vận hành 3.5.4 hoàn thành"
+  },
+  {
+   "loai": "retro",
+   "y": [
+    {
+     "loai": "tốt",
+     "noi_dung": "Kiểm thử chấp nhận và phần bán hàng trên sàn được nghiệm thu trong khoảng đã thống nhất, cut over đúng ngày theo phụ lục",
+     "lien_ket": [
+      "M5",
+      "M9",
+      "M6"
+     ]
+    },
+    {
+     "loai": "cần cải thiện",
+     "noi_dung": "Huy động theo nhu cầu sát với MD kế hoạch nên khi gói chậm phải huy động bổ sung trong S8",
+     "lien_ket": [
+      "VD13",
+      "4.4.5"
+     ]
+    },
+    {
+     "loai": "hành động",
+     "noi_dung": "Dự án sau lập mức huy động theo sprint có phần dư cho làm bù ở các sprint kiểm thử",
+     "lien_ket": [
+      "VD13",
+      "RR03"
+     ]
+    }
+   ],
+   "ly_do": "Họp cải tiến cuối sprint S9"
+  }
+ ]
+}

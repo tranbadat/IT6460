@@ -483,13 +483,19 @@
       "r"
      ],
      [
+      "Chi phí khác, đồng",
+      "chi_khac|tien",
+      1200,
+      "r"
+     ],
+     [
       "Thu, đồng",
       "thu|tien",
       1300,
       "r"
      ],
      [
-      "Lũy kế chi theo cách trả lương, đồng",
+      "Lũy kế chi theo cách trả lương và chi phí khác, đồng",
       "luy_ke_chi|tien",
       1400,
       "r"

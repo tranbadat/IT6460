@@ -10,7 +10,7 @@
    "ma": "M1",
    "ten": "Kế hoạch quản lý dự án được Chủ đầu tư xác nhận",
    "sau_goi": [
-    "1.1.5"
+    "3.1.2"
    ],
    "han": "2027-04-14"
   },
@@ -18,7 +18,7 @@
    "ma": "M2",
    "ten": "Đặc tả yêu cầu và giao diện ưu tiên được hai bên xác nhận",
    "sau_goi": [
-    "2.1.7"
+    "3.2.5"
    ],
    "han": "2027-05-10",
    "dot_thanh_toan": 2
@@ -27,143 +27,233 @@
    "ma": "M3",
    "ten": "Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
    "sau_goi": [
-    "1.3.2"
+    "4.4.6"
    ],
-   "han": "2027-06-17",
+   "han": "2027-07-08",
    "dot_thanh_toan": 3
   },
   {
    "ma": "M4",
    "ten": "Hoàn thành kiểm thử hệ thống, bản phát hành sẵn sàng kiểm thử chấp nhận",
    "sau_goi": [
-    "7.2",
-    "1.3.2"
+    "1.4.9",
+    "2.4.9",
+    "2.4.10",
+    "3.4.12",
+    "4.4.5",
+    "4.4.6"
    ],
-   "han": "2027-06-17"
+   "han": "2027-07-15"
+  },
+  {
+   "ma": "M9",
+   "ten": "Chủ đầu tư nghiệm thu phần bán hàng trên sàn thương mại điện tử theo yêu cầu thay đổi CR01",
+   "sau_goi": [
+    "5.4.5",
+    "5.5.1"
+   ],
+   "han": "2027-07-27",
+   "dot_thanh_toan": 6,
+   "_nguon": "Phụ lục hợp đồng 01/2027/PL-ABCW ngày 27/05/2027, quyết định của nhóm ngày 25/10/2026: phần giá điều chỉnh thanh toán thành một đợt riêng 100% khi nghiệm thu CR01, hạn bằng ngày cuối khoảng kiểm thử chấp nhận Quyết định của nhóm ngày 25/10/2026 sau kiểm tra lớp B phần 1 (CR01): M9 đạt sau 5.4.5 (trong khoảng kiểm thử chấp nhận) và 5.5.1, không muộn hơn 27/07/2027."
   },
   {
    "ma": "M5",
    "ten": "Hoàn thành kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư",
    "sau_goi": [
-    "7.3.1",
-    "7.3.2"
+    "1.4.11",
+    "2.4.12",
+    "3.4.13"
    ],
-   "han": "2027-06-29"
+   "han": "2027-07-28"
   },
   {
    "ma": "M6",
    "ten": "Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
-   "ngay": "2027-07-01",
-   "dot_thanh_toan": 4
+   "ngay": "2027-07-29",
+   "dot_thanh_toan": 4,
+   "han": "2027-07-29"
   },
   {
    "ma": "M7",
-   "ten": "Nhà thầu nộp bảo lãnh bảo hành, bàn giao hồ sơ dự án",
+   "ten": "Nhà thầu nộp bảo lãnh bảo hành, bàn giao mã nguồn và hệ thống",
    "sau_goi": [
-    "1.3.3",
-    "8.2.4",
-    "8.3.4"
+    "1.5.3",
+    "3.5.4"
    ],
-   "han": "2027-07-01",
+   "han": "2027-07-29",
    "dot_thanh_toan": 5
+  },
+  {
+   "ma": "M8",
+   "ten": "Đóng dự án, báo cáo tổng kết và bài học kinh nghiệm được lập, hồ sơ dự án được lưu trữ",
+   "sau_goi": [
+    "1.1.5"
+   ],
+   "han": "2027-08-12"
   }
  ],
  "khong_som_hon": {
-  "3.5.2": "2027-06-18",
-  "4.5.2": "2027-06-18",
-  "5.5.2": "2027-06-18",
-  "6.2.12": "2027-06-18",
-  "7.3.3": "2027-06-21",
-  "7.3.4": "2027-06-18",
-  "8.3.3": "2027-06-30",
-  "8.3.4": "2027-07-01"
+  "1.4.12": "2027-07-16",
+  "2.4.13": "2027-07-16",
+  "3.4.14": "2027-07-16",
+  "4.4.9": "2027-07-16",
+  "2.4.11": "2027-07-16",
+  "4.4.7": "2027-07-16",
+  "1.5.2": "2027-07-28",
+  "3.5.4": "2027-07-29"
  },
  "chu_dau_tu_tham_gia": [
   {
-   "goi": "1.1.5",
+   "goi": "3.1.2",
    "loai": "phe_duyet"
   },
   {
-   "goi": "2.1.7",
+   "goi": "3.2.5",
    "loai": "phe_duyet"
   },
   {
-   "goi": "6.2.13",
+   "goi": "4.2.6",
    "loai": "phe_duyet"
   },
   {
-   "goi": "1.3.2",
+   "goi": "4.4.6",
    "loai": "phe_duyet"
   },
   {
-   "goi": "8.3.1",
+   "goi": "3.5.2",
    "loai": "phe_duyet"
   },
   {
-   "goi": "7.3.1",
+   "goi": "1.4.11",
    "loai": "uat"
   },
   {
-   "goi": "7.3.2",
+   "goi": "2.4.12",
    "loai": "uat"
+  },
+  {
+   "goi": "3.4.13",
+   "loai": "uat"
+  },
+  {
+   "goi": "5.4.5",
+   "loai": "uat",
+   "_nguon": "Quyết định của nhóm ngày 25/10/2026 sau kiểm tra lớp B phần 1 (CR01)"
+  },
+  {
+   "goi": "5.2.4",
+   "loai": "phe_duyet",
+   "_nguon": "Đề xuất của agent theo ủy quyền của nhóm ngày 25/10/2026 (lớp B phần 1 lượt 2): Chủ đầu tư xác nhận đặc tả phần sàn trong thời gian phê duyệt tài liệu 5 ngày vì lịch còn dự trữ đến cut over từ 5 ngày trở lên"
   }
  ],
  "dau_vao_ben_ngoai": {
   "CK1": [
-   "6.2.1"
+   "4.2.5"
   ],
   "CK2": [
-   "6.2.10"
+   "4.4.3"
   ],
   "CK3": [
-   "6.3.2"
+   "4.5.3"
   ],
   "CK4": [
-   "6.3.3"
+   "4.5.4"
   ],
   "CK5": [
-   "2.1.7"
+   "3.2.5"
   ],
   "CK6": [
-   "7.3.1",
-   "7.3.2"
+   "1.4.11",
+   "2.4.12",
+   "3.4.13"
+  ],
+  "CK7": [
+   "4.5.1"
+  ],
+  "CK8": [
+   "4.4.3"
+  ],
+  "CK9": [
+   "5.2.1",
+   "5.2.2",
+   "5.2.3",
+   "5.2.4",
+   "5.3.1",
+   "5.3.2",
+   "5.3.3",
+   "5.3.4",
+   "5.3.5",
+   "5.3.6",
+   "5.3.7",
+   "5.4.1",
+   "5.4.2",
+   "5.4.3",
+   "5.4.4",
+   "5.4.5",
+   "5.5.1",
+   "5.5.2",
+   "5.5.3"
+  ],
+  "CK10": [
+   "5.3.1",
+   "5.4.2"
   ]
  },
  "muc_tieu_sprint": [
   {
    "sprint": "S1",
-   "muc_tieu": "Khởi động dự án, khảo sát nghiệp vụ và hệ thống hiện có, đặc tả chức năng ba phân hệ, kiến trúc hệ thống, khung ứng dụng phía máy chủ và giao diện, môi trường phát triển, kiểm thử có quy trình triển khai tự động",
-   "san_pham_demo": "Biên bản khởi động, báo cáo khảo sát, khung ứng dụng chạy trên môi trường phát triển qua quy trình triển khai tự động"
+   "muc_tieu": "Khảo sát nghiệp vụ và hệ thống hiện có, đặc tả chức năng ba phân hệ chức năng, nghiên cứu hành vi người dùng, kiến trúc hệ thống, khung ứng dụng phía máy chủ và giao diện, dịch vụ gửi thư điện tử",
+   "san_pham_demo": "Báo cáo khảo sát, đặc tả chức năng ba phân hệ chức năng, kiến trúc hệ thống và khung ứng dụng phía máy chủ, giao diện"
   },
   {
    "sprint": "S2",
-   "muc_tieu": "Kế hoạch quản lý dự án được Chủ đầu tư xác nhận (M1), cấu trúc và cấu hình Selling DB, sơ đồ phân cấp menu, thiết kế giao diện ưu tiên, thư viện thành phần giao diện, Selling DB trên môi trường phát triển, đặc tả use case",
-   "san_pham_demo": "Cấu trúc Selling DB, sơ đồ phân cấp menu (Menu Layer), mẫu giao diện ưu tiên ba nhóm chức năng"
+   "muc_tieu": "Cấu trúc, cấu hình Selling DB và tạo lập Selling DB trên môi trường phát triển, sơ đồ phân cấp menu, thiết kế giao diện ưu tiên ba nhóm chức năng, thư viện thành phần giao diện, môi trường phát triển và kiểm thử có quy trình triển khai tự động, đặc tả use case đợt đầu của ba phân hệ chức năng, thiết kế chi tiết đặt hàng",
+   "san_pham_demo": "Selling DB trên môi trường phát triển, sơ đồ phân cấp menu (Menu Layer), mẫu giao diện ưu tiên ba nhóm chức năng, khung ứng dụng triển khai tự động lên môi trường phát triển"
   },
   {
    "sprint": "S3",
-   "muc_tieu": "Đặc tả giao diện tích hợp sau khi nhận tài liệu Main System (CK1), thiết kế chi tiết và lập trình đợt đầu các chức năng tìm kiếm, thành viên, đặt hàng, kịch bản kiểm thử phân hệ, trình Chủ đầu tư xác nhận đặc tả và giao diện ưu tiên",
-   "san_pham_demo": "Tìm kiếm sản phẩm, đăng ký, đăng nhập và giỏ hàng trên môi trường phát triển"
+   "muc_tieu": "Hai bên xác nhận đặc tả yêu cầu và giao diện ưu tiên (M2), đặc tả giao diện tích hợp sau khi nhận tài liệu Main System (CK1) và thiết kế tích hợp, hoàn thành đặc tả use case và thiết kế chi tiết, chỉ mục tìm kiếm, lập trình đăng ký, đăng nhập, khôi phục mật khẩu, giỏ hàng, đặt hàng có phí vận chuyển và mã giảm giá, kịch bản kiểm thử phân hệ và kịch bản kiểm thử tích hợp",
+   "san_pham_demo": "Đăng ký, đăng nhập, khôi phục mật khẩu, giỏ hàng và đặt hàng có phí vận chuyển, mã giảm giá trên môi trường phát triển"
   },
   {
    "sprint": "S4",
-   "muc_tieu": "Hai bên xác nhận đặc tả và giao diện ưu tiên (M2), lập trình các chức năng còn lại của ba phân hệ, đồng bộ dữ liệu và chuyển đơn hàng với dịch vụ giả lập Main System, kiểm thử phân hệ theo từng nhóm chức năng",
-   "san_pham_demo": "Luồng đăng ký, tìm kiếm, đặt hàng có phí vận chuyển và mã giảm giá trên dữ liệu giả lập"
+   "muc_tieu": "Lập trình tìm kiếm, lọc và sắp xếp sản phẩm, giữ tồn kho, theo dõi đơn hàng, hủy đơn và đổi trả, dịch vụ giả lập Main System, đồng bộ tồn kho, chuyển đơn hàng và nhận trạng thái vận chuyển theo đặc tả giao diện tích hợp đã lập, Chủ đầu tư xác nhận đặc tả giao diện tích hợp, kế hoạch kiểm thử hệ thống, kiểm thử bảo mật tài khoản và kiểm thử đặt hàng, phí vận chuyển, khuyến mại",
+   "san_pham_demo": "Tìm kiếm, lọc và sắp xếp sản phẩm, theo dõi và hủy đơn hàng trên môi trường phát triển, chuyển đơn hàng và nhận trạng thái vận chuyển trên dịch vụ giả lập Main System"
   },
   {
    "sprint": "S5",
-   "muc_tieu": "Kiểm thử tích hợp trên môi trường thử của Main System (CK2), hoàn thành kiểm thử và sửa lỗi phân hệ, môi trường vận hành, kịch bản kiểm thử hệ thống và kiểm thử chấp nhận",
-   "san_pham_demo": "Luồng đặt hàng đầu cuối có chuyển đơn hàng sang Main System thử và nhận trạng thái vận chuyển"
+   "muc_tieu": "Lập trình danh mục, chi tiết sản phẩm, trang chủ, bộ nhớ đệm, trang thành viên, sổ địa chỉ và đồng ý điều khoản, đồng bộ danh mục sản phẩm và giá, chuyển đơn hàng và nhận trạng thái vận chuyển, công cụ chuyển đổi dữ liệu, kiểm thử tích hợp trên môi trường thử của Main System (CK2, CK8), kiểm thử tìm kiếm, đăng ký, đăng nhập, thông tin thành viên, giỏ hàng và luồng đặt hàng, kế hoạch kiểm thử hệ thống, môi trường vận hành (CK7), khảo sát bán hàng trên sàn thương mại điện tử (CR01)",
+   "san_pham_demo": "Trang chủ, danh mục, chi tiết sản phẩm, trang thành viên và luồng đặt hàng có trao đổi dữ liệu với Main System trên môi trường thử",
+   "nguon": "Agent Lập mốc cập nhật theo lịch lập lại sau CR01 (phụ lục 01/2027/PL-ABCW, cut over 29/07/2027)"
   },
   {
    "sprint": "S6",
-   "muc_tieu": "Kiểm thử hệ thống (chức năng đầu cuối, hiệu năng, bảo mật, khả năng sử dụng) và khắc phục lỗi (M4), Chủ đầu tư kiểm tra chức năng chính (M3), hướng dẫn vận hành, chuyển đổi thử dữ liệu (CK3)",
-   "san_pham_demo": "Bản phát hành ứng viên cho kiểm thử chấp nhận, báo cáo kiểm thử hệ thống"
+   "muc_tieu": "Kiểm thử trang chủ, danh mục, chi tiết sản phẩm, tương thích trình duyệt và thiết bị, kiểm thử hiệu năng, kiểm thử theo dõi đơn hàng và đổi trả, kiểm thử khả năng sử dụng và rà soát lỗ hổng bảo mật, sửa lỗi tích hợp, kịch bản kiểm thử hệ thống đầu cuối, hướng dẫn vận hành, tài liệu hướng dẫn sử dụng, giám sát và sao lưu tự động, chuyển đổi thử dữ liệu (CK3), cùng với đặc tả, thiết kế tích hợp, kết nối sàn, đồng bộ tồn kho, nhận đơn hàng từ sàn và kịch bản kiểm thử bán hàng trên sàn (CR01)",
+   "san_pham_demo": "Bản phát hành đã sửa lỗi kiểm thử phân hệ, báo cáo kiểm thử hiệu năng, kết nối sàn và nhận đơn hàng từ sàn trên môi trường thử",
+   "nguon": "Agent Lập mốc cập nhật theo lịch lập lại sau CR01 (phụ lục 01/2027/PL-ABCW, cut over 29/07/2027)"
   },
   {
    "sprint": "S7",
-   "muc_tieu": "Kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư (M5), khắc phục lỗi trong khoảng kiểm thử chấp nhận, kiểm thử hiệu năng và an toàn bản phát hành trên môi trường vận hành, diễn tập triển khai, chuyển đổi dữ liệu chính thức, cut over 01/07/2027 (M6), bàn giao (M7)",
-   "san_pham_demo": "Hệ thống trên môi trường vận hành, biên bản kiểm thử chấp nhận và biên bản bàn giao"
+   "muc_tieu": "Kiểm thử chức năng đầu cuối, sửa lỗi và kiểm thử lại các phân hệ, kịch bản kiểm thử chấp nhận, kế hoạch cut over, diễn tập chuyển đổi dự phòng, nạp nội dung sản phẩm (CK4), cùng với xác nhận đặc tả bán hàng trên sàn, đồng bộ sản phẩm và giá, cập nhật trạng thái, đối soát, giao diện quản trị kênh sàn, tài liệu và buổi hướng dẫn sử dụng bán hàng trên sàn, kiểm thử tích hợp với sàn và bắt đầu kiểm thử hệ thống luồng bán hàng trên sàn (CR01)",
+   "san_pham_demo": "Báo cáo kiểm thử chức năng đầu cuối, luồng bán hàng trên sàn đầy đủ trên môi trường thử, tài liệu hướng dẫn sử dụng bán hàng trên sàn",
+   "nguon": "Agent Lập mốc cập nhật theo lịch lập lại sau CR01 (phụ lục 01/2027/PL-ABCW, cut over 29/07/2027), sửa sau kiểm tra lớp B phần 1 theo ngày của 5.5.2, 5.4.5 và M9"
+  },
+  {
+   "sprint": "S8",
+   "muc_tieu": "Khắc phục lỗi sau kiểm thử hệ thống (M4), Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System (M3), diễn tập triển khai, giám sát vận hành, cùng với hoàn thành kiểm thử hệ thống, khắc phục lỗi và kiểm thử lại phần bán hàng trên sàn, bàn giao mã nguồn phần sàn và cấu hình kết nối sàn trên môi trường vận hành (CR01)",
+   "san_pham_demo": "Bản phát hành sẵn sàng kiểm thử chấp nhận gồm phần bán hàng trên sàn, biên bản kiểm tra chức năng chính (M3), kết nối sàn trên môi trường vận hành",
+   "nguon": "Agent Lập mốc cập nhật theo lịch lập lại sau CR01 (phụ lục 01/2027/PL-ABCW, cut over 29/07/2027), sửa sau kiểm tra lớp B phần 1 theo ngày của 5.5.2, 5.4.5 và M9"
+  },
+  {
+   "sprint": "S9",
+   "muc_tieu": "Kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư (M5), kiểm thử chấp nhận phần bán hàng trên sàn cùng Chủ đầu tư và nghiệm thu phần sàn (M9), khắc phục lỗi trong khoảng kiểm thử chấp nhận, kiểm thử hiệu năng và an toàn trên môi trường vận hành, chuyển đổi dữ liệu chính thức, cut over 29/07/2027 (M6), bàn giao mã nguồn và hệ thống (M7)",
+   "san_pham_demo": "Hệ thống gồm phần bán hàng trên sàn trên môi trường vận hành, biên bản nghiệm thu phần bán hàng trên sàn (M9), biên bản kiểm thử chấp nhận và biên bản bàn giao",
+   "nguon": "Agent Lập mốc cập nhật theo lịch lập lại sau CR01 (phụ lục 01/2027/PL-ABCW, cut over 29/07/2027), sửa sau kiểm tra lớp B phần 1 theo ngày của 5.5.2, 5.4.5 và M9"
   }
- ]
+ ],
+ "lap_lai_tu": {
+  "ngay": "2027-05-21",
+  "lich_goc": "lam_viec/thay_doi/CR01/lich_truoc_cr.json",
+  "ma_cr": "CR01"
+ }
 }

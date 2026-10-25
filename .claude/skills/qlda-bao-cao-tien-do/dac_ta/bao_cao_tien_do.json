@@ -37,32 +37,32 @@
      ],
      [
       "Thời gian đã qua",
-      "{td#so_ngay_da_qua}/{td#so_ngay_lam_viec} ngày làm việc ({td#ty_le_thoi_gian|pt})",
+      "{td#so_ngay_da_qua}/{td#so_ngay_lam_viec} ngày làm việc ({td#ty_le_thoi_gian|pt1})",
       ""
      ],
      [
       "Khối lượng hoàn thành (EV/BAC)",
-      "{td#EV_md|md}/{td#BAC_md|md} MD ({td#ty_le_hoan_thanh|pt})",
+      "{td#EV_md|md2}/{td#BAC_md|md2} MD ({td#ty_le_hoan_thanh|pt1})",
       ""
      ],
      [
       "Chỉ số tiến độ SPI",
-      "{td#spi|so2}",
+      "{td#spi_hien_thi}",
       "{td#trang_thai_spi}"
      ],
      [
       "Chỉ số chi phí CPI theo công",
-      "{td#cpi|so2}",
+      "{td#cpi_hien_thi}",
       "{td#trang_thai_cpi}"
      ],
      [
       "Chỉ số chi phí CPI theo chi phí thực",
-      "{td#cpi_thuc|so2}",
+      "{td#cpi_thuc_hien_thi}",
       "{td#trang_thai_cpi_thuc}"
      ],
      [
       "Sử dụng quỹ huy động",
-      "{td#AC_md|md}/{td#md_huy_dong|md} MD ({td#ty_le_su_dung_quy|pt})",
+      "{td#AC_md|md2}/{td#md_huy_dong|md2} MD ({td#ty_le_su_dung_quy|pt1})",
       ""
      ],
      [
@@ -95,9 +95,9 @@
     "td"
    ],
    "bat_buoc": [
-    "{td#spi|so2}",
-    "{td#cpi|so2}",
-    "{td#cpi_thuc|so2}"
+    "{td#spi_hien_thi}",
+    "{td#cpi_hien_thi}",
+    "{td#cpi_thuc_hien_thi}"
    ]
   },
   {
@@ -113,47 +113,47 @@
      ],
      [
       "BAC",
-      "{td#BAC_md|md}",
+      "{td#BAC_md|md2}",
       "{td#BAC|tien}"
      ],
      [
       "PV",
-      "{td#PV_md|md}",
+      "{td#PV_md|md2}",
       "{td#PV|tien}"
      ],
      [
       "EV",
-      "{td#EV_md|md}",
+      "{td#EV_md|md2}",
       "{td#EV|tien}"
      ],
      [
       "AC theo công",
-      "{td#AC_md|md}",
+      "{td#AC_md|md2}",
       "{td#AC|tien}"
      ],
      [
       "SV = EV - PV",
-      "{td#SV_md|md}",
+      "{td#SV_md|md2}",
       "{td#SV|tien}"
      ],
      [
       "CV = EV - AC",
-      "{td#CV_md|md}",
+      "{td#CV_md|md2}",
       "{td#CV|tien}"
      ],
      [
       "EAC",
-      "{td#EAC_md|md}",
+      "{td#EAC_md|md2}",
       "{td#EAC|tien}"
      ],
      [
       "ETC",
-      "{td#ETC_md|md}",
+      "{td#ETC_md|md2}",
       ""
      ],
      [
       "VAC",
-      "{td#VAC_md|md}",
+      "{td#VAC_md|md2}",
       ""
      ],
      [
@@ -205,7 +205,7 @@
      ],
      [
       "CPI theo chi phí thực = EV nhân sự / AC nhân sự",
-      "{td#cpi_thuc|so2} ({td#trang_thai_cpi_thuc})"
+      "{td#cpi_thuc_hien_thi} ({td#trang_thai_cpi_thuc})"
      ],
      [
       "Chi phí khác đã chi, dự toán B + D",
@@ -233,7 +233,7 @@
      ],
      [
       "MD ghi công, MD sẵn sàng không ghi công",
-      "{td#AC_md|md}, {td#md_san_sang|md} ({td#ty_le_su_dung_quy|pt} quỹ huy động có ghi công)"
+      "{td#AC_md|md2}, {td#md_san_sang|md2} ({td#ty_le_su_dung_quy|pt1} quỹ huy động có ghi công)"
      ]
     ],
     "widths": [
@@ -246,11 +246,11 @@
    }
   },
   {
-   "doan": "Cách trả lương do nhóm khai báo: {td#cach_tra_luong_ten}. EV nhân sự và AC nhân sự cùng cơ sở lương với cost estimate (lương tham chiếu tháng chia {dg#ngay_lam_viec_moi_thang} ngày, nhân hệ số bảo hiểm {dg#he_so_bao_hiem|so3}). Khi thực hiện đúng kế hoạch, EV nhân sự bằng lương kế hoạch đến ngày báo cáo và CPI theo chi phí thực bằng 1. Chi phí khác chưa có kế hoạch chi theo thời gian nên so với dự toán, không tính vào CPI theo chi phí thực. Đến ngày báo cáo đã huy động {td#md_huy_dong|md} MD, lương của toàn bộ ngày huy động cả dự án là {td#chi_phi_huy_dong_ca_du_an|tien} đồng. {td#ghi_chu_san_sang}"
+   "doan": "Cách trả lương do nhóm khai báo: {td#cach_tra_luong_ten}. EV nhân sự và AC nhân sự cùng cơ sở lương với cost estimate (lương tham chiếu tháng chia {dg#ngay_lam_viec_moi_thang} ngày, nhân hệ số bảo hiểm {dg#he_so_bao_hiem|so3}). Khi thực hiện đúng kế hoạch, EV nhân sự bằng lương kế hoạch đến ngày báo cáo và CPI theo chi phí thực bằng 1. Chi phí khác chưa có kế hoạch chi theo thời gian nên so với dự toán, không tính vào CPI theo chi phí thực. Đến ngày báo cáo đã huy động {td#md_huy_dong|md2} MD, lương của toàn bộ ngày huy động cả dự án là {td#chi_phi_huy_dong_ca_du_an|tien} đồng. {td#ghi_chu_san_sang}"
   },
   {
    "bang": {
-    "nguon": "ls#ky",
+    "nguon": "td#lich_su_den_ky",
     "cot": [
      [
       "Kỳ",
@@ -266,37 +266,37 @@
      ],
      [
       "PV, MD",
-      "PV_md|md",
+      "PV_md|md2",
       1100,
       "r"
      ],
      [
       "EV, MD",
-      "EV_md|md",
+      "EV_md|md2",
       1100,
       "r"
      ],
      [
       "AC, MD",
-      "AC_md|md",
+      "AC_md|md2",
       1100,
       "r"
      ],
      [
       "SPI",
-      "spi|so2",
+      "spi_hien_thi",
       800,
       "r"
      ],
      [
       "CPI",
-      "cpi|so2",
+      "cpi_hien_thi",
       800,
       "r"
      ],
      [
       "CPI thực",
-      "cpi_thuc|so2",
+      "cpi_thuc_hien_thi",
       1000,
       "r"
      ],
@@ -373,13 +373,13 @@
      ],
      [
       "Kế hoạch",
-      "ke_hoach|pt",
+      "ke_hoach|pt1",
       1000,
       "r"
      ],
      [
       "Thực tế",
-      "thuc_te|pt",
+      "thuc_te|pt1",
       1000,
       "r"
      ],
@@ -422,31 +422,31 @@
      ],
      [
       "Kế hoạch đến nay, MD",
-      "ke_hoach|md",
+      "ke_hoach|md2",
       1300,
       "r"
      ],
      [
       "Thực tế, MD",
-      "thuc_te|md",
+      "thuc_te|md2",
       1300,
       "r"
      ],
      [
       "Chênh lệch, MD",
-      "chenh_lech|md",
+      "chenh_lech|md2",
       1300,
       "r"
      ],
      [
       "Huy động, MD",
-      "huy_dong|md",
+      "huy_dong|md2",
       1400,
       "r"
      ],
      [
       "Sẵn sàng không ghi công, MD",
-      "san_sang|md",
+      "san_sang|md2",
       1500,
       "r"
      ]
@@ -462,6 +462,9 @@
      ]
     }
    }
+  },
+  {
+   "doan": "Cột Kế hoạch đến nay của bảng trên lấy theo phân bổ MD của từng thành viên trong từng sprint của master schedule, tính tỷ lệ theo số ngày đã qua của sprint hiện hành, còn PV ở mục 1, mục 2 tính theo tỷ lệ thời gian đã qua của từng gói công việc, nên hai tổng có thể lệch nhỏ."
   },
   {
    "h1": "5. Vấn đề, rủi ro và thay đổi"
@@ -689,7 +692,7 @@
      ],
      [
       "MD",
-      "md_tang|md",
+      "md_tang|md2",
       700,
       "r"
      ],
@@ -741,7 +744,7 @@
    },
    {
     "mo_ta": "EV",
-    "bt": "{td#EV_md|md}"
+    "bt": "{td#EV_md|md2}"
    },
    {
     "mo_ta": "CPI theo chi phí thực",

@@ -1,0 +1,2648 @@
+{
+ "ngay_cap_nhat": "2026-10-25",
+ "cut_over": "2027-07-29",
+ "ban_phat_hanh": [
+  {
+   "ma": "R1",
+   "sprint": "S1",
+   "ngay": "2027-03-31",
+   "tu_ngay": "2027-03-18",
+   "loai": "Trình diễn cuối sprint",
+   "chinh_thuc": false,
+   "nguon": "thuc_te",
+   "muc_tieu": "Khảo sát nghiệp vụ và hệ thống hiện có, đặc tả chức năng ba phân hệ chức năng, nghiên cứu hành vi người dùng, kiến trúc hệ thống, khung ứng dụng phía máy chủ và giao diện, dịch vụ gửi thư điện tử",
+   "san_pham_demo": "Báo cáo khảo sát, đặc tả chức năng ba phân hệ chức năng, kiến trúc hệ thống và khung ứng dụng phía máy chủ, giao diện",
+   "goi": [
+    "1.2.1",
+    "2.2.1",
+    "2.2.3",
+    "3.2.1",
+    "3.2.2",
+    "4.2.1",
+    "4.2.2",
+    "4.3.1",
+    "4.3.3",
+    "4.3.4"
+   ],
+   "so_goi": 10,
+   "md": 44.0,
+   "goi_ke_hoach": [
+    "1.2.1",
+    "2.2.1",
+    "2.2.3",
+    "3.2.1",
+    "3.2.2",
+    "4.2.1",
+    "4.2.2",
+    "4.3.1",
+    "4.3.3",
+    "4.3.4"
+   ],
+   "goi_chua_xong_theo_ke_hoach": [],
+   "so_goi_tich_luy": 10,
+   "tong_goi_san_pham": 135,
+   "hang_muc_01a": [
+    {
+     "stt": 1,
+     "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "so_goi_trong_ban": 6,
+     "so_goi_xong": 6,
+     "tong_goi": 9,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 4,
+     "danh_muc": "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 1,
+     "tong_goi": 6,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 5,
+     "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 2,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 6,
+     "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 3,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 7,
+     "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 3,
+     "tong_goi": 32,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 8,
+     "danh_muc": "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 1,
+     "tong_goi": 4,
+     "hoan_thanh": false
+    }
+   ],
+   "yeu_cau_rfp": [
+    {
+     "ma": "R02",
+     "yeu_cau": "Mục tiêu dự án: mở rộng khách hàng qua internet, tạo kênh bán hàng mới",
+     "goi": [
+      "3.2.1"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R03",
+     "yeu_cau": "Chính sách phát triển: khách hàng thao tác dễ dàng",
+     "goi": [
+      "2.2.3",
+      "4.3.3"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R04",
+     "yeu_cau": "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+     "goi": [
+      "4.2.2",
+      "4.3.1"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R05",
+     "yeu_cau": "Thời gian phản hồi nhanh, không quá 2 giây",
+     "goi": [
+      "4.2.2"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R06",
+     "yeu_cau": "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+     "goi": [
+      "1.2.1"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R07",
+     "yeu_cau": "Hệ thống mới có chức năng quản lý thành viên",
+     "goi": [
+      "2.2.1",
+      "4.3.4"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R08",
+     "yeu_cau": "Hệ thống mới có chức năng đặt hàng",
+     "goi": [
+      "3.2.2",
+      "4.3.4"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R10",
+     "yeu_cau": "Selling DB trao đổi dữ liệu với hệ thống chính hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch",
+     "goi": [
+      "4.2.1"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R11",
+     "yeu_cau": "Nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng",
+     "goi": [
+      "3.2.2",
+      "4.2.1"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R13",
+     "yeu_cau": "Phạm vi: xây dựng hệ thống website bán hàng từ phân tích hệ thống đến kiểm thử vận hành",
+     "goi": [
+      "3.2.1",
+      "4.3.1"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R44",
+     "yeu_cau": "Sản phẩm: đặc tả hệ thống gồm cấu hình cơ sở dữ liệu và chức năng",
+     "goi": [
+      "1.2.1",
+      "2.2.1",
+      "3.2.2"
+     ],
+     "hoan_thanh": false
+    }
+   ],
+   "loi_da_sua": [
+    {
+     "ma": "L01",
+     "muc_do": "Trung bình",
+     "ma_goi": "4.3.1",
+     "mo_ta": "Lỗi cấu hình ghi nhật ký tập trung và xử lý ngoại lệ của khung ứng dụng phía máy chủ phát hiện khi chạy kiểm thử đơn vị trên quy trình tích hợp"
+    }
+   ],
+   "loi_con_mo": [
+    {
+     "ma": "L02",
+     "muc_do": "Thấp",
+     "ma_goi": "4.3.1",
+     "mo_ta": "Lỗi cấu hình ghi nhật ký tập trung và xử lý ngoại lệ của khung ứng dụng phía máy chủ phát hiện khi chạy kiểm thử đơn vị trên quy trình tích hợp"
+    }
+   ],
+   "so_loi_da_sua": 1,
+   "so_loi_con_mo": 1,
+   "loi_con_mo_theo_muc_do": {
+    "Thấp": 1
+   },
+   "cr_dua_vao": [],
+   "cr_phe_duyet_trong_ky": [],
+   "ghi_chu_nhom": "Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S1.",
+   "ghi_chu": "Bản R1 phát hành ngày 31/03/2027, cuối sprint S1, loại trình diễn cuối sprint. Gồm 10 gói hoàn thành trong sprint (theo số liệu thực tế mô phỏng), phủ 6 hạng mục Mẫu 01A và 11 yêu cầu RFP, sửa 1 lỗi, còn mở 1 lỗi. Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S1.",
+   "lap_luc": "2026-10-25 12:55:06"
+  },
+  {
+   "ma": "R2",
+   "sprint": "S2",
+   "ngay": "2027-04-14",
+   "tu_ngay": "2027-04-01",
+   "loai": "Trình diễn cuối sprint",
+   "chinh_thuc": false,
+   "nguon": "thuc_te",
+   "muc_tieu": "Cấu trúc, cấu hình Selling DB và tạo lập Selling DB trên môi trường phát triển, sơ đồ phân cấp menu, thiết kế giao diện ưu tiên ba nhóm chức năng, thư viện thành phần giao diện, môi trường phát triển và kiểm thử có quy trình triển khai tự động, đặc tả use case đợt đầu của ba phân hệ chức năng, thiết kế chi tiết đặt hàng",
+   "san_pham_demo": "Selling DB trên môi trường phát triển, sơ đồ phân cấp menu (Menu Layer), mẫu giao diện ưu tiên ba nhóm chức năng, khung ứng dụng triển khai tự động lên môi trường phát triển",
+   "goi": [
+    "1.2.2",
+    "1.2.3",
+    "1.2.4",
+    "1.2.5",
+    "1.5.1",
+    "2.2.4",
+    "2.2.5",
+    "3.2.4",
+    "3.2.7",
+    "3.2.10",
+    "4.2.3",
+    "4.2.4",
+    "4.3.2"
+   ],
+   "so_goi": 13,
+   "md": 56.0,
+   "goi_ke_hoach": [
+    "1.2.2",
+    "1.2.3",
+    "1.2.4",
+    "1.2.5",
+    "1.5.1",
+    "2.2.4",
+    "2.2.5",
+    "3.2.4",
+    "3.2.7",
+    "3.2.10",
+    "4.2.3",
+    "4.2.4",
+    "4.3.2"
+   ],
+   "goi_chua_xong_theo_ke_hoach": [],
+   "so_goi_tich_luy": 23,
+   "tong_goi_san_pham": 135,
+   "hang_muc_01a": [
+    {
+     "stt": 1,
+     "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 7,
+     "tong_goi": 9,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 3,
+     "danh_muc": "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 1,
+     "tong_goi": 2,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 4,
+     "danh_muc": "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+     "so_goi_trong_ban": 4,
+     "so_goi_xong": 5,
+     "tong_goi": 6,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 5,
+     "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 5,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 6,
+     "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 6,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 7,
+     "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+     "so_goi_trong_ban": 4,
+     "so_goi_xong": 7,
+     "tong_goi": 32,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 8,
+     "danh_muc": "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 3,
+     "tong_goi": 4,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 9,
+     "danh_muc": "Tích hợp với hệ thống chính (Main System)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 1,
+     "tong_goi": 14,
+     "hoan_thanh": false
+    }
+   ],
+   "yeu_cau_rfp": [
+    {
+     "ma": "R03",
+     "yeu_cau": "Chính sách phát triển: khách hàng thao tác dễ dàng",
+     "goi": [
+      "1.2.3",
+      "1.2.4",
+      "2.2.4",
+      "3.2.4"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R04",
+     "yeu_cau": "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+     "goi": [
+      "1.5.1",
+      "4.2.4"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R06",
+     "yeu_cau": "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+     "goi": [
+      "1.2.3",
+      "1.2.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R07",
+     "yeu_cau": "Hệ thống mới có chức năng quản lý thành viên",
+     "goi": [
+      "2.2.4",
+      "2.2.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R08",
+     "yeu_cau": "Hệ thống mới có chức năng đặt hàng",
+     "goi": [
+      "3.2.4",
+      "3.2.7",
+      "3.2.10"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R09",
+     "yeu_cau": "Hệ thống mới có cơ sở dữ liệu bán hàng Selling DB",
+     "goi": [
+      "4.2.3",
+      "4.3.2"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R13",
+     "yeu_cau": "Phạm vi: xây dựng hệ thống website bán hàng từ phân tích hệ thống đến kiểm thử vận hành",
+     "goi": [
+      "1.5.1"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R44",
+     "yeu_cau": "Sản phẩm: đặc tả hệ thống gồm cấu hình cơ sở dữ liệu và chức năng",
+     "goi": [
+      "4.2.4"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R47",
+     "yeu_cau": "Sản phẩm: cấu trúc cơ sở dữ liệu Selling DB",
+     "goi": [
+      "4.2.3",
+      "4.3.2"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R48",
+     "yeu_cau": "Sản phẩm: sơ đồ phân cấp menu",
+     "goi": [
+      "1.2.2"
+     ],
+     "hoan_thanh": false
+    }
+   ],
+   "loi_da_sua": [
+    {
+     "ma": "L02",
+     "muc_do": "Thấp",
+     "ma_goi": "4.3.1",
+     "mo_ta": "Lỗi cấu hình ghi nhật ký tập trung và xử lý ngoại lệ của khung ứng dụng phía máy chủ phát hiện khi chạy kiểm thử đơn vị trên quy trình tích hợp"
+    }
+   ],
+   "loi_con_mo": [
+    {
+     "ma": "L03",
+     "muc_do": "Trung bình",
+     "ma_goi": "4.3.2",
+     "mo_ta": "Lỗi ràng buộc khóa ngoại và chỉ mục của bảng tồn kho phát hiện khi chạy kiểm thử tầng truy cập dữ liệu"
+    },
+    {
+     "ma": "L04",
+     "muc_do": "Thấp",
+     "ma_goi": "4.3.2",
+     "mo_ta": "Lỗi ràng buộc khóa ngoại và chỉ mục của bảng tồn kho phát hiện khi chạy kiểm thử tầng truy cập dữ liệu"
+    }
+   ],
+   "so_loi_da_sua": 1,
+   "so_loi_con_mo": 2,
+   "loi_con_mo_theo_muc_do": {
+    "Trung bình": 1,
+    "Thấp": 1
+   },
+   "cr_dua_vao": [],
+   "cr_phe_duyet_trong_ky": [],
+   "ghi_chu_nhom": "Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S2.",
+   "ghi_chu": "Bản R2 phát hành ngày 14/04/2027, cuối sprint S2, loại trình diễn cuối sprint. Gồm 13 gói hoàn thành trong sprint (theo số liệu thực tế mô phỏng), phủ 8 hạng mục Mẫu 01A và 10 yêu cầu RFP, sửa 1 lỗi, còn mở 2 lỗi. Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S2.",
+   "lap_luc": "2026-10-25 12:58:12"
+  },
+  {
+   "ma": "R3",
+   "sprint": "S3",
+   "ngay": "2027-05-06",
+   "tu_ngay": "2027-04-15",
+   "loai": "Trình diễn cuối sprint",
+   "chinh_thuc": false,
+   "nguon": "thuc_te",
+   "muc_tieu": "Hai bên xác nhận đặc tả yêu cầu và giao diện ưu tiên (M2), đặc tả giao diện tích hợp sau khi nhận tài liệu Main System (CK1) và thiết kế tích hợp, hoàn thành đặc tả use case và thiết kế chi tiết, chỉ mục tìm kiếm, lập trình đăng ký, đăng nhập, khôi phục mật khẩu, giỏ hàng, đặt hàng có phí vận chuyển và mã giảm giá, kịch bản kiểm thử phân hệ và kịch bản kiểm thử tích hợp",
+   "san_pham_demo": "Đăng ký, đăng nhập, khôi phục mật khẩu, giỏ hàng và đặt hàng có phí vận chuyển, mã giảm giá trên môi trường phát triển",
+   "goi": [
+    "1.2.6",
+    "1.2.7",
+    "1.3.1",
+    "2.2.2",
+    "2.2.6",
+    "2.2.7",
+    "2.2.8",
+    "2.3.1",
+    "2.3.2",
+    "2.3.3",
+    "2.3.6",
+    "2.4.1",
+    "3.2.3",
+    "3.2.5",
+    "3.2.6",
+    "3.2.8",
+    "3.2.9",
+    "3.2.11",
+    "3.3.3",
+    "3.3.4",
+    "3.3.5",
+    "3.3.9",
+    "3.4.1",
+    "4.2.5"
+   ],
+   "so_goi": 24,
+   "md": 109.0,
+   "goi_ke_hoach": [
+    "1.2.6",
+    "1.2.7",
+    "1.3.1",
+    "2.2.2",
+    "2.2.6",
+    "2.2.7",
+    "2.2.8",
+    "2.3.1",
+    "2.3.2",
+    "2.3.3",
+    "2.3.6",
+    "2.4.1",
+    "3.2.3",
+    "3.2.5",
+    "3.2.6",
+    "3.2.8",
+    "3.2.9",
+    "3.2.11",
+    "3.3.1",
+    "3.3.3",
+    "3.3.4",
+    "3.3.5",
+    "3.3.8",
+    "3.3.9",
+    "3.4.1",
+    "4.2.5",
+    "4.2.7",
+    "4.4.2"
+   ],
+   "goi_chua_xong_theo_ke_hoach": [
+    "3.3.1",
+    "3.3.8",
+    "4.2.7",
+    "4.4.2"
+   ],
+   "so_goi_tich_luy": 47,
+   "tong_goi_san_pham": 135,
+   "hang_muc_01a": [
+    {
+     "stt": 1,
+     "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 9,
+     "tong_goi": 9,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 2,
+     "danh_muc": "Thiết kế quy trình vận hành mới (New Operational Flow)",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 2,
+     "tong_goi": 2,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 3,
+     "danh_muc": "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 2,
+     "tong_goi": 2,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 4,
+     "danh_muc": "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 6,
+     "tong_goi": 6,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 5,
+     "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 8,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 6,
+     "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "so_goi_trong_ban": 8,
+     "so_goi_xong": 14,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 7,
+     "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+     "so_goi_trong_ban": 9,
+     "so_goi_xong": 16,
+     "tong_goi": 32,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 9,
+     "danh_muc": "Tích hợp với hệ thống chính (Main System)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 2,
+     "tong_goi": 14,
+     "hoan_thanh": false
+    }
+   ],
+   "yeu_cau_rfp": [
+    {
+     "ma": "R03",
+     "yeu_cau": "Chính sách phát triển: khách hàng thao tác dễ dàng",
+     "goi": [
+      "2.2.2",
+      "2.3.6",
+      "3.3.9"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R04",
+     "yeu_cau": "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+     "goi": [
+      "2.2.2"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R05",
+     "yeu_cau": "Thời gian phản hồi nhanh, không quá 2 giây",
+     "goi": [
+      "1.2.7",
+      "1.3.1",
+      "2.2.2"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R06",
+     "yeu_cau": "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+     "goi": [
+      "1.2.6",
+      "1.2.7",
+      "1.3.1"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R07",
+     "yeu_cau": "Hệ thống mới có chức năng quản lý thành viên",
+     "goi": [
+      "2.2.6",
+      "2.2.7",
+      "2.2.8",
+      "2.3.1",
+      "2.3.2",
+      "2.3.3",
+      "2.3.6",
+      "2.4.1"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R08",
+     "yeu_cau": "Hệ thống mới có chức năng đặt hàng",
+     "goi": [
+      "3.2.6",
+      "3.2.8",
+      "3.2.9",
+      "3.2.11",
+      "3.3.3",
+      "3.3.4",
+      "3.3.5",
+      "3.3.9",
+      "3.4.1"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R10",
+     "yeu_cau": "Selling DB trao đổi dữ liệu với hệ thống chính hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch",
+     "goi": [
+      "4.2.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R11",
+     "yeu_cau": "Nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng",
+     "goi": [
+      "2.2.6",
+      "3.2.3",
+      "3.2.8",
+      "4.2.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R35",
+     "yeu_cau": "Mỗi bên được đề xuất thay đổi đặc tả khi cần",
+     "goi": [
+      "3.2.5"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R44",
+     "yeu_cau": "Sản phẩm: đặc tả hệ thống gồm cấu hình cơ sở dữ liệu và chức năng",
+     "goi": [
+      "3.2.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R46",
+     "yeu_cau": "Sản phẩm: quy trình vận hành mới",
+     "goi": [
+      "3.2.3",
+      "3.2.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R47",
+     "yeu_cau": "Sản phẩm: cấu trúc cơ sở dữ liệu Selling DB",
+     "goi": [
+      "3.2.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R48",
+     "yeu_cau": "Sản phẩm: sơ đồ phân cấp menu",
+     "goi": [
+      "1.2.6",
+      "3.2.5"
+     ],
+     "hoan_thanh": false
+    }
+   ],
+   "loi_da_sua": [
+    {
+     "ma": "L03",
+     "muc_do": "Trung bình",
+     "ma_goi": "4.3.2",
+     "mo_ta": "Lỗi ràng buộc khóa ngoại và chỉ mục của bảng tồn kho phát hiện khi chạy kiểm thử tầng truy cập dữ liệu"
+    },
+    {
+     "ma": "L04",
+     "muc_do": "Thấp",
+     "ma_goi": "4.3.2",
+     "mo_ta": "Lỗi ràng buộc khóa ngoại và chỉ mục của bảng tồn kho phát hiện khi chạy kiểm thử tầng truy cập dữ liệu"
+    },
+    {
+     "ma": "L05",
+     "muc_do": "Cao",
+     "ma_goi": "3.3.5",
+     "mo_ta": "Lỗi tạo trùng đơn hàng khi người dùng gửi xác nhận hai lần và lỗi nội dung thư điện tử xác nhận đơn hàng"
+    },
+    {
+     "ma": "L06",
+     "muc_do": "Trung bình",
+     "ma_goi": "3.3.5",
+     "mo_ta": "Lỗi tạo trùng đơn hàng khi người dùng gửi xác nhận hai lần và lỗi nội dung thư điện tử xác nhận đơn hàng"
+    }
+   ],
+   "loi_con_mo": [
+    {
+     "ma": "L07",
+     "muc_do": "Trung bình",
+     "ma_goi": "2.3.2",
+     "mo_ta": "Lỗi đếm số lần đăng nhập sai không đặt lại sau khi đăng nhập thành công và lỗi thông báo hết phiên làm việc"
+    },
+    {
+     "ma": "L08",
+     "muc_do": "Thấp",
+     "ma_goi": "2.3.2",
+     "mo_ta": "Lỗi đếm số lần đăng nhập sai không đặt lại sau khi đăng nhập thành công và lỗi thông báo hết phiên làm việc"
+    },
+    {
+     "ma": "L09",
+     "muc_do": "Thấp",
+     "ma_goi": "3.3.4",
+     "mo_ta": "Lỗi làm tròn giá trị giảm giá theo phần trăm"
+    }
+   ],
+   "so_loi_da_sua": 4,
+   "so_loi_con_mo": 3,
+   "loi_con_mo_theo_muc_do": {
+    "Trung bình": 1,
+    "Thấp": 2
+   },
+   "cr_dua_vao": [],
+   "cr_phe_duyet_trong_ky": [],
+   "ghi_chu_nhom": "Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S3.",
+   "ghi_chu": "Bản R3 phát hành ngày 06/05/2027, cuối sprint S3, loại trình diễn cuối sprint. Gồm 24 gói hoàn thành trong sprint (theo số liệu thực tế mô phỏng), phủ 8 hạng mục Mẫu 01A và 13 yêu cầu RFP, sửa 4 lỗi, còn mở 3 lỗi. Có 4 gói theo kế hoạch đến hạn trước ngày phát hành nhưng chưa hoàn thành. Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S3.",
+   "lap_luc": "2026-10-25 13:02:29"
+  },
+  {
+   "ma": "R4",
+   "sprint": "S4",
+   "ngay": "2027-05-20",
+   "tu_ngay": "2027-05-07",
+   "loai": "Trình diễn cuối sprint",
+   "chinh_thuc": false,
+   "nguon": "thuc_te",
+   "muc_tieu": "Lập trình tìm kiếm, lọc và sắp xếp sản phẩm, giữ tồn kho, theo dõi đơn hàng, hủy đơn và đổi trả, dịch vụ giả lập Main System, đồng bộ tồn kho, chuyển đơn hàng và nhận trạng thái vận chuyển theo đặc tả giao diện tích hợp đã lập, Chủ đầu tư xác nhận đặc tả giao diện tích hợp, kế hoạch kiểm thử hệ thống, kiểm thử bảo mật tài khoản và kiểm thử đặt hàng, phí vận chuyển, khuyến mại",
+   "san_pham_demo": "Tìm kiếm, lọc và sắp xếp sản phẩm, theo dõi và hủy đơn hàng trên môi trường phát triển, chuyển đơn hàng và nhận trạng thái vận chuyển trên dịch vụ giả lập Main System",
+   "goi": [
+    "1.2.8",
+    "1.3.2",
+    "1.3.3",
+    "1.3.6",
+    "1.4.1",
+    "2.4.5",
+    "3.3.1",
+    "3.3.2",
+    "3.3.6",
+    "3.3.7",
+    "3.3.8",
+    "3.3.10",
+    "3.4.3",
+    "4.2.6",
+    "4.2.7",
+    "4.3.6",
+    "4.3.9",
+    "4.4.1",
+    "4.4.2"
+   ],
+   "so_goi": 19,
+   "md": 93.0,
+   "goi_ke_hoach": [
+    "1.2.8",
+    "1.3.2",
+    "1.3.3",
+    "1.3.6",
+    "1.4.1",
+    "2.4.5",
+    "2.4.8",
+    "3.3.2",
+    "3.3.6",
+    "3.3.7",
+    "3.3.10",
+    "3.4.3",
+    "4.2.6",
+    "4.3.6",
+    "4.3.7",
+    "4.3.8",
+    "4.3.9",
+    "4.4.1"
+   ],
+   "goi_chua_xong_theo_ke_hoach": [
+    "2.4.8",
+    "4.3.7",
+    "4.3.8"
+   ],
+   "so_goi_tich_luy": 66,
+   "tong_goi_san_pham": 135,
+   "hang_muc_01a": [
+    {
+     "stt": 5,
+     "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "so_goi_trong_ban": 5,
+     "so_goi_xong": 13,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 6,
+     "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 15,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 7,
+     "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+     "so_goi_trong_ban": 7,
+     "so_goi_xong": 23,
+     "tong_goi": 32,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 9,
+     "danh_muc": "Tích hợp với hệ thống chính (Main System)",
+     "so_goi_trong_ban": 6,
+     "so_goi_xong": 8,
+     "tong_goi": 14,
+     "hoan_thanh": false
+    }
+   ],
+   "yeu_cau_rfp": [
+    {
+     "ma": "R03",
+     "yeu_cau": "Chính sách phát triển: khách hàng thao tác dễ dàng",
+     "goi": [
+      "1.3.6",
+      "2.4.5",
+      "3.3.8",
+      "3.3.10"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R04",
+     "yeu_cau": "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+     "goi": [
+      "4.3.9"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R06",
+     "yeu_cau": "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+     "goi": [
+      "1.2.8",
+      "1.3.2",
+      "1.3.3",
+      "1.3.6",
+      "1.4.1"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R07",
+     "yeu_cau": "Hệ thống mới có chức năng quản lý thành viên",
+     "goi": [
+      "2.4.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R08",
+     "yeu_cau": "Hệ thống mới có chức năng đặt hàng",
+     "goi": [
+      "3.3.1",
+      "3.3.2",
+      "3.3.6",
+      "3.3.7",
+      "3.3.8",
+      "3.3.10",
+      "3.4.3"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R10",
+     "yeu_cau": "Selling DB trao đổi dữ liệu với hệ thống chính hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch",
+     "goi": [
+      "4.2.6",
+      "4.2.7",
+      "4.3.6",
+      "4.3.9",
+      "4.4.1",
+      "4.4.2"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R11",
+     "yeu_cau": "Nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng",
+     "goi": [
+      "4.4.2"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R38",
+     "yeu_cau": "Chủ đầu tư kiểm tra sản phẩm theo điều kiện trong đặc tả và thông báo kết quả cho nhà thầu",
+     "goi": [
+      "4.2.6"
+     ],
+     "hoan_thanh": false
+    }
+   ],
+   "loi_da_sua": [
+    {
+     "ma": "L07",
+     "muc_do": "Trung bình",
+     "ma_goi": "2.3.2",
+     "mo_ta": "Lỗi đếm số lần đăng nhập sai không đặt lại sau khi đăng nhập thành công và lỗi thông báo hết phiên làm việc"
+    },
+    {
+     "ma": "L08",
+     "muc_do": "Thấp",
+     "ma_goi": "2.3.2",
+     "mo_ta": "Lỗi đếm số lần đăng nhập sai không đặt lại sau khi đăng nhập thành công và lỗi thông báo hết phiên làm việc"
+    },
+    {
+     "ma": "L09",
+     "muc_do": "Thấp",
+     "ma_goi": "3.3.4",
+     "mo_ta": "Lỗi làm tròn giá trị giảm giá theo phần trăm"
+    },
+    {
+     "ma": "L10",
+     "muc_do": "Trung bình",
+     "ma_goi": "3.4.3",
+     "mo_ta": "Lỗi tính phí vận chuyển khi đổi địa chỉ giao hàng, lỗi áp dụng đồng thời hai mã giảm giá và lỗi hiển thị tổng tiền làm tròn phát hiện khi kiểm thử đặt hàng"
+    },
+    {
+     "ma": "L12",
+     "muc_do": "Thấp",
+     "ma_goi": "3.4.3",
+     "mo_ta": "Lỗi tính phí vận chuyển khi đổi địa chỉ giao hàng, lỗi áp dụng đồng thời hai mã giảm giá và lỗi hiển thị tổng tiền làm tròn phát hiện khi kiểm thử đặt hàng"
+    }
+   ],
+   "loi_con_mo": [
+    {
+     "ma": "L11",
+     "muc_do": "Trung bình",
+     "ma_goi": "3.4.3",
+     "mo_ta": "Lỗi tính phí vận chuyển khi đổi địa chỉ giao hàng, lỗi áp dụng đồng thời hai mã giảm giá và lỗi hiển thị tổng tiền làm tròn phát hiện khi kiểm thử đặt hàng"
+    },
+    {
+     "ma": "L13",
+     "muc_do": "Trung bình",
+     "ma_goi": "2.4.5",
+     "mo_ta": "Thiếu tiêu đề bảo mật nội dung trên trang đăng nhập và thông báo lỗi đăng nhập tiết lộ tài khoản tồn tại, không có lỗ hổng mức cao"
+    },
+    {
+     "ma": "L14",
+     "muc_do": "Thấp",
+     "ma_goi": "2.4.5",
+     "mo_ta": "Thiếu tiêu đề bảo mật nội dung trên trang đăng nhập và thông báo lỗi đăng nhập tiết lộ tài khoản tồn tại, không có lỗ hổng mức cao"
+    }
+   ],
+   "so_loi_da_sua": 5,
+   "so_loi_con_mo": 3,
+   "loi_con_mo_theo_muc_do": {
+    "Trung bình": 2,
+    "Thấp": 1
+   },
+   "cr_dua_vao": [],
+   "cr_phe_duyet_trong_ky": [],
+   "ghi_chu_nhom": "Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S4.",
+   "ghi_chu": "Bản R4 phát hành ngày 20/05/2027, cuối sprint S4, loại trình diễn cuối sprint. Gồm 19 gói hoàn thành trong sprint (theo số liệu thực tế mô phỏng), phủ 4 hạng mục Mẫu 01A và 8 yêu cầu RFP, sửa 5 lỗi, còn mở 3 lỗi. Có 3 gói theo kế hoạch đến hạn trước ngày phát hành nhưng chưa hoàn thành. Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S4.",
+   "lap_luc": "2026-10-25 14:01:40"
+  },
+  {
+   "ma": "R5",
+   "sprint": "S5",
+   "ngay": "2027-06-03",
+   "tu_ngay": "2027-05-21",
+   "loai": "Trình diễn cuối sprint",
+   "chinh_thuc": false,
+   "nguon": "thuc_te",
+   "muc_tieu": "Lập trình danh mục, chi tiết sản phẩm, trang chủ, bộ nhớ đệm, trang thành viên, sổ địa chỉ và đồng ý điều khoản, đồng bộ danh mục sản phẩm và giá, chuyển đơn hàng và nhận trạng thái vận chuyển, công cụ chuyển đổi dữ liệu, kiểm thử tích hợp trên môi trường thử của Main System (CK2, CK8), kiểm thử tìm kiếm, đăng ký, đăng nhập, thông tin thành viên, giỏ hàng và luồng đặt hàng, kế hoạch kiểm thử hệ thống, môi trường vận hành (CK7), khảo sát bán hàng trên sàn thương mại điện tử (CR01)",
+   "san_pham_demo": "Trang chủ, danh mục, chi tiết sản phẩm, trang thành viên và luồng đặt hàng có trao đổi dữ liệu với Main System trên môi trường thử",
+   "goi": [
+    "1.3.4",
+    "1.3.5",
+    "1.3.7",
+    "1.3.8",
+    "1.4.2",
+    "1.4.4",
+    "2.3.4",
+    "2.3.5",
+    "2.3.7",
+    "2.4.2",
+    "2.4.8",
+    "3.3.11",
+    "3.4.2",
+    "3.4.6",
+    "4.3.5",
+    "4.3.7",
+    "4.3.8",
+    "4.3.10",
+    "4.5.1",
+    "5.2.1"
+   ],
+   "so_goi": 20,
+   "md": 98.0,
+   "goi_ke_hoach": [
+    "1.3.4",
+    "1.3.5",
+    "1.3.7",
+    "1.3.8",
+    "1.4.2",
+    "1.4.4",
+    "2.3.4",
+    "2.3.5",
+    "2.3.7",
+    "2.4.2",
+    "2.4.3",
+    "2.4.8",
+    "3.3.11",
+    "3.4.2",
+    "3.4.5",
+    "3.4.6",
+    "4.3.5",
+    "4.3.7",
+    "4.3.8",
+    "4.3.10",
+    "4.4.3",
+    "4.5.1",
+    "4.5.5",
+    "5.2.1"
+   ],
+   "goi_chua_xong_theo_ke_hoach": [
+    "2.4.3",
+    "3.4.5",
+    "4.4.3",
+    "4.5.5"
+   ],
+   "so_goi_tich_luy": 86,
+   "tong_goi_san_pham": 154,
+   "hang_muc_01a": [
+    {
+     "stt": 1,
+     "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 10,
+     "tong_goi": 12,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 5,
+     "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "so_goi_trong_ban": 7,
+     "so_goi_xong": 20,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 6,
+     "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "so_goi_trong_ban": 5,
+     "so_goi_xong": 20,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 7,
+     "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 26,
+     "tong_goi": 35,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 9,
+     "danh_muc": "Tích hợp với hệ thống chính (Main System)",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 11,
+     "tong_goi": 19,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 10,
+     "danh_muc": "Kiểm thử hệ thống",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 1,
+     "tong_goi": 15,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 11,
+     "danh_muc": "Kiểm thử vận hành (Operation Test)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 1,
+     "tong_goi": 11,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 13,
+     "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 2,
+     "tong_goi": 11,
+     "hoan_thanh": false
+    }
+   ],
+   "yeu_cau_rfp": [
+    {
+     "ma": "R03",
+     "yeu_cau": "Chính sách phát triển: khách hàng thao tác dễ dàng",
+     "goi": [
+      "1.3.5",
+      "1.3.7",
+      "2.3.7"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R04",
+     "yeu_cau": "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+     "goi": [
+      "4.5.1"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R05",
+     "yeu_cau": "Thời gian phản hồi nhanh, không quá 2 giây",
+     "goi": [
+      "1.3.8"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R06",
+     "yeu_cau": "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+     "goi": [
+      "1.3.4",
+      "1.3.5",
+      "1.3.7",
+      "1.4.2",
+      "1.4.4"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R07",
+     "yeu_cau": "Hệ thống mới có chức năng quản lý thành viên",
+     "goi": [
+      "2.3.4",
+      "2.3.5",
+      "2.3.7",
+      "2.4.2"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R08",
+     "yeu_cau": "Hệ thống mới có chức năng đặt hàng",
+     "goi": [
+      "3.4.2",
+      "3.4.6",
+      "4.3.7"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R09",
+     "yeu_cau": "Hệ thống mới có cơ sở dữ liệu bán hàng Selling DB",
+     "goi": [
+      "4.3.10"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R10",
+     "yeu_cau": "Selling DB trao đổi dữ liệu với hệ thống chính hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch",
+     "goi": [
+      "4.3.5",
+      "4.3.7"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R11",
+     "yeu_cau": "Nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng",
+     "goi": [
+      "2.3.4",
+      "4.3.8"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R12",
+     "yeu_cau": "Đưa hệ thống vào vận hành ngày 01/07",
+     "goi": [
+      "4.3.10"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R13",
+     "yeu_cau": "Phạm vi: xây dựng hệ thống website bán hàng từ phân tích hệ thống đến kiểm thử vận hành",
+     "goi": [
+      "2.4.8",
+      "3.3.11"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R42",
+     "yeu_cau": "Lỗi logic hoặc vấn đề thuộc trách nhiệm nhà thầu được nhà thầu sửa chữa, bổ sung bằng chi phí của mình trong thời gian sớm nhất",
+     "goi": [
+      "1.4.4",
+      "3.3.11"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R48",
+     "yeu_cau": "Sản phẩm: sơ đồ phân cấp menu",
+     "goi": [
+      "1.3.5"
+     ],
+     "hoan_thanh": true
+    }
+   ],
+   "loi_da_sua": [
+    {
+     "ma": "L11",
+     "muc_do": "Trung bình",
+     "ma_goi": "3.4.3",
+     "mo_ta": "Lỗi tính phí vận chuyển khi đổi địa chỉ giao hàng, lỗi áp dụng đồng thời hai mã giảm giá và lỗi hiển thị tổng tiền làm tròn phát hiện khi kiểm thử đặt hàng"
+    },
+    {
+     "ma": "L13",
+     "muc_do": "Trung bình",
+     "ma_goi": "2.4.5",
+     "mo_ta": "Thiếu tiêu đề bảo mật nội dung trên trang đăng nhập và thông báo lỗi đăng nhập tiết lộ tài khoản tồn tại, không có lỗ hổng mức cao"
+    },
+    {
+     "ma": "L14",
+     "muc_do": "Thấp",
+     "ma_goi": "2.4.5",
+     "mo_ta": "Thiếu tiêu đề bảo mật nội dung trên trang đăng nhập và thông báo lỗi đăng nhập tiết lộ tài khoản tồn tại, không có lỗ hổng mức cao"
+    },
+    {
+     "ma": "L15",
+     "muc_do": "Trung bình",
+     "ma_goi": "1.4.2",
+     "mo_ta": "Lỗi sắp xếp theo giá khi sản phẩm có biến thể khác giá, lỗi gợi ý tìm kiếm với từ khóa có dấu và lỗi hiển thị số kết quả khi lọc nhiều điều kiện"
+    },
+    {
+     "ma": "L18",
+     "muc_do": "Cao",
+     "ma_goi": "3.4.6",
+     "mo_ta": "Lỗi giữ tồn kho không giải phóng khi thanh toán thất bại và lỗi thông báo trạng thái đơn hàng chưa cập nhật sau khi hủy đơn, phát hiện khi kiểm thử luồng đặt hàng đầu cuối"
+    },
+    {
+     "ma": "L19",
+     "muc_do": "Trung bình",
+     "ma_goi": "3.4.6",
+     "mo_ta": "Lỗi giữ tồn kho không giải phóng khi thanh toán thất bại và lỗi thông báo trạng thái đơn hàng chưa cập nhật sau khi hủy đơn, phát hiện khi kiểm thử luồng đặt hàng đầu cuối"
+    }
+   ],
+   "loi_con_mo": [
+    {
+     "ma": "L16",
+     "muc_do": "Thấp",
+     "ma_goi": "1.4.2",
+     "mo_ta": "Lỗi sắp xếp theo giá khi sản phẩm có biến thể khác giá, lỗi gợi ý tìm kiếm với từ khóa có dấu và lỗi hiển thị số kết quả khi lọc nhiều điều kiện"
+    },
+    {
+     "ma": "L17",
+     "muc_do": "Thấp",
+     "ma_goi": "1.4.2",
+     "mo_ta": "Lỗi sắp xếp theo giá khi sản phẩm có biến thể khác giá, lỗi gợi ý tìm kiếm với từ khóa có dấu và lỗi hiển thị số kết quả khi lọc nhiều điều kiện"
+    }
+   ],
+   "so_loi_da_sua": 6,
+   "so_loi_con_mo": 2,
+   "loi_con_mo_theo_muc_do": {
+    "Thấp": 2
+   },
+   "cr_dua_vao": [
+    {
+     "ma": "CR01",
+     "tieu_de": "Bán hàng trên sàn thương mại điện tử",
+     "ngay_quyet_dinh": "2027-05-27",
+     "goi": [
+      "5.2.1"
+     ]
+    }
+   ],
+   "cr_phe_duyet_trong_ky": [],
+   "ghi_chu_nhom": "Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S5.",
+   "ghi_chu": "Bản R5 phát hành ngày 03/06/2027, cuối sprint S5, loại trình diễn cuối sprint. Gồm 20 gói hoàn thành trong sprint (theo số liệu thực tế mô phỏng), phủ 8 hạng mục Mẫu 01A và 13 yêu cầu RFP, sửa 6 lỗi, còn mở 2 lỗi. Đưa vào yêu cầu thay đổi CR01. Có 4 gói theo kế hoạch đến hạn trước ngày phát hành nhưng chưa hoàn thành. Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S5.",
+   "lap_luc": "2026-10-25 17:50:38"
+  },
+  {
+   "ma": "R6",
+   "sprint": "S6",
+   "ngay": "2027-06-17",
+   "tu_ngay": "2027-06-04",
+   "loai": "Trình diễn cuối sprint",
+   "chinh_thuc": false,
+   "nguon": "thuc_te",
+   "muc_tieu": "Kiểm thử trang chủ, danh mục, chi tiết sản phẩm, tương thích trình duyệt và thiết bị, kiểm thử hiệu năng, kiểm thử theo dõi đơn hàng và đổi trả, kiểm thử khả năng sử dụng và rà soát lỗ hổng bảo mật, sửa lỗi tích hợp, kịch bản kiểm thử hệ thống đầu cuối, hướng dẫn vận hành, tài liệu hướng dẫn sử dụng, giám sát và sao lưu tự động, chuyển đổi thử dữ liệu (CK3), cùng với đặc tả, thiết kế tích hợp, kết nối sàn, đồng bộ tồn kho, nhận đơn hàng từ sàn và kịch bản kiểm thử bán hàng trên sàn (CR01)",
+   "san_pham_demo": "Bản phát hành đã sửa lỗi kiểm thử phân hệ, báo cáo kiểm thử hiệu năng, kết nối sàn và nhận đơn hàng từ sàn trên môi trường thử",
+   "goi": [
+    "1.4.3",
+    "1.4.5",
+    "2.4.3",
+    "2.4.6",
+    "2.4.10",
+    "2.5.1",
+    "3.4.4",
+    "3.4.5",
+    "3.4.7",
+    "3.4.10",
+    "3.5.1",
+    "4.4.3",
+    "4.4.4",
+    "4.5.2",
+    "4.5.5",
+    "5.2.2",
+    "5.2.3",
+    "5.3.1",
+    "5.3.4",
+    "5.4.1"
+   ],
+   "so_goi": 20,
+   "md": 87.0,
+   "goi_ke_hoach": [
+    "1.4.3",
+    "1.4.5",
+    "1.4.8",
+    "2.4.6",
+    "2.4.9",
+    "2.4.10",
+    "2.5.1",
+    "3.4.4",
+    "3.4.7",
+    "3.4.10",
+    "3.5.1",
+    "4.4.4",
+    "4.5.2",
+    "4.5.3",
+    "5.2.2",
+    "5.2.3",
+    "5.2.4",
+    "5.3.1",
+    "5.3.3",
+    "5.3.4",
+    "5.4.1"
+   ],
+   "goi_chua_xong_theo_ke_hoach": [
+    "1.4.8",
+    "2.4.9",
+    "4.5.3",
+    "5.2.4",
+    "5.3.3"
+   ],
+   "so_goi_tich_luy": 106,
+   "tong_goi_san_pham": 154,
+   "hang_muc_01a": [
+    {
+     "stt": 1,
+     "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 11,
+     "tong_goi": 12,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 5,
+     "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 22,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 6,
+     "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 22,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 7,
+     "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+     "so_goi_trong_ban": 4,
+     "so_goi_xong": 30,
+     "tong_goi": 35,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 9,
+     "danh_muc": "Tích hợp với hệ thống chính (Main System)",
+     "so_goi_trong_ban": 4,
+     "so_goi_xong": 15,
+     "tong_goi": 19,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 10,
+     "danh_muc": "Kiểm thử hệ thống",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 4,
+     "tong_goi": 15,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 12,
+     "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 3,
+     "tong_goi": 9,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 13,
+     "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 3,
+     "tong_goi": 11,
+     "hoan_thanh": false
+    }
+   ],
+   "yeu_cau_rfp": [
+    {
+     "ma": "R03",
+     "yeu_cau": "Chính sách phát triển: khách hàng thao tác dễ dàng",
+     "goi": [
+      "1.4.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R04",
+     "yeu_cau": "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+     "goi": [
+      "4.5.2"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R05",
+     "yeu_cau": "Thời gian phản hồi nhanh, không quá 2 giây",
+     "goi": [
+      "1.4.3",
+      "1.4.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R06",
+     "yeu_cau": "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+     "goi": [
+      "1.4.3",
+      "3.4.10"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R07",
+     "yeu_cau": "Hệ thống mới có chức năng quản lý thành viên",
+     "goi": [
+      "2.4.3",
+      "2.4.6",
+      "2.4.10",
+      "3.4.10"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R08",
+     "yeu_cau": "Hệ thống mới có chức năng đặt hàng",
+     "goi": [
+      "2.4.10",
+      "3.4.4",
+      "3.4.5",
+      "3.4.7",
+      "3.4.10"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R10",
+     "yeu_cau": "Selling DB trao đổi dữ liệu với hệ thống chính hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch",
+     "goi": [
+      "4.4.3",
+      "4.4.4"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R11",
+     "yeu_cau": "Nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng",
+     "goi": [
+      "4.4.3"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R40",
+     "yeu_cau": "Quyền sở hữu và bản quyền đối với sản phẩm và kết quả kỹ thuật của dự án thuộc Chủ đầu tư",
+     "goi": [
+      "4.5.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R41",
+     "yeu_cau": "Nhà thầu sử dụng sản phẩm cho bên khác phải được Chủ đầu tư cho phép",
+     "goi": [
+      "4.5.5"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R42",
+     "yeu_cau": "Lỗi logic hoặc vấn đề thuộc trách nhiệm nhà thầu được nhà thầu sửa chữa, bổ sung bằng chi phí của mình trong thời gian sớm nhất",
+     "goi": [
+      "2.4.6",
+      "3.4.5",
+      "3.4.7",
+      "4.4.4"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R46",
+     "yeu_cau": "Sản phẩm: quy trình vận hành mới",
+     "goi": [
+      "2.5.1",
+      "3.5.1"
+     ],
+     "hoan_thanh": false
+    }
+   ],
+   "loi_da_sua": [
+    {
+     "ma": "L16",
+     "muc_do": "Thấp",
+     "ma_goi": "1.4.2",
+     "mo_ta": "Lỗi sắp xếp theo giá khi sản phẩm có biến thể khác giá, lỗi gợi ý tìm kiếm với từ khóa có dấu và lỗi hiển thị số kết quả khi lọc nhiều điều kiện"
+    },
+    {
+     "ma": "L17",
+     "muc_do": "Thấp",
+     "ma_goi": "1.4.2",
+     "mo_ta": "Lỗi sắp xếp theo giá khi sản phẩm có biến thể khác giá, lỗi gợi ý tìm kiếm với từ khóa có dấu và lỗi hiển thị số kết quả khi lọc nhiều điều kiện"
+    },
+    {
+     "ma": "L20",
+     "muc_do": "Cao",
+     "ma_goi": "4.4.3",
+     "mo_ta": "Lỗi ánh xạ mã trạng thái đơn hàng giữa hai hệ thống, lỗi đồng bộ giá khi Main System trả về khuyến mại theo khoảng thời gian và lỗi thời gian chờ khi Main System phản hồi chậm"
+    },
+    {
+     "ma": "L21",
+     "muc_do": "Trung bình",
+     "ma_goi": "4.4.3",
+     "mo_ta": "Lỗi ánh xạ mã trạng thái đơn hàng giữa hai hệ thống, lỗi đồng bộ giá khi Main System trả về khuyến mại theo khoảng thời gian và lỗi thời gian chờ khi Main System phản hồi chậm"
+    },
+    {
+     "ma": "L22",
+     "muc_do": "Trung bình",
+     "ma_goi": "4.4.3",
+     "mo_ta": "Lỗi ánh xạ mã trạng thái đơn hàng giữa hai hệ thống, lỗi đồng bộ giá khi Main System trả về khuyến mại theo khoảng thời gian và lỗi thời gian chờ khi Main System phản hồi chậm"
+    },
+    {
+     "ma": "L27",
+     "muc_do": "Thấp",
+     "ma_goi": "1.4.3",
+     "mo_ta": "Lỗi hiển thị biến thể hết hàng trên trang chi tiết sản phẩm và lỗi đường dẫn danh mục cấp ba"
+    }
+   ],
+   "loi_con_mo": [
+    {
+     "ma": "L23",
+     "muc_do": "Trung bình",
+     "ma_goi": "2.4.10",
+     "mo_ta": "Cấu hình chính sách bảo mật nội dung chưa chặt, thiếu giới hạn số lần thử đăng nhập trên giao diện quản trị và thông báo lỗi máy chủ còn hiển thị phiên bản thư viện, không có lỗ hổng mức cao"
+    },
+    {
+     "ma": "L24",
+     "muc_do": "Thấp",
+     "ma_goi": "2.4.10",
+     "mo_ta": "Cấu hình chính sách bảo mật nội dung chưa chặt, thiếu giới hạn số lần thử đăng nhập trên giao diện quản trị và thông báo lỗi máy chủ còn hiển thị phiên bản thư viện, không có lỗ hổng mức cao"
+    },
+    {
+     "ma": "L25",
+     "muc_do": "Thấp",
+     "ma_goi": "2.4.10",
+     "mo_ta": "Cấu hình chính sách bảo mật nội dung chưa chặt, thiếu giới hạn số lần thử đăng nhập trên giao diện quản trị và thông báo lỗi máy chủ còn hiển thị phiên bản thư viện, không có lỗ hổng mức cao"
+    },
+    {
+     "ma": "L26",
+     "muc_do": "Trung bình",
+     "ma_goi": "1.4.3",
+     "mo_ta": "Lỗi hiển thị biến thể hết hàng trên trang chi tiết sản phẩm và lỗi đường dẫn danh mục cấp ba"
+    }
+   ],
+   "so_loi_da_sua": 6,
+   "so_loi_con_mo": 4,
+   "loi_con_mo_theo_muc_do": {
+    "Trung bình": 2,
+    "Thấp": 2
+   },
+   "cr_dua_vao": [
+    {
+     "ma": "CR01",
+     "tieu_de": "Bán hàng trên sàn thương mại điện tử",
+     "ngay_quyet_dinh": "2027-05-27",
+     "goi": [
+      "5.2.2",
+      "5.2.3",
+      "5.3.1",
+      "5.3.4",
+      "5.4.1"
+     ]
+    }
+   ],
+   "cr_phe_duyet_trong_ky": [],
+   "ghi_chu_nhom": "Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S6.",
+   "ghi_chu": "Bản R6 phát hành ngày 17/06/2027, cuối sprint S6, loại trình diễn cuối sprint. Gồm 20 gói hoàn thành trong sprint (theo số liệu thực tế mô phỏng), phủ 8 hạng mục Mẫu 01A và 12 yêu cầu RFP, sửa 6 lỗi, còn mở 4 lỗi. Đưa vào yêu cầu thay đổi CR01. Có 5 gói theo kế hoạch đến hạn trước ngày phát hành nhưng chưa hoàn thành. Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S6.",
+   "lap_luc": "2026-10-25 17:52:25"
+  },
+  {
+   "ma": "R7",
+   "sprint": "S7",
+   "ngay": "2027-07-01",
+   "tu_ngay": "2027-06-18",
+   "loai": "Trình diễn cuối sprint",
+   "chinh_thuc": false,
+   "nguon": "thuc_te",
+   "muc_tieu": "Kiểm thử chức năng đầu cuối, sửa lỗi và kiểm thử lại các phân hệ, kịch bản kiểm thử chấp nhận, kế hoạch cut over, diễn tập chuyển đổi dự phòng, nạp nội dung sản phẩm (CK4), cùng với xác nhận đặc tả bán hàng trên sàn, đồng bộ sản phẩm và giá, cập nhật trạng thái, đối soát, giao diện quản trị kênh sàn, tài liệu và buổi hướng dẫn sử dụng bán hàng trên sàn, kiểm thử tích hợp với sàn và bắt đầu kiểm thử hệ thống luồng bán hàng trên sàn (CR01)",
+   "san_pham_demo": "Báo cáo kiểm thử chức năng đầu cuối, luồng bán hàng trên sàn đầy đủ trên môi trường thử, tài liệu hướng dẫn sử dụng bán hàng trên sàn",
+   "goi": [
+    "2.4.4",
+    "3.4.8",
+    "3.4.11",
+    "3.4.12",
+    "3.5.2",
+    "4.4.8",
+    "4.5.4",
+    "5.2.4",
+    "5.3.2",
+    "5.3.3",
+    "5.3.5",
+    "5.3.6",
+    "5.3.7",
+    "5.4.2",
+    "5.5.2"
+   ],
+   "so_goi": 15,
+   "md": 64.0,
+   "goi_ke_hoach": [
+    "1.4.6",
+    "1.4.9",
+    "2.4.4",
+    "3.4.8",
+    "3.4.11",
+    "3.4.12",
+    "3.5.2",
+    "4.4.8",
+    "4.5.4",
+    "5.3.2",
+    "5.3.5",
+    "5.3.6",
+    "5.3.7",
+    "5.4.2",
+    "5.5.2"
+   ],
+   "goi_chua_xong_theo_ke_hoach": [
+    "1.4.6",
+    "1.4.8",
+    "1.4.9",
+    "2.4.9",
+    "4.5.3"
+   ],
+   "so_goi_tich_luy": 121,
+   "tong_goi_san_pham": 154,
+   "hang_muc_01a": [
+    {
+     "stt": 1,
+     "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 12,
+     "tong_goi": 12,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 6,
+     "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 23,
+     "tong_goi": 25,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 7,
+     "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 33,
+     "tong_goi": 35,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 9,
+     "danh_muc": "Tích hợp với hệ thống chính (Main System)",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 18,
+     "tong_goi": 19,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 10,
+     "danh_muc": "Kiểm thử hệ thống",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 7,
+     "tong_goi": 15,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 11,
+     "danh_muc": "Kiểm thử vận hành (Operation Test)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 2,
+     "tong_goi": 11,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 12,
+     "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 4,
+     "tong_goi": 9,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 13,
+     "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 5,
+     "tong_goi": 11,
+     "hoan_thanh": false
+    }
+   ],
+   "yeu_cau_rfp": [
+    {
+     "ma": "R04",
+     "yeu_cau": "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+     "goi": [
+      "4.4.8"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R06",
+     "yeu_cau": "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+     "goi": [
+      "3.4.12",
+      "4.5.4"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R07",
+     "yeu_cau": "Hệ thống mới có chức năng quản lý thành viên",
+     "goi": [
+      "2.4.4",
+      "3.4.12"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R08",
+     "yeu_cau": "Hệ thống mới có chức năng đặt hàng",
+     "goi": [
+      "3.4.8",
+      "3.4.12"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R10",
+     "yeu_cau": "Selling DB trao đổi dữ liệu với hệ thống chính hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch",
+     "goi": [
+      "3.4.12"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R12",
+     "yeu_cau": "Đưa hệ thống vào vận hành ngày 01/07",
+     "goi": [
+      "3.5.2",
+      "4.5.4"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R13",
+     "yeu_cau": "Phạm vi: xây dựng hệ thống website bán hàng từ phân tích hệ thống đến kiểm thử vận hành",
+     "goi": [
+      "3.4.11"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R42",
+     "yeu_cau": "Lỗi logic hoặc vấn đề thuộc trách nhiệm nhà thầu được nhà thầu sửa chữa, bổ sung bằng chi phí của mình trong thời gian sớm nhất",
+     "goi": [
+      "2.4.4",
+      "3.4.8"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R46",
+     "yeu_cau": "Sản phẩm: quy trình vận hành mới",
+     "goi": [
+      "3.4.11"
+     ],
+     "hoan_thanh": false
+    }
+   ],
+   "loi_da_sua": [
+    {
+     "ma": "L23",
+     "muc_do": "Trung bình",
+     "ma_goi": "2.4.10",
+     "mo_ta": "Cấu hình chính sách bảo mật nội dung chưa chặt, thiếu giới hạn số lần thử đăng nhập trên giao diện quản trị và thông báo lỗi máy chủ còn hiển thị phiên bản thư viện, không có lỗ hổng mức cao"
+    },
+    {
+     "ma": "L24",
+     "muc_do": "Thấp",
+     "ma_goi": "2.4.10",
+     "mo_ta": "Cấu hình chính sách bảo mật nội dung chưa chặt, thiếu giới hạn số lần thử đăng nhập trên giao diện quản trị và thông báo lỗi máy chủ còn hiển thị phiên bản thư viện, không có lỗ hổng mức cao"
+    },
+    {
+     "ma": "L25",
+     "muc_do": "Thấp",
+     "ma_goi": "2.4.10",
+     "mo_ta": "Cấu hình chính sách bảo mật nội dung chưa chặt, thiếu giới hạn số lần thử đăng nhập trên giao diện quản trị và thông báo lỗi máy chủ còn hiển thị phiên bản thư viện, không có lỗ hổng mức cao"
+    },
+    {
+     "ma": "L26",
+     "muc_do": "Trung bình",
+     "ma_goi": "1.4.3",
+     "mo_ta": "Lỗi hiển thị biến thể hết hàng trên trang chi tiết sản phẩm và lỗi đường dẫn danh mục cấp ba"
+    },
+    {
+     "ma": "L28",
+     "muc_do": "Cao",
+     "ma_goi": "3.4.12",
+     "mo_ta": "Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối"
+    },
+    {
+     "ma": "L29",
+     "muc_do": "Trung bình",
+     "ma_goi": "3.4.12",
+     "mo_ta": "Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối"
+    },
+    {
+     "ma": "L30",
+     "muc_do": "Trung bình",
+     "ma_goi": "3.4.12",
+     "mo_ta": "Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối"
+    },
+    {
+     "ma": "L31",
+     "muc_do": "Trung bình",
+     "ma_goi": "3.4.12",
+     "mo_ta": "Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối"
+    },
+    {
+     "ma": "L32",
+     "muc_do": "Thấp",
+     "ma_goi": "3.4.12",
+     "mo_ta": "Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối"
+    },
+    {
+     "ma": "L33",
+     "muc_do": "Thấp",
+     "ma_goi": "3.4.12",
+     "mo_ta": "Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối"
+    }
+   ],
+   "loi_con_mo": [
+    {
+     "ma": "L34",
+     "muc_do": "Trung bình",
+     "ma_goi": "5.4.2",
+     "mo_ta": "Lỗi làm mới khóa truy cập của sàn khi hết hạn giữa phiên đồng bộ, lỗi đồng bộ tồn kho khi sản phẩm có nhiều biến thể và lỗi hiển thị mã đơn hàng sàn trên giao diện quản trị"
+    },
+    {
+     "ma": "L35",
+     "muc_do": "Trung bình",
+     "ma_goi": "5.4.2",
+     "mo_ta": "Lỗi làm mới khóa truy cập của sàn khi hết hạn giữa phiên đồng bộ, lỗi đồng bộ tồn kho khi sản phẩm có nhiều biến thể và lỗi hiển thị mã đơn hàng sàn trên giao diện quản trị"
+    },
+    {
+     "ma": "L36",
+     "muc_do": "Thấp",
+     "ma_goi": "5.4.2",
+     "mo_ta": "Lỗi làm mới khóa truy cập của sàn khi hết hạn giữa phiên đồng bộ, lỗi đồng bộ tồn kho khi sản phẩm có nhiều biến thể và lỗi hiển thị mã đơn hàng sàn trên giao diện quản trị"
+    }
+   ],
+   "so_loi_da_sua": 10,
+   "so_loi_con_mo": 3,
+   "loi_con_mo_theo_muc_do": {
+    "Trung bình": 2,
+    "Thấp": 1
+   },
+   "cr_dua_vao": [
+    {
+     "ma": "CR01",
+     "tieu_de": "Bán hàng trên sàn thương mại điện tử",
+     "ngay_quyet_dinh": "2027-05-27",
+     "goi": [
+      "5.2.4",
+      "5.3.2",
+      "5.3.3",
+      "5.3.5",
+      "5.3.6",
+      "5.3.7",
+      "5.4.2",
+      "5.5.2"
+     ]
+    }
+   ],
+   "cr_phe_duyet_trong_ky": [],
+   "ghi_chu_nhom": "Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S7.",
+   "ghi_chu": "Bản R7 phát hành ngày 01/07/2027, cuối sprint S7, loại trình diễn cuối sprint. Gồm 15 gói hoàn thành trong sprint (theo số liệu thực tế mô phỏng), phủ 8 hạng mục Mẫu 01A và 9 yêu cầu RFP, sửa 10 lỗi, còn mở 3 lỗi. Đưa vào yêu cầu thay đổi CR01. Có 5 gói theo kế hoạch đến hạn trước ngày phát hành nhưng chưa hoàn thành. Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S7.",
+   "lap_luc": "2026-10-25 17:58:34"
+  },
+  {
+   "ma": "R8",
+   "sprint": "S8",
+   "ngay": "2027-07-15",
+   "tu_ngay": "2027-07-02",
+   "loai": "Trình diễn cuối sprint",
+   "chinh_thuc": false,
+   "nguon": "thuc_te",
+   "muc_tieu": "Khắc phục lỗi sau kiểm thử hệ thống (M4), Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System (M3), diễn tập triển khai, giám sát vận hành, cùng với hoàn thành kiểm thử hệ thống, khắc phục lỗi và kiểm thử lại phần bán hàng trên sàn, bàn giao mã nguồn phần sàn và cấu hình kết nối sàn trên môi trường vận hành (CR01)",
+   "san_pham_demo": "Bản phát hành sẵn sàng kiểm thử chấp nhận gồm phần bán hàng trên sàn, biên bản kiểm tra chức năng chính (M3), kết nối sàn trên môi trường vận hành",
+   "goi": [
+    "1.4.6",
+    "1.4.7",
+    "1.4.8",
+    "1.4.9",
+    "2.4.7",
+    "2.4.9",
+    "3.2.12",
+    "3.4.9",
+    "3.5.3",
+    "4.4.5",
+    "4.4.6",
+    "4.5.3",
+    "5.4.3",
+    "5.4.4",
+    "5.5.3"
+   ],
+   "so_goi": 15,
+   "md": 47.0,
+   "goi_ke_hoach": [
+    "1.4.7",
+    "2.4.7",
+    "2.5.2",
+    "3.2.12",
+    "3.4.9",
+    "3.5.3",
+    "4.4.5",
+    "4.4.6",
+    "4.5.6",
+    "5.4.3",
+    "5.4.4",
+    "5.5.1",
+    "5.5.3"
+   ],
+   "goi_chua_xong_theo_ke_hoach": [
+    "2.5.2",
+    "4.5.6",
+    "5.5.1"
+   ],
+   "so_goi_tich_luy": 136,
+   "tong_goi_san_pham": 154,
+   "hang_muc_01a": [
+    {
+     "stt": 5,
+     "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 25,
+     "tong_goi": 25,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 6,
+     "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 25,
+     "tong_goi": 25,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 7,
+     "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 35,
+     "tong_goi": 35,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 8,
+     "danh_muc": "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 4,
+     "tong_goi": 4,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 9,
+     "danh_muc": "Tích hợp với hệ thống chính (Main System)",
+     "so_goi_trong_ban": 1,
+     "so_goi_xong": 19,
+     "tong_goi": 19,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 10,
+     "danh_muc": "Kiểm thử hệ thống",
+     "so_goi_trong_ban": 6,
+     "so_goi_xong": 13,
+     "tong_goi": 15,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 12,
+     "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 6,
+     "tong_goi": 9,
+     "hoan_thanh": false
+    },
+    {
+     "stt": 13,
+     "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 7,
+     "tong_goi": 11,
+     "hoan_thanh": false
+    }
+   ],
+   "yeu_cau_rfp": [
+    {
+     "ma": "R03",
+     "yeu_cau": "Chính sách phát triển: khách hàng thao tác dễ dàng",
+     "goi": [
+      "2.4.9"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R05",
+     "yeu_cau": "Thời gian phản hồi nhanh, không quá 2 giây",
+     "goi": [
+      "1.4.8",
+      "1.4.9"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R06",
+     "yeu_cau": "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+     "goi": [
+      "1.4.6",
+      "1.4.7",
+      "4.4.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R07",
+     "yeu_cau": "Hệ thống mới có chức năng quản lý thành viên",
+     "goi": [
+      "2.4.7",
+      "4.4.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R08",
+     "yeu_cau": "Hệ thống mới có chức năng đặt hàng",
+     "goi": [
+      "3.4.9",
+      "4.4.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R09",
+     "yeu_cau": "Hệ thống mới có cơ sở dữ liệu bán hàng Selling DB",
+     "goi": [
+      "4.5.3"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R12",
+     "yeu_cau": "Đưa hệ thống vào vận hành ngày 01/07",
+     "goi": [
+      "3.5.3",
+      "4.5.3"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R38",
+     "yeu_cau": "Chủ đầu tư kiểm tra sản phẩm theo điều kiện trong đặc tả và thông báo kết quả cho nhà thầu",
+     "goi": [
+      "4.4.6"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R39",
+     "yeu_cau": "Kiểm tra đạt là chấp nhận sản phẩm",
+     "goi": [
+      "4.4.6"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R42",
+     "yeu_cau": "Lỗi logic hoặc vấn đề thuộc trách nhiệm nhà thầu được nhà thầu sửa chữa, bổ sung bằng chi phí của mình trong thời gian sớm nhất",
+     "goi": [
+      "1.4.6",
+      "4.4.5"
+     ],
+     "hoan_thanh": false
+    },
+    {
+     "ma": "R44",
+     "yeu_cau": "Sản phẩm: đặc tả hệ thống gồm cấu hình cơ sở dữ liệu và chức năng",
+     "goi": [
+      "3.2.12"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R47",
+     "yeu_cau": "Sản phẩm: cấu trúc cơ sở dữ liệu Selling DB",
+     "goi": [
+      "3.2.12"
+     ],
+     "hoan_thanh": true
+    }
+   ],
+   "loi_da_sua": [
+    {
+     "ma": "L34",
+     "muc_do": "Trung bình",
+     "ma_goi": "5.4.2",
+     "mo_ta": "Lỗi làm mới khóa truy cập của sàn khi hết hạn giữa phiên đồng bộ, lỗi đồng bộ tồn kho khi sản phẩm có nhiều biến thể và lỗi hiển thị mã đơn hàng sàn trên giao diện quản trị"
+    },
+    {
+     "ma": "L35",
+     "muc_do": "Trung bình",
+     "ma_goi": "5.4.2",
+     "mo_ta": "Lỗi làm mới khóa truy cập của sàn khi hết hạn giữa phiên đồng bộ, lỗi đồng bộ tồn kho khi sản phẩm có nhiều biến thể và lỗi hiển thị mã đơn hàng sàn trên giao diện quản trị"
+    },
+    {
+     "ma": "L36",
+     "muc_do": "Thấp",
+     "ma_goi": "5.4.2",
+     "mo_ta": "Lỗi làm mới khóa truy cập của sàn khi hết hạn giữa phiên đồng bộ, lỗi đồng bộ tồn kho khi sản phẩm có nhiều biến thể và lỗi hiển thị mã đơn hàng sàn trên giao diện quản trị"
+    },
+    {
+     "ma": "L37",
+     "muc_do": "Cao",
+     "ma_goi": "4.4.5",
+     "mo_ta": "Lỗi mất phiên khi chuyển giữa hai nút ứng dụng, lỗi gửi lại thông báo đơn hàng khi Main System phản hồi trùng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử hệ thống"
+    },
+    {
+     "ma": "L38",
+     "muc_do": "Trung bình",
+     "ma_goi": "4.4.5",
+     "mo_ta": "Lỗi mất phiên khi chuyển giữa hai nút ứng dụng, lỗi gửi lại thông báo đơn hàng khi Main System phản hồi trùng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử hệ thống"
+    },
+    {
+     "ma": "L39",
+     "muc_do": "Trung bình",
+     "ma_goi": "4.4.5",
+     "mo_ta": "Lỗi mất phiên khi chuyển giữa hai nút ứng dụng, lỗi gửi lại thông báo đơn hàng khi Main System phản hồi trùng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử hệ thống"
+    },
+    {
+     "ma": "L40",
+     "muc_do": "Thấp",
+     "ma_goi": "4.4.5",
+     "mo_ta": "Lỗi mất phiên khi chuyển giữa hai nút ứng dụng, lỗi gửi lại thông báo đơn hàng khi Main System phản hồi trùng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử hệ thống"
+    },
+    {
+     "ma": "L43",
+     "muc_do": "Thấp",
+     "ma_goi": "5.4.3",
+     "mo_ta": "Lỗi đối soát đơn hàng sàn khi hoàn tiền một phần và lỗi định dạng thời gian trên báo cáo đồng bộ"
+    }
+   ],
+   "loi_con_mo": [
+    {
+     "ma": "L41",
+     "muc_do": "Thấp",
+     "ma_goi": "4.4.5",
+     "mo_ta": "Lỗi mất phiên khi chuyển giữa hai nút ứng dụng, lỗi gửi lại thông báo đơn hàng khi Main System phản hồi trùng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử hệ thống"
+    },
+    {
+     "ma": "L42",
+     "muc_do": "Trung bình",
+     "ma_goi": "5.4.3",
+     "mo_ta": "Lỗi đối soát đơn hàng sàn khi hoàn tiền một phần và lỗi định dạng thời gian trên báo cáo đồng bộ"
+    }
+   ],
+   "so_loi_da_sua": 8,
+   "so_loi_con_mo": 2,
+   "loi_con_mo_theo_muc_do": {
+    "Thấp": 1,
+    "Trung bình": 1
+   },
+   "cr_dua_vao": [
+    {
+     "ma": "CR01",
+     "tieu_de": "Bán hàng trên sàn thương mại điện tử",
+     "ngay_quyet_dinh": "2027-05-27",
+     "goi": [
+      "5.4.3",
+      "5.4.4",
+      "5.5.3"
+     ]
+    }
+   ],
+   "cr_phe_duyet_trong_ky": [],
+   "ghi_chu_nhom": "Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S8.",
+   "ghi_chu": "Bản R8 phát hành ngày 15/07/2027, cuối sprint S8, loại trình diễn cuối sprint. Gồm 15 gói hoàn thành trong sprint (theo số liệu thực tế mô phỏng), phủ 8 hạng mục Mẫu 01A và 12 yêu cầu RFP, sửa 8 lỗi, còn mở 2 lỗi. Đưa vào yêu cầu thay đổi CR01. Có 3 gói theo kế hoạch đến hạn trước ngày phát hành nhưng chưa hoàn thành. Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S8.",
+   "lap_luc": "2026-10-25 17:58:25"
+  },
+  {
+   "ma": "R9",
+   "sprint": "S9",
+   "ngay": "2027-07-29",
+   "tu_ngay": "2027-07-16",
+   "loai": "Chính thức, đưa vào vận hành (cut over)",
+   "chinh_thuc": true,
+   "nguon": "thuc_te",
+   "muc_tieu": "Kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư (M5), kiểm thử chấp nhận phần bán hàng trên sàn cùng Chủ đầu tư và nghiệm thu phần sàn (M9), khắc phục lỗi trong khoảng kiểm thử chấp nhận, kiểm thử hiệu năng và an toàn trên môi trường vận hành, chuyển đổi dữ liệu chính thức, cut over 29/07/2027 (M6), bàn giao mã nguồn và hệ thống (M7)",
+   "san_pham_demo": "Hệ thống gồm phần bán hàng trên sàn trên môi trường vận hành, biên bản nghiệm thu phần bán hàng trên sàn (M9), biên bản kiểm thử chấp nhận và biên bản bàn giao",
+   "goi": [
+    "1.4.10",
+    "1.4.11",
+    "1.4.12",
+    "1.5.2",
+    "1.5.3",
+    "2.4.11",
+    "2.4.12",
+    "2.4.13",
+    "2.5.2",
+    "2.5.3",
+    "3.4.13",
+    "3.4.14",
+    "3.5.4",
+    "4.4.7",
+    "4.4.9",
+    "4.5.6",
+    "5.4.5",
+    "5.5.1"
+   ],
+   "so_goi": 18,
+   "md": 80.0,
+   "goi_ke_hoach": [
+    "1.4.10",
+    "1.4.11",
+    "1.4.12",
+    "1.5.2",
+    "1.5.3",
+    "2.4.11",
+    "2.4.12",
+    "2.4.13",
+    "2.5.3",
+    "3.4.13",
+    "3.4.14",
+    "3.5.4",
+    "4.4.7",
+    "4.4.9",
+    "5.4.5"
+   ],
+   "goi_chua_xong_theo_ke_hoach": [],
+   "so_goi_tich_luy": 154,
+   "tong_goi_san_pham": 154,
+   "hang_muc_01a": [
+    {
+     "stt": 10,
+     "danh_muc": "Kiểm thử hệ thống",
+     "so_goi_trong_ban": 2,
+     "so_goi_xong": 15,
+     "tong_goi": 15,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 11,
+     "danh_muc": "Kiểm thử vận hành (Operation Test)",
+     "so_goi_trong_ban": 9,
+     "so_goi_xong": 11,
+     "tong_goi": 11,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 12,
+     "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
+     "so_goi_trong_ban": 3,
+     "so_goi_xong": 9,
+     "tong_goi": 9,
+     "hoan_thanh": true
+    },
+    {
+     "stt": 13,
+     "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "so_goi_trong_ban": 4,
+     "so_goi_xong": 11,
+     "tong_goi": 11,
+     "hoan_thanh": true
+    }
+   ],
+   "yeu_cau_rfp": [
+    {
+     "ma": "R04",
+     "yeu_cau": "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+     "goi": [
+      "2.5.2",
+      "4.4.7",
+      "4.5.6"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R05",
+     "yeu_cau": "Thời gian phản hồi nhanh, không quá 2 giây",
+     "goi": [
+      "1.4.10",
+      "4.4.7"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R06",
+     "yeu_cau": "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+     "goi": [
+      "1.4.12"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R07",
+     "yeu_cau": "Hệ thống mới có chức năng quản lý thành viên",
+     "goi": [
+      "2.4.13"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R08",
+     "yeu_cau": "Hệ thống mới có chức năng đặt hàng",
+     "goi": [
+      "3.4.14"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R10",
+     "yeu_cau": "Selling DB trao đổi dữ liệu với hệ thống chính hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch",
+     "goi": [
+      "4.4.9"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R11",
+     "yeu_cau": "Nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng",
+     "goi": [
+      "3.4.13"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R12",
+     "yeu_cau": "Đưa hệ thống vào vận hành ngày 01/07",
+     "goi": [
+      "1.5.2",
+      "3.5.4",
+      "4.5.6"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R13",
+     "yeu_cau": "Phạm vi: xây dựng hệ thống website bán hàng từ phân tích hệ thống đến kiểm thử vận hành",
+     "goi": [
+      "1.4.11",
+      "1.4.12",
+      "2.4.11",
+      "2.4.12",
+      "2.4.13",
+      "3.4.13",
+      "3.4.14",
+      "4.4.9"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R18",
+     "yeu_cau": "Nhà thầu nêu sản phẩm bàn giao trong hợp đồng",
+     "goi": [
+      "1.5.3",
+      "3.5.4"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R38",
+     "yeu_cau": "Chủ đầu tư kiểm tra sản phẩm theo điều kiện trong đặc tả và thông báo kết quả cho nhà thầu",
+     "goi": [
+      "1.4.11",
+      "2.4.12",
+      "3.4.13"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R40",
+     "yeu_cau": "Quyền sở hữu và bản quyền đối với sản phẩm và kết quả kỹ thuật của dự án thuộc Chủ đầu tư",
+     "goi": [
+      "1.5.3"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R42",
+     "yeu_cau": "Lỗi logic hoặc vấn đề thuộc trách nhiệm nhà thầu được nhà thầu sửa chữa, bổ sung bằng chi phí của mình trong thời gian sớm nhất",
+     "goi": [
+      "1.4.10",
+      "1.4.12",
+      "2.4.13",
+      "3.4.14",
+      "4.4.9"
+     ],
+     "hoan_thanh": true
+    },
+    {
+     "ma": "R46",
+     "yeu_cau": "Sản phẩm: quy trình vận hành mới",
+     "goi": [
+      "2.5.2",
+      "2.5.3"
+     ],
+     "hoan_thanh": true
+    }
+   ],
+   "loi_da_sua": [
+    {
+     "ma": "L41",
+     "muc_do": "Thấp",
+     "ma_goi": "4.4.5",
+     "mo_ta": "Lỗi mất phiên khi chuyển giữa hai nút ứng dụng, lỗi gửi lại thông báo đơn hàng khi Main System phản hồi trùng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử hệ thống"
+    },
+    {
+     "ma": "L42",
+     "muc_do": "Trung bình",
+     "ma_goi": "5.4.3",
+     "mo_ta": "Lỗi đối soát đơn hàng sàn khi hoàn tiền một phần và lỗi định dạng thời gian trên báo cáo đồng bộ"
+    },
+    {
+     "ma": "L44",
+     "muc_do": "Cao",
+     "ma_goi": "3.4.13",
+     "mo_ta": "Lỗi trong kiểm thử vận hành luồng đặt hàng: thông báo xác nhận đơn gửi trùng khi Main System phản hồi chậm, sai định dạng hóa đơn điện tử theo mẫu của Chủ đầu tư và các lỗi hiển thị nhỏ"
+    },
+    {
+     "ma": "L45",
+     "muc_do": "Trung bình",
+     "ma_goi": "3.4.13",
+     "mo_ta": "Lỗi trong kiểm thử vận hành luồng đặt hàng: thông báo xác nhận đơn gửi trùng khi Main System phản hồi chậm, sai định dạng hóa đơn điện tử theo mẫu của Chủ đầu tư và các lỗi hiển thị nhỏ"
+    },
+    {
+     "ma": "L46",
+     "muc_do": "Trung bình",
+     "ma_goi": "3.4.13",
+     "mo_ta": "Lỗi trong kiểm thử vận hành luồng đặt hàng: thông báo xác nhận đơn gửi trùng khi Main System phản hồi chậm, sai định dạng hóa đơn điện tử theo mẫu của Chủ đầu tư và các lỗi hiển thị nhỏ"
+    },
+    {
+     "ma": "L47",
+     "muc_do": "Trung bình",
+     "ma_goi": "3.4.13",
+     "mo_ta": "Lỗi trong kiểm thử vận hành luồng đặt hàng: thông báo xác nhận đơn gửi trùng khi Main System phản hồi chậm, sai định dạng hóa đơn điện tử theo mẫu của Chủ đầu tư và các lỗi hiển thị nhỏ"
+    },
+    {
+     "ma": "L48",
+     "muc_do": "Thấp",
+     "ma_goi": "3.4.13",
+     "mo_ta": "Lỗi trong kiểm thử vận hành luồng đặt hàng: thông báo xác nhận đơn gửi trùng khi Main System phản hồi chậm, sai định dạng hóa đơn điện tử theo mẫu của Chủ đầu tư và các lỗi hiển thị nhỏ"
+    },
+    {
+     "ma": "L49",
+     "muc_do": "Thấp",
+     "ma_goi": "3.4.13",
+     "mo_ta": "Lỗi trong kiểm thử vận hành luồng đặt hàng: thông báo xác nhận đơn gửi trùng khi Main System phản hồi chậm, sai định dạng hóa đơn điện tử theo mẫu của Chủ đầu tư và các lỗi hiển thị nhỏ"
+    },
+    {
+     "ma": "L51",
+     "muc_do": "Trung bình",
+     "ma_goi": "2.4.12",
+     "mo_ta": "Lỗi gửi lại thư xác nhận đăng ký và các lỗi nội dung trang thành viên"
+    },
+    {
+     "ma": "L52",
+     "muc_do": "Thấp",
+     "ma_goi": "2.4.12",
+     "mo_ta": "Lỗi gửi lại thư xác nhận đăng ký và các lỗi nội dung trang thành viên"
+    }
+   ],
+   "loi_con_mo": [
+    {
+     "ma": "L50",
+     "muc_do": "Thấp",
+     "ma_goi": "3.4.13",
+     "mo_ta": "Lỗi trong kiểm thử vận hành luồng đặt hàng: thông báo xác nhận đơn gửi trùng khi Main System phản hồi chậm, sai định dạng hóa đơn điện tử theo mẫu của Chủ đầu tư và các lỗi hiển thị nhỏ"
+    },
+    {
+     "ma": "L53",
+     "muc_do": "Thấp",
+     "ma_goi": "2.4.12",
+     "mo_ta": "Lỗi gửi lại thư xác nhận đăng ký và các lỗi nội dung trang thành viên"
+    },
+    {
+     "ma": "L54",
+     "muc_do": "Thấp",
+     "ma_goi": "5.4.5",
+     "mo_ta": "Lỗi hiển thị tên kho trên báo cáo đồng bộ sàn và lỗi sắp xếp danh sách đơn hàng sàn"
+    },
+    {
+     "ma": "L55",
+     "muc_do": "Thấp",
+     "ma_goi": "5.4.5",
+     "mo_ta": "Lỗi hiển thị tên kho trên báo cáo đồng bộ sàn và lỗi sắp xếp danh sách đơn hàng sàn"
+    }
+   ],
+   "so_loi_da_sua": 10,
+   "so_loi_con_mo": 4,
+   "loi_con_mo_theo_muc_do": {
+    "Thấp": 4
+   },
+   "cr_dua_vao": [
+    {
+     "ma": "CR01",
+     "tieu_de": "Bán hàng trên sàn thương mại điện tử",
+     "ngay_quyet_dinh": "2027-05-27",
+     "goi": [
+      "1.5.2",
+      "1.5.3",
+      "2.4.11",
+      "5.4.5",
+      "5.5.1"
+     ]
+    }
+   ],
+   "cr_phe_duyet_trong_ky": [],
+   "ghi_chu_nhom": "Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S9.",
+   "ghi_chu": "Bản R9 phát hành ngày 29/07/2027, cuối sprint S9, loại chính thức, đưa vào vận hành (cut over). Gồm 18 gói hoàn thành trong sprint (theo số liệu thực tế mô phỏng), phủ 4 hạng mục Mẫu 01A và 14 yêu cầu RFP, sửa 10 lỗi, còn mở 4 lỗi. Đưa vào yêu cầu thay đổi CR01. Số liệu thực tế của bản phát hành lấy từ kết quả mô phỏng sprint S9.",
+   "lap_luc": "2026-10-25 18:02:59"
+  }
+ ],
+ "ban_chinh_thuc": "R9",
+ "kiem_tra": {
+  "ket_luan": "dat",
+  "so_canh_bao": 0,
+  "phat_hien": []
+ }
+}

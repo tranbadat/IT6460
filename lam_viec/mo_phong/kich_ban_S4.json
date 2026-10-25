@@ -1,0 +1,156 @@
+{
+ "sprint": "S4",
+ "tom_tat": "Nhóm làm bù các gói chậm của S3 bằng quỹ sẵn sàng, dịch vụ giả lập Main System dùng lại công cụ giả lập giao diện lập trình nên rút ngắn chuỗi găng. Dịch vụ đổi trả phải bổ sung quy tắc hoàn tiền một phần. Kiểm thử đặt hàng và kiểm thử bảo mật tài khoản phát hiện lỗi ở mức hợp lý, không có lỗ hổng mức cao. Chủ đầu tư bàn giao môi trường thử Main System và hạ tầng vận hành đúng hạn. Tại buổi trình diễn cuối sprint ngày 20/05/2027, Chủ đầu tư đề nghị bổ sung bán hàng trên sàn thương mại điện tử (CR01).",
+ "bien_co": [
+  {
+   "loai": "goi",
+   "ma_goi": "4.4.1",
+   "ty_le_md": -0.2,
+   "ly_do": "Dùng lại công cụ giả lập giao diện lập trình và bộ dữ liệu mẫu từ hợp đồng tương tự để dựng dịch vụ giả lập Main System"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "3.3.7",
+   "ty_le_md": 0.2,
+   "ly_do": "Đặc tả đổi trả đã xác nhận có trường hợp hoàn tiền một phần khi khách hàng trả một số sản phẩm trong đơn, quy tắc tính lại phí vận chuyển và mã giảm giá phức tạp hơn ước lượng"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "3.4.3",
+   "so_loi": {
+    "Trung bình": 2,
+    "Thấp": 1
+   },
+   "mo_ta": "Lỗi tính phí vận chuyển khi đổi địa chỉ giao hàng, lỗi áp dụng đồng thời hai mã giảm giá và lỗi hiển thị tổng tiền làm tròn phát hiện khi kiểm thử đặt hàng",
+   "ly_do": "Lỗi phát hiện trong kiểm thử đặt hàng, phí vận chuyển và khuyến mại"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "2.4.5",
+   "so_loi": {
+    "Trung bình": 1,
+    "Thấp": 1
+   },
+   "mo_ta": "Thiếu tiêu đề bảo mật nội dung trên trang đăng nhập và thông báo lỗi đăng nhập tiết lộ tài khoản tồn tại, không có lỗ hổng mức cao",
+   "ly_do": "Lỗi phát hiện trong kiểm thử bảo mật tài khoản theo OWASP Top 10"
+  },
+  {
+   "loai": "chi_phi",
+   "ngay": "2027-05-07",
+   "khoan_muc": "B1",
+   "so_tien": 7500000,
+   "ghi_chu": "Phí môi trường phát triển, kiểm thử kỳ S4 theo phân bổ kỳ chi của dự toán",
+   "loai_chi": "da_chi",
+   "lien_ket": [
+    "1.5.1"
+   ],
+   "ly_do": "Chi phí khoản B1 theo phân bổ kỳ chi S4 của dự toán"
+  },
+  {
+   "loai": "cr",
+   "ma_cr": "CR01",
+   "ngay": "2027-05-20",
+   "tieu_de": "Bán hàng trên sàn thương mại điện tử",
+   "mo_ta": "Chủ đầu tư đề nghị bổ sung kênh bán hàng trên sàn thương mại điện tử: kết nối sàn, đồng bộ sản phẩm, tồn kho và giá lên sàn, nhận đơn hàng từ sàn, cập nhật trạng thái đơn hàng lên sàn, đối soát đơn hàng và thanh toán với sàn, kiểm thử và hướng dẫn sử dụng. Yêu cầu nêu tại buổi trình diễn cuối S4 ngày 20/05/2027, làm trước cut over",
+   "nguon": "chủ đầu tư",
+   "nguoi_de_xuat": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "nhan_dinh_ban_dau": "Yêu cầu ngoài phạm vi hợp đồng và RFP, bổ sung một phân hệ mới, dự kiến làm lùi ngày cut over và tăng giá hợp đồng, thuộc mức lớn, cần phụ lục hợp đồng",
+   "ly_do": "Chủ đầu tư nêu yêu cầu tại buổi trình diễn cuối sprint S4 theo quyết định của nhóm"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD08",
+   "ngay_ghi_nhan": "2027-05-20",
+   "nguoi_bao": "dat",
+   "mo_ta": "Chủ đầu tư đề nghị bổ sung bán hàng trên sàn thương mại điện tử tại buổi trình diễn cuối S4, yêu cầu ngoài phạm vi hợp đồng cần đánh giá tác động đến cut over, giá và các mốc thanh toán",
+   "phan_loai": "Phạm vi",
+   "uu_tien": "Cao",
+   "ma_cr": "CR01",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-05-27",
+   "hanh_dong": [
+    {
+     "viec": "Lập phiếu yêu cầu thay đổi CR01 và đánh giá tác động theo quy trình quản lý thay đổi",
+     "nguoi": "dat",
+     "han": "2027-05-25"
+    }
+   ],
+   "ly_do": "Ghi sổ vấn đề phạm vi gắn yêu cầu thay đổi CR01"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD06",
+   "ngay_dong": "2027-05-20",
+   "ket_qua": "Thiết kế tích hợp 4.2.7 hoàn thành ngày 07/05/2027, dịch vụ giả lập 4.4.1 hoàn thành ngày 13/05/2027, đồng bộ tồn kho 4.3.6 hoàn thành ngày 20/05/2027. Phần chậm còn lại của chuỗi tích hợp được theo dõi tại vấn đề VD09",
+   "nguoi_dong": "dat",
+   "ly_do": "Đóng vấn đề tác động tiến độ của RR02 khi chuỗi găng tích hợp đã được làm bù"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD07",
+   "hanh_dong": [
+    {
+     "ma": "HD10",
+     "viec": "Lập kế hoạch S4 ưu tiên các gói chậm có gói sau trên đường găng, theo dõi hằng ngày trong họp đứng",
+     "nguoi": "dat",
+     "han": "2027-05-07",
+     "ngay_xong": "2027-05-07",
+     "bang_chung": "Kế hoạch sprint S4 ngày 07/05/2027"
+    }
+   ],
+   "ngay_dong": "2027-05-19",
+   "ket_qua": "Các gói 1.3.2, 1.3.6, 2.4.5, 3.3.1, 3.3.7, 3.3.8, 3.3.10 và 4.4.2 hoàn thành trong S4. Gói quản lý 4.1.3 tiếp tục được theo dõi tại vấn đề VD09",
+   "nguoi_dong": "dat",
+   "ly_do": "Đóng vấn đề gói chậm cuối S3 khi các gói đã hoàn thành"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD09",
+   "ngay_ghi_nhan": "2027-05-20",
+   "nguoi_bao": "dat",
+   "mo_ta": "Các gói 1.3.4, 1.3.7, 1.4.2, 2.3.4, 2.3.5, 2.3.7, 2.4.2, 2.4.8, 3.4.2, 4.3.5, gói găng 4.3.8, gói 4.5.1 và các gói quản lý 4.1.1, 4.1.2, 4.1.3 chậm so với kế hoạch cuối S4 do phần làm bù của S3 dồn sang, dịch vụ đổi trả 3.3.7 vượt công và sửa lỗi phát hiện trong kiểm thử",
+   "phan_loai": "Tiến độ",
+   "uu_tien": "Cao",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-05-28",
+   "hanh_dong": [
+    {
+     "viec": "Lập kế hoạch S5 ưu tiên gói găng 4.3.8 và các gói kiểm thử phân hệ, đối chiếu với lịch lập lại sau đánh giá yêu cầu thay đổi CR01",
+     "nguoi": "dat",
+     "han": "2027-05-21"
+    }
+   ],
+   "ly_do": "Ghi sổ vấn đề cho tín hiệu gói chậm cuối S4"
+  },
+  {
+   "loai": "retro",
+   "y": [
+    {
+     "loai": "tốt",
+     "noi_dung": "Dùng quỹ sẵn sàng của các vị trí phía máy chủ để làm bù các gói chậm, dịch vụ giả lập Main System dùng lại công cụ có sẵn nên chuỗi găng được rút ngắn",
+     "lien_ket": [
+      "4.4.1",
+      "VD07"
+     ]
+    },
+    {
+     "loai": "cần cải thiện",
+     "noi_dung": "Ước lượng dịch vụ đổi trả chưa tính trường hợp hoàn tiền một phần đã nêu trong đặc tả, cần rà soát các trường hợp ngoại lệ của đặc tả trước khi lập trình",
+     "lien_ket": [
+      "3.3.7",
+      "3.2.11"
+     ]
+    },
+    {
+     "loai": "hành động",
+     "noi_dung": "Đánh giá tác động của yêu cầu bán hàng trên sàn thương mại điện tử trong thời hạn đánh giá và trình ban kiểm soát thay đổi",
+     "lien_ket": [
+      "CR01",
+      "VD08"
+     ]
+    }
+   ],
+   "ly_do": "Họp cải tiến cuối sprint S4"
+  }
+ ]
+}

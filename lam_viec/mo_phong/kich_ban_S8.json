@@ -1,0 +1,181 @@
+{
+ "sprint": "S8",
+ "tom_tat": "Các gói chậm của S7 hoàn thành đầu kỳ, kiểm thử hệ thống phát hiện lỗi ở mức hợp lý và được khắc phục trong gói găng 4.4.5. Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System, mốc M3 và M4 đạt. Phần bán hàng trên sàn hoàn thành kiểm thử hệ thống, khắc phục lỗi, bàn giao mã nguồn và cấu hình kết nối sàn trên môi trường vận hành.",
+ "bien_co": [
+  {
+   "loai": "huy_dong",
+   "thanh_vien": "minh",
+   "so_md": 1,
+   "lien_ket": [
+    "4.4.5"
+   ],
+   "ly_do": "Huy động bổ sung theo nhu cầu (quyết định của quản trị dự án theo ủy quyền của nhóm, lương trả theo công sức thực tế): Vũ Đức Minh hoàn thành phần khắc phục lỗi giao diện sau kiểm thử hệ thống 4.4.5 trên đường găng"
+  },
+  {
+   "loai": "huy_dong",
+   "thanh_vien": "Q2",
+   "so_md": 3,
+   "lien_ket": [
+    "1.4.9",
+    "5.4.3",
+    "RR06"
+   ],
+   "ly_do": "Huy động bổ sung theo nhu cầu (quyết định của quản trị dự án theo ủy quyền của nhóm, lương trả theo công sức thực tế): Phạm Ngọc Anh hoàn thành kiểm thử hiệu năng 1.4.9 sau tối ưu (RR06) và kiểm thử hệ thống luồng bán hàng trên sàn 5.4.3 chuyển từ S7"
+  },
+  {
+   "loai": "huy_dong",
+   "thanh_vien": "Q1",
+   "so_md": 2,
+   "lien_ket": [
+    "5.4.3"
+   ],
+   "ly_do": "Huy động bổ sung theo nhu cầu (quyết định của quản trị dự án theo ủy quyền của nhóm, lương trả theo công sức thực tế): Trần Thu Hà hoàn thành kiểm thử hệ thống luồng bán hàng trên sàn 5.4.3 chuyển từ S7"
+  },
+  {
+   "loai": "huy_dong",
+   "thanh_vien": "tuananh",
+   "so_md": 1.5,
+   "lien_ket": [
+    "4.5.3",
+    "3.5.3"
+   ],
+   "ly_do": "Huy động bổ sung theo nhu cầu (quyết định của quản trị dự án theo ủy quyền của nhóm, lương trả theo công sức thực tế): Phạm Tuấn Anh hoàn thành phần còn lại của chuyển đổi thử dữ liệu 4.5.3 để diễn tập triển khai 3.5.3 không chờ đến S9"
+  },
+  {
+   "loai": "huy_dong",
+   "thanh_vien": "D1",
+   "so_md": 1,
+   "lien_ket": [
+    "4.4.5"
+   ],
+   "ly_do": "Huy động bổ sung theo nhu cầu (quyết định của quản trị dự án theo ủy quyền của nhóm, lương trả theo công sức thực tế): Lê Quang Huy hỗ trợ khắc phục lỗi sau kiểm thử hệ thống 4.4.5 trên đường găng"
+  },
+  {
+   "loai": "huy_dong",
+   "thanh_vien": "D2",
+   "so_md": 1,
+   "lien_ket": [
+    "4.4.5"
+   ],
+   "ly_do": "Huy động bổ sung theo nhu cầu (quyết định của quản trị dự án theo ủy quyền của nhóm, lương trả theo công sức thực tế): Đỗ Minh Quân hỗ trợ khắc phục lỗi sau kiểm thử hệ thống 4.4.5 trên đường găng"
+  },
+  {
+   "loai": "huy_dong",
+   "thanh_vien": "lien",
+   "so_md": 1,
+   "lien_ket": [
+    "3.2.12"
+   ],
+   "ly_do": "Huy động bổ sung theo nhu cầu (quyết định của quản trị dự án theo ủy quyền của nhóm, lương trả theo công sức thực tế): Nguyễn Thị Phương Liên cập nhật đặc tả hệ thống 3.2.12 sau kiểm thử hệ thống"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "4.4.5",
+   "so_loi": {
+    "Cao": 1,
+    "Trung bình": 2,
+    "Thấp": 2
+   },
+   "mo_ta": "Lỗi mất phiên khi chuyển giữa hai nút ứng dụng, lỗi gửi lại thông báo đơn hàng khi Main System phản hồi trùng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử hệ thống",
+   "ly_do": "Lỗi phát hiện trong kiểm thử hệ thống trên môi trường kiểm thử"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "5.4.3",
+   "so_loi": {
+    "Trung bình": 1,
+    "Thấp": 1
+   },
+   "mo_ta": "Lỗi đối soát đơn hàng sàn khi hoàn tiền một phần và lỗi định dạng thời gian trên báo cáo đồng bộ",
+   "ly_do": "Lỗi phát hiện trong kiểm thử hệ thống luồng bán hàng trên sàn"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR06",
+   "ngay": "2027-07-06",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Kiểm thử hiệu năng đo lại sau tối ưu đạt thời gian phản hồi dưới 2 giây ở mức tải 500 người dùng đồng thời, điều kiện đóng đạt"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD13",
+   "hanh_dong": [
+    {
+     "ma": "HD16",
+     "viec": "Huy động bổ sung theo nhu cầu trong S8 cho kiểm thử viên và kỹ sư phát triển còn việc chậm, ưu tiên các gói trước khắc phục lỗi sau kiểm thử hệ thống 4.4.5",
+     "nguoi": "dat",
+     "han": "2027-07-02",
+     "ngay_xong": "2027-07-02",
+     "bang_chung": "Kế hoạch sprint S8 và danh sách huy động bổ sung ngày 02/07/2027"
+    }
+   ],
+   "ngay_dong": "2027-07-07",
+   "ket_qua": "Các gói chậm cuối S7 hoàn thành bằng huy động bổ sung theo nhu cầu, khắc phục lỗi sau kiểm thử hệ thống không bị muộn",
+   "nguoi_dong": "dat",
+   "ly_do": "Đóng vấn đề khi các gói chậm cuối S7 trên đường găng hoàn thành"
+  },
+  {
+   "loai": "moc",
+   "ma_moc": "M3",
+   "ngay_dat": "2027-07-08",
+   "ghi_chu": "Biên bản kiểm tra chức năng chính và tích hợp với Main System ngày 08/07/2027, căn cứ thanh toán Đợt 3",
+   "ly_do": "Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System 4.4.6 hoàn thành"
+  },
+  {
+   "loai": "moc",
+   "ma_moc": "M4",
+   "ngay_dat": "2027-07-12",
+   "ghi_chu": "Biên bản hoàn thành kiểm thử hệ thống và khắc phục lỗi ngày 12/07/2027",
+   "ly_do": "Kiểm thử hệ thống, kiểm thử hiệu năng, bảo mật và khắc phục lỗi 4.4.5 hoàn thành"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD14",
+   "ngay_ghi_nhan": "2027-07-15",
+   "nguoi_bao": "dat",
+   "mo_ta": "Các gói 2.5.2 tài liệu hướng dẫn vận hành, 4.5.6 giám sát vận hành và 5.5.1 cấu hình kết nối sàn trên môi trường vận hành chưa hoàn thành cuối S8, 5.5.1 là điều kiện của mốc M9 và triển khai chính thức 1.5.2",
+   "phan_loai": "Tiến độ",
+   "uu_tien": "Trung bình",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-07-20",
+   "hanh_dong": [
+    {
+     "viec": "Trương Quốc Việt hoàn thành 5.5.1 và 4.5.6 đầu S9, Bùi Anh Tuấn hoàn thành 2.5.2",
+     "nguoi": "D4",
+     "han": "2027-07-19"
+    }
+   ],
+   "ly_do": "Ghi nhận gói chậm cuối S8 để theo dõi trong S9"
+  },
+  {
+   "loai": "retro",
+   "y": [
+    {
+     "loai": "tốt",
+     "noi_dung": "Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System trong thời gian đã thống nhất, mốc M3 đạt đúng hạn",
+     "lien_ket": [
+      "M3",
+      "4.4.6"
+     ]
+    },
+    {
+     "loai": "cần cải thiện",
+     "noi_dung": "Lỗi mất phiên khi chuyển nút ứng dụng chỉ phát hiện ở kiểm thử hệ thống do môi trường kiểm thử trước đó chỉ có một nút",
+     "lien_ket": [
+      "4.4.5",
+      "4.5.1"
+     ]
+    },
+    {
+     "loai": "hành động",
+     "noi_dung": "Kiểm thử chấp nhận chạy trên cấu hình hai nút giống môi trường vận hành",
+     "lien_ket": [
+      "RR10",
+      "3.4.13"
+     ]
+    }
+   ],
+   "ly_do": "Họp cải tiến cuối sprint S8"
+  }
+ ]
+}

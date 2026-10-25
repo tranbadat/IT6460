@@ -1,0 +1,137 @@
+{
+ "sprint": "S6",
+ "tom_tat": "Kiểm thử tích hợp với Main System hoàn thành đầu kỳ, lỗi tích hợp được sửa trong gói 4.4.4 và rủi ro RR02 được đóng. Chủ đầu tư cấp tài khoản người bán và môi trường thử của sàn đúng hạn CK10, phần bán hàng trên sàn thực hiện đặc tả, thiết kế tích hợp và bắt đầu lập trình. Rà soát bảo mật theo OWASP Top 10 không phát hiện lỗ hổng mức cao.",
+ "bien_co": [
+  {
+   "loai": "loi",
+   "ma_goi": "4.4.3",
+   "so_loi": {
+    "Cao": 1,
+    "Trung bình": 2
+   },
+   "md_sua": 0.5,
+   "mo_ta": "Lỗi ánh xạ mã trạng thái đơn hàng giữa hai hệ thống, lỗi đồng bộ giá khi Main System trả về khuyến mại theo khoảng thời gian và lỗi thời gian chờ khi Main System phản hồi chậm",
+   "ly_do": "Lỗi phát hiện trong kiểm thử tích hợp với Main System trên môi trường thử"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR02",
+   "ngay": "2027-06-10",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Kiểm thử tích hợp với Main System và sửa lỗi tích hợp 4.4.4 hoàn thành, điều kiện đóng của rủi ro đạt"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "5.2.3",
+   "ty_le_md": 0.15,
+   "ly_do": "Tài liệu giao diện lập trình của sàn có thêm cơ chế giới hạn tần suất gọi và làm mới khóa truy cập, thiết kế tích hợp phải bổ sung xử lý thử lại"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "3.4.10",
+   "ty_le_md": -0.1,
+   "ly_do": "Kịch bản kiểm thử hệ thống dùng lại kịch bản kiểm thử phân hệ đã có"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "2.4.10",
+   "so_loi": {
+    "Trung bình": 1,
+    "Thấp": 2
+   },
+   "mo_ta": "Cấu hình chính sách bảo mật nội dung chưa chặt, thiếu giới hạn số lần thử đăng nhập trên giao diện quản trị và thông báo lỗi máy chủ còn hiển thị phiên bản thư viện, không có lỗ hổng mức cao",
+   "ly_do": "Lỗi phát hiện khi rà soát lỗ hổng bảo mật theo OWASP Top 10"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "1.4.3",
+   "so_loi": {
+    "Trung bình": 1,
+    "Thấp": 1
+   },
+   "mo_ta": "Lỗi hiển thị biến thể hết hàng trên trang chi tiết sản phẩm và lỗi đường dẫn danh mục cấp ba",
+   "ly_do": "Lỗi phát hiện trong kiểm thử trang chủ, danh mục và chi tiết sản phẩm"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD10",
+   "hanh_dong": [
+    {
+     "ma": "HD13",
+     "viec": "Ưu tiên đầu S6 cho gói găng 4.4.3 và sửa lỗi tích hợp, Phạm Ngọc Anh tập trung kiểm thử tích hợp, Nguyễn Thị Phương Liên hỗ trợ hoàn thành 2.4.3",
+     "nguoi": "dat",
+     "han": "2027-06-04",
+     "ngay_xong": "2027-06-04",
+     "bang_chung": "Kế hoạch sprint S6 ngày 04/06/2027"
+    }
+   ],
+   "ngay_dong": "2027-06-11",
+   "ket_qua": "Các gói chậm cuối S5 hoàn thành, kiểm thử tích hợp với Main System và sửa lỗi tích hợp đạt",
+   "nguoi_dong": "dat",
+   "ly_do": "Đóng vấn đề khi các gói chậm cuối S5 hoàn thành"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD11",
+   "ngay_ghi_nhan": "2027-06-17",
+   "nguoi_bao": "dat",
+   "mo_ta": "Các gói 1.4.8, 1.4.9, 2.4.9, 4.5.3, 4.5.4, gói găng 3.4.12 kiểm thử chức năng đầu cuối và các gói bán hàng trên sàn 5.2.4, 5.3.2, 5.3.3, 5.3.5, 5.3.7 chậm cuối S6 do sửa lỗi tích hợp với Main System và thiết kế tích hợp với sàn 5.2.3 vượt công",
+   "phan_loai": "Tiến độ",
+   "uu_tien": "Cao",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-06-25",
+   "hanh_dong": [
+    {
+     "viec": "Ưu tiên đầu S7 cho gói găng 3.4.12 và chuỗi lập trình phần sàn, Lê Quang Huy và Đỗ Minh Quân dùng quỹ sẵn sàng làm bù 5.3.2, 5.3.7",
+     "nguoi": "dat",
+     "han": "2027-06-18"
+    }
+   ],
+   "ly_do": "Ghi nhận gói chậm cuối S6 để theo dõi trong S7"
+  },
+  {
+   "loai": "chi_phi",
+   "ngay": "2027-06-07",
+   "khoan_muc": "B1",
+   "so_tien": 7500000,
+   "ghi_chu": "Phí môi trường phát triển, kiểm thử kỳ S6 theo phân bổ kỳ chi của dự toán",
+   "loai_chi": "da_chi",
+   "lien_ket": [
+    "1.5.1"
+   ],
+   "ly_do": "Chi phí khoản B1 theo phân bổ kỳ chi S6 của dự toán"
+  },
+  {
+   "loai": "retro",
+   "y": [
+    {
+     "loai": "tốt",
+     "noi_dung": "Kiểm thử tích hợp với Main System đạt, rủi ro tài liệu và môi trường Main System được đóng",
+     "lien_ket": [
+      "RR02",
+      "4.4.3",
+      "4.4.4"
+     ]
+    },
+    {
+     "loai": "cần cải thiện",
+     "noi_dung": "Giới hạn tần suất gọi của sàn chỉ được biết khi thiết kế tích hợp, khảo sát 5.2.1 chưa kiểm tra đủ điều kiện kỹ thuật của giao diện lập trình",
+     "lien_ket": [
+      "5.2.1",
+      "5.2.3",
+      "RR22"
+     ]
+    },
+    {
+     "loai": "hành động",
+     "noi_dung": "Lập danh sách điều kiện kỹ thuật của sàn (giới hạn tần suất, thời hạn khóa, môi trường thử) và đối chiếu trước khi lập trình 5.3",
+     "lien_ket": [
+      "RR22",
+      "5.3.1"
+     ]
+    }
+   ],
+   "ly_do": "Họp cải tiến cuối sprint S6"
+  }
+ ]
+}

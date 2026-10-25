@@ -1,0 +1,72 @@
+{
+ "tai_lieu": "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+ "phien_ban": "0.8",
+ "dac_ta": ".claude/skills/qlda-phan-cong/dac_ta/phan_cong_tai_lieu.json",
+ "ngay_kiem_tra": "2026-10-24",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B)",
+ "moi_truong": "Phiên làm việc riêng của agent Kiểm tra độc lập (agent con), Claude Code, Claude Opus 5.5; đọc tài liệu bằng python-docx, openpyxl; không đọc khung.json, ban_soan.json, noi_dung.json",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 3,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 7 mục theo đặc tả: nguyên tắc, thành viên, nhân sự chủ chốt, RACI 4 mục mức 1 và 20 mục mức 2, tải theo sprint, giao việc theo thành viên (153 gói lá), phối hợp và thay thế."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "657 MD, quỹ 796 MD, 139 MD chưa giao, 82,5%, dự trữ 4 ngày, cut over 01/07/2027 khớp lich.json và phan_cong.json. Tổng MD theo người của từng gói khớp MD gói trong lịch (153/153). Bảng tải theo sprint cộng đúng. Nhân sự chủ chốt khớp Bảng số 02 HSMT và HSDT Mẫu 06A."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi dòng giao việc có mã gói WBS, RACI theo mã mục mức 1, mức 2, thay thế nhân sự dẫn chiếu E-ĐKC 21.2 (7 ngày) đúng hsmt.json."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Tải từng người từng sprint ghi dạng MD trên quỹ, không ai vượt quỹ (tối đa 13/13 ở S3). Mỗi hạng mục mức 1, mức 2 có đúng một A."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục 7 có quy tắc xử lý quá tải, vắng mặt, thay thế nhân sự và cập nhật giao việc, chạy lại lịch, ghi phiên bản khi có thay đổi. Hai trường hợp sử dụng dưới 30% ở S6 được nêu."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman 13, bảng 12, in đậm chỉ ở dòng mục mức 1 của ma trận RACI (đặc tả cho phép). Không có gạch dài, ngoặc kép, chấm phẩy, dấu giữ chỗ."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Bảng 4 Ma trận RACI, dòng 4.2 Phân tích và thiết kế phân hệ tích hợp hệ thống, cột Đạt: RI",
+   "mo_ta": "Trần Bá Đạt vừa là R (thực hiện 4.2.5, 4.2.6) vừa được ghi I (được thông báo) ở cùng mục, ký hiệu I thừa và dễ gây hiểu nhầm.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu: bỏ dat khỏi danh sách I của mục 4.2 trong du_lieu/phan_cong.json (trach_nhiem) hoặc để tinh_bang_phan_cong.py không ghi I khi người đó đã là R, rồi tạo lại."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "nguon_luc",
+   "vi_tri": "Mục 5, bảng 6, cột KT dòng Trần Bá Đạt: 2 MD, đoạn chú thích: chưa có quỹ huy động nên chỉ ghi MD",
+   "mo_ta": "Gói 1.1.5 (2 MD, 02/07 - 07/07/2027) thuộc giai đoạn Kết thúc nhưng chưa có quỹ huy động sau cut over (lịch cảnh báo L28). Tài liệu chưa nêu ai quyết định và quyết định khi nào.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định huy động quản trị dự án trong giai đoạn Kết thúc (02/07 - 15/07/2027) trong dau_vao/thanh_vien.json, sau đó chạy lại lịch và phân công. Nếu chưa quyết định, bổ sung câu trong mục 7 (DIEU_CHINH) nêu việc này chờ nhóm quyết định trước ký hợp đồng."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 7, đoạn 2: thời hạn 7 ngày theo E-ĐKC 21.2 của HSMT",
+   "mo_ta": "Cách dẫn chiếu khác với kế hoạch quản lý thay đổi và master plan (cùng điều khoản ghi Mục 21.2 E-ĐKCT).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Lời văn: thống nhất một cách ghi, ví dụ Mục 21.2 E-ĐKCT, trong đoạn DIEU_CHINH."
+  }
+ ]
+}

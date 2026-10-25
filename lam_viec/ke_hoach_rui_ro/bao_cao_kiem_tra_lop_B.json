@@ -1,77 +1,95 @@
 {
  "tai_lieu": "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx",
- "phien_ban": "0.6",
- "ket_luan": "dat",
- "so_loi": 0,
- "so_canh_bao": 4,
+ "phien_ban": "2.1",
+ "buoc": "ke_hoach_rui_ro",
+ "duong_co_so": "BL2 (sau yêu cầu thay đổi CR01, phụ lục 01/2027/PL-ABCW)",
+ "luot": "Xác nhận sau vòng sửa phần 1 mô phỏng (sau CR01), báo cáo lượt trước lưu tại lam_viec/ke_hoach_rui_ro/bao_cao_kiem_tra_lop_B_BL2_vong1.json",
+ "ghi_chu": "Sổ rủi ro, ma trận, EMV (toàn sổ 150.693.014, còn lại 115.413.014, thời gian găng còn mở 3,4 ngày), trạng thái theo theo_doi_rui_ro.csv (RR01, RR21 đóng 27/05/2027) khớp rui_ro.json, rui_ro_bang.json. Thiếu dự phòng 65 triệu là quyết định của nhóm, không tính là lỗi.",
  "danh_gia_tieu_chi": [
   {
    "tieu_chi": "CL01",
    "ket_qua": "dat",
-   "nhan_xet": "Đủ 9 mục theo đặc tả, có tổ chức, thang đo, sổ, ma trận, ứng phó, dự phòng, ngưỡng, quan hệ thay đổi."
+   "nhan_xet": "Đủ 9 mục của đặc tả."
   },
   {
    "tieu_chi": "CL02",
-   "ket_qua": "dat",
-   "nhan_xet": "Khớp nguồn: 21 rủi ro (19 đe dọa, 2 cơ hội), 3/11/7, hạng A/B/C 5/9/7, EMV 147 (110-183) triệu đồng, dự phòng 50.000.000 đồng, khoản còn lại sau lương 414.157.491 đồng (chi_phi.C_sau_luong), EMV thời gian găng 5,4 (4,0-6,8), dự trữ 4,0, thiếu 1,4, vốn lưu động 500.000.000 đồng (du_an.von_luu_dong_du_kien). Quyết định 18/10 được phản ánh đủ ba nội dung."
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Số liệu khớp nguồn và lịch BL2 (dự trữ 7 ngày, kiểm thử chấp nhận 16/07 đến 27/07, M9 27/07). Bảng tổ chức thiếu người phụ trách RR22 (MH08)."
   },
   {
    "tieu_chi": "CL03",
    "ket_qua": "dat",
-   "nhan_xet": "Mỗi rủi ro liên kết gói WBS và mốc; đủ mã RR01-RR21."
+   "nhan_xet": "Rủi ro gắn gói WBS, mốc, CR01, CK10."
   },
   {
    "tieu_chi": "CL04",
    "ket_qua": "dat",
-   "nhan_xet": "Có điều kiện đóng, rủi ro còn lại, ngưỡng SPI, CPI, lỗi nghiêm trọng."
+   "nhan_xet": "Điều kiện đóng và ngưỡng đo được."
   },
   {
    "tieu_chi": "CL05",
    "ket_qua": "dat",
-   "nhan_xet": "Có dấu hiệu, ngưỡng, người quyết định, phương án dự trữ đã chọn (cột Áp dụng = Có cho chấp nhận và báo Chủ đầu tư), ngưỡng báo dự trữ dưới 2 ngày."
+   "nhan_xet": "RR22 do Lê Quang Huy phụ trách có dấu hiệu 9 giờ 00 ngày 10/06/2027, RR19 gắn M3, M9."
   },
   {
    "tieu_chi": "CL06",
    "ket_qua": "dat",
-   "nhan_xet": "Văn phong trang trọng; còn cảnh báo lớp A về từ xong và một câu mang tính ghi chú nội bộ."
+   "nhan_xet": "Không in đậm, không ngoặc kép, gạch dài."
   }
  ],
  "phat_hien": [
   {
-   "ma": "MH01",
-   "muc_do": "canh_bao",
-   "nhom": "nhat_quan",
-   "vi_tri": "Trong sổ rủi ro, RR17 cũng được đánh dấu trên đường găng nhưng không thuộc danh sách dùng để đánh giá dự trữ, hai danh sách được đối chiếu lại khi cập nhật sổ.",
-   "mo_ta": "Chênh lệch RR17 không phải lỗi dữ liệu: RR17 (lỗi trong bảo hành) có tren_gang = true do gắn gói 8.2.4 và mốc M7, nhưng tac_dong_ngay = 0 và emv_ngay = 0, nên việc không đưa vào du_tru.ma_gang không làm đổi EMV thời gian 5,4 ngày. Tuy nhiên câu hiện tại trình bày như một mâu thuẫn chưa xử lý, kiểu ghi chú nội bộ.",
+   "ma": "MH08",
+   "muc_do": "loi",
+   "nhom": "CL02 Nhất quán",
+   "vi_tri": "Ke_hoach_quan_ly_rui_ro.docx mục 2, bảng tổ chức, dòng Người phụ trách rủi ro: 'Trần Bá Đạt, Phạm Tuấn Anh, Ninh Đức Toàn, Nguyễn Thị Phương Liên theo cột người phụ trách của sổ rủi ro'",
+   "mo_ta": "Sau khi giao RR22 cho Lê Quang Huy (sửa MH04, quyết định (d) ngày 25/10/2026), sổ rủi ro mục 4 và rui_ro.json có 5 người phụ trách nhưng bảng tổ chức chỉ liệt kê 4 người, thiếu Lê Quang Huy. Hồi quy của vòng sửa.",
    "cach_sua": "tu_dong",
-   "de_xuat": "NHAN_XET_MA_TRAN: thay bằng câu nêu lý do, ví dụ RR17 gắn mốc M7 nhưng không có tác động thời gian (EMV thời gian bằng 0) nên không tính vào đánh giá dự trữ. Tùy chọn: script tinh_bang_rui_ro.py ghi rõ tiêu chí loại rủi ro có emv_ngay = 0 khỏi ma_gang."
+   "de_xuat": "Danh sách người phụ trách rủi ro ở mục 2 lấy từ tập nguoi_phu_trach của rui_ro.json (dữ liệu hoặc đặc tả), xuất lại tài liệu."
+  }
+ ],
+ "dong_phat_hien_truoc": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Đoạn sau ma trận ghi dự trữ 7 ngày lớn hơn số ngày chậm RR02 (6), RR03 (4), RR04 (5), chấm theo mức suy ra."
   },
   {
    "ma": "MH02",
-   "muc_do": "canh_bao",
-   "nhom": "so_lieu",
-   "vi_tri": "thông báo Chủ đầu tư khi dự trữ còn dưới 2 ngày làm việc",
-   "mo_ta": "Giá trị 2 ngày đúng với quyết định của nhóm nhưng chỉ có trong chuỗi chú thích _quyet_dinh_18_10, không có trường dữ liệu có cấu trúc, nên lớp A coi là số viết tay. Bảng ngưỡng rb#nguong cũng chưa có dòng dự trữ thời gian.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Thêm trường số (ví dụ du_an.nguong_bao_du_tru_ngay = 2) và dòng Dự trữ thời gian còn lại trong rb#nguong, rồi để THEO_DOI hoặc DU_PHONG tham chiếu trường này."
+   "da_dong": true,
+   "nhan_xet": "Căn cứ xác suất RR03 không còn dự trữ 3 ngày, nêu dự trữ lập lại lớn hơn khi ký hợp đồng."
   },
   {
    "ma": "MH03",
-   "muc_do": "canh_bao",
-   "nhom": "pham_vi_nhom_quyet",
-   "vi_tri": "Khi cần đẩy nhanh các gói trên đường găng, Trương Quốc Việt, kỹ sư phát triển backend kiêm DevOps, là nguồn lực có thể điều chuyển.",
-   "mo_ta": "Quyết định 18/10 không nêu người được điều chuyển; nội dung này là tham số nhân sự (nguyên tắc 7). Ngoài ra Trương Quốc Việt không có trong dòng Nhóm phát triển và kiểm thử của bảng mục 2. Chưa chắc nguồn có ghi nhận nguồn lực dư.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Nhóm xác nhận; nếu không có căn cứ trong phan_cong.json thì bỏ câu khỏi DU_PHONG, nếu có thì bổ sung tên vào bảng TO_CHUC."
+   "da_dong": true,
+   "nhan_xet": "Mục 7 ghi RR02 đã xảy ra, RR04 đã đóng, bốn rủi ro còn mở RR03, RR08, RR09, RR10 góp 3,4 ngày."
   },
   {
    "ma": "MH04",
-   "muc_do": "canh_bao",
-   "nhom": "van_phong",
-   "vi_tri": "phải xong trong khoảng kiểm thử chấp nhận; ngay khi luồng đó lập trình xong",
-   "mo_ta": "Lớp A cảnh báo từ xong (khẩu ngữ) trong sổ rủi ro.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Sửa ở du_lieu/rui_ro.json: xong thành hoàn thành."
+   "da_dong": true,
+   "nhan_xet": "RR22 giao Lê Quang Huy trong sổ, mục 6.2. Bảng tổ chức mục 2 chưa cập nhật, ghi thành lỗi mới MH08."
+  },
+  {
+   "ma": "MH05",
+   "da_dong": true,
+   "nhan_xet": "M9 nay bằng hạn 27/07/2027, không còn dự trữ, chấm mức 4 theo mốc gắn đợt 6 có căn cứ."
+  },
+  {
+   "ma": "MH06",
+   "da_dong": true,
+   "nhan_xet": "RR19 gắn M3, M9, đợt 3, đợt 6, dấu hiệu theo ngày dự kiến M3, M9."
+  },
+  {
+   "ma": "MH07",
+   "da_dong": true,
+   "nhan_xet": "theo_doi_rui_ro.csv có dòng 27/05/2027 đóng RR01, RR21, tài liệu ghi Đã đóng."
   }
- ]
+ ],
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "prompt": ".claude/skills/qlda-loi/prompts/vai_kiem_tra.md",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên agent con riêng (kiểm tra lớp B lượt xác nhận sau vòng sửa phần 1 mô phỏng sau CR01), Claude Code, mô hình claude-opus-5-5, python-docx, openpyxl, LibreOffice tính lại công thức",
+ "so_loi": 1,
+ "so_canh_bao": 0,
+ "ket_luan": "chua_dat"
 }

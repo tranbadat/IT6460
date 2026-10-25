@@ -1,0 +1,1259 @@
+{
+ "meta": {
+  "ten": "Báo cáo tổng kết dự án",
+  "id": "tong_ket",
+  "header": "Kết thúc dự án - Báo cáo tổng kết dự án",
+  "huong": "doc",
+  "font": "Times New Roman",
+  "size_pt": 13,
+  "size_bang_pt": 12,
+  "nguon": {
+   "kt": "du_lieu/ket_thuc.json",
+   "hsmt": "du_lieu/hsmt.json",
+   "cp": "du_lieu/chi_phi.json",
+   "lich": "du_lieu/lich.json",
+   "mo_phong": "du_lieu/mo_phong.json",
+   "da": "dau_vao/du_an.json"
+  },
+  "phien_ban": "0.2",
+  "ngay": "12/08/2027"
+ },
+ "blocks": [
+  {
+   "text": "PM_26I_02",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "text": "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "text": "Báo cáo tổng kết dự án",
+   "size": 20,
+   "t": "center"
+  },
+  {
+   "text": "Số liệu tính đến ngày 12/08/2027",
+   "size": 14,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "rows": [
+    [
+     "Dự án",
+     "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+    ],
+    [
+     "Khách hàng",
+     "Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Đơn vị thực hiện",
+     "PM_26I_02"
+    ],
+    [
+     "Môn học",
+     "Quản trị dự án và Quản lý thay đổi"
+    ],
+    [
+     "Nhóm",
+     "PM_26I_02"
+    ],
+    [
+     "Giảng viên",
+     "Vũ Thị Hương Giang"
+    ],
+    [
+     "Người lập",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Phiên bản",
+     "{{PHIEN_BAN}}"
+    ],
+    [
+     "Ngày",
+     "{{NGAY}}"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ],
+   "t": "table"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "muc": [
+    "1. Thông tin chung",
+    "2. Phạm vi và sản phẩm bàn giao",
+    "3. Tiến độ",
+    "4. Chi phí và nguồn lực",
+    "5. Chất lượng",
+    "6. Thay đổi và rủi ro",
+    "7. Bàn giao và công việc sau dự án",
+    "8. Kết luận"
+   ],
+   "t": "muc_luc"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "text": "1. Thông tin chung",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Nội dung",
+     "Kế hoạch",
+     "Thực tế"
+    ],
+    [
+     "Thời gian thực hiện",
+     "18/03/2027 đến 29/07/2027",
+     "18/03/2027 đến 04/08/2027"
+    ],
+    [
+     "Đưa hệ thống vào vận hành",
+     "29/07/2027",
+     "29/07/2027"
+    ],
+    [
+     "Giá hợp đồng trước thuế, đồng",
+     "1.949.024.682",
+     "1.949.024.682"
+    ],
+    [
+     "Công sức, MD",
+     "733",
+     "736,75"
+    ],
+    [
+     "Ngày huy động nhân sự, MD",
+     "908",
+     "908"
+    ],
+    [
+     "Số gói công việc hoàn thành",
+     "173",
+     "173"
+    ],
+    [
+     "Số yêu cầu thay đổi được duyệt",
+     "",
+     "1"
+    ],
+    [
+     "Chỉ tiêu đánh giá đạt",
+     "14",
+     "14"
+    ]
+   ],
+   "widths": [
+    3300,
+    3000,
+    3000
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "Số liệu thực tế trong báo cáo là số liệu mô phỏng. Số liệu mô phỏng: dữ liệu thực tế trong dau_vao/thuc_te/ do script qlda-mo-phong/scripts/mo_phong_sprint.py sinh từ kịch bản biến cố từng sprint (lam_viec/mo_phong/kich_ban_S<n>.json) theo kế hoạch đã duyệt hiện hành, không phải số liệu đo được của dự án thật.",
+   "t": "p"
+  },
+  {
+   "t": "p",
+   "text": "Dự án xây dựng hệ thống website bán hàng trực tuyến cho Công ty Cổ phần ABC Wear đã hoàn thành mục tiêu theo HSMT và RFP. Hệ thống được đưa vào vận hành ngày 29/07/2027, đúng ngày cut over theo phụ lục hợp đồng, dự án đóng ngày 12/08/2027."
+  },
+  {
+   "t": "p",
+   "text": "Về phạm vi, 173 trên 173 gói công việc hoàn thành, gồm phần bán hàng trên sàn thương mại điện tử bổ sung theo yêu cầu thay đổi đã duyệt. Về tiến độ, 10 trên 10 mốc đạt đúng hạn, SPI kỳ cuối 1,00. Về chi phí, công thực tế 736,75 MD so với kế hoạch 733 MD, CPI kỳ cuối 0,99."
+  },
+  {
+   "t": "p",
+   "text": "Về chất lượng, 18 trên 18 tiêu chí nghiệm thu đạt ngay lần đầu, không còn lỗi mở khi kết thúc. Dự án đạt 14 trên 14 chỉ tiêu KPI, xếp loại Tốt. Số liệu thực hiện của dự án là số liệu mô phỏng theo du_lieu/mo_phong.json."
+  },
+  {
+   "text": "2. Phạm vi và sản phẩm bàn giao",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "STT",
+     "Hạng mục theo Mẫu 01A",
+     "Số tiêu chí",
+     "Đạt",
+     "Kết quả"
+    ],
+    [
+     "1",
+     "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "1",
+     "1",
+     "Đạt"
+    ],
+    [
+     "2",
+     "Thiết kế quy trình vận hành mới (New Operational Flow)",
+     "1",
+     "1",
+     "Đạt"
+    ],
+    [
+     "3",
+     "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+     "1",
+     "1",
+     "Đạt"
+    ],
+    [
+     "4",
+     "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+     "1",
+     "1",
+     "Đạt"
+    ],
+    [
+     "5",
+     "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "1",
+     "1",
+     "Đạt"
+    ],
+    [
+     "6",
+     "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "1",
+     "1",
+     "Đạt"
+    ],
+    [
+     "7",
+     "Xây dựng chức năng đặt hàng (Order)",
+     "1",
+     "1",
+     "Đạt"
+    ],
+    [
+     "8",
+     "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+     "1",
+     "1",
+     "Đạt"
+    ],
+    [
+     "9",
+     "Tích hợp với hệ thống chính (Main System)",
+     "2",
+     "2",
+     "Đạt"
+    ],
+    [
+     "10",
+     "Kiểm thử hệ thống",
+     "4",
+     "4",
+     "Đạt"
+    ],
+    [
+     "11",
+     "Kiểm thử vận hành (Operation Test)",
+     "3",
+     "3",
+     "Đạt"
+    ],
+    [
+     "12",
+     "Chuyển giao và hướng dẫn vận hành hệ thống",
+     "0",
+     "0",
+     "Chưa nghiệm thu"
+    ],
+    [
+     "13",
+     "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "1",
+     "1",
+     "Đạt"
+    ]
+   ],
+   "widths": [
+    600,
+    4700,
+    1300,
+    1000,
+    1700
+   ],
+   "center_cols": [
+    0,
+    2,
+    3,
+    4
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Toàn bộ 173 gói công việc lá đã hoàn thành.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Gói vượt công sức trên 20%",
+     "Kế hoạch, MD",
+     "Thực tế, MD",
+     "Chênh lệch"
+    ],
+    [
+     "3.3.7",
+     "Dịch vụ yêu cầu đổi trả và hoàn tiền",
+     "6",
+     "7,25",
+     "20,8%"
+    ],
+    [
+     "1.4.6",
+     "Sửa lỗi và kiểm thử lại trang chủ, danh mục và chi tiết sản phẩm",
+     "3",
+     "4,00",
+     "33,3%"
+    ],
+    [
+     "3.2.3",
+     "Quy trình vận hành mới (New Operational Flow) của kênh bán hàng trực tuyến",
+     "4",
+     "5,00",
+     "25,0%"
+    ],
+    [
+     "4.2.5",
+     "Đặc tả giao diện trao đổi dữ liệu với Main System",
+     "4",
+     "5,00",
+     "25,0%"
+    ]
+   ],
+   "widths": [
+    900,
+    4400,
+    1300,
+    1300,
+    1400
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    2,
+    3,
+    4
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "Các sản phẩm theo RFP gồm đặc tả hệ thống, quy trình vận hành mới, cấu trúc cơ sở dữ liệu Selling DB và sơ đồ phân cấp menu đã được bàn giao và nghiệm thu, 14 trên 14 yêu cầu RFP thuộc phạm vi nghiệm thu đạt. Các 13 hạng mục của Mẫu 01A đều có tiêu chí nghiệm thu đạt, không có hạng mục chưa nghiệm thu."
+  },
+  {
+   "t": "p",
+   "text": "Phạm vi thay đổi duy nhất là yêu cầu thay đổi CR01 Bán hàng trên sàn thương mại điện tử do Chủ đầu tư đề nghị, tăng 76 MD, được phê duyệt bằng phụ lục hợp đồng 01/2027/PL-ABCW và nghiệm thu tại mốc M9. Một số gói vượt công trên 20% so với kế hoạch, như dịch vụ đổi trả và hoàn tiền 3.3.7, do đặc tả có trường hợp nghiệp vụ phức tạp hơn ước lượng, không làm thay đổi phạm vi."
+  },
+  {
+   "text": "3. Tiến độ",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mốc",
+     "Nội dung",
+     "Kế hoạch",
+     "Hạn",
+     "Thực tế",
+     "Kết quả"
+    ],
+    [
+     "M0",
+     "Hợp đồng có hiệu lực, khởi động dự án",
+     "18/03/2027",
+     "18/03/2027",
+     "18/03/2027",
+     "Đúng hạn"
+    ],
+    [
+     "M1",
+     "Kế hoạch quản lý dự án được Chủ đầu tư xác nhận",
+     "14/04/2027",
+     "14/04/2027",
+     "14/04/2027",
+     "Đúng hạn"
+    ],
+    [
+     "M2",
+     "Đặc tả yêu cầu và giao diện ưu tiên được hai bên xác nhận",
+     "06/05/2027",
+     "10/05/2027",
+     "06/05/2027",
+     "Đúng hạn"
+    ],
+    [
+     "M3",
+     "Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+     "08/07/2027",
+     "08/07/2027",
+     "08/07/2027",
+     "Đúng hạn"
+    ],
+    [
+     "M4",
+     "Hoàn thành kiểm thử hệ thống, bản phát hành sẵn sàng kiểm thử chấp nhận",
+     "08/07/2027",
+     "15/07/2027",
+     "12/07/2027",
+     "Đúng hạn, sau kế hoạch 2 ngày làm việc"
+    ],
+    [
+     "M9",
+     "Chủ đầu tư nghiệm thu phần bán hàng trên sàn thương mại điện tử theo yêu cầu thay đổi CR01",
+     "27/07/2027",
+     "27/07/2027",
+     "27/07/2027",
+     "Đúng hạn"
+    ],
+    [
+     "M5",
+     "Hoàn thành kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư",
+     "27/07/2027",
+     "28/07/2027",
+     "27/07/2027",
+     "Đúng hạn"
+    ],
+    [
+     "M6",
+     "Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+     "29/07/2027",
+     "29/07/2027",
+     "29/07/2027",
+     "Đúng hạn"
+    ],
+    [
+     "M7",
+     "Nhà thầu nộp bảo lãnh bảo hành, bàn giao mã nguồn và hệ thống",
+     "29/07/2027",
+     "29/07/2027",
+     "29/07/2027",
+     "Đúng hạn"
+    ],
+    [
+     "M8",
+     "Đóng dự án, báo cáo tổng kết và bài học kinh nghiệm được lập, hồ sơ dự án được lưu trữ",
+     "04/08/2027",
+     "12/08/2027",
+     "04/08/2027",
+     "Đúng hạn"
+    ]
+   ],
+   "widths": [
+    700,
+    3100,
+    1200,
+    1200,
+    1200,
+    1900
+   ],
+   "center_cols": [
+    0,
+    2,
+    3,
+    4
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Kết quả mốc so với hạn của mốc (mốc cut over so với ngày cut over của hợp đồng), cột Kế hoạch là ngày theo lịch hiện hành.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Kỳ",
+     "Ngày",
+     "PV, MD",
+     "EV, MD",
+     "AC, MD",
+     "SPI",
+     "CPI",
+     "CPI thực",
+     "Trạng thái"
+    ],
+    [
+     "S1",
+     "31/03/2027",
+     "55,50",
+     "55,54",
+     "55,25",
+     "1,00",
+     "1,01",
+     "1,00",
+     "Xanh"
+    ],
+    [
+     "S2",
+     "14/04/2027",
+     "131,50",
+     "128,53",
+     "129,25",
+     "0,98",
+     "0,99",
+     "0,99",
+     "Vàng"
+    ],
+    [
+     "S3",
+     "06/05/2027",
+     "273,50",
+     "257,49",
+     "260,50",
+     "0,94",
+     "0,99",
+     "0,99",
+     "Vàng"
+    ],
+    [
+     "S4",
+     "20/05/2027",
+     "389,80",
+     "369,33",
+     "373,00",
+     "0,95",
+     "0,99",
+     "0,98",
+     "Vàng"
+    ],
+    [
+     "S5",
+     "03/06/2027",
+     "463,62",
+     "458,07",
+     "462,00",
+     "0,99",
+     "0,99",
+     "0,98",
+     "Xanh"
+    ],
+    [
+     "S6",
+     "17/06/2027",
+     "554,76",
+     "545,34",
+     "549,75",
+     "0,98",
+     "0,99",
+     "0,99",
+     "Vàng"
+    ],
+    [
+     "S7",
+     "01/07/2027",
+     "615,95",
+     "606,82",
+     "610,50",
+     "0,99",
+     "0,99",
+     "0,99",
+     "Xanh"
+    ],
+    [
+     "S8",
+     "15/07/2027",
+     "656,48",
+     "654,26",
+     "658,50",
+     "1,00",
+     "0,99",
+     "0,98",
+     "Xanh"
+    ],
+    [
+     "S9",
+     "29/07/2027",
+     "731,00",
+     "731,00",
+     "734,75",
+     "1,00",
+     "0,99",
+     "0,99",
+     "Xanh"
+    ],
+    [
+     "KT",
+     "12/08/2027",
+     "733,00",
+     "733,00",
+     "736,75",
+     "1,00",
+     "0,99",
+     "0,99",
+     "Xanh"
+    ]
+   ],
+   "widths": [
+    1000,
+    1300,
+    1100,
+    1100,
+    1100,
+    800,
+    800,
+    1000,
+    1100
+   ],
+   "center_cols": [
+    0,
+    1,
+    8
+   ],
+   "right_cols": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "SPI duy trì ở mức Xanh trong phần lớn các kỳ, giảm xuống mức Vàng ở các kỳ S3, S4 do chuỗi thiết kế chi tiết hoàn thành muộn và tài liệu Main System đến muộn (rủi ro RR02), sau đó phục hồi nhờ làm bù bằng quỹ sẵn sàng và huy động bổ sung theo nhu cầu ở S8. SPI kỳ cuối đạt 1,00."
+  },
+  {
+   "t": "p",
+   "text": "Mọi mốc hợp đồng và mốc của phụ lục đạt đúng hạn, mốc kiểm thử hệ thống M4 đạt trong hạn nhưng sau ngày dự kiến do khắc phục lỗi kiểm thử hệ thống. Các mốc thanh toán M2, M3, M9 và cut over đạt đúng hạn, ngày đưa vào vận hành 29/07/2027 trùng ngày cut over 29/07/2027 theo phụ lục, số ngày trễ so với cut over là 0."
+  },
+  {
+   "text": "4. Chi phí và nguồn lực",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Khoản mục",
+     "Kế hoạch, đồng",
+     "Thực tế, đồng",
+     "Chênh lệch, đồng"
+    ],
+    [
+     "Chi phí nhân sự theo MD công việc (lương ngày vai trò x hệ số bảo hiểm x MD)",
+     "1.327.839.441",
+     "1.336.368.239",
+     "8.528.798"
+    ],
+    [
+     "Ngày sẵn sàng không ghi công (175 MD kế hoạch, 171,25 MD thực tế), không tính lương",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "Chi phí khác đã chi (khoản B, không gồm dự phòng rủi ro)",
+     "100.000.000",
+     "60.000.000",
+     "âm 40.000.000"
+    ],
+    [
+     "Dự phòng rủi ro (tác động thực tế ở mục 6)",
+     "50.000.000",
+     "",
+     ""
+    ],
+    [
+     "Nghĩa vụ đã cam kết chưa chi (bảo hành)",
+     "",
+     "40.000.000",
+     ""
+    ],
+    [
+     "Tổng chi phí",
+     "1.477.839.441",
+     "1.436.368.239",
+     "âm 41.471.202"
+    ],
+    [
+     "Giá hợp đồng trước thuế",
+     "1.949.024.682",
+     "1.949.024.682",
+     "0"
+    ],
+    [
+     "Chênh lệch giá hợp đồng và chi phí",
+     "471.185.241",
+     "512.656.443",
+     "41.471.202"
+    ]
+   ],
+   "widths": [
+    3700,
+    1900,
+    1900,
+    1800
+   ],
+   "center_cols": [],
+   "right_cols": [
+    1,
+    2,
+    3
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Chi phí nhân sự tính theo cách trả lương nhóm khai báo (trả theo công sức (MD công việc)), MD tính lương là MD công việc (kế hoạch là MD giao, thực tế là MD nhật ký), cùng cơ sở với cost estimate, tính đến ngày 12/08/2027. Ngày sẵn sàng không ghi công là ngày huy động trừ MD ghi trong nhật ký công việc. Chênh lệch giá hợp đồng và chi phí dùng chi phí nhân sự này.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Chỉ tiêu",
+     "Kế hoạch",
+     "Thực tế"
+    ],
+    [
+     "Tỷ suất chênh lệch trên giá hợp đồng",
+     "24,2%",
+     "26,3%"
+    ],
+    [
+     "Công sức, MD",
+     "733",
+     "736,75"
+    ],
+    [
+     "Giá trị theo đơn giá dự toán, đồng",
+     "BAC 1.581.550.000",
+     "EV 1.581.550.000, AC 1.589.487.500"
+    ],
+    [
+     "Chỉ số CPI theo công, SPI kỳ cuối",
+     "",
+     "CPI 0,99, SPI 1,00"
+    ],
+    [
+     "Chỉ số CPI theo chi phí thực kỳ cuối",
+     "",
+     "0,99"
+    ],
+    [
+     "Ngày huy động, ngày sẵn sàng không ghi công, MD",
+     "908",
+     "908, sẵn sàng 171,25"
+    ],
+    [
+     "Tỷ lệ sử dụng nhân lực huy động",
+     "",
+     "81,1%"
+    ]
+   ],
+   "widths": [
+    3700,
+    2600,
+    3000
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Thành viên",
+     "Vai trò",
+     "Kế hoạch, MD",
+     "Thực tế, MD",
+     "Chênh lệch, MD",
+     "Huy động, MD",
+     "Sẵn sàng không ghi công, MD",
+     "Sử dụng"
+    ],
+    [
+     "Trần Bá Đạt",
+     "Trưởng nhóm, kiến trúc sư",
+     "66,33",
+     "67,25",
+     "0,92",
+     "86",
+     "18,75",
+     "78,2%"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "Kỹ sư backend",
+     "50,00",
+     "50,25",
+     "0,25",
+     "69",
+     "18,75",
+     "72,8%"
+    ],
+    [
+     "Vũ Đức Minh",
+     "Kỹ sư frontend",
+     "58,00",
+     "57,50",
+     "-0,50",
+     "71",
+     "13,50",
+     "81,0%"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "Kỹ sư backend",
+     "66,50",
+     "67,50",
+     "1,00",
+     "76",
+     "8,50",
+     "88,8%"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "Phân tích nghiệp vụ, kiểm thử",
+     "72,50",
+     "73,25",
+     "0,75",
+     "83",
+     "9,75",
+     "88,2%"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "Kiến trúc sư kiêm phân tích nghiệp vụ",
+     "70,67",
+     "71,75",
+     "1,08",
+     "80",
+     "8,25",
+     "89,7%"
+    ],
+    [
+     "Lê Quang Huy",
+     "Kỹ sư backend",
+     "67,50",
+     "67,00",
+     "-0,50",
+     "85",
+     "18,00",
+     "78,8%"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "Kỹ sư backend",
+     "64,00",
+     "64,25",
+     "0,25",
+     "77",
+     "12,75",
+     "83,4%"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "Kỹ sư backend",
+     "59,50",
+     "60,25",
+     "0,75",
+     "86",
+     "25,75",
+     "70,1%"
+    ],
+    [
+     "Trần Thu Hà",
+     "Kỹ sư kiểm thử",
+     "49,50",
+     "49,75",
+     "0,25",
+     "70",
+     "20,25",
+     "71,1%"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "Kỹ sư kiểm thử",
+     "50,00",
+     "49,25",
+     "-0,75",
+     "63",
+     "13,75",
+     "78,2%"
+    ],
+    [
+     "Trương Quốc Việt",
+     "Kỹ sư backend",
+     "58,50",
+     "58,75",
+     "0,25",
+     "62",
+     "3,25",
+     "94,8%"
+    ],
+    [
+     "Tổng",
+     "",
+     "733,00",
+     "736,75",
+     "3,75",
+     "908",
+     "171,25",
+     ""
+    ]
+   ],
+   "widths": [
+    2000,
+    1500,
+    1000,
+    1000,
+    900,
+    1000,
+    1100,
+    800
+   ],
+   "center_cols": [],
+   "right_cols": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "Lương trả theo cách trả theo công sức (MD công việc). Chi phí nhân sự thực tế 1.336.368.239 đồng so với kế hoạch 1.327.839.441 đồng, chênh 8.528.798 đồng tương ứng 3,75 MD vượt kế hoạch, chủ yếu do sửa lỗi và tối ưu hiệu năng. Tỷ lệ sử dụng nhân lực huy động đạt 81,1%, còn 171,25 MD sẵn sàng không ghi công, với cách trả theo công sức phần này là chỉ số năng lực, không phát sinh chi phí."
+  },
+  {
+   "t": "p",
+   "text": "Chi phí khác đã chi 60.000.000 đồng, nghĩa vụ bảo hành đã cam kết chưa chi 40.000.000 đồng. Dự phòng rủi ro 50.000.000 đồng được giữ ngoài khoản B, tác động thực tế của các rủi ro đã xảy ra là 5.250.000 đồng. CPI theo công 0,99 và CPI theo chi phí thực 0,99 gần như trùng nhau vì lương trả theo MD công việc."
+  },
+  {
+   "text": "5. Chất lượng",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Chỉ tiêu",
+     "Giá trị"
+    ],
+    [
+     "Tiêu chí nghiệm thu đạt",
+     "18/18 (100%)"
+    ],
+    [
+     "Tiêu chí phải nghiệm thu lại",
+     "0"
+    ],
+    [
+     "Yêu cầu RFP nghiệm thu đạt",
+     "14/14"
+    ],
+    [
+     "Tổng số lỗi và mật độ lỗi",
+     "55 lỗi, 0,75 lỗi trên 10 MD"
+    ],
+    [
+     "Lỗi còn mở khi bàn giao",
+     "0 lỗi"
+    ],
+    [
+     "Thời gian khắc phục trung bình",
+     "3,8 ngày làm việc"
+    ]
+   ],
+   "widths": [
+    5300,
+    4000
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Mức độ",
+     "Tổng",
+     "Đã đóng",
+     "Còn mở"
+    ],
+    [
+     "Nghiêm trọng",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "Cao",
+     "6",
+     "6",
+     "0"
+    ],
+    [
+     "Trung bình",
+     "25",
+     "25",
+     "0"
+    ],
+    [
+     "Thấp",
+     "24",
+     "24",
+     "0"
+    ],
+    [
+     "Tổng",
+     "55",
+     "55",
+     "0"
+    ]
+   ],
+   "widths": [
+    3000,
+    2000,
+    2100,
+    2200
+   ],
+   "center_cols": [
+    1,
+    2,
+    3
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "Mọi tiêu chí nghiệm thu đạt ngay lần đầu, số lần nghiệm thu lại là 0. Chỉ tiêu thời gian phản hồi không quá 2 giây chỉ đạt sau khi tối ưu truy vấn và bộ nhớ đệm trang danh mục trong kỳ S7, khi rủi ro RR06 xảy ra trong kiểm thử hiệu năng."
+  },
+  {
+   "t": "p",
+   "text": "Tổng số lỗi ghi nhận là 55, mật độ 0,75 lỗi trên 10 MD, thời gian đóng trung bình 3,8 ngày làm việc, không có lỗi nghiêm trọng. Lỗi tập trung ở các đợt kiểm thử đặt hàng, kiểm thử tích hợp và kiểm thử chấp nhận. Khi kết thúc không còn lỗi mở, các yêu cầu phát sinh sau cut over xử lý theo cam kết bảo hành."
+  },
+  {
+   "text": "6. Thay đổi và rủi ro",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Yêu cầu thay đổi",
+     "Mức",
+     "Trạng thái",
+     "MD",
+     "Chi phí, đồng",
+     "Xử lý, ngày"
+    ],
+    [
+     "CR01",
+     "Bán hàng trên sàn thương mại điện tử",
+     "Lớn",
+     "Đã đóng",
+     "76",
+     "161.500.000",
+     "5"
+    ]
+   ],
+   "widths": [
+    700,
+    3300,
+    1100,
+    1400,
+    800,
+    1300,
+    700
+   ],
+   "center_cols": [
+    0,
+    2,
+    6
+   ],
+   "right_cols": [
+    4,
+    5
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Rủi ro đã xảy ra",
+     "Hành động ứng phó",
+     "MD",
+     "Chi phí, đồng"
+    ],
+    [
+     "RR02",
+     "Tài liệu giao diện hoặc môi trường thử của Main System đến muộn hơn cam kết hoặc không đủ thông tin",
+     "Đến 9 giờ 00 ngày 14/04/2027 chưa nhận tài liệu đặc tả giao diện của Main System. Ninh Đức Toàn lập danh sách thông tin còn thiếu, Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư trong ngày, nhóm tích hợp chuẩn bị dịch vụ giả lập. Tài liệu đặc tả giao diện Main System nhận ngày 19/04/2027, muộn 2 ngày làm việc so với CK1. Ninh Đức Toàn đối chiếu tài liệu với danh sách thông tin còn thiếu, Trần Bá Đạt làm đặc tả giao diện tích hợp ngay khi nhận tài liệu, nhóm tích hợp tiếp tục chuẩn bị dịch vụ giả lập",
+     "1,00",
+     "2.100.000"
+    ],
+    [
+     "RR04",
+     "Vị trí bổ sung không có mặt đúng sprint huy động đã thống nhất",
+     "Trần Bá Đạt xác nhận ngày có mặt của Trần Thu Hà, Nguyễn Thị Phương Liên chuẩn bị khung kế hoạch bảo đảm chất lượng để bàn giao, gói 2.1.1 làm bù trong tuần đầu sprint. Điều kiện đóng đạt",
+     "0,50",
+     "1.050.000"
+    ],
+    [
+     "RR06",
+     "Thời gian phản hồi vượt 2 giây hoặc không chịu tải 500 người dùng đồng thời",
+     "Kích hoạt kế hoạch ứng phó khi kết quả kiểm thử hiệu năng cho thời gian phản hồi trang danh mục 2,6 giây ở mức tải 500 người dùng đồng thời. Đỗ Minh Quân tối ưu truy vấn danh mục và bộ nhớ đệm thay Phạm Tuấn Anh (không huy động trong S7), Ninh Đức Toàn rà soát cấu hình mở rộng nút ứng dụng trên môi trường vận hành, Phạm Ngọc Anh đo lại sau tối ưu",
+     "1,00",
+     "2.100.000"
+    ]
+   ],
+   "widths": [
+    700,
+    2900,
+    3300,
+    800,
+    1600
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    3,
+    4
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "Dự án có 1 yêu cầu thay đổi, được đánh giá và quyết định đúng thời hạn, tăng 76 MD và lùi cut over theo phụ lục hợp đồng. Yêu cầu đã đóng sau khi phần bán hàng trên sàn được nghiệm thu và các tài liệu kế hoạch được cập nhật thành đường cơ sở BL2."
+  },
+  {
+   "t": "p",
+   "text": "Trong 22 rủi ro của sổ đăng ký, 3 rủi ro đã xảy ra là RR02 (tài liệu Main System đến muộn), RR04 (vị trí bổ sung có mặt muộn) và RR06 (thời gian phản hồi vượt 2 giây), đều đã xử lý theo kế hoạch ứng phó. Tác động thực tế 2,50 MD, thấp hơn nhiều so với tổng EMV 47,60 MD, tỷ lệ dùng dự phòng tương đương 10,5%. Không có rủi ro mới phát sinh ngoài sổ."
+  },
+  {
+   "text": "7. Bàn giao và công việc sau dự án",
+   "t": "h1"
+  },
+  {
+   "text": "Không còn lỗi mở khi bàn giao.",
+   "t": "p"
+  },
+  {
+   "text": "Sổ vấn đề ghi nhận 14 vấn đề, đã đóng 14, còn mở 0 (quá hạn 0) tại ngày 12/08/2027.",
+   "t": "p"
+  },
+  {
+   "text": "Không còn vấn đề mở trong sổ vấn đề khi kết thúc dự án.",
+   "t": "p"
+  },
+  {
+   "text": "Không còn hành động chưa hoàn thành.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Nội dung",
+     "Người phụ trách",
+     "Thời hạn",
+     "Ghi chú"
+    ],
+    [
+     "Bàn giao mã nguồn, tài liệu kỹ thuật, tài liệu cài đặt và danh mục thư viện (đã ký biên bản tại mốc M7)",
+     "Trần Bá Đạt",
+     "29/07/2027",
+     "Đã hoàn thành"
+    ],
+    [
+     "Bảo hành, khắc phục sai sót theo thời hạn bảo hành 12 tháng từ ngày cut over, tiếp nhận yêu cầu qua đầu mối của Chủ đầu tư",
+     "Trần Bá Đạt",
+     "Theo thời hạn bảo hành",
+     "Nghĩa vụ bảo hành đã cam kết theo khoản B2"
+    ],
+    [
+     "Hướng dẫn vận hành cho cán bộ Chủ đầu tư và hỗ trợ tăng cường sau cut over",
+     "Nguyễn Hoàng Nam",
+     "12/08/2027",
+     "Đã hoàn thành trong giai đoạn Kết thúc"
+    ],
+    [
+     "Hồ sơ thanh toán Đợt 4, Đợt 5 theo hợp đồng và Đợt 6 theo phụ lục hợp đồng",
+     "Trần Bá Đạt",
+     "12/08/2027",
+     "Chủ đầu tư thanh toán trong thời hạn của hợp đồng"
+    ],
+    [
+     "Lưu trữ hồ sơ dự án, sổ phiên bản và nhật ký, thanh lý hợp đồng sau khi hết thời hạn bảo hành",
+     "Trần Bá Đạt",
+     "Sau thời hạn bảo hành",
+     "Không còn vấn đề tồn đọng trong sổ vấn đề"
+    ]
+   ],
+   "widths": [
+    4200,
+    1900,
+    1400,
+    1800
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "8. Kết luận",
+   "t": "h1"
+  },
+  {
+   "t": "p",
+   "text": "Nhà thầu đã hoàn thành các nghĩa vụ của hợp đồng và phụ lục hợp đồng trong giai đoạn thực hiện, hệ thống vận hành đúng ngày cam kết và được Chủ đầu tư nghiệm thu."
+  },
+  {
+   "t": "p",
+   "text": "Nhà thầu đề nghị Chủ đầu tư ký biên bản nghiệm thu tổng thể, thanh toán các đợt còn lại theo hợp đồng và phụ lục, tiến hành thanh lý hợp đồng khi hết thời hạn bảo hành."
+  }
+ ],
+ "canh_bao_soan": [
+  "CHAT_LUONG: số liệu viết tay \"10 MD\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi",
+  "PHAM_VI: số liệu viết tay \"20%\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi"
+ ]
+}

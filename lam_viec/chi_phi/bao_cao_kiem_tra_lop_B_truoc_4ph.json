@@ -1,0 +1,51 @@
+{
+ "tai_lieu": "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+ "phien_ban": "0.8",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 0,
+ "xac_nhan_vong_truoc": {
+  "MH01": "Đã xử lý: mục 8 ghi báo Chủ đầu tư khi dự trữ còn dưới 2 ngày làm việc",
+  "MH02": "Đã xử lý: bỏ dẫn chiếu C10, C41",
+  "MH03": "Đã xử lý: thống nhất khoảng 230 MD",
+  "MH04": "Đã xử lý: đoạn thuế chỉ giữ kết luận"
+ },
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục theo đặc tả."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Số liệu khớp chi_phi.json, Cost_estimate.xlsx, wbs.json, lich.json."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Dẫn mã rủi ro, mốc, Mẫu 01A, Mẫu 11A."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Có ngưỡng hòa vốn, năng suất hòa vốn, ngưỡng chịu đựng."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Bốn quyết định 18/10 phản ánh đúng: dự phòng 50 triệu, bù từ C sau lương, vốn lưu động 500 triệu, dự trữ 4 ngày kèm ngưỡng báo Chủ đầu tư dưới 2 ngày."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Không còn ghi chú nội bộ, không trùng lặp."
+  },
+  {
+   "tieu_chi": "DH",
+   "ket_qua": "dat",
+   "nhan_xet": "Đạt các tiêu chí doc_hieu của đặc tả."
+  }
+ ],
+ "phat_hien": []
+}

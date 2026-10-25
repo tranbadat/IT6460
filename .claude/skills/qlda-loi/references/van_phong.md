@@ -22,4 +22,4 @@
 
 ## Số liệu
 - Mọi con số trong đoạn văn agent soạn viết bằng tham chiếu dữ liệu `{bi_danh#duong_dan|dinh_dang}`, ví dụ `{cp#gia_chao|tien}` đồng, `{lich#cut_over|ngay}`. Khi dữ liệu thay đổi, tài liệu tạo lại tự cập nhật số. Số viết tay bị cảnh báo.
-- Định dạng: tien, trieu, md, pt, ngay, so, so1, so2, so3, nguyen, chu.
+- Định dạng: tien, trieu, md, pt, ngay, so, so1, so2, so3, nguyen, chu, pt1, md2 (số chữ số cố định, dùng cho báo cáo tiến độ).

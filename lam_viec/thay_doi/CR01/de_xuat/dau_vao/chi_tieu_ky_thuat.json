@@ -1,0 +1,170 @@
+{
+ "_huong_dan": "Chỉ tiêu kỹ thuật định lượng nhà thầu cam kết, dùng cho đề xuất kỹ thuật của HSDT, tiêu chí nghiệm thu của master plan và đánh giá khi kết thúc. Trường null là chưa thống nhất, tài liệu ghi rõ thời điểm thống nhất. Đổi chỉ tiêu thì sửa tệp này rồi chạy lại các bước báo cũ.",
+ "chi_tieu": [
+  {
+   "ma": "KT01",
+   "yeu_cau_hsmt": "Hoạt động liên tục 24 giờ mỗi ngày trong 365 ngày",
+   "chi_tieu": "Tỷ lệ sẵn sàng từ 99,5% mỗi tháng, không tính khung bảo trì đã thống nhất",
+   "gia_tri": 0.995,
+   "don_vi": "tỷ lệ mỗi tháng",
+   "giai_phap": "Tối thiểu 02 nút ứng dụng sau bộ cân bằng tải; cơ sở dữ liệu cấu hình chính và dự phòng; triển khai cuốn chiếu không dừng dịch vụ; kiểm tra sức khỏe và cảnh báo tự động",
+   "cach_kiem_chung": "Diễn tập chuyển đổi dự phòng trước cut over"
+  },
+  {
+   "ma": "KT02",
+   "yeu_cau_hsmt": "Thời gian phản hồi không quá 2 giây cho mỗi thao tác",
+   "chi_tieu": "Mọi thao tác cốt lõi (tìm kiếm, xem sản phẩm, đăng nhập, giỏ hàng, đặt hàng) không quá 2 giây, báo cáo kèm phân vị 95",
+   "gia_tri": 2,
+   "don_vi": "giây",
+   "giai_phap": "Chỉ mục tìm kiếm riêng; bộ nhớ đệm trang danh mục, chi tiết sản phẩm; tối ưu truy vấn và chỉ mục cơ sở dữ liệu; xử lý bất đồng bộ các tác vụ gọi hệ thống ngoài",
+   "cach_kiem_chung": "Đo các thao tác cốt lõi trên môi trường thống nhất, báo cáo kèm phân vị 95"
+  },
+  {
+   "ma": "KT03",
+   "yeu_cau_hsmt": "Thời gian phản hồi không quá 2 giây cho mỗi thao tác",
+   "chi_tieu": "Chịu tải 500 người dùng đồng thời",
+   "gia_tri": 500,
+   "don_vi": "người dùng đồng thời",
+   "giai_phap": "Mở rộng theo chiều ngang ở lớp ứng dụng",
+   "cach_kiem_chung": "Thử tải 500 người dùng đồng thời, đo lại sau tối ưu"
+  },
+  {
+   "ma": "KT04",
+   "yeu_cau_hsmt": "An toàn dữ liệu",
+   "chi_tieu": "Rà soát lỗ hổng theo OWASP Top 10 và kiểm thử lại sau khắc phục",
+   "gia_tri": null,
+   "don_vi": null,
+   "giai_phap": "HTTPS; băm mật khẩu; phân quyền theo vai trò; kiểm soát dữ liệu đầu vào; bảo vệ phiên; giới hạn đăng nhập sai; tách khóa và cấu hình bí mật khỏi mã nguồn; ghi nhật ký thao tác nhạy cảm",
+   "cach_kiem_chung": "Báo cáo rà soát lỗ hổng và kết quả kiểm thử lại"
+  },
+  {
+   "ma": "KT05",
+   "yeu_cau_hsmt": "Sao lưu, khôi phục",
+   "chi_tieu": "Sao lưu toàn phần hằng ngày, sao lưu nhật ký giao dịch theo giờ",
+   "gia_tri": null,
+   "don_vi": null,
+   "giai_phap": "Sao lưu toàn phần hằng ngày, sao lưu nhật ký giao dịch theo giờ",
+   "cach_kiem_chung": "Diễn tập sao lưu và khôi phục trên môi trường vận hành trước nghiệm thu (gói 4.4.8)",
+   "rpo_gio": null,
+   "rto_gio": null,
+   "_ghi_chu": "RPO, RTO do hai bên thống nhất khi xác nhận đặc tả"
+  }
+ ],
+ "bao_hanh": {
+  "thoi_han_thang": 12,
+  "_nguon_phan_hoi": "Quyết định của nhóm ngày 25/10/2026: thời hạn phản hồi lỗi mức Cao 4 giờ, mức Khác 8 giờ; mức Nghiêm trọng tính liên tục 24 giờ mỗi ngày vì hệ thống hoạt động 24 giờ, 365 ngày, mức Cao và Khác tính trong giờ hành chính",
+  "muc_loi": [
+   {
+    "muc": "Nghiêm trọng",
+    "phan_hoi_gio": 2,
+    "khac_phuc": "8 giờ",
+    "cach_tinh": "Tính liên tục 24 giờ mỗi ngày, kể cả ngày nghỉ, từ khi tiếp nhận báo lỗi"
+   },
+   {
+    "muc": "Cao",
+    "phan_hoi_gio": 4,
+    "khac_phuc": "1 ngày làm việc",
+    "cach_tinh": "Tính trong giờ hành chính (8 giờ 00 đến 17 giờ 00 các ngày làm việc) từ khi tiếp nhận"
+   },
+   {
+    "muc": "Khác",
+    "phan_hoi_gio": 8,
+    "khac_phuc": "3 ngày làm việc",
+    "cach_tinh": "Tính trong giờ hành chính (8 giờ 00 đến 17 giờ 00 các ngày làm việc) từ khi tiếp nhận"
+   }
+  ],
+  "ho_tro_tang_cuong": {
+   "tu": "2027-07-30",
+   "den": "2027-08-12",
+   "noi_dung": "Trực hỗ trợ trong giờ hành chính, theo dõi cảnh báo và xử lý sự cố, nằm trong chi phí bảo hành",
+   "_ghi_chu": "Dời theo 01/2027/PL-ABCW (CR01): bắt đầu ngày làm việc sau cut over mới 29/07/2027, giữ số ngày làm việc."
+  }
+ },
+ "dieu_kien_cut_over": "Kiểm thử chấp nhận đạt, không còn lỗi nghiêm trọng hoặc cao làm gián đoạn luồng đặt hàng, có báo cáo hiệu năng và an toàn thông tin của bản phát hành",
+ "thoi_han_danh_gia_thay_doi_ngay": 3,
+ "nguon": "HSDT của nhóm mục II.2 bảng 11, II.10, II.11, III.7, III.8. Nhóm quyết định ngày 17/10/2026 đưa các chỉ tiêu này vào đầu vào chung.",
+ "ha_tang_toi_thieu": [
+  {
+   "thanh_phan": "Máy chủ ứng dụng",
+   "so_luong": "2",
+   "cau_hinh": "8 vCPU, 16 GB RAM, 200 GB SSD mỗi máy, hệ điều hành Ubuntu Server 22.04 LTS",
+   "ghi_chu": "Hai nút sau cân bằng tải, mở rộng ngang khi tải tăng (KT01, KT03)"
+  },
+  {
+   "thanh_phan": "Cân bằng tải",
+   "so_luong": "1 cặp chế độ dự phòng",
+   "cau_hinh": "Hỗ trợ HTTPS (TLS 1.2 trở lên), kiểm tra sức khỏe nút ứng dụng",
+   "ghi_chu": "Có thể dùng thiết bị hoặc dịch vụ cân bằng tải của hạ tầng Chủ đầu tư"
+  },
+  {
+   "thanh_phan": "Máy chủ cơ sở dữ liệu",
+   "so_luong": "2",
+   "cau_hinh": "8 vCPU, 32 GB RAM, 500 GB SSD mỗi máy, PostgreSQL 16",
+   "ghi_chu": "Chính và dự phòng, nhân bản liên tục (KT01, KT05)"
+  },
+  {
+   "thanh_phan": "Máy chủ chỉ mục tìm kiếm và bộ nhớ đệm",
+   "so_luong": "1",
+   "cau_hinh": "4 vCPU, 16 GB RAM, 100 GB SSD, OpenSearch 2 và Redis 7",
+   "ghi_chu": "Bảo đảm thời gian phản hồi tìm kiếm, trang danh mục (KT02)"
+  },
+  {
+   "thanh_phan": "Lưu trữ sao lưu",
+   "so_luong": "1",
+   "cau_hinh": "Dung lượng 2 TB, tách biệt máy chủ cơ sở dữ liệu, lưu bản sao lưu tối thiểu 30 ngày",
+   "ghi_chu": "Sao lưu toàn phần hằng ngày, nhật ký giao dịch theo giờ (KT05)"
+  },
+  {
+   "thanh_phan": "Đường truyền internet",
+   "so_luong": "2 đường",
+   "cau_hinh": "Tối thiểu 100 Mbps mỗi đường, hai nhà cung cấp, địa chỉ IP tĩnh, chứng thư số SSL cho tên miền",
+   "ghi_chu": "Đường thứ hai dự phòng khi đường chính sự cố (KT01)"
+  },
+  {
+   "thanh_phan": "Kết nối với Main System",
+   "so_luong": "1",
+   "cau_hinh": "Mạng nội bộ hoặc kênh VPN riêng, tối thiểu 10 Mbps",
+   "ghi_chu": "Đồng bộ sản phẩm, tồn kho, chuyển đơn hàng và trạng thái vận chuyển"
+  },
+  {
+   "thanh_phan": "Phần mềm nền",
+   "so_luong": "Theo số máy chủ",
+   "cau_hinh": "Ubuntu Server 22.04 LTS, Nginx, OpenJDK 21, PostgreSQL 16, OpenSearch 2, Redis 7, Docker, Prometheus và Grafana (mã nguồn mở, không phát sinh bản quyền)",
+   "ghi_chu": "Nhà thầu cài đặt, cấu hình tại gói 4.5.1, 4.5.2"
+  }
+ ],
+ "_nguon_ha_tang": "Quyết định của nhóm ngày 25/10/2026: cấu hình tối thiểu do nhà thầu đề xuất theo mục 3.5 Chương V của HSMT, tính cho yêu cầu hoạt động liên tục (KT01), thời gian phản hồi (KT02), 500 người dùng đồng thời (KT03) và môi trường vận hành của gói 4.5.1; hai bên thống nhất khi xác nhận đặc tả",
+ "cong_nghe": [
+  {
+   "tang": "Giao diện web",
+   "cong_nghe": "React 18, TypeScript, thiết kế đáp ứng (responsive)",
+   "ly_do": "Thư viện thành phần dùng lại được, hiển thị tốt trên máy tính và điện thoại, nhóm đã dùng trong hai hợp đồng tương tự"
+  },
+  {
+   "tang": "Dịch vụ phía máy chủ",
+   "cong_nghe": "Java 21, Spring Boot 3, API REST",
+   "ly_do": "Ổn định, hỗ trợ bảo mật, phân quyền và xử lý bất đồng bộ, mở rộng ngang theo nút ứng dụng"
+  },
+  {
+   "tang": "Cơ sở dữ liệu bán hàng (Selling DB)",
+   "cong_nghe": "PostgreSQL 16",
+   "ly_do": "Hỗ trợ nhân bản chính và dự phòng, sao lưu nhật ký giao dịch theo giờ, không phát sinh bản quyền"
+  },
+  {
+   "tang": "Tìm kiếm và bộ nhớ đệm",
+   "cong_nghe": "OpenSearch 2, Redis 7",
+   "ly_do": "Chỉ mục tìm kiếm riêng và bộ nhớ đệm trang, phiên làm việc để đạt thời gian phản hồi không quá 2 giây"
+  },
+  {
+   "tang": "Tích hợp với Main System",
+   "cong_nghe": "Dịch vụ tích hợp theo API hoặc tệp theo đặc tả giao diện, hàng đợi gửi lại",
+   "ly_do": "Không phụ thuộc nền tảng Main System chưa được mô tả, có cơ chế gửi lại khi lỗi"
+  },
+  {
+   "tang": "Triển khai và giám sát",
+   "cong_nghe": "Docker, quy trình tích hợp và triển khai tự động, Prometheus và Grafana",
+   "ly_do": "Triển khai cuốn chiếu không dừng dịch vụ, cảnh báo tự động"
+  }
+ ],
+ "_nguon_cong_nghe": "Quyết định của nhóm ngày 25/10/2026: công nghệ đề xuất của nhà thầu theo tiêu chí kỹ thuật 1.2 của HSMT"
+}

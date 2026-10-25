@@ -1,0 +1,135 @@
+{
+ "tai_lieu": "ket_qua/08_Change_management_plan/Ke_hoach_quan_ly_thay_doi.docx",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 4,
+ "phien_ban": "0.4",
+ "vong_kiem_tra_lop_B": 2,
+ "ngay_kiem_tra": "2026-10-25",
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 11 mục theo đặc tả: căn cứ, ban kiểm soát thay đổi, phân loại 1 đến 10 điểm, điều kiện mức tối thiểu, thẩm quyền và thời hạn, quy trình 10 bước, nhánh đóng, mẫu phiếu, lan truyền, cấu hình, thay đổi về con người, dự phòng, sổ yêu cầu thay đổi, theo dõi."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Đơn giá bình quân 2.161.416 đồng, giá đề nghị 2.663.623 đồng, hệ số 1,232, đường găng 22 gói, dự trữ 3 ngày, mốc gắn thanh toán M2, M3, M6, M7, EMV 141 triệu đồng, RR09 do Nguyễn Thị Phương Liên phụ trách, hỗ trợ tăng cường 02/07 đến 15/07/2027 khớp tdb, lich, rr, ct. Thời hạn đánh giá 3 ngày khớp cam kết HSDT mục 13."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Dẫn đúng Mục 17.1(a), (b), 17.2, 17.3, 17.4, 18(e), 2.2(i), 17.1(c), 20.1, 21.2, 13.1, 10.2, 1.3 theo hsmt#e_dkct, R35, R38, R42, R02, R03, R10, R11, R46 theo rfp_yeu_cau, gói WBS 3.2.1, 2.5.1, 3.5.1, 4.4.6, 1.1.4, 2.1.4, 3.1.5, 4.1.3."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Điều kiện đóng có Chủ đầu tư kiểm tra đạt theo Mục 20.1 E-ĐKCT, có nhánh từ chối và hoãn, chỉ số sẵn sàng đo được với ngưỡng thống nhất tại họp khởi động."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có phân loại sơ bộ, ngưỡng theo mức, người quyết định, thời hạn, ma trận lan truyền tài liệu, liên kết rủi ro và sổ phiên bản. Một điểm dẫn chiếu quyết định của nhóm chưa chính xác (MH02)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Trình bày đúng quy định. Một câu sai ngữ pháp và viết hoa giữa câu ở mục 1 (MH01)."
+  },
+  {
+   "tieu_chi": "DH01",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi bước có người, thời hạn, đầu ra, bước 3 là phân loại sơ bộ."
+  },
+  {
+   "tieu_chi": "DH02",
+   "ket_qua": "dat",
+   "nhan_xet": "Mức nhỏ chỉ cho thay đổi nội bộ, năm điều kiện mức lớn đúng đặc tả, thang điểm 1 đến 10."
+  },
+  {
+   "tieu_chi": "DH03",
+   "ket_qua": "dat",
+   "nhan_xet": "Ban có Lê Quốc Bảo và Tổng Giám đốc Công ty Cổ phần ABC Wear ký văn bản, phụ lục, quyết định không theo đa số. Thành phần ban thiếu người phân tích nghiệp vụ (MH03)."
+  },
+  {
+   "tieu_chi": "DH04",
+   "ket_qua": "dat",
+   "nhan_xet": "Thời hạn theo mức, khớp cam kết 3 ngày đánh giá trong HSDT."
+  },
+  {
+   "tieu_chi": "DH05",
+   "ket_qua": "dat",
+   "nhan_xet": "Ma trận lan truyền theo sơ đồ phụ thuộc."
+  },
+  {
+   "tieu_chi": "DH06",
+   "ket_qua": "dat",
+   "nhan_xet": "Có mẫu phiếu bốn phần, điều kiện đóng có Chủ đầu tư kiểm tra đạt, nhánh từ chối, hoãn."
+  },
+  {
+   "tieu_chi": "DH07",
+   "ket_qua": "dat",
+   "nhan_xet": "Hạng mục cấu hình theo Mẫu 01A, quy tắc nhánh, nhãn, đường cơ sở đặc tả tại M2 06/05/2027, người phụ trách."
+  },
+  {
+   "tieu_chi": "DH08",
+   "ket_qua": "dat",
+   "nhan_xet": "Bốn nhóm bị ảnh hưởng có căn cứ RFP, mức sẵn sàng, chiến lược, đào tạo, chỉ số sẵn sàng."
+  },
+  {
+   "tieu_chi": "DH09",
+   "ket_qua": "dat",
+   "nhan_xet": "Có chi phí nội bộ và giá đề nghị Chủ đầu tư."
+  },
+  {
+   "tieu_chi": "DH10",
+   "ket_qua": "dat",
+   "nhan_xet": "Phù hợp Mục 17, 18 E-ĐKC và Mục 17.1(c) E-ĐKCT."
+  },
+  {
+   "tieu_chi": "DH11",
+   "ket_qua": "dat",
+   "nhan_xet": "Liên kết rủi ro, phiên bản, bảng dự phòng dùng chung. Cách viết dòng phần vượt dự phòng dễ gây hiểu nhầm (MH04)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 1, đoạn 3: Như vậy văn bản thống nhất thay đổi đặc tả và phải được lưu cùng hồ sơ hợp đồng. Đoạn 4: (R35), Chủ đầu tư kiểm tra ... (R38), Lỗi logic hoặc vấn đề",
+   "mo_ta": "Câu đoạn 3 thiếu thành phần (thừa và), đọc không thành câu. Đoạn 4 viết hoa Lỗi giữa câu sau dấu phẩy.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "CAN_CU: Như vậy văn bản thống nhất thay đổi đặc tả là một phần của hợp đồng và phải được lưu cùng hồ sơ hợp đồng. Viết thường lỗi logic ở đoạn 4."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 6, đoạn 1: Theo quyết định của nhóm ngày 18/10/2026, dự trữ được giữ nguyên và nhà thầu báo Chủ đầu tư khi dự trữ còn dưới 2 ngày",
+   "mo_ta": "Quyết định 18/10/2026 giữ dự trữ 4 ngày. Dự trữ hiện còn 3 ngày (câu liền trước) là kết quả quyết định 25/10/2026 (1). Câu hiện tại khiến người đọc hiểu mức 3 ngày được giữ theo quyết định 18/10/2026.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "TAC_DONG: Theo quyết định của nhóm ngày 25/10/2026, dự trữ đến cut over là 3 ngày làm việc. Theo quyết định ngày 18/10/2026, nhóm theo dõi hằng tuần các rủi ro trên đường găng và báo Chủ đầu tư khi dự trữ còn dưới 2 ngày."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "to_chuc",
+   "vi_tri": "Mục 2, bảng Ban kiểm soát thay đổi: thành viên tham dự Vũ Đức Minh, Phạm Tuấn Anh, Ninh Đức Toàn",
+   "mo_ta": "Thay đổi đặc tả là loại yêu cầu thay đổi chính (R35, RR01, RR11) nhưng ban không có Nguyễn Thị Phương Liên, người chịu trách nhiệm (A) các mục phân tích, thiết kế và kiểm thử theo RACI, người phụ trách RR01, RR11 và lập yêu cầu thay đổi theo kế hoạch ứng phó RR11.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định có bổ sung Nguyễn Thị Phương Liên vào thành phần tham dự của ban (dữ liệu ccb trong tinh_bang_thay_doi.py hoặc phan_cong) hay không."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "so_lieu",
+   "vi_tri": "Bảng quy tắc dùng dự phòng, dòng Phần vượt dự phòng: phần vượt được bù từ phần còn lại của giá chào sau lương kế hoạch và khoản B (chi phí chung và lợi nhuận)",
+   "mo_ta": "Ngoặc đơn đặt sau khoản B nên có thể đọc thành khoản B là chi phí chung và lợi nhuận, trong khi khoản B là chi phí khác (dòng Dự phòng hiện có) và khoản C chi phí chung và lợi nhuận là 179.950.000 đồng. Phần còn lại sau lương kế hoạch và khoản B là 402.789.877 đồng (cp#C_sau_luong), gồm khoản C và phần khoản A chưa dùng cho lương. Cùng bảng dùng chung xuất hiện trong master plan.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa dữ liệu bảng du_phong (tinh_bang_thay_doi.py hoặc cp#quy_tac_du_phong): phần vượt được bù từ phần còn lại của giá chào sau khi trừ lương kế hoạch và khoản B, gồm khoản C và phần khoản A chưa dùng cho lương (cp#C_sau_luong)."
+  }
+ ],
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B, phiên riêng)"
+}

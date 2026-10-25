@@ -512,6 +512,18 @@
    "bang_san": "hb#chi_tieu_ky_thuat"
   },
   {
+   "doan": "Cấu hình tối thiểu của hạ tầng vận hành (máy chủ, đường truyền, phần mềm nền) do nhà thầu đề xuất theo mục 3.5 Chương V như bảng sau, hai bên thống nhất khi xác nhận đặc tả yêu cầu."
+  },
+  {
+   "bang_san": "hb#ha_tang_toi_thieu"
+  },
+  {
+   "doan": "Công nghệ đề xuất cho từng tầng của hệ thống và lý do lựa chọn như bảng sau."
+  },
+  {
+   "bang_san": "hb#cong_nghe"
+  },
+  {
    "h2": "11. Phạm vi, sản phẩm bàn giao, phương pháp và bảo đảm chất lượng",
    "tieu_chi": [
     2
@@ -759,6 +771,12 @@
    "bat_buoc": [
     "tổ chức"
    ]
+  },
+  {
+   "doan": "Sơ đồ tổ chức thực hiện của nhà thầu theo vai trò và quan hệ báo cáo như bảng sau."
+  },
+  {
+   "bang_san": "hb#to_chuc"
   },
   {
    "h2": "13. Vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành",

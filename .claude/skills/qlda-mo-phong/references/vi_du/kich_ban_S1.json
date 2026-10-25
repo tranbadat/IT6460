@@ -11,13 +11,13 @@
   },
   {
    "loai": "goi",
-   "ma_goi": "2.1.2",
+   "ma_goi": "4.2.1",
    "ty_le_md": 0.1,
    "ly_do": "Chủ đầu tư chưa có tài liệu luồng dữ liệu Main System, phải phỏng vấn bổ sung, dấu hiệu sớm của RR02"
   },
   {
    "loai": "goi",
-   "ma_goi": "6.1.3",
+   "ma_goi": "4.3.3",
    "ty_le_md": -0.2,
    "ly_do": "Tái sử dụng khung giao diện từ hợp đồng tương tự (cơ hội RR20)"
   },
@@ -26,7 +26,7 @@
    "ma": "VD01",
    "ngay_ghi_nhan": "2027-03-22",
    "nguoi_bao": "K",
-   "mo_ta": "Gói 2.1.2 khảo sát Main System thiếu tài liệu luồng dữ liệu, xong muộn 1 ngày, kéo theo 2.1.5, 2.2.2 và các gói sau 2.3.5, 5.1.2, 8.1.1 bắt đầu muộn",
+   "mo_ta": "Gói 4.2.1 khảo sát Main System thiếu tài liệu luồng dữ liệu, xong muộn 1 ngày, kéo theo 3.2.2, 4.2.2 và các gói sau 3.2.4, 3.2.7, 1.5.1 bắt đầu muộn",
    "phan_loai": "Tiến độ",
    "uu_tien": "Trung bình",
    "ma_rui_ro": "RR02",
@@ -60,7 +60,7 @@
    "so_tien": 6000000,
    "ghi_chu": "Thuê máy chủ môi trường phát triển và kiểm thử tháng 3",
    "lien_ket": [
-    "8.1.1"
+    "1.5.1"
    ],
    "ly_do": "Chi phí môi trường theo khoản B"
   },
@@ -69,9 +69,9 @@
    "y": [
     {
      "loai": "tốt",
-     "noi_dung": "Khung giao diện tái sử dụng thư viện có sẵn, gói 6.1.3 xong trước kế hoạch",
+     "noi_dung": "Khung giao diện tái sử dụng thư viện có sẵn, gói 4.3.3 xong trước kế hoạch",
      "lien_ket": [
-      "6.1.3",
+      "4.3.3",
       "RR20"
      ]
     },
@@ -79,7 +79,7 @@
      "loai": "cần cải thiện",
      "noi_dung": "Khảo sát Main System thiếu tài liệu, cần đưa danh sách tài liệu cần cung cấp vào biên bản khởi động",
      "lien_ket": [
-      "2.1.2",
+      "4.2.1",
       "VD01"
      ]
     },
@@ -87,7 +87,7 @@
      "loai": "hành động",
      "noi_dung": "Lập danh sách tài liệu Main System cần Chủ đầu tư cung cấp trước 14/04/2027 (CK1)",
      "lien_ket": [
-      "6.2.1",
+      "4.2.5",
       "RR02"
      ]
     }

@@ -1,0 +1,132 @@
+{
+ "tai_lieu": [
+  "ket_qua/03_WBS/WBS_1_Phan_he_quan_ly_san_pham.docx",
+  "ket_qua/03_WBS/WBS_2_Phan_he_quan_ly_khach_hang_thanh_vien.docx",
+  "ket_qua/03_WBS/WBS_3_Phan_he_quan_ly_don_hang_dat_hang.docx",
+  "ket_qua/03_WBS/WBS_4_Phan_he_tich_hop_he_thong.docx",
+  "ket_qua/03_WBS/WBS_5_Ban_hang_tren_san_thuong_mai_dien_tu.docx",
+  "ket_qua/03_WBS/WBS_tong_hop.docx"
+ ],
+ "duong_co_so": "BL2 (sau yêu cầu thay đổi CR01, phụ lục 01/2027/PL-ABCW)",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên kiểm tra lớp B riêng, agent Kiểm tra độc lập (Claude Opus 5.5, Claude Code), python-docx, openpyxl, LibreOffice tính lại công thức",
+ "ket_luan": "chua_dat",
+ "so_loi": 3,
+ "so_canh_bao": 6,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ thông tin chung, cây, bảng chi tiết, kiểm tra quy tắc 100% cho 5 nhóm, tệp tổng hợp có căn cứ ước lượng, truy vết RFP, truy vết yêu cầu thay đổi, phân bổ Mẫu 01A, giả định."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "MD, loại, sản phẩm, giai đoạn và sprint của 198 dòng bảng chi tiết khớp wbs.json và lich.json, tổng 733 MD, 173 gói. Sai dòng tổng bảng phân bổ đầu việc chung (MH01), giả định quỹ S7 không còn đúng (MH03)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "CR01 được truy vết ở mục 6 và Thông tin chung của WBS_1, 2, 5 nhưng ghi sai 1.5.2, 1.5.3 là tăng khối lượng (MH02). R12 chưa dẫn chiếu điều chỉnh cut over (MH06)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi gói có sản phẩm kiểm tra được, gói 5.4.5 có biên bản kiểm thử chấp nhận phần sàn. Cảnh báo về kiểm thử lại sau 5.4.4 (MH08)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Giả định gắn rủi ro RR02, RR16, thay đổi sau xác nhận đi qua quy trình yêu cầu thay đổi. Thiếu giả định đầu vào sàn của Chủ đầu tư (MH09)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, chỉ mục cha WBS in đậm, không gạch dài, không ngoặc kép, không dấu chấm phẩy, không từ cần tránh."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "so_lieu",
+   "vi_tri": "WBS_tong_hop.docx, mục 3, bảng Phần riêng, phần chung, Ước lượng nhóm, và ô Cách phân rã của nhóm 2",
+   "mo_ta": "Bảng chỉ có 4 dòng nhóm 1 đến 4 (ước lượng 152, 147, 207, 152, cộng 658; phần riêng 410 cộng phần chung 247 bằng 657) nhưng dòng tổng cột Ước lượng nhóm ghi 733. Nhóm 2 ghi 147 MD là làm tròn từ 91 MD và 54,83 MD trong khi 91 cộng 54,83 bằng 145,83 (làm tròn 146), 1 MD tăng của 2.4.11 theo CR01 (uoc_luong.json tong_theo_nhom.2.md_theo_cr) không được nêu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa ở dữ liệu và mẫu sinh của qlda-wbs: dòng tổng bảng phân bổ đầu việc chung bằng tổng các dòng (657 hoặc 658) và ghi riêng phần CR01 (thêm cột hoặc dòng CR01: nhóm 2 cộng 1 MD, nhóm 5 cộng 75 MD), câu cach_phan_ra của nhóm 2 thêm phần md_theo_cr CR01 1 MD. Không cần nhóm quyết định."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "truy_vet_cr",
+   "vi_tri": "WBS_tong_hop.docx mục 3 bước 4 (3 gói tăng khối lượng), mục 6 dòng 1.5.2, 1.5.3 (tăng khối lượng, MD tăng 0); WBS_1 Thông tin chung (1.5.2 tăng 0 MD, 1.5.3 tăng 0 MD); WBS_5 và WBS_tong_hop căn cứ nhóm 5 (gói hiện có ... được cộng phần tăng riêng)",
+   "mo_ta": "Theo thay_doi.json goi_thay_doi, chỉ 2.4.11 tăng 1 MD, còn 1.5.2 và 1.5.3 có md_tang 0 và chỉ thêm phụ thuộc (5.4.5, 5.5.1, 5.5.3). Tài liệu ghi 3 gói tăng khối lượng và nói chuyển đổi dữ liệu, triển khai chính thức, bàn giao mã nguồn được cộng phần tăng riêng, mâu thuẫn với số liệu nguồn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa ở dữ liệu: nội dung bước 4 trong can_cu_uoc_luong (uoc_luong.json, wbs.json) ghi 20 gói mới, 1 gói tăng khối lượng (2.4.11), 2 gói thêm phụ thuộc (1.5.2, 1.5.3); cach_phan_ra của muc_moi 5 trong thay_doi.json bỏ chuyển đổi dữ liệu, bàn giao mã nguồn khỏi danh sách gói cộng phần tăng; xuat_wbs.py ghi nhãn thêm phụ thuộc thay cho tăng khối lượng khi md_tang bằng 0. Không cần nhóm quyết định."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "loi",
+   "nhom": "nhat_quan_lich",
+   "vi_tri": "WBS_tong_hop.docx mục 8, gạch đầu dòng cuối thứ hai: Lỗi phát hiện cuối khoảng kiểm thử chấp nhận được xử lý bằng quỹ huy động chưa giao ở S7 của các thành viên cùng năng lực (Phạm Tuấn Anh, Vũ Đức Minh, Bùi Anh Tuấn, Trần Thu Hà)",
+   "mo_ta": "Sau CR01 khoảng kiểm thử chấp nhận là 16/07 đến 27/07/2027, thuộc S9, không phải S7. Theo lich.json Phạm Tuấn Anh có quỹ 0 MD ở S7 và S8, ở S9 bốn người nêu tên chỉ còn khoảng 1 MD chưa giao mỗi người. Giả định không còn đúng với lịch BL2.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định lại nguồn xử lý lỗi cuối khoảng kiểm thử chấp nhận theo quỹ S9 (hoặc huy động thêm), sau đó sửa gia_dinh_ngoai_pham_vi trong wbs_nhap.json và _quyet_dinh_25_10 mục (25) nếu cần, chạy lại tai_lieu_wbs."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "phien_ban",
+   "vi_tri": "Bìa cả 6 tệp WBS: Tài liệu kế hoạch dự án, đường cơ sở BL1, cập nhật theo yêu cầu thay đổi CR01",
+   "mo_ta": "Sổ phiên bản ghi các phiên bản này (WBS_1 đến 4 và tổng hợp 2.0, WBS_5 1.0) thuộc đường cơ sở BL2. Câu trên bìa lấy đường cơ sở hiện hành lúc xuất (BL1) nên có thể gây hiểu là tài liệu thuộc BL1.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Xuất lại WBS sau khi đặt BL2 để bìa ghi đường cơ sở BL2 (sau yêu cầu thay đổi CR01), hoặc chấp nhận cách ghi hiện tại nếu nhóm coi đây là bản cập nhật của BL1."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "can_cu_uoc_luong",
+   "vi_tri": "WBS_tong_hop.docx mục 3, đoạn đối chiếu hợp đồng tương tự (733 người-ngày cao hơn 51,1%)",
+   "mo_ta": "So sánh 733 MD (đã gồm 76 MD của CR01 ký sau hợp đồng) với quy mô hợp đồng tương tự, phần giải trình không nêu phần do CR01. Nếu tách, phạm vi hợp đồng 657 MD cao hơn trung bình khoảng 35,5%.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thêm vào giai_trinh_tuong_tu câu tách phần CR01 (dùng tham chiếu dữ liệu tong_md trừ md bước 4), hoặc đối chiếu trên tổng trước CR."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "truy_vet",
+   "vi_tri": "WBS_tong_hop.docx mục 5, dòng R12 Đưa hệ thống vào vận hành ngày 01/07",
+   "mo_ta": "Yêu cầu RFP giữ ngày 01/07, sau phụ lục 01/2027/PL-ABCW cut over là 29/07/2027. Ma trận truy vết không dẫn chiếu sang mục 6 hoặc phụ lục nên người đọc khó thấy ngày đã điều chỉnh.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thêm ghi chú điều chỉnh theo CR01 cho R12 (ví dụ cột gói ghi kèm Điều chỉnh cut over 29/07/2027 theo 01/2027/PL-ABCW)."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "truy_vet_01A",
+   "vi_tri": "WBS_tong_hop.docx mục 7, hạng mục 9 Tích hợp với hệ thống chính (Main System) gồm 5.2.3, 5.3.1, 5.3.2, 5.3.3, 5.3.7; tiêu chí gói tích hợp tách riêng cho mỗi hệ thống bên ngoài",
+   "mo_ta": "Tích hợp với sàn thương mại điện tử là hệ thống bên ngoài khác Main System nhưng được gán vào hạng mục 9 của Mẫu 01A, nên phân bổ giá và khối lượng của hạng mục Main System tăng do phạm vi không thuộc hạng mục này. Gói tích hợp với sàn đã tách riêng ở mức gói nhưng nhãn hạng mục chưa phản ánh.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định giữ cách gán (có giải thích là hạng mục gần nhất) hoặc ghi chú trong phân bổ 01A rằng phần sàn thuộc phụ lục CR01, sửa hang_muc_01a trong goi_moi của CR01 nếu đổi."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "nghiem_thu",
+   "vi_tri": "WBS_5 mục 3, mục 5.4 (5.4.4 khắc phục lỗi, không có gói kiểm thử lại)",
+   "mo_ta": "Tiêu chí mỗi mục kiểm thử có gói sửa lỗi, kiểm thử lại: 5.4 có 5.4.4 khắc phục lỗi nhưng không có gói hoặc sản phẩm kiểm thử lại trước 5.4.5. Có thể đã gộp trong 5.4.4 nhưng tên và sản phẩm không nêu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Ghi rõ kiểm thử lại trong tên hoặc sản phẩm của 5.4.4 (ví dụ Phiên bản đã khắc phục lỗi và kết quả kiểm thử lại), không đổi MD."
+  },
+  {
+   "ma": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "gia_dinh",
+   "vi_tri": "WBS_tong_hop.docx mục 8 Giả định ngoài phạm vi",
+   "mo_ta": "Giả định không nêu đầu vào phía Chủ đầu tư của phần CR01: tài khoản cửa hàng, khóa truy cập và môi trường thử của sàn do Chủ đầu tư đăng ký (nguyên nhân RR22, dấu hiệu 9 giờ 00 ngày 10/06/2027). dau_vao/du_an.json chỉ có CK9 (phụ lục có hiệu lực), không có cam kết cho tài khoản sàn trong khi 5.3.1 bắt đầu 10/06/2027.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định bổ sung cam kết của Chủ đầu tư cho tài khoản và môi trường thử của sàn (hạn 10/06/2027, gắn 5.3.1, 5.4.2) vào du_an.json và giả định WBS, hoặc ghi rõ là trách nhiệm nhà thầu."
+  }
+ ],
+ "ghi_chu": "Đã đối chiếu bảng chi tiết 5 tệp với wbs.json và lich.json (không lệch), tổng 733 MD, 173 gói, WBS 5 75 MD, 2.4.11 8 MD. Không đọc bản soạn, nội dung, báo cáo lớp B cũ."
+}

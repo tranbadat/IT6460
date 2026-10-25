@@ -14,7 +14,7 @@ import re
 
 import mp_chung as C
 
-LOAI = ('goi', 'nghi', 'rui_ro', 'loi', 'van_de', 'chi_phi', 'nghiem_thu', 'moc', 'retro', 'cr')
+LOAI = ('goi', 'nghi', 'huy_dong', 'rui_ro', 'loi', 'van_de', 'chi_phi', 'nghiem_thu', 'moc', 'retro', 'cr')
 TT_RR = ('Đang theo dõi', 'Đã kích hoạt ứng phó', 'Đã xảy ra', 'Đã đóng')
 UU_TIEN = ('Cao', 'Trung bình', 'Thấp')
 LOAI_VD = ('Phạm vi', 'Tiến độ', 'Chi phí', 'Chất lượng', 'Nhân sự', 'Kỹ thuật', 'Chủ đầu tư', 'Hợp đồng', 'Khác')
@@ -135,6 +135,21 @@ class KiemTra:
                 self.add('KB14', f'nghỉ {n} ngày, vượt mức vừa phải {self.cfg["so_ngay_nghi_toi_da"]} ngày', vt, 'canh_bao')
             if e.get('tu_ngay'):
                 self.ngay_trong_sprint(e['tu_ngay'], vt, 'tu_ngay')
+        self.lien_ket(e, vt)
+
+    def k_huy_dong(self, e, vt):
+        """Huy động bổ sung thực tế theo nhu cầu (từ 1.0.5): thêm so_md vào quỹ của thành viên trong sprint, không vượt số ngày làm việc
+        của sprint nhân tỷ lệ tham gia. Cách trả lương theo công sức chỉ tính MD thực làm, theo huy động thì phần thêm làm tăng lương."""
+        p = e.get('thanh_vien')
+        if p not in self.ctx.tv:
+            self.add('KB04', f'thành viên {p} không có trong thanh_vien.json', vt); return
+        try:
+            m = float(e.get('so_md') or 0)
+        except (TypeError, ValueError):
+            m = 0
+        tran = len(self.ngay) * float(self.ctx.tv[p].get('ty_le', 1.0)) - float(self.ctx.quy_ke_hoach.get((p, self.sp), 0))
+        if m <= 0 or m > tran + 1e-9:
+            self.add('KB01', f'so_md {m:g} phải lớn hơn 0 và không vượt {tran:g} MD (ngày làm việc của sprint trừ quỹ kế hoạch)', vt)
         self.lien_ket(e, vt)
 
     def k_rui_ro(self, e, vt):

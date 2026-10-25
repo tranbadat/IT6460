@@ -1,5 +1,5 @@
 {
- "_ghi_chu": "Lệnh chạy lại từng bước sau khi áp dụng yêu cầu thay đổi (yeu_cau_thay_doi.py ap_dung). Thứ tự theo sơ đồ phụ thuộc (tai_lieu_cap_nhat). Bước không có ở đây dùng mac_dinh. {ma} là mã CR, {ngay} là ngày áp dụng theo lịch dự án. Khi skill đổi lệnh thì sửa tệp này. duong_co_so: bước cuối với CR có phụ lục hoặc mức lớn, {bl} là mã đường cơ sở kế tiếp. sau_duong_co_so: bước chạy sau khi lập đường cơ sở mới. giao_viec chạy sau khi ap_dung --ghi đã ghi lap_lai_tu vào moc_nhap.json và trước lich, để tải theo người tính như lịch lập lại.",
+ "_ghi_chu": "Lệnh chạy lại từng bước sau khi áp dụng yêu cầu thay đổi (yeu_cau_thay_doi.py ap_dung). Thứ tự theo sơ đồ phụ thuộc (tai_lieu_cap_nhat). Bước không có ở đây dùng mac_dinh. {ma} là mã CR, {ngay} là ngày áp dụng theo lịch dự án. Khi skill đổi lệnh thì sửa tệp này. duong_co_so: bước cuối với CR có phụ lục hoặc mức lớn, {bl} là mã đường cơ sở kế tiếp. sau_duong_co_so: bước chạy sau khi lập đường cơ sở mới. giao_viec chạy sau khi ap_dung --ghi đã ghi lap_lai_tu vào moc_nhap.json và trước lich, để tải theo người tính như lịch lập lại. Từ 1.4.7: trước lệnh đường cơ sở có bước kiểm tra lớp B các tài liệu đã cập nhật, đường cơ sở chỉ lập trên bản Đã kiểm tra.",
  "buoc": {
   "wbs": [
    "python .claude/skills/qlda-wbs/scripts/kiem_tra_wbs.py lam_viec/wbs/wbs_nhap.json"
@@ -31,6 +31,7 @@
   "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien {buoc} --ghi-chu \"{ma}\" --ngay {ngay}"
  ],
  "duong_co_so": [
+  "agent Kiểm tra lớp B (qlda-loi/prompts/vai_kiem_tra.md, phiên riêng) các tài liệu đã cập nhật theo {ma}, agent Sửa đến khi đạt, rồi python .claude/skills/qlda-phien-ban/scripts/so_phien_ban.py trang_thai <tài liệu> --trang-thai \"Đã kiểm tra\" --nguoi \"...\"",
   "python .claude/skills/qlda-phien-ban/scripts/so_phien_ban.py duong_co_so {bl} --ten \"Đường cơ sở sau yêu cầu thay đổi {ma}\" --cr {ma} --ngay {ngay}"
  ],
  "sau_duong_co_so": [

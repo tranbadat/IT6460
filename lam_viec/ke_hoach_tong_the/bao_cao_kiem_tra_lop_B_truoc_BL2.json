@@ -1,0 +1,114 @@
+{
+ "tai_lieu": "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx",
+ "phien_ban": "0.8",
+ "luot": "xac_nhan_sau_luot_3",
+ "moi_truong": "Kiểm tra lớp B lượt xác nhận sau vòng sửa cuối (ngoại lệ người dùng duyệt sau 3 vòng), phiên agent con riêng, Claude Code, mô hình claude-opus-5-5, python-docx đối chiếu với dữ liệu nguồn. Có đọc báo cáo lớp B lượt 3 (ngoại lệ lượt xác nhận), không đọc ban_soan, khung, noi_dung, nhật ký sửa",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 1,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 16 mục, không đổi so với lượt 3."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Dòng Giả định dẫn CK1 đến CK8 (8 cam kết), bảng cam kết liệt kê đủ CK1 đến CK8 với hạn khớp lich#cam_ket_chu_dau_tu. Tài liệu lập trên HSDT băm ead8a3c5544e (v0.10) và kế hoạch quản lý thay đổi băm a694d3bebb29 (v0.6) theo sổ phiên bản. Tần suất họp làm rõ chưa thống nhất với HSDT v0.10 (MH01)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Dòng Bộ phận quản lý Main System dẫn CK1 đến CK3, CK8 và R10."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi so với lượt 3."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi so với lượt 3."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, không in đậm, không gạch dài, ngoặc kép, chữ người đại diện viết thường."
+  },
+  {
+   "tieu_chi": "DH1",
+   "ket_qua": "dat",
+   "nhan_xet": "Không mâu thuẫn số liệu với HSDT v0.10, WBS, lịch, phân công. Riêng cách ghi tần suất họp làm rõ là cảnh báo (MH01)."
+  },
+  {
+   "tieu_chi": "DH2",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH3",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH4",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH5",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH6",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH7",
+   "ket_qua": "dat",
+   "nhan_xet": "Bảng quy tắc dự phòng dòng Phần vượt dự phòng trùng nguyên văn kế hoạch quản lý thay đổi v0.6, dẫn quyết định 18/10/2026 và 25/10/2026."
+  },
+  {
+   "tieu_chi": "DH8",
+   "ket_qua": "dat",
+   "nhan_xet": "Kế hoạch họp vẫn bao các cuộc họp cam kết trong HSDT mục 12."
+  }
+ ],
+ "dong_phat_hien_luot_3": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Mục 1 dòng Giả định ghi căn cứ R15, R24, CK1 đến CK8 (8 cam kết), khớp bảng cam kết ngay sau và lich#cam_ket_chu_dau_tu."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "Sổ phiên bản v0.8 ghi đầu vào doc_hsdt nd:ead8a3c5544e, trùng băm HSDT v0.10, và doc_thay_doi nd:a694d3bebb29, trùng băm kế hoạch quản lý thay đổi v0.6. Tài liệu không còn lập trên HSDT cũ."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "Mục 2 dòng Bộ phận quản lý Main System ghi tài liệu giao diện, môi trường thử, dữ liệu chuyển đổi, hoàn thành thay đổi phía Main System (CK1 đến CK3, CK8)."
+  },
+  {
+   "ma": "MH04",
+   "da_dong": true,
+   "nhan_xet": "Mục 7 dòng Phần vượt dự phòng dẫn quyết định 18/10/2026 cho nguyên tắc bù và quyết định 25/10/2026 cho thành phần khoản C và phần khoản A chưa dùng cho lương, chữ người đại diện viết thường."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục kế hoạch truyền thông, bảng kế hoạch họp, dòng Họp làm rõ và xem xét đặc tả: Hằng tuần trong giai đoạn đặc tả theo CK5",
+   "mo_ta": "CK5 (lich#cam_ket_chu_dau_tu, bảng cam kết trong chính tài liệu) là làm rõ yêu cầu 2-3 buổi mỗi tuần trong sprint 1-3. HSDT v0.10 mục 12 sau vòng sửa ghi hai đến ba buổi mỗi tuần trong S1 đến S3, sau đó hằng tuần đến khi xác nhận đặc tả. Kế hoạch tổng thể ghi hằng tuần, không sai về nguyên tắc nhưng thấp hơn tần suất cam kết và chưa thống nhất với HSDT.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại dòng họp làm rõ trong kế hoạch họp: hai đến ba buổi mỗi tuần trong S1 đến S3 theo CK5, sau đó hằng tuần đến khi xác nhận đặc tả tại mốc M2."
+  }
+ ]
+}

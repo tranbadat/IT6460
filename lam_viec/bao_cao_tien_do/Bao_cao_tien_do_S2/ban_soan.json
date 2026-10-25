@@ -1,0 +1,20 @@
+{
+ "TOM_TAT": [
+  "Kết thúc kỳ {td#ky} ngày {td#ngay_bao_cao|ngay}, dự án ở trạng thái chung {td#trang_thai_chung}. SPI đạt {td#spi_hien_thi}, CPI theo công đạt {td#cpi_hien_thi}, CPI theo chi phí thực đạt {td#cpi_thuc_hien_thi}, cả ba chỉ số ở mức {td#trang_thai_spi}. Giá trị thu được lũy kế {td#EV_md|md2} MD so với kế hoạch {td#PV_md|md2} MD, công thực tế {td#AC_md|md2} MD, khối lượng hoàn thành đạt {td#ty_le_hoan_thanh|pt1} toàn dự án.",
+  "Trạng thái chung ở mức {td#trang_thai_chung} do ngày hoàn thành dự báo {td#du_bao_hoan_thanh|ngay} muộn hơn ngày cut over {td#cut_over|ngay}. Theo vấn đề {td#van_de[ma=VD05].ma}, nguyên nhân chính là đặc tả use case tìm kiếm 1.2.5 vượt công và tạo lập Selling DB 4.3.2 phải sửa lỗi ràng buộc dữ liệu, làm các gói thiết kế chi tiết bắt đầu muộn. Rủi ro {td#rui_ro[ma=RR04].ma} (kỹ sư kiểm thử có mặt muộn) đã xảy ra, chỉ tác động gói kế hoạch bảo đảm chất lượng 2.1.1 và đã xử lý theo vấn đề {td#van_de[ma=VD03].ma}. Nhóm ưu tiên các gói này đầu {lich#sprint[ma=S3].ma} theo hành động của vấn đề {td#van_de[ma=VD05].ma}, TCPI {td#tcpi|so2} cho thấy phần việc còn lại không đòi hỏi tăng năng suất đáng kể.",
+  "Tỷ lệ sử dụng quỹ huy động đạt {td#ty_le_su_dung_quy|pt1}, còn {td#md_san_sang|md2} MD sẵn sàng không ghi công trên {td#md_huy_dong|md2} MD huy động, chủ yếu của các vị trí lập trình chưa đến gói lập trình. Với cách {td#cach_tra_luong_ten} phần này không phát sinh chi phí lương. Chi phí khác đã chi lũy kế {td#AC_thuc_khac|tien} đồng thuộc khoản mục môi trường, công cụ. EAC theo chi phí thực {td#EAC_thuc|trieu} triệu đồng."
+ ],
+ "KET_QUA": [
+  "Trong kỳ hoàn thành 13 gói theo kế hoạch của sprint: sơ đồ phân cấp menu 1.2.2, thiết kế giao diện ưu tiên 1.2.3, 2.2.4, 3.2.4, thư viện thành phần giao diện 1.2.4, đặc tả use case 1.2.5, 2.2.5, 3.2.7, thiết kế chi tiết đặt hàng 3.2.10, môi trường phát triển và quy trình triển khai tự động 1.5.1, cấu trúc, cấu hình và tạo lập Selling DB 4.2.3, 4.2.4, 4.3.2. Các gói khởi động 2.1.1, 3.1.1 và 3.1.2 cũng hoàn thành.",
+  "Sản phẩm trình diễn cuối sprint gồm {lich#sprint[ma=S2].san_pham_demo}. Mốc {td#moc[ma=M1].ma} đạt ngày {td#moc[ma=M1].thuc_te|ngay}, đúng hạn, kế hoạch quản lý dự án được Chủ đầu tư xác nhận."
+ ],
+ "VAN_DE": [
+  "Sổ vấn đề có {td#van_de_tong_hop.tong|nguyen} vấn đề, đã đóng {td#van_de_tong_hop.so_dong|nguyen}, còn mở {td#van_de_tong_hop.so_mo|nguyen}, trong đó {td#van_de_tong_hop.so_mo_uu_tien_cao|nguyen} vấn đề ưu tiên cao, không có vấn đề hay hành động quá hạn. Vấn đề {td#van_de[ma=VD03].ma} của rủi ro {td#rui_ro[ma=RR04].ma} đã đóng sau khi bàn giao quy chuẩn mã nguồn, gói kế hoạch bảo đảm chất lượng hoàn thành trong sprint.",
+  "Vấn đề ưu tiên cao {td#van_de[ma=VD04].ma} ghi nhận Chủ đầu tư chưa cung cấp tài liệu đặc tả giao diện Main System theo cam kết CK1. Kế hoạch ứng phó của rủi ro {td#rui_ro[ma=RR02].ma} đã được kích hoạt: Ninh Đức Toàn lập danh sách thông tin còn thiếu, Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư, nhóm tích hợp chuẩn bị dịch vụ giả lập. Quá thời hạn chờ phản hồi của kế hoạch ứng phó mà chưa có tài liệu thì trưởng nhóm báo cáo người đại diện của Chủ đầu tư theo kế hoạch ứng phó.",
+  "Vấn đề {td#van_de[ma=VD05].ma} tổng hợp các tín hiệu gói chậm, hành động điều chỉnh thứ tự công việc có hạn {td#hanh_dong[ma_van_de=VD05].han|ngay}. Mọi tín hiệu gói chậm và rủi ro đã xảy ra đều đã có vấn đề tương ứng trong sổ."
+ ],
+ "KY_TOI": [
+  "Mục tiêu {lich#sprint[ma=S3].ma}: {lich#sprint[ma=S3].muc_tieu}. Kế hoạch kỳ tới là {lich#sprint[ma=S3].md_ke_hoach|md2} MD trên quỹ {lich#sprint[ma=S3].quy|md2} MD, có thêm hai vị trí bổ sung tham gia.",
+  "Gói ưu tiên đầu kỳ là các gói chậm nêu trong vấn đề {td#van_de[ma=VD05].ma} và gói đặc tả giao diện tích hợp phụ thuộc tài liệu Main System. Mốc {lich#moc[ma=M2].ma} có hạn {lich#moc[ma=M2].han|ngay}, gắn đợt thanh toán {lich#moc[ma=M2].dot_thanh_toan|nguyen}. Nhóm đề nghị Chủ đầu tư cung cấp tài liệu đặc tả giao diện Main System sớm nhất và bố trí buổi xác nhận đặc tả yêu cầu trước hạn mốc."
+ ]
+}

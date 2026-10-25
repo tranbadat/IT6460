@@ -1,0 +1,191 @@
+{
+ "sprint": "S3",
+ "tom_tat": "Chủ đầu tư cung cấp tài liệu đặc tả giao diện Main System muộn 2 ngày làm việc so với cam kết CK1 (RR02 xảy ra), đặc tả giao diện tích hợp và thiết kế tích hợp trên đường găng bị kéo lùi. Quy trình vận hành mới phải bổ sung luồng hoàn tiền tại cửa hàng, dịch vụ khôi phục mật khẩu dùng lại thành phần có sẵn. Lập trình đăng ký, đăng nhập, giỏ hàng, đặt hàng phát sinh lỗi ở mức hợp lý. Đặc tả yêu cầu và giao diện ưu tiên được hai bên xác nhận.",
+ "bien_co": [
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR02",
+   "ngay": "2027-04-19",
+   "trang_thai": "Đã xảy ra",
+   "ma_goi": "4.2.5",
+   "md_tac_dong": 1,
+   "ngay_tac_dong": 2,
+   "hanh_dong": "Tài liệu đặc tả giao diện Main System nhận ngày 19/04/2027, muộn 2 ngày làm việc so với CK1. Ninh Đức Toàn đối chiếu tài liệu với danh sách thông tin còn thiếu, Trần Bá Đạt làm đặc tả giao diện tích hợp ngay khi nhận tài liệu, nhóm tích hợp tiếp tục chuẩn bị dịch vụ giả lập",
+   "ly_do": "Dấu hiệu của RR02 đã xuất hiện ngày 14/04/2027, tài liệu đến muộn làm gói 4.2.5 bắt đầu muộn và phải đối chiếu bổ sung"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD04",
+   "hanh_dong": [
+    {
+     "viec": "Đối chiếu tài liệu đặc tả giao diện Main System nhận ngày 19/04/2027 với danh sách thông tin còn thiếu",
+     "nguoi": "toan",
+     "han": "2027-04-20",
+     "ngay_xong": "2027-04-20",
+     "bang_chung": "Bảng đối chiếu thông tin giao diện Main System ngày 20/04/2027"
+    }
+   ],
+   "ngay_dong": "2027-04-21",
+   "ket_qua": "Đã nhận đủ tài liệu đặc tả giao diện Main System ngày 19/04/2027, muộn 2 ngày làm việc so với CK1, tác động tiến độ theo dõi tại vấn đề VD06",
+   "nguoi_dong": "dat",
+   "ly_do": "Cập nhật và đóng vấn đề khi Chủ đầu tư cung cấp tài liệu"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD06",
+   "ngay_ghi_nhan": "2027-04-19",
+   "nguoi_bao": "dat",
+   "mo_ta": "Gói 4.2.5 đặc tả giao diện trao đổi dữ liệu với Main System bắt đầu muộn 2 ngày làm việc do tài liệu CK1 đến muộn, kéo theo gói găng 4.2.7 thiết kế tích hợp và 4.4.1 dịch vụ giả lập Main System, có nguy cơ tiêu hao dự trữ đến cut over",
+   "phan_loai": "Tiến độ",
+   "uu_tien": "Cao",
+   "ma_rui_ro": "RR02",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-05-14",
+   "hanh_dong": [
+    {
+     "viec": "Ghi nhận việc chậm cung cấp tài liệu thuộc phía Chủ đầu tư vào biên bản họp tiến độ theo Mục 18 E-ĐKC",
+     "nguoi": "dat",
+     "han": "2027-04-22",
+     "ngay_xong": "2027-04-22",
+     "bang_chung": "Biên bản họp tiến độ ngày 22/04/2027"
+    },
+    {
+     "viec": "Ưu tiên nguồn lực của Phạm Tuấn Anh cho thiết kế tích hợp 4.2.7 ngay khi đặc tả giao diện 4.2.5 hoàn thành",
+     "nguoi": "tuananh",
+     "han": "2027-05-07",
+     "ngay_xong": "2027-05-06",
+     "bang_chung": "Thiết kế tích hợp bản trình duyệt nội bộ"
+    }
+   ],
+   "ly_do": "Ghi sổ vấn đề tiến độ do rủi ro RR02 đã xảy ra"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "3.2.3",
+   "ty_le_md": 0.25,
+   "ly_do": "Chủ đầu tư bổ sung luồng tiếp nhận đổi trả và hoàn tiền tại cửa hàng vào quy trình vận hành mới của kênh bán hàng trực tuyến"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "2.3.3",
+   "ty_le_md": -0.1,
+   "ly_do": "Dùng lại thành phần tạo và kiểm tra mã khôi phục mật khẩu của khung ứng dụng phía máy chủ"
+  },
+  {
+   "loai": "nghi",
+   "thanh_vien": "K",
+   "so_ngay": 1,
+   "tu_ngay": "2027-04-26",
+   "lien_ket": [
+    "2.2.2"
+   ],
+   "ly_do": "Nguyễn Hoàng Nam nghỉ ốm 1 ngày"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "3.3.5",
+   "so_loi": {
+    "Cao": 1,
+    "Trung bình": 1
+   },
+   "mo_ta": "Lỗi tạo trùng đơn hàng khi người dùng gửi xác nhận hai lần và lỗi nội dung thư điện tử xác nhận đơn hàng",
+   "ly_do": "Lỗi phát hiện khi kiểm thử đơn vị dịch vụ đặt hàng"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "2.3.2",
+   "so_loi": {
+    "Trung bình": 1,
+    "Thấp": 1
+   },
+   "mo_ta": "Lỗi đếm số lần đăng nhập sai không đặt lại sau khi đăng nhập thành công và lỗi thông báo hết phiên làm việc",
+   "ly_do": "Lỗi phát hiện khi kiểm thử đơn vị dịch vụ đăng nhập"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "3.3.4",
+   "so_loi": {
+    "Thấp": 1
+   },
+   "mo_ta": "Lỗi làm tròn giá trị giảm giá theo phần trăm",
+   "ly_do": "Lỗi phát hiện khi kiểm thử đơn vị dịch vụ khuyến mại"
+  },
+  {
+   "loai": "chi_phi",
+   "ngay": "2027-04-15",
+   "khoan_muc": "B1",
+   "so_tien": 7500000,
+   "ghi_chu": "Phí môi trường phát triển, kiểm thử kỳ S3 theo phân bổ kỳ chi của dự toán",
+   "loai_chi": "da_chi",
+   "lien_ket": [
+    "1.5.1"
+   ],
+   "ly_do": "Chi phí khoản B1 theo phân bổ kỳ chi S3 của dự toán"
+  },
+  {
+   "loai": "moc",
+   "ma_moc": "M2",
+   "ngay_dat": "2027-05-06",
+   "ghi_chu": "Biên bản xác nhận đặc tả yêu cầu và giao diện ưu tiên ngày 06/05/2027",
+   "ly_do": "Hai bên xác nhận đặc tả yêu cầu và giao diện ưu tiên (gói 3.2.5)"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD07",
+   "ngay_ghi_nhan": "2027-05-06",
+   "nguoi_bao": "dat",
+   "mo_ta": "Các gói lập trình và kiểm thử 1.3.2, 1.3.6, 2.4.5, 3.3.1, 3.3.7, 3.3.8, 3.3.10, 4.4.2 và gói quản lý 4.1.3 chậm so với kế hoạch cuối S3 do chuỗi thiết kế chi tiết 1.2.7, 2.2.7, 3.2.9 hoàn thành muộn và tài liệu Main System đến muộn",
+   "phan_loai": "Tiến độ",
+   "uu_tien": "Trung bình",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-05-14",
+   "hanh_dong": [
+    {
+     "viec": "Lập kế hoạch S4 ưu tiên các gói chậm có gói sau trên đường găng, theo dõi hằng ngày trong họp đứng",
+     "nguoi": "dat",
+     "han": "2027-05-07"
+    }
+   ],
+   "ly_do": "Ghi sổ vấn đề cho tín hiệu gói chậm cuối S3"
+  },
+  {
+   "loai": "retro",
+   "y": [
+    {
+     "loai": "tốt",
+     "noi_dung": "Đặc tả yêu cầu và giao diện ưu tiên được xác nhận đúng kế hoạch, mốc M2 đạt trước hạn",
+     "lien_ket": [
+      "M2",
+      "3.2.5"
+     ]
+    },
+    {
+     "loai": "cần cải thiện",
+     "noi_dung": "Tài liệu Main System đến muộn làm gói găng 4.2.7 bắt đầu muộn, nhóm chưa chuẩn bị sẵn phần đặc tả giao diện có thể làm trước khi có tài liệu",
+     "lien_ket": [
+      "RR02",
+      "4.2.5",
+      "VD06"
+     ]
+    },
+    {
+     "loai": "hành động",
+     "noi_dung": "Đề nghị Chủ đầu tư xác nhận sớm lịch bàn giao môi trường thử Main System (CK2) và thay đổi phía Main System (CK8), theo dõi hằng tuần trong họp tiến độ",
+     "lien_ket": [
+      "RR02",
+      "4.4.3"
+     ]
+    },
+    {
+     "loai": "cần cải thiện",
+     "noi_dung": "Lỗi tạo trùng đơn hàng mức cao cho thấy cần bổ sung kịch bản gửi lặp vào bộ kiểm thử đơn vị của các dịch vụ ghi dữ liệu",
+     "lien_ket": [
+      "3.3.5",
+      "3.4.1"
+     ]
+    }
+   ],
+   "ly_do": "Họp cải tiến cuối sprint S3"
+  }
+ ]
+}

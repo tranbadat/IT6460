@@ -1,0 +1,33 @@
+{
+ "tai_lieu": "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+ "phien_ban": "2.0",
+ "duong_co_so": "BL2",
+ "dac_ta": ".claude/skills/qlda-phan-cong/dac_ta/phan_cong_tai_lieu.json",
+ "ngay_kiem_tra": "2026-10-25",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B, phiên riêng, kiểm tra như tài liệu mới sau CR01)",
+ "ket_luan": "chua_dat",
+ "so_loi": 3,
+ "so_canh_bao": 2,
+ "danh_gia_tieu_chi": [
+  {"tieu_chi": "CL01", "ket_qua": "dat", "nhan_xet": "Đủ nguyên tắc, thành viên, nhân sự chủ chốt, RACI 5 nhóm và 25 mục mức 2, tải theo sprint S1 đến S9 và KT, giao việc theo người, quy tắc điều chỉnh sau CR01."},
+  {"tieu_chi": "CL02", "ket_qua": "chua_dat", "nhan_xet": "Giao việc 20 gói mới khớp du_lieu/thay_doi.json goi_moi, ngày khớp lịch BL2, quỹ S7 đến S9 khớp thanh_vien.json ty_le_theo_sprint, không ai vượt quỹ từ S5. Lệch: tổng quỹ 898 và 900 MD, tỷ lệ 81,4% và 81,6%, chú thích cột KT mâu thuẫn ô 2/2."},
+  {"tieu_chi": "CL03", "ket_qua": "chua_dat", "nhan_xet": "RACI nhóm 5 không ghi vai trò Chủ đầu tư ở 5.2, 5.4, 5.5 nên không truy vết được việc Chủ đầu tư xác nhận đặc tả (5.2.4) và nghiệm thu M9 (5.4.5)."},
+  {"tieu_chi": "CL04", "ket_qua": "dat", "nhan_xet": "Mỗi mục mức 1, mức 2 có đúng một A, tải đo bằng MD trên quỹ."},
+  {"tieu_chi": "CL05", "ket_qua": "dat", "nhan_xet": "Có quy tắc thay thế 7 ngày theo Mục 21.2 E-ĐKCT, chuyển việc khi quá tải, điều chỉnh khi có CR, nêu cách giao gói CR01. Cảnh báo về nhân sự chủ chốt không huy động S7, S8."},
+  {"tieu_chi": "CL06", "ket_qua": "dat", "nhan_xet": "Đúng định dạng, in đậm chỉ ở dòng mục mức 1 của RACI."}
+ ],
+ "doc_hieu": [
+  {"tieu_chi": "Mỗi hạng mục mức 1, mức 2 có đúng một A", "ket_qua": "dat"},
+  {"tieu_chi": "Không ai quá tải trong sprint", "ket_qua": "dat", "ghi_chu": "Vượt quỹ chỉ ở S1 đến S4 là số liệu thực tế đã qua, có giải thích"},
+  {"tieu_chi": "Nhân sự chủ chốt khớp Bảng số 02 HSMT và HSDT", "ket_qua": "dat"},
+  {"tieu_chi": "Có quy tắc thay thế và điều chỉnh khi thay đổi", "ket_qua": "dat"}
+ ],
+ "phat_hien": [
+  {"ma": "MH01", "muc_do": "loi", "nhom": "CL02", "vi_tri": "Mục 1: 'Khối lượng 733 MD ... trên tổng quỹ thời gian 898 MD, tỷ lệ sử dụng quỹ đạt 81,4%'. Mục 2: 'Tổng quỹ thời gian 900 MD'. Bảng tải dòng Tổng cộng: '733 | 898 | 81,6%'. Mục 7: 'tỷ lệ sử dụng quỹ cả dự án đạt 81,4%'", "mo_ta": "Ba con số quỹ và tỷ lệ mâu thuẫn trong cùng tài liệu: 733/898 là 81,6%, còn 81,4% là 733/900 theo lich.tong_quy (gồm 2 MD quỹ giai đoạn Kết thúc), phan_cong.tong_quy là 898.", "cach_sua": "tu_dong", "sua_o": "dữ liệu", "de_xuat": "Thống nhất cơ sở quỹ giữa lich.json (tong_quy, ty_le_su_dung_quy) và phan_cong.json (tong_quy), lời văn mục 1, 2, 7 tham chiếu cùng khóa."},
+  {"ma": "MH02", "muc_do": "loi", "nhom": "CL02", "vi_tri": "Mục 5 chú thích: 'Cột KT là MD của giai đoạn Kết thúc sau cut over, chưa có quỹ huy động nên chỉ ghi MD', ô KT của Trần Bá Đạt '2/2'; mục 7: 'trong giai đoạn Kết thúc với phần thời gian huy động riêng cho giai đoạn này'", "mo_ta": "Chú thích nói giai đoạn Kết thúc chưa có quỹ, nhưng bảng ghi quỹ 2 MD và mục 7 nói có huy động riêng (thanh_vien.json huy_dong_ket_thuc 0,2 của Trần Bá Đạt sau CR01). Chú thích do tinh_bang_phan_cong.py sinh với câu cố định.", "cach_sua": "tu_dong", "sua_o": "dữ liệu", "de_xuat": "Sửa chu_thich_tai trong tinh_bang_phan_cong.py: khi có huy_dong_ket_thuc thì ghi quỹ Kết thúc và cách tính, không dùng câu 'chưa có quỹ huy động'."},
+  {"ma": "MH03", "muc_do": "loi", "nhom": "CL03, CL04", "vi_tri": "Mục 4 RACI dòng 5.2, 5.4, 5.5: cột Bên ngoài và Phê duyệt bên ngoài để trống", "mo_ta": "Với bốn phân hệ, mục phân tích thiết kế và kiểm thử ghi Chủ đầu tư (C) và phê duyệt bên ngoài Chủ đầu tư. Nhóm 5 có Chủ đầu tư xác nhận đặc tả (5.2.4), Chủ đầu tư nghiệm thu phần CR01 (5.4.5, M9 gắn Đợt 6), hướng dẫn cán bộ Chủ đầu tư (5.5.2), nhưng RACI 5.2, 5.4, 5.5 không ghi vai trò Chủ đầu tư, bộ phận vận hành bán hàng. du_lieu/phan_cong.json trach_nhiem các mục 5.x không có phe_duyet, ben_ngoai.", "cach_sua": "tu_dong", "sua_o": "dữ liệu", "de_xuat": "Bổ sung trách nhiệm mục mới trong phan_cong_nhap.json (hoặc quy tắc sinh của ap_dung_thay_doi.py): 5.2 Chủ đầu tư (C), phê duyệt Chủ đầu tư; 5.4 Chủ đầu tư (C), Bộ phận vận hành bán hàng (C), phê duyệt Chủ đầu tư; 5.5 Chủ đầu tư (C), Bộ phận vận hành bán hàng (C)."},
+  {"ma": "MH04", "muc_do": "canh_bao", "nhom": "CL02", "vi_tri": "Mục 1: 'Quỹ chưa giao trong thời gian huy động là 169 MD (tổng quỹ trừ MD giao trong các sprint, không tính MD của giai đoạn Kết thúc ...)'", "mo_ta": "Theo cách diễn giải trong ngoặc, 898 trừ 731 MD giao trong sprint là 167 MD. 169 MD là tổng phần quỹ còn trống của từng người từng sprint, không bù phần vượt quỹ thực tế S1 đến S4. Diễn giải không khớp số.", "cach_sua": "tu_dong", "sua_o": "lời văn", "de_xuat": "Sửa diễn giải thành 'tổng phần quỹ còn trống của từng thành viên trong từng sprint' hoặc đổi số theo diễn giải."},
+  {"ma": "MH05", "muc_do": "canh_bao", "nhom": "CL05", "vi_tri": "Mục 5 dòng Phạm Tuấn Anh: S7 '-', S8 '-'", "mo_ta": "Phạm Tuấn Anh là nhân sự chủ chốt (kỹ sư phát triển phần mềm) và được rủi ro RR22 của CR01 giao lập danh sách thông tin kết nối khi dấu hiệu xuất hiện, nhưng huy động 0 ở S7 (18/06 đến 01/07/2027, có kiểm thử tích hợp với sàn 5.4.2) và S8. Cần nhóm xác nhận người ứng phó RR22 hoặc mức huy động.", "cach_sua": "can_nguoi_dung", "sua_o": "dữ liệu", "de_xuat": "Nhóm quyết định đổi người ứng phó RR22 sang người làm gói 5.x (ví dụ Lê Quang Huy, A 5.2.3, 5.3.1) hoặc giữ huy động Phạm Tuấn Anh trong S7."}
+ ],
+ "ghi_chu_quy_trinh": "Tài liệu đã ở trạng thái Đường cơ sở BL2 (2.0) trước khi kiểm tra lớp B. Sửa lỗi sau đường cơ sở cần nhóm quyết định cách ghi phiên bản."
+}

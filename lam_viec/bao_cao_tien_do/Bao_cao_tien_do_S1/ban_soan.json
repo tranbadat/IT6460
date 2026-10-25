@@ -1,0 +1,20 @@
+{
+ "TOM_TAT": [
+  "Kết thúc kỳ {td#ky} ngày {td#ngay_bao_cao|ngay}, dự án ở trạng thái chung {td#trang_thai_chung}. SPI đạt {td#spi_hien_thi}, CPI theo công đạt {td#cpi_hien_thi}, CPI theo chi phí thực đạt {td#cpi_thuc_hien_thi}. Giá trị thu được {td#EV_md|md2} MD so với kế hoạch {td#PV_md|md2} MD, công thực tế {td#AC_md|md2} MD, khối lượng hoàn thành đạt {td#ty_le_hoan_thanh|pt1} toàn dự án.",
+  "Tỷ lệ sử dụng quỹ huy động đạt {td#ty_le_su_dung_quy|pt1}, còn {td#md_san_sang|md2} MD sẵn sàng không ghi công trên {td#md_huy_dong|md2} MD huy động. Phần này chủ yếu thuộc các vị trí lập trình mới tham gia khung ứng dụng trong sprint đầu, với cách {td#cach_tra_luong_ten} phần này không phát sinh chi phí lương. Chi phí khác đã chi {td#AC_thuc_khac|tien} đồng thuộc khoản mục môi trường, công cụ.",
+  "Dự báo hoàn thành ngày {td#du_bao_hoan_thanh|ngay}, trùng ngày cut over {td#cut_over|ngay}. EAC theo công {td#EAC_md|md2} MD so với BAC {td#BAC_md|md2} MD. Khung ứng dụng giao diện tái sử dụng thư viện có sẵn bù cho phần công phát sinh của nghiên cứu hành vi người dùng."
+ ],
+ "KET_QUA": [
+  "Trong kỳ hoàn thành {td#goi[?trang_thai=Hoàn thành]|dem} gói: {td#goi[?trang_thai=Hoàn thành].ma}. Các gói khảo sát và kiến trúc trên đường găng hoàn thành đúng kế hoạch, gồm khảo sát nghiệp vụ, khảo sát Main System, đặc tả chức năng đặt hàng và kiến trúc hệ thống.",
+  "Sản phẩm trình diễn cuối sprint gồm {lich#sprint[ma=S1].san_pham_demo}. Mốc {td#moc[ma=M0].ma} đạt ngày {td#moc[ma=M0].thuc_te|ngay}, đúng hạn."
+ ],
+ "VAN_DE": [
+  "Sổ vấn đề có {td#van_de_tong_hop.tong|nguyen} vấn đề, đã đóng {td#van_de_tong_hop.so_dong|nguyen}, còn mở {td#van_de_tong_hop.so_mo|nguyen}, không có vấn đề quá hạn. Vấn đề {td#van_de[ma=VD01].ma} về phần phỏng vấn bổ sung của gói nghiên cứu hành vi người dùng đã đóng trong kỳ, nằm trong phạm vi gói, không thay đổi đặc tả.",
+  "Vấn đề {td#van_de[ma=VD02].ma} ghi nhận các gói quản lý dự án dàn trải của phân hệ tích hợp hệ thống chưa ghi công do trưởng nhóm tập trung cho khởi động và kế hoạch quản lý dự án. Hành động bố trí lại thời gian có hạn {td#hanh_dong[ma_van_de=VD02].han|ngay}. Các tín hiệu gói chậm đều đã có vấn đề tương ứng trong sổ. Rủi ro {td#rui_ro[ma=RR02].ma} tiếp tục được theo dõi theo dấu hiệu của sổ rủi ro, chưa xuất hiện dấu hiệu."
+ ],
+ "KY_TOI": [
+  "Mục tiêu {lich#sprint[ma=S2].ma}: {lich#sprint[ma=S2].muc_tieu}. Kế hoạch kỳ tới là {lich#sprint[ma=S2].md_ke_hoach|md2} MD trên quỹ {lich#sprint[ma=S2].quy|md2} MD.",
+  "Gói ưu tiên đầu kỳ là gói găng {lich#goi[ma=4.2.3].ma} cấu trúc cơ sở dữ liệu Selling DB (từ {lich#goi[ma=4.2.3].bat_dau|ngay} đến {lich#goi[ma=4.2.3].ket_thuc|ngay}) và hai gói quản lý dàn trải chậm {td#goi_cham[ma=4.1.2].ma}, {td#goi_cham[ma=4.1.3].ma} của vấn đề {td#van_de[ma=VD02].ma}, hành động {td#hanh_dong[ma_van_de=VD02].ma} bố trí lại thời gian quản lý rủi ro, cấu hình có hạn {td#hanh_dong[ma_van_de=VD02].han|ngay}.",
+  "Mốc {lich#moc[ma=M1].ma} có hạn {lich#moc[ma=M1].han|ngay}, căn cứ gói {lich#moc[ma=M1].can_cu}. Nhóm đề nghị Chủ đầu tư bố trí xác nhận kế hoạch quản lý dự án đúng hạn và chuẩn bị tài liệu đặc tả giao diện trao đổi dữ liệu của Main System theo cam kết hạn {lich#cam_ket_chu_dau_tu[ma=CK1].han|ngay}."
+ ]
+}

@@ -133,7 +133,7 @@ for t in tvs:
     elif u > 0.95:
         add('P21', f'{t["ho_ten"]}: sử dụng {u:.0%} quỹ thời gian, ít dư địa xử lý phát sinh', t['id'], 'canh_bao')
     tai.append({'id': t['id'], 'ho_ten': t['ho_ten'], 'loai': t['loai'], 'chuc_danh': t.get('chuc_danh', ''), 'md_giao': round(md_giao[t['id']], 2),
-                'quy': round(q, 2), 'ty_le_su_dung': round(u, 4), 'theo_loai': {k: round(v, 2) for k, v in md_loai[t['id']].items()}})
+                'quy': round(q, 2), 'ty_le_su_dung': round(u, 6), 'theo_loai': {k: round(v, 2) for k, v in md_loai[t['id']].items()}})
 
 # nhân sự chủ chốt theo HSMT
 cc = {x['stt']: x for x in pc.get('vi_tri_chu_chot', [])}

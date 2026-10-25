@@ -1,0 +1,108 @@
+{
+ "tai_lieu": "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+ "phien_ban": "0.12",
+ "luot": 3,
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 4,
+ "moi_truong": "Kiểm tra lớp B lượt 3 (lượt cuối), phiên agent con riêng, Claude Code, mô hình claude-opus-5-5, python-docx và openpyxl đối chiếu bảng với dữ liệu nguồn",
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 7 mục theo đặc tả: nguyên tắc, thành viên, nhân sự chủ chốt, RACI, tải theo sprint, giao việc theo người, phối hợp và thay thế."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Bảng RACI, tải sprint, giao việc theo người khớp hoàn toàn du_lieu/phan_cong_bang.json; ngày và MD từng gói khớp du_lieu/lich.json; tổng 657 MD, quỹ 816 MD, sử dụng 80,5% khớp. Câu về người hỗ trợ cho gói lớn và gói găng sai lệch dữ liệu (MH01)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi dòng giao việc có mã gói WBS, nhân sự chủ chốt dẫn Bảng số 02 HSMT, thay thế dẫn Mục 21.2."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Ma trận có cột Phê duyệt bên ngoài cho các hạng mục cần Chủ đầu tư xác nhận, tải đo bằng MD trên quỹ."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có quy tắc xử lý quá tải, vắng mặt, thay thế nhân sự và cập nhật giao việc, chạy lại lịch, ghi phiên bản khi có thay đổi."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, bảng lưới, chỉ in đậm dòng mục cha của RACI (cho phép), không phát hiện từ cần tránh, gạch dài, ngoặc kép. Một số câu cần chỉnh diễn đạt (MH03, MH04)."
+  },
+  {
+   "tieu_chi": "DH1",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi hạng mục mức 1 và mức 2 (24 dòng) có đúng một A."
+  },
+  {
+   "tieu_chi": "DH2",
+   "ket_qua": "dat",
+   "nhan_xet": "Không thành viên nào vượt quỹ trong sprint, mức cao nhất 13/13 ở S3."
+  },
+  {
+   "tieu_chi": "DH3",
+   "ket_qua": "dat",
+   "nhan_xet": "Nhân sự chủ chốt khớp Bảng số 02 HSMT (1 quản trị dự án, 3 kỹ sư phát triển, 1 BA hoặc kiểm thử) và nhân sự Mẫu 06A trong du_lieu/hsdt_bang.json."
+  },
+  {
+   "tieu_chi": "DH4",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục 7 có quy tắc thay thế và điều chỉnh khi thay đổi."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "CL02",
+   "vi_tri": "Mục 1, đoạn 3: Người hỗ trợ được bố trí cho các gói có khối lượng lớn và các gói trên đường găng, nhằm rút ngắn thời gian thực hiện và giảm phụ thuộc vào một cá nhân.",
+   "mo_ta": "Câu khẳng định sai lệch với du_lieu/phan_cong.json: 16 trên 22 gói trên đường găng (lich#duong_gang) không có người hỗ trợ (4.2.1, 3.2.1, 3.2.2, 4.2.2, 4.2.3, 4.2.7, 4.4.1, 4.3.6, 4.3.7, 4.3.8, 4.4.3, 4.4.4, 1.4.11, 2.4.12, 3.4.13, 3.4.14), 19 trên 29 gói từ 6 MD trở lên không có người hỗ trợ (ví dụ 3.4.3 9 MD, 3.4.13 8 MD, 3.4.14 8 MD, 4.5.1 7 MD). Chỉ 6 gói găng có người hỗ trợ (3.4.12, 4.4.5, 1.5.2, 1.5.3, 2.5.3, 3.5.4).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại NGUYEN_TAC đoạn 3 cho khớp dữ liệu, ví dụ: người hỗ trợ được bố trí cho một số gói lớn và gói găng (3.4.12, 4.4.5, 1.5.2, 1.5.3, 2.5.3, 3.5.4), các gói găng còn lại do một người thực hiện và được bảo vệ bằng dư địa quỹ chưa giao và quy tắc chuyển việc ở mục 7. Nếu nhóm muốn giữ nguyên nguyên tắc thì phải bổ sung ho_tro trong giao việc (nhóm quyết định, chạy lại lịch)."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "CL02",
+   "vi_tri": "Mục 2, đoạn sau bảng: Phần quỹ chưa giao chủ yếu thuộc các vị trí bổ sung được huy động sớm hơn nhu cầu",
+   "mo_ta": "Theo pc#tai, quỹ chưa giao trong thời gian huy động là 161 MD, thành viên nhóm chiếm khoảng 65,17 MD (Phạm Tuấn Anh 23 MD, Vũ Đức Minh 15 MD), vị trí bổ sung khoảng 95,83 MD. Một phần quỹ chưa giao của vị trí bổ sung nằm ở S6, S7 (Lê Quang Huy S6 3/10, Bùi Anh Tuấn S7 3/10), không phải do huy động sớm. Câu không sai về tỷ trọng nhưng lý do chưa đầy đủ.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa câu doan trong dac_ta/phan_cong_tai_lieu.json, ví dụ: phần quỹ chưa giao thuộc cả thành viên nhóm và vị trí bổ sung, tập trung ở S1, S2 và S6, S7, được giữ theo quyết định của nhóm ngày 25/10/2026 (13)."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "CL06",
+   "vi_tri": "Mục 1, đoạn 2: Chênh lệch giữa tổng quỹ và tổng MD giao là 159 MD, đã tính cả MD của giai đoạn Kết thúc nằm ngoài quỹ huy động.",
+   "mo_ta": "Câu dễ hiểu nhầm. 159 MD là 816 trừ 657, trong đó 657 MD gồm 2 MD của gói 1.1.5 ngoài quỹ huy động, nên quỹ chưa giao trong thời gian huy động thực tế là 161 MD. Chưa chắc nhóm muốn nêu con số nào.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại NGUYEN_TAC đoạn 2: nêu rõ quỹ chưa giao trong thời gian huy động bằng tổng quỹ trừ MD giao trong các sprint (tham chiếu dữ liệu, không viết số tay)."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "CL06",
+   "vi_tri": "Mục 4, đoạn đầu: Cột Phê duyệt bên ngoài ghi bên ngoài xác nhận hoặc phê duyệt hạng mục theo hợp đồng",
+   "mo_ta": "Diễn đạt chưa trọn nghĩa (ghi bên ngoài xác nhận). Đoạn này lấy từ đặc tả.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa doan trong dac_ta/phan_cong_tai_lieu.json thành: Cột Phê duyệt bên ngoài ghi bên ngoài xác nhận hoặc phê duyệt kết quả của hạng mục theo hợp đồng, ví dụ ..."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "CL03",
+   "vi_tri": "Mục 7, đoạn 2: khi Chủ đầu tư yêu cầu hoặc khi một thành viên không thể tiếp tục, nhà thầu bố trí người có năng lực tương đương trong thời hạn 7 ngày theo Mục 21.2 E-ĐKCT",
+   "mo_ta": "Mục 21.2 E-ĐKCT (hsmt#e_dkct) chỉ quy định 07 ngày kể từ khi nhận yêu cầu thay thế của Chủ đầu tư. Trường hợp thành viên không thể tiếp tục là cam kết tự đặt của nhà thầu, nên tách căn cứ cho rõ. Không mâu thuẫn với HSMT.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại DIEU_CHINH đoạn 2: 7 ngày kể từ khi nhận yêu cầu của Chủ đầu tư theo Mục 21.2 E-ĐKCT, trường hợp thành viên không thể tiếp tục nhà thầu chủ động bố trí người thay thế trong cùng thời hạn."
+  }
+ ]
+}

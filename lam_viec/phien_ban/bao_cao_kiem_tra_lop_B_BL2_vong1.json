@@ -1,0 +1,31 @@
+{
+ "tai_lieu": "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx",
+ "tai_lieu_kem": "ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
+ "phien_ban": "0.9",
+ "dac_ta": ".claude/skills/qlda-phien-ban/dac_ta/tai_lieu_phien_ban.json",
+ "ngay_kiem_tra": "2026-10-25",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B, phiên riêng, kiểm tra như tài liệu mới sau CR01)",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 3,
+ "danh_gia_tieu_chi": [
+  {"tieu_chi": "CL01", "ket_qua": "dat", "nhan_xet": "Đủ mục đích, quy ước đánh số, trạng thái, lưu trữ, danh mục 20 tài liệu, BL1 và BL2, bản phát hành R1 đến R4, CR01, lịch sử, truy vết, nhận xét. Nêu lý do làm lại CR01 và BL2 theo khóa lam_lai."},
+  {"tieu_chi": "CL02", "ket_qua": "dat", "nhan_xet": "Khớp du_lieu/phien_ban.json và phien_ban_tong_hop.json: 233 phiên bản tài liệu (257 bản ghi ket_qua trừ 24 của thư mục 15), 13 tài liệu lưu trữ, BL1 14 tài liệu 18/03/2027, BL2 15 tài liệu 27/05/2027 căn cứ CR01 tại R4 (HSMT, HSDT giữ 1.0 Khóa, 12 tài liệu lên 2.0, WBS 5 ở 1.0). R1 đến R4 khớp du_lieu/phat_hanh.json về ngày, số gói, hạng mục 01A, yêu cầu RFP, lỗi đã sửa, lỗi còn mở, CR đưa vào Không. Excel So_phien_ban.xlsx nhất quán với tài liệu."},
+  {"tieu_chi": "CL03", "ket_qua": "dat", "nhan_xet": "Mỗi phiên bản sau hợp đồng gắn bản phát hành (R1 đến R4) và mã CR01, BL2 gắn CR01 và R4."},
+  {"tieu_chi": "CL04", "ket_qua": "dat", "nhan_xet": "Quy ước kiểm chứng được qua băm nội dung, băm đầu vào, sổ Excel có công thức đếm."},
+  {"tieu_chi": "CL05", "ket_qua": "dat", "nhan_xet": "Có phát hiện tài liệu cũ, quy định thay đổi sau đường cơ sở, CR01 chỉ đóng sau khi Chủ đầu tư kiểm tra đạt. Cảnh báo MH01 về BL2 lập khi tài liệu còn Dự thảo."},
+  {"tieu_chi": "CL06", "ket_qua": "dat", "nhan_xet": "Đúng định dạng. Dấu chấm phẩy chỉ nằm trong ghi chú lịch sử của các phiên bản cũ."}
+ ],
+ "doc_hieu": [
+  {"tieu_chi": "Quy ước nhất quán với sổ phiên bản", "ket_qua": "dat"},
+  {"tieu_chi": "Nhận xét dựa trên số liệu sổ và mã CR", "ket_qua": "dat"},
+  {"tieu_chi": "Nêu rõ tài liệu còn cần cập nhật", "ket_qua": "dat", "ghi_chu": "0 tài liệu cần cập nhật theo đầu vào, 5 tài liệu Dự thảo, xem MH01"},
+  {"tieu_chi": "Bản phát hành khớp phat_hanh.json, bản cut over là chính thức", "ket_qua": "dat", "ghi_chu": "Chưa có bản chính thức vì cut over 29/07/2027 chưa đến"},
+  {"tieu_chi": "Tài liệu thuộc từng đường cơ sở khớp sổ, BL2 có căn cứ CR đã phê duyệt", "ket_qua": "dat"}
+ ],
+ "phat_hien": [
+  {"ma": "MH01", "muc_do": "canh_bao", "nhom": "CL05", "vi_tri": "Mục 9 Nhận xét: 'Có 5 tài liệu còn ở trạng thái Dự thảo ...' và mục 4 BL2", "mo_ta": "13 tài liệu của BL2 chuyển thẳng từ Dự thảo (1.1, 1.2) sang Đường cơ sở 2.0, chưa qua kiểm tra lớp B (khác BL1, các tài liệu đều Đã kiểm tra trước 1.0). Nhận xét không nêu điều này. Lớp B lần này phát hiện lỗi ở kế hoạch quản lý thay đổi, master plan, phân công thuộc BL2.", "cach_sua": "can_nguoi_dung", "sua_o": "lời văn", "de_xuat": "Nhóm quyết định cách ghi phiên bản sửa sau BL2 (2.1 theo CR01 hay lập lại BL2). Nhận xét nêu các tài liệu BL2 chưa qua kiểm tra lớp B tại thời điểm lập."},
+  {"ma": "MH02", "muc_do": "canh_bao", "nhom": "CL02", "vi_tri": "du_lieu/phien_ban.json lam_lai.noi_dung: 'cut over 29/07/2027, giữ dự trữ 3 ngày'", "mo_ta": "Ghi chú làm lại nói giữ dự trữ 3 ngày, trong khi lịch BL2 có dự trữ 8 ngày và _quyet_dinh_25_10_cr01 dùng phần chênh 23/07 đến 29/07 làm dự trữ. Tài liệu không chép câu này nên chưa sai, nhưng nguồn ghi lý do làm lại chưa chính xác.", "cach_sua": "tu_dong", "sua_o": "dữ liệu", "de_xuat": "Sửa nội dung lam_lai: dự trữ đến cut over 8 ngày theo lịch lập lại."},
+  {"ma": "MH03", "muc_do": "canh_bao", "nhom": "CL01", "vi_tri": "ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx", "mo_ta": "Sổ Excel không có thông tin làm lại CR01 (lam_lai: ngày, số bản ghi bỏ khỏi sổ, nơi lưu sổ cũ), chỉ tài liệu Word nêu. Người đọc sổ Excel không thấy khoảng thứ tự bị bỏ.", "cach_sua": "tu_dong", "sua_o": "dữ liệu", "de_xuat": "Thêm trang hoặc dòng ghi lam_lai trong xuất Excel của so_phien_ban.py."}
+ ]
+}

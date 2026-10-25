@@ -113,7 +113,9 @@ def tien_them(r, bc):
     if ct == 'chenh_luong_bo_sung':
         dg = bc['dg']
         ngay = lambda t: float(dg['luong_tham_chieu_thang'][t['vai_tro']]['luong']) * float(dg['he_so_bao_hiem']) / float(dg['ngay_lam_viec_moi_thang'])
-        tong = sum(float(x['quy']) * ngay(bc['tv'][x['id']]) for x in bc['pc']['tai']
+        # cơ sở tính: MD công việc giao khi trả lương theo công sức, quỹ huy động khi trả theo huy động (hoặc khai co_so: md_giao, quy)
+        co_so = tt.get('co_so') or ('md_giao' if dg.get('cach_tra_luong') == 'cong_suc' else 'quy')
+        tong = sum(float(x[co_so]) * ngay(bc['tv'][x['id']]) for x in bc['pc']['tai']
                    if bc['tv'].get(x['id'], {}).get('loai') == 'bo_sung' and bc['tv'][x['id']].get('vai_tro') in dg['luong_tham_chieu_thang'])
         return float(tt.get('ty_le', 0)) * tong, None
     if ct == 'chi_phi_von':

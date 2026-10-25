@@ -16,7 +16,7 @@ description: Giao việc cho thành viên nhóm theo gói WBS và lập danh sá
 
 ## Bước tài liệu (phan_cong_tai_lieu)
 
-1. `python .claude/skills/qlda-loi/scripts/chay.py chuan_bi phan_cong_tai_lieu` (tự chạy scripts/tinh_bang_phan_cong.py: RACI có cột Phê duyệt bên ngoài, giao việc theo người, tải theo sprint có dòng tổng cộng khớp tổng WBS, cột kỳ KT khi lịch có giai đoạn Kết thúc, chu_thich_tai nêu các sprint ghi MD thực tế trước ngày lập lại lịch).
+1. `python .claude/skills/qlda-loi/scripts/chay.py chuan_bi phan_cong_tai_lieu` (tự chạy scripts/tinh_bang_phan_cong.py: RACI có cột Phê duyệt bên ngoài, giao việc theo người, tải theo sprint có dòng tổng cộng khớp tổng WBS, cột kỳ KT khi lịch có giai đoạn Kết thúc, chu_thich_tai nêu các sprint ghi MD thực tế trước ngày lập lại lịch, không ghi tên tệp; từ 1.3.4 quy_chua_giao_huy_dong là tổng phần quỹ còn trống từng người từng sprint, không bù phần vượt quỹ, không gồm kỳ KT).
 2. Agent Soạn thảo viết bản soạn: nguyên tắc phân công, trách nhiệm từng vai trò, cơ chế thay thế khi vắng mặt.
 3. `python .claude/skills/qlda-loi/scripts/chay.py hoan_thien phan_cong_tai_lieu --ghi-chu "..."`. Ma trận RACI in trang ngang.
 4. Agent Kiểm tra lớp B với `dac_ta/phan_cong_tai_lieu.json`.

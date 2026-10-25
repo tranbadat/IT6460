@@ -1,0 +1,46 @@
+{
+ "PHUONG_PHAP": [
+  "Đánh giá do nhóm dự án thực hiện sau ngày đóng dự án {kt#ngay_dong_du_an|ngay}, đầu mối Chủ đầu tư xác nhận kết quả nghiệm thu và các mốc. Bằng chứng gồm sổ mốc, nhật ký công việc, sổ lỗi, sổ vấn đề, sổ rủi ro, phiếu yêu cầu thay đổi, biên bản nghiệm thu và báo cáo tiến độ các kỳ, tổng hợp trong du_lieu/ket_thuc.json. Số liệu thực hiện là số liệu mô phỏng.",
+  "Mỗi chỉ tiêu KPI so thực tế với ngưỡng đã khai báo, xếp loại theo tỷ lệ chỉ tiêu đạt. Không có ngưỡng KPI nào được ghi đè trong đánh giá này."
+ ],
+ "DANH_GIA_KPI": [
+  ["{kt#kpi[ma=K14].ma} {kt#kpi[ma=K14].chi_tieu}", "Đạt sát ngưỡng: {kt#kpi[ma=K14].thuc_te_hien_thi} so với {kt#kpi[ma=K14].muc_tieu_hien_thi}", "Huy động theo nhu cầu sát MD kế hoạch, các thành viên còn MD sẵn sàng ở S1 đến S4 khi chờ gói tiền nhiệm, phần dư được dùng làm bù ở S5 đến S7", "Bảng huy động trong Cost estimate, nhật ký công việc, vấn đề VD13"],
+  ["{kt#kpi[ma=K04].ma} {kt#kpi[ma=K04].chi_tieu}", "Đạt: {kt#kpi[ma=K04].thuc_te_hien_thi}, ngưỡng {kt#kpi[ma=K04].muc_tieu_hien_thi}", "Công thực tế vượt kế hoạch nhẹ ở dịch vụ đổi trả 3.3.7 và sửa lỗi, tối ưu hiệu năng sau rủi ro RR06, bù lại bằng các gói dùng lại thành phần (4.4.1, 4.3.10, 3.4.11)", "Báo cáo tiến độ các kỳ, kịch bản mô phỏng"],
+  ["{kt#kpi[ma=K02].ma} {kt#kpi[ma=K02].chi_tieu}", "Đạt: {kt#kpi[ma=K02].thuc_te_hien_thi}", "Mọi mốc đạt trong hạn, mốc M4 đạt sau ngày dự kiến do khắc phục lỗi kiểm thử hệ thống 4.4.5, được giữ trong hạn nhờ huy động bổ sung ở S8", "Sổ mốc, biên bản M3, M4, M9, vấn đề VD13"],
+  ["{kt#kpi[ma=K01].ma} {kt#kpi[ma=K01].chi_tieu}", "Đạt: {kt#kpi[ma=K01].thuc_te_hien_thi}", "Cut over theo phụ lục hợp đồng của CR01, dự trữ đến cut over sau lập lại lịch được giữ đến cuối dự án", "Biên bản M6, phụ lục 01/2027/PL-ABCW"],
+  ["{kt#kpi[ma=K13].ma} {kt#kpi[ma=K13].chi_tieu}", "Đạt: {kt#kpi[ma=K13].thuc_te_hien_thi}", "Các rủi ro đã xảy ra có tác động nhỏ và được ứng phó sớm theo dấu hiệu", "Sổ rủi ro, vấn đề VD03, VD06, VD12"]
+ ],
+ "NGHIEM_THU": [
+  "Toàn bộ {kt#nghiem_thu.so_yeu_cau_rfp|nguyen} yêu cầu RFP thuộc phạm vi nghiệm thu đạt, {kt#nghiem_thu.so_dat|nguyen} trên {kt#nghiem_thu.so_tieu_chi|nguyen} tiêu chí nghiệm thu đạt ngay lần đầu, không có tiêu chí phải nghiệm thu lại và không còn yêu cầu chưa nghiệm thu.",
+  "Về yêu cầu phi chức năng, hoạt động liên tục 24 giờ, 365 ngày (R04) được nghiệm thu qua hai nút ứng dụng, chuyển đổi dự phòng, sao lưu và khôi phục (NT03, NT05), an toàn dữ liệu được rà soát theo OWASP Top 10 (NT04). Thời gian phản hồi không quá 2 giây và chịu tải 500 người dùng đồng thời (R05) đạt tại NT01, NT02 sau khi tối ưu trang danh mục khi rủi ro RR06 xảy ra. Yêu cầu dễ sử dụng (R03) đạt theo kết quả đánh giá khả năng sử dụng 2.4.9 (NT06).",
+  "Các chức năng tìm kiếm (R06), quản lý thành viên (R07), đặt hàng (R08), Selling DB (R09), tích hợp Main System (R10) và nghiệp vụ vận chuyển (R11) đạt trong kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư. Sản phẩm bàn giao theo RFP gồm đặc tả (R44), quy trình vận hành mới (R46), cấu trúc Selling DB (R47) và sơ đồ menu (R48) được nghiệm thu khi bàn giao ngày {kt#tien_do.cut_over_thuc_te|ngay}."
+ ],
+ "THAY_DOI": [
+  ["Tiếp nhận và ghi sổ", "{kt#thay_doi.danh_sach[0].ma} ghi sổ ngày {kt#thay_doi.danh_sach[0].ngay_de_xuat|ngay}, cùng ngày Chủ đầu tư đề nghị tại buổi trình diễn cuối S4", "Đạt, ghi kèm vấn đề VD08 để theo dõi"],
+  ["Đánh giá tác động", "Đánh giá MD tăng {kt#thay_doi.danh_sach[0].md_tang|md}, chi phí, ngày cut over phải lùi và tiêu hao dự trữ trên đường găng bằng công cụ của nhóm", "Đạt, đánh giá ban đầu được cập nhật khi nhóm chọn cut over trong phụ lục"],
+  ["Phê duyệt đúng cấp và đúng hạn", "Quyết định ngày {kt#thay_doi.danh_sach[0].ngay_quyet_dinh|ngay}, sau {kt#thay_doi.danh_sach[0].so_ngay_xu_ly|nguyen} ngày làm việc, trước hạn {kt#thay_doi.danh_sach[0].han_quyet_dinh|ngay}, mức {kt#thay_doi.danh_sach[0].muc} do người ký hợp đồng của hai bên quyết định", "Đạt"],
+  ["Phụ lục hợp đồng khi đổi giá hoặc mốc", "Phụ lục 01/2027/PL-ABCW ghi giá điều chỉnh, cut over mới, đợt thanh toán gắn mốc M9 và gia hạn bảo đảm thực hiện", "Đạt"],
+  ["Cập nhật tài liệu và phiên bản", "Các tài liệu kế hoạch được cập nhật thành đường cơ sở BL2, BL2 được lập lại cùng ngày sau khi sửa theo kiểm tra lớp B", "Đạt một phần, tài liệu sau thay đổi nên qua kiểm tra lớp B trước khi lập đường cơ sở, quy trình đã được sửa"],
+  ["Kiểm soát thay đổi không chính thức", "Không ghi nhận thay đổi phạm vi ngoài phiếu yêu cầu thay đổi, các điều chỉnh huy động trong S8, S9 là quyết định quản lý nguồn lực trong phạm vi đã duyệt", "Đạt"]
+ ],
+ "RUI_RO": [
+  ["Mức độ nhận diện", "{kt#rui_ro.so_da_xay_ra|nguyen} rủi ro đã xảy ra RR02, RR04, RR06 đều có trong sổ, không có rủi ro mới ngoài sổ", "Đạt"],
+  ["Độ chính xác đánh giá", "Tác động thực tế {kt#rui_ro.tac_dong_md|md} MD so với tổng EMV {kt#rui_ro.tong_emv_md|md} MD, các rủi ro xảy ra có tác động thấp hơn mức đã đánh giá", "Đạt, đánh giá thận trọng, EMV cao hơn thực tế"],
+  ["Hiệu quả phòng ngừa", "{kt#rui_ro.so_khong_xay_ra|nguyen} rủi ro không xảy ra, các rủi ro kiểm thử chấp nhận và cut over (RR03, RR08, RR10) được phòng ngừa bằng kiểm thử sớm và diễn tập triển khai", "Đạt"],
+  ["Tính kịp thời của ứng phó", "{kt#rui_ro.so_kich_hoat|nguyen} lần kích hoạt kế hoạch ứng phó theo dấu hiệu, RR06 được xử lý trong cùng sprint phát hiện", "Đạt"],
+  ["Mức dùng dự phòng", "Tác động thực tế tương đương {kt#rui_ro.ty_le_dung_du_phong|pt} dự phòng {kt#rui_ro.du_phong|tien} đồng", "Đạt"]
+ ],
+ "CAM_KET": [
+  ["Thời hạn đưa hệ thống vào vận hành", "HSMT, E-ĐKCT và phụ lục hợp đồng 01/2027/PL-ABCW", "Cut over ngày {kt#tien_do.cut_over_thuc_te|ngay}, đúng ngày theo phụ lục", "Đạt"],
+  ["Nhân sự chủ chốt", "HSDT, danh sách nhân sự chủ chốt", "Không thay đổi nhân sự chủ chốt, vị trí bổ sung huy động theo kế hoạch và huy động bổ sung theo nhu cầu ở S8, S9", "Đạt"],
+  ["Phương pháp và kế hoạch thực hiện theo sprint", "HSDT, đề xuất kỹ thuật", "Các sprint S1 đến S9 có bản phát hành R1 đến R9 và báo cáo tiến độ mỗi kỳ, bản chính thức R9", "Đạt"],
+  ["Bảo đảm chất lượng và nghiệm thu theo chỉ tiêu kỹ thuật", "HSMT, chỉ tiêu kỹ thuật, HSDT", "Mọi tiêu chí nghiệm thu đạt lần đầu, không còn lỗi nghiêm trọng hoặc cao khi bàn giao", "Đạt"],
+  ["Quản lý thay đổi và rủi ro", "HSDT, kế hoạch quản lý thay đổi và rủi ro", "Yêu cầu thay đổi quyết định đúng hạn có phụ lục, rủi ro xảy ra đều có ứng phó, đường cơ sở BL2 phải lập lại sau kiểm tra", "Đạt một phần"],
+  ["Bảo hành trách nhiệm sai sót", "HSMT, E-ĐKCT, bảo hành {hsmt#hop_dong.bao_hanh_thang|nguyen} tháng", "Nghĩa vụ bảo hành ghi nhận là cam kết chưa chi {kt#chi_phi.cam_ket_chua_chi|tien} đồng, thực hiện sau ngày đóng dự án", "Đạt"]
+ ],
+ "KET_LUAN": [
+  "Dự án được xếp loại {kt#xep_loai} với {kt#so_kpi_dat} trên {kt#so_kpi|nguyen} chỉ tiêu KPI đạt. Điểm mạnh là cut over đúng ngày theo phụ lục dù có yêu cầu thay đổi lớn giữa dự án, nghiệm thu đạt ngay lần đầu và rủi ro được ứng phó sớm.",
+  "Hạn chế chính là huy động theo nhu cầu sát MD kế hoạch làm các sprint kiểm thử thiếu quỹ khi gói trước chậm, phải huy động bổ sung ở S8, S9, và đường cơ sở sau thay đổi được lập trước khi tài liệu qua kiểm tra lớp B.",
+  "Kiến nghị nhóm dự án lập mức huy động của các sprint kiểm thử có phần dư cho làm bù, kiểm tra lớp B mọi tài liệu sau thay đổi trước khi đặt đường cơ sở. Kiến nghị Chủ đầu tư duy trì đầu mối tiếp nhận yêu cầu bảo hành và xác nhận biên bản nghiệm thu tổng thể để thanh toán các đợt còn lại."
+ ]
+}

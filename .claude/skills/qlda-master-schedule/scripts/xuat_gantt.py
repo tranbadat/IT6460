@@ -42,15 +42,17 @@ ws['A2'] = da['ten_du_an']; ws['A2'].font = X.F_THUONG
 info = [('Ngày bắt đầu', D(lich['ngay_bat_dau']), X.NGAY, True), ('Ngày cut over', D(lich['cut_over']), X.NGAY, True),
         ('Số ngày làm việc', '=NETWORKDAYS(B4,B5,$F$4:$F$40)', '0', False), ('Tổng khối lượng, MD', "=SUMIFS(Lich_trinh!D:D,Lich_trinh!C:C,1)", X.SO2, False),
         ('Quỹ thời gian, MD', '=SUM(Phan_bo!E:E)', X.SO2, False), ('Tỷ lệ sử dụng quỹ', '=IF(B8=0,0,B7/B8)', X.PT, False),
-        ('Kết thúc dự kiến (không tính gói dàn trải)', D(lich['ket_thuc_du_kien']), X.NGAY, True),
+        ('Hoàn thành giai đoạn Thực hiện (không tính gói dàn trải và gói Kết thúc)', D(lich['ket_thuc_du_kien']), X.NGAY, True),
         ('Dự trữ đến cut over, ngày làm việc (trước các gói gắn ngày cố định)', lich['du_tru_den_cut_over_ngay'], '0', True),
         ('Số sprint', '=COUNTIFS(Sprint!A:A,"S*",Sprint!A:A,"<>Sprint")', '0', False), ('Đường găng theo phụ thuộc, ngày', lich['do_dai_gang_ngay'], '0', True)]
 if lich.get('nguong_su_dung_quy_toi_thieu') is not None:
     info.append(('Ngưỡng tỷ lệ sử dụng quỹ tối thiểu', float(lich['nguong_su_dung_quy_toi_thieu']), X.PT, True))
+if lich.get('ngay_dong_du_an'):  # thêm cuối bảng để không đổi vị trí các ô công thức B4 đến B14
+    info.append(('Ngày đóng dự án (hết giai đoạn Kết thúc)', D(lich['ngay_dong_du_an']), X.NGAY, True))
 for i, (k, v, f, nhap) in enumerate(info, 4):
     X.o(ws, i, 1, k)
     X.o(ws, i, 2, v, fmt=f, nhap=nhap)
-if len(info) > 10:  # tỷ lệ sử dụng quỹ (B9) dưới ngưỡng (B14) tô đỏ nhạt
+if lich.get('nguong_su_dung_quy_toi_thieu') is not None:  # tỷ lệ sử dụng quỹ (B9) dưới ngưỡng (B14) tô đỏ nhạt
     ws.conditional_formatting.add('B9', FormulaRule(formula=['B9<B14'], fill=PatternFill('solid', fgColor='F8CBAD')))
 X.o(ws, 3, 6, 'Ngày nghỉ', dam=True)
 for i, h in enumerate(lich['ngay_nghi'], 4):
@@ -81,10 +83,12 @@ def van_ban_rang_buoc(rb):
            'phe_duyet': lambda x: f'Chủ đầu tư phê duyệt {x["so_ngay"]} ngày',
            'uat': lambda x: f'kiểm thử chấp nhận {loi.ngay(x["tu"])} - {loi.ngay(x["den"])}',
            'khong_som_hon': lambda x: f'không sớm hơn {loi.ngay(x["ngay"])}',
-           'cam_ket': lambda x: f'sau cam kết {x["ma"]}' + (f' hạn {loi.ngay(x["han"])}' if x.get('han') else '')}
+           'cam_ket': lambda x: (f'trong khoảng cam kết {x["ma"]} {loi.ngay(x["tu"])} - {loi.ngay(x["den"])}' if x.get('trong_khoang')
+                                 else f'sau cam kết {x["ma"]}' + (f' hạn {loi.ngay(x["han"])}' if x.get('han') else ''))}
     s = ', '.join(mau[x['loai']](x) for x in rb if x.get('loai') in mau)
     return s[:1].upper() + s[1:]
-d0 = D(lich['ngay_bat_dau']); d1 = max(D(lich['cut_over']), max(D(g['ket_thuc']) for g in lich['goi']))  # gồm giai đoạn Kết thúc
+d0 = D(lich['ngay_bat_dau']); d1 = max([D(lich['cut_over'])] + [D(g['ket_thuc']) for g in lich['goi']]
+                                         + ([D(lich['ngay_dong_du_an'])] if lich.get('ngay_dong_du_an') else []))  # đến hết giai đoạn Kết thúc
 w0 = d0 - dt.timedelta(days=d0.weekday())
 tuan = []
 while w0 <= d1:
@@ -143,6 +147,13 @@ for i, s in enumerate(lich['sprint'], 2):
     X.o(sp, i, 7, f'=IF(F{i}=0,0,E{i}/F{i})', fmt=X.PT)
     X.o(sp, i, 8, s['muc_tieu'], nhap=True, wrap=True); X.o(sp, i, 9, s['san_pham_demo'], nhap=True, wrap=True)
 n_sp = len(lich['sprint']) + 1
+_q_kt = 0
+if any(x['sprint'] == 'KT' for x in lich.get('phan_bo', [])):  # giai đoạn Kết thúc sau cut over: MD có, quỹ huy động bằng 0
+    n_sp += 1
+    _q_kt = sum(float(x.get('quy') or 0) for x in lich['phan_bo'] if x['sprint'] == 'KT')  # quỹ theo huy_dong_ket_thuc của thanh_vien.json (từ 1.4.6)
+    X.o(sp, n_sp, 1, 'KT', nhap=True); X.o(sp, n_sp, 8, 'Giai đoạn Kết thúc sau cut over' + (', quỹ huy động theo tỷ lệ huy động giai đoạn Kết thúc của '
+                                                       'thành viên' if _q_kt else ', không có quỹ huy động'), nhap=True, wrap=True)
+    X.o(sp, n_sp, 5, f'=SUMIFS(Phan_bo!D:D,Phan_bo!C:C,A{n_sp})', fmt=X.SO2); X.o(sp, n_sp, 6, f'=SUMIFS(Phan_bo!E:E,Phan_bo!C:C,A{n_sp})', fmt=X.SO2)
 X.o(sp, n_sp + 1, 1, 'Tổng', dam=True)
 for c in (4, 5, 6):
     X.o(sp, n_sp + 1, c, f'=SUM({L(c)}2:{L(c)}{n_sp})', fmt=X.SO2 if c > 4 else '0', dam=True)
@@ -169,7 +180,7 @@ if gd_ds:
         X.o(gs, i, 4, f'=NETWORKDAYS(B{i},C{i},Tong_quan!$F$4:$F$40)', fmt='0')
         X.o(gs, i, 5, f'=COUNTIFS(Lich_trinh!$I:$I,A{i},Lich_trinh!$E:$E,"?*")' if x['ma'] != 'thuc_hien' else x['so_goi'], fmt='0', nhap=x['ma'] == 'thuc_hien')
         X.o(gs, i, 6, x['md'], fmt=X.SO2, nhap=True)
-        can_cu = {'khoi_dong': 'du_an.json giai_doan.khoi_dong', 'thuc_hien': ', '.join(x.get('sprint', [])),
+        can_cu = {'khoi_dong': 'Quyết định của nhóm về giai đoạn Khởi động', 'thuc_hien': ', '.join(x.get('sprint', [])),
                   'xuyen_suot': 'Gói quản lý dàn trải theo sprint', 'ket_thuc': f'{x.get("so_ngay", "")} ngày làm việc sau cut over'}[x['ma']]
         X.o(gs, i, 7, can_cu + (' (mặc định)' if x.get('mac_dinh') else ''), nhap=True, wrap=True)
         X.o(gs, i, 8, ', '.join(x['goi']) if x['ma'] != 'thuc_hien' else f'{x["so_goi"]} gói theo sprint, xem Lich_trinh', nhap=True, wrap=True)
@@ -207,9 +218,13 @@ for i, p in enumerate(ids, 4):
 NGUONG_NGUOI = float(lich.get('nguong_su_dung_nguoi_sprint', 0.3))
 _quy_o = f'SUMIFS(Phan_bo!$E:$E,Phan_bo!$A:$A,$A4,Phan_bo!$C:$C,{L(3)}$3)'
 _vung = f'{L(3)}4:{L(2 + len(ma_sp))}{3 + len(ids)}'
-tn.conditional_formatting.add(_vung, FormulaRule(formula=[f'{L(3)}4>{_quy_o}+0.01'], fill=PatternFill('solid', fgColor='F8CBAD'), stopIfTrue=True))
+# cột KT (giai đoạn Kết thúc sau cut over) không có quỹ huy động, MD trả theo công sức (L28 đã được nhóm chấp nhận): không tô đỏ
+tn.conditional_formatting.add(_vung, FormulaRule(formula=[f'AND({L(3)}$3<>"KT",{L(3)}4>{_quy_o}+0.01)'], fill=PatternFill('solid', fgColor='F8CBAD'), stopIfTrue=True))
 tn.conditional_formatting.add(_vung, FormulaRule(formula=[f'AND({_quy_o}>0,{L(3)}4<{NGUONG_NGUOI}*{_quy_o})'], fill=PatternFill('solid', fgColor='FFE699')))
-X.ghi_chu_bang(tn, 5 + len(ids), f'Ô đỏ: vượt quỹ thời gian của sprint. Ô vàng: được huy động trong sprint nhưng dùng dưới {loi.pt(NGUONG_NGUOI)} quỹ của sprint.')
+X.ghi_chu_bang(tn, 5 + len(ids), f'Ô đỏ: vượt quỹ thời gian của sprint. Ô vàng: được huy động trong sprint nhưng dùng dưới {loi.pt(NGUONG_NGUOI)} quỹ của sprint.'
+                             + ((' Cột KT: MD giai đoạn Kết thúc sau cut over, quỹ theo tỷ lệ huy động giai đoạn Kết thúc của thành viên.' if _q_kt else
+                                 ' Cột KT: MD giai đoạn Kết thúc sau cut over, trả lương theo công sức, không có quỹ huy động (nhóm đã chấp nhận).')
+                                if 'KT' in ma_sp else ''))
 
 # ---------------- Nhu_cau: MD theo loại công việc và sprint, dùng để đề xuất huy động theo sprint
 if lich.get('nhu_cau_theo_sprint'):
@@ -236,12 +251,17 @@ if lich.get('nhu_cau_theo_sprint'):
 if lich.get('cam_ket_chu_dau_tu') or lich.get('chu_dau_tu_tham_gia'):
     ck = wb.create_sheet('Cam_ket')
     ck['A1'] = 'Cam kết đầu vào của Chủ đầu tư'; ck['A1'].font = X.F_TEN
-    X.tieu_de(ck, 3, ['Mã', 'Nội dung cam kết', 'Hạn', 'Gói phụ thuộc', 'Bắt đầu sớm nhất', 'Trạng thái'], [8, 50, 12, 22, 14, 18])
+    X.tieu_de(ck, 3, ['Mã', 'Nội dung cam kết', 'Hạn (cuối khoảng nếu là khoảng tham gia)', 'Gói phụ thuộc', 'Bắt đầu sớm nhất', 'Trạng thái',
+                      'Đầu khoảng tham gia', 'Kết thúc muộn nhất'], [8, 50, 14, 22, 14, 20, 14, 14])
     for i, c in enumerate(lich.get('cam_ket_chu_dau_tu', []), 4):
         X.o(ck, i, 1, c['ma'], nhap=True); X.o(ck, i, 2, c['noi_dung'], nhap=True, wrap=True)
         X.o(ck, i, 3, D(c['han']) if c.get('han') else None, fmt=X.NGAY, nhap=True); X.o(ck, i, 4, ', '.join(c['goi']), nhap=True, wrap=True)
         X.o(ck, i, 5, D(c['bat_dau_som_nhat']) if c.get('bat_dau_som_nhat') else None, fmt=X.NGAY, nhap=True)
-        X.o(ck, i, 6, f'=IF(C{i}="","Không có hạn",IF(D{i}="","Chưa gắn gói",IF(E{i}>=C{i},"Đạt","Bắt đầu trước hạn")))')
+        if c.get('khoang_tu'):  # cam kết tham gia trong khoảng kiểm thử chấp nhận: so đầu, cuối khoảng
+            X.o(ck, i, 7, D(c['khoang_tu']), fmt=X.NGAY, nhap=True); X.o(ck, i, 8, D(c['ket_thuc_muon_nhat']), fmt=X.NGAY, nhap=True)
+            X.o(ck, i, 6, f'=IF(AND(E{i}>=G{i},H{i}<=C{i}),"Trong khoảng cam kết","Ngoài khoảng cam kết")')
+        else:
+            X.o(ck, i, 6, f'=IF(C{i}="","Không có hạn",IF(D{i}="","Chưa gắn gói",IF(E{i}>=C{i},"Đạt","Bắt đầu trước hạn")))')
     r2 = 6 + len(lich.get('cam_ket_chu_dau_tu', []))
     ck.cell(row=r2 - 1, column=1, value='Gói có Chủ đầu tư tham gia').font = X.F_TEN
     X.tieu_de(ck, r2, ['Gói', 'Loại tham gia', 'Thời lượng tối thiểu, ngày', 'Bắt đầu', 'Kết thúc', 'Số ngày làm việc', 'Trạng thái'], [8, 50, 12, 22, 14, 18, 16])
@@ -264,7 +284,7 @@ for i, t in enumerate(['Hướng dẫn sử dụng master schedule',
                        'Sheet Nhu_cau: MD theo loại công việc và sprint so với quỹ huy động, dùng để đề xuất thời gian huy động từng vị trí.',
                        'Sheet Cam_ket: hạn đầu vào của Chủ đầu tư và gói phụ thuộc, gói có Chủ đầu tư tham gia (phê duyệt tài liệu, kiểm thử chấp nhận) và thời lượng tối thiểu.',
                        'Cách cập nhật: sửa WBS, giao việc hoặc mốc và lập lại lịch theo skill master schedule. Không sửa tay các ô chữ xanh dương.',
-                       f'Nguồn dữ liệu: du_lieu/lich.json, tạo lúc {loi.bay_gio()}.'], 1):
+                       f'Nguồn dữ liệu: lịch dự án do công cụ của nhóm lập, tạo lúc {loi.ngay(loi.bay_gio()[:10])} {loi.bay_gio()[11:16]}.'], 1):
     c = hd.cell(row=i, column=1, value=t); c.font = X.F_TEN if i == 1 else X.F_THUONG
 hd.column_dimensions['A'].width = 120
 wb.save(OUT)

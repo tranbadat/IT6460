@@ -22,7 +22,7 @@ Dùng:
   python yeu_cau_thay_doi.py quyet_dinh <ma_cr> --ket-qua "Đã phê duyệt|Từ chối|Hoãn" --nguoi "<người quyết định>" [--ngay yyyy-mm-dd]
       [--van-ban "<số, ngày văn bản thống nhất hoặc phụ lục>"] (bắt buộc khi phê duyệt mức lớn) [--xem-lai yyyy-mm-dd] (bắt buộc khi hoãn)
       [--phuong-an hien_tai|them_nguoi|them_nguoi_n] [--ghi-chu ...]
-  python yeu_cau_thay_doi.py ap_dung <ma_cr> [--ghi] [--so-phu-luc "..."] [--ngay-phu-luc yyyy-mm-dd] [--gia <đồng>] [--cut-over yyyy-mm-dd]
+  python yeu_cau_thay_doi.py ap_dung <ma_cr> [--ghi] [--so-phu-luc "..."] [--ngay-phu-luc yyyy-mm-dd] [--gia <đồng>] [--cut-over yyyy-mm-dd] [--gia-han-bao-dam yyyy-mm-dd]
       [--dot-thanh-toan <tệp json>] [--ngay ...]
       Chỉ sau quyết định Đã phê duyệt. Sinh đề xuất thay đổi dữ liệu nguồn trong lam_viec/thay_doi/<ma_cr>/de_xuat/ (scripts/ap_dung_thay_doi.py),
       ghi phụ lục hợp đồng (số, ngày, giá điều chỉnh, cut over mới, mốc thanh toán điều chỉnh) và thứ tự chạy lại các bước. --ghi áp thẳng vào tệp.
@@ -61,7 +61,7 @@ ap.add_argument('lenh'); ap.add_argument('doi_tuong', nargs='?'); ap.add_argumen
 ap.add_argument('--ngay'); ap.add_argument('--van-ban', default=''); ap.add_argument('--xem-lai'); ap.add_argument('--kiem-tra', default='')
 ap.add_argument('--bo-qua-kiem-tra', action='store_true'); ap.add_argument('--them-nguoi', action='append', default=[]); ap.add_argument('--phuong-an', default='hien_tai')
 ap.add_argument('--ghi', action='store_true'); ap.add_argument('--so-phu-luc'); ap.add_argument('--ngay-phu-luc'); ap.add_argument('--gia', type=int)
-ap.add_argument('--cut-over'); ap.add_argument('--dot-thanh-toan')
+ap.add_argument('--cut-over'); ap.add_argument('--dot-thanh-toan'); ap.add_argument('--gia-han-bao-dam')
 a = ap.parse_args()
 NGAY = a.ngay or loi.bay_gio()[:10]
 for d_ in (a.ngay, a.xem_lai, a.ngay_phu_luc, a.cut_over):
@@ -241,10 +241,22 @@ def danh_gia():
     ngay_dx = cr.get('ngay', loi.bay_gio()[:10])
     lt = ltd.danh_gia_lich(dict(cr, ma=ma), ma, ngay_dx, ngay_bat_dau_mac_dinh(cr, pl, da, ngay_dx), them_ds)
     pa = lt['hien_tai']
+    # kiểm tra ngày cut over trên đúng dữ liệu đề xuất của bước áp dụng, để số ngày lùi của đánh giá và áp dụng khớp nhau (từ 1.4.6)
+    if pa['ngay_lui_cut_over'] or cr.get('goi_moi'):
+        kt = adt.kiem_tra_cut_over(dict(cr, ma=ma, ngay_de_xuat=ngay_dx, lich_thay_doi=lt_luu(lt), phu_luc_hop_dong=True, gia_de_nghi=round(tong['gia'])),
+                                   pa, lt['ngay_bat_dau_thay_doi'],
+                                   qt.vai_ban(pc, {t['id']: t for t in tvs}, loi.doc_json('dau_vao/nha_thau.json'), loi.doc_json('du_lieu/hsmt.json'))[0])
+        pa.update(cut_over_kiem_tra=kt['cut_over'], ngay_lui_cut_over_kiem_tra=kt['ngay_lui'], lui_them_kiem_tra=kt['them'],
+                  loi_kiem_tra_ap_dung=kt['loi_con_lai'])
+        for m in pa['moc']:  # mốc giữa kỳ vượt hạn: ngày dự kiến và hạn đề xuất theo lịch kiểm tra (mốc gắn cut over dời theo phần chênh khi áp dụng)
+            d = kt['moc'].get(m['ma'])
+            if d and m['vuot_han'] and not m['gan_cut_over'] and d > m['han_de_xuat']:
+                m.update(ngay_moi=d, han_de_xuat=d, vuot_han=max(m['vuot_han'], ltd.so_ngay_giua(ltd.ngay_mo_rong(da)[1], m['han'], d)))
+    lui = pa.get('ngay_lui_cut_over_kiem_tra', pa['ngay_lui_cut_over'])
     moc = [m for m in pa['moc'] if m['dot']]
-    dk = dieu_kien_cr(cr, pl, pa['ngay_lui_cut_over'], moc)
+    dk = dieu_kien_cr(cr, pl, lui, moc)
     diem, muc, ly_do = qt.cham_diem({'md': tong['md'], 'chi_phi': tong['chi_phi'], 'tieu_hao_du_tru': lt['tieu_hao_du_tru'],
-                                     'cham_cut_over': pa['ngay_lui_cut_over']}, dk, pl)
+                                     'cham_cut_over': lui}, dk, pl)
     vai, _, _ = qt.vai_ban(pc, {t['id']: t for t in tvs}, loi.doc_json('dau_vao/nha_thau.json'), loi.doc_json('du_lieu/hsmt.json'))
     phu_luc = muc.get('phu_luc_hop_dong', False) and any(d.get('phu_luc') for d in pl['dieu_kien'] if d['ma'] in dk)
     KY_HD = loi.da_ky_hop_dong()  # trước khi ký hợp đồng, HSMT và HSDT chưa khóa
@@ -259,7 +271,7 @@ def danh_gia():
            'ma_rui_ro': cr.get('ma_rui_ro', []), 'can_cu_hsmt': cr.get('can_cu_hsmt', ''), 'nhan_dinh_ban_dau': cr.get('nhan_dinh_ban_dau', ''),
            'rui_ro_moi': cr.get('rui_ro_moi', ''), 'md_tang': round(tong['md'], 2), 'chi_phi_tang': round(tong['chi_phi']), 'chi_phi_noi_bo': round(tong['chi_phi']),
            'gia_de_nghi': round(tong['gia']), 'can_cu_gia_de_nghi': can_cu_gia, 'ngay_cham': lt['ngay_cham'], 'tieu_hao_du_tru': lt['tieu_hao_du_tru'],
-           'ngay_cham_cut_over': pa['ngay_lui_cut_over'], 'cut_over_moi': pa['cut_over_moi'], 'ket_thuc_moi': pa['ket_thuc_moi'],
+           'ngay_cham_cut_over': lui, 'cut_over_moi': pa.get('cut_over_kiem_tra') or pa['cut_over_moi'], 'ket_thuc_moi': pa['ket_thuc_moi'],
            'can_them_nguoi': pa['can_them_nguoi'], 'ket_luan_nhan_su': pa['ket_luan_nhan_su'],
            'moc_anh_huong': [m for m in pa['moc'] if m['ngay_doi'] or m['vuot_han']], 'chi_tiet_goi': chi_tiet,
            'muc_moi': cr.get('muc_moi', []), 'goi_moi': cr.get('goi_moi', []), 'goi_thay_doi': cr.get('goi_thay_doi', []), 'lich_thay_doi': lt_luu(lt),
@@ -272,8 +284,11 @@ def danh_gia():
            'tai_lieu_theo_ky': [f'{b["buoc"]} ({b["ten"]})' for b in tl if b['da_tao'] and b['anh_chup']],
            'tai_lieu_khoa': [f'{b["buoc"]} ({b["ten"]})' for b in tl if b['khoa'] and KY_HD],
            'phu_luc_hop_dong': phu_luc, 'van_ban_yeu_cau': 'Phụ lục hợp đồng' if phu_luc else muc['van_ban'],
-           'trang_thai': 'Chờ phê duyệt', 'lich_su': [{'ngay': ngay_dx, 'ghi_luc': loi.bay_gio(), 'trang_thai': 'Chờ phê duyệt', 'nguoi': cr.get('nguoi_de_xuat', ''),
-                                                       'ghi_chu': 'Lập và đánh giá tác động'}]}
+           'trang_thai': 'Chờ phê duyệt', 'lich_su': [  # từ 1.4.7: tiếp nhận, phân loại sơ bộ, đánh giá do quản trị dự án của nhà thầu
+               {'ngay': ngay_dx, 'ghi_luc': loi.bay_gio(), 'trang_thai': tt_, 'nguoi': (vai.get('qtda') or {}).get('ho_ten', ''), 'ghi_chu': gc_}
+               for tt_, gc_ in (('Mới', f'Tiếp nhận đề nghị của {cr.get("nguoi_de_xuat", "")}, cấp mã và lập phiếu'),
+                                ('Đang đánh giá', f'Phân loại sơ bộ mức {muc["ten"].lower()}, đánh giá tác động'),
+                                ('Chờ phê duyệt', 'Hoàn thành đánh giá tác động bằng công cụ của nhóm, trình người có thẩm quyền'))]}
     so['yeu_cau'].append(rec)
     loi.ghi_json('du_lieu/thay_doi.json', so)
     loi.ghi_nhat_ky('qlda-change', f'thay_doi.{ma}.danh_gia', 'script', f'Đánh giá {ma}: {rec["tieu_de"]}', vao=[a.doi_tuong], ra=['du_lieu/thay_doi.json'],
@@ -295,6 +310,10 @@ def in_phuong_an(pa):
           f'{pa["ngay_lui_cut_over"]} ngày làm việc thành {loi.ngay(pa["cut_over_moi"])} (theo phụ thuộc {pa["ngay_lui_theo_phu_thuoc"]} ngày, '
           f'do nguồn lực {pa["ngay_do_nguon_luc"]} ngày' + (f', khoảng UAT kéo dài {pa["uat_keo_dai"]} ngày' if pa['uat_keo_dai'] else '')
           + f'). {pa["ket_luan_nhan_su"]}.')
+    if pa.get('cut_over_kiem_tra'):
+        print(f'    Kiểm tra trên dữ liệu đề xuất của bước áp dụng: cut over {loi.ngay(pa["cut_over_kiem_tra"])}, lùi {pa["ngay_lui_cut_over_kiem_tra"]} ngày làm việc'
+              + (f' (thêm {pa["lui_them_kiem_tra"]} ngày so với mô phỏng)' if pa.get('lui_them_kiem_tra') else ', khớp mô phỏng')
+              + ('. Lịch còn lỗi: ' + '; '.join(pa['loi_kiem_tra_ap_dung']) if pa.get('loi_kiem_tra_ap_dung') else '') + '.')
     kn = pa['kha_nang']
     print(f'    Khả năng theo quỹ: {loi.so(kn["md_con_lai"], 2)} MD còn lại (gồm CR) chia {loi.so(kn["md_moi_ngay"], 2)} MD mỗi ngày của nhóm là '
           f'{kn["so_ngay_theo_quy"]} ngày làm việc, so với {kn["so_ngay_den_cut_over_goc"]} ngày từ ngày CR đến cut over gốc.')

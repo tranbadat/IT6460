@@ -1,0 +1,112 @@
+{
+ "tai_lieu": "ket_qua/04_Master_schedule/Master_schedule.xlsx (0.21)",
+ "buoc": "lich",
+ "vong": "Kiểm tra lớp B lượt 2 (sau một vòng sửa), phiên độc lập, không đọc báo cáo lớp B cũ và nhật ký sửa. Công thức được tính lại bằng LibreOffice trước khi đối chiếu.",
+ "ket_luan": "chua_dat",
+ "so_loi": 2,
+ "so_canh_bao": 4,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ sheet Tong_quan, Lich_trinh (Gantt tuần), Sprint, Moc, Giai_doan, Phan_bo, Tai_nguon, Nhu_cau, Cam_ket, Huong_dan."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "177 dòng Lich_trinh khớp lich.json về tên, MD, ngày, số ngày, sprint, phụ thuộc, đường găng. Tổng 657 MD, quỹ 816 MD, tỷ lệ 80,5%, dự trữ 3 ngày, đường găng 51 ngày, ngày đóng dự án 15/07/2027 khớp. Mục tiêu và sản phẩm trình diễn của S3, S4 nêu công việc không nằm trong sprint theo lịch (MS01). Trạng thái CK6 mâu thuẫn với kết quả kiểm tra lịch (MS02). Lệch làm tròn 0,01 MD giữa các sheet (MS04)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mốc ghi căn cứ gói và đợt thanh toán; ràng buộc ngày ghi mã cam kết."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mốc có ngày dự kiến, hạn và trạng thái bằng công thức; gói có Chủ đầu tư tham gia có thời lượng tối thiểu và trạng thái."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Đường găng, dự trữ đến cut over 3 ngày theo quyết định 25/10/2026, cam kết của Chủ đầu tư gắn gói phụ thuộc; thiếu một thời hạn của HSMT (MS03)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, số tổng hợp là công thức, chú thích màu, định dạng ngày dd/mm/yyyy."
+  },
+  {
+   "tieu_chi": "Tính khả thi đến cut over",
+   "ket_qua": "dat",
+   "nhan_xet": "Giai đoạn Thực hiện kết thúc 01/07/2027, dự trữ 3 ngày làm việc trước gói gắn ngày cố định, kiểm thử chấp nhận trong khoảng 18/06 đến 29/06/2027, gói phụ thuộc cam kết không bắt đầu trước hạn (trừ cách hiển thị CK6, xem MS02). Gói Kết thúc 1.1.5 sau cut over, đóng dự án 15/07/2027."
+  },
+  {
+   "tieu_chi": "Mốc khớp điều kiện thanh toán của HSMT",
+   "ket_qua": "dat",
+   "nhan_xet": "M0 đợt 1 tạm ứng, M2 đợt 2 xác nhận đặc tả và giao diện ưu tiên, M3 đợt 3 chức năng chính và tích hợp, M6 đợt 4 vận hành và nghiệm thu, M7 đợt 5 bảo lãnh bảo hành, khớp hsmt.hop_dong.thanh_toan; hạn M1 14/04, M2 10/05, M3 và M4 17/06, cut over 01/07/2027 theo quyết định 18/10/2026 (4); mọi mốc đúng hạn."
+  },
+  {
+   "tieu_chi": "Tải nguồn lực không vượt",
+   "ket_qua": "dat",
+   "nhan_xet": "Tính lại theo phan_chi_so và gói dàn trải: không người nào vượt 1 MD/ngày, không sprint nào MD vượt quỹ; không gói nào xếp cho vị trí bổ sung trước sprint huy động (D1, D3 từ S1 theo quyết định 25/10/2026). Cảnh báo L28 (2 MD Kết thúc của Trần Bá Đạt, quỹ 0) đã được nhóm chấp nhận (_ghi_chu_ket_thuc, quyết định 25/10/2026 (13)), không tính là phát hiện."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MS01",
+   "muc_do": "loi",
+   "nhom": "mục tiêu sprint",
+   "vi_tri": "Sheet Sprint, dòng S3 cột Mục tiêu: Selling DB trên môi trường phát triển, ... kế hoạch kiểm thử hệ thống; dòng S3 cột Sản phẩm trình diễn: Tìm kiếm sản phẩm, ...; dòng S4 cột Mục tiêu: ... kịch bản kiểm thử hiệu năng và kiểm thử hệ thống đầu cuối; dòng S4 cột Sản phẩm trình diễn: ... đồng bộ sản phẩm, tồn kho từ Main System",
+   "mo_ta": "Mục tiêu, sản phẩm trình diễn không khớp lịch: 4.3.2 Tạo lập Selling DB xong 12/04 (S2); 2.4.8 Kế hoạch kiểm thử hệ thống 11/05 đến 13/05 (S4); dịch vụ và giao diện tìm kiếm 1.3.2, 1.3.3, 1.3.6 xong 11/05 đến 12/05 (S4) nên S3 (đến 06/05) chưa trình diễn được tìm kiếm; 1.4.8 kịch bản kiểm thử hiệu năng 25/05 đến 28/05 và 3.4.10 kịch bản kiểm thử hệ thống đầu cuối 28/05 đến 03/06 thuộc S5; 4.3.5 đồng bộ sản phẩm và giá xong 21/05 (S5). Mục tiêu S5 không nêu hai kịch bản này.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa lời văn muc_tieu_sprint trong lam_viec/lich/moc_nhap.json: S2 thêm Selling DB trên môi trường phát triển; S3 bỏ Selling DB và kế hoạch kiểm thử hệ thống, sản phẩm trình diễn thay tìm kiếm sản phẩm bằng chỉ mục tìm kiếm hoặc bỏ; S4 thêm kế hoạch kiểm thử hệ thống, bỏ kịch bản kiểm thử hiệu năng và kiểm thử hệ thống đầu cuối, sản phẩm trình diễn nêu đồng bộ tồn kho (bỏ hoặc ghi đồng bộ sản phẩm trên dịch vụ giả lập nếu đúng); S5 thêm hai kịch bản và đồng bộ sản phẩm, giá. Chạy lại lap_lich.py và xuat_gantt.py. Không đổi ngày."
+  },
+  {
+   "ma": "MS02",
+   "muc_do": "loi",
+   "nhom": "cam kết Chủ đầu tư",
+   "vi_tri": "Sheet Cam_ket, dòng CK6, cột Trạng thái: Bắt đầu trước hạn; sheet Lich_trinh, cột Ràng buộc ngày của 1.4.11, 2.4.12, 3.4.13: Kiểm thử chấp nhận 18/06/2027 - 29/06/2027, sau cam kết CK6 hạn 29/06/2027; du_lieu/lich.json cam_ket_chu_dau_tu CK6 dat=false",
+   "mo_ta": "CK6 là khoảng người dùng nghiệp vụ tham gia kiểm thử chấp nhận (18/06 đến 29/06/2027), nhưng được so như hạn bàn giao đầu vào (29/06) nên tài liệu ghi ba gói kiểm thử chấp nhận bắt đầu trước hạn cam kết và ghi gói nằm sau cam kết trong khi bắt đầu 18/06. Mâu thuẫn với kết quả lớp A (không có L17) và với sheet Cam_ket phần dưới (Đủ thời lượng). Người đọc hiểu lịch vi phạm cam kết của Chủ đầu tư.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Ở bước tạo dữ liệu: cam kết gắn khoảng uat (hoặc khai báo tu, den cho CK6 trong du_an.json) thì so ngày bắt đầu gói với đầu khoảng và ngày kết thúc với cuối khoảng; lap_lich.py ghi dat theo khoảng, xuat_gantt.py dùng công thức trạng thái Trong khoảng cam kết và ràng buộc ghi trong khoảng cam kết CK6. Không đổi ngày gói."
+  },
+  {
+   "ma": "MS03",
+   "muc_do": "canh_bao",
+   "nhom": "cam kết Chủ đầu tư",
+   "vi_tri": "Sheet Cam_ket (CK1 đến CK7); HSMT phân định trách nhiệm dòng 7 (du_lieu/hsmt.json phan_dinh): Chủ đầu tư hoàn thành thay đổi phía Main System chậm nhất ngày 20/05/2027",
+   "mo_ta": "Thời hạn hoàn thành thay đổi phía Main System của HSMT, được HSMT nêu trong tiêu chí chấm tiến độ, không có trong danh sách cam kết nên không gắn gói phụ thuộc (4.4.3 và các luồng 4.3.5 đến 4.3.9 khi kiểm thử với Main System). Thời hạn trùng CK2 nên lịch hiện tại không bị ảnh hưởng.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định thêm cam kết (ví dụ CK8, hạn 2027-05-20) vào dau_vao/du_an.json cam_ket_chu_dau_tu, hoặc gộp vào nội dung CK2; ánh xạ sang 4.4.3 trong moc_nhap.json dau_vao_ben_ngoai, chạy lại lich."
+  },
+  {
+   "ma": "MS04",
+   "muc_do": "canh_bao",
+   "nhom": "nhất quán số liệu",
+   "vi_tri": "Sheet Sprint dòng Tổng: MD kế hoạch 655, tỷ lệ 80,3%; Tong_quan: 657 MD, 80,5%. Sheet Sprint và Tai_nguon S3 141,83, S4 115,84; Nhu_cau S3 141,84, S4 115,83; lich.json sprint S4 md_ke_hoach 115,83",
+   "mo_ta": "Dòng tổng của sheet Sprint không gồm 2 MD giai đoạn Kết thúc nhưng không chú thích, nên có hai tỷ lệ sử dụng quỹ khác nhau trong cùng tệp. MD theo sprint lệch 0,01 giữa cộng theo người và cộng theo loại công việc do làm tròn, sheet Sprint S4 lệch lich.json.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "xuat_gantt.py: thêm dòng KT (MD 2, quỹ 0) hoặc ghi chú dòng Tổng không gồm giai đoạn Kết thúc; lap_lich.py phân bổ phần làm tròn của nhu_cau_theo_sprint theo cùng tổng với phan_bo từng sprint."
+  },
+  {
+   "ma": "MS05",
+   "muc_do": "canh_bao",
+   "nhom": "trình bày Gantt",
+   "vi_tri": "Sheet Lich_trinh, cột tuần T1 (15/03/2027) đến T17 (05/07/2027)",
+   "mo_ta": "Gantt dừng ở tuần 05/07 đến 11/07/2027, chưa đến hết giai đoạn Kết thúc (15/07/2027, hạn M8) như SKILL yêu cầu. Không gói nào bị khuất (1.1.5 kết thúc 07/07).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "xuat_gantt.py tính số tuần đến ngay_dong_du_an (thêm T18 từ 12/07/2027)."
+  },
+  {
+   "ma": "MS06",
+   "muc_do": "canh_bao",
+   "nhom": "rủi ro tiến độ",
+   "vi_tri": "Lich_trinh: 4.2.5 bắt đầu 14/04/2027 (CK1 hạn 14/04), 4.5.1 bắt đầu 20/05/2027 (CK7 hạn 20/05), 4.5.3 bắt đầu 10/06/2027 (CK3 hạn 10/06); trong khi 4.4.3 bắt đầu 24/05/2027 sau CK2 hạn 20/05",
+   "mo_ta": "Ba gói bắt đầu đúng ngày hạn cam kết, không còn ngày đệm nếu Chủ đầu tư bàn giao vào cuối ngày hạn. 4.2.5 chỉ có 2 ngày dự trữ theo CPM. Không vi phạm quy tắc không bắt đầu trước hạn, chưa chắc là cần sửa.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định giữ (ghi rõ bàn giao đầu ngày hạn trong HSDT, biên bản họp khởi động) hoặc dùng quy tắc bắt đầu từ ngày làm việc kế tiếp hạn cam kết trong lap_lich.py và chạy lại lịch."
+  }
+ ],
+ "ghi_chu": "Đã xem căn cứ hợp lệ: _quyet_dinh_18_10, _quyet_dinh_24_10_ha_tang (CK7 20/05/2027 là đề nghị của nhà thầu), _quyet_dinh_25_10, _ghi_chu_giai_doan (Khởi động 18/03 đến 14/04/2027, tách khỏi mục tiêu sprint), D1, D3 huy động từ S1, dự trữ 3 ngày theo lich.json. Tài liệu trình bày nhất quán với các quyết định này."
+}

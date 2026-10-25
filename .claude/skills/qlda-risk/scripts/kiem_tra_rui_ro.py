@@ -43,6 +43,8 @@ BAT_BUOC = ['ma', 'ten', 'nhom', 'nguyen_nhan', 'tac_dong_mo_ta', 'xac_suat', 't
             'bien_phap_phong_ngua', 'ke_hoach_ung_pho', 'dau_hieu', 'nguoi_phu_trach']
 TT = []  # bảng tính tiền và mức suy ra của từng rủi ro, ghi vào báo cáo kiểm tra
 NGAY_TT = loi.ngay_hien_hanh()  # trạng thái theo dõi tính đến ngày hiện hành
+if loi.du_an().get('ngay_bat_dau') and str(NGAY_TT) < loi.du_an()['ngay_bat_dau']:
+    NGAY_TT = loi.du_an()['ngay_bat_dau']  # lập kế hoạch trước khi dự án bắt đầu: trạng thái tính tại ngày bắt đầu, trùng ngày tài liệu kế hoạch
 TDRR, SU_KIEN_RR = loi.theo_doi_rui_ro(NGAY_TT)
 DONG = ('Đã xảy ra', 'Đã đóng')  # trạng thái không còn tính EMV còn lại
 
@@ -294,7 +296,9 @@ ma_tran_3x3 = [{'xac_suat': a, **{b: {'hang': q['hang'][a][b], 'ma': o3(a, b)} f
 out = {'thang_do': CFG, 'danh_sach': ds, 'tong_hop': tom, 'ma_tran': ma_tran_rows, 'ma_tran_ma': ma_tran_ma, 'ma_tran_3x3': ma_tran_3x3,
        'theo_nhom': [{'nhom': CFG['nhom'][n], 'so': sum(1 for r in ds if r['nhom'] == n), 'emv_tien': round(sum(r['emv_tien'] for r in de_doa if r['nhom'] == n))}
                      for n in CFG['nhom'] if any(r['nhom'] == n for r in ds)],
-       'nguong': rr.get('nguong', {}), 'quy_trinh_ghi_chu': rr.get('ghi_chu', '')}
+       'nguong': rr.get('nguong', {}), 'quy_trinh_ghi_chu': rr.get('ghi_chu', ''),
+       # họ tên người phụ trách theo thứ tự thành viên, để tài liệu dẫn danh sách từ sổ thay cho viết tay (từ 1.2.3)
+       'nguoi_phu_trach': [t['ho_ten'] for k, t in tv.items() if any(r.get('nguoi_phu_trach') == k for r in ds)]}
 loi.ghi_json('du_lieu/rui_ro.json', out)
 loi.hoan_tat_buoc('rui_ro', f'Kiểm tra sổ rủi ro: {tom["so_rui_ro"]} rủi ro, EMV {loi.trieu(tom["tong_emv_tien"], 0)} triệu đồng')
 print('Đã ghi du_lieu/rui_ro.json')

@@ -1,0 +1,2569 @@
+{
+ "meta": {
+  "ten": "Hồ sơ dự thầu",
+  "id": "hsdt",
+  "header": "E-HSDT - Công ty Cổ phần PM_26I_02 - Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+  "huong": "doc",
+  "font": "Times New Roman",
+  "size_pt": 13,
+  "size_bang_pt": 12,
+  "nguon": {
+   "hsmt": "du_lieu/hsmt.json",
+   "rfp": "du_lieu/rfp_yeu_cau.json",
+   "wbs": "du_lieu/wbs.json",
+   "lich": "du_lieu/lich.json",
+   "pc": "du_lieu/phan_cong.json",
+   "cp": "du_lieu/chi_phi.json",
+   "rr": "du_lieu/rui_ro.json",
+   "tv": "dau_vao/thanh_vien.json",
+   "nt": "dau_vao/nha_thau.json",
+   "hb": "du_lieu/hsdt_bang.json",
+   "kt": "dau_vao/chi_tieu_ky_thuat.json",
+   "da": "dau_vao/du_an.json"
+  },
+  "phien_ban": "1.0",
+  "ngay": "05/03/2027"
+ },
+ "blocks": [
+  {
+   "text": "Công ty Cổ phần PM_26I_02",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "text": "Hồ sơ dự thầu",
+   "size": 20,
+   "t": "center"
+  },
+  {
+   "text": "Gói thầu: Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+   "size": 14,
+   "t": "center"
+  },
+  {
+   "text": "Chủ đầu tư: Công ty Cổ phần ABC Wear",
+   "size": 14,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "rows": [
+    [
+     "Nhà thầu",
+     "Công ty Cổ phần PM_26I_02"
+    ],
+    [
+     "Địa chỉ",
+     "Tầng 2, số 26I, phường Bạch Mai, thành phố Hà Nội"
+    ],
+    [
+     "Người đại diện",
+     "Lê Quốc Bảo, Giám đốc"
+    ],
+    [
+     "Phiên bản",
+     "{{PHIEN_BAN}}"
+    ],
+    [
+     "Ngày",
+     "{{NGAY}}"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ],
+   "t": "table"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "muc": [
+    "Phần I. Đơn dự thầu và thông tin nhà thầu",
+    "1. Thông tin nhà thầu",
+    "2. Đơn dự thầu (Mẫu số 02)",
+    "3. Bảng đáp ứng yêu cầu của HSMT",
+    "4. Bảng chỉ dẫn vị trí đáp ứng tiêu chí đánh giá về kỹ thuật",
+    "Phần II. Năng lực và kinh nghiệm",
+    "5. Hợp đồng tương tự (Mẫu số 05)",
+    "6. Nhân sự chủ chốt (Mẫu số 06A, 06B, 06C)",
+    "7. Hợp đồng không hoàn thành do lỗi của nhà thầu (Mẫu số 07)",
+    "8. Tình hình tài chính (Mẫu số 08)",
+    "9. Nhà thầu phụ (Mẫu số 09A)",
+    "Phần III. Đề xuất kỹ thuật",
+    "10. Hiểu biết về dự án, tiền đề và giải pháp tổng thể",
+    "11. Phạm vi, sản phẩm bàn giao, phương pháp và bảo đảm chất lượng",
+    "12. Tiến độ, tổ chức thực hiện và kế hoạch họp",
+    "13. Vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành",
+    "14. Điều kiện khác và đề nghị đối với chủ đầu tư",
+    "Phần IV. Đề xuất tài chính",
+    "15. Bảng tiến độ thực hiện (Mẫu số 10A)",
+    "16. Bảng giá dự thầu (Mẫu số 11A)",
+    "17. Chi phí ước tính và cơ sở tính giá"
+   ],
+   "t": "muc_luc"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "text": "Phần I. Đơn dự thầu và thông tin nhà thầu",
+   "t": "h1"
+  },
+  {
+   "text": "1. Thông tin nhà thầu",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Nội dung",
+     "Thông tin"
+    ],
+    [
+     "Tên nhà thầu",
+     "Công ty Cổ phần PM_26I_02"
+    ],
+    [
+     "Địa chỉ",
+     "Tầng 2, số 26I, phường Bạch Mai, thành phố Hà Nội"
+    ],
+    [
+     "Người đại diện",
+     "Lê Quốc Bảo, Giám đốc"
+    ],
+    [
+     "Mã số thuế",
+     "0000260202"
+    ],
+    [
+     "Điện thoại, e-mail",
+     "024 0000 2602, lienhe@pm26i02.example.com"
+    ],
+    [
+     "Năm thành lập",
+     "2018"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "2. Đơn dự thầu (Mẫu số 02)",
+   "t": "h2"
+  },
+  {
+   "text": "Ngày: 05/03/2027",
+   "t": "p"
+  },
+  {
+   "text": "Tên gói thầu: Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+   "t": "p"
+  },
+  {
+   "text": "Kính gửi: Công ty Cổ phần ABC Wear",
+   "t": "p"
+  },
+  {
+   "text": "Sau khi nghiên cứu E-HSMT, chúng tôi:",
+   "t": "p"
+  },
+  {
+   "text": "Tên nhà thầu: Công ty Cổ phần PM_26I_02, Mã số thuế 0000260202, cam kết thực hiện gói thầu Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System) số E-TBMT: theo thông báo mời thầu trên Hệ thống mạng đấu thầu quốc gia theo đúng yêu cầu nêu trong E-HSMT với giá dự thầu (tổng số tiền) là 1.750.000.000 đồng (bằng chữ: một tỷ bảy trăm năm mươi triệu đồng) cùng với các bảng giá dự thầu kèm theo.",
+   "t": "p"
+  },
+  {
+   "text": "Hiệu lực của E-HSDT: 90 ngày kể từ ngày đóng thầu",
+   "t": "p"
+  },
+  {
+   "text": "Bảo đảm dự thầu: 30.000.000 đồng (bằng chữ: ba mươi triệu đồng)",
+   "t": "p"
+  },
+  {
+   "text": "Chúng tôi cam kết:",
+   "t": "p"
+  },
+  {
+   "text": "1. Không đang trong quá trình thực hiện thủ tục giải thể hoặc bị thu hồi giấy chứng nhận đăng ký doanh nghiệp, giấy chứng nhận đăng ký hợp tác xã, liên hiệp hợp tác xã, tổ hợp tác, không thuộc trường hợp mất khả năng thanh toán theo quy định của pháp luật về phá sản (không đang trong quá trình chấm dứt hoạt động hoặc bị thu hồi giấy chứng nhận đăng ký hộ kinh doanh đối với nhà thầu là hộ kinh doanh);",
+   "t": "p"
+  },
+  {
+   "text": "2. Không vi phạm quy định về bảo đảm cạnh tranh trong đấu thầu;",
+   "t": "p"
+  },
+  {
+   "text": "3. Đã thực hiện nghĩa vụ kê khai thuế và nộp thuế của năm tài chính gần nhất so với thời điểm đóng thầu;",
+   "t": "p"
+  },
+  {
+   "text": "4. Không đang trong thời gian bị cấm tham dự thầu theo quy định của pháp luật đấu thầu;",
+   "t": "p"
+  },
+  {
+   "text": "5. Không đang bị truy cứu trách nhiệm hình sự (chủ hộ không đang bị truy cứu trách nhiệm hình sự trong trường hợp nhà thầu là hộ kinh doanh);",
+   "t": "p"
+  },
+  {
+   "text": "6. Không thực hiện các hành vi tham nhũng, hối lộ, thông thầu, cản trở và các hành vi vi phạm quy định khác của pháp luật đấu thầu khi tham dự gói thầu này;",
+   "t": "p"
+  },
+  {
+   "text": "7. Trong thời hạn 03 năm trước thời điểm đóng thầu, nhà thầu không có nhân sự (ký kết hợp đồng lao động với nhà thầu tại thời điểm nhân sự thực hiện hành vi vi phạm) bị Tòa án kết án có hành vi vi phạm quy định về đấu thầu gây hậu quả nghiêm trọng theo quy định của pháp luật về hình sự nhằm mục đích cho nhà thầu đó trúng thầu;",
+   "t": "p"
+  },
+  {
+   "text": "8. Những thông tin kê khai trong E-HSDT là trung thực;",
+   "t": "p"
+  },
+  {
+   "text": "9. Trường hợp trúng thầu, E-HSDT và các văn bản bổ sung, làm rõ E-HSDT tạo thành thỏa thuận ràng buộc trách nhiệm giữa hai bên cho tới khi hợp đồng được ký kết;",
+   "t": "p"
+  },
+  {
+   "text": "10. Nếu E-HSDT của chúng tôi được chấp nhận, chúng tôi sẽ thực hiện biện pháp bảo đảm thực hiện hợp đồng theo quy định tại Mục 37.1 E-CDNT của E-HSMT;",
+   "t": "p"
+  },
+  {
+   "text": "11. Trường hợp chúng tôi không nộp bản gốc bảo đảm dự thầu theo yêu cầu của Chủ đầu tư quy định tại Mục 18.5 E-CDNT; trong trường hợp giá trị bảo đảm dự thầu nhỏ hơn 50 triệu đồng, không nộp tiền mặt, Séc bảo chi, thư bảo lãnh dự thầu hoặc giấy chứng nhận bảo hiểm bảo lãnh theo quy định tại Mục 18.8 E-CDNT thì chúng tôi sẽ bị đánh giá không đảm bảo uy tín khi tham dự thầu theo quy định tại khoản 1 Điều 20 của Nghị định số 214/2025/NĐ-CP, nêu tên trên Hệ thống mạng đấu thầu quốc gia và tài khoản của chúng tôi sẽ bị khóa trong vòng 06 tháng kể từ ngày chủ đầu tư công khai tên chúng tôi trên Hệ thống mạng đấu thầu quốc gia, trừ trường hợp bất khả kháng.",
+   "t": "p"
+  },
+  {
+   "text": "Đơn dự thầu được ký bằng chữ ký số của Lê Quốc Bảo, Giám đốc, khi nộp E-HSDT.",
+   "t": "p"
+  },
+  {
+   "text": "Bảo đảm dự thầu theo E-BDL: 30.000.000 đồng. Giá trị nhỏ hơn 50 triệu đồng nên nhà thầu cam kết trong đơn dự thầu theo Mục 18.8 E-CDNT, không nộp thư bảo lãnh dự thầu khi nộp E-HSDT.",
+   "t": "p"
+  },
+  {
+   "text": "3. Bảng đáp ứng yêu cầu của HSMT",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Yêu cầu của HSMT",
+     "Đề xuất của nhà thầu",
+     "Đánh giá"
+    ],
+    [
+     "Tính hợp lệ của E-HSDT, tư cách hợp lệ của nhà thầu",
+     "Đơn dự thầu theo Mẫu số 02, mã số thuế 0000260202",
+     "Đáp ứng"
+    ],
+    [
+     "Hiệu lực E-HSDT",
+     "90 ngày kể từ ngày đóng thầu",
+     "Đáp ứng"
+    ],
+    [
+     "Bảo đảm dự thầu",
+     "30.000.000 đồng, cam kết trong đơn dự thầu (Mục 18.8 E-CDNT)",
+     "Đáp ứng"
+    ],
+    [
+     "Lịch sử không hoàn thành hợp đồng (Bảng số 01)",
+     "Nhà thầu kê khai: không có hoặc có 01 hợp đồng (cung cấp dịch vụ phi tư vấn) không hoàn thành do lỗi của nhà thầu kể từ ngày 01 tháng 01 năm 2024 theo quy định tại tiêu chí đánh giá 1 trong Bảng tiêu chuẩn đánh giá về năng lực và kinh nghiệm thuộc Mục 2.1 Chương III (Mẫu số 07)",
+     "Đáp ứng"
+    ],
+    [
+     "Thực hiện nghĩa vụ kê khai thuế, nộp thuế (Bảng số 01)",
+     "Đã thực hiện nghĩa vụ kê khai thuế và nộp thuế năm tài chính 2025 (cam kết trong đơn dự thầu, kèm chứng từ kê khai, nộp thuế năm 2025)",
+     "Đáp ứng"
+    ],
+    [
+     "Doanh thu bình quân (Bảng số 01)",
+     "26.366.666.667 đồng các năm 2023, 2024, 2025",
+     "Đáp ứng"
+    ],
+    [
+     "Hợp đồng tương tự (Bảng số 01)",
+     "2 hợp đồng từ 600.000.000 đồng, hoàn thành từ 01 tháng 01 năm 2024 (Mẫu số 05)",
+     "Đáp ứng"
+    ],
+    [
+     "Nhân sự chủ chốt (Bảng số 02)",
+     "Quản trị dự án: Trần Bá Đạt. Kỹ sư phát triển phần mềm: Phạm Tuấn Anh, Ninh Đức Toàn, Vũ Đức Minh. Kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử: Nguyễn Thị Phương Liên (Mẫu số 06A, 06B, 06C)",
+     "Đáp ứng"
+    ],
+    [
+     "Tiêu chí kỹ thuật 1: Hiểu biết mục tiêu dự án và giải pháp kỹ thuật tổng thể, gồm giải pháp đáp ứng các yêu cầu phi chức năng",
+     "Mục 10. Hiểu biết về dự án, tiền đề và giải pháp tổng thể. Điểm tối thiểu 18/30",
+     "Đáp ứng"
+    ],
+    [
+     "Tiêu chí kỹ thuật 2: Phạm vi công việc, sản phẩm bàn giao, phương pháp thực hiện và bảo đảm chất lượng",
+     "Mục 11. Phạm vi, sản phẩm bàn giao, phương pháp và bảo đảm chất lượng. Điểm tối thiểu 12/20",
+     "Đáp ứng"
+    ],
+    [
+     "Tiêu chí kỹ thuật 3: Kế hoạch, tiến độ đến ngày cut over, tổ chức thực hiện và nhân sự",
+     "Mục 12. Tiến độ, tổ chức thực hiện và kế hoạch họp. Điểm tối thiểu 12/20",
+     "Đáp ứng"
+    ],
+    [
+     "Tiêu chí kỹ thuật 4: Vai trò và trách nhiệm, quản lý thay đổi, quản lý rủi ro và khắc phục sai sót",
+     "Mục 13. Vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành. Điểm tối thiểu 9/15",
+     "Đáp ứng"
+    ],
+    [
+     "Tiêu chí kỹ thuật 5: Đề xuất khác có lợi cho thành công của dự án và thông tin về kết quả thực hiện hợp đồng của nhà thầu theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP",
+     "Mục 14. Điều kiện khác và đề nghị đối với chủ đầu tư. Điểm tối thiểu 9/15",
+     "Đáp ứng"
+    ],
+    [
+     "Thời gian thực hiện",
+     "Từ 18/03/2027 đến cut over 01/07/2027, hoàn thành dự kiến 01/07/2027",
+     "Đáp ứng"
+    ],
+    [
+     "Phạm vi theo Mẫu 01A",
+     "13/13 hạng mục có tiến độ (Mẫu số 10A) và giá (Mẫu số 11A)",
+     "Đáp ứng"
+    ],
+    [
+     "Giá dự thầu không vượt giá gói thầu",
+     "1.750.000.000 đồng, giá gói thầu 2.000.000.000 đồng",
+     "Đáp ứng"
+    ]
+   ],
+   "widths": [
+    2800,
+    5000,
+    1500
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "4. Bảng chỉ dẫn vị trí đáp ứng tiêu chí đánh giá về kỹ thuật",
+   "t": "h2"
+  },
+  {
+   "text": "Bảng sau chỉ dẫn vị trí trong E-HSDT đáp ứng từng tiêu chí đánh giá về kỹ thuật của HSMT, điểm tối thiểu tổng hợp 70 điểm.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "STT",
+     "Tiêu chí đánh giá về kỹ thuật",
+     "Điểm tối đa",
+     "Điểm tối thiểu",
+     "Vị trí đáp ứng trong E-HSDT"
+    ],
+    [
+     "1",
+     "Hiểu biết mục tiêu dự án và giải pháp kỹ thuật tổng thể, gồm giải pháp đáp ứng các yêu cầu phi chức năng",
+     "30",
+     "18",
+     [
+      "Mục 10. Hiểu biết về dự án, tiền đề và giải pháp tổng thể"
+     ]
+    ],
+    [
+     "1.1",
+     "Hiểu biết mục tiêu dự án và mô hình hệ thống mới",
+     "5",
+     "",
+     [
+      "Mục 10. Hiểu biết về dự án, tiền đề và giải pháp tổng thể"
+     ]
+    ],
+    [
+     "1.2",
+     "Giải pháp kiến trúc, công nghệ và tích hợp với Main System",
+     "7",
+     "5",
+     [
+      "Mục 10. Hiểu biết về dự án, tiền đề và giải pháp tổng thể"
+     ]
+    ],
+    [
+     "1.3",
+     "Giải pháp bảo đảm hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+     "6",
+     "4",
+     [
+      "Mục 10. Hiểu biết về dự án, tiền đề và giải pháp tổng thể"
+     ]
+    ],
+    [
+     "1.4",
+     "Giải pháp bảo đảm thời gian phản hồi không quá 2 giây",
+     "6",
+     "4",
+     [
+      "Mục 10. Hiểu biết về dự án, tiền đề và giải pháp tổng thể"
+     ]
+    ],
+    [
+     "1.5",
+     "Giải pháp giao diện giúp khách hàng thao tác dễ dàng (Easy Operation for the Customer)",
+     "4",
+     "",
+     [
+      "Mục 10. Hiểu biết về dự án, tiền đề và giải pháp tổng thể"
+     ]
+    ],
+    [
+     "1.6",
+     "Điều kiện tiền đề (Precondition) của giải pháp",
+     "2",
+     "",
+     [
+      "Mục 10. Hiểu biết về dự án, tiền đề và giải pháp tổng thể"
+     ]
+    ],
+    [
+     "2",
+     "Phạm vi công việc, sản phẩm bàn giao, phương pháp thực hiện và bảo đảm chất lượng",
+     "20",
+     "12",
+     [
+      "Mục 11. Phạm vi, sản phẩm bàn giao, phương pháp và bảo đảm chất lượng"
+     ]
+    ],
+    [
+     "2.1",
+     "Phạm vi công việc (Project Scope) gắn với tiêu chuẩn của Chủ đầu tư",
+     "5",
+     "4",
+     [
+      "Mục 11. Phạm vi, sản phẩm bàn giao, phương pháp và bảo đảm chất lượng"
+     ]
+    ],
+    [
+     "2.2",
+     "Sản phẩm bàn giao (Deliverables) trong hợp đồng",
+     "5",
+     "4",
+     [
+      "Mục 11. Phạm vi, sản phẩm bàn giao, phương pháp và bảo đảm chất lượng"
+     ]
+    ],
+    [
+     "2.3",
+     "Phương pháp phân tích, thiết kế và xây dựng hệ thống",
+     "4",
+     "",
+     [
+      "Mục 11. Phạm vi, sản phẩm bàn giao, phương pháp và bảo đảm chất lượng"
+     ]
+    ],
+    [
+     "2.4",
+     "Phương pháp kiểm thử và kiểm thử vận hành",
+     "4",
+     "",
+     [
+      "Mục 11. Phạm vi, sản phẩm bàn giao, phương pháp và bảo đảm chất lượng"
+     ]
+    ],
+    [
+     "2.5",
+     "Biện pháp bảo đảm chất lượng",
+     "2",
+     "",
+     [
+      "Mục 11. Phạm vi, sản phẩm bàn giao, phương pháp và bảo đảm chất lượng"
+     ]
+    ],
+    [
+     "3",
+     "Kế hoạch, tiến độ đến ngày cut over, tổ chức thực hiện và nhân sự",
+     "20",
+     "12",
+     [
+      "Mục 12. Tiến độ, tổ chức thực hiện và kế hoạch họp"
+     ]
+    ],
+    [
+     "3.1",
+     "Tiến độ (Schedule) đến ngày cut over",
+     "6",
+     "4",
+     [
+      "Mục 12. Tiến độ, tổ chức thực hiện và kế hoạch họp"
+     ]
+    ],
+    [
+     "3.2",
+     "Tổ chức thực hiện dự án (Organization)",
+     "4",
+     "",
+     [
+      "Mục 12. Tiến độ, tổ chức thực hiện và kế hoạch họp"
+     ]
+    ],
+    [
+     "3.3",
+     "Bố trí nhân sự thực hiện gói thầu",
+     "4",
+     "",
+     [
+      "Mục 12. Tiến độ, tổ chức thực hiện và kế hoạch họp"
+     ]
+    ],
+    [
+     "3.4",
+     "Kế hoạch họp (Meeting)",
+     "3",
+     "",
+     [
+      "Mục 12. Tiến độ, tổ chức thực hiện và kế hoạch họp"
+     ]
+    ],
+    [
+     "3.5",
+     "Kế hoạch chuyển giao, hướng dẫn vận hành và hỗ trợ cut over",
+     "3",
+     "",
+     [
+      "Mục 12. Tiến độ, tổ chức thực hiện và kế hoạch họp"
+     ]
+    ],
+    [
+     "4",
+     "Vai trò và trách nhiệm, quản lý thay đổi, quản lý rủi ro và khắc phục sai sót",
+     "15",
+     "9",
+     [
+      "Mục 13. Vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành"
+     ]
+    ],
+    [
+     "4.1",
+     "Vai trò và trách nhiệm (Roles) của các bên",
+     "4",
+     "",
+     [
+      "Mục 13. Vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành"
+     ]
+    ],
+    [
+     "4.2",
+     "Quản lý thay đổi đặc tả",
+     "4",
+     "",
+     [
+      "Mục 13. Vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành"
+     ]
+    ],
+    [
+     "4.3",
+     "Quản lý rủi ro",
+     "4",
+     "",
+     [
+      "Mục 13. Vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành"
+     ]
+    ],
+    [
+     "4.4",
+     "Khắc phục sai sót trong thời hạn trách nhiệm",
+     "3",
+     "",
+     [
+      "Mục 13. Vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành"
+     ]
+    ],
+    [
+     "5",
+     "Đề xuất khác có lợi cho thành công của dự án và thông tin về kết quả thực hiện hợp đồng của nhà thầu theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP",
+     "15",
+     "9",
+     [
+      "Mục 14. Điều kiện khác và đề nghị đối với chủ đầu tư"
+     ]
+    ],
+    [
+     "5.1",
+     "Đề xuất bổ sung cần thiết cho thành công của dự án",
+     "5",
+     "",
+     [
+      "Mục 14. Điều kiện khác và đề nghị đối với chủ đầu tư"
+     ]
+    ],
+    [
+     "5.2",
+     "Đề xuất nâng cao hiệu quả của kênh bán hàng trực tuyến",
+     "5",
+     "",
+     [
+      "Mục 14. Điều kiện khác và đề nghị đối với chủ đầu tư"
+     ]
+    ],
+    [
+     "5.3",
+     "Thông tin về kết quả thực hiện hợp đồng của nhà thầu",
+     "5",
+     "",
+     [
+      "Mục 14. Điều kiện khác và đề nghị đối với chủ đầu tư"
+     ]
+    ]
+   ],
+   "widths": [
+    600,
+    4400,
+    1000,
+    1000,
+    2300
+   ],
+   "center_cols": [
+    0,
+    2,
+    3
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Phần II. Năng lực và kinh nghiệm",
+   "t": "h1"
+  },
+  {
+   "text": "5. Hợp đồng tương tự (Mẫu số 05)",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Tên hợp đồng",
+     "Chủ đầu tư",
+     "Giá trị, đồng",
+     "Hoàn thành",
+     "Nội dung tương tự"
+    ],
+    [
+     "Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng, số 12/2024/HĐ-HG",
+     "Công ty Cổ phần Thời trang Hoàng Gia",
+     "1.150.000.000",
+     "29/11/2024",
+     "Ký ngày 04/03/2024. Nhà thầu chính, thực hiện độc lập. Phát triển website bán hàng trực tuyến, tích hợp hệ thống bán hàng nội bộ; ba phân hệ khách hàng, sản phẩm, đơn hàng và tầng tích hợp; khoảng 550 người-ngày."
+    ],
+    [
+     "Website bán hàng trực tuyến và tích hợp ERP, số 03/2025/HĐ-AP",
+     "Công ty TNHH Nội thất An Phát",
+     "860.000.000",
+     "18/07/2025",
+     "Ký ngày 06/01/2025. Nhà thầu chính, thực hiện độc lập. Phát triển website bán hàng, tích hợp ERP và đơn vị giao vận; danh mục, giỏ hàng, đặt hàng, đồng bộ tồn kho; khoảng 420 người-ngày."
+    ]
+   ],
+   "widths": [
+    2600,
+    1900,
+    1600,
+    1200,
+    2000
+   ],
+   "center_cols": [
+    3
+   ],
+   "right_cols": [
+    2
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Yêu cầu của HSMT: tối thiểu 01 hợp đồng tương tự giá trị từ 600.000.000 đồng, hoàn thành từ ngày 01 tháng 01 năm 2024 đến thời điểm đóng thầu. Nhà thầu kê khai 2 hợp đồng đáp ứng.",
+   "t": "p"
+  },
+  {
+   "text": "6. Nhân sự chủ chốt (Mẫu số 06A, 06B, 06C)",
+   "t": "h2"
+  },
+  {
+   "text": "6.1. Bảng đề xuất nhân sự chủ chốt (Mẫu số 06A)",
+   "t": "h3"
+  },
+  {
+   "rows": [
+    [
+     "STT",
+     "Họ và Tên",
+     "Vị trí công việc"
+    ],
+    [
+     "1",
+     "Trần Bá Đạt",
+     "Quản trị dự án"
+    ],
+    [
+     "2",
+     "Phạm Tuấn Anh",
+     "Kỹ sư phát triển phần mềm"
+    ],
+    [
+     "3",
+     "Ninh Đức Toàn",
+     "Kỹ sư phát triển phần mềm"
+    ],
+    [
+     "4",
+     "Vũ Đức Minh",
+     "Kỹ sư phát triển phần mềm"
+    ],
+    [
+     "5",
+     "Nguyễn Thị Phương Liên",
+     "Kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử"
+    ]
+   ],
+   "widths": [
+    800,
+    3500,
+    5000
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "huong": "ngang",
+   "t": "section"
+  },
+  {
+   "text": "6.2. Bảng lý lịch chuyên môn của nhân sự chủ chốt (Mẫu số 06B)",
+   "t": "h3"
+  },
+  {
+   "rows": [
+    [
+     "Stt",
+     "Tên",
+     "Căn cước công dân/Hộ chiếu",
+     "Vị trí",
+     "Ngày, tháng, năm sinh",
+     "Chứng chỉ/Trình độ chuyên môn",
+     "Tên người sử dụng lao động",
+     "Địa chỉ của người sử dụng lao động",
+     "Chức danh",
+     "Số năm làm việc cho người sử dụng lao động hiện tại",
+     "Người liên lạc (trưởng phòng/cán bộ phụ trách nhân sự)",
+     "Điện thoại/ Fax/ Email"
+    ],
+    [
+     "1",
+     "Trần Bá Đạt",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "Quản trị dự án",
+     "1998",
+     "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+     "Công ty Cổ phần PM_26I_02",
+     "Tầng 2, số 26I, phường Bạch Mai, thành phố Hà Nội",
+     "Trưởng nhóm, quản trị dự án",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "024 0000 2602, lienhe@pm26i02.example.com"
+    ],
+    [
+     "2",
+     "Phạm Tuấn Anh",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "Kỹ sư phát triển phần mềm",
+     "2001",
+     "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+     "Công ty Cổ phần PM_26I_02",
+     "Tầng 2, số 26I, phường Bạch Mai, thành phố Hà Nội",
+     "Kỹ sư phát triển backend",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "024 0000 2602, lienhe@pm26i02.example.com"
+    ],
+    [
+     "3",
+     "Ninh Đức Toàn",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "Kỹ sư phát triển phần mềm",
+     "2001",
+     "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+     "Công ty Cổ phần PM_26I_02",
+     "Tầng 2, số 26I, phường Bạch Mai, thành phố Hà Nội",
+     "Kỹ sư phát triển backend",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "024 0000 2602, lienhe@pm26i02.example.com"
+    ],
+    [
+     "4",
+     "Vũ Đức Minh",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "Kỹ sư phát triển phần mềm",
+     "2002",
+     "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+     "Công ty Cổ phần PM_26I_02",
+     "Tầng 2, số 26I, phường Bạch Mai, thành phố Hà Nội",
+     "Kỹ sư phát triển frontend",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "024 0000 2602, lienhe@pm26i02.example.com"
+    ],
+    [
+     "5",
+     "Nguyễn Thị Phương Liên",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "Kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử",
+     "2001",
+     "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
+     "Công ty Cổ phần PM_26I_02",
+     "Tầng 2, số 26I, phường Bạch Mai, thành phố Hà Nội",
+     "Phân tích nghiệp vụ",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "Theo hồ sơ nhân sự trên Hệ thống",
+     "024 0000 2602, lienhe@pm26i02.example.com"
+    ]
+   ],
+   "widths": [
+    500,
+    1400,
+    1100,
+    1200,
+    900,
+    1500,
+    1300,
+    1500,
+    1200,
+    900,
+    1200,
+    1300
+   ],
+   "center_cols": [
+    0,
+    4,
+    9
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "huong": "doc",
+   "t": "section"
+  },
+  {
+   "text": "6.3. Bảng kinh nghiệm chuyên môn (Mẫu số 06C)",
+   "t": "h3"
+  },
+  {
+   "rows": [
+    [
+     "STT",
+     "Tên nhân sự chủ chốt",
+     "Từ ngày",
+     "Đến ngày",
+     "Công ty/Dự án/Chức vụ/Hợp đồng/Kinh nghiệm chuyên môn và quản lý có liên quan"
+    ],
+    [
+     "1",
+     "Trần Bá Đạt",
+     "03/2024",
+     "11/2024",
+     "Quản trị dự án Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng cho Công ty CP Thời trang Hoàng Gia (1,15 tỷ đồng, khoảng 550 MD, 10 nhân sự)"
+    ],
+    [
+     "1",
+     "Trần Bá Đạt",
+     "01/2025",
+     "07/2025",
+     "Quản trị dự án Website bán hàng trực tuyến và tích hợp ERP cho Công ty TNHH Nội thất An Phát (860 triệu đồng, sprint 2 tuần)"
+    ],
+    [
+     "1",
+     "Trần Bá Đạt",
+     "09/2025",
+     "12/2026",
+     "Quản lý dự án, kiến trúc sư nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ"
+    ],
+    [
+     "2",
+     "Phạm Tuấn Anh",
+     "03/2024",
+     "11/2024",
+     "Kỹ sư backend dự án Hoàng Gia (API khách hàng, đơn hàng; thiết kế cơ sở dữ liệu; unit test)"
+    ],
+    [
+     "2",
+     "Phạm Tuấn Anh",
+     "01/2025",
+     "07/2025",
+     "Trưởng nhóm backend dự án An Phát (đồng bộ tồn kho với ERP, xác thực và phân quyền)"
+    ],
+    [
+     "2",
+     "Phạm Tuấn Anh",
+     "09/2025",
+     "12/2026",
+     "Kỹ sư backend dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (lập trình API giỏ hàng, thanh toán và đơn hàng của ứng dụng web; tích hợp hệ thống quản lý bán hàng)"
+    ],
+    [
+     "2",
+     "Phạm Tuấn Anh",
+     "01/2027",
+     "nay",
+     "Kỹ sư backend bảo trì cổng bán hàng sau nâng cấp (khắc phục lỗi, tối ưu truy vấn)"
+    ],
+    [
+     "3",
+     "Ninh Đức Toàn",
+     "03/2024",
+     "11/2024",
+     "Kỹ sư backend dự án Hoàng Gia (tìm kiếm và bộ lọc sản phẩm, chỉ mục tìm kiếm)"
+    ],
+    [
+     "3",
+     "Ninh Đức Toàn",
+     "01/2025",
+     "12/2026",
+     "Kỹ sư backend kiêm DevOps cho các dự án thương mại điện tử (lập trình API ứng dụng web và dịch vụ tìm kiếm sản phẩm của dự án An Phát và dự án nâng cấp cổng bán hàng, cổng thanh toán; pipeline CI/CD, môi trường staging và production, giám sát, sao lưu và khôi phục; tham gia cut over dự án An Phát)"
+    ],
+    [
+     "4",
+     "Vũ Đức Minh",
+     "03/2024",
+     "11/2024",
+     "Kỹ sư frontend dự án Hoàng Gia (giao diện danh mục, giỏ hàng, đặt hàng trên máy tính và điện thoại)"
+    ],
+    [
+     "4",
+     "Vũ Đức Minh",
+     "01/2025",
+     "07/2025",
+     "Thiết kế UX/UI và lập trình giao diện dự án An Phát (prototype, quy chuẩn hiển thị, tối ưu tải trang)"
+    ],
+    [
+     "4",
+     "Vũ Đức Minh",
+     "09/2025",
+     "12/2026",
+     "Kỹ sư frontend dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (lập trình giao diện web trang sản phẩm, giỏ hàng, thanh toán tương thích thiết bị di động)"
+    ],
+    [
+     "4",
+     "Vũ Đức Minh",
+     "01/2027",
+     "nay",
+     "Kỹ sư frontend bảo trì cổng bán hàng sau nâng cấp (khắc phục lỗi giao diện, cải thiện khả năng sử dụng)"
+    ],
+    [
+     "5",
+     "Nguyễn Thị Phương Liên",
+     "03/2024",
+     "11/2024",
+     "Chuyên viên phân tích nghiệp vụ dự án Hoàng Gia (khảo sát, SRS, use case, quy trình bán hàng trực tuyến)"
+    ],
+    [
+     "5",
+     "Nguyễn Thị Phương Liên",
+     "01/2025",
+     "07/2025",
+     "BA kiêm trưởng nhóm kiểm thử dự án An Phát (test case, quản lý lỗi, tổ chức UAT với khách hàng)"
+    ],
+    [
+     "5",
+     "Nguyễn Thị Phương Liên",
+     "09/2025",
+     "12/2026",
+     "Phân tích nghiệp vụ kiêm kiểm thử dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (đặc tả use case, kịch bản kiểm thử, tổ chức kiểm thử chấp nhận)"
+    ],
+    [
+     "5",
+     "Nguyễn Thị Phương Liên",
+     "01/2027",
+     "nay",
+     "Kỹ sư kiểm thử bảo trì cổng bán hàng sau nâng cấp (kiểm thử hồi quy, quản lý lỗi)"
+    ]
+   ],
+   "widths": [
+    600,
+    1800,
+    1000,
+    1000,
+    4900
+   ],
+   "center_cols": [
+    0,
+    2,
+    3
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "6.4. Đối chiếu với yêu cầu nhân sự chủ chốt (Bảng số 02)",
+   "t": "h3"
+  },
+  {
+   "rows": [
+    [
+     "Vị trí",
+     "Yêu cầu của HSMT",
+     "Họ tên",
+     "Số năm kinh nghiệm",
+     "Căn cứ tính số năm",
+     "Đánh giá"
+    ],
+    [
+     "Quản trị dự án",
+     "Tối thiểu 03 năm quản lý dự án phần mềm hoặc tối thiểu 02 hợp đồng tương tự",
+     "Trần Bá Đạt",
+     "3",
+     "Từ 03/2024 đến ngày đóng thầu 08/03/2027. Đã quản trị 2 hợp đồng tương tự kê khai tại Mẫu số 05",
+     "Đáp ứng"
+    ],
+    [
+     "Kỹ sư phát triển phần mềm",
+     "Tối thiểu 02 năm lập trình ứng dụng web",
+     "Phạm Tuấn Anh",
+     "3",
+     "Từ 03/2024 đến ngày đóng thầu 08/03/2027",
+     "Đáp ứng"
+    ],
+    [
+     "Kỹ sư phát triển phần mềm",
+     "Tối thiểu 02 năm lập trình ứng dụng web",
+     "Ninh Đức Toàn",
+     "3",
+     "Từ 03/2024 đến ngày đóng thầu 08/03/2027",
+     "Đáp ứng"
+    ],
+    [
+     "Kỹ sư phát triển phần mềm",
+     "Tối thiểu 02 năm lập trình ứng dụng web",
+     "Vũ Đức Minh",
+     "3",
+     "Từ 03/2024 đến ngày đóng thầu 08/03/2027",
+     "Đáp ứng"
+    ],
+    [
+     "Kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử",
+     "Tối thiểu 02 năm phân tích nghiệp vụ hoặc kiểm thử phần mềm",
+     "Nguyễn Thị Phương Liên",
+     "3",
+     "Từ 03/2024 đến ngày đóng thầu 08/03/2027",
+     "Đáp ứng"
+    ]
+   ],
+   "widths": [
+    1500,
+    2300,
+    1500,
+    900,
+    2000,
+    1100
+   ],
+   "center_cols": [
+    3,
+    5
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "Nhà thầu bố trí đủ nhân sự chủ chốt theo Bảng số 02 Chương III. Vị trí quản trị dự án do Trần Bá Đạt đảm nhiệm với 3 năm kinh nghiệm tính từ kinh nghiệm liệt kê sớm nhất đến ngày đóng thầu, đã quản trị 2 hợp đồng tương tự kê khai tại Mẫu số 05 về website bán hàng trực tuyến tích hợp hệ thống bán hàng nội bộ. Các vị trí kỹ sư phát triển phần mềm do Phạm Tuấn Anh (3 năm), Ninh Đức Toàn (3 năm) và Vũ Đức Minh (3 năm) đảm nhiệm. Vị trí kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử do Nguyễn Thị Phương Liên (3 năm) đảm nhiệm. Mọi nhân sự chủ chốt đều đáp ứng yêu cầu tối thiểu của Bảng số 02 theo bảng đối chiếu tại mục 6.4. Chi tiết quá trình công tác và kinh nghiệm của từng người theo Mẫu số 06B, 06C và hồ sơ nhân sự kèm theo."
+  },
+  {
+   "t": "p",
+   "text": "Nhân sự chủ chốt được giao phụ trách các phần công việc phù hợp với kinh nghiệm theo cấu trúc WBS gồm 4 phân hệ: Trần Bá Đạt chịu trách nhiệm quản lý dự án (mục 1.1, 2.1, 3.1, 4.1 của bốn phân hệ), Nguyễn Thị Phương Liên chịu trách nhiệm phân tích, đặc tả và kiểm thử (mục 1.2, 2.2, 3.2, 1.4, 2.4, 3.4, 4.4) và tài liệu chuyển giao (mục 2.5), Vũ Đức Minh chịu trách nhiệm phân hệ quản lý sản phẩm (nhóm 1) và lập trình giao diện, Phạm Tuấn Anh chịu trách nhiệm phân hệ quản lý khách hàng và phân hệ quản lý đơn hàng (nhóm 2, 3), Ninh Đức Toàn chịu trách nhiệm phân hệ tích hợp hệ thống gồm Selling DB và tích hợp với Main System (nhóm 4) và triển khai (mục 1.5, 3.5, 4.5). Toàn bộ nhân sự chủ chốt được huy động từ sprint đầu tiên đến ngày cut over 01/07/2027."
+  },
+  {
+   "t": "p",
+   "text": "Nhà thầu cam kết huy động đúng nhân sự chủ chốt đã kê khai. Trường hợp phải thay thế, nhà thầu đề xuất người thay thế có trình độ, kinh nghiệm tương đương hoặc cao hơn và chỉ thay thế khi được Chủ đầu tư chấp thuận, trong thời hạn 7 ngày theo quy định của E-HSMT. Các vị trí bổ sung là nhân sự của nhà thầu, được người đại diện của nhà thầu ban hành quyết định điều động nội bộ vào dự án trước ngày hợp đồng có hiệu lực, mỗi vị trí có người dự phòng (biện pháp phòng ngừa của rủi ro RR04)."
+  },
+  {
+   "text": "7. Hợp đồng không hoàn thành do lỗi của nhà thầu (Mẫu số 07)",
+   "t": "h2"
+  },
+  {
+   "text": "Nhà thầu kê khai: không có hoặc có 01 hợp đồng (cung cấp dịch vụ phi tư vấn) không hoàn thành do lỗi của nhà thầu kể từ ngày 01 tháng 01 năm 2024 theo quy định tại tiêu chí đánh giá 1 trong Bảng tiêu chuẩn đánh giá về năng lực và kinh nghiệm thuộc Mục 2.1 Chương III.",
+   "t": "p"
+  },
+  {
+   "text": "Nhà thầu không có hợp đồng cung cấp dịch vụ phi tư vấn không hoàn thành do lỗi của nhà thầu phải kê khai trong bảng của Mẫu số 07.",
+   "t": "p"
+  },
+  {
+   "text": "8. Tình hình tài chính (Mẫu số 08)",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Năm tài chính",
+     "Doanh thu không gồm thuế GTGT, đồng"
+    ],
+    [
+     "2023",
+     "22.700.000.000"
+    ],
+    [
+     "2024",
+     "26.900.000.000"
+    ],
+    [
+     "2025",
+     "29.500.000.000"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    1
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Doanh thu bình quân 26.366.666.667 đồng, yêu cầu tối thiểu 2.000.000.000 đồng. Nhà thầu đã thực hiện nghĩa vụ kê khai và nộp thuế năm 2025.",
+   "t": "p"
+  },
+  {
+   "text": "9. Nhà thầu phụ (Mẫu số 09A)",
+   "t": "h2"
+  },
+  {
+   "text": "Nhà thầu không sử dụng nhà thầu phụ. Các vị trí bổ sung là nhân sự của nhà thầu.",
+   "t": "p"
+  },
+  {
+   "text": "Phần III. Đề xuất kỹ thuật",
+   "t": "h1"
+  },
+  {
+   "text": "10. Hiểu biết về dự án, tiền đề và giải pháp tổng thể",
+   "t": "h2"
+  },
+  {
+   "t": "p",
+   "text": "Mục tiêu của dự án là mở rộng khách hàng của ABC Wear qua internet và tạo kênh bán hàng mới. Hệ thống Web Selling Site System gồm 3 chức năng Product Search, Member Administration, Order cùng cơ sở dữ liệu bán hàng Selling DB. Khách hàng truy cập hệ thống qua internet. Main System là hệ thống hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch (Administration of Selling, Products, Logistics, Dealing), trao đổi dữ liệu với Selling DB. Nghiệp vụ vận chuyển (Transportation Operation) là nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng. Chức năng quản trị nội bộ nằm ngoài phạm vi theo RFP. Các yếu tố này quyết định giải pháp: mục tiêu kênh bán hàng mới đòi hỏi giao diện dễ thao tác và khả năng truy cập liên tục, vai trò của Main System đòi hỏi Selling DB đồng bộ sản phẩm, giá, tồn kho và chuyển đơn hàng hai chiều, nghiệp vụ vận chuyển đòi hỏi hệ thống nhận trạng thái vận chuyển từ Main System để khách hàng theo dõi đơn hàng (gói 4.3.8)."
+  },
+  {
+   "t": "p",
+   "text": "Kiến trúc hệ thống gồm khung ứng dụng phía máy chủ với các thành phần dùng chung về xác thực, phân quyền, ghi nhật ký, xử lý lỗi (gói 4.3.1), khung ứng dụng giao diện (4.3.3), Selling DB và tầng truy cập dữ liệu (4.3.2), tầng tích hợp với Main System (4.3.5 đến 4.3.9). Tài liệu kiến trúc, cấu trúc và cấu hình Selling DB được lập tại các gói 4.2.2, 4.2.3, 4.2.4. Tích hợp với Main System gồm đặc tả giao diện trao đổi dữ liệu (4.2.5), thiết kế ánh xạ dữ liệu, xử lý lỗi và gửi lại (4.2.7), đồng bộ sản phẩm, giá, tồn kho (4.3.5, 4.3.6), chuyển đơn hàng và nhận trạng thái (4.3.7, 4.3.8), giám sát tích hợp và cảnh báo lỗi đồng bộ (4.3.9). Phương án dự phòng cho rủi ro tích hợp RR02: Đề nghị Chủ đầu tư bàn giao tài liệu giao diện và dữ liệu mẫu tại họp khởi động, lập dịch vụ giả lập theo đặc tả giao diện, thống nhất đặc tả giao diện bằng biên bản (4.2.6), lập trình tích hợp song song với bước xác nhận 4.2.6 chỉ trên các trường dữ liệu đã thống nhất từng phần tại họp làm rõ yêu cầu. Cấu hình hạ tầng vận hành đề xuất gồm hai nút ứng dụng sau bộ cân bằng tải, cơ sở dữ liệu chính và dự phòng (gói 4.5.1), giám sát, cảnh báo và sao lưu tự động (4.5.2), theo giải pháp của chỉ tiêu KT01. Máy chủ, đường truyền và phần mềm nền do Chủ đầu tư cung cấp theo phân định tại mục 3.5 Chương V, cấu hình tối thiểu do nhà thầu đề xuất tại bảng cấu hình hạ tầng vận hành dưới đây (hai máy chủ ứng dụng, cặp cân bằng tải, hai máy chủ cơ sở dữ liệu chính và dự phòng, máy chủ chỉ mục tìm kiếm và bộ nhớ đệm, lưu trữ sao lưu, hai đường truyền internet, kết nối với Main System, phần mềm nền mã nguồn mở), được tính cho chỉ tiêu KT01, KT02, KT03 và hai bên thống nhất khi xác nhận đặc tả. Công nghệ của từng tầng và lý do lựa chọn nêu tại bảng công nghệ đề xuất. Bảo mật dữ liệu khách hàng theo chỉ tiêu KT04. Kết nối dùng HTTPS, mật khẩu được băm, quyền truy cập phân theo vai trò. Dữ liệu đầu vào được kiểm soát, phiên làm việc được bảo vệ và số lần đăng nhập sai được giới hạn. Khóa và cấu hình bí mật được tách khỏi mã nguồn, thao tác nhạy cảm được ghi nhật ký. Giải pháp được kiểm chứng bằng báo cáo rà soát lỗ hổng và kết quả kiểm thử lại (gói 2.4.10)."
+  },
+  {
+   "t": "p",
+   "text": "Yêu cầu hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm được đáp ứng theo chỉ tiêu KT01: Tỷ lệ sẵn sàng từ 99,5% mỗi tháng, không tính khung bảo trì đã thống nhất. Tỷ lệ sẵn sàng được tính bằng thời gian hệ thống phục vụ được trên tổng thời gian trong tháng, không tính khung bảo trì đã thống nhất, và là điều kiện đo trong đặc tả. Giải pháp gồm tối thiểu hai nút ứng dụng sau bộ cân bằng tải và cơ sở dữ liệu cấu hình chính và dự phòng. Phiên bản mới được triển khai cuốn chiếu không dừng dịch vụ. Hệ thống có kiểm tra sức khỏe và cảnh báo tự động. Sao lưu và khôi phục theo chỉ tiêu KT05: Sao lưu toàn phần hằng ngày, sao lưu nhật ký giao dịch theo giờ. Thời gian khôi phục mục tiêu và điểm khôi phục mục tiêu do hai bên thống nhất khi xác nhận đặc tả. Trước khi đưa hệ thống vào vận hành, nhà thầu kiểm thử chứng minh bằng diễn tập chuyển đổi dự phòng, sao lưu và khôi phục trên môi trường vận hành (gói 4.4.8)."
+  },
+  {
+   "t": "p",
+   "text": "Yêu cầu thời gian phản hồi không quá 2 giây được đáp ứng theo chỉ tiêu KT02: Mọi thao tác cốt lõi (tìm kiếm, xem sản phẩm, đăng nhập, giỏ hàng, đặt hàng) không quá 2 giây, báo cáo kèm phân vị 95. Giải pháp hiệu năng áp dụng cho tìm kiếm sản phẩm, quản lý thành viên, đặt hàng và truy cập Selling DB như sau. Tìm kiếm sản phẩm dùng chỉ mục tìm kiếm riêng. Trang danh mục và chi tiết sản phẩm dùng bộ nhớ đệm. Quản lý thành viên lưu phiên làm việc trong bộ nhớ đệm dùng chung giữa hai nút ứng dụng, tra cứu tài khoản theo chỉ mục địa chỉ thư điện tử, gửi thư xác thực và khôi phục mật khẩu qua hàng đợi để thao tác đăng ký, đăng nhập không phải chờ máy chủ thư. Truy vấn và chỉ mục cơ sở dữ liệu được tối ưu. Các tác vụ gọi hệ thống ngoài được xử lý bất đồng bộ. Điều kiện đo về tải theo chỉ tiêu KT03: Chịu tải 500 người dùng đồng thời, đạt được nhờ mở rộng theo chiều ngang ở lớp ứng dụng. Điểm đo là các thao tác cốt lõi nêu tại KT02. Phương pháp kiểm thử hiệu năng: đo thời gian phản hồi trong kiểm thử phân hệ, thử tải 500 người dùng đồng thời và đo lại sau tối ưu trên môi trường kiểm thử (gói 1.4.8, 1.4.9) và kiểm thử lại trên môi trường vận hành (4.4.7). Tiêu chí đạt là mọi thao tác cốt lõi không quá 2 giây với 500 người dùng đồng thời, báo cáo kèm phân vị 95. Điều kiện đo được hai bên xác nhận trong đặc tả yêu cầu trước khi thanh toán Đợt 2."
+  },
+  {
+   "t": "p",
+   "text": "Giao diện được thiết kế theo chính sách khách hàng thao tác dễ dàng (Easy Operation for the Customer): lập sơ đồ phân cấp menu (Menu Layer, gói 1.2.2), nghiên cứu hành vi người dùng và khung giao diện các trang chính (2.2.3), thiết kế giao diện ưu tiên cho ba trình tự thao tác tìm kiếm và xem chi tiết sản phẩm (1.2.3), đăng ký, đăng nhập và trang thành viên (2.2.4), giỏ hàng, đặt hàng và theo dõi đơn hàng (3.2.4), thư viện thành phần giao diện dùng chung tương thích thiết bị di động (1.2.4). Sơ đồ phân cấp menu dự kiến gồm ba cấp: cấp 1 là trang chủ, danh mục sản phẩm, tìm kiếm, giỏ hàng và tài khoản thành viên, cấp 2 là nhóm sản phẩm, đơn hàng của tôi, sổ địa chỉ, cấp 3 là chi tiết sản phẩm và chi tiết đơn hàng. Trình tự thao tác được rút gọn: từ trang chủ đến trang chi tiết sản phẩm không quá ba thao tác, đặt hàng gồm ba bước (giỏ hàng, địa chỉ và phí vận chuyển, xác nhận), khách hàng đã đăng nhập dùng lại địa chỉ đã lưu. Chủ đầu tư tham gia xem xét giao diện ưu tiên tại trình diễn cuối sprint và xác nhận tại mốc M2. Mức độ thao tác dễ dàng được đánh giá tại gói 2.4.9 và trong kiểm thử chấp nhận cùng người dùng nghiệp vụ của Chủ đầu tư."
+  },
+  {
+   "t": "p",
+   "text": "Giải pháp dựa trên các điều kiện tiền đề sau. Theo phân định tại mục 3.5 Chương V, Chủ đầu tư cung cấp tài liệu đặc tả giao diện trao đổi dữ liệu của Main System chậm nhất 14/04/2027 (tiền đề của gói 4.2.5), môi trường thử của Main System chậm nhất 20/05/2027 (tiền đề của gói 4.4.3), hoàn thành thay đổi phía Main System chậm nhất 20/05/2027 (CK8, tiền đề của gói 4.4.3) và cung cấp hạ tầng vận hành chính thức gồm máy chủ, đường truyền, phần mềm nền chậm nhất 10/06/2027. Ngoài phân định của HSMT, nhà thầu đề nghị Chủ đầu tư cung cấp dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi (CK3) và nội dung, hình ảnh sản phẩm (CK4) chậm nhất 10/06/2027 (tiền đề của gói 4.5.3, 4.5.4), cung cấp chậm được xử lý theo rủi ro RR14. Nhà thầu chịu trách nhiệm phía hệ thống mới. Môi trường phát triển và kiểm thử do nhà thầu cung cấp. Chủ sản phẩm của Chủ đầu tư tham gia làm rõ yêu cầu và trình diễn cuối sprint (CK5), người dùng nghiệp vụ tham gia kiểm thử chấp nhận (CK6). Để thiết lập môi trường vận hành (gói 4.5.1) theo tiến độ, nhà thầu đề nghị Chủ đầu tư bàn giao hạ tầng vận hành chính thức chậm nhất 9 giờ 00 ngày 20/05/2027 (CK7), sớm hơn thời hạn chậm nhất của HSMT. Đây là đề nghị của nhà thầu, không thay đổi thời hạn tại mục 3.5 Chương V. Trường hợp hạ tầng được bàn giao sau ngày đề nghị, nhà thầu xử lý theo kế hoạch ứng phó của rủi ro RR16, thiết lập môi trường tạm có cấu hình tương đương để tiếp tục cấu hình và kiểm thử, chuyển sang hạ tầng chính thức ngay khi được bàn giao."
+  },
+  {
+   "text": "Chỉ tiêu kỹ thuật định lượng nhà thầu cam kết cho các yêu cầu phi chức năng, giải pháp và cách kiểm chứng trước nghiệm thu như bảng sau.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Yêu cầu HSMT",
+     "Chỉ tiêu",
+     "Giải pháp",
+     "Cách kiểm chứng"
+    ],
+    [
+     "KT01",
+     "Hoạt động liên tục 24 giờ mỗi ngày trong 365 ngày",
+     [
+      "Tỷ lệ sẵn sàng từ 99,5% mỗi tháng, không tính khung bảo trì đã thống nhất"
+     ],
+     [
+      "Tối thiểu 02 nút ứng dụng sau bộ cân bằng tải",
+      "Cơ sở dữ liệu cấu hình chính và dự phòng",
+      "Triển khai cuốn chiếu không dừng dịch vụ",
+      "Kiểm tra sức khỏe và cảnh báo tự động"
+     ],
+     "Diễn tập chuyển đổi dự phòng trước cut over"
+    ],
+    [
+     "KT02",
+     "Thời gian phản hồi không quá 2 giây cho mỗi thao tác",
+     [
+      "Mọi thao tác cốt lõi (tìm kiếm, xem sản phẩm, đăng nhập, giỏ hàng, đặt hàng) không quá 2 giây, báo cáo kèm phân vị 95"
+     ],
+     [
+      "Chỉ mục tìm kiếm riêng",
+      "Bộ nhớ đệm trang danh mục, chi tiết sản phẩm",
+      "Tối ưu truy vấn và chỉ mục cơ sở dữ liệu",
+      "Xử lý bất đồng bộ các tác vụ gọi hệ thống ngoài"
+     ],
+     "Đo các thao tác cốt lõi trên môi trường thống nhất, báo cáo kèm phân vị 95"
+    ],
+    [
+     "KT03",
+     "Thời gian phản hồi không quá 2 giây cho mỗi thao tác",
+     [
+      "Chịu tải 500 người dùng đồng thời"
+     ],
+     [
+      "Mở rộng theo chiều ngang ở lớp ứng dụng"
+     ],
+     "Thử tải 500 người dùng đồng thời, đo lại sau tối ưu"
+    ],
+    [
+     "KT04",
+     "An toàn dữ liệu",
+     [
+      "Rà soát lỗ hổng theo OWASP Top 10 và kiểm thử lại sau khắc phục"
+     ],
+     [
+      "HTTPS",
+      "Băm mật khẩu",
+      "Phân quyền theo vai trò",
+      "Kiểm soát dữ liệu đầu vào",
+      "Bảo vệ phiên",
+      "Giới hạn đăng nhập sai",
+      "Tách khóa và cấu hình bí mật khỏi mã nguồn",
+      "Ghi nhật ký thao tác nhạy cảm"
+     ],
+     "Báo cáo rà soát lỗ hổng và kết quả kiểm thử lại"
+    ],
+    [
+     "KT05",
+     "Sao lưu, khôi phục",
+     [
+      "Sao lưu toàn phần hằng ngày, sao lưu nhật ký giao dịch theo giờ",
+      "RPO, RTO: hai bên thống nhất khi xác nhận đặc tả"
+     ],
+     [
+      "Sao lưu toàn phần hằng ngày, sao lưu nhật ký giao dịch theo giờ"
+     ],
+     "Diễn tập sao lưu và khôi phục trên môi trường vận hành trước nghiệm thu (gói 4.4.8)"
+    ]
+   ],
+   "widths": [
+    700,
+    1700,
+    2300,
+    2900,
+    1700
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Cấu hình tối thiểu của hạ tầng vận hành (máy chủ, đường truyền, phần mềm nền) do nhà thầu đề xuất theo mục 3.5 Chương V như bảng sau, hai bên thống nhất khi xác nhận đặc tả yêu cầu.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Thành phần",
+     "Số lượng",
+     "Cấu hình tối thiểu",
+     "Ghi chú"
+    ],
+    [
+     "Máy chủ ứng dụng",
+     "2",
+     "8 vCPU, 16 GB RAM, 200 GB SSD mỗi máy, hệ điều hành Ubuntu Server 22.04 LTS",
+     "Hai nút sau cân bằng tải, mở rộng ngang khi tải tăng (KT01, KT03)"
+    ],
+    [
+     "Cân bằng tải",
+     "1 cặp chế độ dự phòng",
+     "Hỗ trợ HTTPS (TLS 1.2 trở lên), kiểm tra sức khỏe nút ứng dụng",
+     "Có thể dùng thiết bị hoặc dịch vụ cân bằng tải của hạ tầng Chủ đầu tư"
+    ],
+    [
+     "Máy chủ cơ sở dữ liệu",
+     "2",
+     "8 vCPU, 32 GB RAM, 500 GB SSD mỗi máy, PostgreSQL 16",
+     "Chính và dự phòng, nhân bản liên tục (KT01, KT05)"
+    ],
+    [
+     "Máy chủ chỉ mục tìm kiếm và bộ nhớ đệm",
+     "1",
+     "4 vCPU, 16 GB RAM, 100 GB SSD, OpenSearch 2 và Redis 7",
+     "Bảo đảm thời gian phản hồi tìm kiếm, trang danh mục (KT02)"
+    ],
+    [
+     "Lưu trữ sao lưu",
+     "1",
+     "Dung lượng 2 TB, tách biệt máy chủ cơ sở dữ liệu, lưu bản sao lưu tối thiểu 30 ngày",
+     "Sao lưu toàn phần hằng ngày, nhật ký giao dịch theo giờ (KT05)"
+    ],
+    [
+     "Đường truyền internet",
+     "2 đường",
+     "Tối thiểu 100 Mbps mỗi đường, hai nhà cung cấp, địa chỉ IP tĩnh, chứng thư số SSL cho tên miền",
+     "Đường thứ hai dự phòng khi đường chính sự cố (KT01)"
+    ],
+    [
+     "Kết nối với Main System",
+     "1",
+     "Mạng nội bộ hoặc kênh VPN riêng, tối thiểu 10 Mbps",
+     "Đồng bộ sản phẩm, tồn kho, chuyển đơn hàng và trạng thái vận chuyển"
+    ],
+    [
+     "Phần mềm nền",
+     "Theo số máy chủ",
+     "Ubuntu Server 22.04 LTS, Nginx, OpenJDK 21, PostgreSQL 16, OpenSearch 2, Redis 7, Docker, Prometheus và Grafana (mã nguồn mở, không phát sinh bản quyền)",
+     "Nhà thầu cài đặt, cấu hình tại gói 4.5.1, 4.5.2"
+    ]
+   ],
+   "widths": [
+    2000,
+    1300,
+    3300,
+    2700
+   ],
+   "center_cols": [
+    1
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Công nghệ đề xuất cho từng tầng của hệ thống và lý do lựa chọn như bảng sau.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Tầng",
+     "Công nghệ",
+     "Lý do lựa chọn"
+    ],
+    [
+     "Giao diện web",
+     "React 18, TypeScript, thiết kế đáp ứng (responsive)",
+     "Thư viện thành phần dùng lại được, hiển thị tốt trên máy tính và điện thoại, nhóm đã dùng trong hai hợp đồng tương tự"
+    ],
+    [
+     "Dịch vụ phía máy chủ",
+     "Java 21, Spring Boot 3, API REST",
+     "Ổn định, hỗ trợ bảo mật, phân quyền và xử lý bất đồng bộ, mở rộng ngang theo nút ứng dụng"
+    ],
+    [
+     "Cơ sở dữ liệu bán hàng (Selling DB)",
+     "PostgreSQL 16",
+     "Hỗ trợ nhân bản chính và dự phòng, sao lưu nhật ký giao dịch theo giờ, không phát sinh bản quyền"
+    ],
+    [
+     "Tìm kiếm và bộ nhớ đệm",
+     "OpenSearch 2, Redis 7",
+     "Chỉ mục tìm kiếm riêng và bộ nhớ đệm trang, phiên làm việc để đạt thời gian phản hồi không quá 2 giây"
+    ],
+    [
+     "Tích hợp với Main System",
+     "Dịch vụ tích hợp theo API hoặc tệp theo đặc tả giao diện, hàng đợi gửi lại",
+     "Không phụ thuộc nền tảng Main System chưa được mô tả, có cơ chế gửi lại khi lỗi"
+    ],
+    [
+     "Triển khai và giám sát",
+     "Docker, quy trình tích hợp và triển khai tự động, Prometheus và Grafana",
+     "Triển khai cuốn chiếu không dừng dịch vụ, cảnh báo tự động"
+    ]
+   ],
+   "widths": [
+    2200,
+    2900,
+    4200
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "11. Phạm vi, sản phẩm bàn giao, phương pháp và bảo đảm chất lượng",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "STT",
+     "Hạng mục theo Mẫu 01A",
+     "Sản phẩm, mô tả"
+    ],
+    [
+     "1",
+     "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "Chương V mục 3.1, 3.3 và 3.5. Phân tích yêu cầu, lập đặc tả Web Selling Site System gồm cấu hình cơ sở dữ liệu (DB Configuration), chức năng (Function) điều kiện đo các yêu cầu phi chức năng và cấu hình hạ tầng vận hành, được hai bên xác nhận"
+    ],
+    [
+     "2",
+     "Thiết kế quy trình vận hành mới (New Operational Flow)",
+     "Chương V mục 3.3. Lập quy trình vận hành mới của kênh bán hàng trực tuyến, gắn với các chức năng của hệ thống và Main System"
+    ],
+    [
+     "3",
+     "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+     "Chương V mục 3.1 và 3.3. Thiết kế cấu trúc cơ sở dữ liệu bán hàng phù hợp với đặc tả và yêu cầu tích hợp với Main System"
+    ],
+    [
+     "4",
+     "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+     "Chương V mục 3.3 và 3.4. Thiết kế hệ thống menu và giao diện các màn hình chính của chức năng tìm kiếm sản phẩm, quản lý thành viên, đặt hàng, bảo đảm khách hàng thao tác dễ dàng"
+    ],
+    [
+     "5",
+     "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "Chương V mục 3.1 và 3.4. Chức năng cho khách hàng tìm kiếm sản phẩm qua internet"
+    ],
+    [
+     "6",
+     "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "Chương V mục 3.1 và 3.4. Chức năng đăng ký và quản lý thông tin thành viên"
+    ],
+    [
+     "7",
+     "Xây dựng chức năng đặt hàng (Order)",
+     "Chương V mục 3.1 và 3.4. Chức năng cho khách hàng đặt hàng trực tuyến"
+    ],
+    [
+     "8",
+     "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+     "Chương V mục 3.1. Xây dựng Selling DB theo cấu trúc cơ sở dữ liệu được xác nhận tại hạng mục 3"
+    ],
+    [
+     "9",
+     "Tích hợp với hệ thống chính (Main System)",
+     "Chương V mục 3.1. Kết nối và trao đổi dữ liệu giữa Selling DB và Main System, phục vụ quản trị bán hàng, sản phẩm, logistics, giao dịch và vận chuyển"
+    ],
+    [
+     "10",
+     "Kiểm thử hệ thống",
+     "Chương V mục 3.2, 3.4 và 3.5. Kiểm thử chức năng trên môi trường kiểm thử do nhà thầu cung cấp, kiểm thử tích hợp trên môi trường thử của Main System, kiểm thử các yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi theo điều kiện đo đã xác nhận trên hạ tầng vận hành chính thức"
+    ],
+    [
+     "11",
+     "Kiểm thử vận hành (Operation Test)",
+     "Chương V mục 3.2 và 3.5. Kiểm thử hệ thống trên hạ tầng vận hành chính thức theo quy trình vận hành mới, có sự tham gia của Chủ đầu tư"
+    ],
+    [
+     "12",
+     "Chuyển giao và hướng dẫn vận hành hệ thống",
+     "Chương V mục 3.2 và 3.3. Bàn giao tài liệu chuyển giao nêu tại mục 3.3, hướng dẫn cán bộ của Chủ đầu tư vận hành hệ thống theo quy trình vận hành mới"
+    ],
+    [
+     "13",
+     "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "Chương V mục 3.2. Chuyển hệ thống sang vận hành chính thức ngày 01/07/2027"
+    ]
+   ],
+   "widths": [
+    600,
+    3700,
+    5000
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Mã WBS",
+     "Nhóm công việc",
+     "Khối lượng, MD",
+     "Tỷ trọng"
+    ],
+    [
+     "1",
+     "Phân hệ quản lý sản phẩm",
+     "151,00",
+     "23,0%"
+    ],
+    [
+     "2",
+     "Phân hệ quản lý khách hàng (thành viên)",
+     "146,50",
+     "22,3%"
+    ],
+    [
+     "3",
+     "Phân hệ quản lý đơn hàng (đặt hàng)",
+     "207,50",
+     "31,6%"
+    ],
+    [
+     "4",
+     "Phân hệ tích hợp hệ thống",
+     "152,00",
+     "23,1%"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "657,00",
+     "100,0%"
+    ]
+   ],
+   "widths": [
+    1000,
+    5300,
+    1500,
+    1500
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    2,
+    3
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "Phạm vi công việc là xây dựng Web Selling Site System từ phân tích hệ thống đến kiểm thử vận hành theo Chương V, gồm đủ 13 hạng mục Mẫu số 01A. Phạm vi được phân rã thành 4 phân hệ mức 1 là quản lý sản phẩm, quản lý khách hàng, quản lý đơn hàng và tích hợp hệ thống. Phân hệ quản lý sản phẩm tương ứng chức năng tìm kiếm và hiển thị sản phẩm (Product Search) của RFP, không gồm quản trị danh mục sản phẩm thuộc Main System, phân hệ quản lý khách hàng tương ứng chức năng quản lý thành viên (Member Administration), phân hệ quản lý đơn hàng tương ứng chức năng đặt hàng (Order), phân hệ tích hợp hệ thống gồm cơ sở dữ liệu bán hàng (Selling DB) và tích hợp với Main System. Mỗi phân hệ gồm năm mục theo vòng đời là quản lý dự án, phân tích và thiết kế, xây dựng, kiểm thử, triển khai và chuyển giao. Các đầu việc chung của dự án được phân bổ vào các phân hệ theo tỷ lệ khối lượng riêng. Tổng cộng có 153 gói công việc với tổng khối lượng 657 MD. Mỗi gói có sản phẩm cụ thể và truy vết tới yêu cầu RFP và hạng mục Mẫu số 01A. Phần ngoài phạm vi là chức năng quản trị nội bộ (The internal administrative function)."
+  },
+  {
+   "t": "p",
+   "text": "Sản phẩm bàn giao theo mục 3.3 Chương V gồm: (1) đặc tả hệ thống (Specification) với cấu hình cơ sở dữ liệu (DB Configuration) và chức năng (Function), (2) quy trình vận hành mới (New Operational Flow), (3) cấu trúc cơ sở dữ liệu (Database Structure), (4) sơ đồ phân cấp menu (Menu Layer), các sản phẩm thiết kế này bàn giao dưới dạng tài liệu và được hai bên xác nhận tại mốc M2 ngày 06/05/2027 (gói 3.2.5), (5) hệ thống đã hoàn thành kiểm thử vận hành, đưa vào vận hành và được nghiệm thu tại mốc M6 ngày 01/07/2027, (6) tài liệu chuyển giao gồm kết quả kiểm thử hệ thống (báo cáo kiểm thử của gói 3.4.12, 1.4.9, 2.4.10, mốc M4 ngày 17/06/2027), kết quả kiểm thử chấp nhận và kiểm thử vận hành (biên bản của gói 1.4.11, 2.4.12, 3.4.13, mốc M5 ngày 29/06/2027), tài liệu hướng dẫn sử dụng (gói 2.5.1, cập nhật tại 2.5.3), tài liệu hướng dẫn vận hành theo quy trình vận hành mới cho cán bộ Chủ đầu tư (gói 3.5.1) và hướng dẫn vận hành kỹ thuật (gói 2.5.2), mã nguồn, tài liệu cài đặt và danh mục thư viện (gói 1.5.3, bàn giao bằng biên bản tại mốc M7 ngày 01/07/2027). Các chức năng chính và tích hợp với Main System được Chủ đầu tư kiểm tra tại mốc M3 ngày 17/06/2027. Chủ đầu tư kiểm tra sản phẩm theo đặc tả đã xác nhận và thông báo kết quả bằng văn bản theo Mục 20.1 E-ĐKCT."
+  },
+  {
+   "t": "p",
+   "text": "Dự án thực hiện theo 7 sprint. Yêu cầu được thu thập qua khảo sát nghiệp vụ và hệ thống hiện có (gói 3.2.1, 4.2.1), đặc tả theo từng phân hệ (1.2.1, 2.2.1, 2.2.2, 3.2.2) và trình chủ sản phẩm xem xét trong buổi làm rõ yêu cầu hằng tuần trước khi hai bên xác nhận (3.2.5). Lập trình từng chức năng bắt đầu khi thiết kế chi tiết của chức năng đó hoàn thành. Mỗi sprint kết thúc bằng trình diễn sản phẩm với Chủ đầu tư. Một công việc được coi là hoàn thành khi đạt tiêu chí hoàn thành trong kế hoạch bảo đảm chất lượng (2.1.1) và đạt kiểm thử đơn vị. Sau giai đoạn lập trình phân hệ, mã nguồn và kiến trúc được rà soát tổng thể tại gói 3.3.11 trước kiểm thử hệ thống. Mã nguồn và tài liệu được quản lý cấu hình và phiên bản (1.1.4, 2.1.4, 3.1.5, 4.1.3)."
+  },
+  {
+   "t": "p",
+   "text": "Kiểm thử gồm kiểm thử phân hệ cho từng chức năng (1.4, 2.4, 3.4), kiểm thử tích hợp với Main System trên dịch vụ giả lập (4.4.1) và trên môi trường thử của Main System (4.4.3), kiểm thử hệ thống gồm chức năng đầu cuối, khả năng sử dụng, hiệu năng và rà soát lỗ hổng bảo mật trên môi trường kiểm thử do nhà thầu cung cấp (3.4.12, 2.4.9, 1.4.9, 2.4.10), kiểm thử chấp nhận và kiểm thử vận hành (Operation Test) cùng Chủ đầu tư từ 18/06/2027 đến 29/06/2027 (1.4.11, 2.4.12, 3.4.13), kiểm thử hiệu năng và an toàn thông tin bản phát hành trên hạ tầng vận hành chính thức (4.4.7). Tiêu chí đạt của từng loại kiểm thử nêu trong kế hoạch kiểm thử (2.4.8). Lỗi được ghi nhận, phân loại theo mức nghiêm trọng thống nhất với Chủ đầu tư, khắc phục ngay trong từng đợt kiểm thử và kiểm thử hồi quy (2.4.11), theo biện pháp phòng ngừa của rủi ro RR10."
+  },
+  {
+   "t": "p",
+   "text": "Bảo đảm chất lượng áp dụng cho từng sản phẩm bàn giao gồm kế hoạch bảo đảm chất lượng, quy chuẩn mã nguồn (2.1.1), rà soát mã nguồn và kiến trúc (3.3.11), rà soát giấy phép thư viện mã nguồn mở (4.5.5), theo dõi số lỗi theo mức độ trong báo cáo tiến độ từng sprint. Người chịu trách nhiệm theo ma trận trách nhiệm của tài liệu phân công. Giả định và phần ngoài phạm vi của giải pháp: (1) Chức năng quản trị nội bộ (The internal administrative function), RFP loại khỏi phạm vi. (2) Quản trị danh mục sản phẩm, giá, tồn kho, chương trình khuyến mại và xử lý giao vận nằm trong Main System hiện có, gói thầu chỉ đồng bộ, áp dụng và hiển thị dữ liệu. (3) Thanh toán trực tuyến qua cổng thanh toán, RFP không nêu. Phương thức thanh toán đơn hàng và cách hoàn tiền khi đổi trả theo quy tắc Chủ đầu tư xác nhận tại 3.2.2. (4) Biểu phí vận chuyển, điều kiện mã giảm giá, thời hạn giữ tồn khi đặt hàng, điều kiện hủy đơn và đổi trả theo quy tắc Chủ đầu tư xác nhận tại 3.2.2. (5) Mua sắm phần cứng, bản quyền phần mềm nền và hạ tầng máy chủ vận hành của Chủ đầu tư. (6) Chủ đầu tư cung cấp tài liệu đặc tả giao diện trao đổi dữ liệu của Main System chậm nhất 14/04/2027, môi trường thử của Main System chậm nhất 20/05/2027, dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi và nội dung, hình ảnh sản phẩm chậm nhất 10/06/2027 (cam kết CK1 đến CK4), hoàn thành thay đổi phía Main System chậm nhất 20/05/2027 (CK8). Mọi sửa đổi phía Main System do Chủ đầu tư thực hiện. (7) Luồng dữ liệu hai chiều (sản phẩm, giá, tồn kho từ Main System vào Selling DB và đơn hàng từ Selling DB sang Main System) theo quy tắc Chủ đầu tư xác nhận tại 4.2.5. RFP chỉ thể hiện chiều từ Main System vào Selling DB. (8) Nhà thầu đề nghị Chủ đầu tư bàn giao hạ tầng máy chủ vận hành chính thức chậm nhất 9 giờ 00 ngày 20/05/2027 (CK7) để thiết lập môi trường vận hành (4.5.1), sớm hơn thời hạn chậm nhất tại mục 3.5 Chương V của HSMT. Thời điểm bàn giao được xác nhận tại họp khởi động (1.1.1), bàn giao chậm được xử lý theo rủi ro RR16. (9) Thư điện tử xác nhận (khôi phục mật khẩu, xác nhận đơn hàng) gửi qua máy chủ thư của Chủ đầu tư, theo quy tắc Chủ đầu tư xác nhận tại 2.2.1 và 3.2.2. (10) Bảo hành 12 tháng sau nghiệm thu và hỗ trợ tăng cường từ 02/07/2027 đến 15/07/2027 thực hiện sau cut over, song song với giai đoạn Kết thúc, ngoài phạm vi khối lượng WBS, chi phí bảo hành đã tính trong giá dự thầu. (11) Lập trình từng chức năng bắt đầu khi thiết kế chi tiết của chức năng đó hoàn thành, song song với bước xác nhận đặc tả (3.2.5). Lập trình các luồng tích hợp (4.3.5 đến 4.3.9) theo đặc tả giao diện đã lập (4.2.5), song song với bước Chủ đầu tư xác nhận đặc tả giao diện tích hợp (4.2.6), rủi ro làm lại được quản lý theo RR02. Thay đổi sau xác nhận đi qua quy trình yêu cầu thay đổi. Kiến trúc hệ thống (4.2.2) lập từ yêu cầu phi chức năng của RFP và chỉ tiêu kỹ thuật nhà thầu đề xuất, đặc tả yêu cầu phi chức năng (2.2.2) bổ sung điều kiện đo và được đối chiếu với kiến trúc khi hai bên xác nhận đặc tả (3.2.5). Kiểm thử tương thích thiết bị của 2.4.5 áp dụng cho màn hình đăng ký, đăng nhập, khôi phục mật khẩu, còn trang thành viên và sổ địa chỉ (2.3.7) được kiểm thử tương thích trong 2.4.3. Triển khai phiên bản chính thức (1.5.2) thực hiện sau khi các gói khắc phục lỗi theo kiểm thử chấp nhận và kiểm thử hồi quy (1.4.10, 1.4.12, 2.4.11, 2.4.13, 3.4.14, 4.4.9) hoàn thành theo lịch. Lỗi phát hiện cuối khoảng kiểm thử chấp nhận được xử lý bằng quỹ huy động chưa giao ở S7 của các thành viên cùng năng lực (Phạm Tuấn Anh, Vũ Đức Minh, Bùi Anh Tuấn, Trần Thu Hà) và hỗ trợ tăng cường sau cut over. (12) Khối lượng từng gói đã gồm thời gian tham gia họp hằng ngày và trình diễn cuối sprint của người thực hiện."
+  },
+  {
+   "text": "12. Tiến độ, tổ chức thực hiện và kế hoạch họp",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Sprint",
+     "Từ",
+     "Đến",
+     "Mục tiêu",
+     "Sản phẩm trình diễn"
+    ],
+    [
+     "S1",
+     "18/03/2027",
+     "31/03/2027",
+     "Khảo sát nghiệp vụ và hệ thống hiện có, đặc tả chức năng ba phân hệ chức năng, nghiên cứu hành vi người dùng, kiến trúc hệ thống, khung ứng dụng phía máy chủ và giao diện, dịch vụ gửi thư điện tử",
+     "Báo cáo khảo sát, đặc tả chức năng ba phân hệ chức năng, kiến trúc hệ thống và khung ứng dụng phía máy chủ, giao diện"
+    ],
+    [
+     "S2",
+     "01/04/2027",
+     "14/04/2027",
+     "Cấu trúc, cấu hình Selling DB và tạo lập Selling DB trên môi trường phát triển, sơ đồ phân cấp menu, thiết kế giao diện ưu tiên ba nhóm chức năng, thư viện thành phần giao diện, môi trường phát triển và kiểm thử có quy trình triển khai tự động, đặc tả use case đợt đầu của ba phân hệ chức năng, thiết kế chi tiết đặt hàng",
+     "Selling DB trên môi trường phát triển, sơ đồ phân cấp menu (Menu Layer), mẫu giao diện ưu tiên ba nhóm chức năng, khung ứng dụng triển khai tự động lên môi trường phát triển"
+    ],
+    [
+     "S3",
+     "15/04/2027",
+     "06/05/2027",
+     "Hai bên xác nhận đặc tả yêu cầu và giao diện ưu tiên (M2), đặc tả giao diện tích hợp sau khi nhận tài liệu Main System (CK1) và thiết kế tích hợp, hoàn thành đặc tả use case và thiết kế chi tiết, chỉ mục tìm kiếm, lập trình đăng ký, đăng nhập, khôi phục mật khẩu, giỏ hàng, đặt hàng có phí vận chuyển và mã giảm giá, kịch bản kiểm thử phân hệ và kịch bản kiểm thử tích hợp",
+     "Đăng ký, đăng nhập, khôi phục mật khẩu, giỏ hàng và đặt hàng có phí vận chuyển, mã giảm giá trên môi trường phát triển"
+    ],
+    [
+     "S4",
+     "07/05/2027",
+     "20/05/2027",
+     "Lập trình tìm kiếm, lọc và sắp xếp sản phẩm, giữ tồn kho, theo dõi đơn hàng, hủy đơn và đổi trả, dịch vụ giả lập Main System, đồng bộ tồn kho, chuyển đơn hàng và nhận trạng thái vận chuyển theo đặc tả giao diện tích hợp đã lập, Chủ đầu tư xác nhận đặc tả giao diện tích hợp, kế hoạch kiểm thử hệ thống, kiểm thử bảo mật tài khoản và kiểm thử đặt hàng, phí vận chuyển, khuyến mại",
+     "Tìm kiếm, lọc và sắp xếp sản phẩm, theo dõi và hủy đơn hàng trên môi trường phát triển, chuyển đơn hàng và nhận trạng thái vận chuyển trên dịch vụ giả lập Main System"
+    ],
+    [
+     "S5",
+     "21/05/2027",
+     "03/06/2027",
+     "Lập trình trang chủ, danh mục, chi tiết sản phẩm, trang thành viên và sổ địa chỉ, đồng bộ danh mục sản phẩm và giá, kiểm thử tích hợp trên môi trường thử của Main System (CK2, CK8), kiểm thử và sửa lỗi phân hệ, kịch bản kiểm thử hiệu năng và kiểm thử hệ thống đầu cuối, môi trường vận hành (CK7), tài liệu hướng dẫn sử dụng, công cụ chuyển đổi dữ liệu",
+     "Luồng đặt hàng đầu cuối có chuyển đơn hàng sang Main System thử, trang chủ, danh mục, chi tiết sản phẩm và trang thành viên"
+    ],
+    [
+     "S6",
+     "04/06/2027",
+     "17/06/2027",
+     "Kiểm thử hệ thống (chức năng đầu cuối, hiệu năng, bảo mật, khả năng sử dụng) và khắc phục lỗi (M4), sửa lỗi tích hợp, Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System (M3), giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành, hướng dẫn vận hành cho cán bộ Chủ đầu tư, kế hoạch cut over, kịch bản kiểm thử chấp nhận, chuyển đổi thử dữ liệu (CK3) và nạp nội dung sản phẩm (CK4)",
+     "Bản phát hành ứng viên cho kiểm thử chấp nhận, báo cáo kiểm thử hệ thống"
+    ],
+    [
+     "S7",
+     "18/06/2027",
+     "01/07/2027",
+     "Kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư (M5), khắc phục lỗi trong khoảng kiểm thử chấp nhận, kiểm thử hiệu năng và an toàn bản phát hành trên môi trường vận hành, diễn tập chuyển đổi dự phòng, sao lưu và khôi phục, diễn tập triển khai, chuyển đổi dữ liệu chính thức, cut over 01/07/2027 (M6), bàn giao (M7)",
+     "Hệ thống trên môi trường vận hành, biên bản kiểm thử chấp nhận và biên bản bàn giao"
+    ]
+   ],
+   "widths": [
+    800,
+    1200,
+    1200,
+    3200,
+    2900
+   ],
+   "center_cols": [
+    0,
+    1,
+    2
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Mốc",
+     "Nội dung",
+     "Ngày dự kiến",
+     "Đợt thanh toán",
+     "Sprint"
+    ],
+    [
+     "M0",
+     "Hợp đồng có hiệu lực, khởi động dự án",
+     "18/03/2027",
+     "1",
+     "S1"
+    ],
+    [
+     "M1",
+     "Kế hoạch quản lý dự án được Chủ đầu tư xác nhận",
+     "14/04/2027",
+     "",
+     "S2"
+    ],
+    [
+     "M2",
+     "Đặc tả yêu cầu và giao diện ưu tiên được hai bên xác nhận",
+     "06/05/2027",
+     "2",
+     "S3"
+    ],
+    [
+     "M3",
+     "Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+     "17/06/2027",
+     "3",
+     "S6"
+    ],
+    [
+     "M4",
+     "Hoàn thành kiểm thử hệ thống, bản phát hành sẵn sàng kiểm thử chấp nhận",
+     "17/06/2027",
+     "",
+     "S6"
+    ],
+    [
+     "M5",
+     "Hoàn thành kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư",
+     "29/06/2027",
+     "",
+     "S7"
+    ],
+    [
+     "M6",
+     "Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+     "01/07/2027",
+     "4",
+     "S7"
+    ],
+    [
+     "M7",
+     "Nhà thầu nộp bảo lãnh bảo hành, bàn giao mã nguồn và hệ thống",
+     "01/07/2027",
+     "5",
+     "S7"
+    ],
+    [
+     "M8",
+     "Đóng dự án, báo cáo tổng kết và bài học kinh nghiệm được lập, hồ sơ dự án được lưu trữ",
+     "07/07/2027",
+     "",
+     "KT"
+    ]
+   ],
+   "widths": [
+    700,
+    4200,
+    1400,
+    1300,
+    1000
+   ],
+   "center_cols": [
+    0,
+    2,
+    3,
+    4
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Nhân sự của nhà thầu được huy động theo sprint như bảng sau, tổng 816 MD huy động.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Sprint",
+     "Từ",
+     "Đến",
+     "Số người huy động",
+     "MD huy động"
+    ],
+    [
+     "S1",
+     "18/03/2027",
+     "31/03/2027",
+     "8",
+     "80"
+    ],
+    [
+     "S2",
+     "01/04/2027",
+     "14/04/2027",
+     "10",
+     "100"
+    ],
+    [
+     "S3",
+     "15/04/2027",
+     "06/05/2027",
+     "12",
+     "156"
+    ],
+    [
+     "S4",
+     "07/05/2027",
+     "20/05/2027",
+     "12",
+     "120"
+    ],
+    [
+     "S5",
+     "21/05/2027",
+     "03/06/2027",
+     "12",
+     "120"
+    ],
+    [
+     "S6",
+     "04/06/2027",
+     "17/06/2027",
+     "12",
+     "120"
+    ],
+    [
+     "S7",
+     "18/06/2027",
+     "01/07/2027",
+     "12",
+     "120"
+    ],
+    [
+     "Tổng cộng",
+     "",
+     "",
+     "",
+     "816"
+    ]
+   ],
+   "widths": [
+    900,
+    1500,
+    1500,
+    2400,
+    3000
+   ],
+   "center_cols": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "right_cols": [
+    4
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Cuộc họp",
+     "Tần suất",
+     "Thành phần",
+     "Nội dung và đầu ra"
+    ],
+    [
+     "Họp khởi động",
+     "Một lần, ngày 18/03/2027",
+     "Quản trị dự án, nhân sự chủ chốt của nhà thầu, đầu mối và chủ sản phẩm của Chủ đầu tư",
+     "Xác nhận phạm vi, điều kiện tiền đề, vai trò và trách nhiệm các bên, thời điểm bàn giao tài liệu Main System và hạ tầng. Đầu ra là biên bản họp khởi động (gói 1.1.1)"
+    ],
+    [
+     "Họp lập kế hoạch sprint",
+     "Đầu mỗi sprint",
+     "Quản trị dự án và các thành viên nhà thầu",
+     "Thống nhất mục tiêu và sản phẩm trình diễn của sprint theo master schedule. Đầu ra là danh sách công việc của sprint"
+    ],
+    [
+     "Họp làm rõ yêu cầu",
+     "Hai đến ba buổi mỗi tuần trong S1 đến S3 theo cam kết CK5, sau đó hằng tuần đến khi xác nhận đặc tả",
+     "Kỹ sư phân tích nghiệp vụ, kiến trúc sư của nhà thầu, chủ sản phẩm của Chủ đầu tư",
+     "Xem xét đặc tả từng phân hệ, ghi biên bản thống nhất từng phần trước khi thiết kế chi tiết, chuẩn bị xác nhận đặc tả tại mốc M2"
+    ],
+    [
+     "Họp tiến độ",
+     "Hằng tuần",
+     "Quản trị dự án, nhà thầu và đầu mối Chủ đầu tư",
+     "Tiến độ, rủi ro, vấn đề, yêu cầu thay đổi, dự trữ thời gian đến cut over. Đầu ra là biên bản họp (gói 1.1.2, 2.1.2, 3.1.3, 4.1.1). Biên bản do quản trị dự án lập và gửi trong 1 ngày làm việc, đầu mối Chủ đầu tư xác nhận bằng thư điện tử trong 2 ngày làm việc"
+    ],
+    [
+     "Trình diễn và báo cáo cuối sprint",
+     "Cuối mỗi sprint",
+     "Nhà thầu, chủ sản phẩm và cán bộ Chủ đầu tư",
+     "Trình diễn sản phẩm của sprint, ghi nhận góp ý, báo cáo tiến độ sprint gửi Chủ đầu tư (gói 1.1.2, 2.1.2, 3.1.3, 4.1.1)"
+    ],
+    [
+     "Họp xác nhận sản phẩm theo mốc",
+     "Tại các mốc M1, M2, M3",
+     "Quản trị dự án, người đại diện của Chủ đầu tư",
+     "Xác nhận kế hoạch quản lý dự án (M1), đặc tả và giao diện ưu tiên (M2), kết quả kiểm tra chức năng chính và tích hợp (M3). Nhà thầu đề nghị Chủ đầu tư xem xét trong 5 ngày làm việc, đầu ra là biên bản xác nhận. Biên bản do quản trị dự án lập, gửi Chủ đầu tư trong 1 ngày làm việc sau họp, đầu mối Chủ đầu tư xác nhận bằng chữ ký hoặc thư điện tử"
+    ],
+    [
+     "Họp quyết định cut over",
+     "Một lần, sau kiểm thử chấp nhận (M5)",
+     "Quản trị dự án, nhân sự chủ chốt, người đại diện của Chủ đầu tư",
+     "Đối chiếu điều kiện cut over, danh sách kiểm tra và phương án khôi phục trong kế hoạch cut over (gói 3.5.2), quyết định đưa hệ thống vào vận hành ngày 01/07/2027"
+    ]
+   ],
+   "widths": [
+    2000,
+    1500,
+    2600,
+    3200
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "Tiến độ bắt đầu từ ngày hợp đồng có hiệu lực 18/03/2027 và đưa hệ thống vào vận hành (cut over) ngày 01/07/2027, gồm 7 sprint và 9 mốc (M0, M1, M2, M3, M4, M5, M6, M7, M8) gắn với sản phẩm bàn giao và các đợt thanh toán tại Mục 13.1 E-ĐKCT. Mốc M4 là hoàn thành kiểm thử hệ thống trên môi trường kiểm thử, hạng mục kiểm thử hệ thống của Mẫu số 10A còn gồm kiểm thử hiệu năng và an toàn thông tin trên hạ tầng vận hành chính thức (4.4.7) và kiểm thử hồi quy trong khoảng kiểm thử chấp nhận (2.4.11) nên kết thúc sau M4. Đường găng gồm các gói 4.2.1, 3.2.1, 3.2.2, 4.2.2, 4.2.3, 4.2.7, 4.4.1, 4.3.6, 4.3.7, 4.3.8, 4.4.3, 3.4.12, 4.4.4, 4.4.5, 1.4.11, 2.4.12, 3.4.13, 1.5.2, 3.4.14, 1.5.3, 2.5.3, 3.5.4. Tiến độ có 3 ngày dự trữ đến cut over. Nhà thầu theo dõi hằng tuần các rủi ro trên đường găng (RR02, RR03, RR04, RR08, RR09, RR10) và báo Chủ đầu tư khi dự trữ còn dưới hai ngày. Các công việc phụ thuộc đầu vào của Chủ đầu tư được xếp không sớm hơn thời hạn cung cấp tại mục 3.5 Chương V (CK1, CK2, CK8) và thời điểm nhà thầu đề nghị (CK3, CK4, CK7). Đầu vào được bàn giao chậm nhất 9 giờ 00 ngày hạn, công việc phụ thuộc được phép bắt đầu ngay trong ngày hạn và không bắt đầu sớm hơn thời hạn cung cấp."
+  },
+  {
+   "t": "p",
+   "text": "Về tổ chức thực hiện, Lê Quốc Bảo (Giám đốc) là người đại diện ký hợp đồng của nhà thầu. Trần Bá Đạt là quản trị dự án, đầu mối làm việc với Chủ đầu tư (Công ty Cổ phần ABC Wear, đầu mối Yamada, Phòng Kế hoạch), chịu trách nhiệm chung về tiến độ, chất lượng, báo cáo và ra quyết định trong phạm vi được giao. Nguyễn Hoàng Nam (Kiến trúc sư kiêm phân tích nghiệp vụ) chủ trì thiết kế kiến trúc, cơ sở dữ liệu (mục 4.2) và họp kỹ thuật. Các nhóm công việc do nhân sự chủ chốt phụ trách như mục 6, các thành viên bổ sung tham gia lập trình và kiểm thử theo tài liệu phân công. Sơ đồ tổ chức gồm ba cấp: người đại diện của nhà thầu, quản trị dự án, và bốn nhóm công việc theo phân hệ (quản lý sản phẩm, quản lý khách hàng, quản lý đơn hàng, tích hợp hệ thống) do nhân sự chủ chốt chịu trách nhiệm, các vị trí bổ sung làm việc trong các nhóm này theo tài liệu phân công. Kỹ sư phân tích nghiệp vụ kiêm kiểm thử phụ trách đặc tả và kiểm thử xuyên suốt các nhóm. Cơ chế phối hợp gồm họp hằng ngày nội bộ, họp tiến độ hằng tuần và trình diễn cuối sprint theo kế hoạch họp. Vấn đề vượt thẩm quyền của quản trị dự án được báo cáo người đại diện của nhà thầu. Nhà thầu không sử dụng nhà thầu phụ."
+  },
+  {
+   "t": "p",
+   "text": "Nhân sự được huy động theo sprint như bảng huy động, từ 8 người ở S1 đến 12 người từ S3, tổng 816 MD huy động. Các vị trí bổ sung gồm Nguyễn Hoàng Nam, Lê Quang Huy, Bùi Anh Tuấn tham gia từ sprint 1, Đỗ Minh Quân, Trần Thu Hà từ sprint 2, Phạm Ngọc Anh, Trương Quốc Việt từ sprint 3. Dự phòng nhân lực theo kế hoạch ứng phó của rủi ro RR04: Khi một vị trí chưa có mặt đúng sprint, Trần Bá Đạt chuyển gói của vị trí đó cho thành viên cùng năng lực còn dư quỹ và kích hoạt người dự phòng trong 3 ngày làm việc. Đối với rủi ro RR18 về phụ thuộc người triển khai hạ tầng: Lập tài liệu hướng dẫn thiết lập môi trường và triển khai, ít nhất hai người cùng thực hiện các gói hạ tầng chính. Đối với rủi ro RR05: Ủy quyền chủ trì họp kỹ thuật cho Nguyễn Hoàng Nam, chuẩn hóa mẫu báo cáo tiến độ để giảm thời gian lập."
+  },
+  {
+   "t": "p",
+   "text": "Kế hoạch chuyển giao gồm tài liệu hướng dẫn sử dụng cho khách hàng và cán bộ bán hàng (gói 2.5.1, 2.5.3), tài liệu hướng dẫn vận hành kỹ thuật (2.5.2), hướng dẫn vận hành cho cán bộ Chủ đầu tư theo quy trình vận hành mới (3.5.1), bàn giao mã nguồn và tài liệu kỹ thuật (1.5.3). Các bước chuyển sang vận hành chính thức gồm kế hoạch cut over được Chủ đầu tư xác nhận (3.5.2), diễn tập triển khai và chuyển đổi dữ liệu (3.5.3), chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức (1.5.2), hỗ trợ ngày cut over (3.5.4). Phương án quay lui theo rủi ro RR08: Khi dấu hiệu xuất hiện, Ninh Đức Toàn thực hiện phương án khôi phục trong kế hoạch cut over, Trần Bá Đạt thông báo Chủ đầu tư và thống nhất thời điểm triển khai lại trong ngày. Hỗ trợ tăng cường sau cut over và bảo hành theo mục 13."
+  },
+  {
+   "text": "Sơ đồ tổ chức thực hiện của nhà thầu theo vai trò và quan hệ báo cáo như bảng sau.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Vai trò",
+     "Người đảm nhận",
+     "Quan hệ báo cáo"
+    ],
+    [
+     "Người đại diện của nhà thầu",
+     "Lê Quốc Bảo",
+     "Ký hợp đồng, quyết định vấn đề vượt thẩm quyền quản trị dự án"
+    ],
+    [
+     "Quản trị dự án",
+     "Trần Bá Đạt",
+     "Báo cáo người đại diện của nhà thầu, đầu mối làm việc với Chủ đầu tư"
+    ],
+    [
+     "Phụ trách nhóm phân hệ quản lý sản phẩm",
+     "Vũ Đức Minh",
+     "Báo cáo quản trị dự án"
+    ],
+    [
+     "Phụ trách nhóm phân hệ quản lý khách hàng (thành viên)",
+     "Phạm Tuấn Anh",
+     "Báo cáo quản trị dự án"
+    ],
+    [
+     "Phụ trách nhóm phân hệ quản lý đơn hàng (đặt hàng)",
+     "Phạm Tuấn Anh",
+     "Báo cáo quản trị dự án"
+    ],
+    [
+     "Phụ trách nhóm phân hệ tích hợp hệ thống",
+     "Ninh Đức Toàn",
+     "Báo cáo quản trị dự án"
+    ],
+    [
+     "Phụ trách đặc tả và kiểm thử các phân hệ",
+     "Nguyễn Thị Phương Liên",
+     "Báo cáo quản trị dự án"
+    ],
+    [
+     "Phụ trách phân tích và thiết kế phân hệ tích hợp hệ thống",
+     "Nguyễn Hoàng Nam",
+     "Báo cáo quản trị dự án"
+    ],
+    [
+     "Thành viên bổ sung trong các nhóm",
+     "Lê Quang Huy, Đỗ Minh Quân, Bùi Anh Tuấn, Trần Thu Hà, Phạm Ngọc Anh, Trương Quốc Việt",
+     "Báo cáo người phụ trách nhóm theo tài liệu phân công"
+    ],
+    [
+     "Đầu mối Chủ đầu tư",
+     "Công ty Cổ phần ABC Wear, đầu mối Yamada, Phòng Kế hoạch",
+     "Phối hợp với quản trị dự án, xác nhận biên bản"
+    ]
+   ],
+   "widths": [
+    2600,
+    3500,
+    3200
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "13. Vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Nội dung",
+     "Trách nhiệm của nhà thầu",
+     "Trách nhiệm của chủ đầu tư"
+    ],
+    [
+     "Cung cấp thông tin và môi trường",
+     "Lập danh sách thông tin cần cung cấp, cung cấp môi trường phát triển và kiểm thử, lập dịch vụ giả lập Main System",
+     "Cung cấp tài liệu đặc tả giao diện Main System và môi trường thử của Main System theo thời hạn tại mục 3.5 Chương V, dữ liệu sản phẩm, tồn kho và nội dung sản phẩm theo thời hạn nhà thầu đề nghị (CK3, CK4)"
+    ],
+    [
+     "Hạ tầng vận hành",
+     "Đề xuất cấu hình tối thiểu, thiết lập môi trường vận hành, giám sát và sao lưu (gói 4.5.1, 4.5.2)",
+     "Cung cấp máy chủ, đường truyền, phần mềm nền và bản quyền theo cấu hình đã thống nhất"
+    ],
+    [
+     "Thay đổi phía Main System",
+     "Chịu trách nhiệm phía hệ thống mới, cung cấp đặc tả giao diện tích hợp (gói 4.2.5)",
+     "Hoàn thành thay đổi phía Main System để trao đổi dữ liệu với hệ thống mới chậm nhất 20/05/2027 theo mục 3.5 Chương V, xác nhận đặc tả giao diện tích hợp (gói 4.2.6)"
+    ],
+    [
+     "Xác nhận đặc tả",
+     "Lập đặc tả, trình xem xét từng phân hệ, cập nhật theo góp ý. Quản trị dự án ký biên bản",
+     "Chủ sản phẩm làm rõ yêu cầu, người đại diện xác nhận đặc tả và giao diện ưu tiên tại mốc M2"
+    ],
+    [
+     "Kiểm tra và chấp nhận sản phẩm",
+     "Bàn giao sản phẩm kèm kết quả kiểm thử nội bộ, sửa lỗi thuộc trách nhiệm của nhà thầu bằng chi phí của mình",
+     "Kiểm tra sản phẩm theo đặc tả đã xác nhận, thông báo kết quả bằng văn bản, người dùng nghiệp vụ tham gia kiểm thử chấp nhận"
+    ],
+    [
+     "Quản lý thay đổi",
+     "Tiếp nhận, đánh giá ảnh hưởng tới phạm vi, tiến độ, giá và đề xuất phương án",
+     "Đề xuất thay đổi khi cần, thống nhất thay đổi bằng văn bản theo Mục 17.1(c) E-ĐKCT"
+    ],
+    [
+     "Quyền sở hữu và bản quyền",
+     "Rà soát giấy phép thư viện mã nguồn mở, chỉ dùng thư viện có giấy phép cho phép sử dụng thương mại, bàn giao mã nguồn và danh mục thư viện",
+     "Sở hữu sản phẩm theo hợp đồng, tiếp nhận mã nguồn và tài liệu"
+    ],
+    [
+     "Bảo mật",
+     "Áp dụng giải pháp an toàn dữ liệu theo KT04, bảo mật thông tin của Chủ đầu tư, thông báo Chủ đầu tư khi phát hiện sự cố",
+     "Cung cấp quyền truy cập cần thiết, quản lý tài khoản quản trị sau bàn giao"
+    ],
+    [
+     "Nghiệm thu",
+     "Lập hồ sơ nghiệm thu và thanh toán từng đợt (gói 1.1.4, 2.1.4, 3.1.5, 4.1.3)",
+     "Tổ chức nghiệm thu, thanh toán trong 15 ngày kể từ khi nhận đủ hồ sơ hợp lệ"
+    ],
+    [
+     "Bảo hành",
+     "Khắc phục lỗi trong thời hạn bảo hành theo thời hạn phản hồi và khắc phục, duy trì bảo lãnh bảo hành",
+     "Thông báo lỗi qua đầu mối, xác nhận kết quả khắc phục"
+    ]
+   ],
+   "widths": [
+    2300,
+    3500,
+    3500
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Rủi ro chính",
+     "Dấu hiệu",
+     "Kế hoạch ứng phó",
+     "Người phụ trách"
+    ],
+    [
+     "RR02",
+     "Tài liệu giao diện hoặc môi trường thử của Main System đến muộn hơn cam kết hoặc không đủ thông tin",
+     "Đến 9 giờ 00 ngày 14/04/2027 chưa nhận tài liệu đặc tả giao diện của Main System, hoặc đến 9 giờ 00 ngày 20/05/2027 chưa có môi trường thử hoặc chưa hoàn thành thay đổi phía Main System (CK8), hoặc đặc tả giao diện thay đổi sau khi đã xác nhận",
+     "Khi dấu hiệu xuất hiện, Ninh Đức Toàn lập danh sách thông tin còn thiếu, Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư trong 1 ngày làm việc. Nhóm tích hợp tiếp tục lập trình trên dịch vụ giả lập. Sau 5 ngày làm việc chưa có phản hồi, trưởng nhóm báo cáo người đại diện của Chủ đầu tư và đề nghị điều chỉnh tiến độ theo Mục 18 E-ĐKC do nguyên nhân thuộc Chủ đầu tư",
+     "Ninh Đức Toàn"
+    ],
+    [
+     "RR03",
+     "Kiểm thử hệ thống và khắc phục lỗi hoàn thành sau ngày bắt đầu kiểm thử chấp nhận 18/06/2027",
+     "Mốc M4 chưa đạt sau 2 ngày làm việc so với ngày dự kiến trong master schedule, hoặc còn từ 4 lỗi nghiêm trọng hoặc cao đang mở ngày 14/06/2027 (ngưỡng đỏ)",
+     "Khi dấu hiệu xuất hiện, Trần Bá Đạt điều các kỹ sư phát triển đang làm gói không nằm trên đường găng sang sửa lỗi, Nguyễn Thị Phương Liên ưu tiên kịch bản các luồng chính và báo Chủ đầu tư phạm vi kiểm thử chấp nhận đợt đầu",
+     "Trần Bá Đạt"
+    ],
+    [
+     "RR04",
+     "Vị trí bổ sung không có mặt đúng sprint huy động đã thống nhất",
+     "Đến ngày hợp đồng có hiệu lực chưa có quyết định điều động của một vị trí, hoặc người giữ vị trí chưa hoàn thành bàn giao công việc đang làm trước sprint huy động 5 ngày làm việc",
+     "Khi một vị trí chưa có mặt đúng sprint, Trần Bá Đạt chuyển gói của vị trí đó cho thành viên cùng năng lực còn dư quỹ và kích hoạt người dự phòng trong 3 ngày làm việc",
+     "Trần Bá Đạt"
+    ],
+    [
+     "RR10",
+     "Số lỗi phát hiện trong kiểm thử chấp nhận vượt khả năng khắc phục trong khoảng 18/06 đến 29/06/2027",
+     "Ngày 23/06/2027 còn từ 4 lỗi nghiêm trọng hoặc cao đang mở (ngưỡng đỏ)",
+     "Khi dấu hiệu xuất hiện, Nguyễn Thị Phương Liên phân loại lỗi theo mức độ, Trần Bá Đạt điều thêm kỹ sư phát triển sang khắc phục lỗi nghiêm trọng, lỗi nhỏ đưa vào danh sách khắc phục trong bảo hành khi Chủ đầu tư đồng ý bằng văn bản",
+     "Nguyễn Thị Phương Liên"
+    ]
+   ],
+   "widths": [
+    700,
+    2200,
+    2000,
+    3000,
+    1400
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi bên được đề xuất thay đổi đặc tả khi cần thiết. Yêu cầu thay đổi được ghi vào sổ yêu cầu thay đổi (gói 1.1.3, 2.1.3, 3.1.4, 4.1.2), nhà thầu đánh giá ảnh hưởng tới phạm vi, tiến độ và giá trong 3 ngày, trình Chủ đầu tư quyết định. Yêu cầu được lập theo mẫu phiếu yêu cầu thay đổi của kế hoạch quản lý thay đổi (mã yêu cầu, nội dung, lý do, gói bị ảnh hưởng, MD và chi phí tăng, ngày chậm, mốc bị ảnh hưởng, quyết định), phía nhà thầu do quản trị dự án Trần Bá Đạt phê duyệt thay đổi nội bộ và người đại diện của nhà thầu Lê Quốc Bảo phê duyệt thay đổi chạm cam kết hợp đồng trước khi trình Chủ đầu tư. Thay đổi chỉ được thực hiện sau khi hai bên thống nhất bằng văn bản nêu rõ nội dung và ảnh hưởng đến tiến độ, giá hợp đồng theo Mục 17.1(c) E-ĐKCT. Đặc tả, tài liệu và mã nguồn được quản lý phiên bản, sổ rủi ro và kế hoạch quản lý thay đổi được cập nhật theo đường cơ sở đặc tả (gói 3.1.6, 1.1.4, 2.1.4, 3.1.5, 4.1.3)."
+  },
+  {
+   "t": "p",
+   "text": "Sổ rủi ro nhận diện 21 rủi ro gồm 2 cơ hội, trong đó 6 rủi ro hạng A (RR02, RR03, RR04, RR10, RR01, RR13). Sổ rủi ro bao quát các rủi ro chính của gói thầu về tích hợp với Main System (RR02), thời gian đến ngày cut over (RR03, RR10), hiệu năng (RR06) và hoạt động liên tục (RR07). Tổng giá trị kỳ vọng (EMV) của sổ rủi ro là 141 triệu đồng, trong khoảng 105 đến 177 triệu đồng. Mỗi rủi ro có biện pháp phòng ngừa, dấu hiệu, kế hoạch ứng phó và người phụ trách, được theo dõi trong họp tiến độ hằng tuần và báo cáo tiến độ từng sprint (gói 1.1.3, 2.1.3, 3.1.4, 4.1.2). Kế hoạch ứng phó của các rủi ro mức cao (RR02, RR03, RR04, RR10) nêu tại bảng rủi ro của mục này, kế hoạch ứng phó của các rủi ro khác nêu trong sổ rủi ro."
+  },
+  {
+   "t": "p",
+   "text": "Trong thời hạn 12 tháng kể từ ngày hệ thống được nghiệm thu, nhà thầu sửa chữa lỗi logic và sai sót thuộc trách nhiệm của mình bằng chi phí của nhà thầu theo Mục 20.1 E-ĐKCT và duy trì bảo lãnh bảo hành 5% giá hợp đồng. Lỗi được tiếp nhận qua đầu mối của nhà thầu, phân loại theo mức lỗi, thời hạn phản hồi và khắc phục của từng mức tính theo cách nêu tại bảng mức lỗi. Đối với rủi ro RR17: Lập danh sách lỗi tồn tại khi bàn giao có biên bản Chủ đầu tư đồng ý, bàn giao tài liệu vận hành đầy đủ."
+  },
+  {
+   "text": "Thời hạn bảo hành 12 tháng kể từ ngày hệ thống được nghiệm thu. Thời hạn phản hồi và khắc phục lỗi theo mức lỗi như bảng sau.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Mức lỗi",
+     "Thời hạn phản hồi",
+     "Thời hạn khắc phục",
+     "Cách tính thời hạn"
+    ],
+    [
+     "Nghiêm trọng",
+     "2 giờ",
+     "8 giờ",
+     "Tính liên tục 24 giờ mỗi ngày, kể cả ngày nghỉ, từ khi tiếp nhận báo lỗi"
+    ],
+    [
+     "Cao",
+     "4 giờ",
+     "1 ngày làm việc",
+     "Tính trong giờ hành chính (8 giờ 00 đến 17 giờ 00 các ngày làm việc) từ khi tiếp nhận"
+    ],
+    [
+     "Khác",
+     "8 giờ",
+     "3 ngày làm việc",
+     "Tính trong giờ hành chính (8 giờ 00 đến 17 giờ 00 các ngày làm việc) từ khi tiếp nhận"
+    ]
+   ],
+   "widths": [
+    1700,
+    1700,
+    2000,
+    3900
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Sau cut over, nhà thầu hỗ trợ tăng cường từ ngày 02/07/2027 đến ngày 15/07/2027: trực hỗ trợ trong giờ hành chính, theo dõi cảnh báo và xử lý sự cố, nằm trong chi phí bảo hành.",
+   "t": "p"
+  },
+  {
+   "text": "Hệ thống chỉ được đưa vào vận hành (cut over) khi đáp ứng điều kiện sau. Kiểm thử chấp nhận đạt, không còn lỗi nghiêm trọng hoặc cao làm gián đoạn luồng đặt hàng, có báo cáo hiệu năng và an toàn thông tin của bản phát hành.",
+   "t": "p"
+  },
+  {
+   "text": "14. Điều kiện khác và đề nghị đối với chủ đầu tư",
+   "t": "h2"
+  },
+  {
+   "t": "p",
+   "text": "Về điều kiện khác liên quan đến hợp đồng, giá dự thầu là giá trọn gói, thanh toán theo 5 đợt gắn với các mốc tại Mục 13.1 E-ĐKCT. Thời hạn thực hiện được xem xét điều chỉnh khi Chủ đầu tư cung cấp thông tin, môi trường, hạ tầng chậm hơn thời hạn tại mục 3.5 Chương V. Thay đổi đặc tả sau xác nhận thực hiện theo Mục 17.1(c) E-ĐKCT. Bảo hành, hỗ trợ tăng cường sau cut over nằm trong giá dự thầu."
+  },
+  {
+   "t": "p",
+   "text": "Nhà thầu đề nghị Chủ đầu tư: cử đầu mối và chủ sản phẩm có thẩm quyền quyết định yêu cầu nghiệp vụ, tham gia làm rõ yêu cầu và trình diễn cuối sprint (CK5). Xác nhận phương thức thanh toán đơn hàng tại họp khởi động và ghi vào biên bản xác nhận đặc tả (biện pháp của rủi ro RR11). Bàn giao tài liệu giao diện và dữ liệu mẫu của Main System tại họp khởi động, môi trường thử của Main System theo từng phần ngay khi sẵn sàng (biện pháp của rủi ro RR02, RR21). Bàn giao hạ tầng vận hành chính thức theo cấu hình hai bên thống nhất chậm nhất 9 giờ 00 ngày 20/05/2027 (CK7), thời điểm bàn giao được xác nhận tại họp khởi động (biện pháp của rủi ro RR16). Cung cấp dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi và nội dung, hình ảnh sản phẩm chậm nhất 10/06/2027 (CK3, CK4), bố trí người dùng nghiệp vụ tham gia kiểm thử chấp nhận (CK6). Các đầu vào có hạn được bàn giao chậm nhất 9 giờ 00 ngày hạn để công việc phụ thuộc được phép bắt đầu ngay trong ngày hạn."
+  },
+  {
+   "t": "p",
+   "text": "Đề xuất bổ sung cho thành công của dự án, không làm thay đổi phạm vi, thời gian thực hiện hợp đồng và giá dự thầu. Thứ nhất, lập dịch vụ giả lập Main System (gói 4.4.1) để lập trình và kiểm thử tích hợp không phụ thuộc thời điểm có môi trường thử, giảm tác động của rủi ro RR02 tới đường găng. Thứ hai, diễn tập triển khai, chuyển đổi dữ liệu và khôi phục trên môi trường vận hành trước cut over (gói 4.4.8, 3.5.3), giảm rủi ro RR07, RR08 trong ngày đưa hệ thống vào vận hành. Thứ ba, mời cán bộ Chủ đầu tư dự trình diễn cuối sprint từ S4 và gửi tài liệu hướng dẫn trước buổi hướng dẫn vận hành (biện pháp của rủi ro RR09), giúp cán bộ sẵn sàng vận hành theo quy trình vận hành mới. Thứ tư, tái sử dụng khung ứng dụng và thư viện giao diện nhà thầu có quyền sử dụng từ hai hợp đồng tương tự (cơ hội RR20), thời gian tiết kiệm được chuyển sang lập trình phân hệ và kiểm thử."
+  },
+  {
+   "t": "p",
+   "text": "Để nâng cao hiệu quả của kênh bán hàng trực tuyến, giao diện dùng thư viện thành phần tương thích thiết bị di động (gói 1.2.4) giúp khách hàng truy cập từ nhiều loại thiết bị, góp phần mở rộng khách hàng qua internet. Lớp ứng dụng mở rộng theo chiều ngang (KT03) cho phép tăng số nút ứng dụng khi số lượng khách hàng tăng mà không thay đổi kiến trúc. Giám sát tích hợp và cảnh báo lỗi đồng bộ (gói 4.3.9) bảo đảm sản phẩm, giá, tồn kho hiển thị cho khách hàng nhất quán với Main System."
+  },
+  {
+   "t": "p",
+   "text": "Thông tin về kết quả thực hiện hợp đồng của nhà thầu theo Điều 19 và Điều 20 của Nghị định số 214/2025/NĐ-CP: nhà thầu kê khai 2 hợp đồng tương tự đã hoàn thành tại Mẫu số 05. Nhà thầu kê khai: không có hoặc có 01 hợp đồng (cung cấp dịch vụ phi tư vấn) không hoàn thành do lỗi của nhà thầu kể từ ngày 01 tháng 01 năm 2024 theo quy định tại tiêu chí đánh giá 1 trong Bảng tiêu chuẩn đánh giá về năng lực và kinh nghiệm thuộc Mục 2.1 Chương III. Thông tin được đối chiếu trên Hệ thống mạng đấu thầu quốc gia."
+  },
+  {
+   "huong": "ngang",
+   "t": "section"
+  },
+  {
+   "text": "Phần IV. Đề xuất tài chính",
+   "t": "h1"
+  },
+  {
+   "text": "15. Bảng tiến độ thực hiện (Mẫu số 10A)",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "STT",
+     "Danh mục dịch vụ",
+     "Mô tả dịch vụ",
+     "Khối lượng mời thầu",
+     "Đơn vị tính",
+     "Địa điểm thực hiện dịch vụ",
+     "Ngày hoàn thành dịch vụ",
+     "Ngày hoàn thành dịch vụ do nhà thầu đề xuất"
+    ],
+    [
+     "1",
+     "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "Chương V mục 3.1, 3.3 và 3.5. Phân tích yêu cầu, lập đặc tả Web Selling Site System gồm cấu hình cơ sở dữ liệu (DB Configuration), chức năng (Function) điều kiện đo các yêu cầu phi chức năng và cấu hình hạ tầng vận hành, được hai bên xác nhận",
+     "1",
+     "Gói",
+     "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+     "06/05/2027"
+    ],
+    [
+     "2",
+     "Thiết kế quy trình vận hành mới (New Operational Flow)",
+     "Chương V mục 3.3. Lập quy trình vận hành mới của kênh bán hàng trực tuyến, gắn với các chức năng của hệ thống và Main System",
+     "1",
+     "Gói",
+     "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+     "06/05/2027"
+    ],
+    [
+     "3",
+     "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+     "Chương V mục 3.1 và 3.3. Thiết kế cấu trúc cơ sở dữ liệu bán hàng phù hợp với đặc tả và yêu cầu tích hợp với Main System",
+     "1",
+     "Gói",
+     "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+     "06/05/2027"
+    ],
+    [
+     "4",
+     "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+     "Chương V mục 3.3 và 3.4. Thiết kế hệ thống menu và giao diện các màn hình chính của chức năng tìm kiếm sản phẩm, quản lý thành viên, đặt hàng, bảo đảm khách hàng thao tác dễ dàng",
+     "1",
+     "Gói",
+     "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+     "06/05/2027"
+    ],
+    [
+     "5",
+     "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "Chương V mục 3.1 và 3.4. Chức năng cho khách hàng tìm kiếm sản phẩm qua internet",
+     "1",
+     "Gói",
+     "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+     "17/06/2027"
+    ],
+    [
+     "6",
+     "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "Chương V mục 3.1 và 3.4. Chức năng đăng ký và quản lý thông tin thành viên",
+     "1",
+     "Gói",
+     "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+     "17/06/2027"
+    ],
+    [
+     "7",
+     "Xây dựng chức năng đặt hàng (Order)",
+     "Chương V mục 3.1 và 3.4. Chức năng cho khách hàng đặt hàng trực tuyến",
+     "1",
+     "Gói",
+     "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+     "17/06/2027"
+    ],
+    [
+     "8",
+     "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+     "Chương V mục 3.1. Xây dựng Selling DB theo cấu trúc cơ sở dữ liệu được xác nhận tại hạng mục 3",
+     "1",
+     "Gói",
+     "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+     "17/06/2027"
+    ],
+    [
+     "9",
+     "Tích hợp với hệ thống chính (Main System)",
+     "Chương V mục 3.1. Kết nối và trao đổi dữ liệu giữa Selling DB và Main System, phục vụ quản trị bán hàng, sản phẩm, logistics, giao dịch và vận chuyển",
+     "1",
+     "Gói",
+     "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+     "17/06/2027"
+    ],
+    [
+     "10",
+     "Kiểm thử hệ thống",
+     "Chương V mục 3.2, 3.4 và 3.5. Kiểm thử chức năng trên môi trường kiểm thử do nhà thầu cung cấp, kiểm thử tích hợp trên môi trường thử của Main System, kiểm thử các yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi theo điều kiện đo đã xác nhận trên hạ tầng vận hành chính thức",
+     "1",
+     "Gói",
+     "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+     "29/06/2027"
+    ],
+    [
+     "11",
+     "Kiểm thử vận hành (Operation Test)",
+     "Chương V mục 3.2 và 3.5. Kiểm thử hệ thống trên hạ tầng vận hành chính thức theo quy trình vận hành mới, có sự tham gia của Chủ đầu tư",
+     "1",
+     "Gói",
+     "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+     "29/06/2027"
+    ],
+    [
+     "12",
+     "Chuyển giao và hướng dẫn vận hành hệ thống",
+     "Chương V mục 3.2 và 3.3. Bàn giao tài liệu chuyển giao nêu tại mục 3.3, hướng dẫn cán bộ của Chủ đầu tư vận hành hệ thống theo quy trình vận hành mới",
+     "1",
+     "Gói",
+     "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "Theo tiến độ được duyệt, trước ngày 01/07/2027",
+     "01/07/2027"
+    ],
+    [
+     "13",
+     "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "Chương V mục 3.2. Chuyển hệ thống sang vận hành chính thức ngày 01/07/2027",
+     "1",
+     "Gói",
+     "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
+     "01/07/2027",
+     "01/07/2027"
+    ]
+   ],
+   "widths": [
+    600,
+    2400,
+    4300,
+    1000,
+    900,
+    2100,
+    1400,
+    1400
+   ],
+   "center_cols": [
+    0,
+    3,
+    4,
+    7
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "16. Bảng giá dự thầu (Mẫu số 11A)",
+   "t": "h2"
+  },
+  {
+   "text": "Đơn vị tiền: đồng. Đơn giá đã bao gồm các chi phí cần thiết để thực hiện gói thầu, thuế, phí, lệ phí và chi phí dự phòng.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "STT",
+     "Danh mục dịch vụ",
+     "Mô tả dịch vụ",
+     "Khối lượng mời thầu",
+     "Đơn vị tính",
+     "Đơn giá",
+     "Thành tiền"
+    ],
+    [
+     "1",
+     "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "Chương V mục 3.1, 3.3 và 3.5. Phân tích yêu cầu, lập đặc tả Web Selling Site System gồm cấu hình cơ sở dữ liệu (DB Configuration), chức năng (Function) điều kiện đo các yêu cầu phi chức năng và cấu hình hạ tầng vận hành, được hai bên xác nhận",
+     "1",
+     "Gói",
+     "137.972.356",
+     "137.972.356"
+    ],
+    [
+     "2",
+     "Thiết kế quy trình vận hành mới (New Operational Flow)",
+     "Chương V mục 3.3. Lập quy trình vận hành mới của kênh bán hàng trực tuyến, gắn với các chức năng của hệ thống và Main System",
+     "1",
+     "Gói",
+     "22.100.556",
+     "22.100.556"
+    ],
+    [
+     "3",
+     "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+     "Chương V mục 3.1 và 3.3. Thiết kế cấu trúc cơ sở dữ liệu bán hàng phù hợp với đặc tả và yêu cầu tích hợp với Main System",
+     "1",
+     "Gói",
+     "24.442.023",
+     "24.442.023"
+    ],
+    [
+     "4",
+     "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+     "Chương V mục 3.3 và 3.4. Thiết kế hệ thống menu và giao diện các màn hình chính của chức năng tìm kiếm sản phẩm, quản lý thành viên, đặt hàng, bảo đảm khách hàng thao tác dễ dàng",
+     "1",
+     "Gói",
+     "55.682.120",
+     "55.682.120"
+    ],
+    [
+     "5",
+     "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "Chương V mục 3.1 và 3.4. Chức năng cho khách hàng tìm kiếm sản phẩm qua internet",
+     "1",
+     "Gói",
+     "258.524.009",
+     "258.524.009"
+    ],
+    [
+     "6",
+     "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "Chương V mục 3.1 và 3.4. Chức năng đăng ký và quản lý thông tin thành viên",
+     "1",
+     "Gói",
+     "254.518.869",
+     "254.518.869"
+    ],
+    [
+     "7",
+     "Xây dựng chức năng đặt hàng (Order)",
+     "Chương V mục 3.1 và 3.4. Chức năng cho khách hàng đặt hàng trực tuyến",
+     "1",
+     "Gói",
+     "344.172.402",
+     "344.172.402"
+    ],
+    [
+     "8",
+     "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+     "Chương V mục 3.1. Xây dựng Selling DB theo cấu trúc cơ sở dữ liệu được xác nhận tại hạng mục 3",
+     "1",
+     "Gói",
+     "35.653.336",
+     "35.653.336"
+    ],
+    [
+     "9",
+     "Tích hợp với hệ thống chính (Main System)",
+     "Chương V mục 3.1. Kết nối và trao đổi dữ liệu giữa Selling DB và Main System, phục vụ quản trị bán hàng, sản phẩm, logistics, giao dịch và vận chuyển",
+     "1",
+     "Gói",
+     "150.754.917",
+     "150.754.917"
+    ],
+    [
+     "10",
+     "Kiểm thử hệ thống",
+     "Chương V mục 3.2, 3.4 và 3.5. Kiểm thử chức năng trên môi trường kiểm thử do nhà thầu cung cấp, kiểm thử tích hợp trên môi trường thử của Main System, kiểm thử các yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi theo điều kiện đo đã xác nhận trên hạ tầng vận hành chính thức",
+     "1",
+     "Gói",
+     "125.109.693",
+     "125.109.693"
+    ],
+    [
+     "11",
+     "Kiểm thử vận hành (Operation Test)",
+     "Chương V mục 3.2 và 3.5. Kiểm thử hệ thống trên hạ tầng vận hành chính thức theo quy trình vận hành mới, có sự tham gia của Chủ đầu tư",
+     "1",
+     "Gói",
+     "139.404.964",
+     "139.404.964"
+    ],
+    [
+     "12",
+     "Chuyển giao và hướng dẫn vận hành hệ thống",
+     "Chương V mục 3.2 và 3.3. Bàn giao tài liệu chuyển giao nêu tại mục 3.3, hướng dẫn cán bộ của Chủ đầu tư vận hành hệ thống theo quy trình vận hành mới",
+     "1",
+     "Gói",
+     "69.653.899",
+     "69.653.899"
+    ],
+    [
+     "13",
+     "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "Chương V mục 3.2. Chuyển hệ thống sang vận hành chính thức ngày 01/07/2027",
+     "1",
+     "Gói",
+     "132.010.856",
+     "132.010.856"
+    ],
+    [
+     "",
+     "Giá dự thầu",
+     "",
+     "",
+     "",
+     "",
+     "1.750.000.000"
+    ]
+   ],
+   "widths": [
+    600,
+    2800,
+    4700,
+    1000,
+    900,
+    2000,
+    2100
+   ],
+   "center_cols": [
+    0,
+    3,
+    4
+   ],
+   "right_cols": [
+    5,
+    6
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "huong": "doc",
+   "t": "section"
+  },
+  {
+   "text": "17. Chi phí ước tính và cơ sở tính giá",
+   "t": "h2"
+  },
+  {
+   "text": "Giá dự thầu trọn gói 1.750.000.000 đồng, thấp hơn giá gói thầu 250.000.000 đồng. Khối lượng 657 MD theo WBS. Thuế GTGT: Dịch vụ phần mềm thuộc đối tượng không chịu thuế GTGT (Luật Thuế GTGT số 48/2024/QH15, khoản 21 Điều 5; Nghị định số 181/2025/NĐ-CP, khoản 13 Điều 4).",
+   "t": "p"
+  },
+  {
+   "t": "p",
+   "text": "Chi phí ước tính của gói thầu được lập từ khối lượng 657 MD theo WBS, phân theo loại công việc: Quản lý dự án 49 MD, Phân tích nghiệp vụ, kiến trúc 90 MD, Phát triển phần mềm 318 MD, Kiểm thử, bảo đảm chất lượng 160 MD, Triển khai và vận hành 40 MD. Đơn giá theo người-tháng của từng loại công việc lần lượt là 55.000.000 đồng, 43.000.000 đồng, 42.000.000 đồng, 40.000.000 đồng, 52.000.000 đồng. Đơn giá trọn gói theo người-tháng của nhà thầu, đã gồm lương, bảo hiểm và chi phí quản lý trực tiếp của nhân sự. Chi phí khác gồm chi phí môi trường, công cụ, bảo hành 12 tháng và dự phòng rủi ro, trong đó dự phòng rủi ro 50.000.000 đồng."
+  },
+  {
+   "t": "p",
+   "text": "Dự phòng được đối chiếu với sổ rủi ro. Tổng giá trị kỳ vọng (EMV) của sổ rủi ro là 141 triệu đồng, trong khoảng 105 đến 177 triệu đồng. Dự phòng chỉ dùng khi một rủi ro trong sổ xảy ra hoặc kế hoạch ứng phó được kích hoạt, không dùng để bù thay đổi phạm vi theo yêu cầu của Chủ đầu tư. Phần chi phí ứng phó vượt dự phòng do nhà thầu tự chịu trong giá trọn gói, không phát sinh chi phí cho Chủ đầu tư."
+  },
+  {
+   "t": "p",
+   "text": "Giá dự thầu được phân bổ cho 13 hạng mục Mẫu số 11A theo khối lượng các gói WBS của từng hạng mục. Giá hợp lý vì khối lượng được ước lượng theo danh mục chức năng, đối chiếu với hai hợp đồng tương tự, đơn giá theo loại công việc và bao gồm bảo hành 12 tháng. Chi tiết cơ sở tính giá theo tệp cost estimate kèm theo."
+  }
+ ],
+ "canh_bao_soan": [
+  "KE_HOACH_HOP: số liệu viết tay \"1 ngày làm việc\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi",
+  "KE_HOACH_HOP: số liệu viết tay \"2 ngày làm việc\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi"
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "tai_lieu": "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx (phiên bản 0.10)",
+ "dac_ta": ".claude/skills/qlda-risk/dac_ta/ke_hoach_rui_ro.json",
+ "luot": "Kiểm tra lớp B lượt 3 (lượt cuối), kiểm tra như mới, không đọc báo cáo lớp B trước",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 3,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục theo đặc tả, gồm thang đo, quy đổi 3x3, sổ rủi ro ba bảng, ma trận 5x5 và 3x3, ứng phó theo mức, dự phòng và dự trữ, ngưỡng, quan hệ thay đổi."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "21 rủi ro (19 đe dọa, 2 cơ hội), 4 cao, 10 trung bình, 7 thấp, hạng A 6, B 8, C 7 khớp rui_ro.json; điểm, mức, hạng, EMV từng rủi ro khớp; tổng EMV đe dọa 141.112.116 đồng (105 đến 177 triệu), 45 MD, 20,0 ngày; EMV gang 9,0 ngày (7,0 đến 11,0) của RR02, RR03, RR04, RR08, RR09, RR10 tính lại đúng; dự trữ 3 ngày khớp lich.json; dự phòng 50 triệu, khoản còn lại 402.789.877 và vốn lưu động 600 triệu khớp chi_phi.json và du_an.json; ngưỡng SPI, CPI khớp du_an.json; mốc và ngày khớp lich.json."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi rủi ro có gói WBS, mốc, cam kết CK1 đến CK8, điều khoản E-ĐKC 15, 18, Mục 17.1(c) E-ĐKCT."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi rủi ro có điều kiện đóng kiểm chứng được (biên bản, mốc, báo cáo), dấu hiệu có ngày, giờ hoặc ngưỡng số."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Dấu hiệu, người phụ trách, thời hạn hành động, ngưỡng vàng, đỏ kèm hành động, chuyển sang yêu cầu thay đổi và cập nhật tài liệu theo sơ đồ phụ thuộc."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, không in đậm, không ngoặc kép, không gạch dài. Còn một chỗ khẩu ngữ nhẹ (cảnh báo)."
+  },
+  {
+   "tieu_chi": "Mỗi rủi ro mức cao có kế hoạch ứng phó khả thi, dấu hiệu, người phụ trách",
+   "ket_qua": "dat",
+   "nhan_xet": "RR02, RR03, RR04, RR10 đủ ba nội dung, có người thực hiện và thời hạn."
+  },
+  {
+   "tieu_chi": "Rủi ro bao phủ đường găng, cut over, Main System, nhân sự bổ sung",
+   "ket_qua": "dat",
+   "nhan_xet": "RR02, RR21 (Main System), RR03, RR08, RR10 (cut over, đường găng), RR04, RR13, RR18 (nhân sự bổ sung)."
+  },
+  {
+   "tieu_chi": "Dự phòng chi phí và thời gian được so với EMV",
+   "ket_qua": "dat",
+   "nhan_xet": "Bảng mục 7 và đoạn DU_PHONG: thiếu 91 triệu, thiếu 6,0 ngày, dùng EMV gang không dùng tổng EMV thời gian."
+  },
+  {
+   "tieu_chi": "Ngưỡng cảnh báo có hành động cụ thể",
+   "ket_qua": "dat",
+   "nhan_xet": "SPI, CPI, lỗi nghiêm trọng hoặc cao kèm hành động; ngưỡng lỗi cùng cách đếm với dấu hiệu RR03, RR10 theo quyết định 25/10/2026 điểm 6."
+  },
+  {
+   "tieu_chi": "Liên kết với quy trình thay đổi",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục 9 và RR01, RR11."
+  },
+  {
+   "tieu_chi": "Mức tác động khớp thang định lượng hoặc có lý do",
+   "ket_qua": "dat",
+   "nhan_xet": "Các mức chấm bằng mức suy ra, riêng RR07 chấm 4 so với suy ra 2 có lý do KT01."
+  },
+  {
+   "tieu_chi": "Xác suất có căn cứ, EMV nêu là ước tính định hướng",
+   "ket_qua": "dat",
+   "nhan_xet": "Cột căn cứ xác suất đủ 21 dòng, mục 3 và mục 7 nêu ước tính định hướng kèm khoảng."
+  },
+  {
+   "tieu_chi": "Đối chiếu 3x3 và lý do dùng thang 5 mức",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục 3 đoạn cuối, bảng 3.4 và 5.2."
+  },
+  {
+   "tieu_chi": "Dự trữ thiếu có phương án để nhóm chốt",
+   "ket_qua": "dat",
+   "nhan_xet": "Bảng bốn phương án có cột Áp dụng, nhóm chọn chấp nhận và báo Chủ đầu tư theo du_an.json phuong_an_du_tru_thoi_gian."
+  },
+  {
+   "tieu_chi": "Có cơ hội hoặc nêu lý do",
+   "ket_qua": "dat",
+   "nhan_xet": "RR20, RR21."
+  },
+  {
+   "tieu_chi": "Nguyên nhân không viện dẫn số tổng hợp của chính sổ",
+   "ket_qua": "dat",
+   "nhan_xet": "Không có nguyên nhân dẫn tổng EMV hay số đếm của sổ."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 5.2 nhận xét: rủi ro trên chuỗi trước kiểm thử chấp nhận có số ngày chậm vượt dự trữ (RR02, RR03, RR04) có thể làm lùi ngày cut over; bảng căn cứ RR10: Suy ra mức 5 theo chậm 2 ngày ... làm lùi ngày cut over (mức 5)",
+   "mo_ta": "RR10 (chậm 2 ngày) và RR08 (chậm 1 ngày) nhỏ hơn dự trữ 3 ngày nhưng vẫn được xác định làm lùi cut over. Logic hợp lý vì hai rủi ro nằm sau các gói ghim ngày (kiểm thử chấp nhận đến 29/06, triển khai 30/06), dự trữ 3 ngày chỉ áp dụng cho chuỗi trước kiểm thử chấp nhận, nhưng tài liệu chưa nói rõ nên người đọc có thể thấy mâu thuẫn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Bổ sung một câu trong NHAN_XET_MA_TRAN: RR08, RR10 nằm sau các gói ghim ngày, khoảng từ 29/06 đến cut over chỉ còn 1 ngày làm việc nên chậm từ 1 đến 2 ngày cũng làm lùi cut over"
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "truy_vet",
+   "vi_tri": "Mục 5.2 nhận xét, câu về RR17; bảng sổ dòng RR12: Gói 4.5.5. Mốc M7 (01/07/2027)",
+   "mo_ta": "RR12 gắn mốc M7 cùng ngày cut over và được chấm làm chậm M7 (mức 4) với 1 ngày chậm, nhưng không nằm trong nhóm EMV thời gian gắn cut over (0,2 ngày). Tài liệu giải thích loại trừ RR17 nhưng không nêu lý do loại RR12. Không chắc đây là sai, vì quy tắc của script chỉ xét gói trên đường găng và mốc M6, ảnh hưởng tới kết luận dự trữ không đáng kể (9,0 lên 9,2 ngày).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận M7 có được coi là mốc cut over khi tính EMV thời gian hay không; nếu không thì thêm một câu giải thích như RR17"
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 6.1 RR04, dấu hiệu: người giữ vị trí chưa bàn giao xong công việc đang làm trước sprint huy động 5 ngày làm việc",
+   "mo_ta": "Từ xong mang tính khẩu ngữ (lớp A đã nêu VP02).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa dau_hieu RR04 trong dữ liệu sổ rủi ro: chưa hoàn thành bàn giao công việc đang làm"
+  }
+ ]
+}

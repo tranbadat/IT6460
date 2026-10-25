@@ -2,8 +2,18 @@
  "tep": "lam_viec/wbs/wbs_nhap.json",
  "ket_luan": "dat",
  "so_loi": 0,
- "so_canh_bao": 0,
- "tong_md": 657.0,
- "so_goi_la": 144,
- "phat_hien": []
+ "so_canh_bao": 1,
+ "tong_md": 733.0,
+ "so_goi_la": 173,
+ "phat_hien": [
+  {
+   "ma": "W11",
+   "muc_do": "canh_bao",
+   "nhom": "wbs",
+   "vi_tri": "5.5.3",
+   "mo_ta": "Gói 1 MD nằm ngoài khoảng 2 đến 14 MD, xem lại cách phân rã",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": ""
+  }
+ ]
 }

@@ -160,6 +160,10 @@ class GhiBienCo:
         self.cr.append({k: e.get(k) for k in ('ma_cr', 'ngay', 'tieu_de', 'mo_ta', 'ly_do', 'nguon', 'nguoi_de_xuat', 'goi_moi', 'goi_thay_doi',
                                               'ma_rui_ro', 'nhan_dinh_ban_dau') if e.get(k) not in (None, '')})
 
+    def b_huy_dong(self, e):
+        """Huy động bổ sung chỉ đổi quỹ của sprint (mp_chung.huy_dong_them), lưu trong kịch bản của du_lieu/mo_phong.json."""
+        return None
+
     def chay(self, bien_co):
         self.ap_dung_cho_xu_ly()
         for e in bien_co:

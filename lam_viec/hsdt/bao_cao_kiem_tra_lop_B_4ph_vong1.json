@@ -1,0 +1,179 @@
+{
+ "tai_lieu": "ket_qua/02_HSDT/HSDT.docx",
+ "phien_ban": "0.3",
+ "dac_ta": ".claude/skills/qlda-hsdt/dac_ta/hsdt.json",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B)",
+ "ngay_kiem_tra": "2026-10-24",
+ "ket_luan": "chua_dat",
+ "so_loi": 3,
+ "so_canh_bao": 8,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 17 mục theo đặc tả: đơn dự thầu, bảng đáp ứng, chỉ dẫn tiêu chí, Mẫu 05, 06A, 06B, 06C, 07, 08, 09A, đề xuất kỹ thuật theo 5 tiêu chí, Mẫu 10A, 11A, cơ sở tính giá. Đơn dự thầu đúng Mẫu số 02 (bỏ khoản 11 chỉ áp dụng chào hàng cạnh tranh và dòng hiệu lực bảo đảm vì giá trị dưới 50 triệu đồng là đúng ghi chú của mẫu)."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Số liệu giá (1.750.000.000 đồng, tổng 11A khớp), 657 MD, 153 gói, 4 phân hệ và tỷ trọng, 7 sprint, 9 mốc, đường găng 17 gói, dự trữ 4 ngày, huy động 796 MD, EMV 147 (110 đến 183) triệu đồng, 21 rủi ro, 5 hạng A, đơn giá theo loại công việc, bảo hành 12 tháng, các mốc HSMT đều khớp nguồn. Còn mâu thuẫn giữa lời văn HSDT và lịch: hạ tầng vận hành (MH01) và dịch vụ giả lập Main System (MH02)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Mọi mã gói WBS được dẫn (khoảng 80 mã) đều tồn tại và đúng nội dung, biện pháp rủi ro dẫn đúng sổ rủi ro, ngưỡng báo dự trữ dưới 2 ngày truy được về dau_vao/du_an.json. Riêng căn cứ 3 năm kinh nghiệm của ba nhân sự chủ chốt không truy được về kinh nghiệm đã kê khai (MH03)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Chỉ tiêu KT01 đến KT05 có cách kiểm chứng, điều kiện cut over, tiêu chí đạt hiệu năng, mốc xác nhận có biên bản. Thời hạn phản hồi lỗi mức Cao và Khác chưa cam kết (MH07)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Rủi ro chính có dấu hiệu, người phụ trách, kế hoạch ứng phó, quy trình thay đổi có thời hạn 3 ngày và thống nhất bằng văn bản theo Mục 17.1(c). Tuy vậy phương án dự phòng chính cho RR02 (dịch vụ giả lập) không khả thi theo lịch (MH02), và cách xử lý RR16 dựa trên nghĩa vụ bàn giao hạ tầng sớm hơn HSMT (MH01)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman 13 (bảng 12), không in đậm, không ngoặc kép, không gạch dài, dấu chấm phẩy chỉ trong lời mẫu biểu, căn cứ thuế và trích kinh nghiệm. Một vài lỗi viết hoa nhỏ (MH11)."
+  },
+  {
+   "tieu_chi": "DH1 Đề xuất kỹ thuật trả lời đủ 5 tiêu chí kỹ thuật theo đúng thứ tự",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục 10 đến 14 tương ứng tiêu chí 1 đến 5, bảng chỉ dẫn vị trí đủ 25 tiêu chí con."
+  },
+  {
+   "tieu_chi": "DH2 Đủ 10 nội dung đề xuất của RFP",
+   "ket_qua": "dat",
+   "nhan_xet": "Precondition (mục 10), Estimated Cost (mục 17), Project Scope và Deliverables (mục 11), Schedule, Organization, Meeting (mục 12), Roles (mục 13), Other Conditions và Request for us (mục 14), nội dung khác (đề xuất bổ sung mục 14)."
+  },
+  {
+   "tieu_chi": "DH3 Mẫu 10A và 11A theo đúng danh mục Mẫu 01A, tổng 11A bằng giá dự thầu",
+   "ket_qua": "dat",
+   "nhan_xet": "13/13 hạng mục, địa điểm và cột yêu cầu khớp HSMT, tổng 11A 1.750.000.000 đồng, ngày đề xuất khớp mốc M2, M3, M5, M6."
+  },
+  {
+   "tieu_chi": "DH4 Năng lực kinh nghiệm đáp ứng Bảng số 01, nhân sự đáp ứng Bảng số 02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Bảng số 01 đáp ứng (2 hợp đồng tương tự từ 600 triệu đồng, doanh thu bình quân 26,37 tỷ đồng, nghĩa vụ thuế 2025). Bảng số 02: đủ 1 + 3 + 1 vị trí nhưng số năm của Phạm Tuấn Anh, Vũ Đức Minh, Nguyễn Thị Phương Liên chưa được chứng minh bằng kinh nghiệm kê khai (MH03)."
+  },
+  {
+   "tieu_chi": "DH5 Không có cam kết vượt phạm vi RFP",
+   "ket_qua": "dat",
+   "nhan_xet": "Phạm vi bám 13 hạng mục Mẫu 01A, giả định ngoài phạm vi trùng đủ 12 mục wbs#gia_dinh_ngoai_pham_vi, hỗ trợ tăng cường nằm trong giá. Lưu ý MH01 là đòi hỏi Chủ đầu tư sớm hơn HSMT, không phải cam kết vượt phạm vi của nhà thầu."
+  },
+  {
+   "tieu_chi": "DH6 Không công khai khoản chi phí chung và lợi nhuận, không có bảng mức sử dụng nhân lực theo người",
+   "ket_qua": "dat",
+   "nhan_xet": "Không có từ lợi nhuận, chi phí chung hay số tiền khoản C, không có tỷ lệ sử dụng quỹ hay tải theo người. Bảng huy động chỉ theo sprint."
+  },
+  {
+   "tieu_chi": "DH7 Mọi biện pháp, cam kết, con số trong phần soạn có trong dữ liệu nguồn",
+   "ket_qua": "dat",
+   "nhan_xet": "Đã đối chiếu biện pháp của RR02, RR04, RR05, RR08, RR09, RR10, RR11, RR16, RR17, RR18, RR20, RR21 với sổ rủi ro, chỉ tiêu KT01 đến KT05, ngày CK1 đến CK6, thời hạn thay thế nhân sự 7 ngày, thanh toán 15 ngày, bảo lãnh bảo hành 5%, đơn giá và MD theo loại công việc. Không phát hiện con số ngoài nguồn."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "CL02 nhất quán với HSMT, CL05",
+   "vi_tri": "Mục 10 đoạn tiền đề: 'hạ tầng vận hành chính thức chậm nhất 10/06/2027 ... Các tiền đề này không phát sinh nghĩa vụ cho Chủ đầu tư ngoài phân định tại mục 3.5 Chương V'; mục 12 đoạn sau bảng họp: 'Các công việc phụ thuộc Chủ đầu tư được xếp không sớm hơn thời hạn cung cấp tại mục 3.5 Chương V'; bảng sprint S5 'môi trường vận hành và giám sát'; mục 11 giả định (8).",
+   "mo_ta": "HSMT (phan_dinh dòng 1 đến 3) cho Chủ đầu tư bàn giao máy chủ, đường truyền, phần mềm nền chậm nhất 10/06/2027, nhưng lịch xếp gói 4.5.1 thiết lập môi trường vận hành trên hạ tầng này từ 20/05 đến 28/05/2027, 4.5.2 từ 31/05 đến 03/06, 4.4.8 diễn tập trên môi trường vận hành từ 09/06/2027, và RR16 lấy dấu hiệu là đầu S4 (07/05) chưa có biên bản bàn giao hạ tầng. Như vậy kế hoạch cần hạ tầng sớm hơn hạn HSMT khoảng 3 tuần, mâu thuẫn với hai câu khẳng định trên. Nếu Chủ đầu tư bàn giao đúng hạn 10/06 thì không thể viện dẫn E-ĐKC 18(e) để lùi mốc, còn 4.5.1, 4.5.2, 4.4.8, 4.4.7 bị dồn sau 10/06 trong khi dự trữ chỉ 4 ngày.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Sửa ở dữ liệu lịch: thêm cam kết hạ tầng vận hành (hạn 2027-06-10, gói 4.5.1) vào cam_ket_chu_dau_tu và khong_som_hon của qlda-master-schedule, chạy lại lap_lich.py và kiểm tra dự trữ đến cut over. Nếu nhóm muốn giữ lịch hiện tại thì phải chuyển nội dung thành đề nghị rõ ràng tại mục 14 (đề nghị bàn giao hạ tầng trước 20/05/2027) và bỏ hai câu khẳng định không phát sinh nghĩa vụ, không sớm hơn thời hạn, đồng thời đánh giá rủi ro HSDT có điều kiện. Cần nhóm quyết định."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "CL02 nhất quán với lịch, CL05",
+   "vi_tri": "Mục 10: 'Phương án dự phòng cho rủi ro tích hợp RR02: ... lập dịch vụ giả lập theo đặc tả giao diện'; mục 11: 'kiểm thử tích hợp với Main System trên dịch vụ giả lập (4.4.1) và trên môi trường thử của Main System (4.4.3)'; mục 13 bảng rủi ro RR02: 'Nhóm tích hợp tiếp tục lập trình trên dịch vụ giả lập'; mục 14: 'Thứ nhất, lập dịch vụ giả lập Main System (gói 4.4.1) để lập trình và kiểm thử tích hợp không phụ thuộc thời điểm có môi trường thử, giảm tác động của rủi ro RR02 tới đường găng'.",
+   "mo_ta": "Theo lich.json gói 4.4.1 dịch vụ giả lập Main System làm từ 11/06 đến 16/06/2027, sau khi đã lập trình tích hợp 4.3.5 đến 4.3.9 (05/05 đến 19/05), kiểm thử tích hợp trên môi trường thử thật 4.4.3 (20/05 đến 28/05) và sửa lỗi 4.4.4 (31/05 đến 04/06). Gói 4.3.5 đến 4.3.9 và 4.4.3 không phụ thuộc 4.4.1. Do đó đề xuất bổ sung thứ nhất và phương án dự phòng RR02 không thực hiện được theo kế hoạch đã nộp, người chấm tiêu chí 1.2 và 5.1 có thể phát hiện mâu thuẫn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa ở dữ liệu WBS: thêm 4.4.1 vào phu_thuoc của 4.4.3 (tối thiểu) hoặc của 4.3.5 đến 4.3.9, chạy lại lập lịch, phân công, rồi tạo lại HSDT. Kiểm tra lại dự trữ 4 ngày sau khi chạy lại."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "loi",
+   "nhom": "CL03 truy vết, DH4 Bảng số 02",
+   "vi_tri": "Mục 6.4 bảng đối chiếu, cột Căn cứ tính số năm: 'Từ 03/2024 đến ngày đóng thầu 08/03/2027' cho Phạm Tuấn Anh, Vũ Đức Minh, Nguyễn Thị Phương Liên (3 năm); đoạn sau bảng: 'Phạm Tuấn Anh (3 năm) ... Vũ Đức Minh (3 năm) ... Nguyễn Thị Phương Liên (3 năm)'.",
+   "mo_ta": "Mẫu 06C của ba người chỉ kê khai hai giai đoạn 03/2024 đến 11/2024 và 01/2025 đến 07/2025, tổng khoảng 16 tháng, không có kinh nghiệm nào từ 08/2025 đến ngày đóng thầu. Bảng số 02 yêu cầu tối thiểu 02 năm. Số 3 năm được tính cả khoảng không kê khai nên không chứng minh được bằng Mẫu 06C, tổ chuyên gia có thể đánh giá không đáp ứng. Ngoài ra kinh nghiệm 01/2025 đến 12/2026 của Ninh Đức Toàn là DevOps, chưa nêu rõ là lập trình ứng dụng web.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Sửa ở dữ liệu dau_vao/thanh_vien.json: nhóm bổ sung kinh nghiệm thực tế giai đoạn 08/2025 đến 03/2027 (dự án, vai trò lập trình web, phân tích nghiệp vụ hoặc kiểm thử) cho ba người, nêu rõ nội dung lập trình web trong kinh nghiệm DevOps của Ninh Đức Toàn, rồi chạy lại tinh_hsdt.py. Không tự điền thay nhóm."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 nhất quán nội bộ",
+   "vi_tri": "Mục 13: 'Sổ rủi ro bao quát các rủi ro chính của gói thầu về tích hợp với Main System (RR02), thời gian đến ngày cut over (RR03, RR10), hiệu năng (RR06) và hoạt động liên tục (RR07) ... Kế hoạch ứng phó của các rủi ro chính nêu tại bảng rủi ro chính của mục này.'",
+   "mo_ta": "Bảng rủi ro chính chỉ có RR02, RR04, RR10 (lọc mức cao), không có RR03, RR06, RR07 được gọi là rủi ro chính ngay trước đó, và cũng không có RR01, RR13 dù đoạn văn nêu 5 rủi ro hạng A. Người đọc không tìm thấy kế hoạch ứng phó của RR03, RR06, RR07 như câu dẫn hứa.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại đoạn THAY_DOI_BAO_HANH cho câu dẫn khớp bảng (rủi ro mức cao RR02, RR04, RR10), hoặc đổi bộ lọc bảng trong đặc tả sang hạng A hoặc thêm RR03, RR06, RR07."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 nhất quán với lịch",
+   "vi_tri": "Bảng sprint, S4 Mục tiêu: 'đồng bộ dữ liệu, chuyển đơn hàng và nhận trạng thái vận chuyển theo đặc tả giao diện đã xác nhận'.",
+   "mo_ta": "Gói 4.2.6 Chủ đầu tư xác nhận đặc tả giao diện tích hợp làm từ 11/05 đến 17/05/2027, trong khi 4.3.5 bắt đầu 05/05, 4.3.6 đến 4.3.9 bắt đầu 12/05 đến 13/05 và không phụ thuộc 4.2.6. Phần lớn lập trình tích hợp diễn ra trước khi đặc tả giao diện được xác nhận, không đúng câu mục tiêu S4. Có rủi ro làm lại nếu đặc tả bị sửa khi xác nhận.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa ở dữ liệu: muc_tieu của S4 trong lich.json (ghi theo đặc tả giao diện đã lập tại 4.2.5) hoặc thêm 4.2.6 vào phu_thuoc của 4.3.5 đến 4.3.9 nếu nhóm chấp nhận thay đổi lịch."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "CL04 khả năng nghiệm thu",
+   "vi_tri": "Mục 11: 'Một công việc được coi là hoàn thành khi đạt tiêu chí hoàn thành trong kế hoạch bảo đảm chất lượng (2.1.1), đã rà soát mã nguồn (3.3.11) và đạt kiểm thử đơn vị.'",
+   "mo_ta": "Gói 3.3.11 là một lần rà soát mã nguồn và kiến trúc từ 04/06 đến 08/06/2027, sau khi hầu hết gói lập trình đã kết thúc ở S3, S4. Theo định nghĩa trên, các gói lập trình chỉ được coi là hoàn thành sau 08/06, không khớp với mốc M3 và trình diễn cuối sprint S3 đến S5.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại đoạn PHUONG_PHAP: rà soát mã nguồn theo từng yêu cầu gộp mã trong mỗi sprint, gói 3.3.11 là rà soát tổng thể mã nguồn và kiến trúc trước kiểm thử hệ thống. Chỉ nêu nếu có trong dữ liệu quy chuẩn 2.1.1, nếu không thì bỏ tham chiếu 3.3.11 khỏi định nghĩa hoàn thành."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "CL04, tiêu chí kỹ thuật 4.4",
+   "vi_tri": "Mục 13 bảng thời hạn: 'Cao | Hai bên thống nhất khi xác nhận đặc tả | 1 ngày làm việc', 'Khác | Hai bên thống nhất khi xác nhận đặc tả | 3 ngày làm việc'.",
+   "mo_ta": "Mức Tốt của tiêu chí 4.4 HSMT yêu cầu thời gian phản hồi và khắc phục cho từng mức lỗi. HSDT chỉ cam kết thời hạn phản hồi cho lỗi nghiêm trọng, hai mức còn lại để ngỏ nên có thể bị chấm dưới mức Tốt. Đúng với dữ liệu (chi_tieu_ky_thuat.json phan_hoi_gio null), không phải lỗi soạn.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định thời hạn phản hồi mức Cao và Khác, điền vào dau_vao/chi_tieu_ky_thuat.json bao_hanh.muc_loi rồi chạy lại tinh_hsdt.py."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 đầy đủ",
+   "vi_tri": "Mục 12 đoạn TO_CHUC: 'Nhân sự được huy động theo sprint như bảng huy động, từ 6 người ở S1 đến 12 người từ S3, tổng 796 MD huy động. Trương Quốc Việt tham gia từ sprint 3.'",
+   "mo_ta": "Theo thanh_vien.json có hai người vào từ S3 là Trương Quốc Việt và Phạm Ngọc Anh, còn Lê Quang Huy, Đỗ Minh Quân, Bùi Anh Tuấn, Trần Thu Hà vào từ S2. Chỉ nêu một người khiến người đọc hiểu sai mức tăng từ 10 lên 12 người.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại câu trong TO_CHUC: nêu đủ các vị trí bổ sung vào từ S2 và S3, hoặc bỏ câu nêu tên riêng."
+  },
+  {
+   "ma": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "CL02, CL06",
+   "vi_tri": "Mục 12 bảng kế hoạch họp, dòng Họp xác nhận sản phẩm theo mốc: 'Chủ đầu tư xem xét trong 5 ngày, đầu ra là biên bản xác nhận'.",
+   "mo_ta": "Lịch dành 5 ngày làm việc cho các gói xác nhận (3.1.2, 4.2.6, 4.4.6) và sổ rủi ro ghi 5 ngày làm việc, còn HSDT viết 5 ngày (theo HSMT, ngày là ngày dương lịch). HSMT không quy định thời hạn này nên đây là đề nghị đối với Chủ đầu tư, nên ghi rõ là đề nghị.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại dòng KE_HOACH_HOP: 'Nhà thầu đề nghị Chủ đầu tư xem xét trong 5 ngày làm việc'."
+  },
+  {
+   "ma": "MH10",
+   "muc_do": "canh_bao",
+   "nhom": "CL01 biểu mẫu 06B",
+   "vi_tri": "Mục 6.2 Mẫu số 06B: cột Căn cước công dân/Hộ chiếu, Số năm làm việc cho người sử dụng lao động hiện tại, Người liên lạc ghi 'Theo hồ sơ nhân sự trên Hệ thống'; cột Ngày, tháng, năm sinh chỉ có năm (1998, 2001, 2002).",
+   "mo_ta": "Biểu mẫu 06B chưa được kê khai đầy đủ trường bắt buộc. Dữ liệu hsdt_bang.json đã tự cảnh báo thiếu các trường này. Cột số năm làm việc cho người sử dụng lao động hiện tại cũng liên quan MH03.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm bổ sung can_cuoc, ngay_sinh đầy đủ, so_nam_lam_viec_hien_tai, nguoi_lien_lac trong dau_vao/thanh_vien.json (có thể dùng giá trị giả định của bài tập), chạy lại tinh_hsdt.py."
+  },
+  {
+   "ma": "MH11",
+   "muc_do": "canh_bao",
+   "nhom": "CL06 văn phong",
+   "vi_tri": "Mục 17: 'Chi phí khác gồm Môi trường, công cụ, bảo hành 12 tháng và dự phòng'; mục 6.3 Mẫu 06C các ô nội dung bắt đầu bằng chữ thường ('quản trị dự án Xây dựng hệ thống...', 'kỹ sư backend dự án Hoàng Gia...').",
+   "mo_ta": "Viết hoa giữa câu do chèn tên khoản chi phí từ dữ liệu, và ô bảng bắt đầu bằng chữ thường. Lỗi trình bày nhỏ.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa lời văn THUYET_MINH_GIA (viết thường 'môi trường') và chuẩn hóa chữ đầu ô Mẫu 06C ở bước tinh_hsdt.py (viết hoa chữ đầu)."
+  }
+ ],
+ "ghi_chu": "Đối chiếu trực tiếp HSDT với du_lieu/hsmt.json, rfp_yeu_cau.json, wbs.json, lich.json, phan_cong.json, chi_phi.json, rui_ro.json, hsdt_bang.json, dau_vao/nha_thau.json, thanh_vien.json, chi_tieu_ky_thuat.json, du_an.json, uoc_luong.json và dau_vao/Mau_5A.docx (Mẫu 02, 07). Không đọc khung.json, ban_soan.json, noi_dung*.json, giải trình hay báo cáo lớp B trước. Báo cáo lớp A vòng 1 ghi đạt, 0 lỗi."
+}

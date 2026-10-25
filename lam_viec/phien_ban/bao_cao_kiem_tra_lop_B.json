@@ -1,122 +1,97 @@
 {
- "tai_lieu": "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx (0.2), ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
- "vong": 2,
- "ket_luan": "dat",
- "so_loi": 0,
- "so_canh_bao": 6,
- "xac_nhan_vong_truoc": [
-  {
-   "ma": "MH01",
-   "ket_qua": "da_sua",
-   "nhan_xet": "Danh mục còn 19 tài liệu khớp 19 tệp trong ket_qua; 2 tệp WBS cũ tách sang mục lưu trữ, nêu rõ ở mục 1; Nhận xét ghi 18 Đã kiểm tra, 1 Dự thảo."
-  },
-  {
-   "ma": "MH02",
-   "ket_qua": "da_sua",
-   "nhan_xet": "Bảng tài liệu cần cập nhật hiển thị 'Mọi tài liệu đang dùng đầu vào mới nhất.', khớp so_can_cap_nhat 0."
-  }
- ],
+ "tai_lieu": "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx",
+ "tai_lieu_kem": "ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
+ "phien_ban": "0.10",
+ "dac_ta": ".claude/skills/qlda-phien-ban/dac_ta/tai_lieu_phien_ban.json",
+ "ngay_kiem_tra": "2026-10-25",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B, phiên riêng, lượt xác nhận sau vòng sửa phần 1 CR01)",
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 0,
  "danh_gia_tieu_chi": [
   {
    "tieu_chi": "CL01",
    "ket_qua": "dat",
-   "nhan_xet": "Đủ 8 mục theo đặc tả."
+   "nhan_xet": "Đủ quy ước, trạng thái, lưu trữ, danh mục 20 tài liệu, BL1, BL2, R1 đến R4, CR01, lịch sử, truy vết, nhận xét. Nhận xét nêu các tài liệu BL2 chưa qua lớp B khi đặt đường cơ sở và BL2 sẽ được lập lại sau lớp B lượt 2, đúng tình trạng hiện tại."
   },
   {
    "tieu_chi": "CL02",
-   "ket_qua": "dat",
-   "nhan_xet": "Số liệu khớp phien_ban_tong_hop.json (19 tài liệu, 2 lưu trữ, 81 phiên bản, 0 cần cập nhật, 0 đường cơ sở, 0 CR, 420/50 lần chạy, 5 commit) và khớp tệp thực tế."
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Danh mục phiên bản (TL02 2.1, TL08 2.2, TL09 2.2, TL13 2.2, TL14 2.1, TL15 2.1, TL07 1.1), 253 phiên bản, BL1 14, BL2 15 tài liệu, R1 đến R4 khớp phien_ban_tong_hop.json và phat_hanh. Lệch: tài liệu Word lập lúc 17:27:12, trước khi master plan được dựng lại (17:27:26) và trước bản tổng hợp hiện hành (17:27:34), nên còn ghi 1 tài liệu cần cập nhật (TL14 Master plan, đầu vào Change management plan) và 1057 lần chạy, trong khi nguồn ghi so_can_cap_nhat 0 và so_lan_chay 1065, Excel cùng thư mục ghi TL14 Cập nhật (MH01)."
   },
   {
    "tieu_chi": "CL03",
    "ket_qua": "dat",
-   "nhan_xet": "Có lịch sử, nhật ký skill, prompt, git; lưu ý MH08."
+   "nhan_xet": "Phiên bản sau hợp đồng gắn R1 đến R4 và CR01, BL2 gắn CR01 và R4, ghi chú làm lại có ngày và nơi lưu sổ cũ."
   },
   {
    "tieu_chi": "CL04",
    "ket_qua": "dat",
-   "nhan_xet": "Quy ước kiểm chứng được qua băm."
+   "nhan_xet": "Quy ước kiểm chứng được qua băm nội dung, băm đầu vào, Excel có công thức đếm."
   },
   {
    "tieu_chi": "CL05",
    "ket_qua": "dat",
-   "nhan_xet": "Đúng bối cảnh chưa ký hợp đồng, chưa BL1, chưa CR."
+   "nhan_xet": "Có phát hiện tài liệu cũ, quy định thay đổi sau đường cơ sở, kiểm tra lớp B trước khi đặt đường cơ sở mới, CR01 chỉ đóng sau khi Chủ đầu tư kiểm tra đạt."
   },
   {
    "tieu_chi": "CL06",
    "ket_qua": "dat",
-   "nhan_xet": "Văn phong trang trọng."
-  },
+   "nhan_xet": "Đúng định dạng. Dấu chấm phẩy chỉ nằm trong ghi chú lịch sử của phiên bản cũ (dữ liệu sổ)."
+  }
+ ],
+ "doc_hieu": [
   {
    "tieu_chi": "Quy ước nhất quán với sổ phiên bản",
-   "ket_qua": "dat",
-   "nhan_xet": "Trùng quy_uoc.json."
+   "ket_qua": "dat"
   },
   {
-   "tieu_chi": "Nhận xét dựa trên số liệu sổ phiên bản và mã CR",
-   "ket_qua": "dat",
-   "nhan_xet": "TL02 12, TL12 9, TL13 8 phiên bản, 0 CR."
+   "tieu_chi": "Nhận xét dựa trên số liệu sổ và mã CR",
+   "ket_qua": "dat"
   },
   {
-   "tieu_chi": "Nêu rõ tài liệu còn cần cập nhật nếu có",
+   "tieu_chi": "Nêu rõ tài liệu còn cần cập nhật",
+   "ket_qua": "chua_dat",
+   "ghi_chu": "MH01: nêu TL14 cần cập nhật trong khi nguồn hiện hành ghi 0"
+  },
+  {
+   "tieu_chi": "Bản phát hành khớp phat_hanh.json, bản cut over là chính thức",
    "ket_qua": "dat",
-   "nhan_xet": "0 cần cập nhật, nêu phụ lục còn Dự thảo và 2 tài liệu lưu trữ."
+   "ghi_chu": "Chưa có bản chính thức vì cut over 29/07/2027 chưa đến"
+  },
+  {
+   "tieu_chi": "Tài liệu thuộc từng đường cơ sở khớp sổ, BL2 có căn cứ CR đã phê duyệt",
+   "ket_qua": "dat"
+  }
+ ],
+ "dong_phat_hien_truoc": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Nhận xét đã nêu các tài liệu BL2 chưa qua lớp B trước khi đặt đường cơ sở, đã sửa thành 2.1, 2.2 ở trạng thái Dự thảo và BL2 sẽ lập lại sau lớp B lượt 2."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "lam_lai.noi_dung ghi dự trữ đến cut over theo lịch lập lại, không còn 3 ngày."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "So_phien_ban.xlsx trang Duong_co_so có phần Ghi chú làm lại với hai mục lam_lai."
   }
  ],
  "phat_hien": [
   {
-   "ma": "MH03",
-   "muc_do": "canh_bao",
-   "nhom": "CL06 Văn phong",
-   "vi_tri": "Đầu trang: 'Kết thúc dự án - Tài liệu quản lý phiên bản'",
-   "mo_ta": "Vẫn còn. Đầu trang lấy theo đặc tả, dự án đang ở giai đoạn lập kế hoạch.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Xem lại tieu_de_dau_trang trong đặc tả nếu muốn."
-  },
-  {
-   "ma": "MH04",
-   "muc_do": "canh_bao",
-   "nhom": "CL02 Nhất quán",
-   "vi_tri": "Bìa 18/03/2027; mục 3 ngày 05/03/2027 và 18/03/2027 lẫn lộn, TL01, TL02, TL12, TL19 để trống",
-   "mo_ta": "Vẫn còn. Ngày theo quy ước lịch dự án, một số tài liệu không có ngày tài liệu.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Ghi ngay_tai_lieu cho tệp xlsx, HSMT và phụ lục."
-  },
-  {
-   "ma": "MH05",
-   "muc_do": "canh_bao",
-   "nhom": "CL01 Đúng mục đích",
-   "vi_tri": "Mục 3: danh mục TL01-TL19",
-   "mo_ta": "Tài liệu quản lý phiên bản và So_phien_ban.xlsx chưa có trong danh mục.",
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "CL02",
+   "vi_tri": "Mục 1 và mục 3: '... và 1 tài liệu cần cập nhật theo đầu vào', bảng 'TL14 | Master plan | Change management plan'. Mục 8: 'Nhật ký chạy ghi 1057 lần chạy'. Mục 9: 'Số tài liệu cần cập nhật theo đầu vào là 1'",
+   "mo_ta": "Tài liệu được dựng trước lần dựng lại master plan và trước bản phien_ban_tong_hop.json hiện hành. Nguồn ghi so_can_cap_nhat 0 (TL14 không còn cũ, nội dung giữ 2.1) và so_lan_chay 1065. So_phien_ban.xlsx dựng sau ghi TL14 Cập nhật, nên Word và Excel mâu thuẫn.",
    "cach_sua": "tu_dong",
-   "de_xuat": "Cân nhắc đăng ký ở lần tổng hợp sau."
-  },
-  {
-   "ma": "MH06",
-   "muc_do": "canh_bao",
-   "nhom": "CL02 Nhất quán",
-   "vi_tri": "Mục 7: 'Nhật ký chạy ghi 420 lần chạy, trong đó 50 lần do agent'",
-   "mo_ta": "Khớp phien_ban_tong_hop.json; nhật ký hiện có 427 dòng do các lần chạy sau tổng hợp.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Chạy lại tong_hop ngay trước khi nộp."
-  },
-  {
-   "ma": "MH07",
-   "muc_do": "canh_bao",
-   "nhom": "CL03 Truy vết",
-   "vi_tri": "Mục 7 bảng git: 5 commit nội dung chung chung",
-   "mo_ta": "Commit chưa mang mã bước và phiên bản, thay đổi hiện tại chưa commit. Tài liệu đã tự nêu trong Nhận xét.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Commit theo quy ước mục 2.3."
-  },
-  {
-   "ma": "MH08",
-   "muc_do": "canh_bao",
-   "nhom": "CL03 Truy vết",
-   "vi_tri": "Mục 3: TL05 nay là WBS_3_..._tim_kiem_va_hien_thi..., TL12 là Cost_estimate.xlsx (bản 0.1: TL05 là tệp WBS cũ, TL14 là Cost_estimate.xlsx)",
-   "mo_ta": "Mã TL được đánh lại sau khi tách tài liệu lưu trữ, nên mã của cùng một tài liệu khác nhau giữa bản 0.1 và 0.2 và tài liệu lưu trữ không có mã. Nếu tài liệu khác đã trích mã TL thì có thể lệch.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Cân nhắc giữ mã TL cố định theo tệp, gán mã riêng cho tài liệu lưu trữ."
+   "sua_o": "lời văn",
+   "de_xuat": "Dựng lại tài liệu quản lý phiên bản sau cùng (sau mọi tài liệu khác), có thể gộp vào lần lập lại BL2."
   }
- ]
+ ],
+ "ghi_chu_quy_trinh": "Lỗi do thứ tự chạy, không do dữ liệu. Sẽ hết khi dựng lại tài liệu ở bước cuối của lần lập lại BL2."
 }

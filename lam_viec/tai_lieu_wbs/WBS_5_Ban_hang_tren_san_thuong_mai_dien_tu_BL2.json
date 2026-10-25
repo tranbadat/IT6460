@@ -1,0 +1,539 @@
+{
+ "meta": {
+  "ten": "WBS 5 - Bán hàng trên sàn thương mại điện tử",
+  "header": "Lập kế hoạch - WBS 5, Bán hàng trên sàn thương mại điện tử",
+  "size_bang_pt": 12,
+  "phien_ban": "1.2",
+  "ngay": "27/05/2027"
+ },
+ "blocks": [
+  {
+   "t": "center",
+   "text": "Cấu trúc phân rã công việc",
+   "size": 18
+  },
+  {
+   "t": "center",
+   "text": "Bán hàng trên sàn thương mại điện tử, mã WBS 5",
+   "size": 15
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+  },
+  {
+   "t": "center",
+   "text": "Khách hàng: Công ty Cổ phần ABC Wear"
+  },
+  {
+   "t": "center",
+   "text": "Tài liệu kế hoạch dự án, đường cơ sở BL2, cập nhật theo yêu cầu thay đổi CR01, phụ lục hợp đồng 01/2027/PL-ABCW"
+  },
+  {
+   "t": "center",
+   "text": "Phiên bản {{PHIEN_BAN}}, ngày {{NGAY}}"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "h2",
+   "text": "1. Thông tin chung"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Tổng khối lượng",
+     "75 người-ngày"
+    ],
+    [
+     "Căn cứ ước lượng",
+     "Phạm vi bổ sung theo yêu cầu thay đổi CR01 gồm kết nối sàn, đồng bộ sản phẩm và giá, đồng bộ tồn kho, nhận đơn hàng từ sàn, cập nhật trạng thái đơn hàng lên sàn, đối soát đơn hàng và thanh toán, giao diện quản trị kênh sàn, kiểm thử và hướng dẫn sử dụng, phần quản lý yêu cầu thay đổi. Ước lượng theo từng gói của phần bổ sung bằng cùng thư viện định mức với bốn phân hệ của hợp đồng, dùng lại tầng tích hợp, dịch vụ đơn hàng và dịch vụ tồn kho đã xây dựng. Ngoài nhóm này, yêu cầu thay đổi tăng khối lượng một gói hiện có là kiểm thử hồi quy 2.4.11 thuộc nhóm 2, chuyển đổi dữ liệu và triển khai chính thức 1.5.2, bàn giao mã nguồn 1.5.3 chỉ thêm phụ thuộc vào các gói của nhóm này, không tăng khối lượng. Các gói tích hợp với sàn được gán hạng mục 9 của Mẫu 01A là hạng mục tích hợp gần nhất, phần này thuộc phụ lục hợp đồng của yêu cầu thay đổi, không thuộc phạm vi hạng mục 9 khi ký hợp đồng. Tổng các gói của nhóm là 75 MD."
+    ],
+    [
+     "Yêu cầu thay đổi",
+     "CR01 bán hàng trên sàn thương mại điện tử, phụ lục hợp đồng 01/2027/PL-ABCW ngày 27/05/2027: 20 gói mới 5.1.1 đến 5.5.3."
+    ],
+    [
+     "Thời gian thực hiện",
+     "21/05/2027 - 29/07/2027 (giai đoạn Suốt dự án và Thực hiện)"
+    ],
+    [
+     "Người chịu trách nhiệm",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Phụ thuộc đầu vào",
+     "Hoàn thành các gói 1.2.4 (Thư viện thành phần giao diện dùng chung, tương thích thiết bị di động), 3.3.5 (Dịch vụ đặt hàng, xác nhận đơn và thư điện tử xác nhận), 4.2.7 (Thiết kế tích hợp gồm ánh xạ dữ liệu, xử lý lỗi và gửi lại), 4.3.5 (Đồng bộ danh mục sản phẩm và giá từ Main System), 4.3.6 (Đồng bộ tồn kho từ Main System), 4.3.8 (Nhận trạng thái vận chuyển từ Main System), 4.5.1 (Môi trường vận hành gồm hai nút ứng dụng, cân bằng tải, cơ sở dữ liệu chính và dự phòng)"
+    ],
+    [
+     "Đơn vị khối lượng",
+     "Người-ngày, viết tắt MD, tính theo 8 giờ làm việc"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "2. Sơ đồ WBS dạng cây phân cấp"
+  },
+  {
+   "t": "p",
+   "text": "Sơ đồ dùng để trao đổi với Chủ đầu tư. Bảng chi tiết ở mục 3 dùng để ước lượng, giao việc và theo dõi tiến độ."
+  },
+  {
+   "t": "p",
+   "text": "5. Bán hàng trên sàn thương mại điện tử",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "5.1. Quản lý dự án, phần bán hàng trên sàn thương mại điện tử",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "5.1.1. Quản lý yêu cầu thay đổi, phụ lục hợp đồng, theo dõi tiến độ và hồ sơ nghiệm thu phần bán hàng trên sàn thương mại điện tử",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.2. Phân tích và thiết kế bán hàng trên sàn thương mại điện tử",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "5.2.1. Khảo sát quy trình bán hàng trên sàn thương mại điện tử và giao diện lập trình của sàn",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.2.2. Đặc tả chức năng và use case đồng bộ sản phẩm, tồn kho, giá, nhận đơn, cập nhật trạng thái và đối soát với sàn",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.2.3. Thiết kế tích hợp với sàn gồm xác thực, ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.2.4. Xác nhận đặc tả bán hàng trên sàn thương mại điện tử của Chủ đầu tư",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.3. Xây dựng chức năng bán hàng trên sàn thương mại điện tử (lập trình và kiểm thử đơn vị)",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "5.3.1. Kết nối sàn gồm xác thực, cấu hình cửa hàng và quản lý khóa truy cập",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.3.2. Đồng bộ sản phẩm và giá lên sàn",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.3.3. Đồng bộ tồn kho lên sàn",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.3.4. Nhận đơn hàng từ sàn vào luồng xử lý đơn hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.3.5. Cập nhật trạng thái đơn hàng và vận chuyển lên sàn",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.3.6. Đối soát đơn hàng và thanh toán với sàn",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.3.7. Giao diện quản trị kênh sàn gồm ánh xạ sản phẩm, theo dõi đồng bộ và kết quả đối soát",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.4. Kiểm thử bán hàng trên sàn thương mại điện tử",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "5.4.1. Kịch bản kiểm thử bán hàng trên sàn thương mại điện tử",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.4.2. Kiểm thử tích hợp với môi trường thử của sàn",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.4.3. Kiểm thử hệ thống luồng bán hàng trên sàn gồm đồng bộ, nhận đơn, trạng thái và đối soát",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.4.4. Khắc phục lỗi và kiểm thử lại sau kiểm thử bán hàng trên sàn",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.4.5. Tổ chức và hỗ trợ kiểm thử chấp nhận bán hàng trên sàn cùng Chủ đầu tư",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.5. Triển khai và hướng dẫn sử dụng bán hàng trên sàn thương mại điện tử",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "5.5.1. Cấu hình kết nối sàn trên môi trường vận hành",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.5.2. Tài liệu và buổi hướng dẫn sử dụng bán hàng trên sàn cho cán bộ Chủ đầu tư",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.5.3. Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện phần bán hàng trên sàn thương mại điện tử",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h2",
+   "text": "3. Bảng chi tiết"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi gói công việc gắn với một sản phẩm kiểm tra được, có khối lượng ước lượng được và giao được cho một người."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã WBS",
+     "Tên công việc",
+     "Mức",
+     "Khối lượng, MD",
+     "Loại công việc",
+     "Giai đoạn, sprint",
+     "Sản phẩm đầu ra"
+    ],
+    [
+     "5.1",
+     "Quản lý dự án, phần bán hàng trên sàn thương mại điện tử",
+     "2",
+     "3",
+     "",
+     "Suốt dự án",
+     ""
+    ],
+    [
+     "5.1.1",
+     "Quản lý yêu cầu thay đổi, phụ lục hợp đồng, theo dõi tiến độ và hồ sơ nghiệm thu phần bán hàng trên sàn thương mại điện tử",
+     "3",
+     "3",
+     "PM",
+     "Suốt dự án",
+     "Phiếu yêu cầu thay đổi, phụ lục hợp đồng, báo cáo tiến độ và biên bản nghiệm thu phần bán hàng trên sàn"
+    ],
+    [
+     "5.2",
+     "Phân tích và thiết kế bán hàng trên sàn thương mại điện tử",
+     "2",
+     "14",
+     "",
+     "S5-S6",
+     ""
+    ],
+    [
+     "5.2.1",
+     "Khảo sát quy trình bán hàng trên sàn thương mại điện tử và giao diện lập trình của sàn",
+     "3",
+     "3",
+     "BA",
+     "S5",
+     "Báo cáo khảo sát quy trình và giao diện lập trình của sàn"
+    ],
+    [
+     "5.2.2",
+     "Đặc tả chức năng và use case đồng bộ sản phẩm, tồn kho, giá, nhận đơn, cập nhật trạng thái và đối soát với sàn",
+     "3",
+     "5",
+     "BA",
+     "S6",
+     "Đặc tả chức năng và use case bán hàng trên sàn"
+    ],
+    [
+     "5.2.3",
+     "Thiết kế tích hợp với sàn gồm xác thực, ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+     "3",
+     "4",
+     "DEV",
+     "S6",
+     "Thiết kế tích hợp với sàn thương mại điện tử"
+    ],
+    [
+     "5.2.4",
+     "Xác nhận đặc tả bán hàng trên sàn thương mại điện tử của Chủ đầu tư",
+     "3",
+     "2",
+     "BA",
+     "S6",
+     "Biên bản xác nhận đặc tả bán hàng trên sàn"
+    ],
+    [
+     "5.3",
+     "Xây dựng chức năng bán hàng trên sàn thương mại điện tử (lập trình và kiểm thử đơn vị)",
+     "2",
+     "33",
+     "",
+     "S6-S7",
+     ""
+    ],
+    [
+     "5.3.1",
+     "Kết nối sàn gồm xác thực, cấu hình cửa hàng và quản lý khóa truy cập",
+     "3",
+     "4",
+     "DEV",
+     "S6",
+     "Chức năng kết nối sàn đạt kiểm thử đơn vị"
+    ],
+    [
+     "5.3.2",
+     "Đồng bộ sản phẩm và giá lên sàn",
+     "3",
+     "5",
+     "DEV",
+     "S6-S7",
+     "Chức năng đồng bộ sản phẩm và giá đạt kiểm thử đơn vị"
+    ],
+    [
+     "5.3.3",
+     "Đồng bộ tồn kho lên sàn",
+     "3",
+     "4",
+     "DEV",
+     "S6",
+     "Chức năng đồng bộ tồn kho đạt kiểm thử đơn vị"
+    ],
+    [
+     "5.3.4",
+     "Nhận đơn hàng từ sàn vào luồng xử lý đơn hàng",
+     "3",
+     "6",
+     "DEV",
+     "S6",
+     "Chức năng nhận đơn hàng từ sàn đạt kiểm thử đơn vị"
+    ],
+    [
+     "5.3.5",
+     "Cập nhật trạng thái đơn hàng và vận chuyển lên sàn",
+     "3",
+     "4",
+     "DEV",
+     "S6-S7",
+     "Chức năng cập nhật trạng thái lên sàn đạt kiểm thử đơn vị"
+    ],
+    [
+     "5.3.6",
+     "Đối soát đơn hàng và thanh toán với sàn",
+     "3",
+     "5",
+     "DEV",
+     "S7",
+     "Chức năng đối soát đạt kiểm thử đơn vị"
+    ],
+    [
+     "5.3.7",
+     "Giao diện quản trị kênh sàn gồm ánh xạ sản phẩm, theo dõi đồng bộ và kết quả đối soát",
+     "3",
+     "5",
+     "DEV",
+     "S6-S7",
+     "Giao diện quản trị kênh sàn đạt kiểm thử đơn vị"
+    ],
+    [
+     "5.4",
+     "Kiểm thử bán hàng trên sàn thương mại điện tử",
+     "2",
+     "19",
+     "",
+     "S6-S9",
+     ""
+    ],
+    [
+     "5.4.1",
+     "Kịch bản kiểm thử bán hàng trên sàn thương mại điện tử",
+     "3",
+     "3",
+     "QA",
+     "S6",
+     "Bộ kịch bản kiểm thử bán hàng trên sàn"
+    ],
+    [
+     "5.4.2",
+     "Kiểm thử tích hợp với môi trường thử của sàn",
+     "3",
+     "6",
+     "QA",
+     "S7",
+     "Báo cáo kiểm thử tích hợp với sàn"
+    ],
+    [
+     "5.4.3",
+     "Kiểm thử hệ thống luồng bán hàng trên sàn gồm đồng bộ, nhận đơn, trạng thái và đối soát",
+     "3",
+     "4",
+     "QA",
+     "S7-S8",
+     "Báo cáo kiểm thử hệ thống luồng bán hàng trên sàn"
+    ],
+    [
+     "5.4.4",
+     "Khắc phục lỗi và kiểm thử lại sau kiểm thử bán hàng trên sàn",
+     "3",
+     "3",
+     "DEV",
+     "S8",
+     "Phiên bản đã khắc phục lỗi kiểm thử bán hàng trên sàn và kết quả kiểm thử lại"
+    ],
+    [
+     "5.4.5",
+     "Tổ chức và hỗ trợ kiểm thử chấp nhận bán hàng trên sàn cùng Chủ đầu tư",
+     "3",
+     "3",
+     "QA",
+     "S9",
+     "Biên bản kiểm thử chấp nhận phần bán hàng trên sàn"
+    ],
+    [
+     "5.5",
+     "Triển khai và hướng dẫn sử dụng bán hàng trên sàn thương mại điện tử",
+     "2",
+     "6",
+     "",
+     "S7-S8",
+     ""
+    ],
+    [
+     "5.5.1",
+     "Cấu hình kết nối sàn trên môi trường vận hành",
+     "3",
+     "2",
+     "DEVOPS",
+     "S8",
+     "Kết nối sàn được cấu hình trên môi trường vận hành"
+    ],
+    [
+     "5.5.2",
+     "Tài liệu và buổi hướng dẫn sử dụng bán hàng trên sàn cho cán bộ Chủ đầu tư",
+     "3",
+     "3",
+     "BA",
+     "S7",
+     "Tài liệu hướng dẫn và biên bản hướng dẫn sử dụng bán hàng trên sàn"
+    ],
+    [
+     "5.5.3",
+     "Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện phần bán hàng trên sàn thương mại điện tử",
+     "3",
+     "1",
+     "DEV",
+     "S8",
+     "Mã nguồn và tài liệu kỹ thuật phần bán hàng trên sàn được đưa vào bộ hồ sơ bàn giao"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "",
+     "75",
+     "",
+     "",
+     ""
+    ]
+   ],
+   "widths": [
+    900,
+    3000,
+    600,
+    1000,
+    900,
+    1200,
+    1700
+   ],
+   "center_cols": [
+    2,
+    4,
+    5
+   ],
+   "right_cols": [
+    3
+   ],
+   "dong_dam": [
+    1,
+    3,
+    8,
+    16,
+    22
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Kiểm tra quy tắc 100%"
+  },
+  {
+   "t": "p",
+   "text": "Tổng khối lượng các hạng mục mức 2, 3 cộng 14 cộng 33 cộng 19 cộng 6, bằng 75 người-ngày, khớp với khối lượng khai báo ở mức 1. Kết luận: cân bằng."
+  }
+ ]
+}

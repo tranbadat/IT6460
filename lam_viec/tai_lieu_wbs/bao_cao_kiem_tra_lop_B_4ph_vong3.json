@@ -1,0 +1,108 @@
+{
+ "tai_lieu": [
+  "ket_qua/03_WBS/WBS_1_Phan_he_quan_ly_san_pham.docx (v0.8)",
+  "ket_qua/03_WBS/WBS_2_Phan_he_quan_ly_khach_hang_thanh_vien.docx (v0.7)",
+  "ket_qua/03_WBS/WBS_3_Phan_he_quan_ly_don_hang_dat_hang.docx (v0.7)",
+  "ket_qua/03_WBS/WBS_4_Phan_he_tich_hop_he_thong.docx (v0.6)",
+  "ket_qua/03_WBS/WBS_tong_hop.docx (v0.12)"
+ ],
+ "buoc": "tai_lieu_wbs",
+ "luot": "Kiểm tra lớp B lượt 3 (lượt cuối), kiểm tra như mới, không đọc báo cáo lớp B cũ",
+ "dac_ta": ".claude/skills/qlda-wbs/dac_ta/tai_lieu_wbs.json",
+ "nguon_da_doi_chieu": [
+  "du_lieu/wbs.json",
+  "dau_vao/uoc_luong.json",
+  "du_lieu/lich.json",
+  "du_lieu/phan_cong.json",
+  "dau_vao/nha_thau.json",
+  "dau_vao/du_an.json",
+  "lam_viec/tai_lieu_wbs/*_kiem_tra.json (lớp A)"
+ ],
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 5,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ các mục theo quy tắc trình bày: tệp nhóm có thông tin chung, sơ đồ cây, bảng chi tiết, kiểm tra quy tắc 100%; tệp tổng hợp có khối lượng theo nhóm và loại, căn cứ ước lượng, cấu trúc mức 1 và 2, ma trận truy vết, phân bổ Mẫu 01A, giả định ngoài phạm vi."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Đối chiếu bằng script: tên, mức, MD, loại, sản phẩm, giai đoạn hoặc sprint của 177 mục trong bốn tệp nhóm khớp du_lieu/wbs.json và du_lieu/lich.json; tổng nhóm 151; 146,50; 207,50; 152, toàn bộ 657 MD, 153 gói; MD theo loại khớp md_theo_loai; bảng căn cứ ước lượng khớp can_cu_uoc_luong và uoc_luong.json (573,6; 550,3; 106,7; phần riêng 410, phần chung 247 phân bổ theo tỷ lệ, khoảng sai số 558,45 đến 854,10); hợp đồng tương tự 550 và 420 MD khớp nha_thau.json, tỷ lệ 83,7%, 63,9%, chênh 35,5% đúng; phụ thuộc đầu vào và người chịu trách nhiệm khớp wbs.json và phan_cong.json; ngày tài liệu 05/03/2027 bằng ngay_ky_don."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Ma trận truy vết 48 yêu cầu khớp trường nguon của gói lá, 5 yêu cầu không cần gói có lý do; mọi gói lá có mã RFP và hạng mục 01A; phân bổ 13 hạng mục 01A tính lại khớp, tổng 657,00 (làm tròn phân bổ lại ở dòng 11 đến 13)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi gói lá có sản phẩm đầu ra kiểm tra được (biên bản, báo cáo, chức năng đạt kiểm thử đơn vị). Mỗi mục kiểm thử phân hệ 1.4, 2.4, 3.4, 4.4 có gói sửa lỗi và kiểm thử lại."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Giả định nêu cam kết đầu vào của Chủ đầu tư, rủi ro RR02, RR16 và quy trình yêu cầu thay đổi sau xác nhận đặc tả; gói quản lý rủi ro và thay đổi có trong từng phân hệ."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman 13, bảng 12, A4, bảng lưới có dòng tiêu đề lặp; chỉ mục cha in đậm; không có gạch dài, dấu chấm phẩy, ngoặc kép, chữ viết hoa toàn bộ, dấu giữ chỗ. Còn cảnh báo về cách gọi tên phân hệ và tên gói dạng mệnh đề (MH01, MH02)."
+  },
+  {
+   "tieu_chi": "doc_hieu",
+   "ket_qua": "dat",
+   "nhan_xet": "Mức 2 của bốn phân hệ đủ năm mục theo vòng đời; không có gói chức năng quản trị nội bộ; kết nối máy chủ thư (4.3.4) và năm luồng Main System (4.3.5 đến 4.3.9) là gói riêng trong phân hệ tích hợp; sơ đồ cây và bảng chi tiết khớp mã, tên, thứ tự, in đậm mục cha; ngày tài liệu đúng ngày ký đơn."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan_ten_phan_he",
+   "vi_tri": "Tên gói 1.4.1, 1.4.5, 1.4.7, 1.4.12 (phân hệ tìm kiếm và hiển thị sản phẩm), 2.4.1, 2.4.5, 2.4.7, 2.4.13 (phân hệ thành viên), 3.4.1, 3.4.9, 3.4.14 (phân hệ đặt hàng) trong WBS_1, WBS_2, WBS_3 và mục 5, 6 của WBS_tong_hop",
+   "mo_ta": "Trong cùng tài liệu, mục mức 1 và mức 2 dùng tên do nhóm đặt (phân hệ quản lý sản phẩm, quản lý khách hàng, quản lý đơn hàng) nhưng 11 gói lá gọi phân hệ bằng tên khác, gần tên RFP. dau_vao/uoc_luong.json _nguon_ten_nhom và quyết định 25/10 (10) quy định ánh xạ tên RFP chỉ nêu trong mô tả hoặc truy vết, không dùng làm tên phân hệ. Chưa chắc là lỗi vì tên nhóm có phần trong ngoặc (thành viên), (đặt hàng) và tìm kiếm, hiển thị là phạm vi đã khai báo, nên ghi cảnh báo.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa tên 11 gói trong bản nháp WBS (dữ liệu), ví dụ 2.4.1 Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ quản lý khách hàng, rồi chạy lại wbs và xuat_wbs.py. Đổi tên gói làm các tài liệu dùng tên gói (lịch, phân công, HSDT) báo cũ."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "ten_goi",
+   "vi_tri": "3.1.2 Chủ đầu tư xem xét, xác nhận kế hoạch quản lý dự án; 3.2.5 Hai bên xác nhận đặc tả yêu cầu và giao diện ưu tiên; 4.2.6 Chủ đầu tư xem xét, xác nhận đặc tả giao diện tích hợp với Main System; 4.4.6 Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System",
+   "mo_ta": "Tiêu chí đọc hiểu yêu cầu tên gói dạng danh từ, bốn tên này viết thành mệnh đề có chủ ngữ và động từ.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Đổi trong dữ liệu WBS thành cụm danh từ, ví dụ Xác nhận kế hoạch quản lý dự án của Chủ đầu tư, Xác nhận đặc tả yêu cầu và giao diện ưu tiên của hai bên, Kiểm tra của Chủ đầu tư đối với chức năng chính và tích hợp với Main System. Có thể gộp với MH01 trong cùng lần chạy lại."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "can_cu_uoc_luong",
+   "vi_tri": "WBS_tong_hop mục 3, đoạn sau bảng đối chiếu hợp đồng tương tự: vốn chỉ gồm website, ba phân hệ và tầng tích hợp với hệ thống nội bộ ... diễn tập chuyển đổi dự phòng (4.5.1, 1.4.8, 1.4.9, 4.4.8, 3.5.3)",
+   "mo_ta": "Câu mô tả chung cho hai hợp đồng chỉ khớp mô tả hợp đồng Hoàng Gia trong nha_thau.json. Hợp đồng An Phát được mô tả gồm danh mục, giỏ hàng, đặt hàng, đồng bộ tồn kho, tích hợp ERP và đơn vị giao vận, không nêu ba phân hệ. Ở lý do thứ hai, gói 3.5.3 là diễn tập triển khai và chuyển đổi dữ liệu, không thuộc nhóm hoạt động liên tục, chuyển đổi dự phòng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa lời văn giai_trinh_tuong_tu trong bản nháp WBS: nêu riêng phạm vi từng hợp đồng theo mo_ta của nha_thau.json, bỏ 3.5.3 khỏi danh sách lý do thứ hai (đã có trong lý do thứ ba)."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "can_cu_uoc_luong",
+   "vi_tri": "Căn cứ nhóm 3 (WBS_3 mục 1 và WBS_tong_hop mục 3): Kế hoạch quản lý dự án, xác nhận kế hoạch, cập nhật sổ rủi ro sau xác nhận đặc tả và rà soát mã nguồn thuộc phần quản lý dự án được gán cho nhóm này",
+   "mo_ta": "Câu xếp rà soát mã nguồn vào phần quản lý dự án, nhưng gói 3.3.11 nằm ở mục 3.3 Xây dựng, loại DEV. Người đọc khó đối chiếu phần quản lý phân bổ 18,88 MD với mục 3.1 là 15,50 MD.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa lời văn cach_phan_ra của nhóm 3: nêu rõ rà soát mã nguồn (3.3.11) là đầu việc chung đặt ở mục 3.3, tương tự cách giải trình mục 4.1 của nhóm 4."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "gia_dinh",
+   "vi_tri": "WBS_tong_hop mục 7: Nhà thầu đề nghị Chủ đầu tư bàn giao hạ tầng máy chủ vận hành chính thức trước 20/05/2027 (CK7); Mọi sửa đổi phía Main System do Chủ đầu tư thực hiện",
+   "mo_ta": "Cam kết CK7 có hạn 20/05/2027 và quy tắc bàn giao chậm nhất 9 giờ 00 ngày hạn (_quy_tac_ngay_ban_giao), gói 4.5.1 bắt đầu đúng 20/05/2027, nên chữ trước 20/05/2027 khác cách viết chậm nhất của CK1 đến CK4. Giả định về sửa đổi phía Main System chưa nêu hạn 20/05/2027 của CK8, trong khi lịch dùng CK8 làm ràng buộc của 4.4.3.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa lời văn gia_dinh_ngoai_pham_vi trong bản nháp WBS: chậm nhất 9 giờ 00 ngày 20/05/2027 (CK7), bổ sung Chủ đầu tư hoàn thành thay đổi phía Main System chậm nhất 20/05/2027 (CK8)."
+  }
+ ]
+}

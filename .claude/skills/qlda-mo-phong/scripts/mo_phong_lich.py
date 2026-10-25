@@ -112,10 +112,13 @@ class MoPhongLich:
             for g in [g for (q, g) in self.need if q == p]:
                 theo_nguoi.setdefault(p, []).append(g)
         cham_vi_khong_huy_dong = set()
+        # quỹ huy động của người trong kỳ (lich.json phan_bo, gồm huy động theo nhu cầu ty_le_theo_sprint của thanh_vien.json): tổng công
+        # ghi trong kỳ không vượt quỹ (MP05), tốc độ mỗi ngày vẫn theo ty_le (từ 1.0.4)
+        con_ky = {p: int(round(float(self.ctx.quy.get((p, self.sp), 0)) * self.Q)) for p in theo_nguoi}
         for d in self.ngay:
             cham_hom_nay = set()
             for p, ds in theo_nguoi.items():
-                con = self.cap(p, d)
+                con = min(self.cap(p, d), con_ky[p])
                 ung_vien = [g for g in ds if g not in self.xong and self.done.get((p, g), 0) < self.need[(p, g)]
                             and d >= self.cua_so[g][0] and self.du_phu_thuoc(g, d)]
                 if ung_vien and not self.ctx.quy.get((p, self.sp)):
@@ -127,7 +130,7 @@ class MoPhongLich:
                     muc = self.muc_tieu(k, d)
                     giao = min(max(0, muc - self.done.get(k, 0)), con)
                     if giao:
-                        self.done[k] = self.done.get(k, 0) + giao; con -= giao
+                        self.done[k] = self.done.get(k, 0) + giao; con -= giao; con_ky[p] -= giao
                         rows.append({'ngay': d.isoformat(), 'thanh_vien': p, 'ma_goi': g, 'md': giao / self.Q, 'ghi_chu': ''})
                         cham_hom_nay.add(g)
             for g in cham_hom_nay:

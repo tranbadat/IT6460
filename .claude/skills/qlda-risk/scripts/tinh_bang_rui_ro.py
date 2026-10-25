@@ -171,7 +171,7 @@ ng = da.get('nguong_canh_bao', {})
 kpi = {'cot': ['Chỉ số', 'Ngưỡng vàng', 'Ngưỡng đỏ', 'Hành động khi chạm ngưỡng'], 'dong': [
     ['SPI', f'dưới {loi.so(ng.get("spi_vang", 0.95), 2)}', f'dưới {loi.so(ng.get("spi_do", 0.85), 2)}', 'Rà soát rủi ro tiến độ, kích hoạt kế hoạch ứng phó của rủi ro liên quan'],
     ['CPI', f'dưới {loi.so(ng.get("cpi_vang", 0.95), 2)}', f'dưới {loi.so(ng.get("cpi_do", 0.85), 2)}', 'Rà soát rủi ro chi phí, xem xét dùng dự phòng theo quy định'],
-    ['Lỗi nghiêm trọng đang mở', 'từ 2', 'từ 4', 'Ưu tiên khắc phục, đánh giá lại rủi ro chất lượng']], 'widths': [1300, 1600, 1600, 4800]}
+    ['Lỗi nghiêm trọng hoặc cao đang mở (cùng cách đếm với dấu hiệu RR03, RR10)', 'từ 2', 'từ 4', 'Ưu tiên khắc phục, đánh giá lại rủi ro chất lượng, mức đỏ kích hoạt kế hoạch ứng phó của RR03, RR10']], 'widths': [1300, 1600, 1600, 4800]}
 dt = danh_gia_du_tru()
 pa = bang_phuong_an(dt)
 chon_pa = pa.pop('chon')

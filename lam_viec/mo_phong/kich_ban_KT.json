@@ -1,0 +1,144 @@
+{
+ "sprint": "KT",
+ "tom_tat": "Giai đoạn Kết thúc sau cut over: hỗ trợ tăng cường, ghi nghĩa vụ bảo hành đã cam kết, báo cáo tổng kết và bàn giao hồ sơ (mốc M8), rà soát và đóng các rủi ro còn theo dõi.",
+ "bien_co": [
+  {
+   "loai": "chi_phi",
+   "ngay": "2027-07-30",
+   "khoan_muc": "B2",
+   "so_tien": 40000000,
+   "ghi_chu": "Nghĩa vụ bảo hành 12 tháng sau cut over đã cam kết theo hợp đồng, chưa chi",
+   "loai_chi": "cam_ket",
+   "lien_ket": [
+    "M6"
+   ],
+   "ly_do": "Ghi nghĩa vụ bảo hành đã cam kết theo khoản B2 của dự toán khi hệ thống đưa vào vận hành"
+  },
+  {
+   "loai": "moc",
+   "ma_moc": "M8",
+   "ngay_dat": "2027-08-04",
+   "ghi_chu": "Biên bản kết thúc dự án, báo cáo tổng kết và bàn giao hồ sơ ngày 04/08/2027",
+   "ly_do": "Gói báo cáo tổng kết, bài học kinh nghiệm và bàn giao hồ sơ 1.1.5 hoàn thành"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR10",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR13",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR22",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR08",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR15",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR03",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR16",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR05",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR07",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR11",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR12",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR09",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR14",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR20",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR17",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR18",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  },
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR19",
+   "ngay": "2027-08-04",
+   "trang_thai": "Đã đóng",
+   "ly_do": "Rà soát sổ rủi ro khi kết thúc dự án: hệ thống đã đưa vào vận hành và bàn giao, sự kiện rủi ro không còn khả năng xảy ra trong phạm vi dự án"
+  }
+ ]
+}

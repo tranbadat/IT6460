@@ -1,0 +1,23 @@
+{
+ "CACH_LAM": [
+  "Bài học được thu thập từ họp cải tiến cuối mỗi sprint S1 đến S9 (ghi chép R-Sx-nn trong retro.md), họp tổng kết khi đóng dự án và đối chiếu với báo cáo đánh giá dự án. Người tham gia gồm các thành viên nhóm và vị trí bổ sung, quản trị dự án Trần Bá Đạt chủ trì, đầu mối Chủ đầu tư góp ý các bài học về giao tiếp và nghiệm thu.",
+  "Mỗi bài học được gắn mã bằng chứng có trong dữ liệu dự án (yêu cầu thay đổi, rủi ro, ghi chép cải tiến, nghiệm thu, lỗi, chỉ tiêu, mốc, sprint, gói WBS) và được kiểm tra tự động trước khi đưa vào báo cáo. Số liệu thực hiện là số liệu mô phỏng."
+ ],
+ "TONG_HOP": [
+  "Bài học quan trọng nhất về quản lý thay đổi là yêu cầu thay đổi lớn giữa dự án vẫn kiểm soát được khi tác động được lượng hóa nhanh và phụ lục ghi đủ giá, mốc, đợt thanh toán (BH01), nhưng đường cơ sở sau thay đổi chỉ nên lập sau khi tài liệu qua kiểm tra độc lập (BH02).",
+  "Các rủi ro đã xảy ra RR02, RR04, RR06 đều cho bài học về theo dõi đầu vào bên ngoài (BH03), xác nhận ngày có mặt của vị trí bổ sung (BH04) và đo chỉ tiêu phi chức năng liên tục (BH06). Bài học về huy động sát nhu cầu ở các sprint kiểm thử (BH05) và về môi trường kiểm thử giống vận hành (BH07) là hai điểm cần cải thiện có tác động lớn nhất đến tiến độ cuối dự án. Không có chỉ tiêu KPI không đạt."
+ ],
+ "CAI_TIEN": [
+  ["Quản lý thay đổi", "Đặt bước kiểm tra lớp B và trạng thái Đã kiểm tra trước lệnh lập đường cơ sở sau thay đổi, giữ thời hạn quyết định 5 ngày làm việc và mẫu phụ lục có đợt thanh toán gắn mốc", "BH01, BH02"],
+  ["Lập lịch và huy động", "Mức huy động của các sprint kiểm thử và trước cut over có phần dư tối thiểu 15% MD xếp, báo cáo tiến độ theo dõi MD huy động bổ sung", "BH05"],
+  ["Quản lý rủi ro", "Danh sách cam kết của Chủ đầu tư và bên thứ ba có ngày nhắc trước 5 ngày làm việc, dấu hiệu rủi ro đầu vào bên ngoài theo dõi trong họp tiến độ hằng tuần", "BH03, BH11"],
+  ["Huy động nhân sự", "Xác nhận bằng văn bản ngày có mặt của vị trí bổ sung 5 ngày làm việc trước sprint huy động", "BH04"],
+  ["Kiểm thử và nghiệm thu", "Đo thời gian phản hồi trong quy trình tích hợp liên tục, môi trường kiểm thử hai nút từ kiểm thử phân hệ, ca kiểm thử nhánh thất bại và gửi lặp trong bộ kiểm thử tự động", "BH06, BH07, BH08"],
+  ["Ước lượng WBS và khảo sát", "Ước lượng lại các gói nghiệp vụ thanh toán, hoàn tiền sau khi đặc tả được xác nhận, danh mục khảo sát có điều kiện kỹ thuật của hệ thống bên ngoài", "BH09, BH12"],
+  ["Báo cáo tiến độ", "Mọi gói chậm trên ngưỡng có vấn đề trong sổ với hành động, người và hạn trong sprint kế tiếp", "BH10"]
+ ],
+ "KET_LUAN": [
+  "Dự án rút ra {bh#bai_hoc|dem} bài học, gồm cả thực hành tốt cần duy trì và điểm cần cải thiện, phủ đủ các nhóm bắt buộc.",
+  "Báo cáo và dữ liệu bài học được lưu trong kho tài liệu dự án cùng sổ phiên bản, quản trị dự án Trần Bá Đạt phổ biến tại buổi chia sẻ của nhóm và chịu trách nhiệm đưa các thay đổi quy trình vào bộ kế hoạch của dự án sau."
+ ]
+}

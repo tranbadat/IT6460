@@ -1,0 +1,130 @@
+{
+ "tai_lieu": "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx; ket_qua/06_Cost_estimate/Cost_estimate.xlsx",
+ "dac_ta": ".claude/skills/qlda-cost-estimate/dac_ta/thuyet_minh_du_toan.json",
+ "phien_ban": {
+  "Thuyet_minh_du_toan.docx": "0.14",
+  "Cost_estimate.xlsx": "0.15"
+ },
+ "vong_lop_B": 2,
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 6,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục theo đặc tả: căn cứ, nhân công, tổng hợp và giá chào, chi phí khác và dự phòng, đối chiếu lương, phân bổ Mẫu 01A, phân bổ WBS, dòng tiền, độ nhạy. Các đoạn soạn đạt yêu cầu tối thiểu và có đủ cụm bắt buộc (657 MD, Mẫu 11A, RR13, CPI)."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Đã đối chiếu từng số với du_lieu/chi_phi.json, rui_ro.json, lich.json, wbs.json, don_gia.json, thanh_vien.json, hsmt.json: A 1.420.050.000, B 150.000.000 (B1 60, B2 40, B3 50 triệu theo don_gia.json), C 179.950.000, giá chào 1.750.000.000, EMV 141.112.116 (khoảng 105.231.347 đến 176.992.886), lương kế hoạch 1.197.210.123, C sau lương 402.789.877, 816 MD huy động, 159 MD sẵn sàng, 153 gói lá, 5 đợt thanh toán đúng tỷ lệ HSMT, ngày thu = ngày sự kiện + 15 ngày, mốc M2, M3, M6, M7 đúng lịch, dự trữ 3 ngày, EMV găng 9,0 ngày, vốn lưu động 600.000.000 theo quyết định 25/10. Excel sau khi tính lại bằng LibreOffice khớp chi_phi.json ở mọi dòng tổng hợp, không có ô lỗi."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Dòng A truy về WBS_MD theo loại công việc, B theo don_gia.json và quyết định của nhóm, dự phòng truy về sổ rủi ro (mã RR), đợt thanh toán truy về mốc M2, M3, M6, M7, phân bổ truy về 13 hạng mục Mẫu 01A."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Có ngưỡng định lượng: MD tính lương hòa vốn 779,29 MD, năng suất hòa vốn 84,3%, ngưỡng chịu đựng 221 MD, độ nhạy thuế 10%, mức âm lớn nhất 551.484.214 đồng tại S7."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có quy tắc dùng dự phòng dùng chung, cơ chế bù phần vượt, kiểm soát bằng CPI theo sprint và quy trình yêu cầu thay đổi, rủi ro dòng tiền khi M2, M3 trễ."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman 13 (bảng 12), không in đậm, không gạch dài, không ngoặc kép, không dấu giữ chỗ, số âm viết chữ âm. Còn cảnh báo nhỏ về in đậm tiêu đề trong Excel."
+  },
+  {
+   "tieu_chi": "doc_hieu: Phương pháp giải thích được từng dòng của Excel",
+   "ket_qua": "dat",
+   "nhan_xet": "Giải thích được A, B, D, C, thuế, giá chào, đối chiếu lương, phân bổ, dòng tiền. Riêng các dòng kiểm tra tỷ lệ C tối thiểu 5% trong Excel chưa được nêu (cảnh báo MH05)."
+  },
+  {
+   "tieu_chi": "doc_hieu: Dự phòng so với EMV, quy tắc lấy từ bảng nguồn chung",
+   "ket_qua": "dat",
+   "nhan_xet": "Dự phòng 50.000.000 so với EMV và khoảng EMV, chỉ dẫn chiếu bảng quy tắc, không viết lại."
+  },
+  {
+   "tieu_chi": "doc_hieu: Nhận xét dòng tiền gắn với mốc thanh toán",
+   "ket_qua": "dat",
+   "nhan_xet": "Gắn đợt 2 với M2, đợt 3 với M3, đợt 4, 5 với M6, M7, nêu ảnh hưởng khi mốc trễ."
+  },
+  {
+   "tieu_chi": "doc_hieu: Độ nhạy nêu ngưỡng chịu đựng cụ thể",
+   "ket_qua": "dat",
+   "nhan_xet": "221 MD tính lương, 779,29 MD, 84,3%, thuế 10%."
+  },
+  {
+   "tieu_chi": "doc_hieu: Số liệu Word khớp Cost_estimate.xlsx",
+   "ket_qua": "dat",
+   "nhan_xet": "Khớp sau khi tính lại công thức, kể cả dòng tiền, Mẫu 11A, theo nhóm, đối chiếu người."
+  },
+  {
+   "tieu_chi": "doc_hieu: Chi phí lương theo cách trả lương, ngày sẵn sàng chỉ là chỉ số năng lực",
+   "ket_qua": "dat",
+   "nhan_xet": "Nêu đúng trả theo công sức, 159 MD sẵn sàng không tính lương, lương toàn bộ ngày huy động chỉ để theo dõi năng lực."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 1, đoạn Phương pháp: 'Dòng B gồm chi phí môi trường, công cụ, bảo hành 12 tháng và dự phòng rủi ro, do nhà thầu ước tính'",
+   "mo_ta": "Bảng mục 4 và don_gia.json ghi căn cứ của B3 là Kế hoạch quản lý rủi ro, quyết định của nhóm ngày 18/10/2026, chỉ B1, B2 là ước tính của nhà thầu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại CAN_CU: B1, B2 do nhà thầu ước tính, B3 theo kế hoạch quản lý rủi ro và quyết định của nhóm ngày 18/10/2026."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "loi_van",
+   "vi_tri": "Mục 4, DU_PHONG: 'Các rủi ro đóng góp EMV lớn nhất là RR13 ... 37.902.116 đồng, RR04 ... 13.300.000 đồng, RR02 ... 13.912.500 đồng và RR01 ...'",
+   "mo_ta": "Thứ tự liệt kê không theo độ lớn: RR02 (13.912.500) lớn hơn RR04 (13.300.000) nhưng đứng sau. Số liệu đúng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại DU_PHONG theo thứ tự RR13, RR02, RR04, RR01."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "trinh_bay",
+   "vi_tri": "Mục 8, bảng dòng tiền theo sprint, cột 'Lũy kế chi theo cách trả lương, đồng'",
+   "mo_ta": "Cột lũy kế chi đã cộng chi phí khác (B1 theo sprint, B2 sau cut over) nhưng bảng Word không có cột chi phí khác và tên cột chỉ nêu cách trả lương, nên S1 có chi lương 111.588.986 mà lũy kế 126.588.986 không tự đối chiếu được. Excel sheet Dong_tien có cột H và tên cột đầy đủ. Đoạn nhận xét có giải thích nên chỉ là cảnh báo.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa đặc tả thuyet_minh_du_toan.json, bảng cp#dong_tien: thêm cột chi_khac (Chi phí khác, đồng) và đổi nhãn thành Lũy kế chi theo cách trả lương và chi phí khác, đồng."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 4, Bảng quy tắc sử dụng dự phòng, dòng Phần vượt dự phòng: 'phần còn lại của giá chào sau lương kế hoạch và khoản B (chi phí chung và lợi nhuận)'",
+   "mo_ta": "Ngoặc đơn gọi khoản còn lại sau lương kế hoạch và khoản B (402.789.877 đồng) là chi phí chung và lợi nhuận, trong khi bảng tổng hợp dự toán dùng tên C. Chi phí chung và lợi nhuận cho khoản 179.950.000 đồng. Cùng một tên chỉ hai số tiền khác nhau, người phê duyệt dễ hiểu nhầm mức bù được phép.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa nguồn chung .claude/skills/qlda-change/references/phan_loai.json (quy tắc dự phòng, dòng Phần vượt dự phòng): bỏ ngoặc (chi phí chung và lợi nhuận) hoặc ghi rõ gồm phần dư của dòng A so với lương kế hoạch và khoản C; chạy lại chi_phi, ke_hoach_rui_ro, ke_hoach_thay_doi, master plan."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "doc_hieu",
+   "vi_tri": "Cost_estimate.xlsx: Tham_so!B11 (tỷ lệ chi phí chung và lợi nhuận tối thiểu 5%), Tong_hop!B17, Tong_hop!B27",
+   "mo_ta": "Excel có hai dòng kiểm tra theo ngưỡng 5% (tỷ lệ C, tỷ lệ khoản còn lại) nhưng thuyết minh không nêu ngưỡng này, chưa đủ tiêu chí giải thích từng dòng Excel. chi_phi.json chưa có khóa ngưỡng nên không viết được bằng tham chiếu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Bổ sung khóa ty_le_C_toi_thieu vào chi_phi.json (tinh_chi_phi.py) và một câu trong GIA_CHAO nêu C 10,3% và khoản còn lại 23% đều trên ngưỡng tối thiểu."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "trinh_bay",
+   "vi_tri": "Cost_estimate.xlsx: tiêu đề và dòng tiêu đề bảng (ví dụ Tong_hop!A1, A3:B3, Tham_so!A1, A3:C3)",
+   "mo_ta": "Khoảng 100 ô tiêu đề in đậm. van_phong.md ghi không in đậm nhưng mục Excel chỉ quy định phông, màu chữ. Chưa chắc quy tắc in đậm có áp cho Excel, cần nhóm xác nhận.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận quy tắc in đậm cho Excel. Nếu áp dụng thì bỏ in đậm trong script xuất Excel của qlda-cost-estimate."
+  }
+ ]
+}

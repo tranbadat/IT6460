@@ -1,0 +1,19 @@
+{
+ "TOM_TAT": [
+  "Kết thúc kỳ {td#ky} ngày {td#ngay_bao_cao|ngay}, dự án ở trạng thái chung {td#trang_thai_chung}. SPI đạt {td#spi_hien_thi} ở mức {td#trang_thai_spi}, CPI theo công đạt {td#cpi_hien_thi} ở mức {td#trang_thai_cpi}, CPI theo chi phí thực đạt {td#cpi_thuc_hien_thi} ở mức {td#trang_thai_cpi_thuc}. Giá trị thu được lũy kế {td#EV_md|md2} MD so với kế hoạch {td#PV_md|md2} MD, công thực tế {td#AC_md|md2} MD, khối lượng hoàn thành đạt {td#ty_le_hoan_thanh|pt1} toàn dự án. Rủi ro {td#rui_ro[ma=RR06].ma} về thời gian phản hồi đã xảy ra trong kiểm thử hiệu năng, nhóm tối ưu truy vấn và bộ nhớ đệm theo kế hoạch ứng phó. Phần chậm còn lại ở các gói còn việc của thành viên không huy động trong kỳ và kiểm thử hệ thống phần sàn.",
+  "Ngày hoàn thành dự báo {td#du_bao_hoan_thanh|ngay}, không muộn hơn ngày cut over {td#cut_over|ngay} theo phụ lục hợp đồng, TCPI {td#tcpi|so2}. Tỷ lệ sử dụng quỹ huy động đạt {td#ty_le_su_dung_quy|pt1}, còn {td#md_san_sang|md2} MD sẵn sàng không ghi công trên {td#md_huy_dong|md2} MD huy động. Chi phí khác đã chi lũy kế {td#AC_thuc_khac|tien} đồng, EAC theo chi phí thực {td#EAC_thuc|trieu} triệu đồng."
+ ],
+ "KET_QUA": [
+  "Trong kỳ hoàn thành gói găng kiểm thử chức năng đầu cuối 3.4.12, sửa lỗi đăng ký, đăng nhập 2.4.4 và theo dõi đơn hàng 3.4.8, kịch bản kiểm thử chấp nhận 3.4.11, kế hoạch cut over 3.5.2, diễn tập chuyển đổi dự phòng 4.4.8, nạp nội dung sản phẩm 4.5.4. Phần bán hàng trên sàn hoàn thành đồng bộ sản phẩm và giá 5.3.2, cập nhật trạng thái 5.3.5, đối soát 5.3.6, giao diện quản trị kênh sàn 5.3.7, kiểm thử tích hợp với môi trường thử của sàn 5.4.2 và tài liệu, buổi hướng dẫn sử dụng bán hàng trên sàn 5.5.2.",
+  "Bản phát hành R7 cuối sprint trình diễn luồng bán hàng trên sàn đầy đủ trên môi trường thử và kết quả kiểm thử chức năng đầu cuối. Kiểm thử hiệu năng {td#goi_cham[ma=1.4.9].ma} đạt {td#goi_cham[ma=1.4.9].thuc_te|pt1} do chờ tối ưu, kiểm thử hệ thống luồng bán hàng trên sàn {td#goi_cham[ma=5.4.3].ma} chuyển sang đầu kỳ tới. Trong kỳ không có mốc đến hạn."
+ ],
+ "VAN_DE": [
+  "Sổ vấn đề có {td#van_de_tong_hop.tong|nguyen} vấn đề, đã đóng {td#van_de_tong_hop.so_dong|nguyen}, còn mở {td#van_de_tong_hop.so_mo|nguyen}.",
+  "Vấn đề {td#van_de[ma=VD12].ma} của rủi ro {td#van_de[ma=VD12].ma_rui_ro} đã đóng khi thời gian phản hồi trang danh mục đạt dưới ngưỡng sau tối ưu, vấn đề {td#van_de[ma=VD11].ma} đóng khi các gói chậm của kỳ trước hoàn thành.",
+  "Vấn đề {td#van_de[ma=VD13].ma} ưu tiên cao tổng hợp các gói chậm cuối kỳ có nguy cơ làm muộn kiểm thử hệ thống trên đường găng, hành động bố trí lại công việc đầu kỳ tới có hạn {td#hanh_dong[ma_van_de=VD13].han|ngay}. Rủi ro RR03 về kiểm thử hệ thống hoàn thành muộn được theo dõi hằng ngày trong kỳ tới."
+ ],
+ "KY_TOI": [
+  "Mục tiêu {lich#sprint[ma=S8].ma} theo master schedule hiện hành: {lich#sprint[ma=S8].muc_tieu}. Kế hoạch kỳ tới là {lich#sprint[ma=S8].md_ke_hoach|md2} MD trên quỹ {lich#sprint[ma=S8].quy|md2} MD.",
+  "Gói ưu tiên là kiểm thử hệ thống 4.4.5 và các gói trên đường găng, hoàn thành các gói chậm nêu trong vấn đề {td#van_de[ma=VD13].ma}. Mốc {lich#moc[ma=M3].ma} có hạn {lich#moc[ma=M3].han|ngay}, gắn đợt thanh toán {lich#moc[ma=M3].dot_thanh_toan|nguyen}, mốc {lich#moc[ma=M4].ma} có hạn {lich#moc[ma=M4].han|ngay}. Nhóm đề nghị Chủ đầu tư bố trí người kiểm tra chức năng chính và tích hợp với Main System cho mốc {lich#moc[ma=M3].ma}."
+ ]
+}

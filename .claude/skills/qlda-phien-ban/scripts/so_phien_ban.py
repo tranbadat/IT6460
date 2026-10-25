@@ -6,7 +6,9 @@ Dùng:
       thành du_lieu/phien_ban_tong_hop.json và ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx.
   python so_phien_ban.py trang_thai <tệp> --trang-thai "Đã kiểm tra|Đã duyệt" --nguoi "<họ tên>" [--ghi-chu ...]
       Cập nhật trạng thái phiên bản hiện hành của một tài liệu (sau kiểm tra lớp B, sau phê duyệt).
-  python so_phien_ban.py duong_co_so <mã, ví dụ BL1> --ten "<tên đường cơ sở>" [--tep <tệp> ...] [--ngay yyyy-mm-dd] [--ghi-chu ...] [--hop-dong] [--cr CR03] [--bo-qua-kiem-tra]
+  python so_phien_ban.py duong_co_so <mã, ví dụ BL1> --ten "<tên đường cơ sở>" [--tep <tệp> ...] [--ngay yyyy-mm-dd] [--ghi-chu ...] [--hop-dong] [--cr CR03] [--bo-qua-kiem-tra] [--lap-lai "<lý do>"]
+      --lap-lai: lập lại một đường cơ sở sau thay đổi đã có (cùng mã, cùng ngày) sau khi sửa tài liệu theo kiểm tra lớp B. Bản cũ chuyển vào
+      duong_co_so_thay_the, phiên bản cũ giữ trong sổ; phiên bản mới giữ số chính của bản cũ, số phụ kế tiếp (2.2 thành 2.3), lý do ghi vào lam_lai (từ 1.2.5).
       --hop-dong: đường cơ sở khi ký hợp đồng (BL1), HSMT và HSDT chuyển trạng thái Khóa. Chỉ một lần, không ghi đè.
       --cr: đường cơ sở sau yêu cầu thay đổi đã phê duyệt (BL2), mã CR phải có trong du_lieu/thay_doi.json và đã phê duyệt.
       Lập đường cơ sở: mỗi tài liệu được chọn (mặc định mọi tài liệu trong ket_qua) lên số chính kế tiếp (1.0, 2.0),
@@ -40,6 +42,7 @@ ap.add_argument('--trang-thai'); ap.add_argument('--nguoi', default=''); ap.add_
 ap.add_argument('--ten', default=''); ap.add_argument('--tep', nargs='*'); ap.add_argument('--ngay'); ap.add_argument('--bo-qua-kiem-tra', action='store_true')
 ap.add_argument('--hop-dong', action='store_true', help='đường cơ sở khi ký hợp đồng: khóa HSMT, HSDT')
 ap.add_argument('--cr', default='', help='mã yêu cầu thay đổi đã phê duyệt làm căn cứ đường cơ sở (ví dụ BL2)')
+ap.add_argument('--lap-lai', default='', help='lý do lập lại đường cơ sở sau thay đổi đã có cùng mã')
 a = ap.parse_args()
 sd = loi.so_do(); BD = loi.nut_bien_dong(sd)
 reg = loi.doc_json('du_lieu/phien_ban.json', {'tai_lieu': {}})
@@ -113,8 +116,11 @@ if a.lenh == 'trang_thai':
 
 if a.lenh == 'duong_co_so':
     ma = a.doi_tuong
-    if not ma or any(x['ma'] == ma for x in reg['duong_co_so']):
-        loi.thoat_loi('Cần mã đường cơ sở mới, chưa dùng (ví dụ BL1, BL2)')
+    CU_BL = next((x for x in reg['duong_co_so'] if x['ma'] == ma), None)
+    if a.lap_lai and (not CU_BL or CU_BL.get('hop_dong') or a.hop_dong):
+        loi.thoat_loi('--lap-lai chỉ dùng cho đường cơ sở sau thay đổi đã có (không dùng cho đường cơ sở hợp đồng)')
+    if not ma or (CU_BL and not a.lap_lai):
+        loi.thoat_loi('Cần mã đường cơ sở mới, chưa dùng (ví dụ BL1, BL2), hoặc --lap-lai "<lý do>" để lập lại đường cơ sở sau thay đổi')
     if a.hop_dong and reg.get('hop_dong'):
         loi.thoat_loi(f'Đã có đường cơ sở hợp đồng {reg["hop_dong"]["duong_co_so"]} ngày {loi.ngay(reg["hop_dong"]["ngay"])}, không ghi đè. '
                       'Đường cơ sở sau thay đổi dùng --cr <mã CR> thay cho --hop-dong.')
@@ -137,12 +143,22 @@ if a.lenh == 'duong_co_so':
     if loi_ and not a.bo_qua_kiem_tra:
         loi.thoat_loi('Chưa lập được đường cơ sở:\n  ' + '\n  '.join(loi_) + '\nChạy lại các bước liên quan (chay.py trang_thai) rồi lập lại.')
     chi_tiet, dung_lai = {}, []
+    if CU_BL:  # phiên bản của bản cũ giữ trong sổ, đánh dấu đã thay để tra cứu đường cơ sở chỉ ra bản lập lại
+        for lst_ in reg['tai_lieu'].values():
+            for r_ in lst_:
+                if r_.get('duong_co_so') == ma:
+                    r_['duong_co_so_da_thay'] = r_.pop('duong_co_so')
     for p in ds:
         last = reg['tai_lieu'][p][-1]
         if khoa(p) and not a.hop_dong:  # hồ sơ đấu thầu đã khóa từ BL1: giữ phiên bản Khóa, thay đổi ghi bằng phụ lục
             chi_tiet[p] = last['phien_ban']; continue
         major = int(last['phien_ban'].split('.')[0]) + 1
-        rec = dict(last, phien_ban=f'{major}.0', ngay=loi.bay_gio(), trang_thai='Đường cơ sở', ghi_chu=f'Đường cơ sở {ma}. {a.ghi_chu}'.strip(),
+        so_moi = f'{major}.0'
+        if CU_BL and p in CU_BL.get('tai_lieu', {}):  # lập lại: giữ số chính của bản cũ, số phụ kế tiếp
+            mj = int(CU_BL['tai_lieu'][p].split('.')[0])
+            mn = max(int(r['phien_ban'].split('.')[1]) for r in reg['tai_lieu'][p] if int(r['phien_ban'].split('.')[0]) == mj)
+            so_moi = f'{mj}.{mn + 1}'
+        rec = dict(last, phien_ban=so_moi, ngay=loi.bay_gio(), trang_thai='Đường cơ sở', ghi_chu=f'Đường cơ sở {ma}. {a.ghi_chu}'.strip(),
                    nguoi=a.nguoi or last.get('nguoi', ''), duong_co_so=ma, vao_duong_co_so=dict(last.get('vao', {})))
         if ph_bl is not None:
             rec['phat_hanh'] = ph_bl
@@ -159,6 +175,12 @@ if a.lenh == 'duong_co_so':
                 print(f'Không dựng lại được {p}: {r.stderr.strip()[-300:]}')
             else:
                 dung_lai.append(p)
+    if CU_BL:
+        reg['duong_co_so'] = [x for x in reg['duong_co_so'] if x is not CU_BL]
+        reg.setdefault('duong_co_so_thay_the', []).append(dict(CU_BL, thay_luc=loi.bay_gio(), ly_do=a.lap_lai))
+        reg.setdefault('lam_lai', []).append({'ngay': loi.bay_gio()[:10], 'ngay_du_an': ngay_bl,
+                                              'noi_dung': f'Lập lại đường cơ sở {ma} cùng ngày {loi.ngay(ngay_bl)}: {a.lap_lai} Bản lập lúc {CU_BL.get("luc", "")} '
+                                                          'chuyển vào danh sách đường cơ sở đã thay, các phiên bản cũ giữ trong sổ.'})
     reg['duong_co_so'].append({'ma': ma, 'ten': a.ten, 'ngay': ngay_bl, 'luc': loi.bay_gio(), 'nguoi': a.nguoi, 'ghi_chu': a.ghi_chu,
                                'tai_lieu': chi_tiet, 'bo_qua_kiem_tra': bool(loi_), 'hop_dong': a.hop_dong, 'ma_cr': a.cr,
                                'phat_hanh': ph_bl or ''})
@@ -173,7 +195,8 @@ if a.lenh == 'duong_co_so':
         cr_ = next(c for c in so_td_['yeu_cau'] if c.get('ma') == a.cr)
         cr_['phien_ban_sau'] = phien_ban_sau_cr(reg, a.cr)
         cr_.setdefault('lich_su', []).append({'ngay': ngay_bl, 'ghi_luc': loi.bay_gio(), 'trang_thai': cr_.get('trang_thai', ''), 'nguoi': a.nguoi,
-                                              'ghi_chu': f'Đường cơ sở {ma} sau thay đổi, {len(cr_["phien_ban_sau"])} tài liệu'})
+                                              'ghi_chu': f'Đường cơ sở {ma} sau thay đổi gồm {len(ds)} tài liệu, trong đó {len(cr_["phien_ban_sau"])} '
+                                                         'tài liệu có phiên bản sau thay đổi, còn lại là tài liệu đấu thầu đã khóa'})  # từ 1.2.4
         loi.ghi_json('du_lieu/thay_doi.json', so_td_)
     loi.ghi_json('du_lieu/phien_ban.json', reg)
     loi.ghi_nhat_ky('qlda-phien-ban', f'phien_ban.duong_co_so.{ma}', 'script', f'Lập đường cơ sở {ma} ({a.ten}), {len(chi_tiet)} tài liệu',
@@ -236,7 +259,17 @@ def ngay_tl(p, r):
             if x:
                 return x['ngay_tai_lieu']
     bl = next((x for x in reg.get('duong_co_so', []) if x['ma'] == r.get('duong_co_so')), None)
-    return loi.ngay(bl['ngay']) if bl else ''
+    if bl:
+        return loi.ngay(bl['ngay'])
+    # tệp chưa ghi ngày (Excel, phụ lục): tài liệu cùng bước gần nhất có ngày; master schedule theo ngày bắt đầu dự án như tài liệu kế hoạch;
+    # phụ lục bằng chứng ghi thời điểm chạy thực tế
+    cung = [y for q, lst in reg['tai_lieu'].items() if q != p and q.startswith('ket_qua/') for y in lst
+            if y.get('buoc') == r.get('buoc') and y.get('ngay_tai_lieu') and y.get('ngay', '') <= r.get('ngay', '')]
+    if cung:
+        return max(cung, key=lambda y: y.get('ngay', ''))['ngay_tai_lieu']
+    if r.get('buoc') == 'lich':
+        return loi.ngay(loi.du_an().get('ngay_bat_dau'))
+    return loi.ngay(str(r.get('ngay', ''))[:10])
 
 
 def ten_nguon_cap_nhat(x):
@@ -321,11 +354,27 @@ if os.path.exists(pnk):
             pass
 theo_skill = {}
 for x in nk:
-    t = theo_skill.setdefault(x['skill'], {'skill': x['skill'], 'phien_ban_skill': x.get('phien_ban_skill', ''), 'so_lan_script': 0, 'so_lan_agent': 0, 'prompt': set()})
+    t = theo_skill.setdefault(x['skill'], {'skill': x['skill'], 'phien_ban_skill': '', 'cac_phien_ban': set(), 'so_lan_script': 0, 'so_lan_agent': 0, 'prompt': set()})
     t['so_lan_script' if x.get('loai') == 'script' else 'so_lan_agent'] += 1
+    if x.get('phien_ban_skill'):
+        t['cac_phien_ban'].add(x['phien_ban_skill'])
     if x.get('prompt'):
         t['prompt'].add(x['prompt'])
-nhat_ky = [dict(v, prompt=', '.join(sorted(os.path.basename(p) for p in v['prompt']))) for v in theo_skill.values()]
+
+
+def khoa_phien_ban(v):
+    return [int(p) if p.isdigit() else 0 for p in str(v).split('.')]
+
+
+def khoang_phien_ban(ds):
+    """Phiên bản skill đã dùng: một giá trị, hoặc khoảng từ bản đầu đến bản mới nhất (bản cuối là bản tạo tài liệu hiện hành)."""
+    ds = sorted(ds, key=khoa_phien_ban)
+    return '' if not ds else ds[0] if len(ds) == 1 else f'{ds[0]} - {ds[-1]}'
+
+
+nhat_ky = [dict({k: v for k, v in t.items() if k != 'cac_phien_ban'}, phien_ban_skill=khoang_phien_ban(t['cac_phien_ban']),
+                phien_ban_moi_nhat=max(t['cac_phien_ban'], key=khoa_phien_ban, default=''),
+                prompt=', '.join(sorted(os.path.basename(p) for p in t['prompt']))) for t in theo_skill.values()]
 
 # Git
 git = []
@@ -367,12 +416,19 @@ OUT = os.path.join(OUT_DIR, 'So_phien_ban.xlsx')
 wb = Workbook()
 wb.properties.creator = wb.properties.lastModifiedBy = loi.du_an().get('nguoi_lap', '')
 ws = wb.active; ws.title = 'Danh_muc'
-X.tieu_de(ws, 1, ['Mã', 'Tài liệu', 'Tệp', 'Nhóm', 'Phiên bản', 'Ngày', 'Trạng thái', 'Tình trạng', 'Số phiên bản', 'Đầu vào đã đổi', 'Bản phát hành'],
+X.tieu_de(ws, 1, ['Mã', 'Tài liệu', 'Tệp', 'Nhóm', 'Phiên bản', 'Ngày đăng ký', 'Trạng thái', 'Tình trạng', 'Số phiên bản', 'Đầu vào đã đổi', 'Bản phát hành'],
           [7, 36, 52, 18, 10, 12, 14, 14, 12, 30, 12])
 for i, r in enumerate(danh_muc, 2):
     for j, k in enumerate(['ma', 'ten', 'tep', 'nhom', 'phien_ban', 'ngay', 'trang_thai', 'tinh_trang'], 1):
-        X.o(ws, i, j, r[k], nhap=True)
+        X.o(ws, i, j, loi.ngay(r[k]) if k == 'ngay' else r[k], nhap=True)
     X.o(ws, i, 9, f'=COUNTIF(Lich_su!$A:$A,C{i})'); X.o(ws, i, 10, r['dau_vao_da_doi'], nhap=True); X.o(ws, i, 11, r['phat_hanh'], nhap=True)
+if danh_muc:
+    n_dm = len(danh_muc) + 1
+    X.o(ws, n_dm + 1, 2, 'Tổng số phiên bản của tài liệu nộp hiện hành', nhap=True); X.o(ws, n_dm + 1, 9, f'=SUM(I2:I{n_dm})')
+    X.o(ws, n_dm + 2, 2, 'Số phiên bản của tài liệu lưu trữ', nhap=True)
+    _ltr = sorted({r['tep'] for r in luu_tru})  # tài liệu lưu trữ: đếm phiên bản trên sheet Lich_su bằng công thức
+    X.o(ws, n_dm + 2, 9, '=' + '+'.join(f'COUNTIF(Lich_su!$A:$A,"{p}")' for p in _ltr) if _ltr else 0)
+    X.o(ws, n_dm + 3, 2, 'Tổng số phiên bản tài liệu đã đăng ký', nhap=True); X.o(ws, n_dm + 3, 9, f'=I{n_dm + 1}+I{n_dm + 2}')
 if danh_muc:
     ws.conditional_formatting.add(f'H2:H{len(danh_muc) + 1}', FormulaRule(formula=['H2="Cần cập nhật"'], fill=PatternFill('solid', fgColor='FCE4D6')))
 ls = wb.create_sheet('Lich_su')
@@ -380,12 +436,12 @@ X.tieu_de(ls, 1, ['Tệp', 'Phiên bản', 'Ngày giờ', 'Người', 'Bước',
           [52, 10, 18, 18, 18, 14, 50, 14, 12, 10])
 for i, r in enumerate(lich_su, 2):
     for j, k in enumerate(['tep', 'phien_ban', 'ngay', 'nguoi', 'buoc', 'trang_thai', 'ghi_chu', 'hash', 'phat_hanh', 'duong_co_so'], 1):
-        X.o(ls, i, j, r[k], nhap=True)
+        X.o(ls, i, j, r['thoi_diem'] if k == 'ngay' else r[k], nhap=True)
 dl = wb.create_sheet('Du_lieu')
 X.tieu_de(dl, 1, ['Tệp dữ liệu', 'Bước', 'Phiên bản', 'Ngày', 'Tình trạng', 'Số phiên bản'], [40, 30, 10, 12, 14, 12])
 for i, r in enumerate(du_lieu_ds, 2):
     for j, k in enumerate(['tep', 'ten', 'phien_ban', 'ngay', 'tinh_trang'], 1):
-        X.o(dl, i, j, r[k], nhap=True)
+        X.o(dl, i, j, loi.ngay(r[k]) if k == 'ngay' else r[k], nhap=True)
     X.o(dl, i, 6, f'=COUNTIF(Lich_su!$A:$A,A{i})')
 bl = wb.create_sheet('Duong_co_so')
 X.tieu_de(bl, 1, ['Mã', 'Tên', 'Ngày', 'Tệp', 'Phiên bản', 'Bản phát hành', 'Căn cứ'], [8, 36, 12, 52, 10, 12, 26])
@@ -394,9 +450,15 @@ i = 2
 for x in reg['duong_co_so']:
     for p, v in x['tai_lieu'].items():
         ph_ = next((y['phat_hanh'] for y in bl_tai_lieu if y['ma_bl'] == x['ma'] and y['tep'] == p), '')
-        for j, val in enumerate([x['ma'], x['ten'], x['ngay'], p, v, ph_, can_cu_bl[x['ma']]], 1):
+        for j, val in enumerate([x['ma'], x['ten'], loi.ngay(x['ngay']), p, v, ph_, can_cu_bl[x['ma']]], 1):
             X.o(bl, i, j, val, nhap=True)
         i += 1
+if reg.get('lam_lai'):  # ghi chú làm lại đường cơ sở, bản ghi bỏ khỏi sổ và nơi lưu sổ cũ (từ 1.2.4)
+    i += 1
+    X.o(bl, i, 1, 'Ghi chú làm lại', nhap=True)
+    for x in reg['lam_lai']:
+        i += 1
+        X.o(bl, i, 1, loi.ngay(x.get('ngay_du_an') or ''), nhap=True); X.o(bl, i, 2, x.get('noi_dung', ''), nhap=True, wrap=True)
 phs = wb.create_sheet('Phat_hanh')
 X.tieu_de(phs, 1, ['Mã', 'Sprint', 'Ngày', 'Loại', 'Nguồn số liệu', 'Số gói', 'Hạng mục 01A', 'Yêu cầu RFP', 'Lỗi đã sửa', 'Lỗi còn mở', 'CR đưa vào',
                    'Phiên bản tài liệu gắn bản', 'Ghi chú phát hành'], [6, 8, 12, 26, 12, 8, 10, 10, 10, 10, 12, 12, 70])
@@ -420,7 +482,7 @@ if git:
     X.tieu_de(gs, 1, ['Commit', 'Ngày', 'Tác giả', 'Nội dung'], [10, 12, 20, 80])
     for i, r in enumerate(git, 2):
         for j, k in enumerate(['ma', 'ngay', 'tac_gia', 'noi_dung'], 1):
-            X.o(gs, i, j, r[k], nhap=True)
+            X.o(gs, i, j, loi.ngay(r[k]) if k == 'ngay' else r[k], nhap=True)
 wb.save(OUT)
 kq = X.tinh_lai(OUT)
 if kq and kq.get('status'):

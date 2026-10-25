@@ -1,0 +1,66 @@
+{
+ "tai_lieu": "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx (phiên bản 0.11)",
+ "buoc": "ke_hoach_rui_ro",
+ "luot": "Kiểm tra lớp B lượt xác nhận sau vòng sửa cuối (người dùng duyệt ngoại lệ sau 3 vòng): xác nhận đóng cảnh báo lượt 3 và rà soát hồi quy, không rà lại toàn bộ",
+ "can_cu": "Căn cứ hợp lệ: dau_vao/du_an.json _quyet_dinh_18_10, _quyet_dinh_24_10_ha_tang, _quyet_dinh_25_10 (điểm 1 đến 29), _quy_tac_ngay_ban_giao",
+ "nguon_da_doi_chieu": [
+  "du_lieu/rui_ro.json",
+  "du_lieu/rui_ro_bang.json",
+  "du_lieu/lich.json",
+  "lam_viec/ke_hoach_rui_ro/bao_cao_kiem_tra_lop_B_4ph_vong3.json"
+ ],
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 0,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ các mục như lượt 3."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Đối chiếu script 21 dòng bảng sổ rủi ro (mã, tên, nhóm, XS, TĐ, điểm, mức, hạng, trạng thái, EMV triệu đồng, chiến lược, phụ trách, liên kết) với rui_ro.json: khớp toàn bộ. Tổng EMV 141 triệu (105 đến 177), 6 hạng A, 8 hạng B, 7 hạng C, 4 rủi ro mức cao, EMV thời gian 9,0 ngày (7,0 đến 11,0) của 6 rủi ro RR02, RR03, RR04, RR08, RR09, RR10, dự trữ 3,0 ngày, thiếu 6,0 ngày khớp tong_hop. Dấu hiệu RR04 khớp dữ liệu."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Liên kết gói và mốc từng rủi ro không đổi."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Điều kiện đóng từng rủi ro giữ nguyên."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Phương án dự trữ và ngưỡng theo dõi giữ nguyên, bổ sung lý do loại RR12 khỏi EMV thời gian theo quyết định 25/10 (26)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Không còn từ khẩu ngữ ở các phần đã sửa."
+  }
+ ],
+ "phat_hien": [],
+ "dong_phat_hien_luot_3": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Mục 5.2 bổ sung: RR08 và RR10 nằm sau các gói ghim ngày (kiểm thử chấp nhận đến 29/06/2027, triển khai chính thức trước cut over), khoảng từ cuối kiểm thử chấp nhận đến cut over chỉ còn 1 ngày làm việc nên chậm 1 đến 2 ngày cũng làm lùi cut over. Khớp lich.json (1.5.2 ngày 30/06/2027)."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "Mục 5.2 giải thích RR12 gắn M7 cùng ngày cut over nhưng không tính vào EMV thời gian vì M7 không làm lùi ngày đưa hệ thống vào vận hành, đúng quyết định 25/10 (26). EMV thời gian giữ 9,0 ngày, ma_gang trong rui_ro.json không gồm RR12."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "Dấu hiệu RR04 đã sửa thành chưa hoàn thành bàn giao công việc đang làm, khớp dau_hieu trong rui_ro.json, không còn từ xong trong dữ liệu sổ rủi ro."
+  }
+ ],
+ "moi_truong": "Phiên làm việc riêng (agent con, lượt kiểm tra xác nhận sau vòng sửa cuối, ngoại lệ do người dùng duyệt), python-docx, openpyxl, LibreOffice tính lại công thức, mô hình Claude Opus 5.5"
+}

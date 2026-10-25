@@ -1,0 +1,2075 @@
+{
+ "yeu_cau": [
+  {
+   "ma": "CR01",
+   "tieu_de": "Bán hàng trên sàn thương mại điện tử",
+   "mo_ta": "Bổ sung kênh bán hàng trên sàn thương mại điện tử: kết nối sàn, đồng bộ sản phẩm, tồn kho và giá lên sàn, nhận đơn hàng từ sàn vào luồng xử lý đơn hàng, cập nhật trạng thái đơn hàng lên sàn, đối soát đơn hàng và thanh toán với sàn, kiểm thử và hướng dẫn sử dụng. Bốn phân hệ của hợp đồng giữ nguyên, phần bổ sung lập thành nhóm WBS riêng và làm trước cut over",
+   "ly_do": "Chủ đầu tư muốn mở rộng kênh bán hàng trực tuyến sang sàn thương mại điện tử ngay khi hệ thống đưa vào vận hành, nêu tại buổi trình diễn cuối S4",
+   "nguon": "chủ đầu tư",
+   "nguoi_de_xuat": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ngay_de_xuat": "2027-05-20",
+   "noi_bo": false,
+   "dieu_kien": [
+    "doi_pham_vi",
+    "doi_gia",
+    "cham_cut_over",
+    "cham_moc_thanh_toan",
+    "cam_ket_cdt"
+   ],
+   "ma_rui_ro": [],
+   "can_cu_hsmt": "Mục 17.1(a), Mục 17.2 E-ĐKC",
+   "nhan_dinh_ban_dau": "Yêu cầu ngoài phạm vi hợp đồng và RFP, bổ sung một nhóm chức năng mới gồm kết nối, đồng bộ dữ liệu, nhận đơn và đối soát với sàn, dự kiến làm lùi ngày cut over và tăng giá hợp đồng, thuộc mức lớn, cần phụ lục hợp đồng",
+   "rui_ro_moi": "Giao diện lập trình hoặc môi trường thử của sàn thương mại điện tử chưa sẵn sàng, hoặc sàn thay đổi chính sách kết nối trong thời gian thực hiện",
+   "md_tang": 76.0,
+   "chi_phi_tang": 161500000,
+   "chi_phi_noi_bo": 161500000,
+   "gia_de_nghi": 199024682,
+   "can_cu_gia_de_nghi": "theo đơn giá suy từ giá dự thầu, bằng chi phí nội bộ nhân hệ số 1,232 (giá dự thầu chia khoản nhân công)",
+   "ngay_cham": 18,
+   "tieu_hao_du_tru": 3,
+   "ngay_cham_cut_over": 15,
+   "cut_over_moi": "2027-07-22",
+   "ket_thuc_moi": "2027-07-22",
+   "can_them_nguoi": true,
+   "ket_luan_nhan_su": "Nguồn lực là nút thắt: với cách giao việc này, theo phụ thuộc chỉ cần lùi 7 ngày, 8 ngày còn lại do người làm bận (người dùng từ 90% quỹ: Trần Bá Đạt 111%, Ninh Đức Toàn 100%). Gói trên chuỗi dài nhất do một người làm, thêm người hỗ trợ sẽ rút ngắn: 3.4.10 (Q1, 5,00 MD). Cần thêm người, thử phương án bằng --them-nguoi",
+   "moc_anh_huong": [
+    {
+     "ma": "M3",
+     "ten": "Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+     "dot": 3,
+     "ngay_cu": "2027-06-17",
+     "ngay_moi": "2027-06-30",
+     "han": "2027-06-17",
+     "ngay_doi": 9,
+     "vuot_han": 9,
+     "han_de_xuat": "2027-06-30",
+     "gan_cut_over": false
+    },
+    {
+     "ma": "M4",
+     "ten": "Hoàn thành kiểm thử hệ thống, bản phát hành sẵn sàng kiểm thử chấp nhận",
+     "dot": "",
+     "ngay_cu": "2027-06-17",
+     "ngay_moi": "2027-06-30",
+     "han": "2027-06-17",
+     "ngay_doi": 9,
+     "vuot_han": 9,
+     "han_de_xuat": "2027-06-30",
+     "gan_cut_over": false
+    },
+    {
+     "ma": "M5",
+     "ten": "Hoàn thành kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư",
+     "dot": "",
+     "ngay_cu": "2027-06-29",
+     "ngay_moi": "2027-07-20",
+     "han": "2027-06-29",
+     "ngay_doi": 15,
+     "vuot_han": 15,
+     "han_de_xuat": "2027-07-20",
+     "gan_cut_over": false
+    },
+    {
+     "ma": "M6",
+     "ten": "Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+     "dot": 4,
+     "ngay_cu": "2027-07-01",
+     "ngay_moi": "2027-07-22",
+     "han": "2027-07-01",
+     "ngay_doi": 15,
+     "vuot_han": 15,
+     "han_de_xuat": "2027-07-22",
+     "gan_cut_over": true
+    },
+    {
+     "ma": "M7",
+     "ten": "Nhà thầu nộp bảo lãnh bảo hành, bàn giao mã nguồn và hệ thống",
+     "dot": 5,
+     "ngay_cu": "2027-07-01",
+     "ngay_moi": "2027-07-22",
+     "han": "2027-07-01",
+     "ngay_doi": 15,
+     "vuot_han": 15,
+     "han_de_xuat": "2027-07-22",
+     "gan_cut_over": true
+    }
+   ],
+   "chi_tiet_goi": [
+    {
+     "ma": "1.5.2",
+     "ten": "Chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức",
+     "loai": "DEVOPS",
+     "md_tang": 0.0,
+     "moi": false,
+     "them_phu_thuoc": [
+      "5.4.5",
+      "5.5.1"
+     ],
+     "bat_dau": "2027-07-21",
+     "ket_thuc": "2027-07-21",
+     "nguoi": [
+      "D3",
+      "D4"
+     ]
+    },
+    {
+     "ma": "1.5.3",
+     "ten": "Bàn giao mã nguồn, tài liệu kỹ thuật, tài liệu cài đặt và danh mục thư viện",
+     "loai": "DEV",
+     "md_tang": 0.0,
+     "moi": false,
+     "them_phu_thuoc": [
+      "5.5.3"
+     ],
+     "bat_dau": "2027-07-21",
+     "ket_thuc": "2027-07-22",
+     "nguoi": [
+      "D2",
+      "D1"
+     ]
+    },
+    {
+     "ma": "2.4.11",
+     "ten": "Kiểm thử hồi quy theo các đợt khắc phục lỗi kiểm thử chấp nhận",
+     "loai": "QA",
+     "md_tang": 1.0,
+     "moi": false,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-07-12",
+     "ket_thuc": "2027-07-21",
+     "nguoi": [
+      "toan"
+     ]
+    },
+    {
+     "ma": "5.1.1",
+     "ten": "Quản lý yêu cầu thay đổi, phụ lục hợp đồng, theo dõi tiến độ và hồ sơ nghiệm thu phần bán hàng trên sàn thương mại điện tử",
+     "loai": "PM",
+     "md_tang": 3.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-21",
+     "ket_thuc": "2027-06-28",
+     "nguoi": [
+      "dat"
+     ]
+    },
+    {
+     "ma": "5.2.1",
+     "ten": "Khảo sát quy trình bán hàng trên sàn thương mại điện tử và giao diện lập trình của sàn",
+     "loai": "BA",
+     "md_tang": 3.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-01",
+     "ket_thuc": "2027-06-08",
+     "nguoi": [
+      "dat"
+     ]
+    },
+    {
+     "ma": "5.2.2",
+     "ten": "Đặc tả chức năng và use case đồng bộ sản phẩm, tồn kho, giá, nhận đơn, cập nhật trạng thái và đối soát với sàn",
+     "loai": "BA",
+     "md_tang": 5.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-09",
+     "ket_thuc": "2027-06-11",
+     "nguoi": [
+      "lien",
+      "K"
+     ]
+    },
+    {
+     "ma": "5.2.3",
+     "ten": "Thiết kế tích hợp với sàn gồm xác thực, ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+     "loai": "DEV",
+     "md_tang": 4.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-09",
+     "ket_thuc": "2027-06-10",
+     "nguoi": [
+      "tuananh",
+      "minh"
+     ]
+    },
+    {
+     "ma": "5.2.4",
+     "ten": "Xác nhận đặc tả bán hàng trên sàn thương mại điện tử của Chủ đầu tư",
+     "loai": "BA",
+     "md_tang": 2.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-21",
+     "ket_thuc": "2027-06-23",
+     "nguoi": [
+      "lien"
+     ]
+    },
+    {
+     "ma": "5.3.1",
+     "ten": "Kết nối sàn gồm xác thực, cấu hình cửa hàng và quản lý khóa truy cập",
+     "loai": "DEV",
+     "md_tang": 4.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-11",
+     "ket_thuc": "2027-06-14",
+     "nguoi": [
+      "tuananh",
+      "minh"
+     ]
+    },
+    {
+     "ma": "5.3.2",
+     "ten": "Đồng bộ sản phẩm và giá lên sàn",
+     "loai": "DEV",
+     "md_tang": 5.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-15",
+     "ket_thuc": "2027-06-17",
+     "nguoi": [
+      "D1",
+      "D2"
+     ]
+    },
+    {
+     "ma": "5.3.3",
+     "ten": "Đồng bộ tồn kho lên sàn",
+     "loai": "DEV",
+     "md_tang": 4.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-15",
+     "ket_thuc": "2027-06-16",
+     "nguoi": [
+      "D3",
+      "D4"
+     ]
+    },
+    {
+     "ma": "5.3.4",
+     "ten": "Nhận đơn hàng từ sàn vào luồng xử lý đơn hàng",
+     "loai": "DEV",
+     "md_tang": 6.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-15",
+     "ket_thuc": "2027-06-18",
+     "nguoi": [
+      "K",
+      "dat"
+     ]
+    },
+    {
+     "ma": "5.3.5",
+     "ten": "Cập nhật trạng thái đơn hàng và vận chuyển lên sàn",
+     "loai": "DEV",
+     "md_tang": 4.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-21",
+     "ket_thuc": "2027-06-22",
+     "nguoi": [
+      "tuananh",
+      "minh"
+     ]
+    },
+    {
+     "ma": "5.3.6",
+     "ten": "Đối soát đơn hàng và thanh toán với sàn",
+     "loai": "DEV",
+     "md_tang": 5.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-21",
+     "ket_thuc": "2027-06-23",
+     "nguoi": [
+      "toan",
+      "K"
+     ]
+    },
+    {
+     "ma": "5.3.7",
+     "ten": "Giao diện quản trị kênh sàn gồm ánh xạ sản phẩm, theo dõi đồng bộ và kết quả đối soát",
+     "loai": "DEV",
+     "md_tang": 5.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-15",
+     "ket_thuc": "2027-06-17",
+     "nguoi": [
+      "tuananh",
+      "minh"
+     ]
+    },
+    {
+     "ma": "5.4.1",
+     "ten": "Kịch bản kiểm thử bán hàng trên sàn thương mại điện tử",
+     "loai": "QA",
+     "md_tang": 3.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-14",
+     "ket_thuc": "2027-06-16",
+     "nguoi": [
+      "toan"
+     ]
+    },
+    {
+     "ma": "5.4.2",
+     "ten": "Kiểm thử tích hợp với môi trường thử của sàn",
+     "loai": "QA",
+     "md_tang": 6.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-24",
+     "ket_thuc": "2027-06-28",
+     "nguoi": [
+      "minh",
+      "toan"
+     ]
+    },
+    {
+     "ma": "5.4.3",
+     "ten": "Kiểm thử hệ thống luồng bán hàng trên sàn gồm đồng bộ, nhận đơn, trạng thái và đối soát",
+     "loai": "QA",
+     "md_tang": 4.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-29",
+     "ket_thuc": "2027-07-02",
+     "nguoi": [
+      "minh",
+      "toan"
+     ]
+    },
+    {
+     "ma": "5.4.4",
+     "ten": "Khắc phục lỗi sau kiểm thử bán hàng trên sàn",
+     "loai": "DEV",
+     "md_tang": 3.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-07-05",
+     "ket_thuc": "2027-07-07",
+     "nguoi": [
+      "tuananh"
+     ]
+    },
+    {
+     "ma": "5.4.5",
+     "ten": "Tổ chức và hỗ trợ kiểm thử chấp nhận bán hàng trên sàn cùng Chủ đầu tư",
+     "loai": "QA",
+     "md_tang": 3.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-07-15",
+     "ket_thuc": "2027-07-19",
+     "nguoi": [
+      "minh"
+     ]
+    },
+    {
+     "ma": "5.5.1",
+     "ten": "Cấu hình kết nối sàn trên môi trường vận hành",
+     "loai": "DEVOPS",
+     "md_tang": 2.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-07-08",
+     "ket_thuc": "2027-07-09",
+     "nguoi": [
+      "toan"
+     ]
+    },
+    {
+     "ma": "5.5.2",
+     "ten": "Tài liệu và buổi hướng dẫn sử dụng bán hàng trên sàn cho cán bộ Chủ đầu tư",
+     "loai": "BA",
+     "md_tang": 3.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-06-24",
+     "ket_thuc": "2027-06-28",
+     "nguoi": [
+      "lien"
+     ]
+    },
+    {
+     "ma": "5.5.3",
+     "ten": "Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện phần bán hàng trên sàn thương mại điện tử",
+     "loai": "DEV",
+     "md_tang": 1.0,
+     "moi": true,
+     "them_phu_thuoc": [],
+     "bat_dau": "2027-07-08",
+     "ket_thuc": "2027-07-08",
+     "nguoi": [
+      "tuananh"
+     ]
+    }
+   ],
+   "muc_moi": [
+    {
+     "ma": "5",
+     "ten": "Bán hàng trên sàn thương mại điện tử",
+     "can_cu_uoc_luong": {
+      "kich_thuoc": "Phạm vi bổ sung theo yêu cầu thay đổi CR01 gồm kết nối sàn, đồng bộ sản phẩm và giá, đồng bộ tồn kho, nhận đơn hàng từ sàn, cập nhật trạng thái đơn hàng lên sàn, đối soát đơn hàng và thanh toán, giao diện quản trị kênh sàn, kiểm thử và hướng dẫn sử dụng, phần quản lý yêu cầu thay đổi",
+      "cach_phan_ra": "Ước lượng theo từng gói của phần bổ sung bằng cùng thư viện định mức với bốn phân hệ của hợp đồng, dùng lại tầng tích hợp, dịch vụ đơn hàng và dịch vụ tồn kho đã xây dựng. Gói hiện có bị ảnh hưởng gồm chuyển đổi dữ liệu và triển khai chính thức, bàn giao mã nguồn, kiểm thử hồi quy được cộng phần tăng riêng"
+     }
+    },
+    {
+     "ma": "5.1",
+     "ten": "Quản lý dự án, phần bán hàng trên sàn thương mại điện tử"
+    },
+    {
+     "ma": "5.2",
+     "ten": "Phân tích và thiết kế bán hàng trên sàn thương mại điện tử"
+    },
+    {
+     "ma": "5.3",
+     "ten": "Xây dựng chức năng bán hàng trên sàn thương mại điện tử (lập trình và kiểm thử đơn vị)"
+    },
+    {
+     "ma": "5.4",
+     "ten": "Kiểm thử bán hàng trên sàn thương mại điện tử"
+    },
+    {
+     "ma": "5.5",
+     "ten": "Triển khai và hướng dẫn sử dụng bán hàng trên sàn thương mại điện tử"
+    }
+   ],
+   "goi_moi": [
+    {
+     "ma": "5.1.1",
+     "ten": "Quản lý yêu cầu thay đổi, phụ lục hợp đồng, theo dõi tiến độ và hồ sơ nghiệm thu phần bán hàng trên sàn thương mại điện tử",
+     "md": 3,
+     "loai": "PM",
+     "cha": "5.1",
+     "san_pham": "Phiếu yêu cầu thay đổi, phụ lục hợp đồng, báo cáo tiến độ và biên bản nghiệm thu phần bán hàng trên sàn",
+     "phu_thuoc": [],
+     "hang_muc_01a": [
+      1
+     ],
+     "nguon": [
+      "CR01"
+     ],
+     "giai_doan": "xuyen_suot"
+    },
+    {
+     "ma": "5.2.1",
+     "ten": "Khảo sát quy trình bán hàng trên sàn thương mại điện tử và giao diện lập trình của sàn",
+     "md": 3,
+     "loai": "BA",
+     "cha": "5.2",
+     "san_pham": "Báo cáo khảo sát quy trình và giao diện lập trình của sàn",
+     "phu_thuoc": [],
+     "hang_muc_01a": [
+      1
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.2.2",
+     "ten": "Đặc tả chức năng và use case đồng bộ sản phẩm, tồn kho, giá, nhận đơn, cập nhật trạng thái và đối soát với sàn",
+     "md": 5,
+     "loai": "BA",
+     "cha": "5.2",
+     "san_pham": "Đặc tả chức năng và use case bán hàng trên sàn",
+     "phu_thuoc": [
+      "5.2.1"
+     ],
+     "hang_muc_01a": [
+      1
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.2.3",
+     "ten": "Thiết kế tích hợp với sàn gồm xác thực, ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+     "md": 4,
+     "loai": "DEV",
+     "cha": "5.2",
+     "san_pham": "Thiết kế tích hợp với sàn thương mại điện tử",
+     "phu_thuoc": [
+      "5.2.1",
+      "4.2.7"
+     ],
+     "hang_muc_01a": [
+      9
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.2.4",
+     "ten": "Xác nhận đặc tả bán hàng trên sàn thương mại điện tử của Chủ đầu tư",
+     "md": 2,
+     "loai": "BA",
+     "cha": "5.2",
+     "san_pham": "Biên bản xác nhận đặc tả bán hàng trên sàn",
+     "phu_thuoc": [
+      "5.2.2",
+      "5.2.3"
+     ],
+     "hang_muc_01a": [
+      1
+     ],
+     "nguon": [
+      "CR01"
+     ],
+     "thoi_luong_toi_thieu": 3
+    },
+    {
+     "ma": "5.3.1",
+     "ten": "Kết nối sàn gồm xác thực, cấu hình cửa hàng và quản lý khóa truy cập",
+     "md": 4,
+     "loai": "DEV",
+     "cha": "5.3",
+     "san_pham": "Chức năng kết nối sàn đạt kiểm thử đơn vị",
+     "phu_thuoc": [
+      "5.2.3"
+     ],
+     "hang_muc_01a": [
+      9
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.3.2",
+     "ten": "Đồng bộ sản phẩm và giá lên sàn",
+     "md": 5,
+     "loai": "DEV",
+     "cha": "5.3",
+     "san_pham": "Chức năng đồng bộ sản phẩm và giá đạt kiểm thử đơn vị",
+     "phu_thuoc": [
+      "5.3.1",
+      "4.3.5"
+     ],
+     "hang_muc_01a": [
+      9
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.3.3",
+     "ten": "Đồng bộ tồn kho lên sàn",
+     "md": 4,
+     "loai": "DEV",
+     "cha": "5.3",
+     "san_pham": "Chức năng đồng bộ tồn kho đạt kiểm thử đơn vị",
+     "phu_thuoc": [
+      "5.3.1",
+      "4.3.6"
+     ],
+     "hang_muc_01a": [
+      9
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.3.4",
+     "ten": "Nhận đơn hàng từ sàn vào luồng xử lý đơn hàng",
+     "md": 6,
+     "loai": "DEV",
+     "cha": "5.3",
+     "san_pham": "Chức năng nhận đơn hàng từ sàn đạt kiểm thử đơn vị",
+     "phu_thuoc": [
+      "5.3.1",
+      "3.3.5"
+     ],
+     "hang_muc_01a": [
+      7
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.3.5",
+     "ten": "Cập nhật trạng thái đơn hàng và vận chuyển lên sàn",
+     "md": 4,
+     "loai": "DEV",
+     "cha": "5.3",
+     "san_pham": "Chức năng cập nhật trạng thái lên sàn đạt kiểm thử đơn vị",
+     "phu_thuoc": [
+      "5.3.4",
+      "4.3.8"
+     ],
+     "hang_muc_01a": [
+      7
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.3.6",
+     "ten": "Đối soát đơn hàng và thanh toán với sàn",
+     "md": 5,
+     "loai": "DEV",
+     "cha": "5.3",
+     "san_pham": "Chức năng đối soát đạt kiểm thử đơn vị",
+     "phu_thuoc": [
+      "5.3.4"
+     ],
+     "hang_muc_01a": [
+      7
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.3.7",
+     "ten": "Giao diện quản trị kênh sàn gồm ánh xạ sản phẩm, theo dõi đồng bộ và kết quả đối soát",
+     "md": 5,
+     "loai": "DEV",
+     "cha": "5.3",
+     "san_pham": "Giao diện quản trị kênh sàn đạt kiểm thử đơn vị",
+     "phu_thuoc": [
+      "5.2.2",
+      "1.2.4"
+     ],
+     "hang_muc_01a": [
+      9
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.4.1",
+     "ten": "Kịch bản kiểm thử bán hàng trên sàn thương mại điện tử",
+     "md": 3,
+     "loai": "QA",
+     "cha": "5.4",
+     "san_pham": "Bộ kịch bản kiểm thử bán hàng trên sàn",
+     "phu_thuoc": [
+      "5.2.2"
+     ],
+     "hang_muc_01a": [
+      10
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.4.2",
+     "ten": "Kiểm thử tích hợp với môi trường thử của sàn",
+     "md": 6,
+     "loai": "QA",
+     "cha": "5.4",
+     "san_pham": "Báo cáo kiểm thử tích hợp với sàn",
+     "phu_thuoc": [
+      "5.4.1",
+      "5.3.2",
+      "5.3.3",
+      "5.3.5",
+      "5.3.6"
+     ],
+     "hang_muc_01a": [
+      10
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.4.3",
+     "ten": "Kiểm thử hệ thống luồng bán hàng trên sàn gồm đồng bộ, nhận đơn, trạng thái và đối soát",
+     "md": 4,
+     "loai": "QA",
+     "cha": "5.4",
+     "san_pham": "Báo cáo kiểm thử hệ thống luồng bán hàng trên sàn",
+     "phu_thuoc": [
+      "5.4.2",
+      "5.3.7",
+      "5.2.4"
+     ],
+     "hang_muc_01a": [
+      10
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.4.4",
+     "ten": "Khắc phục lỗi sau kiểm thử bán hàng trên sàn",
+     "md": 3,
+     "loai": "DEV",
+     "cha": "5.4",
+     "san_pham": "Phiên bản đã khắc phục lỗi kiểm thử bán hàng trên sàn",
+     "phu_thuoc": [
+      "5.4.3"
+     ],
+     "hang_muc_01a": [
+      10
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.4.5",
+     "ten": "Tổ chức và hỗ trợ kiểm thử chấp nhận bán hàng trên sàn cùng Chủ đầu tư",
+     "md": 3,
+     "loai": "QA",
+     "cha": "5.4",
+     "san_pham": "Biên bản kiểm thử chấp nhận phần bán hàng trên sàn",
+     "phu_thuoc": [
+      "5.4.4",
+      "5.5.2"
+     ],
+     "hang_muc_01a": [
+      11
+     ],
+     "nguon": [
+      "CR01"
+     ],
+     "thoi_luong_toi_thieu": 3
+    },
+    {
+     "ma": "5.5.1",
+     "ten": "Cấu hình kết nối sàn trên môi trường vận hành",
+     "md": 2,
+     "loai": "DEVOPS",
+     "cha": "5.5",
+     "san_pham": "Kết nối sàn được cấu hình trên môi trường vận hành",
+     "phu_thuoc": [
+      "5.4.4",
+      "4.5.1"
+     ],
+     "hang_muc_01a": [
+      13
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.5.2",
+     "ten": "Tài liệu và buổi hướng dẫn sử dụng bán hàng trên sàn cho cán bộ Chủ đầu tư",
+     "md": 3,
+     "loai": "BA",
+     "cha": "5.5",
+     "san_pham": "Tài liệu hướng dẫn và biên bản hướng dẫn sử dụng bán hàng trên sàn",
+     "phu_thuoc": [
+      "5.2.4",
+      "5.3.7"
+     ],
+     "hang_muc_01a": [
+      12
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    },
+    {
+     "ma": "5.5.3",
+     "ten": "Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện phần bán hàng trên sàn thương mại điện tử",
+     "md": 1,
+     "loai": "DEV",
+     "cha": "5.5",
+     "san_pham": "Mã nguồn và tài liệu kỹ thuật phần bán hàng trên sàn được đưa vào bộ hồ sơ bàn giao",
+     "phu_thuoc": [
+      "5.4.4"
+     ],
+     "hang_muc_01a": [
+      12
+     ],
+     "nguon": [
+      "CR01"
+     ]
+    }
+   ],
+   "goi_thay_doi": [
+    {
+     "ma": "1.5.2",
+     "md_tang": 0,
+     "them_phu_thuoc": [
+      "5.4.5",
+      "5.5.1"
+     ]
+    },
+    {
+     "ma": "1.5.3",
+     "md_tang": 0,
+     "them_phu_thuoc": [
+      "5.5.3"
+     ]
+    },
+    {
+     "ma": "2.4.11",
+     "md_tang": 1
+    }
+   ],
+   "lich_thay_doi": {
+    "hien_tai": {
+     "phuong_an": "hien_tai",
+     "cut_over_goc": "2027-07-01",
+     "cut_over_moi": "2027-07-22",
+     "ngay_lui_cut_over": 15,
+     "ngay_lui_theo_phu_thuoc": 7,
+     "uat_keo_dai": 0,
+     "uat_moi": {
+      "tu": "2027-07-09",
+      "den": "2027-07-20"
+     },
+     "ngay_do_nguon_luc": 8,
+     "du_tru_cr_k0": -15,
+     "ket_thuc_moi": "2027-07-22",
+     "so_vong": 2,
+     "moc": [
+      {
+       "ma": "M3",
+       "ten": "Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+       "dot": 3,
+       "ngay_cu": "2027-06-17",
+       "ngay_moi": "2027-06-30",
+       "han": "2027-06-17",
+       "ngay_doi": 9,
+       "vuot_han": 9,
+       "han_de_xuat": "2027-06-30",
+       "gan_cut_over": false
+      },
+      {
+       "ma": "M4",
+       "ten": "Hoàn thành kiểm thử hệ thống, bản phát hành sẵn sàng kiểm thử chấp nhận",
+       "dot": "",
+       "ngay_cu": "2027-06-17",
+       "ngay_moi": "2027-06-30",
+       "han": "2027-06-17",
+       "ngay_doi": 9,
+       "vuot_han": 9,
+       "han_de_xuat": "2027-06-30",
+       "gan_cut_over": false
+      },
+      {
+       "ma": "M5",
+       "ten": "Hoàn thành kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư",
+       "dot": "",
+       "ngay_cu": "2027-06-29",
+       "ngay_moi": "2027-07-20",
+       "han": "2027-06-29",
+       "ngay_doi": 15,
+       "vuot_han": 15,
+       "han_de_xuat": "2027-07-20",
+       "gan_cut_over": false
+      },
+      {
+       "ma": "M6",
+       "ten": "Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+       "dot": 4,
+       "ngay_cu": "2027-07-01",
+       "ngay_moi": "2027-07-22",
+       "han": "2027-07-01",
+       "ngay_doi": 15,
+       "vuot_han": 15,
+       "han_de_xuat": "2027-07-22",
+       "gan_cut_over": true
+      },
+      {
+       "ma": "M7",
+       "ten": "Nhà thầu nộp bảo lãnh bảo hành, bàn giao mã nguồn và hệ thống",
+       "dot": 5,
+       "ngay_cu": "2027-07-01",
+       "ngay_moi": "2027-07-22",
+       "han": "2027-07-01",
+       "ngay_doi": 15,
+       "vuot_han": 15,
+       "han_de_xuat": "2027-07-22",
+       "gan_cut_over": true
+      },
+      {
+       "ma": "M8",
+       "ten": "Đóng dự án, báo cáo tổng kết và bài học kinh nghiệm được lập, hồ sơ dự án được lưu trữ",
+       "dot": "",
+       "ngay_cu": "2027-07-07",
+       "ngay_moi": "2027-07-07",
+       "han": "2027-07-15",
+       "ngay_doi": 0,
+       "vuot_han": 0,
+       "han_de_xuat": "2027-07-15",
+       "gan_cut_over": true
+      }
+     ],
+     "cam_ket": [
+      {
+       "ma": "CK4",
+       "noi_dung": "Bộ nhận diện thương hiệu, hình ảnh và nội dung sản phẩm (nhà thầu đề nghị, HSMT không quy định thời hạn)",
+       "han_truoc": "2027-06-10",
+       "han_moi": "2027-07-01",
+       "bat_dau_som_nhat": "2027-07-01"
+      }
+     ],
+     "giao_viec_de_xuat": [
+      {
+       "ma": "5.1.1",
+       "R": "dat",
+       "ho_tro": [],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.2.1",
+       "R": "dat",
+       "ho_tro": [],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.2.2",
+       "R": "lien",
+       "ho_tro": [
+        "K"
+       ],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.2.3",
+       "R": "tuananh",
+       "ho_tro": [
+        "minh"
+       ],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.2.4",
+       "R": "lien",
+       "ho_tro": [],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.3.1",
+       "R": "tuananh",
+       "ho_tro": [
+        "minh"
+       ],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.3.2",
+       "R": "D1",
+       "ho_tro": [
+        "D2"
+       ],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.3.3",
+       "R": "D3",
+       "ho_tro": [
+        "D4"
+       ],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.3.4",
+       "R": "K",
+       "ho_tro": [
+        "dat"
+       ],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.3.5",
+       "R": "tuananh",
+       "ho_tro": [
+        "minh"
+       ],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.3.6",
+       "R": "toan",
+       "ho_tro": [
+        "K"
+       ],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.3.7",
+       "R": "tuananh",
+       "ho_tro": [
+        "minh"
+       ],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.4.1",
+       "R": "toan",
+       "ho_tro": [],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.4.2",
+       "R": "minh",
+       "ho_tro": [
+        "toan"
+       ],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.4.3",
+       "R": "minh",
+       "ho_tro": [
+        "toan"
+       ],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.4.4",
+       "R": "tuananh",
+       "ho_tro": [],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.4.5",
+       "R": "minh",
+       "ho_tro": [],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.5.1",
+       "R": "toan",
+       "ho_tro": [],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.5.2",
+       "R": "lien",
+       "ho_tro": [],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      },
+      {
+       "ma": "5.5.3",
+       "R": "tuananh",
+       "ho_tro": [],
+       "nguon": "đề xuất theo năng lực, ngày rảnh và quỹ còn lại sau ngày CR",
+       "ly_do": ""
+      }
+     ],
+     "ho_tro_goi_thay_doi": [],
+     "kha_nang": {
+      "md_con_lai": 343.5,
+      "md_moi_ngay": 11.5,
+      "so_ngay_theo_quy": 30,
+      "so_ngay_den_cut_over_goc": 30
+     },
+     "goi": [
+      {
+       "ma": "1.5.2",
+       "ten": "Chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức",
+       "md": 2.0,
+       "bat_dau": "2027-07-21",
+       "ket_thuc": "2027-07-21",
+       "nguoi": [
+        "D3",
+        "D4"
+       ]
+      },
+      {
+       "ma": "1.5.3",
+       "ten": "Bàn giao mã nguồn, tài liệu kỹ thuật, tài liệu cài đặt và danh mục thư viện",
+       "md": 4.0,
+       "bat_dau": "2027-07-21",
+       "ket_thuc": "2027-07-22",
+       "nguoi": [
+        "D2",
+        "D1"
+       ]
+      },
+      {
+       "ma": "2.4.11",
+       "ten": "Kiểm thử hồi quy theo các đợt khắc phục lỗi kiểm thử chấp nhận",
+       "md": 8.0,
+       "bat_dau": "2027-07-12",
+       "ket_thuc": "2027-07-21",
+       "nguoi": [
+        "toan"
+       ]
+      },
+      {
+       "ma": "5.1.1",
+       "ten": "Quản lý yêu cầu thay đổi, phụ lục hợp đồng, theo dõi tiến độ và hồ sơ nghiệm thu phần bán hàng trên sàn thương mại điện tử",
+       "md": 3.0,
+       "bat_dau": "2027-06-21",
+       "ket_thuc": "2027-06-28",
+       "nguoi": [
+        "dat"
+       ]
+      },
+      {
+       "ma": "5.2.1",
+       "ten": "Khảo sát quy trình bán hàng trên sàn thương mại điện tử và giao diện lập trình của sàn",
+       "md": 3.0,
+       "bat_dau": "2027-06-01",
+       "ket_thuc": "2027-06-08",
+       "nguoi": [
+        "dat"
+       ]
+      },
+      {
+       "ma": "5.2.2",
+       "ten": "Đặc tả chức năng và use case đồng bộ sản phẩm, tồn kho, giá, nhận đơn, cập nhật trạng thái và đối soát với sàn",
+       "md": 5.0,
+       "bat_dau": "2027-06-09",
+       "ket_thuc": "2027-06-11",
+       "nguoi": [
+        "lien",
+        "K"
+       ]
+      },
+      {
+       "ma": "5.2.3",
+       "ten": "Thiết kế tích hợp với sàn gồm xác thực, ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+       "md": 4.0,
+       "bat_dau": "2027-06-09",
+       "ket_thuc": "2027-06-10",
+       "nguoi": [
+        "tuananh",
+        "minh"
+       ]
+      },
+      {
+       "ma": "5.2.4",
+       "ten": "Xác nhận đặc tả bán hàng trên sàn thương mại điện tử của Chủ đầu tư",
+       "md": 2.0,
+       "bat_dau": "2027-06-21",
+       "ket_thuc": "2027-06-23",
+       "nguoi": [
+        "lien"
+       ]
+      },
+      {
+       "ma": "5.3.1",
+       "ten": "Kết nối sàn gồm xác thực, cấu hình cửa hàng và quản lý khóa truy cập",
+       "md": 4.0,
+       "bat_dau": "2027-06-11",
+       "ket_thuc": "2027-06-14",
+       "nguoi": [
+        "tuananh",
+        "minh"
+       ]
+      },
+      {
+       "ma": "5.3.2",
+       "ten": "Đồng bộ sản phẩm và giá lên sàn",
+       "md": 5.0,
+       "bat_dau": "2027-06-15",
+       "ket_thuc": "2027-06-17",
+       "nguoi": [
+        "D1",
+        "D2"
+       ]
+      },
+      {
+       "ma": "5.3.3",
+       "ten": "Đồng bộ tồn kho lên sàn",
+       "md": 4.0,
+       "bat_dau": "2027-06-15",
+       "ket_thuc": "2027-06-16",
+       "nguoi": [
+        "D3",
+        "D4"
+       ]
+      },
+      {
+       "ma": "5.3.4",
+       "ten": "Nhận đơn hàng từ sàn vào luồng xử lý đơn hàng",
+       "md": 6.0,
+       "bat_dau": "2027-06-15",
+       "ket_thuc": "2027-06-18",
+       "nguoi": [
+        "K",
+        "dat"
+       ]
+      },
+      {
+       "ma": "5.3.5",
+       "ten": "Cập nhật trạng thái đơn hàng và vận chuyển lên sàn",
+       "md": 4.0,
+       "bat_dau": "2027-06-21",
+       "ket_thuc": "2027-06-22",
+       "nguoi": [
+        "tuananh",
+        "minh"
+       ]
+      },
+      {
+       "ma": "5.3.6",
+       "ten": "Đối soát đơn hàng và thanh toán với sàn",
+       "md": 5.0,
+       "bat_dau": "2027-06-21",
+       "ket_thuc": "2027-06-23",
+       "nguoi": [
+        "toan",
+        "K"
+       ]
+      },
+      {
+       "ma": "5.3.7",
+       "ten": "Giao diện quản trị kênh sàn gồm ánh xạ sản phẩm, theo dõi đồng bộ và kết quả đối soát",
+       "md": 5.0,
+       "bat_dau": "2027-06-15",
+       "ket_thuc": "2027-06-17",
+       "nguoi": [
+        "tuananh",
+        "minh"
+       ]
+      },
+      {
+       "ma": "5.4.1",
+       "ten": "Kịch bản kiểm thử bán hàng trên sàn thương mại điện tử",
+       "md": 3.0,
+       "bat_dau": "2027-06-14",
+       "ket_thuc": "2027-06-16",
+       "nguoi": [
+        "toan"
+       ]
+      },
+      {
+       "ma": "5.4.2",
+       "ten": "Kiểm thử tích hợp với môi trường thử của sàn",
+       "md": 6.0,
+       "bat_dau": "2027-06-24",
+       "ket_thuc": "2027-06-28",
+       "nguoi": [
+        "minh",
+        "toan"
+       ]
+      },
+      {
+       "ma": "5.4.3",
+       "ten": "Kiểm thử hệ thống luồng bán hàng trên sàn gồm đồng bộ, nhận đơn, trạng thái và đối soát",
+       "md": 4.0,
+       "bat_dau": "2027-06-29",
+       "ket_thuc": "2027-07-02",
+       "nguoi": [
+        "minh",
+        "toan"
+       ]
+      },
+      {
+       "ma": "5.4.4",
+       "ten": "Khắc phục lỗi sau kiểm thử bán hàng trên sàn",
+       "md": 3.0,
+       "bat_dau": "2027-07-05",
+       "ket_thuc": "2027-07-07",
+       "nguoi": [
+        "tuananh"
+       ]
+      },
+      {
+       "ma": "5.4.5",
+       "ten": "Tổ chức và hỗ trợ kiểm thử chấp nhận bán hàng trên sàn cùng Chủ đầu tư",
+       "md": 3.0,
+       "bat_dau": "2027-07-15",
+       "ket_thuc": "2027-07-19",
+       "nguoi": [
+        "minh"
+       ]
+      },
+      {
+       "ma": "5.5.1",
+       "ten": "Cấu hình kết nối sàn trên môi trường vận hành",
+       "md": 2.0,
+       "bat_dau": "2027-07-08",
+       "ket_thuc": "2027-07-09",
+       "nguoi": [
+        "toan"
+       ]
+      },
+      {
+       "ma": "5.5.2",
+       "ten": "Tài liệu và buổi hướng dẫn sử dụng bán hàng trên sàn cho cán bộ Chủ đầu tư",
+       "md": 3.0,
+       "bat_dau": "2027-06-24",
+       "ket_thuc": "2027-06-28",
+       "nguoi": [
+        "lien"
+       ]
+      },
+      {
+       "ma": "5.5.3",
+       "ten": "Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện phần bán hàng trên sàn thương mại điện tử",
+       "md": 1.0,
+       "bat_dau": "2027-07-08",
+       "ket_thuc": "2027-07-08",
+       "nguoi": [
+        "tuananh"
+       ]
+      }
+     ],
+     "chuoi_dai_nhat": [
+      {
+       "ma": "3.4.10",
+       "ten": "Kịch bản kiểm thử hệ thống đầu cuối",
+       "md": 5,
+       "bat_dau": "2027-05-28",
+       "ket_thuc": "2027-06-03",
+       "nguoi": [
+        "Q1"
+       ]
+      },
+      {
+       "ma": "3.4.12",
+       "ten": "Kiểm thử chức năng đầu cuối",
+       "md": 10,
+       "bat_dau": "2027-06-04",
+       "ket_thuc": "2027-06-18",
+       "nguoi": [
+        "lien",
+        "Q1"
+       ]
+      },
+      {
+       "ma": "4.4.5",
+       "ten": "Khắc phục lỗi sau kiểm thử hệ thống",
+       "md": 6,
+       "bat_dau": "2027-06-21",
+       "ket_thuc": "2027-06-30",
+       "nguoi": [
+        "minh",
+        "D2",
+        "D1"
+       ]
+      },
+      {
+       "ma": "1.4.11",
+       "ten": "Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng tìm kiếm và hiển thị sản phẩm",
+       "md": 4,
+       "bat_dau": "2027-07-09",
+       "ket_thuc": "2027-07-20",
+       "nguoi": [
+        "Q1"
+       ]
+      },
+      {
+       "ma": "1.5.2",
+       "ten": "Chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức",
+       "md": 2.0,
+       "bat_dau": "2027-07-21",
+       "ket_thuc": "2027-07-21",
+       "nguoi": [
+        "D3",
+        "D4"
+       ]
+      },
+      {
+       "ma": "3.5.4",
+       "ten": "Hỗ trợ ngày đưa hệ thống vào vận hành và biên bản bàn giao hệ thống",
+       "md": 2,
+       "bat_dau": "2027-07-22",
+       "ket_thuc": "2027-07-22",
+       "nguoi": [
+        "D3",
+        "toan"
+       ]
+      }
+     ],
+     "goi_nen_ho_tro": [
+      "3.4.10 (Q1, 5,00 MD)"
+     ],
+     "tai_nguoi": [
+      {
+       "id": "dat",
+       "ho_ten": "Trần Bá Đạt",
+       "md": 50.0,
+       "quy": 45.0,
+       "ty_le": 1.1111
+      },
+      {
+       "id": "toan",
+       "ho_ten": "Ninh Đức Toàn",
+       "md": 45.0,
+       "quy": 45.0,
+       "ty_le": 1.0
+      },
+      {
+       "id": "minh",
+       "ho_ten": "Vũ Đức Minh",
+       "md": 39.5,
+       "quy": 45.0,
+       "ty_le": 0.8778
+      },
+      {
+       "id": "K",
+       "ho_ten": "Nguyễn Hoàng Nam",
+       "md": 36.5,
+       "quy": 45.0,
+       "ty_le": 0.8111
+      },
+      {
+       "id": "tuananh",
+       "ho_ten": "Phạm Tuấn Anh",
+       "md": 35.5,
+       "quy": 45.0,
+       "ty_le": 0.7889
+      },
+      {
+       "id": "lien",
+       "ho_ten": "Nguyễn Thị Phương Liên",
+       "md": 35.5,
+       "quy": 45.0,
+       "ty_le": 0.7889
+      }
+     ],
+     "canh_bao_lich": [
+      "Vũ Đức Minh quá tải ở S2: 10.28/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Vũ Đức Minh quá tải ở S3: 13.36/13.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Ninh Đức Toàn quá tải ở S2: 10.68/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Ninh Đức Toàn quá tải ở S3: 13.88/13.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Ninh Đức Toàn quá tải ở S4: 10.68/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Ninh Đức Toàn quá tải ở S5: 10.50/10.00 MD",
+      "Nguyễn Thị Phương Liên quá tải ở S1: 10.21/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Nguyễn Thị Phương Liên quá tải ở S2: 10.21/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Nguyễn Thị Phương Liên quá tải ở S4: 10.21/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Nguyễn Hoàng Nam quá tải ở S2: 10.21/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Nguyễn Hoàng Nam quá tải ở S3: 13.27/13.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Lê Quang Huy quá tải ở S4: 10.04/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Lê Quang Huy quá tải ở S5: 10.56/10.00 MD",
+      "Đỗ Minh Quân quá tải ở S3: 14.34/13.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Đỗ Minh Quân quá tải ở S4: 11.03/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Bùi Anh Tuấn quá tải ở S3: 13.35/13.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Phạm Ngọc Anh quá tải ở S4: 10.77/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Phạm Ngọc Anh quá tải ở S5: 10.77/10.00 MD",
+      "Trương Quốc Việt quá tải ở S3: 14.06/13.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Trương Quốc Việt quá tải ở S4: 10.82/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+      "Trương Quốc Việt quá tải ở S6: 10.82/10.00 MD"
+     ],
+     "can_them_nguoi": true,
+     "ket_luan_nhan_su": "Nguồn lực là nút thắt: với cách giao việc này, theo phụ thuộc chỉ cần lùi 7 ngày, 8 ngày còn lại do người làm bận (người dùng từ 90% quỹ: Trần Bá Đạt 111%, Ninh Đức Toàn 100%). Gói trên chuỗi dài nhất do một người làm, thêm người hỗ trợ sẽ rút ngắn: 3.4.10 (Q1, 5,00 MD). Cần thêm người, thử phương án bằng --them-nguoi",
+     "them_nguoi": null,
+     "lich_mo_phong": "lam_viec/thay_doi/CR01/lich_mo_phong_hien_tai.json"
+    },
+    "ngay_cr": "2027-05-20",
+    "ngay_lap_lai": "2027-05-21",
+    "ngay_bat_dau_thay_doi": "2027-06-01",
+    "phan_da_lam": "theo kế hoạch và thực tế",
+    "so_goi_da_xong": 70,
+    "so_goi_dang_lam": 16,
+    "goi_da_xong": [
+     "1.1.1",
+     "1.2.1",
+     "1.2.2",
+     "1.2.3",
+     "1.2.4",
+     "1.2.5",
+     "1.2.6",
+     "1.2.7",
+     "1.2.8",
+     "1.3.1",
+     "1.3.2",
+     "1.3.3",
+     "1.3.6",
+     "1.4.1",
+     "1.5.1",
+     "2.1.1",
+     "2.2.1",
+     "2.2.2",
+     "2.2.3",
+     "2.2.4",
+     "2.2.5",
+     "2.2.6",
+     "2.2.7",
+     "2.2.8",
+     "2.3.1",
+     "2.3.2",
+     "2.3.3",
+     "2.3.6",
+     "2.4.1",
+     "2.4.5",
+     "3.1.1",
+     "3.1.2",
+     "3.2.1",
+     "3.2.2",
+     "3.2.3",
+     "3.2.4",
+     "3.2.5",
+     "3.2.6",
+     "3.2.7",
+     "3.2.8",
+     "3.2.9",
+     "3.2.10",
+     "3.2.11",
+     "3.3.1",
+     "3.3.2",
+     "3.3.3",
+     "3.3.4",
+     "3.3.5",
+     "3.3.6",
+     "3.3.7",
+     "3.3.8",
+     "3.3.9",
+     "3.3.10",
+     "3.4.1",
+     "3.4.3",
+     "4.2.1",
+     "4.2.2",
+     "4.2.3",
+     "4.2.4",
+     "4.2.5",
+     "4.2.6",
+     "4.2.7",
+     "4.3.1",
+     "4.3.2",
+     "4.3.3",
+     "4.3.4",
+     "4.3.6",
+     "4.3.9",
+     "4.4.1",
+     "4.4.2"
+    ],
+    "du_tru_tham_chieu": 3,
+    "cut_over_lui_khong_co_cr": 0,
+    "phuong_an": [
+     "hien_tai"
+    ],
+    "ngay_cham": 18,
+    "tieu_hao_du_tru": 3
+   },
+   "diem_tac_dong": 10,
+   "ly_do_muc": [
+    "MD tăng 76 MD vượt ngưỡng mức trung bình",
+    "chi phí nội bộ 161.500.000 đồng vượt ngưỡng mức trung bình",
+    "tiêu hao dự trữ 3 ngày vượt ngưỡng mức nhỏ",
+    "chậm cut over 15 ngày vượt ngưỡng mức trung bình",
+    "bổ sung hoặc bớt hạng mục ngoài phạm vi hợp đồng",
+    "thay đổi giá hợp đồng",
+    "làm chậm ngày cut over",
+    "làm mốc gắn đợt thanh toán vượt hạn của mốc",
+    "thay đổi cam kết khác với Chủ đầu tư hoặc yêu cầu không được khai báo là thay đổi nội bộ"
+   ],
+   "muc": "lon",
+   "muc_ten": "Lớn",
+   "nguoi_phe_duyet_theo_quy_dinh": "Ban kiểm soát thay đổi xem xét, người đại diện ký hợp đồng của hai bên quyết định và ký văn bản thống nhất hoặc phụ lục hợp đồng (Trần Bá Đạt, Yamada, Phòng Kế hoạch, Lê Quốc Bảo, Tổng Giám đốc Công ty Cổ phần ABC Wear)",
+   "han_danh_gia_ngay": 3,
+   "han_danh_gia": "2027-05-25",
+   "han_quyet_dinh": "2027-06-01",
+   "han_hop_ban": "2027-05-25",
+   "nut_thay_doi": [
+    "uoc_luong",
+    "du_an",
+    "chi_tieu",
+    "don_gia"
+   ],
+   "tai_lieu_cap_nhat": [
+    "dau_vao/uoc_luong.json (dữ liệu nguồn)",
+    "dau_vao/du_an.json (dữ liệu nguồn)",
+    "dau_vao/chi_tieu_ky_thuat.json (dữ liệu nguồn)",
+    "dau_vao/don_gia.json (dữ liệu nguồn)",
+    "lam_viec/wbs/wbs_nhap.json (dữ liệu nguồn)",
+    "lam_viec/giao_viec/phan_cong_nhap.json (dữ liệu nguồn)",
+    "lam_viec/lich/moc_nhap.json (dữ liệu nguồn)",
+    "wbs (WBS (dữ liệu))",
+    "giao_viec (Giao việc theo gói WBS (dữ liệu))",
+    "lich (Master schedule)",
+    "tai_lieu_wbs (WBS (tài liệu))",
+    "rui_ro (Sổ đăng ký rủi ro (dữ liệu))",
+    "chi_phi (Cost estimate)",
+    "ke_hoach_rui_ro (Risk management plan)",
+    "ke_hoach_thay_doi (Change management plan)",
+    "ke_hoach_tong_the (Master plan)",
+    "phan_cong_tai_lieu (Danh sách phân chia công việc (responsibilities))",
+    "phien_ban (Tài liệu quản lý phiên bản)"
+   ],
+   "tai_lieu_theo_ky": [
+    "mo_phong (Số liệu thực tế mô phỏng)",
+    "bao_cao_tien_do (Báo cáo tiến độ)",
+    "phat_hanh (Bản phát hành theo sprint)"
+   ],
+   "tai_lieu_khoa": [
+    "hsdt (Hồ sơ dự thầu)"
+   ],
+   "phu_luc_hop_dong": true,
+   "van_ban_yeu_cau": "Phụ lục hợp đồng",
+   "trang_thai": "Đã phê duyệt",
+   "lich_su": [
+    {
+     "ngay": "2027-05-20",
+     "ghi_luc": "2026-10-25 13:26:07",
+     "trang_thai": "Chờ phê duyệt",
+     "nguoi": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+     "ghi_chu": "Lập và đánh giá tác động"
+    },
+    {
+     "ngay": "2027-05-27",
+     "ghi_luc": "2026-10-25 13:27:36",
+     "trang_thai": "Đã phê duyệt",
+     "nguoi": "Lê Quốc Bảo, Giám đốc Công ty Cổ phần PM_26I_02 và Tổng Giám đốc Công ty Cổ phần ABC Wear",
+     "ghi_chu": "Biên bản họp ban kiểm soát thay đổi ngày 25/05/2027, phê duyệt theo quyết định của nhóm: làm trước cut over, lùi cut over theo kết quả lập lại lịch, phần giá điều chỉnh thanh toán thành một đợt riêng khi nghiệm thu CR01"
+    },
+    {
+     "ngay": "2027-05-27",
+     "ghi_luc": "2026-10-25 13:31:12",
+     "trang_thai": "Đã phê duyệt",
+     "nguoi": "Lê Quốc Bảo và Tổng Giám đốc Công ty Cổ phần ABC Wear",
+     "ghi_chu": "Đợt thanh toán riêng của phần giá điều chỉnh theo phụ lục 01/2027/PL-ABCW"
+    },
+    {
+     "ngay": "2027-05-27",
+     "ghi_luc": "2026-10-25 13:38:07",
+     "trang_thai": "Đã phê duyệt",
+     "nguoi": "",
+     "ghi_chu": "Đường cơ sở BL2 sau thay đổi, 13 tài liệu"
+    }
+   ],
+   "nguoi_quyet_dinh": "Lê Quốc Bảo, Giám đốc Công ty Cổ phần PM_26I_02 và Tổng Giám đốc Công ty Cổ phần ABC Wear",
+   "ngay_quyet_dinh": "2027-05-27",
+   "van_ban": "Phụ lục hợp đồng số 01/2027/PL-ABCW ngày 27/05/2027",
+   "ngay_xem_lai": "",
+   "dem_phien_ban_khi_quyet_dinh": 635,
+   "phuong_an_chon": "hien_tai",
+   "quyet_dinh_dung_han": true,
+   "phu_luc": {
+    "so": "01/2027/PL-ABCW",
+    "ngay": "2027-05-27",
+    "gia_dieu_chinh": 199024682,
+    "gia_hop_dong_truoc": 1750000000,
+    "gia_hop_dong_sau": 1949024682,
+    "cut_over_truoc": "2027-07-01",
+    "cut_over_moi": "2027-07-27",
+    "so_ngay_lui_cut_over": 18,
+    "moc_thanh_toan": [
+     {
+      "ma": "M3",
+      "ten": "Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+      "dot": 3,
+      "han_truoc": "2027-06-17",
+      "han_moi": "2027-06-30",
+      "ngay_du_kien": "2027-06-30"
+     },
+     {
+      "ma": "M6",
+      "ten": "Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+      "dot": 4,
+      "han_truoc": "2027-07-01",
+      "han_moi": "2027-07-27",
+      "ngay_du_kien": "2027-07-22"
+     },
+     {
+      "ma": "M7",
+      "ten": "Nhà thầu nộp bảo lãnh bảo hành, bàn giao mã nguồn và hệ thống",
+      "dot": 5,
+      "han_truoc": "2027-07-01",
+      "han_moi": "2027-07-27",
+      "ngay_du_kien": "2027-07-22"
+     }
+    ],
+    "cam_ket_chu_dau_tu": [
+     {
+      "ma": "CK4",
+      "noi_dung": "Bộ nhận diện thương hiệu, hình ảnh và nội dung sản phẩm (nhà thầu đề nghị, HSMT không quy định thời hạn)",
+      "han_truoc": "2027-06-10",
+      "han_moi": "2027-07-06",
+      "bat_dau_som_nhat": "2027-07-01"
+     }
+    ],
+    "phuong_an": "hien_tai",
+    "dot_thanh_toan": [
+     {
+      "dot": 6,
+      "su_kien": "Chủ đầu tư nghiệm thu phần bán hàng trên sàn thương mại điện tử theo yêu cầu thay đổi CR01",
+      "phan_tram_gia_dieu_chinh": 100,
+      "moc": "M9",
+      "nguon": "Quyết định của nhóm cho mô phỏng: giá CR01 thanh toán thành một đợt riêng 100% khi nghiệm thu CR01, đợt 1 đến 5 giữ theo giá gốc 1.750.000.000 đồng"
+     }
+    ],
+    "uat": {
+     "truoc": {
+      "tu": "2027-06-18",
+      "den": "2027-06-29"
+     },
+     "moi": {
+      "tu": "2027-07-14",
+      "den": "2027-07-23"
+     }
+    },
+    "lich_su": [
+     {
+      "ngay": "2027-05-27",
+      "ghi_luc": "2026-10-25 13:31:12",
+      "noi_dung": "Ghi đợt thanh toán riêng của phần giá điều chỉnh",
+      "dot_thanh_toan": [
+       {
+        "dot": 6,
+        "su_kien": "Chủ đầu tư nghiệm thu phần bán hàng trên sàn thương mại điện tử theo yêu cầu thay đổi CR01",
+        "phan_tram_gia_dieu_chinh": 100,
+        "moc": "M9",
+        "nguon": "Quyết định của nhóm cho mô phỏng: giá CR01 thanh toán thành một đợt riêng 100% khi nghiệm thu CR01, đợt 1 đến 5 giữ theo giá gốc 1.750.000.000 đồng"
+       }
+      ]
+     }
+    ]
+   },
+   "ap_dung": {
+    "ngay": "2027-05-27",
+    "ghi_luc": "2026-10-25 13:29:44",
+    "da_ghi": true,
+    "phuong_an": "hien_tai",
+    "tep": [
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/lam_viec/wbs/wbs_nhap.json",
+      "thay_doi": "Thêm 6 mục, 20 gói mới, 3 gói tăng MD, nguồn ghi CR01"
+     },
+     {
+      "tep": "dau_vao/uoc_luong.json",
+      "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/dau_vao/uoc_luong.json",
+      "thay_doi": "tong_md cộng 76,00 MD, tong_theo_nhom cộng theo nhóm 2, 5, thêm bước ước lượng ghi CR01"
+     },
+     {
+      "tep": "dau_vao/du_an.json",
+      "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/dau_vao/du_an.json",
+      "thay_doi": "ngay_cut_over 01/07/2027 thành 27/07/2027, khoảng uat tu 14/07/2027, den 23/07/2027, hạn CK4 10/06/2027 thành 06/07/2027, thêm cam kết CK9 (phụ lục có hiệu lực ngày 27/05/2027), sprint.cut_over_goc giữ các sprint đã qua"
+     },
+     {
+      "tep": "lam_viec/lich/moc_nhap.json",
+      "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/lam_viec/lich/moc_nhap.json",
+      "thay_doi": "Ràng buộc không sớm hơn và mốc ngày cố định từ 20/05/2027 dời theo cut over (18 ngày), hạn mốc theo phụ lục: M3 30/06/2027, M6 27/07/2027, M7 27/07/2027, gói mới gắn CK9, lập lại lịch từ 21/05/2027 (lap_lai_tu)"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/lam_viec/giao_viec/phan_cong_nhap.json",
+      "thay_doi": "Giao việc gói mới: 5.1.1 dat, 5.2.1 dat, 5.2.2 lien, 5.2.3 tuananh, 5.2.4 lien, 5.3.1 tuananh, 5.3.2 D1, 5.3.3 D3, 5.3.4 K, 5.3.5 tuananh, 5.3.6 toan, 5.3.7 tuananh, 5.4.1 toan, 5.4.2 minh, 5.4.3 minh, 5.4.4 tuananh, 5.4.5 minh, 5.5.1 toan, 5.5.2 lien, 5.5.3 tuananh; trách nhiệm của mục mới mức 1, 2; gói dàn trải 1.1.2, 1.1.3, 1.1.4, 2.1.2, 2.1.3, 2.1.4, 3.1.3, 3.1.4, 3.1.5, 4.1.1, 4.1.2, 4.1.3 kéo đến sprint cuối mới"
+     },
+     {
+      "tep": "dau_vao/don_gia.json",
+      "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/dau_vao/don_gia.json",
+      "thay_doi": "gia_chao_muc_tieu cộng 199.024.682 đồng theo 01/2027/PL-ABCW"
+     },
+     {
+      "tep": "dau_vao/chi_tieu_ky_thuat.json",
+      "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/dau_vao/chi_tieu_ky_thuat.json",
+      "thay_doi": "bao_hanh.ho_tro_tang_cuong 28/07/2027 đến 10/08/2027 (bắt đầu sau cut over mới, giữ số ngày làm việc)"
+     }
+    ],
+    "kiem_tra": [
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.1.1"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.2.1"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.2.2"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.2.3"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.2.4"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.3.1"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.3.2"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.3.3"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.3.4"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.3.5"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.3.6"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.3.7"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.4.1"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.4.2"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.4.3"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.4.4"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.4.5"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.5.1"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.5.2"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi.ma",
+      "chua": "5.5.3"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi[ma=1.5.2].nguon",
+      "chua": "CR01"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi[ma=1.5.3].nguon",
+      "chua": "CR01"
+     },
+     {
+      "tep": "lam_viec/wbs/wbs_nhap.json",
+      "duong": "goi[ma=2.4.11].nguon",
+      "chua": "CR01"
+     },
+     {
+      "tep": "dau_vao/uoc_luong.json",
+      "duong": "cac_buoc",
+      "chua": "CR01"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.1.1"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.2.1"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.2.2"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.2.3"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.2.4"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.3.1"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.3.2"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.3.3"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.3.4"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.3.5"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.3.6"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.3.7"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.4.1"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.4.2"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.4.3"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.4.4"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.4.5"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.5.1"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.5.2"
+     },
+     {
+      "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+      "duong": "giao_viec.ma",
+      "chua": "5.5.3"
+     },
+     {
+      "tep": "dau_vao/du_an.json",
+      "duong": "dieu_chinh_theo_cr",
+      "chua": "CR01"
+     },
+     {
+      "tep": "lam_viec/lich/moc_nhap.json",
+      "duong": "dau_vao_ben_ngoai",
+      "chua": "CK9"
+     },
+     {
+      "tep": "dau_vao/don_gia.json",
+      "duong": "dieu_chinh_gia_theo_phu_luc",
+      "chua": "CR01"
+     },
+     {
+      "tep": "dau_vao/chi_tieu_ky_thuat.json",
+      "duong": "bao_hanh.ho_tro_tang_cuong.tu",
+      "chua": "2027-07-28"
+     }
+    ],
+    "thu_tu_chay_lai": [
+     "python .claude/skills/qlda-wbs/scripts/kiem_tra_wbs.py lam_viec/wbs/wbs_nhap.json",
+     "python .claude/skills/qlda-phan-cong/scripts/kiem_tra_giao_viec.py lam_viec/giao_viec/phan_cong_nhap.json",
+     "python .claude/skills/qlda-master-schedule/scripts/lap_lich.py lam_viec/lich/moc_nhap.json",
+     "python .claude/skills/qlda-master-schedule/scripts/xuat_gantt.py",
+     "python .claude/skills/qlda-wbs/scripts/xuat_wbs.py --ngay 2027-05-27",
+     "agent Lập rủi ro cập nhật lam_viec/rui_ro/rui_ro_nhap.json (rủi ro mới của CR01)",
+     "python .claude/skills/qlda-risk/scripts/kiem_tra_rui_ro.py lam_viec/rui_ro/rui_ro_nhap.json",
+     "python .claude/skills/qlda-cost-estimate/scripts/tinh_chi_phi.py",
+     "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi chi_phi",
+     "agent Soạn thảo cập nhật bản soạn",
+     "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien chi_phi --ghi-chu \"CR01\" --ngay 2027-05-27",
+     "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi ke_hoach_rui_ro",
+     "agent Soạn thảo cập nhật bản soạn",
+     "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien ke_hoach_rui_ro --ghi-chu \"CR01\" --ngay 2027-05-27",
+     "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi ke_hoach_thay_doi",
+     "agent Soạn thảo cập nhật bản soạn",
+     "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien ke_hoach_thay_doi --ghi-chu \"CR01\" --ngay 2027-05-27",
+     "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi ke_hoach_tong_the",
+     "agent Soạn thảo cập nhật bản soạn",
+     "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien ke_hoach_tong_the --ghi-chu \"CR01\" --ngay 2027-05-27",
+     "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi phan_cong_tai_lieu",
+     "agent Soạn thảo cập nhật bản soạn",
+     "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien phan_cong_tai_lieu --ghi-chu \"CR01\" --ngay 2027-05-27",
+     "python .claude/skills/qlda-phien-ban/scripts/so_phien_ban.py duong_co_so BL2 --ten \"Đường cơ sở sau yêu cầu thay đổi CR01\" --cr CR01 --ngay 2027-05-27",
+     "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi phien_ban",
+     "agent Soạn thảo cập nhật bản soạn",
+     "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien phien_ban --ghi-chu \"CR01\" --ngay 2027-05-27"
+    ],
+    "canh_bao": [
+     "TD25 Hiệu lực bảo đảm thực hiện hợp đồng theo HSMT đến 31/07/2027, sớm hơn ngày đóng dự án dự kiến 10/08/2027 sau cut over mới. Ghi gia hạn bảo đảm thực hiện trong 01/2027/PL-ABCW hoặc văn bản thỏa thuận"
+    ]
+   },
+   "phien_ban_sau": {
+    "ket_qua/04_Master_schedule/Master_schedule.xlsx": "2.0",
+    "ket_qua/06_Cost_estimate/Cost_estimate.xlsx": "2.0",
+    "ket_qua/03_WBS/WBS_tong_hop.docx": "2.0",
+    "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx": "2.0",
+    "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx": "2.0",
+    "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx": "2.0",
+    "ket_qua/08_Change_management_plan/Ke_hoach_quan_ly_thay_doi.docx": "2.0",
+    "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx": "2.0",
+    "ket_qua/03_WBS/WBS_1_Phan_he_quan_ly_san_pham.docx": "2.0",
+    "ket_qua/03_WBS/WBS_2_Phan_he_quan_ly_khach_hang_thanh_vien.docx": "2.0",
+    "ket_qua/03_WBS/WBS_3_Phan_he_quan_ly_don_hang_dat_hang.docx": "2.0",
+    "ket_qua/03_WBS/WBS_4_Phan_he_tich_hop_he_thong.docx": "2.0",
+    "ket_qua/03_WBS/WBS_5_Ban_hang_tren_san_thuong_mai_dien_tu.docx": "1.0"
+   }
+  }
+ ]
+}

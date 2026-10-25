@@ -17,7 +17,7 @@
    "ma_rui_ro": "RR04",
    "ngay": "2027-04-01",
    "trang_thai": "Đã xảy ra",
-   "ma_goi": "2.2.4",
+   "ma_goi": "4.2.4",
    "md_tac_dong": 1,
    "ngay_tac_dong": 0,
    "hanh_dong": "Toàn hỗ trợ bàn giao kiến trúc, D3 làm bù cấu hình cơ sở dữ liệu trong sprint",
@@ -29,7 +29,7 @@
    "ma": "VD02",
    "ngay_ghi_nhan": "2027-04-01",
    "nguoi_bao": "dat",
-   "mo_ta": "Gói 2.2.4 chậm bắt đầu do Bùi Anh Tuấn có mặt muộn 2 ngày",
+   "mo_ta": "Gói 4.2.4 chậm bắt đầu do Bùi Anh Tuấn có mặt muộn 2 ngày",
    "phan_loai": "Nhân sự",
    "uu_tien": "Cao",
    "ma_rui_ro": "RR04",
@@ -45,13 +45,13 @@
     }
    ],
    "ngay_dong": "2027-04-07",
-   "ket_qua": "Gói 2.2.4 hoàn thành, không ảnh hưởng 6.1.2",
+   "ket_qua": "Gói 4.2.4 hoàn thành, không ảnh hưởng 4.3.2",
    "nguoi_dong": "dat",
    "ly_do": "Ghi sổ vấn đề cho rủi ro đã xảy ra"
   },
   {
    "loai": "goi",
-   "ma_goi": "2.3.4",
+   "ma_goi": "2.2.4",
    "ty_le_md": 0.25,
    "ly_do": "Thiết kế giao diện đăng ký, đăng nhập phải làm lại một phần theo góp ý của Chủ sản phẩm tại buổi làm rõ yêu cầu"
   },
@@ -60,14 +60,14 @@
    "ma": "VD03",
    "ngay_ghi_nhan": "2027-04-12",
    "nguoi_bao": "dat",
-   "mo_ta": "Các gói 2.3.4, 3.2.1, 4.1.1, 4.2.1, 5.3.9, 5.4.1, 6.1.2 chậm 1 đến 2 ngày do đặc tả S1 xong muộn và gói 2.3.4 phải làm lại một phần",
+   "mo_ta": "Các gói 2.2.4, 1.2.7, 2.2.5, 2.2.7, 3.3.9, 3.4.1, 4.3.2 chậm 1 đến 2 ngày do đặc tả S1 xong muộn và gói 2.2.4 phải làm lại một phần",
    "phan_loai": "Tiến độ",
    "uu_tien": "Trung bình",
    "nguoi_phu_trach": "dat",
    "han": "2027-04-23",
    "hanh_dong": [
     {
-     "viec": "Điều chỉnh thứ tự công việc S3, ưu tiên gói găng 6.1.2 và các gói thiết kế chi tiết",
+     "viec": "Điều chỉnh thứ tự công việc S3, ưu tiên gói găng 4.3.2 và các gói thiết kế chi tiết",
      "nguoi": "dat",
      "han": "2027-04-15",
      "ngay_xong": "2027-04-15",
@@ -81,7 +81,7 @@
   },
   {
    "loai": "loi",
-   "ma_goi": "6.1.1",
+   "ma_goi": "4.3.1",
    "so_loi": {
     "Trung bình": 2,
     "Thấp": 1
@@ -96,7 +96,7 @@
    "so_tien": 6000000,
    "ghi_chu": "Thuê máy chủ môi trường phát triển và kiểm thử tháng 4",
    "lien_ket": [
-    "8.1.1"
+    "1.5.1"
    ],
    "ly_do": "Chi phí môi trường theo khoản B"
   },
@@ -114,15 +114,15 @@
      "loai": "tốt",
      "noi_dung": "Bàn giao kiến trúc cho vị trí bổ sung trong 1 ngày nhờ tài liệu kiến trúc đã lập ở S1",
      "lien_ket": [
-      "2.2.2",
+      "4.2.2",
       "RR04"
      ]
     },
     {
      "loai": "cần cải thiện",
-     "noi_dung": "Ước lượng gói 2.2.3 chưa tính bảng đồng bộ tồn kho với Main System",
+     "noi_dung": "Ước lượng gói 4.2.3 chưa tính bảng đồng bộ tồn kho với Main System",
      "lien_ket": [
-      "2.2.3"
+      "4.2.3"
      ]
     },
     {

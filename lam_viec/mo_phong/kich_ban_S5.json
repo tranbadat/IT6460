@@ -1,0 +1,135 @@
+{
+ "sprint": "S5",
+ "tom_tat": "Phụ lục hợp đồng 01/2027/PL-ABCW cho yêu cầu thay đổi CR01 được ký ngày 27/05/2027, nhóm bắt đầu phần bán hàng trên sàn theo lịch lập lại. Các gói chậm của S4 được làm bù, gói găng 4.4.3 kiểm thử tích hợp với Main System bắt đầu đúng lịch trên môi trường thử do Chủ đầu tư bàn giao. Kiểm thử tìm kiếm và kiểm thử luồng đặt hàng đầu cuối phát hiện lỗi ở mức hợp lý.",
+ "bien_co": [
+  {
+   "loai": "goi",
+   "ma_goi": "1.3.8",
+   "ty_le_md": 0.15,
+   "ly_do": "Tối ưu bộ nhớ đệm trang danh mục cần thêm phép đo thời gian phản hồi với dữ liệu sản phẩm mẫu lớn hơn dự kiến"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "4.3.10",
+   "ty_le_md": -0.1,
+   "ly_do": "Công cụ chuyển đổi dữ liệu dùng lại bộ ánh xạ trường đã có của dịch vụ đồng bộ danh mục 4.3.5"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "1.4.2",
+   "so_loi": {
+    "Trung bình": 1,
+    "Thấp": 2
+   },
+   "mo_ta": "Lỗi sắp xếp theo giá khi sản phẩm có biến thể khác giá, lỗi gợi ý tìm kiếm với từ khóa có dấu và lỗi hiển thị số kết quả khi lọc nhiều điều kiện",
+   "ly_do": "Lỗi phát hiện trong kiểm thử tìm kiếm, lọc và sắp xếp sản phẩm"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "3.4.6",
+   "so_loi": {
+    "Cao": 1,
+    "Trung bình": 1
+   },
+   "mo_ta": "Lỗi giữ tồn kho không giải phóng khi thanh toán thất bại và lỗi thông báo trạng thái đơn hàng chưa cập nhật sau khi hủy đơn, phát hiện khi kiểm thử luồng đặt hàng đầu cuối",
+   "ly_do": "Lỗi phát hiện trong kiểm thử luồng đặt hàng đầu cuối với dữ liệu giả lập Main System"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD08",
+   "hanh_dong": [
+    {
+     "ma": "HD11",
+     "viec": "Lập phiếu yêu cầu thay đổi CR01 và đánh giá tác động theo quy trình quản lý thay đổi",
+     "nguoi": "dat",
+     "han": "2027-05-25",
+     "ngay_xong": "2027-05-25",
+     "bang_chung": "Phiếu yêu cầu thay đổi CR01 và bảng đánh giá tác động ngày 25/05/2027"
+    }
+   ],
+   "ngay_dong": "2027-05-27",
+   "ket_qua": "Yêu cầu thay đổi CR01 được phê duyệt, phụ lục hợp đồng 01/2027/PL-ABCW ký ngày 27/05/2027, cut over 29/07/2027, lịch và đường cơ sở BL2 được lập lại",
+   "nguoi_dong": "dat",
+   "ly_do": "Đóng vấn đề khi phụ lục hợp đồng của CR01 được ký"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD09",
+   "hanh_dong": [
+    {
+     "ma": "HD12",
+     "viec": "Lập kế hoạch S5 ưu tiên gói găng 4.3.8 và các gói kiểm thử phân hệ, đối chiếu với lịch lập lại sau đánh giá yêu cầu thay đổi CR01",
+     "nguoi": "dat",
+     "han": "2027-05-21",
+     "ngay_xong": "2027-05-21",
+     "bang_chung": "Kế hoạch sprint S5 ngày 21/05/2027"
+    }
+   ],
+   "ngay_dong": "2027-06-03",
+   "ket_qua": "Các gói chậm của S4 đã hoàn thành trong S5 bằng quỹ sẵn sàng, gói găng 4.4.3 bắt đầu đúng lịch lập lại",
+   "nguoi_dong": "dat",
+   "ly_do": "Đóng vấn đề khi các gói chậm của S4 hoàn thành"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD10",
+   "ngay_ghi_nhan": "2027-06-03",
+   "nguoi_bao": "dat",
+   "mo_ta": "Các gói 2.4.3, 3.4.5, 4.5.5 và gói găng 4.4.3 kiểm thử tích hợp với Main System chưa hoàn thành cuối S5 do sửa lỗi giữ tồn kho mức cao của 3.4.6 và làm bù gói chậm của S4 chiếm quỹ của nhóm kiểm thử",
+   "phan_loai": "Tiến độ",
+   "uu_tien": "Cao",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-06-10",
+   "hanh_dong": [
+    {
+     "viec": "Ưu tiên đầu S6 cho gói găng 4.4.3 và sửa lỗi tích hợp, Phạm Ngọc Anh tập trung kiểm thử tích hợp, Nguyễn Thị Phương Liên hỗ trợ hoàn thành 2.4.3",
+     "nguoi": "dat",
+     "han": "2027-06-04"
+    }
+   ],
+   "ly_do": "Ghi nhận gói chậm cuối S5 để theo dõi trong S6"
+  },
+  {
+   "loai": "chi_phi",
+   "ngay": "2027-05-24",
+   "khoan_muc": "B1",
+   "so_tien": 7500000,
+   "ghi_chu": "Phí môi trường phát triển, kiểm thử kỳ S5 theo phân bổ kỳ chi của dự toán",
+   "loai_chi": "da_chi",
+   "lien_ket": [
+    "1.5.1"
+   ],
+   "ly_do": "Chi phí khoản B1 theo phân bổ kỳ chi S5 của dự toán"
+  },
+  {
+   "loai": "retro",
+   "y": [
+    {
+     "loai": "tốt",
+     "noi_dung": "Yêu cầu thay đổi CR01 được đánh giá và trình phụ lục trong 5 ngày làm việc, lịch lập lại giữ dự trữ đến cut over",
+     "lien_ket": [
+      "CR01",
+      "VD08"
+     ]
+    },
+    {
+     "loai": "cần cải thiện",
+     "noi_dung": "Lỗi giữ tồn kho khi thanh toán thất bại chỉ phát hiện ở kiểm thử đầu cuối, kiểm thử đơn vị dịch vụ giỏ hàng chưa phủ nhánh thất bại",
+     "lien_ket": [
+      "3.4.6",
+      "3.3.1"
+     ]
+    },
+    {
+     "loai": "hành động",
+     "noi_dung": "Bổ sung ca kiểm thử nhánh thanh toán thất bại vào bộ kiểm thử tự động trước kiểm thử hệ thống",
+     "lien_ket": [
+      "3.4.10",
+      "RR03"
+     ]
+    }
+   ],
+   "ly_do": "Họp cải tiến cuối sprint S5"
+  }
+ ]
+}

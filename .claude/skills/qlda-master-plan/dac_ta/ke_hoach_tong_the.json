@@ -62,7 +62,7 @@
      ],
      [
       "Loại hợp đồng",
-      "{hsmt#goi_thau.loai_hop_dong}"
+      "Hợp đồng {hsmt#goi_thau.loai_hop_dong}"
      ],
      [
       "{kb#nhan_gia}",
@@ -70,7 +70,7 @@
      ],
      [
       "Thời gian",
-      "{lich#ngay_bat_dau|ngay} đến {lich#cut_over|ngay}, {lich#so_ngay_lam_viec} ngày làm việc, {lich#so_sprint} sprint"
+      "{lich#ngay_bat_dau|ngay} đến ngày cut over {lich#cut_over|ngay}, {lich#so_ngay_lam_viec} ngày làm việc, {lich#so_sprint} sprint, giai đoạn Kết thúc đến ngày đóng dự án {lich#ngay_dong_du_an|ngay}"
      ],
      [
       "Khối lượng",
@@ -227,6 +227,51 @@
   },
   {
    "h1": "4. Tiến độ và mốc"
+  },
+  {
+   "doan": "Dự án gồm ba giai đoạn: Khởi động, Thực hiện theo sprint đến ngày cut over và Kết thúc đến ngày đóng dự án. Công việc quản lý dàn trải được thực hiện suốt dự án."
+  },
+  {
+   "bang": {
+    "nguon": "lich#giai_doan",
+    "cot": [
+     [
+      "Giai đoạn",
+      "ten",
+      2300
+     ],
+     [
+      "Từ",
+      "tu|ngay",
+      1500,
+      "c"
+     ],
+     [
+      "Đến",
+      "den|ngay",
+      1500,
+      "c"
+     ],
+     [
+      "Số ngày làm việc",
+      "so_ngay",
+      1500,
+      "c"
+     ],
+     [
+      "Số gói",
+      "so_goi",
+      1100,
+      "c"
+     ],
+     [
+      "MD",
+      "md|md",
+      1400,
+      "c"
+     ]
+    ]
+   }
   },
   {
    "bang": {
@@ -444,6 +489,12 @@
   {
    "bang_san": "kb#huy_dong",
    "rong_thi": "Dự án không huy động vị trí bổ sung."
+  },
+  {
+   "doan": "Hạ tầng vận hành chính thức do Chủ đầu tư cung cấp theo mục 3.5 Chương V của HSMT, cấu hình tối thiểu theo đề xuất của nhà thầu trong hồ sơ dự thầu như bảng sau, hai bên thống nhất khi xác nhận đặc tả yêu cầu."
+  },
+  {
+   "bang_san": "hb#ha_tang_toi_thieu"
   },
   {
    "doan": "Khoản chi phí khác (khoản B) gồm các hạng mục sau."
@@ -683,6 +734,9 @@
    "h1": "10. Rủi ro"
   },
   {
+   "doan": "Các rủi ro mức cao trong sổ rủi ro ({rr#tong_hop.so_cao} trên {rr#tong_hop.so_rui_ro} rủi ro) và kế hoạch ứng phó như sau."
+  },
+  {
    "bang": {
     "nguon": "rr#danh_sach",
     "loc": {
@@ -853,11 +907,11 @@
    }
   },
   {
-   "doan": "Các đường cơ sở đã lập theo sổ phiên bản, đường cơ sở hiện hành là {kb#duong_co_so_hien_hanh}:"
+   "doan": "{kb#cau_duong_co_so}"
   },
   {
    "bang_san": "kb#duong_co_so",
-   "rong_thi": "Chưa lập đường cơ sở."
+   "rong_thi": "Đường cơ sở BL1 được đặt khi ký hợp đồng, gồm các tài liệu kế hoạch đã được Chủ đầu tư chấp thuận, các đường cơ sở tiếp theo được đặt sau mỗi yêu cầu thay đổi đã phê duyệt, khi các tài liệu bị ảnh hưởng đã được cập nhật."
   }
  ],
  "kiem_tra": {

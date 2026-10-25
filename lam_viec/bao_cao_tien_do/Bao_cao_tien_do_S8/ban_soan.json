@@ -1,0 +1,18 @@
+{
+ "TOM_TAT": [
+  "Kết thúc kỳ {td#ky} ngày {td#ngay_bao_cao|ngay}, dự án ở trạng thái chung {td#trang_thai_chung}. SPI đạt {td#spi_hien_thi} ở mức {td#trang_thai_spi}, CPI theo công đạt {td#cpi_hien_thi} ở mức {td#trang_thai_cpi}, CPI theo chi phí thực đạt {td#cpi_thuc_hien_thi} ở mức {td#trang_thai_cpi_thuc}. Giá trị thu được lũy kế {td#EV_md|md2} MD so với kế hoạch {td#PV_md|md2} MD, công thực tế {td#AC_md|md2} MD, khối lượng hoàn thành đạt {td#ty_le_hoan_thanh|pt1} toàn dự án. Các gói chậm của kỳ trước hoàn thành nhờ huy động bổ sung theo nhu cầu cho kiểm thử viên và kỹ sư phát triển còn việc, lương trả theo công sức thực tế nên phần huy động thêm chỉ tính theo MD thực làm. Kiểm thử hệ thống và khắc phục lỗi hoàn thành, rủi ro {td#rui_ro[ma=RR06].ma} được đóng sau khi đo lại hiệu năng đạt.",
+  "Ngày hoàn thành dự báo {td#du_bao_hoan_thanh|ngay}, không muộn hơn ngày cut over {td#cut_over|ngay} theo phụ lục hợp đồng, TCPI {td#tcpi|so2}. Tỷ lệ sử dụng quỹ huy động đạt {td#ty_le_su_dung_quy|pt1}, còn {td#md_san_sang|md2} MD sẵn sàng không ghi công trên {td#md_huy_dong|md2} MD huy động. Chi phí khác đã chi lũy kế {td#AC_thuc_khac|tien} đồng, EAC theo chi phí thực {td#EAC_thuc|trieu} triệu đồng."
+ ],
+ "KET_QUA": [
+  "Trong kỳ hoàn thành kiểm thử hiệu năng 1.4.9, đánh giá khả năng sử dụng 2.4.9, gói găng khắc phục lỗi sau kiểm thử hệ thống 4.4.5, chuyển đổi thử dữ liệu 4.5.3 và diễn tập triển khai 3.5.3, tài liệu chức năng và nghiệm thu nội bộ các phân hệ 1.4.7, 2.4.7, 3.4.9, cập nhật đặc tả 3.2.12. Phần bán hàng trên sàn hoàn thành kiểm thử hệ thống 5.4.3, khắc phục lỗi và kiểm thử lại 5.4.4, bàn giao mã nguồn 5.5.3.",
+  "Mốc {td#moc[ma=M3].ma} đạt ngày {td#moc[ma=M3].thuc_te|ngay}, đúng hạn, đủ điều kiện đợt thanh toán {lich#moc[ma=M3].dot_thanh_toan|nguyen}. Mốc {td#moc[ma=M4].ma} đạt ngày {td#moc[ma=M4].thuc_te|ngay}, trong hạn {lich#moc[ma=M4].han|ngay}. Bản phát hành R8 cuối sprint là bản sẵn sàng kiểm thử chấp nhận gồm phần bán hàng trên sàn. Cấu hình kết nối sàn trên môi trường vận hành {td#goi_cham[ma=5.5.1].ma} chuyển sang đầu kỳ tới."
+ ],
+ "VAN_DE": [
+  "Sổ vấn đề có {td#van_de_tong_hop.tong|nguyen} vấn đề, đã đóng {td#van_de_tong_hop.so_dong|nguyen}, còn mở {td#van_de_tong_hop.so_mo|nguyen}.",
+  "Vấn đề {td#van_de[ma=VD13].ma} đóng khi các gói chậm của kỳ trước hoàn thành bằng huy động bổ sung. Vấn đề {td#van_de[ma=VD14].ma} ghi nhận các gói 2.5.2, 4.5.6 và 5.5.1 chưa hoàn thành, trong đó 5.5.1 là điều kiện của mốc M9 và triển khai chính thức, hành động có hạn {td#hanh_dong[ma_van_de=VD14].han|ngay}. Rủi ro {td#rui_ro[ma=RR10].ma} về lỗi phát hiện trong kiểm thử chấp nhận được theo dõi hằng ngày trong kỳ tới."
+ ],
+ "KY_TOI": [
+  "Mục tiêu {lich#sprint[ma=S9].ma} theo master schedule hiện hành: {lich#sprint[ma=S9].muc_tieu}. Kế hoạch kỳ tới là {lich#sprint[ma=S9].md_ke_hoach|md2} MD trên quỹ {lich#sprint[ma=S9].quy|md2} MD.",
+  "Gói ưu tiên là kiểm thử chấp nhận các phân hệ 1.4.11, 2.4.12, 3.4.13 và phần sàn 5.4.5 cùng Chủ đầu tư, khắc phục lỗi trong khoảng kiểm thử chấp nhận, triển khai chính thức 1.5.2 và bàn giao 1.5.3. Mốc {lich#moc[ma=M9].ma} có hạn {lich#moc[ma=M9].han|ngay} gắn đợt thanh toán của phụ lục, mốc {lich#moc[ma=M5].ma} có hạn {lich#moc[ma=M5].han|ngay}, cut over {td#cut_over|ngay}. Nhóm đề nghị Chủ đầu tư bố trí người tham gia kiểm thử chấp nhận từ ngày đầu kỳ."
+ ]
+}

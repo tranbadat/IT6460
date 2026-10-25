@@ -1,0 +1,31 @@
+{
+ "sprint": "KT",
+ "tong_md": 2.0,
+ "md_ke_hoach_sprint": 2.0,
+ "md_theo_nguoi": {
+  "dat": {
+   "md": 2.0,
+   "quy": 10.0,
+   "ty_le_su_dung": 0.2
+  }
+ },
+ "goi_hoan_thanh": [
+  "1.1.5"
+ ],
+ "goi_cham": [],
+ "spi_uoc_tinh": 1.0,
+ "so_bien_co": {
+  "chi_phi": 1,
+  "moc": 1,
+  "rui_ro": 17
+ },
+ "so_dong_them": {
+  "nhat_ky_cong_viec": 4,
+  "hoan_thanh": 1,
+  "moc_thuc_te": 1,
+  "theo_doi_rui_ro": 17,
+  "chi_phi_thuc_te": 1
+ },
+ "cho_xu_ly_con_lai": 0,
+ "goi_y": []
+}

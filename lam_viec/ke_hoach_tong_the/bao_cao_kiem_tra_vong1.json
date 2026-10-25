@@ -1,21 +1,11 @@
 {
  "tai_lieu": "lam_viec/ke_hoach_tong_the/ke_hoach_tong_the_vong1.docx",
  "dac_ta": "ke_hoach_tong_the",
- "thoi_gian": "2026-10-18 08:15:51",
+ "thoi_gian": "2026-10-25 17:46:27",
  "ket_luan": "dat",
  "so_loi": 0,
- "so_canh_bao": 1,
- "phat_hien": [
-  {
-   "ma": "VP02",
-   "muc_do": "canh_bao",
-   "nhom": "van_phong",
-   "vi_tri": ", yêu cầu mức lớn gửi ngay khi đánh giá xong Báo cáo vượt cấp Trần Bá Đạt Lê Quốc Bả",
-   "mo_ta": "Cách diễn đạt cần xem lại: xong",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "hoàn thành"
-  }
- ],
+ "so_canh_bao": 0,
+ "phat_hien": [],
  "tieu_chi_doc_hieu": [
   "Kế hoạch dựa trên HSMT, HSDT, WBS, lịch sprint, phân công: không mâu thuẫn số liệu với các tài liệu đó",
   "Có điều lệ dự án: mục tiêu SMART dạng bảng (chỉ số, ngưỡng, hạn, người xác nhận), ràng buộc, giả định, người phê duyệt",

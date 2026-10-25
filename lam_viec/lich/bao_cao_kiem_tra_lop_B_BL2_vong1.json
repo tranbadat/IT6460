@@ -1,0 +1,98 @@
+{
+ "tai_lieu": "ket_qua/04_Master_schedule/Master_schedule.xlsx",
+ "duong_co_so": "BL2 (sau yêu cầu thay đổi CR01, phụ lục 01/2027/PL-ABCW)",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên kiểm tra lớp B riêng, agent Kiểm tra độc lập (Claude Opus 5.5, Claude Code), python-docx, openpyxl, LibreOffice tính lại công thức",
+ "ket_luan": "chua_dat",
+ "so_loi": 3,
+ "so_canh_bao": 3,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Có giai đoạn, 9 sprint có mục tiêu và sản phẩm trình diễn, mốc M0 đến M9 có hạn và đợt thanh toán, tải theo người, nhu cầu theo loại công việc, cam kết của Chủ đầu tư."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Ngày 203 dòng Lich_trinh khớp lich.json, công thức tính lại bằng LibreOffice không lệch. Cut over 29/07, khoảng kiểm thử chấp nhận 16/07 đến 27/07, đóng dự án 12/08, hạn M3 08/07, M6, M7 29/07 khớp phụ lục. Lời ghi quỹ kỳ KT mâu thuẫn số liệu (MH03)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Gói WBS 5 ghi ràng buộc CK9, M9 gắn 5.4.5 và đợt 6, sprint S5 đến S8 ghi (CR01) trong mục tiêu."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Mốc có căn cứ gói hoàn thành. M9 đạt trước khoảng kiểm thử chấp nhận đã cam kết và trước cấu hình vận hành phần sàn (MH01), 5.1.1 kết thúc trước khi có sản phẩm nghiệm thu (MH02)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Dự trữ đến cut over 8 ngày (lớn hơn BL1, đúng quyết định 25/10 CR01), tải S5 đến S9 không vượt quỹ, quá tải chỉ ở S3, S4 đã thực hiện. M3 không có dự trữ (MH04)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, chữ xanh dương cho dữ liệu, công thức chữ đen, ngày dd/mm/yyyy."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "rang_buoc_cdt",
+   "vi_tri": "Master_schedule.xlsx sheet Lich_trinh dòng 5.4.5 (08/07 đến 12/07/2027), sheet Moc dòng M9 (12/07/2027), sheet Cam_ket (CK6, Gói có Chủ đầu tư tham gia)",
+   "mo_ta": "Gói 5.4.5 Tổ chức và hỗ trợ kiểm thử chấp nhận bán hàng trên sàn cùng Chủ đầu tư và mốc M9 nghiệm thu CR01 (đợt thanh toán 6) xếp 08/07 đến 12/07/2027, trước khoảng kiểm thử chấp nhận 16/07 đến 27/07/2027 của phụ lục (CK6: người dùng nghiệp vụ tham gia trong khoảng này). 5.4.5 không khai báo là gói có Chủ đầu tư tham gia nên không được kiểm tra theo khoảng uat (L23), không có cam kết nào bảo đảm người dùng Chủ đầu tư có mặt ngày 08/07 đến 12/07. M9 cũng đạt trước khi cấu hình kết nối sàn trên môi trường vận hành (5.5.1, 14/07 đến 15/07). Hạn M9 27/07 theo quyết định nhóm là cuối khoảng kiểm thử chấp nhận, cho thấy ý định kiểm thử chấp nhận phần sàn trong khoảng này.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định: (a) khai báo 5.4.5 là uat trong moc_nhap.json chu_dau_tu_tham_gia để xếp trong 16/07 đến 27/07, M9 dời theo, cập nhật dòng tiền đợt 6 và liên kết RR22; hoặc (b) bổ sung cam kết của Chủ đầu tư cho kiểm thử chấp nhận phần sàn trước khoảng chung (ngày, người dùng) vào du_an.json và phụ lục. Cân nhắc thêm phụ thuộc 5.5.1 vào M9 nếu nghiệm thu gồm cấu hình vận hành. Lập lại lịch."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "giai_doan",
+   "vi_tri": "Lich_trinh và Giai_doan dòng 5.1.1 (01/06 đến 07/06/2027, giai đoạn Suốt dự án); WBS_5 bảng chi tiết dòng 5.1.1 (Suốt dự án)",
+   "mo_ta": "Gói 5.1.1 quản lý yêu cầu thay đổi, theo dõi tiến độ và hồ sơ nghiệm thu phần sàn ghi giai đoạn Suốt dự án nhưng chỉ xếp 5 ngày đầu (không dàn trải), kết thúc 07/06/2027. Sản phẩm của gói gồm báo cáo tiến độ và biên bản nghiệm thu phần bán hàng trên sàn, phát sinh đến M9 và sau đó, nên ngày kết thúc không phù hợp với sản phẩm và nhãn Suốt dự án.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa dữ liệu: đặt 5.1.1 là gói dàn trải từ 01/06/2027 đến mốc M9 hoặc cut over (cờ dàn trải hoặc giai_doan trong wbs_nhap.json, phan_cong_nhap.json), lập lại lịch, xuất lại WBS_5. Tải 3 MD của Trần Bá Đạt phân bổ lại theo sprint."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Master_schedule.xlsx sheet Sprint dòng KT (Giai đoạn Kết thúc sau cut over, không có quỹ huy động, cột quỹ 2), sheet Nhu_cau dòng KT (quỹ 2, tỷ lệ 1), sheet Tai_nguon ghi chú cột KT, Tong_quan quỹ 900 MD",
+   "mo_ta": "Lời ghi không có quỹ huy động mâu thuẫn với số liệu: kỳ KT có quỹ 2 MD của Trần Bá Đạt (thanh_vien.json huy_dong_ket_thuc 0,2) và được cộng vào tổng quỹ 900 MD, tỷ lệ sử dụng 81,4%. Cost estimate lại dùng 898 MD (không gồm KT) và tỷ lệ 81,6% (xem báo cáo chi_phi MH01).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa xuat_gantt.py: ghi chú dòng KT theo huy_dong_ket_thuc (quỹ kỳ Kết thúc 2 MD), bỏ câu không có quỹ huy động. Thống nhất với chi_phi."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "du_tru_moc",
+   "vi_tri": "Sheet Moc dòng M3: ngày dự kiến 08/07/2027 bằng hạn 08/07/2027",
+   "mo_ta": "M3 gắn đợt thanh toán 3 không còn dự trữ đến hạn phụ lục (hạn M3 theo đề xuất của agent đã được nhóm chấp nhận). Một ngày chậm của 4.4.6 hoặc chuỗi kiểm thử tích hợp làm M3 trễ hạn và dời khoản thu 525.000.000 đồng. Kế hoạch rủi ro chưa nêu điểm này (RR02, RR19 gắn M3).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận chấp nhận M3 không có dự trữ, ghi vào dấu hiệu RR02 hoặc RR19 ngưỡng theo dõi M3."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "rang_buoc_cdt",
+   "vi_tri": "Sheet Cam_ket, Gói có Chủ đầu tư tham gia; Lich_trinh dòng 5.2.4 (21/06 đến 23/06/2027, thời lượng tối thiểu 3 ngày)",
+   "mo_ta": "Gói 5.2.4 Chủ đầu tư xác nhận đặc tả phần sàn có thời lượng tối thiểu 3 ngày, ngắn hơn thời gian phê duyệt tài liệu 5 ngày trong du_an.json, và không có trong danh sách gói có Chủ đầu tư tham gia như 3.2.5, 4.2.6.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận 3 ngày là thời gian thống nhất trong phụ lục, hoặc khai báo 5.2.4 phe_duyet trong moc_nhap.json và lập lại lịch."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "truy_vet_cr",
+   "vi_tri": "du_lieu/thay_doi.json CR01: lich_su ghi chú phê duyệt (giữ dự trữ 3 ngày), phu_luc.moc_thanh_toan ngay_du_kien M6, M7 22/07/2027, chi_tiet_goi (ngày gói theo phương án đánh giá ban đầu)",
+   "mo_ta": "Các trường này là kết quả đánh giá trước khi nhóm chọn cut over 29/07/2027, khác lịch BL2 (dự trữ 8 ngày, M6, M7 29/07/2027, 5.4.5 08/07 đến 12/07). Tài liệu đang kiểm tra không trích các trường này nhưng các bước sau (kế hoạch thay đổi, báo cáo tiến độ) có thể đọc nhầm.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Ghi rõ trong thay_doi.json đây là số liệu đánh giá ban đầu, hoặc cập nhật ngày dự kiến theo lịch BL2."
+  }
+ ],
+ "ghi_chu": "Không tính là lỗi: quá tải S3, S4 (đã thực hiện), cut over 29/07/2027 với ngày khả thi 23/07/2027 và dự trữ 8 ngày (quyết định 25/10/2026 CR01), L28 kỳ Kết thúc, hạn M3 theo phụ lục."
+}

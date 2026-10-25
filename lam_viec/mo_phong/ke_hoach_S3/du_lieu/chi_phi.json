@@ -1,0 +1,670 @@
+{
+ "nhan_cong": [
+  {
+   "loai": "PM",
+   "ten": "Quản lý dự án",
+   "md": 49.0,
+   "mm": 2.45,
+   "don_gia_thang": 55000000,
+   "thanh_tien": 134750000
+  },
+  {
+   "loai": "BA",
+   "ten": "Phân tích nghiệp vụ, kiến trúc",
+   "md": 90.0,
+   "mm": 4.5,
+   "don_gia_thang": 43000000,
+   "thanh_tien": 193500000
+  },
+  {
+   "loai": "QA",
+   "ten": "Kiểm thử, bảo đảm chất lượng",
+   "md": 160.0,
+   "mm": 8.0,
+   "don_gia_thang": 40000000,
+   "thanh_tien": 320000000
+  },
+  {
+   "loai": "DEV",
+   "ten": "Phát triển phần mềm",
+   "md": 318.0,
+   "mm": 15.9,
+   "don_gia_thang": 42000000,
+   "thanh_tien": 667800000
+  },
+  {
+   "loai": "DEVOPS",
+   "ten": "Triển khai và vận hành",
+   "md": 40.0,
+   "mm": 2.0,
+   "don_gia_thang": 52000000,
+   "thanh_tien": 104000000
+  }
+ ],
+ "A": 1420050000,
+ "chi_phi_khac": [
+  {
+   "ma": "B1",
+   "ten": "Môi trường phát triển, kiểm thử và công cụ",
+   "so_tien": 60000000,
+   "can_cu": "Ước tính của nhà thầu",
+   "phan_bo_chi": {
+    "S1": 15000000,
+    "S2": 7500000,
+    "S3": 7500000,
+    "S4": 7500000,
+    "S5": 7500000,
+    "S6": 7500000,
+    "S7": 7500000
+   },
+   "_nguon": "Quyết định của nhóm ngày 25/10/2026: tách khoản B 150.000.000 đồng thành ba khoản mục, tổng không đổi, và xác định kỳ chi để đưa vào dòng tiền; chi thiết lập và bản quyền công cụ ở S1, phí môi trường chia đều S2 đến S7"
+  },
+  {
+   "ma": "B2",
+   "ten": "Bảo hành 12 tháng và hỗ trợ tăng cường sau cut over",
+   "so_tien": 40000000,
+   "can_cu": "Ước tính của nhà thầu",
+   "phan_bo_chi": {
+    "Sau cut over": 40000000
+   },
+   "_nguon": "Quyết định của nhóm ngày 25/10/2026: tách khoản B 150.000.000 đồng thành ba khoản mục, tổng không đổi, và xác định kỳ chi để đưa vào dòng tiền"
+  },
+  {
+   "ma": "B3",
+   "ten": "Dự phòng rủi ro",
+   "so_tien": 50000000,
+   "can_cu": "Kế hoạch quản lý rủi ro, quyết định của nhóm ngày 18/10/2026",
+   "_nguon": "Quyết định của nhóm ngày 25/10/2026: tách khoản B 150.000.000 đồng thành ba khoản mục, tổng không đổi, và xác định kỳ chi để đưa vào dòng tiền; dự phòng chỉ chi khi rủi ro xảy ra, không đưa vào dòng chi"
+  }
+ ],
+ "B": 150000000,
+ "D": 0,
+ "cach_tinh_du_phong": "nam_trong_chi_phi_khac",
+ "du_phong_hien_co": 50000000,
+ "du_phong_ca_khoan_b": false,
+ "tong_emv_rui_ro": 141112116,
+ "tong_emv_rui_ro_ban_dau": 141112116,
+ "so_rui_ro_da_xay_ra": 0,
+ "so_rui_ro_da_dong": 0,
+ "tac_dong_thuc_te_tien": 0,
+ "tac_dong_thuc_te_md": 0,
+ "rui_ro_da_xay_ra": [],
+ "chi_phi_da_biet": 1570050000,
+ "gia_chao": 1750000000,
+ "gia_truoc_thue": 1750000000,
+ "thue": 0,
+ "thue_suat": 0.0,
+ "can_cu_thue": "Dịch vụ phần mềm thuộc đối tượng không chịu thuế GTGT (Luật Thuế GTGT số 48/2024/QH15, khoản 21 Điều 5; Nghị định số 181/2025/NĐ-CP, khoản 13 Điều 4)",
+ "C": 179950000,
+ "ty_le_C": 0.1028,
+ "ty_le_C_toi_thieu": 0.05,
+ "gia_goi_thau": 2000000000,
+ "thap_hon_goi_thau": 250000000,
+ "ty_le_thap_hon": 0.125,
+ "gia_chao_ban_dau": 1750000000,
+ "gia_dieu_chinh_phu_luc": 0,
+ "gia_hop_dong_sau_phu_luc": null,
+ "doan_phu_luc": [],
+ "phu_luc_hop_dong": [],
+ "do_nhay_thue": {
+  "thue_suat": 0.1,
+  "gia_truoc_thue": 1590909091,
+  "C": 20859091,
+  "ty_le_C": 0.0131,
+  "C_sau_luong": 243698968,
+  "ty_le_C_sau_luong": 0.1532
+ },
+ "C_sau_luong": 402789877,
+ "ty_le_C_sau_luong": 0.2302,
+ "cach_tra_luong": "cong_suc",
+ "cach_tra_luong_ten": "trả theo công sức (MD công việc)",
+ "co_so_luong": "MD công việc (kế hoạch là MD giao, thực tế là MD nhật ký)",
+ "luong_binh_quan_md": 1822238,
+ "luong_binh_quan_md_huy_dong": 1801936,
+ "nguong_chiu_dung_md": 221.0,
+ "md_hoa_von": 779.29,
+ "md_huy_dong_hoa_von": 788.07,
+ "ty_le_su_dung": 0.8051,
+ "ty_le_su_dung_hoa_von": 0.8337,
+ "thoi_han_thanh_toan_ngay": 15,
+ "tong_md": 657.0,
+ "tong_mm": 32.85,
+ "md_moi_mm": 20.0,
+ "doi_chieu_nguoi": [
+  {
+   "id": "dat",
+   "ho_ten": "Trần Bá Đạt",
+   "loai": "Thành viên nhóm",
+   "vai_tro": "LEAD",
+   "luong": 51000000.0,
+   "don_gia_ngay": 2862955,
+   "md_huy_dong": 73.0,
+   "md_giao": 63.33,
+   "md_tinh_luong": 63.33,
+   "md_san_sang": 9.67,
+   "chi_phi": 181310911,
+   "chi_phi_huy_dong": 208995682,
+   "chi_phi_cong_viec": 181310911
+  },
+  {
+   "id": "tuananh",
+   "ho_ten": "Phạm Tuấn Anh",
+   "loai": "Thành viên nhóm",
+   "vai_tro": "BACKEND",
+   "luong": 30000000.0,
+   "don_gia_ngay": 1684091,
+   "md_huy_dong": 73.0,
+   "md_giao": 50.0,
+   "md_tinh_luong": 50.0,
+   "md_san_sang": 23.0,
+   "chi_phi": 84204545,
+   "chi_phi_huy_dong": 122938636,
+   "chi_phi_cong_viec": 84204545
+  },
+  {
+   "id": "minh",
+   "ho_ten": "Vũ Đức Minh",
+   "loai": "Thành viên nhóm",
+   "vai_tro": "FRONTEND",
+   "luong": 28000000.0,
+   "don_gia_ngay": 1571818,
+   "md_huy_dong": 73.0,
+   "md_giao": 58.0,
+   "md_tinh_luong": 58.0,
+   "md_san_sang": 15.0,
+   "chi_phi": 91165455,
+   "chi_phi_huy_dong": 114742727,
+   "chi_phi_cong_viec": 91165455
+  },
+  {
+   "id": "toan",
+   "ho_ten": "Ninh Đức Toàn",
+   "loai": "Thành viên nhóm",
+   "vai_tro": "BACKEND",
+   "luong": 30000000.0,
+   "don_gia_ngay": 1684091,
+   "md_huy_dong": 73.0,
+   "md_giao": 65.5,
+   "md_tinh_luong": 65.5,
+   "md_san_sang": 7.5,
+   "chi_phi": 110307955,
+   "chi_phi_huy_dong": 122938636,
+   "chi_phi_cong_viec": 110307955
+  },
+  {
+   "id": "lien",
+   "ho_ten": "Nguyễn Thị Phương Liên",
+   "loai": "Thành viên nhóm",
+   "vai_tro": "BAQA",
+   "luong": 27000000.0,
+   "don_gia_ngay": 1515682,
+   "md_huy_dong": 73.0,
+   "md_giao": 65.0,
+   "md_tinh_luong": 65.0,
+   "md_san_sang": 8.0,
+   "chi_phi": 98519318,
+   "chi_phi_huy_dong": 110644773,
+   "chi_phi_cong_viec": 98519318
+  },
+  {
+   "id": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "SA_BA",
+   "luong": 47000000.0,
+   "don_gia_ngay": 2638409,
+   "md_huy_dong": 73.0,
+   "md_giao": 65.17,
+   "md_tinh_luong": 65.17,
+   "md_san_sang": 7.83,
+   "chi_phi": 171945121,
+   "chi_phi_huy_dong": 192603864,
+   "chi_phi_cong_viec": 171945120
+  },
+  {
+   "id": "D1",
+   "ho_ten": "Lê Quang Huy",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "BACKEND",
+   "luong": 30000000.0,
+   "don_gia_ngay": 1684091,
+   "md_huy_dong": 73.0,
+   "md_giao": 53.5,
+   "md_tinh_luong": 53.5,
+   "md_san_sang": 19.5,
+   "chi_phi": 90098864,
+   "chi_phi_huy_dong": 122938636,
+   "chi_phi_cong_viec": 90098864
+  },
+  {
+   "id": "D2",
+   "ho_ten": "Đỗ Minh Quân",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "BACKEND",
+   "luong": 30000000.0,
+   "don_gia_ngay": 1684091,
+   "md_huy_dong": 63.0,
+   "md_giao": 51.0,
+   "md_tinh_luong": 51.0,
+   "md_san_sang": 12.0,
+   "chi_phi": 85888636,
+   "chi_phi_huy_dong": 106097727,
+   "chi_phi_cong_viec": 85888636
+  },
+  {
+   "id": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "BACKEND",
+   "luong": 30000000.0,
+   "don_gia_ngay": 1684091,
+   "md_huy_dong": 73.0,
+   "md_giao": 49.5,
+   "md_tinh_luong": 49.5,
+   "md_san_sang": 23.5,
+   "chi_phi": 83362500,
+   "chi_phi_huy_dong": 122938636,
+   "chi_phi_cong_viec": 83362500
+  },
+  {
+   "id": "Q1",
+   "ho_ten": "Trần Thu Hà",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "TESTER",
+   "luong": 24000000.0,
+   "don_gia_ngay": 1347273,
+   "md_huy_dong": 63.0,
+   "md_giao": 43.0,
+   "md_tinh_luong": 43.0,
+   "md_san_sang": 20.0,
+   "chi_phi": 57932727,
+   "chi_phi_huy_dong": 84878182,
+   "chi_phi_cong_viec": 57932727
+  },
+  {
+   "id": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "TESTER",
+   "luong": 24000000.0,
+   "don_gia_ngay": 1347273,
+   "md_huy_dong": 53.0,
+   "md_giao": 42.0,
+   "md_tinh_luong": 42.0,
+   "md_san_sang": 11.0,
+   "chi_phi": 56585455,
+   "chi_phi_huy_dong": 71405455,
+   "chi_phi_cong_viec": 56585455
+  },
+  {
+   "id": "D4",
+   "ho_ten": "Trương Quốc Việt",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "BACKEND",
+   "luong": 30000000.0,
+   "don_gia_ngay": 1684091,
+   "md_huy_dong": 53.0,
+   "md_giao": 51.0,
+   "md_tinh_luong": 51.0,
+   "md_san_sang": 2.0,
+   "chi_phi": 85888636,
+   "chi_phi_huy_dong": 89256818,
+   "chi_phi_cong_viec": 85888636
+  }
+ ],
+ "tong_chi_phi_nguoi": 1197210123,
+ "tong_md_huy_dong": 816.0,
+ "tong_md_giao": 657.0,
+ "tong_md_tinh_luong": 657.0,
+ "tong_md_san_sang": 159.0,
+ "tong_chi_phi_huy_dong": 1470379772,
+ "tong_chi_phi_cong_viec": 1197210122,
+ "ghi_chu_huy_dong": "Theo cách trả lương đã khai báo, ngày sẵn sàng không ghi công (159 MD) không tính lương. Lương của toàn bộ ngày huy động (1.470.379.772 đồng) chỉ dùng để theo dõi năng lực.",
+ "quy_tac_du_phong": {
+  "cot": [
+   "Nội dung",
+   "Quy định"
+  ],
+  "widths": [
+   2300,
+   7000
+  ],
+  "dong": [
+   [
+    "Điều kiện sử dụng",
+    "Một rủi ro trong sổ đăng ký rủi ro xảy ra hoặc kế hoạch ứng phó của rủi ro được kích hoạt"
+   ],
+   [
+    "Người đề xuất",
+    "Người phụ trách rủi ro, nêu mã rủi ro, số tiền, MD hoặc ngày cần dùng"
+   ],
+   [
+    "Người phê duyệt",
+    "Quản trị dự án phê duyệt khoản dùng cho rủi ro do thành viên khác phụ trách. Người đại diện ký hợp đồng của nhà thầu phê duyệt khoản dùng cho rủi ro do quản trị dự án phụ trách và khoản làm giảm phần chi phí chung và lợi nhuận"
+   ],
+   [
+    "Phần vượt dự phòng",
+    "Khi tổng chi phí ứng phó vượt dự phòng hiện có, phần vượt được bù từ phần còn lại của giá chào sau khi trừ lương kế hoạch và khoản B theo quyết định của nhóm ngày 18/10/2026, phần này gồm khoản C và phần khoản A chưa dùng cho lương theo quyết định của nhóm ngày 25/10/2026, do người đại diện ký hợp đồng của nhà thầu phê duyệt"
+   ],
+   [
+    "Ghi nhận",
+    "Ghi vào sổ yêu cầu thay đổi kèm mã rủi ro, cập nhật sổ rủi ro, dự toán và lịch theo ma trận lan truyền"
+   ],
+   [
+    "Không áp dụng",
+    "Không dùng dự phòng để bù thay đổi phạm vi theo yêu cầu của Chủ đầu tư, các thay đổi này xử lý theo mức lớn bằng văn bản thống nhất hoặc phụ lục hợp đồng"
+   ]
+  ]
+ },
+ "chenh_lech_A_nguoi": 222839877,
+ "ty_le_chenh_lech_A": 0.1569,
+ "nang_suat_hoa_von": 0.8431,
+ "he_so_bao_hiem": 1.235,
+ "ngay_lam_viec_moi_thang": 22.0,
+ "nguon_luong": "Mức trung vị theo vị trí, báo cáo lương ITviec 2025-2026, riêng mức của kiến trúc sư kiêm phân tích nghiệp vụ và kỹ sư kiểm thử do nhóm xác định trong bảng quyết toán lương",
+ "nguon_don_gia": "Đơn giá trọn gói theo người-tháng của nhà thầu, đã gồm lương, bảo hiểm và chi phí quản lý trực tiếp của nhân sự",
+ "doan_mau_11a": "Bảng phân bổ ở mục 6 là số liệu điền vào Mẫu 11A của hồ sơ dự thầu, tổng phân bổ bằng giá chào.",
+ "nhan_gia_chao": "Giá chào trọn gói",
+ "theo_wbs": [
+  {
+   "ma": "1",
+   "ten": "Phân hệ quản lý sản phẩm",
+   "md": 151.0,
+   "chi_phi_a": 327600000,
+   "gia_phan_bo": 403718179
+  },
+  {
+   "ma": "2",
+   "ten": "Phân hệ quản lý khách hàng (thành viên)",
+   "md": 146.5,
+   "chi_phi_a": 312975000,
+   "gia_phan_bo": 385695046
+  },
+  {
+   "ma": "3",
+   "ten": "Phân hệ quản lý đơn hàng (đặt hàng)",
+   "md": 207.5,
+   "chi_phi_a": 445075000,
+   "gia_phan_bo": 548488610
+  },
+  {
+   "ma": "4",
+   "ten": "Phân hệ tích hợp hệ thống",
+   "md": 152.0,
+   "chi_phi_a": 334400000,
+   "gia_phan_bo": 412098165
+  }
+ ],
+ "mau_11a": [
+  {
+   "stt": 1,
+   "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 111958654,
+   "thanh_tien": 137972356
+  },
+  {
+   "stt": 2,
+   "danh_muc": "Thiết kế quy trình vận hành mới (New Operational Flow)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 17933654,
+   "thanh_tien": 22100556
+  },
+  {
+   "stt": 3,
+   "danh_muc": "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 19833654,
+   "thanh_tien": 24442023
+  },
+  {
+   "stt": 4,
+   "danh_muc": "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 45183654,
+   "thanh_tien": 55682120
+  },
+  {
+   "stt": 5,
+   "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 209781154,
+   "thanh_tien": 258524009
+  },
+  {
+   "stt": 6,
+   "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 206531154,
+   "thanh_tien": 254518869
+  },
+  {
+   "stt": 7,
+   "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 279281154,
+   "thanh_tien": 344172402
+  },
+  {
+   "stt": 8,
+   "danh_muc": "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 28931154,
+   "thanh_tien": 35653336
+  },
+  {
+   "stt": 9,
+   "danh_muc": "Tích hợp với hệ thống chính (Main System)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 122331154,
+   "thanh_tien": 150754917
+  },
+  {
+   "stt": 10,
+   "danh_muc": "Kiểm thử hệ thống",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 101521153,
+   "thanh_tien": 125109693
+  },
+  {
+   "stt": 11,
+   "danh_muc": "Kiểm thử vận hành (Operation Test)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 113121153,
+   "thanh_tien": 139404964
+  },
+  {
+   "stt": 12,
+   "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 56521154,
+   "thanh_tien": 69653899
+  },
+  {
+   "stt": 13,
+   "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+   "khoi_luong": "1",
+   "don_vi": "Gói",
+   "chi_phi_a": 107121154,
+   "thanh_tien": 132010856
+  }
+ ],
+ "thanh_toan": [
+  {
+   "dot": 1,
+   "phan_tram": 15,
+   "su_kien": "tạm ứng",
+   "ngay_su_kien": "2027-03-18",
+   "ngay": "2027-04-02",
+   "sprint": "S2",
+   "so_tien": 262500000,
+   "co_so": 1750000000,
+   "co_so_ten": "Giá hợp đồng",
+   "ma_cr": ""
+  },
+  {
+   "dot": 2,
+   "phan_tram": 25,
+   "su_kien": "hai bên xác nhận đặc tả yêu cầu (baseline) và giao diện ưu tiên",
+   "ngay_su_kien": "2027-05-06",
+   "ngay": "2027-05-21",
+   "sprint": "S5",
+   "so_tien": 437500000,
+   "co_so": 1750000000,
+   "co_so_ten": "Giá hợp đồng",
+   "ma_cr": ""
+  },
+  {
+   "dot": 3,
+   "phan_tram": 30,
+   "su_kien": "hoàn thành các chức năng chính của hệ thống và tích hợp với các hệ thống liên quan",
+   "ngay_su_kien": "2027-06-17",
+   "ngay": "2027-07-02",
+   "sprint": "Sau cut over",
+   "so_tien": 525000000,
+   "co_so": 1750000000,
+   "co_so_ten": "Giá hợp đồng",
+   "ma_cr": ""
+  },
+  {
+   "dot": 4,
+   "phan_tram": 25,
+   "su_kien": "hệ thống đưa vào vận hành và được nghiệm thu",
+   "ngay_su_kien": "2027-07-01",
+   "ngay": "2027-07-16",
+   "sprint": "Sau cut over",
+   "so_tien": 437500000,
+   "co_so": 1750000000,
+   "co_so_ten": "Giá hợp đồng",
+   "ma_cr": ""
+  },
+  {
+   "dot": 5,
+   "phan_tram": 5,
+   "su_kien": "nhà thầu nộp bảo lãnh bảo hành",
+   "ngay_su_kien": "2027-07-01",
+   "ngay": "2027-07-16",
+   "sprint": "Sau cut over",
+   "so_tien": 87500000,
+   "co_so": 1750000000,
+   "co_so_ten": "Giá hợp đồng",
+   "ma_cr": ""
+  }
+ ],
+ "dong_tien": [
+  {
+   "sprint": "S1",
+   "chi_luong": 111588986,
+   "chi_luong_huy_dong": 153252273,
+   "thu": 0,
+   "chi_khac": 15000000,
+   "luy_ke_chi": 126588986,
+   "luy_ke_thu": 0,
+   "chenh_lech": -126588986
+  },
+  {
+   "sprint": "S2",
+   "chi_luong": 145505455,
+   "chi_luong_huy_dong": 183565909,
+   "thu": 262500000,
+   "chi_khac": 7500000,
+   "luy_ke_chi": 279594441,
+   "luy_ke_thu": 262500000,
+   "chenh_lech": -17094441
+  },
+  {
+   "sprint": "S3",
+   "chi_luong": 256705977,
+   "chi_luong_huy_dong": 278043409,
+   "thu": 0,
+   "chi_khac": 7500000,
+   "luy_ke_chi": 543800418,
+   "luy_ke_thu": 262500000,
+   "chenh_lech": -281300418
+  },
+  {
+   "sprint": "S4",
+   "chi_luong": 206452705,
+   "chi_luong_huy_dong": 213879545,
+   "thu": 0,
+   "chi_khac": 7500000,
+   "luy_ke_chi": 757753123,
+   "luy_ke_thu": 262500000,
+   "chenh_lech": -495253123
+  },
+  {
+   "sprint": "S5",
+   "chi_luong": 183695023,
+   "chi_luong_huy_dong": 213879545,
+   "thu": 437500000,
+   "chi_khac": 7500000,
+   "luy_ke_chi": 948948145,
+   "luy_ke_thu": 700000000,
+   "chenh_lech": -248948145
+  },
+  {
+   "sprint": "S6",
+   "chi_luong": 152864932,
+   "chi_luong_huy_dong": 213879545,
+   "thu": 0,
+   "chi_khac": 7500000,
+   "luy_ke_chi": 1109313077,
+   "luy_ke_thu": 700000000,
+   "chenh_lech": -409313077
+  },
+  {
+   "sprint": "S7",
+   "chi_luong": 134671136,
+   "chi_luong_huy_dong": 213879545,
+   "thu": 0,
+   "chi_khac": 7500000,
+   "luy_ke_chi": 1251484214,
+   "luy_ke_thu": 700000000,
+   "chenh_lech": -551484214
+  },
+  {
+   "sprint": "Sau cut over",
+   "chi_luong": 5725909,
+   "chi_luong_huy_dong": 0,
+   "thu": 1050000000,
+   "chi_khac": 40000000,
+   "luy_ke_chi": 1297210123,
+   "luy_ke_thu": 1750000000,
+   "chenh_lech": 452789877
+  }
+ ],
+ "kiem_tra": {
+  "phat_hien": [
+   {
+    "ma": "C10",
+    "muc_do": "canh_bao",
+    "nhom": "chi_phi",
+    "vi_tri": "",
+    "mo_ta": "Dự phòng (50.000.000 đồng) thấp hơn EMV còn lại của sổ rủi ro (141.112.116 đồng)",
+    "cach_sua": "can_nguoi_dung",
+    "de_xuat": ""
+   },
+   {
+    "ma": "C41",
+    "muc_do": "canh_bao",
+    "nhom": "chi_phi",
+    "vi_tri": "",
+    "mo_ta": "Dòng tiền lũy kế âm ở các sprint S1, S2, S3, S4, S5, S6, S7, cần vốn lưu động",
+    "cach_sua": "can_nguoi_dung",
+    "de_xuat": ""
+   }
+  ]
+ }
+}

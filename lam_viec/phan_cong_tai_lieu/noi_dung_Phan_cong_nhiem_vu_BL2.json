@@ -1,0 +1,3172 @@
+{
+ "meta": {
+  "ten": "Danh sách phân chia công việc",
+  "id": "phan_cong_tai_lieu",
+  "header": "Kế hoạch thực hiện - Danh sách phân chia công việc (responsibilities)",
+  "huong": "doc",
+  "font": "Times New Roman",
+  "size_pt": 13,
+  "size_bang_pt": 12,
+  "nguon": {
+   "pc": "du_lieu/phan_cong.json",
+   "pcb": "du_lieu/phan_cong_bang.json",
+   "lich": "du_lieu/lich.json",
+   "wbs": "du_lieu/wbs.json",
+   "tv": "dau_vao/thanh_vien.json",
+   "hsmt": "du_lieu/hsmt.json",
+   "da": "dau_vao/du_an.json"
+  },
+  "phien_ban": "2.3",
+  "ngay": "27/05/2027"
+ },
+ "blocks": [
+  {
+   "text": "PM_26I_02",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "text": "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "text": "Danh sách phân chia công việc",
+   "size": 20,
+   "t": "center"
+  },
+  {
+   "text": "Responsibilities, ma trận RACI và tải công việc theo sprint",
+   "size": 14,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "rows": [
+    [
+     "Dự án",
+     "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+    ],
+    [
+     "Khách hàng",
+     "Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Đơn vị thực hiện",
+     "PM_26I_02"
+    ],
+    [
+     "Môn học",
+     "Quản trị dự án và Quản lý thay đổi"
+    ],
+    [
+     "Nhóm",
+     "PM_26I_02"
+    ],
+    [
+     "Giảng viên",
+     "Vũ Thị Hương Giang"
+    ],
+    [
+     "Người lập",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Phiên bản",
+     "{{PHIEN_BAN}}"
+    ],
+    [
+     "Ngày",
+     "{{NGAY}}"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ],
+   "t": "table"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "text": "1. Nguyên tắc phân công",
+   "t": "h1"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi gói lá trong WBS có đúng một người thực hiện chính, mỗi hạng mục mức 1 và mức 2 có đúng một người chịu trách nhiệm cuối. WBS gồm 5 nhóm mức 1, là bốn phân hệ của hợp đồng và nhóm 5 Bán hàng trên sàn thương mại điện tử bổ sung theo yêu cầu thay đổi CR01, mỗi nhóm có năm mục mức 2 theo vòng đời (quản lý dự án phần phân bổ, phân tích và thiết kế, xây dựng, kiểm thử, triển khai và chuyển giao). Mục quản lý dự án của mọi nhóm do quản trị dự án chịu trách nhiệm, các mục còn lại do người phụ trách chuyên môn tương ứng chịu trách nhiệm. Khối lượng 733 MD theo master schedule được giao cho 12 người trên tổng quỹ thời gian 908 MD, tỷ lệ sử dụng quỹ đạt 80,7%."
+  },
+  {
+   "t": "p",
+   "text": "Công việc được phân công theo năng lực khai báo của từng người và theo thời gian huy động. Vị trí bổ sung chỉ nhận việc trong thời gian được huy động. Quỹ chưa giao trong thời gian huy động là 179,05 MD (tổng phần quỹ còn trống của từng thành viên trong từng sprint, không bù phần làm vượt quỹ đã ghi ở các sprint đã qua), là dư địa để tiếp nhận công việc phát sinh và hỗ trợ người quá tải, không thay cho dự trữ tiến độ của lịch."
+  },
+  {
+   "t": "p",
+   "text": "Người hỗ trợ được bố trí cho 31 gói có thể chia việc để rút ngắn thời gian, trong đó có 6 trên 22 gói trên đường găng (3.4.12, 4.4.5, 1.5.2, 1.5.3, 2.5.3, 3.5.4). Các gói găng còn lại do một người thực hiện, được bảo vệ bằng quỹ chưa giao và quy tắc chuyển việc ở mục 7. Các gói kiểm thử chấp nhận cùng Chủ đầu tư của ba luồng nghiệp vụ diễn ra song song trong khoảng kiểm thử chấp nhận nên được giao cho ba người khác nhau. Với cách giao hiện tại, lịch có ràng buộc nguồn lực còn dự trữ 7 ngày làm việc trước ngày cut over 29/07/2027."
+  },
+  {
+   "t": "p",
+   "text": "Ma trận RACI dùng bốn ký hiệu: R là người thực hiện, A là người chịu trách nhiệm cuối và phê duyệt kết quả, C là người được tham vấn trước khi quyết định, I là người được thông báo kết quả. Cột Bên ngoài ghi vai trò của Chủ đầu tư và các bộ phận của Chủ đầu tư (vận hành bán hàng, Main System, nghiệp vụ vận chuyển) tại từng hạng mục."
+  },
+  {
+   "text": "2. Thành viên và vai trò",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Họ tên",
+     "Nhóm",
+     "Chức danh",
+     "Kiêm nhiệm",
+     "Loại công việc"
+    ],
+    [
+     "Trần Bá Đạt",
+     "Thành viên nhóm",
+     "Trưởng nhóm, quản trị dự án",
+     "Kiến trúc sư hệ thống",
+     "PM, BA, DEV"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "Thành viên nhóm",
+     "Kỹ sư phát triển backend",
+     "",
+     "DEV"
+    ],
+    [
+     "Vũ Đức Minh",
+     "Thành viên nhóm",
+     "Kỹ sư phát triển frontend",
+     "Thiết kế UX/UI",
+     "DEV, QA"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "Thành viên nhóm",
+     "Kỹ sư phát triển backend",
+     "Triển khai và an toàn (DevOps)",
+     "DEV, DEVOPS, QA"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "Thành viên nhóm",
+     "Phân tích nghiệp vụ",
+     "Kỹ sư kiểm thử",
+     "BA, QA"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "Vị trí bổ sung",
+     "Kiến trúc sư kiêm phân tích nghiệp vụ",
+     "Rà soát bảo mật, hỗ trợ triển khai",
+     "BA, DEV"
+    ],
+    [
+     "Lê Quang Huy",
+     "Vị trí bổ sung",
+     "Kỹ sư phát triển frontend kiêm backend",
+     "Sửa lỗi phân hệ, tích hợp, UAT",
+     "DEV"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "Vị trí bổ sung",
+     "Kỹ sư phát triển backend, thiết kế API",
+     "Kiểm thử hiệu năng",
+     "DEV"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "Vị trí bổ sung",
+     "Kỹ sư phát triển backend",
+     "DevOps, giám sát và hỗ trợ cut over",
+     "DEV, DEVOPS"
+    ],
+    [
+     "Trần Thu Hà",
+     "Vị trí bổ sung",
+     "Kỹ sư kiểm thử kỹ thuật, kiểm thử tự động",
+     "Script kết nối và dữ liệu giả lập",
+     "QA"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "Vị trí bổ sung",
+     "Kỹ sư kiểm thử chức năng, hiệu năng và an toàn thông tin",
+     "",
+     "QA"
+    ],
+    [
+     "Trương Quốc Việt",
+     "Vị trí bổ sung",
+     "Kỹ sư phát triển backend kiêm DevOps",
+     "Hỗ trợ kiểm thử chấp nhận, chuyển đổi dữ liệu và cut over",
+     "DEV, DEVOPS"
+    ]
+   ],
+   "widths": [
+    2300,
+    1600,
+    2300,
+    1600,
+    1500
+   ],
+   "center_cols": [
+    1
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Nhóm gồm thành viên nhóm và các vị trí bổ sung. Tổng quỹ thời gian 908 MD, khối lượng giao theo master schedule 733 MD. Phần quỹ chưa giao thuộc cả thành viên nhóm và vị trí bổ sung, tập trung ở các sprint đầu và các sprint cuối, được giữ theo quyết định của nhóm vì lương trả theo công sức.",
+   "t": "p"
+  },
+  {
+   "text": "3. Nhân sự chủ chốt theo HSMT",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "STT",
+     "Vị trí theo Bảng số 02",
+     "Số lượng yêu cầu",
+     "Nhân sự đề xuất"
+    ],
+    [
+     "1",
+     "Quản trị dự án",
+     "1",
+     "Trần Bá Đạt"
+    ],
+    [
+     "2",
+     "Kỹ sư phát triển phần mềm",
+     "3",
+     "Phạm Tuấn Anh, Ninh Đức Toàn, Vũ Đức Minh"
+    ],
+    [
+     "3",
+     "Kỹ sư phân tích nghiệp vụ hoặc kỹ sư kiểm thử",
+     "1",
+     "Nguyễn Thị Phương Liên"
+    ]
+   ],
+   "widths": [
+    600,
+    3600,
+    1300,
+    3800
+   ],
+   "center_cols": [
+    0,
+    2
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "huong": "ngang",
+   "t": "section"
+  },
+  {
+   "text": "4. Ma trận RACI",
+   "t": "h1"
+  },
+  {
+   "text": "R: thực hiện. A: chịu trách nhiệm cuối và phê duyệt trong nhóm. C: được tham vấn. I: được thông báo. Cột Phê duyệt bên ngoài ghi bên ngoài xác nhận hoặc phê duyệt kết quả của hạng mục theo hợp đồng, ví dụ Chủ đầu tư xác nhận đặc tả, kiểm thử vận hành và nghiệm thu.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Hạng mục",
+     "Đạt",
+     "Anh",
+     "Minh",
+     "Toàn",
+     "Liên",
+     "Nguyễn Hoàng Nam",
+     "Lê Quang Huy",
+     "Đỗ Minh Quân",
+     "Bùi Anh Tuấn",
+     "Trần Thu Hà",
+     "Phạm Ngọc Anh",
+     "Trương Quốc Việt",
+     "Bên ngoài",
+     "Phê duyệt bên ngoài"
+    ],
+    [
+     "1",
+     "Phân hệ quản lý sản phẩm",
+     "RC",
+     "R",
+     "AR",
+     "R",
+     "RC",
+     "R",
+     "R",
+     "R",
+     "R",
+     "R",
+     "R",
+     "R",
+     "Chủ đầu tư (I)",
+     ""
+    ],
+    [
+     "1.1",
+     "Quản lý dự án, phần phân bổ cho phân hệ quản lý sản phẩm",
+     "AR",
+     "",
+     "",
+     "",
+     "C",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "Chủ đầu tư (I)",
+     ""
+    ],
+    [
+     "1.2",
+     "Phân tích và thiết kế phân hệ quản lý sản phẩm",
+     "RC",
+     "",
+     "R",
+     "R",
+     "AR",
+     "RC",
+     "R",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "Chủ đầu tư (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "1.3",
+     "Xây dựng phân hệ quản lý sản phẩm (lập trình và kiểm thử đơn vị)",
+     "C",
+     "R",
+     "A",
+     "",
+     "",
+     "R",
+     "R",
+     "R",
+     "R",
+     "",
+     "",
+     "R",
+     "",
+     ""
+    ],
+    [
+     "1.4",
+     "Kiểm thử phân hệ quản lý sản phẩm, gồm phần kiểm thử hệ thống và kiểm thử chấp nhận phân bổ",
+     "C",
+     "",
+     "R",
+     "R",
+     "AR",
+     "R",
+     "R",
+     "R",
+     "",
+     "R",
+     "R",
+     "R",
+     "Chủ đầu tư (C), Bộ phận vận hành bán hàng (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "1.5",
+     "Triển khai và chuyển giao, phần phân bổ cho phân hệ quản lý sản phẩm",
+     "C",
+     "",
+     "",
+     "AR",
+     "I",
+     "",
+     "R",
+     "R",
+     "R",
+     "",
+     "",
+     "R",
+     "Chủ đầu tư (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "2",
+     "Phân hệ quản lý khách hàng (thành viên)",
+     "RC",
+     "AR",
+     "R",
+     "R",
+     "RC",
+     "R",
+     "R",
+     "R",
+     "R",
+     "R",
+     "R",
+     "R",
+     "Chủ đầu tư (I)",
+     ""
+    ],
+    [
+     "2.1",
+     "Quản lý dự án, phần phân bổ cho phân hệ quản lý khách hàng",
+     "AR",
+     "",
+     "",
+     "",
+     "C",
+     "",
+     "",
+     "",
+     "",
+     "R",
+     "",
+     "",
+     "Chủ đầu tư (I)",
+     ""
+    ],
+    [
+     "2.2",
+     "Phân tích và thiết kế phân hệ quản lý khách hàng",
+     "C",
+     "",
+     "R",
+     "",
+     "AR",
+     "RC",
+     "R",
+     "R",
+     "",
+     "",
+     "",
+     "",
+     "Chủ đầu tư (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "2.3",
+     "Xây dựng phân hệ quản lý khách hàng (lập trình và kiểm thử đơn vị)",
+     "C",
+     "AR",
+     "R",
+     "R",
+     "",
+     "R",
+     "R",
+     "R",
+     "R",
+     "",
+     "",
+     "R",
+     "",
+     ""
+    ],
+    [
+     "2.4",
+     "Kiểm thử phân hệ quản lý khách hàng, gồm phần kiểm thử hệ thống và kiểm thử chấp nhận phân bổ",
+     "RC",
+     "R",
+     "R",
+     "R",
+     "AR",
+     "",
+     "R",
+     "",
+     "R",
+     "R",
+     "R",
+     "",
+     "Chủ đầu tư (C), Bộ phận vận hành bán hàng (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "2.5",
+     "Triển khai và chuyển giao, phần phân bổ cho phân hệ quản lý khách hàng",
+     "I",
+     "",
+     "",
+     "",
+     "AR",
+     "RC",
+     "",
+     "",
+     "R",
+     "",
+     "",
+     "",
+     "Chủ đầu tư (C), Bộ phận vận hành bán hàng (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "3",
+     "Phân hệ quản lý đơn hàng (đặt hàng)",
+     "RC",
+     "AR",
+     "R",
+     "R",
+     "RC",
+     "R",
+     "R",
+     "R",
+     "R",
+     "R",
+     "R",
+     "R",
+     "Chủ đầu tư (I)",
+     ""
+    ],
+    [
+     "3.1",
+     "Quản lý dự án, phần phân bổ cho phân hệ quản lý đơn hàng",
+     "AR",
+     "",
+     "",
+     "",
+     "C",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "Chủ đầu tư (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "3.2",
+     "Phân tích và thiết kế phân hệ quản lý đơn hàng",
+     "C",
+     "R",
+     "R",
+     "",
+     "AR",
+     "RC",
+     "R",
+     "R",
+     "",
+     "",
+     "",
+     "R",
+     "Chủ đầu tư (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "3.3",
+     "Xây dựng phân hệ quản lý đơn hàng (lập trình và kiểm thử đơn vị)",
+     "C",
+     "A",
+     "R",
+     "R",
+     "",
+     "R",
+     "R",
+     "R",
+     "R",
+     "",
+     "",
+     "R",
+     "",
+     ""
+    ],
+    [
+     "3.4",
+     "Kiểm thử phân hệ quản lý đơn hàng, gồm phần kiểm thử hệ thống và kiểm thử chấp nhận phân bổ",
+     "C",
+     "R",
+     "R",
+     "R",
+     "AR",
+     "R",
+     "R",
+     "R",
+     "",
+     "R",
+     "R",
+     "R",
+     "Chủ đầu tư (C), Bộ phận vận hành bán hàng (C), Nghiệp vụ vận chuyển (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "3.5",
+     "Triển khai và chuyển giao, phần phân bổ cho phân hệ quản lý đơn hàng",
+     "C",
+     "",
+     "",
+     "AR",
+     "I",
+     "R",
+     "",
+     "",
+     "R",
+     "",
+     "",
+     "",
+     "Chủ đầu tư (C), Bộ phận vận hành bán hàng (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "4",
+     "Phân hệ tích hợp hệ thống",
+     "RC",
+     "R",
+     "R",
+     "AR",
+     "R",
+     "RC",
+     "R",
+     "R",
+     "R",
+     "R",
+     "R",
+     "R",
+     "Chủ đầu tư (C)",
+     ""
+    ],
+    [
+     "4.1",
+     "Quản lý dự án, phần phân bổ cho phân hệ tích hợp hệ thống",
+     "AR",
+     "",
+     "",
+     "",
+     "C",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "Chủ đầu tư (I)",
+     ""
+    ],
+    [
+     "4.2",
+     "Phân tích và thiết kế phân hệ tích hợp hệ thống",
+     "R",
+     "RC",
+     "",
+     "RC",
+     "",
+     "AR",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "Chủ đầu tư (C), Bộ phận Main System (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "4.3",
+     "Xây dựng phân hệ tích hợp hệ thống (lập trình và kiểm thử đơn vị)",
+     "C",
+     "RC",
+     "R",
+     "A",
+     "",
+     "",
+     "R",
+     "R",
+     "R",
+     "",
+     "",
+     "R",
+     "",
+     ""
+    ],
+    [
+     "4.4",
+     "Kiểm thử phân hệ tích hợp hệ thống, gồm phần kiểm thử hệ thống và kiểm thử chấp nhận phân bổ",
+     "I",
+     "R",
+     "R",
+     "C",
+     "AR",
+     "R",
+     "R",
+     "R",
+     "",
+     "R",
+     "R",
+     "R",
+     "Chủ đầu tư (C), Bộ phận Main System (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "4.5",
+     "Triển khai và chuyển giao, phần phân bổ cho phân hệ tích hợp hệ thống",
+     "C",
+     "R",
+     "",
+     "AR",
+     "I",
+     "",
+     "",
+     "",
+     "R",
+     "",
+     "",
+     "R",
+     "Chủ đầu tư (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "5",
+     "Bán hàng trên sàn thương mại điện tử",
+     "AR",
+     "",
+     "",
+     "",
+     "R",
+     "R",
+     "RC",
+     "R",
+     "R",
+     "R",
+     "R",
+     "R",
+     "Chủ đầu tư (I), Sàn thương mại điện tử (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "5.1",
+     "Quản lý dự án, phần bán hàng trên sàn thương mại điện tử",
+     "AR",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "Chủ đầu tư (I)",
+     ""
+    ],
+    [
+     "5.2",
+     "Phân tích và thiết kế bán hàng trên sàn thương mại điện tử",
+     "I",
+     "",
+     "",
+     "",
+     "AR",
+     "RC",
+     "R",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "Chủ đầu tư (C), Bộ phận vận hành bán hàng (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "5.3",
+     "Xây dựng chức năng bán hàng trên sàn thương mại điện tử (lập trình và kiểm thử đơn vị)",
+     "I",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "RC",
+     "AR",
+     "R",
+     "",
+     "",
+     "R",
+     "Sàn thương mại điện tử (C)",
+     ""
+    ],
+    [
+     "5.4",
+     "Kiểm thử bán hàng trên sàn thương mại điện tử",
+     "I",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "R",
+     "R",
+     "AR",
+     "R",
+     "Chủ đầu tư (C), Bộ phận vận hành bán hàng (C), Sàn thương mại điện tử (C)",
+     "Chủ đầu tư"
+    ],
+    [
+     "5.5",
+     "Triển khai và hướng dẫn sử dụng bán hàng trên sàn thương mại điện tử",
+     "I",
+     "",
+     "",
+     "",
+     "AR",
+     "",
+     "",
+     "R",
+     "",
+     "",
+     "",
+     "R",
+     "Chủ đầu tư (C), Bộ phận vận hành bán hàng (C)",
+     "Chủ đầu tư"
+    ]
+   ],
+   "widths": [
+    700,
+    3000,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    1300,
+    1200
+   ],
+   "center_cols": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "right_cols": [],
+   "dong_dam": [
+    1,
+    7,
+    13,
+    19,
+    25
+   ],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Tên trong ma trận",
+     "Họ tên hoặc đơn vị"
+    ],
+    [
+     "Đạt",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Anh",
+     "Phạm Tuấn Anh"
+    ],
+    [
+     "Minh",
+     "Vũ Đức Minh"
+    ],
+    [
+     "Toàn",
+     "Ninh Đức Toàn"
+    ],
+    [
+     "Liên",
+     "Nguyễn Thị Phương Liên"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "Nguyễn Hoàng Nam"
+    ],
+    [
+     "Lê Quang Huy",
+     "Lê Quang Huy"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "Đỗ Minh Quân"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "Bùi Anh Tuấn"
+    ],
+    [
+     "Trần Thu Hà",
+     "Trần Thu Hà"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "Phạm Ngọc Anh"
+    ],
+    [
+     "Trương Quốc Việt",
+     "Trương Quốc Việt"
+    ],
+    [
+     "Chủ đầu tư",
+     "Công ty Cổ phần ABC Wear, đầu mối Yamada, Phòng Kế hoạch"
+    ],
+    [
+     "Bộ phận vận hành bán hàng",
+     "Bộ phận vận hành bán hàng của Chủ đầu tư"
+    ],
+    [
+     "Bộ phận Main System",
+     "Bộ phận quản lý Main System của Chủ đầu tư"
+    ],
+    [
+     "Nghiệp vụ vận chuyển",
+     "Bộ phận nghiệp vụ vận chuyển (Transportation Operation)"
+    ],
+    [
+     "Sàn thương mại điện tử",
+     "Đơn vị vận hành sàn thương mại điện tử do Chủ đầu tư lựa chọn"
+    ]
+   ],
+   "widths": [
+    2600,
+    6700
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "5. Tải công việc theo sprint",
+   "t": "h1"
+  },
+  {
+   "text": "Mỗi ô ghi MD trên quỹ thời gian của thành viên trong sprint theo master schedule. Lịch được lập lại từ ngày 21/05/2027, các sprint S1, S2, S3, S4 ghi MD thực tế đã làm (có thể vượt quỹ do làm thêm trong sprint đã qua), các sprint sau ghi MD kế hoạch. Cột KT là giai đoạn Kết thúc sau cut over, ghi MD trên quỹ theo tỷ lệ huy động giai đoạn Kết thúc của thành viên trong bảng huy động, thành viên không huy động giai đoạn này chỉ ghi MD. Cột Giao bằng tổng các ô của thành viên, dòng cuối là tổng của các thành viên.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Thành viên",
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5",
+     "S6",
+     "S7",
+     "S8",
+     "S9",
+     "KT",
+     "Giao, MD",
+     "Quỹ, MD",
+     "Sử dụng"
+    ],
+    [
+     "Trần Bá Đạt",
+     "8,76/10",
+     "8,79/10",
+     "11,74/13",
+     "8,93/10",
+     "5,02/10",
+     "4,52/10",
+     "5,52/7",
+     "6,53/8",
+     "4,52/6",
+     "2/2",
+     "66,33",
+     "86",
+     "77,1%"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "4/10",
+     "5/10",
+     "7/13",
+     "11,62/10",
+     "8,38/10",
+     "9/10",
+     "-",
+     "-",
+     "5/6",
+     "-",
+     "50",
+     "69",
+     "72,5%"
+    ],
+    [
+     "Vũ Đức Minh",
+     "9/10",
+     "10/10",
+     "11/13",
+     "8,88/10",
+     "8,29/10",
+     "4,83/10",
+     "-",
+     "2/3",
+     "4/5",
+     "-",
+     "58",
+     "71",
+     "81,7%"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "5,86/10",
+     "9,14/10",
+     "12,25/13",
+     "9,45/10",
+     "9,30/10",
+     "9,50/10",
+     "2/3",
+     "-",
+     "9/10",
+     "-",
+     "66,50",
+     "76",
+     "87,5%"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "10/10",
+     "10/10",
+     "11/13",
+     "7,96/10",
+     "8,04/10",
+     "9,50/10",
+     "7/8",
+     "3,50/5",
+     "5,50/7",
+     "-",
+     "72,50",
+     "83",
+     "87,3%"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "9,67/10",
+     "9/10",
+     "12/13",
+     "9,50/10",
+     "7/10",
+     "9,50/10",
+     "-",
+     "7,50/9",
+     "6,50/8",
+     "-",
+     "70,67",
+     "80",
+     "88,3%"
+    ],
+    [
+     "Lê Quang Huy",
+     "4/10",
+     "9/10",
+     "9/13",
+     "8,35/10",
+     "7,15/10",
+     "10/10",
+     "10/10",
+     "2/3",
+     "8/9",
+     "-",
+     "67,50",
+     "85",
+     "79,4%"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "-",
+     "4/10",
+     "13,83/13",
+     "10,27/10",
+     "7,90/10",
+     "6/10",
+     "9/10",
+     "3/4",
+     "10/10",
+     "-",
+     "64",
+     "77",
+     "83,1%"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "3/10",
+     "3,83/10",
+     "12,17/13",
+     "8,25/10",
+     "6,25/10",
+     "7/10",
+     "9/10",
+     "6,50/8",
+     "3,50/5",
+     "-",
+     "59,50",
+     "86",
+     "69,2%"
+    ],
+    [
+     "Trần Thu Hà",
+     "-",
+     "3/10",
+     "8,75/13",
+     "11,16/10",
+     "9,09/10",
+     "4/10",
+     "7/8",
+     "1/2",
+     "5,50/7",
+     "-",
+     "49,50",
+     "70",
+     "70,7%"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "-",
+     "-",
+     "6/13",
+     "9,73/10",
+     "9,25/10",
+     "7,02/10",
+     "9/9",
+     "1/2",
+     "8/9",
+     "-",
+     "50",
+     "63",
+     "79,4%"
+    ],
+    [
+     "Trương Quốc Việt",
+     "-",
+     "-",
+     "12,83/13",
+     "10,17/10",
+     "10/10",
+     "10/10",
+     "3/4",
+     "7,50/9",
+     "5/6",
+     "-",
+     "58,50",
+     "62",
+     "94,4%"
+    ],
+    [
+     "Tổng cộng",
+     "54,29/80",
+     "71,76/100",
+     "127,57/156",
+     "114,27/120",
+     "95,67/120",
+     "90,87/120",
+     "61,52/69",
+     "40,53/53",
+     "74,52/88",
+     "2/2",
+     "733",
+     "908",
+     "80,7%"
+    ]
+   ],
+   "widths": [
+    2200,
+    850,
+    850,
+    850,
+    850,
+    850,
+    850,
+    850,
+    850,
+    850,
+    850,
+    900,
+    900,
+    900
+   ],
+   "center_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "right_cols": [
+    11,
+    12,
+    13
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "huong": "doc",
+   "t": "section"
+  },
+  {
+   "text": "6. Giao việc theo thành viên",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Thành viên",
+     "Mã gói",
+     "Gói công việc",
+     "MD gói",
+     "MD của người",
+     "Vai trò",
+     "Thời gian"
+    ],
+    [
+     "Trần Bá Đạt",
+     "1.1.1",
+     "Họp khởi động, xác nhận phạm vi, điều kiện tiền đề, vai trò và trách nhiệm các bên",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "18/03/2027 - 23/03/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "1.1.2",
+     "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint, phần phân hệ quản lý sản phẩm",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "18/03/2027 - 29/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "1.1.3",
+     "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả, phần phân hệ quản lý sản phẩm",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "18/03/2027 - 29/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "1.1.4",
+     "Quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án, hồ sơ nghiệm thu và thanh toán, phần phân hệ quản lý sản phẩm",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "18/03/2027 - 29/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "1.1.5",
+     "Báo cáo tổng kết, bài học kinh nghiệm và bàn giao hồ sơ dự án",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "30/07/2027 - 04/08/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "1.2.1",
+     "Đặc tả chức năng (Function) tìm kiếm và hiển thị sản phẩm",
+     "4,00",
+     "1,33",
+     "Hỗ trợ",
+     "24/03/2027 - 26/03/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "1.2.8",
+     "Thiết kế chi tiết trang chủ, danh mục và chi tiết sản phẩm",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "27/04/2027 - 10/05/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "2.1.2",
+     "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint, phần phân hệ quản lý khách hàng",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "18/03/2027 - 29/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "2.1.3",
+     "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả, phần phân hệ quản lý khách hàng",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "18/03/2027 - 29/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "2.1.4",
+     "Quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án, hồ sơ nghiệm thu và thanh toán, phần phân hệ quản lý khách hàng",
+     "3,50",
+     "3,50",
+     "Thực hiện",
+     "18/03/2027 - 29/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "2.4.7",
+     "Tài liệu chức năng và nghiệm thu nội bộ phân hệ quản lý khách hàng",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "30/06/2027 - 07/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "3.1.1",
+     "Kế hoạch quản lý dự án gồm phạm vi, tiến độ, tổ chức thực hiện, kế hoạch họp, quản lý rủi ro và thay đổi đặc tả",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "29/03/2027 - 07/04/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "3.1.2",
+     "Xác nhận kế hoạch quản lý dự án của Chủ đầu tư",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "08/04/2027 - 14/04/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "3.1.3",
+     "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint, phần phân hệ quản lý đơn hàng",
+     "2,50",
+     "2,50",
+     "Thực hiện",
+     "18/03/2027 - 29/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "3.1.4",
+     "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả, phần phân hệ quản lý đơn hàng",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "18/03/2027 - 29/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "3.1.5",
+     "Quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án, hồ sơ nghiệm thu và thanh toán, phần phân hệ quản lý đơn hàng",
+     "2,50",
+     "2,50",
+     "Thực hiện",
+     "18/03/2027 - 29/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "3.1.6",
+     "Cập nhật sổ rủi ro, kế hoạch quản lý thay đổi và cấu hình theo đặc tả đã xác nhận",
+     "2,50",
+     "2,50",
+     "Thực hiện",
+     "17/05/2027 - 21/05/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "4.1.1",
+     "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint, phần phân hệ tích hợp hệ thống",
+     "3,50",
+     "3,50",
+     "Thực hiện",
+     "18/03/2027 - 29/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "4.1.2",
+     "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả, phần phân hệ tích hợp hệ thống",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "18/03/2027 - 29/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "4.1.3",
+     "Quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án, hồ sơ nghiệm thu và thanh toán, phần phân hệ tích hợp hệ thống",
+     "3,50",
+     "3,50",
+     "Thực hiện",
+     "18/03/2027 - 29/07/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "4.2.5",
+     "Đặc tả giao diện trao đổi dữ liệu với Main System",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "14/04/2027 - 29/04/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "4.2.6",
+     "Xác nhận đặc tả giao diện tích hợp với Main System của Chủ đầu tư",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "11/05/2027 - 17/05/2027"
+    ],
+    [
+     "Trần Bá Đạt",
+     "5.1.1",
+     "Quản lý yêu cầu thay đổi, phụ lục hợp đồng, theo dõi tiến độ và hồ sơ nghiệm thu phần bán hàng trên sàn thương mại điện tử",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "21/05/2027 - 29/07/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "1.3.2",
+     "Dịch vụ tìm kiếm theo từ khóa và gợi ý tìm kiếm",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "10/05/2027 - 14/05/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "1.3.8",
+     "Bộ nhớ đệm và tối ưu thời gian phản hồi trang danh mục, chi tiết sản phẩm",
+     "4,00",
+     "2,00",
+     "Thực hiện",
+     "24/05/2027 - 31/05/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "2.3.7",
+     "Giao diện trang thành viên và sổ địa chỉ",
+     "5,00",
+     "2,50",
+     "Thực hiện",
+     "18/05/2027 - 27/05/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "2.4.13",
+     "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ quản lý khách hàng",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "16/07/2027 - 22/07/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "3.2.11",
+     "Thiết kế chi tiết trạng thái đơn hàng, hủy đơn và đổi trả",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "21/04/2027 - 26/04/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "3.4.5",
+     "Sửa lỗi và kiểm thử lại giỏ hàng và giữ tồn kho",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "01/06/2027 - 02/06/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "4.2.3",
+     "Cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "01/04/2027 - 07/04/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "4.2.7",
+     "Thiết kế tích hợp gồm ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "04/05/2027 - 07/05/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "4.3.1",
+     "Khung ứng dụng phía máy chủ và thành phần dùng chung về xác thực, phân quyền, ghi nhật ký, xử lý lỗi",
+     "8,00",
+     "4,00",
+     "Thực hiện",
+     "18/03/2027 - 23/03/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "4.3.5",
+     "Đồng bộ danh mục sản phẩm và giá từ Main System",
+     "5,00",
+     "2,50",
+     "Thực hiện",
+     "14/05/2027 - 25/05/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "4.3.8",
+     "Nhận trạng thái vận chuyển từ Main System",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "17/05/2027 - 21/05/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "4.4.4",
+     "Sửa lỗi và kiểm thử lại tích hợp với Main System",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "04/06/2027 - 10/06/2027"
+    ],
+    [
+     "Phạm Tuấn Anh",
+     "4.5.3",
+     "Chuyển đổi thử dữ liệu sản phẩm, tồn kho do Chủ đầu tư cung cấp",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "11/06/2027 - 16/06/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "1.2.3",
+     "Thiết kế giao diện ưu tiên trang chủ, tìm kiếm và chi tiết sản phẩm",
+     "4,00",
+     "2,00",
+     "Thực hiện",
+     "06/04/2027 - 07/04/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "1.2.4",
+     "Thư viện thành phần giao diện dùng chung, tương thích thiết bị di động",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "08/04/2027 - 13/04/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "1.4.1",
+     "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ quản lý sản phẩm",
+     "6,00",
+     "3,00",
+     "Thực hiện",
+     "10/05/2027 - 18/05/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "1.4.5",
+     "Kiểm thử tương thích trình duyệt, thiết bị di động và thời gian phản hồi phân hệ quản lý sản phẩm",
+     "5,00",
+     "2,50",
+     "Thực hiện",
+     "02/06/2027 - 10/06/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "1.4.8",
+     "Kịch bản và công cụ kiểm thử hiệu năng, chịu tải 500 người dùng đồng thời",
+     "4,00",
+     "2,00",
+     "Thực hiện",
+     "07/06/2027 - 16/06/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "2.2.3",
+     "Nghiên cứu hành vi người dùng và khung giao diện các trang chính",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "18/03/2027 - 23/03/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "2.3.4",
+     "Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "17/05/2027 - 27/05/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "2.4.9",
+     "Đánh giá khả năng sử dụng của giao diện (Easy Operation)",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "16/06/2027 - 17/06/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "2.4.12",
+     "Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng đăng ký, đăng nhập và thành viên",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "16/07/2027 - 27/07/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "3.2.4",
+     "Thiết kế giao diện ưu tiên giỏ hàng, đặt hàng và theo dõi đơn hàng",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "31/03/2027 - 05/04/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "3.3.5",
+     "Dịch vụ đặt hàng, xác nhận đơn và thư điện tử xác nhận",
+     "6,00",
+     "3,00",
+     "Hỗ trợ",
+     "22/04/2027 - 27/04/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "3.3.8",
+     "Giao diện giỏ hàng",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "04/05/2027 - 10/05/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "3.3.9",
+     "Giao diện đặt hàng gồm địa chỉ, phí vận chuyển, mã giảm giá và xác nhận",
+     "6,00",
+     "6,00",
+     "Thực hiện",
+     "14/04/2027 - 22/04/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "3.4.6",
+     "Kiểm thử luồng đặt hàng đầu cuối của phân hệ với dữ liệu biên và đồng thời",
+     "6,00",
+     "3,00",
+     "Thực hiện",
+     "27/05/2027 - 01/06/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "4.3.3",
+     "Khung ứng dụng giao diện gồm định tuyến, quản lý trạng thái và gọi dịch vụ",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "23/03/2027 - 29/03/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "4.3.5",
+     "Đồng bộ danh mục sản phẩm và giá từ Main System",
+     "5,00",
+     "2,50",
+     "Hỗ trợ",
+     "14/05/2027 - 25/05/2027"
+    ],
+    [
+     "Vũ Đức Minh",
+     "4.4.5",
+     "Khắc phục lỗi sau kiểm thử hệ thống",
+     "6,00",
+     "2,00",
+     "Thực hiện",
+     "02/07/2027 - 05/07/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "1.2.7",
+     "Thiết kế chi tiết tìm kiếm, lọc, sắp xếp và chỉ mục tìm kiếm",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "14/04/2027 - 21/04/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "1.4.1",
+     "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ quản lý sản phẩm",
+     "6,00",
+     "3,00",
+     "Hỗ trợ",
+     "10/05/2027 - 18/05/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "1.4.3",
+     "Kiểm thử trang chủ, danh mục và chi tiết sản phẩm",
+     "6,00",
+     "2,00",
+     "Hỗ trợ",
+     "04/06/2027 - 15/06/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "1.4.5",
+     "Kiểm thử tương thích trình duyệt, thiết bị di động và thời gian phản hồi phân hệ quản lý sản phẩm",
+     "5,00",
+     "2,50",
+     "Hỗ trợ",
+     "02/06/2027 - 10/06/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "1.5.1",
+     "Môi trường phát triển, kiểm thử và quy trình tích hợp, triển khai tự động",
+     "6,00",
+     "6,00",
+     "Thực hiện",
+     "31/03/2027 - 08/04/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "2.3.2",
+     "Dịch vụ đăng nhập, phiên làm việc và giới hạn đăng nhập sai",
+     "6,00",
+     "6,00",
+     "Thực hiện",
+     "22/04/2027 - 29/04/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "2.4.3",
+     "Kiểm thử thông tin thành viên, sổ địa chỉ và đồng ý điều khoản",
+     "6,00",
+     "3,00",
+     "Hỗ trợ",
+     "31/05/2027 - 03/06/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "2.4.10",
+     "Rà soát lỗ hổng bảo mật theo OWASP Top 10 trên môi trường kiểm thử",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "11/06/2027 - 15/06/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "2.4.11",
+     "Kiểm thử hồi quy theo các đợt khắc phục lỗi kiểm thử chấp nhận",
+     "8,00",
+     "8,00",
+     "Thực hiện",
+     "16/07/2027 - 27/07/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "3.3.7",
+     "Dịch vụ yêu cầu đổi trả và hoàn tiền",
+     "6,00",
+     "6,00",
+     "Thực hiện",
+     "04/05/2027 - 13/05/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "3.4.2",
+     "Kiểm thử giỏ hàng và giữ tồn kho",
+     "6,00",
+     "6,00",
+     "Thực hiện",
+     "18/05/2027 - 26/05/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "3.4.6",
+     "Kiểm thử luồng đặt hàng đầu cuối của phân hệ với dữ liệu biên và đồng thời",
+     "6,00",
+     "3,00",
+     "Hỗ trợ",
+     "27/05/2027 - 01/06/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "3.5.4",
+     "Hỗ trợ ngày đưa hệ thống vào vận hành và biên bản bàn giao hệ thống",
+     "2,00",
+     "1,00",
+     "Hỗ trợ",
+     "29/07/2027 - 29/07/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "4.2.2",
+     "Kiến trúc hệ thống, hạ tầng và phương án bảo đảm hoạt động liên tục",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "24/03/2027 - 30/03/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "4.2.4",
+     "Cấu hình cơ sở dữ liệu (DB Configuration) gồm dự phòng, sao lưu và phân quyền truy cập",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "08/04/2027 - 12/04/2027"
+    ],
+    [
+     "Ninh Đức Toàn",
+     "4.5.4",
+     "Nạp hình ảnh và nội dung sản phẩm theo bộ nhận diện của Chủ đầu tư lên môi trường vận hành",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "16/06/2027 - 21/06/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "1.2.6",
+     "Đặc tả use case trang chủ, danh mục và chi tiết sản phẩm",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "19/04/2027 - 21/04/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "1.4.2",
+     "Kiểm thử tìm kiếm, lọc và sắp xếp sản phẩm",
+     "7,00",
+     "7,00",
+     "Thực hiện",
+     "19/05/2027 - 28/05/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "1.4.3",
+     "Kiểm thử trang chủ, danh mục và chi tiết sản phẩm",
+     "6,00",
+     "2,00",
+     "Thực hiện",
+     "04/06/2027 - 15/06/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "1.4.8",
+     "Kịch bản và công cụ kiểm thử hiệu năng, chịu tải 500 người dùng đồng thời",
+     "4,00",
+     "2,00",
+     "Hỗ trợ",
+     "07/06/2027 - 16/06/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "2.2.5",
+     "Đặc tả use case đăng ký, xác thực thư điện tử, đăng nhập và khôi phục mật khẩu",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "06/04/2027 - 12/04/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "2.4.3",
+     "Kiểm thử thông tin thành viên, sổ địa chỉ và đồng ý điều khoản",
+     "6,00",
+     "3,00",
+     "Thực hiện",
+     "31/05/2027 - 03/06/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "2.4.5",
+     "Kiểm thử bảo mật tài khoản theo OWASP Top 10 và tương thích thiết bị phân hệ quản lý khách hàng",
+     "6,00",
+     "6,00",
+     "Thực hiện",
+     "07/05/2027 - 14/05/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "2.5.3",
+     "Cập nhật tài liệu hướng dẫn sử dụng theo kết quả kiểm thử chấp nhận",
+     "3,00",
+     "1,50",
+     "Thực hiện",
+     "28/07/2027 - 29/07/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "3.2.1",
+     "Khảo sát nghiệp vụ bán hàng trực tuyến và quy trình hiện tại của Chủ đầu tư",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "18/03/2027 - 23/03/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "3.2.2",
+     "Đặc tả chức năng (Function) đặt hàng gồm giỏ hàng, giữ tồn, phí vận chuyển, khuyến mại, hủy đơn, đổi trả",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "24/03/2027 - 30/03/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "3.2.3",
+     "Quy trình vận hành mới (New Operational Flow) của kênh bán hàng trực tuyến",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "22/04/2027 - 28/04/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "3.2.5",
+     "Xác nhận đặc tả yêu cầu và giao diện ưu tiên của hai bên",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "04/05/2027 - 06/05/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "3.2.6",
+     "Đặc tả use case giỏ hàng và giữ tồn kho khi đặt hàng",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "13/04/2027 - 15/04/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "3.2.7",
+     "Đặc tả use case đặt hàng, phí vận chuyển, mã giảm giá và xác nhận đơn",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "31/03/2027 - 05/04/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "3.2.12",
+     "Cập nhật đặc tả hệ thống và cấu trúc cơ sở dữ liệu theo phiên bản bàn giao",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "06/07/2027 - 07/07/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "3.4.12",
+     "Kiểm thử chức năng đầu cuối",
+     "10,00",
+     "5,00",
+     "Thực hiện",
+     "16/06/2027 - 23/06/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "4.4.6",
+     "Kiểm tra chức năng chính và tích hợp với Main System của Chủ đầu tư",
+     "3,00",
+     "1,50",
+     "Hỗ trợ",
+     "02/07/2027 - 08/07/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "4.4.7",
+     "Kiểm thử hiệu năng và rà soát an toàn thông tin bản phát hành trên môi trường vận hành",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "16/07/2027 - 21/07/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "5.2.2",
+     "Đặc tả chức năng và use case đồng bộ sản phẩm, tồn kho, giá, nhận đơn, cập nhật trạng thái và đối soát với sàn",
+     "5,00",
+     "2,50",
+     "Thực hiện",
+     "04/06/2027 - 08/06/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "5.2.4",
+     "Xác nhận đặc tả bán hàng trên sàn thương mại điện tử của Chủ đầu tư",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "11/06/2027 - 17/06/2027"
+    ],
+    [
+     "Nguyễn Thị Phương Liên",
+     "5.5.2",
+     "Tài liệu và buổi hướng dẫn sử dụng bán hàng trên sàn cho cán bộ Chủ đầu tư",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "24/06/2027 - 28/06/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "1.2.1",
+     "Đặc tả chức năng (Function) tìm kiếm và hiển thị sản phẩm",
+     "4,00",
+     "2,67",
+     "Thực hiện",
+     "24/03/2027 - 26/03/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "1.2.2",
+     "Sơ đồ phân cấp menu (Menu Layer)",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "01/04/2027 - 05/04/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "1.2.5",
+     "Đặc tả use case tìm kiếm, lọc và sắp xếp sản phẩm",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "06/04/2027 - 13/04/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "1.3.5",
+     "Giao diện trang chủ và điều hướng danh mục theo Menu Layer",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "19/05/2027 - 24/05/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "1.4.7",
+     "Tài liệu chức năng và nghiệm thu nội bộ phân hệ quản lý sản phẩm",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "06/07/2027 - 08/07/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "2.2.1",
+     "Đặc tả chức năng (Function) quản lý thành viên",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "29/03/2027 - 31/03/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "2.2.2",
+     "Đặc tả yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi, bảo mật và thao tác",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "27/04/2027 - 29/04/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "2.2.6",
+     "Đặc tả use case thông tin thành viên, sổ địa chỉ giao hàng và đổi mật khẩu",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "21/04/2027 - 23/04/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "2.3.7",
+     "Giao diện trang thành viên và sổ địa chỉ",
+     "5,00",
+     "2,50",
+     "Hỗ trợ",
+     "18/05/2027 - 27/05/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "2.5.1",
+     "Tài liệu hướng dẫn sử dụng cho khách hàng và cán bộ bán hàng",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "09/06/2027 - 14/06/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "2.5.3",
+     "Cập nhật tài liệu hướng dẫn sử dụng theo kết quả kiểm thử chấp nhận",
+     "3,00",
+     "1,50",
+     "Hỗ trợ",
+     "28/07/2027 - 29/07/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "3.2.8",
+     "Đặc tả use case theo dõi đơn hàng, hủy đơn, đổi trả và hoàn tiền",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "14/04/2027 - 20/04/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "3.3.1",
+     "Dịch vụ giỏ hàng",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "04/05/2027 - 10/05/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "3.3.2",
+     "Dịch vụ giữ tồn kho tạm thời khi đặt hàng và giải phóng tồn",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "11/05/2027 - 17/05/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "3.4.9",
+     "Tài liệu chức năng và nghiệm thu nội bộ phân hệ quản lý đơn hàng",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "09/07/2027 - 13/07/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "3.5.1",
+     "Hướng dẫn vận hành cho cán bộ Chủ đầu tư theo quy trình vận hành mới, ba buổi theo lịch của Chủ đầu tư",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "15/06/2027 - 17/06/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "4.2.1",
+     "Khảo sát hệ thống hiện có, Main System và luồng dữ liệu liên quan",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "18/03/2027 - 23/03/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "4.4.6",
+     "Kiểm tra chức năng chính và tích hợp với Main System của Chủ đầu tư",
+     "3,00",
+     "1,50",
+     "Thực hiện",
+     "02/07/2027 - 08/07/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "4.4.9",
+     "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận tích hợp với Main System",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "16/07/2027 - 22/07/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "5.2.1",
+     "Khảo sát quy trình bán hàng trên sàn thương mại điện tử và giao diện lập trình của sàn",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "01/06/2027 - 03/06/2027"
+    ],
+    [
+     "Nguyễn Hoàng Nam",
+     "5.2.2",
+     "Đặc tả chức năng và use case đồng bộ sản phẩm, tồn kho, giá, nhận đơn, cập nhật trạng thái và đối soát với sàn",
+     "5,00",
+     "2,50",
+     "Hỗ trợ",
+     "04/06/2027 - 08/06/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "1.2.3",
+     "Thiết kế giao diện ưu tiên trang chủ, tìm kiếm và chi tiết sản phẩm",
+     "4,00",
+     "2,00",
+     "Hỗ trợ",
+     "06/04/2027 - 07/04/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "1.3.4",
+     "Dịch vụ danh mục, chi tiết sản phẩm, biến thể, tồn kho và giá khuyến mại hiển thị",
+     "6,00",
+     "3,00",
+     "Hỗ trợ",
+     "13/05/2027 - 21/05/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "1.3.6",
+     "Giao diện tìm kiếm, kết quả và bộ lọc",
+     "5,00",
+     "2,50",
+     "Thực hiện",
+     "07/05/2027 - 13/05/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "1.3.7",
+     "Giao diện chi tiết sản phẩm",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "18/05/2027 - 27/05/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "1.4.4",
+     "Sửa lỗi và kiểm thử lại chức năng tìm kiếm, lọc và sắp xếp",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "31/05/2027 - 02/06/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "1.4.12",
+     "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ quản lý sản phẩm",
+     "6,00",
+     "6,00",
+     "Thực hiện",
+     "16/07/2027 - 23/07/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "1.5.3",
+     "Bàn giao mã nguồn, tài liệu kỹ thuật, tài liệu cài đặt và danh mục thư viện",
+     "4,00",
+     "2,00",
+     "Hỗ trợ",
+     "28/07/2027 - 29/07/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "2.2.4",
+     "Thiết kế giao diện ưu tiên đăng ký, đăng nhập và trang thành viên",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "01/04/2027 - 05/04/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "2.3.6",
+     "Giao diện đăng ký, đăng nhập và khôi phục mật khẩu",
+     "6,00",
+     "6,00",
+     "Thực hiện",
+     "22/04/2027 - 29/04/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "2.4.4",
+     "Sửa lỗi và kiểm thử lại đăng ký, đăng nhập và bảo mật tài khoản",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "24/06/2027 - 29/06/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "3.2.10",
+     "Thiết kế chi tiết đặt hàng, phí vận chuyển và khuyến mại",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "08/04/2027 - 13/04/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "3.3.10",
+     "Giao diện theo dõi đơn hàng, hủy đơn và đổi trả",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "04/05/2027 - 10/05/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "3.4.8",
+     "Sửa lỗi và kiểm thử lại theo dõi đơn hàng, hủy đơn và đổi trả",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "30/06/2027 - 01/07/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "4.3.1",
+     "Khung ứng dụng phía máy chủ và thành phần dùng chung về xác thực, phân quyền, ghi nhật ký, xử lý lỗi",
+     "8,00",
+     "4,00",
+     "Hỗ trợ",
+     "18/03/2027 - 23/03/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "4.4.5",
+     "Khắc phục lỗi sau kiểm thử hệ thống",
+     "6,00",
+     "2,00",
+     "Hỗ trợ",
+     "02/07/2027 - 05/07/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "5.2.3",
+     "Thiết kế tích hợp với sàn gồm xác thực, ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "04/06/2027 - 09/06/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "5.3.1",
+     "Kết nối sàn gồm xác thực, cấu hình cửa hàng và quản lý khóa truy cập",
+     "4,00",
+     "2,00",
+     "Thực hiện",
+     "10/06/2027 - 11/06/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "5.3.4",
+     "Nhận đơn hàng từ sàn vào luồng xử lý đơn hàng",
+     "6,00",
+     "3,00",
+     "Hỗ trợ",
+     "14/06/2027 - 16/06/2027"
+    ],
+    [
+     "Lê Quang Huy",
+     "5.3.7",
+     "Giao diện quản trị kênh sàn gồm ánh xạ sản phẩm, theo dõi đồng bộ và kết quả đối soát",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "17/06/2027 - 23/06/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "1.3.4",
+     "Dịch vụ danh mục, chi tiết sản phẩm, biến thể, tồn kho và giá khuyến mại hiển thị",
+     "6,00",
+     "3,00",
+     "Thực hiện",
+     "13/05/2027 - 21/05/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "1.3.8",
+     "Bộ nhớ đệm và tối ưu thời gian phản hồi trang danh mục, chi tiết sản phẩm",
+     "4,00",
+     "2,00",
+     "Hỗ trợ",
+     "24/05/2027 - 31/05/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "1.4.6",
+     "Sửa lỗi và kiểm thử lại trang chủ, danh mục và chi tiết sản phẩm",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "28/06/2027 - 30/06/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "1.5.3",
+     "Bàn giao mã nguồn, tài liệu kỹ thuật, tài liệu cài đặt và danh mục thư viện",
+     "4,00",
+     "2,00",
+     "Thực hiện",
+     "28/07/2027 - 29/07/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "2.2.7",
+     "Thiết kế chi tiết đăng ký, đăng nhập, phiên làm việc và bảo mật tài khoản",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "14/04/2027 - 21/04/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "2.2.8",
+     "Thiết kế chi tiết thông tin thành viên và sổ địa chỉ",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "29/04/2027 - 06/05/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "2.3.3",
+     "Dịch vụ khôi phục và đổi mật khẩu",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "23/04/2027 - 28/04/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "3.2.9",
+     "Thiết kế chi tiết giỏ hàng và giữ tồn kho",
+     "4,00",
+     "2,00",
+     "Thực hiện",
+     "22/04/2027 - 29/04/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "3.3.6",
+     "Dịch vụ lịch sử, trạng thái đơn hàng và hủy đơn",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "06/05/2027 - 13/05/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "3.4.14",
+     "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ quản lý đơn hàng",
+     "8,00",
+     "8,00",
+     "Thực hiện",
+     "16/07/2027 - 27/07/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "4.3.2",
+     "Tạo lập Selling DB theo cấu trúc đã thiết kế và tầng truy cập dữ liệu",
+     "6,00",
+     "3,00",
+     "Hỗ trợ",
+     "09/04/2027 - 13/04/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "4.3.9",
+     "Giám sát tích hợp, cảnh báo lỗi đồng bộ và gửi lại",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "14/05/2027 - 19/05/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "4.3.10",
+     "Công cụ chuyển đổi dữ liệu sản phẩm, tồn kho và kiểm tra toàn vẹn",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "26/05/2027 - 01/06/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "4.4.5",
+     "Khắc phục lỗi sau kiểm thử hệ thống",
+     "6,00",
+     "2,00",
+     "Hỗ trợ",
+     "02/07/2027 - 05/07/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "5.3.1",
+     "Kết nối sàn gồm xác thực, cấu hình cửa hàng và quản lý khóa truy cập",
+     "4,00",
+     "2,00",
+     "Hỗ trợ",
+     "10/06/2027 - 11/06/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "5.3.2",
+     "Đồng bộ sản phẩm và giá lên sàn",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "14/06/2027 - 18/06/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "5.3.6",
+     "Đối soát đơn hàng và thanh toán với sàn",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "21/06/2027 - 25/06/2027"
+    ],
+    [
+     "Đỗ Minh Quân",
+     "5.5.3",
+     "Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện phần bán hàng trên sàn thương mại điện tử",
+     "1,00",
+     "1,00",
+     "Thực hiện",
+     "07/07/2027 - 07/07/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "1.3.6",
+     "Giao diện tìm kiếm, kết quả và bộ lọc",
+     "5,00",
+     "2,50",
+     "Hỗ trợ",
+     "07/05/2027 - 13/05/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "1.5.2",
+     "Chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức",
+     "2,00",
+     "1,00",
+     "Thực hiện",
+     "28/07/2027 - 28/07/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "2.3.1",
+     "Dịch vụ đăng ký thành viên và xác thực địa chỉ thư điện tử",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "28/04/2027 - 06/05/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "2.4.6",
+     "Sửa lỗi và kiểm thử lại thông tin thành viên và sổ địa chỉ",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "04/06/2027 - 08/06/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "2.5.2",
+     "Tài liệu hướng dẫn vận hành và quản trị kỹ thuật hệ thống",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "07/07/2027 - 12/07/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "3.3.3",
+     "Dịch vụ tính phí vận chuyển",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "14/04/2027 - 22/04/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "3.3.5",
+     "Dịch vụ đặt hàng, xác nhận đơn và thư điện tử xác nhận",
+     "6,00",
+     "3,00",
+     "Thực hiện",
+     "22/04/2027 - 27/04/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "3.5.2",
+     "Kế hoạch cut over, danh sách kiểm tra và phương án khôi phục",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "23/06/2027 - 29/06/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "3.5.3",
+     "Diễn tập triển khai phiên bản chính thức và chuyển đổi dữ liệu trên môi trường vận hành",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "30/06/2027 - 02/07/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "3.5.4",
+     "Hỗ trợ ngày đưa hệ thống vào vận hành và biên bản bàn giao hệ thống",
+     "2,00",
+     "1,00",
+     "Thực hiện",
+     "29/07/2027 - 29/07/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "4.3.2",
+     "Tạo lập Selling DB theo cấu trúc đã thiết kế và tầng truy cập dữ liệu",
+     "6,00",
+     "3,00",
+     "Thực hiện",
+     "09/04/2027 - 13/04/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "4.3.4",
+     "Dịch vụ gửi thư điện tử qua máy chủ thư của Chủ đầu tư",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "24/03/2027 - 26/03/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "4.3.7",
+     "Chuyển đơn hàng sang Main System và nhận trạng thái xử lý",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "14/05/2027 - 21/05/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "4.5.1",
+     "Môi trường vận hành gồm hai nút ứng dụng, cân bằng tải, cơ sở dữ liệu chính và dự phòng",
+     "7,00",
+     "7,00",
+     "Thực hiện",
+     "20/05/2027 - 31/05/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "5.3.4",
+     "Nhận đơn hàng từ sàn vào luồng xử lý đơn hàng",
+     "6,00",
+     "3,00",
+     "Thực hiện",
+     "14/06/2027 - 16/06/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "5.3.5",
+     "Cập nhật trạng thái đơn hàng và vận chuyển lên sàn",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "17/06/2027 - 22/06/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "5.4.4",
+     "Khắc phục lỗi và kiểm thử lại sau kiểm thử bán hàng trên sàn",
+     "3,00",
+     "1,50",
+     "Hỗ trợ",
+     "05/07/2027 - 06/07/2027"
+    ],
+    [
+     "Bùi Anh Tuấn",
+     "5.4.5",
+     "Tổ chức và hỗ trợ kiểm thử chấp nhận bán hàng trên sàn cùng Chủ đầu tư",
+     "3,00",
+     "1,50",
+     "Hỗ trợ",
+     "16/07/2027 - 27/07/2027"
+    ],
+    [
+     "Trần Thu Hà",
+     "1.4.11",
+     "Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng tìm kiếm và hiển thị sản phẩm",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "16/07/2027 - 27/07/2027"
+    ],
+    [
+     "Trần Thu Hà",
+     "2.1.1",
+     "Kế hoạch bảo đảm chất lượng, quy chuẩn mã nguồn và tiêu chí hoàn thành công việc",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "05/04/2027 - 08/04/2027"
+    ],
+    [
+     "Trần Thu Hà",
+     "2.4.2",
+     "Kiểm thử đăng ký, đăng nhập và khôi phục mật khẩu",
+     "7,00",
+     "7,00",
+     "Thực hiện",
+     "20/05/2027 - 31/05/2027"
+    ],
+    [
+     "Trần Thu Hà",
+     "3.4.1",
+     "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ quản lý đơn hàng",
+     "7,00",
+     "7,00",
+     "Thực hiện",
+     "21/04/2027 - 04/05/2027"
+    ],
+    [
+     "Trần Thu Hà",
+     "3.4.3",
+     "Kiểm thử đặt hàng, phí vận chuyển và khuyến mại",
+     "9,00",
+     "9,00",
+     "Thực hiện",
+     "06/05/2027 - 18/05/2027"
+    ],
+    [
+     "Trần Thu Hà",
+     "3.4.10",
+     "Kịch bản kiểm thử hệ thống đầu cuối",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "01/06/2027 - 07/06/2027"
+    ],
+    [
+     "Trần Thu Hà",
+     "3.4.12",
+     "Kiểm thử chức năng đầu cuối",
+     "10,00",
+     "5,00",
+     "Hỗ trợ",
+     "16/06/2027 - 23/06/2027"
+    ],
+    [
+     "Trần Thu Hà",
+     "4.4.2",
+     "Kịch bản kiểm thử tích hợp với Main System",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "04/05/2027 - 19/05/2027"
+    ],
+    [
+     "Trần Thu Hà",
+     "5.4.2",
+     "Kiểm thử tích hợp với môi trường thử của sàn",
+     "6,00",
+     "3,00",
+     "Hỗ trợ",
+     "28/06/2027 - 30/06/2027"
+    ],
+    [
+     "Trần Thu Hà",
+     "5.4.3",
+     "Kiểm thử hệ thống luồng bán hàng trên sàn gồm đồng bộ, nhận đơn, trạng thái và đối soát",
+     "4,00",
+     "2,00",
+     "Thực hiện",
+     "01/07/2027 - 02/07/2027"
+    ],
+    [
+     "Trần Thu Hà",
+     "5.4.5",
+     "Tổ chức và hỗ trợ kiểm thử chấp nhận bán hàng trên sàn cùng Chủ đầu tư",
+     "3,00",
+     "1,50",
+     "Thực hiện",
+     "16/07/2027 - 27/07/2027"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "1.4.3",
+     "Kiểm thử trang chủ, danh mục và chi tiết sản phẩm",
+     "6,00",
+     "2,00",
+     "Hỗ trợ",
+     "04/06/2027 - 15/06/2027"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "1.4.9",
+     "Kiểm thử hiệu năng trên môi trường kiểm thử",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "17/06/2027 - 21/06/2027"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "2.4.1",
+     "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ quản lý khách hàng",
+     "6,00",
+     "6,00",
+     "Thực hiện",
+     "26/04/2027 - 05/05/2027"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "2.4.8",
+     "Kế hoạch kiểm thử hệ thống, kiểm thử chấp nhận và tiêu chí đạt",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "13/05/2027 - 25/05/2027"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "3.4.4",
+     "Kiểm thử theo dõi đơn hàng, hủy đơn và đổi trả",
+     "6,00",
+     "6,00",
+     "Thực hiện",
+     "14/05/2027 - 07/06/2027"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "3.4.11",
+     "Kịch bản kiểm thử chấp nhận theo quy trình vận hành mới",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "22/06/2027 - 24/06/2027"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "3.4.13",
+     "Tổ chức và hỗ trợ kiểm thử vận hành cùng Chủ đầu tư luồng đặt hàng và giao nhận",
+     "8,00",
+     "8,00",
+     "Thực hiện",
+     "16/07/2027 - 27/07/2027"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "4.4.1",
+     "Dịch vụ giả lập Main System và dữ liệu kiểm thử tích hợp",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "10/05/2027 - 13/05/2027"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "4.4.3",
+     "Kiểm thử tích hợp với Main System trên môi trường thử",
+     "7,00",
+     "7,00",
+     "Thực hiện",
+     "26/05/2027 - 03/06/2027"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "5.4.1",
+     "Kịch bản kiểm thử bán hàng trên sàn thương mại điện tử",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "09/06/2027 - 11/06/2027"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "5.4.2",
+     "Kiểm thử tích hợp với môi trường thử của sàn",
+     "6,00",
+     "3,00",
+     "Thực hiện",
+     "28/06/2027 - 30/06/2027"
+    ],
+    [
+     "Phạm Ngọc Anh",
+     "5.4.3",
+     "Kiểm thử hệ thống luồng bán hàng trên sàn gồm đồng bộ, nhận đơn, trạng thái và đối soát",
+     "4,00",
+     "2,00",
+     "Hỗ trợ",
+     "01/07/2027 - 02/07/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "1.3.1",
+     "Dịch vụ chỉ mục tìm kiếm và cập nhật chỉ mục từ Selling DB",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "27/04/2027 - 06/05/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "1.3.3",
+     "Dịch vụ lọc và sắp xếp kết quả tìm kiếm",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "06/05/2027 - 13/05/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "1.4.10",
+     "Tối ưu hiệu năng và khắc phục lỗ hổng theo kết quả kiểm thử bản phát hành",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "22/07/2027 - 27/07/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "1.5.2",
+     "Chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức",
+     "2,00",
+     "1,00",
+     "Hỗ trợ",
+     "28/07/2027 - 28/07/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "2.3.5",
+     "Dịch vụ đồng ý điều khoản và bảo vệ dữ liệu cá nhân của thành viên",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "20/05/2027 - 25/05/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "3.2.9",
+     "Thiết kế chi tiết giỏ hàng và giữ tồn kho",
+     "4,00",
+     "2,00",
+     "Hỗ trợ",
+     "22/04/2027 - 29/04/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "3.3.4",
+     "Dịch vụ khuyến mại và mã giảm giá",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "15/04/2027 - 23/04/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "3.3.11",
+     "Rà soát mã nguồn và kiến trúc giai đoạn lập trình phân hệ",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "26/05/2027 - 28/05/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "3.4.7",
+     "Sửa lỗi và kiểm thử lại đặt hàng, phí vận chuyển và khuyến mại",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "02/06/2027 - 07/06/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "4.3.6",
+     "Đồng bộ tồn kho từ Main System",
+     "5,00",
+     "5,00",
+     "Thực hiện",
+     "14/05/2027 - 20/05/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "4.4.8",
+     "Diễn tập chuyển đổi dự phòng, sao lưu và khôi phục trên môi trường vận hành",
+     "3,00",
+     "3,00",
+     "Thực hiện",
+     "18/06/2027 - 22/06/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "4.5.2",
+     "Giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "08/06/2027 - 11/06/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "4.5.5",
+     "Rà soát giấy phép thư viện mã nguồn mở và quyền sở hữu sản phẩm",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "31/05/2027 - 01/06/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "4.5.6",
+     "Giám sát vận hành và chuẩn bị hỗ trợ tăng cường sau cut over",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "07/07/2027 - 12/07/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "5.3.3",
+     "Đồng bộ tồn kho lên sàn",
+     "4,00",
+     "4,00",
+     "Thực hiện",
+     "14/06/2027 - 17/06/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "5.4.4",
+     "Khắc phục lỗi và kiểm thử lại sau kiểm thử bán hàng trên sàn",
+     "3,00",
+     "1,50",
+     "Thực hiện",
+     "05/07/2027 - 06/07/2027"
+    ],
+    [
+     "Trương Quốc Việt",
+     "5.5.1",
+     "Cấu hình kết nối sàn trên môi trường vận hành",
+     "2,00",
+     "2,00",
+     "Thực hiện",
+     "13/07/2027 - 14/07/2027"
+    ]
+   ],
+   "widths": [
+    1800,
+    750,
+    3000,
+    700,
+    800,
+    950,
+    1700
+   ],
+   "center_cols": [
+    1,
+    5
+   ],
+   "right_cols": [
+    3,
+    4
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "7. Phối hợp, thay thế và điều chỉnh phân công",
+   "t": "h1"
+  },
+  {
+   "t": "p",
+   "text": "Nhóm phối hợp qua họp ngắn hằng ngày, trình diễn và họp cải tiến cuối mỗi sprint. Việc trao đổi với Chủ đầu tư được thực hiện qua đầu mối Yamada, Phòng Kế hoạch, các nội dung được xác nhận đều ghi thành biên bản."
+  },
+  {
+   "t": "p",
+   "text": "Về thay thế nhân sự, khi Chủ đầu tư yêu cầu thay thế, nhà thầu bố trí người có năng lực tương đương trong thời hạn 7 ngày kể từ khi nhận yêu cầu theo Mục 21.2 E-ĐKCT. Khi một thành viên không thể tiếp tục, nhà thầu chủ động bố trí người thay thế trong cùng thời hạn. Người giữ vị trí nhân sự chủ chốt chỉ được thay bằng người đáp ứng yêu cầu của vị trí đó."
+  },
+  {
+   "t": "p",
+   "text": "Quản trị dự án theo dõi tải thực tế theo sprint. Khi một người quá tải hoặc vắng mặt, công việc được chuyển trước hết cho người hỗ trợ của gói, sau đó cho thành viên còn quỹ thời gian chưa giao. Theo lịch lập lại sau yêu cầu thay đổi CR01, các sprint còn lại không có thành viên nào vượt quỹ. Theo quyết định của nhóm ngày 25/10/2026 về yêu cầu thay đổi CR01, không thêm người, huy động của thành viên hiện có kéo dài đến cut over 29/07/2027, từ S7 đến S9 huy động theo nhu cầu của từng sprint (MD xếp của sprint cộng một phần dự phòng), nên tỷ lệ sử dụng quỹ cả dự án đạt 80,7%. Gói đóng dự án sau cut over (1.1.5) do Trần Bá Đạt thực hiện trong giai đoạn Kết thúc với phần thời gian huy động riêng cho giai đoạn này."
+  },
+  {
+   "t": "p",
+   "text": "Khi có yêu cầu thay đổi được phê duyệt hoặc thay đổi nhân sự, quản trị dự án cập nhật giao việc trong dữ liệu phân công, chạy lại master schedule để kiểm tra tải và dự trữ đến cut over, sau đó ghi phiên bản mới của danh sách phân chia công việc trong sổ phiên bản. Với yêu cầu thay đổi CR01, các gói mới của nhóm 5 được giao theo quyết định của nhóm cho các vị trí còn quỹ: gói lập trình cho Lê Quang Huy, Đỗ Minh Quân, Bùi Anh Tuấn, Trương Quốc Việt, gói kiểm thử cho Trần Thu Hà, Phạm Ngọc Anh, gói phân tích cho Nguyễn Thị Phương Liên, Nguyễn Hoàng Nam, gói quản lý cho quản trị dự án, có người hỗ trợ ở các gói trên chuỗi dài nhất của phần thay đổi. Các gói quản lý dự án dàn trải được kéo đến sprint cuối mới."
+  }
+ ],
+ "canh_bao_soan": [
+  "DIEU_CHINH: số liệu viết tay \"25/10/2026\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi"
+ ]
+}

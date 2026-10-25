@@ -1,0 +1,42 @@
+{
+ "tai_lieu": "ket_qua/08_Change_management_plan/Ke_hoach_quan_ly_thay_doi.docx",
+ "phien_ban": "2.0",
+ "duong_co_so": "BL2",
+ "dac_ta": ".claude/skills/qlda-change/dac_ta/ke_hoach_thay_doi.json",
+ "ngay_kiem_tra": "2026-10-25",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B, phiên riêng, kiểm tra như tài liệu mới sau CR01)",
+ "ket_luan": "chua_dat",
+ "so_loi": 2,
+ "so_canh_bao": 4,
+ "quy_trinh_cr01": "Đi đủ bước: ghi nhận 20/05/2027 (Yamada, Chủ đầu tư), đánh giá trong hạn (hạn 25/05/2027), họp ban 25/05/2027 trong 3 ngày làm việc, quyết định 27/05/2027 trước hạn 01/06/2027 đúng cấp (Lê Quốc Bảo và Tổng Giám đốc ABC Wear, mức Lớn 10 điểm), phụ lục 01/2027/PL-ABCW 27/05/2027 (giá điều chỉnh 199.024.682, giá hợp đồng sau 1.949.024.682, cut over 29/07/2027, M3 08/07, M6 và M7 29/07, Đợt 6 100% gắn M9), áp dụng 27/05/2027, 13 tài liệu lên phiên bản 2.0 hoặc 1.0 (WBS 5), BL2 ngày 27/05/2027 tại R4. Số liệu 76 MD, 161.500.000, 199.024.682, cut over lùi 20 ngày làm việc khớp du_lieu/thay_doi.json, thay_doi_bang.json, du_an.json dieu_chinh_theo_cr và _quyet_dinh_25_10_cr01.",
+ "danh_gia_tieu_chi": [
+  {"tieu_chi": "CL01", "ket_qua": "chua_dat", "nhan_xet": "Đủ 11 mục theo đặc tả, quy trình 10 bước có người, thời hạn, đầu ra, có phân loại sơ bộ. Thiếu nội dung theo hướng dẫn THEO_DOI (số, ngày phụ lục, giá hợp đồng sau phụ lục, rủi ro mới RR22 của CR01) và bước lập đường cơ sở mới sau thay đổi."},
+  {"tieu_chi": "CL02", "ket_qua": "dat", "nhan_xet": "Đơn giá bình quân 2.157.640 và 2.658.970, hệ số 1,232, sổ CR01 (76 MD, 161.500.000, 199.024.682, 20 ngày, Lớn 10), mốc M2, M3, M6, M7, M9 và hạn, dự trữ 8 ngày, đường găng 22 gói, khoảng UAT 16/07 đến 27/07/2027, hỗ trợ tăng cường 30/07 đến 12/08/2027 khớp dữ liệu nguồn. Còn cảnh báo về người phụ trách hạng mục cấu hình CR01 và ghi chú dữ liệu CR01."},
+  {"tieu_chi": "CL03", "ket_qua": "chua_dat", "nhan_xet": "Căn cứ Mục 17, 18 E-ĐKC, 17.1(c), 2.2(i), 20.1, 21.2 E-ĐKCT và R35, R38, R42 đầy đủ. CR01 chưa truy vết tới rủi ro mới RR22 dù sổ thay đổi bảng có ma_rui_ro RR22."},
+  {"tieu_chi": "CL04", "ket_qua": "dat", "nhan_xet": "Điều kiện đóng có Chủ đầu tư kiểm tra đạt (Mục 20.1 E-ĐKCT), nhánh từ chối và hoãn, ngưỡng định lượng theo mức rõ ràng."},
+  {"tieu_chi": "CL05", "ket_qua": "chua_dat", "nhan_xet": "Có thang điểm, điều kiện mức lớn, thẩm quyền, thời hạn, ma trận lan truyền. Chưa nêu việc lập đường cơ sở mới (BL2) trong quy trình và quản lý cấu hình, thay đổi về con người chưa phản ánh phần bán hàng trên sàn của CR01."},
+  {"tieu_chi": "CL06", "ket_qua": "dat", "nhan_xet": "Times New Roman 13, không in đậm, không ngoặc kép, không gạch dài. Một dấu chấm phẩy trong bảng cấu hình (cảnh báo nhẹ)."}
+ ],
+ "doc_hieu": [
+  {"tieu_chi": "Quy trình có người, thời hạn, đầu ra, phân loại sơ bộ", "ket_qua": "dat"},
+  {"tieu_chi": "Mức nhỏ chỉ cho thay đổi nội bộ, điều kiện mức lớn, thang điểm 1 đến 10", "ket_qua": "dat"},
+  {"tieu_chi": "Ban kiểm soát thay đổi có người ký phụ lục của hai bên, quy tắc quyết định", "ket_qua": "dat"},
+  {"tieu_chi": "Thời hạn đánh giá và quyết định theo mức, khớp HSDT (3 ngày)", "ket_qua": "dat"},
+  {"tieu_chi": "Cơ chế xác định tài liệu phải cập nhật", "ket_qua": "dat"},
+  {"tieu_chi": "Mẫu phiếu, điều kiện đóng, nhánh từ chối, hoãn", "ket_qua": "dat"},
+  {"tieu_chi": "Quản lý cấu hình: hạng mục, nhánh, nhãn, đường cơ sở tại M2, người phụ trách", "ket_qua": "chua_dat", "ghi_chu": "Không nêu đường cơ sở sau thay đổi (BL2), người phụ trách hạng mục CR01 chưa khớp RACI"},
+  {"tieu_chi": "Thay đổi về con người", "ket_qua": "dat", "ghi_chu": "Có cảnh báo MH03 về phần CR01"},
+  {"tieu_chi": "Chi phí nội bộ và giá đề nghị", "ket_qua": "dat"},
+  {"tieu_chi": "Phù hợp Mục 17, 18 E-ĐKC và 17.1(c) E-ĐKCT", "ket_qua": "dat"},
+  {"tieu_chi": "Liên kết quản lý rủi ro, phiên bản, dự phòng dùng chung", "ket_qua": "chua_dat", "ghi_chu": "CR01 chưa liên kết RR22"}
+ ],
+ "phat_hien": [
+  {"ma": "MH01", "muc_do": "loi", "nhom": "CL01, CL03", "vi_tri": "Mục 11: 'Chỉ số theo dõi gồm số yêu cầu đang mở, MD tăng và giá đề nghị Chủ đầu tư lũy kế ... Hiện sổ yêu cầu thay đổi có 1 yêu cầu.'", "mo_ta": "Thiếu nội dung bắt buộc theo hướng dẫn THEO_DOI: yêu cầu đã có phụ lục phải nêu số và ngày phụ lục (01/2027/PL-ABCW, 27/05/2027), giá hợp đồng sau phụ lục (1.949.024.682 đồng, tdb#so_thay_doi.gia_hop_dong_sau) và rủi ro mới liên kết (RR22, tdb#so_thay_doi.ma_rui_ro). Toàn tài liệu không có RR22 và không có giá hợp đồng sau phụ lục.", "cach_sua": "tu_dong", "sua_o": "lời văn", "de_xuat": "Soạn lại THEO_DOI bằng tham chiếu {tdb#so_thay_doi.phu_luc_so}, ngày phụ lục, {tdb#so_thay_doi.gia_hop_dong_sau|tien}, {tdb#so_thay_doi.ma_rui_ro}; có thể thêm RR22 vào ví dụ ở TAC_DONG."},
+  {"ma": "MH02", "muc_do": "loi", "nhom": "CL01, CL05", "vi_tri": "Mục 4 bước 8: 'Cập nhật dữ liệu nguồn và tạo lại tài liệu theo ma trận lan truyền ở mục 6, ghi phiên bản sau thay đổi vào sổ phiên bản'; mục 7 đoạn đường cơ sở chỉ nêu ký hợp đồng và M2", "mo_ta": "Hướng dẫn QUY_TRINH yêu cầu bước áp dụng gồm lập đường cơ sở mới sau thay đổi, nhưng quy trình và phần quản lý cấu hình không nêu việc lập đường cơ sở mới (BL2 sau CR01, 27/05/2027, ghi mã CR) dù đây là kế hoạch phiên bản 2.0 thuộc BL2. Bước 8 cũng chưa nêu áp dụng vào dữ liệu nguồn bằng công cụ của nhóm (căn cứ ước lượng, WBS, giao việc, dự án, mốc, đơn giá).", "cach_sua": "tu_dong", "sua_o": "lời văn", "de_xuat": "Soạn lại QUY_TRINH bước 8 và CAU_HINH: thêm lập đường cơ sở mới (BLn, căn cứ mã CR) khi yêu cầu có phụ lục hoặc ở mức lớn, dẫn chiếu tài liệu quản lý phiên bản."},
+  {"ma": "MH03", "muc_do": "canh_bao", "nhom": "CL05", "vi_tri": "Mục 8 bảng thay đổi về con người và đoạn bước thứ hai, thứ ba", "mo_ta": "Phần thay đổi về con người chưa phản ánh CR01: bộ phận vận hành bán hàng của Chủ đầu tư thêm việc vận hành kênh bán hàng trên sàn, đào tạo tại gói 5.5.2 (02/07 đến 06/07/2027) và kiểm thử chấp nhận phần CR01 tại gói 5.4.5 (08/07 đến 12/07/2027, ngoài khoảng 16/07 đến 27/07/2027 đang nêu). Không phải nhóm mới nên không trái quy tắc không thêm nhóm, nhưng đào tạo và chỉ số sẵn sàng của phần mới chưa có.", "cach_sua": "tu_dong", "sua_o": "lời văn", "de_xuat": "Bổ sung vào CON_NGUOI dòng bộ phận vận hành bán hàng: kênh sàn, 5.5.2, 5.4.5, mốc M9."},
+  {"ma": "MH04", "muc_do": "canh_bao", "nhom": "CL02", "vi_tri": "Mục 7 bảng cấu hình: 'Phần thay đổi CR01 ... | 5.1, 5.2, 5.3, 5.4, 5.5 | Phụ lục 01/2027/PL-ABCW, 27/05/2027; đặc tả tại gói 5.2.4, 23/06/2027 | Phạm Ngọc Anh' và dòng 'Kế hoạch dự án ... | 1.1, 2.1, 3.1, 4.1, 5.1 | Ký hợp đồng'", "mo_ta": "Người phụ trách hạng mục cấu hình CR01 là Phạm Ngọc Anh, chỉ là A của mục 5.4, trong khi RACI giao A mục 5 cho Trần Bá Đạt và A mục 5.2 (đặc tả) cho Nguyễn Thị Phương Liên, các dòng khác của bảng theo A của mục tương ứng. Dòng kế hoạch dự án gắn 5.1 với đường cơ sở Ký hợp đồng, trong khi nhóm 5 vào đường cơ sở tại BL2. Chưa chắc quy tắc chọn người của script, ghi cảnh báo.", "cach_sua": "tu_dong", "sua_o": "dữ liệu", "de_xuat": "Sửa tính tdb#cau_hinh trong tinh_bang_thay_doi.py: người phụ trách hạng mục CR theo A của mục mức 1 hoặc mục đặc tả, ghi BL2 cho phần thay đổi."},
+  {"ma": "MH05", "muc_do": "canh_bao", "nhom": "CL02, CL03", "vi_tri": "du_lieu/thay_doi.json CR01 (không hiển thị trong tài liệu)", "mo_ta": "Dữ liệu CR01 chưa nhất quán: ma_rui_ro rỗng trong khi thay_doi_bang.json ghi RR22 và rui_ro.json RR22 có nguồn CR01. Lịch sử ghi bước 'Lập và đánh giá tác động' với người Yamada (đánh giá là việc của nhà thầu), không có trạng thái Mới, Đang đánh giá. Ghi chú quyết định ghi 'giữ dự trữ 3 ngày' trong khi lịch BL2 có dự trữ 8 ngày theo _quyet_dinh_25_10_cr01. Ghi chú BL2 '13 tài liệu' trong khi BL2 có 15 tài liệu.", "cach_sua": "tu_dong", "sua_o": "dữ liệu", "de_xuat": "Ghi ma_rui_ro RR22 cho CR01, tách ghi nhận và đánh giá trong lich_su với người đánh giá phía nhà thầu, sửa ghi chú dự trữ và số tài liệu."},
+  {"ma": "MH06", "muc_do": "canh_bao", "nhom": "CL06", "vi_tri": "Mục 7 bảng cấu hình: '27/05/2027; đặc tả tại gói 5.2.4'", "mo_ta": "Dùng dấu chấm phẩy, văn phong khuyến nghị hạn chế.", "cach_sua": "tu_dong", "sua_o": "dữ liệu", "de_xuat": "Đổi thành dấu phẩy trong tdb#cau_hinh."}
+ ],
+ "ghi_chu_quy_trinh": "Tài liệu đã ở trạng thái Đường cơ sở BL2 (2.0) trước khi kiểm tra lớp B. Sửa lỗi sau đường cơ sở cần nhóm quyết định cách ghi phiên bản (2.1 theo CR01 hay lập lại BL2)."
+}

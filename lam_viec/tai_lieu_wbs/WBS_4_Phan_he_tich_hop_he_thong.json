@@ -1,0 +1,760 @@
+{
+ "meta": {
+  "ten": "WBS 4 - Phân hệ tích hợp hệ thống",
+  "header": "Lập kế hoạch - WBS 4, Phân hệ tích hợp hệ thống",
+  "size_bang_pt": 12,
+  "phien_ban": "2.1",
+  "ngay": "27/05/2027"
+ },
+ "blocks": [
+  {
+   "t": "center",
+   "text": "Cấu trúc phân rã công việc",
+   "size": 18
+  },
+  {
+   "t": "center",
+   "text": "Phân hệ tích hợp hệ thống, mã WBS 4",
+   "size": 15
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+  },
+  {
+   "t": "center",
+   "text": "Khách hàng: Công ty Cổ phần ABC Wear"
+  },
+  {
+   "t": "center",
+   "text": "Tài liệu kế hoạch dự án, đường cơ sở BL2, cập nhật theo yêu cầu thay đổi CR01, phụ lục hợp đồng 01/2027/PL-ABCW"
+  },
+  {
+   "t": "center",
+   "text": "Phiên bản {{PHIEN_BAN}}, ngày {{NGAY}}"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "h2",
+   "text": "1. Thông tin chung"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Tổng khối lượng",
+     "152 người-ngày"
+    ],
+    [
+     "Căn cứ ước lượng",
+     "Phần riêng gồm 1 Selling DB, 2 khung ứng dụng (phía máy chủ, giao diện), 1 dịch vụ thư điện tử, 5 luồng tích hợp với Main System (sản phẩm và giá, tồn kho, chuyển đơn hàng, trạng thái vận chuyển, giám sát và gửi lại), 1 công cụ chuyển đổi dữ liệu, 1 lần chuyển đổi thử và 1 lần nạp nội dung. Phần chung gồm khảo sát hệ thống hiện có, kiến trúc, cấu trúc và cấu hình cơ sở dữ liệu, khắc phục lỗi sau kiểm thử hệ thống, Chủ đầu tư kiểm tra chức năng chính và tích hợp, kiểm thử bản phát hành và diễn tập chuyển đổi dự phòng trên môi trường vận hành, môi trường vận hành, giám sát, rà soát giấy phép, phần quản lý dự án. Tổng nhóm theo căn cứ ước lượng là 152 MD, làm tròn từ phần riêng 95 MD và phần đầu việc chung phân bổ 57,22 MD theo tỷ lệ khối lượng riêng (quản lý dự án 13,90, phân tích và thiết kế chung 15,29, kiểm thử hệ thống và vận hành 16,45, triển khai và chuyển giao 11,58 MD). Phần riêng gồm nền tảng dùng chung, Selling DB, tích hợp với Main System và chuyển đổi dữ liệu, mỗi luồng tích hợp ước lượng theo số thực thể dữ liệu và chiều trao đổi. Đầu việc chung ở mức hệ thống được gán cho phân hệ này gồm khảo sát Main System, kiến trúc, cấu trúc và cấu hình Selling DB, khắc phục lỗi sau kiểm thử hệ thống, Chủ đầu tư kiểm tra chức năng chính và tích hợp (mốc M3), kiểm thử bản phát hành, diễn tập chuyển đổi dự phòng, môi trường vận hành, giám sát và rà soát giấy phép thư viện. Phần quản lý dàn trải chia theo tỷ lệ giữa bốn phân hệ. Phần quản lý dự án phân bổ cho nhóm này (13,90 MD) lớn hơn mục 4.1 (9 MD) vì phần quản lý mang tính kỹ thuật của phân hệ tích hợp được đặt ở các gói rà soát giấy phép thư viện mã nguồn mở và quyền sở hữu sản phẩm (4.5.5) và giám sát vận hành, chuẩn bị hỗ trợ tăng cường sau cut over (4.5.6). Tổng các gói của nhóm là 152 MD, nằm trong dung sai của nhóm. Mục mức 2 gồm 4.1 quản lý dự án 9 MD, 4.2 phân tích và thiết kế 27 MD, 4.3 xây dựng 51 MD, 4.4 kiểm thử 40 MD, 4.5 triển khai và chuyển giao 25 MD."
+    ],
+    [
+     "Thời gian thực hiện",
+     "18/03/2027 - 29/07/2027 (giai đoạn Suốt dự án và Thực hiện)"
+    ],
+    [
+     "Người chịu trách nhiệm",
+     "Ninh Đức Toàn"
+    ],
+    [
+     "Phụ thuộc đầu vào",
+     "Hoàn thành các gói 1.2.1 (Đặc tả chức năng (Function) tìm kiếm và hiển thị sản phẩm), 1.4.4 (Sửa lỗi và kiểm thử lại chức năng tìm kiếm, lọc và sắp xếp), 1.4.6 (Sửa lỗi và kiểm thử lại trang chủ, danh mục và chi tiết sản phẩm), 1.4.9 (Kiểm thử hiệu năng trên môi trường kiểm thử), 1.5.1 (Môi trường phát triển, kiểm thử và quy trình tích hợp, triển khai tự động), 2.2.1 (Đặc tả chức năng (Function) quản lý thành viên), 2.4.4 (Sửa lỗi và kiểm thử lại đăng ký, đăng nhập và bảo mật tài khoản), 2.4.6 (Sửa lỗi và kiểm thử lại thông tin thành viên và sổ địa chỉ), 2.4.9 (Đánh giá khả năng sử dụng của giao diện (Easy Operation)), 2.4.10 (Rà soát lỗ hổng bảo mật theo OWASP Top 10 trên môi trường kiểm thử), 3.2.2 (Đặc tả chức năng (Function) đặt hàng gồm giỏ hàng, giữ tồn, phí vận chuyển, khuyến mại, hủy đơn, đổi trả), 3.4.5 (Sửa lỗi và kiểm thử lại giỏ hàng và giữ tồn kho), 3.4.7 (Sửa lỗi và kiểm thử lại đặt hàng, phí vận chuyển và khuyến mại), 3.4.8 (Sửa lỗi và kiểm thử lại theo dõi đơn hàng, hủy đơn và đổi trả), 3.4.12 (Kiểm thử chức năng đầu cuối)"
+    ],
+    [
+     "Đơn vị khối lượng",
+     "Người-ngày, viết tắt MD, tính theo 8 giờ làm việc"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "2. Sơ đồ WBS dạng cây phân cấp"
+  },
+  {
+   "t": "p",
+   "text": "Sơ đồ dùng để trao đổi với Chủ đầu tư. Bảng chi tiết ở mục 3 dùng để ước lượng, giao việc và theo dõi tiến độ."
+  },
+  {
+   "t": "p",
+   "text": "4. Phân hệ tích hợp hệ thống",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.1. Quản lý dự án, phần phân bổ cho phân hệ tích hợp hệ thống",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.1.1. Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint, phần phân hệ tích hợp hệ thống",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.1.2. Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả, phần phân hệ tích hợp hệ thống",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.1.3. Quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án, hồ sơ nghiệm thu và thanh toán, phần phân hệ tích hợp hệ thống",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.2. Phân tích và thiết kế phân hệ tích hợp hệ thống",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.2.1. Khảo sát hệ thống hiện có, Main System và luồng dữ liệu liên quan",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.2.2. Kiến trúc hệ thống, hạ tầng và phương án bảo đảm hoạt động liên tục",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.2.3. Cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.2.4. Cấu hình cơ sở dữ liệu (DB Configuration) gồm dự phòng, sao lưu và phân quyền truy cập",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.2.5. Đặc tả giao diện trao đổi dữ liệu với Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.2.6. Xác nhận đặc tả giao diện tích hợp với Main System của Chủ đầu tư",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.2.7. Thiết kế tích hợp gồm ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3. Xây dựng phân hệ tích hợp hệ thống (lập trình và kiểm thử đơn vị)",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.3.1. Khung ứng dụng phía máy chủ và thành phần dùng chung về xác thực, phân quyền, ghi nhật ký, xử lý lỗi",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.2. Tạo lập Selling DB theo cấu trúc đã thiết kế và tầng truy cập dữ liệu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.3. Khung ứng dụng giao diện gồm định tuyến, quản lý trạng thái và gọi dịch vụ",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.4. Dịch vụ gửi thư điện tử qua máy chủ thư của Chủ đầu tư",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.5. Đồng bộ danh mục sản phẩm và giá từ Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.6. Đồng bộ tồn kho từ Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.7. Chuyển đơn hàng sang Main System và nhận trạng thái xử lý",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.8. Nhận trạng thái vận chuyển từ Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.9. Giám sát tích hợp, cảnh báo lỗi đồng bộ và gửi lại",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3.10. Công cụ chuyển đổi dữ liệu sản phẩm, tồn kho và kiểm tra toàn vẹn",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4. Kiểm thử phân hệ tích hợp hệ thống, gồm phần kiểm thử hệ thống và kiểm thử chấp nhận phân bổ",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.4.1. Dịch vụ giả lập Main System và dữ liệu kiểm thử tích hợp",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.2. Kịch bản kiểm thử tích hợp với Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.3. Kiểm thử tích hợp với Main System trên môi trường thử",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.4. Sửa lỗi và kiểm thử lại tích hợp với Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.5. Khắc phục lỗi sau kiểm thử hệ thống",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.6. Kiểm tra chức năng chính và tích hợp với Main System của Chủ đầu tư",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.7. Kiểm thử hiệu năng và rà soát an toàn thông tin bản phát hành trên môi trường vận hành",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.8. Diễn tập chuyển đổi dự phòng, sao lưu và khôi phục trên môi trường vận hành",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4.9. Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận tích hợp với Main System",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.5. Triển khai và chuyển giao, phần phân bổ cho phân hệ tích hợp hệ thống",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.5.1. Môi trường vận hành gồm hai nút ứng dụng, cân bằng tải, cơ sở dữ liệu chính và dự phòng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.5.2. Giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.5.3. Chuyển đổi thử dữ liệu sản phẩm, tồn kho do Chủ đầu tư cung cấp",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.5.4. Nạp hình ảnh và nội dung sản phẩm theo bộ nhận diện của Chủ đầu tư lên môi trường vận hành",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.5.5. Rà soát giấy phép thư viện mã nguồn mở và quyền sở hữu sản phẩm",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.5.6. Giám sát vận hành và chuẩn bị hỗ trợ tăng cường sau cut over",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h2",
+   "text": "3. Bảng chi tiết"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi gói công việc gắn với một sản phẩm kiểm tra được, có khối lượng ước lượng được và giao được cho một người."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã WBS",
+     "Tên công việc",
+     "Mức",
+     "Khối lượng, MD",
+     "Loại công việc",
+     "Giai đoạn, sprint",
+     "Sản phẩm đầu ra"
+    ],
+    [
+     "4.1",
+     "Quản lý dự án, phần phân bổ cho phân hệ tích hợp hệ thống",
+     "2",
+     "9",
+     "",
+     "Suốt dự án",
+     ""
+    ],
+    [
+     "4.1.1",
+     "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint, phần phân hệ tích hợp hệ thống",
+     "3",
+     "3,50",
+     "PM",
+     "Suốt dự án",
+     "Biên bản họp, báo cáo tiến độ từng sprint, phần phân hệ tích hợp hệ thống"
+    ],
+    [
+     "4.1.2",
+     "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả, phần phân hệ tích hợp hệ thống",
+     "3",
+     "2",
+     "PM",
+     "Suốt dự án",
+     "Sổ rủi ro, sổ vấn đề và sổ yêu cầu thay đổi được cập nhật, phần phân hệ tích hợp hệ thống"
+    ],
+    [
+     "4.1.3",
+     "Quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án, hồ sơ nghiệm thu và thanh toán, phần phân hệ tích hợp hệ thống",
+     "3",
+     "3,50",
+     "PM",
+     "Suốt dự án",
+     "Sổ phiên bản tài liệu và hồ sơ dự án, biên bản nghiệm thu và hồ sơ thanh toán từng đợt, phần phân hệ tích hợp hệ thống"
+    ],
+    [
+     "4.2",
+     "Phân tích và thiết kế phân hệ tích hợp hệ thống",
+     "2",
+     "27",
+     "",
+     "S1-S4",
+     ""
+    ],
+    [
+     "4.2.1",
+     "Khảo sát hệ thống hiện có, Main System và luồng dữ liệu liên quan",
+     "3",
+     "4",
+     "BA",
+     "S1",
+     "Báo cáo khảo sát hệ thống hiện có và luồng dữ liệu"
+    ],
+    [
+     "4.2.2",
+     "Kiến trúc hệ thống, hạ tầng và phương án bảo đảm hoạt động liên tục",
+     "3",
+     "5",
+     "DEV",
+     "S1",
+     "Tài liệu kiến trúc hệ thống"
+    ],
+    [
+     "4.2.3",
+     "Cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+     "3",
+     "5",
+     "DEV",
+     "S2",
+     "Tài liệu cấu trúc cơ sở dữ liệu Selling DB"
+    ],
+    [
+     "4.2.4",
+     "Cấu hình cơ sở dữ liệu (DB Configuration) gồm dự phòng, sao lưu và phân quyền truy cập",
+     "3",
+     "3",
+     "DEVOPS",
+     "S2",
+     "Tài liệu cấu hình cơ sở dữ liệu"
+    ],
+    [
+     "4.2.5",
+     "Đặc tả giao diện trao đổi dữ liệu với Main System",
+     "3",
+     "4",
+     "BA",
+     "S2-S3",
+     "Đặc tả giao diện trao đổi dữ liệu với Main System"
+    ],
+    [
+     "4.2.6",
+     "Xác nhận đặc tả giao diện tích hợp với Main System của Chủ đầu tư",
+     "3",
+     "2",
+     "BA",
+     "S4",
+     "Biên bản xác nhận đặc tả giao diện tích hợp"
+    ],
+    [
+     "4.2.7",
+     "Thiết kế tích hợp gồm ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+     "3",
+     "4",
+     "DEV",
+     "S3-S4",
+     "Thiết kế tích hợp với Main System"
+    ],
+    [
+     "4.3",
+     "Xây dựng phân hệ tích hợp hệ thống (lập trình và kiểm thử đơn vị)",
+     "2",
+     "51",
+     "",
+     "S1-S5",
+     ""
+    ],
+    [
+     "4.3.1",
+     "Khung ứng dụng phía máy chủ và thành phần dùng chung về xác thực, phân quyền, ghi nhật ký, xử lý lỗi",
+     "3",
+     "8",
+     "DEV",
+     "S1",
+     "Khung ứng dụng phía máy chủ trên kho mã nguồn"
+    ],
+    [
+     "4.3.2",
+     "Tạo lập Selling DB theo cấu trúc đã thiết kế và tầng truy cập dữ liệu",
+     "3",
+     "6",
+     "DEV",
+     "S2",
+     "Selling DB trên môi trường phát triển và kiểm thử"
+    ],
+    [
+     "4.3.3",
+     "Khung ứng dụng giao diện gồm định tuyến, quản lý trạng thái và gọi dịch vụ",
+     "3",
+     "5",
+     "DEV",
+     "S1",
+     "Khung ứng dụng giao diện trên kho mã nguồn"
+    ],
+    [
+     "4.3.4",
+     "Dịch vụ gửi thư điện tử qua máy chủ thư của Chủ đầu tư",
+     "3",
+     "3",
+     "DEV",
+     "S1",
+     "Dịch vụ gửi thư điện tử đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.3.5",
+     "Đồng bộ danh mục sản phẩm và giá từ Main System",
+     "3",
+     "5",
+     "DEV",
+     "S4-S5",
+     "Chức năng đồng bộ sản phẩm, giá đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.3.6",
+     "Đồng bộ tồn kho từ Main System",
+     "3",
+     "5",
+     "DEV",
+     "S4",
+     "Chức năng đồng bộ tồn kho đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.3.7",
+     "Chuyển đơn hàng sang Main System và nhận trạng thái xử lý",
+     "3",
+     "5",
+     "DEV",
+     "S4-S5",
+     "Chức năng chuyển đơn hàng đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.3.8",
+     "Nhận trạng thái vận chuyển từ Main System",
+     "3",
+     "5",
+     "DEV",
+     "S4-S5",
+     "Chức năng nhận trạng thái vận chuyển đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.3.9",
+     "Giám sát tích hợp, cảnh báo lỗi đồng bộ và gửi lại",
+     "3",
+     "4",
+     "DEV",
+     "S4",
+     "Chức năng giám sát tích hợp đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.3.10",
+     "Công cụ chuyển đổi dữ liệu sản phẩm, tồn kho và kiểm tra toàn vẹn",
+     "3",
+     "5",
+     "DEV",
+     "S5",
+     "Công cụ chuyển đổi dữ liệu đạt kiểm thử đơn vị"
+    ],
+    [
+     "4.4",
+     "Kiểm thử phân hệ tích hợp hệ thống, gồm phần kiểm thử hệ thống và kiểm thử chấp nhận phân bổ",
+     "2",
+     "40",
+     "",
+     "S3-S9",
+     ""
+    ],
+    [
+     "4.4.1",
+     "Dịch vụ giả lập Main System và dữ liệu kiểm thử tích hợp",
+     "3",
+     "4",
+     "QA",
+     "S4",
+     "Dịch vụ giả lập và bộ dữ liệu kiểm thử tích hợp"
+    ],
+    [
+     "4.4.2",
+     "Kịch bản kiểm thử tích hợp với Main System",
+     "3",
+     "3",
+     "QA",
+     "S3-S4",
+     "Kịch bản kiểm thử tích hợp"
+    ],
+    [
+     "4.4.3",
+     "Kiểm thử tích hợp với Main System trên môi trường thử",
+     "3",
+     "7",
+     "QA",
+     "S5",
+     "Báo cáo kiểm thử tích hợp"
+    ],
+    [
+     "4.4.4",
+     "Sửa lỗi và kiểm thử lại tích hợp với Main System",
+     "3",
+     "5",
+     "DEV",
+     "S6",
+     "Phiên bản tích hợp đã khắc phục lỗi kiểm thử tích hợp"
+    ],
+    [
+     "4.4.5",
+     "Khắc phục lỗi sau kiểm thử hệ thống",
+     "3",
+     "6",
+     "DEV",
+     "S8",
+     "Phiên bản đã khắc phục lỗi kiểm thử hệ thống"
+    ],
+    [
+     "4.4.6",
+     "Kiểm tra chức năng chính và tích hợp với Main System của Chủ đầu tư",
+     "3",
+     "3",
+     "BA",
+     "S8",
+     "Biên bản Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System"
+    ],
+    [
+     "4.4.7",
+     "Kiểm thử hiệu năng và rà soát an toàn thông tin bản phát hành trên môi trường vận hành",
+     "3",
+     "4",
+     "QA",
+     "S9",
+     "Báo cáo hiệu năng và an toàn thông tin của bản phát hành"
+    ],
+    [
+     "4.4.8",
+     "Diễn tập chuyển đổi dự phòng, sao lưu và khôi phục trên môi trường vận hành",
+     "3",
+     "3",
+     "DEVOPS",
+     "S7",
+     "Biên bản diễn tập chuyển đổi dự phòng và khôi phục"
+    ],
+    [
+     "4.4.9",
+     "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận tích hợp với Main System",
+     "3",
+     "5",
+     "DEV",
+     "S9",
+     "Phiên bản tích hợp đã khắc phục lỗi kiểm thử chấp nhận"
+    ],
+    [
+     "4.5",
+     "Triển khai và chuyển giao, phần phân bổ cho phân hệ tích hợp hệ thống",
+     "2",
+     "25",
+     "",
+     "S4-S8",
+     ""
+    ],
+    [
+     "4.5.1",
+     "Môi trường vận hành gồm hai nút ứng dụng, cân bằng tải, cơ sở dữ liệu chính và dự phòng",
+     "3",
+     "7",
+     "DEVOPS",
+     "S4-S5",
+     "Môi trường vận hành"
+    ],
+    [
+     "4.5.2",
+     "Giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành",
+     "3",
+     "4",
+     "DEVOPS",
+     "S6",
+     "Cấu hình giám sát, cảnh báo và sao lưu"
+    ],
+    [
+     "4.5.3",
+     "Chuyển đổi thử dữ liệu sản phẩm, tồn kho do Chủ đầu tư cung cấp",
+     "3",
+     "4",
+     "DEV",
+     "S6",
+     "Biên bản chuyển đổi thử và kiểm tra toàn vẹn dữ liệu"
+    ],
+    [
+     "4.5.4",
+     "Nạp hình ảnh và nội dung sản phẩm theo bộ nhận diện của Chủ đầu tư lên môi trường vận hành",
+     "3",
+     "4",
+     "DEV",
+     "S6-S7",
+     "Nội dung sản phẩm trên môi trường vận hành"
+    ],
+    [
+     "4.5.5",
+     "Rà soát giấy phép thư viện mã nguồn mở và quyền sở hữu sản phẩm",
+     "3",
+     "2",
+     "DEV",
+     "S5",
+     "Danh mục thư viện kèm giấy phép đã rà soát"
+    ],
+    [
+     "4.5.6",
+     "Giám sát vận hành và chuẩn bị hỗ trợ tăng cường sau cut over",
+     "3",
+     "4",
+     "DEVOPS",
+     "S8",
+     "Phương án giám sát và lịch trực hỗ trợ sau cut over"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "",
+     "152",
+     "",
+     "",
+     ""
+    ]
+   ],
+   "widths": [
+    900,
+    3000,
+    600,
+    1000,
+    900,
+    1200,
+    1700
+   ],
+   "center_cols": [
+    2,
+    4,
+    5
+   ],
+   "right_cols": [
+    3
+   ],
+   "dong_dam": [
+    1,
+    5,
+    13,
+    24,
+    34
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Kiểm tra quy tắc 100%"
+  },
+  {
+   "t": "p",
+   "text": "Tổng khối lượng các hạng mục mức 2, 9 cộng 27 cộng 51 cộng 40 cộng 25, bằng 152 người-ngày, khớp với khối lượng khai báo ở mức 1. Kết luận: cân bằng."
+  }
+ ]
+}

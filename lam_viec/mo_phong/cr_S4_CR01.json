@@ -1,0 +1,12 @@
+{
+ "ma_cr": "CR01",
+ "ngay": "2027-05-20",
+ "tieu_de": "Bán hàng trên sàn thương mại điện tử",
+ "mo_ta": "Chủ đầu tư đề nghị bổ sung kênh bán hàng trên sàn thương mại điện tử: kết nối sàn, đồng bộ sản phẩm, tồn kho và giá lên sàn, nhận đơn hàng từ sàn, cập nhật trạng thái đơn hàng lên sàn, đối soát đơn hàng và thanh toán với sàn, kiểm thử và hướng dẫn sử dụng. Yêu cầu nêu tại buổi trình diễn cuối S4 ngày 20/05/2027, làm trước cut over",
+ "ly_do": "Chủ đầu tư nêu yêu cầu tại buổi trình diễn cuối sprint S4 theo quyết định của nhóm",
+ "nguon": "chủ đầu tư",
+ "nguoi_de_xuat": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+ "nhan_dinh_ban_dau": "Yêu cầu ngoài phạm vi hợp đồng và RFP, bổ sung một phân hệ mới, dự kiến làm lùi ngày cut over và tăng giá hợp đồng, thuộc mức lớn, cần phụ lục hợp đồng",
+ "sprint": "S4",
+ "_ghi_chu": "Thông tin yêu cầu thay đổi từ kịch bản mô phỏng, đầu vào cho agent Đánh giá thay đổi (qlda-change/prompts/vai_danh_gia_thay_doi.md) lập lam_viec/thay_doi/cr_nhap.json"
+}

@@ -45,6 +45,7 @@ TEP_NHAP = 'lam_viec/lich/lich_du_thao.json'
 TEP_LICH_GOC = 'lam_viec/lich/lich_goc_cr.json'
 MA_CK_BAT_DAU = 'CR_BAT_DAU'
 SO_VONG_TOI_DA = 15
+SO_VONG_LAP_LAI = 3  # phần vượt giữ nguyên qua số vòng này là vượt do cấu trúc, lùi cut over không hết (TD18)
 GIAI_DOAN_KET_THUC = 'ket_thuc'  # gói giai đoạn Kết thúc của lap_lich.py bắt đầu sau cut over, không làm lùi cut over
 HE_SO_MO_RONG = 3  # số ngày làm việc mở rộng sau cut over, bằng cách lap_lich.py mở rộng (N x 3)
 
@@ -121,7 +122,7 @@ def dung_wbs(wbs, cr):
     for m in cr.get('muc_moi', []):
         goi.append({'ma': m['ma'], 'ten': m['ten'], 'muc': m['ma'].count('.') + 1, 'la': False, 'cha': m['ma'].rsplit('.', 1)[0] if '.' in m['ma'] else ''})
     for g in cr.get('goi_moi', []):
-        g2 = {k: g[k] for k in ('ma', 'ten', 'loai', 'cha', 'thoi_luong_toi_thieu') if k in g}
+        g2 = {k: g[k] for k in ('ma', 'ten', 'loai', 'cha', 'thoi_luong_toi_thieu', 'giai_doan') if k in g}  # giai_doan: gói quản lý dự án của CR
         goi.append(dict(g2, md=float(g['md']), phu_thuoc=list(g.get('phu_thuoc', [])), muc=g['ma'].count('.') + 1, la=True))
     md_la = {g['ma']: float(g['md']) for g in goi if g.get('la')}
     goi = [g if g.get('la') else dict(g, md=round(sum(v for m, v in md_la.items() if m.startswith(g['ma'] + '.')), 2)) for g in goi]
@@ -134,9 +135,28 @@ def dung_phan_cong(pc, giao_moi, giao_them):
     return dict(pc, giao_viec=gv)
 
 
-def dung_moc(moc_nhap, ngay_cr, ext, k, e, uat_den, goi_sau_qd):
-    """moc_nhap của bản sao: lập lại từ ngày CR, dời ràng buộc gắn cut over k (sau khoảng uat gốc k + e) ngày, gói sau quyết định."""
+def lui_ghim_thay_doi(cr, lich_goc, khong_som_hon):
+    """Gói thay đổi có ràng buộc không sớm hơn (gói ghim trước cut over) mà MD tăng làm thời lượng dài thêm: số ngày làm việc phải đưa
+    ngày ghim lên sớm hơn để gói vẫn xong trước gói ghim sau nó (từ 1.4.6). Không đưa lên thì cut over lùi bao nhiêu gói cũng vượt đúng
+    phần dài thêm và lịch mô phỏng không hội tụ (TD18). Trả {mã gói: số ngày}."""
+    lg = {g['ma']: g for g in lich_goc.get('goi', [])}
+    out = {}
+    for x in cr.get('goi_thay_doi', []):
+        g, tang = lg.get(x['ma']), float(x.get('md_tang', 0))
+        if not g or x['ma'] not in (khong_som_hon or {}) or tang <= 0 or not float(g.get('md') or 0):
+            continue
+        tl = int(g.get('thoi_luong') or 1)
+        them = math.ceil(tl * (float(g['md']) + tang) / float(g['md']) - 1e-9) - tl
+        if them > 0:
+            out[x['ma']] = them
+    return out
+
+
+def dung_moc(moc_nhap, ngay_cr, ext, k, e, uat_den, goi_sau_qd, lui_ghim=None):
+    """moc_nhap của bản sao: lập lại từ ngày CR, dời ràng buộc gắn cut over k (sau khoảng uat gốc k + e) ngày, gói sau quyết định.
+    lui_ghim: {mã gói ghim: số ngày đưa lên sớm hơn} (lui_ghim_thay_doi)."""
     ksh = {m: dich_theo_uat(ext, d, k, e, uat_den) if d >= ngay_cr else d for m, d in (moc_nhap.get('khong_som_hon') or {}).items()}
+    ksh = {m: dich(ext, d, -(lui_ghim or {}).get(m, 0)) for m, d in ksh.items()}
     moc = [dict(m, ngay=dich_theo_uat(ext, m['ngay'], k, e, uat_den)) if m.get('ngay') and m['ngay'] >= ngay_cr else dict(m)
            for m in moc_nhap.get('moc', [])]
     bn = dict(moc_nhap.get('dau_vao_ben_ngoai') or {}, **{MA_CK_BAT_DAU: goi_sau_qd})
@@ -228,19 +248,48 @@ def uat_them(nhap):
     return max([g.get('thoi_luong_theo_md', 0) - rb['so_ngay'] for g in nhap['goi'] for rb in g.get('rang_buoc') or [] if rb.get('loai') == 'uat'] + [0])
 
 
-def lap_k(chay, ext, n):
-    """k nhỏ nhất (lặp k += phần vượt) và số ngày kéo dài khoảng uat e. Cut over lùi k + e ngày. Trả (k, e, bản lịch dự thảo, số vòng)."""
-    k = e = 0
+def goi_vuot(nhap, n, k):
+    """Gói kết thúc sau cut over lùi k ngày (để nêu nguyên nhân khi lịch không hội tụ)."""
+    return sorted((g['ma'] for g in nhap['goi'] if trong_gang(g) and g.get('chi_so_ket_thuc', 0) > n - 1 + k), key=loi.khoa_ma)
+
+
+def lap_k(chay, ext, n, uat_den=''):
+    """k nhỏ nhất (lặp k += phần vượt), số ngày kéo dài khoảng uat e và số ngày kéo dài khoảng sau uat g. Cut over lùi k + e + g ngày.
+    Trả (k, e, g, bản lịch dự thảo, số vòng).
+    Từ 1.4.6: khi mọi gói vượt đều nằm sau khoảng kiểm thử chấp nhận (gói ghim trước cut over, bàn giao, hỗ trợ ngày cut over), dời cả khoảng uat
+    theo cut over không hết vượt (phần MD tăng làm các gói này dài hơn khoảng từ cuối uat đến cut over), nên kéo dài khoảng sau uat: g += phần vượt,
+    khoảng uat giữ chỗ, gói ghim và cut over dời thêm. Phần vượt không đổi qua SO_VONG_LAP_LAI vòng liên tiếp thì dừng sớm với TD18 nêu gói."""
+    k = e = g = 0
+    vet = []
     for vong in range(1, SO_VONG_TOI_DA + 1):
-        nhap = chay(k, e)
+        nhap = chay(k, e, g)
         if uat_them(nhap) > e:
             e = uat_them(nhap)
             continue
-        v = do_vuot(nhap, ext, n, k + e)
+        v = do_vuot(nhap, ext, n, k + e + g)
         if not v:
-            return k, e, nhap, vong
-        k += v
-    thoat('TD18', f'Lịch mô phỏng không hội tụ sau {SO_VONG_TOI_DA} vòng (cut over lùi hơn {k} ngày), kiểm tra phụ thuộc của gói mới')
+            return k, e, g, nhap, vong
+        vet.append(v)
+        if len(vet) >= SO_VONG_LAP_LAI and len(set(vet[-SO_VONG_LAP_LAI:])) == 1:
+            thoat('TD18', f'Lịch mô phỏng không hội tụ: cut over lùi thêm mỗi vòng nhưng lịch vẫn vượt {v} ngày làm việc ở các gói '
+                          f'{", ".join(goi_vuot(nhap, n, k + e + g))}. Kiểm tra phụ thuộc, ràng buộc ngày của các gói này, '
+                          'hoặc ghi người hỗ trợ (R, ho_tro) cho gói đó trong phiếu')
+        if sau_uat(nhap, ext, n, k + e + g, uat_den, k + e):
+            g += v
+        else:
+            k += v
+    thoat('TD18', f'Lịch mô phỏng không hội tụ sau {SO_VONG_TOI_DA} vòng (cut over lùi hơn {k + e + g} ngày), kiểm tra phụ thuộc của gói mới')
+
+
+def sau_uat(nhap, ext, n, kk, uat_den, k_uat):
+    """Vượt do cấu trúc sau khoảng kiểm thử chấp nhận: các gói ghim theo khoảng uat (đã dời k_uat ngày) xong trong khoảng, mà mọi gói vượt
+    cut over (lùi kk ngày) đều bắt đầu sau khoảng. Khi các gói uat còn trễ khỏi khoảng thì phần vượt là do chuỗi trước uat, xử lý bằng k."""
+    vuot = [g for g in nhap['goi'] if trong_gang(g) and g.get('chi_so_ket_thuc', 0) > n - 1 + kk]
+    goi_uat = [g for g in nhap['goi'] if trong_gang(g) and any(rb.get('loai') == 'uat' for rb in g.get('rang_buoc') or [])]
+    if not uat_den or not vuot or not goi_uat:
+        return False
+    i_uat = chi_so_den(ext, dich(ext, uat_den, k_uat))
+    return all(g.get('chi_so_ket_thuc', 0) <= i_uat for g in goi_uat) and all(g.get('chi_so_bat_dau', 0) > i_uat for g in vuot)
 
 
 def uat_moi(nhap):
@@ -330,12 +379,15 @@ class MoPhong:
                         'thoi_luong_toi_thieu': by[x['ma']].get('thoi_luong_toi_thieu')})
         return out
 
-    def du_lieu(self, cr, k, tvs, giao_moi, giao_them, e=0):
+    def du_lieu(self, cr, k, tvs, giao_moi, giao_them, e=0, g=0):
+        """g: số ngày khoảng sau kiểm thử chấp nhận kéo dài (sau_uat_keo_dai): ngày sau khoảng uat gốc (gói ghim, mốc cố định) dời k + e + g,
+        khoảng uat dời k (kéo dài e)."""
         uat_den = (self.da.get('uat') or {}).get('den', '')
         return {'du_lieu/wbs.json': dung_wbs(self.wbs, cr), 'du_lieu/phan_cong.json': dung_phan_cong(self.pc, giao_moi, giao_them),
                 'dau_vao/thanh_vien.json': {'thanh_vien': tvs}, 'dau_vao/du_an.json': dung_du_an(self.da, self.ngay_cr, self.ngay_bd, self.ext, k, e),
                 'dau_vao/nha_thau.json': self.nt, 'du_lieu/hsmt.json': self.hsmt, TEP_LICH_GOC: self.lich,
-                TEP_MOC: dung_moc(self.moc_nhap, self.ngay_cr, self.ext, k, e, uat_den, self.goi_sau_qd(cr))}
+                TEP_MOC: dung_moc(self.moc_nhap, self.ngay_cr, self.ext, k, e + g, uat_den, self.goi_sau_qd(cr),
+                                  lui_ghim_thay_doi(cr, self.lich, self.moc_nhap.get('khong_som_hon')))}
 
     def kha_nang(self, tvs, giao_moi):
         """MD còn lại sau ngày CR (gói thường trước cut over, gồm CR), tốc độ còn lại của nhóm, số ngày tối thiểu theo quỹ."""
@@ -358,27 +410,29 @@ class MoPhong:
         giao_them = dict(ht_thay, **giao_them)
         giao_moi = ns.de_xuat_giao(self.cr.get('goi_moi', []), tvs, self.lich, self.i_cr, self.da, giao_them, chi_so_tu(self.ext, self.ngay_bd),
                                    self.goi_cho_goi_moi(giao_them))
-        chay = lambda k, e=0, cr=self.cr: chay_lap_lich(self.du_lieu(cr, k, tvs, giao_moi, giao_them, e), os.path.join(self.tmp, ten))  # noqa: E731
-        k, e, nhap, vong = lap_k(chay, self.ext, self.n)
-        k_pt = k_theo_phu_thuoc(nhap, self.ext, self.n, k + e, self.i_cr)
-        du_tru_cr = chay(0, 0)['du_tru_den_cut_over_ngay'] if k or e else nhap['du_tru_den_cut_over_ngay']
-        if k or e:
-            nhap = chay(k, e)
-        tai = ns.tai_nguoi(nhap, tvs, self.i_cr, self.n + k + e, trong_gang)
+        chay = lambda k, e=0, g=0, cr=self.cr: chay_lap_lich(self.du_lieu(cr, k, tvs, giao_moi, giao_them, e, g), os.path.join(self.tmp, ten))  # noqa: E731
+        k, e, g, nhap, vong = lap_k(chay, self.ext, self.n, (self.da.get('uat') or {}).get('den', ''))
+        tong = k + e + g
+        k_pt = k_theo_phu_thuoc(nhap, self.ext, self.n, tong, self.i_cr)
+        du_tru_cr = chay(0, 0)['du_tru_den_cut_over_ngay'] if tong else nhap['du_tru_den_cut_over_ngay']
+        if tong:
+            nhap = chay(k, e, g)
+        tai = ns.tai_nguoi(nhap, tvs, self.i_cr, self.n + tong, trong_gang)
         cb = [f for f in nhap['kiem_tra']['phat_hien'] if f['ma'] in ('L05', 'L06')]
         chuoi = ns.chuoi_dai_nhat(nhap, trong_gang)
         ho_tro = ns.goi_nen_ho_tro(nhap, chuoi, {g['ma'] for g in self.cr.get('goi_moi', [])} | {x['ma'] for x in self.cr.get('goi_thay_doi', [])})
-        can, kl = ns.ket_luan_nhan_su(k + e, k_pt, tai, cb, ho_tro, bool(them))
+        can, kl = ns.ket_luan_nhan_su(tong, k_pt, tai, cb, ho_tro, bool(them))
         p_luu = os.path.join(self.luu, f'lich_mo_phong_{ten}.json')
         loi.ghi_json(p_luu, nhap)
         lg = {g['ma']: g for g in nhap['goi']}
         ma_cr = [x['ma'] for x in self.cr.get('goi_thay_doi', [])] + [g['ma'] for g in self.cr.get('goi_moi', [])]
         tom_tat = lambda m: {'ma': m, 'ten': lg[m]['ten'], 'md': lg[m]['md'], 'bat_dau': lg[m]['bat_dau'], 'ket_thuc': lg[m]['ket_thuc'],  # noqa: E731
                              'nguoi': lg[m].get('nguoi', [])}
-        return {'phuong_an': ten, 'cut_over_goc': self.days[-1].isoformat(), 'cut_over_moi': self.ext[self.n - 1 + k + e].isoformat(),
-                'ngay_lui_cut_over': k + e, 'ngay_lui_theo_phu_thuoc': k_pt, 'uat_keo_dai': e, 'uat_moi': uat_moi(nhap), 'ngay_do_nguon_luc': k + e - k_pt,
+        return {'phuong_an': ten, 'cut_over_goc': self.days[-1].isoformat(), 'cut_over_moi': self.ext[self.n - 1 + tong].isoformat(),
+                'ngay_lui_cut_over': tong, 'ngay_lui_theo_phu_thuoc': k_pt, 'uat_keo_dai': e, 'sau_uat_keo_dai': g, 'uat_moi': uat_moi(nhap),
+                'ngay_do_nguon_luc': tong - k_pt,
                 'du_tru_cr_k0': du_tru_cr, 'ket_thuc_moi': nhap['ket_thuc_du_kien'], 'so_vong': vong,
-                'moc': moc_thay_doi(nhap, self.lich, self.ext, self.ngay_cr, k + e, self.days[-1].isoformat()),
+                'moc': moc_thay_doi(nhap, self.lich, self.ext, self.ngay_cr, tong, self.days[-1].isoformat()),
                 'cam_ket': cam_ket_thay_doi(nhap, self.ngay_cr, self.ext, k), 'giao_viec_de_xuat': giao_moi, 'ho_tro_goi_thay_doi': list(ht_thay.values()), 'kha_nang': self.kha_nang(tvs, giao_moi),
                 'goi': [tom_tat(m) for m in ma_cr if m in lg], 'chuoi_dai_nhat': [tom_tat(m) for m in chuoi],
                 'goi_nen_ho_tro': ho_tro, 'tai_nguoi': tai, 'canh_bao_lich': [f['mo_ta'] for f in cb], 'can_them_nguoi': can, 'ket_luan_nhan_su': kl,

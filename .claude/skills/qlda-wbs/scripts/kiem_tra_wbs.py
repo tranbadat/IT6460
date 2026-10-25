@@ -79,6 +79,7 @@ for g in goi:
 co_con = {m.rsplit('.', 1)[0] for m in by if '.' in m}
 la = [g for m, g in by.items() if m not in co_con]
 la_ma = {g['ma'] for g in la}
+GOI_QL = loi.goi_quan_ly_du_an(goi)  # gói lá quản lý dự án: thuộc mục Quản lý dự án (mức bất kỳ) hoặc loại PM
 
 for g in la:
     m = g['ma']
@@ -112,10 +113,10 @@ for g in la:
         else:
             g['thoi_luong_toi_thieu'] = tl
     if g.get('giai_doan') and g['giai_doan'] not in loi.GIAI_DOAN:
-        add('W66', f'giai_doan {g["giai_doan"]!r} phải là một trong {list(loi.GIAI_DOAN)}, để trống thì suy theo nhóm WBS 1 (loi.phan_giai_doan)', m)
-    if m.split('.')[0] == loi.NHOM_QUAN_LY and not g.get('giai_doan'):
-        add('W67', 'Gói quản lý dự án (nhóm WBS 1) nên ghi giai_doan tường minh (khoi_dong, xuyen_suot, ket_thuc theo nội dung gói), '
-                   'không gắn sprint phát triển', m, 'canh_bao')
+        add('W66', f'giai_doan {g["giai_doan"]!r} phải là một trong {list(loi.GIAI_DOAN)}, để trống thì suy theo mục quản lý dự án và loại PM (loi.phan_giai_doan)', m)
+    if m in GOI_QL and not g.get('giai_doan'):
+        add('W67', 'Gói quản lý dự án (thuộc mục có tên bắt đầu bằng Quản lý dự án hoặc loại PM) nên ghi giai_doan tường minh '
+                   '(khoi_dong, xuyen_suot, ket_thuc theo nội dung gói), không gắn sprint phát triển', m, 'canh_bao')
 for g in goi:
     if g['ma'] in co_con and g.get('md') not in (None, ''):
         add('W17', 'Mục cha không ghi md (script tự tính theo quy tắc 100%)', g['ma'], 'canh_bao', 'tu_dong')
@@ -293,9 +294,13 @@ def lap_can_cu():
     theo_nhom = []
     for n in nhom:
         mt = muc_tieu.get(n['ma'], {}).get('md')
-        theo_nhom.append({'ma': n['ma'], 'ten': n['ten'], 'md_muc_tieu': mt, 'md_wbs': n['md'],
-                          'chenh_lech': round(n['md'] - mt, 2) if mt is not None else None,
-                          'ty_le_chenh': round((n['md'] - mt) / mt, 4) if mt else None, 'can_cu': by[n['ma']].get('can_cu_uoc_luong')})
+        x = {'ma': n['ma'], 'ten': n['ten'], 'md_muc_tieu': mt, 'md_wbs': n['md'],
+             'chenh_lech': round(n['md'] - mt, 2) if mt is not None else None,
+             'ty_le_chenh': round((n['md'] - mt) / mt, 4) if mt else None, 'can_cu': by[n['ma']].get('can_cu_uoc_luong')}
+        for k in ('md_rieng', 'md_chung_phan_bo', 'md_theo_cr'):  # phần riêng, phần chung phân bổ, phần MD theo yêu cầu thay đổi (md_theo_cr từ 1.4.2)
+            if muc_tieu.get(n['ma'], {}).get(k) is not None:
+                x[k] = muc_tieu[n['ma']][k]
+        theo_nhom.append(x)
     sai_so = {'duoi': ss.get('duoi'), 'tren': ss.get('tren')}
     if ss.get('duoi') is not None and ss.get('tren') is not None:
         sai_so.update(md_duoi=round(tong * (1 + float(ss['duoi'])), 2), md_tren=round(tong * (1 + float(ss['tren'])), 2))
@@ -304,7 +309,28 @@ def lap_can_cu():
             'khoang_sai_so': sai_so, 'cac_buoc': UL.get('cac_buoc', []), 'tong_md_muc_tieu': UL.get('tong_md'), 'tong_md_wbs': tong,
             'chenh_lech_tong': round(tong - float(UL.get('tong_md', 0)), 2), 'dung_sai_nhom': UL.get('dung_sai_nhom'), 'theo_nhom': theo_nhom,
             'hop_dong_tuong_tu': tt['hop_dong'], 'trung_binh_tuong_tu_md': tt['trung_binh_md'], 'ty_le_lech_trung_binh': tt['ty_le_lech_trung_binh'],
-            'nguong_lech_tuong_tu': NGUONG_LECH_TUONG_TU, 'giai_trinh_tuong_tu': giai_trinh}
+            'nguong_lech_tuong_tu': NGUONG_LECH_TUONG_TU, 'giai_trinh_tuong_tu': giai_trinh, 'phan_bo_chung': lap_phan_bo_chung(muc_tieu)}
+
+
+def lap_phan_bo_chung(muc_tieu):
+    """Phân bổ đầu việc chung (uoc_luong.json phan_bo_dau_viec_chung) vào các nhóm theo tỷ lệ md_rieng của tong_theo_nhom:
+    {dau_viec, tong, cach_phan_bo, tong_rieng, theo_nhom: {mã nhóm: {đầu việc: MD, tong}}}, làm tròn theo phần dư lớn nhất
+    để tổng mỗi đầu việc khớp (2 chữ số). Không khai báo thì None (WBS có nhóm riêng cho đầu việc chung)."""
+    pb = UL.get('phan_bo_dau_viec_chung') or {}
+    dv = pb.get('dau_viec') or {}
+    rieng = {m: float(v['md_rieng']) for m, v in muc_tieu.items() if v.get('md_rieng') is not None}
+    tr = sum(rieng.values())
+    if not dv or not tr:
+        return None
+    ma = sorted(rieng, key=loi.khoa_ma)
+    theo = {m: {} for m in ma}
+    for k, v in dv.items():
+        for m, x in zip(ma, loi.lam_tron_tong([float(v) * rieng[m] / tr for m in ma], 2)):
+            theo[m][k] = x
+    for m in ma:
+        theo[m]['tong'] = round(sum(theo[m][k] for k in dv), 2)
+    return {'dau_viec': dv, 'tong': pb.get('tong', sum(float(v) for v in dv.values())), 'cach_phan_bo': pb.get('cach_phan_bo', ''),
+            'tong_rieng': tr, 'theo_nhom': theo}
 
 
 
@@ -329,6 +355,32 @@ out = {
     'md_theo_loai': {k: round(sum(float(g['md']) for g in la if g.get('loai') == k), 2) for k in sorted(LOAI)},
     'can_cu_uoc_luong': lap_can_cu(),
 }
+
+
+def giai_gia_dinh():
+    """Giải tham chiếu trong gia_dinh_ngoai_pham_vi bằng dữ liệu có ở bước WBS (da, ct, wbs, nhom, cc, buoc, pb, ul như xuat_wbs.py),
+    để các tài liệu khác (HSDT, master plan) dẫn nguyên văn giả định mà không còn tham chiếu. Giả định còn tham chiếu không giải được
+    (ví dụ lịch) được giữ nguyên văn và cảnh báo W68."""
+    cc = out['can_cu_uoc_luong'] or {}
+    nguon = {'da': loi.du_an(), 'ct': loi.doc_json('dau_vao/chi_tieu_ky_thuat.json', {}), 'wbs': out,
+             'nhom': {n['ma']: n for n in out['nhom']}, 'cc': {x['ma']: x for x in cc.get('theo_nhom', [])},
+             'buoc': {str(b['buoc']): b for b in cc.get('cac_buoc', [])}, 'pb': cc.get('phan_bo_chung') or {}, 'ul': cc}
+    kq = []
+    for i, x in enumerate(out['gia_dinh_ngoai_pham_vi']):
+        loi_ = []
+        y = loi.giai_bieu_thuc(str(x), nguon, loi_)
+        if loi_:
+            f = {'ma': 'W68', 'muc_do': 'canh_bao', 'nhom': 'wbs', 'vi_tri': f'gia_dinh_ngoai_pham_vi[{i}]', 'cach_sua': 'can_nguoi_dung', 'de_xuat': '',
+                 'mo_ta': 'Giả định còn tham chiếu không giải được ở bước WBS (' + ', '.join(loi_[:3]) + '), tài liệu khác dẫn nguyên văn sẽ báo lỗi CT00'}
+            bc['phat_hien'].append(f); bc['so_canh_bao'] += 1
+            print(f"[canh_bao] W68 {f['vi_tri']}: {f['mo_ta']}")
+            y = x
+        kq.append(y)
+    out['gia_dinh_ngoai_pham_vi'] = kq
+    loi.ghi_json('lam_viec/wbs/bao_cao_kiem_tra_wbs.json', bc)
+
+
+giai_gia_dinh()
 loi.ghi_json('du_lieu/wbs.json', out)
 loi.hoan_tat_buoc('wbs', f'Kiểm tra và chuẩn hóa WBS: {tong:g} MD, {len(la)} gói lá', chi_tiet={'tong_md': tong, 'canh_bao': len(F) - len(loi_)})
 print('Đã ghi du_lieu/wbs.json')

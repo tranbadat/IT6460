@@ -291,6 +291,13 @@ cr = [{'ma': c['ma'], 'tieu_de': c['tieu_de'], 'trang_thai': trang_thai_cr_tai(c
        'ngay_cham_cut_over': c.get('ngay_cham_cut_over', 0), 'cut_over_moi': c.get('cut_over_moi', ''), 'gia_de_nghi': c.get('gia_de_nghi'),
        'muc_ten': c.get('muc_ten', ''), 'phu_luc_hop_dong': bool(c.get('phu_luc_hop_dong'))} for c in so_td['yeu_cau'] if c['ngay_de_xuat'] <= NBC]
 
+def hien_thi_chi_so(v, nguong):
+    """Chỉ số hiển thị hai chữ số, ba chữ số khi làm tròn hai chữ số chạm ngưỡng mà chỉ số dưới ngưỡng (0,9475 hiển thị 0,947, tránh đọc
+    0,95 bằng ngưỡng mà vẫn xếp vàng), từ 1.5.1."""
+    return loi.so(v, 3) if any(v < x - 1e-12 and round(v, 2) >= round(x, 2) - 1e-12 for x in nguong) else loi.so(v, 2)
+
+
+NGUONG_HT = [ng.get(k, d) for k, d in (('spi_vang', 0.95), ('spi_do', 0.85), ('cpi_vang', 0.95), ('cpi_do', 0.85))]
 # tín hiệu tự động đối chiếu với sổ vấn đề
 ten_rr = {r['ma']: r['ten'] for r in rr['danh_sach']}
 tin_hieu = [{'nguon': 'Gói chậm', 'noi_dung': f'Gói {x["ma"]} {x["ten"]}: hoàn thành {loi.pt(x["thuc_te"])}, kế hoạch {loi.pt(x["ke_hoach"])}',
@@ -298,7 +305,7 @@ tin_hieu = [{'nguon': 'Gói chậm', 'noi_dung': f'Gói {x["ma"]} {x["ten"]}: ho
 for ten, v, t_, nguong, loai in (('SPI', spi, tt_spi, ng.get('spi_vang', 0.95), 'Tiến độ'), ('CPI theo công', cpi, tt_cpi, ng.get('cpi_vang', 0.95), 'Chi phí'),
                                  ('CPI theo chi phí thực', cpi_thuc, tt_cpi_thuc, ng.get('cpi_vang', 0.95), 'Chi phí')):
     if t_ in ('Vàng', 'Đỏ'):
-        tin_hieu.append({'nguon': 'Chỉ số dưới ngưỡng', 'noi_dung': f'{ten}: {loi.so(v, 2)}, ngưỡng {loi.so(nguong, 2)}', 'khop': ('loai', loai)})
+        tin_hieu.append({'nguon': 'Chỉ số dưới ngưỡng', 'noi_dung': f'{ten}: {hien_thi_chi_so(v, NGUONG_HT)}, ngưỡng {loi.so(nguong, 2)}', 'khop': ('loai', loai)})
 tin_hieu += [{'nguon': 'Rủi ro đã xảy ra', 'noi_dung': f'Rủi ro {m}: {ten_rr.get(m) or t.get("ghi_chu") or "phát sinh ngoài sổ"}', 'khop': ('rui_ro', m)}
              for m, t in sorted(tdrr.items(), key=lambda kv: loi.khoa_ma(kv[0])) if t.get('trang_thai') == 'Đã xảy ra']
 tin_hieu += [{'nguon': 'Mốc quá hạn', 'noi_dung': f'Mốc {m["ma"]}: {m["ten"]}', 'khop': ('mo_ta', m['ma'])} for m in moc if m['trang_thai'] == 'Quá hạn chưa đạt']
@@ -313,7 +320,8 @@ gia = float(cp.get('gia_truoc_thue', 0))
 out = {'ky': ky, 'ngay_bao_cao': NBC, 'tu_ngay': tu_ngay, 'so_ngay_da_qua': n_qua, 'so_ngay_lam_viec': len(days), 'ty_le_thoi_gian': round(n_qua / len(days), 4),
        'BAC_md': BAC, 'PV_md': round(PV, 2), 'EV_md': round(EV, 2), 'AC_md': round(AC, 2), 'SV_md': round(EV - PV, 2), 'CV_md': round(EV - AC, 2),
        'BAC': round(BACv), 'PV': round(PVv), 'EV': round(EVv), 'AC': round(ACv), 'SV': round(EVv - PVv), 'CV': round(EVv - ACv),
-       'spi': round(spi, SO_LE_CHI_SO), 'cpi': round(cpi, SO_LE_CHI_SO), 'EAC_md': round(eac, 2), 'ETC_md': round(eac - AC, 2), 'VAC_md': round(BAC - eac, 2), 'EAC': round(eacv), 'tcpi': round(tcpi, SO_LE_CHI_SO),
+       'spi': round(spi, SO_LE_CHI_SO), 'cpi': round(cpi, SO_LE_CHI_SO), 'spi_hien_thi': hien_thi_chi_so(spi, NGUONG_HT),
+       'cpi_hien_thi': hien_thi_chi_so(cpi, NGUONG_HT), 'cpi_thuc_hien_thi': hien_thi_chi_so(cpi_thuc, NGUONG_HT), 'EAC_md': round(eac, 2), 'ETC_md': round(eac - AC, 2), 'VAC_md': round(BAC - eac, 2), 'EAC': round(eacv), 'tcpi': round(tcpi, SO_LE_CHI_SO),
        'md_huy_dong': round(md_hd, 2), 'md_san_sang': round(md_hd - AC, 2), 'ty_le_su_dung_quy': round(ty_le_su_dung, 4),
        'BAC_thuc_nhan_su': round(BAC_ns), 'PV_thuc_nhan_su': round(PV_ns), 'EV_thuc_nhan_su': round(EV_ns), 'AC_thuc_nhan_su': round(AC_ns),
        'CV_thuc_nhan_su': round(EV_ns - AC_ns), 'cpi_thuc': round(cpi_thuc, SO_LE_CHI_SO), 'B_ke_hoach': round(B_kh), 'AC_thuc_khac': round(AC_khac),
@@ -333,13 +341,19 @@ out = {'ky': ky, 'ngay_bao_cao': NBC, 'tu_ngay': tu_ngay, 'so_ngay_da_qua': n_qu
        'ngay_dong_du_an': lich.get('ngay_dong_du_an', ''), 'so_lieu_mo_phong': bool(thuc_te.mo_phong()),
        'can_cu_mo_phong': thuc_te.can_cu_mo_phong('báo cáo'), 'canh_bao_du_lieu': F}
 os.makedirs(loi.duong_dan('du_lieu/tien_do'), exist_ok=True)
-loi.ghi_json(f'du_lieu/tien_do/{ky}.json', out)
-loi.ghi_json('du_lieu/tien_do/hien_tai.json', out)
 ls = loi.doc_json('du_lieu/tien_do/lich_su.json', {'ky': []})
 ls['ky'] = [x for x in ls['ky'] if x['ky'] != ky] + [{k: out[k] for k in ('ky', 'ngay_bao_cao', 'PV_md', 'EV_md', 'AC_md', 'spi', 'cpi', 'cpi_thuc',
+                                                                         'spi_hien_thi', 'cpi_hien_thi', 'cpi_thuc_hien_thi',
                                                                          'ty_le_su_dung_quy', 'trang_thai_chung')}]
 ls['ky'].sort(key=lambda x: x['ngay_bao_cao'])
 loi.ghi_json('du_lieu/tien_do/lich_su.json', ls)
+# bảng lịch sử của báo cáo chỉ gồm các kỳ có ngày báo cáo không muộn hơn kỳ đang lập (báo cáo kỳ cũ lập lại không chứa số liệu
+# của kỳ sau), chỉ số hiển thị cùng quy tắc với phần tóm tắt, từ 1.5.2
+# giá trị hiển thị lưu lúc ghi kỳ (tính từ chỉ số chưa làm tròn, khớp phần tóm tắt), kỳ ghi trước 1.5.2 tính lại từ số lưu
+out['lich_su_den_ky'] = [dict(x, **{f'{k}_hien_thi': x.get(f'{k}_hien_thi') or hien_thi_chi_so(x[k], NGUONG_HT) for k in ('spi', 'cpi', 'cpi_thuc')})
+                         for x in ls['ky'] if x['ngay_bao_cao'] <= NBC]
+loi.ghi_json(f'du_lieu/tien_do/{ky}.json', out)
+loi.ghi_json('du_lieu/tien_do/hien_tai.json', out)
 print(f'Kỳ {ky} ({loi.ngay(ngay_bc)}): PV {PV:.1f}, EV {EV:.1f}, AC {AC:.1f} MD. SPI {spi:.2f} ({tt_spi}), CPI {cpi:.2f} ({tt_cpi}), '
       f'CPI thực {cpi_thuc:.2f} ({tt_cpi_thuc}), sử dụng quỹ huy động {ty_le_su_dung:.1%}. Dự báo hoàn thành {loi.ngay(du_bao)}. '
       f'{out["so_goi_cham"]} gói chậm, {vd["van_de_tong_hop"]["so_mo"]} vấn đề mở.')

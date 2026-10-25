@@ -1,0 +1,126 @@
+{
+ "tai_lieu": "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx",
+ "phien_ban": "0.2",
+ "dac_ta": ".claude/skills/qlda-master-plan/dac_ta/ke_hoach_tong_the.json",
+ "ngay_kiem_tra": "2026-10-24",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B)",
+ "moi_truong": "Phiên làm việc riêng của agent Kiểm tra độc lập (agent con), Claude Code, Claude Opus 5.5; đọc tài liệu bằng python-docx, openpyxl; không đọc khung.json, ban_soan.json, noi_dung.json",
+ "ket_luan": "chua_dat",
+ "so_loi": 3,
+ "so_canh_bao": 6,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 16 mục: điều lệ với mục tiêu SMART dạng bảng, ràng buộc, giả định, phê duyệt, bên liên quan, phạm vi, tiến độ, tổ chức, mua sắm, chi phí, chất lượng, truyền thông, rủi ro, vấn đề, thay đổi, cấu hình, rà soát, kết thúc, đường cơ sở."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Giá 1.750.000.000 đồng, BAC 1.420.050.000, B 150.000.000, C 179.950.000, 657 MD, 153 gói, 4 phân hệ, quỹ 796 MD, mốc, sprint, đường găng, tải theo người và sprint, đợt thanh toán khớp nguồn. Người phụ trách hạng mục cấu hình mâu thuẫn RACI (MH01)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục tiêu, ràng buộc, chất lượng dẫn về R02 - R05, R12, R45, Mục 13.1, 6.4, 20.1, 21.2 E-ĐKCT, KT01 - KT05, mã gói, mã rủi ro, CK1 - CK6."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục tiêu có chỉ số, ngưỡng, hạn, người xác nhận. Tiêu chí nghiệm thu từ chỉ tiêu kỹ thuật, điều kiện cut over, ngưỡng lỗi theo dấu hiệu RR03, RR10 kiểm chứng được."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Ngưỡng SPI, CPI vàng, đỏ, báo cáo vượt cấp, dự trữ 4 ngày và ngưỡng báo dưới 2 ngày, quy tắc dự phòng dùng chung, quy trình vấn đề tám bước."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Câu đường cơ sở hiện hành bị rỗng (MH02), dấu vết dữ liệu khoảng uat (MH03), một số điểm văn phong (MH09)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 7 (KH thay đổi) / mục 13 (master plan), bảng hạng mục cấu hình, cột Người phụ trách: 1. Specification - Ninh Đức Toàn, 5. Product Search - Phạm Tuấn Anh, 7. Order - Trần Thu Hà, 9. Main System - Phạm Ngọc Anh, 11. Operation Test - Đỗ Minh Quân",
+   "mo_ta": "Người phụ trách hạng mục cấu hình mâu thuẫn với ma trận RACI của tài liệu phân công: đặc tả (mục 1.2, 2.2, 3.2) do Nguyễn Thị Phương Liên chịu trách nhiệm (A), xây dựng phân hệ sản phẩm 1.3 do Vũ Đức Minh, xây dựng phân hệ đơn hàng 3.3 do Phạm Tuấn Anh, xây dựng tích hợp 4.3 do Ninh Đức Toàn, các mục kiểm thử x.4 do Nguyễn Thị Phương Liên. Kỹ sư kiểm thử được ghi phụ trách hạng mục xây dựng chức năng đặt hàng và tích hợp Main System, kỹ sư phát triển phụ trách kiểm thử vận hành. Nguyên nhân: bang_cau_hinh() chọn người thực hiện gói có MD lớn nhất của hạng mục.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu: sửa bang_cau_hinh() trong .claude/skills/qlda-change/scripts/tinh_bang_thay_doi.py để lấy người chịu trách nhiệm (A) trong du_lieu/phan_cong.json (trach_nhiem) của mục mức 2 chiếm nhiều MD nhất trong hạng mục, chạy lại tinh_bang_thay_doi.py rồi tạo lại kế hoạch quản lý thay đổi và master plan."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 16, đoạn cuối: Các đường cơ sở đã lập theo sổ phiên bản, đường cơ sở hiện hành là :",
+   "mo_ta": "Tham chiếu kb#duong_co_so_hien_hanh rỗng nên câu bị cụt, có dấu cách trước dấu hai chấm, tiếp theo là câu Chưa lập đường cơ sở. Trạng thái trước ký hợp đồng là hợp lệ nhưng câu phải hoàn chỉnh.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu: ghi duong_co_so_hien_hanh trong du_lieu/ke_hoach_bang.json là chưa lập, BL1 được lập khi ký hợp đồng (khi chưa có đường cơ sở), hoặc sửa đặc tả để bỏ câu dẫn khi rỗng, rồi tạo lại."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "loi",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 1, bảng cam kết của Chủ đầu tư, dòng CK6: Người dùng nghiệp vụ tham gia kiểm thử chấp nhận theo khoảng uat | Theo nội dung cam kết",
+   "mo_ta": "Còn tên khóa dữ liệu uat trong văn bản (dấu vết do máy sinh). Hạn để Theo nội dung cam kết trong khi khoảng kiểm thử chấp nhận đã xác định 18/06/2027 - 29/06/2027.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Đầu vào nhóm: sửa noi_dung CK6 trong dau_vao/du_an.json thành Người dùng nghiệp vụ tham gia kiểm thử chấp nhận từ 18/06/2027 đến 29/06/2027 (hoặc để script thay khoảng uat bằng ngày), hạn 29/06/2027, rồi chạy lại lịch và master plan."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "day_du",
+   "vi_tri": "Mục 1 bảng điều lệ, dòng Thời gian: 18/03/2027 đến 01/07/2027, 73 ngày làm việc, 7 sprint; mục 4 Tiến độ và mốc",
+   "mo_ta": "Kế hoạch không trình bày ba giai đoạn đã quyết định: Khởi động 18/03 - 24/03/2027, Thực hiện S1 - S7, Kết thúc 10 ngày làm việc 02/07 - 15/07/2027. Thời gian dự án dừng ở cut over, không tính giai đoạn Kết thúc đến ngày đóng 15/07/2027. Ngoài ra trong lich.json giai đoạn Khởi động gồm gói 2.1.1, 3.1.1, 3.1.2 kết thúc 14/04/2027, ngoài khoảng 18/03 - 24/03.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Đặc tả: thêm bảng lich#giai_doan vào mục 4 và ghi Thời gian đến ngày đóng dự án. Rà soát cách gán gói vào giai đoạn Khởi động trong lap_lich.py."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 1, bảng mục tiêu, cột Tình trạng đến 24/10/2026",
+   "mo_ta": "Ngày tình trạng 24/10/2026 khác ngày tài liệu 18/03/2027. Cột chỉ ghi Chưa đến mốc cho M2, M3, M7, các dòng khác để trống.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu ke_hoach_bang.json (muc_tieu): bỏ cột tình trạng ở bản trước ký hợp đồng hoặc ghi thống nhất cho mọi dòng, ngày tình trạng lấy ngày tài liệu."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "day_du",
+   "vi_tri": "Mục 9, bảng kế hoạch họp",
+   "mo_ta": "HSDT mục 12 cam kết họp xác nhận sản phẩm theo mốc M1, M2, M3, Chủ đầu tư xem xét trong 5 ngày. Master plan có họp đặc tả (M2), họp kiểm tra chức năng chính (M3) nhưng không có họp xác nhận kế hoạch quản lý dự án (M1) và không nêu thời hạn xem xét 5 ngày.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Lời văn (TRUYEN_THONG) hoặc bảng: thêm họp xác nhận sản phẩm theo mốc M1, M2, M3 với thời hạn xem xét 5 ngày theo HSDT."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "day_du",
+   "vi_tri": "Mục 10, bảng rủi ro gồm RR02, RR04, RR10",
+   "mo_ta": "Bảng chỉ có 3 trên 21 rủi ro (lọc mức cao) nhưng không có câu dẫn nêu tiêu chí lọc, người đọc có thể hiểu sổ chỉ có 3 rủi ro.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Đặc tả: thêm đoạn dẫn trước bảng, ví dụ Các rủi ro mức cao trong sổ như sau."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "can_nguoi_dung",
+   "vi_tri": "Mục 6, bảng huy động cột Hồ sơ năng lực: Chưa có trình độ, kinh nghiệm (7 vị trí), bảng khoản B một dòng 150.000.000 đồng",
+   "mo_ta": "Bảy vị trí bổ sung chưa có hồ sơ năng lực, trong đó Nguyễn Hoàng Nam huy động từ S1 ngày 18/03/2027. Khoản B chưa có danh mục chi tiết. Tài liệu đã nêu rõ, nhưng đây là thông tin nhóm phải bổ sung trước ký hợp đồng.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm bổ sung trình độ, kinh nghiệm vị trí bổ sung (dau_vao/thanh_vien.json) và danh mục khoản B (dau_vao/don_gia.json)."
+  },
+  {
+   "ma": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 7 đoạn 2: khoản C còn lại sau lương (413.259.309 đồng); mục 9 bảng báo cáo: gửi ngay khi đánh giá xong; mục 15: hiệu lực đến 31 tháng 07 năm 2027; mục 1: Loại hợp đồng trọn gói (chữ thường)",
+   "mo_ta": "Cụm khoản C còn lại sau lương gây hiểu nhầm vì 413.259.309 đồng lớn hơn khoản C 179.950.000 đồng (thực chất là giá chào trừ lương kế hoạch và khoản B). Từ xong cần thay. Ngày chưa theo dạng dd/mm/yyyy.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Lời văn (CHI_PHI): ghi phần còn lại của giá chào sau lương kế hoạch và khoản B. Thay xong bằng hoàn thành. Dữ liệu: định dạng 31/07/2027, Trọn gói."
+  }
+ ]
+}

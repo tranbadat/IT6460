@@ -1,0 +1,108 @@
+{
+ "tai_lieu": "ket_qua/08_Change_management_plan/Ke_hoach_quan_ly_thay_doi.docx",
+ "phien_ban": "0.2",
+ "dac_ta": ".claude/skills/qlda-change/dac_ta/ke_hoach_thay_doi.json",
+ "ngay_kiem_tra": "2026-10-24",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B)",
+ "moi_truong": "Phiên làm việc riêng của agent Kiểm tra độc lập (agent con), Claude Code, Claude Opus 5.5; đọc tài liệu bằng python-docx, openpyxl; không đọc khung.json, ban_soan.json, noi_dung.json",
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 6,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 11 mục theo đặc tả: căn cứ, ban kiểm soát thay đổi, phân loại theo thang 1 - 10 và điều kiện mức lớn, quy trình 10 bước có người, thời hạn, đầu ra, mẫu phiếu bốn phần, lan truyền, cấu hình, con người, dự phòng, sổ CR, truyền thông."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Đơn giá 2.161.416 và 2.663.623 đồng mỗi MD, hệ số 1,232, đường găng 17 gói, dự trữ 4 ngày, hạn M2, M3, quyết định nhóm ngày 18/10/2026, người ký hai bên khớp nguồn. Thời hạn đánh giá 3 ngày khớp cam kết HSDT mục 13. Người phụ trách hạng mục cấu hình mâu thuẫn RACI (MH01)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Dẫn chiếu Mục 17.1(a)(b)(c), 17.2, 17.3, 17.4, 18(e), 2.2(i), 20.1, 13.1, 10.2 khớp hsmt.json, R35, R38, R42, mã rủi ro RR01, RR09, RR11, mã gói WBS."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Ngưỡng mức theo MD, chi phí, dự trữ, ngày chậm định lượng. Điều kiện đóng có Chủ đầu tư kiểm tra đạt và nhánh từ chối, hoãn. Chỉ số sẵn sàng của ba nhóm người dùng còn để thống nhất sau (MH04)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có phân loại sơ bộ, thẩm quyền, thời hạn, ma trận lan truyền tài liệu, liên kết sổ rủi ro, sổ vấn đề, sổ phiên bản và bảng dự phòng dùng chung."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Trình bày đúng. Còn một số điểm văn phong nêu ở MH05, MH06."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 7 (KH thay đổi) / mục 13 (master plan), bảng hạng mục cấu hình, cột Người phụ trách: 1. Specification - Ninh Đức Toàn, 5. Product Search - Phạm Tuấn Anh, 7. Order - Trần Thu Hà, 9. Main System - Phạm Ngọc Anh, 11. Operation Test - Đỗ Minh Quân",
+   "mo_ta": "Người phụ trách hạng mục cấu hình mâu thuẫn với ma trận RACI của tài liệu phân công: đặc tả (mục 1.2, 2.2, 3.2) do Nguyễn Thị Phương Liên chịu trách nhiệm (A), xây dựng phân hệ sản phẩm 1.3 do Vũ Đức Minh, xây dựng phân hệ đơn hàng 3.3 do Phạm Tuấn Anh, xây dựng tích hợp 4.3 do Ninh Đức Toàn, các mục kiểm thử x.4 do Nguyễn Thị Phương Liên. Kỹ sư kiểm thử được ghi phụ trách hạng mục xây dựng chức năng đặt hàng và tích hợp Main System, kỹ sư phát triển phụ trách kiểm thử vận hành. Nguyên nhân: bang_cau_hinh() chọn người thực hiện gói có MD lớn nhất của hạng mục.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu: sửa bang_cau_hinh() trong .claude/skills/qlda-change/scripts/tinh_bang_thay_doi.py để lấy người chịu trách nhiệm (A) trong du_lieu/phan_cong.json (trach_nhiem) của mục mức 2 chiếm nhiều MD nhất trong hạng mục, chạy lại tinh_bang_thay_doi.py rồi tạo lại kế hoạch quản lý thay đổi và master plan."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "day_du",
+   "vi_tri": "Mục 6, đoạn 2: Theo lịch, mốc M2 có hạn 10/05/2027, mốc M3 có hạn 17/06/2027",
+   "mo_ta": "Chỉ nêu hạn của M2, M3. Các mốc gắn đợt thanh toán khác chưa nêu: M6 (Đợt 4, cut over cố định 01/07/2027), M7 (Đợt 5, hạn 01/07/2027).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Lời văn (TAC_DONG): liệt kê đủ các mốc gắn đợt thanh toán có hạn theo lich#moc (M2, M3, M7) và M6 là ngày cố định."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "day_du",
+   "vi_tri": "Mục 4, bảng quy trình, bước 6, cột Thời hạn: chỉ ghi mức nhỏ và mức trung bình",
+   "mo_ta": "Thời hạn quyết định của mức lớn chỉ nằm ở bước 5, bước 6 (quyết định) không nêu, người đọc phải tự suy ra.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu: bổ sung Mức lớn: 5 ngày làm việc sau khi có đánh giá vào ô thời hạn bước 6 trong bảng quy trình của tinh_bang_thay_doi.py."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "nghiem_thu",
+   "vi_tri": "Mục 8, bảng thay đổi về con người, cột Chỉ số sẵn sàng: Ngưỡng do hai bên thống nhất tại họp khởi động (3 trên 4 nhóm)",
+   "mo_ta": "Ba nhóm (khách hàng mua qua internet, bộ phận quản lý Main System, nghiệp vụ vận chuyển) chưa có chỉ số đo được, chỉ hẹn thống nhất sau.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Lời văn (CON_NGUOI): nêu chỉ số đo được kèm thời điểm, ví dụ kết quả đánh giá khả năng sử dụng (2.4.9), tỷ lệ kịch bản kiểm thử vận hành luồng đặt hàng và giao nhận đạt (3.4.13), tỷ lệ kịch bản tích hợp đạt (4.4.6), ngưỡng cụ thể thống nhất tại họp khởi động."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 1, đoạn 2 và 3: quy định Các nội dung khác về sửa đổi hợp đồng: Chủ đầu tư hoặc... ; quy định Các tài liệu sau đây cũng là một phần của Hợp đồng: - Biên bản... - Các văn bản...; (ket_qua/02_HSDT/HSDT.docx)",
+   "mo_ta": "Chép nguyên văn điều khoản vào giữa câu (chữ hoa giữa câu, gạch đầu dòng trong đoạn văn) và ghi đường dẫn tệp trong văn bản trang trọng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Lời văn (CAN_CU): diễn đạt lại nội dung điều khoản thành câu hoàn chỉnh, bỏ đường dẫn tệp, ghi hồ sơ dự thầu Mục 13."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 8, đoạn cuối: ...theo RR09: Mời cán bộ... Khi dấu hiệu xuất hiện, áp dụng kế hoạch ứng phó: Khi dấu hiệu xuất hiện, Nguyễn Thị Phương Liên...",
+   "mo_ta": "Lặp cụm Khi dấu hiệu xuất hiện, chữ hoa sau dấu hai chấm do ghép nguyên văn trường dữ liệu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Lời văn (CON_NGUOI_TRIEN_KHAI): viết lại thành câu, ví dụ Biện pháp phòng ngừa của RR09 là mời cán bộ... Khi dấu hiệu xuất hiện, Nguyễn Thị Phương Liên tổ chức thêm buổi hướng dẫn..."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "rui_ro",
+   "vi_tri": "Mục 9, bảng dự phòng: Dự phòng hiện có 50.000.000 đồng, Tổng EMV 147 triệu đồng",
+   "mo_ta": "Bảng quy tắc dùng chung đặt dự phòng 50 triệu cạnh EMV 147 triệu nhưng không có dòng nêu cách bù phần EMV vượt dự phòng theo quyết định nhóm ngày 18/10/2026 (bù từ phần còn lại sau lương). Master plan nêu điều này ở đoạn văn, bảng nguồn chung thì không.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu: thêm dòng Phần EMV vượt dự phòng vào quy_tac_du_phong trong bước cost estimate (du_lieu/chi_phi.json) theo dau_vao/du_an.json _quyet_dinh_18_10 mục (2), chạy lại tinh_bang_thay_doi.py."
+  }
+ ]
+}

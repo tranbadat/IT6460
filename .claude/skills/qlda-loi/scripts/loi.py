@@ -49,9 +49,22 @@ GOC = tim_goc()
 TIEN_TO_SKILL = 'skill:'  # tệp tham chiếu tĩnh của skill, ví dụ skill:qlda-change/references/phan_loai.json
 
 
+# Kế hoạch của một kỳ đã qua (từ 1.6.3): đặt QLDA_KE_HOACH_KY=S<n> khi lập lại báo cáo tiến độ một kỳ cũ sau khi kế hoạch đã đổi (yêu cầu thay
+# đổi, đường cơ sở mới). Các tệp kế hoạch dưới đây được đọc từ bản chụp lam_viec/mo_phong/ke_hoach_S<n>/<đường dẫn> do mo_phong_sprint.py lưu khi
+# sinh kỳ đó (thiếu bản chụp của tệp nào thì đọc tệp hiện hành). Chỉ dùng cho bước đọc (tinh_tien_do.py, chay.py chuan_bi, hoan_thien báo cáo tiến độ).
+TEP_KE_HOACH_KY = ('du_lieu/lich.json', 'du_lieu/wbs.json', 'du_lieu/chi_phi.json', 'du_lieu/rui_ro.json', 'du_lieu/phan_cong.json',
+                   'dau_vao/du_an.json', 'dau_vao/don_gia.json', 'dau_vao/thanh_vien.json')
+THU_MUC_KE_HOACH_KY = 'lam_viec/mo_phong/ke_hoach_{ky}'
+
+
 def duong_dan(p):
     if p.startswith(TIEN_TO_SKILL):
         return os.path.join(THU_MUC_SKILLS, p[len(TIEN_TO_SKILL):])
+    ky = os.environ.get('QLDA_KE_HOACH_KY')
+    if ky and not os.path.isabs(p) and p.replace('\\', '/') in TEP_KE_HOACH_KY:
+        q = os.path.join(GOC, THU_MUC_KE_HOACH_KY.format(ky=ky), p)
+        if os.path.exists(q):
+            return q
     return p if os.path.isabs(p) else os.path.join(GOC, p)
 
 
@@ -70,7 +83,7 @@ def doc_json(p, mac_dinh=None):
         raise FileNotFoundError('Không tìm thấy ' + tuong_doi(p))
     with open(p, encoding='utf-8') as f:
         obj = json.load(f)
-    if tuong_doi(p) == 'dau_vao/du_an.json' and isinstance(obj, dict):
+    if tuong_doi(p).endswith('dau_vao/du_an.json') and isinstance(obj, dict):
         obj = gan_don_vi_thuc_hien(obj)
     return obj
 
@@ -184,7 +197,7 @@ def ngay(v):
 
 DINH_DANG = {'tien': tien, 'trieu': trieu, 'md': md, 'pt': pt, 'ptg': ptg, 'ngay': ngay, 'so': lambda v: so(v, 0),
              'so1': lambda v: so(v, 1), 'so2': lambda v: so(v, 2), 'so3': lambda v: so(v, 3), 'nguyen': lambda v: str(int(round(float(v)))),
-             'chu': lambda v: str(v),
+             'chu': lambda v: str(v), 'pt1': lambda v: so(float(v) * 100, 1) + '%', 'md2': lambda v: so(v, 2),
              'dem': lambda v: str(len(v)) if isinstance(v, (list, tuple, dict)) else ('0' if v in (None, '') else '1')}
 
 
@@ -576,19 +589,25 @@ def sprint_cua_chi_so(sprints, i):
 
 
 def quy_thoi_gian(tv, sprints):
-    """MD khả dụng của một người trong từng sprint (theo ty_le, tu_sprint, den_sprint)."""
+    """MD khả dụng của một người trong từng sprint (theo ty_le, tu_sprint, den_sprint).
+    ty_le_theo_sprint {mã sprint: tỷ lệ} (từ 1.6.2): huy động theo nhu cầu của từng sprint, thay ty_le khi tính quỹ của sprint đó. Chỉ đổi quỹ
+    huy động, không đổi tốc độ xếp lịch (lap_lich.py báo L06 khi MD xếp vượt quỹ của sprint)."""
     out = {}
+    tl_sp = tv.get('ty_le_theo_sprint') or {}
     for s in sprints:
         ok = (tv.get('tu_sprint') in (None, '') or s['so'] >= int(tv['tu_sprint'])) and \
              (tv.get('den_sprint') in (None, '') or s['so'] <= int(tv['den_sprint']))
-        out[s['ma']] = round(s['so_ngay'] * float(tv.get('ty_le', 1.0)), 2) if ok else 0.0
+        out[s['ma']] = round(s['so_ngay'] * float(tl_sp.get(s['ma'], tv.get('ty_le', 1.0))), 2) if ok else 0.0
+    if tv.get('huy_dong_ket_thuc'):  # quỹ giai đoạn Kết thúc sau cut over (kỳ KT), cùng cơ sở với lap_lich.py (từ 1.6.3)
+        out['KT'] = round(giai_doan_du_an()[0]['ket_thuc']['so_ngay'] * float(tv['huy_dong_ket_thuc']), 2)
     return out
 
 
 # ---------------------------------------------------------------- giai đoạn dự án
 GIAI_DOAN = {'khoi_dong': 'Khởi động', 'thuc_hien': 'Thực hiện', 'xuyen_suot': 'Suốt dự án', 'ket_thuc': 'Kết thúc'}
 THU_TU_GIAI_DOAN = ('khoi_dong', 'xuyen_suot', 'thuc_hien', 'ket_thuc')
-NHOM_QUAN_LY = '1'  # nhóm WBS mức 1 Quản lý dự án, không gắn sprint phát triển
+TEN_MUC_QUAN_LY = 'quản lý dự án'  # mục WBS có mục con, tên bắt đầu bằng cụm này (không phân biệt hoa thường) là mục quản lý dự án
+LOAI_PM = 'PM'  # gói lá loại PM ngoài mục quản lý dự án vẫn là gói quản lý dự án (không gắn sprint phát triển)
 LOAI_QUAN_LY = ('PM', 'QA')  # loại công việc quản lý dự án (lập kế hoạch, giám sát, bảo đảm chất lượng)
 SO_NGAY_KHOI_DONG_MAC_DINH = 5  # ngày làm việc đầu dự án khi du_an.json chưa khai báo giai_doan.khoi_dong
 SO_NGAY_KET_THUC_MAC_DINH = 10  # ngày làm việc sau cut over khi du_an.json chưa khai báo giai_doan.ket_thuc
@@ -654,30 +673,52 @@ def giai_doan_du_an(da=None):
     return {k: dict(v, ma=k, ten=GIAI_DOAN[k]) for k, v in gd.items()}, loi_
 
 
+def muc_quan_ly_du_an(goi):
+    """Mã các mục WBS quản lý dự án: mục có mục con, tên bắt đầu bằng TEN_MUC_QUAN_LY. Mục này có thể là một nhóm mức 1 riêng
+    hoặc mục mức 2 trong từng nhóm (phần quản lý dự án phân bổ cho phân hệ). Không dựa vào số thứ tự nhóm."""
+    co_con = {str(g.get('ma', '')).rsplit('.', 1)[0] for g in goi if '.' in str(g.get('ma', ''))}
+    return {str(g.get('ma', '')) for g in goi if str(g.get('ma', '')) in co_con
+            and str(g.get('ten', '')).strip().lower().startswith(TEN_MUC_QUAN_LY)}
+
+
+def goi_quan_ly_du_an(goi):
+    """Mã gói lá quản lý dự án: thuộc một mục quản lý dự án (muc_quan_ly_du_an) hoặc có loại công việc LOAI_PM.
+    Các gói này không gắn sprint phát triển, nên ghi giai_doan tường minh (khoi_dong, xuyen_suot, ket_thuc)."""
+    co_con = {str(g.get('ma', '')).rsplit('.', 1)[0] for g in goi if '.' in str(g.get('ma', ''))}
+    ql = muc_quan_ly_du_an(goi)
+    return {str(g.get('ma', '')) for g in goi if str(g.get('ma', '')) not in co_con
+            and (g.get('loai') == LOAI_PM or any(str(g.get('ma', '')).startswith(m + '.') for m in ql))}
+
+
 def phan_giai_doan(wbs, giao_viec=None):
     """Giai đoạn của từng gói lá: {mã: khoi_dong | thuc_hien | xuyen_suot | ket_thuc}.
-    Gói lá ghi giai_doan trong WBS thì dùng giá trị đó (nên ghi tường minh cho mọi gói lá nhóm NHOM_QUAN_LY). Không ghi thì suy ra:
-    mọi gói thuộc nhóm NHOM_QUAN_LY (quản lý dự án, không gắn sprint phát triển, kể cả gói loại khác PM, QA như rà soát mã nguồn,
-    Chủ đầu tư kiểm tra) là Suốt dự án khi dàn trải (giao_viec dan_trai), Khởi động khi thuộc mục mức 2 đầu tiên của nhóm (khởi động,
-    lập kế hoạch), Kết thúc khi là gói lá cuối cùng của mục mức 2 cuối cùng (báo cáo tổng kết, đóng dự án), còn lại Suốt dự án.
-    Gói khác là Thực hiện. Giá trị ghi sai trả về nguyên văn để bước kiểm tra báo lỗi."""
+    Gói lá ghi giai_doan trong WBS thì dùng giá trị đó (nên ghi tường minh cho mọi gói quản lý dự án). Không ghi thì suy ra:
+    gói không phải gói quản lý dự án (goi_quan_ly_du_an: thuộc mục tên bắt đầu bằng Quản lý dự án hoặc loại PM) là Thực hiện;
+    gói quản lý dự án dàn trải (giao_viec dan_trai) là Suốt dự án; trong một mục quản lý dự án có các mục con nhiều cấp
+    (ví dụ nhóm mức 1 Quản lý dự án), gói thuộc mục con đầu là Khởi động, gói lá cuối của mục con cuối là Kết thúc;
+    còn lại Suốt dự án. Quy tắc không dựa vào số thứ tự nhóm WBS. Giá trị ghi sai trả về nguyên văn để bước kiểm tra báo lỗi."""
     gv = {x['ma']: x for x in (giao_viec or [])}
-    _, la = nut_wbs(wbs)
-    ql = [g for g in la if g['ma'].split('.')[0] == NHOM_QUAN_LY]
-    muc2 = sorted({'.'.join(g['ma'].split('.')[:2]) for g in ql if g['ma'].count('.') >= 2}, key=khoa_ma)
-    cuoi = max((g['ma'] for g in ql if muc2 and len(muc2) > 1 and g['ma'].startswith(muc2[-1] + '.')), key=khoa_ma, default='')
+    by, la = nut_wbs(wbs)
+    ql_goi = goi_quan_ly_du_an(wbs['goi'])
+    muc_ql = muc_quan_ly_du_an(wbs['goi'])
+    co_con = {m.rsplit('.', 1)[0] for m in by if '.' in m}
+    dau, cuoi = set(), set()  # mục con đầu (Khởi động) và gói lá cuối của mục con cuối (Kết thúc) của mục quản lý nhiều cấp
+    for m in muc_ql:
+        con = sorted((c for c in by if c.rsplit('.', 1)[0] == m and '.' in c and c in co_con), key=khoa_ma)
+        if len(con) > 1:
+            dau.add(con[0])
+            cuoi.add(max((g['ma'] for g in la if g['ma'].startswith(con[-1] + '.')), key=khoa_ma, default=''))
     out = {}
     for g in la:
         if g.get('giai_doan'):
             out[g['ma']] = g['giai_doan']; continue
-        if g['ma'].split('.')[0] != NHOM_QUAN_LY:
+        if g['ma'] not in ql_goi:
             out[g['ma']] = 'thuc_hien'; continue
-        m2 = '.'.join(g['ma'].split('.')[:2])
         if gv.get(g['ma'], {}).get('dan_trai'):
             out[g['ma']] = 'xuyen_suot'
-        elif muc2 and m2 == muc2[0]:
+        elif any(g['ma'].startswith(d + '.') for d in dau):
             out[g['ma']] = 'khoi_dong'
-        elif g['ma'] == cuoi:
+        elif g['ma'] in cuoi:
             out[g['ma']] = 'ket_thuc'
         else:
             out[g['ma']] = 'xuyen_suot'
@@ -686,18 +727,18 @@ def phan_giai_doan(wbs, giao_viec=None):
 
 def hien_thi_giai_doan(gd_la, sprint_la):
     """Chuỗi cột Giai đoạn của một gói từ giai đoạn và sprint (bắt đầu, kết thúc) của các gói lá thuộc nó:
-    gói Thực hiện ghi sprint (S2 hoặc S2-S3), gói quản lý dự án ghi tên giai đoạn, mục cha gồm nhiều giai đoạn quản lý ghi Suốt dự án."""
+    gói Thực hiện ghi sprint (S2 hoặc S2-S3), gói quản lý dự án ghi tên giai đoạn. Mục cha gồm nhiều giai đoạn liệt kê các giai đoạn
+    của gói lá theo thứ tự Khởi động, Suốt dự án, sprint, Kết thúc (ví dụ Khởi động, Suốt dự án, S1-S7, Kết thúc), không gộp thành Suốt dự án."""
     ds = set(gd_la)
+    sp = sorted({s for ab in sprint_la for s in ab if s}, key=lambda s: (not s[1:].isdigit(), int(s[1:]) if s[1:].isdigit() else 0, s))
+    khoang_sp = (sp[0] if len(sp) == 1 else f'{sp[0]}-{sp[-1]}') if sp else GIAI_DOAN['thuc_hien']
     if ds == {'thuc_hien'}:
-        sp = sorted({s for ab in sprint_la for s in ab if s}, key=lambda s: (not s[1:].isdigit(), int(s[1:]) if s[1:].isdigit() else 0, s))
-        return sp[0] if len(sp) == 1 else f'{sp[0]}-{sp[-1]}'
+        return khoang_sp
     if len(ds) == 1:
         return GIAI_DOAN.get(next(iter(ds)), next(iter(ds)))
-    if ds <= {'khoi_dong', 'thuc_hien'}:
-        return GIAI_DOAN['khoi_dong']
-    if ds <= {'ket_thuc', 'thuc_hien'}:
-        return GIAI_DOAN['ket_thuc']
-    return GIAI_DOAN['xuyen_suot']
+    thu_tu = ['khoi_dong', 'xuyen_suot', 'thuc_hien', 'ket_thuc']
+    return ', '.join(khoang_sp if g == 'thuc_hien' else GIAI_DOAN[g] for g in thu_tu if g in ds) + \
+        ''.join(', ' + str(g) for g in sorted(ds - set(thu_tu)))
 
 
 def ban_phat_hanh_hien_hanh(ngay_tl=None):
@@ -890,7 +931,10 @@ def bam_hieu_luc(p):
 
 
 def dinh_dang_cot(vals, f):
-    """Định dạng cả cột với cùng số chữ số thập phân (MD, phần trăm)."""
+    """Định dạng cả cột với cùng số chữ số thập phân (MD, phần trăm). pt1 (luôn một chữ số) và md2 (luôn hai chữ số) giữ số chữ số
+    cố định giữa các kỳ của tài liệu theo kỳ (báo cáo tiến độ), từ 1.6.4."""
+    if f in ('pt1', 'md2'):
+        return ['' if v in (None, '') else DINH_DANG[f](v) for v in vals]
     if f not in ('md', 'pt', 'ptg'):
         return None
     try:

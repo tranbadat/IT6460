@@ -1,0 +1,89 @@
+{
+ "tai_lieu": "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+ "phien_ban": "0.13",
+ "luot": "xac_nhan_sau_luot_3",
+ "moi_truong": "Kiểm tra lớp B lượt xác nhận sau vòng sửa cuối (ngoại lệ người dùng duyệt sau 3 vòng), phiên agent con riêng, Claude Code, mô hình claude-opus-5-5, python-docx đối chiếu với dữ liệu nguồn. Có đọc báo cáo lớp B lượt 3 (ngoại lệ lượt xác nhận), không đọc ban_soan, khung, noi_dung, nhật ký sửa",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 0,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 7 mục theo đặc tả, không đổi so với lượt 3."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Câu người hỗ trợ khớp phan_cong.json và phan_cong_bang#ho_tro_tom_tat: 24 gói có người hỗ trợ, 6 trên 22 gói găng (3.4.12, 4.4.5, 1.5.2, 1.5.3, 2.5.3, 3.5.4). Quỹ chưa giao trong thời gian huy động 161 MD khớp quy_chua_giao_huy_dong, 657 MD, 816 MD, 80,5%, dự trữ 3 ngày khớp lich.json. Ba gói kiểm thử chấp nhận 1.4.11, 2.4.12, 3.4.13 giao cho ba người khác nhau (Q1, minh, Q2) đúng dữ liệu."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Thay thế nhân sự tách căn cứ Mục 21.2 E-ĐKCT với cam kết chủ động của nhà thầu. Quyết định giữ quỹ huy động dẫn quyết định 25/10/2026 (13), cách trả lương cong_suc có trong dữ liệu."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi so với lượt 3."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Quy tắc chuyển việc cho người hỗ trợ, sau đó cho thành viên còn quỹ, cập nhật giao việc và chạy lại lịch."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, chỉ in đậm dòng mục cha RACI, không gạch dài, ngoặc kép. Câu cột Phê duyệt bên ngoài và câu 161 MD đã rõ nghĩa."
+  },
+  {
+   "tieu_chi": "DH1",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH2",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH3",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH4",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  }
+ ],
+ "dong_phat_hien_luot_3": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Mục 1 đoạn 3 nay ghi người hỗ trợ được bố trí cho 24 gói, trong đó 6 trên 22 gói găng (3.4.12, 4.4.5, 1.5.2, 1.5.3, 2.5.3, 3.5.4), các gói găng còn lại do một người thực hiện và được bảo vệ bằng quỹ chưa giao và quy tắc mục 7. Khớp phan_cong.json và lich#duong_gang."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "Mục 2 ghi quỹ chưa giao thuộc cả thành viên nhóm và vị trí bổ sung, tập trung ở các sprint đầu và cuối, giữ theo quyết định của nhóm."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "Mục 1 đoạn 2 nêu quỹ chưa giao trong thời gian huy động là 161 MD, giải thích không tính MD giai đoạn Kết thúc, khớp phan_cong_bang#ho_tro_tom_tat.quy_chua_giao_huy_dong."
+  },
+  {
+   "ma": "MH04",
+   "da_dong": true,
+   "nhan_xet": "Mục 4 ghi bên ngoài xác nhận hoặc phê duyệt kết quả của hạng mục theo hợp đồng, có ví dụ."
+  },
+  {
+   "ma": "MH05",
+   "da_dong": true,
+   "nhan_xet": "Mục 7 tách: 7 ngày kể từ khi nhận yêu cầu theo Mục 21.2 E-ĐKCT, trường hợp thành viên không thể tiếp tục nhà thầu chủ động bố trí trong cùng thời hạn."
+  }
+ ],
+ "phat_hien": []
+}

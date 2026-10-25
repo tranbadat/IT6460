@@ -1,32 +1,50 @@
 {
  "ket_luan": "dat",
  "so_loi": 0,
- "so_canh_bao": 3,
+ "so_canh_bao": 5,
  "phat_hien": [
   {
-   "ma": "L07",
+   "ma": "L06",
    "muc_do": "canh_bao",
    "nhom": "lich",
-   "vi_tri": "minh S6",
-   "mo_ta": "Vũ Đức Minh được huy động ở S6 nhưng chỉ dùng 2.00/10.00 MD (20%), dưới 30% quỹ sprint",
+   "vi_tri": "S4",
+   "mo_ta": "Phạm Tuấn Anh quá tải ở S4: 11.62/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
    "cach_sua": "can_nguoi_dung",
    "de_xuat": ""
   },
   {
-   "ma": "L07",
+   "ma": "L06",
    "muc_do": "canh_bao",
    "nhom": "lich",
-   "vi_tri": "minh S7",
-   "mo_ta": "Vũ Đức Minh được huy động ở S7 nhưng chỉ dùng 0.00/10.00 MD (0%), dưới 30% quỹ sprint",
+   "vi_tri": "S3",
+   "mo_ta": "Đỗ Minh Quân quá tải ở S3: 13.83/13.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
    "cach_sua": "can_nguoi_dung",
    "de_xuat": ""
   },
   {
-   "ma": "L07",
+   "ma": "L06",
    "muc_do": "canh_bao",
    "nhom": "lich",
-   "vi_tri": "D1 S6",
-   "mo_ta": "Lê Quang Huy được huy động ở S6 nhưng chỉ dùng 2.00/10.00 MD (20%), dưới 30% quỹ sprint",
+   "vi_tri": "S4",
+   "mo_ta": "Đỗ Minh Quân quá tải ở S4: 10.27/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": ""
+  },
+  {
+   "ma": "L06",
+   "muc_do": "canh_bao",
+   "nhom": "lich",
+   "vi_tri": "S4",
+   "mo_ta": "Trần Thu Hà quá tải ở S4: 11.16/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": ""
+  },
+  {
+   "ma": "L06",
+   "muc_do": "canh_bao",
+   "nhom": "lich",
+   "vi_tri": "S4",
+   "mo_ta": "Trương Quốc Việt quá tải ở S4: 10.17/10.00 MD (sprint đã qua trước ngày lập lại, phần đã làm)",
    "cach_sua": "can_nguoi_dung",
    "de_xuat": ""
   }

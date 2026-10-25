@@ -1,0 +1,1724 @@
+{
+ "meta": {
+  "ten": "Kế hoạch quản lý rủi ro",
+  "id": "ke_hoach_rui_ro",
+  "header": "Kế hoạch thực hiện - Kế hoạch quản lý rủi ro",
+  "huong": "doc",
+  "font": "Times New Roman",
+  "size_pt": 13,
+  "size_bang_pt": 12,
+  "nguon": {
+   "rr": "du_lieu/rui_ro.json",
+   "rb": "du_lieu/rui_ro_bang.json",
+   "cp": "du_lieu/chi_phi.json",
+   "lich": "du_lieu/lich.json",
+   "pc": "du_lieu/phan_cong.json",
+   "hsmt": "du_lieu/hsmt.json",
+   "da": "dau_vao/du_an.json"
+  },
+  "phien_ban": "2.3",
+  "ngay": "27/05/2027"
+ },
+ "blocks": [
+  {
+   "text": "PM_26I_02",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "text": "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "text": "Kế hoạch quản lý rủi ro",
+   "size": 20,
+   "t": "center"
+  },
+  {
+   "text": "Risk management plan",
+   "size": 14,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "rows": [
+    [
+     "Dự án",
+     "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+    ],
+    [
+     "Khách hàng",
+     "Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Đơn vị thực hiện",
+     "PM_26I_02"
+    ],
+    [
+     "Môn học",
+     "Quản trị dự án và Quản lý thay đổi"
+    ],
+    [
+     "Nhóm",
+     "PM_26I_02"
+    ],
+    [
+     "Giảng viên",
+     "Vũ Thị Hương Giang"
+    ],
+    [
+     "Người lập",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Phiên bản",
+     "{{PHIEN_BAN}}"
+    ],
+    [
+     "Ngày",
+     "{{NGAY}}"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ],
+   "t": "table"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "muc": [
+    "1. Mục đích và phạm vi",
+    "2. Tổ chức và trách nhiệm",
+    "3. Phương pháp và thang đo",
+    "3.1. Thang xác suất",
+    "3.2. Thang tác động",
+    "3.3. Phân mức rủi ro",
+    "3.4. Quy đổi sang ma trận 3x3",
+    "4. Sổ đăng ký rủi ro",
+    "5. Ma trận xác suất và tác động",
+    "5.1. Ma trận 5x5",
+    "5.2. Ma trận 3x3 và hạng A, B, C",
+    "6. Biện pháp ứng phó",
+    "6.1. Rủi ro mức cao",
+    "6.2. Rủi ro mức trung bình và thấp",
+    "7. Dự phòng thời gian và chi phí",
+    "8. Theo dõi, ngưỡng cảnh báo và báo cáo",
+    "9. Quan hệ với quản lý thay đổi"
+   ],
+   "t": "muc_luc"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "text": "1. Mục đích và phạm vi",
+   "t": "h1"
+  },
+  {
+   "t": "p",
+   "text": "Kế hoạch quản lý rủi ro quy định cách nhận diện, phân tích, ứng phó và theo dõi các rủi ro và cơ hội của dự án xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System) cho Công ty Cổ phần ABC Wear. Kế hoạch áp dụng cho toàn bộ vòng đời dự án, từ ngày bắt đầu 18/03/2027 đến ngày cut over 29/07/2027, và tiếp tục áp dụng cho các rủi ro còn mở trong thời hạn bảo hành theo hợp đồng."
+  },
+  {
+   "t": "p",
+   "text": "Kế hoạch là một phần của master plan. Các rủi ro gắn với gói WBS và mốc của master schedule, tiền tác động và EMV được đối chiếu với khoản dự phòng của cost estimate, còn mọi ứng phó làm thay đổi phạm vi, lịch hoặc chi phí được xử lý theo kế hoạch quản lý thay đổi."
+  },
+  {
+   "text": "2. Tổ chức và trách nhiệm",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Vai trò",
+     "Người đảm nhận",
+     "Trách nhiệm"
+    ],
+    [
+     "Chủ trì quản lý rủi ro",
+     "Trần Bá Đạt, quản trị dự án",
+     "Duy trì sổ đăng ký rủi ro, chủ trì rà soát rủi ro trong các cuộc họp sprint, phê duyệt kích hoạt kế hoạch ứng phó, đề xuất dùng dự phòng và báo cáo rủi ro trong báo cáo tiến độ"
+    ],
+    [
+     "Người phụ trách rủi ro",
+     "Trần Bá Đạt, Phạm Tuấn Anh, Ninh Đức Toàn, Nguyễn Thị Phương Liên, Lê Quang Huy theo cột người phụ trách của sổ rủi ro",
+     "Theo dõi dấu hiệu, thực hiện biện pháp phòng ngừa và kế hoạch ứng phó của rủi ro được giao, cập nhật trạng thái và đề xuất đóng rủi ro khi đạt điều kiện đóng"
+    ],
+    [
+     "Nhóm phát triển và kiểm thử",
+     "Phạm Tuấn Anh, Ninh Đức Toàn, Vũ Đức Minh, Nguyễn Thị Phương Liên và bảy vị trí bổ sung Nguyễn Hoàng Nam, Lê Quang Huy, Đỗ Minh Quân, Bùi Anh Tuấn, Trần Thu Hà, Phạm Ngọc Anh, Trương Quốc Việt theo phân công",
+     "Báo cáo sớm dấu hiệu rủi ro phát sinh trong phát triển, tích hợp, kiểm thử và triển khai, đề xuất rủi ro mới cho quản trị dự án"
+    ],
+    [
+     "Chủ đầu tư",
+     "Công ty Cổ phần ABC Wear, đầu mối Yamada, Phòng Kế hoạch",
+     "Phối hợp xử lý các rủi ro thuộc phía Chủ đầu tư như xác nhận đặc tả, bàn giao tài liệu và môi trường của Main System, hạ tầng máy chủ, dữ liệu chuyển đổi, nhận thông báo và tham gia quyết định khi ứng phó ảnh hưởng hợp đồng"
+    ]
+   ],
+   "widths": [
+    2200,
+    2600,
+    4500
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "3. Phương pháp và thang đo",
+   "t": "h1"
+  },
+  {
+   "t": "p",
+   "text": "Quy trình quản lý rủi ro gồm các bước nhận diện, phân tích định tính theo điểm xác suất nhân tác động, phân tích định lượng theo EMV, lập kế hoạch ứng phó và theo dõi. Nguồn nhận diện gồm RFP, HSMT, WBS, đường găng của master schedule, bảng phân công và các bên liên quan. Sổ rủi ro được rà soát trong mỗi cuộc họp sprint, rủi ro mức cao được theo dõi hằng tuần."
+  },
+  {
+   "t": "p",
+   "text": "Mức tác động của mỗi rủi ro là mức cao nhất theo số ngày chậm, chi phí tác động so với giá chào và điều kiện về mốc, hợp đồng trong bảng thang tác động. Tiền tác động do script tính bằng MD tác động nhân đơn giá ngày của loại công việc, cộng phạt chậm theo E-ĐKC 15 khi rủi ro làm chậm mốc và khoản tiền thêm có ghi lý do."
+  },
+  {
+   "t": "p",
+   "text": "EMV là ước tính định hướng. Xác suất lấy giá trị đại diện của khoảng trong thang xác suất, mỗi rủi ro có căn cứ xác suất ghi trong sổ. Tổng EMV theo chi phí là 151 triệu đồng, khoảng từ 113 đến 189 triệu đồng theo cận của mức xác suất, dùng để so với dự phòng chi phí và dự trữ thời gian, không phải giá trị chắc chắn phát sinh."
+  },
+  {
+   "t": "p",
+   "text": "Kết quả thang 5 mức được đối chiếu với ma trận 3x3 xếp hạng A, B, C: mức 1 đến 2 quy về thấp, mức 3 quy về trung bình, mức 4 đến 5 quy về cao. Theo quy đổi này sổ có 6 rủi ro hạng A, 9 rủi ro hạng B và 7 rủi ro hạng C. Nhóm dùng thang 5 mức làm thang chính vì phân biệt rõ hơn giữa các rủi ro, có ngưỡng định lượng cho từng mức, tính được EMV để so với dự phòng và dự trữ, đồng thời vẫn quy đổi được về hạng A, B, C khi trình bày cho Chủ đầu tư."
+  },
+  {
+   "text": "3.1. Thang xác suất",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Mức",
+     "Xác suất",
+     "Giá trị dùng tính EMV",
+     "Cận tính khoảng EMV"
+    ],
+    [
+     "1",
+     "Rất thấp, dưới 10%",
+     "5%",
+     "0% đến 10%"
+    ],
+    [
+     "2",
+     "Thấp, 10% đến 30%",
+     "20%",
+     "10% đến 30%"
+    ],
+    [
+     "3",
+     "Trung bình, 30% đến 50%",
+     "40%",
+     "30% đến 50%"
+    ],
+    [
+     "4",
+     "Cao, 50% đến 70%",
+     "60%",
+     "50% đến 70%"
+    ],
+    [
+     "5",
+     "Rất cao, trên 70%",
+     "80%",
+     "70% đến 90%"
+    ]
+   ],
+   "widths": [
+    800,
+    3900,
+    2200,
+    2400
+   ],
+   "center_cols": [
+    0,
+    2,
+    3
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "3.2. Thang tác động",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Mức",
+     "Tác động",
+     "Ngày chậm (ngày làm việc)",
+     "Chi phí trên giá chào",
+     "Điều kiện về mốc, hợp đồng"
+    ],
+    [
+     "1",
+     "Không đáng kể",
+     "dưới 1",
+     "dưới 1%",
+     ""
+    ],
+    [
+     "2",
+     "Nhỏ",
+     "1 đến 3",
+     "1% đến dưới 3%",
+     ""
+    ],
+    [
+     "3",
+     "Trung bình, hoặc ảnh hưởng một chức năng",
+     "4 đến 7",
+     "3% đến dưới 5%",
+     ""
+    ],
+    [
+     "4",
+     "Lớn, hoặc làm chậm mốc gắn đợt thanh toán",
+     "8 đến 15",
+     "5% đến dưới 8%",
+     "Làm chậm mốc gắn đợt thanh toán"
+    ],
+    [
+     "5",
+     "Rất lớn, làm lùi ngày cut over hoặc vi phạm hợp đồng",
+     "từ 16",
+     "từ 8%",
+     "Làm lùi ngày cut over hoặc vi phạm hợp đồng"
+    ]
+   ],
+   "widths": [
+    700,
+    2700,
+    1700,
+    1700,
+    2500
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Mức tác động của mỗi rủi ro là mức cao nhất đạt được theo số ngày chậm, chi phí tác động so với giá chào 1.949 triệu đồng và điều kiện về mốc, hợp đồng. Mức chấm khác mức suy ra được ghi lý do trong sổ.",
+   "t": "p"
+  },
+  {
+   "text": "3.3. Phân mức rủi ro",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Mức rủi ro",
+     "Điểm (xác suất x tác động)",
+     "Cách xử lý"
+    ],
+    [
+     "Cao",
+     "15 đến 25",
+     "Bắt buộc có kế hoạch ứng phó, dấu hiệu nhận biết, theo dõi hằng tuần, báo cáo trong mỗi kỳ"
+    ],
+    [
+     "Trung bình",
+     "8 đến 14",
+     "Có biện pháp phòng ngừa, theo dõi theo sprint"
+    ],
+    [
+     "Thấp",
+     "1 đến 7",
+     "Ghi nhận, rà soát cuối sprint"
+    ]
+   ],
+   "widths": [
+    1600,
+    2600,
+    5100
+   ],
+   "center_cols": [
+    0,
+    1
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "3.4. Quy đổi sang ma trận 3x3",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Thang 5 mức",
+     "Xác suất theo thang 3 mức",
+     "Tác động theo thang 3 mức"
+    ],
+    [
+     "Mức 1 đến 2",
+     "Thấp",
+     "Nhỏ"
+    ],
+    [
+     "Mức 3",
+     "Trung bình",
+     "Trung bình"
+    ],
+    [
+     "Mức 4 đến 5",
+     "Cao",
+     "Lớn"
+    ]
+   ],
+   "widths": [
+    3100,
+    3100,
+    3100
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "4. Sổ đăng ký rủi ro",
+   "t": "h1"
+  },
+  {
+   "text": "Sổ gồm 22 rủi ro (20 đe dọa, 2 cơ hội): 2 mức cao, 13 mức trung bình, 7 mức thấp. Theo ma trận 3x3 có 6 rủi ro hạng A, 9 rủi ro hạng B, 7 rủi ro hạng C. EMV của từng rủi ro tính theo triệu đồng. Cột Trạng thái theo nhật ký theo dõi rủi ro đến ngày 27/05/2027: rủi ro đã xảy ra hoặc đã đóng không còn tính EMV còn lại, tác động thực tế ghi ở bảng rủi ro đã xảy ra.",
+   "t": "p"
+  },
+  {
+   "huong": "ngang",
+   "t": "section"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Rủi ro",
+     "Nhóm",
+     "XS",
+     "TĐ",
+     "Điểm",
+     "Mức",
+     "Hạng",
+     "Trạng thái",
+     "EMV, triệu đồng",
+     "Chiến lược",
+     "Phụ trách",
+     "Liên kết"
+    ],
+    [
+     "RR02",
+     "Tài liệu giao diện hoặc môi trường thử của Main System đến muộn hơn cam kết hoặc không đủ thông tin",
+     "Tích hợp và đối tác",
+     "4",
+     "4",
+     "16",
+     "Cao",
+     "A",
+     "Đã xảy ra",
+     "12,6",
+     "Giảm nhẹ",
+     "Ninh Đức Toàn",
+     "Gói 4.2.5, 4.2.6, 4.4.3. Mốc M3 (08/07/2027)"
+    ],
+    [
+     "RR10",
+     "Số lỗi phát hiện trong kiểm thử chấp nhận vượt khả năng khắc phục trong khoảng 16/07 đến 27/07/2027",
+     "Chất lượng",
+     "3",
+     "5",
+     "15",
+     "Cao",
+     "A",
+     "Đang theo dõi",
+     "9,2",
+     "Giảm nhẹ",
+     "Nguyễn Thị Phương Liên",
+     "Gói 3.4.14, 1.4.11, 2.4.12. Mốc M5 (27/07/2027), M6 (29/07/2027)"
+    ],
+    [
+     "RR01",
+     "Đặc tả yêu cầu được xác nhận chậm hoặc thay đổi nhiều sau khi xác nhận",
+     "Phạm vi và yêu cầu",
+     "3",
+     "4",
+     "12",
+     "Trung bình",
+     "A",
+     "Đã đóng",
+     "10,1",
+     "Giảm nhẹ",
+     "Nguyễn Thị Phương Liên",
+     "Gói 3.2.5. Mốc M2 (06/05/2027)"
+    ],
+    [
+     "RR04",
+     "Vị trí bổ sung không có mặt đúng sprint huy động đã thống nhất",
+     "Nhân sự",
+     "3",
+     "4",
+     "12",
+     "Trung bình",
+     "A",
+     "Đã đóng",
+     "12,6",
+     "Giảm nhẹ",
+     "Trần Bá Đạt",
+     "Gói 3.3.5, 2.3.2, 4.3.7. Mốc M3 (08/07/2027)"
+    ],
+    [
+     "RR13",
+     "Lương thỏa thuận với vị trí bổ sung cao hơn lương tham chiếu dùng trong dự toán",
+     "Chi phí",
+     "4",
+     "3",
+     "12",
+     "Trung bình",
+     "A",
+     "Đang theo dõi",
+     "44,4",
+     "Giảm nhẹ",
+     "Trần Bá Đạt",
+     "Gói 1.1.3, 2.1.3, 3.1.4, 4.1.2"
+    ],
+    [
+     "RR22",
+     "Giao diện lập trình hoặc môi trường thử của sàn thương mại điện tử chưa sẵn sàng, hoặc sàn thay đổi chính sách kết nối trong thời gian thực hiện",
+     "Tích hợp và đối tác",
+     "3",
+     "4",
+     "12",
+     "Trung bình",
+     "A",
+     "Đang theo dõi",
+     "5,0",
+     "Giảm nhẹ",
+     "Lê Quang Huy",
+     "Gói 5.3.1, 5.4.2. Mốc M9 (27/07/2027)"
+    ],
+    [
+     "RR08",
+     "Sự cố khi triển khai phiên bản chính thức và chuyển đổi dữ liệu ngày 28/07/2027, phải khôi phục",
+     "Vận hành và chuyển đổi",
+     "2",
+     "5",
+     "10",
+     "Trung bình",
+     "B",
+     "Đang theo dõi",
+     "2,2",
+     "Giảm nhẹ",
+     "Ninh Đức Toàn",
+     "Gói 1.5.2. Mốc M6 (29/07/2027)"
+    ],
+    [
+     "RR15",
+     "Lỗ hổng bảo mật tài khoản thành viên làm lộ dữ liệu khách hàng",
+     "Kỹ thuật",
+     "2",
+     "5",
+     "10",
+     "Trung bình",
+     "B",
+     "Đang theo dõi",
+     "2,1",
+     "Giảm nhẹ",
+     "Phạm Tuấn Anh",
+     "Gói 2.4.5, 2.4.10"
+    ],
+    [
+     "RR03",
+     "Kiểm thử hệ thống và khắc phục lỗi hoàn thành sau ngày bắt đầu kiểm thử chấp nhận 16/07/2027",
+     "Tiến độ",
+     "3",
+     "3",
+     "9",
+     "Trung bình",
+     "B",
+     "Đang theo dõi",
+     "8,4",
+     "Giảm nhẹ",
+     "Trần Bá Đạt",
+     "Gói 3.4.12, 4.4.5. Mốc M4 (08/07/2027), M5 (27/07/2027)"
+    ],
+    [
+     "RR06",
+     "Thời gian phản hồi vượt 2 giây hoặc không chịu tải 500 người dùng đồng thời",
+     "Kỹ thuật",
+     "3",
+     "3",
+     "9",
+     "Trung bình",
+     "B",
+     "Đang theo dõi",
+     "6,7",
+     "Giảm nhẹ",
+     "Phạm Tuấn Anh",
+     "Gói 1.3.8, 1.4.9. Mốc M4 (08/07/2027)"
+    ],
+    [
+     "RR16",
+     "Hạ tầng máy chủ vận hành do Chủ đầu tư bàn giao muộn",
+     "Vận hành và chuyển đổi",
+     "3",
+     "3",
+     "9",
+     "Trung bình",
+     "B",
+     "Đang theo dõi",
+     "6,2",
+     "Giảm nhẹ",
+     "Ninh Đức Toàn",
+     "Gói 4.5.1, 1.4.9. Mốc M4 (08/07/2027)"
+    ],
+    [
+     "RR05",
+     "Trưởng nhóm quá tải do kiêm quản lý dự án và kiến trúc",
+     "Nhân sự",
+     "4",
+     "2",
+     "8",
+     "Trung bình",
+     "B",
+     "Đang theo dõi",
+     "6,6",
+     "Giảm nhẹ",
+     "Trần Bá Đạt",
+     "Gói 3.1.1, 3.1.2. Mốc M1 (14/04/2027)"
+    ],
+    [
+     "RR07",
+     "Hệ thống gián đoạn, không bảo đảm hoạt động liên tục 24 giờ, 365 ngày",
+     "Kỹ thuật",
+     "2",
+     "4",
+     "8",
+     "Trung bình",
+     "B",
+     "Đang theo dõi",
+     "3,1",
+     "Giảm nhẹ",
+     "Ninh Đức Toàn",
+     "Gói 4.5.1, 4.4.8. Mốc M4 (08/07/2027)"
+    ],
+    [
+     "RR11",
+     "Chủ đầu tư yêu cầu bổ sung thanh toán trực tuyến cho đơn hàng",
+     "Phạm vi và yêu cầu",
+     "2",
+     "4",
+     "8",
+     "Trung bình",
+     "B",
+     "Đang theo dõi",
+     "5,0",
+     "Né tránh",
+     "Nguyễn Thị Phương Liên",
+     "Gói 3.2.7, 3.3.9. Mốc M3 (08/07/2027)"
+    ],
+    [
+     "RR12",
+     "Thư viện mã nguồn mở có giấy phép không phù hợp với điều khoản quyền sở hữu thuộc Chủ đầu tư",
+     "Pháp lý và hợp đồng",
+     "2",
+     "4",
+     "8",
+     "Trung bình",
+     "B",
+     "Đang theo dõi",
+     "1,3",
+     "Né tránh",
+     "Trần Bá Đạt",
+     "Gói 4.5.5. Mốc M7 (29/07/2027)"
+    ],
+    [
+     "RR09",
+     "Cán bộ Chủ đầu tư chưa sẵn sàng vận hành theo quy trình vận hành mới",
+     "Vận hành và chuyển đổi",
+     "3",
+     "2",
+     "6",
+     "Thấp",
+     "C",
+     "Đang theo dõi",
+     "3,4",
+     "Giảm nhẹ",
+     "Nguyễn Thị Phương Liên",
+     "Gói 3.5.1, 3.4.13. Mốc M5 (27/07/2027)"
+    ],
+    [
+     "RR14",
+     "Dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi đến muộn hơn 10/06/2027 hoặc sai định dạng",
+     "Tích hợp và đối tác",
+     "3",
+     "2",
+     "6",
+     "Thấp",
+     "C",
+     "Đang theo dõi",
+     "3,4",
+     "Giảm nhẹ",
+     "Ninh Đức Toàn",
+     "Gói 4.5.3, 3.5.3"
+    ],
+    [
+     "RR20",
+     "Tái sử dụng khung ứng dụng và thư viện giao diện từ hai hợp đồng tương tự",
+     "Kỹ thuật",
+     "3",
+     "2",
+     "6",
+     "Thấp",
+     "C",
+     "Đang theo dõi",
+     "6,7",
+     "Khai thác",
+     "Phạm Tuấn Anh",
+     "Gói 4.3.1, 4.3.3, 1.2.4"
+    ],
+    [
+     "RR17",
+     "Lỗi phát sinh trong thời hạn bảo hành 12 tháng vượt chi phí bảo hành đã dự tính",
+     "Chất lượng",
+     "2",
+     "2",
+     "4",
+     "Thấp",
+     "C",
+     "Đang theo dõi",
+     "4,2",
+     "Giảm nhẹ",
+     "Ninh Đức Toàn",
+     "Gói 1.5.3. Mốc M7 (29/07/2027)"
+    ],
+    [
+     "RR18",
+     "Phụ thuộc vào ít người có năng lực triển khai hạ tầng",
+     "Nhân sự",
+     "2",
+     "2",
+     "4",
+     "Thấp",
+     "C",
+     "Đang theo dõi",
+     "3,1",
+     "Giảm nhẹ",
+     "Trần Bá Đạt",
+     "Gói 4.5.1, 3.5.3"
+    ],
+    [
+     "RR21",
+     "Chủ đầu tư bàn giao môi trường thử của Main System sớm hơn 20/05/2027",
+     "Tích hợp và đối tác",
+     "2",
+     "2",
+     "4",
+     "Thấp",
+     "C",
+     "Đã đóng",
+     "1,2",
+     "Tăng cường",
+     "Ninh Đức Toàn",
+     "Gói 4.4.3"
+    ],
+    [
+     "RR19",
+     "Mốc M3 hoặc M9 trễ làm dời khoản thu Đợt 3, Đợt 6",
+     "Chi phí",
+     "2",
+     "1",
+     "2",
+     "Thấp",
+     "C",
+     "Đang theo dõi",
+     "1,0",
+     "Giảm nhẹ",
+     "Trần Bá Đạt",
+     "Gói 4.4.6, 5.4.5. Mốc M3 (08/07/2027), M9 (27/07/2027)"
+    ]
+   ],
+   "widths": [
+    700,
+    1500,
+    1400,
+    450,
+    450,
+    550,
+    1000,
+    600,
+    1100,
+    1100,
+    1300,
+    1600,
+    2400
+   ],
+   "center_cols": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "right_cols": [
+    9
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Nguyên nhân, tác động và căn cứ đánh giá của từng rủi ro:",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Loại",
+     "Nguyên nhân",
+     "Tác động",
+     "Căn cứ xác suất",
+     "Căn cứ mức tác động"
+    ],
+    [
+     "RR02",
+     "Đe dọa",
+     "HSMT và RFP không mô tả nền tảng, phương thức kết nối, cấu trúc dữ liệu của Main System. Đặc tả giao diện tích hợp phụ thuộc tài liệu Chủ đầu tư cung cấp chậm nhất 14/04/2027 (CK1), kiểm thử tích hợp phụ thuộc môi trường thử và thay đổi phía Main System chậm nhất 20/05/2027 (CK2, CK8)",
+     "Chậm đồng bộ sản phẩm, tồn kho, chuyển đơn hàng và trạng thái vận chuyển, chậm kiểm thử tích hợp và mốc M3 gắn Đợt 3",
+     "Nhà thầu chưa có thông tin kỹ thuật nào về Main System, cả năm luồng tích hợp phụ thuộc tài liệu và môi trường do Chủ đầu tư cung cấp, hạn CK2 chỉ trước kiểm thử tích hợp vài ngày. Dịch vụ giả lập (4.4.1) giảm tác động nhưng không giảm khả năng xảy ra",
+     "Suy ra mức 4 theo chậm 6 ngày (mức 3), chi phí bằng 1,08% giá chào (mức 2), làm chậm mốc gắn đợt thanh toán M3 (mức 4)"
+    ],
+    [
+     "RR10",
+     "Đe dọa",
+     "Khắc phục lỗi kiểm thử chấp nhận gắn ngày bắt đầu 16/07/2027 và phải hoàn thành trong khoảng kiểm thử chấp nhận, Chủ đầu tư có thể đề nghị điều chỉnh ngoài lỗi",
+     "Không đủ thời gian khắc phục trước cut over, phải dời ngày cut over hoặc bàn giao với lỗi tồn tại",
+     "Khối lượng khắc phục trong khoảng kiểm thử chấp nhận đã lập 4 gói nhưng số lỗi thực tế phụ thuộc mức ổn định sau kiểm thử hệ thống",
+     "Suy ra mức 5 theo chậm 2 ngày (mức 2), chi phí bằng 1,18% giá chào (mức 2), làm lùi ngày cut over (mức 5)"
+    ],
+    [
+     "RR01",
+     "Đe dọa",
+     "RFP chỉ nêu tên các sản phẩm đặc tả, cấu trúc cơ sở dữ liệu và menu. Nội dung chi tiết do nhà thầu lập và phải được Chủ đầu tư xác nhận, trong khi thiết kế chi tiết và lập trình từng chức năng bắt đầu trước bước xác nhận đặc tả (3.2.5)",
+     "Phải điều chỉnh thiết kế chi tiết, Selling DB và mã nguồn đã lập, mốc M2 gắn Đợt 2 bị chậm",
+     "Đặc tả lập từ RFP chỉ có tên sản phẩm và lập trình bắt đầu trước khi hai bên xác nhận nên khả năng có thay đổi là đáng kể. Chủ đầu tư đã cam kết chủ sản phẩm có thẩm quyền làm rõ yêu cầu 2 đến 3 buổi mỗi tuần trong S1 đến S3 (CK5) nên không xếp mức cao",
+     "Suy ra mức 4 theo chậm 5 ngày (mức 3), chi phí bằng 1,29% giá chào (mức 2), làm chậm mốc gắn đợt thanh toán M2 (mức 4)"
+    ],
+    [
+     "RR04",
+     "Đe dọa",
+     "Bảy vị trí bổ sung là nhân sự của nhà thầu nhưng chưa có quyết định điều động nội bộ vào dự án, các vị trí phát triển và kiểm thử được huy động sớm (Lê Quang Huy, Bùi Anh Tuấn từ S1, Đỗ Minh Quân, Trần Thu Hà từ S2, Phạm Ngọc Anh, Trương Quốc Việt từ S3) nên thời gian bàn giao công việc đang làm ngắn",
+     "Thiếu người cho lập trình, kiểm thử phân hệ và tích hợp, chậm mốc M3 gắn Đợt 3",
+     "Đã có họ tên dự kiến cho cả bảy vị trí nhưng nhóm ghi còn chờ quyết định điều động. Huy động sớm một sprint rút ngắn thời gian chuẩn bị",
+     "Suy ra mức 4 theo chậm 5 ngày (mức 3), chi phí bằng 1,62% giá chào (mức 2), làm chậm mốc gắn đợt thanh toán M3 (mức 4)"
+    ],
+    [
+     "RR13",
+     "Đe dọa",
+     "Lương tham chiếu lấy theo mức trung vị của báo cáo thị trường, bảy vị trí bổ sung chưa ký hợp đồng lao động",
+     "Chi phí lương tăng, giảm phần chi phí chung và lợi nhuận của giá chào",
+     "Bảy vị trí chưa có thỏa thuận lương, huy động sớm một sprint làm thời gian thương lượng ngắn, lương tham chiếu lấy ở mức trung vị nên khoảng một nửa thị trường cao hơn",
+     "Suy ra mức 3 theo chậm 0 ngày (mức 1), chi phí bằng 3,8% giá chào (mức 3)"
+    ],
+    [
+     "RR22",
+     "Đe dọa",
+     "Phần bán hàng trên sàn theo yêu cầu thay đổi CR01 phụ thuộc tài khoản cửa hàng, khóa truy cập và môi trường thử do sàn cấp theo hồ sơ đăng ký của Chủ đầu tư, nhà thầu chưa từng kết nối với sàn được chọn",
+     "Chậm kết nối sàn và kiểm thử tích hợp với sàn, chậm kiểm thử chấp nhận phần bán hàng trên sàn và mốc M9 gắn đợt thanh toán 6",
+     "Thời gian từ phụ lục đến kiểm thử tích hợp với sàn ngắn, việc cấp tài khoản và khóa truy cập phụ thuộc thủ tục của sàn và Chủ đầu tư, nhà thầu chưa có kinh nghiệm với giao diện lập trình của sàn này",
+     "Suy ra mức 4 theo chậm 3 ngày (mức 2), chi phí bằng 0,65% giá chào (mức 1), làm chậm mốc gắn đợt thanh toán M9 (mức 4)"
+    ],
+    [
+     "RR08",
+     "Đe dọa",
+     "Cấu hình môi trường vận hành khác môi trường kiểm thử, dữ liệu vận hành chuyển đổi lần đầu, triển khai gắn ngày cố định trước cut over",
+     "Lùi ngày đưa hệ thống vào vận hành, bị phạt chậm tiến độ theo E-ĐKC 15",
+     "Có diễn tập triển khai và chuyển đổi dữ liệu trước cut over (3.5.3) và kế hoạch khôi phục được Chủ đầu tư xác nhận (3.5.2)",
+     "Suy ra mức 5 theo chậm 1 ngày (mức 2), chi phí bằng 0,56% giá chào (mức 1), làm lùi ngày cut over (mức 5)"
+    ],
+    [
+     "RR15",
+     "Đe dọa",
+     "Website công khai trên internet, lưu thông tin thành viên và địa chỉ giao hàng",
+     "Vi phạm nghĩa vụ bảo mật, ảnh hưởng nghiệm thu. Bồi thường theo pháp luật dân sự (E-ĐKC 15) chưa ước lượng được nên chưa tính vào tiền",
+     "Có kiểm thử bảo mật tài khoản theo OWASP Top 10 trong kiểm thử phân hệ (2.4.5) và rà soát bản phát hành (4.4.7)",
+     "Suy ra mức 5 theo chậm 2 ngày (mức 2), chi phí bằng 0,54% giá chào (mức 1), vi phạm hợp đồng (mức 5)"
+    ],
+    [
+     "RR03",
+     "Đe dọa",
+     "Kiểm thử hệ thống chỉ bắt đầu khi các đợt kiểm thử phân hệ và kiểm thử tích hợp hoàn thành. Nhóm kiểm thử làm gần đủ quỹ thời gian trong S5 nên một đợt kiểm thử chậm sẽ đẩy lùi các gói sau",
+     "Kiểm thử chấp nhận bắt đầu muộn, khoảng khắc phục lỗi trước cut over bị rút ngắn, có thể làm lùi ngày cut over",
+     "Sau yêu cầu thay đổi CR01, chuỗi trước kiểm thử chấp nhận có dự trữ theo master schedule lập lại lớn hơn khi ký hợp đồng, nhưng các gói kiểm thử và sửa lỗi phân hệ có ít dự trữ và nhóm kiểm thử đồng thời kiểm thử phần bán hàng trên sàn. Vị trí bổ sung được huy động sớm (D1 từ S1, D3 từ S1, D2 từ S2, Q1 từ S2, Q2 từ S3, D4 từ S3) giúp tăng người làm song song",
+     "Suy ra mức 3 theo chậm 4 ngày (mức 3), chi phí bằng 1,08% giá chào (mức 2)"
+    ],
+    [
+     "RR06",
+     "Đe dọa",
+     "Truy vấn tìm kiếm, lọc trên dữ liệu đồng bộ từ Main System chưa có số liệu tải thực tế, chỉ tiêu KT02, KT03 phải đạt trên môi trường vận hành",
+     "Không đạt yêu cầu phi chức năng của HSMT, phải tối ưu lại truy vấn và bộ nhớ đệm",
+     "Có chỉ mục tìm kiếm riêng và bộ nhớ đệm từ thiết kế (1.2.7, 1.3.8) nhưng chưa có dữ liệu sản phẩm thật trước 10/06/2027 (CK3)",
+     "Suy ra mức 3 theo chậm 4 ngày (mức 3), chi phí bằng 0,86% giá chào (mức 1)"
+    ],
+    [
+     "RR16",
+     "Đe dọa",
+     "Lịch xếp thiết lập môi trường vận hành (4.5.1) từ 20/05/2027 theo đề nghị của nhà thầu về thời điểm bàn giao hạ tầng vận hành (CK7), trong khi HSMT quy định Chủ đầu tư bàn giao chậm nhất 10/06/2027, việc mua sắm phía Chủ đầu tư chưa có lịch cụ thể",
+     "Chậm môi trường vận hành, kiểm thử hiệu năng và diễn tập chuyển đổi dự phòng",
+     "Hạn 20/05/2027 là đề nghị của nhà thầu, sớm hơn thời hạn chậm nhất của HSMT khoảng ba tuần, Chủ đầu tư chưa xác nhận lịch mua sắm hạ tầng",
+     "Suy ra mức 3 theo chậm 4 ngày (mức 3), chi phí bằng 0,8% giá chào (mức 1)"
+    ],
+    [
+     "RR05",
+     "Đe dọa",
+     "Công việc quản lý dàn trải chiếm một nửa thời gian của trưởng nhóm trong suốt dự án, phần còn lại gồm kế hoạch, rà soát mã nguồn và tài liệu",
+     "Chậm kế hoạch quản lý dự án và các quyết định kỹ thuật, chậm mốc M1",
+     "Tải giao cho trưởng nhóm gần đủ quỹ thời gian, một nửa mỗi ngày dành cho công việc quản lý dàn trải, các gói kế hoạch nằm trong S1 cùng lúc với khảo sát",
+     "Suy ra mức 2 theo chậm 3 ngày (mức 2), chi phí bằng 0,56% giá chào (mức 1)"
+    ],
+    [
+     "RR07",
+     "Đe dọa",
+     "Môi trường vận hành hai nút, cơ sở dữ liệu chính và dự phòng thiết lập lần đầu, phương án chuyển đổi dự phòng chưa được diễn tập",
+     "Không đạt chỉ tiêu sẵn sàng KT01, ảnh hưởng nghiệm thu và uy tín kênh bán hàng",
+     "Kiến trúc có hai nút và cơ sở dữ liệu dự phòng (4.2.2, 4.5.1), có gói diễn tập chuyển đổi dự phòng trước kiểm thử chấp nhận (4.4.8)",
+     "Suy ra mức 2 theo chậm 3 ngày (mức 2), chi phí bằng 0,8% giá chào (mức 1). Chấm mức 4, lý do: Vi phạm chỉ tiêu kỹ thuật KT01 của HSDT là tác động định tính đến nghiệm thu, không đo hết bằng ngày và tiền"
+    ],
+    [
+     "RR11",
+     "Đe dọa",
+     "RFP và HSMT không nêu phương thức thanh toán đơn hàng, WBS ghi thanh toán trực tuyến là giả định ngoài phạm vi",
+     "Phát sinh khối lượng tích hợp cổng thanh toán, ảnh hưởng phân hệ đặt hàng và mốc M3",
+     "Phương thức thanh toán được làm rõ ngay tại họp khởi động và ghi trong đặc tả đặt hàng, sau khi xác nhận mọi bổ sung đi qua quy trình yêu cầu thay đổi",
+     "Suy ra mức 4 theo chậm 5 ngày (mức 3), chi phí bằng 1,29% giá chào (mức 2), làm chậm mốc gắn đợt thanh toán M3 (mức 4)"
+    ],
+    [
+     "RR12",
+     "Đe dọa",
+     "Hệ thống dùng nhiều thư viện mã nguồn mở, quyền sở hữu và bản quyền sản phẩm thuộc Chủ đầu tư (R40)",
+     "Phải thay thư viện, ảnh hưởng nghiệm thu và nghĩa vụ hợp đồng",
+     "Nhóm chọn thư viện theo danh mục từ kiến trúc, có gói rà soát giấy phép (4.5.5)",
+     "Suy ra mức 4 theo chậm 1 ngày (mức 2), chi phí bằng 0,32% giá chào (mức 1), làm chậm mốc gắn đợt thanh toán M7 (mức 4)"
+    ],
+    [
+     "RR09",
+     "Đe dọa",
+     "Quy trình vận hành mới thay đổi cách tiếp nhận và xử lý đơn hàng trực tuyến, hướng dẫn vận hành diễn ra sát kiểm thử chấp nhận",
+     "Kiểm thử chấp nhận và vận hành kéo dài, phát sinh yêu cầu hỗ trợ sau cut over",
+     "Người dùng nghiệp vụ tham gia kiểm thử chấp nhận theo cam kết CK6 nhưng chưa quen hệ thống mới, chỉ có ba buổi hướng dẫn (3.5.1)",
+     "Suy ra mức 2 theo chậm 2 ngày (mức 2), chi phí bằng 0,44% giá chào (mức 1)"
+    ],
+    [
+     "RR14",
+     "Đe dọa",
+     "Dữ liệu sản phẩm, giá, tồn kho được quản trị trong Main System, nhà thầu đề nghị Chủ đầu tư cung cấp theo định dạng thống nhất chậm nhất 9 giờ 00 ngày 10/06/2027 (CK3, HSMT không quy định thời hạn), chất lượng dữ liệu chưa được kiểm tra",
+     "Chậm chuyển đổi thử và diễn tập triển khai, rút ngắn thời gian chuẩn bị cut over",
+     "Định dạng chuyển đổi mới thống nhất trong đặc tả giao diện, dữ liệu do Chủ đầu tư tự trích xuất lần đầu",
+     "Suy ra mức 2 theo chậm 3 ngày (mức 2), chi phí bằng 0,43% giá chào (mức 1)"
+    ],
+    [
+     "RR20",
+     "Cơ hội",
+     "Nhà thầu đã xây dựng website bán hàng có ba phân hệ tương tự cho Công ty CP Thời trang Hoàng Gia và Công ty TNHH Nội thất An Phát",
+     "Rút ngắn khung ứng dụng, thư viện thành phần giao diện, giải phóng thời gian cho lập trình phân hệ",
+     "Thành viên nhóm trực tiếp làm hai dự án tương tự, cần xác nhận quyền sử dụng lại thành phần không thuộc sở hữu của chủ đầu tư trước",
+     "Suy ra mức 2 theo sớm 3 ngày (mức 2), lợi ích bằng 0,86% giá chào (mức 1)"
+    ],
+    [
+     "RR17",
+     "Đe dọa",
+     "Một số lỗi nhỏ có thể được chuyển sang khắc phục trong thời hạn bảo hành, chi phí bảo hành gộp trong khoản B",
+     "Tăng chi phí sau dự án, ảnh hưởng thu hồi bảo lãnh bảo hành",
+     "Lỗi tồn tại khi bàn giao phải có Chủ đầu tư đồng ý, kiểm thử hồi quy bản phát hành chạy trong khoảng kiểm thử chấp nhận, nên lỗi lọt sang bảo hành được kiểm soát",
+     "Suy ra mức 2 theo chậm 0 ngày (mức 1), chi phí bằng 1,08% giá chào (mức 2)"
+    ],
+    [
+     "RR18",
+     "Đe dọa",
+     "Chỉ có Ninh Đức Toàn và hai vị trí bổ sung Bùi Anh Tuấn (từ S1), Trương Quốc Việt (từ S3) có năng lực triển khai và vận hành (DevOps), hai vị trí bổ sung chưa có quyết định điều động (RR04)",
+     "Chậm môi trường vận hành và diễn tập triển khai khi một người vắng mặt",
+     "Có ba người cùng năng lực từ S3 khi D4 được huy động, nhưng hai người là vị trí bổ sung chưa có quyết định điều động, các gói hạ tầng có tài liệu hướng dẫn",
+     "Suy ra mức 2 theo chậm 3 ngày (mức 2), chi phí bằng 0,8% giá chào (mức 1)"
+    ],
+    [
+     "RR21",
+     "Cơ hội",
+     "Môi trường thử của Main System có thể sẵn sàng sớm hơn hạn cam kết CK2 nếu Chủ đầu tư ưu tiên",
+     "Kiểm thử tích hợp bắt đầu sớm, tăng dự trữ của chuỗi kiểm thử hệ thống",
+     "Hạn CK2 do Chủ đầu tư đặt, chưa có thông tin về khả năng bàn giao sớm",
+     "Suy ra mức 2 theo sớm 3 ngày (mức 2), lợi ích bằng 0,31% giá chào (mức 1)"
+    ],
+    [
+     "RR19",
+     "Đe dọa",
+     "Khoản thu Đợt 3 gắn mốc M3 (không còn dự trữ đến hạn theo phụ lục), Đợt 6 gắn mốc M9 nghiệm thu phần bán hàng trên sàn, Chủ đầu tư thanh toán trong 15 ngày kể từ khi nhận đủ hồ sơ. Đợt 2 đã đến hạn thu sau mốc M2",
+     "Phải dùng vốn lưu động để trả lương, phát sinh chi phí vốn (giả định 10% một năm trên giá trị Đợt 3 và Đợt 6 trong một tháng, theo quyết định của nhóm ngày 18/10/2026)",
+     "M3 cần Chủ đầu tư kiểm tra trong thời gian đã tính trong lịch, M9 nằm trong khoảng kiểm thử chấp nhận cùng Chủ đầu tư, hồ sơ thanh toán chuẩn bị song song với bước kiểm tra",
+     "Suy ra mức 1 theo chậm 0 ngày (mức 1), chi phí bằng 0,25% giá chào (mức 1)"
+    ]
+   ],
+   "widths": [
+    700,
+    900,
+    3300,
+    3000,
+    3100,
+    3100
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Rủi ro còn lại sau biện pháp ứng phó và điều kiện đóng rủi ro:",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Rủi ro còn lại (xác suất x tác động)",
+     "Điều kiện đóng"
+    ],
+    [
+     "RR02",
+     "2 x 3 = 6, thấp, hạng C",
+     "Kiểm thử tích hợp (4.4.3) đạt và biên bản xác nhận đặc tả giao diện tích hợp đã ký"
+    ],
+    [
+     "RR10",
+     "2 x 5 = 10, trung bình, hạng B",
+     "Biên bản kiểm thử chấp nhận (M5) không còn lỗi nghiêm trọng hoặc cao"
+    ],
+    [
+     "RR01",
+     "2 x 3 = 6, thấp, hạng C",
+     "Biên bản xác nhận đặc tả (M2) được ký và không còn yêu cầu sửa đổi đặc tả đang mở"
+    ],
+    [
+     "RR04",
+     "2 x 3 = 6, thấp, hạng C",
+     "Cả bảy vị trí có quyết định điều động và đã có mặt theo sprint huy động"
+    ],
+    [
+     "RR13",
+     "2 x 2 = 4, thấp, hạng C",
+     "Đã ký hợp đồng lao động với cả bảy vị trí"
+    ],
+    [
+     "RR22",
+     "2 x 3 = 6, thấp, hạng C",
+     "Kiểm thử tích hợp với sàn (5.4.2) đạt"
+    ],
+    [
+     "RR08",
+     "1 x 5 = 5, thấp, hạng B",
+     "Biên bản bàn giao hệ thống ngày 29/07/2027 được ký"
+    ],
+    [
+     "RR15",
+     "1 x 5 = 5, thấp, hạng B",
+     "Báo cáo rà soát lỗ hổng bản phát hành không còn lỗ hổng mức cao"
+    ],
+    [
+     "RR03",
+     "2 x 3 = 6, thấp, hạng C",
+     "Biên bản hoàn thành kiểm thử hệ thống (M4) được lập trước 16/07/2027"
+    ],
+    [
+     "RR06",
+     "2 x 2 = 4, thấp, hạng C",
+     "Báo cáo hiệu năng bản phát hành (4.4.7) đạt KT02, KT03"
+    ],
+    [
+     "RR16",
+     "2 x 2 = 4, thấp, hạng C",
+     "Biên bản bàn giao hạ tầng vận hành được ký"
+    ],
+    [
+     "RR05",
+     "2 x 2 = 4, thấp, hạng C",
+     "Kế hoạch quản lý dự án được xác nhận (M1) và hai báo cáo cuối sprint liên tiếp đúng hạn"
+    ],
+    [
+     "RR07",
+     "1 x 3 = 3, thấp, hạng C",
+     "Biên bản diễn tập chuyển đổi dự phòng và khôi phục đạt (4.4.8)"
+    ],
+    [
+     "RR11",
+     "1 x 4 = 4, thấp, hạng B",
+     "Biên bản xác nhận đặc tả (M2) ghi rõ phương thức thanh toán không gồm cổng thanh toán"
+    ],
+    [
+     "RR12",
+     "1 x 2 = 2, thấp, hạng C",
+     "Danh mục thư viện kèm giấy phép được bàn giao cùng mã nguồn (1.5.3)"
+    ],
+    [
+     "RR09",
+     "2 x 2 = 4, thấp, hạng C",
+     "Biên bản kiểm thử vận hành (M5) ghi nhận cán bộ Chủ đầu tư tự thực hiện các kịch bản chính"
+    ],
+    [
+     "RR14",
+     "2 x 2 = 4, thấp, hạng C",
+     "Biên bản chuyển đổi thử (4.5.3) đạt và diễn tập triển khai (3.5.3) hoàn thành"
+    ],
+    [
+     "RR20",
+     "3 x 3 = 9, trung bình, hạng B",
+     "Khung ứng dụng (4.3.1) và thư viện giao diện (1.2.4) hoàn thành"
+    ],
+    [
+     "RR17",
+     "2 x 2 = 4, thấp, hạng C",
+     "Hết thời hạn bảo hành 12 tháng"
+    ],
+    [
+     "RR18",
+     "1 x 2 = 2, thấp, hạng C",
+     "Diễn tập triển khai (3.5.3) hoàn thành với tài liệu hướng dẫn đã cập nhật"
+    ],
+    [
+     "RR21",
+     "2 x 3 = 6, thấp, hạng C",
+     "Kiểm thử tích hợp (4.4.3) bắt đầu"
+    ],
+    [
+     "RR19",
+     "2 x 2 = 4, thấp, hạng C",
+     "Đã nhận khoản thanh toán Đợt 3 và Đợt 6"
+    ]
+   ],
+   "widths": [
+    700,
+    3600,
+    9900
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Rủi ro đã xảy ra hoặc đã đóng và tác động thực tế:",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Rủi ro",
+     "Trạng thái",
+     "Ngày xảy ra",
+     "Tác động thực tế",
+     "EMV đã đánh giá, triệu đồng"
+    ],
+    [
+     "RR01",
+     "Đặc tả yêu cầu được xác nhận chậm hoặc thay đổi nhiều sau khi xác nhận",
+     "Đã đóng",
+     "",
+     "",
+     "10,1"
+    ],
+    [
+     "RR02",
+     "Tài liệu giao diện hoặc môi trường thử của Main System đến muộn hơn cam kết hoặc không đủ thông tin",
+     "Đã xảy ra",
+     "19/04/2027",
+     "1 MD, 2.100.000 đồng",
+     "12,6"
+    ],
+    [
+     "RR04",
+     "Vị trí bổ sung không có mặt đúng sprint huy động đã thống nhất",
+     "Đã đóng",
+     "01/04/2027",
+     "0,50 MD, 1.050.000 đồng",
+     "12,6"
+    ],
+    [
+     "RR21",
+     "Chủ đầu tư bàn giao môi trường thử của Main System sớm hơn 20/05/2027",
+     "Đã đóng",
+     "",
+     "",
+     "1,2"
+    ]
+   ],
+   "widths": [
+    700,
+    3300,
+    1300,
+    1200,
+    1700,
+    1100
+   ],
+   "center_cols": [
+    0,
+    2,
+    3
+   ],
+   "right_cols": [
+    5
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "huong": "doc",
+   "t": "section"
+  },
+  {
+   "text": "5. Ma trận xác suất và tác động",
+   "t": "h1"
+  },
+  {
+   "text": "5.1. Ma trận 5x5",
+   "t": "h2"
+  },
+  {
+   "text": "Mỗi ô ghi mã các rủi ro đe dọa có cùng mức xác suất và tác động. Cơ hội được trình bày tại mục 4.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Xác suất, tác động",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5"
+    ],
+    [
+     "5",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "4",
+     "",
+     "RR05",
+     "RR13",
+     "RR02",
+     ""
+    ],
+    [
+     "3",
+     "",
+     "RR09, RR14",
+     "RR03, RR06, RR16",
+     "RR01, RR04, RR22",
+     "RR10"
+    ],
+    [
+     "2",
+     "RR19",
+     "RR17, RR18",
+     "",
+     "RR07, RR11, RR12",
+     "RR08, RR15"
+    ],
+    [
+     "1",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ]
+   ],
+   "widths": [
+    1700,
+    1520,
+    1520,
+    1520,
+    1520,
+    1520
+   ],
+   "center_cols": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "5.2. Ma trận 3x3 và hạng A, B, C",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Xác suất, tác động",
+     "Lớn",
+     "Trung bình",
+     "Nhỏ"
+    ],
+    [
+     "Cao",
+     "A: RR02",
+     "A: RR13",
+     "B: RR05"
+    ],
+    [
+     "Trung bình",
+     "A: RR01, RR04, RR10, RR22",
+     "B: RR03, RR06, RR16",
+     "C: RR09, RR14"
+    ],
+    [
+     "Thấp",
+     "B: RR07, RR08, RR11, RR12, RR15",
+     "C",
+     "C: RR17, RR18, RR19"
+    ]
+   ],
+   "widths": [
+    1800,
+    2500,
+    2500,
+    2500
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "Trên ma trận 5x5, các rủi ro tập trung ở vùng xác suất thấp đến cao, không có rủi ro ở mức xác suất rất cao. Có 2 rủi ro mức cao là RR02, RR10. Trên ma trận 3x3 có 6 rủi ro hạng A gồm RR02, RR10, RR01, RR04, RR13, RR22, tập trung vào tích hợp với Main System, kiểm thử hệ thống và kiểm thử chấp nhận trước ngày cut over, nhân sự bổ sung, đặc tả yêu cầu và chi phí nhân sự. Theo lịch lập lại sau yêu cầu thay đổi CR01, dự trữ đến cut over là 7 ngày làm việc, lớn hơn số ngày chậm của RR02 (6 ngày), RR03 (4 ngày), RR04 (5 ngày), nên các rủi ro này không còn làm lùi ngày cut over, mức tác động chấm theo mức suy ra: RR02, RR04 mức 4 do làm chậm mốc M3 gắn đợt thanh toán, RR03 mức 3. Trong thực hiện, RR04 đã xảy ra và đã đóng, RR02 đã xảy ra và tiếp tục theo dõi đến khi kiểm thử tích hợp đạt. Rủi ro RR01, cơ hội RR21 đã đóng khi đạt điều kiện đóng. Sổ bổ sung RR22 (Giao diện lập trình hoặc môi trường thử của sàn thương mại điện tử chưa sẵn sàng, hoặc sàn thay đổi chính sách kết nối trong thời gian thực hiện) gắn mốc M9 của đợt thanh toán riêng của CR01. Phần đánh giá dự trữ thời gian tính cho các rủi ro RR02, RR03, RR04, RR08, RR09, RR10 gắn với đường găng hoặc mốc cut over 29/07/2027. RR17 gắn gói bàn giao mã nguồn (1.5.3) trên đường găng nhưng phát sinh trong thời hạn bảo hành sau cut over, EMV thời gian bằng 0 nên không tính vào dự trữ. RR08 và RR10 nằm sau các gói ghim ngày (kiểm thử chấp nhận đến 27/07/2027, triển khai chính thức trước cut over), khoảng từ cuối kiểm thử chấp nhận đến cut over chỉ còn 1 ngày làm việc nên chậm từ 1 đến 2 ngày cũng làm lùi cut over dù nhỏ hơn dự trữ của chuỗi trước kiểm thử chấp nhận. RR12 gắn mốc M7 (nộp bảo lãnh bảo hành, bàn giao mã nguồn và hệ thống) cùng ngày cut over, nhưng theo quyết định của nhóm ngày 25/10/2026, M7 không được tính là mốc cut over khi tính EMV thời gian vì chậm M7 không làm lùi ngày đưa hệ thống vào vận hành, ảnh hưởng của RR12 được theo dõi theo hạn của đợt thanh toán gắn M7. Các rủi ro hạng A trên đường găng được ưu tiên theo dõi hằng tuần. Sổ có 2 cơ hội, được theo dõi cùng sổ để tận dụng khi điều kiện xuất hiện."
+  },
+  {
+   "text": "6. Biện pháp ứng phó",
+   "t": "h1"
+  },
+  {
+   "text": "6.1. Rủi ro mức cao",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Biện pháp phòng ngừa",
+     "Kế hoạch ứng phó khi xảy ra",
+     "Dấu hiệu nhận biết"
+    ],
+    [
+     "RR02",
+     "Đề nghị Chủ đầu tư bàn giao tài liệu giao diện và dữ liệu mẫu tại họp khởi động, lập dịch vụ giả lập theo đặc tả giao diện, thống nhất đặc tả giao diện bằng biên bản (4.2.6), lập trình tích hợp song song với bước xác nhận 4.2.6 chỉ trên các trường dữ liệu đã thống nhất từng phần tại họp làm rõ yêu cầu",
+     "Khi dấu hiệu xuất hiện, Ninh Đức Toàn lập danh sách thông tin còn thiếu, Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư trong 1 ngày làm việc. Nhóm tích hợp tiếp tục lập trình trên dịch vụ giả lập. Sau 5 ngày làm việc chưa có phản hồi, trưởng nhóm báo cáo người đại diện của Chủ đầu tư và đề nghị điều chỉnh tiến độ theo Mục 18 E-ĐKC do nguyên nhân thuộc Chủ đầu tư",
+     "Đến 9 giờ 00 ngày 14/04/2027 chưa nhận tài liệu đặc tả giao diện của Main System, hoặc đến 9 giờ 00 ngày 20/05/2027 chưa có môi trường thử hoặc chưa hoàn thành thay đổi phía Main System (CK8), hoặc đặc tả giao diện thay đổi sau khi đã xác nhận"
+    ],
+    [
+     "RR10",
+     "Khắc phục lỗi ngay trong từng đợt kiểm thử phân hệ và kiểm thử hệ thống, phân loại mức nghiêm trọng thống nhất với Chủ đầu tư từ đầu kiểm thử chấp nhận",
+     "Khi dấu hiệu xuất hiện, Nguyễn Thị Phương Liên phân loại lỗi theo mức độ, Trần Bá Đạt điều thêm kỹ sư phát triển sang khắc phục lỗi nghiêm trọng, lỗi nhỏ đưa vào danh sách khắc phục trong bảo hành khi Chủ đầu tư đồng ý bằng văn bản",
+     "Ngày 21/07/2027 còn từ 4 lỗi nghiêm trọng hoặc cao đang mở (ngưỡng đỏ)"
+    ]
+   ],
+   "widths": [
+    700,
+    2900,
+    3200,
+    2500
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "6.2. Rủi ro mức trung bình và thấp",
+   "t": "h2"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Biện pháp phòng ngừa",
+     "Kế hoạch ứng phó khi xảy ra",
+     "Dấu hiệu nhận biết"
+    ],
+    [
+     "RR01",
+     "Trình bày đặc tả theo từng phân hệ ngay khi hoàn thành trong S1, S2, mời chủ sản phẩm xem xét trong buổi làm rõ yêu cầu hằng tuần, ghi biên bản thống nhất từng phần trước khi thiết kế chi tiết chức năng tương ứng",
+     "Nguyễn Thị Phương Liên đề nghị Chủ đầu tư họp xác nhận trong 2 ngày làm việc. Thay đổi sau xác nhận đi qua quy trình yêu cầu thay đổi theo Mục 17.1(c) E-ĐKCT, có đánh giá khối lượng làm lại trước khi thực hiện",
+     "Đến 5 ngày làm việc trước ngày dự kiến của M2 (06/05/2027) chưa có biên bản thống nhất đủ ba phân hệ, hoặc số yêu cầu sửa đổi đặc tả trong một tuần vượt 5"
+    ],
+    [
+     "RR04",
+     "Người đại diện của nhà thầu ban hành quyết định điều động nội bộ cho các vị trí bổ sung trước ngày hợp đồng có hiệu lực (18/03/2027), duy trì danh sách người dự phòng cho từng vị trí",
+     "Khi một vị trí chưa có mặt đúng sprint, Trần Bá Đạt chuyển gói của vị trí đó cho thành viên cùng năng lực còn dư quỹ và kích hoạt người dự phòng trong 3 ngày làm việc",
+     "Đến ngày hợp đồng có hiệu lực chưa có quyết định điều động của một vị trí, hoặc người giữ vị trí chưa hoàn thành bàn giao công việc đang làm trước sprint huy động 5 ngày làm việc"
+    ],
+    [
+     "RR13",
+     "Thống nhất mức lương khi ký hợp đồng với từng vị trí bổ sung và so với lương tham chiếu trước khi ký",
+     "Khi dấu hiệu xuất hiện, Trần Bá Đạt điều chỉnh thời điểm huy động hoặc tỷ lệ tham gia của vị trí đó và báo cáo tác động trong báo cáo tiến độ",
+     "Mức lương thỏa thuận của một vị trí bổ sung vượt lương tham chiếu trên 10%"
+    ],
+    [
+     "RR22",
+     "Đề nghị Chủ đầu tư đăng ký tài khoản cửa hàng và môi trường thử của sàn ngay khi phụ lục có hiệu lực, khảo sát giao diện lập trình của sàn trong gói 5.2.1, lập trình trên dữ liệu mẫu theo tài liệu công khai của sàn",
+     "Khi dấu hiệu xuất hiện, Lê Quang Huy lập danh sách thông tin kết nối còn thiếu, Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư làm việc với đơn vị vận hành sàn trong 1 ngày làm việc theo cam kết CK10, nhóm tiếp tục lập trình trên dữ liệu mẫu và chuyển kiểm thử tích hợp với sàn sang ngay khi có môi trường thử",
+     "Đến 9 giờ 00 ngày 10/06/2027 (hạn cam kết CK10) chưa có tài khoản người bán và khóa truy cập môi trường thử của sàn, hoặc sàn thông báo thay đổi giao diện lập trình trong thời gian thực hiện"
+    ],
+    [
+     "RR08",
+     "Diễn tập triển khai và khôi phục trên môi trường vận hành, lập danh sách kiểm tra cut over được Chủ đầu tư xác nhận",
+     "Khi dấu hiệu xuất hiện, Ninh Đức Toàn thực hiện phương án khôi phục trong kế hoạch cut over, Trần Bá Đạt thông báo Chủ đầu tư và thống nhất thời điểm triển khai lại trong ngày",
+     "Một bước trong danh sách kiểm tra cut over không đạt, hoặc kiểm tra sau triển khai có chức năng chính không hoạt động"
+    ],
+    [
+     "RR15",
+     "Áp dụng băm mật khẩu, HTTPS, bảo vệ phiên, giới hạn đăng nhập sai theo KT04, kiểm thử bảo mật trước kiểm thử chấp nhận",
+     "Khi phát hiện, Phạm Tuấn Anh khắc phục trong 24 giờ, Trần Bá Đạt thông báo Chủ đầu tư theo nghĩa vụ bảo mật",
+     "Kiểm thử bảo mật ghi nhận lỗ hổng mức cao"
+    ],
+    [
+     "RR03",
+     "Kiểm thử từng nhóm chức năng ngay khi lập trình hoàn thành, sửa lỗi theo từng nhóm chức năng, theo dõi dự trữ của chuỗi kiểm thử hằng tuần từ S5",
+     "Khi dấu hiệu xuất hiện, Trần Bá Đạt điều các kỹ sư phát triển đang làm gói không nằm trên đường găng sang sửa lỗi, Nguyễn Thị Phương Liên ưu tiên kịch bản các luồng chính và báo Chủ đầu tư phạm vi kiểm thử chấp nhận đợt đầu",
+     "Mốc M4 chưa đạt sau 2 ngày làm việc so với ngày dự kiến trong master schedule, hoặc còn từ 4 lỗi nghiêm trọng hoặc cao đang mở ngày 12/07/2027 (ngưỡng đỏ)"
+    ],
+    [
+     "RR06",
+     "Đo thời gian phản hồi trong kiểm thử phân hệ (1.4.5), kiểm thử hiệu năng trên môi trường kiểm thử (1.4.9) trước kiểm thử chấp nhận",
+     "Khi dấu hiệu xuất hiện, Phạm Tuấn Anh tối ưu truy vấn và bộ nhớ đệm, Ninh Đức Toàn mở rộng nút ứng dụng trên môi trường vận hành",
+     "Kiểm thử hiệu năng (1.4.9) có phân vị 95 của thao tác cốt lõi vượt 2 giây hoặc lỗi khi tải 500 người dùng"
+    ],
+    [
+     "RR16",
+     "Thống nhất cấu hình và thời điểm bàn giao hạ tầng tại họp khởi động, nhắc lại trong báo cáo tiến độ S2, S3",
+     "Khi dấu hiệu xuất hiện, Ninh Đức Toàn thiết lập môi trường tạm có cấu hình tương đương để tiếp tục cấu hình giám sát và kiểm thử, chuyển sang hạ tầng chính thức ngay khi được bàn giao. Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư xác nhận ngày bàn giao, bàn giao sau 10/06/2027 thì ghi nhận ảnh hưởng tiến độ do phía Chủ đầu tư theo Mục 18 E-ĐKC",
+     "Ngày 13/05/2027 Chủ đầu tư chưa xác nhận lịch bàn giao hạ tầng vận hành, hoặc đến 9 giờ 00 ngày 20/05/2027 chưa có biên bản bàn giao"
+    ],
+    [
+     "RR05",
+     "Ủy quyền chủ trì họp kỹ thuật cho Nguyễn Hoàng Nam, chuẩn hóa mẫu báo cáo tiến độ để giảm thời gian lập",
+     "Khi dấu hiệu xuất hiện, chuyển việc lập báo cáo tiến độ cho Nguyễn Thị Phương Liên, chuyển rà soát mã nguồn cho Nguyễn Hoàng Nam",
+     "Báo cáo tiến độ cuối sprint chậm quá 2 ngày làm việc, hoặc mốc M1 chưa đạt vào ngày hạn"
+    ],
+    [
+     "RR07",
+     "Thiết kế triển khai dự phòng, giám sát và cảnh báo, diễn tập chuyển đổi dự phòng, sao lưu và khôi phục trên môi trường vận hành",
+     "Khi dấu hiệu xuất hiện, Ninh Đức Toàn khôi phục theo quy trình đã diễn tập và báo cáo nguyên nhân trong 1 ngày làm việc",
+     "Diễn tập chuyển đổi dự phòng vượt 30 phút hoặc giám sát ghi nhận gián đoạn trong kiểm thử chấp nhận"
+    ],
+    [
+     "RR11",
+     "Làm rõ phương thức thanh toán đơn hàng tại họp khởi động và ghi vào biên bản xác nhận đặc tả",
+     "Khi Chủ đầu tư yêu cầu, Nguyễn Thị Phương Liên lập yêu cầu thay đổi, đánh giá tác động theo kế hoạch quản lý thay đổi trước khi thực hiện",
+     "Biên bản họp khởi động hoặc đặc tả đặt hàng có nội dung thanh toán trực tuyến chưa thống nhất"
+    ],
+    [
+     "RR12",
+     "Lập danh mục thư viện kèm giấy phép từ kiến trúc, chỉ dùng thư viện có giấy phép cho phép sử dụng thương mại",
+     "Khi phát hiện, Trần Bá Đạt chỉ định thư viện thay thế tương đương và cập nhật danh mục bàn giao",
+     "Danh mục thư viện có thư viện thuộc loại hạn chế sử dụng thương mại"
+    ],
+    [
+     "RR09",
+     "Mời cán bộ Chủ đầu tư dự trình diễn cuối sprint từ S4, gửi tài liệu hướng dẫn trước buổi hướng dẫn vận hành",
+     "Khi dấu hiệu xuất hiện, Nguyễn Thị Phương Liên tổ chức thêm buổi hướng dẫn theo từng vai trò và hỗ trợ trực tiếp trong kiểm thử chấp nhận",
+     "Trong kiểm thử chấp nhận, trên 20% kịch bản do cán bộ Chủ đầu tư thực hiện cần hỗ trợ"
+    ],
+    [
+     "RR14",
+     "Kiểm tra mẫu dữ liệu ngay khi có đặc tả giao diện tích hợp, công cụ chuyển đổi có bước kiểm tra toàn vẹn (4.3.10)",
+     "Khi dấu hiệu xuất hiện, Ninh Đức Toàn lập báo cáo bản ghi lỗi để Chủ đầu tư chỉnh sửa trong Main System, nhóm chuyển đổi lại theo đợt",
+     "Ngày 10/06/2027 chưa nhận dữ liệu, hoặc trên 2% bản ghi không qua kiểm tra toàn vẹn"
+    ],
+    [
+     "RR20",
+     "Rà soát thành phần của hai dự án trước S1, chỉ dùng lại thành phần nhà thầu có quyền sử dụng",
+     "Khi xác nhận được thành phần dùng lại, Phạm Tuấn Anh và Vũ Đức Minh chuyển thời gian tiết kiệm sang lập trình phân hệ và kiểm thử",
+     "Hết S1 khung ứng dụng và thư viện giao diện đạt trên 70% chức năng cần thiết"
+    ],
+    [
+     "RR17",
+     "Lập danh sách lỗi tồn tại khi bàn giao có biên bản Chủ đầu tư đồng ý, bàn giao tài liệu vận hành đầy đủ",
+     "Khi dấu hiệu xuất hiện, Ninh Đức Toàn bố trí người khắc phục theo thời hạn cam kết và báo cáo Chủ đầu tư",
+     "Số yêu cầu bảo hành trong tháng đầu sau cut over vượt 10"
+    ],
+    [
+     "RR18",
+     "Lập tài liệu hướng dẫn thiết lập môi trường và triển khai, ít nhất hai người cùng thực hiện các gói hạ tầng chính",
+     "Khi một người vắng mặt, Trần Bá Đạt giao người còn lại thực hiện theo tài liệu hướng dẫn, ưu tiên gói trước cut over",
+     "Người phụ trách hạ tầng nghỉ quá 2 ngày làm việc liên tiếp"
+    ],
+    [
+     "RR21",
+     "Đề nghị Chủ đầu tư bàn giao môi trường thử theo từng phần ngay khi sẵn sàng, chuẩn bị kịch bản tích hợp từ S3",
+     "Khi có môi trường thử sớm, Ninh Đức Toàn bắt đầu kiểm thử tích hợp từng luồng ngay khi hoàn thành lập trình luồng đó",
+     "Chủ đầu tư thông báo môi trường thử sẵn sàng trước 20/05/2027"
+    ],
+    [
+     "RR19",
+     "Theo dõi ngày dự kiến của M3, M9 hằng tuần, chuẩn bị hồ sơ thanh toán ngay khi đạt mốc, giữ hạn mức vốn lưu động đã thỏa thuận",
+     "Khi dấu hiệu xuất hiện, Trần Bá Đạt báo cáo người đại diện theo pháp luật của nhà thầu để dùng hạn mức vốn lưu động và đề nghị Chủ đầu tư rút ngắn thời gian xử lý hồ sơ",
+     "Ngày dự kiến của M3 hoặc M9 muộn hơn hạn trong phụ lục hợp đồng, hoặc chuỗi kiểm thử tích hợp trước M3 chậm quá 1 ngày làm việc"
+    ]
+   ],
+   "widths": [
+    700,
+    2900,
+    3200,
+    2500
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "7. Dự phòng thời gian và chi phí",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Chỉ tiêu",
+     "Giá trị"
+    ],
+    [
+     "Tổng EMV của sổ (gồm rủi ro đã xảy ra, đã đóng)",
+     "48 MD, 151 triệu đồng"
+    ],
+    [
+     "Rủi ro đã xảy ra hoặc đã đóng, tác động thực tế",
+     "4 rủi ro, 1,50 MD, 3.150.000 đồng"
+    ],
+    [
+     "EMV còn lại theo khối lượng",
+     "31 MD (khoảng 21 đến 41 MD)"
+    ],
+    [
+     "EMV còn lại theo chi phí",
+     "115 triệu đồng (khoảng 85 đến 146 triệu đồng)"
+    ],
+    [
+     "Dự phòng chi phí trong dự toán",
+     "50.000.000 đồng, nằm trong khoản B 150.000.000 đồng"
+    ],
+    [
+     "Đánh giá dự phòng chi phí",
+     "Thiếu 65 triệu đồng so với EMV còn lại"
+    ],
+    [
+     "EMV còn lại theo thời gian",
+     "13,6 ngày làm việc"
+    ],
+    [
+     "EMV thời gian của rủi ro trên đường găng hoặc gắn mốc cut over",
+     "3,4 ngày làm việc (khoảng 2,5 đến 4,3), 6 rủi ro"
+    ],
+    [
+     "Dự trữ thời gian đến cut over theo master schedule",
+     "7 ngày làm việc"
+    ],
+    [
+     "Đánh giá dự trữ thời gian",
+     "Đủ"
+    ]
+   ],
+   "widths": [
+    5000,
+    4300
+   ],
+   "center_cols": [],
+   "right_cols": [
+    1
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Giá trị EMV là ước tính định hướng, in theo triệu đồng; khoảng trong ngoặc tính theo cận dưới và cận trên của mức xác suất.",
+   "t": "p"
+  },
+  {
+   "text": "Dự trữ thời gian đến cut over đủ so với EMV thời gian 3,4 ngày làm việc của 6 rủi ro liên kết gói trên đường găng, gói gắn ngày cut over hoặc mốc cut over (RR02, RR03, RR04, RR08, RR09, RR10).",
+   "t": "p"
+  },
+  {
+   "text": "Dự trữ thời gian đủ, không cần phương án bổ sung.",
+   "t": "p"
+  },
+  {
+   "text": "Quy tắc sử dụng dự phòng rủi ro lấy từ nguồn chung với thuyết minh dự toán, kế hoạch quản lý thay đổi và master plan.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Nội dung",
+     "Quy định"
+    ],
+    [
+     "Điều kiện sử dụng",
+     "Một rủi ro trong sổ đăng ký rủi ro xảy ra hoặc kế hoạch ứng phó của rủi ro được kích hoạt"
+    ],
+    [
+     "Người đề xuất",
+     "Người phụ trách rủi ro, nêu mã rủi ro, số tiền, MD hoặc ngày cần dùng"
+    ],
+    [
+     "Người phê duyệt",
+     "Quản trị dự án phê duyệt khoản dùng cho rủi ro do thành viên khác phụ trách. Người đại diện ký hợp đồng của nhà thầu phê duyệt khoản dùng cho rủi ro do quản trị dự án phụ trách và khoản làm giảm phần chi phí chung và lợi nhuận"
+    ],
+    [
+     "Phần vượt dự phòng",
+     "Khi tổng chi phí ứng phó vượt dự phòng hiện có, phần vượt được bù từ phần còn lại của giá chào sau khi trừ lương kế hoạch và khoản B theo quyết định của nhóm ngày 18/10/2026, phần này gồm khoản C và phần khoản A chưa dùng cho lương theo quyết định của nhóm ngày 25/10/2026, do người đại diện ký hợp đồng của nhà thầu phê duyệt"
+    ],
+    [
+     "Ghi nhận",
+     "Ghi vào sổ yêu cầu thay đổi kèm mã rủi ro, cập nhật sổ rủi ro, dự toán và lịch theo ma trận lan truyền"
+    ],
+    [
+     "Không áp dụng",
+     "Không dùng dự phòng để bù thay đổi phạm vi theo yêu cầu của Chủ đầu tư, các thay đổi này xử lý theo mức lớn bằng văn bản thống nhất hoặc phụ lục hợp đồng"
+    ]
+   ],
+   "widths": [
+    2300,
+    7000
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "Dự phòng chi phí trong dự toán là 50.000.000 đồng, nằm trong khoản B và thấp hơn tổng EMV theo chi phí 151 triệu đồng (khoảng 113 đến 189 triệu đồng) và thấp hơn EMV còn lại 115.413.014 đồng của các rủi ro chưa xảy ra, chưa đóng. Tác động thực tế của các rủi ro đã xảy ra là công làm bù đã tính trong chi phí lương, dự phòng chưa phải sử dụng. Theo quyết định của nhóm, mức dự phòng này được giữ nguyên, phần tác động vượt dự phòng khi rủi ro xảy ra được bù từ phần còn lại của giá chào sau lương kế hoạch và khoản B (471.185.241 đồng). Việc sử dụng dự phòng và khoản bù thực hiện theo bảng quy tắc dùng dự phòng dùng chung ở trên. Vốn lưu động chuẩn bị là 600.000.000 đồng, giả định chi phí vốn của RR19 giữ nguyên."
+  },
+  {
+   "t": "p",
+   "text": "Dự trữ thời gian đến cut over theo lịch lập lại sau yêu cầu thay đổi CR01 là 7,0 ngày làm việc. Trong 6 rủi ro trên đường găng hoặc gắn cut over (RR02, RR03, RR04, RR08, RR09, RR10), RR02 đã xảy ra và RR04 đã đóng nên không còn góp EMV thời gian, bốn rủi ro còn mở RR03, RR08, RR09, RR10 có EMV thời gian 3,4 ngày (khoảng 2,5 đến 4,3 ngày). Kết luận đánh giá: Đủ, dự trữ bao phủ cả cận cao của EMV thời gian."
+  },
+  {
+   "t": "p",
+   "text": "Ngày cut over 29/07/2027 theo phụ lục hợp đồng được chọn để giữ dự trữ không thấp hơn mức khi ký hợp đồng. Quản trị dự án theo dõi hằng tuần các rủi ro RR02, RR03, RR04, RR08, RR09, RR10 và mức dự trữ còn lại trong báo cáo tiến độ, thông báo Chủ đầu tư khi dự trữ còn dưới 2 ngày làm việc. Khi cần đẩy nhanh các gói trên đường găng, quản trị dự án điều chuyển thành viên cùng loại công việc còn quỹ huy động chưa giao theo bảng sử dụng quỹ của master schedule."
+  },
+  {
+   "text": "8. Theo dõi, ngưỡng cảnh báo và báo cáo",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Chỉ số",
+     "Ngưỡng vàng",
+     "Ngưỡng đỏ",
+     "Hành động khi chạm ngưỡng"
+    ],
+    [
+     "SPI",
+     "dưới 0,95",
+     "dưới 0,85",
+     "Rà soát rủi ro tiến độ, kích hoạt kế hoạch ứng phó của rủi ro liên quan"
+    ],
+    [
+     "CPI",
+     "dưới 0,95",
+     "dưới 0,85",
+     "Rà soát rủi ro chi phí, xem xét dùng dự phòng theo quy định"
+    ],
+    [
+     "Lỗi nghiêm trọng hoặc cao đang mở (cùng cách đếm với dấu hiệu RR03, RR10)",
+     "từ 2",
+     "từ 4",
+     "Ưu tiên khắc phục, đánh giá lại rủi ro chất lượng, mức đỏ kích hoạt kế hoạch ứng phó của RR03, RR10"
+    ]
+   ],
+   "widths": [
+    1300,
+    1600,
+    1600,
+    4800
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "Sổ rủi ro được rà soát trong cuộc họp mỗi sprint và tổng hợp trong báo cáo tiến độ cuối sprint. Mỗi rủi ro có một trong bốn trạng thái theo nhật ký theo dõi: Đang theo dõi, Đã kích hoạt ứng phó, Đã xảy ra, Đã đóng. Người phụ trách cập nhật trạng thái, dấu hiệu đã quan sát, xác suất và tác động còn lại. Rủi ro được đóng khi đạt điều kiện đóng ghi trong sổ và được quản trị dự án xác nhận. Rủi ro mới do thành viên hoặc Chủ đầu tư phát hiện được bổ sung vào sổ, chấm điểm và giao người phụ trách ngay trong kỳ."
+  },
+  {
+   "t": "p",
+   "text": "Đến ngày 27/05/2027, sổ có 18 rủi ro ở trạng thái Đang theo dõi, 0 rủi ro đã kích hoạt ứng phó, 1 rủi ro đã xảy ra và 3 rủi ro đã đóng. Rủi ro RR04 xảy ra ngày 01/04/2027 và đóng ngày 19/04/2027 với tác động thực tế 0,50 MD. Rủi ro RR02 được kích hoạt ứng phó khi chưa nhận tài liệu Main System tại hạn cam kết, xảy ra ngày 19/04/2027 với tác động thực tế 1 MD. Ngày 27/05/2027, rà soát sổ sau phụ lục hợp đồng đóng RR01 (biên bản xác nhận đặc tả đã ký, không còn yêu cầu sửa đổi đặc tả đang mở) và cơ hội RR21 (môi trường thử Main System bàn giao đúng hạn, kiểm thử tích hợp đã bắt đầu)."
+  },
+  {
+   "t": "p",
+   "text": "Báo cáo tiến độ dùng SPI và CPI làm tín hiệu cảnh báo theo bảng ngưỡng: khi chạm ngưỡng vàng hoặc đỏ, quản trị dự án rà soát các rủi ro tiến độ, chi phí liên quan và kích hoạt kế hoạch ứng phó. Báo cáo tiến độ mỗi kỳ gửi Chủ đầu tư nêu mức dự trữ thời gian còn lại, tình hình rủi ro hạng A và rủi ro thuộc phía Chủ đầu tư. Ứng phó cần thay đổi được chuyển sang quy trình của kế hoạch quản lý thay đổi."
+  },
+  {
+   "text": "9. Quan hệ với quản lý thay đổi",
+   "t": "h1"
+  },
+  {
+   "t": "p",
+   "text": "Khi ứng phó rủi ro làm thay đổi phạm vi, lịch hoặc chi phí, người phụ trách rủi ro lập yêu cầu thay đổi ghi kèm mã rủi ro. Yêu cầu thay đổi được đánh giá tác động và phê duyệt theo kế hoạch quản lý thay đổi, sau đó các tài liệu bị ảnh hưởng như WBS, master schedule, cost estimate và sổ rủi ro được cập nhật theo sơ đồ phụ thuộc và ghi phiên bản mới trong sổ phiên bản."
+  },
+  {
+   "t": "p",
+   "text": "Yêu cầu thay đổi CR01 bán hàng trên sàn thương mại điện tử do Chủ đầu tư đề nghị là thay đổi phạm vi, không phát sinh từ rủi ro trong sổ và không dùng dự phòng. Sau khi phụ lục hợp đồng có hiệu lực, sổ rủi ro được rà soát lại theo lịch lập lại: cập nhật ngày của các rủi ro gắn khoảng kiểm thử chấp nhận và ngày triển khai chính thức, chấm lại mức tác động theo dự trữ mới và bổ sung rủi ro RR22 ghi liên kết yêu cầu thay đổi."
+  }
+ ],
+ "canh_bao_soan": [
+  "DU_PHONG: số liệu viết tay \"2 ngày làm việc\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi",
+  "NHAN_XET_MA_TRAN: số liệu viết tay \"1 ngày làm việc\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi",
+  "NHAN_XET_MA_TRAN: số liệu viết tay \"25/10/2026\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi"
+ ]
+}

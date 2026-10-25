@@ -1,0 +1,133 @@
+{
+ "sprint": "S1",
+ "tom_tat": "Sprint khởi động, khảo sát và đặc tả. Khung ứng dụng giao diện tái sử dụng thư viện từ hợp đồng tương tự nên hoàn thành sớm (cơ hội RR20), nghiên cứu hành vi người dùng phải phỏng vấn bổ sung nhóm khách hàng nên vượt công, khung ứng dụng phía máy chủ phát sinh một số lỗi khi đưa lên quy trình tích hợp.",
+ "bien_co": [
+  {
+   "loai": "moc",
+   "ma_moc": "M0",
+   "ngay_dat": "2027-03-18",
+   "ghi_chu": "Hợp đồng có hiệu lực, biên bản họp khởi động ngày 18/03/2027",
+   "ly_do": "Mốc ngày cố định theo hợp đồng"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "4.3.3",
+   "ty_le_md": -0.2,
+   "ly_do": "Tái sử dụng khung định tuyến và quản lý trạng thái giao diện từ hợp đồng tương tự, dấu hiệu của cơ hội RR20 xuất hiện"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "2.2.3",
+   "ty_le_md": 0.2,
+   "ly_do": "Chủ sản phẩm đề nghị phỏng vấn bổ sung nhóm khách hàng mua qua thiết bị di động trước khi chốt khung giao diện"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD01",
+   "ngay_ghi_nhan": "2027-03-22",
+   "nguoi_bao": "minh",
+   "mo_ta": "Gói 2.2.3 nghiên cứu hành vi người dùng cần phỏng vấn bổ sung nhóm khách hàng mua qua thiết bị di động theo đề nghị của Chủ sản phẩm, phát sinh thêm công so với kế hoạch",
+   "phan_loai": "Phạm vi",
+   "uu_tien": "Thấp",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-03-26",
+   "hanh_dong": [
+    {
+     "viec": "Thống nhất với Chủ sản phẩm danh sách người được phỏng vấn bổ sung và giới hạn trong khung giao diện đã có",
+     "nguoi": "dat",
+     "han": "2027-03-23",
+     "ngay_xong": "2027-03-23",
+     "bang_chung": "Biên bản làm rõ yêu cầu ngày 23/03/2027"
+    },
+    {
+     "viec": "Bổ sung kết quả phỏng vấn vào báo cáo nghiên cứu hành vi người dùng",
+     "nguoi": "minh",
+     "han": "2027-03-25",
+     "ngay_xong": "2027-03-24",
+     "bang_chung": "Báo cáo nghiên cứu hành vi người dùng bản cập nhật"
+    }
+   ],
+   "ngay_dong": "2027-03-26",
+   "ket_qua": "Phỏng vấn bổ sung nằm trong phạm vi gói 2.2.3, không thay đổi đặc tả, gói sau 3.2.4 không bị ảnh hưởng",
+   "nguoi_dong": "dat",
+   "ly_do": "Theo dõi phần công phát sinh của gói 2.2.3"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "4.3.1",
+   "so_loi": {
+    "Trung bình": 1,
+    "Thấp": 1
+   },
+   "mo_ta": "Lỗi cấu hình ghi nhật ký tập trung và xử lý ngoại lệ của khung ứng dụng phía máy chủ phát hiện khi chạy kiểm thử đơn vị trên quy trình tích hợp",
+   "ly_do": "Lỗi phát sinh khi đưa khung ứng dụng phía máy chủ lên quy trình tích hợp liên tục"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD02",
+   "ngay_ghi_nhan": "2027-03-31",
+   "nguoi_bao": "dat",
+   "mo_ta": "Gói quản lý dự án dàn trải 4.1.2 và 4.1.3 của phân hệ tích hợp hệ thống chưa ghi công trong S1 do trưởng nhóm tập trung cho họp khởi động, đặc tả 1.2.1 và kế hoạch quản lý dự án 3.1.1",
+   "phan_loai": "Tiến độ",
+   "uu_tien": "Thấp",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-04-09",
+   "hanh_dong": [
+    {
+     "viec": "Bố trí thời gian quản lý rủi ro, cấu hình phần phân hệ tích hợp trong tuần đầu S2 sau khi gửi dự thảo kế hoạch 3.1.1",
+     "nguoi": "dat",
+     "han": "2027-04-07",
+     "ngay_xong": "2027-04-07",
+     "bang_chung": "Sổ rủi ro và sổ cấu hình phần phân hệ tích hợp cập nhật ngày 07/04/2027"
+    }
+   ],
+   "ngay_dong": "2027-04-09",
+   "ket_qua": "Gói 4.1.2, 4.1.3 đã ghi công theo nhịp kế hoạch, không ảnh hưởng mốc M1",
+   "nguoi_dong": "dat",
+   "ly_do": "Ghi sổ vấn đề cho tín hiệu gói chậm cuối S1"
+  },
+  {
+   "loai": "chi_phi",
+   "ngay": "2027-03-19",
+   "khoan_muc": "B1",
+   "so_tien": 15000000,
+   "ghi_chu": "Thiết lập môi trường phát triển, kiểm thử và bản quyền công cụ quản lý mã nguồn, quản lý công việc theo kỳ chi S1 của dự toán",
+   "loai_chi": "da_chi",
+   "lien_ket": [
+    "1.5.1",
+    "4.3.1"
+   ],
+   "ly_do": "Chi phí khoản B1 theo phân bổ kỳ chi S1 của dự toán"
+  },
+  {
+   "loai": "retro",
+   "y": [
+    {
+     "loai": "tốt",
+     "noi_dung": "Khung ứng dụng giao diện tái sử dụng thư viện từ hợp đồng tương tự, gói 4.3.3 hoàn thành trước kế hoạch",
+     "lien_ket": [
+      "4.3.3",
+      "RR20"
+     ]
+    },
+    {
+     "loai": "cần cải thiện",
+     "noi_dung": "Danh sách đối tượng phỏng vấn người dùng chưa được thống nhất với Chủ sản phẩm tại họp khởi động, phải bổ sung giữa sprint",
+     "lien_ket": [
+      "2.2.3",
+      "VD01"
+     ]
+    },
+    {
+     "loai": "hành động",
+     "noi_dung": "Gửi Chủ đầu tư danh sách tài liệu Main System cần cung cấp trước hạn cam kết CK1 ngày 14/04/2027",
+     "lien_ket": [
+      "4.2.5",
+      "RR02"
+     ]
+    }
+   ],
+   "ly_do": "Họp cải tiến cuối sprint S1"
+  }
+ ]
+}

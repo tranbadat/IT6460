@@ -1,6 +1,9 @@
 {
  "tai_lieu": "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
- "phien_ban": "0.6",
+ "phien_ban": "2.1",
+ "dac_ta": ".claude/skills/qlda-phan-cong/dac_ta/phan_cong_tai_lieu.json",
+ "ngay_kiem_tra": "2026-10-25",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B, phiên riêng, lượt xác nhận sau vòng sửa phần 1 CR01)",
  "ket_luan": "dat",
  "so_loi": 0,
  "so_canh_bao": 2,
@@ -8,52 +11,101 @@
   {
    "tieu_chi": "CL01",
    "ket_qua": "dat",
-   "nhan_xet": "Đủ 7 mục theo đặc tả."
+   "nhan_xet": "Đủ nguyên tắc, thành viên, nhân sự chủ chốt, RACI 5 nhóm, tải S1 đến S9 và KT, giao việc theo người, quy tắc điều chỉnh sau CR01."
   },
   {
    "tieu_chi": "CL02",
    "ket_qua": "dat",
-   "nhan_xet": "657 MD, 796 MD, 82,5%, dự trữ 4 ngày, cut over 01/07/2027 khớp lich.json. MH01 vòng 1 đã sửa: mục 7 nêu không ai vượt quỹ và đúng 3 cảnh báo L07 (Minh S6 2/10, S7 0/10, Huy S6 2/10), khớp lich.json kiem_tra và bảng tải mục 5."
+   "nhan_xet": "Quỹ 908 MD, 733 MD, 80,7% thống nhất ở mục 1, 2, 5, 7 và khớp lich.json, phan_cong.json. 206 dòng giao việc khớp ngày bắt đầu, kết thúc trong lich.json. Dự trữ 7 ngày. Chú thích cột KT khớp ô 2/2 của Trần Bá Đạt. Cảnh báo MH01 về diễn giải 177 MD."
   },
   {
    "tieu_chi": "CL03",
    "ket_qua": "dat",
-   "nhan_xet": "Truy vết mã gói WBS, master schedule, Bảng số 02, E-ĐKC 21.2."
+   "nhan_xet": "RACI 5, 5.2, 5.4, 5.5 có Chủ đầu tư (C hoặc I), phê duyệt bên ngoài Chủ đầu tư, bộ phận vận hành bán hàng và đơn vị vận hành sàn."
   },
   {
    "tieu_chi": "CL04",
    "ket_qua": "dat",
-   "nhan_xet": "Mỗi hạng mục mức 1, mức 2 có đúng một A. Không ô tải nào vượt quỹ. Đủ 12 thành viên."
+   "nhan_xet": "Mỗi mục mức 1, mức 2 có đúng một A, tải đo bằng MD trên quỹ."
   },
   {
    "tieu_chi": "CL05",
    "ket_qua": "dat",
-   "nhan_xet": "Có quy tắc quá tải, vắng mặt, thay thế 7 ngày, cập nhật khi thay đổi."
+   "nhan_xet": "Quy tắc thay thế 7 ngày, chuyển việc khi quá tải, điều chỉnh khi có CR. RR22 nay giao Lê Quang Huy, người có huy động S7 (10/10), S8, S9."
   },
   {
    "tieu_chi": "CL06",
    "ket_qua": "dat",
-   "nhan_xet": "Văn phong trang trọng, từ chốt đã được thay."
+   "nhan_xet": "In đậm chỉ ở dòng mục mức 1 RACI, không ngoặc kép, không gạch dài, không dấu chấm phẩy. Cảnh báo MH02 về tên tệp và khóa dữ liệu trong chú thích."
+  }
+ ],
+ "doc_hieu": [
+  {
+   "tieu_chi": "Mỗi hạng mục mức 1, mức 2 có đúng một A",
+   "ket_qua": "dat"
+  },
+  {
+   "tieu_chi": "Không ai quá tải trong sprint",
+   "ket_qua": "dat",
+   "ghi_chu": "Vượt quỹ chỉ ở S3, S4 là số liệu thực tế đã qua, có giải thích. S5 đến S9 không ai vượt quỹ"
+  },
+  {
+   "tieu_chi": "Nhân sự chủ chốt khớp Bảng số 02 HSMT và HSDT",
+   "ket_qua": "dat"
+  },
+  {
+   "tieu_chi": "Có quy tắc thay thế và điều chỉnh khi thay đổi",
+   "ket_qua": "dat"
+  }
+ ],
+ "dong_phat_hien_truoc": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Quỹ 908 MD, tỷ lệ 80,7% thống nhất trong toàn tài liệu và với nguồn."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "Chú thích nêu cột KT ghi MD trên quỹ theo tỷ lệ huy động giai đoạn Kết thúc, khớp ô 2/2."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "RACI 5.2, 5.4, 5.5 ghi Chủ đầu tư (C), bộ phận vận hành bán hàng (C), phê duyệt bên ngoài Chủ đầu tư."
+  },
+  {
+   "ma": "MH04",
+   "da_dong": false,
+   "nhan_xet": "Số và diễn giải vẫn lệch, theo chiều ngược lại: nay số 177 MD tính bằng tổng quỹ 908 trừ 731 MD giao trong sprint (tinh_bang_phan_cong.py dòng 108, gồm cả 2 MD quỹ Kết thúc đã giao và có bù phần vượt quỹ), trong khi diễn giải là tổng phần quỹ còn trống từng người từng sprint không bù phần vượt (tính từ bảng tải là 179,05 MD). Xem phát hiện MH01 lượt này."
+  },
+  {
+   "ma": "MH05",
+   "da_dong": true,
+   "nhan_xet": "RR22 giao Lê Quang Huy theo _quyet_dinh_25_10_cr01 (d), người có huy động S7 đến S9."
   }
  ],
  "phat_hien": [
   {
-   "ma": "MH02",
+   "ma": "MH01",
    "muc_do": "canh_bao",
-   "nhom": "truy_vet",
-   "vi_tri": "Mục 3, bảng nhân sự chủ chốt",
-   "mo_ta": "Khớp nhan_su_chu_chot của hsmt.json. Chưa đối chiếu được HSDT Mẫu 06A vì HSDT chưa lập.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Đối chiếu khi HSDT được lập."
+   "nhom": "CL02",
+   "vi_tri": "Mục 1: 'Quỹ chưa giao trong thời gian huy động là 177 MD (tổng phần quỹ còn trống của từng thành viên trong từng sprint, không bù phần làm vượt quỹ đã ghi ở các sprint đã qua)'",
+   "mo_ta": "177 = tong_quy 908 trừ 731 MD giao trong S1 đến S9, tức là số ròng có bù 4,05 MD làm vượt quỹ ở S3, S4 và tính cả 2 MD quỹ giai đoạn Kết thúc đã giao hết. Theo diễn giải trong ngoặc, tổng phần còn trống từng ô của bảng tải là 179,05 MD. Theo cách tính ròng chỉ trong các sprint thì là 175 MD (906 trừ 731).",
+   "cach_sua": "tu_dong",
+   "sua_o": "dữ liệu",
+   "de_xuat": "Sửa quy_chua_giao_huy_dong trong tinh_bang_phan_cong.py cho đúng diễn giải (cộng max(0, quỹ trừ MD) từng người từng sprint, không gồm KT) hoặc đổi diễn giải thành 'tổng quỹ các sprint trừ MD giao trong các sprint' với số 175 MD."
   },
   {
-   "ma": "MH03",
+   "ma": "MH02",
    "muc_do": "canh_bao",
-   "nhom": "nguon",
-   "vi_tri": "Mục 5, Vũ Đức Minh S6, S7; Lê Quang Huy S6",
-   "mo_ta": "Mức sử dụng dưới 30% quỹ sprint (L07). Tài liệu đã nêu đúng, việc điều chỉnh huy động do nhóm quyết định.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Nhóm xem xét huy động trong phan_cong."
+   "nhom": "CL06",
+   "vi_tri": "Mục 5 chú thích: '... theo tỷ lệ huy động giai đoạn Kết thúc của thành viên (thanh_vien.json huy_dong_ket_thuc) ...'",
+   "mo_ta": "Tài liệu nộp ghi tên tệp và khóa dữ liệu nội bộ, không hợp văn phong trang trọng của tài liệu.",
+   "cach_sua": "tu_dong",
+   "sua_o": "dữ liệu",
+   "de_xuat": "Bỏ cụm trong ngoặc ở chu_thich_tai của tinh_bang_phan_cong.py, có thể ghi 'theo bảng huy động'."
   }
- ]
+ ],
+ "ghi_chu_quy_trinh": "Không còn lỗi. Hai cảnh báo có thể sửa cùng lần chạy lại trước khi lập lại BL2."
 }

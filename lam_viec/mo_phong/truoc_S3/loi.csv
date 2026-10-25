@@ -1,0 +1,5 @@
+ma,ngay_phat_hien,muc_do,ma_goi,trang_thai,ngay_dong,mo_ta
+L01,2027-03-26,Trung bình,4.3.1,Đã đóng,2027-03-31,Lỗi cấu hình ghi nhật ký tập trung và xử lý ngoại lệ của khung ứng dụng phía máy chủ phát hiện khi chạy kiểm thử đơn vị trên quy trình tích hợp
+L02,2027-03-26,Thấp,4.3.1,Đã đóng,2027-04-02,Lỗi cấu hình ghi nhật ký tập trung và xử lý ngoại lệ của khung ứng dụng phía máy chủ phát hiện khi chạy kiểm thử đơn vị trên quy trình tích hợp
+L03,2027-04-12,Trung bình,4.3.2,Mở,,Lỗi ràng buộc khóa ngoại và chỉ mục của bảng tồn kho phát hiện khi chạy kiểm thử tầng truy cập dữ liệu
+L04,2027-04-13,Thấp,4.3.2,Mở,,Lỗi ràng buộc khóa ngoại và chỉ mục của bảng tồn kho phát hiện khi chạy kiểm thử tầng truy cập dữ liệu

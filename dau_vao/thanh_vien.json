@@ -1,5 +1,5 @@
 {
- "_huong_dan": "Mỗi người một dòng. loai: nhom (thành viên nhóm) hoặc bo_sung (vị trí huy động thêm). vai_tro: mã vai trò dùng cho lương tham chiếu (khóa trong don_gia.json, luong_tham_chieu_thang). loai_cong_viec: các loại công việc người này làm được (mã trong don_gia.json, don_gia_tron_goi_thang). ty_le: phần thời gian dành cho dự án (1 là toàn thời gian). tu_sprint, den_sprint: để trống nếu tham gia toàn dự án. Các dòng có _can_xac_nhan cần nhóm xác nhận lại. trinh_do, so_nam_kinh_nghiem (số), kinh_nghiem (dự án, công việc liên quan), chung_chi: bắt buộc với người giữ vị trí nhân sự chủ chốt của HSDT.",
+ "_huong_dan": "Mỗi người một dòng. loai: nhom (thành viên nhóm) hoặc bo_sung (vị trí huy động thêm). vai_tro: mã vai trò dùng cho lương tham chiếu (khóa trong don_gia.json, luong_tham_chieu_thang). loai_cong_viec: các loại công việc người này làm được (mã trong don_gia.json, don_gia_tron_goi_thang). ty_le: phần thời gian dành cho dự án (1 là toàn thời gian). tu_sprint, den_sprint: để trống nếu tham gia toàn dự án. Các dòng có _can_xac_nhan cần nhóm xác nhận lại. trinh_do, so_nam_kinh_nghiem (số), kinh_nghiem (dự án, công việc liên quan), chung_chi: bắt buộc với người giữ vị trí nhân sự chủ chốt của HSDT. ty_le_theo_sprint {mã sprint: tỷ lệ}: huy động theo nhu cầu của sprint, thay ty_le khi tính quỹ của sprint đó (không đổi tốc độ xếp lịch). huy_dong_ket_thuc: tỷ lệ thời gian huy động trong giai đoạn Kết thúc sau cut over.",
  "thanh_vien": [
   {
    "id": "dat",
@@ -9,7 +9,7 @@
    "chuc_danh": "Trưởng nhóm, quản trị dự án",
    "kiem_nhiem": "Kiến trúc sư hệ thống",
    "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
-   "so_nam_kinh_nghiem": 4,
+   "so_nam_kinh_nghiem": 3,
    "kinh_nghiem": "03/2024 - 11/2024: quản trị dự án Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng cho Công ty CP Thời trang Hoàng Gia (1,15 tỷ đồng, khoảng 550 MD, 10 nhân sự); 01/2025 - 07/2025: quản trị dự án Website bán hàng trực tuyến và tích hợp ERP cho Công ty TNHH Nội thất An Phát (860 triệu đồng, sprint 2 tuần); 09/2025 - 12/2026: quản lý dự án, kiến trúc sư nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ",
    "chung_chi": "",
    "vai_tro": "LEAD",
@@ -21,7 +21,16 @@
    "ty_le": 1.0,
    "tu_sprint": null,
    "den_sprint": null,
-   "nam_sinh": 1998
+   "nam_sinh": 1998,
+   "_nguon_so_nam": "Quyết định của nhóm ngày 25/10/2026: số năm kê khai bằng số năm chứng minh được từ kinh nghiệm liệt kê (từ 03/2024 đến ngày đóng thầu)",
+   "_nguon_ty_le_theo_sprint": "Quyết định của nhóm ngày 25/10/2026 (CR01): kéo dài huy động đến cut over 29/07/2027, huy động S7 đến S9 theo nhu cầu của lịch lập lại (MD xếp của sprint cộng 1 MD dự phòng, làm tròn lên 0,1) để tỷ lệ sử dụng quỹ không dưới 80%",
+   "huy_dong_ket_thuc": 0.2,
+   "_nguon_huy_dong_ket_thuc": "Quyết định của nhóm ngày 25/10/2026: huy động trong giai đoạn Kết thúc khi cần, quản trị dự án 20% thời gian cho gói đóng dự án 1.1.5",
+   "ty_le_theo_sprint": {
+    "S7": 0.7,
+    "S8": 0.8,
+    "S9": 0.6
+   }
   },
   {
    "id": "tuananh",
@@ -32,7 +41,7 @@
    "kiem_nhiem": "",
    "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
    "so_nam_kinh_nghiem": 3,
-   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư backend dự án Hoàng Gia (API khách hàng, đơn hàng; thiết kế cơ sở dữ liệu; unit test); 01/2025 - 07/2025: trưởng nhóm backend dự án An Phát (đồng bộ tồn kho với ERP, xác thực và phân quyền)",
+   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư backend dự án Hoàng Gia (API khách hàng, đơn hàng; thiết kế cơ sở dữ liệu; unit test); 01/2025 - 07/2025: trưởng nhóm backend dự án An Phát (đồng bộ tồn kho với ERP, xác thực và phân quyền); 09/2025 - 12/2026: kỹ sư backend dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (lập trình API giỏ hàng, thanh toán và đơn hàng của ứng dụng web; tích hợp hệ thống quản lý bán hàng); 01/2027 - nay: kỹ sư backend bảo trì cổng bán hàng sau nâng cấp (khắc phục lỗi, tối ưu truy vấn)",
    "chung_chi": "",
    "vai_tro": "BACKEND",
    "loai_cong_viec": [
@@ -41,7 +50,14 @@
    "ty_le": 1.0,
    "tu_sprint": null,
    "den_sprint": null,
-   "nam_sinh": 2001
+   "nam_sinh": 2001,
+   "_nguon_kinh_nghiem": "Giai đoạn từ 09/2025 do agent bổ sung theo quyết định của nhóm ngày 24/10/2026 (nhà thầu là đơn vị tạm), để kinh nghiệm kê khai liên tục đến ngày đóng thầu, đáp ứng tối thiểu 02 năm của Bảng số 02 HSMT. Nhóm thay bằng kinh nghiệm thực tế khi đổi nhà thầu.",
+   "_nguon_ty_le_theo_sprint": "Quyết định của nhóm ngày 25/10/2026 (CR01): kéo dài huy động đến cut over 29/07/2027, huy động S7 đến S9 theo nhu cầu của lịch lập lại (MD xếp của sprint cộng 1 MD dự phòng, làm tròn lên 0,1) để tỷ lệ sử dụng quỹ không dưới 80%",
+   "ty_le_theo_sprint": {
+    "S7": 0.0,
+    "S8": 0.0,
+    "S9": 0.6
+   }
   },
   {
    "id": "minh",
@@ -52,7 +68,7 @@
    "kiem_nhiem": "Thiết kế UX/UI",
    "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
    "so_nam_kinh_nghiem": 3,
-   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư frontend dự án Hoàng Gia (giao diện danh mục, giỏ hàng, đặt hàng trên máy tính và điện thoại); 01/2025 - 07/2025: thiết kế UX/UI và lập trình giao diện dự án An Phát (prototype, quy chuẩn hiển thị, tối ưu tải trang)",
+   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư frontend dự án Hoàng Gia (giao diện danh mục, giỏ hàng, đặt hàng trên máy tính và điện thoại); 01/2025 - 07/2025: thiết kế UX/UI và lập trình giao diện dự án An Phát (prototype, quy chuẩn hiển thị, tối ưu tải trang); 09/2025 - 12/2026: kỹ sư frontend dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (lập trình giao diện web trang sản phẩm, giỏ hàng, thanh toán tương thích thiết bị di động); 01/2027 - nay: kỹ sư frontend bảo trì cổng bán hàng sau nâng cấp (khắc phục lỗi giao diện, cải thiện khả năng sử dụng)",
    "chung_chi": "",
    "vai_tro": "FRONTEND",
    "loai_cong_viec": [
@@ -62,7 +78,14 @@
    "ty_le": 1.0,
    "tu_sprint": null,
    "den_sprint": null,
-   "nam_sinh": 2002
+   "nam_sinh": 2002,
+   "_nguon_kinh_nghiem": "Giai đoạn từ 09/2025 do agent bổ sung theo quyết định của nhóm ngày 24/10/2026 (nhà thầu là đơn vị tạm), để kinh nghiệm kê khai liên tục đến ngày đóng thầu, đáp ứng tối thiểu 02 năm của Bảng số 02 HSMT. Nhóm thay bằng kinh nghiệm thực tế khi đổi nhà thầu.",
+   "_nguon_ty_le_theo_sprint": "Quyết định của nhóm ngày 25/10/2026 (CR01): kéo dài huy động đến cut over 29/07/2027, huy động S7 đến S9 theo nhu cầu của lịch lập lại (MD xếp của sprint cộng 1 MD dự phòng, làm tròn lên 0,1) để tỷ lệ sử dụng quỹ không dưới 80%",
+   "ty_le_theo_sprint": {
+    "S7": 0.0,
+    "S8": 0.3,
+    "S9": 0.5
+   }
   },
   {
    "id": "toan",
@@ -73,7 +96,7 @@
    "kiem_nhiem": "Triển khai và an toàn (DevOps)",
    "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
    "so_nam_kinh_nghiem": 3,
-   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư backend dự án Hoàng Gia (tìm kiếm và bộ lọc sản phẩm, chỉ mục tìm kiếm); 01/2025 - 12/2026: kỹ sư DevOps cho các dự án thương mại điện tử (pipeline CI/CD, môi trường staging và production, giám sát, sao lưu và khôi phục; tham gia cut over dự án An Phát)",
+   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư backend dự án Hoàng Gia (tìm kiếm và bộ lọc sản phẩm, chỉ mục tìm kiếm); 01/2025 - 12/2026: kỹ sư backend kiêm DevOps cho các dự án thương mại điện tử (lập trình API ứng dụng web và dịch vụ tìm kiếm sản phẩm của dự án An Phát và dự án nâng cấp cổng bán hàng, cổng thanh toán; pipeline CI/CD, môi trường staging và production, giám sát, sao lưu và khôi phục; tham gia cut over dự án An Phát)",
    "chung_chi": "",
    "vai_tro": "BACKEND",
    "loai_cong_viec": [
@@ -84,7 +107,14 @@
    "ty_le": 1.0,
    "tu_sprint": null,
    "den_sprint": null,
-   "nam_sinh": 2001
+   "nam_sinh": 2001,
+   "_nguon_kinh_nghiem": "Nội dung lập trình ứng dụng web trong giai đoạn 01/2025 - 12/2026 do agent làm rõ theo quyết định của nhóm ngày 24/10/2026 (nhà thầu là đơn vị tạm). Nhóm thay bằng kinh nghiệm thực tế khi đổi nhà thầu.",
+   "_nguon_ty_le_theo_sprint": "Quyết định của nhóm ngày 25/10/2026 (CR01): kéo dài huy động đến cut over 29/07/2027, huy động S7 đến S9 theo nhu cầu của lịch lập lại (MD xếp của sprint cộng 1 MD dự phòng, làm tròn lên 0,1) để tỷ lệ sử dụng quỹ không dưới 80%",
+   "ty_le_theo_sprint": {
+    "S7": 0.3,
+    "S8": 0.0,
+    "S9": 1.0
+   }
   },
   {
    "id": "lien",
@@ -95,7 +125,7 @@
    "kiem_nhiem": "Kỹ sư kiểm thử",
    "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
    "so_nam_kinh_nghiem": 3,
-   "kinh_nghiem": "03/2024 - 11/2024: chuyên viên phân tích nghiệp vụ dự án Hoàng Gia (khảo sát, SRS, use case, quy trình bán hàng trực tuyến); 01/2025 - 07/2025: BA kiêm trưởng nhóm kiểm thử dự án An Phát (test case, quản lý lỗi, tổ chức UAT với khách hàng)",
+   "kinh_nghiem": "03/2024 - 11/2024: chuyên viên phân tích nghiệp vụ dự án Hoàng Gia (khảo sát, SRS, use case, quy trình bán hàng trực tuyến); 01/2025 - 07/2025: BA kiêm trưởng nhóm kiểm thử dự án An Phát (test case, quản lý lỗi, tổ chức UAT với khách hàng); 09/2025 - 12/2026: phân tích nghiệp vụ kiêm kiểm thử dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (đặc tả use case, kịch bản kiểm thử, tổ chức kiểm thử chấp nhận); 01/2027 - nay: kỹ sư kiểm thử bảo trì cổng bán hàng sau nâng cấp (kiểm thử hồi quy, quản lý lỗi)",
    "chung_chi": "",
    "vai_tro": "BAQA",
    "loai_cong_viec": [
@@ -105,7 +135,14 @@
    "ty_le": 1.0,
    "tu_sprint": null,
    "den_sprint": null,
-   "nam_sinh": 2001
+   "nam_sinh": 2001,
+   "_nguon_kinh_nghiem": "Giai đoạn từ 09/2025 do agent bổ sung theo quyết định của nhóm ngày 24/10/2026 (nhà thầu là đơn vị tạm), để kinh nghiệm kê khai liên tục đến ngày đóng thầu, đáp ứng tối thiểu 02 năm của Bảng số 02 HSMT. Nhóm thay bằng kinh nghiệm thực tế khi đổi nhà thầu.",
+   "_nguon_ty_le_theo_sprint": "Quyết định của nhóm ngày 25/10/2026 (CR01): kéo dài huy động đến cut over 29/07/2027, huy động S7 đến S9 theo nhu cầu của lịch lập lại (MD xếp của sprint cộng 1 MD dự phòng, làm tròn lên 0,1) để tỷ lệ sử dụng quỹ không dưới 80%",
+   "ty_le_theo_sprint": {
+    "S7": 0.8,
+    "S8": 0.5,
+    "S9": 0.7
+   }
   },
   {
    "id": "K",
@@ -113,9 +150,9 @@
    "loai": "bo_sung",
    "chuc_danh": "Kiến trúc sư kiêm phân tích nghiệp vụ",
    "kiem_nhiem": "Rà soát bảo mật, hỗ trợ triển khai",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp đại học chuyên ngành công nghệ thông tin (yêu cầu khi huy động)",
+   "so_nam_kinh_nghiem": 3,
+   "kinh_nghiem": "Yêu cầu tối thiểu khi huy động: 3 năm phân tích nghiệp vụ và thiết kế kiến trúc ứng dụng web thương mại điện tử, rà soát bảo mật",
    "chung_chi": "",
    "vai_tro": "SA_BA",
    "loai_cong_viec": [
@@ -125,7 +162,14 @@
    "ty_le": 1.0,
    "tu_sprint": 1,
    "den_sprint": null,
-   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Trình độ, kinh nghiệm ghi theo yêu cầu khi huy động.",
+   "_nguon_trinh_do": "Quyết định của nhóm ngày 25/10/2026: ghi trình độ, kinh nghiệm tối thiểu yêu cầu khi huy động vị trí bổ sung (chưa phải hồ sơ cá nhân), nhóm thay bằng hồ sơ thực tế khi có quyết định điều động",
+   "_nguon_ty_le_theo_sprint": "Quyết định của nhóm ngày 25/10/2026 (CR01): kéo dài huy động đến cut over 29/07/2027, huy động S7 đến S9 theo nhu cầu của lịch lập lại (MD xếp của sprint cộng 1 MD dự phòng, làm tròn lên 0,1) để tỷ lệ sử dụng quỹ không dưới 80%",
+   "ty_le_theo_sprint": {
+    "S7": 0.0,
+    "S8": 0.9,
+    "S9": 0.8
+   }
   },
   {
    "id": "D1",
@@ -133,18 +177,26 @@
    "loai": "bo_sung",
    "chuc_danh": "Kỹ sư phát triển frontend kiêm backend",
    "kiem_nhiem": "Sửa lỗi phân hệ, tích hợp, UAT",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp đại học chuyên ngành công nghệ thông tin (yêu cầu khi huy động)",
+   "so_nam_kinh_nghiem": 2,
+   "kinh_nghiem": "Yêu cầu tối thiểu khi huy động: 2 năm lập trình giao diện và dịch vụ phía máy chủ của ứng dụng web",
    "chung_chi": "",
    "vai_tro": "BACKEND",
    "loai_cong_viec": [
     "DEV"
    ],
    "ty_le": 1.0,
-   "tu_sprint": 2,
+   "tu_sprint": 1,
    "den_sprint": null,
-   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Trình độ, kinh nghiệm ghi theo yêu cầu khi huy động.",
+   "_nguon_trinh_do": "Quyết định của nhóm ngày 25/10/2026: ghi trình độ, kinh nghiệm tối thiểu yêu cầu khi huy động vị trí bổ sung (chưa phải hồ sơ cá nhân), nhóm thay bằng hồ sơ thực tế khi có quyết định điều động",
+   "_nguon_huy_dong": "Quyết định của nhóm ngày 25/10/2026: huy động từ S1 (sớm hơn một sprint so với quyết định 18/10/2026) để lấy lại dự trữ đến cut over sau khi bổ sung phụ thuộc giữa các gói; quỹ tăng 10 ngày làm việc, lương trả theo công sức nên chi phí lương kế hoạch không tăng theo quỹ",
+   "_nguon_ty_le_theo_sprint": "Quyết định của nhóm ngày 25/10/2026 (CR01): kéo dài huy động đến cut over 29/07/2027, huy động S7 đến S9 theo nhu cầu của lịch lập lại (MD xếp của sprint cộng 1 MD dự phòng, làm tròn lên 0,1) để tỷ lệ sử dụng quỹ không dưới 80%",
+   "ty_le_theo_sprint": {
+    "S7": 1.0,
+    "S8": 0.3,
+    "S9": 0.9
+   }
   },
   {
    "id": "D2",
@@ -152,9 +204,9 @@
    "loai": "bo_sung",
    "chuc_danh": "Kỹ sư phát triển backend, thiết kế API",
    "kiem_nhiem": "Kiểm thử hiệu năng",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp đại học chuyên ngành công nghệ thông tin (yêu cầu khi huy động)",
+   "so_nam_kinh_nghiem": 2,
+   "kinh_nghiem": "Yêu cầu tối thiểu khi huy động: 2 năm lập trình dịch vụ phía máy chủ, thiết kế API của ứng dụng web, kiểm thử hiệu năng",
    "chung_chi": "",
    "vai_tro": "BACKEND",
    "loai_cong_viec": [
@@ -163,7 +215,14 @@
    "ty_le": 1.0,
    "tu_sprint": 2,
    "den_sprint": null,
-   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Trình độ, kinh nghiệm ghi theo yêu cầu khi huy động.",
+   "_nguon_trinh_do": "Quyết định của nhóm ngày 25/10/2026: ghi trình độ, kinh nghiệm tối thiểu yêu cầu khi huy động vị trí bổ sung (chưa phải hồ sơ cá nhân), nhóm thay bằng hồ sơ thực tế khi có quyết định điều động",
+   "_nguon_ty_le_theo_sprint": "Quyết định của nhóm ngày 25/10/2026 (CR01): kéo dài huy động đến cut over 29/07/2027, huy động S7 đến S9 theo nhu cầu của lịch lập lại (MD xếp của sprint cộng 1 MD dự phòng, làm tròn lên 0,1) để tỷ lệ sử dụng quỹ không dưới 80%",
+   "ty_le_theo_sprint": {
+    "S7": 1.0,
+    "S8": 0.4,
+    "S9": 1.0
+   }
   },
   {
    "id": "D3",
@@ -171,9 +230,9 @@
    "loai": "bo_sung",
    "chuc_danh": "Kỹ sư phát triển backend",
    "kiem_nhiem": "DevOps, giám sát và hỗ trợ cut over",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp đại học chuyên ngành công nghệ thông tin (yêu cầu khi huy động)",
+   "so_nam_kinh_nghiem": 2,
+   "kinh_nghiem": "Yêu cầu tối thiểu khi huy động: 2 năm lập trình dịch vụ phía máy chủ của ứng dụng web, triển khai, giám sát hệ thống (DevOps)",
    "chung_chi": "",
    "vai_tro": "BACKEND",
    "loai_cong_viec": [
@@ -181,9 +240,17 @@
     "DEVOPS"
    ],
    "ty_le": 1.0,
-   "tu_sprint": 2,
+   "tu_sprint": 1,
    "den_sprint": null,
-   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Trình độ, kinh nghiệm ghi theo yêu cầu khi huy động.",
+   "_nguon_trinh_do": "Quyết định của nhóm ngày 25/10/2026: ghi trình độ, kinh nghiệm tối thiểu yêu cầu khi huy động vị trí bổ sung (chưa phải hồ sơ cá nhân), nhóm thay bằng hồ sơ thực tế khi có quyết định điều động",
+   "_nguon_huy_dong": "Quyết định của nhóm ngày 25/10/2026: huy động từ S1 (sớm hơn một sprint so với quyết định 18/10/2026) để lấy lại dự trữ đến cut over sau khi bổ sung phụ thuộc giữa các gói; quỹ tăng 10 ngày làm việc, lương trả theo công sức nên chi phí lương kế hoạch không tăng theo quỹ",
+   "_nguon_ty_le_theo_sprint": "Quyết định của nhóm ngày 25/10/2026 (CR01): kéo dài huy động đến cut over 29/07/2027, huy động S7 đến S9 theo nhu cầu của lịch lập lại (MD xếp của sprint cộng 1 MD dự phòng, làm tròn lên 0,1) để tỷ lệ sử dụng quỹ không dưới 80%",
+   "ty_le_theo_sprint": {
+    "S7": 1.0,
+    "S8": 0.8,
+    "S9": 0.5
+   }
   },
   {
    "id": "Q1",
@@ -191,9 +258,9 @@
    "loai": "bo_sung",
    "chuc_danh": "Kỹ sư kiểm thử kỹ thuật, kiểm thử tự động",
    "kiem_nhiem": "Script kết nối và dữ liệu giả lập",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp đại học chuyên ngành công nghệ thông tin (yêu cầu khi huy động)",
+   "so_nam_kinh_nghiem": 2,
+   "kinh_nghiem": "Yêu cầu tối thiểu khi huy động: 2 năm kiểm thử phần mềm, kiểm thử tự động và dữ liệu giả lập",
    "chung_chi": "",
    "vai_tro": "TESTER",
    "loai_cong_viec": [
@@ -202,7 +269,14 @@
    "ty_le": 1.0,
    "tu_sprint": 2,
    "den_sprint": null,
-   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Trình độ, kinh nghiệm ghi theo yêu cầu khi huy động.",
+   "_nguon_trinh_do": "Quyết định của nhóm ngày 25/10/2026: ghi trình độ, kinh nghiệm tối thiểu yêu cầu khi huy động vị trí bổ sung (chưa phải hồ sơ cá nhân), nhóm thay bằng hồ sơ thực tế khi có quyết định điều động",
+   "_nguon_ty_le_theo_sprint": "Quyết định của nhóm ngày 25/10/2026 (CR01): kéo dài huy động đến cut over 29/07/2027, huy động S7 đến S9 theo nhu cầu của lịch lập lại (MD xếp của sprint cộng 1 MD dự phòng, làm tròn lên 0,1) để tỷ lệ sử dụng quỹ không dưới 80%",
+   "ty_le_theo_sprint": {
+    "S7": 0.8,
+    "S8": 0.2,
+    "S9": 0.7
+   }
   },
   {
    "id": "Q2",
@@ -210,9 +284,9 @@
    "loai": "bo_sung",
    "chuc_danh": "Kỹ sư kiểm thử chức năng, hiệu năng và an toàn thông tin",
    "kiem_nhiem": "",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp đại học chuyên ngành công nghệ thông tin (yêu cầu khi huy động)",
+   "so_nam_kinh_nghiem": 2,
+   "kinh_nghiem": "Yêu cầu tối thiểu khi huy động: 2 năm kiểm thử chức năng, hiệu năng và an toàn thông tin ứng dụng web",
    "chung_chi": "",
    "vai_tro": "TESTER",
    "loai_cong_viec": [
@@ -221,7 +295,14 @@
    "ty_le": 1.0,
    "tu_sprint": 3,
    "den_sprint": null,
-   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Chưa có trình độ, kinh nghiệm."
+   "_ghi_chu": "Họ tên theo bảng quyết toán lương của nhóm; nhóm ghi còn chờ quyết định điều động. Trình độ, kinh nghiệm ghi theo yêu cầu khi huy động.",
+   "_nguon_trinh_do": "Quyết định của nhóm ngày 25/10/2026: ghi trình độ, kinh nghiệm tối thiểu yêu cầu khi huy động vị trí bổ sung (chưa phải hồ sơ cá nhân), nhóm thay bằng hồ sơ thực tế khi có quyết định điều động",
+   "_nguon_ty_le_theo_sprint": "Quyết định của nhóm ngày 25/10/2026 (CR01): kéo dài huy động đến cut over 29/07/2027, huy động S7 đến S9 theo nhu cầu của lịch lập lại (MD xếp của sprint cộng 1 MD dự phòng, làm tròn lên 0,1) để tỷ lệ sử dụng quỹ không dưới 80%",
+   "ty_le_theo_sprint": {
+    "S7": 0.9,
+    "S8": 0.2,
+    "S9": 0.9
+   }
   },
   {
    "id": "D4",
@@ -229,9 +310,9 @@
    "loai": "bo_sung",
    "chuc_danh": "Kỹ sư phát triển backend kiêm DevOps",
    "kiem_nhiem": "Hỗ trợ kiểm thử chấp nhận, chuyển đổi dữ liệu và cut over",
-   "trinh_do": "",
-   "so_nam_kinh_nghiem": null,
-   "kinh_nghiem": "",
+   "trinh_do": "Tốt nghiệp đại học chuyên ngành công nghệ thông tin (yêu cầu khi huy động)",
+   "so_nam_kinh_nghiem": 2,
+   "kinh_nghiem": "Yêu cầu tối thiểu khi huy động: 2 năm lập trình dịch vụ phía máy chủ của ứng dụng web và triển khai, vận hành hệ thống (DevOps)",
    "chung_chi": "",
    "vai_tro": "BACKEND",
    "loai_cong_viec": [
@@ -241,8 +322,15 @@
    "ty_le": 1.0,
    "tu_sprint": 3,
    "den_sprint": null,
-   "_ghi_chu": "Nhóm quyết định ngày 18/10/2026 bổ sung vị trí này để lịch 657 MD kịp cut over (giảm tắc ở gói 7.3.x, 8.3.x và mốc M3, M5, M7). Chưa có trình độ, kinh nghiệm."
+   "_ghi_chu": "Nhóm quyết định ngày 18/10/2026 bổ sung vị trí này để lịch 657 MD kịp cut over (giảm tắc ở gói 7.3.x, 8.3.x và mốc M3, M5, M7). Trình độ, kinh nghiệm ghi theo yêu cầu khi huy động.",
+   "_nguon_trinh_do": "Quyết định của nhóm ngày 25/10/2026: ghi trình độ, kinh nghiệm tối thiểu yêu cầu khi huy động vị trí bổ sung (chưa phải hồ sơ cá nhân), nhóm thay bằng hồ sơ thực tế khi có quyết định điều động",
+   "_nguon_ty_le_theo_sprint": "Quyết định của nhóm ngày 25/10/2026 (CR01): kéo dài huy động đến cut over 29/07/2027, huy động S7 đến S9 theo nhu cầu của lịch lập lại (MD xếp của sprint cộng 1 MD dự phòng, làm tròn lên 0,1) để tỷ lệ sử dụng quỹ không dưới 80%",
+   "ty_le_theo_sprint": {
+    "S7": 0.4,
+    "S8": 0.9,
+    "S9": 0.6
+   }
   }
  ],
- "_ghi_chu_huy_dong": "Quyết định của nhóm ngày 18/10/2026: huy động sớm hơn và thêm D4 để lịch 657 MD kịp cut over (D1, D2, D3, Q1 từ S2; Q2, D4 từ S3), quỹ 796 MD. Lương tính theo MD công việc nên quỹ tăng không làm tăng chi phí lương."
+ "_ghi_chu_huy_dong": "Quyết định của nhóm ngày 18/10/2026: huy động sớm hơn và thêm D4 để lịch 657 MD kịp cut over (D1, D2, D3, Q1 từ S2; Q2, D4 từ S3), quỹ 796 MD. Lương tính theo MD công việc nên quỹ tăng không làm tăng chi phí lương. Quyết định của nhóm ngày 25/10/2026: D1, D3 huy động từ S1 để lấy lại dự trữ đến cut over sau khi bổ sung phụ thuộc giữa các gói (mức huy động tối thiểu tìm được: hai vị trí, mỗi vị trí thêm S1). Quyết định của nhóm ngày 25/10/2026 (CR01): không thêm người, kéo dài huy động của thành viên hiện có đến cut over mới 29/07/2027 và giai đoạn Kết thúc khi cần, huy động S7 đến S9 theo nhu cầu từng sprint (ty_le_theo_sprint)."
 }

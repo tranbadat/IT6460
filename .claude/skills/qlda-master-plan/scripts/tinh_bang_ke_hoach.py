@@ -83,6 +83,9 @@ def bang_muc_tieu():
                     for x in bh.get('muc_loi', []))
     rows.append(['Khắc phục sai sót trong thời hạn bảo hành', 'Thời gian phản hồi và khắc phục lỗi theo mức', muc or 'Theo HSMT',
                  f'{thang} tháng từ {loi.ngay(CUT)}', nx['bao_hanh']])
+    if not any(len(r) == 6 and r[5].startswith('Đạt') for r in rows):  # chưa mốc nào đạt (kế hoạch lập trước thực hiện): không có cột tình trạng
+        return {'cot': ['Mục tiêu', 'Chỉ số, cách đo', 'Ngưỡng', 'Hạn', 'Người xác nhận'], 'dong': [r[:5] for r in rows],
+                'widths': [2300, 2300, 2200, 1200, 1300], 'center_cols': [3]}
     rows = [r if len(r) == 6 else r + [''] for r in rows]
     return {'cot': ['Mục tiêu', 'Chỉ số, cách đo', 'Ngưỡng', 'Hạn', 'Người xác nhận', f'Tình trạng đến {loi.ngay(NGAY_HH)}'], 'dong': rows,
             'widths': [2000, 2000, 2000, 1050, 1150, 1100], 'center_cols': [3]}
@@ -156,7 +159,10 @@ def bang_huy_dong():
         s = sp.get(t.get('tu_sprint') or 1, lich['sprint'][0])
         co = bool(t.get('trinh_do')) and t.get('so_nam_kinh_nghiem') is not None
         thieu += [] if co else [t['ho_ten']]
-        rows.append([t['ho_ten'], t.get('chuc_danh', ''), s['ma'], loi.ngay(s['tu']), 'Đã có' if co else 'Chưa có trình độ, kinh nghiệm'])
+        # trình độ ghi theo yêu cầu khi huy động (khóa _nguon_trinh_do) chưa phải hồ sơ cá nhân
+        tt = ('Đã có yêu cầu tối thiểu, hồ sơ cá nhân bổ sung trước sprint huy động' if co and t.get('_nguon_trinh_do')
+              else 'Đã có' if co else 'Chưa có trình độ, kinh nghiệm')
+        rows.append([t['ho_ten'], t.get('chuc_danh', ''), s['ma'], loi.ngay(s['tu']), tt])
     if thieu:
         canh_bao.append(f'KH06 {len(thieu)} vị trí bổ sung chưa có trình độ, kinh nghiệm trong dau_vao/thanh_vien.json: {", ".join(thieu)}')
     return {'cot': ['Người dự kiến', 'Vị trí', 'Huy động từ', 'Ngày bắt đầu', 'Hồ sơ năng lực'], 'dong': rows,
@@ -198,7 +204,8 @@ def bang_ket_thuc():
     so_pl = {x['ma_cr']: x.get('so', '') for x in PHU_LUC}
     rows += [(t['ngay'], f'Hồ sơ thanh toán Đợt {t["dot"]}, {loi.tien(t["so_tien"])} đồng', f'Dự kiến nhận {loi.ngay(t["ngay"])}',
               f'Phụ lục hợp đồng {so_pl.get(t["ma_cr"], "")}' if t.get('ma_cr') else 'Mục 13.1 E-ĐKCT')
-             for t in cp.get('thanh_toan', []) if t.get('ngay_su_kien', '') >= CUT]
+             # đợt có ngày nhận sau cut over (cả đợt của phụ lục có sự kiện trước cut over như Đợt 6 gắn M9) theo dõi khi đóng dự án, từ 1.2.4
+             for t in cp.get('thanh_toan', []) if max(t.get('ngay_su_kien', ''), t.get('ngay', '')) >= CUT]
     ht = bh.get('ho_tro_tang_cuong')
     if ht:
         rows.append((ht['tu'], 'Hỗ trợ tăng cường sau cut over', f'{loi.ngay(ht["tu"])} đến {loi.ngay(ht["den"])}', 'Cam kết bảo hành của nhà thầu'))
@@ -209,11 +216,20 @@ def bang_ket_thuc():
     rows.append((het_bh, f'Bảo hành, bảo lãnh bảo hành {hd.get("bao_lanh_bao_hanh_phan_tram", "")}% giá hợp đồng', f'{loi.ngay(CUT)} đến {loi.ngay(het_bh)}',
                  f'{thang} tháng theo HSMT'))
     n = re.search(r'trong vòng (\d+) ngày', e.get('E-ĐKC 5.4', ''))
+    # hiệu lực bảo đảm thực hiện: theo phụ lục hợp đồng gần nhất có gia hạn (bao_dam_thuc_hien_den, qlda-change từ 1.4.6), không có thì theo HSMT
+    pl_bd = next((x for x in reversed(PHU_LUC) if x.get('bao_dam_thuc_hien_den')), None)
+    hl_bd = pl_bd['bao_dam_thuc_hien_den'] if pl_bd else hsmt.get('thoi_han', {}).get('hieu_luc_bao_dam_thuc_hien_den', '')
     rows.append((het_bh, f'Nhận lại bảo đảm thực hiện hợp đồng {hd.get("bao_dam_thuc_hien_phan_tram", "")}% giá hợp đồng',
                  (f'Trong {n.group(1)} ngày sau khi hoàn thành nghĩa vụ hợp đồng' if n else 'Sau khi hoàn thành nghĩa vụ hợp đồng')
-                 + f', bảo đảm có hiệu lực đến {hsmt.get("thoi_han", {}).get("hieu_luc_bao_dam_thuc_hien_den", "")}', 'Mục 5.2, 5.4 E-ĐKCT'))
+                 + f', bảo đảm có hiệu lực đến {loi.ngay(hl_bd) if pl_bd else ngay_chu(hl_bd)}', 'Mục 5.2, 5.4 E-ĐKCT' + (f', phụ lục hợp đồng {pl_bd["so"]}' if pl_bd else '')))
     return {'cot': ['Việc', 'Thời điểm', 'Căn cứ'], 'dong': [list(r[1:]) for r in sorted(rows, key=lambda r: r[0])],
             'widths': [4300, 2900, 2100], 'center_cols': [1]}
+
+
+def ngay_chu(v):
+    """Ngày viết dạng 'dd tháng mm năm yyyy' (nguyên văn HSMT) -> dd/mm/yyyy, giá trị khác giữ nguyên."""
+    m = re.fullmatch(r'\s*(\d{1,2}) tháng (\d{1,2}) năm (\d{4})\s*', str(v or ''))
+    return f'{int(m.group(1)):02d}/{int(m.group(2)):02d}/{m.group(3)}' if m else v
 
 
 def bang_cam_ket_cdt():
@@ -249,12 +265,15 @@ if not ct.get('chi_tieu'):
 if loi_ds:
     loi.thoat_loi('\n- '.join([''] + loi_ds))
 kiem_tra_khoan_b()
+DCS_HIEN_HANH = (loi.doc_json('du_lieu/phien_ban.json', {}).get('duong_co_so') or [{}])[-1].get('ma', '')  # rỗng khi chưa ký hợp đồng
 out = {'muc_tieu': bang_muc_tieu(), 'phe_duyet': bang_phe_duyet(), 'ben_lien_quan': bang_ben_lien_quan(), 'thue_ngoai': bang_thue_ngoai(),
        'huy_dong': bang_huy_dong(), 'bao_hanh': bang_bao_hanh(), 'ra_soat': bang_ra_soat(), 'ket_thuc': bang_ket_thuc(), 'cam_ket_cdt': bang_cam_ket_cdt(),
        'emv': emv(), 'duong_co_so': bang_duong_co_so(),
        'nhan_gia': 'Giá hợp đồng sau phụ lục' if PHU_LUC else ('Giá hợp đồng' if loi.da_ky_hop_dong() else 'Giá hợp đồng dự kiến'),
        'phu_luc_goc': ''.join(f', phụ lục hợp đồng {x.get("so", "")}' for x in PHU_LUC),
-       'duong_co_so_hien_hanh': (loi.doc_json('du_lieu/phien_ban.json', {}).get('duong_co_so') or [{}])[-1].get('ma', ''),
+       'duong_co_so_hien_hanh': DCS_HIEN_HANH,
+       'cau_duong_co_so': (f'Các đường cơ sở đã lập theo sổ phiên bản, đường cơ sở hiện hành là {DCS_HIEN_HANH}:' if DCS_HIEN_HANH
+                           else 'Đến ngày lập kế hoạch chưa đặt đường cơ sở.'),
        'so_ben_ngoai': len(pc.get('ben_ngoai', [])), 'so_khoan_b': len(cp.get('chi_phi_khac', []))}
 for c in canh_bao:
     print('CẢNH BÁO: ' + c)

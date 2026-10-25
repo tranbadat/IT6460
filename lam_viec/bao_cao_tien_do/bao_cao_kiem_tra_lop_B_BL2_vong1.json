@@ -1,0 +1,283 @@
+{
+ "tai_lieu": [
+  "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S1.docx",
+  "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S2.docx",
+  "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S3.docx",
+  "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S4.docx"
+ ],
+ "buoc": "bao_cao_tien_do",
+ "dac_ta": ".claude/skills/qlda-bao-cao-tien-do/dac_ta/bao_cao_tien_do.json",
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "prompt": ".claude/skills/qlda-loi/prompts/vai_kiem_tra.md",
+ "duong_co_so_doi_chieu": "S1 đến S4 đối chiếu lịch BL1 (lam_viec/mo_phong/lich_S1.json đến lich_S4.json, giống nhau, cut over 01/07/2027, BAC 657 MD). S4 lập ngày 20/05/2027 trước khi áp dụng CR01 (phê duyệt 27/05/2027, BL2), CR01 đối chiếu trạng thái Chờ phê duyệt tại ngày 20/05/2027.",
+ "ket_luan": "chua_dat",
+ "so_loi": 4,
+ "so_canh_bao": 8,
+ "theo_tep": [
+  {
+   "tai_lieu": "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S1.docx",
+   "phien_ban": "0.2",
+   "ket_luan": "chua_dat",
+   "so_loi": 1,
+   "so_canh_bao": 2,
+   "ma_phat_hien": [
+    "MH01",
+    "MH11",
+    "MH12"
+   ]
+  },
+  {
+   "tai_lieu": "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S2.docx",
+   "phien_ban": "0.2",
+   "ket_luan": "chua_dat",
+   "so_loi": 1,
+   "so_canh_bao": 3,
+   "ma_phat_hien": [
+    "MH02",
+    "MH09",
+    "MH11",
+    "MH12"
+   ]
+  },
+  {
+   "tai_lieu": "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S3.docx",
+   "phien_ban": "0.2",
+   "ket_luan": "chua_dat",
+   "so_loi": 1,
+   "so_canh_bao": 4,
+   "ma_phat_hien": [
+    "MH03",
+    "MH05",
+    "MH10",
+    "MH11",
+    "MH12"
+   ]
+  },
+  {
+   "tai_lieu": "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S4.docx",
+   "phien_ban": "0.1",
+   "ket_luan": "chua_dat",
+   "so_loi": 1,
+   "so_canh_bao": 5,
+   "ma_phat_hien": [
+    "MH04",
+    "MH06",
+    "MH07",
+    "MH08",
+    "MH11",
+    "MH12"
+   ]
+  }
+ ],
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Cả bốn báo cáo có đủ các mục của đặc tả (tóm tắt, EVM theo MD và tiền, chi phí thực, lịch sử kỳ, mốc, gói chậm, công sức theo người, sổ vấn đề, hành động, tín hiệu, rủi ro, thay đổi, kế hoạch kỳ tới). Kế hoạch kỳ tới của S1 thiếu gói găng, gói chậm và hành động đến hạn (MH01). SPI hiển thị 0,95 xếp Vàng ở S4 dễ gây hiểu nhầm (MH07)."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Đã tính lại độc lập từ lich_S<n>.json (BL1), nhat_ky_cong_viec.csv, hoan_thanh.csv, chi_phi_thuc_te.csv, don_gia.json, thanh_vien.json: BAC, PV, EV, AC theo MD và tiền, SV, CV, SPI, CPI, EAC, ETC, VAC, TCPI, quỹ huy động, MD sẵn sàng, BAC, PV, EV, AC nhân sự, CPI thực, AC thực, EAC thực, VAC thực, giá trừ EAC thực, dự báo hoàn thành, gói chậm, công sức từng người của S1 đến S4 đều khớp đến đơn vị. BAC nhân sự 1.197.210.123 đồng khớp thuyết minh dự toán BL1, giá 1.750.000.000 đồng và B + D 150.000.000 đồng là của BL1. Mốc khớp moc_thuc_te.csv và hạn của lịch BL1. Rủi ro đã xảy ra khớp theo_doi_rui_ro.csv (RR04 ngày 01/04, đóng 19/04, RR02 kích hoạt 14/04, xảy ra 19/04). Số đếm sổ vấn đề, hành động khớp so_van_de.csv, hanh_dong.csv. Kế hoạch kỳ tới khớp mục tiêu, MD kế hoạch và quỹ của sprint kế tiếp trong lich_S<n>.json. CR01 khớp thay_doi.json tại ngày 20/05/2027. Lệch: nguyên nhân chậm S2 (MH02), sản phẩm trình diễn S3, S4 trái với bản phát hành R3, R4 (MH03, MH04), tổng kế hoạch theo người khác PV (MH05, MH06), HD11 và đánh giá CR01 (MH08)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Gói chậm, vấn đề, hành động, tín hiệu đều có mã gói WBS, mã vấn đề, mã rủi ro, mã CR, mốc. Bảng tín hiệu đối chiếu đủ vấn đề trong sổ. Chưa nêu mã bản phát hành R1 đến R4 trong phần kết quả (gợi ý trong MH03, MH04)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Chỉ số có ngưỡng xanh, vàng, đỏ (0,95 và 0,85), mốc so với hạn, gói chậm theo ngưỡng 10%, dự báo so với cut over, kiểm chứng được từ dữ liệu."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Vấn đề gắn rủi ro hoặc CR (VD03-RR04, VD04 và VD06-RR02, VD08-CR01), kế hoạch ứng phó RR02 được kích hoạt và nêu điều kiện đóng, CR01 nêu mức Lớn, cấp quyết định, phụ lục hợp đồng, thời hạn đánh giá và việc lập lại đường cơ sở. Tính liên tục giữa các kỳ đạt: bảng lịch sử kỳ của S2 đến S4 lặp đúng số của kỳ trước, vấn đề và hành động mở kỳ trước được cập nhật trạng thái ở kỳ sau, gói chậm kỳ trước được theo dõi tiếp. Lệch trạng thái HD11 nêu ở MH08."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman 13, bảng cỡ 12, không in đậm, không viết hoa toàn bộ, không ngoặc kép, không gạch dài, một dấu chấm phẩy trong câu cố định của đặc tả, tiền âm viết chữ âm. Cảnh báo nhỏ về lặp từ (MH09, MH10) và định dạng số không nhất quán (MH11)."
+  },
+  {
+   "tieu_chi": "DH1 Nhận định khớp SPI, CPI, CPI thực và trạng thái",
+   "ket_qua": "dat",
+   "nhan_xet": "Bốn báo cáo nêu đúng ba chỉ số và trạng thái chung, S2 giải thích Vàng do dự báo vượt cut over. Lưu ý MH07."
+  },
+  {
+   "tieu_chi": "DH2 Nhận xét vấn đề khớp sổ, không thêm vấn đề ngoài sổ",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Phần nhận xét vấn đề khớp sổ. Đoạn tóm tắt S2 gán nguyên nhân trái với VD05, VD03 (MH02)."
+  },
+  {
+   "tieu_chi": "DH3 Tín hiệu chưa ghi sổ được nêu và đề nghị ghi nhận",
+   "ket_qua": "dat",
+   "nhan_xet": "Mọi tín hiệu của bốn kỳ đều đã có vấn đề trong sổ, báo cáo nêu đúng điều này."
+  },
+  {
+   "tieu_chi": "DH4 Hành động gắn sổ rủi ro hoặc yêu cầu thay đổi",
+   "ket_qua": "dat",
+   "nhan_xet": "HD05, HD07, HD08, HD09 gắn RR02, HD04 gắn RR04, HD11 gắn CR01."
+  },
+  {
+   "tieu_chi": "DH5 Kế hoạch kỳ tới ưu tiên đường găng, gói chậm, hành động đến hạn",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "S2, S3, S4 đạt. S1 thiếu (MH01)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "CL01, doc_hieu kế hoạch kỳ tới",
+   "vi_tri": "Bao_cao_tien_do_S1.docx, mục 6. Kế hoạch kỳ tới (KY_TOI): 'Mục tiêu S2: ... Kế hoạch kỳ tới là 76 MD trên quỹ 100 MD.' và 'Mốc M1 có hạn 14/04/2027 ...'",
+   "mo_ta": "Kế hoạch kỳ tới chỉ có mục tiêu S2, mốc M1 và đề nghị Chủ đầu tư, thiếu gói ưu tiên theo đặc tả và tiêu chí đọc hiểu: không nêu gói găng của S2 (4.2.3 cấu trúc Selling DB, 01/04 đến 07/04/2027 theo lich_S1.json), không nêu hai gói chậm 4.1.2, 4.1.3 của bảng gói chậm và không nêu hành động HD03 (hạn 07/04/2027, đang thực hiện) của vấn đề VD02.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại KY_TOI của kỳ S1 (lời văn): bổ sung gói găng 4.2.3, gói chậm 4.1.2, 4.1.3 và hành động HD03 bằng tham chiếu dữ liệu. Không cần nhóm quyết định.",
+   "tai_lieu": [
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S1.docx"
+   ]
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "CL02, doc_hieu nhận định khớp sổ vấn đề",
+   "vi_tri": "Bao_cao_tien_do_S2.docx, mục 1. Tóm tắt, đoạn thứ hai của TOM_TAT: 'Nguyên nhân chính là đặc tả use case tìm kiếm vượt công và kỹ sư kiểm thử có mặt muộn (rủi ro RR04 đã xảy ra), làm một số gói thiết kế chi tiết bắt đầu muộn.'",
+   "mo_ta": "Quan hệ nguyên nhân sai so với sổ vấn đề: VD05 ghi các gói 1.2.7, 2.2.7, 3.2.8 bắt đầu muộn do 1.2.5 vượt công và 4.3.2 phải sửa lỗi ràng buộc dữ liệu. RR04 (Trần Thu Hà có mặt muộn) chỉ tác động gói 2.1.1 (VD03, theo_doi_rui_ro.csv 0,5 MD), kết quả đóng VD03 ghi không ảnh hưởng các gói kiểm thử. Đoạn văn gán chậm thiết kế chi tiết cho RR04 và bỏ sót nguyên nhân 4.3.2.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại TOM_TAT kỳ S2 (lời văn): nguyên nhân chậm thiết kế chi tiết là 1.2.5 vượt công và 4.3.2 sửa lỗi (VD05), RR04 nêu riêng là đã xảy ra, tác động 2.1.1 và đã xử lý (VD03). Không cần nhóm quyết định.",
+   "tai_lieu": [
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S2.docx"
+   ]
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "loi",
+   "nhom": "CL02, bản phát hành",
+   "vi_tri": "Bao_cao_tien_do_S3.docx, mục 3, đoạn KET_QUA thứ hai: 'Sản phẩm trình diễn cuối sprint gồm Đăng ký, đăng nhập, khôi phục mật khẩu, giỏ hàng và đặt hàng có phí vận chuyển, mã giảm giá trên môi trường phát triển.'",
+   "mo_ta": "Báo cáo khẳng định đã trình diễn giỏ hàng nhưng tại ngày báo cáo dịch vụ giỏ hàng 3.3.1 mới đạt 60% và giao diện giỏ hàng 3.3.8 đạt 63% (cả hai nằm trong bảng gói chậm của chính báo cáo). Bản phát hành R3 (du_lieu/phat_hanh.json) ghi 3.3.1, 3.3.8, 4.2.7, 4.4.2 là gói đến hạn nhưng chưa hoàn thành. Câu văn chép sản phẩm demo kế hoạch của lịch, không phản ánh thực tế.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại KET_QUA kỳ S3 (lời văn): nêu sản phẩm trình diễn thực tế theo gói đã hoàn thành của R3, nói rõ giỏ hàng (3.3.1, 3.3.8) chưa hoàn thành, chuyển sang S4 theo VD07. Nên bổ sung mã bản phát hành R3. Không cần nhóm quyết định.",
+   "tai_lieu": [
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S3.docx"
+   ]
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "loi",
+   "nhom": "CL02, bản phát hành",
+   "vi_tri": "Bao_cao_tien_do_S4.docx, mục 3, đoạn KET_QUA thứ hai: 'Sản phẩm trình diễn cuối sprint gồm Tìm kiếm, lọc và sắp xếp sản phẩm, theo dõi và hủy đơn hàng trên môi trường phát triển, chuyển đơn hàng và nhận trạng thái vận chuyển trên dịch vụ giả lập Main System.'",
+   "mo_ta": "Gói 4.3.7 chuyển đơn hàng sang Main System mới đạt 95%, gói găng 4.3.8 nhận trạng thái vận chuyển đạt 80% và nằm trong bảng gói chậm của chính báo cáo. Bản phát hành R4 ghi 2.4.8, 4.3.7, 4.3.8 là gói đến hạn nhưng chưa hoàn thành. Câu văn mâu thuẫn với bảng gói chậm và với đoạn tóm tắt ('phần chậm còn lại tập trung ở gói găng đồng bộ trạng thái vận chuyển').",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại KET_QUA kỳ S4 (lời văn): sản phẩm trình diễn theo gói đã hoàn thành của R4, nêu rõ 4.3.7, 4.3.8 và 2.4.8 chưa hoàn thành, theo dõi tại VD09. Nên bổ sung mã bản phát hành R4. Không cần nhóm quyết định.",
+   "tai_lieu": [
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S4.docx"
+   ]
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "CL02",
+   "vi_tri": "Bao_cao_tien_do_S3.docx, mục 4, dòng Tổng 'Kế hoạch đến nay, MD' 273,33 so với PV 273,50 ở mục 1, mục 2",
+   "mo_ta": "Hai giá trị kế hoạch đến ngày báo cáo khác nhau 0,17 MD trong cùng báo cáo (MD theo người tính theo phan_bo từng sprint, PV tính tuyến tính theo gói). Số liệu tính đúng theo phương pháp, nhưng báo cáo không giải thích nên người đọc thấy mâu thuẫn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Bổ sung câu giải thích cơ sở tính dưới bảng mục 4 trong đặc tả (khung) hoặc thống nhất cơ sở tính ở tinh_tien_do.py. Không cần nhóm quyết định.",
+   "tai_lieu": [
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S3.docx"
+   ]
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "CL02",
+   "vi_tri": "Bao_cao_tien_do_S4.docx, mục 4, dòng Tổng 'Kế hoạch đến nay, MD' 389,17 so với PV 389,80 ở mục 1, mục 2",
+   "mo_ta": "Như MH05, chênh 0,63 MD giữa tổng kế hoạch theo người và PV, không có giải thích trong báo cáo.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Như MH05.",
+   "tai_lieu": [
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S4.docx"
+   ]
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "CL01, CL06",
+   "vi_tri": "Bao_cao_tien_do_S4.docx, bảng mục 1 'Chỉ số tiến độ SPI | 0,95 | Vàng', bảng tín hiệu 'SPI: 0,95, ngưỡng 0,95' và câu 'SPI đạt 0,95 ở mức Vàng'",
+   "mo_ta": "SPI thực là 0,9475 nên xếp Vàng là đúng, nhưng hiển thị hai chữ số thành 0,95, bằng ngưỡng 'dưới 0,95 là vàng' nêu ở mục 2. Người đọc thấy chỉ số đạt ngưỡng mà vẫn bị xếp Vàng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Khi chỉ số làm tròn bằng ngưỡng thì hiển thị ba chữ số (0,947) hoặc thêm ghi chú làm tròn, sửa ở định dạng của đặc tả hoặc dữ liệu. Không cần nhóm quyết định.",
+   "tai_lieu": [
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S4.docx"
+   ]
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "CL02, CL05",
+   "vi_tri": "Bao_cao_tien_do_S4.docx, mục 1, đoạn TOM_TAT thứ ba 'Theo đánh giá, phần thay đổi tăng 76 MD, giá đề nghị 199.024.682 đồng, cut over phải lùi 16 ngày làm việc đến 23/07/2027' và bảng hành động 'HD11 | VD08 | Lập phiếu yêu cầu thay đổi CR01 và đánh giá tác động ... | 25/05/2027 | Đang thực hiện'",
+   "mo_ta": "Báo cáo nêu kết quả đánh giá tác động CR01 như đã hoàn thành (thay_doi.json, lịch sử ngày 20/05/2027 'Lập và đánh giá tác động'), trong khi hành động đánh giá tác động HD11 vẫn đang thực hiện. Số liệu CR01 khớp thay_doi.json, chỉ lệch trạng thái giữa sổ hành động và sổ thay đổi.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thống nhất dữ liệu mô phỏng: ghi HD11 hoàn thành ngày 20/05/2027 trong hanh_dong.csv hoặc tách HD11 thành phần trình ban kiểm soát thay đổi, hoặc lời văn ghi rõ đây là đánh giá sơ bộ. Không cần nhóm quyết định.",
+   "tai_lieu": [
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S4.docx"
+   ]
+  },
+  {
+   "ma": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "CL06",
+   "vi_tri": "Bao_cao_tien_do_S2.docx, mục 3, KET_QUA: 'Mốc M1 đạt ngày 14/04/2027, Đạt, đúng hạn, kế hoạch quản lý dự án được Chủ đầu tư xác nhận.'",
+   "mo_ta": "Lặp từ và viết hoa giữa câu do chèn nguyên trạng thái mốc vào câu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa lời văn KET_QUA: 'Mốc M1 đạt ngày 14/04/2027, đúng hạn, ...'.",
+   "tai_lieu": [
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S2.docx"
+   ]
+  },
+  {
+   "ma": "MH10",
+   "muc_do": "canh_bao",
+   "nhom": "CL06",
+   "vi_tri": "Bao_cao_tien_do_S3.docx, mục 3, KET_QUA: 'Mốc M2 đạt ngày 06/05/2027, Đạt, đúng hạn, đủ điều kiện đợt thanh toán 2.'",
+   "mo_ta": "Như MH09.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa lời văn KET_QUA: 'Mốc M2 đạt ngày 06/05/2027, đúng hạn, ...'.",
+   "tai_lieu": [
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S3.docx"
+   ]
+  },
+  {
+   "ma": "MH11",
+   "muc_do": "canh_bao",
+   "nhom": "CL06",
+   "vi_tri": "S1 mục 1 'Thời gian đã qua 10/83 ngày làm việc (12%)' so với S2 '(24,1%)'; S2 bảng gói chậm '40%', '50%' so với S3, S4 '40,0%', '100,0%' cùng cột; S4 mục 1 '373/456 MD' và bảng mục 2 '373' so với bảng lịch sử '373,00'",
+   "mo_ta": "Định dạng số không nhất quán giữa các kỳ và trong cùng bảng (số chữ số thập phân của tỷ lệ và MD).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thống nhất bộ định dạng pt và md (luôn một chữ số thập phân cho tỷ lệ, hai chữ số cho MD), sửa ở bộ định dạng hoặc dữ liệu, không sửa trong Word.",
+   "tai_lieu": [
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S1.docx",
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S2.docx",
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S3.docx",
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S4.docx"
+   ]
+  },
+  {
+   "ma": "MH12",
+   "muc_do": "canh_bao",
+   "nhom": "CL02",
+   "vi_tri": "Mục 5.2, bảng rủi ro, cột Mức của RR03 và RR04: 'Cao'",
+   "mo_ta": "Không kiểm chứng được. Sổ rủi ro hiện hành (du_lieu/rui_ro.json, sau CR01) ghi RR03 và RR04 mức Trung bình. Không có bản chụp sổ rủi ro tại từng ngày báo cáo để đối chiếu mức Cao. Nếu sổ BL1 tại thời điểm lập báo cáo ghi Cao thì báo cáo đúng. Lập lại báo cáo từ dữ liệu hiện hành sẽ làm đổi mức, phá tính liên tục giữa các kỳ.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận mức của RR03, RR04 trong sổ rủi ro BL1. Nên lưu bản chụp rui_ro.json theo kỳ (như lam_viec/mo_phong/lich_S<n>.json) để báo cáo cũ lập lại được đúng. Cần nhóm xác nhận, không cần quyết định tham số.",
+   "tai_lieu": [
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S1.docx",
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S2.docx",
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S3.docx",
+    "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S4.docx"
+   ]
+  }
+ ],
+ "pham_vi_doc": "Đã đọc 4 tệp docx, đặc tả, du_lieu/tien_do/S1-S4.json, lich_su.json, dau_vao/thuc_te/*.csv, lam_viec/mo_phong/lich_S<n>.json, kich_ban_S1, S2, cr_S4_CR01.json, ket_qua_S4.json, du_lieu/lich.json, rui_ro.json, phat_hanh.json, thay_doi.json, phien_ban.json, chi_phi.json, dau_vao/don_gia.json, thanh_vien.json, van_phong.md, van_phong.json, script tinh_tien_do.py, thuc_te.py (đọc phương pháp, số liệu tính lại bằng script riêng). Không đọc ban_soan, khung, noi_dung, báo cáo lớp B cũ.",
+ "moi_truong": "Phiên agent con riêng, Claude Code, mô hình claude-opus-5-5, python-docx để trích nội dung"
+}

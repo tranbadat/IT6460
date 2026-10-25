@@ -1,0 +1,114 @@
+{
+ "tai_lieu": "ket_qua/08_Change_management_plan/Ke_hoach_quan_ly_thay_doi.docx",
+ "phien_ban": "0.6",
+ "luot": "xac_nhan_sau_luot_3",
+ "moi_truong": "Kiểm tra lớp B lượt xác nhận sau vòng sửa cuối (ngoại lệ người dùng duyệt sau 3 vòng), phiên agent con riêng, Claude Code, mô hình claude-opus-5-5, python-docx đối chiếu với dữ liệu nguồn. Có đọc báo cáo lớp B lượt 3 (ngoại lệ lượt xác nhận), không đọc ban_soan, khung, noi_dung, nhật ký sửa",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 0,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 11 mục, không đổi so với lượt 3."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Tài liệu lập trên HSDT băm ead8a3c5544e (v0.10). Thời hạn đánh giá tối đa 3 ngày làm việc khớp HSDT mục 13. Mẫu phiếu có đủ các trường HSDT v0.10 mục 13 liệt kê (mã, nội dung, lý do, gói bị ảnh hưởng, MD và chi phí, ngày chậm, mốc, quyết định). Thẩm quyền nhỏ do quản trị dự án, lớn do người đại diện ký hợp đồng hai bên, thống nhất với câu phê duyệt phía nhà thầu trong HSDT. Mốc thanh toán M2, M3, M6, M7 và hạn khớp lich.json."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi so với lượt 3."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi so với lượt 3."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi so với lượt 3."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, không in đậm, không gạch dài, ngoặc kép. Câu theo dõi đã viết chưa có yêu cầu nào."
+  },
+  {
+   "tieu_chi": "DH1",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH2",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH3",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH4",
+   "ket_qua": "dat",
+   "nhan_xet": "Khớp cam kết đánh giá trong 3 ngày tại mục 13 HSDT v0.10."
+  },
+  {
+   "tieu_chi": "DH5",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH6",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH7",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH8",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH9",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH10",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi."
+  },
+  {
+   "tieu_chi": "DH11",
+   "ket_qua": "dat",
+   "nhan_xet": "Bảng dự phòng dùng chung trùng nguyên văn kế hoạch tổng thể v0.8."
+  }
+ ],
+ "dong_phat_hien_luot_3": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Sổ phiên bản v0.6 ghi đầu vào doc_hsdt nd:ead8a3c5544e, trùng băm HSDT v0.10 hiện hành. Đối chiếu nội dung với HSDT v0.10 mục 13 (mẫu phiếu, 3 ngày, cấp phê duyệt, Mục 17.1(c)) không thấy mâu thuẫn."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "Mục 9 dòng Phần vượt dự phòng dẫn quyết định 18/10/2026 và 25/10/2026, chữ người đại diện viết thường."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "Mục 11 ghi hiện sổ yêu cầu thay đổi chưa có yêu cầu nào."
+  }
+ ],
+ "phat_hien": []
+}

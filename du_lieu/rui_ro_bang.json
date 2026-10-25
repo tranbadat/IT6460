@@ -106,7 +106,7 @@
    0
   ]
  },
- "ghi_chu_tac_dong": "Mức tác động của mỗi rủi ro là mức cao nhất đạt được theo số ngày chậm, chi phí tác động so với giá chào 1.750 triệu đồng và điều kiện về mốc, hợp đồng. Mức chấm khác mức suy ra được ghi lý do trong sổ.",
+ "ghi_chu_tac_dong": "Mức tác động của mỗi rủi ro là mức cao nhất đạt được theo số ngày chậm, chi phí tác động so với giá chào 1.949 triệu đồng và điều kiện về mốc, hợp đồng. Mức chấm khác mức suy ra được ghi lý do trong sổ.",
  "muc": {
   "cot": [
    "Mức rủi ro",
@@ -200,8 +200,8 @@
     "",
     "RR09, RR14",
     "RR03, RR06, RR16",
-    "RR01",
-    "RR04, RR10"
+    "RR01, RR04, RR22",
+    "RR10"
    ],
    [
     "2",
@@ -253,7 +253,7 @@
    ],
    [
     "Trung bình",
-    "A: RR01, RR04, RR10",
+    "A: RR01, RR04, RR10, RR22",
     "B: RR03, RR06, RR16",
     "C: RR09, RR14"
    ],
@@ -281,12 +281,20 @@
   ],
   "dong": [
    [
-    "Tổng EMV theo khối lượng",
-    "45 MD (khoảng 32 đến 58 MD)"
+    "Tổng EMV của sổ (gồm rủi ro đã xảy ra, đã đóng)",
+    "48 MD, 151 triệu đồng"
    ],
    [
-    "Tổng EMV theo chi phí",
-    "147 triệu đồng (khoảng 110 đến 183 triệu đồng)"
+    "Rủi ro đã xảy ra hoặc đã đóng, tác động thực tế",
+    "4 rủi ro, 1,50 MD, 3.150.000 đồng"
+   ],
+   [
+    "EMV còn lại theo khối lượng",
+    "31 MD (khoảng 21 đến 41 MD)"
+   ],
+   [
+    "EMV còn lại theo chi phí",
+    "115 triệu đồng (khoảng 85 đến 146 triệu đồng)"
    ],
    [
     "Dự phòng chi phí trong dự toán",
@@ -294,23 +302,23 @@
    ],
    [
     "Đánh giá dự phòng chi phí",
-    "Thiếu 97 triệu đồng so với tổng EMV"
+    "Thiếu 65 triệu đồng so với EMV còn lại"
    ],
    [
-    "Tổng EMV theo thời gian",
-    "20,0 ngày làm việc (khoảng 14,7 đến 25,3)"
+    "EMV còn lại theo thời gian",
+    "13,6 ngày làm việc"
    ],
    [
     "EMV thời gian của rủi ro trên đường găng hoặc gắn mốc cut over",
-    "5,4 ngày làm việc (khoảng 4,0 đến 6,8), 5 rủi ro"
+    "3,4 ngày làm việc (khoảng 2,5 đến 4,3), 6 rủi ro"
    ],
    [
     "Dự trữ thời gian đến cut over theo master schedule",
-    "4 ngày làm việc"
+    "7 ngày làm việc"
    ],
    [
     "Đánh giá dự trữ thời gian",
-    "Thiếu 1,4 ngày làm việc, nhóm chọn chấp nhận và báo Chủ đầu tư"
+    "Đủ"
    ]
   ],
   "widths": [
@@ -322,69 +330,40 @@
   ]
  },
  "du_tru": {
-  "emv_ngay_gang": 5.4,
-  "emv_ngay_gang_thap": 4.0,
-  "emv_ngay_gang_cao": 6.8,
-  "du_tru": 4.0,
-  "thieu": 1.4,
-  "du": false,
-  "ket_luan": "thiếu",
-  "ma_gang": "RR03, RR04, RR08, RR09, RR10",
-  "so_rui_ro_gang": 5,
-  "danh_gia": "Thiếu 1,4 ngày làm việc",
+  "emv_ngay_gang": 3.4,
+  "emv_ngay_gang_thap": 2.5,
+  "emv_ngay_gang_cao": 4.3,
+  "du_tru": 7.0,
+  "thieu": 0.0,
+  "du": true,
+  "ket_luan": "đủ",
+  "ma_gang": "RR02, RR03, RR04, RR08, RR09, RR10",
+  "so_rui_ro_gang": 6,
+  "danh_gia": "Đủ",
   "cum_phuong_an": [
-   "tăng dự trữ",
-   "đưa việc lên sớm",
-   "thu hẹp phạm vi",
-   "chấp nhận"
+   "dự trữ",
+   "dự trữ",
+   "dự trữ",
+   "dự trữ"
   ]
  },
  "phuong_an_du_tru": {
   "cot": [
-   "Phương án",
-   "Cách thực hiện",
-   "Ảnh hưởng",
-   "Áp dụng"
+   "Phương án"
   ],
-  "dong": [
-   [
-    "Tăng dự trữ",
-    "Bổ sung nguồn lực hoặc điều chỉnh giao việc cho các gói trên đường găng để dự trữ đến cut over đạt tối thiểu 5,4 ngày làm việc",
-    "Tăng MD hoặc chi phí nhân công, cập nhật giao việc, master schedule và cost estimate",
-    "Không"
-   ],
-   [
-    "Đưa việc lên sớm",
-    "Bắt đầu sớm hoặc thực hiện song song các gói 5.3.5, 7.2.1, 7.2.4, 7.3.1, 7.3.2",
-    "Tăng tải các sprint trước, kiểm tra lại phụ thuộc và tải từng người",
-    "Không"
-   ],
-   [
-    "Thu hẹp phạm vi",
-    "Thống nhất với Chủ đầu tư hoãn chức năng không thiết yếu sang sau cut over",
-    "Cần yêu cầu thay đổi và phụ lục hợp đồng, ảnh hưởng nghiệm thu",
-    "Không"
-   ],
-   [
-    "Chấp nhận và báo Chủ đầu tư",
-    "Giữ kế hoạch, theo dõi dấu hiệu của RR04, RR10, RR08, RR03, RR09, thông báo Chủ đầu tư mức thiếu dự trữ và phương án khi rủi ro xảy ra",
-    "Có thể bị phạt chậm tiến độ theo E-ĐKC 15 trên giá trị đợt thanh toán gắn mốc cut over",
-    "Có"
-   ]
-  ],
-  "widths": [
-   2000,
-   3600,
-   2800,
-   900
-  ]
+  "dong": []
  },
  "emv": {
-  "tien_trieu": 147,
-  "tien_trieu_thap": 110,
-  "tien_trieu_cao": 183,
-  "md": 45,
-  "ngay": 20.0
+  "tien_trieu": 151,
+  "tien_trieu_thap": 113,
+  "tien_trieu_cao": 189,
+  "md": 48,
+  "ngay": 21.2,
+  "con_lai_trieu": 115,
+  "con_lai_trieu_thap": 85,
+  "con_lai_trieu_cao": 146,
+  "con_lai_md": 31,
+  "co_xay_ra": true
  },
  "nguong": {
   "cot": [
@@ -407,10 +386,10 @@
     "Rà soát rủi ro chi phí, xem xét dùng dự phòng theo quy định"
    ],
    [
-    "Lỗi nghiêm trọng đang mở",
+    "Lỗi nghiêm trọng hoặc cao đang mở (cùng cách đếm với dấu hiệu RR03, RR10)",
     "từ 2",
     "từ 4",
-    "Ưu tiên khắc phục, đánh giá lại rủi ro chất lượng"
+    "Ưu tiên khắc phục, đánh giá lại rủi ro chất lượng, mức đỏ kích hoạt kế hoạch ứng phó của RR03, RR10"
    ]
   ],
   "widths": [
@@ -420,13 +399,75 @@
    4800
   ]
  },
- "so_cao": 3,
- "ma_cao": "RR02, RR04, RR10",
+ "so_cao": 2,
+ "xay_ra": {
+  "cot": [
+   "Mã",
+   "Rủi ro",
+   "Trạng thái",
+   "Ngày xảy ra",
+   "Tác động thực tế",
+   "EMV đã đánh giá, triệu đồng"
+  ],
+  "dong": [
+   [
+    "RR01",
+    "Đặc tả yêu cầu được xác nhận chậm hoặc thay đổi nhiều sau khi xác nhận",
+    "Đã đóng",
+    "",
+    "",
+    "10,1"
+   ],
+   [
+    "RR02",
+    "Tài liệu giao diện hoặc môi trường thử của Main System đến muộn hơn cam kết hoặc không đủ thông tin",
+    "Đã xảy ra",
+    "19/04/2027",
+    "1 MD, 2.100.000 đồng",
+    "12,6"
+   ],
+   [
+    "RR04",
+    "Vị trí bổ sung không có mặt đúng sprint huy động đã thống nhất",
+    "Đã đóng",
+    "01/04/2027",
+    "0,50 MD, 1.050.000 đồng",
+    "12,6"
+   ],
+   [
+    "RR21",
+    "Chủ đầu tư bàn giao môi trường thử của Main System sớm hơn 20/05/2027",
+    "Đã đóng",
+    "",
+    "",
+    "1,2"
+   ]
+  ],
+  "widths": [
+   700,
+   3300,
+   1300,
+   1200,
+   1700,
+   1100
+  ],
+  "center_cols": [
+   0,
+   2,
+   3
+  ],
+  "right_cols": [
+   5
+  ]
+ },
+ "so_xay_ra": 4,
+ "ngay_trang_thai": "27/05/2027",
+ "ma_cao": "RR02, RR10",
  "so_hang": {
-  "A": 5,
+  "A": 6,
   "B": 9,
   "C": 7
  },
- "ma_hang_a": "RR02, RR04, RR10, RR01, RR13",
+ "ma_hang_a": "RR02, RR10, RR01, RR04, RR13, RR22",
  "so_co_hoi": 2
 }

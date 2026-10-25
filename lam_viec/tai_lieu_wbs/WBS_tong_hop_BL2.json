@@ -1,0 +1,1306 @@
+{
+ "meta": {
+  "ten": "WBS tổng hợp",
+  "header": "Lập kế hoạch - WBS tổng hợp",
+  "size_bang_pt": 12,
+  "phien_ban": "2.4",
+  "ngay": "27/05/2027"
+ },
+ "blocks": [
+  {
+   "t": "center",
+   "text": "Cấu trúc phân rã công việc",
+   "size": 18
+  },
+  {
+   "t": "center",
+   "text": "Tổng hợp WBS toàn dự án",
+   "size": 15
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+  },
+  {
+   "t": "center",
+   "text": "Khách hàng: Công ty Cổ phần ABC Wear"
+  },
+  {
+   "t": "center",
+   "text": "Tài liệu kế hoạch dự án, đường cơ sở BL2, cập nhật theo yêu cầu thay đổi CR01, phụ lục hợp đồng 01/2027/PL-ABCW"
+  },
+  {
+   "t": "center",
+   "text": "Phiên bản {{PHIEN_BAN}}, ngày {{NGAY}}"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "h2",
+   "text": "1. Khối lượng theo nhóm công việc"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã",
+     "Nhóm công việc",
+     "Khối lượng, MD",
+     "Tỷ trọng"
+    ],
+    [
+     "1",
+     "Phân hệ quản lý sản phẩm",
+     "151,00",
+     "20,6%"
+    ],
+    [
+     "2",
+     "Phân hệ quản lý khách hàng (thành viên)",
+     "147,50",
+     "20,1%"
+    ],
+    [
+     "3",
+     "Phân hệ quản lý đơn hàng (đặt hàng)",
+     "207,50",
+     "28,3%"
+    ],
+    [
+     "4",
+     "Phân hệ tích hợp hệ thống",
+     "152,00",
+     "20,7%"
+    ],
+    [
+     "5",
+     "Bán hàng trên sàn thương mại điện tử",
+     "75,00",
+     "10,2%"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "733,00",
+     "100,0%"
+    ]
+   ],
+   "widths": [
+    800,
+    5200,
+    1700,
+    1600
+   ],
+   "right_cols": [
+    2,
+    3
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Toàn dự án gồm 173 gói công việc, tổng 733 người-ngày. Tổng các nhóm mức 1 bằng tổng các gói công việc, quy tắc 100% được đáp ứng."
+  },
+  {
+   "t": "h2",
+   "text": "2. Khối lượng theo loại công việc"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Loại công việc",
+     "Khối lượng, MD",
+     "Tỷ trọng"
+    ],
+    [
+     "BA",
+     "103",
+     "14,1%"
+    ],
+    [
+     "DEV",
+     "359",
+     "49,0%"
+    ],
+    [
+     "DEVOPS",
+     "42",
+     "5,7%"
+    ],
+    [
+     "PM",
+     "52",
+     "7,1%"
+    ],
+    [
+     "QA",
+     "177",
+     "24,1%"
+    ],
+    [
+     "Tổng cộng",
+     "733",
+     "100,0%"
+    ]
+   ],
+   "widths": [
+    4000,
+    2500,
+    2000
+   ],
+   "right_cols": [
+    1,
+    2
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "3. Căn cứ ước lượng"
+  },
+  {
+   "t": "p",
+   "text": "Ước lượng theo danh mục chức năng: phân loại từng chức năng theo thư viện định mức (giờ công chuẩn cho giải pháp, phát triển, kiểm thử đơn vị, kiểm thử), trừ phần tái sử dụng, cộng các đầu việc phi chức năng, sau đó đối chiếu với WBS và với hợp đồng tương tự."
+  },
+  {
+   "t": "p",
+   "text": "Loại ước lượng là ước lượng sơ bộ giai đoạn dự thầu, quy mô gồm 106 chức năng, 25 đầu việc phi chức năng."
+  },
+  {
+   "t": "p",
+   "text": "Các bước ước lượng như sau."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Bước",
+     "Nội dung",
+     "Khối lượng, MD"
+    ],
+    [
+     "1",
+     "106 chức năng gắn mã WBS (khách hàng, sản phẩm, đơn hàng, tích hợp, nền tảng dùng chung, công cụ kiểm thử, triển khai) được phân loại theo thư viện định mức, nỗ lực trước hiệu chỉnh",
+     "573,60"
+    ],
+    [
+     "2",
+     "Trừ phần tái sử dụng theo tỷ lệ của từng chức năng (thư viện, thành phần dùng chung). Sau hiệu chỉnh gồm giải pháp 119,6 MD, phát triển 285,4 MD, kiểm thử 145,2 MD. Ba thành phần cộng 550,2 MD, chênh 0,1 MD so với tổng 550,3 MD do làm tròn từng thành phần trong bảng tính của nhóm",
+     "550,30"
+    ],
+    [
+     "3",
+     "25 đầu việc phi chức năng: quản trị dự án, bảo đảm chất lượng, rà soát mã, kiểm thử tích hợp, nghiệm thu, hồ sơ kỹ thuật, triển khai, kiểm thử hiệu năng, rà soát an toàn thông tin, giám sát, đào tạo, hỗ trợ kiểm thử chấp nhận và vận hành thử, nghiên cứu tích hợp",
+     "106,70"
+    ],
+    [
+     "4",
+     "Yêu cầu thay đổi CR01 (Bán hàng trên sàn thương mại điện tử) theo 01/2027/PL-ABCW: 20 gói mới, 1 gói tăng khối lượng (2.4.11), 2 gói chỉ thêm phụ thuộc (1.5.2, 1.5.3), ước lượng theo từng gói trong phiếu",
+     "76,00"
+    ]
+   ],
+   "widths": [
+    800,
+    6800,
+    1700
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    2
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Bước 4 là ước lượng theo phiếu yêu cầu thay đổi CR01 sau ký hợp đồng, ghi nhận bằng phụ lục hợp đồng 01/2027/PL-ABCW."
+  },
+  {
+   "t": "p",
+   "text": "Tổng ước lượng 733 người-ngày được phân rã cho các nhóm công việc mức 1, dung sai mỗi nhóm 10%. Tổng WBS 733 người-ngày, bằng tổng ước lượng."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã",
+     "Nhóm công việc",
+     "Ước lượng, MD",
+     "WBS, MD",
+     "Chênh lệch, MD",
+     "Tỷ lệ chênh lệch"
+    ],
+    [
+     "1",
+     "Phân hệ quản lý sản phẩm",
+     "152",
+     "151,00",
+     "-1,00",
+     "-0,7%"
+    ],
+    [
+     "2",
+     "Phân hệ quản lý khách hàng (thành viên)",
+     "147",
+     "147,50",
+     "0,50",
+     "0,3%"
+    ],
+    [
+     "3",
+     "Phân hệ quản lý đơn hàng (đặt hàng)",
+     "207",
+     "207,50",
+     "0,50",
+     "0,2%"
+    ],
+    [
+     "4",
+     "Phân hệ tích hợp hệ thống",
+     "152",
+     "152,00",
+     "0,00",
+     "0,0%"
+    ],
+    [
+     "5",
+     "Bán hàng trên sàn thương mại điện tử",
+     "75",
+     "75,00",
+     "0,00",
+     "0,0%"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "733",
+     "733,00",
+     "0,00",
+     ""
+    ]
+   ],
+   "widths": [
+    600,
+    3700,
+    1300,
+    1200,
+    1300,
+    1200
+   ],
+   "right_cols": [
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Mỗi nhóm gồm phần khối lượng riêng và phần đầu việc chung phân bổ, tổng đầu việc chung 247 người-ngày, phân bổ theo tỷ lệ khối lượng riêng của từng phân hệ (sản phẩm 95, khách hàng 91, đơn hàng 129, tích hợp 95 MD). Đơn vị trong bảng là người-ngày. Ước lượng nhóm là tổng phần riêng và phần chung, làm tròn đến người-ngày theo căn cứ ước lượng của nhóm, cộng phần khối lượng theo yêu cầu thay đổi đã phê duyệt (cột Theo yêu cầu thay đổi, gồm cả phần tăng của gói hiện có và nhóm mới của yêu cầu thay đổi)."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã",
+     "Nhóm công việc",
+     "Phần riêng",
+     "Quản lý dự án",
+     "Phân tích, thiết kế chung",
+     "Kiểm thử hệ thống, vận hành",
+     "Triển khai, chuyển giao",
+     "Phần chung",
+     "Theo yêu cầu thay đổi",
+     "Ước lượng nhóm"
+    ],
+    [
+     "1",
+     "Phân hệ quản lý sản phẩm",
+     "95",
+     "13,90",
+     "15,29",
+     "16,45",
+     "11,59",
+     "57,23",
+     "",
+     "152"
+    ],
+    [
+     "2",
+     "Phân hệ quản lý khách hàng (thành viên)",
+     "91",
+     "13,32",
+     "14,65",
+     "15,76",
+     "11,10",
+     "54,83",
+     "1",
+     "147"
+    ],
+    [
+     "3",
+     "Phân hệ quản lý đơn hàng (đặt hàng)",
+     "129",
+     "18,88",
+     "20,77",
+     "22,34",
+     "15,73",
+     "77,72",
+     "",
+     "207"
+    ],
+    [
+     "4",
+     "Phân hệ tích hợp hệ thống",
+     "95",
+     "13,90",
+     "15,29",
+     "16,45",
+     "11,58",
+     "57,22",
+     "",
+     "152"
+    ],
+    [
+     "5",
+     "Bán hàng trên sàn thương mại điện tử",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "75",
+     "75"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "410",
+     "60,00",
+     "66,00",
+     "71,00",
+     "50,00",
+     "247,00",
+     "76",
+     "733"
+    ]
+   ],
+   "widths": [
+    500,
+    2100,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800
+   ],
+   "right_cols": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Căn cứ ước lượng của từng nhóm công việc như sau."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã",
+     "Kích thước",
+     "Cách phân rã từ tổng nhóm"
+    ],
+    [
+     "1",
+     "Phạm vi phân hệ là tìm kiếm và hiển thị sản phẩm (Product Search theo RFP), không gồm quản trị danh mục sản phẩm của Main System. Phần riêng gồm 5 chức năng (chỉ mục tìm kiếm, tìm kiếm và gợi ý, lọc và sắp xếp, danh mục và chi tiết sản phẩm, bộ nhớ đệm), 3 màn hình (trang chủ và danh mục, kết quả tìm kiếm, chi tiết sản phẩm), 4 nhóm dịch vụ phía máy chủ. Phần chung gồm đặc tả chức năng sản phẩm, sơ đồ phân cấp menu, giao diện ưu tiên và thư viện thành phần giao diện, kiểm thử hiệu năng, kiểm thử chấp nhận luồng sản phẩm, môi trường phát triển, chuyển đổi dữ liệu chính thức, bàn giao mã nguồn, phần quản lý dự án.",
+     "Tổng nhóm theo căn cứ ước lượng là 152 MD, làm tròn từ phần riêng 95 MD và phần đầu việc chung phân bổ 57,23 MD theo tỷ lệ khối lượng riêng (quản lý dự án 13,90, phân tích và thiết kế chung 15,29, kiểm thử hệ thống và vận hành 16,45, triển khai và chuyển giao 11,59 MD). Phần riêng chia theo tỷ lệ giải pháp, phát triển, kiểm thử của bước 2 (119,6, 285,4, 145,2 MD) và số chức năng, màn hình của phân hệ. Thiết kế chi tiết lớn nhất ở tìm kiếm, lọc và sắp xếp vì cần chỉ mục tìm kiếm riêng. Đầu việc chung nguyên vẹn được gán cho phân hệ liên quan nhất gồm đặc tả, menu và giao diện trang sản phẩm, kịch bản, kiểm thử và tối ưu hiệu năng vì thời gian phản hồi đo chủ yếu trên trang tìm kiếm và chi tiết sản phẩm (chỉ tiêu KT02, KT03), chuyển đổi dữ liệu sản phẩm, tồn kho chính thức. Môi trường phát triển và bàn giao mã nguồn không gắn riêng phân hệ nào, được gán vào nhóm này để tổng nhóm sát mục tiêu. Họp tiến độ, quản lý rủi ro và thay đổi, cấu hình và hồ sơ thanh toán là việc dàn trải, chia theo tỷ lệ giữa bốn phân hệ. Khởi động dự án và báo cáo tổng kết được gán cho nhóm này. Tổng các gói của nhóm là 151 MD, nằm trong dung sai của nhóm. Mục mức 2 gồm 1.1 quản lý dự án 14 MD, 1.2 phân tích và thiết kế 32 MD, 1.3 xây dựng 39 MD, 1.4 kiểm thử 54 MD, 1.5 triển khai và chuyển giao 12 MD."
+    ],
+    [
+     "2",
+     "Phần riêng gồm 6 chức năng (đăng ký và xác thực thư điện tử, đăng nhập và phiên làm việc, khôi phục và đổi mật khẩu, thông tin thành viên và sổ địa chỉ, đồng ý điều khoản và bảo vệ dữ liệu cá nhân, bảo mật tài khoản), 2 nhóm màn hình. Phần chung gồm kế hoạch bảo đảm chất lượng, đặc tả thành viên và yêu cầu phi chức năng, nghiên cứu hành vi người dùng, giao diện ưu tiên thành viên, kế hoạch kiểm thử, khả năng sử dụng, rà soát bảo mật, kiểm thử hồi quy, kiểm thử chấp nhận luồng thành viên, tài liệu hướng dẫn sử dụng và vận hành, phần quản lý dự án.",
+     "Tổng nhóm theo căn cứ ước lượng là 147 MD, làm tròn từ phần riêng 91 MD và phần đầu việc chung phân bổ 54,83 MD theo tỷ lệ khối lượng riêng (quản lý dự án 13,32, phân tích và thiết kế chung 14,65, kiểm thử hệ thống và vận hành 15,76, triển khai và chuyển giao 11,10 MD). Phần riêng chia theo tỷ lệ giải pháp, phát triển, kiểm thử của bước 2 (119,6, 285,4, 145,2 MD) và số chức năng, màn hình của phân hệ. Đăng nhập và màn hình đăng ký, đăng nhập lớn nhất vì gồm phiên làm việc, giới hạn đăng nhập sai và kiểm soát dữ liệu đầu vào theo chỉ tiêu KT04. Đầu việc chung nguyên vẹn được gán cho phân hệ liên quan nhất. Nghiên cứu hành vi người dùng, khả năng sử dụng, tài liệu hướng dẫn sử dụng gắn với khách hàng. Yêu cầu phi chức năng, rà soát lỗ hổng theo OWASP Top 10 gắn với bảo mật tài khoản. Kế hoạch bảo đảm chất lượng, kế hoạch kiểm thử và kiểm thử hồi quy cùng chuỗi tiêu chí chất lượng. Tài liệu hướng dẫn vận hành không gắn riêng phân hệ nào, được gán vào nhóm này để tổng nhóm sát mục tiêu. Phần quản lý dàn trải chia theo tỷ lệ giữa bốn phân hệ. Ước lượng nhóm gồm thêm 1 MD tăng của gói kiểm thử hồi quy 2.4.11 theo yêu cầu thay đổi CR01. Tổng các gói của nhóm là 147,50 MD, nằm trong dung sai của nhóm. Mục mức 2 gồm 2.1 quản lý dự án 13,50 MD, 2.2 phân tích và thiết kế 28 MD, 2.3 xây dựng 35 MD, 2.4 kiểm thử 60 MD, 2.5 triển khai và chuyển giao 11 MD."
+    ],
+    [
+     "3",
+     "Phần riêng gồm 7 chức năng (giỏ hàng, giữ tồn, phí vận chuyển, khuyến mại và mã giảm giá, đặt hàng và xác nhận, theo dõi và hủy đơn, đổi trả và hoàn tiền), 3 nhóm màn hình. Phần chung gồm kế hoạch quản lý dự án và xác nhận kế hoạch, khảo sát nghiệp vụ, đặc tả đặt hàng, quy trình vận hành mới, giao diện ưu tiên đặt hàng, xác nhận đặc tả, rà soát mã nguồn, kiểm thử hệ thống đầu cuối, kiểm thử chấp nhận luồng đặt hàng, hướng dẫn vận hành, kế hoạch và diễn tập cut over, hỗ trợ ngày đưa vào vận hành, phần quản lý dự án.",
+     "Tổng nhóm theo căn cứ ước lượng là 207 MD, làm tròn từ phần riêng 129 MD và phần đầu việc chung phân bổ 77,72 MD theo tỷ lệ khối lượng riêng (quản lý dự án 18,88, phân tích và thiết kế chung 20,77, kiểm thử hệ thống và vận hành 22,34, triển khai và chuyển giao 15,73 MD). Phần riêng chia theo tỷ lệ giải pháp, phát triển, kiểm thử của bước 2 (119,6, 285,4, 145,2 MD) và số chức năng, màn hình của phân hệ. Phân hệ lớn nhất vì gồm năm nghiệp vụ NV01 đến NV05, đặt hàng và màn hình đặt hàng lớn nhất vì liên kết giỏ hàng, giữ tồn, phí vận chuyển, khuyến mại và thư điện tử xác nhận. Đầu việc chung nguyên vẹn được gán cho phân hệ liên quan nhất gồm khảo sát nghiệp vụ bán hàng, quy trình vận hành mới, đặc tả và xác nhận đặc tả (luồng đặt hàng là luồng nghiệp vụ chính), kiểm thử hệ thống đầu cuối và kiểm thử chấp nhận theo luồng đặt hàng, hướng dẫn vận hành cho cán bộ bán hàng, kế hoạch, diễn tập và hỗ trợ cut over. Kế hoạch quản lý dự án, xác nhận kế hoạch và cập nhật sổ rủi ro sau xác nhận đặc tả thuộc phần quản lý dự án được gán cho nhóm này. Rà soát mã nguồn và kiến trúc (3.3.11) là đầu việc chung tính trong phần quản lý dự án phân bổ (18,88 MD) nhưng đặt ở mục 3.3 xây dựng vì là công việc kỹ thuật, nên mục 3.1 (15,50 MD) nhỏ hơn phần quản lý dự án phân bổ. Phần quản lý dàn trải chia theo tỷ lệ giữa bốn phân hệ. Tổng các gói của nhóm là 207,50 MD, nằm trong dung sai của nhóm. Mục mức 2 gồm 3.1 quản lý dự án 15,50 MD, 3.2 phân tích và thiết kế 45 MD, 3.3 xây dựng 56 MD, 3.4 kiểm thử 79 MD, 3.5 triển khai và chuyển giao 12 MD."
+    ],
+    [
+     "4",
+     "Phần riêng gồm 1 Selling DB, 2 khung ứng dụng (phía máy chủ, giao diện), 1 dịch vụ thư điện tử, 5 luồng tích hợp với Main System (sản phẩm và giá, tồn kho, chuyển đơn hàng, trạng thái vận chuyển, giám sát và gửi lại), 1 công cụ chuyển đổi dữ liệu, 1 lần chuyển đổi thử và 1 lần nạp nội dung. Phần chung gồm khảo sát hệ thống hiện có, kiến trúc, cấu trúc và cấu hình cơ sở dữ liệu, khắc phục lỗi sau kiểm thử hệ thống, Chủ đầu tư kiểm tra chức năng chính và tích hợp, kiểm thử bản phát hành và diễn tập chuyển đổi dự phòng trên môi trường vận hành, môi trường vận hành, giám sát, rà soát giấy phép, phần quản lý dự án.",
+     "Tổng nhóm theo căn cứ ước lượng là 152 MD, làm tròn từ phần riêng 95 MD và phần đầu việc chung phân bổ 57,22 MD theo tỷ lệ khối lượng riêng (quản lý dự án 13,90, phân tích và thiết kế chung 15,29, kiểm thử hệ thống và vận hành 16,45, triển khai và chuyển giao 11,58 MD). Phần riêng gồm nền tảng dùng chung, Selling DB, tích hợp với Main System và chuyển đổi dữ liệu, mỗi luồng tích hợp ước lượng theo số thực thể dữ liệu và chiều trao đổi. Đầu việc chung ở mức hệ thống được gán cho phân hệ này gồm khảo sát Main System, kiến trúc, cấu trúc và cấu hình Selling DB, khắc phục lỗi sau kiểm thử hệ thống, Chủ đầu tư kiểm tra chức năng chính và tích hợp (mốc M3), kiểm thử bản phát hành, diễn tập chuyển đổi dự phòng, môi trường vận hành, giám sát và rà soát giấy phép thư viện. Phần quản lý dàn trải chia theo tỷ lệ giữa bốn phân hệ. Phần quản lý dự án phân bổ cho nhóm này (13,90 MD) lớn hơn mục 4.1 (9 MD) vì phần quản lý mang tính kỹ thuật của phân hệ tích hợp được đặt ở các gói rà soát giấy phép thư viện mã nguồn mở và quyền sở hữu sản phẩm (4.5.5) và giám sát vận hành, chuẩn bị hỗ trợ tăng cường sau cut over (4.5.6). Tổng các gói của nhóm là 152 MD, nằm trong dung sai của nhóm. Mục mức 2 gồm 4.1 quản lý dự án 9 MD, 4.2 phân tích và thiết kế 27 MD, 4.3 xây dựng 51 MD, 4.4 kiểm thử 40 MD, 4.5 triển khai và chuyển giao 25 MD."
+    ],
+    [
+     "5",
+     "Phạm vi bổ sung theo yêu cầu thay đổi CR01 gồm kết nối sàn, đồng bộ sản phẩm và giá, đồng bộ tồn kho, nhận đơn hàng từ sàn, cập nhật trạng thái đơn hàng lên sàn, đối soát đơn hàng và thanh toán, giao diện quản trị kênh sàn, kiểm thử và hướng dẫn sử dụng, phần quản lý yêu cầu thay đổi.",
+     "Ước lượng theo từng gói của phần bổ sung bằng cùng thư viện định mức với bốn phân hệ của hợp đồng, dùng lại tầng tích hợp, dịch vụ đơn hàng và dịch vụ tồn kho đã xây dựng. Ngoài nhóm này, yêu cầu thay đổi tăng khối lượng một gói hiện có là kiểm thử hồi quy 2.4.11 thuộc nhóm 2, chuyển đổi dữ liệu và triển khai chính thức 1.5.2, bàn giao mã nguồn 1.5.3 chỉ thêm phụ thuộc vào các gói của nhóm này, không tăng khối lượng. Các gói tích hợp với sàn được gán hạng mục 9 của Mẫu 01A là hạng mục tích hợp gần nhất, phần này thuộc phụ lục hợp đồng của yêu cầu thay đổi, không thuộc phạm vi hạng mục 9 khi ký hợp đồng. Tổng các gói của nhóm là 75 MD."
+    ]
+   ],
+   "widths": [
+    600,
+    3200,
+    5500
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Đối chiếu với các hợp đồng tương tự nhà thầu đã thực hiện như sau."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Hợp đồng",
+     "Chủ đầu tư",
+     "Hoàn thành",
+     "Quy mô, MD",
+     "So với tổng WBS"
+    ],
+    [
+     "Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng, số 12/2024/HĐ-HG",
+     "Công ty Cổ phần Thời trang Hoàng Gia",
+     "29/11/2024",
+     "550",
+     "75,0%"
+    ],
+    [
+     "Website bán hàng trực tuyến và tích hợp ERP, số 03/2025/HĐ-AP",
+     "Công ty TNHH Nội thất An Phát",
+     "18/07/2025",
+     "420",
+     "57,3%"
+    ],
+    [
+     "Trung bình",
+     "",
+     "",
+     "485",
+     "66,2%"
+    ]
+   ],
+   "widths": [
+    3600,
+    2300,
+    1200,
+    1100,
+    1100
+   ],
+   "center_cols": [
+    2
+   ],
+   "right_cols": [
+    3,
+    4
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Tổng khối lượng WBS 733 người-ngày cao hơn 51,1% so với quy mô trung bình 485 người-ngày của các hợp đồng tương tự, vượt ngưỡng 25% cần giải trình. Mức chênh lệch do phạm vi gói thầu rộng hơn mô tả của hai hợp đồng tương tự (550 MD và 420 MD), hợp đồng thứ nhất gồm website bán hàng, ba phân hệ khách hàng, sản phẩm, đơn hàng và tầng tích hợp với hệ thống bán hàng nội bộ, hợp đồng thứ hai gồm website bán hàng với danh mục, giỏ hàng, đặt hàng, đồng bộ tồn kho, tích hợp ERP và đơn vị giao vận. Thứ nhất, Selling DB là cơ sở dữ liệu riêng, trao đổi dữ liệu hai chiều với Main System gồm đồng bộ sản phẩm, giá, tồn kho, chuyển đơn hàng, nhận trạng thái vận chuyển và giám sát, gửi lại khi lỗi (4.3, 4.4). Thứ hai, yêu cầu hoạt động liên tục 24 giờ, 365 ngày và thời gian phản hồi không quá 2 giây với 500 người dùng đồng thời cần môi trường vận hành hai nút, cơ sở dữ liệu dự phòng, kiểm thử hiệu năng, diễn tập chuyển đổi dự phòng (4.5.1, 1.4.8, 1.4.9, 4.4.8). Thứ ba, gói thầu gồm quy trình vận hành mới, kiểm thử vận hành cùng Chủ đầu tư và hỗ trợ cut over có chuyển đổi dữ liệu (3.2.3, 1.4.11, 2.4.12, 3.4.13, 4.5.3, 1.5.2, 3.5). Thứ tư, phân hệ quản lý đơn hàng xử lý đủ các nghiệp vụ hủy đơn, đổi trả, khuyến mại, phí vận chuyển, giữ tồn (NV01 đến NV05). Tổng khối lượng theo căn cứ ước lượng do nhóm quyết định. Tổng khối lượng WBS hiện hành gồm 76 người-ngày của yêu cầu thay đổi CR01 ký sau hợp đồng (bước 4 của căn cứ ước lượng), phần này không thuộc phạm vi so sánh với các hợp đồng tương tự khi lập hồ sơ dự thầu."
+  },
+  {
+   "t": "p",
+   "text": "Khoảng sai số của loại ước lượng này từ -15% đến +30%, tương ứng 623,05 đến 952,90 người-ngày."
+  },
+  {
+   "t": "h2",
+   "text": "4. Cấu trúc mức 1 và mức 2"
+  },
+  {
+   "t": "p",
+   "text": "1. Phân hệ quản lý sản phẩm (151 MD)",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "1.1. Quản lý dự án, phần phân bổ cho phân hệ quản lý sản phẩm (14 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.2. Phân tích và thiết kế phân hệ quản lý sản phẩm (32 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.3. Xây dựng phân hệ quản lý sản phẩm (lập trình và kiểm thử đơn vị) (39 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.4. Kiểm thử phân hệ quản lý sản phẩm, gồm phần kiểm thử hệ thống và kiểm thử chấp nhận phân bổ (54 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "1.5. Triển khai và chuyển giao, phần phân bổ cho phân hệ quản lý sản phẩm (12 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2. Phân hệ quản lý khách hàng (thành viên) (147,50 MD)",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "2.1. Quản lý dự án, phần phân bổ cho phân hệ quản lý khách hàng (13,50 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.2. Phân tích và thiết kế phân hệ quản lý khách hàng (28 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.3. Xây dựng phân hệ quản lý khách hàng (lập trình và kiểm thử đơn vị) (35 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4. Kiểm thử phân hệ quản lý khách hàng, gồm phần kiểm thử hệ thống và kiểm thử chấp nhận phân bổ (60 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.5. Triển khai và chuyển giao, phần phân bổ cho phân hệ quản lý khách hàng (11 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "3. Phân hệ quản lý đơn hàng (đặt hàng) (207,50 MD)",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "3.1. Quản lý dự án, phần phân bổ cho phân hệ quản lý đơn hàng (15,50 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "3.2. Phân tích và thiết kế phân hệ quản lý đơn hàng (45 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "3.3. Xây dựng phân hệ quản lý đơn hàng (lập trình và kiểm thử đơn vị) (56 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "3.4. Kiểm thử phân hệ quản lý đơn hàng, gồm phần kiểm thử hệ thống và kiểm thử chấp nhận phân bổ (79 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "3.5. Triển khai và chuyển giao, phần phân bổ cho phân hệ quản lý đơn hàng (12 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4. Phân hệ tích hợp hệ thống (152 MD)",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "4.1. Quản lý dự án, phần phân bổ cho phân hệ tích hợp hệ thống (9 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.2. Phân tích và thiết kế phân hệ tích hợp hệ thống (27 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.3. Xây dựng phân hệ tích hợp hệ thống (lập trình và kiểm thử đơn vị) (51 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.4. Kiểm thử phân hệ tích hợp hệ thống, gồm phần kiểm thử hệ thống và kiểm thử chấp nhận phân bổ (40 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "4.5. Triển khai và chuyển giao, phần phân bổ cho phân hệ tích hợp hệ thống (25 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5. Bán hàng trên sàn thương mại điện tử (75 MD)",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "5.1. Quản lý dự án, phần bán hàng trên sàn thương mại điện tử (3 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.2. Phân tích và thiết kế bán hàng trên sàn thương mại điện tử (14 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.3. Xây dựng chức năng bán hàng trên sàn thương mại điện tử (lập trình và kiểm thử đơn vị) (33 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.4. Kiểm thử bán hàng trên sàn thương mại điện tử (19 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "5.5. Triển khai và hướng dẫn sử dụng bán hàng trên sàn thương mại điện tử (6 MD)",
+   "thut": 1,
+   "dam": false
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h2",
+   "text": "5. Ma trận truy vết yêu cầu RFP"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi yêu cầu về hệ thống, sản phẩm, phạm vi và nội dung đề xuất của RFP được gắn với gói công việc đáp ứng. Yêu cầu về thủ tục và hợp đồng được đáp ứng trong hồ sơ dự thầu và kế hoạch quản lý."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã yêu cầu",
+     "Yêu cầu RFP",
+     "Gói công việc đáp ứng"
+    ],
+    [
+     "R01",
+     "RFP phát hành ngày 22/02 năm 20XX",
+     "Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng"
+    ],
+    [
+     "R02",
+     "Mục tiêu dự án: mở rộng khách hàng qua internet, tạo kênh bán hàng mới",
+     "3.2.1"
+    ],
+    [
+     "R03",
+     "Chính sách phát triển: khách hàng thao tác dễ dàng",
+     "1.2.3, 1.2.4, 1.3.5, 1.3.6, 1.3.7, 1.4.5, 2.2.2, 2.2.3, 2.2.4, 2.3.6, 2.3.7, 2.4.5, 2.4.9, 3.2.4, 3.3.8, 3.3.9, 3.3.10, 4.3.3"
+    ],
+    [
+     "R04",
+     "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+     "1.5.1, 2.2.2, 2.5.2, 4.2.2, 4.2.4, 4.3.1, 4.3.9, 4.4.7, 4.4.8, 4.5.1, 4.5.2, 4.5.6"
+    ],
+    [
+     "R05",
+     "Thời gian phản hồi nhanh, không quá 2 giây",
+     "1.2.7, 1.3.1, 1.3.8, 1.4.3, 1.4.5, 1.4.8, 1.4.9, 1.4.10, 2.2.2, 4.2.2, 4.4.7"
+    ],
+    [
+     "R06",
+     "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+     "1.2.1, 1.2.3, 1.2.5, 1.2.6, 1.2.7, 1.2.8, 1.3.1, 1.3.2, 1.3.3, 1.3.4, 1.3.5, 1.3.6, 1.3.7, 1.4.1, 1.4.2, 1.4.3, 1.4.4, 1.4.6, 1.4.7, 1.4.12, 3.4.10, 3.4.12, 4.4.5, 4.5.4"
+    ],
+    [
+     "R07",
+     "Hệ thống mới có chức năng quản lý thành viên",
+     "2.2.1, 2.2.4, 2.2.5, 2.2.6, 2.2.7, 2.2.8, 2.3.1, 2.3.2, 2.3.3, 2.3.4, 2.3.5, 2.3.6, 2.3.7, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.4.7, 2.4.10, 2.4.13, 3.4.10, 3.4.12, 4.3.4, 4.4.5"
+    ],
+    [
+     "R08",
+     "Hệ thống mới có chức năng đặt hàng",
+     "2.4.10, 3.2.2, 3.2.4, 3.2.6, 3.2.7, 3.2.8, 3.2.9, 3.2.10, 3.2.11, 3.3.1, 3.3.2, 3.3.3, 3.3.4, 3.3.5, 3.3.6, 3.3.7, 3.3.8, 3.3.9, 3.3.10, 3.4.1, 3.4.2, 3.4.3, 3.4.4, 3.4.5, 3.4.6, 3.4.7, 3.4.8, 3.4.9, 3.4.10, 3.4.12, 3.4.14, 4.3.4, 4.3.7, 4.4.5"
+    ],
+    [
+     "R09",
+     "Hệ thống mới có cơ sở dữ liệu bán hàng Selling DB",
+     "4.2.3, 4.3.2, 4.3.10, 4.5.3"
+    ],
+    [
+     "R10",
+     "Selling DB trao đổi dữ liệu với hệ thống chính hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch",
+     "3.4.12, 4.2.1, 4.2.5, 4.2.6, 4.2.7, 4.3.5, 4.3.6, 4.3.7, 4.3.9, 4.4.1, 4.4.2, 4.4.3, 4.4.4, 4.4.9"
+    ],
+    [
+     "R11",
+     "Nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng",
+     "2.2.6, 2.3.4, 3.2.2, 3.2.3, 3.2.8, 3.4.13, 4.2.1, 4.2.5, 4.3.8, 4.4.2, 4.4.3"
+    ],
+    [
+     "R12",
+     "Đưa hệ thống vào vận hành ngày 01/07",
+     "1.5.2, 3.5.2, 3.5.3, 3.5.4, 4.3.10, 4.5.3, 4.5.4, 4.5.6"
+    ],
+    [
+     "R13",
+     "Phạm vi: xây dựng hệ thống website bán hàng từ phân tích hệ thống đến kiểm thử vận hành",
+     "1.4.11, 1.4.12, 1.5.1, 2.1.1, 2.4.8, 2.4.11, 2.4.12, 2.4.13, 3.2.1, 3.3.11, 3.4.11, 3.4.13, 3.4.14, 4.3.1, 4.4.9"
+    ],
+    [
+     "R14",
+     "Đề xuất phải gồm các nội dung liệt kê và nhà thầu được bổ sung các nội dung cần thiết cho thành công của dự án",
+     "Không cần gói: Yêu cầu về nội dung trình bày trong đề xuất (HSDT), không phát sinh gói công việc thực hiện hợp đồng"
+    ],
+    [
+     "R15",
+     "Nhà thầu nêu điều kiện tiền đề của đề xuất",
+     "1.1.1"
+    ],
+    [
+     "R16",
+     "Nhà thầu nêu chi phí ước tính kèm lý do. Theo Mẫu 5A, chi phí nằm trong đề xuất tài chính (Mẫu số 11A), không chấm điểm kỹ thuật",
+     "Không cần gói: Chi phí ước tính trình bày trong đề xuất tài chính (Mẫu số 11A, cost estimate), không phát sinh gói công việc thực hiện hợp đồng"
+    ],
+    [
+     "R17",
+     "Nhà thầu nêu phạm vi công việc gắn với tiêu chuẩn của Chủ đầu tư",
+     "1.1.1"
+    ],
+    [
+     "R18",
+     "Nhà thầu nêu sản phẩm bàn giao trong hợp đồng",
+     "1.1.4, 1.1.5, 1.5.3, 2.1.4, 3.1.5, 3.5.4, 4.1.3"
+    ],
+    [
+     "R19",
+     "Nhà thầu nêu tiến độ đến ngày cut over",
+     "3.1.1, 3.1.2"
+    ],
+    [
+     "R20",
+     "Nhà thầu nêu tổ chức thực hiện dự án",
+     "3.1.1, 3.1.2"
+    ],
+    [
+     "R21",
+     "Nhà thầu đề xuất kế hoạch họp",
+     "1.1.2, 2.1.2, 3.1.1, 3.1.3, 4.1.1"
+    ],
+    [
+     "R22",
+     "Nhà thầu nêu vai trò và trách nhiệm",
+     "1.1.1"
+    ],
+    [
+     "R23",
+     "Nhà thầu nêu các điều kiện khác liên quan đến hợp đồng",
+     "Không cần gói: Điều kiện khác liên quan đến hợp đồng trình bày trong HSDT, không phát sinh gói công việc"
+    ],
+    [
+     "R24",
+     "Nhà thầu nêu đề nghị đối với Chủ đầu tư",
+     "Không cần gói: Đề nghị đối với Chủ đầu tư trình bày trong HSDT, không phát sinh gói công việc"
+    ],
+    [
+     "R25",
+     "Hạn nộp đề xuất ngày 08/03",
+     "Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng"
+    ],
+    [
+     "R26",
+     "Nộp 10 bản đề xuất",
+     "Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng"
+    ],
+    [
+     "R27",
+     "Chủ đầu tư sẽ báo thời gian chính xác của buổi trình bày đề xuất",
+     "Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng"
+    ],
+    [
+     "R28",
+     "Địa điểm trình bày: phòng họp A, trụ sở chính",
+     "Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng"
+    ],
+    [
+     "R29",
+     "RFP có thông tin bảo mật, nhà thầu phải giữ an toàn và quản lý chặt chẽ",
+     "Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng"
+    ],
+    [
+     "R30",
+     "Nhà thầu hỏi qua e-mail hoặc đến trụ sở Chủ đầu tư",
+     "Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng"
+    ],
+    [
+     "R31",
+     "Đầu mối: Yamada, Phòng Kế hoạch, e-mail yamada@abc.com",
+     "Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng"
+    ],
+    [
+     "R32",
+     "Thời gian hỏi đáp từ 22/02 đến 07/03",
+     "Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng"
+    ],
+    [
+     "R33",
+     "Bên A là ABC Wear, bên B là Inter Solution",
+     "Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng"
+    ],
+    [
+     "R34",
+     "Nhà thầu bắt đầu xây dựng hệ thống ngay sau khi ký hợp đồng",
+     "1.1.1"
+    ],
+    [
+     "R35",
+     "Mỗi bên được đề xuất thay đổi đặc tả khi cần",
+     "1.1.3, 2.1.3, 3.1.1, 3.1.4, 3.1.6, 3.2.5, 4.1.2"
+    ],
+    [
+     "R36",
+     "Nhà thầu thuê ngoài phải đề nghị bằng văn bản và được Chủ đầu tư cho phép",
+     "Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng"
+    ],
+    [
+     "R37",
+     "Nhà thầu bàn giao sản phẩm đúng địa điểm và thời hạn đã thống nhất",
+     "1.1.4, 2.1.4, 3.1.5, 4.1.3"
+    ],
+    [
+     "R38",
+     "Chủ đầu tư kiểm tra sản phẩm theo điều kiện trong đặc tả và thông báo kết quả cho nhà thầu",
+     "1.4.11, 2.4.12, 3.4.13, 4.2.6, 4.4.6"
+    ],
+    [
+     "R39",
+     "Kiểm tra đạt là chấp nhận sản phẩm",
+     "4.4.6"
+    ],
+    [
+     "R40",
+     "Quyền sở hữu và bản quyền đối với sản phẩm và kết quả kỹ thuật của dự án thuộc Chủ đầu tư",
+     "1.5.3, 4.5.5"
+    ],
+    [
+     "R41",
+     "Nhà thầu sử dụng sản phẩm cho bên khác phải được Chủ đầu tư cho phép",
+     "4.5.5"
+    ],
+    [
+     "R42",
+     "Lỗi logic hoặc vấn đề thuộc trách nhiệm nhà thầu được nhà thầu sửa chữa, bổ sung bằng chi phí của mình trong thời gian sớm nhất",
+     "1.4.4, 1.4.6, 1.4.10, 1.4.12, 2.1.1, 2.4.4, 2.4.6, 2.4.13, 3.3.11, 3.4.5, 3.4.7, 3.4.8, 3.4.14, 4.4.4, 4.4.5, 4.4.9"
+    ],
+    [
+     "R43",
+     "Thời hạn trách nhiệm của nhà thầu là một năm",
+     "Thuộc thủ tục đấu thầu hoặc điều khoản hợp đồng"
+    ],
+    [
+     "R44",
+     "Sản phẩm: đặc tả hệ thống gồm cấu hình cơ sở dữ liệu và chức năng",
+     "1.2.1, 2.2.1, 3.2.2, 3.2.5, 3.2.12, 4.2.4"
+    ],
+    [
+     "R45",
+     "Chức năng quản trị nội bộ nằm ngoài phạm vi dự án",
+     "Không cần gói: Yêu cầu loại trừ phạm vi (chức năng quản trị nội bộ), không phát sinh công việc"
+    ],
+    [
+     "R46",
+     "Sản phẩm: quy trình vận hành mới",
+     "2.5.1, 2.5.2, 2.5.3, 3.2.3, 3.2.5, 3.4.11, 3.5.1"
+    ],
+    [
+     "R47",
+     "Sản phẩm: cấu trúc cơ sở dữ liệu Selling DB",
+     "3.2.5, 3.2.12, 4.2.3, 4.3.2"
+    ],
+    [
+     "R48",
+     "Sản phẩm: sơ đồ phân cấp menu",
+     "1.2.2, 1.2.6, 1.3.5, 3.2.5"
+    ]
+   ],
+   "widths": [
+    1100,
+    4600,
+    3600
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Ngày đưa hệ thống vào vận hành nêu tại R12 được điều chỉnh thành 29/07/2027 theo phụ lục hợp đồng 01/2027/PL-ABCW của yêu cầu thay đổi CR01, các gói đáp ứng giữ nguyên."
+  },
+  {
+   "t": "h2",
+   "text": "6. Truy vết yêu cầu thay đổi"
+  },
+  {
+   "t": "p",
+   "text": "Gói công việc thêm mới, tăng khối lượng hoặc thêm phụ thuộc theo yêu cầu thay đổi đã được phê duyệt và ghi nhận bằng phụ lục hợp đồng."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Yêu cầu thay đổi",
+     "Phụ lục hợp đồng",
+     "Gói công việc",
+     "MD tăng"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "1.5.2 Chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức (thêm phụ thuộc, không tăng khối lượng)",
+     "0"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "1.5.3 Bàn giao mã nguồn, tài liệu kỹ thuật, tài liệu cài đặt và danh mục thư viện (thêm phụ thuộc, không tăng khối lượng)",
+     "0"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "2.4.11 Kiểm thử hồi quy theo các đợt khắc phục lỗi kiểm thử chấp nhận (tăng khối lượng)",
+     "1"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.1.1 Quản lý yêu cầu thay đổi, phụ lục hợp đồng, theo dõi tiến độ và hồ sơ nghiệm thu phần bán hàng trên sàn thương mại điện tử (gói mới)",
+     "3"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.2.1 Khảo sát quy trình bán hàng trên sàn thương mại điện tử và giao diện lập trình của sàn (gói mới)",
+     "3"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.2.2 Đặc tả chức năng và use case đồng bộ sản phẩm, tồn kho, giá, nhận đơn, cập nhật trạng thái và đối soát với sàn (gói mới)",
+     "5"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.2.3 Thiết kế tích hợp với sàn gồm xác thực, ánh xạ dữ liệu, xử lý lỗi và gửi lại (gói mới)",
+     "4"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.2.4 Xác nhận đặc tả bán hàng trên sàn thương mại điện tử của Chủ đầu tư (gói mới)",
+     "2"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.3.1 Kết nối sàn gồm xác thực, cấu hình cửa hàng và quản lý khóa truy cập (gói mới)",
+     "4"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.3.2 Đồng bộ sản phẩm và giá lên sàn (gói mới)",
+     "5"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.3.3 Đồng bộ tồn kho lên sàn (gói mới)",
+     "4"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.3.4 Nhận đơn hàng từ sàn vào luồng xử lý đơn hàng (gói mới)",
+     "6"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.3.5 Cập nhật trạng thái đơn hàng và vận chuyển lên sàn (gói mới)",
+     "4"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.3.6 Đối soát đơn hàng và thanh toán với sàn (gói mới)",
+     "5"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.3.7 Giao diện quản trị kênh sàn gồm ánh xạ sản phẩm, theo dõi đồng bộ và kết quả đối soát (gói mới)",
+     "5"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.4.1 Kịch bản kiểm thử bán hàng trên sàn thương mại điện tử (gói mới)",
+     "3"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.4.2 Kiểm thử tích hợp với môi trường thử của sàn (gói mới)",
+     "6"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.4.3 Kiểm thử hệ thống luồng bán hàng trên sàn gồm đồng bộ, nhận đơn, trạng thái và đối soát (gói mới)",
+     "4"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.4.4 Khắc phục lỗi và kiểm thử lại sau kiểm thử bán hàng trên sàn (gói mới)",
+     "3"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.4.5 Tổ chức và hỗ trợ kiểm thử chấp nhận bán hàng trên sàn cùng Chủ đầu tư (gói mới)",
+     "3"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.5.1 Cấu hình kết nối sàn trên môi trường vận hành (gói mới)",
+     "2"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.5.2 Tài liệu và buổi hướng dẫn sử dụng bán hàng trên sàn cho cán bộ Chủ đầu tư (gói mới)",
+     "3"
+    ],
+    [
+     "CR01",
+     "01/2027/PL-ABCW, 27/05/2027",
+     "5.5.3 Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện phần bán hàng trên sàn thương mại điện tử (gói mới)",
+     "1"
+    ]
+   ],
+   "widths": [
+    1300,
+    2300,
+    4700,
+    1000
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [
+    3
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "7. Phân bổ theo hạng mục Mẫu 01A"
+  },
+  {
+   "t": "p",
+   "text": "Bảng dùng để lập bảng tiến độ Mẫu 10A và bảng giá Mẫu 11A theo đúng danh mục dịch vụ của HSMT. Gói gắn nhiều hạng mục được chia đều khối lượng. Khi mọi gói của một mục đều thuộc hạng mục, bảng ghi mã mục thay cho từng gói."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "STT",
+     "Hạng mục Mẫu 01A",
+     "Gói công việc",
+     "Khối lượng, MD"
+    ],
+    [
+     "1",
+     "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+     "1.1.1, 1.1.2, 1.1.3, 1.1.4, 1.2.1, 2.1, 2.2.1, 2.2.2, 3.1, 3.2.1, 3.2.2, 3.2.5, 4.1, 4.2.1, 4.2.2, 4.2.4, 5.1, 5.2.1, 5.2.2, 5.2.4",
+     "61,06"
+    ],
+    [
+     "2",
+     "Thiết kế quy trình vận hành mới (New Operational Flow)",
+     "1.1.2, 1.1.3, 1.1.4, 2.1.2, 2.1.3, 2.1.4, 3.1.3, 3.1.4, 3.1.5, 3.2.3, 3.2.5, 4.1",
+     "7,56"
+    ],
+    [
+     "3",
+     "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+     "1.1.2, 1.1.3, 1.1.4, 2.1.2, 2.1.3, 2.1.4, 3.1.3, 3.1.4, 3.1.5, 3.2.5, 4.1, 4.2.3",
+     "8,56"
+    ],
+    [
+     "4",
+     "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+     "1.1.2, 1.1.3, 1.1.4, 1.2.2, 1.2.3, 2.1.2, 2.1.3, 2.1.4, 2.2.3, 2.2.4, 3.1.3, 3.1.4, 3.1.5, 3.2.4, 3.2.5, 4.1",
+     "20,56"
+    ],
+    [
+     "5",
+     "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+     "1.1.2, 1.1.3, 1.1.4, 1.2.4, 1.2.5, 1.2.6, 1.2.7, 1.2.8, 1.3, 1.4.1, 1.4.2, 1.4.3, 1.4.4, 1.4.5, 1.4.6, 1.4.7, 1.5.1, 2.1.2, 2.1.3, 2.1.4, 3.1.3, 3.1.4, 3.1.5, 3.3.11, 4.1, 4.3.1, 4.3.3, 4.4.6",
+     "99,61"
+    ],
+    [
+     "6",
+     "Xây dựng chức năng quản lý thành viên (Member Administration)",
+     "1.1.2, 1.1.3, 1.1.4, 1.2.4, 1.5.1, 2.1.2, 2.1.3, 2.1.4, 2.2.5, 2.2.6, 2.2.7, 2.2.8, 2.3, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.4.7, 3.1.3, 3.1.4, 3.1.5, 3.3.11, 4.1, 4.3.1, 4.3.3, 4.3.4, 4.4.6",
+     "98,11"
+    ],
+    [
+     "7",
+     "Xây dựng chức năng đặt hàng (Order)",
+     "1.1.2, 1.1.3, 1.1.4, 1.2.4, 1.5.1, 2.1.2, 2.1.3, 2.1.4, 3.1.3, 3.1.4, 3.1.5, 3.2.6, 3.2.7, 3.2.8, 3.2.9, 3.2.10, 3.2.11, 3.3, 3.4.1, 3.4.2, 3.4.3, 3.4.4, 3.4.5, 3.4.6, 3.4.7, 3.4.8, 3.4.9, 4.1, 4.3.1, 4.3.3, 4.3.4, 4.4.6, 5.3.4, 5.3.5, 5.3.6",
+     "148,11"
+    ],
+    [
+     "8",
+     "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+     "1.1.2, 1.1.3, 1.1.4, 1.5.1, 2.1.2, 2.1.3, 2.1.4, 3.1.3, 3.1.4, 3.1.5, 4.1, 4.3.1, 4.3.2, 4.4.6",
+     "12,61"
+    ],
+    [
+     "9",
+     "Tích hợp với hệ thống chính (Main System)",
+     "1.1.2, 1.1.3, 1.1.4, 1.5.1, 2.1.2, 2.1.3, 2.1.4, 3.1.3, 3.1.4, 3.1.5, 4.1, 4.2.5, 4.2.6, 4.2.7, 4.3.5, 4.3.6, 4.3.7, 4.3.8, 4.3.9, 4.4.1, 4.4.2, 4.4.3, 4.4.4, 4.4.6, 5.2.3, 5.3.1, 5.3.2, 5.3.3, 5.3.7",
+     "79,61"
+    ],
+    [
+     "10",
+     "Kiểm thử hệ thống",
+     "1.1.2, 1.1.3, 1.1.4, 1.4.8, 1.4.9, 1.4.10, 2.1.2, 2.1.3, 2.1.4, 2.4.8, 2.4.9, 2.4.10, 3.1.3, 3.1.4, 3.1.5, 3.4.10, 3.4.12, 4.1, 4.4.5, 4.4.7, 4.4.8, 5.4.1, 5.4.2, 5.4.3, 5.4.4",
+     "64,31"
+    ],
+    [
+     "11",
+     "Kiểm thử vận hành (Operation Test)",
+     "1.1.2, 1.1.3, 1.1.4, 1.4.11, 1.4.12, 2.1.2, 2.1.3, 2.1.4, 2.4.8, 2.4.11, 2.4.12, 2.4.13, 3.1.3, 3.1.4, 3.1.5, 3.4.11, 3.4.13, 3.4.14, 4.1, 4.4.9, 5.4.5",
+     "58,30"
+    ],
+    [
+     "12",
+     "Chuyển giao và hướng dẫn vận hành hệ thống",
+     "1.1.2, 1.1.3, 1.1.4, 1.5.3, 2.1.2, 2.1.3, 2.1.4, 2.5, 3.1.3, 3.1.4, 3.1.5, 3.2.12, 3.5.1, 4.1, 4.5.5, 5.5.2, 5.5.3",
+     "28,80"
+    ],
+    [
+     "13",
+     "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "1.1.2, 1.1.3, 1.1.4, 1.1.5, 1.5.2, 2.1.2, 2.1.3, 2.1.4, 3.1.3, 3.1.4, 3.1.5, 3.5.2, 3.5.3, 3.5.4, 4.1, 4.3.10, 4.5.1, 4.5.2, 4.5.3, 4.5.4, 4.5.6, 5.5.1",
+     "45,80"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "",
+     "733,00"
+    ]
+   ],
+   "widths": [
+    600,
+    3200,
+    4300,
+    1200
+   ],
+   "right_cols": [
+    3
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "8. Giả định ngoài phạm vi"
+  },
+  {
+   "t": "p",
+   "text": "- Chức năng quản trị nội bộ (The internal administrative function), RFP loại khỏi phạm vi"
+  },
+  {
+   "t": "p",
+   "text": "- Quản trị danh mục sản phẩm, giá, tồn kho, chương trình khuyến mại và xử lý giao vận nằm trong Main System hiện có, gói thầu chỉ đồng bộ, áp dụng và hiển thị dữ liệu"
+  },
+  {
+   "t": "p",
+   "text": "- Thanh toán trực tuyến qua cổng thanh toán, RFP không nêu. Phương thức thanh toán đơn hàng và cách hoàn tiền khi đổi trả theo quy tắc Chủ đầu tư xác nhận tại 3.2.2"
+  },
+  {
+   "t": "p",
+   "text": "- Biểu phí vận chuyển, điều kiện mã giảm giá, thời hạn giữ tồn khi đặt hàng, điều kiện hủy đơn và đổi trả theo quy tắc Chủ đầu tư xác nhận tại 3.2.2"
+  },
+  {
+   "t": "p",
+   "text": "- Mua sắm phần cứng, bản quyền phần mềm nền và hạ tầng máy chủ vận hành của Chủ đầu tư"
+  },
+  {
+   "t": "p",
+   "text": "- Chủ đầu tư cung cấp tài liệu đặc tả giao diện trao đổi dữ liệu của Main System chậm nhất 14/04/2027, môi trường thử của Main System chậm nhất 20/05/2027, dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi và nội dung, hình ảnh sản phẩm chậm nhất 10/06/2027 (cam kết CK1 đến CK4), hoàn thành thay đổi phía Main System chậm nhất 20/05/2027 (CK8). Mọi sửa đổi phía Main System do Chủ đầu tư thực hiện. Với phần bán hàng trên sàn theo yêu cầu thay đổi CR01, Chủ đầu tư cung cấp tài khoản người bán, khóa truy cập và môi trường thử của sàn chậm nhất 10/06/2027 (CK10) theo phụ lục hợp đồng"
+  },
+  {
+   "t": "p",
+   "text": "- Luồng dữ liệu hai chiều (sản phẩm, giá, tồn kho từ Main System vào Selling DB và đơn hàng từ Selling DB sang Main System) theo quy tắc Chủ đầu tư xác nhận tại 4.2.5. RFP chỉ thể hiện chiều từ Main System vào Selling DB"
+  },
+  {
+   "t": "p",
+   "text": "- Nhà thầu đề nghị Chủ đầu tư bàn giao hạ tầng máy chủ vận hành chính thức chậm nhất 9 giờ 00 ngày 20/05/2027 (CK7) để thiết lập môi trường vận hành (4.5.1), sớm hơn thời hạn chậm nhất tại mục 3.5 Chương V của HSMT. Thời điểm bàn giao được xác nhận tại họp khởi động (1.1.1), bàn giao chậm được xử lý theo rủi ro RR16"
+  },
+  {
+   "t": "p",
+   "text": "- Thư điện tử xác nhận (khôi phục mật khẩu, xác nhận đơn hàng) gửi qua máy chủ thư của Chủ đầu tư, theo quy tắc Chủ đầu tư xác nhận tại 2.2.1 và 3.2.2"
+  },
+  {
+   "t": "p",
+   "text": "- Bảo hành 12 tháng sau nghiệm thu và hỗ trợ tăng cường từ 30/07/2027 đến 12/08/2027 thực hiện sau cut over, song song với giai đoạn Kết thúc, ngoài phạm vi khối lượng WBS, chi phí bảo hành đã tính trong giá dự thầu"
+  },
+  {
+   "t": "p",
+   "text": "- Lập trình từng chức năng bắt đầu khi thiết kế chi tiết của chức năng đó hoàn thành, song song với bước xác nhận đặc tả (3.2.5). Lập trình các luồng tích hợp (4.3.5 đến 4.3.9) theo đặc tả giao diện đã lập (4.2.5), song song với bước Chủ đầu tư xác nhận đặc tả giao diện tích hợp (4.2.6), rủi ro làm lại được quản lý theo RR02. Thay đổi sau xác nhận đi qua quy trình yêu cầu thay đổi. Kiến trúc hệ thống (4.2.2) lập từ yêu cầu phi chức năng của RFP và chỉ tiêu kỹ thuật nhà thầu đề xuất, đặc tả yêu cầu phi chức năng (2.2.2) bổ sung điều kiện đo và được đối chiếu với kiến trúc khi hai bên xác nhận đặc tả (3.2.5). Kiểm thử tương thích thiết bị của 2.4.5 áp dụng cho màn hình đăng ký, đăng nhập, khôi phục mật khẩu, còn trang thành viên và sổ địa chỉ (2.3.7) được kiểm thử tương thích trong 2.4.3. Triển khai phiên bản chính thức (1.5.2) thực hiện sau khi các gói khắc phục lỗi theo kiểm thử chấp nhận và kiểm thử hồi quy (1.4.10, 1.4.12, 2.4.11, 2.4.13, 3.4.14, 4.4.9) hoàn thành theo lịch. Sau yêu cầu thay đổi CR01, khoảng kiểm thử chấp nhận thuộc S9, lỗi phát hiện cuối khoảng kiểm thử chấp nhận được xử lý bằng quỹ huy động chưa giao ở S9 của các thành viên còn quỹ theo bảng sử dụng quỹ của master schedule (nhiều nhất là Bùi Anh Tuấn, Nguyễn Hoàng Nam, Trần Thu Hà, Nguyễn Thị Phương Liên) và hỗ trợ tăng cường sau cut over"
+  },
+  {
+   "t": "p",
+   "text": "- Khối lượng từng gói đã gồm thời gian tham gia họp hằng ngày và trình diễn cuối sprint của người thực hiện"
+  }
+ ]
+}

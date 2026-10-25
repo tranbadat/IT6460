@@ -1,0 +1,81 @@
+{
+ "tai_lieu": "ket_qua/04_Master_schedule/Master_schedule.xlsx (v0.22)",
+ "buoc": "lich",
+ "luot": "Kiểm tra lớp B lượt 3 (lượt cuối), kiểm tra như mới, không đọc báo cáo lớp B cũ",
+ "dac_ta": ".claude/skills/qlda-master-schedule/SKILL.md (bước 4: khả thi đến cut over, mốc khớp điều kiện thanh toán HSMT, tải nguồn lực không vượt)",
+ "nguon_da_doi_chieu": [
+  "du_lieu/lich.json",
+  "du_lieu/phan_cong.json",
+  "du_lieu/wbs.json",
+  "dau_vao/du_an.json",
+  "dau_vao/thanh_vien.json",
+  "du_lieu/hsmt.json (hop_dong.thanh_toan, lich)",
+  "lam_viec/lich/moc_nhap.json",
+  "lam_viec/lich/bao_cao_kiem_tra.json (lớp A)"
+ ],
+ "phuong_phap": "Tính lại công thức bằng LibreOffice trên bản sao, đối chiếu từng ô với lich.json bằng script, kiểm tra độc lập phụ thuộc, tải theo ngày của từng người, cam kết, khoảng kiểm thử chấp nhận và giai đoạn.",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 3,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Có đủ Gantt theo tuần đến hết giai đoạn Kết thúc (tuần 15/03 đến 12/07/2027), cột giai đoạn, sprint, ràng buộc, đường găng, các sheet Sprint, Moc, Giai_doan, Phan_bo, Tai_nguon, Nhu_cau, Cam_ket, Huong_dan."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Sau khi tính lại không có lỗi công thức. 177 dòng Lich_trinh khớp lich.json về tên, MD, ngày, số ngày, người thực hiện, phụ thuộc, đường găng, giai đoạn và sprint. Tai_nguon khớp su_dung_theo_nguoi_sprint và phan_cong.json, tổng 657 MD, quỹ 816 MD, tỷ lệ 80,5% không dưới ngưỡng 80%. Nhu_cau khớp md_theo_loai (BA 90, DEV 318, DEVOPS 40, PM 49, QA 160). Giai_doan: Khởi động 18/03 đến 14/04/2027 (4 gói, 11 MD), Suốt dự án 13 gói 39 MD, Thực hiện 135 gói 605 MD, Kết thúc 02/07 đến 15/07/2027 (10 ngày làm việc). Số ngày làm việc của từng sprint đúng với ba ngày nghỉ, S3 nhận phần dư 13 ngày."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi mốc dẫn về gói hoàn thành, đợt thanh toán và sprint. Cam kết CK1 đến CK8 gắn gói phụ thuộc. Mục tiêu và sản phẩm trình diễn từng sprint khớp các gói xếp trong sprint đó, không nêu việc quản lý dự án."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Khả thi: không gói nào bắt đầu trước khi gói phụ thuộc xong; không người nào vượt tỷ lệ tham gia trong ngày nào; gói phụ thuộc cam kết không bắt đầu trước hạn; ba gói kiểm thử chấp nhận nằm trong khoảng 18/06 đến 29/06/2027; gói Thực hiện xong chậm nhất 01/07/2027, dự trữ đến cut over 3 ngày theo quyết định 25/10; gói Kết thúc 1.1.5 xong 07/07, trước ngày đóng dự án. Mốc: M0 đợt 1 tạm ứng, M2 đợt 2 xác nhận đặc tả, M3 đợt 3 chức năng chính và tích hợp, M6 đợt 4 vận hành và nghiệm thu, M7 đợt 5 bảo lãnh bảo hành khớp hop_dong.thanh_toan của HSMT; mọi mốc đúng hạn."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Ràng buộc cam kết, phê duyệt 5 ngày, khoảng kiểm thử chấp nhận và quy tắc bàn giao 9 giờ 00 ngày hạn được thể hiện ở Cam_ket và cột Ràng buộc ngày. Còn cảnh báo về phụ thuộc của gói triển khai chính thức (ML01)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, dữ liệu chữ xanh dương, công thức chữ đen, mục cha tính bằng SUMIFS, MINIFS, MAXIFS, NETWORKDAYS. Dòng tiêu đề in đậm theo quyết định 25/10 (22). Tên gói kế thừa từ WBS nên chịu cùng cảnh báo MH01, MH02 của bước tai_lieu_wbs."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "ML01",
+   "muc_do": "canh_bao",
+   "nhom": "phu_thuoc",
+   "vi_tri": "Lich_trinh dòng 1.5.2 Chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức (30/06/2027), phụ thuộc 3.5.3, 1.4.11, 2.4.12, 3.4.13",
+   "mo_ta": "Gói triển khai phiên bản chính thức không phụ thuộc các gói sửa lỗi sau kiểm thử chấp nhận và bản phát hành (1.4.10, 1.4.12, 2.4.13, 3.4.14, 4.4.9) và kiểm thử hồi quy 2.4.11. Ngày hiện tại vẫn hợp lý vì các gói này xong chậm nhất 29/06/2027, nhưng khi các gói này chậm thì mô hình đường găng không đẩy 1.5.2 và cut over, dự trữ 3 ngày có thể bị đánh giá cao hơn thực tế.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định có thêm phụ thuộc 1.5.2 vào 1.4.10, 1.4.12, 2.4.11, 2.4.13, 3.4.14, 4.4.9 trong WBS rồi lập lại lịch, hoặc giữ nguyên và ghi giả định trình tự (tương tự quyết định 25/10 (20)), theo dõi qua RR liên quan đến lỗi kiểm thử chấp nhận."
+  },
+  {
+   "ma": "ML02",
+   "muc_do": "canh_bao",
+   "nhom": "kiem_thu_chap_nhan",
+   "vi_tri": "Lich_trinh 2.4.13 (18/06 đến 24/06), 4.4.9 (18/06 đến 24/06), 1.4.12 (18/06 đến 25/06/2027); khoảng kiểm thử chấp nhận 18/06 đến 29/06/2027",
+   "mo_ta": "Các gói khắc phục lỗi kiểm thử chấp nhận của phân hệ quản lý khách hàng, tích hợp và quản lý sản phẩm kết thúc trước khi khoảng kiểm thử chấp nhận đóng 3 đến 4 ngày làm việc, lỗi phát hiện trong những ngày cuối của các luồng này chưa có công sức sửa trong kế hoạch.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xem xét kéo dài thời lượng tối thiểu của các gói khắc phục đến 29/06/2027 hoặc ghi rõ lỗi phát hiện cuối khoảng được xử lý trong 3.4.14 và dự phòng, không cần đổi tổng MD."
+  },
+  {
+   "ma": "ML03",
+   "muc_do": "canh_bao",
+   "nhom": "trinh_bay",
+   "vi_tri": "Tai_nguon ô J4 (Trần Bá Đạt, KT = 2 MD) và chú thích Ô đỏ: vượt quỹ thời gian của sprint",
+   "mo_ta": "Định dạng có điều kiện tô đỏ ô KT vì quỹ sau cut over bằng 0, người đọc hiểu là quá tải. Đây là cảnh báo L28 nhóm đã chấp nhận (du_an.json _ghi_chu_ket_thuc, quyết định 25/10 (13)) nhưng sheet chưa ghi chú điều này.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Bổ sung trong xuat_gantt.py chú thích cột KT: MD giai đoạn Kết thúc trả theo công sức, không có quỹ huy động (L28 đã chấp nhận), hoặc loại cột KT khỏi quy tắc tô đỏ."
+  }
+ ]
+}

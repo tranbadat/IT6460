@@ -1,51 +1,96 @@
 {
- "tai_lieu": "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
- "phien_ban": "0.8",
- "ket_luan": "dat",
- "so_loi": 0,
- "so_canh_bao": 0,
- "xac_nhan_vong_truoc": {
-  "MH01": "Đã xử lý: mục 8 ghi báo Chủ đầu tư khi dự trữ còn dưới 2 ngày làm việc",
-  "MH02": "Đã xử lý: bỏ dẫn chiếu C10, C41",
-  "MH03": "Đã xử lý: thống nhất khoảng 230 MD",
-  "MH04": "Đã xử lý: đoạn thuế chỉ giữ kết luận"
+ "tai_lieu": [
+  "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+  "ket_qua/06_Cost_estimate/Cost_estimate.xlsx"
+ ],
+ "phien_ban": {
+  "Thuyet_minh_du_toan.docx": "2.1",
+  "Cost_estimate.xlsx": "2.2"
  },
+ "buoc": "chi_phi",
+ "duong_co_so": "BL2 (sau yêu cầu thay đổi CR01, phụ lục 01/2027/PL-ABCW)",
+ "luot": "Xác nhận sau vòng sửa phần 1 mô phỏng (sau CR01), báo cáo lượt trước lưu tại lam_viec/chi_phi/bao_cao_kiem_tra_lop_B_BL2_vong1.json",
+ "ghi_chu": "Đã tính lại: dòng A 1.581.550.000, C 217.474.682 (11,2%), phần còn lại 471.185.241 (24,2%), hòa vốn 873,05 MD, độ nhạy thuế 1.771.840.620, dòng tiền đợt 3 thu 23/07 (S9), đợt 6 thu 11/08/2027 sau cut over, mức âm lớn nhất S8 551.005.932, vốn lưu động 600 triệu theo quy tắc làm tròn của quyết định 25/10/2026 (5), khớp kế hoạch rủi ro. Dự phòng 50 triệu thấp hơn EMV còn lại là quyết định của nhóm, không tính là lỗi.",
  "danh_gia_tieu_chi": [
   {
    "tieu_chi": "CL01",
    "ket_qua": "dat",
-   "nhan_xet": "Đủ 9 mục theo đặc tả."
+   "nhan_xet": "Đủ 9 mục của đặc tả."
   },
   {
    "tieu_chi": "CL02",
-   "ket_qua": "dat",
-   "nhan_xet": "Số liệu khớp chi_phi.json, Cost_estimate.xlsx, wbs.json, lich.json."
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Thuyết minh khớp chi_phi.json, lich.json, rui_ro.json. Excel còn lệch quỹ huy động kỳ KT (MH01)."
   },
   {
    "tieu_chi": "CL03",
    "ket_qua": "dat",
-   "nhan_xet": "Dẫn mã rủi ro, mốc, Mẫu 01A, Mẫu 11A."
+   "nhan_xet": "Phân bổ CR01 vào hạng mục 1, 7, 9, 10, 11, 12, 13 khớp WBS mục 7."
   },
   {
    "tieu_chi": "CL04",
    "ket_qua": "dat",
-   "nhan_xet": "Có ngưỡng hòa vốn, năng suất hòa vốn, ngưỡng chịu đựng."
+   "nhan_xet": "Ngưỡng hòa vốn, tỷ lệ C tối thiểu, kiểm tra dự phòng rõ ràng."
   },
   {
    "tieu_chi": "CL05",
    "ket_qua": "dat",
-   "nhan_xet": "Bốn quyết định 18/10 phản ánh đúng: dự phòng 50 triệu, bù từ C sau lương, vốn lưu động 500 triệu, dự trữ 4 ngày kèm ngưỡng báo Chủ đầu tư dưới 2 ngày."
+   "nhan_xet": "EMV còn lại 115.413.014, toàn sổ 150.693.014, EMV thời gian còn mở 3,4 ngày so với dự trữ 7 ngày, RR19 gắn M3, M9."
   },
   {
    "tieu_chi": "CL06",
    "ket_qua": "dat",
-   "nhan_xet": "Không còn ghi chú nội bộ, không trùng lặp."
-  },
-  {
-   "tieu_chi": "DH",
-   "ket_qua": "dat",
-   "nhan_xet": "Đạt các tiêu chí doc_hieu của đặc tả."
+   "nhan_xet": "Không in đậm, không ngoặc kép, gạch dài."
   }
  ],
- "phat_hien": []
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "CL02 Nhất quán Word và Excel",
+   "vi_tri": "Cost_estimate.xlsx sheet Doi_chieu_nguoi dòng Trần Bá Đạt (MD huy động 84), dòng Tổng (906, lương ngày huy động 1.634.410.227), Năng lực tỷ lệ sử dụng quỹ 0,809, MD huy động hòa vốn 876,70; sheet Huy_dong_luong không có dòng dat KT; sheet Dong_tien và Word mục 8 dòng Sau cut over cột Chi lương theo huy động 0",
+   "mo_ta": "Chưa đóng hết. Thuyết minh đã sửa (Trần Bá Đạt 86, tổng 908, 80,7%, 175 MD, lương huy động 1.640.136.136, chi_phi.json md_huy_dong_hoa_von 875,57) nhưng Excel vẫn tính quỹ huy động không gồm 2 MD kỳ Kết thúc (thanh_vien.json huy_dong_ket_thuc, lich.json KT), nên Word và Excel lệch 2 MD, 5.725.909 đồng và tỷ lệ 80,7% so với 80,9%. Cột chi lương theo huy động sau cut over bằng 0 trong cả Word và Excel trong khi có 2 MD huy động kỳ KT. Cách trả lương theo công sức nên chi phí lương kế hoạch, dòng tiền lũy kế không đổi.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa xuất Excel trong tinh_chi_phi.py: sheet Huy_dong_luong thêm dòng dat KT 2 MD (kỳ dòng tiền Sau cut over như Phan_bo_luong), Dong_tien cột Chi lương theo huy động lấy cả kỳ KT. Chạy lại chi_phi, kiểm tra Excel ra 908 MD, 80,7%, 1.640.136.136 đồng."
+  }
+ ],
+ "dong_phat_hien_truoc": [
+  {
+   "ma": "MH01",
+   "da_dong": false,
+   "nhan_xet": "Word đã sửa, Excel (Doi_chieu_nguoi, Huy_dong_luong, Dong_tien) chưa gồm kỳ KT, giữ lỗi với mô tả mới."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "Mục 8 ghi EMV thời gian rủi ro còn mở 3,4 ngày, toàn sổ 9,0 ngày, kết luận dự trữ 7 ngày đủ, khớp kế hoạch rủi ro."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "Mục 1 ghi phân bổ giá hợp đồng hiện hành dùng theo dõi khối lượng và thanh toán, không thay thế Mẫu 11A."
+  },
+  {
+   "ma": "MH04",
+   "da_dong": true,
+   "nhan_xet": "Đợt 6 theo M9 27/07/2027, thu 11/08/2027 sau cut over, lũy kế S9 âm 157.113.532, mức âm lớn nhất S8."
+  },
+  {
+   "ma": "MH05",
+   "da_dong": true,
+   "nhan_xet": "Chênh 2 đồng không còn ở số liệu json, chênh hiện tại giữa Word và Excel là phần kỳ KT, gộp vào MH01."
+  },
+  {
+   "ma": "MH06",
+   "da_dong": true,
+   "nhan_xet": "Tong_hop ghi nhãn EMV còn lại của sổ rủi ro (rủi ro chưa xảy ra, chưa đóng)."
+  }
+ ],
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "prompt": ".claude/skills/qlda-loi/prompts/vai_kiem_tra.md",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên agent con riêng (kiểm tra lớp B lượt xác nhận sau vòng sửa phần 1 mô phỏng sau CR01), Claude Code, mô hình claude-opus-5-5, python-docx, openpyxl, LibreOffice tính lại công thức",
+ "so_loi": 1,
+ "so_canh_bao": 0,
+ "ket_luan": "chua_dat"
 }

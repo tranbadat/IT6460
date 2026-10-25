@@ -79,7 +79,12 @@ def buoc_cr(sp, kb):
         bl = [x['ma'] for x in loi.doc_json('du_lieu/phien_ban.json', {}).get('duong_co_so', [])]
         out.append(('script', f'{ma}: chạy lại các bước kế hoạch bị ảnh hưởng theo thứ tự {LENH_CHAY} trang_thai (wbs, giao_viec, lich, rui_ro, '
                     'chi_phi, tài liệu kế hoạch)', 'BL2' in bl))  # BL2 chỉ lập được khi tài liệu kế hoạch đã dùng đầu vào mới
-        out.append(('script', f'{LENH_PB} duong_co_so BL2 --ten "Đường cơ sở sau {ma}" --cr {ma}',
+        # từ 1.0.4: tài liệu kế hoạch cập nhật theo CR qua kiểm tra lớp B (phiên riêng) và chuyển Đã kiểm tra trước khi lập đường cơ sở mới,
+        # để đường cơ sở chỉ gồm bản đã kiểm tra (như BL1)
+        out.append(('agent', f'{ma}: agent Kiểm tra lớp B (qlda-loi/prompts/vai_kiem_tra.md, phiên riêng) các tài liệu kế hoạch đã cập nhật theo '
+                    f'tai_lieu_cap_nhat của {ma}, agent Sửa đến khi đạt, rồi {LENH_PB} trang_thai <tài liệu> --trang-thai "Đã kiểm tra" --nguoi "..." '
+                    'cho từng tài liệu', 'BL2' in bl))
+        out.append(('script', f'{LENH_PB} duong_co_so BL2 --ten "Đường cơ sở sau {ma}" --cr {ma} (sau khi lớp B đạt)',
                     'BL2' in bl))
     return truoc, out
 

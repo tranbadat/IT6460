@@ -1,0 +1,37 @@
+ma,ngay_phat_hien,muc_do,ma_goi,trang_thai,ngay_dong,mo_ta
+L01,2027-03-26,Trung bình,4.3.1,Đã đóng,2027-03-31,Lỗi cấu hình ghi nhật ký tập trung và xử lý ngoại lệ của khung ứng dụng phía máy chủ phát hiện khi chạy kiểm thử đơn vị trên quy trình tích hợp
+L02,2027-03-26,Thấp,4.3.1,Đã đóng,2027-04-02,Lỗi cấu hình ghi nhật ký tập trung và xử lý ngoại lệ của khung ứng dụng phía máy chủ phát hiện khi chạy kiểm thử đơn vị trên quy trình tích hợp
+L03,2027-04-12,Trung bình,4.3.2,Đã đóng,2027-04-15,Lỗi ràng buộc khóa ngoại và chỉ mục của bảng tồn kho phát hiện khi chạy kiểm thử tầng truy cập dữ liệu
+L04,2027-04-13,Thấp,4.3.2,Đã đóng,2027-04-21,Lỗi ràng buộc khóa ngoại và chỉ mục của bảng tồn kho phát hiện khi chạy kiểm thử tầng truy cập dữ liệu
+L05,2027-04-22,Cao,3.3.5,Đã đóng,2027-04-26,Lỗi tạo trùng đơn hàng khi người dùng gửi xác nhận hai lần và lỗi nội dung thư điện tử xác nhận đơn hàng
+L06,2027-04-23,Trung bình,3.3.5,Đã đóng,2027-04-28,Lỗi tạo trùng đơn hàng khi người dùng gửi xác nhận hai lần và lỗi nội dung thư điện tử xác nhận đơn hàng
+L07,2027-05-05,Trung bình,2.3.2,Đã đóng,2027-05-10,Lỗi đếm số lần đăng nhập sai không đặt lại sau khi đăng nhập thành công và lỗi thông báo hết phiên làm việc
+L08,2027-05-04,Thấp,2.3.2,Đã đóng,2027-05-11,Lỗi đếm số lần đăng nhập sai không đặt lại sau khi đăng nhập thành công và lỗi thông báo hết phiên làm việc
+L09,2027-05-05,Thấp,3.3.4,Đã đóng,2027-05-12,Lỗi làm tròn giá trị giảm giá theo phần trăm
+L10,2027-05-11,Trung bình,3.4.3,Đã đóng,2027-05-14,"Lỗi tính phí vận chuyển khi đổi địa chỉ giao hàng, lỗi áp dụng đồng thời hai mã giảm giá và lỗi hiển thị tổng tiền làm tròn phát hiện khi kiểm thử đặt hàng"
+L11,2027-05-20,Trung bình,3.4.3,Đã đóng,2027-05-25,"Lỗi tính phí vận chuyển khi đổi địa chỉ giao hàng, lỗi áp dụng đồng thời hai mã giảm giá và lỗi hiển thị tổng tiền làm tròn phát hiện khi kiểm thử đặt hàng"
+L12,2027-05-07,Thấp,3.4.3,Đã đóng,2027-05-14,"Lỗi tính phí vận chuyển khi đổi địa chỉ giao hàng, lỗi áp dụng đồng thời hai mã giảm giá và lỗi hiển thị tổng tiền làm tròn phát hiện khi kiểm thử đặt hàng"
+L13,2027-05-19,Trung bình,2.4.5,Đã đóng,2027-05-24,"Thiếu tiêu đề bảo mật nội dung trên trang đăng nhập và thông báo lỗi đăng nhập tiết lộ tài khoản tồn tại, không có lỗ hổng mức cao"
+L14,2027-05-19,Thấp,2.4.5,Đã đóng,2027-05-26,"Thiếu tiêu đề bảo mật nội dung trên trang đăng nhập và thông báo lỗi đăng nhập tiết lộ tài khoản tồn tại, không có lỗ hổng mức cao"
+L15,2027-05-24,Trung bình,1.4.2,Đã đóng,2027-05-27,"Lỗi sắp xếp theo giá khi sản phẩm có biến thể khác giá, lỗi gợi ý tìm kiếm với từ khóa có dấu và lỗi hiển thị số kết quả khi lọc nhiều điều kiện"
+L16,2027-06-02,Thấp,1.4.2,Đã đóng,2027-06-09,"Lỗi sắp xếp theo giá khi sản phẩm có biến thể khác giá, lỗi gợi ý tìm kiếm với từ khóa có dấu và lỗi hiển thị số kết quả khi lọc nhiều điều kiện"
+L17,2027-06-03,Thấp,1.4.2,Đã đóng,2027-06-10,"Lỗi sắp xếp theo giá khi sản phẩm có biến thể khác giá, lỗi gợi ý tìm kiếm với từ khóa có dấu và lỗi hiển thị số kết quả khi lọc nhiều điều kiện"
+L18,2027-05-28,Cao,3.4.6,Đã đóng,2027-06-01,"Lỗi giữ tồn kho không giải phóng khi thanh toán thất bại và lỗi thông báo trạng thái đơn hàng chưa cập nhật sau khi hủy đơn, phát hiện khi kiểm thử luồng đặt hàng đầu cuối"
+L19,2027-05-28,Trung bình,3.4.6,Đã đóng,2027-06-02,"Lỗi giữ tồn kho không giải phóng khi thanh toán thất bại và lỗi thông báo trạng thái đơn hàng chưa cập nhật sau khi hủy đơn, phát hiện khi kiểm thử luồng đặt hàng đầu cuối"
+L20,2027-06-10,Cao,4.4.3,Đã đóng,2027-06-14,"Lỗi ánh xạ mã trạng thái đơn hàng giữa hai hệ thống, lỗi đồng bộ giá khi Main System trả về khuyến mại theo khoảng thời gian và lỗi thời gian chờ khi Main System phản hồi chậm"
+L21,2027-06-04,Trung bình,4.4.3,Đã đóng,2027-06-09,"Lỗi ánh xạ mã trạng thái đơn hàng giữa hai hệ thống, lỗi đồng bộ giá khi Main System trả về khuyến mại theo khoảng thời gian và lỗi thời gian chờ khi Main System phản hồi chậm"
+L22,2027-06-08,Trung bình,4.4.3,Đã đóng,2027-06-11,"Lỗi ánh xạ mã trạng thái đơn hàng giữa hai hệ thống, lỗi đồng bộ giá khi Main System trả về khuyến mại theo khoảng thời gian và lỗi thời gian chờ khi Main System phản hồi chậm"
+L23,2027-06-16,Trung bình,2.4.10,Đã đóng,2027-06-21,"Cấu hình chính sách bảo mật nội dung chưa chặt, thiếu giới hạn số lần thử đăng nhập trên giao diện quản trị và thông báo lỗi máy chủ còn hiển thị phiên bản thư viện, không có lỗ hổng mức cao"
+L24,2027-06-11,Thấp,2.4.10,Đã đóng,2027-06-18,"Cấu hình chính sách bảo mật nội dung chưa chặt, thiếu giới hạn số lần thử đăng nhập trên giao diện quản trị và thông báo lỗi máy chủ còn hiển thị phiên bản thư viện, không có lỗ hổng mức cao"
+L25,2027-06-16,Thấp,2.4.10,Đã đóng,2027-06-23,"Cấu hình chính sách bảo mật nội dung chưa chặt, thiếu giới hạn số lần thử đăng nhập trên giao diện quản trị và thông báo lỗi máy chủ còn hiển thị phiên bản thư viện, không có lỗ hổng mức cao"
+L26,2027-06-16,Trung bình,1.4.3,Đã đóng,2027-06-21,Lỗi hiển thị biến thể hết hàng trên trang chi tiết sản phẩm và lỗi đường dẫn danh mục cấp ba
+L27,2027-06-07,Thấp,1.4.3,Đã đóng,2027-06-14,Lỗi hiển thị biến thể hết hàng trên trang chi tiết sản phẩm và lỗi đường dẫn danh mục cấp ba
+L28,2027-06-29,Cao,3.4.12,Đã đóng,2027-07-01,"Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối"
+L29,2027-06-21,Trung bình,3.4.12,Đã đóng,2027-06-24,"Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối"
+L30,2027-06-21,Trung bình,3.4.12,Đã đóng,2027-06-24,"Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối"
+L31,2027-06-25,Trung bình,3.4.12,Đã đóng,2027-06-30,"Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối"
+L32,2027-06-18,Thấp,3.4.12,Đã đóng,2027-06-25,"Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối"
+L33,2027-06-24,Thấp,3.4.12,Đã đóng,2027-07-01,"Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối"
+L34,2027-06-29,Trung bình,5.4.2,Mở,,"Lỗi làm mới khóa truy cập của sàn khi hết hạn giữa phiên đồng bộ, lỗi đồng bộ tồn kho khi sản phẩm có nhiều biến thể và lỗi hiển thị mã đơn hàng sàn trên giao diện quản trị"
+L35,2027-06-30,Trung bình,5.4.2,Mở,,"Lỗi làm mới khóa truy cập của sàn khi hết hạn giữa phiên đồng bộ, lỗi đồng bộ tồn kho khi sản phẩm có nhiều biến thể và lỗi hiển thị mã đơn hàng sàn trên giao diện quản trị"
+L36,2027-06-30,Thấp,5.4.2,Mở,,"Lỗi làm mới khóa truy cập của sàn khi hết hạn giữa phiên đồng bộ, lỗi đồng bộ tồn kho khi sản phẩm có nhiều biến thể và lỗi hiển thị mã đơn hàng sàn trên giao diện quản trị"

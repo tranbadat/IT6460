@@ -1,0 +1,19 @@
+{
+ "TOM_TAT": [
+  "Kết thúc kỳ {td#ky} ngày {td#ngay_bao_cao|ngay}, dự án ở trạng thái chung {td#trang_thai_chung}. SPI đạt {td#spi_hien_thi} ở mức {td#trang_thai_spi}, CPI theo công đạt {td#cpi_hien_thi} ở mức {td#trang_thai_cpi}, CPI theo chi phí thực đạt {td#cpi_thuc_hien_thi} ở mức {td#trang_thai_cpi_thuc}. Giá trị thu được lũy kế {td#EV_md|md2} MD so với kế hoạch {td#PV_md|md2} MD, công thực tế {td#AC_md|md2} MD, khối lượng hoàn thành đạt {td#ty_le_hoan_thanh|pt1} toàn dự án. Kiểm thử chấp nhận, kiểm thử vận hành và nghiệm thu phần bán hàng trên sàn hoàn thành trong khoảng đã thống nhất, lỗi phát hiện được khắc phục bằng quỹ chưa giao và hỗ trợ tăng cường, hệ thống đưa vào vận hành đúng ngày cut over theo phụ lục hợp đồng.",
+  "Ngày hoàn thành dự báo {td#du_bao_hoan_thanh|ngay}, không muộn hơn ngày cut over {td#cut_over|ngay} theo phụ lục hợp đồng, TCPI {td#tcpi|so2}. Tỷ lệ sử dụng quỹ huy động đạt {td#ty_le_su_dung_quy|pt1}, còn {td#md_san_sang|md2} MD sẵn sàng không ghi công trên {td#md_huy_dong|md2} MD huy động. Chi phí khác đã chi lũy kế {td#AC_thuc_khac|tien} đồng, EAC theo chi phí thực {td#EAC_thuc|trieu} triệu đồng.",
+  "Yêu cầu thay đổi {td#thay_doi[ma=CR01].ma} {td#thay_doi[ma=CR01].tieu_de} đã được nghiệm thu tại mốc {td#moc[ma=M9].ma} ngày {td#moc[ma=M9].thuc_te|ngay} và chuyển trạng thái {td#thay_doi[ma=CR01].trang_thai}. Phần việc còn lại là giai đoạn Kết thúc đến ngày đóng dự án {td#ngay_dong_du_an|ngay}."
+ ],
+ "KET_QUA": [
+  "Trong kỳ hoàn thành kiểm thử chấp nhận các luồng tìm kiếm 1.4.11, thành viên 2.4.12, kiểm thử vận hành luồng đặt hàng 3.4.13, kiểm thử chấp nhận bán hàng trên sàn 5.4.5, các gói khắc phục lỗi 1.4.12, 2.4.13, 3.4.14, 4.4.9, kiểm thử hồi quy 2.4.11, kiểm thử hiệu năng và an toàn thông tin 4.4.7, tối ưu hiệu năng 1.4.10, cập nhật tài liệu hướng dẫn sử dụng 2.5.3, triển khai chính thức 1.5.2, bàn giao 1.5.3 và hỗ trợ ngày đưa vào vận hành 3.5.4. Các chỉ tiêu kỹ thuật về thời gian phản hồi, chịu tải, hoạt động liên tục, an toàn dữ liệu và sao lưu được Chủ đầu tư nghiệm thu đạt.",
+  "Mốc {td#moc[ma=M9].ma} và {td#moc[ma=M5].ma} đạt ngày {td#moc[ma=M5].thuc_te|ngay}, mốc cut over {td#moc[ma=M6].ma} và bàn giao {td#moc[ma=M7].ma} đạt ngày {td#moc[ma=M7].thuc_te|ngay}, đều đúng hạn. Bản phát hành R9 là bản chính thức đưa vào vận hành."
+ ],
+ "VAN_DE": [
+  "Sổ vấn đề có {td#van_de_tong_hop.tong|nguyen} vấn đề, đã đóng {td#van_de_tong_hop.so_dong|nguyen}, còn mở {td#van_de_tong_hop.so_mo|nguyen}.",
+  "Vấn đề {td#van_de[ma=VD14].ma} đóng khi cấu hình kết nối sàn trên môi trường vận hành và các gói chậm cuối kỳ trước hoàn thành. Sổ không còn vấn đề mở. Rủi ro {td#rui_ro[ma=RR10].ma} về lỗi phát hiện trong kiểm thử chấp nhận không xảy ra, được đóng khi rà soát sổ rủi ro ở giai đoạn Kết thúc."
+ ],
+ "KY_TOI": [
+  "Giai đoạn Kết thúc từ sau ngày cut over đến ngày đóng dự án {td#ngay_dong_du_an|ngay} gồm hỗ trợ tăng cường sau cut over, hồ sơ thanh toán các đợt còn lại, mốc {lich#moc[ma=M8].ma} có hạn {lich#moc[ma=M8].han|ngay}, báo cáo tổng kết, đánh giá và bài học kinh nghiệm.",
+  "Nhóm đề nghị Chủ đầu tư xác nhận hồ sơ thanh toán Đợt 4, Đợt 5 và Đợt 6, thống nhất danh sách lỗi nhỏ còn lại đưa vào bảo hành nếu có."
+ ]
+}

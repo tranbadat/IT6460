@@ -1,0 +1,1051 @@
+{
+ "meta": {
+  "ten": "Báo cáo đánh giá dự án",
+  "id": "danh_gia",
+  "header": "Kết thúc dự án - Báo cáo đánh giá dự án",
+  "huong": "doc",
+  "font": "Times New Roman",
+  "size_pt": 13,
+  "size_bang_pt": 12,
+  "nguon": {
+   "kt": "du_lieu/ket_thuc.json",
+   "hsmt": "du_lieu/hsmt.json",
+   "rfp": "du_lieu/rfp_yeu_cau.json",
+   "rr": "du_lieu/rui_ro.json",
+   "mo_phong": "du_lieu/mo_phong.json",
+   "da": "dau_vao/du_an.json"
+  },
+  "phien_ban": "0.2",
+  "ngay": "12/08/2027"
+ },
+ "blocks": [
+  {
+   "text": "PM_26I_02",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "text": "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+   "size": 13,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "text": "Báo cáo đánh giá dự án",
+   "size": 20,
+   "t": "center"
+  },
+  {
+   "text": "Số liệu tính đến ngày 12/08/2027",
+   "size": 14,
+   "t": "center"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "rows": [
+    [
+     "Dự án",
+     "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+    ],
+    [
+     "Khách hàng",
+     "Công ty Cổ phần ABC Wear"
+    ],
+    [
+     "Đơn vị thực hiện",
+     "PM_26I_02"
+    ],
+    [
+     "Môn học",
+     "Quản trị dự án và Quản lý thay đổi"
+    ],
+    [
+     "Nhóm",
+     "PM_26I_02"
+    ],
+    [
+     "Giảng viên",
+     "Vũ Thị Hương Giang"
+    ],
+    [
+     "Người lập",
+     "Trần Bá Đạt"
+    ],
+    [
+     "Phiên bản",
+     "{{PHIEN_BAN}}"
+    ],
+    [
+     "Ngày",
+     "{{NGAY}}"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ],
+   "t": "table"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "muc": [
+    "1. Mục đích và phương pháp đánh giá",
+    "2. Kết quả theo bộ chỉ tiêu",
+    "3. Đánh giá nghiệm thu",
+    "4. Đánh giá quản lý thay đổi",
+    "5. Đánh giá quản lý rủi ro",
+    "6. Đánh giá thực hiện cam kết",
+    "7. Kết luận và kiến nghị"
+   ],
+   "t": "muc_luc"
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "text": "1. Mục đích và phương pháp đánh giá",
+   "t": "h1"
+  },
+  {
+   "text": "Báo cáo đánh giá mức độ đạt mục tiêu của dự án theo bộ chỉ tiêu định lượng, kết quả nghiệm thu so với yêu cầu RFP và HSMT, hiệu quả quản lý thay đổi và quản lý rủi ro. Số liệu lấy từ báo cáo tổng kết dự án và dữ liệu thực tế của nhóm (nhật ký công việc, tỷ lệ hoàn thành, mốc, nghiệm thu, lỗi, theo dõi rủi ro, sổ yêu cầu thay đổi).",
+   "t": "p"
+  },
+  {
+   "text": "Số liệu thực tế trong báo cáo là số liệu mô phỏng. Số liệu mô phỏng: dữ liệu thực tế trong dau_vao/thuc_te/ do script qlda-mo-phong/scripts/mo_phong_sprint.py sinh từ kịch bản biến cố từng sprint (lam_viec/mo_phong/kich_ban_S<n>.json) theo kế hoạch đã duyệt hiện hành, không phải số liệu đo được của dự án thật.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Tỷ lệ chỉ tiêu đạt từ",
+     "Xếp loại"
+    ],
+    [
+     "90%",
+     "Tốt"
+    ],
+    [
+     "75%",
+     "Khá"
+    ],
+    [
+     "50%",
+     "Trung bình"
+    ],
+    [
+     "0%",
+     "Chưa đạt"
+    ]
+   ],
+   "widths": [
+    3500,
+    5800
+   ],
+   "center_cols": [
+    0
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "t": "p",
+   "text": "Đánh giá do nhóm dự án thực hiện sau ngày đóng dự án 12/08/2027, đầu mối Chủ đầu tư xác nhận kết quả nghiệm thu và các mốc. Bằng chứng gồm sổ mốc, nhật ký công việc, sổ lỗi, sổ vấn đề, sổ rủi ro, phiếu yêu cầu thay đổi, biên bản nghiệm thu và báo cáo tiến độ các kỳ, tổng hợp trong du_lieu/ket_thuc.json. Số liệu thực hiện là số liệu mô phỏng."
+  },
+  {
+   "t": "p",
+   "text": "Mỗi chỉ tiêu KPI so thực tế với ngưỡng đã khai báo, xếp loại theo tỷ lệ chỉ tiêu đạt. Không có ngưỡng KPI nào được ghi đè trong đánh giá này."
+  },
+  {
+   "text": "2. Kết quả theo bộ chỉ tiêu",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Nhóm",
+     "Chỉ tiêu",
+     "Mục tiêu",
+     "Thực tế",
+     "Kết quả"
+    ],
+    [
+     "K01",
+     "Tiến độ",
+     "Đưa hệ thống vào vận hành (cut over) đúng hạn hợp đồng",
+     "Tối đa 0 ngày làm việc",
+     "0 ngày làm việc",
+     "Đạt"
+    ],
+    [
+     "K02",
+     "Tiến độ",
+     "Tỷ lệ mốc đạt đúng hạn",
+     "Tối thiểu 80%",
+     "100%",
+     "Đạt"
+    ],
+    [
+     "K03",
+     "Tiến độ",
+     "Chỉ số tiến độ SPI kỳ cuối",
+     "Tối thiểu 0,95",
+     "1",
+     "Đạt"
+    ],
+    [
+     "K04",
+     "Chi phí",
+     "Chỉ số chi phí CPI kỳ cuối",
+     "Tối thiểu 0,95",
+     "0,99",
+     "Đạt"
+    ],
+    [
+     "K05",
+     "Chi phí",
+     "Chênh lệch công sức thực tế so với kế hoạch",
+     "Tối đa 10%",
+     "0,5%",
+     "Đạt"
+    ],
+    [
+     "K06",
+     "Phạm vi",
+     "Tỷ lệ gói công việc hoàn thành",
+     "Tối thiểu 100%",
+     "100%",
+     "Đạt"
+    ],
+    [
+     "K07",
+     "Chất lượng",
+     "Tỷ lệ tiêu chí nghiệm thu đạt",
+     "Tối thiểu 100%",
+     "100%",
+     "Đạt"
+    ],
+    [
+     "K08",
+     "Chất lượng",
+     "Tỷ lệ yêu cầu RFP được nghiệm thu đạt",
+     "Tối thiểu 100%",
+     "100%",
+     "Đạt"
+    ],
+    [
+     "K09",
+     "Chất lượng",
+     "Lỗi mức nghiêm trọng và cao còn mở khi bàn giao",
+     "Tối đa 0 lỗi",
+     "0 lỗi",
+     "Đạt"
+    ],
+    [
+     "K10",
+     "Chất lượng",
+     "Mật độ lỗi trên 10 MD thực tế",
+     "Tối đa 2 lỗi/10 MD",
+     "0,75 lỗi/10 MD",
+     "Đạt"
+    ],
+    [
+     "K11",
+     "Thay đổi",
+     "Yêu cầu thay đổi có quyết định trong thời hạn đánh giá",
+     "Tối thiểu 100%",
+     "100%",
+     "Đạt"
+    ],
+    [
+     "K12",
+     "Rủi ro",
+     "Rủi ro đã xảy ra có hành động ứng phó được ghi nhận",
+     "Tối thiểu 100%",
+     "100%",
+     "Đạt"
+    ],
+    [
+     "K13",
+     "Rủi ro",
+     "Tác động thực tế của rủi ro so với dự phòng",
+     "Tối đa 100%",
+     "10,5%",
+     "Đạt"
+    ],
+    [
+     "K14",
+     "Chi phí",
+     "Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động)",
+     "Tối thiểu 80%",
+     "81,1%",
+     "Đạt"
+    ]
+   ],
+   "widths": [
+    600,
+    1100,
+    3700,
+    1300,
+    1400,
+    1200
+   ],
+   "center_cols": [
+    0,
+    3,
+    4,
+    5
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Nhóm chỉ tiêu",
+     "Mã",
+     "Số chỉ tiêu",
+     "Đạt"
+    ],
+    [
+     "Tiến độ",
+     "K01, K02, K03",
+     "3",
+     "3"
+    ],
+    [
+     "Chi phí",
+     "K04, K05, K14",
+     "3",
+     "3"
+    ],
+    [
+     "Phạm vi",
+     "K06",
+     "1",
+     "1"
+    ],
+    [
+     "Chất lượng",
+     "K07, K08, K09, K10",
+     "4",
+     "4"
+    ],
+    [
+     "Thay đổi",
+     "K11",
+     "1",
+     "1"
+    ],
+    [
+     "Rủi ro",
+     "K12, K13",
+     "2",
+     "2"
+    ],
+    [
+     "Tổng",
+     "",
+     "14",
+     "14"
+    ]
+   ],
+   "widths": [
+    2600,
+    3100,
+    1800,
+    1800
+   ],
+   "center_cols": [
+    2,
+    3
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Tỷ lệ chỉ tiêu đạt 100% (14/14), xếp loại chung: Tốt.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Chỉ tiêu",
+     "Nhận định",
+     "Nguyên nhân",
+     "Bằng chứng"
+    ],
+    [
+     "K14 Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động)",
+     "Đạt sát ngưỡng: 81,1% so với Tối thiểu 80%",
+     "Huy động theo nhu cầu sát MD kế hoạch, các thành viên còn MD sẵn sàng ở S1 đến S4 khi chờ gói tiền nhiệm, phần dư được dùng làm bù ở S5 đến S7",
+     "Bảng huy động trong Cost estimate, nhật ký công việc, vấn đề VD13"
+    ],
+    [
+     "K04 Chỉ số chi phí CPI kỳ cuối",
+     "Đạt: 0,99, ngưỡng Tối thiểu 0,95",
+     "Công thực tế vượt kế hoạch nhẹ ở dịch vụ đổi trả 3.3.7 và sửa lỗi, tối ưu hiệu năng sau rủi ro RR06, bù lại bằng các gói dùng lại thành phần (4.4.1, 4.3.10, 3.4.11)",
+     "Báo cáo tiến độ các kỳ, kịch bản mô phỏng"
+    ],
+    [
+     "K02 Tỷ lệ mốc đạt đúng hạn",
+     "Đạt: 100%",
+     "Mọi mốc đạt trong hạn, mốc M4 đạt sau ngày dự kiến do khắc phục lỗi kiểm thử hệ thống 4.4.5, được giữ trong hạn nhờ huy động bổ sung ở S8",
+     "Sổ mốc, biên bản M3, M4, M9, vấn đề VD13"
+    ],
+    [
+     "K01 Đưa hệ thống vào vận hành (cut over) đúng hạn hợp đồng",
+     "Đạt: 0 ngày làm việc",
+     "Cut over theo phụ lục hợp đồng của CR01, dự trữ đến cut over sau lập lại lịch được giữ đến cuối dự án",
+     "Biên bản M6, phụ lục 01/2027/PL-ABCW"
+    ],
+    [
+     "K13 Tác động thực tế của rủi ro so với dự phòng",
+     "Đạt: 10,5%",
+     "Các rủi ro đã xảy ra có tác động nhỏ và được ứng phó sớm theo dấu hiệu",
+     "Sổ rủi ro, vấn đề VD03, VD06, VD12"
+    ]
+   ],
+   "widths": [
+    1300,
+    3000,
+    2800,
+    2200
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "3. Đánh giá nghiệm thu",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Yêu cầu RFP",
+     "Biên bản nghiệm thu",
+     "Kết quả"
+    ],
+    [
+     "R03",
+     "Chính sách phát triển: khách hàng thao tác dễ dàng",
+     "NT06",
+     "Đạt"
+    ],
+    [
+     "R04",
+     "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+     "NT03, NT04, NT05",
+     "Đạt"
+    ],
+    [
+     "R05",
+     "Thời gian phản hồi nhanh, không quá 2 giây",
+     "NT01, NT02",
+     "Đạt"
+    ],
+    [
+     "R06",
+     "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+     "NT07",
+     "Đạt"
+    ],
+    [
+     "R07",
+     "Hệ thống mới có chức năng quản lý thành viên",
+     "NT08",
+     "Đạt"
+    ],
+    [
+     "R08",
+     "Hệ thống mới có chức năng đặt hàng",
+     "NT09",
+     "Đạt"
+    ],
+    [
+     "R09",
+     "Hệ thống mới có cơ sở dữ liệu bán hàng Selling DB",
+     "NT10",
+     "Đạt"
+    ],
+    [
+     "R10",
+     "Selling DB trao đổi dữ liệu với hệ thống chính hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch",
+     "NT11",
+     "Đạt"
+    ],
+    [
+     "R11",
+     "Nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng",
+     "NT12",
+     "Đạt"
+    ],
+    [
+     "R13",
+     "Phạm vi: xây dựng hệ thống website bán hàng từ phân tích hệ thống đến kiểm thử vận hành",
+     "NT14",
+     "Đạt"
+    ],
+    [
+     "R44",
+     "Sản phẩm: đặc tả hệ thống gồm cấu hình cơ sở dữ liệu và chức năng",
+     "NT16",
+     "Đạt"
+    ],
+    [
+     "R46",
+     "Sản phẩm: quy trình vận hành mới",
+     "NT13",
+     "Đạt"
+    ],
+    [
+     "R47",
+     "Sản phẩm: cấu trúc cơ sở dữ liệu Selling DB",
+     "NT17",
+     "Đạt"
+    ],
+    [
+     "R48",
+     "Sản phẩm: sơ đồ phân cấp menu",
+     "NT18",
+     "Đạt"
+    ]
+   ],
+   "widths": [
+    700,
+    4900,
+    2000,
+    1700
+   ],
+   "center_cols": [
+    0,
+    2,
+    3
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Kết quả nghiệm thu cuối cùng không còn tiêu chí không đạt. Số tiêu chí phải nghiệm thu lại: 0.",
+   "t": "p"
+  },
+  {
+   "t": "p",
+   "text": "Toàn bộ 14 yêu cầu RFP thuộc phạm vi nghiệm thu đạt, 18 trên 18 tiêu chí nghiệm thu đạt ngay lần đầu, không có tiêu chí phải nghiệm thu lại và không còn yêu cầu chưa nghiệm thu."
+  },
+  {
+   "t": "p",
+   "text": "Về yêu cầu phi chức năng, hoạt động liên tục 24 giờ, 365 ngày (R04) được nghiệm thu qua hai nút ứng dụng, chuyển đổi dự phòng, sao lưu và khôi phục (NT03, NT05), an toàn dữ liệu được rà soát theo OWASP Top 10 (NT04). Thời gian phản hồi không quá 2 giây và chịu tải 500 người dùng đồng thời (R05) đạt tại NT01, NT02 sau khi tối ưu trang danh mục khi rủi ro RR06 xảy ra. Yêu cầu dễ sử dụng (R03) đạt theo kết quả đánh giá khả năng sử dụng 2.4.9 (NT06)."
+  },
+  {
+   "t": "p",
+   "text": "Các chức năng tìm kiếm (R06), quản lý thành viên (R07), đặt hàng (R08), Selling DB (R09), tích hợp Main System (R10) và nghiệp vụ vận chuyển (R11) đạt trong kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư. Sản phẩm bàn giao theo RFP gồm đặc tả (R44), quy trình vận hành mới (R46), cấu trúc Selling DB (R47) và sơ đồ menu (R48) được nghiệm thu khi bàn giao ngày 29/07/2027."
+  },
+  {
+   "text": "4. Đánh giá quản lý thay đổi",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Yêu cầu thay đổi",
+     "Nguồn",
+     "Mức",
+     "Đề xuất",
+     "Quyết định",
+     "Ngày xử lý"
+    ],
+    [
+     "CR01",
+     "Bán hàng trên sàn thương mại điện tử",
+     "chủ đầu tư",
+     "Lớn",
+     "20/05/2027",
+     "27/05/2027",
+     "5"
+    ]
+   ],
+   "widths": [
+    700,
+    2900,
+    1200,
+    1100,
+    1200,
+    1200,
+    1000
+   ],
+   "center_cols": [
+    0,
+    3,
+    4,
+    5,
+    6
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Số yêu cầu thay đổi: 1, được phê duyệt: 1, có quyết định trong thời hạn đánh giá: 1. Tổng tác động đã duyệt: 76 MD, 161.500.000 đồng.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Tiêu chí",
+     "Kết quả",
+     "Đánh giá"
+    ],
+    [
+     "Tiếp nhận và ghi sổ",
+     "CR01 ghi sổ ngày 20/05/2027, cùng ngày Chủ đầu tư đề nghị tại buổi trình diễn cuối S4",
+     "Đạt, ghi kèm vấn đề VD08 để theo dõi"
+    ],
+    [
+     "Đánh giá tác động",
+     "Đánh giá MD tăng 76, chi phí, ngày cut over phải lùi và tiêu hao dự trữ trên đường găng bằng công cụ của nhóm",
+     "Đạt, đánh giá ban đầu được cập nhật khi nhóm chọn cut over trong phụ lục"
+    ],
+    [
+     "Phê duyệt đúng cấp và đúng hạn",
+     "Quyết định ngày 27/05/2027, sau 5 ngày làm việc, trước hạn 01/06/2027, mức Lớn do người ký hợp đồng của hai bên quyết định",
+     "Đạt"
+    ],
+    [
+     "Phụ lục hợp đồng khi đổi giá hoặc mốc",
+     "Phụ lục 01/2027/PL-ABCW ghi giá điều chỉnh, cut over mới, đợt thanh toán gắn mốc M9 và gia hạn bảo đảm thực hiện",
+     "Đạt"
+    ],
+    [
+     "Cập nhật tài liệu và phiên bản",
+     "Các tài liệu kế hoạch được cập nhật thành đường cơ sở BL2, BL2 được lập lại cùng ngày sau khi sửa theo kiểm tra lớp B",
+     "Đạt một phần, tài liệu sau thay đổi nên qua kiểm tra lớp B trước khi lập đường cơ sở, quy trình đã được sửa"
+    ],
+    [
+     "Kiểm soát thay đổi không chính thức",
+     "Không ghi nhận thay đổi phạm vi ngoài phiếu yêu cầu thay đổi, các điều chỉnh huy động trong S8, S9 là quyết định quản lý nguồn lực trong phạm vi đã duyệt",
+     "Đạt"
+    ]
+   ],
+   "widths": [
+    2800,
+    3500,
+    3000
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "5. Đánh giá quản lý rủi ro",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Mã",
+     "Rủi ro",
+     "Mức",
+     "EMV, MD",
+     "Thực tế, MD",
+     "Trạng thái cuối",
+     "CR"
+    ],
+    [
+     "RR02",
+     "Tài liệu giao diện hoặc môi trường thử của Main System đến muộn hơn cam kết hoặc không đủ thông tin",
+     "Cao",
+     "6,00",
+     "1,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR10",
+     "Số lỗi phát hiện trong kiểm thử chấp nhận vượt khả năng khắc phục trong khoảng 16/07 đến 27/07/2027",
+     "Cao",
+     "4,00",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR01",
+     "Đặc tả yêu cầu được xác nhận chậm hoặc thay đổi nhiều sau khi xác nhận",
+     "Trung bình",
+     "4,80",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR04",
+     "Vị trí bổ sung không có mặt đúng sprint huy động đã thống nhất",
+     "Trung bình",
+     "6,00",
+     "0,50",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR13",
+     "Lương thỏa thuận với vị trí bổ sung cao hơn lương tham chiếu dùng trong dự toán",
+     "Trung bình",
+     "0,00",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR22",
+     "Giao diện lập trình hoặc môi trường thử của sàn thương mại điện tử chưa sẵn sàng, hoặc sàn thay đổi chính sách kết nối trong thời gian thực hiện",
+     "Trung bình",
+     "2,40",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR08",
+     "Sự cố khi triển khai phiên bản chính thức và chuyển đổi dữ liệu ngày 28/07/2027, phải khôi phục",
+     "Trung bình",
+     "0,80",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR15",
+     "Lỗ hổng bảo mật tài khoản thành viên làm lộ dữ liệu khách hàng",
+     "Trung bình",
+     "1,00",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR03",
+     "Kiểm thử hệ thống và khắc phục lỗi hoàn thành sau ngày bắt đầu kiểm thử chấp nhận 16/07/2027",
+     "Trung bình",
+     "4,00",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR06",
+     "Thời gian phản hồi vượt 2 giây hoặc không chịu tải 500 người dùng đồng thời",
+     "Trung bình",
+     "3,20",
+     "1,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR16",
+     "Hạ tầng máy chủ vận hành do Chủ đầu tư bàn giao muộn",
+     "Trung bình",
+     "2,40",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR05",
+     "Trưởng nhóm quá tải do kiêm quản lý dự án và kiến trúc",
+     "Trung bình",
+     "2,40",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR07",
+     "Hệ thống gián đoạn, không bảo đảm hoạt động liên tục 24 giờ, 365 ngày",
+     "Trung bình",
+     "1,20",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR11",
+     "Chủ đầu tư yêu cầu bổ sung thanh toán trực tuyến cho đơn hàng",
+     "Trung bình",
+     "2,40",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR12",
+     "Thư viện mã nguồn mở có giấy phép không phù hợp với điều khoản quyền sở hữu thuộc Chủ đầu tư",
+     "Trung bình",
+     "0,60",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR09",
+     "Cán bộ Chủ đầu tư chưa sẵn sàng vận hành theo quy trình vận hành mới",
+     "Thấp",
+     "1,60",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR14",
+     "Dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi đến muộn hơn 10/06/2027 hoặc sai định dạng",
+     "Thấp",
+     "1,60",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR20",
+     "Tái sử dụng khung ứng dụng và thư viện giao diện từ hai hợp đồng tương tự",
+     "Thấp",
+     "3,20",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR17",
+     "Lỗi phát sinh trong thời hạn bảo hành 12 tháng vượt chi phí bảo hành đã dự tính",
+     "Thấp",
+     "2,00",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR18",
+     "Phụ thuộc vào ít người có năng lực triển khai hạ tầng",
+     "Thấp",
+     "1,20",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR21",
+     "Chủ đầu tư bàn giao môi trường thử của Main System sớm hơn 20/05/2027",
+     "Thấp",
+     "0,60",
+     "0,00",
+     "Đã đóng",
+     ""
+    ],
+    [
+     "RR19",
+     "Mốc M3 hoặc M9 trễ làm dời khoản thu Đợt 3, Đợt 6",
+     "Thấp",
+     "0,00",
+     "0,00",
+     "Đã đóng",
+     ""
+    ]
+   ],
+   "widths": [
+    700,
+    3100,
+    1000,
+    1000,
+    1100,
+    1500,
+    900
+   ],
+   "center_cols": [
+    0,
+    2,
+    6
+   ],
+   "right_cols": [
+    3,
+    4
+   ],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Chỉ tiêu",
+     "Giá trị"
+    ],
+    [
+     "Số rủi ro trong sổ",
+     "22"
+    ],
+    [
+     "Đã xảy ra",
+     "3"
+    ],
+    [
+     "Đã kích hoạt kế hoạch ứng phó",
+     "2"
+    ],
+    [
+     "Tổng EMV kế hoạch",
+     "47,60 MD, 150.693.014 đồng"
+    ],
+    [
+     "Tác động thực tế",
+     "2,50 MD, 5.250.000 đồng"
+    ],
+    [
+     "Dự phòng kế hoạch, tỷ lệ đã dùng",
+     "50.000.000 đồng, 10,5%"
+    ]
+   ],
+   "widths": [
+    4300,
+    5000
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "rows": [
+    [
+     "Tiêu chí",
+     "Kết quả",
+     "Đánh giá"
+    ],
+    [
+     "Mức độ nhận diện",
+     "3 rủi ro đã xảy ra RR02, RR04, RR06 đều có trong sổ, không có rủi ro mới ngoài sổ",
+     "Đạt"
+    ],
+    [
+     "Độ chính xác đánh giá",
+     "Tác động thực tế 2,50 MD so với tổng EMV 47,60 MD, các rủi ro xảy ra có tác động thấp hơn mức đã đánh giá",
+     "Đạt, đánh giá thận trọng, EMV cao hơn thực tế"
+    ],
+    [
+     "Hiệu quả phòng ngừa",
+     "19 rủi ro không xảy ra, các rủi ro kiểm thử chấp nhận và cut over (RR03, RR08, RR10) được phòng ngừa bằng kiểm thử sớm và diễn tập triển khai",
+     "Đạt"
+    ],
+    [
+     "Tính kịp thời của ứng phó",
+     "2 lần kích hoạt kế hoạch ứng phó theo dấu hiệu, RR06 được xử lý trong cùng sprint phát hiện",
+     "Đạt"
+    ],
+    [
+     "Mức dùng dự phòng",
+     "Tác động thực tế tương đương 10,5% dự phòng 50.000.000 đồng",
+     "Đạt"
+    ]
+   ],
+   "widths": [
+    2800,
+    3500,
+    3000
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "6. Đánh giá thực hiện cam kết",
+   "t": "h1"
+  },
+  {
+   "rows": [
+    [
+     "Cam kết",
+     "Căn cứ",
+     "Kết quả thực hiện",
+     "Đánh giá"
+    ],
+    [
+     "Thời hạn đưa hệ thống vào vận hành",
+     "HSMT, E-ĐKCT và phụ lục hợp đồng 01/2027/PL-ABCW",
+     "Cut over ngày 29/07/2027, đúng ngày theo phụ lục",
+     "Đạt"
+    ],
+    [
+     "Nhân sự chủ chốt",
+     "HSDT, danh sách nhân sự chủ chốt",
+     "Không thay đổi nhân sự chủ chốt, vị trí bổ sung huy động theo kế hoạch và huy động bổ sung theo nhu cầu ở S8, S9",
+     "Đạt"
+    ],
+    [
+     "Phương pháp và kế hoạch thực hiện theo sprint",
+     "HSDT, đề xuất kỹ thuật",
+     "Các sprint S1 đến S9 có bản phát hành R1 đến R9 và báo cáo tiến độ mỗi kỳ, bản chính thức R9",
+     "Đạt"
+    ],
+    [
+     "Bảo đảm chất lượng và nghiệm thu theo chỉ tiêu kỹ thuật",
+     "HSMT, chỉ tiêu kỹ thuật, HSDT",
+     "Mọi tiêu chí nghiệm thu đạt lần đầu, không còn lỗi nghiêm trọng hoặc cao khi bàn giao",
+     "Đạt"
+    ],
+    [
+     "Quản lý thay đổi và rủi ro",
+     "HSDT, kế hoạch quản lý thay đổi và rủi ro",
+     "Yêu cầu thay đổi quyết định đúng hạn có phụ lục, rủi ro xảy ra đều có ứng phó, đường cơ sở BL2 phải lập lại sau kiểm tra",
+     "Đạt một phần"
+    ],
+    [
+     "Bảo hành trách nhiệm sai sót",
+     "HSMT, E-ĐKCT, bảo hành 12 tháng",
+     "Nghĩa vụ bảo hành ghi nhận là cam kết chưa chi 40.000.000 đồng, thực hiện sau ngày đóng dự án",
+     "Đạt"
+    ]
+   ],
+   "widths": [
+    2600,
+    1800,
+    3000,
+    1900
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "t": "table"
+  },
+  {
+   "text": "7. Kết luận và kiến nghị",
+   "t": "h1"
+  },
+  {
+   "t": "p",
+   "text": "Dự án được xếp loại Tốt với 14 trên 14 chỉ tiêu KPI đạt. Điểm mạnh là cut over đúng ngày theo phụ lục dù có yêu cầu thay đổi lớn giữa dự án, nghiệm thu đạt ngay lần đầu và rủi ro được ứng phó sớm."
+  },
+  {
+   "t": "p",
+   "text": "Hạn chế chính là huy động theo nhu cầu sát MD kế hoạch làm các sprint kiểm thử thiếu quỹ khi gói trước chậm, phải huy động bổ sung ở S8, S9, và đường cơ sở sau thay đổi được lập trước khi tài liệu qua kiểm tra lớp B."
+  },
+  {
+   "t": "p",
+   "text": "Kiến nghị nhóm dự án lập mức huy động của các sprint kiểm thử có phần dư cho làm bù, kiểm tra lớp B mọi tài liệu sau thay đổi trước khi đặt đường cơ sở. Kiến nghị Chủ đầu tư duy trì đầu mối tiếp nhận yêu cầu bảo hành và xác nhận biên bản nghiệm thu tổng thể để thanh toán các đợt còn lại."
+  }
+ ],
+ "canh_bao_soan": []
+}

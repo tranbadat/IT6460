@@ -22,12 +22,15 @@ Cách tính:
   của gói bị ghim (khoảng chậm cho phép của các gói phía trước). Gói kiểm thử chấp nhận ghim theo khoảng uat cũng tính như vậy.
 - Phụ thuộc bên ngoài (moc_nhap.json, khóa dau_vao_ben_ngoai {mã cam kết: [mã gói hoặc mục cha]}): gói không bắt đầu trước hạn
   của cam kết trong du_an.cam_ket_chu_dau_tu. Lỗi L17 khi gói bắt đầu trước hạn, cảnh báo L18 khi cam kết có hạn chưa ánh xạ gói.
+  Gói kiểm thử chấp nhận đã ghim theo khoảng uat thì cam kết ánh xạ là cam kết tham gia trong khoảng (hạn là ngày cuối khoảng),
+  không ghim theo hạn.
   Ràng buộc này không dùng để đo dự trữ đến cut over.
 - Sử dụng quỹ: cảnh báo L07 khi một người được huy động trong sprint nhưng dùng dưới NGUONG_SU_DUNG_NGUOI_SPRINT quỹ của sprint,
   L08 khi tỷ lệ sử dụng quỹ toàn dự án thấp hơn du_an.nguong_su_dung_quy_toi_thieu (bước hsdt dừng ở ngưỡng này).
 - Giai đoạn (loi.giai_doan_du_an, loi.phan_giai_doan): Khởi động (du_an.giai_doan.khoi_dong {tu, den}, mặc định 5 ngày làm việc
   đầu), Thực hiện (các sprint), Kết thúc (du_an.giai_doan.ket_thuc.so_ngay_lam_viec sau cut over, mặc định 10). Gói lá ghi
-  giai_doan trong WBS hoặc suy từ nhóm WBS 1 (mọi loại công việc): mục mức 2 đầu (khởi động, lập kế hoạch) là Khởi động, gói dàn trải
+  giai_doan trong WBS hoặc suy cho gói quản lý dự án (loi.goi_quan_ly_du_an: thuộc mục tên bắt đầu Quản lý dự án hoặc loại PM):
+  mục con đầu của mục quản lý nhiều cấp (khởi động, lập kế hoạch) là Khởi động, gói dàn trải
   là Suốt dự án, gói lá cuối của mục mức 2 cuối (đóng dự án) là Kết thúc, còn lại Suốt dự án. Gói Kết thúc bắt đầu sau cut over, không tính vào
   đường găng, ngày kết thúc, dự trữ đến cut over; lỗi L26 khi xong sau ngày đóng dự án hoặc gói trước cut over phụ thuộc gói
   Kết thúc. MD của gói Kết thúc ghi ở kỳ KT của phan_bo và nhu_cau_theo_sprint, quỹ bằng 0 (cảnh báo L28). Mục tiêu, sản phẩm
@@ -209,9 +212,12 @@ for ma_ck, ds_goi in anh_xa_ck.items():
             add('L19', f'dau_vao_ben_ngoai {ma_ck}: gói {ma_g} không có trong WBS', ma_g)
         for m in la_cua(ma_g):
             ck_goi.setdefault(ma_ck, []).append(m)
-            if CAM_KET[ma_ck].get('han'):
+            if CAM_KET[ma_ck].get('han') and m not in ghim_uat:  # gói ghim theo khoảng uat: cam kết tham gia trong khoảng, hạn là ngày cuối khoảng
                 ghim_ben_ngoai[m] = max(ghim_ben_ngoai.get(m, 0), chi_so_tu(CAM_KET[ma_ck]['han']))
-            rb_goi.setdefault(m, []).append({'loai': 'cam_ket', 'ma': ma_ck, 'han': CAM_KET[ma_ck].get('han')})
+            rb_ck = {'loai': 'cam_ket', 'ma': ma_ck, 'han': CAM_KET[ma_ck].get('han')}
+            if m in ghim_uat:  # cam kết tham gia trong khoảng kiểm thử chấp nhận: ghi khoảng thay cho hạn bàn giao
+                rb_ck.update(trong_khoang=True, tu=da['uat']['tu'], den=da['uat']['den'])
+            rb_goi.setdefault(m, []).append(rb_ck)
 if not CHI_NGUON_LUC:
     for c in CAM_KET.values():
         if c.get('han') and not ck_goi.get(c['ma']):
@@ -453,11 +459,11 @@ for m, t in task.items():
                 phan_bo[(p, s_)] = phan_bo.get((p, s_), 0) + md_p / (b - a + 1)
                 nhu_cau[(t['loai'], s_)] = nhu_cau.get((t['loai'], s_), 0) + md_p / (b - a + 1)
 quy = {t['id']: loi.quy_thoi_gian(t, sprints) for t in tvs}
-# kỳ phân bổ: các sprint, thêm kỳ Kết thúc (sau cut over) khi có gói giai đoạn Kết thúc; quỹ kỳ Kết thúc bằng 0 vì
-# thanh_vien.json chỉ khai báo huy động theo sprint (cảnh báo L28 để nhóm quyết định huy động sau cut over)
+# kỳ phân bổ: các sprint, thêm kỳ Kết thúc (sau cut over) khi có gói giai đoạn Kết thúc. Quỹ kỳ Kết thúc theo thanh_vien.json
+# huy_dong_ket_thuc (tỷ lệ thời gian trong giai đoạn Kết thúc, từ 1.4.5), không khai báo thì bằng 0 (cảnh báo L28 để nhóm quyết định huy động)
 ky_pb = [s['ma'] for s in sprints] + ([MA_KET_THUC] if any(k[1] == MA_KET_THUC for k in phan_bo) else [])
 for t in tvs:
-    quy[t['id']].setdefault(MA_KET_THUC, 0.0)
+    quy[t['id']].setdefault(MA_KET_THUC, round(GD['ket_thuc']['so_ngay'] * float(t.get('huy_dong_ket_thuc') or 0), 2))
 khoa_pb = [(t['id'], s_) for t in tvs for s_ in ky_pb]
 # tổng MD từng người bằng tổng phan_nguoi đã làm tròn theo gói (khớp tải theo người của phan_cong.json và tài liệu phân công),
 # các ô của một người làm tròn sao cho cộng đúng tổng đó
@@ -479,7 +485,9 @@ for t in tvs:
         md_ = pb_tron[(t['id'], s_)]
         q = quy[t['id']][s_]
         if s_ == MA_KET_THUC:
-            if md_:
+            if md_ and md_ <= q + 0.01:
+                pb_rows.append({'thanh_vien': t['id'], 'ho_ten': t['ho_ten'], 'sprint': s_, 'md': md_, 'quy': q, 'ty_le': round(md_ / q, 4)})
+            elif md_:
                 pb_rows.append({'thanh_vien': t['id'], 'ho_ten': t['ho_ten'], 'sprint': s_, 'md': md_, 'quy': q, 'ty_le': 0})
                 add('L28', f'{t["ho_ten"]} làm {md_:.2f} MD trong giai đoạn Kết thúc (sau cut over) nhưng chưa có quỹ huy động sau cut over, '
                            f'đề nghị nhóm quyết định huy động', f'{t["id"]} {s_}', 'canh_bao')
@@ -510,8 +518,12 @@ def su_dung_theo_nguoi():
 def nhu_cau_sprint():
     """MD theo loại công việc và sprint (làm tròn để tổng các ô bằng tổng MD), dùng để đề xuất huy động theo sprint."""
     loai_ds = sorted({t['loai'] for t in task.values()})
-    khoa = [(lo, s_) for s_ in ky_pb for lo in loai_ds]  # các sprint và kỳ Kết thúc (nếu có)
-    tron = dict(zip(khoa, loi.lam_tron_tong([nhu_cau.get(k, 0) for k in khoa])))
+    tron = {}
+    for s_ in ky_pb:  # các sprint và kỳ Kết thúc (nếu có): tổng theo loại của mỗi kỳ bằng tổng theo người đã làm tròn của kỳ đó
+        dich = round(sum(v for (p, sp), v in pb_tron.items() if sp == s_), 2)
+        raw = [nhu_cau.get((lo, s_), 0) for lo in loai_ds]
+        he = dich / sum(raw) if sum(raw) else 0
+        tron.update(zip([(lo, s_) for lo in loai_ds], loi.lam_tron_tong([v * he for v in raw])))
     return [{'sprint': s_, 'theo_loai': {lo: tron[(lo, s_)] for lo in loai_ds}, 'md': round(sum(tron[(lo, s_)] for lo in loai_ds), 2)}
             for s_ in ky_pb]
 
@@ -580,7 +592,7 @@ for s in sprints:
     if nhac:
         add('L29', f'Mục tiêu, sản phẩm trình diễn của sprint {s["ma"]} nêu công việc quản lý dự án ({", ".join(nhac)}), '
                    f'công việc này thuộc giai đoạn Khởi động, Suốt dự án hoặc Kết thúc', s['ma'], 'canh_bao')
-    md_ = round(sum(v for (p, sp), v in phan_bo.items() if sp == s['ma']), 2)
+    md_ = round(sum(v for (p, sp), v in pb_tron.items() if sp == s['ma']), 2)  # cộng các ô đã làm tròn theo người: khớp Phan_bo, tài liệu phân công
     q = round(sum(quy[p][s['ma']] for p in quy), 2)
     sp_rows.append(dict(s, muc_tieu=(x or {}).get('muc_tieu', ''), san_pham_demo=(x or {}).get('san_pham_demo', ''), md_ke_hoach=md_, quy=q,
                         ty_le_su_dung=round(md_ / q, 4) if q else 0,
@@ -619,8 +631,15 @@ ck_out = []
 for c in CAM_KET.values():
     ds = sorted(set(ck_goi.get(c['ma'], [])), key=loi.khoa_ma)
     bd = min((start[m] for m in ds), default=None)
-    ck_out.append({'ma': c['ma'], 'noi_dung': c.get('noi_dung', ''), 'han': c.get('han'), 'goi': ds, 'bat_dau_som_nhat': ext[bd].isoformat() if bd is not None else '',
-                   'dat': (bd is None or not c.get('han') or ext[bd].isoformat() >= c['han'])})
+    kt = max((finish[m] for m in ds), default=None)
+    khoang = bool(ds) and all(m in ghim_uat for m in ds)  # cam kết tham gia trong khoảng kiểm thử chấp nhận (CK6)
+    x_ck = {'ma': c['ma'], 'noi_dung': c.get('noi_dung', ''), 'han': c.get('han'), 'goi': ds, 'bat_dau_som_nhat': ext[bd].isoformat() if bd is not None else '',
+            'dat': (bd is None or not c.get('han') or ext[bd].isoformat() >= c['han'])}
+    if khoang:
+        u_ = da['uat']
+        x_ck.update(khoang_tu=u_['tu'], khoang_den=u_['den'], ket_thuc_muon_nhat=ext[kt].isoformat(),
+                    dat=ext[bd].isoformat() >= u_['tu'] and ext[kt].isoformat() <= u_['den'])
+    ck_out.append(x_ck)
 cdt_out = [dict(x, bat_dau=ext[start[x['goi']]].isoformat(), ket_thuc=ext[finish[x['goi']]].isoformat(),
                 so_ngay_lich=finish[x['goi']] - start[x['goi']] + 1) for x in cdt_vao if x['goi'] in start]  # so_ngay: thời lượng tối thiểu
 

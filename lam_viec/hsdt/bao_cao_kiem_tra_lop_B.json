@@ -1,68 +1,147 @@
 {
  "tai_lieu": "ket_qua/02_HSDT/HSDT.docx",
- "phien_ban": "0.2",
- "dac_ta": "hsdt",
- "vong": 2,
+ "phien_ban": "0.10",
+ "luot": "xac_nhan_sau_luot_3",
+ "moi_truong": "Kiểm tra lớp B lượt xác nhận sau vòng sửa cuối (ngoại lệ người dùng duyệt sau 3 vòng), phiên agent con riêng, Claude Code, mô hình claude-opus-5-5, python-docx đối chiếu với dữ liệu nguồn. Có đọc báo cáo lớp B lượt 3 (ngoại lệ lượt xác nhận), không đọc ban_soan, khung, noi_dung, nhật ký sửa",
  "ket_luan": "dat",
  "so_loi": 0,
- "so_canh_bao": 2,
+ "so_canh_bao": 3,
  "danh_gia_tieu_chi": [
   {
    "tieu_chi": "CL01",
    "ket_qua": "dat",
-   "nhan_xet": "Đủ các mục bắt buộc, 5 tiêu chí kỹ thuật đúng thứ tự."
+   "nhan_xet": "Mục 11 nay nêu đủ sáu nhóm sản phẩm của mục 3.3 Chương V HSMT, nhóm (6) tài liệu chuyển giao có đủ hướng dẫn sử dụng, hướng dẫn vận hành theo quy trình vận hành mới, kết quả kiểm thử hệ thống và kiểm thử vận hành, mã nguồn và tài liệu cài đặt, mỗi thành phần gắn gói WBS, mốc và ngày. Các phần khác giữ đủ theo đặc tả."
   },
   {
    "tieu_chi": "CL02",
    "ket_qua": "dat",
-   "nhan_xet": "Hạng A đã sửa đúng rui_ro.json (RR01, RR02, RR04, RR10, RR13). Giá, tổng 11A, mốc, cut over, huy động khớp nguồn. M2 theo giải trình: ngày trình 06/05 (S3), hạn xác nhận 10/05 (S4) đúng lich.json."
+   "nhan_xet": "Ngày các mốc M2 06/05/2027, M3 và M4 17/06/2027, M5 29/06/2027, M6 và M7 01/07/2027 khớp lich#moc. Ngày các gói 3.4.12, 1.4.9, 2.4.10, 1.4.11, 2.4.12, 3.4.13, 2.5.1, 2.5.3, 3.5.1, 2.5.2, 1.5.3, 4.4.7, 2.4.11 khớp lich#goi. Câu giải thích M4 so với hạng mục 10 Mẫu 10A khớp dữ liệu (4.4.7 kết thúc 23/06, 2.4.11 kết thúc 29/06/2027). Cách viết thời điểm bàn giao (9 giờ 00 ngày hạn, phụ thuộc được phép bắt đầu trong ngày hạn, không sớm hơn thời hạn) khớp _quy_tac_ngay_ban_giao và lich#cam_ket_chu_dau_tu. Sơ đồ tổ chức khớp người A mức 1, mức 2 trong phan_cong_bang#raci. Đường găng 22 gói, dự trữ 3 ngày khớp lich.json."
   },
   {
    "tieu_chi": "CL03",
    "ket_qua": "dat",
-   "nhan_xet": "Truy vết về WBS, mốc, RR, KT, CK. Mẫu 06A khớp tài liệu phân công. Thời hạn đánh giá CR 3 ngày truy được về qlda-change/references/phan_loai.json."
+   "nhan_xet": "Các mã gói được dẫn trong danh mục sản phẩm đều tồn tại trong wbs.json. Riêng gói 3.5.1 có sản phẩm là biên bản hướng dẫn vận hành, chưa có sản phẩm tài liệu (MH01)."
   },
   {
    "tieu_chi": "CL04",
    "ket_qua": "dat",
-   "nhan_xet": "Chỉ tiêu KT01 đến KT05 có cách kiểm chứng, có điều kiện cut over."
+   "nhan_xet": "Mỗi sản phẩm bàn giao có thời điểm (mốc, ngày) và cách xác nhận (biên bản, kiểm tra theo Mục 20.1 E-ĐKCT)."
   },
   {
    "tieu_chi": "CL05",
    "ket_qua": "dat",
-   "nhan_xet": "Rủi ro chính có dấu hiệu, ứng phó, người phụ trách, quy trình thay đổi theo Mục 17.1(c)."
+   "nhan_xet": "Đoạn quản lý thay đổi nay có mẫu phiếu yêu cầu thay đổi, thời hạn 3 ngày, cấp phê duyệt phía nhà thầu (quản trị dự án, người đại diện) và Chủ đầu tư, khớp bảng thẩm quyền của kế hoạch quản lý thay đổi."
   },
   {
    "tieu_chi": "CL06",
    "ket_qua": "dat",
-   "nhan_xet": "Đã bỏ chuỗi chấm phẩy ở mục 10, thứ tự bảng và câu dẫn mục 13 hợp lý."
+   "nhan_xet": "Times New Roman, không in đậm, không gạch dài, không ngoặc kép. Giả định (10), (11) không còn ghi chú nội bộ và thuật ngữ khoản B."
+  },
+  {
+   "tieu_chi": "DH1 Đề xuất kỹ thuật trả lời đủ 5 tiêu chí theo thứ tự",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi so với lượt 3."
+  },
+  {
+   "tieu_chi": "DH2 Đủ 10 nội dung đề xuất của RFP",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi so với lượt 3."
+  },
+  {
+   "tieu_chi": "DH3 Mẫu 10A, 11A theo danh mục Mẫu 01A",
+   "ket_qua": "dat",
+   "nhan_xet": "13/13 hạng mục, tổng bằng giá dự thầu, lớp A v0.10 đạt."
+  },
+  {
+   "tieu_chi": "DH4 Năng lực, nhân sự",
+   "ket_qua": "dat",
+   "nhan_xet": "Không đổi so với lượt 3."
+  },
+  {
+   "tieu_chi": "DH5 Không có cam kết vượt phạm vi RFP",
+   "ket_qua": "dat",
+   "nhan_xet": "CK3, CK4, CK7 vẫn ghi là đề nghị của nhà thầu, không đổi thời hạn mục 3.5 Chương V."
+  },
+  {
+   "tieu_chi": "DH6 Không công khai chi phí chung, lợi nhuận",
+   "ket_qua": "dat",
+   "nhan_xet": "Giả định (10) đã thay khoản B bằng chi phí bảo hành đã tính trong giá dự thầu."
+  },
+  {
+   "tieu_chi": "DH7 Biện pháp, cam kết, con số có trong dữ liệu nguồn",
+   "ket_qua": "dat",
+   "nhan_xet": "Phần sửa dùng số liệu có nguồn, trừ thời hạn lập và xác nhận biên bản họp (1 và 2 ngày làm việc) chưa thấy trong dữ liệu nguồn (MH02)."
   }
  ],
- "ghi_nhan_giai_trinh": [
-  "MH02 giữ nguyên: đúng nguồn",
-  "MH03 giữ nguyên theo quyết định nhóm: chuyển thành cảnh báo ghi nhận",
-  "MH05 không sửa: nguyên văn ý thứ nhất Mẫu 5A, chấp nhận",
-  "MH06 chờ nhóm bổ sung: còn cảnh báo",
-  "MH07 không sửa: có nguồn phan_loai.json"
- ],
- "phat_hien": [
+ "dong_phat_hien_luot_3": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Mục 11 đoạn danh mục sản phẩm nêu đủ thành phần (6) theo mục 3.3 Chương V: kết quả kiểm thử hệ thống (3.4.12, 1.4.9, 2.4.10, M4 17/06/2027), kết quả kiểm thử chấp nhận và kiểm thử vận hành (1.4.11, 2.4.12, 3.4.13, M5 29/06/2027), hướng dẫn sử dụng (2.5.1, 2.5.3), hướng dẫn vận hành theo quy trình vận hành mới (3.5.1), hướng dẫn vận hành kỹ thuật (2.5.2), mã nguồn, tài liệu cài đặt và danh mục thư viện (1.5.3, M7 01/07/2027). Gói 1.5.3 trong wbs.json đã có tài liệu cài đặt. Còn cảnh báo truy vết ở gói 3.5.1 (MH01 lượt này)."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "Giả định (11) không còn câu quyết định của nhóm ngày 25/10/2026, giả định (10) ghi chi phí bảo hành đã tính trong giá dự thầu."
+  },
   {
    "ma": "MH03",
-   "muc_do": "canh_bao",
-   "nhom": "chi_phi",
-   "vi_tri": "Mục 17, đơn giá theo người-tháng",
-   "mo_ta": "Có thể suy ra phần chi phí chung và lợi nhuận. Nhóm đã quyết định giữ, ghi nhận.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Không cần sửa theo giải trình"
+   "da_dong": true,
+   "nhan_xet": "Mục 10, giả định (8) và mục 14 đều ghi chậm nhất 9 giờ 00 ngày 20/05/2027 (CK7)."
+  },
+  {
+   "ma": "MH04",
+   "da_dong": true,
+   "nhan_xet": "Mục 12 và mục 14 ghi công việc phụ thuộc được phép bắt đầu ngay trong ngày hạn và không bắt đầu sớm hơn thời hạn cung cấp, khớp lich#cam_ket_chu_dau_tu (CK2, CK8 bắt đầu sớm nhất 24/05, CK4 11/06/2027)."
+  },
+  {
+   "ma": "MH05",
+   "da_dong": true,
+   "nhan_xet": "Bảng kế hoạch họp ghi họp làm rõ yêu cầu hai đến ba buổi mỗi tuần trong S1 đến S3 theo CK5 và cách lập, gửi, xác nhận biên bản. Thời hạn biên bản chưa có nguồn dữ liệu (MH02 lượt này)."
   },
   {
    "ma": "MH06",
+   "da_dong": true,
+   "nhan_xet": "Mục 13 nêu mẫu phiếu yêu cầu thay đổi của kế hoạch quản lý thay đổi, các trường chính và cấp phê duyệt phía nhà thầu, thống nhất với bảng thẩm quyền và mẫu phiếu trong Ke_hoach_quan_ly_thay_doi.docx v0.6."
+  },
+  {
+   "ma": "MH07",
+   "da_dong": true,
+   "nhan_xet": "Mục 12 có bảng sơ đồ tổ chức theo vai trò và quan hệ báo cáo, người phụ trách bốn nhóm phân hệ khớp người A mức 1 trong phan_cong_bang#raci (Minh, Anh, Anh, Toàn), Nguyễn Hoàng Nam khớp A mục 4.2."
+  },
+  {
+   "ma": "MH08",
+   "da_dong": true,
+   "nhan_xet": "Mục 12 có câu giải thích M4 là hoàn thành kiểm thử hệ thống trên môi trường kiểm thử, hạng mục 10 còn gồm 4.4.7 và 2.4.11 nên kết thúc sau M4, khớp lich.json."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
    "muc_do": "canh_bao",
-   "nhom": "nhan_su",
-   "vi_tri": "Mẫu 06B: Theo hồ sơ nhân sự trên Hệ thống",
-   "mo_ta": "Thiếu căn cước, người liên lạc, số năm làm việc. Chờ nhóm bổ sung thanh_vien.json.",
+   "nhom": "truy_vet",
+   "vi_tri": "Mục 11, đoạn sản phẩm bàn giao: tài liệu hướng dẫn vận hành theo quy trình vận hành mới cho cán bộ Chủ đầu tư (gói 3.5.1)",
+   "mo_ta": "Trong wbs.json, gói 3.5.1 là ba buổi hướng dẫn vận hành, sản phẩm là Biên bản hướng dẫn vận hành. Không có gói nào có sản phẩm là tài liệu hướng dẫn vận hành theo quy trình vận hành mới. Lời văn không mâu thuẫn trực tiếp nhưng thành phần này của mục 3.3 (6) chưa truy vết được tới một sản phẩm WBS.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa ở bước dữ liệu: bổ sung san_pham của gói 3.5.1 trong wbs.json thành tài liệu hướng dẫn vận hành theo quy trình vận hành mới và biên bản hướng dẫn vận hành (không đổi MD), rồi tạo lại các tài liệu phụ thuộc."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "nguon_du_lieu",
+   "vi_tri": "Mục 12, bảng kế hoạch họp, dòng Họp tiến độ và Họp xác nhận sản phẩm theo mốc: Biên bản do quản trị dự án lập và gửi trong 1 ngày làm việc, đầu mối Chủ đầu tư xác nhận bằng thư điện tử trong 2 ngày làm việc",
+   "mo_ta": "Thời hạn 1 ngày làm việc và 2 ngày làm việc là cam kết mới, có đặt thời hạn cho Chủ đầu tư, nhưng không tìm thấy trong dau_vao/du_an.json, các quyết định của nhóm, hsdt_bang.json hay dữ liệu khác. Kế hoạch tổng thể v0.8 không nêu thời hạn này. Chưa chắc nhóm đã quyết định con số này.",
    "cach_sua": "can_nguoi_dung",
-   "de_xuat": "dau_vao/thanh_vien.json"
+   "de_xuat": "Nhóm xác nhận thời hạn lập, gửi, xác nhận biên bản. Nếu giữ thì ghi vào dữ liệu nguồn (du_an.json hoặc dữ liệu kế hoạch họp) và đưa vào kế hoạch truyền thông của kế hoạch tổng thể. Nếu không thì bỏ con số, chỉ nêu người lập và hình thức xác nhận."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "cham_diem",
+   "vi_tri": "Mục 11, đoạn sản phẩm bàn giao, sản phẩm (4): sơ đồ phân cấp menu (Menu Layer)",
+   "mo_ta": "Mục 3.3 (4) Chương V ghi sơ đồ phân cấp menu kèm thiết kế giao diện các màn hình chính (giao diện ưu tiên). Đoạn danh mục chỉ nêu sơ đồ phân cấp menu, giao diện ưu tiên có ở bảng 13 hạng mục ngay trên và ở gói 3.2.5, nên người chấm vẫn đối chiếu được. Ảnh hưởng nhỏ tới tiêu chí 2.2 mức Tốt.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại PHUONG_PHAP đoạn sản phẩm bàn giao: (4) sơ đồ phân cấp menu (Menu Layer) kèm thiết kế giao diện ưu tiên."
   }
  ]
 }

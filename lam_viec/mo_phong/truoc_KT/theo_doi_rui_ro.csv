@@ -1,0 +1,11 @@
+ngay,ma_rui_ro,trang_thai,hanh_dong,md_tac_dong,chi_phi_tac_dong,ma_cr,ghi_chu
+2027-04-01,RR04,Đã xảy ra,"Trần Bá Đạt xác nhận ngày có mặt của Trần Thu Hà, Nguyễn Thị Phương Liên chuẩn bị khung kế hoạch bảo đảm chất lượng để bàn giao, gói 2.1.1 làm bù trong tuần đầu sprint",0.5,1050000,,
+2027-04-14,RR02,Đã kích hoạt ứng phó,"Đến 9 giờ 00 ngày 14/04/2027 chưa nhận tài liệu đặc tả giao diện của Main System. Ninh Đức Toàn lập danh sách thông tin còn thiếu, Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư trong ngày, nhóm tích hợp chuẩn bị dịch vụ giả lập",,,,
+2027-04-19,RR04,Đã đóng,Điều kiện đóng đạt,,,,
+2027-04-19,RR02,Đã xảy ra,"Tài liệu đặc tả giao diện Main System nhận ngày 19/04/2027, muộn 2 ngày làm việc so với CK1. Ninh Đức Toàn đối chiếu tài liệu với danh sách thông tin còn thiếu, Trần Bá Đạt làm đặc tả giao diện tích hợp ngay khi nhận tài liệu, nhóm tích hợp tiếp tục chuẩn bị dịch vụ giả lập",1,2100000,,
+2027-05-27,RR01,Đã đóng,"Điều kiện đóng đạt: biên bản xác nhận đặc tả (M2) ký ngày 06/05/2027, không còn yêu cầu sửa đổi đặc tả đã xác nhận đang mở (CR01 là bổ sung phạm vi theo phụ lục)",,,,Rà soát sổ rủi ro sau phụ lục 01/2027/PL-ABCW
+2027-05-27,RR21,Đã đóng,"Điều kiện đóng đạt: Chủ đầu tư bàn giao môi trường thử Main System đúng hạn 20/05/2027, không sớm hơn, kiểm thử tích hợp 4.4.3 đã bắt đầu",,,,Rà soát sổ rủi ro sau phụ lục 01/2027/PL-ABCW
+2027-06-10,RR02,Đã đóng,,,,,
+2027-06-21,RR06,Đã kích hoạt ứng phó,"Kích hoạt kế hoạch ứng phó khi kết quả kiểm thử hiệu năng cho thời gian phản hồi trang danh mục 2,6 giây ở mức tải 500 người dùng đồng thời",,,,
+2027-06-21,RR06,Đã xảy ra,"Đỗ Minh Quân tối ưu truy vấn danh mục và bộ nhớ đệm thay Phạm Tuấn Anh (không huy động trong S7), Ninh Đức Toàn rà soát cấu hình mở rộng nút ứng dụng trên môi trường vận hành, Phạm Ngọc Anh đo lại sau tối ưu",1,2100000,,
+2027-07-06,RR06,Đã đóng,,,,,

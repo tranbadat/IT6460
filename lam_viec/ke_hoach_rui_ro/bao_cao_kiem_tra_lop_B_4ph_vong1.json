@@ -1,0 +1,190 @@
+{
+ "tai_lieu": "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx (v0.7)",
+ "buoc": "ke_hoach_rui_ro",
+ "dac_ta": ".claude/skills/qlda-risk/dac_ta/ke_hoach_rui_ro.json",
+ "ngay_kiem_tra": "2026-10-24",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B)",
+ "ket_luan": "chua_dat",
+ "so_loi": 3,
+ "so_canh_bao": 7,
+ "phuong_phap": "Trích toàn văn Word bằng python-docx, so số liệu, mã, ngày với du_lieu/rui_ro.json, rui_ro_bang.json, chi_phi.json, lich.json, dau_vao/thanh_vien.json, du_an.json (quyết định 18/10/2026), hsmt.json. Kiểm tra đủ 21 mã rủi ro, đếm mức, hạng, ma trận 5x5 và 3x3, EMV, dự trữ. Kiểm tra trình bày theo van_phong.md và van_phong.json.",
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục theo đặc tả, các đoạn soạn có cụm bắt buộc (01/07/2027, EMV, ước tính định hướng, 3x3, hạng A, 50.000.000, 5,4, bốn phương án, SPI, CPI, yêu cầu thay đổi)."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Số liệu tổng hợp khớp nguồn (21 rủi ro, 19 đe dọa, 2 cơ hội, 3/11/7 mức, 5/9/7 hạng, EMV 147 triệu khoảng 110 đến 183, dự trữ 4 ngày, thiếu 1,4 ngày, dự phòng thiếu 97 triệu). Nhưng nội dung sổ rủi ro còn theo cơ cấu nhân sự cũ: sáu vị trí bổ sung thay vì bảy, RR18 ghi hai người DevOps duy nhất trong khi D4 cũng là DevOps, RR19 còn ghi giả định cần nhóm xác nhận dù nhóm đã quyết định ngày 18/10/2026 (MH01 đến MH03)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi rủi ro có liên kết gói WBS và mốc, căn cứ dẫn CK1 đến CK6, KT01 đến KT04, E-ĐKC, E-ĐKCT."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi rủi ro có dấu hiệu định lượng, điều kiện đóng gắn biên bản hoặc mốc, rủi ro còn lại có điểm và hạng."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có ngưỡng SPI, CPI, lỗi nghiêm trọng kèm hành động, người quyết định, liên kết quy trình yêu cầu thay đổi và sơ đồ phụ thuộc. Phần theo dõi chưa nêu bốn trạng thái (MH07), ngưỡng lỗi chưa đồng bộ với dấu hiệu RR03, RR10 (MH08)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, không in đậm, không gạch dài, không ngoặc kép. Còn từ xong (MH09), một câu lặp ý (MH10) và ghi chú nháp ở RR19 (MH03)."
+  },
+  {
+   "tieu_chi": "DH1 Rủi ro mức cao có ứng phó, dấu hiệu, người phụ trách",
+   "ket_qua": "dat",
+   "nhan_xet": "RR02, RR04, RR10 đủ ba nội dung, có người và thời hạn hành động."
+  },
+  {
+   "tieu_chi": "DH2 Bao phủ đường găng, cut over, Main System, nhân sự bổ sung",
+   "ket_qua": "dat",
+   "nhan_xet": "Có RR03, RR04, RR08, RR09, RR10 (găng, cut over), RR02, RR21 (Main System), RR04, RR13 (nhân sự bổ sung). Nội dung nhân sự bổ sung chưa cập nhật D4 (MH01)."
+  },
+  {
+   "tieu_chi": "DH3 Dự phòng chi phí và thời gian so với EMV",
+   "ket_qua": "dat",
+   "nhan_xet": "So 50 triệu với 147 triệu (110 đến 183), dự trữ 4,0 ngày với EMV găng 5,4 ngày (4,0 đến 6,8)."
+  },
+  {
+   "tieu_chi": "DH4 Ngưỡng cảnh báo có hành động",
+   "ket_qua": "dat",
+   "nhan_xet": "Bảng ngưỡng có cột hành động. Xem MH08."
+  },
+  {
+   "tieu_chi": "DH5 Liên kết quy trình thay đổi",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục 9 và RR01, RR11 dẫn quy trình yêu cầu thay đổi."
+  },
+  {
+   "tieu_chi": "DH6 Mức tác động khớp thang định lượng hoặc có lý do",
+   "ket_qua": "dat",
+   "nhan_xet": "Mọi rủi ro có căn cứ mức suy ra, RR07 chấm khác có lý do."
+  },
+  {
+   "tieu_chi": "DH7 Xác suất có căn cứ, EMV là ước tính định hướng",
+   "ket_qua": "dat",
+   "nhan_xet": "Có cột căn cứ xác suất và câu EMV là ước tính định hướng. RR13 dùng cận trên chưa được nêu (MH04)."
+  },
+  {
+   "tieu_chi": "DH8 Đối chiếu 3x3 và lý do dùng thang 5 mức",
+   "ket_qua": "dat",
+   "nhan_xet": "Có quy tắc quy đổi, số theo hạng, bốn lý do."
+  },
+  {
+   "tieu_chi": "DH9 Dự trữ thiếu có phương án để nhóm chốt",
+   "ket_qua": "dat",
+   "nhan_xet": "Bảng bốn phương án có cột Áp dụng, phương án chấp nhận và báo Chủ đầu tư khớp quyết định 18/10/2026."
+  },
+  {
+   "tieu_chi": "DH10 Có cơ hội",
+   "ket_qua": "dat",
+   "nhan_xet": "RR20, RR21."
+  },
+  {
+   "tieu_chi": "DH11 Nguyên nhân không viện dẫn số tổng hợp của sổ",
+   "ket_qua": "dat",
+   "nhan_xet": "Không phát hiện."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 4, bảng nguyên nhân: RR04 Sáu vị trí bổ sung chưa có quyết định điều động ... (D1 từ S2, D2 từ S2, Q1 từ S2, D3 từ S2, Q2 từ S3); căn cứ: cả sáu vị trí; RR13 sáu vị trí bổ sung, Sáu vị trí chưa có thỏa thuận lương; RR03 căn cứ (D1 từ S2, ..., Q2 từ S3); bảng điều kiện đóng RR04 Cả sáu vị trí đã có mặt, RR13 cả sáu vị trí",
+   "mo_ta": "Theo dau_vao/thanh_vien.json và quyết định 18/10/2026 có bảy vị trí bổ sung (thêm D4 Trương Quốc Việt từ S3), thuyết minh dự toán mục 5 cũng liệt kê bảy người. Sổ rủi ro còn ghi sáu vị trí và bỏ D4 khỏi danh sách huy động, điều kiện đóng RR04, RR13 có thể đạt khi D4 chưa có mặt hoặc chưa ký hợp đồng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa dữ liệu sổ rủi ro (du_lieu/rui_ro.json qua bước rui_ro): RR04 nguyen_nhan, can_cu_xac_suat, dieu_kien_dong, RR13 nguyen_nhan, can_cu_xac_suat, dieu_kien_dong đổi sáu thành bảy, thêm D4 từ S3 vào danh sách của RR04 và RR03. Chạy lại tinh_bang_rui_ro.py và tạo lại tài liệu."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 4: RR18 Phụ thuộc vào hai người có năng lực triển khai hạ tầng; nguyên nhân: Ninh Đức Toàn và vị trí D3 là hai người duy nhất có năng lực triển khai và vận hành (DevOps); căn cứ: Có hai người cùng năng lực từ khi D3 được huy động. Mục 7 đoạn cuối: Trương Quốc Việt, kỹ sư phát triển backend kiêm DevOps",
+   "mo_ta": "thanh_vien.json ghi D4 Trương Quốc Việt có loại công việc DEVOPS (kỹ sư backend kiêm DevOps), chính mục 7 của tài liệu cũng nêu vậy. Nguyên nhân và căn cứ xác suất của RR18 sai với nguồn và mâu thuẫn trong cùng tài liệu, xác suất mức 2 có thể cần đánh giá lại.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Sửa dữ liệu RR18 trong sổ rủi ro: ten, nguyen_nhan, can_cu_xac_suat theo ba người có năng lực DevOps (Ninh Đức Toàn, D3, D4), nhóm xem lại xác suất hoặc điều kiện đóng. Tạo lại tài liệu."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 4, bảng nguyên nhân, RR19 cột Tác động: phát sinh chi phí vốn (giả định 10% một năm trên giá trị Đợt 3 trong một tháng, cần nhóm xác nhận)",
+   "mo_ta": "Ghi chú nháp chờ xác nhận còn trong tài liệu, trong khi nhóm đã quyết định ngày 18/10/2026 giữ giả định chi phí vốn 10% một năm (dau_vao/du_an.json) và mục 7 của chính tài liệu viết giả định chi phí vốn của RR19 giữ nguyên. Mâu thuẫn trong tài liệu và trái quy tắc không ghi chú nháp.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa dữ liệu RR19 tac_dong_mo_ta: bỏ cụm cần nhóm xác nhận, ghi giả định 10% một năm trên giá trị Đợt 3 trong một tháng theo quyết định của nhóm ngày 18/10/2026. Tạo lại tài liệu."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "noi_dung",
+   "vi_tri": "Mục 4, RR13: EMV 45,4 triệu đồng, căn cứ mức tác động chi phí bằng 4,32% giá chào",
+   "mo_ta": "Tiền tác động 75.643.750 đồng tính bằng 10% lương toàn bộ ngày huy động của vị trí bổ sung, sổ ghi là cận trên vì lương trả theo công sức, nhưng lý do này không hiện trong tài liệu. RR13 chiếm 31% tổng EMV và quyết định hạng A, người đọc hiểu là ước tính trung tâm. Tính theo MD công việc (618.762.506 đồng) thì tác động khoảng 61,9 triệu đồng, vẫn mức 3.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm chọn: tính tien_them của RR13 trên MD công việc theo cách trả lương, hoặc giữ cận trên và đưa ly_do_tien_them vào căn cứ mức tác động (dữ liệu sổ rủi ro)."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 5.2, đoạn nhận xét: Trong sổ rủi ro, RR17 cũng được đánh dấu trên đường găng nhưng không thuộc danh sách dùng để đánh giá dự trữ, hai danh sách được đối chiếu lại khi cập nhật sổ.",
+   "mo_ta": "Câu mang tính ghi chú xử lý dữ liệu, không giải thích lý do cho người đọc. RR17 liên kết gói 1.5.3 trên đường găng nhưng EMV thời gian bằng 0 (rủi ro trong thời hạn bảo hành, sau cut over) nên không tính vào dự trữ.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại NHAN_XET_MA_TRAN (lời văn): nêu RR17 gắn gói 1.5.3 trên đường găng nhưng phát sinh sau cut over, EMV thời gian bằng 0 nên không tính vào dự trữ. Hoặc sửa tren_gang của RR17 trong dữ liệu."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "noi_dung",
+   "vi_tri": "Mục 2, dòng Nhóm phát triển và kiểm thử: Phạm Tuấn Anh, Ninh Đức Toàn, Vũ Đức Minh, Nguyễn Thị Phương Liên",
+   "mo_ta": "Bỏ sót bảy vị trí bổ sung (Nguyễn Hoàng Nam, Lê Quang Huy, Đỗ Minh Quân, Bùi Anh Tuấn, Trần Thu Hà, Phạm Ngọc Anh, Trương Quốc Việt) là người phát triển, kiểm thử chính từ S2, S3 và có nghĩa vụ báo cáo dấu hiệu rủi ro.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại TO_CHUC (lời văn): bổ sung các vị trí bổ sung vào dòng nhóm phát triển và kiểm thử, theo phân công."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "noi_dung",
+   "vi_tri": "Mục 8, đoạn THEO_DOI: Người phụ trách cập nhật trạng thái, dấu hiệu đã quan sát ...",
+   "mo_ta": "Hướng dẫn đặc tả yêu cầu nêu bốn trạng thái theo nhật ký theo dõi (Đang theo dõi, Đã kích hoạt ứng phó, Đã xảy ra, Đã đóng) và tình trạng đến ngày lập. Đoạn hiện chỉ nói cập nhật trạng thái, không nêu các trạng thái và không nêu đến 24/10/2026 cả 21 rủi ro đang theo dõi, chưa rủi ro nào xảy ra hoặc đóng (mục 4 có nêu một phần).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại THEO_DOI (lời văn), số rủi ro theo trạng thái viết bằng tham chiếu rr#tong_hop.so_theo_trang_thai."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 8, bảng ngưỡng: Lỗi nghiêm trọng đang mở, vàng từ 2, đỏ từ 4. Mục 6: dấu hiệu RR10 Ngày 23/06/2027 còn từ 5 lỗi nghiêm trọng hoặc cao đang mở; RR03 còn từ 4 lỗi nghiêm trọng mở ngày 14/06/2027",
+   "mo_ta": "Ngưỡng đỏ chung (từ 4) thấp hơn dấu hiệu kích hoạt RR10 (từ 5, tính cả lỗi cao), cách đếm lỗi khác nhau nên không rõ ngưỡng nào kích hoạt ứng phó trong kiểm thử chấp nhận. Không chắc đây là chủ ý phân tầng.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm thống nhất cách đếm lỗi (nghiêm trọng hay nghiêm trọng và cao) và quan hệ giữa ngưỡng chung với dấu hiệu RR03, RR10, sửa dữ liệu dau_hieu hoặc nguong."
+  },
+  {
+   "ma": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 4, RR10 nguyên nhân: phải xong trong khoảng kiểm thử chấp nhận; mục 6.2, RR21 ứng phó: ngay khi luồng đó lập trình xong",
+   "mo_ta": "Từ khẩu ngữ xong theo van_phong.json (lớp A đã cảnh báo, chưa sửa).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa dữ liệu sổ rủi ro: xong thành hoàn thành ở RR10 nguyen_nhan và RR21 ke_hoach_ung_pho."
+  },
+  {
+   "ma": "MH10",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 8, đoạn 2: Mức dự trữ thời gian còn lại được báo cáo trong mỗi kỳ cùng tình hình rủi ro hạng A và rủi ro thuộc phía Chủ đầu tư, và được báo cáo cho Chủ đầu tư trong mỗi kỳ.",
+   "mo_ta": "Lặp cụm được báo cáo trong mỗi kỳ, câu dài và chưa rõ báo cáo nội bộ hay cho Chủ đầu tư.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại THEO_DOI (lời văn): Báo cáo tiến độ mỗi kỳ gửi Chủ đầu tư nêu mức dự trữ thời gian còn lại, tình hình rủi ro hạng A và rủi ro thuộc phía Chủ đầu tư."
+  }
+ ]
+}

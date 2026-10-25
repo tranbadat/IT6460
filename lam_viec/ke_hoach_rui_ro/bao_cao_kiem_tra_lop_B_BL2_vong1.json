@@ -1,0 +1,107 @@
+{
+ "tai_lieu": "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx",
+ "duong_co_so": "BL2 (sau yêu cầu thay đổi CR01, phụ lục 01/2027/PL-ABCW)",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên kiểm tra lớp B riêng, agent Kiểm tra độc lập (Claude Opus 5.5, Claude Code), python-docx, openpyxl, LibreOffice tính lại công thức",
+ "ket_luan": "chua_dat",
+ "so_loi": 2,
+ "so_canh_bao": 5,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ mục đích, tổ chức, thang đo, sổ 22 rủi ro, ma trận 5x5 và 3x3, ứng phó, dự phòng thời gian và chi phí, ngưỡng, quan hệ với quản lý thay đổi."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "EMV 151 triệu (113 đến 189), còn lại 125.462.701 đồng, dự phòng 50.000.000 đồng, dự trữ 8 ngày, đếm mức và hạng, ma trận khớp rui_ro.json và rui_ro_bang.json. Còn lập luận và căn cứ dùng dự trữ BL1 (MH01, MH02)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Rủi ro gắn gói WBS, mốc có ngày theo lịch BL2 (M3 08/07, M5 27/07, M6, M7 29/07, M9 12/07), RR22 nêu CR01 trong nguyên nhân, mục 9 nêu CR01 không dùng dự phòng."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Điều kiện đóng và rủi ro còn lại có cho từng rủi ro."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Rủi ro mức cao có ứng phó, dấu hiệu theo ngày (RR10 21/07/2027 trong khoảng kiểm thử chấp nhận), ngưỡng có hành động. Cảnh báo người phụ trách RR22, RR19 chưa cập nhật đợt 6 (MH04, MH06)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Không in đậm, không gạch dài, một dấu chấm phẩy, không từ cần tránh."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 5.2, đoạn sau ma trận: Dự trữ đến cut over là 8 ngày làm việc nên rủi ro trên chuỗi trước kiểm thử chấp nhận có số ngày chậm vượt dự trữ (RR02, RR03, RR04) có thể làm lùi ngày cut over và được chấm mức tác động cao nhất",
+   "mo_ta": "Số ngày chậm của RR02 6 ngày, RR03 4 ngày, RR04 5 ngày đều nhỏ hơn dự trữ 8 ngày, và câu kế tiếp nói sau CR01 các rủi ro này được chấm lại mức 4, 3. Câu là lập luận của BL1 (dự trữ 3 ngày) với số dự trữ mới, tự mâu thuẫn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại đoạn nhận xét ma trận: dự trữ 8 ngày lớn hơn số ngày chậm của RR02, RR03, RR04 nên các rủi ro này không còn làm lùi cut over, mức tác động theo mức suy ra (RR02, RR04 mức 4 do mốc M3, RR03 mức 3)."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "so_lieu",
+   "vi_tri": "Mục 4, bảng nguyên nhân, dòng RR03 cột Căn cứ xác suất: Chuỗi trước kiểm thử chấp nhận có dự trữ 3 ngày làm việc theo master schedule",
+   "mo_ta": "Master schedule BL2 ghi dự trữ đến cut over 8 ngày, M4 08/07/2027 trước ngày bắt đầu kiểm thử chấp nhận 16/07/2027 năm ngày làm việc. Căn cứ xác suất dùng số của BL1.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa can_cu_xac_suat của RR03 trong rui_ro.json (dùng tham chiếu lich#du_tru_den_cut_over_ngay), xem lại xác suất mức 3 với dự trữ mới."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "dien_dat",
+   "vi_tri": "Mục 7, bảng và đoạn: EMV thời gian ... 3,4 ngày ... 6 rủi ro (RR02, RR03, RR04, RR08, RR09, RR10) ... tính trên các rủi ro còn mở",
+   "mo_ta": "3,4 ngày chỉ gồm RR03, RR08, RR09, RR10 (1,6 cộng 0,2 cộng 0,8 cộng 0,8), RR02 đã xảy ra và RR04 đã đóng đóng góp 0. Ghi 6 rủi ro cùng cụm rủi ro còn mở dễ hiểu sai.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Ghi 4 rủi ro còn mở góp EMV thời gian, RR02, RR04 đã xảy ra hoặc đã đóng."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "nguoi_phu_trach",
+   "vi_tri": "Mục 4 dòng RR22 cột Phụ trách (Phạm Tuấn Anh), mục 6.2 kế hoạch ứng phó RR22",
+   "mo_ta": "Phạm Tuấn Anh không thực hiện gói nào của WBS 5 và có quỹ huy động 0 ở S7, S8 (lich.json), đúng thời gian kiểm thử tích hợp với sàn (5.4.2, 28/06 đến 30/06) và M9. Người thực hiện phần sàn là Lê Quang Huy, Đỗ Minh Quân, Phạm Ngọc Anh, Trần Thu Hà.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm chọn người phụ trách RR22 có mặt S6 đến S8 (ví dụ Lê Quang Huy hoặc Phạm Ngọc Anh), sửa nguoi_phu_trach trong sổ rủi ro."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "cham_diem",
+   "vi_tri": "Mục 4 dòng RR22 cột Căn cứ mức tác động: làm chậm mốc gắn đợt thanh toán M9 (mức 4)",
+   "mo_ta": "M9 dự kiến 12/07/2027, hạn 27/07/2027, còn 11 ngày làm việc. Chậm 3 ngày không làm M9 trễ hạn nên mức 4 theo điều kiện mốc cần lý do. Ngày M9 cũng phụ thuộc quyết định về 5.4.5 (báo cáo lich MH01).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Ghi lý do chấm mức 4 (ví dụ chậm làm dời khoản thu đợt 6) hoặc chấm theo mức suy ra không tính mốc, sau khi chốt ngày M9."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "cap_nhat_cr",
+   "vi_tri": "Mục 4 dòng RR19 (Mốc M2 hoặc M3 trễ làm dời khoản thu Đợt 2, Đợt 3), mục 6.2 dấu hiệu RR19",
+   "mo_ta": "Sau CR01 có đợt 6 gắn M9 (199.024.682 đồng), M3 không còn dự trữ đến hạn, M2 đã đạt 06/05/2027 và đợt 2 đã đến hạn thu. Thuyết minh dự toán nêu khi M3 hoặc M9 trễ thì thời gian lũy kế âm kéo dài nhưng RR19 vẫn gắn M2, M3.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Cập nhật RR19 trong rui_ro.json: gắn M3, M9 và đợt 3, đợt 6, dấu hiệu theo ngày dự kiến M3, M9."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "theo_doi",
+   "vi_tri": "Mục 4 cột Trạng thái của RR21 và RR01 (Đang theo dõi tại 27/05/2027)",
+   "mo_ta": "RR21 là cơ hội Chủ đầu tư bàn giao môi trường thử trước 20/05/2027, mốc này đã qua và kiểm thử tích hợp 4.4.3 bắt đầu 26/05/2027 (điều kiện đóng). RR01 gắn M2 đã đạt 06/05/2027. Nhật ký theo dõi rủi ro chưa có dòng cập nhật nên trạng thái lấy mặc định.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm ghi nhật ký theo_doi_rui_ro.csv cho RR21 (đóng), RR01 (đóng hoặc giữ kèm lý do) rồi chạy lại rui_ro và ke_hoach_rui_ro."
+  }
+ ],
+ "ghi_chu": "Thiếu dự phòng chi phí 75 triệu đồng so với EMV còn lại là quyết định của nhóm, không tính là lỗi."
+}

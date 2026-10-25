@@ -1,0 +1,38 @@
+{
+ "TOM_TAT": [
+  "Dự án xây dựng hệ thống website bán hàng trực tuyến cho Công ty Cổ phần ABC Wear đã hoàn thành mục tiêu theo HSMT và RFP. Hệ thống được đưa vào vận hành ngày {kt#tien_do.cut_over_thuc_te|ngay}, đúng ngày cut over theo phụ lục hợp đồng, dự án đóng ngày {kt#ngay_dong_du_an|ngay}.",
+  "Về phạm vi, {kt#pham_vi.so_goi_hoan_thanh|nguyen} trên {kt#pham_vi.so_goi|nguyen} gói công việc hoàn thành, gồm phần bán hàng trên sàn thương mại điện tử bổ sung theo yêu cầu thay đổi đã duyệt. Về tiến độ, {kt#tien_do.so_moc_dung_han|nguyen} trên {kt#tien_do.so_moc|nguyen} mốc đạt đúng hạn, SPI kỳ cuối {kt#tien_do.spi_cuoi|so2}. Về chi phí, công thực tế {kt#chi_phi.AC_md|md} MD so với kế hoạch {kt#chi_phi.BAC_md|md} MD, CPI kỳ cuối {kt#tien_do.cpi_cuoi|so2}.",
+  "Về chất lượng, {kt#nghiem_thu.so_dat|nguyen} trên {kt#nghiem_thu.so_tieu_chi|nguyen} tiêu chí nghiệm thu đạt ngay lần đầu, không còn lỗi mở khi kết thúc. Dự án đạt {kt#so_kpi_dat} trên {kt#so_kpi|nguyen} chỉ tiêu KPI, xếp loại {kt#xep_loai}. Số liệu thực hiện của dự án là số liệu mô phỏng theo du_lieu/mo_phong.json."
+ ],
+ "PHAM_VI": [
+  "Các sản phẩm theo RFP gồm đặc tả hệ thống, quy trình vận hành mới, cấu trúc cơ sở dữ liệu Selling DB và sơ đồ phân cấp menu đã được bàn giao và nghiệm thu, {kt#nghiem_thu.so_yeu_cau_rfp_dat|nguyen} trên {kt#nghiem_thu.so_yeu_cau_rfp|nguyen} yêu cầu RFP thuộc phạm vi nghiệm thu đạt. Các {kt#nghiem_thu.hang_muc|dem} hạng mục của Mẫu 01A đều có tiêu chí nghiệm thu đạt, không có hạng mục chưa nghiệm thu.",
+  "Phạm vi thay đổi duy nhất là yêu cầu thay đổi {kt#thay_doi.danh_sach[0].ma} {kt#thay_doi.danh_sach[0].tieu_de} do Chủ đầu tư đề nghị, tăng {kt#thay_doi.md_tang_duyet|md} MD, được phê duyệt bằng phụ lục hợp đồng 01/2027/PL-ABCW và nghiệm thu tại mốc M9. Một số gói vượt công trên 20% so với kế hoạch, như dịch vụ đổi trả và hoàn tiền {kt#pham_vi.goi_vuot_20pt[0].ma}, do đặc tả có trường hợp nghiệp vụ phức tạp hơn ước lượng, không làm thay đổi phạm vi."
+ ],
+ "TIEN_DO": [
+  "SPI duy trì ở mức Xanh trong phần lớn các kỳ, giảm xuống mức Vàng ở các kỳ S3, S4 do chuỗi thiết kế chi tiết hoàn thành muộn và tài liệu Main System đến muộn (rủi ro RR02), sau đó phục hồi nhờ làm bù bằng quỹ sẵn sàng và huy động bổ sung theo nhu cầu ở S8. SPI kỳ cuối đạt {kt#tien_do.spi_cuoi|so2}.",
+  "Mọi mốc hợp đồng và mốc của phụ lục đạt đúng hạn, mốc kiểm thử hệ thống M4 đạt trong hạn nhưng sau ngày dự kiến do khắc phục lỗi kiểm thử hệ thống. Các mốc thanh toán M2, M3, M9 và cut over đạt đúng hạn, ngày đưa vào vận hành {kt#tien_do.cut_over_thuc_te|ngay} trùng ngày cut over {kt#tien_do.cut_over|ngay} theo phụ lục, số ngày trễ so với cut over là {kt#tien_do.so_ngay_tre_cut_over|nguyen}."
+ ],
+ "CHI_PHI": [
+  "Lương trả theo cách {kt#chi_phi.cach_tra_luong_ten}. Chi phí nhân sự thực tế {kt#chi_phi.chi_phi_nhan_su_thuc_te|tien} đồng so với kế hoạch {kt#chi_phi.chi_phi_nhan_su_ke_hoach|tien} đồng, chênh {kt#chi_phi.chenh_chi_phi_nhan_su|tien} đồng tương ứng {kt#chi_phi.chenh_md|md} MD vượt kế hoạch, chủ yếu do sửa lỗi và tối ưu hiệu năng. Tỷ lệ sử dụng nhân lực huy động đạt {kt#chi_phi.ty_le_su_dung_huy_dong|pt}, còn {kt#chi_phi.md_san_sang|md} MD sẵn sàng không ghi công, với cách trả theo công sức phần này là chỉ số năng lực, không phát sinh chi phí.",
+  "Chi phí khác đã chi {kt#chi_phi.B_thuc_te|tien} đồng, nghĩa vụ bảo hành đã cam kết chưa chi {kt#chi_phi.cam_ket_chua_chi|tien} đồng. Dự phòng rủi ro {kt#chi_phi.du_phong_ke_hoach|tien} đồng được giữ ngoài khoản B, tác động thực tế của các rủi ro đã xảy ra là {kt#rui_ro.tac_dong_tien|tien} đồng. CPI theo công {kt#tien_do.cpi_cuoi|so2} và CPI theo chi phí thực {kt#tien_do.cpi_thuc_cuoi|so2} gần như trùng nhau vì lương trả theo MD công việc."
+ ],
+ "CHAT_LUONG": [
+  "Mọi tiêu chí nghiệm thu đạt ngay lần đầu, số lần nghiệm thu lại là {kt#nghiem_thu.so_nghiem_thu_lai|nguyen}. Chỉ tiêu thời gian phản hồi không quá 2 giây chỉ đạt sau khi tối ưu truy vấn và bộ nhớ đệm trang danh mục trong kỳ S7, khi rủi ro RR06 xảy ra trong kiểm thử hiệu năng.",
+  "Tổng số lỗi ghi nhận là {kt#loi.tong|nguyen}, mật độ {kt#loi.mat_do_loi|so2} lỗi trên 10 MD, thời gian đóng trung bình {kt#loi.thoi_gian_dong_tb|so1} ngày làm việc, không có lỗi nghiêm trọng. Lỗi tập trung ở các đợt kiểm thử đặt hàng, kiểm thử tích hợp và kiểm thử chấp nhận. Khi kết thúc không còn lỗi mở, các yêu cầu phát sinh sau cut over xử lý theo cam kết bảo hành."
+ ],
+ "THAY_DOI_RUI_RO": [
+  "Dự án có {kt#thay_doi.tong|nguyen} yêu cầu thay đổi, được đánh giá và quyết định đúng thời hạn, tăng {kt#thay_doi.md_tang_duyet|md} MD và lùi cut over theo phụ lục hợp đồng. Yêu cầu đã đóng sau khi phần bán hàng trên sàn được nghiệm thu và các tài liệu kế hoạch được cập nhật thành đường cơ sở BL2.",
+  "Trong {kt#rui_ro.tong|nguyen} rủi ro của sổ đăng ký, {kt#rui_ro.so_da_xay_ra|nguyen} rủi ro đã xảy ra là RR02 (tài liệu Main System đến muộn), RR04 (vị trí bổ sung có mặt muộn) và RR06 (thời gian phản hồi vượt 2 giây), đều đã xử lý theo kế hoạch ứng phó. Tác động thực tế {kt#rui_ro.tac_dong_md|md} MD, thấp hơn nhiều so với tổng EMV {kt#rui_ro.tong_emv_md|md} MD, tỷ lệ dùng dự phòng tương đương {kt#rui_ro.ty_le_dung_du_phong|pt}. Không có rủi ro mới phát sinh ngoài sổ."
+ ],
+ "BAN_GIAO": [
+  ["Bàn giao mã nguồn, tài liệu kỹ thuật, tài liệu cài đặt và danh mục thư viện (đã ký biên bản tại mốc M7)", "Trần Bá Đạt", "{kt#tien_do.cut_over_thuc_te|ngay}", "Đã hoàn thành"],
+  ["Bảo hành, khắc phục sai sót theo thời hạn bảo hành {hsmt#hop_dong.bao_hanh_thang|nguyen} tháng từ ngày cut over, tiếp nhận yêu cầu qua đầu mối của Chủ đầu tư", "Trần Bá Đạt", "Theo thời hạn bảo hành", "Nghĩa vụ bảo hành đã cam kết theo khoản B2"],
+  ["Hướng dẫn vận hành cho cán bộ Chủ đầu tư và hỗ trợ tăng cường sau cut over", "Nguyễn Hoàng Nam", "{kt#ngay_dong_du_an|ngay}", "Đã hoàn thành trong giai đoạn Kết thúc"],
+  ["Hồ sơ thanh toán Đợt 4, Đợt 5 theo hợp đồng và Đợt 6 theo phụ lục hợp đồng", "Trần Bá Đạt", "{kt#ngay_dong_du_an|ngay}", "Chủ đầu tư thanh toán trong thời hạn của hợp đồng"],
+  ["Lưu trữ hồ sơ dự án, sổ phiên bản và nhật ký, thanh lý hợp đồng sau khi hết thời hạn bảo hành", "Trần Bá Đạt", "Sau thời hạn bảo hành", "Không còn vấn đề tồn đọng trong sổ vấn đề"]
+ ],
+ "KET_LUAN": [
+  "Nhà thầu đã hoàn thành các nghĩa vụ của hợp đồng và phụ lục hợp đồng trong giai đoạn thực hiện, hệ thống vận hành đúng ngày cam kết và được Chủ đầu tư nghiệm thu.",
+  "Nhà thầu đề nghị Chủ đầu tư ký biên bản nghiệm thu tổng thể, thanh toán các đợt còn lại theo hợp đồng và phụ lục, tiến hành thanh lý hợp đồng khi hết thời hạn bảo hành."
+ ]
+}

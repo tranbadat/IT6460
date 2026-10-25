@@ -124,6 +124,13 @@ def danh_gia_nhan_su(t, yc):
         dat = 'Chưa đáp ứng'
         if 'hoặc' not in yc.get('kinh_nghiem', ''):
             loi_ds.append(f'{t["ho_ten"]}: {so_nam} năm kinh nghiệm, HSMT yêu cầu {yc["kinh_nghiem"].lower()}')
+    # yêu cầu có điều kiện thay thế theo số hợp đồng tương tự: nêu số hợp đồng tương tự người này trực tiếp quản trị (tên dự án trong kinh_nghiem)
+    m_hd = re.search(r'(\d+) hợp đồng tương tự', yc.get('kinh_nghiem', ''))
+    if m_hd:
+        ten_cdt = [h.get('chu_dau_tu', '') for h in nt.get('hop_dong_tuong_tu', [])]
+        so_hd = sum(1 for c in ten_cdt if c and any(w in t.get('kinh_nghiem', '') for w in c.split()[-2:]))
+        if so_hd >= int(m_hd.group(1)):
+            can_cu += f'. Đã quản trị {so_hd} hợp đồng tương tự kê khai tại Mẫu số 05'
     return {'yeu_cau': yc.get('kinh_nghiem', ''), 'ho_ten': t.get('ho_ten', t['id']), 'trinh_do': t.get('trinh_do', ''), 'so_nam': so_nam,
             'can_cu': can_cu, 'kinh_nghiem': t.get('kinh_nghiem', ''), 'chung_chi': t.get('chung_chi', '') or 'Không', 'danh_gia': dat}
 
@@ -173,7 +180,7 @@ def mau_06c(ds):
     out = []
     for i, n in enumerate(ds, 1):
         ky = sorted(ky_kinh_nghiem(n['kinh_nghiem']), key=lambda k: k['d_tu'])
-        out += [{'stt': i, 'ten': n['ho_ten'], 'tu': k['tu'], 'den': k['den'], 'noi_dung': k['noi_dung']} for k in ky] or \
+        out += [{'stt': i, 'ten': n['ho_ten'], 'tu': k['tu'], 'den': k['den'], 'noi_dung': k['noi_dung'][:1].upper() + k['noi_dung'][1:]} for k in ky] or \
             [{'stt': i, 'ten': n['ho_ten'], 'tu': '', 'den': '', 'noi_dung': n['kinh_nghiem']}]
     return out
 
@@ -392,10 +399,56 @@ def bang_bao_hanh():
     if loi.la_gia_tri_thieu(kt.get('dieu_kien_cut_over')):
         loi_ds.append('chi_tieu_ky_thuat.json thiếu dieu_kien_cut_over (điều kiện quyết định đưa hệ thống vào vận hành)')
     dong = [[m.get('muc', ''), f'{m["phan_hoi_gio"]} giờ' if m.get('phan_hoi_gio') is not None else CHUA_THONG_NHAT,
-             m.get('khac_phuc') or CHUA_THONG_NHAT] for m in bh.get('muc_loi', [])]
+             m.get('khac_phuc') or CHUA_THONG_NHAT, m.get('cach_tinh') or CHUA_THONG_NHAT] for m in bh.get('muc_loi', [])]
     if any(CHUA_THONG_NHAT in r for r in dong):
-        canh_bao.append(f'chi_tieu_ky_thuat.json bao_hanh.muc_loi còn thời hạn null, bảng ghi "{CHUA_THONG_NHAT}"')
-    return {'cot': ['Mức lỗi', 'Thời hạn phản hồi', 'Thời hạn khắc phục'], 'dong': dong, 'widths': [2600, 3300, 3400]}
+        canh_bao.append(f'chi_tieu_ky_thuat.json bao_hanh.muc_loi còn thời hạn hoặc cách tính null, bảng ghi "{CHUA_THONG_NHAT}"')
+    return {'cot': ['Mức lỗi', 'Thời hạn phản hồi', 'Thời hạn khắc phục', 'Cách tính thời hạn'], 'dong': dong, 'widths': [1700, 1700, 2000, 3900]}
+
+
+def bang_ha_tang():
+    """Cấu hình tối thiểu của hạ tầng vận hành do nhà thầu đề xuất (mục 3.5 Chương V): thành phần, số lượng, cấu hình, ghi chú."""
+    ds = kt.get('ha_tang_toi_thieu') or []
+    if not ds:
+        loi_ds.append('chi_tieu_ky_thuat.json thiếu ha_tang_toi_thieu (cấu hình tối thiểu máy chủ, đường truyền, phần mềm nền theo mục 3.5 Chương V)')
+    return {'cot': ['Thành phần', 'Số lượng', 'Cấu hình tối thiểu', 'Ghi chú'], 'widths': [2000, 1300, 3300, 2700], 'center_cols': [1],
+            'dong': [[x.get('thanh_phan', ''), x.get('so_luong', ''), x.get('cau_hinh', ''), x.get('ghi_chu', '')] for x in ds]}
+
+
+def bang_to_chuc():
+    """Sơ đồ tổ chức dạng bảng (vai trò, người đảm nhận, báo cáo cho) từ du_lieu/phan_cong.json: người chịu trách nhiệm (A)
+    các nhóm WBS mức 1, người chịu trách nhiệm đặc tả và kiểm thử (mục mức 2), các vị trí bổ sung."""
+    ten = lambda i: tv.get(i, {}).get('ho_ten', i)
+    tn = pc.get('trach_nhiem', [])
+    qt = next((x['A'] for x in tn if str(x.get('ten', '')).startswith('Quản lý dự án')), None) or next(iter(tv))
+    dong = [['Người đại diện của nhà thầu', nt.get('dai_dien', ''), 'Ký hợp đồng, quyết định vấn đề vượt thẩm quyền quản trị dự án'],
+            ['Quản trị dự án', ten(qt), f'Báo cáo người đại diện của nhà thầu, đầu mối làm việc với Chủ đầu tư']]
+    da = {qt}
+    for x in tn:
+        if x.get('muc') == 1:
+            dong.append([f'Phụ trách nhóm {x.get("ten", "")[:1].lower() + x.get("ten", "")[1:]}', ten(x['A']), 'Báo cáo quản trị dự án'])
+            da.add(x['A'])
+    muc2 = {}
+    for x in tn:
+        if x.get('muc') == 2 and x['A'] not in da and str(x.get('ten', '')).startswith(('Phân tích và thiết kế', 'Kiểm thử')):
+            muc2.setdefault(x['A'], []).append(x.get('ten', ''))
+    for a_, ds in muc2.items():
+        loai_ = {t.split()[0] for t in ds}
+        vt = ('Phụ trách đặc tả và kiểm thử các phân hệ' if len(loai_) > 1 and len(ds) > 2
+              else 'Phụ trách ' + ', '.join(t[:1].lower() + t[1:] for t in ds))
+        dong.append([vt, ten(a_), 'Báo cáo quản trị dự án'])
+        da.add(a_)
+    bs = [t['ho_ten'] for t in tv.values() if t.get('loai') == 'bo_sung' and t['id'] not in da]
+    if bs:
+        dong.append(['Thành viên bổ sung trong các nhóm', ', '.join(bs), 'Báo cáo người phụ trách nhóm theo tài liệu phân công'])
+    cdt = next((b for b in pc.get('ben_ngoai', []) if b.get('id') == 'cdt'), {})
+    dong.append(['Đầu mối Chủ đầu tư', cdt.get('ten', ''), 'Phối hợp với quản trị dự án, xác nhận biên bản'])
+    return {'cot': ['Vai trò', 'Người đảm nhận', 'Quan hệ báo cáo'], 'widths': [2600, 3500, 3200], 'dong': dong}
+
+
+def bang_cong_nghe():
+    """Công nghệ đề xuất theo tầng của hệ thống và lý do lựa chọn."""
+    return {'cot': ['Tầng', 'Công nghệ', 'Lý do lựa chọn'], 'widths': [2200, 2900, 4200],
+            'dong': [[x.get('tang', ''), x.get('cong_nghe', ''), x.get('ly_do', '')] for x in kt.get('cong_nghe') or []]}
 
 
 def ho_tro_tang_cuong():
@@ -491,7 +544,7 @@ except Exception as e:  # thiếu hoặc hỏng tệp mẫu: báo lỗi và dừ
 out = {'mau_10a': m10, 'mau_11a': mau_11a(), 'dap_ung': bang_dap_ung(ns_cc, m07), 'chi_dan_tieu_chi': chi_dan_tieu_chi(),
        'hop_dong_tuong_tu': hd, 'doanh_thu': [{'nam': n, 'doanh_thu': dtn.get(n, 0)} for n in nam_yc], 'doanh_thu_binh_quan': round(dt_bq),
        'so_hop_dong_dat': len(hd_dat), 'nhan_su_chu_chot': ns_cc, 'mau_06b': mau_06b(ns_cc), 'mau_06c': mau_06c(ns_cc),
-       'mau_07_lua_chon': m07[0], 'mau_07': m07[1], 'chi_tieu_ky_thuat': bang_chi_tieu(), 'bao_hanh_muc_loi': bang_bao_hanh(),
+       'mau_07_lua_chon': m07[0], 'mau_07': m07[1], 'chi_tieu_ky_thuat': bang_chi_tieu(), 'bao_hanh_muc_loi': bang_bao_hanh(), 'ha_tang_toi_thieu': bang_ha_tang(), 'cong_nghe': bang_cong_nghe(), 'to_chuc': bang_to_chuc(),
        'ho_tro_tang_cuong': ho_tro_tang_cuong(), 'huy_dong': huy_dong_theo_sprint(), 'tong_md_huy_dong': lich.get('tong_quy', 0),
        'don_du_thau': don, 'bao_dam_ghi_chu': bao_dam_ghi_chu, 'bao_dam_du_thau_chu': loi.so_bang_chu(hsmt['tien']['bao_dam_du_thau']).lower(),
        'canh_bao': canh_bao}

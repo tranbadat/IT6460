@@ -1,7 +1,7 @@
 {
  "tai_lieu": "lam_viec/phien_ban/phien_ban_vong2.docx",
  "dac_ta": "phien_ban",
- "thoi_gian": "2026-10-18 08:27:15",
+ "thoi_gian": "2026-10-24 22:32:22",
  "ket_luan": "dat",
  "so_loi": 0,
  "so_canh_bao": 0,
@@ -9,6 +9,8 @@
  "tieu_chi_doc_hieu": [
   "Quy ước nhất quán với sổ phiên bản",
   "Nhận xét dựa trên số liệu sổ phiên bản và mã CR",
-  "Nêu rõ tài liệu còn cần cập nhật nếu có"
+  "Nêu rõ tài liệu còn cần cập nhật nếu có",
+  "Mỗi bản phát hành ghi ngày, gói, lỗi, yêu cầu thay đổi khớp du_lieu/phat_hanh.json, bản cut over là bản chính thức",
+  "Tài liệu thuộc từng đường cơ sở khớp sổ phiên bản, BL2 có căn cứ là yêu cầu thay đổi đã phê duyệt"
  ]
 }

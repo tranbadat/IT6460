@@ -1,0 +1,479 @@
+{
+ "ma": "CR01",
+ "tieu_de": "Bán hàng trên sàn thương mại điện tử",
+ "mo_ta": "Bổ sung kênh bán hàng trên sàn thương mại điện tử: kết nối sàn, đồng bộ sản phẩm, tồn kho và giá lên sàn, nhận đơn hàng từ sàn vào luồng xử lý đơn hàng, cập nhật trạng thái đơn hàng lên sàn, đối soát đơn hàng và thanh toán với sàn, kiểm thử và hướng dẫn sử dụng. Bốn phân hệ của hợp đồng giữ nguyên, phần bổ sung lập thành nhóm WBS riêng và làm trước cut over",
+ "ly_do": "Chủ đầu tư muốn mở rộng kênh bán hàng trực tuyến sang sàn thương mại điện tử ngay khi hệ thống đưa vào vận hành, nêu tại buổi trình diễn cuối S4",
+ "nguoi_de_xuat": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+ "ngay": "2027-05-20",
+ "nguon": "chủ đầu tư",
+ "noi_bo": false,
+ "dieu_kien": [
+  "doi_pham_vi",
+  "doi_gia"
+ ],
+ "ma_rui_ro": [],
+ "can_cu_hsmt": "Mục 17.1(a), Mục 17.2 E-ĐKC",
+ "nhan_dinh_ban_dau": "Yêu cầu ngoài phạm vi hợp đồng và RFP, bổ sung một nhóm chức năng mới gồm kết nối, đồng bộ dữ liệu, nhận đơn và đối soát với sàn, dự kiến làm lùi ngày cut over và tăng giá hợp đồng, thuộc mức lớn, cần phụ lục hợp đồng",
+ "rui_ro_moi": "Giao diện lập trình hoặc môi trường thử của sàn thương mại điện tử chưa sẵn sàng, hoặc sàn thay đổi chính sách kết nối trong thời gian thực hiện",
+ "goi_thay_doi": [
+  {
+   "ma": "1.5.2",
+   "md_tang": 0,
+   "them_phu_thuoc": [
+    "5.4.5",
+    "5.5.1"
+   ]
+  },
+  {
+   "ma": "1.5.3",
+   "md_tang": 0,
+   "them_phu_thuoc": [
+    "5.5.3"
+   ]
+  },
+  {
+   "ma": "2.4.11",
+   "md_tang": 1
+  }
+ ],
+ "muc_moi": [
+  {
+   "ma": "5",
+   "ten": "Bán hàng trên sàn thương mại điện tử",
+   "can_cu_uoc_luong": {
+    "kich_thuoc": "Phạm vi bổ sung theo yêu cầu thay đổi CR01 gồm kết nối sàn, đồng bộ sản phẩm và giá, đồng bộ tồn kho, nhận đơn hàng từ sàn, cập nhật trạng thái đơn hàng lên sàn, đối soát đơn hàng và thanh toán, giao diện quản trị kênh sàn, kiểm thử và hướng dẫn sử dụng, phần quản lý yêu cầu thay đổi",
+    "cach_phan_ra": "Ước lượng theo từng gói của phần bổ sung bằng cùng thư viện định mức với bốn phân hệ của hợp đồng, dùng lại tầng tích hợp, dịch vụ đơn hàng và dịch vụ tồn kho đã xây dựng. Gói hiện có bị ảnh hưởng gồm chuyển đổi dữ liệu và triển khai chính thức, bàn giao mã nguồn, kiểm thử hồi quy được cộng phần tăng riêng"
+   }
+  },
+  {
+   "ma": "5.1",
+   "ten": "Quản lý dự án, phần bán hàng trên sàn thương mại điện tử"
+  },
+  {
+   "ma": "5.2",
+   "ten": "Phân tích và thiết kế bán hàng trên sàn thương mại điện tử"
+  },
+  {
+   "ma": "5.3",
+   "ten": "Xây dựng chức năng bán hàng trên sàn thương mại điện tử (lập trình và kiểm thử đơn vị)"
+  },
+  {
+   "ma": "5.4",
+   "ten": "Kiểm thử bán hàng trên sàn thương mại điện tử"
+  },
+  {
+   "ma": "5.5",
+   "ten": "Triển khai và hướng dẫn sử dụng bán hàng trên sàn thương mại điện tử"
+  }
+ ],
+ "goi_moi": [
+  {
+   "ma": "5.1.1",
+   "ten": "Quản lý yêu cầu thay đổi, phụ lục hợp đồng, theo dõi tiến độ và hồ sơ nghiệm thu phần bán hàng trên sàn thương mại điện tử",
+   "md": 3,
+   "loai": "PM",
+   "cha": "5.1",
+   "san_pham": "Phiếu yêu cầu thay đổi, phụ lục hợp đồng, báo cáo tiến độ và biên bản nghiệm thu phần bán hàng trên sàn",
+   "phu_thuoc": [],
+   "hang_muc_01a": [
+    1
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "giai_doan": "xuyen_suot",
+   "R": "dat",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.2.1",
+   "ten": "Khảo sát quy trình bán hàng trên sàn thương mại điện tử và giao diện lập trình của sàn",
+   "md": 3,
+   "loai": "BA",
+   "cha": "5.2",
+   "san_pham": "Báo cáo khảo sát quy trình và giao diện lập trình của sàn",
+   "phu_thuoc": [],
+   "hang_muc_01a": [
+    1
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "K",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.2.2",
+   "ten": "Đặc tả chức năng và use case đồng bộ sản phẩm, tồn kho, giá, nhận đơn, cập nhật trạng thái và đối soát với sàn",
+   "md": 5,
+   "loai": "BA",
+   "cha": "5.2",
+   "san_pham": "Đặc tả chức năng và use case bán hàng trên sàn",
+   "phu_thuoc": [
+    "5.2.1"
+   ],
+   "hang_muc_01a": [
+    1
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "lien",
+   "ho_tro": [
+    "K"
+   ]
+  },
+  {
+   "ma": "5.2.3",
+   "ten": "Thiết kế tích hợp với sàn gồm xác thực, ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+   "md": 4,
+   "loai": "DEV",
+   "cha": "5.2",
+   "san_pham": "Thiết kế tích hợp với sàn thương mại điện tử",
+   "phu_thuoc": [
+    "5.2.1",
+    "4.2.7"
+   ],
+   "hang_muc_01a": [
+    9
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "D1",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.2.4",
+   "ten": "Xác nhận đặc tả bán hàng trên sàn thương mại điện tử của Chủ đầu tư",
+   "md": 2,
+   "loai": "BA",
+   "cha": "5.2",
+   "san_pham": "Biên bản xác nhận đặc tả bán hàng trên sàn",
+   "phu_thuoc": [
+    "5.2.2",
+    "5.2.3"
+   ],
+   "hang_muc_01a": [
+    1
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "thoi_luong_toi_thieu": 3,
+   "R": "lien",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.3.1",
+   "ten": "Kết nối sàn gồm xác thực, cấu hình cửa hàng và quản lý khóa truy cập",
+   "md": 4,
+   "loai": "DEV",
+   "cha": "5.3",
+   "san_pham": "Chức năng kết nối sàn đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.2.3"
+   ],
+   "hang_muc_01a": [
+    9
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "D1",
+   "ho_tro": [
+    "D2"
+   ]
+  },
+  {
+   "ma": "5.3.2",
+   "ten": "Đồng bộ sản phẩm và giá lên sàn",
+   "md": 5,
+   "loai": "DEV",
+   "cha": "5.3",
+   "san_pham": "Chức năng đồng bộ sản phẩm và giá đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.3.1",
+    "4.3.5"
+   ],
+   "hang_muc_01a": [
+    9
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "D2",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.3.3",
+   "ten": "Đồng bộ tồn kho lên sàn",
+   "md": 4,
+   "loai": "DEV",
+   "cha": "5.3",
+   "san_pham": "Chức năng đồng bộ tồn kho đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.3.1",
+    "4.3.6"
+   ],
+   "hang_muc_01a": [
+    9
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "D4",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.3.4",
+   "ten": "Nhận đơn hàng từ sàn vào luồng xử lý đơn hàng",
+   "md": 6,
+   "loai": "DEV",
+   "cha": "5.3",
+   "san_pham": "Chức năng nhận đơn hàng từ sàn đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.3.1",
+    "3.3.5"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "D3",
+   "ho_tro": [
+    "D1"
+   ]
+  },
+  {
+   "ma": "5.3.5",
+   "ten": "Cập nhật trạng thái đơn hàng và vận chuyển lên sàn",
+   "md": 4,
+   "loai": "DEV",
+   "cha": "5.3",
+   "san_pham": "Chức năng cập nhật trạng thái lên sàn đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.3.4",
+    "4.3.8"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "D3",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.3.6",
+   "ten": "Đối soát đơn hàng và thanh toán với sàn",
+   "md": 5,
+   "loai": "DEV",
+   "cha": "5.3",
+   "san_pham": "Chức năng đối soát đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.3.4"
+   ],
+   "hang_muc_01a": [
+    7
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "D2",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.3.7",
+   "ten": "Giao diện quản trị kênh sàn gồm ánh xạ sản phẩm, theo dõi đồng bộ và kết quả đối soát",
+   "md": 5,
+   "loai": "DEV",
+   "cha": "5.3",
+   "san_pham": "Giao diện quản trị kênh sàn đạt kiểm thử đơn vị",
+   "phu_thuoc": [
+    "5.2.2",
+    "1.2.4"
+   ],
+   "hang_muc_01a": [
+    9
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "D1",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.4.1",
+   "ten": "Kịch bản kiểm thử bán hàng trên sàn thương mại điện tử",
+   "md": 3,
+   "loai": "QA",
+   "cha": "5.4",
+   "san_pham": "Bộ kịch bản kiểm thử bán hàng trên sàn",
+   "phu_thuoc": [
+    "5.2.2"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "Q2",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.4.2",
+   "ten": "Kiểm thử tích hợp với môi trường thử của sàn",
+   "md": 6,
+   "loai": "QA",
+   "cha": "5.4",
+   "san_pham": "Báo cáo kiểm thử tích hợp với sàn",
+   "phu_thuoc": [
+    "5.4.1",
+    "5.3.2",
+    "5.3.3",
+    "5.3.5",
+    "5.3.6"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "Q2",
+   "ho_tro": [
+    "Q1"
+   ]
+  },
+  {
+   "ma": "5.4.3",
+   "ten": "Kiểm thử hệ thống luồng bán hàng trên sàn gồm đồng bộ, nhận đơn, trạng thái và đối soát",
+   "md": 4,
+   "loai": "QA",
+   "cha": "5.4",
+   "san_pham": "Báo cáo kiểm thử hệ thống luồng bán hàng trên sàn",
+   "phu_thuoc": [
+    "5.4.2",
+    "5.3.7",
+    "5.2.4"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "Q1",
+   "ho_tro": [
+    "Q2"
+   ]
+  },
+  {
+   "ma": "5.4.4",
+   "ten": "Khắc phục lỗi sau kiểm thử bán hàng trên sàn",
+   "md": 3,
+   "loai": "DEV",
+   "cha": "5.4",
+   "san_pham": "Phiên bản đã khắc phục lỗi kiểm thử bán hàng trên sàn",
+   "phu_thuoc": [
+    "5.4.3"
+   ],
+   "hang_muc_01a": [
+    10
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "D4",
+   "ho_tro": [
+    "D3"
+   ]
+  },
+  {
+   "ma": "5.4.5",
+   "ten": "Tổ chức và hỗ trợ kiểm thử chấp nhận bán hàng trên sàn cùng Chủ đầu tư",
+   "md": 3,
+   "loai": "QA",
+   "cha": "5.4",
+   "san_pham": "Biên bản kiểm thử chấp nhận phần bán hàng trên sàn",
+   "phu_thuoc": [
+    "5.4.4",
+    "5.5.2"
+   ],
+   "hang_muc_01a": [
+    11
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "thoi_luong_toi_thieu": 3,
+   "R": "Q1",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.5.1",
+   "ten": "Cấu hình kết nối sàn trên môi trường vận hành",
+   "md": 2,
+   "loai": "DEVOPS",
+   "cha": "5.5",
+   "san_pham": "Kết nối sàn được cấu hình trên môi trường vận hành",
+   "phu_thuoc": [
+    "5.4.4",
+    "4.5.1"
+   ],
+   "hang_muc_01a": [
+    13
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "D4",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.5.2",
+   "ten": "Tài liệu và buổi hướng dẫn sử dụng bán hàng trên sàn cho cán bộ Chủ đầu tư",
+   "md": 3,
+   "loai": "BA",
+   "cha": "5.5",
+   "san_pham": "Tài liệu hướng dẫn và biên bản hướng dẫn sử dụng bán hàng trên sàn",
+   "phu_thuoc": [
+    "5.2.4",
+    "5.3.7"
+   ],
+   "hang_muc_01a": [
+    12
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "lien",
+   "ho_tro": []
+  },
+  {
+   "ma": "5.5.3",
+   "ten": "Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện phần bán hàng trên sàn thương mại điện tử",
+   "md": 1,
+   "loai": "DEV",
+   "cha": "5.5",
+   "san_pham": "Mã nguồn và tài liệu kỹ thuật phần bán hàng trên sàn được đưa vào bộ hồ sơ bàn giao",
+   "phu_thuoc": [
+    "5.4.4"
+   ],
+   "hang_muc_01a": [
+    12
+   ],
+   "nguon": [
+    "CR01"
+   ],
+   "R": "D2",
+   "ho_tro": []
+  }
+ ],
+ "_nguon_giao_viec": "Quyết định của nhóm ngày 25/10/2026: không thêm người, giao các gói WBS 5 cho người còn quỹ (D1 đến D4, Q1, Q2), gói phân tích (BA) cho Nguyễn Thị Phương Liên, Nguyễn Hoàng Nam, gói quản lý dự án cho quản trị dự án; người hỗ trợ ở các gói trên chuỗi dài nhất của phần thay đổi để giữ dự trữ"
+}

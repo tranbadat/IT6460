@@ -1,0 +1,95 @@
+{
+ "tai_lieu": "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx, ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
+ "phien_ban": "0.7 (docx), 0.8 (xlsx)",
+ "luot": 3,
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 3,
+ "moi_truong": "Kiểm tra lớp B lượt 3 (lượt cuối), phiên agent con riêng, Claude Code, mô hình claude-opus-5-5, python-docx và openpyxl đối chiếu bảng với dữ liệu nguồn",
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục theo đặc tả."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "15 tài liệu, 171 phiên bản (140 hiện hành cộng 31 lưu trữ), 13 tệp lưu trữ, 7 tệp dữ liệu, 2 tài liệu cần cập nhật (TL12, TL13), 722 lần chạy, 117 lần agent, 8 commit khớp phien_ban_tong_hop.json, sổ Excel và git log."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Danh mục có mã TL, tệp, phiên bản, trạng thái, đầu vào đã đổi."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Quy ước đánh số, trạng thái, điều kiện lập đường cơ sở rõ ràng."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Phát hiện tài liệu cũ theo băm đầu vào, thay đổi sau đường cơ sở theo CR."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Trình bày đúng quy định, Excel Times New Roman, ô tổng là công thức trừ I18 (MH02), tiêu đề Excel in đậm theo quyết định 25/10/2026 (22)."
+  },
+  {
+   "tieu_chi": "DH1",
+   "ket_qua": "dat",
+   "nhan_xet": "Quy ước trong tài liệu trùng references/quy_uoc.json và sổ phiên bản."
+  },
+  {
+   "tieu_chi": "DH2",
+   "ket_qua": "dat",
+   "nhan_xet": "Nhận xét dựa trên số phiên bản TL02 22, TL08 16, TL09 15 và nêu chưa có mã CR."
+  },
+  {
+   "tieu_chi": "DH3",
+   "ket_qua": "dat",
+   "nhan_xet": "Nêu rõ TL12, TL13 cần cập nhật do HSDT đổi."
+  },
+  {
+   "tieu_chi": "DH4",
+   "ket_qua": "dat",
+   "nhan_xet": "Chưa có bản phát hành, tài liệu ghi đúng Số bản phát hành: 0."
+  },
+  {
+   "tieu_chi": "DH5",
+   "ket_qua": "dat",
+   "nhan_xet": "Chưa ký hợp đồng nên chưa có BL1, trình bày nhất quán (căn cứ hợp lệ)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "CL06",
+   "vi_tri": "Mục 7, cột Ghi chú, ví dụ: Vòng sửa 1 sau lớp B: CAN_CU (MH01, MH06), Excel SUMIFS và sheet Theo_nhom (MH02, MH04) ...; Cập nhật theo dữ kiện nhóm: ... mức lương SA_BA, TESTER, hoán đổi D1 và D2; Vòng sửa 1 sau lớp B ngày 25/10/2026 theo báo cáo lam_viec/.../bao_cao_kiem_tra_lop_B.json",
+   "mo_ta": "Ghi chú lịch sử chứa mã nội bộ của quy trình soạn (mã phát hiện MH, khóa CAN_CU, tên sheet, mã vai trò, mã vị trí D1, D2, đường dẫn thư mục làm việc), giống ghi chú nháp theo van_phong.md. Nội dung lấy từ trường ghi_chu của du_lieu/phien_ban.json, có giá trị truy vết nên chưa chắc cần sửa.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định giữ nguyên để truy vết hoặc chuẩn hóa ghi chú khi tổng hợp (thay mã nội bộ bằng mô tả, bỏ đường dẫn lam_viec)."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "CL06",
+   "vi_tri": "So_phien_ban.xlsx, sheet Danh_muc, ô I18 Số phiên bản của tài liệu lưu trữ = 31",
+   "mo_ta": "Giá trị tổng hợp nhập cứng, không phải công thức, trong khi I2:I16, I17, I19 là công thức. Có thể tính bằng COUNTIF trên sheet Lich_su theo danh sách tài liệu lưu trữ. Giá trị hiện đúng (140 cộng 31 bằng 171).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa phần xuất Excel của so_phien_ban.py: I18 là công thức đếm phiên bản của tài liệu lưu trữ."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "CL02",
+   "vi_tri": "Mục 4, đoạn DUONG_CO_SO: khi đó ... các tài liệu kế hoạch gồm WBS, master schedule, cost estimate, kế hoạch quản lý rủi ro, kế hoạch quản lý thay đổi, master plan và phân công nhiệm vụ lên phiên bản 1.0",
+   "mo_ta": "Theo mô tả của công cụ, lệnh lập đường cơ sở mặc định nâng mọi tài liệu chưa khóa trong ket_qua (gồm cả phụ lục bằng chứng TL15) lên số chính kế tiếp. Danh sách trong đoạn văn có thể chưa đủ. Chưa chắc vì nhóm có thể chọn tài liệu khi chạy lệnh.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại DUONG_CO_SO cho khớp phạm vi mặc định của lệnh, hoặc nêu rõ danh sách tài liệu sẽ chọn khi lập BL1."
+  }
+ ]
+}

@@ -1,0 +1,545 @@
+{
+ "bai_hoc": [
+  {
+   "ma": "BH01",
+   "nhom": "thay_doi",
+   "loai": "tich_cuc",
+   "tinh_huong": "Chủ đầu tư đề nghị bán hàng trên sàn thương mại điện tử (CR01) tại buổi trình diễn cuối S4 ngày 20/05/2027. Yêu cầu được đánh giá, quyết định và ký phụ lục 01/2027/PL-ABCW ngày 27/05/2027 sau 5 ngày làm việc, tăng 76 MD, cut over lùi đến 29/07/2027 và vẫn đạt đúng ngày.",
+   "nguyen_nhan": "Quy trình quản lý thay đổi có công cụ đánh giá tác động theo lịch, quỹ và đường găng, ban kiểm soát thay đổi gồm người ký hợp đồng của hai bên nên quyết định được trong thời hạn.",
+   "bai_hoc": "Yêu cầu thay đổi lớn giữa dự án vẫn kiểm soát được khi tác động được lượng hóa nhanh và phụ lục ghi đủ giá, mốc, đợt thanh toán.",
+   "khuyen_nghi": "Duy trì công cụ đánh giá tác động theo đường găng và mẫu phụ lục có sẵn các mục giá, cut over, đợt thanh toán gắn mốc nghiệm thu, đặt thời hạn quyết định 5 ngày làm việc.",
+   "ap_dung_cho": "Quản lý thay đổi, đàm phán phụ lục hợp đồng",
+   "bang_chung": [
+    "CR01",
+    "M9",
+    "K11",
+    "R-S5-01",
+    "S4"
+   ],
+   "nhom_ten": "Quản lý thay đổi",
+   "loai_ten": "Thực hành tốt nên duy trì",
+   "bang_chung_hien_thi": "CR01, M9, K11, R-S5-01, S4",
+   "khuyen_nghi_hien_thi": "Duy trì công cụ đánh giá tác động theo đường găng và mẫu phụ lục có sẵn các mục giá, cut over, đợt thanh toán gắn mốc nghiệm thu, đặt thời hạn quyết định 5 ngày làm việc. Áp dụng cho quản lý thay đổi, đàm phán phụ lục hợp đồng."
+  },
+  {
+   "ma": "BH02",
+   "nhom": "cong_cu",
+   "loai": "can_cai_thien",
+   "tinh_huong": "Đường cơ sở BL2 sau CR01 được lập ngày 27/05/2027 khi các tài liệu kế hoạch chưa qua kiểm tra lớp B, kiểm tra sau đó phát hiện lỗi về quỹ huy động, đợt thanh toán 6 và vị trí mốc M9 nên BL2 phải lập lại cùng ngày.",
+   "nguyen_nhan": "Chu trình mô phỏng và quy trình yêu cầu thay đổi đặt bước đường cơ sở ngay sau khi tài liệu đạt kiểm tra tự động, chưa có bước kiểm tra độc lập.",
+   "bai_hoc": "Đường cơ sở chỉ có giá trị khi gồm các tài liệu đã được kiểm tra độc lập, kiểm tra tự động không phát hiện được mâu thuẫn giữa lời văn và quyết định.",
+   "khuyen_nghi": "Đưa bước kiểm tra lớp B và chuyển trạng thái Đã kiểm tra vào trước lệnh lập đường cơ sở trong quy trình thay đổi, sổ phiên bản từ chối đường cơ sở có tài liệu Dự thảo.",
+   "ap_dung_cho": "Quản lý cấu hình, quản lý phiên bản",
+   "bang_chung": [
+    "CR01",
+    "S5"
+   ],
+   "nhom_ten": "Công cụ và quy trình",
+   "loai_ten": "Vấn đề cần cải thiện",
+   "bang_chung_hien_thi": "CR01, S5",
+   "khuyen_nghi_hien_thi": "Đưa bước kiểm tra lớp B và chuyển trạng thái Đã kiểm tra vào trước lệnh lập đường cơ sở trong quy trình thay đổi, sổ phiên bản từ chối đường cơ sở có tài liệu Dự thảo. Áp dụng cho quản lý cấu hình, quản lý phiên bản."
+  },
+  {
+   "ma": "BH03",
+   "nhom": "rui_ro",
+   "loai": "can_cai_thien",
+   "tinh_huong": "Tài liệu đặc tả giao diện Main System đến muộn 2 ngày làm việc so với cam kết CK1 (rủi ro RR02 xảy ra ngày 19/04/2027), gói 4.2.5 bắt đầu muộn kéo theo gói găng 4.2.7 và SPI xuống 0,94 ở S3.",
+   "nguyen_nhan": "Cam kết của Chủ đầu tư có hạn nhưng nhóm chưa chuẩn bị sẵn phần đặc tả làm được trước khi có tài liệu và chưa nhắc hạn trước ngày đến hạn.",
+   "bai_hoc": "Đầu vào từ bên ngoài trên đường găng cần được nhắc trước hạn và có phương án làm song song khi đến muộn.",
+   "khuyen_nghi": "Lập danh sách cam kết của Chủ đầu tư có ngày nhắc trước 5 ngày làm việc, chuẩn bị dịch vụ giả lập và phần đặc tả độc lập để không chờ tài liệu.",
+   "ap_dung_cho": "Lập kế hoạch, theo dõi cam kết bên ngoài",
+   "bang_chung": [
+    "RR02",
+    "4.2.5",
+    "4.2.7",
+    "R-S3-02",
+    "S3"
+   ],
+   "nhom_ten": "Quản lý rủi ro",
+   "loai_ten": "Vấn đề cần cải thiện",
+   "bang_chung_hien_thi": "RR02, 4.2.5, 4.2.7, R-S3-02, S3",
+   "khuyen_nghi_hien_thi": "Lập danh sách cam kết của Chủ đầu tư có ngày nhắc trước 5 ngày làm việc, chuẩn bị dịch vụ giả lập và phần đặc tả độc lập để không chờ tài liệu. Áp dụng cho lập kế hoạch, theo dõi cam kết bên ngoài."
+  },
+  {
+   "ma": "BH04",
+   "nhom": "nhan_su",
+   "loai": "can_cai_thien",
+   "tinh_huong": "Kỹ sư kiểm thử bổ sung có mặt muộn ở S2 (rủi ro RR04 xảy ra), gói kế hoạch bảo đảm chất lượng 2.1.1 bắt đầu muộn, phải theo dõi bằng vấn đề VD03.",
+   "nguyen_nhan": "Ngày có mặt của vị trí bổ sung chỉ được thống nhất khi lập kế hoạch, không được xác nhận lại trước sprint huy động.",
+   "bai_hoc": "Vị trí bổ sung cần được xác nhận lại ngày có mặt trước mỗi sprint huy động, không chỉ khi ký hợp đồng.",
+   "khuyen_nghi": "Xác nhận bằng văn bản ngày có mặt của từng vị trí bổ sung 5 ngày làm việc trước sprint huy động, ghi vào biên bản họp sprint.",
+   "ap_dung_cho": "Quản lý nhân sự, huy động",
+   "bang_chung": [
+    "RR04",
+    "2.1.1",
+    "R-S2-02",
+    "S2"
+   ],
+   "nhom_ten": "Nhân sự và tổ chức nhóm",
+   "loai_ten": "Vấn đề cần cải thiện",
+   "bang_chung_hien_thi": "RR04, 2.1.1, R-S2-02, S2",
+   "khuyen_nghi_hien_thi": "Xác nhận bằng văn bản ngày có mặt của từng vị trí bổ sung 5 ngày làm việc trước sprint huy động, ghi vào biên bản họp sprint. Áp dụng cho quản lý nhân sự, huy động."
+  },
+  {
+   "ma": "BH05",
+   "nhom": "nhan_su",
+   "loai": "can_cai_thien",
+   "tinh_huong": "Mức huy động theo sprint của S7 đến S9 được đặt bằng MD xếp cộng 1 MD. Khi các gói chậm cuối S7, nhiều kiểm thử viên và kỹ sư phát triển hết quỹ ở S8, phải huy động bổ sung 10,5 MD ở S8 và 2,5 MD ở S9 để giữ mốc M4 và cut over.",
+   "nguyen_nhan": "Huy động theo nhu cầu được tính sát MD kế hoạch nhằm đạt tỷ lệ sử dụng quỹ, không tính phần dư cho làm bù ở các sprint kiểm thử nơi lỗi và gói chậm dồn lại.",
+   "bai_hoc": "Tỷ lệ sử dụng quỹ cao không nên đạt bằng cách cắt hết phần dư ở các sprint có rủi ro tiến độ cao.",
+   "khuyen_nghi": "Đặt mức huy động của các sprint kiểm thử và trước cut over có phần dư tối thiểu 15% MD xếp, theo dõi KPI K14 cùng số MD huy động bổ sung.",
+   "ap_dung_cho": "Lập kế hoạch huy động, master schedule",
+   "bang_chung": [
+    "K14",
+    "M4",
+    "4.4.5",
+    "R-S9-02",
+    "S8"
+   ],
+   "nhom_ten": "Nhân sự và tổ chức nhóm",
+   "loai_ten": "Vấn đề cần cải thiện",
+   "bang_chung_hien_thi": "K14, M4, 4.4.5, R-S9-02, S8",
+   "khuyen_nghi_hien_thi": "Đặt mức huy động của các sprint kiểm thử và trước cut over có phần dư tối thiểu 15% MD xếp, theo dõi KPI K14 cùng số MD huy động bổ sung. Áp dụng cho lập kế hoạch huy động, master schedule."
+  },
+  {
+   "ma": "BH06",
+   "nhom": "chat_luong",
+   "loai": "can_cai_thien",
+   "tinh_huong": "Kiểm thử hiệu năng 1.4.9 ở S7 cho thời gian phản hồi trang danh mục 2,6 giây ở mức tải 500 người dùng (rủi ro RR06 xảy ra), phải tối ưu trong gói 1.4.6 trước khi nghiệm thu chỉ tiêu thời gian phản hồi NT01.",
+   "nguyen_nhan": "Thời gian phản hồi không được đo trong quá trình lập trình, chỉ được kiểm tra ở đợt kiểm thử hiệu năng gần cuối dự án.",
+   "bai_hoc": "Chỉ tiêu phi chức năng cần được đo liên tục từ khi lập trình, không chờ đợt kiểm thử hiệu năng.",
+   "khuyen_nghi": "Đưa phép đo thời gian phản hồi các trang chính vào quy trình tích hợp liên tục, cảnh báo khi vượt 1,5 giây.",
+   "ap_dung_cho": "Lập trình, kiểm thử hiệu năng",
+   "bang_chung": [
+    "RR06",
+    "1.4.9",
+    "1.4.6",
+    "NT01",
+    "R-S7-02"
+   ],
+   "nhom_ten": "Chất lượng và nghiệm thu",
+   "loai_ten": "Vấn đề cần cải thiện",
+   "bang_chung_hien_thi": "RR06, 1.4.9, 1.4.6, NT01, R-S7-02",
+   "khuyen_nghi_hien_thi": "Đưa phép đo thời gian phản hồi các trang chính vào quy trình tích hợp liên tục, cảnh báo khi vượt 1,5 giây. Áp dụng cho lập trình, kiểm thử hiệu năng."
+  },
+  {
+   "ma": "BH07",
+   "nhom": "chat_luong",
+   "loai": "can_cai_thien",
+   "tinh_huong": "Một số lỗi mức cao như tạo trùng đơn hàng (L05) ở S3, chỉ được phát hiện ở kiểm thử đầu cuối và kiểm thử hệ thống: giữ tồn kho không giải phóng khi thanh toán thất bại (L18) và mất phiên khi chuyển giữa hai nút ứng dụng (L37).",
+   "nguyen_nhan": "Kiểm thử đơn vị chưa phủ nhánh thất bại, môi trường kiểm thử trước kiểm thử hệ thống chỉ có một nút ứng dụng.",
+   "bai_hoc": "Môi trường kiểm thử phải giống cấu hình vận hành và ca kiểm thử phải gồm nhánh thất bại của giao dịch.",
+   "khuyen_nghi": "Dựng môi trường kiểm thử hai nút từ đầu giai đoạn kiểm thử phân hệ, bổ sung ca kiểm thử nhánh thanh toán thất bại vào bộ kiểm thử tự động.",
+   "ap_dung_cho": "Kiểm thử",
+   "bang_chung": [
+    "L18",
+    "L37",
+    "3.4.6",
+    "4.4.5",
+    "R-S5-02",
+    "R-S8-02",
+    "L05",
+    "R-S3-04"
+   ],
+   "nhom_ten": "Chất lượng và nghiệm thu",
+   "loai_ten": "Vấn đề cần cải thiện",
+   "bang_chung_hien_thi": "L18, L37, 3.4.6, 4.4.5, R-S5-02, R-S8-02, L05, R-S3-04",
+   "khuyen_nghi_hien_thi": "Dựng môi trường kiểm thử hai nút từ đầu giai đoạn kiểm thử phân hệ, bổ sung ca kiểm thử nhánh thanh toán thất bại vào bộ kiểm thử tự động. Áp dụng cho kiểm thử."
+  },
+  {
+   "ma": "BH08",
+   "nhom": "chat_luong",
+   "loai": "tich_cuc",
+   "tinh_huong": "Toàn bộ 18 tiêu chí nghiệm thu đạt ngay lần đầu, mật độ lỗi 0,75 lỗi trên 10 MD, không còn lỗi mở khi bàn giao, mốc M5 và M9 đạt ngày 27/07/2027.",
+   "nguyen_nhan": "Kiểm thử từng phân hệ ngay khi lập trình hoàn thành, kiểm thử chấp nhận dựa trên kịch bản dùng lại từ kiểm thử đầu cuối và có Chủ đầu tư tham gia.",
+   "bai_hoc": "Kiểm thử sớm theo phân hệ và dùng lại kịch bản giúp kiểm thử chấp nhận ít bất ngờ.",
+   "khuyen_nghi": "Duy trì kiểm thử theo phân hệ ngay sau lập trình và lập kịch bản kiểm thử chấp nhận từ kịch bản kiểm thử đầu cuối.",
+   "ap_dung_cho": "Kiểm thử, nghiệm thu",
+   "bang_chung": [
+    "K07",
+    "K10",
+    "M5",
+    "NT06",
+    "3.4.11"
+   ],
+   "nhom_ten": "Chất lượng và nghiệm thu",
+   "loai_ten": "Thực hành tốt nên duy trì",
+   "bang_chung_hien_thi": "K07, K10, M5, NT06, 3.4.11",
+   "khuyen_nghi_hien_thi": "Duy trì kiểm thử theo phân hệ ngay sau lập trình và lập kịch bản kiểm thử chấp nhận từ kịch bản kiểm thử đầu cuối. Áp dụng cho kiểm thử, nghiệm thu."
+  },
+  {
+   "ma": "BH09",
+   "nhom": "chi_phi",
+   "loai": "can_cai_thien",
+   "tinh_huong": "Dịch vụ đổi trả và hoàn tiền 3.3.7 dùng 7,25 MD so với kế hoạch 6 MD (vượt 20,8%) do quy tắc hoàn tiền một phần phức tạp hơn ước lượng, tổng công thực tế 736,75 MD so với 733 MD.",
+   "nguyen_nhan": "Ước lượng dựa trên đặc tả sơ bộ, chưa liệt kê đủ trường hợp nghiệp vụ hoàn tiền một phần, phí vận chuyển và mã giảm giá.",
+   "bai_hoc": "Gói nghiệp vụ tiền có nhiều trường hợp biên cần ước lượng theo danh sách trường hợp sau khi đặc tả được xác nhận.",
+   "khuyen_nghi": "Ước lượng lại các gói nghiệp vụ thanh toán, hoàn tiền ngay sau khi đặc tả được xác nhận và ghi phần chênh vào sổ rủi ro chi phí.",
+   "ap_dung_cho": "Ước lượng",
+   "bang_chung": [
+    "3.3.7",
+    "K05",
+    "R-S4-02",
+    "S4"
+   ],
+   "nhom_ten": "Chi phí và ước lượng",
+   "loai_ten": "Vấn đề cần cải thiện",
+   "bang_chung_hien_thi": "3.3.7, K05, R-S4-02, S4",
+   "khuyen_nghi_hien_thi": "Ước lượng lại các gói nghiệp vụ thanh toán, hoàn tiền ngay sau khi đặc tả được xác nhận và ghi phần chênh vào sổ rủi ro chi phí. Áp dụng cho ước lượng."
+  },
+  {
+   "ma": "BH10",
+   "nhom": "tien_do",
+   "loai": "tich_cuc",
+   "tinh_huong": "SPI xuống 0,94 ở S3 và 0,947 ở S4 nhưng phục hồi về 1,00 ở S8, mọi mốc đạt trong hạn và cut over đúng ngày 29/07/2027.",
+   "nguyen_nhan": "Gói chậm được ghi vào sổ vấn đề mỗi kỳ, hành động làm bù bằng quỹ sẵn sàng và dùng lại thành phần được giao người và hạn cụ thể.",
+   "bai_hoc": "Ghi mọi gói chậm thành vấn đề có hành động và hạn giúp phục hồi tiến độ trước khi tiêu hao dự trữ.",
+   "khuyen_nghi": "Mỗi báo cáo tiến độ ghi vấn đề cho mọi gói chậm trên ngưỡng, hành động có người và hạn trong sprint kế tiếp.",
+   "ap_dung_cho": "Báo cáo tiến độ, họp sprint",
+   "bang_chung": [
+    "K02",
+    "K03",
+    "M6",
+    "R-S4-01",
+    "S8"
+   ],
+   "nhom_ten": "Tiến độ",
+   "loai_ten": "Thực hành tốt nên duy trì",
+   "bang_chung_hien_thi": "K02, K03, M6, R-S4-01, S8",
+   "khuyen_nghi_hien_thi": "Mỗi báo cáo tiến độ ghi vấn đề cho mọi gói chậm trên ngưỡng, hành động có người và hạn trong sprint kế tiếp. Áp dụng cho báo cáo tiến độ, họp sprint."
+  },
+  {
+   "ma": "BH11",
+   "nhom": "giao_tiep",
+   "loai": "tich_cuc",
+   "tinh_huong": "Chủ đầu tư cấp tài khoản người bán và môi trường thử của sàn đúng hạn CK10, kiểm tra chức năng chính đúng hạn mốc M3 ngày 08/07/2027, kiểm thử tích hợp với sàn 5.4.2 hoàn thành đúng kế hoạch.",
+   "nguyen_nhan": "Cam kết của Chủ đầu tư được ghi vào phụ lục và nhắc trong họp tiến độ hằng tuần, đơn vị vận hành sàn được đưa vào danh sách bên liên quan.",
+   "bai_hoc": "Đưa cam kết của Chủ đầu tư và bên thứ ba vào phụ lục giúp đầu vào bên ngoài đến đúng hạn.",
+   "khuyen_nghi": "Ghi mọi đầu vào từ Chủ đầu tư và bên thứ ba thành cam kết có hạn trong hợp đồng hoặc phụ lục, rà soát trong họp tiến độ hằng tuần.",
+   "ap_dung_cho": "Giao tiếp với Chủ đầu tư",
+   "bang_chung": [
+    "M3",
+    "5.4.2",
+    "RR22",
+    "R-S7-01"
+   ],
+   "nhom_ten": "Giao tiếp với chủ đầu tư",
+   "loai_ten": "Thực hành tốt nên duy trì",
+   "bang_chung_hien_thi": "M3, 5.4.2, RR22, R-S7-01",
+   "khuyen_nghi_hien_thi": "Ghi mọi đầu vào từ Chủ đầu tư và bên thứ ba thành cam kết có hạn trong hợp đồng hoặc phụ lục, rà soát trong họp tiến độ hằng tuần. Áp dụng cho giao tiếp với chủ đầu tư."
+  },
+  {
+   "ma": "BH12",
+   "nhom": "pham_vi",
+   "loai": "can_cai_thien",
+   "tinh_huong": "Ở S1, danh sách đối tượng phỏng vấn người dùng của gói 2.2.3 phải bổ sung giữa sprint (vấn đề VD01). Ở S6, giới hạn tần suất gọi của giao diện lập trình sàn chỉ được biết khi thiết kế tích hợp 5.2.3, làm gói này vượt công 15%.",
+   "nguyen_nhan": "Khảo sát đầu giai đoạn tập trung vào nghiệp vụ, chưa có danh mục kiểm tra điều kiện kỹ thuật của hệ thống bên ngoài và đối tượng phỏng vấn chưa được thống nhất với Chủ sản phẩm tại họp khởi động.",
+   "bai_hoc": "Khảo sát cần danh mục kiểm tra cả đối tượng người dùng và điều kiện kỹ thuật của hệ thống bên ngoài trước khi đặc tả.",
+   "khuyen_nghi": "Dùng danh mục khảo sát gồm đối tượng phỏng vấn đã thống nhất, giới hạn tần suất, thời hạn khóa truy cập và môi trường thử của mỗi hệ thống bên ngoài, ký xác nhận với Chủ đầu tư.",
+   "ap_dung_cho": "Khảo sát, phân tích yêu cầu",
+   "bang_chung": [
+    "2.2.3",
+    "5.2.1",
+    "5.2.3",
+    "R-S1-02",
+    "R-S6-02"
+   ],
+   "nhom_ten": "Phạm vi và yêu cầu",
+   "loai_ten": "Vấn đề cần cải thiện",
+   "bang_chung_hien_thi": "2.2.3, 5.2.1, 5.2.3, R-S1-02, R-S6-02",
+   "khuyen_nghi_hien_thi": "Dùng danh mục khảo sát gồm đối tượng phỏng vấn đã thống nhất, giới hạn tần suất, thời hạn khóa truy cập và môi trường thử của mỗi hệ thống bên ngoài, ký xác nhận với Chủ đầu tư. Áp dụng cho khảo sát, phân tích yêu cầu."
+  }
+ ],
+ "tong": 12,
+ "so_tich_cuc": 4,
+ "so_can_cai_thien": 8,
+ "theo_nhom": [
+  {
+   "nhom": "Phạm vi và yêu cầu",
+   "tich_cuc": 0,
+   "can_cai_thien": 1
+  },
+  {
+   "nhom": "Tiến độ",
+   "tich_cuc": 1,
+   "can_cai_thien": 0
+  },
+  {
+   "nhom": "Chi phí và ước lượng",
+   "tich_cuc": 0,
+   "can_cai_thien": 1
+  },
+  {
+   "nhom": "Chất lượng và nghiệm thu",
+   "tich_cuc": 1,
+   "can_cai_thien": 2
+  },
+  {
+   "nhom": "Quản lý rủi ro",
+   "tich_cuc": 0,
+   "can_cai_thien": 1
+  },
+  {
+   "nhom": "Quản lý thay đổi",
+   "tich_cuc": 1,
+   "can_cai_thien": 0
+  },
+  {
+   "nhom": "Nhân sự và tổ chức nhóm",
+   "tich_cuc": 0,
+   "can_cai_thien": 2
+  },
+  {
+   "nhom": "Giao tiếp với chủ đầu tư",
+   "tich_cuc": 1,
+   "can_cai_thien": 0
+  },
+  {
+   "nhom": "Công cụ và quy trình",
+   "tich_cuc": 0,
+   "can_cai_thien": 1
+  }
+ ],
+ "retro": [
+  {
+   "ma": "R-S1-01",
+   "sprint": "S1",
+   "loai": "tốt",
+   "noi_dung": "Khung ứng dụng giao diện tái sử dụng thư viện từ hợp đồng tương tự, gói 4.3.3 hoàn thành trước kế hoạch. Liên kết: 4.3.3, RR20.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S1-02",
+   "sprint": "S1",
+   "loai": "cần cải thiện",
+   "noi_dung": "Danh sách đối tượng phỏng vấn người dùng chưa được thống nhất với Chủ sản phẩm tại họp khởi động, phải bổ sung giữa sprint. Liên kết: 2.2.3, VD01.",
+   "bai_hoc": "BH12"
+  },
+  {
+   "ma": "R-S1-03",
+   "sprint": "S1",
+   "loai": "hành động",
+   "noi_dung": "Gửi Chủ đầu tư danh sách tài liệu Main System cần cung cấp trước hạn cam kết CK1 ngày 14/04/2027. Liên kết: 4.2.5, RR02.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S2-01",
+   "sprint": "S2",
+   "loai": "tốt",
+   "noi_dung": "Mốc M1 đạt đúng hạn, kế hoạch quản lý dự án được Chủ đầu tư xác nhận trong thời gian phê duyệt. Liên kết: M1, 3.1.2.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S2-02",
+   "sprint": "S2",
+   "loai": "cần cải thiện",
+   "noi_dung": "Ngày có mặt của vị trí bổ sung chưa được xác nhận lại trước sprint huy động, kỹ sư kiểm thử có mặt muộn 2 ngày. Liên kết: RR04, VD03.",
+   "bai_hoc": "BH04"
+  },
+  {
+   "ma": "R-S2-03",
+   "sprint": "S2",
+   "loai": "hành động",
+   "noi_dung": "Xác nhận ngày có mặt của Phạm Ngọc Anh và Trương Quốc Việt trước sprint S3 một tuần, theo dõi phản hồi của Chủ đầu tư về tài liệu Main System hằng ngày. Liên kết: RR04, RR02, S3.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S3-01",
+   "sprint": "S3",
+   "loai": "tốt",
+   "noi_dung": "Đặc tả yêu cầu và giao diện ưu tiên được xác nhận đúng kế hoạch, mốc M2 đạt trước hạn. Liên kết: M2, 3.2.5.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S3-02",
+   "sprint": "S3",
+   "loai": "cần cải thiện",
+   "noi_dung": "Tài liệu Main System đến muộn làm gói găng 4.2.7 bắt đầu muộn, nhóm chưa chuẩn bị sẵn phần đặc tả giao diện có thể làm trước khi có tài liệu. Liên kết: RR02, 4.2.5, VD06.",
+   "bai_hoc": "BH03"
+  },
+  {
+   "ma": "R-S3-03",
+   "sprint": "S3",
+   "loai": "hành động",
+   "noi_dung": "Đề nghị Chủ đầu tư xác nhận sớm lịch bàn giao môi trường thử Main System (CK2) và thay đổi phía Main System (CK8), theo dõi hằng tuần trong họp tiến độ. Liên kết: RR02, 4.4.3.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S3-04",
+   "sprint": "S3",
+   "loai": "cần cải thiện",
+   "noi_dung": "Lỗi tạo trùng đơn hàng mức cao cho thấy cần bổ sung kịch bản gửi lặp vào bộ kiểm thử đơn vị của các dịch vụ ghi dữ liệu. Liên kết: 3.3.5, 3.4.1.",
+   "bai_hoc": "BH07"
+  },
+  {
+   "ma": "R-S4-01",
+   "sprint": "S4",
+   "loai": "tốt",
+   "noi_dung": "Dùng quỹ sẵn sàng của các vị trí phía máy chủ để làm bù các gói chậm, dịch vụ giả lập Main System dùng lại công cụ có sẵn nên chuỗi găng được rút ngắn. Liên kết: 4.4.1, VD07.",
+   "bai_hoc": "BH10"
+  },
+  {
+   "ma": "R-S4-02",
+   "sprint": "S4",
+   "loai": "cần cải thiện",
+   "noi_dung": "Ước lượng dịch vụ đổi trả chưa tính trường hợp hoàn tiền một phần đã nêu trong đặc tả, cần rà soát các trường hợp ngoại lệ của đặc tả trước khi lập trình. Liên kết: 3.3.7, 3.2.11.",
+   "bai_hoc": "BH09"
+  },
+  {
+   "ma": "R-S4-03",
+   "sprint": "S4",
+   "loai": "hành động",
+   "noi_dung": "Đánh giá tác động của yêu cầu bán hàng trên sàn thương mại điện tử trong thời hạn đánh giá và trình ban kiểm soát thay đổi. Liên kết: CR01, VD08.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S5-01",
+   "sprint": "S5",
+   "loai": "tốt",
+   "noi_dung": "Yêu cầu thay đổi CR01 được đánh giá và trình phụ lục trong 5 ngày làm việc, lịch lập lại giữ dự trữ đến cut over. Liên kết: CR01, VD08.",
+   "bai_hoc": "BH01"
+  },
+  {
+   "ma": "R-S5-02",
+   "sprint": "S5",
+   "loai": "cần cải thiện",
+   "noi_dung": "Lỗi giữ tồn kho khi thanh toán thất bại chỉ phát hiện ở kiểm thử đầu cuối, kiểm thử đơn vị dịch vụ giỏ hàng chưa phủ nhánh thất bại. Liên kết: 3.4.6, 3.3.1.",
+   "bai_hoc": "BH07"
+  },
+  {
+   "ma": "R-S5-03",
+   "sprint": "S5",
+   "loai": "hành động",
+   "noi_dung": "Bổ sung ca kiểm thử nhánh thanh toán thất bại vào bộ kiểm thử tự động trước kiểm thử hệ thống. Liên kết: 3.4.10, RR03.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S6-01",
+   "sprint": "S6",
+   "loai": "tốt",
+   "noi_dung": "Kiểm thử tích hợp với Main System đạt, rủi ro tài liệu và môi trường Main System được đóng. Liên kết: RR02, 4.4.3, 4.4.4.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S6-02",
+   "sprint": "S6",
+   "loai": "cần cải thiện",
+   "noi_dung": "Giới hạn tần suất gọi của sàn chỉ được biết khi thiết kế tích hợp, khảo sát 5.2.1 chưa kiểm tra đủ điều kiện kỹ thuật của giao diện lập trình. Liên kết: 5.2.1, 5.2.3, RR22.",
+   "bai_hoc": "BH12"
+  },
+  {
+   "ma": "R-S6-03",
+   "sprint": "S6",
+   "loai": "hành động",
+   "noi_dung": "Lập danh sách điều kiện kỹ thuật của sàn (giới hạn tần suất, thời hạn khóa, môi trường thử) và đối chiếu trước khi lập trình 5.3. Liên kết: RR22, 5.3.1.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S7-01",
+   "sprint": "S7",
+   "loai": "tốt",
+   "noi_dung": "Kiểm thử tích hợp với môi trường thử của sàn hoàn thành đúng kế hoạch nhờ tài khoản người bán được cấp đúng hạn CK10. Liên kết: 5.4.2, RR22.",
+   "bai_hoc": "BH11"
+  },
+  {
+   "ma": "R-S7-02",
+   "sprint": "S7",
+   "loai": "cần cải thiện",
+   "noi_dung": "Vấn đề hiệu năng trang danh mục chỉ được phát hiện ở kiểm thử hiệu năng, chưa đo thời gian phản hồi trong lập trình. Liên kết: RR06, 1.4.9, VD12.",
+   "bai_hoc": "BH06"
+  },
+  {
+   "ma": "R-S7-03",
+   "sprint": "S7",
+   "loai": "hành động",
+   "noi_dung": "Đưa phép đo thời gian phản hồi của các trang chính vào quy trình tích hợp liên tục đến khi bàn giao. Liên kết: 1.5.1, RR06.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S8-01",
+   "sprint": "S8",
+   "loai": "tốt",
+   "noi_dung": "Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System trong thời gian đã thống nhất, mốc M3 đạt đúng hạn. Liên kết: M3, 4.4.6.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S8-02",
+   "sprint": "S8",
+   "loai": "cần cải thiện",
+   "noi_dung": "Lỗi mất phiên khi chuyển nút ứng dụng chỉ phát hiện ở kiểm thử hệ thống do môi trường kiểm thử trước đó chỉ có một nút. Liên kết: 4.4.5, 4.5.1.",
+   "bai_hoc": "BH07"
+  },
+  {
+   "ma": "R-S8-03",
+   "sprint": "S8",
+   "loai": "hành động",
+   "noi_dung": "Kiểm thử chấp nhận chạy trên cấu hình hai nút giống môi trường vận hành. Liên kết: RR10, 3.4.13.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S9-01",
+   "sprint": "S9",
+   "loai": "tốt",
+   "noi_dung": "Kiểm thử chấp nhận và phần bán hàng trên sàn được nghiệm thu trong khoảng đã thống nhất, cut over đúng ngày theo phụ lục. Liên kết: M5, M9, M6.",
+   "bai_hoc": ""
+  },
+  {
+   "ma": "R-S9-02",
+   "sprint": "S9",
+   "loai": "cần cải thiện",
+   "noi_dung": "Huy động theo nhu cầu sát với MD kế hoạch nên khi gói chậm phải huy động bổ sung trong S8. Liên kết: VD13, 4.4.5.",
+   "bai_hoc": "BH05"
+  },
+  {
+   "ma": "R-S9-03",
+   "sprint": "S9",
+   "loai": "hành động",
+   "noi_dung": "Dự án sau lập mức huy động theo sprint có phần dư cho làm bù ở các sprint kiểm thử. Liên kết: VD13, RR03.",
+   "bai_hoc": ""
+  }
+ ],
+ "nguon_bang_chung": [
+  {
+   "loai": "yêu cầu thay đổi",
+   "so_ma": 1
+  },
+  {
+   "loai": "mốc",
+   "so_ma": 5
+  },
+  {
+   "loai": "chỉ tiêu",
+   "so_ma": 7
+  },
+  {
+   "loai": "ghi chép cải tiến",
+   "so_ma": 13
+  },
+  {
+   "loai": "sprint",
+   "so_ma": 5
+  },
+  {
+   "loai": "rủi ro",
+   "so_ma": 4
+  },
+  {
+   "loai": "gói WBS",
+   "so_ma": 13
+  },
+  {
+   "loai": "nghiệm thu",
+   "so_ma": 2
+  },
+  {
+   "loai": "lỗi",
+   "so_ma": 3
+  }
+ ],
+ "kiem_tra": {
+  "ket_luan": "dat",
+  "so_loi": 0,
+  "so_canh_bao": 0,
+  "phat_hien": []
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "tai_lieu": "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx",
+ "dac_ta": ".claude/skills/qlda-risk/dac_ta/ke_hoach_rui_ro.json",
+ "phien_ban": "0.9",
+ "vong_lop_B": 2,
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 6,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục và các bảng theo đặc tả, có tổ chức, thang đo, sổ, ma trận 5x5 và 3x3, biện pháp, dự phòng và dự trữ, ngưỡng, quan hệ với thay đổi."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Số liệu tổng hợp khớp rui_ro.json, rui_ro_bang.json, lich.json, chi_phi.json (21 rủi ro, 19 đe dọa, 2 cơ hội, 4 cao, 10 trung bình, 7 thấp, hạng A 6, B 8, C 7, EMV 141 triệu, khoảng 105 đến 177, EMV găng 9,0 ngày, dự trữ 3 ngày, dự phòng 50.000.000, C sau lương 402.789.877, vốn lưu động 600.000.000). Ma trận 5x5, 3x3 và rủi ro còn lại đúng quy tắc quy đổi. Còn một mâu thuẫn với thanh_vien.json (MH01)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi rủi ro có liên kết gói WBS, mốc, cam kết CK, mục E-ĐKC. Sáu rủi ro tính dự trữ đều liên kết gói trên đường găng theo lich.json."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi rủi ro có điều kiện đóng kiểm chứng được bằng biên bản hoặc báo cáo, ngưỡng SPI, CPI, lỗi có giá trị cụ thể."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có dấu hiệu, ngưỡng, người phụ trách, thời hạn phản hồi, phương án dự trữ đã chọn theo cột Áp dụng, quy trình yêu cầu thay đổi và cập nhật tài liệu theo sơ đồ phụ thuộc."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman 13 (bảng 12), không in đậm, không gạch dài, không ngoặc kép, một dấu chấm phẩy trong đoạn cố định của đặc tả."
+  },
+  {
+   "tieu_chi": "doc_hieu: Rủi ro mức cao có ứng phó khả thi, dấu hiệu, người phụ trách",
+   "ket_qua": "dat",
+   "nhan_xet": "RR02, RR03, RR04, RR10 đủ ba nội dung. Biện pháp RR04 với vị trí huy động từ S1 khó thực hiện đúng hạn (MH04)."
+  },
+  {
+   "tieu_chi": "doc_hieu: Bao phủ đường găng, cut over, Main System, nhân sự bổ sung",
+   "ket_qua": "dat",
+   "nhan_xet": "RR02, RR21 (Main System), RR03, RR08, RR10 (cut over), RR04, RR13, RR18 (nhân sự bổ sung)."
+  },
+  {
+   "tieu_chi": "doc_hieu: Dự phòng chi phí và thời gian so với EMV",
+   "ket_qua": "dat",
+   "nhan_xet": "Dự phòng 50 triệu so với EMV 141 triệu, thiếu 91 triệu. Dự trữ 3 ngày so với EMV găng 9,0 ngày, thiếu 6,0 ngày."
+  },
+  {
+   "tieu_chi": "doc_hieu: Ngưỡng cảnh báo có hành động cụ thể",
+   "ket_qua": "dat",
+   "nhan_xet": "SPI, CPI, lỗi nghiêm trọng hoặc cao đều có hành động, mức đỏ của lỗi gắn RR03, RR10."
+  },
+  {
+   "tieu_chi": "doc_hieu: Liên kết quy trình thay đổi",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục 9 và các biện pháp RR01, RR11."
+  },
+  {
+   "tieu_chi": "doc_hieu: Mức tác động khớp thang định lượng hoặc có lý do",
+   "ket_qua": "dat",
+   "nhan_xet": "Căn cứ mức tác động nêu mức suy ra theo ngày, chi phí, cờ mốc. RR07 chấm khác mức suy ra có lý do. Kiểm tra lại RR13 3,61% giá chào, RR19 0,25%: đúng."
+  },
+  {
+   "tieu_chi": "doc_hieu: Xác suất có căn cứ, EMV là ước tính định hướng",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi rủi ro có căn cứ xác suất, mục 3 và mục 7 nêu ước tính định hướng kèm khoảng."
+  },
+  {
+   "tieu_chi": "doc_hieu: Đối chiếu 3x3 hạng A, B, C và lý do dùng thang 5 mức",
+   "ket_qua": "dat",
+   "nhan_xet": "Có quy tắc quy đổi, số theo hạng, lý do."
+  },
+  {
+   "tieu_chi": "doc_hieu: Dự trữ thiếu thì có phương án để nhóm chốt",
+   "ket_qua": "dat",
+   "nhan_xet": "Bảng bốn phương án, cột Áp dụng chọn chấp nhận và báo Chủ đầu tư, đúng phuong_an_du_tru_thoi_gian của du_an.json."
+  },
+  {
+   "tieu_chi": "doc_hieu: Có cơ hội",
+   "ket_qua": "dat",
+   "nhan_xet": "RR20, RR21."
+  },
+  {
+   "tieu_chi": "doc_hieu: Nguyên nhân không viện dẫn số tổng hợp của sổ",
+   "ket_qua": "dat",
+   "nhan_xet": "Không có nguyên nhân dẫn số tổng hợp của sổ."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 4, bảng nguyên nhân, RR18: 'Chỉ có Ninh Đức Toàn và hai vị trí bổ sung D3 (từ S2), D4 (từ S3) có năng lực triển khai và vận hành (DevOps)'",
+   "mo_ta": "thanh_vien.json ghi D3 (Bùi Anh Tuấn) huy động từ S1 theo quyết định 25/10/2026, cost estimate tính D3 73 MD huy động. Ngay trong tài liệu, căn cứ RR03 và nguyên nhân RR04 cũng ghi D3 từ S1.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa du_lieu/rui_ro.json (nguồn nhập sổ rủi ro), RR18 nguyen_nhan: D3 (từ S1). Nên ghi họ tên Bùi Anh Tuấn, Trương Quốc Việt thay cho mã vị trí. Chạy lại tinh_bang_rui_ro.py và ke_hoach_rui_ro."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 7, DU_PHONG: 'Khi cần đẩy nhanh các gói trên đường găng, Trương Quốc Việt, kỹ sư phát triển backend kiêm DevOps, là nguồn lực có thể điều chuyển.'",
+   "mo_ta": "Theo lich.json, Trương Quốc Việt (D4) có 51 MD giao trên 53 MD huy động, S6 10/10, S7 9/10, là người còn ít dư quỹ nhất. Người còn dư nhiều ở S6, S7 là Lê Quang Huy (S6 3/10), Vũ Đức Minh (4/10), Bùi Anh Tuấn (S7 3/10). Câu này không truy được về dữ liệu nguồn. Chưa chắc người soạn muốn nói điều Việt khỏi gói không găng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại DU_PHONG: bỏ câu hoặc nêu nguồn lực dư theo lich.json su_dung_theo_nguoi_sprint (S6, S7), có cùng loại công việc với gói găng."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 4, bảng nguyên nhân, RR03: 'Nhóm kiểm thử làm gần đủ quỹ thời gian trong S5, S6'",
+   "mo_ta": "lich.json: S5 đúng là gần đủ (Hà 10/10, Ngọc Anh 10/10, Liên 9/10), nhưng S6 chỉ Hà 5/10, Ngọc Anh 6/10, Liên 8,5/10.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa du_lieu/rui_ro.json, RR03 nguyen_nhan: nêu S5 (hoặc S4, S5), không nêu S6."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "kha_thi",
+   "vi_tri": "Mục 6.1, RR04: biện pháp 'Ký hợp đồng với người giữ vị trí bổ sung chậm nhất 10 ngày làm việc trước sprint huy động', dấu hiệu 'Đến 10 ngày làm việc trước sprint huy động chưa ký hợp đồng'",
+   "mo_ta": "Nguyễn Hoàng Nam, D1, D3 huy động từ S1 (18/03/2027). Mốc 10 ngày làm việc trước S1 rơi vào khoảng 04/03/2027, trước ngày ký đơn dự thầu 05/03/2027 và trước khi có hợp đồng, nên biện pháp và dấu hiệu khó áp dụng cho ba vị trí này.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định thời hạn ký với vị trí huy động từ S1 (ví dụ thỏa thuận nguyên tắc trước khi nộp HSDT, ký hợp đồng lao động trong 3 ngày sau khi ký hợp đồng), sau đó sửa RR04 trong du_lieu/rui_ro.json."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "loi_van",
+   "vi_tri": "Mục 5.2, NHAN_XET_MA_TRAN: 'rủi ro trên chuỗi trước kiểm thử chấp nhận có số ngày chậm vượt dự trữ (RR02, RR03) có thể làm lùi ngày cut over'",
+   "mo_ta": "RR04 chậm 5 ngày, vượt dự trữ 3 ngày, liên kết gói 4.3.7 trên đường găng và được chấm mức 5 vì làm lùi cut over, nhưng không có trong danh sách.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại NHAN_XET_MA_TRAN: RR02, RR03, RR04."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 7, Bảng quy tắc sử dụng dự phòng, dòng Phần vượt dự phòng: 'phần còn lại của giá chào sau lương kế hoạch và khoản B (chi phí chung và lợi nhuận)'",
+   "mo_ta": "Ngoặc đơn gọi khoản còn lại sau lương kế hoạch và khoản B (402.789.877 đồng) là chi phí chung và lợi nhuận, trong khi bảng tổng hợp dự toán dùng tên C. Chi phí chung và lợi nhuận cho khoản 179.950.000 đồng. Cùng một tên chỉ hai số tiền khác nhau, người phê duyệt dễ hiểu nhầm mức bù được phép.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa nguồn chung .claude/skills/qlda-change/references/phan_loai.json (quy tắc dự phòng, dòng Phần vượt dự phòng): bỏ ngoặc (chi phí chung và lợi nhuận) hoặc ghi rõ gồm phần dư của dòng A so với lương kế hoạch và khoản C; chạy lại chi_phi, ke_hoach_rui_ro, ke_hoach_thay_doi, master plan."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Bìa 'Ngày 18/03/2027'. Mục 4 'Cột Trạng thái theo nhật ký theo dõi rủi ro đến ngày 25/10/2026' và 'Đến ngày lập tài liệu chưa có rủi ro nào xảy ra'. Mục 8 'Đến ngày 25/10/2026, sổ có 21 rủi ro'",
+   "mo_ta": "Ngày trạng thái 25/10/2026 (ngày máy) khác ngày tài liệu 18/03/2027 trên bìa, nên cụm ngày lập tài liệu không rõ chỉ ngày nào. Không sai số liệu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Đặt ngày trạng thái theo ngày tài liệu (QLDA_NGAY hoặc da#ngay_bat_dau) khi lập kế hoạch, hoặc ghi rõ ngày lập sổ. Sửa ở tinh_bang_rui_ro.py hoặc ngày chạy, không sửa trong Word."
+  }
+ ]
+}

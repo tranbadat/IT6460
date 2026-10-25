@@ -1,0 +1,189 @@
+{
+ "tai_lieu": [
+  "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S1.docx",
+  "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S2.docx",
+  "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S3.docx",
+  "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S4.docx"
+ ],
+ "buoc": "bao_cao_tien_do",
+ "dac_ta": ".claude/skills/qlda-bao-cao-tien-do/dac_ta/bao_cao_tien_do.json",
+ "luot": "Xác nhận sau vòng sửa phần 1 mô phỏng (sau CR01), báo cáo lượt trước lưu tại lam_viec/bao_cao_tien_do/bao_cao_kiem_tra_lop_B_BL2_vong1.json",
+ "duong_co_so_doi_chieu": "Mỗi kỳ đối chiếu kế hoạch của kỳ đó (lam_viec/mo_phong/ke_hoach_S<n>: lịch BL1, cut over 01/07/2027, BAC 657 MD, sổ rủi ro chụp theo kỳ). S4 lập ngày 20/05/2027 trước khi phê duyệt CR01.",
+ "theo_tep": [
+  {
+   "tai_lieu": "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S1.docx",
+   "phien_ban": "0.3",
+   "ket_luan": "chua_dat",
+   "so_loi": 1,
+   "so_canh_bao": 1,
+   "ma_phat_hien": [
+    "MH13",
+    "MH11"
+   ]
+  },
+  {
+   "tai_lieu": "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S2.docx",
+   "phien_ban": "0.3",
+   "ket_luan": "chua_dat",
+   "so_loi": 1,
+   "so_canh_bao": 1,
+   "ma_phat_hien": [
+    "MH13",
+    "MH11"
+   ]
+  },
+  {
+   "tai_lieu": "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S3.docx",
+   "phien_ban": "0.3",
+   "ket_luan": "chua_dat",
+   "so_loi": 1,
+   "so_canh_bao": 1,
+   "ma_phat_hien": [
+    "MH13",
+    "MH11"
+   ]
+  },
+  {
+   "tai_lieu": "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S4.docx",
+   "phien_ban": "0.2",
+   "ket_luan": "dat",
+   "so_loi": 0,
+   "so_canh_bao": 2,
+   "ma_phat_hien": [
+    "MH11",
+    "MH14"
+   ]
+  }
+ ],
+ "pham_vi_doc": "Đọc 4 tệp docx, đặc tả, du_lieu/tien_do/S1-S4.json, lich_su.json, du_lieu/phat_hanh.json, dau_vao/thuc_te/hoan_thanh.csv, theo_doi_rui_ro.csv, lam_viec/mo_phong/ke_hoach_S1..S4/du_lieu/rui_ro.json, báo cáo lớp B lượt trước. Không đọc ban_soan, khung, noi_dung, nhật ký sửa.",
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ các mục của đặc tả, kế hoạch kỳ tới S1 đã có gói găng 4.2.3, gói chậm 4.1.2, 4.1.3 và HD03."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Số liệu EVM, gói hoàn thành (11, 16, 24, 19 gói), mốc, công sức, vấn đề khớp du_lieu/tien_do và CSV. Mức rủi ro Cao khớp bản chụp sổ rủi ro từng kỳ. Còn lỗi bảng lịch sử chứa kỳ tương lai (MH13) và SPI S4 hai cách hiển thị (MH14)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Gói chậm, vấn đề, hành động, rủi ro, CR01 và bản phát hành R3, R4 truy vết được."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Ngưỡng SPI, CPI, trạng thái mốc so với hạn rõ ràng, kiểm chứng được."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Tín hiệu do script phát hiện đều gắn vấn đề trong sổ, CR01 ghi rõ đánh giá sơ bộ và cấp quyết định."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, không in đậm, không ngoặc kép, gạch dài. Còn cảnh báo định dạng số (MH11)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH13",
+   "muc_do": "loi",
+   "nhom": "CL02 Nhất quán thời điểm",
+   "vi_tri": "Bao_cao_tien_do_S1.docx, S2.docx, S3.docx, mục 2, bảng lịch sử các kỳ (Kỳ | Ngày | PV | EV | AC | SPI | CPI | CPI thực | Trạng thái): báo cáo S1 ngày 31/03/2027 có dòng S2 14/04/2027, S3 06/05/2027, S4 20/05/2027 (389,80 | 369,33 | 373,00 | 0,95 ...); S2 có dòng S3, S4; S3 có dòng S4",
+   "mo_ta": "Báo cáo được lập lại theo kế hoạch và số liệu của từng kỳ nhưng bảng lịch sử lấy toàn bộ du_lieu/tien_do/lich_su.json, nên báo cáo của kỳ trước chứa số liệu của các kỳ chưa diễn ra tại ngày báo cáo. Mâu thuẫn với ngày báo cáo và với các mục còn lại của chính báo cáo (ví dụ S1 ghi Không có yêu cầu thay đổi, M1 chưa đến hạn, nhưng bảng đã có số liệu ngày 20/05/2027). Đây là hồi quy của vòng lập lại, báo cáo lớp B trước không có lỗi này.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa ở bước tạo dữ liệu hoặc đặc tả bảng lịch sử (khóa ls trong dac_ta/bao_cao_tien_do.json, nguồn du_lieu/tien_do/lich_su.json): chỉ lấy các kỳ có ngay_bao_cao không muộn hơn ngày báo cáo của kỳ đang lập, xuất lại S1, S2, S3. Không cần nhóm quyết định."
+  },
+  {
+   "ma": "MH11",
+   "muc_do": "canh_bao",
+   "nhom": "CL06 Trình bày",
+   "vi_tri": "S1 mục 1 'Thời gian đã qua 10/83 ngày làm việc (12%)' so với S2 '(24,1%)', S3 '(39,8%)'; bảng gói chậm S2 cột Kế hoạch '40%', '50%' so với S3, S4 '40,0%', '100,0%' trong khi cột Thực tế cùng bảng '0%', '60%'; S4 mục 1 '373/456 MD' so với bảng lịch sử '373,00'",
+   "mo_ta": "Chưa đóng từ lượt trước. Định dạng tỷ lệ và MD vẫn không thống nhất giữa các kỳ và giữa hai cột cùng bảng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thống nhất bộ định dạng pt (luôn một chữ số thập phân) và md (hai chữ số thập phân) trong tinh_tien_do.py hoặc bộ định dạng của đặc tả, không sửa trong Word."
+  },
+  {
+   "ma": "MH14",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 Nhất quán",
+   "vi_tri": "Bao_cao_tien_do_S4.docx: mục 1 'Chỉ số tiến độ SPI | 0,947 | Vàng' và bảng lịch sử dòng S4 'SPI 0,95'",
+   "mo_ta": "Sau khi sửa MH07, phần tóm tắt và tín hiệu hiển thị 0,947 nhưng bảng lịch sử trong cùng báo cáo vẫn hiển thị 0,95 cho cùng chỉ số, bằng ngưỡng vàng. Người đọc thấy hai giá trị khác nhau của SPI kỳ S4.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Áp cùng quy tắc hiển thị ba chữ số khi chỉ số làm tròn bằng ngưỡng cho bảng lịch sử (spi trong lich_su.json), xuất lại các báo cáo có dòng S4."
+  }
+ ],
+ "dong_phat_hien_truoc": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "S1 mục 6 đã nêu gói găng 4.2.3 (01/04 đến 07/04/2027), gói chậm 4.1.2, 4.1.3 của VD02 và HD03 hạn 07/04/2027."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "S2 tóm tắt nêu nguyên nhân theo VD05 (1.2.5 vượt công, 4.3.2 sửa lỗi), RR04 chỉ tác động 2.1.1 và đã xử lý theo VD03."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "S3 nêu bản phát hành R3, giỏ hàng 3.3.1 (60%), 3.3.8 (63%) chưa trình diễn, chuyển sang kỳ tới theo VD07."
+  },
+  {
+   "ma": "MH04",
+   "da_dong": true,
+   "nhan_xet": "S4 nêu R4, 4.3.7 (95%), 4.3.8 (80%), 2.4.8 chưa hoàn thành, theo dõi tại VD09, khớp phat_hanh.json."
+  },
+  {
+   "ma": "MH05",
+   "da_dong": true,
+   "nhan_xet": "Đã có câu giải thích cơ sở tính dưới bảng mục 4 ở cả bốn kỳ."
+  },
+  {
+   "ma": "MH06",
+   "da_dong": true,
+   "nhan_xet": "Như MH05, S4 có câu giải thích chênh lệch 389,17 và 389,80."
+  },
+  {
+   "ma": "MH07",
+   "da_dong": true,
+   "nhan_xet": "Tóm tắt và tín hiệu S4 hiển thị 0,947. Bảng lịch sử vẫn 0,95, ghi thành cảnh báo mới MH14."
+  },
+  {
+   "ma": "MH08",
+   "da_dong": true,
+   "nhan_xet": "S4 ghi rõ là đánh giá sơ bộ, hành động trình ban kiểm soát thay đổi của VD08 còn đang thực hiện."
+  },
+  {
+   "ma": "MH09",
+   "da_dong": true,
+   "nhan_xet": "S2 ghi 'Mốc M1 đạt ngày 14/04/2027, đúng hạn'."
+  },
+  {
+   "ma": "MH10",
+   "da_dong": true,
+   "nhan_xet": "S3 ghi 'Mốc M2 đạt ngày 06/05/2027, đúng hạn'."
+  },
+  {
+   "ma": "MH11",
+   "da_dong": false,
+   "nhan_xet": "Định dạng tỷ lệ, MD vẫn không thống nhất, giữ cảnh báo."
+  },
+  {
+   "ma": "MH12",
+   "da_dong": true,
+   "nhan_xet": "Đã có bản chụp lam_viec/mo_phong/ke_hoach_S1..S4/du_lieu/rui_ro.json, RR02, RR03, RR04, RR10 đều mức cao tại cả bốn kỳ, báo cáo khớp."
+  }
+ ],
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "prompt": ".claude/skills/qlda-loi/prompts/vai_kiem_tra.md",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên agent con riêng (kiểm tra lớp B lượt xác nhận sau vòng sửa phần 1 mô phỏng sau CR01), Claude Code, mô hình claude-opus-5-5, python-docx, openpyxl, LibreOffice tính lại công thức",
+ "so_loi": 1,
+ "so_canh_bao": 2,
+ "ket_luan": "chua_dat"
+}

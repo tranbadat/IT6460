@@ -1,0 +1,86 @@
+{
+ "da_sua": [],
+ "con_lai": [
+  {
+   "ma": "CT00",
+   "muc_do": "loi",
+   "nhom": "cau_truc",
+   "vi_tri": "o diện trao đổi dữ liệu của Main System chậm nhất {da#cam_ket_chu_dau_tu[ma=CK1].han|ngay}, môi trường thử của Main System chậm nhất {da#cam",
+   "mo_ta": "Còn tham chiếu dữ liệu chưa giải",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Soạn bổ sung hoặc kiểm tra dữ liệu nguồn"
+  },
+  {
+   "ma": "CT00",
+   "muc_do": "loi",
+   "nhom": "cau_truc",
+   "vi_tri": "n|ngay}, môi trường thử của Main System chậm nhất {da#cam_ket_chu_dau_tu[ma=CK2].han|ngay}, dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi và ",
+   "mo_ta": "Còn tham chiếu dữ liệu chưa giải",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Soạn bổ sung hoặc kiểm tra dữ liệu nguồn"
+  },
+  {
+   "ma": "CT00",
+   "muc_do": "loi",
+   "nhom": "cau_truc",
+   "vi_tri": "uyển đổi và nội dung, hình ảnh sản phẩm chậm nhất {da#cam_ket_chu_dau_tu[ma=CK3].han|ngay} (cam kết CK1 đến CK4). Mọi sửa đổi phía Main Syst",
+   "mo_ta": "Còn tham chiếu dữ liệu chưa giải",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Soạn bổ sung hoặc kiểm tra dữ liệu nguồn"
+  },
+  {
+   "ma": "CT00",
+   "muc_do": "loi",
+   "nhom": "cau_truc",
+   "vi_tri": "đầu tư xác nhận tại 2.2.1 và 3.2.2. (10) Bảo hành {ct#bao_hanh.thoi_han_thang} tháng sau nghiệm thu và hỗ trợ tăng cường từ {ct#",
+   "mo_ta": "Còn tham chiếu dữ liệu chưa giải",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Soạn bổ sung hoặc kiểm tra dữ liệu nguồn"
+  },
+  {
+   "ma": "CT00",
+   "muc_do": "loi",
+   "nhom": "cau_truc",
+   "vi_tri": "ang} tháng sau nghiệm thu và hỗ trợ tăng cường từ {ct#bao_hanh.ho_tro_tang_cuong.tu|ngay} đến {ct#bao_hanh.ho_tro_tang_cuong.den|ngay} thực",
+   "mo_ta": "Còn tham chiếu dữ liệu chưa giải",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Soạn bổ sung hoặc kiểm tra dữ liệu nguồn"
+  },
+  {
+   "ma": "CT00",
+   "muc_do": "loi",
+   "nhom": "cau_truc",
+   "vi_tri": "ng từ {ct#bao_hanh.ho_tro_tang_cuong.tu|ngay} đến {ct#bao_hanh.ho_tro_tang_cuong.den|ngay} thực hiện ngoài thời gian dự án, chi phí nằm tron",
+   "mo_ta": "Còn tham chiếu dữ liệu chưa giải",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Soạn bổ sung hoặc kiểm tra dữ liệu nguồn"
+  },
+  {
+   "ma": "CT00",
+   "muc_do": "loi",
+   "nhom": "cau_truc",
+   "vi_tri": "u của Main System chậm nhất {da#cam_ket_chu_dau_tu[ma=CK1].han|ngay}, môi trường thử của Main System chậm nh",
+   "mo_ta": "Còn dấu giữ chỗ trong ngoặc vuông: [ma=CK1]",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Bổ sung dữ liệu nguồn (ví dụ dau_vao/nha_thau.json) hoặc soạn lại đoạn, rồi tạo lại"
+  },
+  {
+   "ma": "CT00",
+   "muc_do": "loi",
+   "nhom": "cau_truc",
+   "vi_tri": "ử của Main System chậm nhất {da#cam_ket_chu_dau_tu[ma=CK2].han|ngay}, dữ liệu sản phẩm, tồn kho phục vụ chuy",
+   "mo_ta": "Còn dấu giữ chỗ trong ngoặc vuông: [ma=CK2]",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Bổ sung dữ liệu nguồn (ví dụ dau_vao/nha_thau.json) hoặc soạn lại đoạn, rồi tạo lại"
+  },
+  {
+   "ma": "CT00",
+   "muc_do": "loi",
+   "nhom": "cau_truc",
+   "vi_tri": "hình ảnh sản phẩm chậm nhất {da#cam_ket_chu_dau_tu[ma=CK3].han|ngay} (cam kết CK1 đến CK4). Mọi sửa đổi phía",
+   "mo_ta": "Còn dấu giữ chỗ trong ngoặc vuông: [ma=CK3]",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Bổ sung dữ liệu nguồn (ví dụ dau_vao/nha_thau.json) hoặc soạn lại đoạn, rồi tạo lại"
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "tai_lieu": [
+  "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx (phiên bản 0.16)",
+  "ket_qua/06_Cost_estimate/Cost_estimate.xlsx (phiên bản 0.17)"
+ ],
+ "buoc": "chi_phi",
+ "luot": "Kiểm tra lớp B lượt xác nhận sau vòng sửa cuối (người dùng duyệt ngoại lệ sau 3 vòng): xác nhận đóng cảnh báo lượt 3 và rà soát hồi quy, không rà lại toàn bộ",
+ "can_cu": "Căn cứ hợp lệ: dau_vao/du_an.json _quyet_dinh_18_10, _quyet_dinh_24_10_ha_tang, _quyet_dinh_25_10 (điểm 1 đến 29), _quy_tac_ngay_ban_giao",
+ "nguon_da_doi_chieu": [
+  "du_lieu/chi_phi.json",
+  "du_lieu/lich.json",
+  "du_lieu/rui_ro.json",
+  "du_lieu/wbs.json",
+  "dau_vao/du_an.json",
+  "lam_viec/chi_phi/bao_cao_kiem_tra_lop_B_4ph_vong3.json"
+ ],
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 1,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ chín mục của thuyết minh và các sheet của bảng tính như lượt 3."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Số liệu không đổi so với chi_phi.json: A 1.420.050.000, B 150.000.000 (B1 60, B2 40, B3 50 triệu), C 179.950.000 (10,3%), giá chào 1.750.000.000, thấp hơn giá gói thầu 250.000.000 (12,5%), lương kế hoạch 1.197.210.123 đồng cho 657 MD, khoản còn lại 402.789.877 (23%), EMV 141.112.116 (khoảng 105.231.347 đến 176.992.886), dòng tiền S1 đến sau cut over, mức âm lớn nhất 551.484.214 cuối S7, vốn lưu động 600.000.000 khớp von_luu_dong_du_kien trong du_an.json, dự trữ 3 ngày, EMV thời gian 9,0 ngày khớp rui_ro.json. Tính lại Excel bằng LibreOffice: Tong_hop, Theo_nhom, Mau_11A, Dong_tien khớp thuyết minh, WBS_MD 153 gói khớp tên và MD của wbs.json sau khi đổi tên gói."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Đợt thanh toán gắn mốc M2, M3, M6, M7 của master schedule, dự phòng gắn sổ rủi ro."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Các ô kiểm tra Tong_hop B16, B17, B26, B27 và ô mới Dong_tien H18 đều Đạt."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Quy tắc dùng dự phòng dùng chung, theo dõi dự trữ và báo Chủ đầu tư dưới 2 ngày giữ nguyên."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Đạt, còn một cảnh báo văn phong nhỏ (MC01)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MC01",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 1: Thuế GTGT xác định theo căn cứ: Dịch vụ phần mềm thuộc đối tượng ...; mục 2: Nguồn đơn giá: Đơn giá trọn gói theo người-tháng ...; mục 3: Căn cứ thuế: Dịch vụ phần mềm ...; mục 1: Đơn giá trọn gói theo người-tháng của nhà thầu, đã gồm lương, bảo hiểm ... (câu không có vị ngữ, lặp ý câu trước)",
+   "mo_ta": "Ba vị trí được nêu trong MH03 lượt 3 đã sửa, nhưng cùng kiểu chèn chuỗi dữ liệu sau dấu hai chấm giữ chữ hoa đầu câu vẫn còn ở ba chỗ khác, và chuỗi nguon_don_gia đứng thành câu riêng thiếu vị ngữ. Dấu chấm phẩy còn lại nằm trong trích dẫn căn cứ pháp lý (Luật Thuế GTGT; Nghị định), chấp nhận được. Không ảnh hưởng số liệu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Khi tạo lại thuyết minh lần tới: viết thường chữ đầu chuỗi can_cu_thue, nguon_don_gia khi chèn sau dấu hai chấm hoặc chèn trong mệnh đề (ví dụ: thuế GTGT xác định theo căn cứ dịch vụ phần mềm thuộc đối tượng ...), gộp câu đơn giá trọn gói vào câu trước. Không cần chạy lại riêng cho cảnh báo này."
+  }
+ ],
+ "dong_phat_hien_luot_3": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Mục 8 ghi dự trữ đến cut over 3 ngày làm việc tính cho chuỗi công việc trước các gói ghim ngày (kiểm thử chấp nhận, cut over), sau khi huy động Lê Quang Huy (D1), Bùi Anh Tuấn (D3) từ S1 theo quyết định 25/10/2026, nhóm chấp nhận phần EMV vượt dự trữ theo quyết định 18/10/2026. Không còn cách diễn đạt từ ngày kết thúc dự kiến."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "Sheet Dong_tien có ô kiểm tra H18 =IF(ABS(SUM(H10:H17)-(Chi_phi_khac!C2+Chi_phi_khac!C3))<1,\"Đạt\",\"Lệch\"), tính lại cho kết quả Đạt (100.000.000 đồng)."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "Ba vị trí nêu trong lượt 3 đã sửa: nguồn lương tham chiếu tách thành câu riêng, biện pháp phòng ngừa RR19 không còn dạng dấu hai chấm. Cùng kiểu lỗi còn ở vị trí khác, ghi thành cảnh báo mới MC01."
+  },
+  {
+   "ma": "MH04",
+   "da_dong": true,
+   "nhan_xet": "Đoạn vốn lưu động ghi trực tiếp chênh lệch lũy kế âm 551.484.214 đồng cuối S7, khớp dong_tien của chi_phi.json."
+  }
+ ],
+ "moi_truong": "Phiên làm việc riêng (agent con, lượt kiểm tra xác nhận sau vòng sửa cuối, ngoại lệ do người dùng duyệt), python-docx, openpyxl, LibreOffice tính lại công thức, mô hình Claude Opus 5.5"
+}

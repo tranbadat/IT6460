@@ -1,61 +1,162 @@
 {
  "tai_lieu": [
-  "ket_qua/03_WBS/WBS_tong_hop.docx",
-  "ket_qua/03_WBS/WBS_1_Quan_ly_du_an.docx",
-  "ket_qua/03_WBS/WBS_2_Phan_tich_va_thiet_ke_chung.docx",
-  "ket_qua/03_WBS/WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx",
-  "ket_qua/03_WBS/WBS_4_Phan_he_thanh_vien_Member_Administration.docx",
-  "ket_qua/03_WBS/WBS_5_Phan_he_dat_hang_Order.docx",
-  "ket_qua/03_WBS/WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx",
-  "ket_qua/03_WBS/WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx",
-  "ket_qua/03_WBS/WBS_8_Trien_khai_va_chuyen_giao.docx"
+  "ket_qua/03_WBS/WBS_1_Phan_he_quan_ly_san_pham.docx",
+  "ket_qua/03_WBS/WBS_2_Phan_he_quan_ly_khach_hang_thanh_vien.docx",
+  "ket_qua/03_WBS/WBS_3_Phan_he_quan_ly_don_hang_dat_hang.docx",
+  "ket_qua/03_WBS/WBS_4_Phan_he_tich_hop_he_thong.docx",
+  "ket_qua/03_WBS/WBS_5_Ban_hang_tren_san_thuong_mai_dien_tu.docx",
+  "ket_qua/03_WBS/WBS_tong_hop.docx"
  ],
- "ket_luan": "dat",
- "so_loi": 0,
- "so_canh_bao": 1,
+ "buoc": "tai_lieu_wbs",
+ "duong_co_so": "BL2 (sau yêu cầu thay đổi CR01, phụ lục 01/2027/PL-ABCW)",
+ "luot": "Xác nhận sau vòng sửa phần 1 mô phỏng (sau CR01), báo cáo lượt trước lưu tại lam_viec/tai_lieu_wbs/bao_cao_kiem_tra_lop_B_BL2_vong1.json",
+ "theo_tep": [
+  {
+   "tai_lieu": "ket_qua/03_WBS/WBS_1_Phan_he_quan_ly_san_pham.docx",
+   "phien_ban": "2.1",
+   "ket_luan": "dat",
+   "ma_phat_hien": [
+    "MH11"
+   ]
+  },
+  {
+   "tai_lieu": "ket_qua/03_WBS/WBS_2_Phan_he_quan_ly_khach_hang_thanh_vien.docx",
+   "phien_ban": "2.1",
+   "ket_luan": "dat",
+   "ma_phat_hien": []
+  },
+  {
+   "tai_lieu": "ket_qua/03_WBS/WBS_3_Phan_he_quan_ly_don_hang_dat_hang.docx",
+   "phien_ban": "2.1",
+   "ket_luan": "dat",
+   "ma_phat_hien": []
+  },
+  {
+   "tai_lieu": "ket_qua/03_WBS/WBS_4_Phan_he_tich_hop_he_thong.docx",
+   "phien_ban": "2.1",
+   "ket_luan": "dat",
+   "ma_phat_hien": []
+  },
+  {
+   "tai_lieu": "ket_qua/03_WBS/WBS_5_Ban_hang_tren_san_thuong_mai_dien_tu.docx",
+   "phien_ban": "1.1",
+   "ket_luan": "dat",
+   "ma_phat_hien": []
+  },
+  {
+   "tai_lieu": "ket_qua/03_WBS/WBS_tong_hop.docx",
+   "phien_ban": "2.2",
+   "ket_luan": "dat",
+   "ma_phat_hien": [
+    "MH10"
+   ]
+  }
+ ],
+ "ghi_chu": "Đối chiếu tự động 173 gói lá trong 5 tệp với wbs.json (tên, MD) không lệch, tổng 733 MD. Bảng phân bổ đầu việc chung có cột Theo yêu cầu thay đổi, tổng 410 + 247 + 76 = 733. Giả định quỹ S9 khớp lich.json (Liên, Nam, Bùi Anh Tuấn, Hà còn 1,5 MD). Hỗ trợ tăng cường 30/07 đến 12/08/2027 khớp ngày đóng dự án.",
  "danh_gia_tieu_chi": [
   {
    "tieu_chi": "CL01",
    "ket_qua": "dat",
-   "nhan_xet": "Đủ khối lượng theo nhóm, theo loại, căn cứ ước lượng, cấu trúc mức 1-2, truy vết RFP R01-R48, phân bổ Mẫu 01A, giả định ngoài phạm vi; 8 tệp nhóm có thông tin chung, sơ đồ cây, bảng chi tiết, kiểm tra quy tắc 100%."
+   "nhan_xet": "Đủ khối lượng, căn cứ ước lượng 4 bước, cấu trúc, truy vết RFP, truy vết CR01, phân bổ Mẫu 01A, giả định."
   },
   {
    "tieu_chi": "CL02",
    "ket_qua": "dat",
-   "nhan_xet": "Vòng 2: lời văn căn cứ nhóm 6 và 7 đã ghi đúng tong_theo_nhom (95 MD, 71 MD), nêu tổng gói WBS 93 MD và 73 MD, chênh -2/+2 MD trong dung sai, tổng dự án 657 MD. MH01, MH02 đã sửa ở cả WBS_tong_hop, WBS_6, WBS_7. Phụ thuộc 7.2.4 của nhóm 2 khớp wbs.json (gói 2.1.8)."
+   "nhan_xet": "Số liệu khớp wbs.json, uoc_luong.json, lich.json. Còn cảnh báo tên gói 5.4.4 (MH10)."
   },
   {
    "tieu_chi": "CL03",
    "ket_qua": "dat",
-   "nhan_xet": "Mọi yêu cầu RFP có gói đáp ứng hoặc lý do không cần gói; hạng mục Mẫu 01A cộng 657,00 MD."
+   "nhan_xet": "R12 có ghi chú điều chỉnh cut over 29/07/2027 theo phụ lục, 23 dòng truy vết CR01."
   },
   {
    "tieu_chi": "CL04",
    "ket_qua": "dat",
-   "nhan_xet": "Mỗi gói lá có sản phẩm đầu ra kiểm tra được (biên bản, báo cáo, chức năng đạt kiểm thử đơn vị). Mỗi mục kiểm thử phân hệ 3.4, 4.4, 5.4 và 6.2, 7.2 có gói sửa lỗi, kiểm thử lại."
+   "nhan_xet": "Sản phẩm từng gói rõ, 5.4.4 có kết quả kiểm thử lại."
   },
   {
    "tieu_chi": "CL05",
    "ket_qua": "dat",
-   "nhan_xet": "Có gói quản lý rủi ro, thay đổi đặc tả (1.1.3, 1.2.2), giả định về cam kết CK1-CK4 của Chủ đầu tư và thay đổi sau xác nhận qua quy trình yêu cầu thay đổi."
+   "nhan_xet": "Giả định nêu CK10, nguồn xử lý lỗi cuối kiểm thử chấp nhận theo quỹ S9."
   },
   {
    "tieu_chi": "CL06",
    "ket_qua": "dat",
-   "nhan_xet": "Văn phong trang trọng, tên gói dạng danh từ; ngày tài liệu 05/03/2027 khớp ngay_ky_don. Không phát hiện khẩu ngữ hay ghi chú nháp."
+   "nhan_xet": "In đậm chỉ ở mục cha WBS, không ngoặc kép, gạch dài."
   }
  ],
  "phat_hien": [
   {
-   "ma": "MH04",
+   "ma": "MH10",
    "muc_do": "canh_bao",
-   "nhom": "CL06 văn phong căn cứ ước lượng",
-   "vi_tri": "WBS_tong_hop mục 3: 'Tổng khối lượng WBS 657 người-ngày cao hơn 35,5% so với quy mô trung bình 485 người-ngày ... Tổng 657 MD cao hơn trung bình 485 MD của hai hợp đồng tương tự'",
-   "mo_ta": "Còn tồn từ vòng 1: hai câu liền lặp cùng so sánh 657 với 485. Không sai số liệu.",
+   "nhom": "CL02 Nhất quán",
+   "vi_tri": "WBS_tong_hop.docx mục 6, dòng CR01 '5.4.4 Khắc phục lỗi sau kiểm thử bán hàng trên sàn (gói mới) | 3'; WBS_5 và wbs.json: '5.4.4 Khắc phục lỗi và kiểm thử lại sau kiểm thử bán hàng trên sàn'",
+   "mo_ta": "Sau khi sửa MH08, tên gói 5.4.4 trong wbs.json và WBS_5 đã đổi nhưng bảng truy vết yêu cầu thay đổi của tổng hợp lấy tên theo du_lieu/thay_doi.json (goi_moi, chi_tiet_goi) nên cùng mã có hai tên. MD không lệch.",
    "cach_sua": "tu_dong",
-   "de_xuat": "Gộp hai câu trong du_lieu/wbs.json can_cu_uoc_luong (phần đối chiếu hợp đồng tương tự)"
+   "de_xuat": "Bảng truy vết yêu cầu thay đổi lấy tên gói theo wbs.json, hoặc cập nhật ten của 5.4.4 trong thay_doi.json goi_moi và chi_tiet_goi, xuất lại WBS_tong_hop."
+  },
+  {
+   "ma": "MH11",
+   "muc_do": "canh_bao",
+   "nhom": "CL06 Trình bày",
+   "vi_tri": "WBS_1_Phan_he_quan_ly_san_pham.docx, Thông tin chung, dòng Yêu cầu thay đổi: '1.5.2 tăng 0 MD, 1.5.3 tăng 0 MD'",
+   "mo_ta": "Tổng hợp đã ghi 1.5.2, 1.5.3 chỉ thêm phụ thuộc, không tăng khối lượng, còn WBS_1 vẫn diễn đạt bằng 'tăng 0 MD'. Không sai số liệu nhưng cách ghi khác tổng hợp.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Trong xuat_wbs.py, gói có md_tang bằng 0 ghi 'thêm phụ thuộc, không tăng khối lượng' như mục 6 của tổng hợp."
   }
  ],
- "vong": 2,
- "ghi_chu_vong_truoc": "MH01, MH02 đã sửa. MH03 đóng: wbs.json gói 2.1.8 (Cập nhật đặc tả theo phiên bản bàn giao) phụ thuộc 7.2.4, phụ thuộc đầu vào của nhóm 2 là hợp lệ; có thể nêu tên gói 2.1.8 cho dễ hiểu nhưng không bắt buộc. MH04 giữ cảnh báo."
+ "dong_phat_hien_truoc": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Bảng có cột Theo yêu cầu thay đổi (nhóm 2: 1, nhóm 5: 75), tổng 733 bằng tổng các dòng. Căn cứ nhóm 2 nêu 1 MD tăng của 2.4.11."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "Bước 4 ghi 20 gói mới, 1 gói tăng (2.4.11), 2 gói chỉ thêm phụ thuộc. Mục 6 ghi nhãn thêm phụ thuộc cho 1.5.2, 1.5.3. Cách ghi 'tăng 0 MD' ở WBS_1 ghi thành cảnh báo MH11."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "Giả định ghi khoảng kiểm thử chấp nhận thuộc S9, người còn quỹ khớp lich.json, theo quyết định (e) ngày 25/10/2026."
+  },
+  {
+   "ma": "MH04",
+   "da_dong": true,
+   "nhan_xet": "Bìa cả 6 tệp ghi đường cơ sở BL2."
+  },
+  {
+   "ma": "MH05",
+   "da_dong": true,
+   "nhan_xet": "Giải trình nêu 76 người-ngày của CR01 không thuộc phạm vi so sánh với hợp đồng tương tự."
+  },
+  {
+   "ma": "MH06",
+   "da_dong": true,
+   "nhan_xet": "Sau ma trận có câu R12 điều chỉnh thành 29/07/2027 theo 01/2027/PL-ABCW."
+  },
+  {
+   "ma": "MH07",
+   "da_dong": true,
+   "nhan_xet": "Căn cứ nhóm 5 nêu gói tích hợp sàn gán hạng mục 9 là hạng mục gần nhất, thuộc phụ lục."
+  },
+  {
+   "ma": "MH08",
+   "da_dong": true,
+   "nhan_xet": "5.4.4 đổi tên và sản phẩm gồm kết quả kiểm thử lại. Tên ở bảng truy vết CR01 chưa đồng bộ, ghi thành MH10."
+  },
+  {
+   "ma": "MH09",
+   "da_dong": true,
+   "nhan_xet": "Giả định nêu CK10 hạn 10/06/2027, khớp lich.json cam_ket_chu_dau_tu."
+  }
+ ],
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "prompt": ".claude/skills/qlda-loi/prompts/vai_kiem_tra.md",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên agent con riêng (kiểm tra lớp B lượt xác nhận sau vòng sửa phần 1 mô phỏng sau CR01), Claude Code, mô hình claude-opus-5-5, python-docx, openpyxl, LibreOffice tính lại công thức",
+ "so_loi": 0,
+ "so_canh_bao": 2,
+ "ket_luan": "dat"
 }

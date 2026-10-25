@@ -1,0 +1,20 @@
+{
+ "TOM_TAT": [
+  "Kết thúc kỳ {td#ky} ngày {td#ngay_bao_cao|ngay}, dự án ở trạng thái chung {td#trang_thai_chung}. SPI đạt {td#spi_hien_thi} ở mức {td#trang_thai_spi}, CPI theo công đạt {td#cpi_hien_thi} ở mức {td#trang_thai_cpi}, CPI theo chi phí thực đạt {td#cpi_thuc_hien_thi} ở mức {td#trang_thai_cpi_thuc}. Giá trị thu được lũy kế {td#EV_md|md2} MD so với kế hoạch {td#PV_md|md2} MD, công thực tế {td#AC_md|md2} MD, khối lượng hoàn thành đạt {td#ty_le_hoan_thanh|pt1} toàn dự án. Các gói chậm của kỳ trước được làm bù bằng quỹ sẵn sàng, phần chậm còn lại ở gói găng kiểm thử tích hợp {td#goi_cham[ma=4.4.3].ma} và một số gói kiểm thử, sửa lỗi phân hệ do sửa lỗi giữ tồn kho mức cao phát hiện trong kiểm thử luồng đặt hàng đầu cuối.",
+  "Ngày hoàn thành dự báo {td#du_bao_hoan_thanh|ngay}, không muộn hơn ngày cut over {td#cut_over|ngay} theo phụ lục hợp đồng, TCPI {td#tcpi|so2}. Tỷ lệ sử dụng quỹ huy động đạt {td#ty_le_su_dung_quy|pt1}, còn {td#md_san_sang|md2} MD sẵn sàng không ghi công trên {td#md_huy_dong|md2} MD huy động. Chi phí khác đã chi lũy kế {td#AC_thuc_khac|tien} đồng, EAC theo chi phí thực {td#EAC_thuc|trieu} triệu đồng.",
+  "Yêu cầu thay đổi {td#thay_doi[ma=CR01].ma} {td#thay_doi[ma=CR01].tieu_de} ở trạng thái {td#thay_doi[ma=CR01].trang_thai}, phụ lục hợp đồng ký ngày 27/05/2027, phần thay đổi tăng {td#thay_doi[ma=CR01].md_tang|md2} MD, giá điều chỉnh {td#thay_doi[ma=CR01].gia_de_nghi|tien} đồng. Lịch, dự toán và các kế hoạch được lập lại thành đường cơ sở BL2, báo cáo này đo theo đường cơ sở đó."
+ ],
+ "KET_QUA": [
+  "Trong kỳ hoàn thành các dịch vụ và giao diện danh mục, chi tiết sản phẩm, bộ nhớ đệm trang danh mục 1.3.8, kiểm thử tìm kiếm 1.4.2 và sửa lỗi 1.4.4, dịch vụ và giao diện trang thành viên 2.3.4, 2.3.5, 2.3.7, kiểm thử đăng ký, đăng nhập 2.4.2, kế hoạch kiểm thử hệ thống 2.4.8, kiểm thử giỏ hàng 3.4.2 và luồng đặt hàng đầu cuối 3.4.6. Trên chuỗi tích hợp, chuyển đơn hàng sang Main System 4.3.7, nhận trạng thái vận chuyển 4.3.8, đồng bộ danh mục 4.3.5, công cụ chuyển đổi dữ liệu 4.3.10 và môi trường vận hành 4.5.1 hoàn thành. Phần bán hàng trên sàn bắt đầu bằng khảo sát quy trình 5.2.1.",
+  "Bản phát hành R5 cuối sprint trình diễn trang chủ, danh mục và chi tiết sản phẩm, trang thành viên và sổ địa chỉ, luồng đặt hàng đầu cuối với dữ liệu giả lập Main System. Kiểm thử tích hợp với Main System {td#goi_cham[ma=4.4.3].ma} đạt {td#goi_cham[ma=4.4.3].thuc_te|pt1}, tiếp tục đầu kỳ tới. Trong kỳ không có mốc đến hạn."
+ ],
+ "VAN_DE": [
+  "Sổ vấn đề có {td#van_de_tong_hop.tong|nguyen} vấn đề, đã đóng {td#van_de_tong_hop.so_dong|nguyen}, còn mở {td#van_de_tong_hop.so_mo|nguyen}.",
+  "Vấn đề {td#van_de[ma=VD08].ma} của yêu cầu thay đổi {td#van_de[ma=VD08].ma_cr} đã đóng khi phụ lục hợp đồng được ký, vấn đề {td#van_de[ma=VD09].ma} đóng khi các gói chậm của kỳ trước hoàn thành.",
+  "Vấn đề {td#van_de[ma=VD10].ma} ưu tiên cao ghi nhận các gói chậm cuối kỳ gồm gói găng {td#goi_cham[ma=4.4.3].ma}, hành động ưu tiên kiểm thử tích hợp đầu kỳ tới có hạn {td#hanh_dong[ma_van_de=VD10].han|ngay}. Rủi ro {td#rui_ro[ma=RR02].ma} về tài liệu và môi trường Main System đã xảy ra từ kỳ S3, tiếp tục theo dõi theo kế hoạch ứng phó đến khi kiểm thử tích hợp đạt, quản trị dự án ghi nhận tín hiệu này vào sổ vấn đề cùng vấn đề {td#van_de[ma=VD10].ma}."
+ ],
+ "KY_TOI": [
+  "Mục tiêu {lich#sprint[ma=S6].ma} theo master schedule hiện hành: {lich#sprint[ma=S6].muc_tieu}. Kế hoạch kỳ tới là {lich#sprint[ma=S6].md_ke_hoach|md2} MD trên quỹ {lich#sprint[ma=S6].quy|md2} MD.",
+  "Gói ưu tiên là gói găng kiểm thử tích hợp với Main System 4.4.3 và sửa lỗi tích hợp, các gói kiểm thử phân hệ chậm nêu trong vấn đề {td#van_de[ma=VD10].ma}. Phần bán hàng trên sàn thực hiện đặc tả và thiết kế tích hợp 5.2.2, 5.2.3. Nhóm đề nghị Chủ đầu tư cấp tài khoản người bán và môi trường thử của sàn theo cam kết CK10 và bố trí người xác nhận đặc tả phần sàn 5.2.4."
+ ]
+}

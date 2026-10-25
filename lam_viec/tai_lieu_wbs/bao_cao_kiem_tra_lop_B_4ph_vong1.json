@@ -1,0 +1,185 @@
+{
+ "tai_lieu": [
+  "ket_qua/03_WBS/WBS_1_Phan_he_quan_ly_san_pham.docx",
+  "ket_qua/03_WBS/WBS_2_Phan_he_quan_ly_khach_hang_thanh_vien.docx",
+  "ket_qua/03_WBS/WBS_3_Phan_he_quan_ly_don_hang_dat_hang.docx",
+  "ket_qua/03_WBS/WBS_4_Phan_he_tich_hop_he_thong.docx",
+  "ket_qua/03_WBS/WBS_tong_hop.docx"
+ ],
+ "buoc": "tai_lieu_wbs",
+ "phien_ban": {
+  "WBS_1_Phan_he_quan_ly_san_pham": "0.4",
+  "WBS_2_Phan_he_quan_ly_khach_hang_thanh_vien": "0.4",
+  "WBS_3_Phan_he_quan_ly_don_hang_dat_hang": "0.4",
+  "WBS_4_Phan_he_tich_hop_he_thong": "0.3",
+  "WBS_tong_hop": "0.8"
+ },
+ "thoi_gian": "2026-10-24",
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 9,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi tệp nhóm có thông tin chung, sơ đồ cây, bảng chi tiết, kiểm tra quy tắc 100%. Tệp tổng hợp có khối lượng theo nhóm và loại công việc, căn cứ ước lượng, cấu trúc mức 1-2, truy vết RFP, phân bổ Mẫu 01A, giả định ngoài phạm vi."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Tên, MD, loại, sản phẩm, sprint của 153 gói lá và mục cha khớp du_lieu/wbs.json và du_lieu/lich.json; tổng 657 MD, tỷ trọng, chênh lệch, khoảng sai số 558,45-854,10, phân bổ đầu việc chung, đối chiếu hợp đồng tương tự đều đúng; ngày 05/03/2027 khớp ngày ký đơn. Còn mâu thuẫn trong bảng chi tiết WBS_2 (2.5.3 trước kiểm thử chấp nhận, MH01) và câu ngoài thời gian dự án so với giai đoạn Kết thúc (MH06)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mọi yêu cầu RFP có gói hoặc lý do không cần gói; 13 hạng mục Mẫu 01A cộng 657 MD. Phần quản lý dự án phân bổ của nhóm 4 chưa truy vết được sang mục 4.1 (MH04, cảnh báo)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi gói lá có sản phẩm kiểm tra được, cỡ gói 2-10 MD. Sản phẩm của 1.4.11 và 2.4.12 trùng nhau (MH02)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có gói quản lý rủi ro, vấn đề, yêu cầu thay đổi trong từng phân hệ, gói xác nhận đặc tả, cam kết của Chủ đầu tư nêu trong giả định."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman 13, bảng 12, A4, dòng tiêu đề lặp, mục cha in đậm, không gạch dài, ngoặc kép, chấm phẩy, giữ chỗ. Một câu cụt (MH08), chữ hoa giữa cụm (MH09)."
+  },
+  {
+   "tieu_chi": "Tên gói dạng danh từ, gắn sản phẩm kiểm tra được",
+   "ket_qua": "dat",
+   "nhan_xet": "Đạt, trừ sản phẩm trùng của 1.4.11 và 2.4.12 (MH02)."
+  },
+  {
+   "tieu_chi": "Mức 2 của phân hệ theo vòng đời",
+   "ket_qua": "dat",
+   "nhan_xet": "Bốn phân hệ đều có 5 mục: quản lý dự án phần phân bổ, phân tích và thiết kế, xây dựng, kiểm thử, triển khai và chuyển giao."
+  },
+  {
+   "tieu_chi": "Không có gói thuộc chức năng quản trị nội bộ",
+   "ket_qua": "dat",
+   "nhan_xet": "Không có gói quản trị. Tên nhóm quản lý sản phẩm dễ gây hiểu nhầm (MH07)."
+  },
+  {
+   "tieu_chi": "Gói tích hợp tách riêng cho mỗi hệ thống bên ngoài",
+   "ket_qua": "dat",
+   "nhan_xet": "Main System tách theo luồng 4.3.5-4.3.9, máy chủ thư 4.3.4 riêng."
+  },
+  {
+   "tieu_chi": "Sơ đồ cây và bảng chi tiết khớp nhau",
+   "ket_qua": "dat",
+   "nhan_xet": "Mã và tên ở sơ đồ cây khớp bảng chi tiết và wbs.json ở cả bốn tệp."
+  },
+  {
+   "tieu_chi": "Mục Căn cứ ước lượng của tệp tổng hợp",
+   "ket_qua": "dat",
+   "nhan_xet": "Có phương pháp, loại ước lượng, các bước, bảng theo nhóm, bảng phân bổ đầu việc chung, căn cứ từng nhóm, đối chiếu hợp đồng tương tự và giải trình lệch 35,5%, khoảng sai số; số liệu khớp can_cu_uoc_luong. Bước 2 lệch 0,1 MD giữa thành phần và tổng (MH05)."
+  },
+  {
+   "tieu_chi": "Mỗi mục kiểm thử phân hệ có gói sửa lỗi, kiểm thử lại",
+   "ket_qua": "dat",
+   "nhan_xet": "1.4.4, 1.4.6; 2.4.4, 2.4.6; 3.4.5, 3.4.7, 3.4.8; 4.4.4."
+  },
+  {
+   "tieu_chi": "Ngày tài liệu là ngày ký đơn dự thầu hiện hành",
+   "ket_qua": "dat",
+   "nhan_xet": "Cả năm tệp đề ngày 05/03/2027, khớp ngay_ky_don."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan_lich",
+   "vi_tri": "WBS_2, mục 3 Bảng chi tiết, dòng 2.5.3 Cập nhật tài liệu hướng dẫn sử dụng theo kết quả kiểm thử chấp nhận | S6, so với dòng 2.4.12 Tổ chức và hỗ trợ kiểm thử chấp nhận ... | S7",
+   "mo_ta": "Gói 2.5.3 cập nhật tài liệu theo kết quả kiểm thử chấp nhận nhưng được xếp ở S6 (15/06-17/06/2027), trước khoảng kiểm thử chấp nhận 18/06-29/06/2027 (2.4.12, 1.4.11, 3.4.13 ở S7). Sản phẩm đầu ra không thể có trong thời gian đã xếp. Nguyên nhân ở dữ liệu: 2.5.3 chỉ phụ thuộc 2.5.1 và 4.4.5, thiếu phụ thuộc vào gói kiểm thử chấp nhận.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu WBS: thêm 2.4.12 (hoặc cả 1.4.11, 2.4.12, 3.4.13) vào phu_thuoc của 2.5.3 trong lam_viec/wbs/wbs_nhap.json, chạy lại kiem_tra_wbs.py, lap_lich.py, rồi xuat_wbs.py. Nếu nhóm muốn giữ S6 thì đổi tên gói thành cập nhật theo kết quả kiểm thử hệ thống."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "san_pham",
+   "vi_tri": "WBS_1 dòng 1.4.11 và WBS_2 dòng 2.4.12, cột Sản phẩm đầu ra: Biên bản kiểm thử chấp nhận luồng tìm kiếm và thành viên",
+   "mo_ta": "Hai gói kiểm thử chấp nhận của hai phân hệ khác nhau dùng chung một sản phẩm đầu ra. Gói 1.4.11 chỉ gồm luồng tìm kiếm và hiển thị sản phẩm nhưng sản phẩm ghi cả luồng thành viên, gói 2.4.12 ghi cả luồng tìm kiếm. Sản phẩm không gắn riêng từng gói nên khó dùng làm điều kiện hoàn thành từng gói (3.4.13 đã ghi riêng luồng đặt hàng).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu WBS: san_pham của 1.4.11 sửa thành Biên bản kiểm thử chấp nhận luồng tìm kiếm và hiển thị sản phẩm, của 2.4.12 thành Biên bản kiểm thử chấp nhận luồng đăng ký, đăng nhập và thành viên."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "trinh_bay_giai_doan",
+   "vi_tri": "Mục 3 Bảng chi tiết, dòng mục cha 1.1, 2.1, 3.1, 4.1, cột Giai đoạn, sprint: Suốt dự án",
+   "mo_ta": "Mục cha quản lý dự án ghi Suốt dự án trong khi gói con thuộc nhiều giai đoạn: 1.1 có 1.1.1 Khởi động và 1.1.5 Kết thúc (mục kéo đến 07/07/2027, sau cut over), 2.1 có 2.1.1 Khởi động, 3.1 có 3.1.1, 3.1.2 Khởi động. Dòng mục cha không phản ánh đúng phạm vi giai đoạn của gói con.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Script (loi.phan_giai_doan hoặc xuat_wbs.py): mục cha quản lý dự án ghi dải giai đoạn của gói con, ví dụ Khởi động - Kết thúc, hoặc liệt kê Khởi động, Suốt dự án, Kết thúc như dòng Thời gian thực hiện ở mục 1."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "truy_vet_uoc_luong",
+   "vi_tri": "WBS_4 mục 1 Căn cứ ước lượng: quản lý dự án 13,90 ... Mục mức 2 gồm 4.1 quản lý dự án 9 MD; WBS_tong_hop mục 3 bảng phân bổ đầu việc chung, cột Quản lý dự án",
+   "mo_ta": "Phần quản lý dự án phân bổ là 60 MD (13,90, 13,32, 18,88, 13,90) nhưng các mục Quản lý dự án, phần phân bổ cộng lại 52 MD (14, 13,50, 15,50, 9). Nhóm 3 có giải thích rà soát mã nguồn đặt ở 3.3.11, còn nhóm 4 lệch 4,90 MD (13,90 so với 9) không có lời giải thích phần quản lý dự án được đưa vào mục nào. Người đọc không truy vết được phần phân bổ sang mục mức 2.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Lời văn can_cu_uoc_luong.cach_phan_ra của nhóm 4 (và câu dẫn bảng phân bổ trong tệp tổng hợp): nêu phần quản lý dự án của nhóm 4 đã được gán sang gói nào (ví dụ giám sát, rà soát giấy phép) hoặc nhóm điều chỉnh MD mục 4.1 nếu ý định là khớp phần phân bổ (can_nguoi_dung)."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "so_lieu_dau_vao",
+   "vi_tri": "WBS_tong_hop mục 3, bảng Các bước ước lượng, dòng 2: Sau hiệu chỉnh gồm giải pháp 119,6 MD, phát triển 285,4 MD, kiểm thử 145,2 MD | 550,30",
+   "mo_ta": "Ba thành phần cộng 550,2 MD nhưng cột khối lượng ghi 550,30 MD. Chênh 0,1 MD xuất phát từ tài liệu của nhóm (đã ghi nhận là mâu thuẫn M06 trong dau_vao/uoc_luong.json) nhưng tài liệu không giải thích, người đọc thấy số không khớp ngay trong một dòng.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Dữ liệu uoc_luong.json: nhóm xác nhận số đúng (550,2 hoặc 550,3) và sửa thành phần hoặc tổng bước 2, hoặc bổ sung chú thích làm tròn vào noi_dung bước 2."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan_lich",
+   "vi_tri": "WBS_tong_hop mục 7: Bảo hành 12 tháng sau nghiệm thu và hỗ trợ tăng cường từ 02/07/2027 đến 15/07/2027 thực hiện ngoài thời gian dự án",
+   "mo_ta": "Lịch đặt giai đoạn Kết thúc từ 02/07 đến 15/07/2027 và ngày đóng dự án 15/07/2027 (mốc M8 hạn 15/07). Khoảng hỗ trợ tăng cường trùng đúng giai đoạn Kết thúc nên câu ngoài thời gian dự án dễ hiểu là mâu thuẫn với lịch. Chưa chắc ý định là ngoài phạm vi WBS hay ngoài thời gian thực hiện đến cut over.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Lời văn gia_dinh_ngoai_pham_vi: đổi thành thực hiện sau cut over, song song giai đoạn Kết thúc, ngoài phạm vi khối lượng WBS, chi phí nằm trong khoản B."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "ten_goi",
+   "vi_tri": "Tên nhóm 1 Phân hệ quản lý sản phẩm và các mục 1.2-1.5; trong cùng tệp gói 1.4.1, 1.4.5, 1.4.7, 1.4.11, 1.4.12 gọi là phân hệ tìm kiếm và hiển thị sản phẩm; WBS_2 gói 2.4.x gọi phân hệ thành viên; WBS_3 gói 3.4.x gọi phân hệ đặt hàng",
+   "mo_ta": "Phạm vi nhóm 1 là tìm kiếm và hiển thị sản phẩm (Product Search). Quản trị danh mục sản phẩm, giá, tồn kho nằm trong Main System và chức năng quản trị nội bộ bị RFP loại (R45, giả định ngoài phạm vi). Tên quản lý sản phẩm trái quy tắc dùng hiển thị, xử lý cho dữ liệu lấy từ hệ thống khác và dễ bị hiểu là có chức năng quản trị. Cùng một phân hệ được gọi bằng hai tên trong một tài liệu. Tên theo RFP chưa kèm tiếng Anh (Product Search, Member Administration, Order).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Dữ liệu uoc_luong.json tong_theo_nhom.ten và tên mục trong wbs_nhap.json (tham số do nhóm quyết định): ví dụ Phân hệ tìm kiếm và hiển thị sản phẩm (Product Search), Phân hệ thành viên (Member Administration), Phân hệ đặt hàng (Order); thống nhất tên ở mọi gói."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "WBS_tong_hop mục 3: ... tổng đầu việc chung 247 người-ngày. Theo tỷ lệ khối lượng riêng của từng phân hệ (sản phẩm 95, khách hàng 91, đơn hàng 129, tích hợp 95 MD).",
+   "mo_ta": "Câu thứ hai là câu cụt, không có chủ ngữ và vị ngữ.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Mẫu câu trong xuat_wbs.py: ghép thành ... tổng đầu việc chung 247 người-ngày, phân bổ theo tỷ lệ khối lượng riêng của từng phân hệ (...)."
+  },
+  {
+   "ma": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Sản phẩm đầu ra của 1.1.4, 2.1.4, 3.1.5, 4.1.3: Sổ phiên bản tài liệu và hồ sơ dự án, Biên bản nghiệm thu và hồ sơ thanh toán từng đợt, ...",
+   "mo_ta": "Chữ Biên viết hoa giữa cụm sau dấu phẩy.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu WBS san_pham: viết thường biên bản nghiệm thu."
+  },
+  {
+   "ma": "MH10",
+   "muc_do": "canh_bao",
+   "nhom": "phu_thuoc",
+   "vi_tri": "Cột Giai đoạn, sprint của 1.2.7 (S2) so với 1.2.5 (S3); 2.2.7 so với 2.2.5; 4.4.1 (S6) so với 4.4.3 (S4-S5); 4.3.4 (S5) so với 2.3.1, 2.3.3, 3.3.5 (S3-S4)",
+   "mo_ta": "Thứ tự gói trong bảng chi tiết cho thấy phụ thuộc WBS chưa đủ: thiết kế chi tiết trước đặc tả use case cùng chức năng, dịch vụ giả lập Main System sau kiểm thử tích hợp, dịch vụ gửi thư điện tử sau các dịch vụ và kiểm thử cần gửi thư. Chi tiết và đề xuất ở báo cáo lớp B bước lich (MH04 đến MH06).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu WBS phu_thuoc (xem báo cáo lớp B bước lich), sau đó lập lại lịch và xuất lại tài liệu WBS."
+  }
+ ]
+}

@@ -1030,70 +1030,98 @@
      "Trần Bá Đạt",
      "03/2024",
      "11/2024",
-     "quản trị dự án Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng cho Công ty CP Thời trang Hoàng Gia (1,15 tỷ đồng, khoảng 550 MD, 10 nhân sự)"
+     "Quản trị dự án Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng cho Công ty CP Thời trang Hoàng Gia (1,15 tỷ đồng, khoảng 550 MD, 10 nhân sự)"
     ],
     [
      "1",
      "Trần Bá Đạt",
      "01/2025",
      "07/2025",
-     "quản trị dự án Website bán hàng trực tuyến và tích hợp ERP cho Công ty TNHH Nội thất An Phát (860 triệu đồng, sprint 2 tuần)"
+     "Quản trị dự án Website bán hàng trực tuyến và tích hợp ERP cho Công ty TNHH Nội thất An Phát (860 triệu đồng, sprint 2 tuần)"
     ],
     [
      "1",
      "Trần Bá Đạt",
      "09/2025",
      "12/2026",
-     "quản lý dự án, kiến trúc sư nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ"
+     "Quản lý dự án, kiến trúc sư nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ"
     ],
     [
      "2",
      "Phạm Tuấn Anh",
      "03/2024",
      "11/2024",
-     "kỹ sư backend dự án Hoàng Gia (API khách hàng, đơn hàng; thiết kế cơ sở dữ liệu; unit test)"
+     "Kỹ sư backend dự án Hoàng Gia (API khách hàng, đơn hàng; thiết kế cơ sở dữ liệu; unit test)"
     ],
     [
      "2",
      "Phạm Tuấn Anh",
      "01/2025",
      "07/2025",
-     "trưởng nhóm backend dự án An Phát (đồng bộ tồn kho với ERP, xác thực và phân quyền)"
+     "Trưởng nhóm backend dự án An Phát (đồng bộ tồn kho với ERP, xác thực và phân quyền)"
+    ],
+    [
+     "2",
+     "Phạm Tuấn Anh",
+     "09/2025",
+     "12/2026",
+     "Kỹ sư backend dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (lập trình API giỏ hàng, thanh toán và đơn hàng của ứng dụng web; tích hợp hệ thống quản lý bán hàng)"
+    ],
+    [
+     "2",
+     "Phạm Tuấn Anh",
+     "01/2027",
+     "nay",
+     "Kỹ sư backend bảo trì cổng bán hàng sau nâng cấp (khắc phục lỗi, tối ưu truy vấn)"
     ],
     [
      "3",
      "Ninh Đức Toàn",
      "03/2024",
      "11/2024",
-     "kỹ sư backend dự án Hoàng Gia (tìm kiếm và bộ lọc sản phẩm, chỉ mục tìm kiếm)"
+     "Kỹ sư backend dự án Hoàng Gia (tìm kiếm và bộ lọc sản phẩm, chỉ mục tìm kiếm)"
     ],
     [
      "3",
      "Ninh Đức Toàn",
      "01/2025",
      "12/2026",
-     "kỹ sư DevOps cho các dự án thương mại điện tử (pipeline CI/CD, môi trường staging và production, giám sát, sao lưu và khôi phục; tham gia cut over dự án An Phát)"
+     "Kỹ sư backend kiêm DevOps cho các dự án thương mại điện tử (lập trình API ứng dụng web và dịch vụ tìm kiếm sản phẩm của dự án An Phát và dự án nâng cấp cổng bán hàng, cổng thanh toán; pipeline CI/CD, môi trường staging và production, giám sát, sao lưu và khôi phục; tham gia cut over dự án An Phát)"
     ],
     [
      "4",
      "Vũ Đức Minh",
      "03/2024",
      "11/2024",
-     "kỹ sư frontend dự án Hoàng Gia (giao diện danh mục, giỏ hàng, đặt hàng trên máy tính và điện thoại)"
+     "Kỹ sư frontend dự án Hoàng Gia (giao diện danh mục, giỏ hàng, đặt hàng trên máy tính và điện thoại)"
     ],
     [
      "4",
      "Vũ Đức Minh",
      "01/2025",
      "07/2025",
-     "thiết kế UX/UI và lập trình giao diện dự án An Phát (prototype, quy chuẩn hiển thị, tối ưu tải trang)"
+     "Thiết kế UX/UI và lập trình giao diện dự án An Phát (prototype, quy chuẩn hiển thị, tối ưu tải trang)"
+    ],
+    [
+     "4",
+     "Vũ Đức Minh",
+     "09/2025",
+     "12/2026",
+     "Kỹ sư frontend dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (lập trình giao diện web trang sản phẩm, giỏ hàng, thanh toán tương thích thiết bị di động)"
+    ],
+    [
+     "4",
+     "Vũ Đức Minh",
+     "01/2027",
+     "nay",
+     "Kỹ sư frontend bảo trì cổng bán hàng sau nâng cấp (khắc phục lỗi giao diện, cải thiện khả năng sử dụng)"
     ],
     [
      "5",
      "Nguyễn Thị Phương Liên",
      "03/2024",
      "11/2024",
-     "chuyên viên phân tích nghiệp vụ dự án Hoàng Gia (khảo sát, SRS, use case, quy trình bán hàng trực tuyến)"
+     "Chuyên viên phân tích nghiệp vụ dự án Hoàng Gia (khảo sát, SRS, use case, quy trình bán hàng trực tuyến)"
     ],
     [
      "5",
@@ -1101,6 +1129,20 @@
      "01/2025",
      "07/2025",
      "BA kiêm trưởng nhóm kiểm thử dự án An Phát (test case, quản lý lỗi, tổ chức UAT với khách hàng)"
+    ],
+    [
+     "5",
+     "Nguyễn Thị Phương Liên",
+     "09/2025",
+     "12/2026",
+     "Phân tích nghiệp vụ kiêm kiểm thử dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (đặc tả use case, kịch bản kiểm thử, tổ chức kiểm thử chấp nhận)"
+    ],
+    [
+     "5",
+     "Nguyễn Thị Phương Liên",
+     "01/2027",
+     "nay",
+     "Kỹ sư kiểm thử bảo trì cổng bán hàng sau nâng cấp (kiểm thử hồi quy, quản lý lỗi)"
     ]
    ],
    "widths": [
@@ -1138,7 +1180,7 @@
      "Tối thiểu 03 năm quản lý dự án phần mềm hoặc tối thiểu 02 hợp đồng tương tự",
      "Trần Bá Đạt",
      "3",
-     "Từ 03/2024 đến ngày đóng thầu 08/03/2027",
+     "Từ 03/2024 đến ngày đóng thầu 08/03/2027. Đã quản trị 2 hợp đồng tương tự kê khai tại Mẫu số 05",
      "Đáp ứng"
     ],
     [
@@ -1346,7 +1388,7 @@
      [
       "Sao lưu toàn phần hằng ngày, sao lưu nhật ký giao dịch theo giờ"
      ],
-     "Chạy thử khôi phục trước nghiệm thu"
+     "Diễn tập sao lưu và khôi phục trên môi trường vận hành trước nghiệm thu (gói 4.4.8)"
     ]
    ],
    "widths": [
@@ -1359,6 +1401,132 @@
    "center_cols": [
     0
    ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Cấu hình tối thiểu của hạ tầng vận hành (máy chủ, đường truyền, phần mềm nền) do nhà thầu đề xuất theo mục 3.5 Chương V như bảng sau, hai bên thống nhất khi xác nhận đặc tả yêu cầu.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Thành phần",
+     "Số lượng",
+     "Cấu hình tối thiểu",
+     "Ghi chú"
+    ],
+    [
+     "Máy chủ ứng dụng",
+     "2",
+     "8 vCPU, 16 GB RAM, 200 GB SSD mỗi máy, hệ điều hành Ubuntu Server 22.04 LTS",
+     "Hai nút sau cân bằng tải, mở rộng ngang khi tải tăng (KT01, KT03)"
+    ],
+    [
+     "Cân bằng tải",
+     "1 cặp chế độ dự phòng",
+     "Hỗ trợ HTTPS (TLS 1.2 trở lên), kiểm tra sức khỏe nút ứng dụng",
+     "Có thể dùng thiết bị hoặc dịch vụ cân bằng tải của hạ tầng Chủ đầu tư"
+    ],
+    [
+     "Máy chủ cơ sở dữ liệu",
+     "2",
+     "8 vCPU, 32 GB RAM, 500 GB SSD mỗi máy, PostgreSQL 16",
+     "Chính và dự phòng, nhân bản liên tục (KT01, KT05)"
+    ],
+    [
+     "Máy chủ chỉ mục tìm kiếm và bộ nhớ đệm",
+     "1",
+     "4 vCPU, 16 GB RAM, 100 GB SSD, OpenSearch 2 và Redis 7",
+     "Bảo đảm thời gian phản hồi tìm kiếm, trang danh mục (KT02)"
+    ],
+    [
+     "Lưu trữ sao lưu",
+     "1",
+     "Dung lượng 2 TB, tách biệt máy chủ cơ sở dữ liệu, lưu bản sao lưu tối thiểu 30 ngày",
+     "Sao lưu toàn phần hằng ngày, nhật ký giao dịch theo giờ (KT05)"
+    ],
+    [
+     "Đường truyền internet",
+     "2 đường",
+     "Tối thiểu 100 Mbps mỗi đường, hai nhà cung cấp, địa chỉ IP tĩnh, chứng thư số SSL cho tên miền",
+     "Đường thứ hai dự phòng khi đường chính sự cố (KT01)"
+    ],
+    [
+     "Kết nối với Main System",
+     "1",
+     "Mạng nội bộ hoặc kênh VPN riêng, tối thiểu 10 Mbps",
+     "Đồng bộ sản phẩm, tồn kho, chuyển đơn hàng và trạng thái vận chuyển"
+    ],
+    [
+     "Phần mềm nền",
+     "Theo số máy chủ",
+     "Ubuntu Server 22.04 LTS, Nginx, OpenJDK 21, PostgreSQL 16, OpenSearch 2, Redis 7, Docker, Prometheus và Grafana (mã nguồn mở, không phát sinh bản quyền)",
+     "Nhà thầu cài đặt, cấu hình tại gói 4.5.1, 4.5.2"
+    ]
+   ],
+   "widths": [
+    2000,
+    1300,
+    3300,
+    2700
+   ],
+   "center_cols": [
+    1
+   ],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
+   "text": "Công nghệ đề xuất cho từng tầng của hệ thống và lý do lựa chọn như bảng sau.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Tầng",
+     "Công nghệ",
+     "Lý do lựa chọn"
+    ],
+    [
+     "Giao diện web",
+     "React 18, TypeScript, thiết kế đáp ứng (responsive)",
+     "Thư viện thành phần dùng lại được, hiển thị tốt trên máy tính và điện thoại, nhóm đã dùng trong hai hợp đồng tương tự"
+    ],
+    [
+     "Dịch vụ phía máy chủ",
+     "Java 21, Spring Boot 3, API REST",
+     "Ổn định, hỗ trợ bảo mật, phân quyền và xử lý bất đồng bộ, mở rộng ngang theo nút ứng dụng"
+    ],
+    [
+     "Cơ sở dữ liệu bán hàng (Selling DB)",
+     "PostgreSQL 16",
+     "Hỗ trợ nhân bản chính và dự phòng, sao lưu nhật ký giao dịch theo giờ, không phát sinh bản quyền"
+    ],
+    [
+     "Tìm kiếm và bộ nhớ đệm",
+     "OpenSearch 2, Redis 7",
+     "Chỉ mục tìm kiếm riêng và bộ nhớ đệm trang, phiên làm việc để đạt thời gian phản hồi không quá 2 giây"
+    ],
+    [
+     "Tích hợp với Main System",
+     "Dịch vụ tích hợp theo API hoặc tệp theo đặc tả giao diện, hàng đợi gửi lại",
+     "Không phụ thuộc nền tảng Main System chưa được mô tả, có cơ chế gửi lại khi lỗi"
+    ],
+    [
+     "Triển khai và giám sát",
+     "Docker, quy trình tích hợp và triển khai tự động, Prometheus và Grafana",
+     "Triển khai cuốn chiếu không dừng dịch vụ, cảnh báo tự động"
+    ]
+   ],
+   "widths": [
+    2200,
+    2900,
+    4200
+   ],
+   "center_cols": [],
    "right_cols": [],
    "dong_dam": [],
    "t": "table"
@@ -1462,56 +1630,32 @@
     ],
     [
      "1",
-     "Quản lý dự án",
-     "60",
-     "9,1%"
+     "Phân hệ quản lý sản phẩm",
+     "151,00",
+     "23,0%"
     ],
     [
      "2",
-     "Phân tích và thiết kế chung",
-     "66",
-     "10,0%"
+     "Phân hệ quản lý khách hàng (thành viên)",
+     "146,50",
+     "22,3%"
     ],
     [
      "3",
-     "Phân hệ tìm kiếm và hiển thị sản phẩm (Product Search)",
-     "95",
-     "14,5%"
+     "Phân hệ quản lý đơn hàng (đặt hàng)",
+     "207,50",
+     "31,6%"
     ],
     [
      "4",
-     "Phân hệ thành viên (Member Administration)",
-     "91",
-     "13,9%"
-    ],
-    [
-     "5",
-     "Phân hệ đặt hàng (Order)",
-     "129",
-     "19,6%"
-    ],
-    [
-     "6",
-     "Cơ sở dữ liệu bán hàng và tích hợp hệ thống",
-     "93",
-     "14,2%"
-    ],
-    [
-     "7",
-     "Kiểm thử hệ thống và kiểm thử vận hành",
-     "73",
-     "11,1%"
-    ],
-    [
-     "8",
-     "Triển khai và chuyển giao",
-     "50",
-     "7,6%"
+     "Phân hệ tích hợp hệ thống",
+     "152,00",
+     "23,1%"
     ],
     [
      "",
      "Tổng cộng",
-     "657",
+     "657,00",
      "100,0%"
     ]
    ],
@@ -1552,49 +1696,49 @@
      "S1",
      "18/03/2027",
      "31/03/2027",
-     "Khởi động dự án, khảo sát nghiệp vụ và hệ thống hiện có, đặc tả chức năng ba phân hệ, kiến trúc hệ thống, khung ứng dụng phía máy chủ và giao diện, môi trường phát triển, kiểm thử có quy trình triển khai tự động",
-     "Biên bản khởi động, báo cáo khảo sát, khung ứng dụng chạy trên môi trường phát triển qua quy trình triển khai tự động"
+     "Khảo sát nghiệp vụ và hệ thống hiện có, đặc tả chức năng ba phân hệ chức năng, nghiên cứu hành vi người dùng, kiến trúc hệ thống, khung ứng dụng phía máy chủ và giao diện, dịch vụ gửi thư điện tử",
+     "Báo cáo khảo sát, đặc tả chức năng ba phân hệ chức năng, kiến trúc hệ thống và khung ứng dụng phía máy chủ, giao diện"
     ],
     [
      "S2",
      "01/04/2027",
      "14/04/2027",
-     "Kế hoạch quản lý dự án được Chủ đầu tư xác nhận (M1), cấu trúc và cấu hình Selling DB, sơ đồ phân cấp menu, thiết kế giao diện ưu tiên, thư viện thành phần giao diện, Selling DB trên môi trường phát triển, đặc tả use case",
-     "Cấu trúc Selling DB, sơ đồ phân cấp menu (Menu Layer), mẫu giao diện ưu tiên ba nhóm chức năng"
+     "Cấu trúc, cấu hình Selling DB và tạo lập Selling DB trên môi trường phát triển, sơ đồ phân cấp menu, thiết kế giao diện ưu tiên ba nhóm chức năng, thư viện thành phần giao diện, môi trường phát triển và kiểm thử có quy trình triển khai tự động, đặc tả use case đợt đầu của ba phân hệ chức năng, thiết kế chi tiết đặt hàng",
+     "Selling DB trên môi trường phát triển, sơ đồ phân cấp menu (Menu Layer), mẫu giao diện ưu tiên ba nhóm chức năng, khung ứng dụng triển khai tự động lên môi trường phát triển"
     ],
     [
      "S3",
      "15/04/2027",
      "06/05/2027",
-     "Đặc tả giao diện tích hợp sau khi nhận tài liệu Main System (CK1), thiết kế chi tiết và lập trình đợt đầu các chức năng tìm kiếm, thành viên, đặt hàng, kịch bản kiểm thử phân hệ, trình Chủ đầu tư xác nhận đặc tả và giao diện ưu tiên",
-     "Tìm kiếm sản phẩm, đăng ký, đăng nhập và giỏ hàng trên môi trường phát triển"
+     "Hai bên xác nhận đặc tả yêu cầu và giao diện ưu tiên (M2), đặc tả giao diện tích hợp sau khi nhận tài liệu Main System (CK1) và thiết kế tích hợp, hoàn thành đặc tả use case và thiết kế chi tiết, chỉ mục tìm kiếm, lập trình đăng ký, đăng nhập, khôi phục mật khẩu, giỏ hàng, đặt hàng có phí vận chuyển và mã giảm giá, kịch bản kiểm thử phân hệ và kịch bản kiểm thử tích hợp",
+     "Đăng ký, đăng nhập, khôi phục mật khẩu, giỏ hàng và đặt hàng có phí vận chuyển, mã giảm giá trên môi trường phát triển"
     ],
     [
      "S4",
      "07/05/2027",
      "20/05/2027",
-     "Hai bên xác nhận đặc tả và giao diện ưu tiên (M2), lập trình các chức năng còn lại của ba phân hệ, đồng bộ dữ liệu và chuyển đơn hàng với dịch vụ giả lập Main System, kiểm thử phân hệ theo từng nhóm chức năng",
-     "Luồng đăng ký, tìm kiếm, đặt hàng có phí vận chuyển và mã giảm giá trên dữ liệu giả lập"
+     "Lập trình tìm kiếm, lọc và sắp xếp sản phẩm, giữ tồn kho, theo dõi đơn hàng, hủy đơn và đổi trả, dịch vụ giả lập Main System, đồng bộ tồn kho, chuyển đơn hàng và nhận trạng thái vận chuyển theo đặc tả giao diện tích hợp đã lập, Chủ đầu tư xác nhận đặc tả giao diện tích hợp, kế hoạch kiểm thử hệ thống, kiểm thử bảo mật tài khoản và kiểm thử đặt hàng, phí vận chuyển, khuyến mại",
+     "Tìm kiếm, lọc và sắp xếp sản phẩm, theo dõi và hủy đơn hàng trên môi trường phát triển, chuyển đơn hàng và nhận trạng thái vận chuyển trên dịch vụ giả lập Main System"
     ],
     [
      "S5",
      "21/05/2027",
      "03/06/2027",
-     "Kiểm thử tích hợp trên môi trường thử của Main System (CK2), hoàn thành kiểm thử và sửa lỗi phân hệ, môi trường vận hành, kịch bản kiểm thử hệ thống và kiểm thử chấp nhận",
-     "Luồng đặt hàng đầu cuối có chuyển đơn hàng sang Main System thử và nhận trạng thái vận chuyển"
+     "Lập trình trang chủ, danh mục, chi tiết sản phẩm, trang thành viên và sổ địa chỉ, đồng bộ danh mục sản phẩm và giá, kiểm thử tích hợp trên môi trường thử của Main System (CK2, CK8), kiểm thử và sửa lỗi phân hệ, kịch bản kiểm thử hiệu năng và kiểm thử hệ thống đầu cuối, môi trường vận hành (CK7), tài liệu hướng dẫn sử dụng, công cụ chuyển đổi dữ liệu",
+     "Luồng đặt hàng đầu cuối có chuyển đơn hàng sang Main System thử, trang chủ, danh mục, chi tiết sản phẩm và trang thành viên"
     ],
     [
      "S6",
      "04/06/2027",
      "17/06/2027",
-     "Kiểm thử hệ thống (chức năng đầu cuối, hiệu năng, bảo mật, khả năng sử dụng) và khắc phục lỗi (M4), Chủ đầu tư kiểm tra chức năng chính (M3), hướng dẫn vận hành, chuyển đổi thử dữ liệu (CK3)",
+     "Kiểm thử hệ thống (chức năng đầu cuối, hiệu năng, bảo mật, khả năng sử dụng) và khắc phục lỗi (M4), sửa lỗi tích hợp, Chủ đầu tư kiểm tra chức năng chính và tích hợp với Main System (M3), giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành, hướng dẫn vận hành cho cán bộ Chủ đầu tư, kế hoạch cut over, kịch bản kiểm thử chấp nhận, chuyển đổi thử dữ liệu (CK3) và nạp nội dung sản phẩm (CK4)",
      "Bản phát hành ứng viên cho kiểm thử chấp nhận, báo cáo kiểm thử hệ thống"
     ],
     [
      "S7",
      "18/06/2027",
      "01/07/2027",
-     "Kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư (M5), khắc phục lỗi trong khoảng kiểm thử chấp nhận, kiểm thử hiệu năng và an toàn bản phát hành trên môi trường vận hành, diễn tập triển khai, chuyển đổi dữ liệu chính thức, cut over 01/07/2027 (M6), bàn giao (M7)",
+     "Kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư (M5), khắc phục lỗi trong khoảng kiểm thử chấp nhận, kiểm thử hiệu năng và an toàn bản phát hành trên môi trường vận hành, diễn tập chuyển đổi dự phòng, sao lưu và khôi phục, diễn tập triển khai, chuyển đổi dữ liệu chính thức, cut over 01/07/2027 (M6), bàn giao (M7)",
      "Hệ thống trên môi trường vận hành, biên bản kiểm thử chấp nhận và biên bản bàn giao"
     ]
    ],
@@ -1647,14 +1791,14 @@
     [
      "M3",
      "Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
-     "16/06/2027",
+     "17/06/2027",
      "3",
      "S6"
     ],
     [
      "M4",
      "Hoàn thành kiểm thử hệ thống, bản phát hành sẵn sàng kiểm thử chấp nhận",
-     "16/06/2027",
+     "17/06/2027",
      "",
      "S6"
     ],
@@ -1674,10 +1818,17 @@
     ],
     [
      "M7",
-     "Nhà thầu nộp bảo lãnh bảo hành, bàn giao hồ sơ dự án",
+     "Nhà thầu nộp bảo lãnh bảo hành, bàn giao mã nguồn và hệ thống",
      "01/07/2027",
      "5",
      "S7"
+    ],
+    [
+     "M8",
+     "Đóng dự án, báo cáo tổng kết và bài học kinh nghiệm được lập, hồ sơ dự án được lưu trữ",
+     "07/07/2027",
+     "",
+     "KT"
     ]
    ],
    "widths": [
@@ -1698,7 +1849,7 @@
    "t": "table"
   },
   {
-   "text": "Nhân sự của nhà thầu được huy động theo sprint như bảng sau, tổng 796 MD huy động.",
+   "text": "Nhân sự của nhà thầu được huy động theo sprint như bảng sau, tổng 816 MD huy động.",
    "t": "p"
   },
   {
@@ -1714,8 +1865,8 @@
      "S1",
      "18/03/2027",
      "31/03/2027",
-     "6",
-     "60"
+     "8",
+     "80"
     ],
     [
      "S2",
@@ -1764,7 +1915,7 @@
      "",
      "",
      "",
-     "796"
+     "816"
     ]
    ],
    "widths": [
@@ -1811,6 +1962,78 @@
    "t": "p"
   },
   {
+   "text": "Sơ đồ tổ chức thực hiện của nhà thầu theo vai trò và quan hệ báo cáo như bảng sau.",
+   "t": "p"
+  },
+  {
+   "rows": [
+    [
+     "Vai trò",
+     "Người đảm nhận",
+     "Quan hệ báo cáo"
+    ],
+    [
+     "Người đại diện của nhà thầu",
+     "Lê Quốc Bảo",
+     "Ký hợp đồng, quyết định vấn đề vượt thẩm quyền quản trị dự án"
+    ],
+    [
+     "Quản trị dự án",
+     "Trần Bá Đạt",
+     "Báo cáo người đại diện của nhà thầu, đầu mối làm việc với Chủ đầu tư"
+    ],
+    [
+     "Phụ trách nhóm phân hệ quản lý sản phẩm",
+     "Vũ Đức Minh",
+     "Báo cáo quản trị dự án"
+    ],
+    [
+     "Phụ trách nhóm phân hệ quản lý khách hàng (thành viên)",
+     "Phạm Tuấn Anh",
+     "Báo cáo quản trị dự án"
+    ],
+    [
+     "Phụ trách nhóm phân hệ quản lý đơn hàng (đặt hàng)",
+     "Phạm Tuấn Anh",
+     "Báo cáo quản trị dự án"
+    ],
+    [
+     "Phụ trách nhóm phân hệ tích hợp hệ thống",
+     "Ninh Đức Toàn",
+     "Báo cáo quản trị dự án"
+    ],
+    [
+     "Phụ trách đặc tả và kiểm thử các phân hệ",
+     "Nguyễn Thị Phương Liên",
+     "Báo cáo quản trị dự án"
+    ],
+    [
+     "Phụ trách phân tích và thiết kế phân hệ tích hợp hệ thống",
+     "Nguyễn Hoàng Nam",
+     "Báo cáo quản trị dự án"
+    ],
+    [
+     "Thành viên bổ sung trong các nhóm",
+     "Lê Quang Huy, Đỗ Minh Quân, Bùi Anh Tuấn, Trần Thu Hà, Phạm Ngọc Anh, Trương Quốc Việt",
+     "Báo cáo người phụ trách nhóm theo tài liệu phân công"
+    ],
+    [
+     "Đầu mối Chủ đầu tư",
+     "Công ty Cổ phần ABC Wear, đầu mối Yamada, Phòng Kế hoạch",
+     "Phối hợp với quản trị dự án, xác nhận biên bản"
+    ]
+   ],
+   "widths": [
+    2600,
+    3500,
+    3200
+   ],
+   "center_cols": [],
+   "right_cols": [],
+   "dong_dam": [],
+   "t": "table"
+  },
+  {
    "text": "13. Vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành",
    "t": "h2"
   },
@@ -1844,21 +2067,28 @@
     [
      "RR02",
      "Tài liệu giao diện hoặc môi trường thử của Main System đến muộn hơn cam kết hoặc không đủ thông tin",
-     "Ngày 14/04/2027 chưa nhận tài liệu đặc tả giao diện của Main System, hoặc ngày 20/05/2027 chưa có môi trường thử, hoặc đặc tả giao diện thay đổi sau khi đã xác nhận",
+     "Đến 9 giờ 00 ngày 14/04/2027 chưa nhận tài liệu đặc tả giao diện của Main System, hoặc đến 9 giờ 00 ngày 20/05/2027 chưa có môi trường thử hoặc chưa hoàn thành thay đổi phía Main System (CK8), hoặc đặc tả giao diện thay đổi sau khi đã xác nhận",
      "Khi dấu hiệu xuất hiện, Ninh Đức Toàn lập danh sách thông tin còn thiếu, Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư trong 1 ngày làm việc. Nhóm tích hợp tiếp tục lập trình trên dịch vụ giả lập. Sau 5 ngày làm việc chưa có phản hồi, trưởng nhóm báo cáo người đại diện của Chủ đầu tư và đề nghị điều chỉnh tiến độ theo Mục 18 E-ĐKC do nguyên nhân thuộc Chủ đầu tư",
      "Ninh Đức Toàn"
     ],
     [
+     "RR03",
+     "Kiểm thử hệ thống và khắc phục lỗi hoàn thành sau ngày bắt đầu kiểm thử chấp nhận 18/06/2027",
+     "Mốc M4 chưa đạt sau 2 ngày làm việc so với ngày dự kiến trong master schedule, hoặc còn từ 4 lỗi nghiêm trọng hoặc cao đang mở ngày 14/06/2027 (ngưỡng đỏ)",
+     "Khi dấu hiệu xuất hiện, Trần Bá Đạt điều các kỹ sư phát triển đang làm gói không nằm trên đường găng sang sửa lỗi, Nguyễn Thị Phương Liên ưu tiên kịch bản các luồng chính và báo Chủ đầu tư phạm vi kiểm thử chấp nhận đợt đầu",
+     "Trần Bá Đạt"
+    ],
+    [
      "RR04",
      "Vị trí bổ sung không có mặt đúng sprint huy động đã thống nhất",
-     "Đến 10 ngày làm việc trước sprint huy động chưa ký hợp đồng với người giữ vị trí",
+     "Đến ngày hợp đồng có hiệu lực chưa có quyết định điều động của một vị trí, hoặc người giữ vị trí chưa hoàn thành bàn giao công việc đang làm trước sprint huy động 5 ngày làm việc",
      "Khi một vị trí chưa có mặt đúng sprint, Trần Bá Đạt chuyển gói của vị trí đó cho thành viên cùng năng lực còn dư quỹ và kích hoạt người dự phòng trong 3 ngày làm việc",
      "Trần Bá Đạt"
     ],
     [
      "RR10",
      "Số lỗi phát hiện trong kiểm thử chấp nhận vượt khả năng khắc phục trong khoảng 18/06 đến 29/06/2027",
-     "Ngày 23/06/2027 còn từ 5 lỗi nghiêm trọng hoặc cao đang mở",
+     "Ngày 23/06/2027 còn từ 4 lỗi nghiêm trọng hoặc cao đang mở (ngưỡng đỏ)",
      "Khi dấu hiệu xuất hiện, Nguyễn Thị Phương Liên phân loại lỗi theo mức độ, Trần Bá Đạt điều thêm kỹ sư phát triển sang khắc phục lỗi nghiêm trọng, lỗi nhỏ đưa vào danh sách khắc phục trong bảo hành khi Chủ đầu tư đồng ý bằng văn bản",
      "Nguyễn Thị Phương Liên"
     ]
@@ -1890,28 +2120,33 @@
     [
      "Mức lỗi",
      "Thời hạn phản hồi",
-     "Thời hạn khắc phục"
+     "Thời hạn khắc phục",
+     "Cách tính thời hạn"
     ],
     [
      "Nghiêm trọng",
      "2 giờ",
-     "8 giờ"
+     "8 giờ",
+     "Tính liên tục 24 giờ mỗi ngày, kể cả ngày nghỉ, từ khi tiếp nhận báo lỗi"
     ],
     [
      "Cao",
-     "Hai bên thống nhất khi xác nhận đặc tả",
-     "1 ngày làm việc"
+     "4 giờ",
+     "1 ngày làm việc",
+     "Tính trong giờ hành chính (8 giờ 00 đến 17 giờ 00 các ngày làm việc) từ khi tiếp nhận"
     ],
     [
      "Khác",
-     "Hai bên thống nhất khi xác nhận đặc tả",
-     "3 ngày làm việc"
+     "8 giờ",
+     "3 ngày làm việc",
+     "Tính trong giờ hành chính (8 giờ 00 đến 17 giờ 00 các ngày làm việc) từ khi tiếp nhận"
     ]
    ],
    "widths": [
-    2600,
-    3300,
-    3400
+    1700,
+    1700,
+    2000,
+    3900
    ],
    "center_cols": [],
    "right_cols": [],
@@ -2006,7 +2241,7 @@
      "Gói",
      "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
      "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-     "16/06/2027"
+     "17/06/2027"
     ],
     [
      "6",
@@ -2016,7 +2251,7 @@
      "Gói",
      "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
      "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-     "16/06/2027"
+     "17/06/2027"
     ],
     [
      "7",
@@ -2026,7 +2261,7 @@
      "Gói",
      "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
      "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-     "16/06/2027"
+     "17/06/2027"
     ],
     [
      "8",
@@ -2036,7 +2271,7 @@
      "Gói",
      "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
      "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-     "16/06/2027"
+     "17/06/2027"
     ],
     [
      "9",
@@ -2046,7 +2281,7 @@
      "Gói",
      "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
      "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-     "16/06/2027"
+     "17/06/2027"
     ],
     [
      "10",

@@ -1,0 +1,119 @@
+{
+ "tai_lieu": "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx",
+ "phien_ban": "0.7",
+ "luot": 3,
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 3,
+ "moi_truong": "Kiểm tra lớp B lượt 3 (lượt cuối), phiên agent con riêng, Claude Code, mô hình claude-opus-5-5, python-docx và openpyxl đối chiếu bảng với dữ liệu nguồn",
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 16 mục bắt buộc của đặc tả."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Giá 1.750.000.000, BAC 1.420.050.000, khoản B 150.000.000, khoản C 179.950.000, lương kế hoạch 1.197.210.123, phần còn lại 402.789.877, ngày nhận các đợt thanh toán, giai đoạn, mốc, sprint, tải, đường găng, dự trữ 3 ngày, 153 gói, 12 mục ngoài phạm vi, rủi ro cao RR02, RR03, RR04, RR10 khớp dữ liệu. Giả định cam kết ghi CK1 đến CK6 trong khi có CK1 đến CK8 (MH01)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Ràng buộc dẫn R12, R36, R45, Mục 13.1, 21.2, 6.4, 5.2, 5.4, 14 E-ĐKCT khớp hsmt.json."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục tiêu dạng bảng có chỉ số, ngưỡng, hạn, người xác nhận; tiêu chí nghiệm thu theo KT01 đến KT05, ngưỡng lỗi lấy từ dấu hiệu RR03, RR10, điều kiện cut over."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Ngưỡng SPI, CPI vàng, đỏ, báo cáo vượt cấp, quản lý vấn đề tám bước, quản lý thay đổi."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Trình bày đúng quy định, không phát hiện từ cần tránh."
+  },
+  {
+   "tieu_chi": "DH1",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Không mâu thuẫn số liệu với HSDT, WBS, lịch, phân công, trừ căn cứ CK1 đến CK6 (MH01)."
+  },
+  {
+   "tieu_chi": "DH2",
+   "ket_qua": "dat",
+   "nhan_xet": "Có điều lệ, mục tiêu SMART dạng bảng, ràng buộc, giả định, bảng phê duyệt."
+  },
+  {
+   "tieu_chi": "DH3",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ chín kế hoạch con cùng thay đổi, cấu hình, vấn đề, rà soát, kết thúc."
+  },
+  {
+   "tieu_chi": "DH4",
+   "ket_qua": "dat",
+   "nhan_xet": "Bên liên quan lấy từ HSMT, nha_thau.json, thanh_vien.json và phan_cong.json, người có thẩm quyền Chủ đầu tư ghi theo chức danh (căn cứ hợp lệ)."
+  },
+  {
+   "tieu_chi": "DH5",
+   "ket_qua": "dat",
+   "nhan_xet": "Có tiêu chí nghiệm thu và điều kiện cut over kiểm chứng được."
+  },
+  {
+   "tieu_chi": "DH6",
+   "ket_qua": "dat",
+   "nhan_xet": "Một đường cơ sở chi phí BAC bằng khoản A, giá hợp đồng ghi riêng, ba đường cơ sở kèm cách kiểm soát."
+  },
+  {
+   "tieu_chi": "DH7",
+   "ket_qua": "dat",
+   "nhan_xet": "Dẫn bảng quy tắc dự phòng chung, nội dung trùng kế hoạch quản lý thay đổi."
+  },
+  {
+   "tieu_chi": "DH8",
+   "ket_qua": "dat",
+   "nhan_xet": "Kế hoạch họp đáp ứng R21 và bao đủ bảy cuộc họp cam kết trong HSDT mục 12, có ma trận báo cáo."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "CL02",
+   "vi_tri": "Mục 1, bảng ràng buộc và giả định, dòng Giả định: Chủ đầu tư thực hiện đúng hạn các cam kết ở bảng cam kết của Chủ đầu tư ... | R15, R24, CK1 đến CK6",
+   "mo_ta": "Bảng cam kết ngay sau (kb#cam_ket_cdt, lich#cam_ket_chu_dau_tu) có 8 cam kết CK1 đến CK8. Cột căn cứ ghi CK1 đến CK6, bỏ sót CK7 (hạ tầng vận hành 20/05/2027, quyết định 24/10/2026) và CK8 (thay đổi phía Main System 20/05/2027, quyết định 25/10/2026 (18)), là hai cam kết gắn gói 4.5.1, 4.4.3 và rủi ro RR16, RR02. Mâu thuẫn trong tài liệu và với dữ liệu nguồn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại RANG_BUOC dòng Giả định: căn cứ R15, R24, CK1 đến CK8 (tốt nhất viết bằng tham chiếu số cam kết)."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "CL02",
+   "vi_tri": "Toàn tài liệu, phiên bản 0.7 (sổ phiên bản TL13: Cần cập nhật, đầu vào đã đổi: Hồ sơ dự thầu)",
+   "mo_ta": "Tài liệu tạo lúc 10:29:40 với HSDT băm ea1d32c384b4 (0.6), HSDT hiện hành là 0.8. Đối chiếu kế hoạch họp, cam kết, nhân sự với HSDT 0.8 không thấy mâu thuẫn, nhưng tài liệu đang ở trạng thái cũ theo băm đầu vào.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Chạy lại bước ke_hoach_tong_the sau khi chạy lại ke_hoach_thay_doi."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "CL03",
+   "vi_tri": "Mục 2, bảng nhóm bên liên quan, dòng Bộ phận quản lý Main System, cột Điều dự án cần: Tài liệu giao diện, môi trường thử, dữ liệu chuyển đổi (CK1 đến CK3)",
+   "mo_ta": "Thiếu CK8 (hoàn thành thay đổi phía Main System), trong khi bảng bên liên quan phía trên ghi bộ phận này thực hiện thay đổi phía Main System.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại BEN_LIEN_QUAN dòng Bộ phận quản lý Main System: bổ sung hoàn thành thay đổi phía Main System (CK8)."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "CL02",
+   "vi_tri": "Mục 7, bảng quy tắc dùng dự phòng, dòng Phần vượt dự phòng: theo quyết định của nhóm ngày 18/10/2026, do Người đại diện ...",
+   "mo_ta": "Cùng nguồn bảng chung với kế hoạch quản lý thay đổi: thành phần khoản C và phần khoản A chưa dùng cho lương thuộc quyết định 25/10/2026 (23), chữ Người viết hoa giữa câu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa nguồn bảng du_phong trong qlda-change rồi tạo lại."
+  }
+ ]
+}

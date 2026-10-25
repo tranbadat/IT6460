@@ -1,0 +1,143 @@
+{
+ "sprint": "S7",
+ "tong_md": 60.75,
+ "md_ke_hoach_sprint": 61.52,
+ "md_theo_nguoi": {
+  "D1": {
+   "md": 10.0,
+   "quy": 10.0,
+   "ty_le_su_dung": 1.0
+  },
+  "D2": {
+   "md": 10.0,
+   "quy": 10.0,
+   "ty_le_su_dung": 1.0
+  },
+  "D3": {
+   "md": 8.0,
+   "quy": 10.0,
+   "ty_le_su_dung": 0.8
+  },
+  "D4": {
+   "md": 4.0,
+   "quy": 4.0,
+   "ty_le_su_dung": 1.0
+  },
+  "Q1": {
+   "md": 7.0,
+   "quy": 8.0,
+   "ty_le_su_dung": 0.875
+  },
+  "Q2": {
+   "md": 5.5,
+   "quy": 9.0,
+   "ty_le_su_dung": 0.6111
+  },
+  "dat": {
+   "md": 5.25,
+   "quy": 7.0,
+   "ty_le_su_dung": 0.75
+  },
+  "lien": {
+   "md": 8.0,
+   "quy": 8.0,
+   "ty_le_su_dung": 1.0
+  },
+  "toan": {
+   "md": 3.0,
+   "quy": 3.0,
+   "ty_le_su_dung": 1.0
+  }
+ },
+ "goi_hoan_thanh": [
+  "2.4.4",
+  "3.4.8",
+  "3.4.11",
+  "3.4.12",
+  "3.5.2",
+  "4.4.8",
+  "4.5.4",
+  "5.2.4",
+  "5.3.2",
+  "5.3.3",
+  "5.3.5",
+  "5.3.6",
+  "5.3.7",
+  "5.4.2",
+  "5.5.2"
+ ],
+ "goi_cham": [
+  {
+   "ma": "1.4.6",
+   "ke_hoach": 1.0,
+   "thuc_te": 0.75,
+   "ket_thuc_ke_hoach": "2027-06-30",
+   "gang": false
+  },
+  {
+   "ma": "1.4.8",
+   "ke_hoach": 1.0,
+   "thuc_te": 0.87,
+   "ket_thuc_ke_hoach": "2027-06-16",
+   "gang": false
+  },
+  {
+   "ma": "1.4.9",
+   "ke_hoach": 1.0,
+   "thuc_te": 0,
+   "ket_thuc_ke_hoach": "2027-06-21",
+   "gang": false
+  },
+  {
+   "ma": "2.4.9",
+   "ke_hoach": 1.0,
+   "thuc_te": 0.5,
+   "ket_thuc_ke_hoach": "2027-06-17",
+   "gang": false
+  },
+  {
+   "ma": "3.5.3",
+   "ke_hoach": 0.6667,
+   "thuc_te": 0,
+   "ket_thuc_ke_hoach": "2027-07-02",
+   "gang": false
+  },
+  {
+   "ma": "4.5.3",
+   "ke_hoach": 1.0,
+   "thuc_te": 0.75,
+   "ket_thuc_ke_hoach": "2027-06-16",
+   "gang": false
+  },
+  {
+   "ma": "5.4.3",
+   "ke_hoach": 0.5,
+   "thuc_te": 0,
+   "ket_thuc_ke_hoach": "2027-07-02",
+   "gang": false
+  }
+ ],
+ "spi_uoc_tinh": 0.985,
+ "so_bien_co": {
+  "rui_ro": 1,
+  "van_de": 3,
+  "loi": 2,
+  "goi": 2,
+  "chi_phi": 1,
+  "retro": 1
+ },
+ "so_dong_them": {
+  "nhat_ky_cong_viec": 76,
+  "hoan_thanh": 31,
+  "loi": 9,
+  "theo_doi_rui_ro": 2,
+  "so_van_de": 2,
+  "hanh_dong": 2,
+  "chi_phi_thuc_te": 1
+ },
+ "cho_xu_ly_con_lai": 3,
+ "goi_y": [
+  "Gói 2.4.9 còn việc của minh nhưng minh không được huy động trong S7",
+  "Gói 4.5.3 còn việc của tuananh nhưng tuananh không được huy động trong S7"
+ ]
+}

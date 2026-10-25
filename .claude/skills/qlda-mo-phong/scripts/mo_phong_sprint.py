@@ -41,6 +41,18 @@ from mo_phong_lich import MoPhongLich  # noqa: E402
 loi = C.loi
 
 
+def luu_ke_hoach_ky(sp):
+    """Bản chụp kế hoạch hiện hành của kỳ (lịch, WBS, dự toán, sổ rủi ro, phân công, dự án, đơn giá, thành viên) vào lam_viec/mo_phong/ke_hoach_<kỳ>/,
+    để lập lại báo cáo tiến độ kỳ đó sau khi kế hoạch đổi (QLDA_KE_HOACH_KY=<kỳ>, loi.duong_dan) với đúng mức rủi ro, BAC và mục tiêu của kỳ (từ 1.0.4)."""
+    if os.environ.get('QLDA_KE_HOACH_KY'):
+        return
+    goc = loi.THU_MUC_KE_HOACH_KY.format(ky=sp)
+    for p in loi.TEP_KE_HOACH_KY:
+        if os.path.exists(loi.duong_dan(p)):
+            os.makedirs(os.path.dirname(loi.duong_dan(os.path.join(goc, p))), exist_ok=True)
+            shutil.copy(loi.duong_dan(p), loi.duong_dan(os.path.join(goc, p)))
+
+
 def in_phat_hien(F):
     for f in F:
         print(f'[{f["muc_do"]}] {f["ma"]}' + (f' {f["vi_tri"]}' if f.get('vi_tri') else '') + f': {f["mo_ta"]}')
@@ -226,6 +238,13 @@ def chay():
     tep_kb = a.kich_ban or f'{C.THU_MUC_LV}/kich_ban_{sp}.json'
     kb = loi.doc_json(tep_kb)
     st = trang_thai_mac_dinh(seed, kb.get('nhieu_md', cfg['nhieu_md'])) | st
+    C.HD_HIEN_TAI.clear()
+    for e in kb.get('bien_co', []):  # huy động bổ sung của sprint đang sinh (từ 1.0.5)
+        if e.get('loai') == 'huy_dong':
+            k = (e.get('thanh_vien'), sp)
+            C.HD_HIEN_TAI[k] = C.HD_HIEN_TAI.get(k, 0.0) + float(e.get('so_md') or 0)
+    if not C.HD_HIEN_TAI:
+        C.HD_HIEN_TAI[('', sp)] = 0.0  # đánh dấu sprint đang sinh để bỏ bản lưu cũ của chính sprint này khi sinh lại
     ctx = C.NguCanh()
     if sp not in ctx.sprint:
         loi.thoat_loi(f'Kỳ {sp} không có trong du_lieu/lich.json ({", ".join(ctx.sprint)})')
@@ -281,6 +300,10 @@ def ghi(ctx, sp, st, kb, tep_kb, bc, mp, xong_moi, rows, tac_dong):
                          'kich_ban_noi_dung': kb, 'lich_hash': loi.bam('du_lieu/lich.json'), 'thoi_gian': loi.bay_gio(), 'tom_tat': {
                              k: tt[k] for k in ('tong_md', 'md_ke_hoach_sprint', 'spi_uoc_tinh', 'goi_hoan_thanh', 'so_bien_co', 'so_dong_them')}, 'hash_sau': bam_tep()})
     loi.ghi_json(C.TEP_MO_PHONG, st)
+    luu_ke_hoach_ky(sp)
+    # đăng ký phiên bản du_lieu/mo_phong.json để chay.py trang_thai không báo bước mo_phong cũ (từ 1.0.3)
+    b_mp = next(x for x in loi.so_do()['buoc'] if x['id'] == 'mo_phong')
+    loi.dang_ky_phien_ban('mo_phong', C.TEP_MO_PHONG, b_mp['vao'], f'Sinh số liệu mô phỏng {sp}', hash_noi_dung=loi.bam_obj(st))
     for x in gy:
         print('[goi_y] ' + x)
     print(f'Đã sinh {sp} ({loi.ngay(bc.tu)} đến {loi.ngay(bc.den)}): {tt["tong_md"]:g} MD ghi công (kế hoạch sprint {tt["md_ke_hoach_sprint"]:g} MD), '

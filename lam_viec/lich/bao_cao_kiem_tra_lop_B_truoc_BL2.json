@@ -1,0 +1,67 @@
+{
+ "tai_lieu": "ket_qua/04_Master_schedule/Master_schedule.xlsx (v0.23)",
+ "buoc": "lich",
+ "luot": "Kiểm tra lớp B lượt xác nhận sau vòng sửa cuối (người dùng duyệt ngoại lệ sau 3 vòng): xác nhận đóng cảnh báo lượt 3 và rà soát hồi quy, không rà lại toàn bộ",
+ "can_cu": "Căn cứ hợp lệ: dau_vao/du_an.json _quyet_dinh_18_10, _quyet_dinh_24_10_ha_tang, _quyet_dinh_25_10 (điểm 1 đến 29), _quy_tac_ngay_ban_giao",
+ "nguon_da_doi_chieu": [
+  "du_lieu/lich.json",
+  "du_lieu/phan_cong.json",
+  "du_lieu/wbs.json",
+  "ket_qua/03_WBS/WBS_tong_hop.docx (giả định trình tự)",
+  "lam_viec/lich/bao_cao_kiem_tra_lop_B_4ph_vong3.json"
+ ],
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 0,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Các sheet Tong_quan, Lich_trinh, Sprint, Moc, Giai_doan, Phan_bo, Tai_nguon, Nhu_cau, Cam_ket, Huong_dan đủ như lượt 3."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Tính lại bằng LibreOffice, không có ô lỗi công thức. Đối chiếu script 177 dòng Lich_trinh với lich.json (tên, MD, ngày bắt đầu, kết thúc, người thực hiện): khớp, chỉ khác chú thích (dàn trải) có chủ đích ở 12 gói quản lý. Tổng 657 MD, quỹ 816 MD, tỷ lệ 80,5%, dự trữ đến cut over 3 ngày, đường găng 51 ngày, 7 sprint, mốc M0 đến M8 (M1 14/04, M2 06/05 hạn 10/05, M3 và M4 17/06, M5 29/06, M6 và M7 01/07, M8 07/07 hạn 15/07/2027) khớp lich.json và quyết định 18/10 (4). Tải từng người theo sprint khớp su_dung_theo_nguoi_sprint. Tên gói khớp wbs.json sau khi đổi tên."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mốc gắn gói căn cứ và đợt thanh toán không đổi, cam kết CK1 đến CK8 gắn gói phụ thuộc."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Trạng thái mốc và cam kết tính bằng công thức, đều Đạt hoặc Đúng hạn."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Phụ thuộc của 1.5.2 giữ nguyên theo quyết định 25/10 (25), giả định trình tự đã ghi trong WBS_tong_hop mục 7."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Chú thích Tai_nguon đã giải thích cột KT, tiêu đề in đậm theo quyết định 25/10 (22)."
+  }
+ ],
+ "phat_hien": [],
+ "dong_phat_hien_luot_3": [
+  {
+   "ma": "ML01",
+   "da_dong": true,
+   "nhan_xet": "Nhóm quyết định 25/10 (25) không thêm phụ thuộc mới cho 1.5.2, ghi giả định trình tự trong WBS. WBS_tong_hop mục 7 đã ghi 1.5.2 thực hiện sau khi 1.4.10, 1.4.12, 2.4.11, 2.4.13, 3.4.14, 4.4.9 hoàn thành theo lịch. Theo lich.json các gói này kết thúc chậm nhất 29/06/2027, 1.5.2 ngày 30/06/2027, trình tự thực tế phù hợp."
+  },
+  {
+   "ma": "ML02",
+   "da_dong": true,
+   "nhan_xet": "Theo quyết định 25/10 (25), lỗi cuối khoảng kiểm thử chấp nhận xử lý bằng quỹ huy động chưa giao ở S7 và hỗ trợ tăng cường, đã ghi trong WBS_tong_hop mục 7. Quỹ S7 còn trống của bốn người được nêu (Phạm Tuấn Anh 5/10, Vũ Đức Minh 4/10, Bùi Anh Tuấn 3/10, Trần Thu Hà 4/10 MD) khớp lich.json và sheet Tai_nguon."
+  },
+  {
+   "ma": "ML03",
+   "da_dong": true,
+   "nhan_xet": "Quy tắc tô đỏ của Tai_nguon đã loại cột KT (điều kiện C$3<>\"KT\"), ô J4 không còn tô đỏ, chú thích A17 bổ sung: cột KT là MD giai đoạn Kết thúc sau cut over, trả lương theo công sức, không có quỹ huy động (nhóm đã chấp nhận)."
+  }
+ ],
+ "moi_truong": "Phiên làm việc riêng (agent con, lượt kiểm tra xác nhận sau vòng sửa cuối, ngoại lệ do người dùng duyệt), python-docx, openpyxl, LibreOffice tính lại công thức, mô hình Claude Opus 5.5"
+}

@@ -1,0 +1,157 @@
+{
+ "sprint": "S7",
+ "tom_tat": "Kiểm thử hiệu năng phát hiện thời gian phản hồi trang danh mục vượt 2 giây ở mức tải 500 người dùng đồng thời (rủi ro RR06 xảy ra), nhóm tối ưu truy vấn và bộ nhớ đệm trong gói sửa lỗi 1.4.6. Kiểm thử chức năng đầu cuối hoàn thành với số lỗi ở mức hợp lý. Phần bán hàng trên sàn hoàn thành lập trình, kiểm thử tích hợp với môi trường thử của sàn và buổi hướng dẫn sử dụng.",
+ "bien_co": [
+  {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR06",
+   "ngay": "2027-06-21",
+   "trang_thai": "Đã xảy ra",
+   "ma_goi": "1.4.6",
+   "md_tac_dong": 1.0,
+   "ngay_kich_hoat": "2027-06-21",
+   "hanh_dong_kich_hoat": "Kích hoạt kế hoạch ứng phó khi kết quả kiểm thử hiệu năng cho thời gian phản hồi trang danh mục 2,6 giây ở mức tải 500 người dùng đồng thời",
+   "hanh_dong": "Đỗ Minh Quân tối ưu truy vấn danh mục và bộ nhớ đệm thay Phạm Tuấn Anh (không huy động trong S7), Ninh Đức Toàn rà soát cấu hình mở rộng nút ứng dụng trên môi trường vận hành, Phạm Ngọc Anh đo lại sau tối ưu",
+   "ly_do": "Dấu hiệu của RR06 xuất hiện trong kiểm thử hiệu năng 1.4.9"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD12",
+   "ngay_ghi_nhan": "2027-06-21",
+   "nguoi_bao": "Q2",
+   "mo_ta": "Kiểm thử hiệu năng 1.4.9 cho thời gian phản hồi trang danh mục vượt 2 giây ở mức tải 500 người dùng đồng thời, cần tối ưu trong gói sửa lỗi 1.4.6 trước kiểm thử hệ thống (M4)",
+   "phan_loai": "Kỹ thuật",
+   "uu_tien": "Cao",
+   "ma_rui_ro": "RR06",
+   "nguoi_phu_trach": "D2",
+   "han": "2027-06-30",
+   "hanh_dong": [
+    {
+     "ma": "HD15",
+     "viec": "Tối ưu truy vấn danh mục, bổ sung chỉ mục và bộ nhớ đệm kết quả lọc",
+     "nguoi": "D2",
+     "han": "2027-06-29",
+     "ngay_xong": "2027-06-29",
+     "bang_chung": "Kết quả đo lại thời gian phản hồi ngày 29/06/2027"
+    }
+   ],
+   "ngay_dong": "2027-06-30",
+   "ket_qua": "Thời gian phản hồi trang danh mục đạt dưới 2 giây ở mức tải 500 người dùng đồng thời sau tối ưu",
+   "nguoi_dong": "dat",
+   "ly_do": "Rủi ro đã xảy ra được theo dõi xử lý bằng vấn đề"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "3.4.12",
+   "so_loi": {
+    "Cao": 1,
+    "Trung bình": 3,
+    "Thấp": 2
+   },
+   "mo_ta": "Lỗi tính lại tổng tiền khi đổi phương thức vận chuyển ở bước cuối, lỗi đồng bộ trạng thái hoàn tiền với Main System, lỗi phân trang lịch sử đơn hàng và các lỗi hiển thị nhỏ phát hiện khi kiểm thử chức năng đầu cuối",
+   "ly_do": "Lỗi phát hiện trong kiểm thử chức năng đầu cuối"
+  },
+  {
+   "loai": "loi",
+   "ma_goi": "5.4.2",
+   "so_loi": {
+    "Trung bình": 2,
+    "Thấp": 1
+   },
+   "mo_ta": "Lỗi làm mới khóa truy cập của sàn khi hết hạn giữa phiên đồng bộ, lỗi đồng bộ tồn kho khi sản phẩm có nhiều biến thể và lỗi hiển thị mã đơn hàng sàn trên giao diện quản trị",
+   "ly_do": "Lỗi phát hiện trong kiểm thử tích hợp với môi trường thử của sàn"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "5.3.7",
+   "ty_le_md": -0.2,
+   "ly_do": "Giao diện quản trị kênh sàn dùng lại thư viện thành phần giao diện quản trị đã có (1.2.4)"
+  },
+  {
+   "loai": "goi",
+   "ma_goi": "3.4.11",
+   "ty_le_md": -0.15,
+   "ly_do": "Kịch bản kiểm thử chấp nhận dùng lại kịch bản kiểm thử chức năng đầu cuối đã có"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD11",
+   "hanh_dong": [
+    {
+     "ma": "HD14",
+     "viec": "Ưu tiên đầu S7 cho gói găng 3.4.12 và chuỗi lập trình phần sàn, Lê Quang Huy và Đỗ Minh Quân dùng quỹ sẵn sàng làm bù 5.3.2, 5.3.7",
+     "nguoi": "dat",
+     "han": "2027-06-18",
+     "ngay_xong": "2027-06-18",
+     "bang_chung": "Kế hoạch sprint S7 ngày 18/06/2027"
+    }
+   ],
+   "ngay_dong": "2027-06-25",
+   "ket_qua": "Các gói chậm cuối S6 hoàn thành, kiểm thử chức năng đầu cuối 3.4.12 hoàn thành",
+   "nguoi_dong": "dat",
+   "ly_do": "Đóng vấn đề khi các gói chậm cuối S6 hoàn thành"
+  },
+  {
+   "loai": "van_de",
+   "ma": "VD13",
+   "ngay_ghi_nhan": "2027-07-01",
+   "nguoi_bao": "dat",
+   "mo_ta": "Các gói 1.4.6, 1.4.8, 1.4.9 chậm do tối ưu hiệu năng (RR06), gói 2.4.9 và 4.5.3 còn phần việc của Vũ Đức Minh, Phạm Tuấn Anh không huy động trong S7, kéo theo diễn tập triển khai 3.5.3 và kiểm thử hệ thống phần sàn 5.4.3 chậm cuối S7, có nguy cơ làm muộn khắc phục lỗi sau kiểm thử hệ thống 4.4.5 trên đường găng",
+   "phan_loai": "Tiến độ",
+   "uu_tien": "Cao",
+   "nguoi_phu_trach": "dat",
+   "han": "2027-07-09",
+   "hanh_dong": [
+    {
+     "viec": "Huy động bổ sung theo nhu cầu trong S8 cho kiểm thử viên và kỹ sư phát triển còn việc chậm, ưu tiên các gói trước khắc phục lỗi sau kiểm thử hệ thống 4.4.5",
+     "nguoi": "dat",
+     "han": "2027-07-02"
+    }
+   ],
+   "ly_do": "Ghi nhận gói chậm cuối S7 để theo dõi trong S8"
+  },
+  {
+   "loai": "chi_phi",
+   "ngay": "2027-06-21",
+   "khoan_muc": "B1",
+   "so_tien": 7500000,
+   "ghi_chu": "Phí môi trường phát triển, kiểm thử kỳ S7 theo phân bổ kỳ chi của dự toán",
+   "loai_chi": "da_chi",
+   "lien_ket": [
+    "1.5.1"
+   ],
+   "ly_do": "Chi phí khoản B1 theo phân bổ kỳ chi S7 của dự toán"
+  },
+  {
+   "loai": "retro",
+   "y": [
+    {
+     "loai": "tốt",
+     "noi_dung": "Kiểm thử tích hợp với môi trường thử của sàn hoàn thành đúng kế hoạch nhờ tài khoản người bán được cấp đúng hạn CK10",
+     "lien_ket": [
+      "5.4.2",
+      "RR22"
+     ]
+    },
+    {
+     "loai": "cần cải thiện",
+     "noi_dung": "Vấn đề hiệu năng trang danh mục chỉ được phát hiện ở kiểm thử hiệu năng, chưa đo thời gian phản hồi trong lập trình",
+     "lien_ket": [
+      "RR06",
+      "1.4.9",
+      "VD12"
+     ]
+    },
+    {
+     "loai": "hành động",
+     "noi_dung": "Đưa phép đo thời gian phản hồi của các trang chính vào quy trình tích hợp liên tục đến khi bàn giao",
+     "lien_ket": [
+      "1.5.1",
+      "RR06"
+     ]
+    }
+   ],
+   "ly_do": "Họp cải tiến cuối sprint S7"
+  }
+ ]
+}

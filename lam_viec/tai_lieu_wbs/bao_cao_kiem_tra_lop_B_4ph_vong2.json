@@ -1,0 +1,107 @@
+{
+ "tai_lieu": [
+  "ket_qua/03_WBS/WBS_1_Phan_he_quan_ly_san_pham.docx (0.7)",
+  "ket_qua/03_WBS/WBS_2_Phan_he_quan_ly_khach_hang_thanh_vien.docx (0.7)",
+  "ket_qua/03_WBS/WBS_3_Phan_he_quan_ly_don_hang_dat_hang.docx (0.7)",
+  "ket_qua/03_WBS/WBS_4_Phan_he_tich_hop_he_thong.docx (0.6)",
+  "ket_qua/03_WBS/WBS_tong_hop.docx (0.11)"
+ ],
+ "buoc": "tai_lieu_wbs",
+ "vong": "Kiểm tra lớp B lượt 2 (sau một vòng sửa), phiên độc lập, không đọc báo cáo lớp B cũ và nhật ký sửa",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 2,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Năm tệp đủ các mục: thông tin chung, sơ đồ cây, bảng chi tiết, kiểm tra quy tắc 100% (từng phân hệ); khối lượng theo nhóm và loại, căn cứ ước lượng, cấu trúc mức 1 và mức 2, truy vết RFP, phân bổ Mẫu 01A, giả định ngoài phạm vi (tổng hợp)."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Đối chiếu bằng script toàn bộ 177 mục: tên, mức, MD, loại, sản phẩm khớp du_lieu/wbs.json; cột Giai đoạn, sprint khớp giai_doan_hien_thi của du_lieu/lich.json; thời gian thực hiện mức 1 khớp lịch; người chịu trách nhiệm khớp A mức 1 của phan_cong.json; phụ thuộc đầu vào khớp phụ thuộc ngoài nhóm. Tổng 151 + 146,5 + 207,5 + 152 = 657 MD, theo loại 90/318/40/49/160. Căn cứ ước lượng khớp can_cu_uoc_luong: 573,6 / 550,3 / 106,7 MD, 106 chức năng, 25 đầu việc, phân bổ chung 247 MD theo tỷ lệ 95/91/129/95, hợp đồng tương tự 550 và 420 MD (83,7%, 63,9%, trung bình 485 MD, lệch 35,5% so với ngưỡng 25%), khoảng sai số 558,45 đến 854,10 MD. Bảng 01A khớp phan_bo_01a, tổng 657 MD, mọi gói lá được phủ. Ngày tài liệu 05/03/2027 bằng ngay_ky_don, số phiên bản khớp du_lieu/phien_ban.json."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Bảng truy vết 48 yêu cầu khớp truy_vet_rfp, 5 yêu cầu không cần gói có lý do, các yêu cầu thủ tục ghi rõ. Tên phân hệ theo quyết định nhóm 24/10/2026 và 25/10/2026 (10), ánh xạ Product Search, Member Administration nêu ở bảng Mẫu 01A của tệp tổng hợp (xem MH02)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi gói lá có sản phẩm đầu ra kiểm tra được (biên bản, báo cáo, chức năng đạt kiểm thử đơn vị). Mỗi mục kiểm thử phân hệ có gói sửa lỗi, kiểm thử lại (1.4.4, 1.4.6, 1.4.12; 2.4.4, 2.4.6, 2.4.13; 3.4.5, 3.4.7, 3.4.8, 3.4.14; 4.4.4, 4.4.5, 4.4.9)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Gói quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả ở từng phân hệ, 3.1.6 cập nhật sổ rủi ro theo đặc tả đã xác nhận; giả định ghi rủi ro làm lại RR02 khi lập trình tích hợp song song 4.2.6 và RR16 khi bàn giao hạ tầng chậm (CK7)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman 13, bảng 12, A4, bảng lưới có dòng tiêu đề lặp lại, chỉ mục cha in đậm, không gạch dài, ngoặc kép, dấu chấm phẩy, mũi tên, dấu giữ chỗ."
+  },
+  {
+   "tieu_chi": "Tên gói dạng danh từ, gắn sản phẩm kiểm tra được",
+   "ket_qua": "dat",
+   "nhan_xet": "Tên gói là cụm danh từ hoặc danh động từ chỉ công việc, cột sản phẩm đầu ra đầy đủ."
+  },
+  {
+   "tieu_chi": "Mức 2 của phân hệ theo vòng đời",
+   "ket_qua": "dat",
+   "nhan_xet": "Cả bốn phân hệ có năm mục mức 2: quản lý dự án (phần phân bổ), phân tích và thiết kế, xây dựng, kiểm thử, triển khai và chuyển giao."
+  },
+  {
+   "tieu_chi": "Không có gói thuộc chức năng quản trị nội bộ",
+   "ket_qua": "dat",
+   "nhan_xet": "Không có gói quản trị danh mục, giá, tồn kho, khuyến mại hay giao vận; các gói liên quan dùng đồng bộ, hiển thị, xử lý dữ liệu từ Main System."
+  },
+  {
+   "tieu_chi": "Gói tích hợp tách riêng cho mỗi hệ thống bên ngoài",
+   "ket_qua": "dat",
+   "nhan_xet": "Main System: 4.2.5 đến 4.2.7, 4.3.5 đến 4.3.9, 4.4.1 đến 4.4.4; máy chủ thư của Chủ đầu tư: 4.3.4."
+  },
+  {
+   "tieu_chi": "Sơ đồ cây và bảng chi tiết khớp nhau",
+   "ket_qua": "dat",
+   "nhan_xet": "Đối chiếu bằng script: cùng tập mã và cùng tên ở cả bốn tệp phân hệ."
+  },
+  {
+   "tieu_chi": "Mục Căn cứ ước lượng của tệp tổng hợp",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ phương pháp, loại ước lượng, các bước, bảng theo nhóm, bảng phân bổ đầu việc chung, căn cứ từng nhóm, đối chiếu hợp đồng tương tự có giải trình vượt ngưỡng, khoảng sai số; số liệu khớp khối can_cu_uoc_luong. Chênh 0,1 MD ở bước 2 ghi chú theo quyết định 25/10/2026 (11), chênh phần quản lý nhóm 4 giải trình ở 4.5.5, 4.5.6 theo quyết định (12)."
+  },
+  {
+   "tieu_chi": "Mỗi mục kiểm thử phân hệ có gói sửa lỗi, kiểm thử lại",
+   "ket_qua": "dat",
+   "nhan_xet": "Xem CL04."
+  },
+  {
+   "tieu_chi": "Ngày tài liệu là ngày ký đơn dự thầu hiện hành",
+   "ket_qua": "dat",
+   "nhan_xet": "Cả năm tệp đề ngày 05/03/2027 = nha_thau.ngay_ky_don."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "logic phụ thuộc",
+   "vi_tri": "WBS_2, 2.2.2 Đặc tả yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi, bảo mật và thao tác - S3 (23/04 đến 27/04/2027); WBS_4, 4.2.2 Kiến trúc hệ thống, hạ tầng và phương án bảo đảm hoạt động liên tục - S1, 4.2.4 Cấu hình cơ sở dữ liệu - S2; WBS_2, 2.4.5 Kiểm thử bảo mật tài khoản theo OWASP Top 10 và tương thích thiết bị phân hệ thành viên - S3-S4 (06/05 đến 13/05) trong khi 2.3.7 Giao diện trang thành viên và sổ địa chỉ - S4-S5",
+   "mo_ta": "Trình tự chưa hợp lý: đặc tả yêu cầu phi chức năng (2.2.2, chỉ phụ thuộc 4.2.1) lập sau kiến trúc và cấu hình cơ sở dữ liệu vốn phải đáp ứng các yêu cầu đó; kiểm thử tương thích thiết bị của phân hệ thành viên (2.4.5) kết thúc trước khi giao diện trang thành viên (2.3.7) hoàn thành nên không phủ màn hình này. Không sai với dữ liệu nguồn, nêu để nhóm cân nhắc.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nếu nhóm đồng ý: wbs_nhap.json thêm 2.2.2 vào phụ thuộc của 4.2.2 (hoặc tách phần phi chức năng cần cho kiến trúc), thêm 2.3.7 vào phụ thuộc của 2.4.5 hoặc tách phần tương thích sang 2.4.3; chạy lại wbs, lich và các bước sau theo chay.py anh_huong wbs. Thay đổi trình tự có thể ảnh hưởng dự trữ đến cut over nên cần nhóm quyết định."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "truy vết, phạm vi",
+   "vi_tri": "WBS_1_Phan_he_quan_ly_san_pham.docx, mục 1 Thông tin chung, dòng Căn cứ ước lượng: Phần riêng gồm 5 chức năng (chỉ mục tìm kiếm, tìm kiếm và gợi ý, ...)",
+   "mo_ta": "Tệp WBS 1 dùng để trao đổi với Chủ đầu tư không nêu phân hệ quản lý sản phẩm tương ứng chức năng tìm kiếm sản phẩm (Product Search) của RFP và không gồm quản trị danh mục sản phẩm của Main System (R45, giả định ngoài phạm vi). Ánh xạ chỉ có ở bảng Mẫu 01A của tệp tổng hợp. Đáp ứng quyết định 25/10/2026 (10) ở mức tối thiểu, người đọc riêng tệp WBS 1 có thể hiểu phân hệ gồm quản trị sản phẩm.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Bổ sung một câu vào can_cu.kich_thuoc của nhóm 1 (dau_vao/uoc_luong.json, sang du_lieu/wbs.json): phạm vi là tìm kiếm và hiển thị sản phẩm (Product Search theo RFP), không gồm quản trị danh mục sản phẩm của Main System; chạy lại wbs và xuat_wbs.py. Chỉ đổi lời văn, không đổi số liệu."
+  }
+ ],
+ "ghi_chu": "Không phát hiện sai lệch số liệu giữa tài liệu và du_lieu/wbs.json, du_lieu/lich.json, du_lieu/phan_cong.json. Kết quả lớp A của 5 tệp: đạt, 0 lỗi."
+}

@@ -1,0 +1,101 @@
+{
+ "tai_lieu": [
+  "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx",
+  "ket_qua/06_Cost_estimate/Cost_estimate.xlsx"
+ ],
+ "duong_co_so": "BL2 (sau yêu cầu thay đổi CR01, phụ lục 01/2027/PL-ABCW)",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên kiểm tra lớp B riêng, agent Kiểm tra độc lập (Claude Opus 5.5, Claude Code), python-docx, openpyxl, LibreOffice tính lại công thức",
+ "ket_luan": "chua_dat",
+ "so_loi": 3,
+ "so_canh_bao": 3,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ căn cứ, nhân công, tổng hợp giá hợp đồng sau phụ lục 1.949.024.682 đồng, chi phí khác, dự phòng so với EMV, đối chiếu lương theo người, phân bổ 01A, theo nhóm WBS gồm nhóm 5, dòng tiền có đợt 6, độ nhạy."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "A 1.581.550.000, B 150.000.000, C 217.474.682, giá điều chỉnh 199.024.682, tổng 733 MD, dòng tiền, độ nhạy khớp chi_phi.json và Excel (tính lại bằng LibreOffice không lệch). Lệch quỹ huy động với master schedule (MH01), EMV thời gian lệch kế hoạch rủi ro (MH02)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Giá điều chỉnh truy về phụ lục 01/2027/PL-ABCW và CR01, đợt 6 gắn M9, nhóm 5 trong phân bổ theo WBS."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Có ngưỡng kiểm tra trong Excel (giá dự thầu ban đầu không vượt giá gói thầu, tỷ lệ C tối thiểu, dự phòng so với EMV)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Dự phòng 50.000.000 đồng so với EMV còn lại, quy tắc dùng dự phòng lấy từ bảng chung, phần CR01 không dùng dự phòng, vốn lưu động 600.000.000 đồng đủ cho mức âm lớn nhất 556.765.523 đồng."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Trình bày đạt. Câu làm căn cứ lập Mẫu 11A trái hướng dẫn đặc tả sau đường cơ sở (MH03)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Thuyet_minh_du_toan.docx mục 5 dòng Trần Bá Đạt (MD huy động 81), dòng Tổng (898), các đoạn quỹ huy động 898 MD, tỷ lệ 81,6%, 165 MD sẵn sàng; Cost_estimate.xlsx Doi_chieu_nguoi, Huy_dong_luong (không có kỳ KT), Dong_tien dòng Sau cut over cột Chi lương theo huy động 0",
+   "mo_ta": "Master schedule ghi tổng quỹ huy động 900 MD, tỷ lệ sử dụng 81,4%, Trần Bá Đạt 83 MD gồm 2 MD kỳ Kết thúc (thanh_vien.json huy_dong_ket_thuc 0,2). Dự toán bỏ 2 MD này nên số liệu năng lực và lương theo huy động lệch giữa hai tài liệu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa tinh_chi_phi.py: md_huy_dong lấy cả kỳ KT theo lich.json su_dung_theo_nguoi_sprint, tính chi lương theo huy động sau cut over. Chạy lại chi_phi (tổng 900 MD, 81,4%, 167 MD sẵn sàng). Cách trả lương theo công sức nên chi phí lương kế hoạch không đổi."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Thuyet_minh_du_toan.docx mục 8, đoạn Dự trữ thời gian ... 8 ngày làm việc ... EMV thời gian của các rủi ro trên đường găng là 9,0 ngày",
+   "mo_ta": "Số 9,0 ngày là tổng EMV thời gian gồm cả RR02 đã xảy ra và RR04 đã đóng (rui_ro.json tong_hop.tong_emv_ngay_gang), đặt cạnh dự trữ 8 ngày mà không đánh giá, ngầm cho thấy dự trữ thiếu. Kế hoạch quản lý rủi ro dùng EMV thời gian còn lại 3,4 ngày (khoảng 2,5 đến 4,3) và kết luận đủ. Hai tài liệu mâu thuẫn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa tham chiếu trong đặc tả hoặc chi_phi.json sang rui_ro_bang.json du_tru.emv_ngay_gang (3,4 ngày, rủi ro còn mở) và thêm kết luận đủ theo du_tru.danh_gia, hoặc ghi rõ cả hai số (toàn sổ 9,0 và còn lại 3,4)."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "loi",
+   "nhom": "van_ban_dac_ta",
+   "vi_tri": "Thuyet_minh_du_toan.docx mục 1, đoạn thứ tư: Giá chào được phân bổ cho 13 hạng mục của Mẫu 01A ... làm căn cứ lập Mẫu 11A",
+   "mo_ta": "Sau đường cơ sở hợp đồng, đặc tả CAN_CU yêu cầu không viết rằng số liệu dùng cho Mẫu 11A. Đoạn ngay sau ghi bảng phân bổ không thay thế Mẫu 11A, HSDT giữ giá dự thầu ban đầu 1.750.000.000 đồng. Hai câu mâu thuẫn, giá 1.949.024.682 đồng không phải căn cứ lập Mẫu 11A.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại khối CAN_CU: phân bổ giá hợp đồng hiện hành theo 13 hạng mục Mẫu 01A dùng để theo dõi khối lượng và thanh toán, bỏ cụm làm căn cứ lập Mẫu 11A."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "phu_thuoc_lich",
+   "vi_tri": "Mục 8 bảng đợt thanh toán dòng đợt 6 (sự kiện 12/07/2027, thu 27/07/2027, S9) và đoạn dòng tiền",
+   "mo_ta": "Ngày đợt 6 dựa trên M9 12/07/2027, mốc đang có lỗi ràng buộc (báo cáo lich MH01). Nếu M9 dời vào khoảng 16/07 đến 27/07, khoản 199.024.682 đồng thu sau cut over, lũy kế S9 âm khoảng 157 triệu đồng thay vì dương 42.416.377 đồng, mức âm lớn nhất vẫn tại S8.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Chạy lại chi_phi sau khi nhóm quyết định M9."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "so_lieu",
+   "vi_tri": "Mục 5 đoạn Lương của toàn bộ ngày huy động (1.619.421.816 đồng); Cost_estimate.xlsx Doi_chieu_nguoi tổng cột Lương của ngày huy động 1.619.421.818",
+   "mo_ta": "Chênh 2 đồng do làm tròn từng dòng trong chi_phi.json so với công thức Excel. Tiêu chí số liệu Word khớp Excel.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Tính tong_chi_phi_huy_dong theo cùng cách làm tròn với Excel (tổng chưa làm tròn rồi làm tròn)."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "nhan_excel",
+   "vi_tri": "Cost_estimate.xlsx sheet Tong_hop dòng Tổng EMV sổ rủi ro, giá trị 125.462.701",
+   "mo_ta": "Giá trị là EMV còn lại (rủi ro chưa xảy ra, chưa đóng), Word ghi tổng EMV toàn sổ 150.662.701 đồng. Nhãn dễ gây nhầm.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Đổi nhãn thành EMV còn lại của sổ rủi ro."
+  }
+ ],
+ "ghi_chu": "Dự phòng thấp hơn EMV còn lại là quyết định của nhóm 18/10/2026, giữ sau CR01 theo quyết định 25/10/2026, không tính là lỗi."
+}

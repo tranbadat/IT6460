@@ -1,0 +1,165 @@
+{
+ "tai_lieu": "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx",
+ "ket_luan": "chua_dat",
+ "so_loi": 2,
+ "so_canh_bao": 7,
+ "phien_ban": "0.6",
+ "vong_kiem_tra_lop_B": 2,
+ "ngay_kiem_tra": "2026-10-25",
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 16 mục bắt buộc: điều lệ, bên liên quan, phạm vi, tiến độ, tổ chức, mua sắm, chi phí, chất lượng, truyền thông, rủi ro, vấn đề, thay đổi, cấu hình, rà soát, kết thúc, đường cơ sở."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Giá 1.750.000.000 đồng, BAC 1.420.050.000 đồng, khoản B 150.000.000, khoản C 179.950.000, lương kế hoạch 1.197.210.123, lương huy động 1.470.379.772, vốn lưu động 600.000.000, ngày nhận các đợt thanh toán, 657 MD, 153 gói, mốc M0 đến M8, giai đoạn, sprint, đường găng, EMV khớp nguồn. Sai mã sprint của gói 4.4.8 (MH01), trạng thái hồ sơ năng lực trái nguồn (MH02), lệch làm tròn với tài liệu phân công (MH03, MH04)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mục tiêu, ràng buộc, giả định có căn cứ R02 đến R05, R12, R13, R15, R24, R36, R45, Mục 6.4, 13.1, 21.2, 5.2, 5.4, 14 E-ĐKCT, mã gói và mã rủi ro."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Có bảng mục tiêu SMART, tiêu chí theo KT01 đến KT05, điều kiện cut over, ngưỡng lỗi lấy từ dấu hiệu RR03, RR10. Thời điểm kiểm chứng tính sẵn sàng gắn sai sprint (MH01)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có ngưỡng SPI, CPI vàng, đỏ, báo cáo vượt cấp, quy trình vấn đề tám bước, thẩm quyền thay đổi, bảng dự phòng dùng chung."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Trình bày đúng quy định, không in đậm. Còn từ cần xem chốt và một số điểm diễn đạt (MH06, MH07, MH08)."
+  },
+  {
+   "tieu_chi": "DH1",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Không mâu thuẫn số liệu chính với HSMT, HSDT, WBS, lịch, phân công, trừ MH01 đến MH04."
+  },
+  {
+   "tieu_chi": "DH2",
+   "ket_qua": "dat",
+   "nhan_xet": "Có điều lệ, bảng mục tiêu có chỉ số, ngưỡng, hạn, người xác nhận, ràng buộc, giả định, người phê duyệt Lê Quốc Bảo và xác nhận của Chủ đầu tư tại M1."
+  },
+  {
+   "tieu_chi": "DH3",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ chín kế hoạch con cùng thay đổi, cấu hình, vấn đề, rà soát, kết thúc."
+  },
+  {
+   "tieu_chi": "DH4",
+   "ket_qua": "dat",
+   "nhan_xet": "Bên liên quan lấy từ HSMT, nha_thau.json, thanh_vien.json, pc#ben_ngoai, không có người ngoài dữ liệu. Cột Quan tâm chưa đồng nhất (MH05)."
+  },
+  {
+   "tieu_chi": "DH5",
+   "ket_qua": "dat",
+   "nhan_xet": "Có tiêu chí nghiệm thu từ KT01 đến KT05 và điều kiện cut over."
+  },
+  {
+   "tieu_chi": "DH6",
+   "ket_qua": "dat",
+   "nhan_xet": "Một đường cơ sở chi phí BAC bằng khoản A, giá hợp đồng ghi riêng, ba đường cơ sở kèm cách kiểm soát."
+  },
+  {
+   "tieu_chi": "DH7",
+   "ket_qua": "dat",
+   "nhan_xet": "Dẫn chiếu bảng quy tắc dùng chung, nội dung trùng kế hoạch quản lý thay đổi. Cách viết dòng phần vượt dự phòng dễ hiểu nhầm (MH09)."
+  },
+  {
+   "tieu_chi": "DH8",
+   "ket_qua": "dat",
+   "nhan_xet": "Kế hoạch họp đáp ứng R21 và khớp bảng kế hoạch họp HSDT mục 12, có ma trận báo cáo năm loại."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "so_lieu",
+   "vi_tri": "Mục 8, bảng tiêu chí chất lượng, dòng Tính sẵn sàng: Diễn tập chuyển đổi dự phòng trước cut over (gói 4.4.8) | S6",
+   "mo_ta": "Gói 4.4.8 theo lịch thực hiện 21/06/2027 đến 23/06/2027, thuộc S7 (lich#goi, sprint_bat_dau S7), không phải S6. Đặc tả yêu cầu mã gói và sprint đúng theo lịch.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "CHAT_LUONG: sửa thời điểm dòng Tính sẵn sàng thành S7."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "so_lieu",
+   "vi_tri": "Mục 6, bảng huy động vị trí bổ sung, cột Hồ sơ năng lực: Đã có (cả 7 vị trí)",
+   "mo_ta": "Theo thanh_vien.json (_nguon_trinh_do, quyết định 25/10/2026 điểm 9) trình độ, kinh nghiệm của vị trí bổ sung là yêu cầu tối thiểu khi huy động, chưa phải hồ sơ cá nhân, nhóm thay bằng hồ sơ thực tế khi có quyết định điều động (Nguyễn Hoàng Nam còn chờ quyết định điều động). Ghi Đã có là sai lệch với nguồn và mâu thuẫn với câu liền trước (hồ sơ năng lực được hoàn thiện trước sprint huy động).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "tinh_bang_ke_hoach.py dòng 162: khi trinh_do hoặc kinh_nghiem là yêu cầu khi huy động (có _nguon_trinh_do) ghi Đã có yêu cầu tối thiểu, hồ sơ cá nhân bổ sung trước sprint huy động, chạy lại bước."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "so_lieu",
+   "vi_tri": "Mục 5, bảng tải thành viên: Trần Thu Hà 43,00 | 63 | 68,2%",
+   "mo_ta": "43/63 = 68,25...% nên làm tròn là 68,3%, tài liệu phân công ghi 68,3%. Giá trị 68,2% do làm tròn hai lần từ pc#tai.ty_le_su_dung 0,6825.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu: lưu ty_le_su_dung không làm tròn trước trong phan_cong.json (tinh_bang_phan_cong.py) hoặc định dạng pt tính từ md_giao/quy."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 5, bảng sử dụng quỹ theo sprint: S4 115,83, S5 106,17",
+   "mo_ta": "Khớp lich#sprint nhưng lệch 0,01 MD với dòng tổng bảng tải theo sprint của tài liệu phân công (115,84, 106,16). Cần một cách làm tròn chung cho hai tài liệu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thống nhất nguồn tổng theo sprint (xem MH04 của phan_cong_tai_lieu)."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "trinh_bay",
+   "vi_tri": "Mục 2, bảng bên liên quan, cột Quan tâm",
+   "mo_ta": "Bốn dòng đầu ghi mức (Cao, Trung bình), ba dòng bộ phận của Chủ đầu tư ghi mô tả nội dung quan tâm (lấy từ pc#ben_ngoai.quan_tam), cột không cùng nghĩa.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "tinh_bang_ke_hoach.py ben_lien_quan: tách mức quan tâm và nội dung quan tâm, hoặc bổ sung mức quan tâm cho ba bộ phận trong phan_cong.json."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 6, đoạn cuối: đơn giá và nhà cung cấp cụ thể được chốt trước khi chi",
+   "mo_ta": "Từ cần xem theo van_phong.json.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "MUA_SAM: được thống nhất trước khi chi."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "noi_dung",
+   "vi_tri": "Mục 6, đoạn cuối: Hạng mục cần mua hoặc thuê thuộc khoản B ... gồm môi trường ..., bảo hành 12 tháng ... và dự phòng rủi ro",
+   "mo_ta": "Bảo hành và dự phòng rủi ro không phải hạng mục mua hoặc thuê. Đặc tả chỉ yêu cầu nêu hạng mục mua, thuê (môi trường, công cụ).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "MUA_SAM: hạng mục cần mua hoặc thuê là môi trường phát triển, kiểm thử và công cụ (B1), các khoản B2, B3 nêu riêng là khoản chi theo nghĩa vụ bảo hành và dự phòng."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 3, đoạn 1: gồm ba chức năng Product Search, Member Administration, Order",
+   "mo_ta": "Tên chức năng theo RFP chỉ ghi tiếng Anh, quy định giữ tiếng Anh trong ngoặc sau tên tiếng Việt.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "PHAM_VI: tìm kiếm sản phẩm (Product Search), quản lý thành viên (Member Administration), đặt hàng (Order)."
+  },
+  {
+   "ma": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "so_lieu",
+   "vi_tri": "Mục 7, bảng quy tắc dự phòng dòng Phần vượt dự phòng và đoạn cuối: phần còn lại của giá chào sau lương kế hoạch và khoản B (402.789.877 đồng)",
+   "mo_ta": "Bảng ghi phần này là chi phí chung và lợi nhuận, cùng mục ghi khoản C chi phí chung và lợi nhuận 179.950.000 đồng. 402.789.877 đồng là khoản C cộng 222.839.877 đồng khoản A chưa dùng cho lương. Hai cách gọi trong cùng tài liệu dễ gây hiểu nhầm.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa dữ liệu bảng du_phong dùng chung (xem MH04 của ke_hoach_thay_doi), đoạn CHI_PHI gọi đúng là phần còn lại sau lương kế hoạch và khoản B."
+  }
+ ],
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B, phiên riêng)"
+}

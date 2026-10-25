@@ -1,0 +1,77 @@
+{
+ "tai_lieu": "ket_qua/07_Risk_management_plan/Ke_hoach_quan_ly_rui_ro.docx",
+ "phien_ban": "0.6",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 4,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục theo đặc tả, có tổ chức, thang đo, sổ, ma trận, ứng phó, dự phòng, ngưỡng, quan hệ thay đổi."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Khớp nguồn: 21 rủi ro (19 đe dọa, 2 cơ hội), 3/11/7, hạng A/B/C 5/9/7, EMV 147 (110-183) triệu đồng, dự phòng 50.000.000 đồng, khoản còn lại sau lương 414.157.491 đồng (chi_phi.C_sau_luong), EMV thời gian găng 5,4 (4,0-6,8), dự trữ 4,0, thiếu 1,4, vốn lưu động 500.000.000 đồng (du_an.von_luu_dong_du_kien). Quyết định 18/10 được phản ánh đủ ba nội dung."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi rủi ro liên kết gói WBS và mốc; đủ mã RR01-RR21."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Có điều kiện đóng, rủi ro còn lại, ngưỡng SPI, CPI, lỗi nghiêm trọng."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có dấu hiệu, ngưỡng, người quyết định, phương án dự trữ đã chọn (cột Áp dụng = Có cho chấp nhận và báo Chủ đầu tư), ngưỡng báo dự trữ dưới 2 ngày."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Văn phong trang trọng; còn cảnh báo lớp A về từ xong và một câu mang tính ghi chú nội bộ."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Trong sổ rủi ro, RR17 cũng được đánh dấu trên đường găng nhưng không thuộc danh sách dùng để đánh giá dự trữ, hai danh sách được đối chiếu lại khi cập nhật sổ.",
+   "mo_ta": "Chênh lệch RR17 không phải lỗi dữ liệu: RR17 (lỗi trong bảo hành) có tren_gang = true do gắn gói 8.2.4 và mốc M7, nhưng tac_dong_ngay = 0 và emv_ngay = 0, nên việc không đưa vào du_tru.ma_gang không làm đổi EMV thời gian 5,4 ngày. Tuy nhiên câu hiện tại trình bày như một mâu thuẫn chưa xử lý, kiểu ghi chú nội bộ.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "NHAN_XET_MA_TRAN: thay bằng câu nêu lý do, ví dụ RR17 gắn mốc M7 nhưng không có tác động thời gian (EMV thời gian bằng 0) nên không tính vào đánh giá dự trữ. Tùy chọn: script tinh_bang_rui_ro.py ghi rõ tiêu chí loại rủi ro có emv_ngay = 0 khỏi ma_gang."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "so_lieu",
+   "vi_tri": "thông báo Chủ đầu tư khi dự trữ còn dưới 2 ngày làm việc",
+   "mo_ta": "Giá trị 2 ngày đúng với quyết định của nhóm nhưng chỉ có trong chuỗi chú thích _quyet_dinh_18_10, không có trường dữ liệu có cấu trúc, nên lớp A coi là số viết tay. Bảng ngưỡng rb#nguong cũng chưa có dòng dự trữ thời gian.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Thêm trường số (ví dụ du_an.nguong_bao_du_tru_ngay = 2) và dòng Dự trữ thời gian còn lại trong rb#nguong, rồi để THEO_DOI hoặc DU_PHONG tham chiếu trường này."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "pham_vi_nhom_quyet",
+   "vi_tri": "Khi cần đẩy nhanh các gói trên đường găng, Trương Quốc Việt, kỹ sư phát triển backend kiêm DevOps, là nguồn lực có thể điều chuyển.",
+   "mo_ta": "Quyết định 18/10 không nêu người được điều chuyển; nội dung này là tham số nhân sự (nguyên tắc 7). Ngoài ra Trương Quốc Việt không có trong dòng Nhóm phát triển và kiểm thử của bảng mục 2. Chưa chắc nguồn có ghi nhận nguồn lực dư.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận; nếu không có căn cứ trong phan_cong.json thì bỏ câu khỏi DU_PHONG, nếu có thì bổ sung tên vào bảng TO_CHUC."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "phải xong trong khoảng kiểm thử chấp nhận; ngay khi luồng đó lập trình xong",
+   "mo_ta": "Lớp A cảnh báo từ xong (khẩu ngữ) trong sổ rủi ro.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa ở du_lieu/rui_ro.json: xong thành hoàn thành."
+  }
+ ]
+}

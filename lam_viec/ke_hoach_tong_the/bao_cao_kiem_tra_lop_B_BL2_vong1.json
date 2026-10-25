@@ -1,0 +1,40 @@
+{
+ "tai_lieu": "ket_qua/05_Master_plan/Ke_hoach_tong_the.docx",
+ "phien_ban": "2.0",
+ "duong_co_so": "BL2",
+ "dac_ta": ".claude/skills/qlda-master-plan/dac_ta/ke_hoach_tong_the.json",
+ "ngay_kiem_tra": "2026-10-25",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B, phiên riêng, kiểm tra như tài liệu mới sau CR01)",
+ "ket_luan": "chua_dat",
+ "so_loi": 2,
+ "so_canh_bao": 6,
+ "danh_gia_tieu_chi": [
+  {"tieu_chi": "CL01", "ket_qua": "chua_dat", "nhan_xet": "Đủ 16 mục, điều lệ có mục tiêu SMART gồm M9, ràng buộc và giả định theo phụ lục, phê duyệt phiên bản sau CR01. Mục đường cơ sở không phản ánh BL2, dòng tiền thiếu đợt 6."},
+  {"tieu_chi": "CL02", "ket_qua": "chua_dat", "nhan_xet": "Khớp nguồn: giá hợp đồng sau phụ lục 1.949.024.682, BAC 1.581.550.000, khoản B 150.000.000, khoản C 217.474.682, 733 MD, 173 gói, 93 ngày, 9 sprint, mốc và hạn theo lịch BL2, quỹ S7 67, S8 52, S9 83 MD khớp thanh_vien.json, dự trữ 8 ngày, ngày đóng dự án 12/08/2027, bảo đảm thực hiện đến 31/08/2027. Lệch: đường cơ sở hiện hành ghi BL1, dòng tiền 5 đợt so với cp#thanh_toan 6 đợt, tỷ lệ sử dụng quỹ 81,4% so với quỹ 898 MD."},
+  {"tieu_chi": "CL03", "ket_qua": "dat", "nhan_xet": "Mục tiêu, ràng buộc, mốc, kiểm thử chấp nhận phần CR01 dẫn về phụ lục 01/2027/PL-ABCW, gói 5.2.4, 5.4.5, mốc M9, Mục 13.1 E-ĐKCT."},
+  {"tieu_chi": "CL04", "ket_qua": "dat", "nhan_xet": "Bảng mục tiêu có chỉ số, ngưỡng, hạn, người xác nhận, tiêu chí nghiệm thu phần CR01 theo đặc tả đã xác nhận, điều kiện cut over kiểm chứng được."},
+  {"tieu_chi": "CL05", "ket_qua": "dat", "nhan_xet": "Có ngưỡng SPI, CPI, dự trữ dưới 2 ngày, báo cáo vượt cấp, quy trình vấn đề và thay đổi. Cảnh báo về bên liên quan sàn thương mại điện tử."},
+  {"tieu_chi": "CL06", "ket_qua": "dat", "nhan_xet": "Đúng định dạng. Một câu viết hoa sau dấu phẩy và cụm 'nhóm mức 1 5' khó đọc ở mục 3, hai dấu chấm phẩy."}
+ ],
+ "doc_hieu": [
+  {"tieu_chi": "Không mâu thuẫn số liệu với HSMT, HSDT, WBS, lịch, phân công", "ket_qua": "chua_dat", "ghi_chu": "MH02, MH05"},
+  {"tieu_chi": "Điều lệ dự án: mục tiêu SMART, ràng buộc, giả định, người phê duyệt", "ket_qua": "dat"},
+  {"tieu_chi": "Đủ chín kế hoạch con và thay đổi, cấu hình, vấn đề, rà soát, kết thúc", "ket_qua": "dat"},
+  {"tieu_chi": "Bên liên quan lấy từ dữ liệu", "ket_qua": "dat"},
+  {"tieu_chi": "Tiêu chí nghiệm thu và điều kiện cut over kiểm chứng được", "ket_qua": "dat"},
+  {"tieu_chi": "Một đường cơ sở chi phí BAC, giá hợp đồng riêng, ba đường cơ sở kèm kiểm soát", "ket_qua": "chua_dat", "ghi_chu": "Bảng ba đường cơ sở đúng, nhưng danh sách đường cơ sở ghi hiện hành là BL1 (MH01)"},
+  {"tieu_chi": "Quy tắc dự phòng dẫn chiếu bảng chung", "ket_qua": "dat"},
+  {"tieu_chi": "Kế hoạch họp đáp ứng RFP và HSDT, có ma trận báo cáo", "ket_qua": "dat"}
+ ],
+ "phat_hien": [
+  {"ma": "MH01", "muc_do": "loi", "nhom": "CL01, CL02", "vi_tri": "Mục 16: 'Các đường cơ sở đã lập theo sổ phiên bản, đường cơ sở hiện hành là BL1:' và bảng chỉ có dòng BL1", "mo_ta": "Tài liệu là phiên bản 2.0 thuộc BL2 (Đường cơ sở sau yêu cầu thay đổi CR01, 27/05/2027, căn cứ CR01, R4, 15 tài liệu theo du_lieu/phien_ban.json) nhưng ghi đường cơ sở hiện hành là BL1 và không liệt kê BL2. du_lieu/ke_hoach_bang.json (duong_co_so, cau_duong_co_so, duong_co_so_hien_hanh) được tính trước khi lập BL2.", "cach_sua": "tu_dong", "sua_o": "dữ liệu", "de_xuat": "Tinh_bang_ke_hoach.py ghi đường cơ sở đang lập theo CR đã phê duyệt có phụ lục (BL2, CR01, 27/05/2027) hoặc chạy lại sau khi lập BL2, rồi dựng lại tài liệu. Cách ghi phiên bản sửa sau BL2 cần nhóm quyết định."},
+  {"ma": "MH02", "muc_do": "loi", "nhom": "CL02", "vi_tri": "Mục 7: 'Dòng tiền thu theo 5 đợt thanh toán, Đợt 2 dự kiến nhận ngày 21/05/2027, Đợt 3 ngày 23/07/2027, Đợt 4 và Đợt 5 ngày 13/08/2027.'", "mo_ta": "cp#thanh_toan có 6 đợt: Đợt 6 là 100% giá CR01 199.024.682 đồng, sự kiện M9 12/07/2027, dự kiến nhận 27/07/2027 (S9) theo phụ lục 01/2027/PL-ABCW. Câu ghi 5 đợt và bỏ đợt 6, mâu thuẫn bảng mốc (M9, thanh toán 6) và mục tiêu M9 căn cứ thanh toán Đợt 6 trong cùng tài liệu.", "cach_sua": "tu_dong", "sua_o": "lời văn", "de_xuat": "Soạn lại CHI_PHI theo cp#thanh_toan: 6 đợt, Đợt 6 199.024.682 đồng dự kiến nhận 27/07/2027."},
+  {"ma": "MH03", "muc_do": "canh_bao", "nhom": "CL02, CL06", "vi_tri": "Mục 3: '..., Yêu cầu thay đổi CR01 bổ sung nhóm mức 1 5 Bán hàng trên sàn thương mại điện tử (75 MD) theo phụ lục hợp đồng'", "mo_ta": "CR01 là 76 MD, gồm 75 MD nhóm 5 và 1 MD tăng ở gói 2.4.11 (nhóm 2). Tài liệu chỉ nêu 75 MD, người đọc khó đối chiếu với 76 MD của kế hoạch quản lý thay đổi. Câu viết hoa sau dấu phẩy và cụm 'nhóm mức 1 5' khó đọc.", "cach_sua": "tu_dong", "sua_o": "lời văn", "de_xuat": "Ghi 'CR01 tăng 76 MD, gồm nhóm 5 (75 MD) và 1 MD kiểm thử hồi quy 2.4.11', tách câu."},
+  {"ma": "MH04", "muc_do": "canh_bao", "nhom": "CL02", "vi_tri": "Mục 5: 'Trương Quốc Việt được huy động từ S3 để lịch 733 MD kịp cut over.'", "mo_ta": "Huy động Trương Quốc Việt từ S3 theo quyết định của nhóm ngày 18/10/2026 cho lịch 657 MD, không phải 733 MD. Câu gán sai căn cứ sau CR01.", "cach_sua": "tu_dong", "sua_o": "lời văn", "de_xuat": "Ghi 'theo quyết định của nhóm ngày 18/10/2026' và tách phần huy động kéo dài S7 đến S9 sau CR01."},
+  {"ma": "MH05", "muc_do": "canh_bao", "nhom": "CL02", "vi_tri": "Mục 5: 'tỷ lệ sử dụng quỹ cả dự án 81,4%', bảng thành viên tổng quỹ 898 MD", "mo_ta": "81,4% là 733/900 (lich.tong_quy gồm 2 MD quỹ giai đoạn Kết thúc), còn tài liệu dùng quỹ 898 MD (phan_cong.tong_quy), theo đó tỷ lệ là 81,6%. Hai cơ sở quỹ khác nhau giữa lich.json và phan_cong.json.", "cach_sua": "tu_dong", "sua_o": "dữ liệu", "de_xuat": "Thống nhất cơ sở quỹ (có hay không 2 MD Kết thúc) giữa lap_lich.py và phân công, lời văn tham chiếu cùng một khóa."},
+  {"ma": "MH06", "muc_do": "canh_bao", "nhom": "CL05", "vi_tri": "Mục 1 bảng giả định, mục 2 bên liên quan", "mo_ta": "Sau CR01 phần bán hàng trên sàn phụ thuộc tài khoản cửa hàng, khóa truy cập và môi trường thử do sàn thương mại điện tử cấp qua Chủ đầu tư (RR22), nhưng bên liên quan và giả định chưa nêu sàn hoặc đầu mối phía Chủ đầu tư làm việc với sàn. Dữ liệu bên liên quan chưa có nên không tự thêm.", "cach_sua": "can_nguoi_dung", "sua_o": "dữ liệu", "de_xuat": "Nhóm quyết định có thêm bên liên quan, giả định về sàn thương mại điện tử vào phan_cong_nhap.json hoặc ke_hoach_bang không."},
+  {"ma": "MH07", "muc_do": "canh_bao", "nhom": "CL02", "vi_tri": "Mục 13 bảng cấu hình dòng 'Phần thay đổi CR01 ... | Phạm Ngọc Anh' và dòng kế hoạch dự án gắn 5.1 với 'Ký hợp đồng'", "mo_ta": "Giống MH04 của kế hoạch quản lý thay đổi: người phụ trách chưa khớp RACI (A mục 5 là Trần Bá Đạt), nhóm 5 vào đường cơ sở tại BL2 chứ không phải ký hợp đồng.", "cach_sua": "tu_dong", "sua_o": "dữ liệu", "de_xuat": "Sửa tdb#cau_hinh."},
+  {"ma": "MH08", "muc_do": "canh_bao", "nhom": "CL06", "vi_tri": "Mục 1 dòng Thời gian '9 sprint; giai đoạn Kết thúc', mục 13 '27/05/2027; đặc tả'", "mo_ta": "Dấu chấm phẩy, văn phong khuyến nghị hạn chế.", "cach_sua": "tu_dong", "sua_o": "dữ liệu", "de_xuat": "Đổi thành dấu phẩy hoặc tách câu trong ke_hoach_bang và tdb#cau_hinh."}
+ ],
+ "ghi_chu_quy_trinh": "Tài liệu đã ở trạng thái Đường cơ sở BL2 (2.0) trước khi kiểm tra lớp B. Sửa lỗi sau đường cơ sở cần nhóm quyết định cách ghi phiên bản."
+}

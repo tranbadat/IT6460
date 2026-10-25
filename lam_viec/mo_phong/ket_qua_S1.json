@@ -1,0 +1,96 @@
+{
+ "sprint": "S1",
+ "tong_md": 55.25,
+ "md_ke_hoach_sprint": 55.5,
+ "md_theo_nguoi": {
+  "D1": {
+   "md": 4.0,
+   "quy": 10.0,
+   "ty_le_su_dung": 0.4
+  },
+  "D3": {
+   "md": 3.0,
+   "quy": 10.0,
+   "ty_le_su_dung": 0.3
+  },
+  "K": {
+   "md": 9.75,
+   "quy": 10.0,
+   "ty_le_su_dung": 0.975
+  },
+  "dat": {
+   "md": 10.0,
+   "quy": 10.0,
+   "ty_le_su_dung": 1.0
+  },
+  "lien": {
+   "md": 10.0,
+   "quy": 10.0,
+   "ty_le_su_dung": 1.0
+  },
+  "minh": {
+   "md": 8.5,
+   "quy": 10.0,
+   "ty_le_su_dung": 0.85
+  },
+  "toan": {
+   "md": 6.0,
+   "quy": 10.0,
+   "ty_le_su_dung": 0.6
+  },
+  "tuananh": {
+   "md": 4.0,
+   "quy": 10.0,
+   "ty_le_su_dung": 0.4
+  }
+ },
+ "goi_hoan_thanh": [
+  "1.1.1",
+  "1.2.1",
+  "2.2.1",
+  "2.2.3",
+  "3.2.1",
+  "3.2.2",
+  "4.2.1",
+  "4.2.2",
+  "4.3.1",
+  "4.3.3",
+  "4.3.4"
+ ],
+ "goi_cham": [
+  {
+   "ma": "4.1.2",
+   "ke_hoach": 0.137,
+   "thuc_te": 0,
+   "ket_thuc_ke_hoach": "2027-07-01",
+   "gang": false
+  },
+  {
+   "ma": "4.1.3",
+   "ke_hoach": 0.137,
+   "thuc_te": 0,
+   "ket_thuc_ke_hoach": "2027-07-01",
+   "gang": false
+  }
+ ],
+ "spi_uoc_tinh": 1.001,
+ "so_bien_co": {
+  "moc": 1,
+  "goi": 2,
+  "van_de": 2,
+  "loi": 1,
+  "chi_phi": 1,
+  "retro": 1
+ },
+ "so_dong_them": {
+  "nhat_ky_cong_viec": 77,
+  "hoan_thanh": 25,
+  "moc_thuc_te": 1,
+  "loi": 2,
+  "so_van_de": 2,
+  "hanh_dong": 3,
+  "chi_phi_thuc_te": 1
+ },
+ "cho_xu_ly_con_lai": 3,
+ "goi_y": []
+}

@@ -14,7 +14,7 @@ Không được đọc: WBS, HSDT hay tài liệu kết quả có sẵn của l�
 
 Các bước:
 1. Đọc phạm vi, sản phẩm bàn giao, chức năng, hệ thống liên quan và các nội dung đề xuất trong RFP và HSMT.
-2. Lập mức 1 gồm các nhóm công việc: quản lý dự án, phân tích và thiết kế chung, mỗi phân hệ chức năng một nhóm, tích hợp hệ thống, kiểm thử hệ thống và vận hành thử, triển khai và chuyển giao. Mã nhóm mức 1 theo mã trong tong_theo_nhom của uoc_luong.json.
+2. Lập mức 1 theo tong_theo_nhom của uoc_luong.json (mã và tên nhóm). Khi uoc_luong.json có phan_bo_dau_viec_chung, mức 1 chỉ gồm các phân hệ, mỗi phân hệ có năm mục mức 2 theo vòng đời (quản lý dự án phần phân bổ, tên bắt đầu bằng "Quản lý dự án"; phân tích và thiết kế; xây dựng; kiểm thử gồm phần kiểm thử hệ thống và chấp nhận phân bổ; triển khai và chuyển giao phần phân bổ), đầu việc chung phân bổ theo tỷ lệ md_rieng hoặc gán nguyên gói cho phân hệ liên quan nhất kèm lý do trong can_cu_uoc_luong. Không có khóa này thì mức 1 gồm quản lý dự án, phân tích và thiết kế chung, mỗi phân hệ chức năng một nhóm, tích hợp hệ thống, kiểm thử hệ thống và vận hành thử, triển khai và chuyển giao. Mọi gói quản lý dự án ghi giai_doan tường minh (khoi_dong, xuyen_suot, ket_thuc).
 3. Phân rã mức 2 và mức 3 theo quy tắc. Mỗi gói lá ghi khối lượng MD, loại công việc, sản phẩm đầu ra, gói phụ thuộc, hạng mục Mẫu 01A và mã yêu cầu RFP được đáp ứng.
    - Mỗi mục kiểm thử phân hệ có gói kịch bản và kiểm thử (QA) và gói sửa lỗi, kiểm thử lại (DEV).
    - Việc có Chủ đầu tư tham gia (xác nhận tài liệu, kiểm tra chức năng, kiểm thử chấp nhận) là gói lá riêng. Không ghi thời gian phê duyệt hay khoảng kiểm thử chấp nhận vào WBS, agent lập mốc gắn các gói này với tham số của du_an.json.

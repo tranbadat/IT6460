@@ -1,0 +1,132 @@
+{
+ "tai_lieu": [
+  "ket_qua/06_Cost_estimate/Thuyet_minh_du_toan.docx (v0.9)",
+  "ket_qua/06_Cost_estimate/Cost_estimate.xlsx (v0.10)"
+ ],
+ "buoc": "chi_phi",
+ "dac_ta": ".claude/skills/qlda-cost-estimate/dac_ta/thuyet_minh_du_toan.json",
+ "ngay_kiem_tra": "2026-10-24",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B)",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 6,
+ "phuong_phap": "Trích toàn văn Word bằng python-docx, so từng số với du_lieu/chi_phi.json, wbs.json, lich.json, rui_ro.json, rui_ro_bang.json, dau_vao/don_gia.json, du_an.json, thanh_vien.json. Excel: xóa giá trị lưu sẵn, tính lại bằng LibreOffice headless, so 1005 ô công thức với giá trị lưu sẵn (0 sai khác, 0 lỗi #), so các ô tổng hợp với chi_phi.json và với Word. Kiểm tra font, in đậm, dấu câu theo van_phong.md.",
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục theo đặc tả, các đoạn soạn CAN_CU, GIA_CHAO, DU_PHONG, DOI_CHIEU, DONG_TIEN, DO_NHAY có đủ nội dung hướng dẫn và cụm bắt buộc (657 MD, Mẫu 11A, RR13, CPI)."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "A 1.420.050.000, B 150.000.000, C 179.950.000, giá chào 1.750.000.000, lương kế hoạch 1.186.740.691, khoản còn lại 413.259.309, MD hòa vốn 786,16, ngưỡng 229 MD, độ nhạy thuế, Mẫu 11A, theo WBS, dòng tiền đều khớp chi_phi.json, Excel và lich.json (mốc M2, M3, M6, M7, sprint thu). Các quyết định 18/10/2026 trong du_an.json (dự phòng 50 triệu, vốn lưu động 500 triệu, dự trữ 4 ngày) được dẫn đúng."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Dòng A truy về 153 gói WBS qua sheet WBS_MD, Mẫu 11A truy về hạng mục 01A qua Goi_01A, dự phòng dẫn mã rủi ro RR13, RR04, RR02, RR01, RR19. Riêng bảng mục 7 chưa có sheet tương ứng (MH04)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Có ngưỡng định lượng kiểm chứng được: MD tính lương hòa vốn 786,16 MD, năng suất hòa vốn 83,6%, ngưỡng chịu đựng 229 MD, vốn lưu động 500 triệu đồng, các ô kiểm tra Đạt/Thiếu trong sheet Tong_hop."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Dự phòng so với EMV còn lại và khoảng EMV, quy tắc dùng dự phòng lấy bảng nguồn chung không viết lại, kiểm soát bằng CPI theo sprint và quy trình yêu cầu thay đổi."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, không in đậm, không gạch dài, không ngoặc kép, số âm viết chữ âm. Còn một đoạn lặp ý (MH01) và một câu diễn đạt chưa gọn (MH06)."
+  },
+  {
+   "tieu_chi": "DH1 Phương pháp giải thích được từng dòng Excel",
+   "ket_qua": "dat",
+   "nhan_xet": "Các dòng A, B, D, C, thuế, độ nhạy, đối chiếu người, Mẫu 11A, dòng tiền đều có giải thích. Chưa có sheet cho phân bổ theo nhóm WBS (MH04)."
+  },
+  {
+   "tieu_chi": "DH2 Dự phòng so với EMV, quy tắc lấy từ bảng nguồn chung",
+   "ket_qua": "dat",
+   "nhan_xet": "Dự phòng 50.000.000 đồng thấp hơn EMV 146.583.750 đồng, kể cả cận thấp 109.849.375, có quyết định của nhóm và nguồn bù. Bảng quy tắc là bảng nguồn chung."
+  },
+  {
+   "tieu_chi": "DH3 Nhận xét dòng tiền gắn mốc thanh toán",
+   "ket_qua": "dat",
+   "nhan_xet": "Gắn M2, M3, M6, M7 với đợt 2 đến 5, mức âm lớn nhất S4 464.736.486 đồng. Dòng chi chỉ gồm lương (MH05)."
+  },
+  {
+   "tieu_chi": "DH4 Độ nhạy nêu ngưỡng chịu đựng cụ thể",
+   "ket_qua": "dat",
+   "nhan_xet": "Ngưỡng 229 MD, năng suất hòa vốn 83,6%, thuế 10% làm C còn 1,3%."
+  },
+  {
+   "tieu_chi": "DH5 Số liệu Word khớp Excel",
+   "ket_qua": "dat",
+   "nhan_xet": "Khớp toàn bộ các bảng mục 2, 3, 4, 5, 6, 8 sau khi tính lại công thức."
+  },
+  {
+   "tieu_chi": "DH6 Cách trả lương theo công sức, ngày sẵn sàng chỉ là chỉ số năng lực",
+   "ket_qua": "dat",
+   "nhan_xet": "Nêu đúng trả theo MD công việc, 139 MD sẵn sàng không tính lương, lương ngày huy động 1.436.697.954 đồng chỉ dùng theo dõi năng lực."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 1, đoạn 4: Giá chào được phân bổ cho 13 hạng mục của Mẫu 01A ... là số liệu điền vào Mẫu 11A của HSDT, tổng phân bổ bằng giá chào. Ngay sau là đoạn cố định: Bảng phân bổ ở mục 6 là số liệu điền vào Mẫu 11A ...",
+   "mo_ta": "Đoạn soạn CAN_CU lặp nguyên ý của đoạn cố định {cp#doan_mau_11a} đặt ngay sau, hai câu liền nhau cùng nội dung.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại CAN_CU (lời văn): bỏ vế là số liệu điền vào Mẫu 11A, tổng phân bổ bằng giá chào, chỉ giữ cách phân bổ theo tỷ trọng chi phí nhân công."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "excel",
+   "vi_tri": "Cost_estimate.xlsx, sheet Doi_chieu_nguoi cột G (MD huy động) và H (MD công việc giao), 24 ô nhập tay",
+   "mo_ta": "Hai cột là số tổng hợp của sheet Huy_dong_luong và Phan_bo_luong nhưng nhập giá trị, không phải công thức SUMIFS. Hiện số khớp (796 và 657), nhưng sửa chi tiết theo sprint thì đối chiếu người không tự cập nhật, trái quy tắc mọi con số tổng hợp là công thức.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa script xuất Excel của qlda-cost-estimate: G = SUMIFS(Huy_dong_luong!C:C, Huy_dong_luong!A:A, A2), H = SUMIFS(Phan_bo_luong!C:C, Phan_bo_luong!A:A, A2)."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 4, đoạn DU_PHONG: RR13 ... với 45.386.250 đồng; mục 9: lương thỏa thuận với vị trí bổ sung cao hơn lương tham chiếu theo RR13",
+   "mo_ta": "EMV của RR13, rủi ro đóng góp lớn nhất (31% tổng EMV), tính trên lương của toàn bộ ngày huy động của 7 vị trí bổ sung (10% x 756.437.501 = 75.643.750 đồng), trong khi cách trả lương nhóm khai báo là theo công sức (lương MD công việc của 7 vị trí là 618.762.506 đồng, 10% là 61.876.251 đồng). Sổ rủi ro ghi đây là cận trên nhưng thuyết minh không nêu, người đọc hiểu EMV là ước tính trung tâm.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Dữ liệu: nhóm chọn tính tien_them của RR13 trên MD công việc theo cách trả lương, hoặc giữ cận trên. Nếu giữ, lời văn DU_PHONG nêu RR13 là ước tính cận trên theo ngày huy động."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "truy_vet",
+   "vi_tri": "Mục 7 Phân bổ theo nhóm WBS (cột Giá phân bổ 403.718.179, 385.695.046, 548.488.609, 412.098.166)",
+   "mo_ta": "Bảng mục 7 không có sheet tương ứng trong Cost_estimate.xlsx. Chi phí nhân công theo nhóm suy được từ WBS_MD cột E, F nhưng không có dòng tổng, cột Giá phân bổ không có trong Excel nên chưa đáp ứng trọn tiêu chí số liệu Word khớp Excel và giải thích được từng dòng Excel.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa script xuất Excel: thêm bảng theo nhóm mức 1 (SUMIFS WBS_MD!D, F theo cột E, giá phân bổ bằng ROUND(chi phí A nhóm / A x giá chào), dòng cuối nhận phần làm tròn)."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "noi_dung",
+   "vi_tri": "Mục 8, đoạn DONG_TIEN: Nhu cầu vốn lưu động bằng mức âm lớn nhất nêu trên ... chuẩn bị vốn lưu động 500.000.000 đồng",
+   "mo_ta": "Dòng chi chỉ gồm lương, không gồm phần môi trường, công cụ của khoản B (100.000.000 đồng ngoài dự phòng) chi trong thời gian thực hiện. Mức âm lớn nhất 464.736.486 đồng chỉ cách vốn lưu động 500.000.000 đồng là 35.263.514 đồng, nếu chi môi trường, công cụ trước S4 vượt mức này thì nhu cầu vốn bị đánh giá thấp. Không chắc nhóm đã tính phần chi này ở nơi khác.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận thời điểm chi phần môi trường, công cụ của khoản B. Nếu chi trong S1 đến S4 thì bổ sung vào dòng chi (dữ liệu dong_tien) hoặc nêu giả định trong lời văn DONG_TIEN."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 1, đoạn 3: Dòng B gồm khoản mục Môi trường, công cụ, bảo hành 12 tháng và dự phòng theo căn cứ Ước tính của nhà thầu",
+   "mo_ta": "Ghép nguyên văn tên khoản mục và căn cứ viết hoa giữa câu, đọc như dữ liệu dán vào, chưa nêu rõ cơ cấu 100.000.000 đồng cho môi trường, công cụ, bảo hành và 50.000.000 đồng dự phòng như dau_vao/don_gia.json.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại CAN_CU (lời văn): Dòng B gồm chi phí môi trường, công cụ, bảo hành 12 tháng và dự phòng rủi ro, do nhà thầu ước tính, trong đó dự phòng rủi ro {cp#du_phong_hien_co|tien} đồng."
+  }
+ ]
+}

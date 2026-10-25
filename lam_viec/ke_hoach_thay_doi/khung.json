@@ -54,7 +54,7 @@
    ]
   },
   "QUY_TRINH": {
-   "huong_dan": "Các bước: tiếp nhận, lập phiếu theo mẫu ở mục 5, phân biệt làm rõ, sửa lỗi thuộc trách nhiệm nhà thầu, yêu cầu thay đổi, phân loại sơ bộ để xác định thời hạn đánh giá (trạng thái Mới, Đang đánh giá); đánh giá tác động định lượng bằng công cụ của nhóm (MD, chi phí nội bộ, giá đề nghị, ngày chậm, mốc, điểm, mức), trạng thái Chờ phê duyệt; họp ban kiểm soát thay đổi với mức lớn; quyết định theo thẩm quyền; lập văn bản thống nhất hoặc phụ lục hợp đồng; cập nhật dữ liệu nguồn và tạo lại tài liệu theo ma trận lan truyền; thực hiện, kiểm thử và Chủ đầu tư kiểm tra đạt phần thay đổi (Mục 20.1 E-ĐKCT), trạng thái Đã thực hiện; thông báo các bên; đóng theo bảng nhánh đóng, gồm nhánh từ chối và hoãn. Thời hạn lấy theo bảng thẩm quyền ở mục 3, viết bằng tham chiếu, không viết số tay.",
+   "huong_dan": "Các bước: tiếp nhận, lập phiếu theo mẫu ở mục 5, phân biệt làm rõ, sửa lỗi thuộc trách nhiệm nhà thầu, yêu cầu thay đổi, phân loại sơ bộ để xác định thời hạn đánh giá (trạng thái Mới, Đang đánh giá); đánh giá tác động định lượng bằng công cụ của nhóm (MD, chi phí nội bộ, giá đề nghị, đưa gói mới vào lịch có ràng buộc nguồn lực để tính ngày cut over mới, mốc thanh toán bị dời và nhu cầu thêm người, điểm, mức), trạng thái Chờ phê duyệt; họp ban kiểm soát thay đổi với mức lớn; quyết định theo thẩm quyền; lập văn bản thống nhất hoặc phụ lục hợp đồng (số, ngày, giá điều chỉnh, cut over mới, mốc thanh toán điều chỉnh); áp dụng vào dữ liệu nguồn bằng công cụ của nhóm (căn cứ ước lượng, WBS, giao việc, dự án, mốc, đơn giá) và tạo lại tài liệu theo ma trận lan truyền, lập đường cơ sở mới sau thay đổi; thực hiện, kiểm thử và Chủ đầu tư kiểm tra đạt phần thay đổi (Mục 20.1 E-ĐKCT), trạng thái Đã thực hiện; thông báo các bên; đóng theo bảng nhánh đóng, gồm nhánh từ chối và hoãn. Thời hạn lấy theo bảng thẩm quyền ở mục 3, viết bằng tham chiếu, không viết số tay.",
    "nguon": [
     "tdb",
     "hsmt"
@@ -156,7 +156,7 @@
    ]
   },
   "THEO_DOI": {
-   "huong_dan": "Thông báo kết quả cho các bên, báo cáo số yêu cầu thay đổi và tác động trong báo cáo tiến độ, rà soát trong họp sprint, chỉ số theo dõi (số yêu cầu mở, MD tăng và giá đề nghị lũy kế, thời gian xử lý so với hạn quyết định). Liên kết với quản lý rủi ro khi thay đổi phát sinh rủi ro mới, với sổ vấn đề khi vấn đề cần thay đổi kế hoạch. Dự phòng chỉ dẫn chiếu mục 9, không viết lại quy tắc.",
+   "huong_dan": "Thông báo kết quả cho các bên, báo cáo số yêu cầu thay đổi và tác động trong báo cáo tiến độ, rà soát trong họp sprint, chỉ số theo dõi (số yêu cầu mở, MD tăng và giá đề nghị lũy kế, thời gian xử lý so với hạn quyết định). Liên kết với quản lý rủi ro khi thay đổi phát sinh rủi ro mới, với sổ vấn đề khi vấn đề cần thay đổi kế hoạch. Dự phòng chỉ dẫn chiếu mục 9, không viết lại quy tắc. Yêu cầu thay đổi đã có phụ lục nêu số, ngày phụ lục và giá hợp đồng sau phụ lục (tdb#so_thay_doi phu_luc_so, gia_hop_dong_sau), rủi ro mới liên kết (ma_rui_ro).",
    "nguon": [
     "tdb",
     "rr"
@@ -313,12 +313,6 @@
      "Lớn: quyết định và ký văn bản thống nhất hoặc phụ lục hợp đồng phía Chủ đầu tư"
     ],
     [
-     "Nguyễn Thị Phương Liên, Phân tích nghiệp vụ",
-     "Nhà thầu",
-     "Tham dự khi thay đổi thuộc nhóm công việc phụ trách",
-     "Đánh giá tác động, không quyết định"
-    ],
-    [
      "Vũ Đức Minh, Kỹ sư phát triển frontend",
      "Nhà thầu",
      "Tham dự khi thay đổi thuộc nhóm công việc phụ trách",
@@ -334,6 +328,24 @@
      "Ninh Đức Toàn, Kỹ sư phát triển backend",
      "Nhà thầu",
      "Tham dự khi thay đổi thuộc nhóm công việc phụ trách",
+     "Đánh giá tác động, không quyết định"
+    ],
+    [
+     "Nguyễn Thị Phương Liên, Phân tích nghiệp vụ",
+     "Nhà thầu",
+     "Tham dự khi thay đổi đặc tả hoặc kiểm thử",
+     "Đánh giá tác động, không quyết định"
+    ],
+    [
+     "Nguyễn Hoàng Nam, Kiến trúc sư kiêm phân tích nghiệp vụ",
+     "Nhà thầu",
+     "Tham dự khi thay đổi đặc tả hoặc kiểm thử",
+     "Đánh giá tác động, không quyết định"
+    ],
+    [
+     "Phạm Ngọc Anh, Kỹ sư kiểm thử chức năng, hiệu năng và an toàn thông tin",
+     "Nhà thầu",
+     "Tham dự khi thay đổi đặc tả hoặc kiểm thử",
      "Đánh giá tác động, không quyết định"
     ]
    ],
@@ -536,7 +548,7 @@
    "t": "table"
   },
   {
-   "text": "Chi phí nội bộ của thay đổi tính bằng MD tăng nhân đơn giá loại công việc, đơn giá nhân công bình quân hiện tại là 2.161.416 đồng mỗi MD. Giá đề nghị Chủ đầu tư của phần thay đổi tính theo đơn giá suy từ giá dự thầu, bằng chi phí nội bộ nhân hệ số 1,232 (giá dự thầu chia khoản nhân công), bình quân 2.663.623 đồng mỗi MD, là căn cứ để hai bên thương thảo theo Mục 17.2 E-ĐKC.",
+   "text": "Chi phí nội bộ của thay đổi tính bằng MD tăng nhân đơn giá loại công việc, đơn giá nhân công bình quân hiện tại là 2.157.640 đồng mỗi MD. Giá đề nghị Chủ đầu tư của phần thay đổi tính theo đơn giá suy từ giá dự thầu, bằng chi phí nội bộ nhân hệ số 1,232 (giá dự thầu chia khoản nhân công), bình quân 2.658.970 đồng mỗi MD, là căn cứ để hai bên thương thảo theo Mục 17.2 E-ĐKC.",
    "t": "p"
   },
   {
@@ -666,8 +678,13 @@
     ],
     [
      "Đánh giá",
-     "Số ngày chậm, tiêu hao dự trữ, chậm cut over, mốc bị ảnh hưởng",
+     "Số ngày chậm, tiêu hao dự trữ, số ngày cut over lùi, ngày cut over mới, mốc bị ảnh hưởng",
      "Công cụ của nhóm tính"
+    ],
+    [
+     "Đánh giá",
+     "Lịch có gói mới (ngày bắt đầu, kết thúc từng gói), có cần thêm người, phương án thêm nhân sự",
+     "Công cụ của nhóm tính, người đánh giá đề xuất phương án thêm nhân sự"
     ],
     [
      "Đánh giá",
@@ -698,6 +715,16 @@
      "Quyết định",
      "Ngày xem xét lại khi hoãn",
      "Người có thẩm quyền theo mức"
+    ],
+    [
+     "Quyết định",
+     "Phương án được chọn, phụ lục hợp đồng (số, ngày, giá điều chỉnh, cut over mới, mốc thanh toán điều chỉnh)",
+     "Người có thẩm quyền theo mức, công cụ của nhóm ghi phụ lục khi áp dụng"
+    ],
+    [
+     "Quyết định",
+     "Áp dụng vào dữ liệu nguồn, thứ tự chạy lại các bước",
+     "Công cụ của nhóm, quản trị dự án xác nhận ghi"
     ],
     [
      "Đóng",
@@ -739,37 +766,37 @@
     ],
     [
      "Phạm vi, WBS",
-     "Giao việc theo gói WBS (dữ liệu), Master schedule, WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo bài học kinh nghiệm, Risk management plan, Báo cáo tổng kết dự án, Bảng phân chia lương, Báo cáo đánh giá dự án",
+     "Giao việc theo gói WBS (dữ liệu), Master schedule, WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Số liệu thực tế mô phỏng, Báo cáo tiến độ, Bản phát hành theo sprint, Số liệu kết thúc dự án (dữ liệu), Báo cáo bài học kinh nghiệm, Risk management plan, Báo cáo tổng kết dự án, Bảng phân chia lương, Báo cáo đánh giá dự án, Tài liệu quản lý phiên bản",
      "Hồ sơ dự thầu"
     ],
     [
      "Giao việc",
-     "Master schedule, WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo tổng kết dự án, Báo cáo bài học kinh nghiệm, Bảng phân chia lương, Báo cáo đánh giá dự án",
+     "Master schedule, WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Số liệu thực tế mô phỏng, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Bản phát hành theo sprint, Báo cáo tổng kết dự án, Báo cáo bài học kinh nghiệm, Bảng phân chia lương, Báo cáo đánh giá dự án, Tài liệu quản lý phiên bản",
      "Hồ sơ dự thầu"
     ],
     [
      "Thành viên, quỹ thời gian",
-     "Giao việc theo gói WBS (dữ liệu), Master schedule, WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Bảng phân chia lương, Báo cáo tổng kết dự án, Báo cáo bài học kinh nghiệm, Báo cáo đánh giá dự án",
+     "Giao việc theo gói WBS (dữ liệu), Master schedule, WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Số liệu thực tế mô phỏng, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Bảng phân chia lương, Bản phát hành theo sprint, Báo cáo tổng kết dự án, Báo cáo bài học kinh nghiệm, Báo cáo đánh giá dự án, Tài liệu quản lý phiên bản",
      "Hồ sơ dự thầu"
     ],
     [
      "Lịch, mốc",
-     "WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo tổng kết dự án, Báo cáo bài học kinh nghiệm, Bảng phân chia lương, Báo cáo đánh giá dự án",
+     "WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Số liệu thực tế mô phỏng, Báo cáo tiến độ, Bản phát hành theo sprint, Số liệu kết thúc dự án (dữ liệu), Báo cáo tổng kết dự án, Báo cáo bài học kinh nghiệm, Bảng phân chia lương, Báo cáo đánh giá dự án, Tài liệu quản lý phiên bản",
      "Hồ sơ dự thầu"
     ],
     [
      "Đơn giá",
-     "Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Change management plan, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Bảng phân chia lương, Risk management plan, Master plan, Báo cáo đánh giá dự án, Báo cáo bài học kinh nghiệm, Báo cáo tổng kết dự án",
+     "Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Change management plan, Số liệu thực tế mô phỏng, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Bảng phân chia lương, Risk management plan, Master plan, Báo cáo đánh giá dự án, Báo cáo bài học kinh nghiệm, Báo cáo tổng kết dự án",
      "Hồ sơ dự thầu"
     ],
     [
      "Sổ rủi ro",
-     "Cost estimate, Risk management plan, Change management plan, Master plan, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo đánh giá dự án, Báo cáo bài học kinh nghiệm, Báo cáo tổng kết dự án, Bảng phân chia lương",
+     "Cost estimate, Risk management plan, Change management plan, Master plan, Số liệu thực tế mô phỏng, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo đánh giá dự án, Báo cáo bài học kinh nghiệm, Báo cáo tổng kết dự án, Bảng phân chia lương",
      "Hồ sơ dự thầu"
     ],
     [
      "Lịch làm việc, ngày nghỉ",
-     "WBS (dữ liệu), Giao việc theo gói WBS (dữ liệu), Master schedule, WBS (tài liệu), Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo tổng kết dự án, Báo cáo đánh giá dự án, Báo cáo bài học kinh nghiệm, Bảng phân chia lương, Tài liệu quản lý phiên bản, Sổ đăng ký rủi ro (dữ liệu), Cost estimate",
+     "WBS (dữ liệu), Giao việc theo gói WBS (dữ liệu), Master schedule, WBS (tài liệu), Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Số liệu thực tế mô phỏng, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo tổng kết dự án, Báo cáo đánh giá dự án, Báo cáo bài học kinh nghiệm, Bảng phân chia lương, Tài liệu quản lý phiên bản, Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Bản phát hành theo sprint",
      "Hồ sơ dự thầu"
     ]
    ],
@@ -797,87 +824,93 @@
     ],
     [
      "Kế hoạch dự án: WBS, master schedule, cost estimate (đường cơ sở phạm vi, tiến độ, chi phí)",
-     "1.1",
+     "1.1, 2.1, 3.1, 4.1",
      "Ký hợp đồng",
      "Trần Bá Đạt"
     ],
     [
      "1. Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
-     "2.1, 2.2",
+     "1.2, 2.2, 3.2, 4.2",
      "M2, 06/05/2027",
-     "Ninh Đức Toàn"
+     "Nguyễn Thị Phương Liên"
     ],
     [
      "2. Thiết kế quy trình vận hành mới (New Operational Flow)",
-     "2.1, 2.2",
+     "3.2",
      "M2, 06/05/2027",
      "Nguyễn Thị Phương Liên"
     ],
     [
      "3. Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
-     "2.1, 2.2",
+     "3.2, 4.2",
      "M2, 06/05/2027",
-     "Phạm Tuấn Anh"
+     "Nguyễn Hoàng Nam"
     ],
     [
      "4. Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
-     "2.1, 2.3",
+     "1.2, 2.2, 3.2",
      "M2, 06/05/2027",
-     "Vũ Đức Minh"
+     "Nguyễn Thị Phương Liên"
     ],
     [
      "5. Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
-     "2.3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.1, 8.1",
-     "M3, 16/06/2027",
-     "Phạm Tuấn Anh"
+     "1.2, 1.3, 1.4, 1.5, 3.3, 4.3, 4.4",
+     "M3, 08/07/2027",
+     "Vũ Đức Minh"
     ],
     [
      "6. Xây dựng chức năng quản lý thành viên (Member Administration)",
-     "2.3, 4.1, 4.2, 4.3, 4.4, 4.5, 6.1, 8.1",
-     "M3, 16/06/2027",
+     "1.2, 1.5, 2.2, 2.3, 2.4, 3.3, 4.3, 4.4",
+     "M3, 08/07/2027",
      "Phạm Tuấn Anh"
     ],
     [
      "7. Xây dựng chức năng đặt hàng (Order)",
-     "2.3, 5.1, 5.2, 5.3, 5.4, 5.5, 6.1, 8.1",
-     "M3, 16/06/2027",
-     "Trần Thu Hà"
-    ],
-    [
-     "8. Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
-     "6.1, 8.1",
-     "M3, 16/06/2027",
+     "1.2, 1.5, 3.2, 3.3, 3.4, 4.3, 4.4",
+     "M3, 08/07/2027",
      "Phạm Tuấn Anh"
     ],
     [
+     "8. Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+     "1.5, 4.3, 4.4",
+     "M3, 08/07/2027",
+     "Ninh Đức Toàn"
+    ],
+    [
      "9. Tích hợp với hệ thống chính (Main System)",
-     "6.2, 8.1",
-     "M3, 16/06/2027",
-     "Phạm Ngọc Anh"
+     "1.5, 4.2, 4.3, 4.4",
+     "M3, 08/07/2027",
+     "Ninh Đức Toàn"
     ],
     [
      "10. Kiểm thử hệ thống",
-     "7.1, 7.2, 7.3",
-     "M4, 16/06/2027",
+     "1.4, 2.4, 3.4, 4.4",
+     "M4, 08/07/2027",
      "Nguyễn Thị Phương Liên"
     ],
     [
      "11. Kiểm thử vận hành (Operation Test)",
-     "3.5, 4.5, 5.5, 6.2, 7.1, 7.3",
-     "M6, 01/07/2027",
-     "Phạm Ngọc Anh"
+     "1.4, 2.4, 3.4, 4.4",
+     "M6, 29/07/2027",
+     "Nguyễn Thị Phương Liên"
     ],
     [
      "12. Chuyển giao và hướng dẫn vận hành hệ thống",
-     "2.1, 8.2",
-     "M6, 01/07/2027",
-     "Đỗ Minh Quân"
+     "1.5, 2.5, 3.2, 3.5, 4.5",
+     "M6, 29/07/2027",
+     "Nguyễn Thị Phương Liên"
     ],
     [
      "13. Hỗ trợ đưa hệ thống vào vận hành (cut over)",
-     "6.3, 8.1, 8.3",
-     "M6, 01/07/2027",
-     "Bùi Anh Tuấn"
+     "1.5, 3.5, 4.3, 4.5",
+     "M6, 29/07/2027",
+     "Ninh Đức Toàn"
+    ],
+    [
+     "Phần thay đổi CR01: Bán hàng trên sàn thương mại điện tử",
+     "5.1, 5.2, 5.3, 5.4, 5.5",
+     "BL2, 27/05/2027 (phụ lục 01/2027/PL-ABCW), đặc tả tại gói 5.2.4, 17/06/2027",
+     "Trần Bá Đạt"
     ]
    ],
    "widths": [
@@ -950,7 +983,11 @@
     ],
     [
      "Tổng EMV của sổ rủi ro",
-     "147 triệu đồng, khoảng từ 110 đến 183 triệu đồng"
+     "151 triệu đồng, khoảng từ 113 đến 189 triệu đồng"
+    ],
+    [
+     "EMV còn lại (rủi ro chưa xảy ra, chưa đóng)",
+     "115 triệu đồng của 18 rủi ro, 4 rủi ro đã xảy ra hoặc đã đóng"
     ],
     [
      "Điều kiện sử dụng",
@@ -963,6 +1000,10 @@
     [
      "Người phê duyệt",
      "Quản trị dự án Trần Bá Đạt phê duyệt khoản dùng cho rủi ro do thành viên khác phụ trách. Người đại diện ký hợp đồng của nhà thầu Lê Quốc Bảo phê duyệt khoản dùng cho rủi ro do quản trị dự án phụ trách và khoản làm giảm phần chi phí chung và lợi nhuận"
+    ],
+    [
+     "Phần vượt dự phòng",
+     "Khi tổng chi phí ứng phó vượt dự phòng hiện có, phần vượt được bù từ phần còn lại của giá chào sau khi trừ lương kế hoạch và khoản B theo quyết định của nhóm ngày 18/10/2026, phần này gồm khoản C và phần khoản A chưa dùng cho lương theo quyết định của nhóm ngày 25/10/2026, do người đại diện ký hợp đồng của nhà thầu phê duyệt"
     ],
     [
      "Ghi nhận",
@@ -987,8 +1028,54 @@
    "t": "h1"
   },
   {
-   "text": "Chưa có yêu cầu thay đổi nào được ghi nhận tại thời điểm lập kế hoạch.",
-   "t": "p"
+   "rows": [
+    [
+     "Mã",
+     "Nội dung",
+     "Ngày",
+     "MD",
+     "Chi phí nội bộ, đồng",
+     "Giá đề nghị, đồng",
+     "Cut over lùi, ngày làm việc",
+     "Mức (điểm)",
+     "Trạng thái tại ngày lập"
+    ],
+    [
+     "CR01",
+     "Bán hàng trên sàn thương mại điện tử",
+     "20/05/2027",
+     "76",
+     "161.500.000",
+     "199.024.682",
+     "20",
+     "Lớn (10)",
+     "Đã phê duyệt"
+    ]
+   ],
+   "widths": [
+    650,
+    2200,
+    1050,
+    650,
+    1250,
+    1250,
+    750,
+    900,
+    600
+   ],
+   "center_cols": [
+    0,
+    2,
+    6,
+    7
+   ],
+   "right_cols": [
+    3,
+    4,
+    5
+   ],
+   "dong_dam": [],
+   "t": "table"
   },
   {
    "text": "11. Truyền thông và theo dõi",

@@ -8,7 +8,8 @@ Ra: ket_qua/03_WBS/WBS_n_<ten>.docx, ket_qua/03_WBS/WBS_tong_hop.docx. Mỗi fil
 Tệp tổng hợp có mục Căn cứ ước lượng khi wbs.json có khối can_cu_uoc_luong (kiem_tra_wbs.py lập từ dau_vao/uoc_luong.json).
 Ngày tài liệu: --ngay nếu có, giữ ngày đặt bằng --ngay ở phiên bản trước khi nội dung không đổi, còn lại theo ngày ký đơn hiện hành.
 Lời căn cứ ước lượng, giả định ngoài phạm vi, giải trình hợp đồng tương tự (dữ liệu nhập) được thay tham chiếu dữ liệu {wbs#...}, {lich#...},
-{da#...}, {cr#CRxx....}, {nhom#<mã nhóm>.md}, {cc#<mã nhóm>.md_muc_tieu}, {buoc#<số bước>....}, {ct#...} (chỉ tiêu kỹ thuật), {kl#truoc_cr}
+{da#...}, {cr#CRxx....}, {nhom#<mã nhóm>.md}, {cc#<mã nhóm>.md_muc_tieu}, {cc#<mã nhóm>.md_rieng}, {cc#<mã nhóm>.md_chung_phan_bo}, {buoc#<số bước>....},
+{pb#theo_nhom.<mã nhóm>.<đầu việc chung>} (phân bổ đầu việc chung), {pb#dau_viec.<đầu việc chung>}, {ct#...} (chỉ tiêu kỹ thuật), {kl#truoc_cr}
 (tổng tại hồ sơ dự thầu) bằng loi.giai_bieu_thuc để số liệu theo dữ liệu hiện hành. Yêu cầu thay đổi có phụ lục (du_lieu/thay_doi.json): bìa ghi
 căn cứ là phụ lục và đường cơ sở hiện hành thay cho hồ sơ dự thầu, thông tin chung của nhóm có dòng Yêu cầu thay đổi (gói mới, gói tăng MD),
 tệp tổng hợp có bảng truy vết yêu cầu thay đổi và ghi bước ước lượng theo phiếu yêu cầu thay đổi.
@@ -59,7 +60,7 @@ CR_PL = [c for c in loi.doc_json('du_lieu/thay_doi.json', {'yeu_cau': []}).get('
 _CC = wbs.get('can_cu_uoc_luong') or {}
 NGUON_TC = {'wbs': wbs, 'lich': lich, 'da': da, 'cr': {c['ma']: c for c in CR_PL}, 'nhom': {n['ma']: n for n in wbs['nhom']},
             'cc': {x['ma']: x for x in _CC.get('theo_nhom', [])}, 'buoc': {str(b['buoc']): b for b in _CC.get('cac_buoc', [])},
-            'ct': loi.doc_json('dau_vao/chi_tieu_ky_thuat.json', {}),
+            'ct': loi.doc_json('dau_vao/chi_tieu_ky_thuat.json', {}), 'pb': _CC.get('phan_bo_chung') or {}, 'ul': _CC,
             'kl': {'truoc_cr': round(wbs['tong_md'] - sum(float(c.get('md_tang') or 0) for c in CR_PL), 2)}}  # tổng tại hồ sơ dự thầu
 BL_HH = (loi.doc_json('du_lieu/phien_ban.json', {}).get('duong_co_so') or [{}])[-1].get('ma', '')
 SPEC = os.path.join(HERE, '..', 'dac_ta', 'tai_lieu_wbs.json')
@@ -86,9 +87,10 @@ def cr_cua_nhom(ma):
 
 def mo_ta_cr(c, g):
     moi = [m for m, _, mo in g if mo]
-    tang = [f'{m} tăng {loi.md(d)} MD' for m, d, mo in g if not mo]
+    # gói có md_tang 0 chỉ thêm phụ thuộc, ghi như bảng truy vết của tổng hợp (từ 1.4.3)
+    tang = [f'{m} tăng {loi.md(d)} MD' if d else f'{m} thêm phụ thuộc, không tăng khối lượng' for m, d, mo in g if not mo]
     return (f'{c["ma"]} {c["tieu_de"][:1].lower() + c["tieu_de"][1:]}, phụ lục hợp đồng {c["phu_luc"].get("so", "")} ngày {loi.ngay(c["phu_luc"].get("ngay"))}: '
-            + '; '.join(x for x in ((f'{len(moi)} gói mới {moi[0]} đến {moi[-1]}' if len(moi) > 1 else (f'gói mới {moi[0]}' if moi else '')),
+            + ', '.join(x for x in ((f'{len(moi)} gói mới {moi[0]} đến {moi[-1]}' if len(moi) > 1 else (f'gói mới {moi[0]}' if moi else '')),
                                    ', '.join(tang)) if x))
 OUT = loi.duong_dan('ket_qua/03_WBS')
 WD = loi.duong_dan('lam_viec/tai_lieu_wbs')
@@ -274,6 +276,35 @@ def bang_theo_nhom(cc):
     return {'t': 'table', 'rows': rows, 'widths': [600, 3700, 1300, 1200, 1300, 1200], 'right_cols': [2, 3, 4, 5]}
 
 
+TEN_DAU_VIEC = {'quan_ly_du_an': 'Quản lý dự án', 'phan_tich_thiet_ke_chung': 'Phân tích, thiết kế chung',
+               'kiem_thu_he_thong_va_van_hanh': 'Kiểm thử hệ thống, vận hành', 'trien_khai_chuyen_giao': 'Triển khai, chuyển giao'}
+
+
+def bang_phan_bo_chung(cc):
+    """Bảng phân bổ đầu việc chung vào các nhóm (khi uoc_luong.json có phan_bo_dau_viec_chung): phần riêng, từng đầu việc chung,
+    phần chung, phần theo yêu cầu thay đổi (md_theo_cr, có khi đã áp dụng CR, từ 1.4.2), tổng ước lượng của nhóm. Nhóm mới của CR có một dòng
+    chỉ ghi phần theo yêu cầu thay đổi, dòng tổng bằng tổng các dòng."""
+    pb = cc['phan_bo_chung']
+    dv = list(pb['dau_viec'])
+    co_cr = any(x.get('md_theo_cr') for x in cc['theo_nhom'])
+    tn_ = [x for x in cc['theo_nhom'] if x['ma'] in pb['theo_nhom'] or (co_cr and x.get('md_theo_cr'))]
+    cr_ = lambda x: sum(float(v) for v in (x.get('md_theo_cr') or {}).values())  # noqa: E731
+    co = lambda x: x['ma'] in pb['theo_nhom']  # noqa: E731
+    cot = [[x.get('md_rieng') if co(x) else None for x in tn_] + [pb['tong_rieng']]]
+    cot += [[pb['theo_nhom'][x['ma']][k] if co(x) else None for x in tn_] + [pb['dau_viec'][k]] for k in dv]
+    cot += [[pb['theo_nhom'][x['ma']]['tong'] if co(x) else None for x in tn_] + [pb['tong']]]
+    if co_cr:
+        cot += [[cr_(x) or None for x in tn_] + [sum(cr_(x) for x in tn_)]]
+    cot += [[x['md_muc_tieu'] for x in tn_] + [sum(float(x['md_muc_tieu'] or 0) for x in tn_)]]
+    cot = [loi.dinh_dang_cot(c, 'md') for c in cot]
+    rows = [['Mã', 'Nhóm công việc', 'Phần riêng'] + [TEN_DAU_VIEC.get(k, k.replace('_', ' ').capitalize()) for k in dv] + ['Phần chung']
+            + (['Theo yêu cầu thay đổi'] if co_cr else []) + ['Ước lượng nhóm']]
+    rows += [[x['ma'], x['ten']] + [c[i] for c in cot] for i, x in enumerate(tn_)]
+    rows.append(['', 'Tổng cộng'] + [c[-1] for c in cot])
+    n = len(dv) + (1 if co_cr else 0)
+    return {'t': 'table', 'rows': rows, 'widths': [500, 2100, 800] + [int(4000 / max(n, 1))] * n + [800, 800], 'right_cols': list(range(2, 5 + n))}
+
+
 def bang_can_cu_nhom(cc):
     rows = [['Mã', 'Kích thước', 'Cách phân rã từ tổng nhóm']]
     for x in cc['theo_nhom']:
@@ -316,7 +347,17 @@ def muc_can_cu(cc, tieu_de):
     khop = 'bằng tổng ước lượng' if abs(cc['chenh_lech_tong']) < 1e-9 else f'chênh lệch {loi.md(cc["chenh_lech_tong"])} người-ngày do làm tròn'
     out += [{'t': 'p', 'text': f'Tổng ước lượng {loi.md(cc["tong_md_muc_tieu"])} người-ngày được phân rã cho các nhóm công việc mức 1, '
                                f'dung sai mỗi nhóm {loi.pt(cc["dung_sai_nhom"] or 0)}. Tổng WBS {loi.md(cc["tong_md_wbs"])} người-ngày, {khop}.'},
-            bang_theo_nhom(cc), {'t': 'p', 'text': 'Căn cứ ước lượng của từng nhóm công việc như sau.'}, bang_can_cu_nhom(cc)]
+            bang_theo_nhom(cc)]
+    if cc.get('phan_bo_chung'):
+        cach_pb = str(cc['phan_bo_chung'].get('cach_phan_bo') or '').strip()
+        cach_pb = f', phân bổ {cach_pb[:1].lower() + cach_pb[1:]}' if cach_pb else ''  # ghép thành một câu, tránh câu cụt
+        out += [{'t': 'p', 'text': f'Mỗi nhóm gồm phần khối lượng riêng và phần đầu việc chung phân bổ, tổng đầu việc chung '
+                                   f'{loi.md(cc["phan_bo_chung"]["tong"])} người-ngày{cau(cach_pb) if cach_pb else "."} '
+                                   'Đơn vị trong bảng là người-ngày. Ước lượng nhóm là tổng phần riêng và phần chung, làm tròn đến người-ngày '
+                                   'theo căn cứ ước lượng của nhóm'
+                                   + (', cộng phần khối lượng theo yêu cầu thay đổi đã phê duyệt (cột Theo yêu cầu thay đổi, gồm cả phần tăng của gói hiện có '
+                                      'và nhóm mới của yêu cầu thay đổi).' if any(x.get('md_theo_cr') for x in cc['theo_nhom']) else '.')}, bang_phan_bo_chung(cc)]
+    out += [{'t': 'p', 'text': 'Căn cứ ước lượng của từng nhóm công việc như sau.'}, bang_can_cu_nhom(cc)]
     if cc.get('hop_dong_tuong_tu'):
         out += [{'t': 'p', 'text': 'Đối chiếu với các hợp đồng tương tự nhà thầu đã thực hiện như sau.'}, bang_tuong_tu(cc),
                 {'t': 'p', 'text': doan_tuong_tu(cc)}]
@@ -358,14 +399,22 @@ rows = [['Mã yêu cầu', 'Yêu cầu RFP', 'Gói công việc đáp ứng']] +
 blocks += [{'t': 'pagebreak'}, tieu_de_muc('Ma trận truy vết yêu cầu RFP'),
            {'t': 'p', 'text': 'Mỗi yêu cầu về hệ thống, sản phẩm, phạm vi và nội dung đề xuất của RFP được gắn với gói công việc đáp ứng. Yêu cầu về thủ tục và hợp đồng được đáp ứng trong hồ sơ dự thầu và kế hoạch quản lý.'},
            {'t': 'table', 'rows': rows, 'widths': [1100, 4600, 3600]}]
+for c in CR_PL:  # yêu cầu RFP nêu ngày cut over của hợp đồng ban đầu: ghi ngày điều chỉnh theo phụ lục (từ 1.4.2)
+    pl_ = c.get('phu_luc') or {}
+    cu_ = loi.ngay(pl_.get('cut_over_truoc'))[:5] if pl_.get('cut_over_truoc') else ''
+    ma_ = [x['ma'] for x in wbs['truy_vet_rfp'] if cu_ and cu_ in str(x.get('yeu_cau', ''))]
+    if ma_ and pl_.get('cut_over_moi') and pl_['cut_over_moi'] != pl_.get('cut_over_truoc'):
+        blocks.append({'t': 'p', 'text': f'Ngày đưa hệ thống vào vận hành nêu tại {", ".join(ma_)} được điều chỉnh thành {loi.ngay(pl_["cut_over_moi"])} theo phụ lục hợp đồng '
+                                         f'{pl_.get("so", "")} của yêu cầu thay đổi {c["ma"]}, các gói đáp ứng giữ nguyên.'})
 if CR_PL:  # truy vết yêu cầu thay đổi đã ký phụ lục tới gói công việc
     rows = [['Yêu cầu thay đổi', 'Phụ lục hợp đồng', 'Gói công việc', 'MD tăng']]
     for c in CR_PL:
         for x in sorted(c.get('chi_tiet_goi', []), key=lambda x: loi.khoa_ma(x['ma'])):
             rows.append([c['ma'], f'{c["phu_luc"].get("so", "")}, {loi.ngay(c["phu_luc"].get("ngay"))}',
-                         f'{x["ma"]} {x["ten"]}' + (' (gói mới)' if x.get('moi') else ' (tăng khối lượng)'), loi.md(x['md_tang'])])
+                         f'{x["ma"]} {by.get(x["ma"], x)["ten"]}' + (' (gói mới)' if x.get('moi') else ' (tăng khối lượng)' if float(x.get('md_tang') or 0)
+                                                   else ' (thêm phụ thuộc, không tăng khối lượng)'), loi.md(x['md_tang'])])
     blocks += [tieu_de_muc('Truy vết yêu cầu thay đổi'),
-               {'t': 'p', 'text': 'Gói công việc thêm mới hoặc tăng khối lượng theo yêu cầu thay đổi đã được phê duyệt và ghi nhận bằng phụ lục hợp đồng.'},
+               {'t': 'p', 'text': 'Gói công việc thêm mới, tăng khối lượng hoặc thêm phụ thuộc theo yêu cầu thay đổi đã được phê duyệt và ghi nhận bằng phụ lục hợp đồng.'},
                {'t': 'table', 'rows': rows, 'widths': [1300, 2300, 4700, 1000], 'center_cols': [0], 'right_cols': [3]}]
 _md = loi.dinh_dang_cot([x['md'] for x in wbs['phan_bo_01a']] + [sum(x['md'] for x in wbs['phan_bo_01a'])], 'md')
 rows = [['STT', 'Hạng mục Mẫu 01A', 'Gói công việc', 'Khối lượng, MD']] + [[str(x['stt']), x['danh_muc'], x['goi'], _md[i]] for i, x in enumerate(wbs['phan_bo_01a'])]

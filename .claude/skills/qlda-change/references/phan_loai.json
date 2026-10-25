@@ -106,6 +106,7 @@
    {"noi_dung": "Điều kiện sử dụng", "quy_dinh": "Một rủi ro trong sổ đăng ký rủi ro xảy ra hoặc kế hoạch ứng phó của rủi ro được kích hoạt"},
    {"noi_dung": "Người đề xuất", "quy_dinh": "Người phụ trách rủi ro, nêu mã rủi ro, số tiền, MD hoặc ngày cần dùng"},
    {"noi_dung": "Người phê duyệt", "quy_dinh": "{qtda} phê duyệt khoản dùng cho rủi ro do thành viên khác phụ trách. {dai_dien_nt} phê duyệt khoản dùng cho rủi ro do quản trị dự án phụ trách và khoản làm giảm phần chi phí chung và lợi nhuận"},
+   {"noi_dung": "Phần vượt dự phòng", "quy_dinh": "Khi tổng chi phí ứng phó vượt dự phòng hiện có, phần vượt được bù từ phần còn lại của giá chào sau khi trừ lương kế hoạch và khoản B theo quyết định của nhóm ngày 18/10/2026, phần này gồm khoản C và phần khoản A chưa dùng cho lương theo quyết định của nhóm ngày 25/10/2026, do người đại diện ký hợp đồng của nhà thầu phê duyệt"},
    {"noi_dung": "Ghi nhận", "quy_dinh": "Ghi vào sổ yêu cầu thay đổi kèm mã rủi ro, cập nhật sổ rủi ro, dự toán và lịch theo ma trận lan truyền"},
    {"noi_dung": "Không áp dụng", "quy_dinh": "Không dùng dự phòng để bù thay đổi phạm vi theo yêu cầu của Chủ đầu tư, các thay đổi này xử lý theo mức lớn bằng văn bản thống nhất hoặc phụ lục hợp đồng"}
   ]

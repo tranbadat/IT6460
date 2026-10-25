@@ -85,6 +85,11 @@ def bang_ccb():
             da.add(x['A'])
             rows.append([f'{tv[x["A"]]["ho_ten"]}, {tv[x["A"]].get("chuc_danh", "")}', 'Nhà thầu', 'Tham dự khi thay đổi thuộc nhóm công việc phụ trách',
                          'Đánh giá tác động, không quyết định'])
+    for x in pc.get('trach_nhiem', []):  # người chịu trách nhiệm đặc tả, kiểm thử (mức 2): tham dự khi thay đổi đặc tả hoặc kiểm thử
+        if x.get('muc') == 2 and x['A'] not in da and x['A'] in tv and str(x.get('ten', '')).startswith(('Phân tích và thiết kế', 'Kiểm thử')):
+            da.add(x['A'])
+            rows.append([f'{tv[x["A"]]["ho_ten"]}, {tv[x["A"]].get("chuc_danh", "")}', 'Nhà thầu', 'Tham dự khi thay đổi đặc tả hoặc kiểm thử',
+                         'Đánh giá tác động, không quyết định'])
     return {'cot': ['Thành viên', 'Bên', 'Vai trò trong ban', 'Thẩm quyền theo mức'], 'dong': rows, 'widths': [2500, 1100, 2200, 3500], 'center_cols': [1]}
 
 
@@ -149,18 +154,26 @@ def moc_va_bao_dong():
     return out
 
 
+RACI_A = {x['ma']: x.get('A') for x in pc.get('trach_nhiem', [])}  # mục WBS -> người chịu trách nhiệm cuối (A)
+
+
 def bang_cau_hinh():
     """Hạng mục cấu hình theo Mẫu 01A: nhóm WBS tạo ra, mốc đặt đường cơ sở (mốc sớm nhất mà các gói phải xong trước nó chiếm
-    từ một nửa MD của hạng mục), người phụ trách (người thực hiện gói lớn nhất). Không tính gói thuộc nhóm quản lý dự án."""
+    từ một nửa MD của hạng mục), người phụ trách (người chịu trách nhiệm A theo RACI của du_lieu/phan_cong.json trach_nhiem cho mục mức 2
+    chiếm nhiều MD nhất của hạng mục, không có A thì người thực hiện gói lớn nhất). Không tính gói quản lý dự án (loi.goi_quan_ly_du_an:
+    thuộc mục Quản lý dự án hoặc loại PM, không phụ thuộc số thứ tự nhóm WBS) và gói không thuộc giai đoạn Thực hiện của lịch."""
     lg = {g['ma']: g for g in lich['goi'] if g.get('la')}
-    nhom_qldt = {g['ma'].split('.')[0] for g in wbs['goi'] if g.get('la') and g.get('loai') == 'PM'}
-    pm = min((g for g in wbs['goi'] if g.get('la') and g.get('loai') == 'PM'), key=lambda g: loi.khoa_ma(g['ma']), default={'cha': ''})
-    rows = [['Kế hoạch dự án: WBS, master schedule, cost estimate (đường cơ sở phạm vi, tiến độ, chi phí)', pm['cha'], 'Ký hợp đồng', VAI['qtda']['ho_ten']]]
+    goi_ql = loi.goi_quan_ly_du_an(wbs['goi']) | {m for m, g in lg.items() if g.get('giai_doan', 'thuc_hien') != 'thuc_hien'}
     mbd = moc_va_bao_dong()
     cr_ap = [c for c in so['yeu_cau'] if c.get('phu_luc') and (c.get('ap_dung') or {}).get('da_ghi') and c.get('goi_moi')]
     goi_cr = {g['ma'] for c in cr_ap for g in c['goi_moi']}  # gói mới của CR có đường cơ sở riêng theo phụ lục
+    # mục quản lý dự án của gói mới CR thuộc hạng mục cấu hình của phần thay đổi, không thuộc đường cơ sở ký hợp đồng (từ 1.4.7)
+    muc_ql = sorted({g['cha'] for g in wbs['goi'] if g.get('la') and g['ma'] in goi_ql and g.get('loai') == loi.LOAI_PM and g['ma'] not in goi_cr},
+                    key=loi.khoa_ma)
+    rows = [['Kế hoạch dự án: WBS, master schedule, cost estimate (đường cơ sở phạm vi, tiến độ, chi phí)', ', '.join(muc_ql), 'Ký hợp đồng', VAI['qtda']['ho_ten']]]
+    bl_cr = {x.get('ma_cr'): x for x in loi.doc_json('du_lieu/phien_ban.json', {}).get('duong_co_so', []) if x.get('ma_cr')}
     for h in hsmt['mau_01a']:
-        goi = [g for g in wbs['goi'] if g.get('la') and h['stt'] in g.get('hang_muc_01a', []) and g['ma'].split('.')[0] not in nhom_qldt
+        goi = [g for g in wbs['goi'] if g.get('la') and h['stt'] in g.get('hang_muc_01a', []) and g['ma'] not in goi_ql
                and g['ma'] not in goi_cr]
         tong = sum(float(g['md']) for g in goi)
         if not goi or not tong:
@@ -168,21 +181,33 @@ def bang_cau_hinh():
         m = next((m for m, bd in mbd if sum(float(g['md']) for g in goi if g['ma'] in bd) >= tong / 2), mbd[-1][0])
         chinh = max(goi, key=lambda g: (float(g['md']), loi.khoa_ma(g['ma'])))
         nhom = sorted({g['cha'] for g in goi}, key=loi.khoa_ma)
-        rows.append([f'{h["stt"]}. {h["danh_muc"]}', ', '.join(nhom), f'{m["ma"]}, {loi.ngay(m["ngay"])}', lg.get(chinh['ma'], {}).get('ho_ten_R', '')])
+        md_muc = {n: sum(float(g['md']) for g in goi if g['cha'] == n) for n in nhom}
+        muc_chinh = max(nhom, key=lambda n: (md_muc[n], [-x for x in loi.khoa_ma(n)]))  # bằng MD thì lấy mục mã nhỏ hơn
+        a_ = RACI_A.get(muc_chinh)
+        nguoi = tv[a_]['ho_ten'] if a_ in tv else lg.get(chinh['ma'], {}).get('ho_ten_R', '')
+        rows.append([f'{h["stt"]}. {h["danh_muc"]}', ', '.join(nhom), f'{m["ma"]}, {loi.ngay(m["ngay"])}', nguoi])
     for c in cr_ap:
         gm = [g['ma'] for g in c['goi_moi'] if g['ma'] in lg]
         xn = next((m for m in gm if 'xác nhận' in lg[m].get('ten', '').lower()), '')
         chinh = max(gm, key=lambda m: (float(lg[m].get('md') or 0), loi.khoa_ma(m)), default='')
+        # người phụ trách: A của mục mức 1 của phần thay đổi theo RACI, không có thì người thực hiện gói lớn nhất (từ 1.4.7)
+        a_ = next((RACI_A.get(r) for r in sorted({m.split('.')[0] for m in gm}) if RACI_A.get(r) in tv), None)
+        bl = bl_cr.get(c['ma'])
         rows.append([f'Phần thay đổi {c["ma"]}: {c["tieu_de"]}', ', '.join(sorted({m.rsplit('.', 1)[0] for m in gm}, key=loi.khoa_ma)),
-                     f'Phụ lục {c["phu_luc"].get("so", "")}, {loi.ngay(c["phu_luc"].get("ngay"))}' + (f'; đặc tả tại gói {xn}, {loi.ngay(lg[xn]["ket_thuc"])}' if xn else ''),
-                     lg.get(chinh, {}).get('ho_ten_R', '')])
+                     (f'{bl["ma"]}, {loi.ngay(bl["ngay"])} (phụ lục {c["phu_luc"].get("so", "")})' if bl else
+                      f'Phụ lục {c["phu_luc"].get("so", "")}, {loi.ngay(c["phu_luc"].get("ngay"))}')
+                     + (f', đặc tả tại gói {xn}, {loi.ngay(lg[xn]["ket_thuc"])}' if xn else ''),
+                     tv[a_]['ho_ten'] if a_ else lg.get(chinh, {}).get('ho_ten_R', '')])
     return {'cot': ['Hạng mục cấu hình', 'Nhóm WBS tạo ra', 'Đường cơ sở tại mốc', 'Người phụ trách'], 'dong': rows,
             'widths': [4100, 1800, 1700, 1700], 'center_cols': [1, 2]}
 
 
 def so_thay_doi():
     return [{'ma': c['ma'], 'tieu_de': c['tieu_de'], 'ngay': c['ngay_de_xuat'], 'md_tang': c['md_tang'], 'chi_phi_tang': c['chi_phi_tang'],
-             'gia_de_nghi': c.get('gia_de_nghi'), 'ngay_cham': c['ngay_cham'], 'ngay_cham_cut_over': c.get('ngay_cham_cut_over', 0),
+             'gia_de_nghi': c.get('gia_de_nghi'), 'ngay_cham': c['ngay_cham'],
+             # số ngày cut over lùi: theo phụ lục khi đã áp dụng (ngày hai bên ký), chưa có phụ lục thì theo đánh giá (từ 1.4.6)
+             'ngay_cham_cut_over': (c.get('phu_luc') or {}).get('so_ngay_lui_cut_over', c.get('ngay_cham_cut_over', 0)),
+             'cut_over_moi': (c.get('phu_luc') or {}).get('cut_over_moi', c.get('cut_over_moi', '')),
              'tieu_hao_du_tru': c.get('tieu_hao_du_tru', 0), 'diem_tac_dong': c.get('diem_tac_dong'), 'muc_ten': c['muc_ten'],
              'trang_thai': c['trang_thai'], 'van_ban': c.get('van_ban', ''), 'phu_luc_so': (c.get('phu_luc') or {}).get('so', ''),
              'gia_hop_dong_sau': (c.get('phu_luc') or {}).get('gia_hop_dong_sau'),
@@ -198,7 +223,7 @@ def rui_ro_cua(c):
 cr = so_thay_doi()
 loi.ghi_json('du_lieu/thay_doi_bang.json', {
     'phan_loai': bang_phan_loai(), 'tham_quyen': bang_tham_quyen(), 'dieu_kien': bang_dieu_kien(), 'ccb': bang_ccb(), 'lan_truyen': bang_lan_truyen(),
-    'mau_phieu': bang_mau_phieu(), 'nhanh_dong': bang_dong(), 'du_phong': bang_du_phong(), 'cau_hinh': bang_cau_hinh(), 'so_thay_doi': cr, 'so_cr': len(cr),
+    'mau_phieu': bang_mau_phieu(), 'nhanh_dong': bang_dong(), 'du_phong': bang_du_phong(), 'cau_hinh': bang_cau_hinh(), 'so_thay_doi': cr, 'so_cr': len(cr), 'cau_so_cr': f'có {len(cr)} yêu cầu' if cr else 'chưa có yêu cầu nào',
     'vai_ban': {k: {'ten': v['ten'], 'ho_ten': v['ho_ten'], 'ben': v['ben'], 'vai': PL['vai_ban'].get(k, '')} for k, v in VAI.items()},
     'don_gia_md_binh_quan': round(cp['A'] / cp['tong_md']), 'don_gia_de_nghi_md_binh_quan': round(cp['gia_chao'] / cp['tong_md']),
     'he_so_gia': round(cp['gia_chao'] / cp['A'], 4), 'can_cu_gia_de_nghi': PL['gia_de_nghi']['can_cu'], 'mo_ta_gia_de_nghi': qt.he_so_gia(PL, cp, wbs)[1],

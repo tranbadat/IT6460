@@ -1,0 +1,3557 @@
+{
+ "ngay_chot": "2027-08-12",
+ "ky_cuoi": "KT",
+ "pham_vi": {
+  "so_goi": 173,
+  "so_goi_hoan_thanh": 173,
+  "ty_le_goi_hoan_thanh": 1.0,
+  "goi_chua_xong": [],
+  "goi_vuot_20pt": [
+   {
+    "ma": "3.3.7",
+    "ten": "Dịch vụ yêu cầu đổi trả và hoàn tiền",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 7.25,
+    "chenh_lech": 1.25,
+    "ty_le_chenh": 0.2083,
+    "phan_tram": 100.0,
+    "nguoi": "Ninh Đức Toàn"
+   },
+   {
+    "ma": "1.4.6",
+    "ten": "Sửa lỗi và kiểm thử lại trang chủ, danh mục và chi tiết sản phẩm",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 1.0,
+    "ty_le_chenh": 0.3333,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "3.2.3",
+    "ten": "Quy trình vận hành mới (New Operational Flow) của kênh bán hàng trực tuyến",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 1.0,
+    "ty_le_chenh": 0.25,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "4.2.5",
+    "ten": "Đặc tả giao diện trao đổi dữ liệu với Main System",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 1.0,
+    "ty_le_chenh": 0.25,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   }
+  ],
+  "goi": [
+   {
+    "ma": "1.1.1",
+    "ten": "Họp khởi động, xác nhận phạm vi, điều kiện tiền đề, vai trò và trách nhiệm các bên",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "1.1.2",
+    "ten": "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint, phần phân hệ quản lý sản phẩm",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "1.1.3",
+    "ten": "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả, phần phân hệ quản lý sản phẩm",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "1.1.4",
+    "ten": "Quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án, hồ sơ nghiệm thu và thanh toán, phần phân hệ quản lý sản phẩm",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "1.1.5",
+    "ten": "Báo cáo tổng kết, bài học kinh nghiệm và bàn giao hồ sơ dự án",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "1.2.1",
+    "ten": "Đặc tả chức năng (Function) tìm kiếm và hiển thị sản phẩm",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "1.2.2",
+    "ten": "Sơ đồ phân cấp menu (Menu Layer)",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "1.2.3",
+    "ten": "Thiết kế giao diện ưu tiên trang chủ, tìm kiếm và chi tiết sản phẩm",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "1.2.4",
+    "ten": "Thư viện thành phần giao diện dùng chung, tương thích thiết bị di động",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "1.2.5",
+    "ten": "Đặc tả use case tìm kiếm, lọc và sắp xếp sản phẩm",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 1.0,
+    "ty_le_chenh": 0.2,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "1.2.6",
+    "ten": "Đặc tả use case trang chủ, danh mục và chi tiết sản phẩm",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "1.2.7",
+    "ten": "Thiết kế chi tiết tìm kiếm, lọc, sắp xếp và chỉ mục tìm kiếm",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Ninh Đức Toàn"
+   },
+   {
+    "ma": "1.2.8",
+    "ten": "Thiết kế chi tiết trang chủ, danh mục và chi tiết sản phẩm",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "1.3.1",
+    "ten": "Dịch vụ chỉ mục tìm kiếm và cập nhật chỉ mục từ Selling DB",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "1.3.2",
+    "ten": "Dịch vụ tìm kiếm theo từ khóa và gợi ý tìm kiếm",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "1.3.3",
+    "ten": "Dịch vụ lọc và sắp xếp kết quả tìm kiếm",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "1.3.4",
+    "ten": "Dịch vụ danh mục, chi tiết sản phẩm, biến thể, tồn kho và giá khuyến mại hiển thị",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "1.3.5",
+    "ten": "Giao diện trang chủ và điều hướng danh mục theo Menu Layer",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "1.3.6",
+    "ten": "Giao diện tìm kiếm, kết quả và bộ lọc",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "1.3.7",
+    "ten": "Giao diện chi tiết sản phẩm",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "1.3.8",
+    "ten": "Bộ nhớ đệm và tối ưu thời gian phản hồi trang danh mục, chi tiết sản phẩm",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.5,
+    "chenh_lech": 0.5,
+    "ty_le_chenh": 0.125,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "1.4.1",
+    "ten": "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ quản lý sản phẩm",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "1.4.2",
+    "ten": "Kiểm thử tìm kiếm, lọc và sắp xếp sản phẩm",
+    "md_ke_hoach": 7.0,
+    "md_thuc_te": 7.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "1.4.3",
+    "ten": "Kiểm thử trang chủ, danh mục và chi tiết sản phẩm",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "1.4.4",
+    "ten": "Sửa lỗi và kiểm thử lại chức năng tìm kiếm, lọc và sắp xếp",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "1.4.5",
+    "ten": "Kiểm thử tương thích trình duyệt, thiết bị di động và thời gian phản hồi phân hệ quản lý sản phẩm",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "1.4.6",
+    "ten": "Sửa lỗi và kiểm thử lại trang chủ, danh mục và chi tiết sản phẩm",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 1.0,
+    "ty_le_chenh": 0.3333,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "1.4.7",
+    "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ quản lý sản phẩm",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "1.4.8",
+    "ten": "Kịch bản và công cụ kiểm thử hiệu năng, chịu tải 500 người dùng đồng thời",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "1.4.9",
+    "ten": "Kiểm thử hiệu năng trên môi trường kiểm thử",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Ngọc Anh"
+   },
+   {
+    "ma": "1.4.10",
+    "ten": "Tối ưu hiệu năng và khắc phục lỗ hổng theo kết quả kiểm thử bản phát hành",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "1.4.11",
+    "ten": "Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng tìm kiếm và hiển thị sản phẩm",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Thu Hà"
+   },
+   {
+    "ma": "1.4.12",
+    "ten": "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ quản lý sản phẩm",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "1.5.1",
+    "ten": "Môi trường phát triển, kiểm thử và quy trình tích hợp, triển khai tự động",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.25,
+    "chenh_lech": 0.25,
+    "ty_le_chenh": 0.0417,
+    "phan_tram": 100.0,
+    "nguoi": "Ninh Đức Toàn"
+   },
+   {
+    "ma": "1.5.2",
+    "ten": "Chuyển đổi dữ liệu chính thức và triển khai phiên bản chính thức",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "1.5.3",
+    "ten": "Bàn giao mã nguồn, tài liệu kỹ thuật, tài liệu cài đặt và danh mục thư viện",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "2.1.1",
+    "ten": "Kế hoạch bảo đảm chất lượng, quy chuẩn mã nguồn và tiêu chí hoàn thành công việc",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.5,
+    "chenh_lech": 0.5,
+    "ty_le_chenh": 0.1667,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Thu Hà"
+   },
+   {
+    "ma": "2.1.2",
+    "ten": "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint, phần phân hệ quản lý khách hàng",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "2.1.3",
+    "ten": "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả, phần phân hệ quản lý khách hàng",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "2.1.4",
+    "ten": "Quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án, hồ sơ nghiệm thu và thanh toán, phần phân hệ quản lý khách hàng",
+    "md_ke_hoach": 3.5,
+    "md_thuc_te": 3.5,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "2.2.1",
+    "ten": "Đặc tả chức năng (Function) quản lý thành viên",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "2.2.2",
+    "ten": "Đặc tả yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi, bảo mật và thao tác",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "2.2.3",
+    "ten": "Nghiên cứu hành vi người dùng và khung giao diện các trang chính",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.5,
+    "chenh_lech": 0.5,
+    "ty_le_chenh": 0.1667,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "2.2.4",
+    "ten": "Thiết kế giao diện ưu tiên đăng ký, đăng nhập và trang thành viên",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "2.2.5",
+    "ten": "Đặc tả use case đăng ký, xác thực thư điện tử, đăng nhập và khôi phục mật khẩu",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 4.75,
+    "chenh_lech": -0.25,
+    "ty_le_chenh": -0.05,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "2.2.6",
+    "ten": "Đặc tả use case thông tin thành viên, sổ địa chỉ giao hàng và đổi mật khẩu",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "2.2.7",
+    "ten": "Thiết kế chi tiết đăng ký, đăng nhập, phiên làm việc và bảo mật tài khoản",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "2.2.8",
+    "ten": "Thiết kế chi tiết thông tin thành viên và sổ địa chỉ",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "2.3.1",
+    "ten": "Dịch vụ đăng ký thành viên và xác thực địa chỉ thư điện tử",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "2.3.2",
+    "ten": "Dịch vụ đăng nhập, phiên làm việc và giới hạn đăng nhập sai",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Ninh Đức Toàn"
+   },
+   {
+    "ma": "2.3.3",
+    "ten": "Dịch vụ khôi phục và đổi mật khẩu",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 3.5,
+    "chenh_lech": -0.5,
+    "ty_le_chenh": -0.125,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "2.3.4",
+    "ten": "Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "2.3.5",
+    "ten": "Dịch vụ đồng ý điều khoản và bảo vệ dữ liệu cá nhân của thành viên",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "2.3.6",
+    "ten": "Giao diện đăng ký, đăng nhập và khôi phục mật khẩu",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "2.3.7",
+    "ten": "Giao diện trang thành viên và sổ địa chỉ",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "2.4.1",
+    "ten": "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ quản lý khách hàng",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Ngọc Anh"
+   },
+   {
+    "ma": "2.4.2",
+    "ten": "Kiểm thử đăng ký, đăng nhập và khôi phục mật khẩu",
+    "md_ke_hoach": 7.0,
+    "md_thuc_te": 7.25,
+    "chenh_lech": 0.25,
+    "ty_le_chenh": 0.0357,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Thu Hà"
+   },
+   {
+    "ma": "2.4.3",
+    "ten": "Kiểm thử thông tin thành viên, sổ địa chỉ và đồng ý điều khoản",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "2.4.4",
+    "ten": "Sửa lỗi và kiểm thử lại đăng ký, đăng nhập và bảo mật tài khoản",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "2.4.5",
+    "ten": "Kiểm thử bảo mật tài khoản theo OWASP Top 10 và tương thích thiết bị phân hệ quản lý khách hàng",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "2.4.6",
+    "ten": "Sửa lỗi và kiểm thử lại thông tin thành viên và sổ địa chỉ",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "2.4.7",
+    "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ quản lý khách hàng",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "2.4.8",
+    "ten": "Kế hoạch kiểm thử hệ thống, kiểm thử chấp nhận và tiêu chí đạt",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Ngọc Anh"
+   },
+   {
+    "ma": "2.4.9",
+    "ten": "Đánh giá khả năng sử dụng của giao diện (Easy Operation)",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "2.4.10",
+    "ten": "Rà soát lỗ hổng bảo mật theo OWASP Top 10 trên môi trường kiểm thử",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Ninh Đức Toàn"
+   },
+   {
+    "ma": "2.4.11",
+    "ten": "Kiểm thử hồi quy theo các đợt khắc phục lỗi kiểm thử chấp nhận",
+    "md_ke_hoach": 8.0,
+    "md_thuc_te": 8.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Ninh Đức Toàn"
+   },
+   {
+    "ma": "2.4.12",
+    "ten": "Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng đăng ký, đăng nhập và thành viên",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "2.4.13",
+    "ten": "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ quản lý khách hàng",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "2.5.1",
+    "ten": "Tài liệu hướng dẫn sử dụng cho khách hàng và cán bộ bán hàng",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "2.5.2",
+    "ten": "Tài liệu hướng dẫn vận hành và quản trị kỹ thuật hệ thống",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "2.5.3",
+    "ten": "Cập nhật tài liệu hướng dẫn sử dụng theo kết quả kiểm thử chấp nhận",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "3.1.1",
+    "ten": "Kế hoạch quản lý dự án gồm phạm vi, tiến độ, tổ chức thực hiện, kế hoạch họp, quản lý rủi ro và thay đổi đặc tả",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "3.1.2",
+    "ten": "Xác nhận kế hoạch quản lý dự án của Chủ đầu tư",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "3.1.3",
+    "ten": "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint, phần phân hệ quản lý đơn hàng",
+    "md_ke_hoach": 2.5,
+    "md_thuc_te": 2.5,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "3.1.4",
+    "ten": "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả, phần phân hệ quản lý đơn hàng",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "3.1.5",
+    "ten": "Quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án, hồ sơ nghiệm thu và thanh toán, phần phân hệ quản lý đơn hàng",
+    "md_ke_hoach": 2.5,
+    "md_thuc_te": 2.5,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "3.1.6",
+    "ten": "Cập nhật sổ rủi ro, kế hoạch quản lý thay đổi và cấu hình theo đặc tả đã xác nhận",
+    "md_ke_hoach": 2.5,
+    "md_thuc_te": 2.5,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "3.2.1",
+    "ten": "Khảo sát nghiệp vụ bán hàng trực tuyến và quy trình hiện tại của Chủ đầu tư",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "3.2.2",
+    "ten": "Đặc tả chức năng (Function) đặt hàng gồm giỏ hàng, giữ tồn, phí vận chuyển, khuyến mại, hủy đơn, đổi trả",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "3.2.3",
+    "ten": "Quy trình vận hành mới (New Operational Flow) của kênh bán hàng trực tuyến",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 1.0,
+    "ty_le_chenh": 0.25,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "3.2.4",
+    "ten": "Thiết kế giao diện ưu tiên giỏ hàng, đặt hàng và theo dõi đơn hàng",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "3.2.5",
+    "ten": "Xác nhận đặc tả yêu cầu và giao diện ưu tiên của hai bên",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "3.2.6",
+    "ten": "Đặc tả use case giỏ hàng và giữ tồn kho khi đặt hàng",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "3.2.7",
+    "ten": "Đặc tả use case đặt hàng, phí vận chuyển, mã giảm giá và xác nhận đơn",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "3.2.8",
+    "ten": "Đặc tả use case theo dõi đơn hàng, hủy đơn, đổi trả và hoàn tiền",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "3.2.9",
+    "ten": "Thiết kế chi tiết giỏ hàng và giữ tồn kho",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "3.2.10",
+    "ten": "Thiết kế chi tiết đặt hàng, phí vận chuyển và khuyến mại",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "3.2.11",
+    "ten": "Thiết kế chi tiết trạng thái đơn hàng, hủy đơn và đổi trả",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "3.2.12",
+    "ten": "Cập nhật đặc tả hệ thống và cấu trúc cơ sở dữ liệu theo phiên bản bàn giao",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "3.3.1",
+    "ten": "Dịch vụ giỏ hàng",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "3.3.2",
+    "ten": "Dịch vụ giữ tồn kho tạm thời khi đặt hàng và giải phóng tồn",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "3.3.3",
+    "ten": "Dịch vụ tính phí vận chuyển",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.25,
+    "chenh_lech": 0.25,
+    "ty_le_chenh": 0.05,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "3.3.4",
+    "ten": "Dịch vụ khuyến mại và mã giảm giá",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.25,
+    "chenh_lech": 0.25,
+    "ty_le_chenh": 0.05,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "3.3.5",
+    "ten": "Dịch vụ đặt hàng, xác nhận đơn và thư điện tử xác nhận",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.25,
+    "chenh_lech": 0.25,
+    "ty_le_chenh": 0.0417,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "3.3.6",
+    "ten": "Dịch vụ lịch sử, trạng thái đơn hàng và hủy đơn",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "3.3.7",
+    "ten": "Dịch vụ yêu cầu đổi trả và hoàn tiền",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 7.25,
+    "chenh_lech": 1.25,
+    "ty_le_chenh": 0.2083,
+    "phan_tram": 100.0,
+    "nguoi": "Ninh Đức Toàn"
+   },
+   {
+    "ma": "3.3.8",
+    "ten": "Giao diện giỏ hàng",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 4.75,
+    "chenh_lech": -0.25,
+    "ty_le_chenh": -0.05,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "3.3.9",
+    "ten": "Giao diện đặt hàng gồm địa chỉ, phí vận chuyển, mã giảm giá và xác nhận",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "3.3.10",
+    "ten": "Giao diện theo dõi đơn hàng, hủy đơn và đổi trả",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "3.3.11",
+    "ten": "Rà soát mã nguồn và kiến trúc giai đoạn lập trình phân hệ",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "3.4.1",
+    "ten": "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ quản lý đơn hàng",
+    "md_ke_hoach": 7.0,
+    "md_thuc_te": 7.25,
+    "chenh_lech": 0.25,
+    "ty_le_chenh": 0.0357,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Thu Hà"
+   },
+   {
+    "ma": "3.4.2",
+    "ten": "Kiểm thử giỏ hàng và giữ tồn kho",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Ninh Đức Toàn"
+   },
+   {
+    "ma": "3.4.3",
+    "ten": "Kiểm thử đặt hàng, phí vận chuyển và khuyến mại",
+    "md_ke_hoach": 9.0,
+    "md_thuc_te": 8.75,
+    "chenh_lech": -0.25,
+    "ty_le_chenh": -0.0278,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Thu Hà"
+   },
+   {
+    "ma": "3.4.4",
+    "ten": "Kiểm thử theo dõi đơn hàng, hủy đơn và đổi trả",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Ngọc Anh"
+   },
+   {
+    "ma": "3.4.5",
+    "ten": "Sửa lỗi và kiểm thử lại giỏ hàng và giữ tồn kho",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "3.4.6",
+    "ten": "Kiểm thử luồng đặt hàng đầu cuối của phân hệ với dữ liệu biên và đồng thời",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "3.4.7",
+    "ten": "Sửa lỗi và kiểm thử lại đặt hàng, phí vận chuyển và khuyến mại",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "3.4.8",
+    "ten": "Sửa lỗi và kiểm thử lại theo dõi đơn hàng, hủy đơn và đổi trả",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "3.4.9",
+    "ten": "Tài liệu chức năng và nghiệm thu nội bộ phân hệ quản lý đơn hàng",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "3.4.10",
+    "ten": "Kịch bản kiểm thử hệ thống đầu cuối",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 4.5,
+    "chenh_lech": -0.5,
+    "ty_le_chenh": -0.1,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Thu Hà"
+   },
+   {
+    "ma": "3.4.11",
+    "ten": "Kịch bản kiểm thử chấp nhận theo quy trình vận hành mới",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 2.5,
+    "chenh_lech": -0.5,
+    "ty_le_chenh": -0.1667,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Ngọc Anh"
+   },
+   {
+    "ma": "3.4.12",
+    "ten": "Kiểm thử chức năng đầu cuối",
+    "md_ke_hoach": 10.0,
+    "md_thuc_te": 10.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "3.4.13",
+    "ten": "Tổ chức và hỗ trợ kiểm thử vận hành cùng Chủ đầu tư luồng đặt hàng và giao nhận",
+    "md_ke_hoach": 8.0,
+    "md_thuc_te": 7.75,
+    "chenh_lech": -0.25,
+    "ty_le_chenh": -0.0312,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Ngọc Anh"
+   },
+   {
+    "ma": "3.4.14",
+    "ten": "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ quản lý đơn hàng",
+    "md_ke_hoach": 8.0,
+    "md_thuc_te": 8.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "3.5.1",
+    "ten": "Hướng dẫn vận hành cho cán bộ Chủ đầu tư theo quy trình vận hành mới, ba buổi theo lịch của Chủ đầu tư",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "3.5.2",
+    "ten": "Kế hoạch cut over, danh sách kiểm tra và phương án khôi phục",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "3.5.3",
+    "ten": "Diễn tập triển khai phiên bản chính thức và chuyển đổi dữ liệu trên môi trường vận hành",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "3.5.4",
+    "ten": "Hỗ trợ ngày đưa hệ thống vào vận hành và biên bản bàn giao hệ thống",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "4.1.1",
+    "ten": "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint, phần phân hệ tích hợp hệ thống",
+    "md_ke_hoach": 3.5,
+    "md_thuc_te": 3.5,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "4.1.2",
+    "ten": "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả, phần phân hệ tích hợp hệ thống",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "4.1.3",
+    "ten": "Quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án, hồ sơ nghiệm thu và thanh toán, phần phân hệ tích hợp hệ thống",
+    "md_ke_hoach": 3.5,
+    "md_thuc_te": 3.5,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "4.2.1",
+    "ten": "Khảo sát hệ thống hiện có, Main System và luồng dữ liệu liên quan",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "4.2.2",
+    "ten": "Kiến trúc hệ thống, hạ tầng và phương án bảo đảm hoạt động liên tục",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Ninh Đức Toàn"
+   },
+   {
+    "ma": "4.2.3",
+    "ten": "Cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "4.2.4",
+    "ten": "Cấu hình cơ sở dữ liệu (DB Configuration) gồm dự phòng, sao lưu và phân quyền truy cập",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 2.5,
+    "chenh_lech": -0.5,
+    "ty_le_chenh": -0.1667,
+    "phan_tram": 100.0,
+    "nguoi": "Ninh Đức Toàn"
+   },
+   {
+    "ma": "4.2.5",
+    "ten": "Đặc tả giao diện trao đổi dữ liệu với Main System",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 1.0,
+    "ty_le_chenh": 0.25,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "4.2.6",
+    "ten": "Xác nhận đặc tả giao diện tích hợp với Main System của Chủ đầu tư",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "4.2.7",
+    "ten": "Thiết kế tích hợp gồm ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "4.3.1",
+    "ten": "Khung ứng dụng phía máy chủ và thành phần dùng chung về xác thực, phân quyền, ghi nhật ký, xử lý lỗi",
+    "md_ke_hoach": 8.0,
+    "md_thuc_te": 8.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "4.3.2",
+    "ten": "Tạo lập Selling DB theo cấu trúc đã thiết kế và tầng truy cập dữ liệu",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "4.3.3",
+    "ten": "Khung ứng dụng giao diện gồm định tuyến, quản lý trạng thái và gọi dịch vụ",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": -1.0,
+    "ty_le_chenh": -0.2,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "4.3.4",
+    "ten": "Dịch vụ gửi thư điện tử qua máy chủ thư của Chủ đầu tư",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "4.3.5",
+    "ten": "Đồng bộ danh mục sản phẩm và giá từ Main System",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "4.3.6",
+    "ten": "Đồng bộ tồn kho từ Main System",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "4.3.7",
+    "ten": "Chuyển đơn hàng sang Main System và nhận trạng thái xử lý",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.25,
+    "chenh_lech": 0.25,
+    "ty_le_chenh": 0.05,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "4.3.8",
+    "ten": "Nhận trạng thái vận chuyển từ Main System",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "4.3.9",
+    "ten": "Giám sát tích hợp, cảnh báo lỗi đồng bộ và gửi lại",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "4.3.10",
+    "ten": "Công cụ chuyển đổi dữ liệu sản phẩm, tồn kho và kiểm tra toàn vẹn",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 4.5,
+    "chenh_lech": -0.5,
+    "ty_le_chenh": -0.1,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "4.4.1",
+    "ten": "Dịch vụ giả lập Main System và dữ liệu kiểm thử tích hợp",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 3.25,
+    "chenh_lech": -0.75,
+    "ty_le_chenh": -0.1875,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Ngọc Anh"
+   },
+   {
+    "ma": "4.4.2",
+    "ten": "Kịch bản kiểm thử tích hợp với Main System",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Thu Hà"
+   },
+   {
+    "ma": "4.4.3",
+    "ten": "Kiểm thử tích hợp với Main System trên môi trường thử",
+    "md_ke_hoach": 7.0,
+    "md_thuc_te": 7.75,
+    "chenh_lech": 0.75,
+    "ty_le_chenh": 0.1071,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Ngọc Anh"
+   },
+   {
+    "ma": "4.4.4",
+    "ten": "Sửa lỗi và kiểm thử lại tích hợp với Main System",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "4.4.5",
+    "ten": "Khắc phục lỗi sau kiểm thử hệ thống",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.25,
+    "chenh_lech": 0.25,
+    "ty_le_chenh": 0.0417,
+    "phan_tram": 100.0,
+    "nguoi": "Vũ Đức Minh"
+   },
+   {
+    "ma": "4.4.6",
+    "ten": "Kiểm tra chức năng chính và tích hợp với Main System của Chủ đầu tư",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "4.4.7",
+    "ten": "Kiểm thử hiệu năng và rà soát an toàn thông tin bản phát hành trên môi trường vận hành",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "4.4.8",
+    "ten": "Diễn tập chuyển đổi dự phòng, sao lưu và khôi phục trên môi trường vận hành",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "4.4.9",
+    "ten": "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận tích hợp với Main System",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "4.5.1",
+    "ten": "Môi trường vận hành gồm hai nút ứng dụng, cân bằng tải, cơ sở dữ liệu chính và dự phòng",
+    "md_ke_hoach": 7.0,
+    "md_thuc_te": 7.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "4.5.2",
+    "ten": "Giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "4.5.3",
+    "ten": "Chuyển đổi thử dữ liệu sản phẩm, tồn kho do Chủ đầu tư cung cấp",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Tuấn Anh"
+   },
+   {
+    "ma": "4.5.4",
+    "ten": "Nạp hình ảnh và nội dung sản phẩm theo bộ nhận diện của Chủ đầu tư lên môi trường vận hành",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Ninh Đức Toàn"
+   },
+   {
+    "ma": "4.5.5",
+    "ten": "Rà soát giấy phép thư viện mã nguồn mở và quyền sở hữu sản phẩm",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "4.5.6",
+    "ten": "Giám sát vận hành và chuẩn bị hỗ trợ tăng cường sau cut over",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "5.1.1",
+    "ten": "Quản lý yêu cầu thay đổi, phụ lục hợp đồng, theo dõi tiến độ và hồ sơ nghiệm thu phần bán hàng trên sàn thương mại điện tử",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Bá Đạt"
+   },
+   {
+    "ma": "5.2.1",
+    "ten": "Khảo sát quy trình bán hàng trên sàn thương mại điện tử và giao diện lập trình của sàn",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Hoàng Nam"
+   },
+   {
+    "ma": "5.2.2",
+    "ten": "Đặc tả chức năng và use case đồng bộ sản phẩm, tồn kho, giá, nhận đơn, cập nhật trạng thái và đối soát với sàn",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "5.2.3",
+    "ten": "Thiết kế tích hợp với sàn gồm xác thực, ánh xạ dữ liệu, xử lý lỗi và gửi lại",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.5,
+    "chenh_lech": 0.5,
+    "ty_le_chenh": 0.125,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "5.2.4",
+    "ten": "Xác nhận đặc tả bán hàng trên sàn thương mại điện tử của Chủ đầu tư",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "5.3.1",
+    "ten": "Kết nối sàn gồm xác thực, cấu hình cửa hàng và quản lý khóa truy cập",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "5.3.2",
+    "ten": "Đồng bộ sản phẩm và giá lên sàn",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "5.3.3",
+    "ten": "Đồng bộ tồn kho lên sàn",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "5.3.4",
+    "ten": "Nhận đơn hàng từ sàn vào luồng xử lý đơn hàng",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "5.3.5",
+    "ten": "Cập nhật trạng thái đơn hàng và vận chuyển lên sàn",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Bùi Anh Tuấn"
+   },
+   {
+    "ma": "5.3.6",
+    "ten": "Đối soát đơn hàng và thanh toán với sàn",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 5.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   },
+   {
+    "ma": "5.3.7",
+    "ten": "Giao diện quản trị kênh sàn gồm ánh xạ sản phẩm, theo dõi đồng bộ và kết quả đối soát",
+    "md_ke_hoach": 5.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": -1.0,
+    "ty_le_chenh": -0.2,
+    "phan_tram": 100.0,
+    "nguoi": "Lê Quang Huy"
+   },
+   {
+    "ma": "5.4.1",
+    "ten": "Kịch bản kiểm thử bán hàng trên sàn thương mại điện tử",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Ngọc Anh"
+   },
+   {
+    "ma": "5.4.2",
+    "ten": "Kiểm thử tích hợp với môi trường thử của sàn",
+    "md_ke_hoach": 6.0,
+    "md_thuc_te": 6.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Phạm Ngọc Anh"
+   },
+   {
+    "ma": "5.4.3",
+    "ten": "Kiểm thử hệ thống luồng bán hàng trên sàn gồm đồng bộ, nhận đơn, trạng thái và đối soát",
+    "md_ke_hoach": 4.0,
+    "md_thuc_te": 4.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Thu Hà"
+   },
+   {
+    "ma": "5.4.4",
+    "ten": "Khắc phục lỗi và kiểm thử lại sau kiểm thử bán hàng trên sàn",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "5.4.5",
+    "ten": "Tổ chức và hỗ trợ kiểm thử chấp nhận bán hàng trên sàn cùng Chủ đầu tư",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trần Thu Hà"
+   },
+   {
+    "ma": "5.5.1",
+    "ten": "Cấu hình kết nối sàn trên môi trường vận hành",
+    "md_ke_hoach": 2.0,
+    "md_thuc_te": 2.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Trương Quốc Việt"
+   },
+   {
+    "ma": "5.5.2",
+    "ten": "Tài liệu và buổi hướng dẫn sử dụng bán hàng trên sàn cho cán bộ Chủ đầu tư",
+    "md_ke_hoach": 3.0,
+    "md_thuc_te": 3.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Nguyễn Thị Phương Liên"
+   },
+   {
+    "ma": "5.5.3",
+    "ten": "Bàn giao mã nguồn, tài liệu kỹ thuật và danh mục thư viện phần bán hàng trên sàn thương mại điện tử",
+    "md_ke_hoach": 1.0,
+    "md_thuc_te": 1.0,
+    "chenh_lech": 0.0,
+    "ty_le_chenh": 0.0,
+    "phan_tram": 100.0,
+    "nguoi": "Đỗ Minh Quân"
+   }
+  ]
+ },
+ "tien_do": {
+  "ngay_bat_dau": "2027-03-18",
+  "ket_thuc_ke_hoach": "2027-07-29",
+  "ket_thuc_thuc_te": "2027-08-04",
+  "cut_over": "2027-07-29",
+  "moc_cut_over": "M6",
+  "cut_over_thuc_te": "2027-07-29",
+  "so_ngay_tre_cut_over": 0,
+  "so_ngay_som_cut_over": 0,
+  "dat_cut_over": true,
+  "so_moc": 10,
+  "so_moc_dat": 10,
+  "so_moc_dung_han": 10,
+  "ty_le_moc_dung_han": 1.0,
+  "moc": [
+   {
+    "ma": "M0",
+    "ten": "Hợp đồng có hiệu lực, khởi động dự án",
+    "ke_hoach": "2027-03-18",
+    "han": "2027-03-18",
+    "thuc_te": "2027-03-18",
+    "lech_ngay": 0,
+    "lech_ke_hoach": 0,
+    "trang_thai": "Đúng hạn",
+    "dot_thanh_toan": 1
+   },
+   {
+    "ma": "M1",
+    "ten": "Kế hoạch quản lý dự án được Chủ đầu tư xác nhận",
+    "ke_hoach": "2027-04-14",
+    "han": "2027-04-14",
+    "thuc_te": "2027-04-14",
+    "lech_ngay": 0,
+    "lech_ke_hoach": 0,
+    "trang_thai": "Đúng hạn",
+    "dot_thanh_toan": ""
+   },
+   {
+    "ma": "M2",
+    "ten": "Đặc tả yêu cầu và giao diện ưu tiên được hai bên xác nhận",
+    "ke_hoach": "2027-05-06",
+    "han": "2027-05-10",
+    "thuc_te": "2027-05-06",
+    "lech_ngay": -2,
+    "lech_ke_hoach": 0,
+    "trang_thai": "Đúng hạn",
+    "dot_thanh_toan": 2
+   },
+   {
+    "ma": "M3",
+    "ten": "Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+    "ke_hoach": "2027-07-08",
+    "han": "2027-07-08",
+    "thuc_te": "2027-07-08",
+    "lech_ngay": 0,
+    "lech_ke_hoach": 0,
+    "trang_thai": "Đúng hạn",
+    "dot_thanh_toan": 3
+   },
+   {
+    "ma": "M4",
+    "ten": "Hoàn thành kiểm thử hệ thống, bản phát hành sẵn sàng kiểm thử chấp nhận",
+    "ke_hoach": "2027-07-08",
+    "han": "2027-07-15",
+    "thuc_te": "2027-07-12",
+    "lech_ngay": -3,
+    "lech_ke_hoach": 2,
+    "trang_thai": "Đúng hạn, sau kế hoạch 2 ngày làm việc",
+    "dot_thanh_toan": ""
+   },
+   {
+    "ma": "M9",
+    "ten": "Chủ đầu tư nghiệm thu phần bán hàng trên sàn thương mại điện tử theo yêu cầu thay đổi CR01",
+    "ke_hoach": "2027-07-27",
+    "han": "2027-07-27",
+    "thuc_te": "2027-07-27",
+    "lech_ngay": 0,
+    "lech_ke_hoach": 0,
+    "trang_thai": "Đúng hạn",
+    "dot_thanh_toan": 6
+   },
+   {
+    "ma": "M5",
+    "ten": "Hoàn thành kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư",
+    "ke_hoach": "2027-07-27",
+    "han": "2027-07-28",
+    "thuc_te": "2027-07-27",
+    "lech_ngay": -1,
+    "lech_ke_hoach": 0,
+    "trang_thai": "Đúng hạn",
+    "dot_thanh_toan": ""
+   },
+   {
+    "ma": "M6",
+    "ten": "Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+    "ke_hoach": "2027-07-29",
+    "han": "2027-07-29",
+    "thuc_te": "2027-07-29",
+    "lech_ngay": 0,
+    "lech_ke_hoach": 0,
+    "trang_thai": "Đúng hạn",
+    "dot_thanh_toan": 4
+   },
+   {
+    "ma": "M7",
+    "ten": "Nhà thầu nộp bảo lãnh bảo hành, bàn giao mã nguồn và hệ thống",
+    "ke_hoach": "2027-07-29",
+    "han": "2027-07-29",
+    "thuc_te": "2027-07-29",
+    "lech_ngay": 0,
+    "lech_ke_hoach": 0,
+    "trang_thai": "Đúng hạn",
+    "dot_thanh_toan": 5
+   },
+   {
+    "ma": "M8",
+    "ten": "Đóng dự án, báo cáo tổng kết và bài học kinh nghiệm được lập, hồ sơ dự án được lưu trữ",
+    "ke_hoach": "2027-08-04",
+    "han": "2027-08-12",
+    "thuc_te": "2027-08-04",
+    "lech_ngay": -6,
+    "lech_ke_hoach": 0,
+    "trang_thai": "Đúng hạn",
+    "dot_thanh_toan": ""
+   }
+  ],
+  "spi_cuoi": 1.0,
+  "cpi_cuoi": 0.9949,
+  "cpi_thuc_cuoi": 0.9936,
+  "ky_cuoi": "KT",
+  "lich_su": [
+   {
+    "ky": "S1",
+    "ngay_bao_cao": "2027-03-31",
+    "PV_md": 55.5,
+    "EV_md": 55.54,
+    "AC_md": 55.25,
+    "spi": 1.0007,
+    "cpi": 1.0052,
+    "cpi_thuc": 1.0014,
+    "spi_hien_thi": "1,00",
+    "cpi_hien_thi": "1,01",
+    "cpi_thuc_hien_thi": "1,00",
+    "ty_le_su_dung_quy": 0.6906,
+    "trang_thai_chung": "Xanh"
+   },
+   {
+    "ky": "S2",
+    "ngay_bao_cao": "2027-04-14",
+    "PV_md": 131.5,
+    "EV_md": 128.53,
+    "AC_md": 129.25,
+    "spi": 0.9775,
+    "cpi": 0.9945,
+    "cpi_thuc": 0.9911,
+    "spi_hien_thi": "0,98",
+    "cpi_hien_thi": "0,99",
+    "cpi_thuc_hien_thi": "0,99",
+    "ty_le_su_dung_quy": 0.7181,
+    "trang_thai_chung": "Vàng"
+   },
+   {
+    "ky": "S3",
+    "ngay_bao_cao": "2027-05-06",
+    "PV_md": 273.5,
+    "EV_md": 257.49,
+    "AC_md": 260.5,
+    "spi": 0.9414,
+    "cpi": 0.9884,
+    "cpi_thuc": 0.9916,
+    "spi_hien_thi": "0,94",
+    "cpi_hien_thi": "0,99",
+    "cpi_thuc_hien_thi": "0,99",
+    "ty_le_su_dung_quy": 0.7753,
+    "trang_thai_chung": "Vàng"
+   },
+   {
+    "ky": "S4",
+    "ngay_bao_cao": "2027-05-20",
+    "PV_md": 389.8,
+    "EV_md": 369.33,
+    "AC_md": 373.0,
+    "spi": 0.9475,
+    "cpi": 0.9902,
+    "cpi_thuc": 0.9849,
+    "spi_hien_thi": "0,947",
+    "cpi_hien_thi": "0,99",
+    "cpi_thuc_hien_thi": "0,98",
+    "ty_le_su_dung_quy": 0.818,
+    "trang_thai_chung": "Vàng"
+   },
+   {
+    "ky": "S5",
+    "ngay_bao_cao": "2027-06-03",
+    "PV_md": 463.62,
+    "EV_md": 458.07,
+    "AC_md": 462.0,
+    "spi": 0.988,
+    "cpi": 0.9915,
+    "cpi_thuc": 0.9821,
+    "spi_hien_thi": "0,99",
+    "cpi_hien_thi": "0,99",
+    "cpi_thuc_hien_thi": "0,98",
+    "ty_le_su_dung_quy": 0.8021,
+    "trang_thai_chung": "Xanh"
+   },
+   {
+    "ky": "S6",
+    "ngay_bao_cao": "2027-06-17",
+    "PV_md": 554.76,
+    "EV_md": 545.34,
+    "AC_md": 549.75,
+    "spi": 0.983,
+    "cpi": 0.992,
+    "cpi_thuc": 0.9886,
+    "spi_hien_thi": "0,98",
+    "cpi_hien_thi": "0,99",
+    "cpi_thuc_hien_thi": "0,99",
+    "ty_le_su_dung_quy": 0.7899,
+    "trang_thai_chung": "Vàng"
+   },
+   {
+    "ky": "S7",
+    "ngay_bao_cao": "2027-07-01",
+    "PV_md": 615.95,
+    "EV_md": 606.82,
+    "AC_md": 610.5,
+    "spi": 0.9852,
+    "cpi": 0.994,
+    "cpi_thuc": 0.9873,
+    "spi_hien_thi": "0,99",
+    "cpi_hien_thi": "0,99",
+    "cpi_thuc_hien_thi": "0,99",
+    "ty_le_su_dung_quy": 0.798,
+    "trang_thai_chung": "Xanh"
+   },
+   {
+    "ky": "S8",
+    "ngay_bao_cao": "2027-07-15",
+    "PV_md": 656.48,
+    "EV_md": 654.26,
+    "AC_md": 658.5,
+    "spi": 0.9966,
+    "cpi": 0.9936,
+    "cpi_thuc": 0.9794,
+    "spi_hien_thi": "1,00",
+    "cpi_hien_thi": "0,99",
+    "cpi_thuc_hien_thi": "0,98",
+    "ty_le_su_dung_quy": 0.805,
+    "trang_thai_chung": "Xanh"
+   },
+   {
+    "ky": "S9",
+    "ngay_bao_cao": "2027-07-29",
+    "PV_md": 731.0,
+    "EV_md": 731.0,
+    "AC_md": 734.75,
+    "spi": 1.0,
+    "cpi": 0.9949,
+    "cpi_thuc": 0.9936,
+    "spi_hien_thi": "1,00",
+    "cpi_hien_thi": "0,99",
+    "cpi_thuc_hien_thi": "0,99",
+    "ty_le_su_dung_quy": 0.811,
+    "trang_thai_chung": "Xanh"
+   },
+   {
+    "ky": "KT",
+    "ngay_bao_cao": "2027-08-12",
+    "PV_md": 733.0,
+    "EV_md": 733.0,
+    "AC_md": 736.75,
+    "spi": 1.0,
+    "cpi": 0.9949,
+    "cpi_thuc": 0.9936,
+    "spi_hien_thi": "1,00",
+    "cpi_hien_thi": "0,99",
+    "cpi_thuc_hien_thi": "0,99",
+    "ty_le_su_dung_quy": 0.8114,
+    "trang_thai_chung": "Xanh"
+   }
+  ]
+ },
+ "chi_phi": {
+  "BAC_md": 733.0,
+  "AC_md": 736.75,
+  "chenh_md": 3.75,
+  "ty_le_chenh_md": 0.0051,
+  "BAC": 1581550000,
+  "AC": 1589487500,
+  "EV": 1581550000,
+  "A": 1581550000,
+  "B_ke_hoach": 100000000.0,
+  "B_thuc_te": 60000000.0,
+  "chenh_B": -40000000,
+  "co_chi_phi_khac_thuc_te": true,
+  "B_ghi_chu": "",
+  "cam_ket_chua_chi": 40000000,
+  "du_phong_tach_khoi_B": true,
+  "cach_tra_luong": "cong_suc",
+  "cach_tra_luong_ten": "trả theo công sức (MD công việc)",
+  "co_so_luong": "MD công việc (kế hoạch là MD giao, thực tế là MD nhật ký)",
+  "chi_phi_huy_dong_ke_hoach": 1640136136,
+  "chi_phi_huy_dong_thuc_te": 1640136136,
+  "gia_hop_dong_truoc_thue": 1949024682.0,
+  "chi_phi_nhan_su_ke_hoach": 1327839441,
+  "chi_phi_nhan_su_thuc_te": 1336368239,
+  "chenh_chi_phi_nhan_su": 8528798,
+  "chi_phi_cong_suc_ke_hoach": 1327839441,
+  "chi_phi_cong_suc_thuc_te": 1336368239,
+  "chi_phi_san_sang_ke_hoach": 0,
+  "chi_phi_san_sang_thuc_te": 0,
+  "md_huy_dong_ke_hoach": 908.0,
+  "md_huy_dong": 908.0,
+  "md_san_sang": 171.25,
+  "ty_le_su_dung_huy_dong": 0.8114,
+  "he_so_bao_hiem": 1.235,
+  "tong_chi_phi_ke_hoach": 1477839441,
+  "tong_chi_phi_thuc_te": 1436368239,
+  "loi_nhuan_ke_hoach": 471185241,
+  "loi_nhuan_thuc_te": 512656443,
+  "du_phong_ke_hoach": 50000000.0,
+  "tong_emv": 115413014,
+  "cpi_thuc_cuoi": 0.9936,
+  "AC_thuc": 1396368239,
+  "AC_thuc_nhan_su": 1336368239,
+  "EV_thuc_nhan_su": 1327839441,
+  "BAC_thuc": 1477839441,
+  "ty_suat_loi_nhuan_ke_hoach": 0.2418,
+  "ty_suat_loi_nhuan_thuc_te": 0.263,
+  "bang": {
+   "cot": [
+    "Khoản mục",
+    "Kế hoạch, đồng",
+    "Thực tế, đồng",
+    "Chênh lệch, đồng"
+   ],
+   "dong": [
+    [
+     "Chi phí nhân sự theo MD công việc (lương ngày vai trò x hệ số bảo hiểm x MD)",
+     "1.327.839.441",
+     "1.336.368.239",
+     "8.528.798"
+    ],
+    [
+     "Ngày sẵn sàng không ghi công (175 MD kế hoạch, 171,25 MD thực tế), không tính lương",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "Chi phí khác đã chi (khoản B, không gồm dự phòng rủi ro)",
+     "100.000.000",
+     "60.000.000",
+     "âm 40.000.000"
+    ],
+    [
+     "Dự phòng rủi ro (tác động thực tế ở mục 6)",
+     "50.000.000",
+     "",
+     ""
+    ],
+    [
+     "Nghĩa vụ đã cam kết chưa chi (bảo hành)",
+     "",
+     "40.000.000",
+     ""
+    ],
+    [
+     "Tổng chi phí",
+     "1.477.839.441",
+     "1.436.368.239",
+     "âm 41.471.202"
+    ],
+    [
+     "Giá hợp đồng trước thuế",
+     "1.949.024.682",
+     "1.949.024.682",
+     "0"
+    ],
+    [
+     "Chênh lệch giá hợp đồng và chi phí",
+     "471.185.241",
+     "512.656.443",
+     "41.471.202"
+    ]
+   ],
+   "widths": [
+    3700,
+    1900,
+    1900,
+    1800
+   ],
+   "right_cols": [
+    1,
+    2,
+    3
+   ]
+  }
+ },
+ "nhan_luc": [
+  {
+   "id": "dat",
+   "ho_ten": "Trần Bá Đạt",
+   "vai_tro": "LEAD",
+   "ten_vai_tro": "Trưởng nhóm, kiến trúc sư",
+   "loai": "nhom",
+   "md_ke_hoach": 66.33,
+   "md_thuc_te": 67.25,
+   "chenh_lech": 0.92,
+   "ty_le_chenh": 0.0139,
+   "md_huy_dong_ke_hoach": 86.0,
+   "md_huy_dong": 86.0,
+   "md_san_sang": 18.75,
+   "ty_le_su_dung": 0.782,
+   "chi_phi_huy_dong_ke_hoach": 246214091,
+   "chi_phi_huy_dong_thuc_te": 246214091,
+   "chi_phi_cong_suc_ke_hoach": 189899775,
+   "chi_phi_cong_suc_thuc_te": 192533693
+  },
+  {
+   "id": "tuananh",
+   "ho_ten": "Phạm Tuấn Anh",
+   "vai_tro": "BACKEND",
+   "ten_vai_tro": "Kỹ sư backend",
+   "loai": "nhom",
+   "md_ke_hoach": 50.0,
+   "md_thuc_te": 50.25,
+   "chenh_lech": 0.25,
+   "ty_le_chenh": 0.005,
+   "md_huy_dong_ke_hoach": 69.0,
+   "md_huy_dong": 69.0,
+   "md_san_sang": 18.75,
+   "ty_le_su_dung": 0.7283,
+   "chi_phi_huy_dong_ke_hoach": 116202273,
+   "chi_phi_huy_dong_thuc_te": 116202273,
+   "chi_phi_cong_suc_ke_hoach": 84204546,
+   "chi_phi_cong_suc_thuc_te": 84625568
+  },
+  {
+   "id": "minh",
+   "ho_ten": "Vũ Đức Minh",
+   "vai_tro": "FRONTEND",
+   "ten_vai_tro": "Kỹ sư frontend",
+   "loai": "nhom",
+   "md_ke_hoach": 58.0,
+   "md_thuc_te": 57.5,
+   "chenh_lech": -0.5,
+   "ty_le_chenh": -0.0086,
+   "md_huy_dong_ke_hoach": 71.0,
+   "md_huy_dong": 71.0,
+   "md_san_sang": 13.5,
+   "ty_le_su_dung": 0.8099,
+   "chi_phi_huy_dong_ke_hoach": 111599091,
+   "chi_phi_huy_dong_thuc_te": 111599091,
+   "chi_phi_cong_suc_ke_hoach": 91165455,
+   "chi_phi_cong_suc_thuc_te": 90379546
+  },
+  {
+   "id": "toan",
+   "ho_ten": "Ninh Đức Toàn",
+   "vai_tro": "BACKEND",
+   "ten_vai_tro": "Kỹ sư backend",
+   "loai": "nhom",
+   "md_ke_hoach": 66.5,
+   "md_thuc_te": 67.5,
+   "chenh_lech": 1.0,
+   "ty_le_chenh": 0.015,
+   "md_huy_dong_ke_hoach": 76.0,
+   "md_huy_dong": 76.0,
+   "md_san_sang": 8.5,
+   "ty_le_su_dung": 0.8882,
+   "chi_phi_huy_dong_ke_hoach": 127990909,
+   "chi_phi_huy_dong_thuc_te": 127990909,
+   "chi_phi_cong_suc_ke_hoach": 111992045,
+   "chi_phi_cong_suc_thuc_te": 113676137
+  },
+  {
+   "id": "lien",
+   "ho_ten": "Nguyễn Thị Phương Liên",
+   "vai_tro": "BAQA",
+   "ten_vai_tro": "Phân tích nghiệp vụ, kiểm thử",
+   "loai": "nhom",
+   "md_ke_hoach": 72.5,
+   "md_thuc_te": 73.25,
+   "chenh_lech": 0.75,
+   "ty_le_chenh": 0.0103,
+   "md_huy_dong_ke_hoach": 83.0,
+   "md_huy_dong": 83.0,
+   "md_san_sang": 9.75,
+   "ty_le_su_dung": 0.8825,
+   "chi_phi_huy_dong_ke_hoach": 125801591,
+   "chi_phi_huy_dong_thuc_te": 125801591,
+   "chi_phi_cong_suc_ke_hoach": 109886932,
+   "chi_phi_cong_suc_thuc_te": 111023693
+  },
+  {
+   "id": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
+   "vai_tro": "SA_BA",
+   "ten_vai_tro": "Kiến trúc sư kiêm phân tích nghiệp vụ",
+   "loai": "bo_sung",
+   "md_ke_hoach": 70.67,
+   "md_thuc_te": 71.75,
+   "chenh_lech": 1.08,
+   "ty_le_chenh": 0.0153,
+   "md_huy_dong_ke_hoach": 80.0,
+   "md_huy_dong": 80.0,
+   "md_san_sang": 8.25,
+   "ty_le_su_dung": 0.8969,
+   "chi_phi_huy_dong_ke_hoach": 211072727,
+   "chi_phi_huy_dong_thuc_te": 211072727,
+   "chi_phi_cong_suc_ke_hoach": 186456371,
+   "chi_phi_cong_suc_thuc_te": 189305852
+  },
+  {
+   "id": "D1",
+   "ho_ten": "Lê Quang Huy",
+   "vai_tro": "BACKEND",
+   "ten_vai_tro": "Kỹ sư backend",
+   "loai": "bo_sung",
+   "md_ke_hoach": 67.5,
+   "md_thuc_te": 67.0,
+   "chenh_lech": -0.5,
+   "ty_le_chenh": -0.0074,
+   "md_huy_dong_ke_hoach": 85.0,
+   "md_huy_dong": 85.0,
+   "md_san_sang": 18.0,
+   "ty_le_su_dung": 0.7882,
+   "chi_phi_huy_dong_ke_hoach": 143147727,
+   "chi_phi_huy_dong_thuc_te": 143147727,
+   "chi_phi_cong_suc_ke_hoach": 113676136,
+   "chi_phi_cong_suc_thuc_te": 112834091
+  },
+  {
+   "id": "D2",
+   "ho_ten": "Đỗ Minh Quân",
+   "vai_tro": "BACKEND",
+   "ten_vai_tro": "Kỹ sư backend",
+   "loai": "bo_sung",
+   "md_ke_hoach": 64.0,
+   "md_thuc_te": 64.25,
+   "chenh_lech": 0.25,
+   "ty_le_chenh": 0.0039,
+   "md_huy_dong_ke_hoach": 77.0,
+   "md_huy_dong": 77.0,
+   "md_san_sang": 12.75,
+   "ty_le_su_dung": 0.8344,
+   "chi_phi_huy_dong_ke_hoach": 129675000,
+   "chi_phi_huy_dong_thuc_te": 129675000,
+   "chi_phi_cong_suc_ke_hoach": 107781818,
+   "chi_phi_cong_suc_thuc_te": 108202841
+  },
+  {
+   "id": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
+   "vai_tro": "BACKEND",
+   "ten_vai_tro": "Kỹ sư backend",
+   "loai": "bo_sung",
+   "md_ke_hoach": 59.5,
+   "md_thuc_te": 60.25,
+   "chenh_lech": 0.75,
+   "ty_le_chenh": 0.0126,
+   "md_huy_dong_ke_hoach": 86.0,
+   "md_huy_dong": 86.0,
+   "md_san_sang": 25.75,
+   "ty_le_su_dung": 0.7006,
+   "chi_phi_huy_dong_ke_hoach": 144831818,
+   "chi_phi_huy_dong_thuc_te": 144831818,
+   "chi_phi_cong_suc_ke_hoach": 100203409,
+   "chi_phi_cong_suc_thuc_te": 101466477
+  },
+  {
+   "id": "Q1",
+   "ho_ten": "Trần Thu Hà",
+   "vai_tro": "TESTER",
+   "ten_vai_tro": "Kỹ sư kiểm thử",
+   "loai": "bo_sung",
+   "md_ke_hoach": 49.5,
+   "md_thuc_te": 49.75,
+   "chenh_lech": 0.25,
+   "ty_le_chenh": 0.0051,
+   "md_huy_dong_ke_hoach": 70.0,
+   "md_huy_dong": 70.0,
+   "md_san_sang": 20.25,
+   "ty_le_su_dung": 0.7107,
+   "chi_phi_huy_dong_ke_hoach": 94309091,
+   "chi_phi_huy_dong_thuc_te": 94309091,
+   "chi_phi_cong_suc_ke_hoach": 66690000,
+   "chi_phi_cong_suc_thuc_te": 67026818
+  },
+  {
+   "id": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
+   "vai_tro": "TESTER",
+   "ten_vai_tro": "Kỹ sư kiểm thử",
+   "loai": "bo_sung",
+   "md_ke_hoach": 50.0,
+   "md_thuc_te": 49.25,
+   "chenh_lech": -0.75,
+   "ty_le_chenh": -0.015,
+   "md_huy_dong_ke_hoach": 63.0,
+   "md_huy_dong": 63.0,
+   "md_san_sang": 13.75,
+   "ty_le_su_dung": 0.7817,
+   "chi_phi_huy_dong_ke_hoach": 84878182,
+   "chi_phi_huy_dong_thuc_te": 84878182,
+   "chi_phi_cong_suc_ke_hoach": 67363636,
+   "chi_phi_cong_suc_thuc_te": 66353182
+  },
+  {
+   "id": "D4",
+   "ho_ten": "Trương Quốc Việt",
+   "vai_tro": "BACKEND",
+   "ten_vai_tro": "Kỹ sư backend",
+   "loai": "bo_sung",
+   "md_ke_hoach": 58.5,
+   "md_thuc_te": 58.75,
+   "chenh_lech": 0.25,
+   "ty_le_chenh": 0.0043,
+   "md_huy_dong_ke_hoach": 62.0,
+   "md_huy_dong": 62.0,
+   "md_san_sang": 3.25,
+   "ty_le_su_dung": 0.9476,
+   "chi_phi_huy_dong_ke_hoach": 104413636,
+   "chi_phi_huy_dong_thuc_te": 104413636,
+   "chi_phi_cong_suc_ke_hoach": 98519318,
+   "chi_phi_cong_suc_thuc_te": 98940341
+  }
+ ],
+ "van_de": {
+  "tong_hop": {
+   "tong": 14,
+   "so_mo": 0,
+   "so_mo_uu_tien_cao": 0,
+   "so_qua_han": 0,
+   "so_dong": 14,
+   "so_dong_trong_ky": 0,
+   "so_hanh_dong": 17,
+   "so_hanh_dong_chua_xong": 0,
+   "so_hanh_dong_qua_han": 0
+  },
+  "ton_dong": [],
+  "hanh_dong_ton_dong": [],
+  "tom_tat": [
+   "Sổ vấn đề ghi nhận 14 vấn đề, đã đóng 14, còn mở 0 (quá hạn 0) tại ngày 12/08/2027."
+  ]
+ },
+ "nghiem_thu": {
+  "so_tieu_chi": 18,
+  "so_dat": 18,
+  "ty_le_nghiem_thu_dat": 1.0,
+  "so_nghiem_thu_lai": 0,
+  "khong_dat": [],
+  "danh_sach": [
+   {
+    "ma": "NT01",
+    "tieu_chi": "R05 Thời gian phản hồi các thao tác cốt lõi không quá 2 giây, phân vị 95 (KT02)",
+    "hang_muc": "10",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-21",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản kiểm thử hiệu năng bản phát hành kiểm thử chấp nhận 4.4.7",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT02",
+    "tieu_chi": "R05 Chịu tải 500 người dùng đồng thời (KT03)",
+    "hang_muc": "10",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-21",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản kiểm thử hiệu năng bản phát hành kiểm thử chấp nhận 4.4.7",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT03",
+    "tieu_chi": "R04 Hoạt động liên tục với hai nút ứng dụng và cân bằng tải, chuyển đổi dự phòng đạt (KT01)",
+    "hang_muc": "11",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-21",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Kết quả diễn tập chuyển đổi dự phòng 4.4.8 và kiểm tra lại trên môi trường vận hành",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT04",
+    "tieu_chi": "R04 An toàn dữ liệu khi vận hành liên tục: rà soát lỗ hổng theo OWASP Top 10 và kiểm thử lại sau khắc phục (KT04)",
+    "hang_muc": "10",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-21",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản rà soát an toàn thông tin 4.4.7, không còn lỗ hổng mức cao",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT05",
+    "tieu_chi": "R04 Sao lưu toàn phần hằng ngày và sao lưu nhật ký giao dịch theo giờ, khôi phục thử đạt (KT05)",
+    "hang_muc": "11",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-22",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Kết quả khôi phục thử trên môi trường vận hành",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT06",
+    "tieu_chi": "R03 Khách hàng thao tác dễ dàng theo kết quả đánh giá khả năng sử dụng và kiểm thử chấp nhận",
+    "hang_muc": "10",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-27",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Kết quả đánh giá khả năng sử dụng 2.4.9 và biên bản kiểm thử chấp nhận",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT07",
+    "tieu_chi": "R06 Chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet theo đặc tả đã xác nhận",
+    "hang_muc": "5",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-27",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản kiểm thử chấp nhận luồng tìm kiếm 1.4.11",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT08",
+    "tieu_chi": "R07 Chức năng quản lý thành viên theo đặc tả đã xác nhận",
+    "hang_muc": "6",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-27",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản kiểm thử chấp nhận luồng thành viên 2.4.12",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT09",
+    "tieu_chi": "R08 Chức năng đặt hàng theo đặc tả đã xác nhận",
+    "hang_muc": "7",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-27",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản kiểm thử vận hành luồng đặt hàng 3.4.13",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT10",
+    "tieu_chi": "R09 Cơ sở dữ liệu bán hàng Selling DB vận hành trên môi trường vận hành",
+    "hang_muc": "8",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-27",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản kiểm thử vận hành 3.4.13 và chuyển đổi dữ liệu thử 4.5.3",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT11",
+    "tieu_chi": "R10 Tích hợp với Main System: đồng bộ sản phẩm, tồn kho, chuyển đơn hàng và nhận trạng thái",
+    "hang_muc": "9",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-27",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản kiểm thử vận hành 3.4.13",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT12",
+    "tieu_chi": "R11 Nghiệp vụ vận chuyển nhận thông tin đơn hàng từ Main System và cập nhật trạng thái giao hàng",
+    "hang_muc": "9",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-27",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản kiểm thử vận hành luồng giao hàng 3.4.13",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT13",
+    "tieu_chi": "R46 Quy trình vận hành mới chạy được trên hệ thống trong kiểm thử vận hành",
+    "hang_muc": "2",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-27",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản kiểm thử vận hành 3.4.13",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT14",
+    "tieu_chi": "R13 Hệ thống được xây dựng từ phân tích đến kiểm thử vận hành theo phạm vi hợp đồng",
+    "hang_muc": "11",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-29",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản bàn giao ngày 29/07/2027",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT15",
+    "tieu_chi": "R12 Hệ thống đưa vào vận hành đúng ngày cut over theo phụ lục hợp đồng",
+    "hang_muc": "13",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-29",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản bàn giao ngày 29/07/2027",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT16",
+    "tieu_chi": "R44 Bàn giao đặc tả hệ thống gồm cấu hình cơ sở dữ liệu và chức năng",
+    "hang_muc": "1",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-29",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản bàn giao tài liệu ngày 29/07/2027",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT17",
+    "tieu_chi": "R47 Bàn giao cấu trúc cơ sở dữ liệu Selling DB",
+    "hang_muc": "3",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-29",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản bàn giao tài liệu ngày 29/07/2027",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT18",
+    "tieu_chi": "R48 Bàn giao sơ đồ phân cấp menu và giao diện ưu tiên",
+    "hang_muc": "4",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-29",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản bàn giao tài liệu ngày 29/07/2027",
+    "so_lan": 1
+   }
+  ],
+  "yeu_cau_rfp": [
+   {
+    "ma": "R03",
+    "noi_dung": "Chính sách phát triển: khách hàng thao tác dễ dàng",
+    "ma_nghiem_thu": "NT06",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R04",
+    "noi_dung": "Hệ thống hoạt động liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm",
+    "ma_nghiem_thu": "NT03, NT04, NT05",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R05",
+    "noi_dung": "Thời gian phản hồi nhanh, không quá 2 giây",
+    "ma_nghiem_thu": "NT01, NT02",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R06",
+    "noi_dung": "Hệ thống mới có chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet",
+    "ma_nghiem_thu": "NT07",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R07",
+    "noi_dung": "Hệ thống mới có chức năng quản lý thành viên",
+    "ma_nghiem_thu": "NT08",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R08",
+    "noi_dung": "Hệ thống mới có chức năng đặt hàng",
+    "ma_nghiem_thu": "NT09",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R09",
+    "noi_dung": "Hệ thống mới có cơ sở dữ liệu bán hàng Selling DB",
+    "ma_nghiem_thu": "NT10",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R10",
+    "noi_dung": "Selling DB trao đổi dữ liệu với hệ thống chính hiện có quản trị bán hàng, sản phẩm, logistics, giao dịch",
+    "ma_nghiem_thu": "NT11",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R11",
+    "noi_dung": "Nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng",
+    "ma_nghiem_thu": "NT12",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R13",
+    "noi_dung": "Phạm vi: xây dựng hệ thống website bán hàng từ phân tích hệ thống đến kiểm thử vận hành",
+    "ma_nghiem_thu": "NT14",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R44",
+    "noi_dung": "Sản phẩm: đặc tả hệ thống gồm cấu hình cơ sở dữ liệu và chức năng",
+    "ma_nghiem_thu": "NT16",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R46",
+    "noi_dung": "Sản phẩm: quy trình vận hành mới",
+    "ma_nghiem_thu": "NT13",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R47",
+    "noi_dung": "Sản phẩm: cấu trúc cơ sở dữ liệu Selling DB",
+    "ma_nghiem_thu": "NT17",
+    "ket_qua": "Đạt"
+   },
+   {
+    "ma": "R48",
+    "noi_dung": "Sản phẩm: sơ đồ phân cấp menu",
+    "ma_nghiem_thu": "NT18",
+    "ket_qua": "Đạt"
+   }
+  ],
+  "so_yeu_cau_rfp": 14,
+  "so_yeu_cau_rfp_dat": 14,
+  "yeu_cau_chua_nghiem_thu": [],
+  "hang_muc": [
+   {
+    "stt": 1,
+    "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 2,
+    "danh_muc": "Thiết kế quy trình vận hành mới (New Operational Flow)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 3,
+    "danh_muc": "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 4,
+    "danh_muc": "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 5,
+    "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 6,
+    "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 7,
+    "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 8,
+    "danh_muc": "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 9,
+    "danh_muc": "Tích hợp với hệ thống chính (Main System)",
+    "so_tieu_chi": 2,
+    "so_dat": 2,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 10,
+    "danh_muc": "Kiểm thử hệ thống",
+    "so_tieu_chi": 4,
+    "so_dat": 4,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 11,
+    "danh_muc": "Kiểm thử vận hành (Operation Test)",
+    "so_tieu_chi": 3,
+    "so_dat": 3,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 12,
+    "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
+    "so_tieu_chi": 0,
+    "so_dat": 0,
+    "ket_qua": "Chưa nghiệm thu"
+   },
+   {
+    "stt": 13,
+    "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   }
+  ],
+  "ty_le_yeu_cau_rfp_dat": 1.0
+ },
+ "loi": {
+  "tong": 55,
+  "theo_muc": [
+   {
+    "muc": "Nghiêm trọng",
+    "tong": 0,
+    "da_dong": 0,
+    "con_mo": 0
+   },
+   {
+    "muc": "Cao",
+    "tong": 6,
+    "da_dong": 6,
+    "con_mo": 0
+   },
+   {
+    "muc": "Trung bình",
+    "tong": 25,
+    "da_dong": 25,
+    "con_mo": 0
+   },
+   {
+    "muc": "Thấp",
+    "tong": 24,
+    "da_dong": 24,
+    "con_mo": 0
+   }
+  ],
+  "con_mo": 0,
+  "loi_nghiem_trong_cao_con_mo": 0,
+  "mat_do_loi": 0.75,
+  "thoi_gian_dong_tb": 3.8,
+  "theo_nhom_wbs": [
+   {
+    "nhom": "1",
+    "ten": "Phân hệ quản lý sản phẩm",
+    "so_loi": 5
+   },
+   {
+    "nhom": "2",
+    "ten": "Phân hệ quản lý khách hàng (thành viên)",
+    "so_loi": 10
+   },
+   {
+    "nhom": "3",
+    "ten": "Phân hệ quản lý đơn hàng (đặt hàng)",
+    "so_loi": 21
+   },
+   {
+    "nhom": "4",
+    "ten": "Phân hệ tích hợp hệ thống",
+    "so_loi": 12
+   },
+   {
+    "nhom": "5",
+    "ten": "Bán hàng trên sàn thương mại điện tử",
+    "so_loi": 7
+   }
+  ],
+  "con_mo_ds": []
+ },
+ "thay_doi": {
+  "tong": 1,
+  "theo_trang_thai": [
+   {
+    "trang_thai": "Đã đóng",
+    "so": 1
+   }
+  ],
+  "so_duyet": 1,
+  "md_tang_duyet": 76.0,
+  "chi_phi_tang_duyet": 161500000,
+  "ngay_cham_duyet": 18,
+  "so_dung_han": 1,
+  "ty_le_cr_dung_han": 1.0,
+  "danh_sach": [
+   {
+    "ma": "CR01",
+    "tieu_de": "Bán hàng trên sàn thương mại điện tử",
+    "nguon": "chủ đầu tư",
+    "muc": "Lớn",
+    "trang_thai": "Đã đóng",
+    "md_tang": 76.0,
+    "chi_phi_tang": 161500000,
+    "ngay_cham": 18,
+    "ngay_de_xuat": "2027-05-20",
+    "ngay_quyet_dinh": "2027-05-27",
+    "han_quyet_dinh": "2027-06-01",
+    "so_ngay_xu_ly": 5,
+    "dung_han": true,
+    "phu_luc_hop_dong": true
+   }
+  ]
+ },
+ "rui_ro": {
+  "tong": 22,
+  "so_da_xay_ra": 3,
+  "so_kich_hoat": 2,
+  "so_khong_xay_ra": 19,
+  "tong_emv_md": 47.6,
+  "tong_emv_tien": 150693014,
+  "tac_dong_md": 2.5,
+  "tac_dong_tien": 5250000,
+  "du_phong": 50000000.0,
+  "ty_le_dung_du_phong": 0.105,
+  "ty_le_rui_ro_co_ung_pho": 1.0,
+  "xay_ra_ds": [
+   {
+    "ma": "RR02",
+    "ten": "Tài liệu giao diện hoặc môi trường thử của Main System đến muộn hơn cam kết hoặc không đủ thông tin",
+    "nhom": "Tích hợp và đối tác",
+    "muc": "Cao",
+    "emv_md": 6.0,
+    "emv_tien": 12600000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": true,
+    "da_kich_hoat": true,
+    "hanh_dong": "Đến 9 giờ 00 ngày 14/04/2027 chưa nhận tài liệu đặc tả giao diện của Main System. Ninh Đức Toàn lập danh sách thông tin còn thiếu, Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư trong ngày, nhóm tích hợp chuẩn bị dịch vụ giả lập. Tài liệu đặc tả giao diện Main System nhận ngày 19/04/2027, muộn 2 ngày làm việc so với CK1. Ninh Đức Toàn đối chiếu tài liệu với danh sách thông tin còn thiếu, Trần Bá Đạt làm đặc tả giao diện tích hợp ngay khi nhận tài liệu, nhóm tích hợp tiếp tục chuẩn bị dịch vụ giả lập",
+    "ma_cr": "",
+    "md_tac_dong": 1.0,
+    "chi_phi_tac_dong": 2100000,
+    "so_su_kien": 3
+   },
+   {
+    "ma": "RR04",
+    "ten": "Vị trí bổ sung không có mặt đúng sprint huy động đã thống nhất",
+    "nhom": "Nhân sự",
+    "muc": "Trung bình",
+    "emv_md": 6.0,
+    "emv_tien": 12600000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": true,
+    "da_kich_hoat": false,
+    "hanh_dong": "Trần Bá Đạt xác nhận ngày có mặt của Trần Thu Hà, Nguyễn Thị Phương Liên chuẩn bị khung kế hoạch bảo đảm chất lượng để bàn giao, gói 2.1.1 làm bù trong tuần đầu sprint. Điều kiện đóng đạt",
+    "ma_cr": "",
+    "md_tac_dong": 0.5,
+    "chi_phi_tac_dong": 1050000,
+    "so_su_kien": 2
+   },
+   {
+    "ma": "RR06",
+    "ten": "Thời gian phản hồi vượt 2 giây hoặc không chịu tải 500 người dùng đồng thời",
+    "nhom": "Kỹ thuật",
+    "muc": "Trung bình",
+    "emv_md": 3.2,
+    "emv_tien": 6720000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": true,
+    "da_kich_hoat": true,
+    "hanh_dong": "Kích hoạt kế hoạch ứng phó khi kết quả kiểm thử hiệu năng cho thời gian phản hồi trang danh mục 2,6 giây ở mức tải 500 người dùng đồng thời. Đỗ Minh Quân tối ưu truy vấn danh mục và bộ nhớ đệm thay Phạm Tuấn Anh (không huy động trong S7), Ninh Đức Toàn rà soát cấu hình mở rộng nút ứng dụng trên môi trường vận hành, Phạm Ngọc Anh đo lại sau tối ưu",
+    "ma_cr": "",
+    "md_tac_dong": 1.0,
+    "chi_phi_tac_dong": 2100000,
+    "so_su_kien": 3
+   }
+  ],
+  "danh_sach": [
+   {
+    "ma": "RR02",
+    "ten": "Tài liệu giao diện hoặc môi trường thử của Main System đến muộn hơn cam kết hoặc không đủ thông tin",
+    "nhom": "Tích hợp và đối tác",
+    "muc": "Cao",
+    "emv_md": 6.0,
+    "emv_tien": 12600000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": true,
+    "da_kich_hoat": true,
+    "hanh_dong": "Đến 9 giờ 00 ngày 14/04/2027 chưa nhận tài liệu đặc tả giao diện của Main System. Ninh Đức Toàn lập danh sách thông tin còn thiếu, Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư trong ngày, nhóm tích hợp chuẩn bị dịch vụ giả lập. Tài liệu đặc tả giao diện Main System nhận ngày 19/04/2027, muộn 2 ngày làm việc so với CK1. Ninh Đức Toàn đối chiếu tài liệu với danh sách thông tin còn thiếu, Trần Bá Đạt làm đặc tả giao diện tích hợp ngay khi nhận tài liệu, nhóm tích hợp tiếp tục chuẩn bị dịch vụ giả lập",
+    "ma_cr": "",
+    "md_tac_dong": 1.0,
+    "chi_phi_tac_dong": 2100000,
+    "so_su_kien": 3
+   },
+   {
+    "ma": "RR10",
+    "ten": "Số lỗi phát hiện trong kiểm thử chấp nhận vượt khả năng khắc phục trong khoảng 16/07 đến 27/07/2027",
+    "nhom": "Chất lượng",
+    "muc": "Cao",
+    "emv_md": 4.0,
+    "emv_tien": 9179610,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR01",
+    "ten": "Đặc tả yêu cầu được xác nhận chậm hoặc thay đổi nhiều sau khi xác nhận",
+    "nhom": "Phạm vi và yêu cầu",
+    "muc": "Trung bình",
+    "emv_md": 4.8,
+    "emv_tien": 10080000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "Điều kiện đóng đạt: biên bản xác nhận đặc tả (M2) ký ngày 06/05/2027, không còn yêu cầu sửa đổi đặc tả đã xác nhận đang mở (CR01 là bổ sung phạm vi theo phụ lục)",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR04",
+    "ten": "Vị trí bổ sung không có mặt đúng sprint huy động đã thống nhất",
+    "nhom": "Nhân sự",
+    "muc": "Trung bình",
+    "emv_md": 6.0,
+    "emv_tien": 12600000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": true,
+    "da_kich_hoat": false,
+    "hanh_dong": "Trần Bá Đạt xác nhận ngày có mặt của Trần Thu Hà, Nguyễn Thị Phương Liên chuẩn bị khung kế hoạch bảo đảm chất lượng để bàn giao, gói 2.1.1 làm bù trong tuần đầu sprint. Điều kiện đóng đạt",
+    "ma_cr": "",
+    "md_tac_dong": 0.5,
+    "chi_phi_tac_dong": 1050000,
+    "so_su_kien": 2
+   },
+   {
+    "ma": "RR13",
+    "ten": "Lương thỏa thuận với vị trí bổ sung cao hơn lương tham chiếu dùng trong dự toán",
+    "nhom": "Chi phí",
+    "muc": "Trung bình",
+    "emv_md": 0.0,
+    "emv_tien": 44441441,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR22",
+    "ten": "Giao diện lập trình hoặc môi trường thử của sàn thương mại điện tử chưa sẵn sàng, hoặc sàn thay đổi chính sách kết nối trong thời gian thực hiện",
+    "nhom": "Tích hợp và đối tác",
+    "muc": "Trung bình",
+    "emv_md": 2.4,
+    "emv_tien": 5040000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR08",
+    "ten": "Sự cố khi triển khai phiên bản chính thức và chuyển đổi dữ liệu ngày 28/07/2027, phải khôi phục",
+    "nhom": "Vận hành và chuyển đổi",
+    "muc": "Trung bình",
+    "emv_md": 0.8,
+    "emv_tien": 2177451,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR15",
+    "ten": "Lỗ hổng bảo mật tài khoản thành viên làm lộ dữ liệu khách hàng",
+    "nhom": "Kỹ thuật",
+    "muc": "Trung bình",
+    "emv_md": 1.0,
+    "emv_tien": 2100000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR03",
+    "ten": "Kiểm thử hệ thống và khắc phục lỗi hoàn thành sau ngày bắt đầu kiểm thử chấp nhận 16/07/2027",
+    "nhom": "Tiến độ",
+    "muc": "Trung bình",
+    "emv_md": 4.0,
+    "emv_tien": 8400000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR06",
+    "ten": "Thời gian phản hồi vượt 2 giây hoặc không chịu tải 500 người dùng đồng thời",
+    "nhom": "Kỹ thuật",
+    "muc": "Trung bình",
+    "emv_md": 3.2,
+    "emv_tien": 6720000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": true,
+    "da_kich_hoat": true,
+    "hanh_dong": "Kích hoạt kế hoạch ứng phó khi kết quả kiểm thử hiệu năng cho thời gian phản hồi trang danh mục 2,6 giây ở mức tải 500 người dùng đồng thời. Đỗ Minh Quân tối ưu truy vấn danh mục và bộ nhớ đệm thay Phạm Tuấn Anh (không huy động trong S7), Ninh Đức Toàn rà soát cấu hình mở rộng nút ứng dụng trên môi trường vận hành, Phạm Ngọc Anh đo lại sau tối ưu",
+    "ma_cr": "",
+    "md_tac_dong": 1.0,
+    "chi_phi_tac_dong": 2100000,
+    "so_su_kien": 3
+   },
+   {
+    "ma": "RR16",
+    "ten": "Hạ tầng máy chủ vận hành do Chủ đầu tư bàn giao muộn",
+    "nhom": "Vận hành và chuyển đổi",
+    "muc": "Trung bình",
+    "emv_md": 2.4,
+    "emv_tien": 6240000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR05",
+    "ten": "Trưởng nhóm quá tải do kiêm quản lý dự án và kiến trúc",
+    "nhom": "Nhân sự",
+    "muc": "Trung bình",
+    "emv_md": 2.4,
+    "emv_tien": 6600000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR07",
+    "ten": "Hệ thống gián đoạn, không bảo đảm hoạt động liên tục 24 giờ, 365 ngày",
+    "nhom": "Kỹ thuật",
+    "muc": "Trung bình",
+    "emv_md": 1.2,
+    "emv_tien": 3120000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR11",
+    "ten": "Chủ đầu tư yêu cầu bổ sung thanh toán trực tuyến cho đơn hàng",
+    "nhom": "Phạm vi và yêu cầu",
+    "muc": "Trung bình",
+    "emv_md": 2.4,
+    "emv_tien": 5040000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR12",
+    "ten": "Thư viện mã nguồn mở có giấy phép không phù hợp với điều khoản quyền sở hữu thuộc Chủ đầu tư",
+    "nhom": "Pháp lý và hợp đồng",
+    "muc": "Trung bình",
+    "emv_md": 0.6,
+    "emv_tien": 1260000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR09",
+    "ten": "Cán bộ Chủ đầu tư chưa sẵn sàng vận hành theo quy trình vận hành mới",
+    "nhom": "Vận hành và chuyển đổi",
+    "muc": "Thấp",
+    "emv_md": 1.6,
+    "emv_tien": 3440000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR14",
+    "ten": "Dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi đến muộn hơn 10/06/2027 hoặc sai định dạng",
+    "nhom": "Tích hợp và đối tác",
+    "muc": "Thấp",
+    "emv_md": 1.6,
+    "emv_tien": 3360000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR20",
+    "ten": "Tái sử dụng khung ứng dụng và thư viện giao diện từ hai hợp đồng tương tự",
+    "nhom": "Kỹ thuật",
+    "muc": "Thấp",
+    "emv_md": 3.2,
+    "emv_tien": 6720000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR17",
+    "ten": "Lỗi phát sinh trong thời hạn bảo hành 12 tháng vượt chi phí bảo hành đã dự tính",
+    "nhom": "Chất lượng",
+    "muc": "Thấp",
+    "emv_md": 2.0,
+    "emv_tien": 4200000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR18",
+    "ten": "Phụ thuộc vào ít người có năng lực triển khai hạ tầng",
+    "nhom": "Nhân sự",
+    "muc": "Thấp",
+    "emv_md": 1.2,
+    "emv_tien": 3120000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR21",
+    "ten": "Chủ đầu tư bàn giao môi trường thử của Main System sớm hơn 20/05/2027",
+    "nhom": "Tích hợp và đối tác",
+    "muc": "Thấp",
+    "emv_md": 0.6,
+    "emv_tien": 1200000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "Điều kiện đóng đạt: Chủ đầu tư bàn giao môi trường thử Main System đúng hạn 20/05/2027, không sớm hơn, kiểm thử tích hợp 4.4.3 đã bắt đầu",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   },
+   {
+    "ma": "RR19",
+    "ten": "Mốc M3 hoặc M9 trễ làm dời khoản thu Đợt 3, Đợt 6",
+    "nhom": "Chi phí",
+    "muc": "Thấp",
+    "emv_md": 0.0,
+    "emv_tien": 974512,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": false,
+    "da_kich_hoat": false,
+    "hanh_dong": "",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 1
+   }
+  ],
+  "so_su_kien": 27,
+  "rui_ro_moi": []
+ },
+ "kpi": [
+  {
+   "ma": "K01",
+   "nhom": "Tiến độ",
+   "chi_tieu": "Đưa hệ thống vào vận hành (cut over) đúng hạn hợp đồng",
+   "so_sanh": "le",
+   "muc_tieu": 0,
+   "thuc_te": 0,
+   "muc_tieu_hien_thi": "Tối đa 0 ngày làm việc",
+   "thuc_te_hien_thi": "0 ngày làm việc",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K02",
+   "nhom": "Tiến độ",
+   "chi_tieu": "Tỷ lệ mốc đạt đúng hạn",
+   "so_sanh": "ge",
+   "muc_tieu": 0.8,
+   "thuc_te": 1.0,
+   "muc_tieu_hien_thi": "Tối thiểu 80%",
+   "thuc_te_hien_thi": "100%",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K03",
+   "nhom": "Tiến độ",
+   "chi_tieu": "Chỉ số tiến độ SPI kỳ cuối",
+   "so_sanh": "ge",
+   "muc_tieu": 0.95,
+   "thuc_te": 1.0,
+   "muc_tieu_hien_thi": "Tối thiểu 0,95",
+   "thuc_te_hien_thi": "1",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K04",
+   "nhom": "Chi phí",
+   "chi_tieu": "Chỉ số chi phí CPI kỳ cuối",
+   "so_sanh": "ge",
+   "muc_tieu": 0.95,
+   "thuc_te": 0.9949,
+   "muc_tieu_hien_thi": "Tối thiểu 0,95",
+   "thuc_te_hien_thi": "0,99",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K05",
+   "nhom": "Chi phí",
+   "chi_tieu": "Chênh lệch công sức thực tế so với kế hoạch",
+   "so_sanh": "le",
+   "muc_tieu": 0.1,
+   "thuc_te": 0.0051,
+   "muc_tieu_hien_thi": "Tối đa 10%",
+   "thuc_te_hien_thi": "0,5%",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K06",
+   "nhom": "Phạm vi",
+   "chi_tieu": "Tỷ lệ gói công việc hoàn thành",
+   "so_sanh": "ge",
+   "muc_tieu": 1.0,
+   "thuc_te": 1.0,
+   "muc_tieu_hien_thi": "Tối thiểu 100%",
+   "thuc_te_hien_thi": "100%",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K07",
+   "nhom": "Chất lượng",
+   "chi_tieu": "Tỷ lệ tiêu chí nghiệm thu đạt",
+   "so_sanh": "ge",
+   "muc_tieu": 1.0,
+   "thuc_te": 1.0,
+   "muc_tieu_hien_thi": "Tối thiểu 100%",
+   "thuc_te_hien_thi": "100%",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K08",
+   "nhom": "Chất lượng",
+   "chi_tieu": "Tỷ lệ yêu cầu RFP được nghiệm thu đạt",
+   "so_sanh": "ge",
+   "muc_tieu": 1.0,
+   "thuc_te": 1.0,
+   "muc_tieu_hien_thi": "Tối thiểu 100%",
+   "thuc_te_hien_thi": "100%",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K09",
+   "nhom": "Chất lượng",
+   "chi_tieu": "Lỗi mức nghiêm trọng và cao còn mở khi bàn giao",
+   "so_sanh": "le",
+   "muc_tieu": 0,
+   "thuc_te": 0,
+   "muc_tieu_hien_thi": "Tối đa 0 lỗi",
+   "thuc_te_hien_thi": "0 lỗi",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K10",
+   "nhom": "Chất lượng",
+   "chi_tieu": "Mật độ lỗi trên 10 MD thực tế",
+   "so_sanh": "le",
+   "muc_tieu": 2.0,
+   "thuc_te": 0.75,
+   "muc_tieu_hien_thi": "Tối đa 2 lỗi/10 MD",
+   "thuc_te_hien_thi": "0,75 lỗi/10 MD",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K11",
+   "nhom": "Thay đổi",
+   "chi_tieu": "Yêu cầu thay đổi có quyết định trong thời hạn đánh giá",
+   "so_sanh": "ge",
+   "muc_tieu": 1.0,
+   "thuc_te": 1.0,
+   "muc_tieu_hien_thi": "Tối thiểu 100%",
+   "thuc_te_hien_thi": "100%",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K12",
+   "nhom": "Rủi ro",
+   "chi_tieu": "Rủi ro đã xảy ra có hành động ứng phó được ghi nhận",
+   "so_sanh": "ge",
+   "muc_tieu": 1.0,
+   "thuc_te": 1.0,
+   "muc_tieu_hien_thi": "Tối thiểu 100%",
+   "thuc_te_hien_thi": "100%",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K13",
+   "nhom": "Rủi ro",
+   "chi_tieu": "Tác động thực tế của rủi ro so với dự phòng",
+   "so_sanh": "le",
+   "muc_tieu": 1.0,
+   "thuc_te": 0.105,
+   "muc_tieu_hien_thi": "Tối đa 100%",
+   "thuc_te_hien_thi": "10,5%",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  },
+  {
+   "ma": "K14",
+   "nhom": "Chi phí",
+   "chi_tieu": "Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động)",
+   "so_sanh": "ge",
+   "muc_tieu": 0.8,
+   "thuc_te": 0.8114,
+   "muc_tieu_hien_thi": "Tối thiểu 80%",
+   "thuc_te_hien_thi": "81,1%",
+   "ket_qua": "Đạt",
+   "ly_do_ghi_de": ""
+  }
+ ],
+ "so_kpi": 14,
+ "so_kpi_dat": 14,
+ "ty_le_kpi_dat": 1.0,
+ "xep_loai": "Tốt",
+ "kpi_theo_nhom": [
+  {
+   "nhom": "Tiến độ",
+   "so": 3,
+   "dat": 3,
+   "ma": "K01, K02, K03"
+  },
+  {
+   "nhom": "Chi phí",
+   "so": 3,
+   "dat": 3,
+   "ma": "K04, K05, K14"
+  },
+  {
+   "nhom": "Phạm vi",
+   "so": 1,
+   "dat": 1,
+   "ma": "K06"
+  },
+  {
+   "nhom": "Chất lượng",
+   "so": 4,
+   "dat": 4,
+   "ma": "K07, K08, K09, K10"
+  },
+  {
+   "nhom": "Thay đổi",
+   "so": 1,
+   "dat": 1,
+   "ma": "K11"
+  },
+  {
+   "nhom": "Rủi ro",
+   "so": 2,
+   "dat": 2,
+   "ma": "K12, K13"
+  }
+ ],
+ "xep_loai_thang": [
+  {
+   "tu": 0.9,
+   "ten": "Tốt"
+  },
+  {
+   "tu": 0.75,
+   "ten": "Khá"
+  },
+  {
+   "tu": 0.5,
+   "ten": "Trung bình"
+  },
+  {
+   "tu": 0,
+   "ten": "Chưa đạt"
+  }
+ ],
+ "kpi_khong_dat": [],
+ "ngay_dong_du_an": "2027-08-12",
+ "so_lieu_mo_phong": true,
+ "can_cu_mo_phong": [
+  "Số liệu thực tế trong báo cáo là số liệu mô phỏng. {mo_phong#_ghi_chu}"
+ ],
+ "kiem_tra": {
+  "ket_luan": "dat",
+  "phat_hien": []
+ }
+}

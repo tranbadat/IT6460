@@ -1,108 +1,90 @@
 {
  "tai_lieu": "ket_qua/04_Master_schedule/Master_schedule.xlsx",
+ "phien_ban": "2.1",
  "buoc": "lich",
- "phien_ban": "0.12",
- "thoi_gian": "2026-10-18",
- "ket_luan": "dat",
- "so_loi": 0,
- "so_canh_bao": 5,
+ "duong_co_so": "BL2 (sau yêu cầu thay đổi CR01, phụ lục 01/2027/PL-ABCW)",
+ "luot": "Xác nhận sau vòng sửa phần 1 mô phỏng (sau CR01), báo cáo lượt trước lưu tại lam_viec/lich/bao_cao_kiem_tra_lop_B_BL2_vong1.json",
+ "ghi_chu": "LibreOffice tính lại công thức, không có ô lỗi. Tong_quan khớp lich.json: 733 MD, quỹ 908 MD, 80,7%, cut over 29/07/2027, dự trữ 7 ngày, đóng dự án 12/08/2027, 9 sprint. Sprint và Nhu_cau có dòng KT 2 MD, tổng quỹ 908.",
  "danh_gia_tieu_chi": [
   {
    "tieu_chi": "CL01",
    "ket_qua": "dat",
-   "nhan_xet": "Đủ Gantt (182 dòng WBS, 144 gói lá), 7 sprint có mục tiêu và sản phẩm trình diễn, 8 mốc gắn đợt thanh toán, phân bổ, tải, nhu cầu, cam kết."
+   "nhan_xet": "Đủ sheet lịch, sprint, mốc, giai đoạn, tải, nhu cầu, cam kết."
   },
   {
    "tieu_chi": "CL02",
    "ket_qua": "dat",
-   "nhan_xet": "144 gói lá khớp wbs.json về MD, phụ thuộc. Phân bổ theo người khớp phan_cong.json. Tổng MD 657, quỹ 796, tỷ lệ 0,8254, 73 ngày làm việc (đã trừ 16/4, 30/4, 3/5) khớp lich.json và du_an.json. Không có gói bắt đầu trước khi gói phụ thuộc kết thúc."
+   "nhan_xet": "Khớp lich.json, phan_cong.json, thanh_vien.json, du_an.json (uat_moi 16/07 đến 27/07, CK10)."
   },
   {
    "tieu_chi": "CL03",
    "ket_qua": "dat",
-   "nhan_xet": "Mốc dẫn về gói WBS, riêng M0, M6 ghi Ngày cố định (MH02)."
+   "nhan_xet": "Mốc gắn gói căn cứ và đợt thanh toán, M9 căn cứ 5.4.5, 5.5.1."
   },
   {
    "tieu_chi": "CL04",
    "ket_qua": "dat",
-   "nhan_xet": "Ngày, hạn, trạng thái mốc tính bằng công thức. 594 công thức, tính lại bằng LibreOffice không có lỗi, giá trị trùng giá trị lưu sẵn."
+   "nhan_xet": "Gói có Chủ đầu tư tham gia có thời lượng tối thiểu. Còn cảnh báo 5.2.4 (MH05)."
   },
   {
    "tieu_chi": "CL05",
    "ket_qua": "dat",
-   "nhan_xet": "Dự trữ 4 ngày làm việc từ 7.2.4 (11/06) đến các gói ghim ngày 18/06. Cam kết CK1-CK6 có gói phụ thuộc và ngày bắt đầu sớm nhất."
+   "nhan_xet": "Dự trữ 7 ngày, M3 không có dự trữ đã phản ánh ở RR19 của kế hoạch rủi ro."
   },
   {
    "tieu_chi": "CL06",
    "ket_qua": "dat",
-   "nhan_xet": "Lời văn trang trọng, không có ghi chú nháp."
-  },
-  {
-   "tieu_chi": "TR1 Khả thi đến cut over",
-   "ket_qua": "dat",
-   "nhan_xet": "8.3.3 ngày 30/06, 8.3.4 và M6 ngày 01/07/2027, không gói nào vượt cut over. Đường găng 16 gói, 52 ngày, độ dự trữ CPM bằng 0 đúng các gói gắn cờ găng."
-  },
-  {
-   "tieu_chi": "TR2 Mốc khớp thanh toán HSMT",
-   "ket_qua": "dat",
-   "nhan_xet": "Đợt 1 M0 (18/03), đợt 2 M2 (2.1.7, 06/05), đợt 3 M3 (1.3.2, 16/06), đợt 4 M6 (01/07), đợt 5 M7 (01/07), khớp sự kiện thanh toán trong hsmt.json."
-  },
-  {
-   "tieu_chi": "TR3 Tải nguồn lực",
-   "ket_qua": "dat",
-   "nhan_xet": "Không ô nào trong 84 ô phân bổ vượt quỹ."
-  },
-  {
-   "tieu_chi": "TR4 Cam kết CK1-CK6",
-   "ket_qua": "dat",
-   "nhan_xet": "CK1 6.2.1 bắt đầu 14/04, CK2 6.2.10 20/05, CK3 6.3.2 và CK4 6.3.3 10/06, CK5 2.1.7 28/04-06/05 trong S3, CK6 7.3.1, 7.3.2 18/06-29/06 đúng khoảng uat 8 ngày."
+   "nhan_xet": "Ghi chú dòng KT đúng số liệu."
   }
  ],
  "phat_hien": [
   {
-   "ma": "MH01",
+   "ma": "MH05",
    "muc_do": "canh_bao",
-   "nhom": "lich",
-   "vi_tri": "Phan_bo, Tai_nguon: minh S6, S7; D1 S6",
-   "mo_ta": "Vũ Đức Minh dùng 2/10 MD ở S6, 0/10 MD ở S7, Lê Quang Huy 2/10 MD ở S6, dưới ngưỡng 30% (L07 lớp A). Tỷ lệ sử dụng S6 0,658 và S7 0,65.",
+   "nhom": "CL04 Khả năng nghiệm thu",
+   "vi_tri": "Master_schedule.xlsx sheet Cam_ket, Gói có Chủ đầu tư tham gia (không có 5.2.4); Lich_trinh dòng 5.2.4 (15/06 đến 17/06/2027, 3 ngày)",
+   "mo_ta": "Chưa đóng từ lượt trước. Gói 5.2.4 Chủ đầu tư xác nhận đặc tả phần sàn có 3 ngày, ngắn hơn thời gian phê duyệt tài liệu 5 ngày của du_an.json, không có trong danh sách gói có Chủ đầu tư tham gia. Quyết định 25/10/2026 về CR01 chưa đề cập.",
    "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Nhóm quyết định rút ngắn huy động hoặc giao thêm việc, sửa trong phan_cong"
+   "de_xuat": "Nhóm xác nhận 3 ngày là thời gian thống nhất trong phụ lục, hoặc khai báo 5.2.4 phe_duyet trong moc_nhap.json và lập lại lịch."
+  }
+ ],
+ "dong_phat_hien_truoc": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "5.4.5 xếp 16/07 đến 27/07/2027, khai báo kiểm thử chấp nhận trong Cam_ket. M9 27/07/2027 sau 5.4.5 và 5.5.1 (13/07 đến 14/07), bằng hạn, đợt 6 thu 11/08/2027 theo dự toán."
   },
   {
    "ma": "MH02",
-   "muc_do": "canh_bao",
-   "nhom": "lich",
-   "vi_tri": "Moc M6, cột Căn cứ",
-   "mo_ta": "M6 ghi Ngày cố định, chưa dẫn về gói 8.3.3, 8.3.4 dù hai gói này là căn cứ thực của việc đưa vào vận hành.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Ghi căn cứ 8.3.3, 8.3.4 trong moc_nhap.json"
+   "da_dong": true,
+   "nhan_xet": "5.1.1 là gói dàn trải 21/05 đến 29/07/2027, nhóm Suốt dự án, Trần Bá Đạt (dàn trải)."
   },
   {
    "ma": "MH03",
-   "muc_do": "canh_bao",
-   "nhom": "lich",
-   "vi_tri": "Lich_trinh 1.3.3",
-   "mo_ta": "Báo cáo tổng kết, bài học và bàn giao hồ sơ dự án kết thúc 21/06, trước khi kiểm thử chấp nhận xong (29/06) và cut over, nội dung tổng kết có thể chưa đủ.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Xem lại phụ thuộc của 1.3.3 (thêm 7.3.1, 7.3.2 hoặc 8.3.3), cần kiểm tra ảnh hưởng dự trữ"
+   "da_dong": true,
+   "nhan_xet": "Dòng KT ghi quỹ theo tỷ lệ huy động giai đoạn Kết thúc, 2 MD, tổng quỹ 908."
   },
   {
    "ma": "MH04",
-   "muc_do": "canh_bao",
-   "nhom": "lich",
-   "vi_tri": "Cam_ket, gói 1.3.2",
-   "mo_ta": "Gói Chủ đầu tư kiểm tra chức năng chính được xếp loại Phê duyệt tài liệu 5 ngày, tên loại chưa sát bản chất công việc.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Cân nhắc loại tham gia riêng cho kiểm tra chức năng"
+   "da_dong": true,
+   "nhan_xet": "Kế hoạch rủi ro ghi M3 không còn dự trữ đến hạn trong nguyên nhân RR19, dấu hiệu theo dõi chuỗi kiểm thử tích hợp trước M3 chậm quá 1 ngày."
   },
   {
    "ma": "MH05",
-   "muc_do": "canh_bao",
-   "nhom": "lich",
-   "vi_tri": "Tong_quan, dự trữ 4 ngày",
-   "mo_ta": "Dự trữ 4 ngày làm việc đứng trước các gói ghim 18/06. Sau 18/06 các gói 7.3.x, 8.3.3, 8.3.4, 8.2.4 nối liền đến 01/07, không còn dự trữ, mọi chậm trễ trong khoảng uat làm trễ cut over.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Theo dõi trong kế hoạch rủi ro (phương án dự trữ thời gian)"
+   "da_dong": false,
+   "nhan_xet": "5.2.4 vẫn 3 ngày, không khai báo gói có Chủ đầu tư tham gia, chưa có quyết định của nhóm."
+  },
+  {
+   "ma": "MH06",
+   "da_dong": true,
+   "nhan_xet": "thay_doi.json phu_luc ghi M6, M7 29/07/2027, M9 27/07/2027, có _ghi_chu_ngay_du_kien theo master schedule."
   }
- ]
+ ],
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "prompt": ".claude/skills/qlda-loi/prompts/vai_kiem_tra.md",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên agent con riêng (kiểm tra lớp B lượt xác nhận sau vòng sửa phần 1 mô phỏng sau CR01), Claude Code, mô hình claude-opus-5-5, python-docx, openpyxl, LibreOffice tính lại công thức",
+ "so_loi": 0,
+ "so_canh_bao": 1,
+ "ket_luan": "dat"
 }

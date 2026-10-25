@@ -1,0 +1,109 @@
+{
+ "tai_lieu": "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 5,
+ "phien_ban": "0.11",
+ "vong_kiem_tra_lop_B": 2,
+ "ngay_kiem_tra": "2026-10-25",
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 7 mục theo đặc tả: nguyên tắc, thành viên, nhân sự chủ chốt, RACI 4 mục mức 1 và 20 mục mức 2, chú giải tên, tải theo sprint, giao việc 179 dòng, quy tắc phối hợp, thay thế, điều chỉnh."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Tổng 657 MD, quỹ 816 MD, 80,5%, 12 người, dự trữ 3 ngày khớp lich.json và phan_cong.json. Tổng MD từng gói trong bảng giao việc bằng MD gói của lịch (153 gói), ngày thực hiện khớp lịch, tổng MD từng người khớp pc#tai. Chỉ lệch làm tròn 0,01 MD ở dòng tổng S4, S5 (MH04)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi dòng giao việc có mã gói WBS, nhân sự chủ chốt dẫn Bảng số 02, thay thế nhân sự dẫn Mục 21.2 E-ĐKCT (7 ngày, khớp hsmt#e_dkct)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi mục mức 1, mức 2 có đúng một A (kiểm tra 24 dòng), mọi R trong ma trận có gói giao việc tương ứng, tải từng người từng sprint không vượt quỹ."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có quy tắc chuyển việc cho người hỗ trợ và người còn quỹ khi quá tải hoặc vắng mặt, thay thế trong 7 ngày, cập nhật giao việc, chạy lại lịch và ghi phiên bản khi có yêu cầu thay đổi."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman 13, bảng 12, bảng lưới có lặp tiêu đề, in đậm chỉ ở dòng mục mức 1 của RACI (đặc tả cho phép), không có từ cần tránh. Một câu lặp nghĩa ở mục 7 (MH05)."
+  },
+  {
+   "tieu_chi": "DH1",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi hạng mục mức 1, mức 2 có đúng một A."
+  },
+  {
+   "tieu_chi": "DH2",
+   "ket_qua": "dat",
+   "nhan_xet": "Không ai quá tải trong sprint, mức cao nhất 13/13 ở S3."
+  },
+  {
+   "tieu_chi": "DH3",
+   "ket_qua": "dat",
+   "nhan_xet": "Nhân sự chủ chốt khớp hsmt#nhan_su_chu_chot (1, 3, 1 người) và hsdt_bang#nhan_su_chu_chot (Mẫu 06A)."
+  },
+  {
+   "tieu_chi": "DH4",
+   "ket_qua": "dat",
+   "nhan_xet": "Có quy tắc thay thế và điều chỉnh khi thay đổi."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Bảng chú giải tên: Bộ phận vận hành bán hàng, Bộ phận Main System, Nghiệp vụ vận chuyển",
+   "mo_ta": "Ba bên ngoài có trong chú giải (pc#ben_ngoai) nhưng không xuất hiện ở ô nào của ma trận RACI, trong khi theo vai trò khai báo họ tham gia kiểm thử chấp nhận, xác nhận đặc tả giao diện tích hợp và kiểm thử vận hành (các mục 1.4, 2.4, 3.4, 4.2, 4.4).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định ghi C hoặc I của ba bên này vào trach_nhiem của các mục liên quan trong du_lieu/phan_cong.json, hoặc chỉ đưa vào chú giải các bên có mặt trong ma trận (tinh_bang_phan_cong.py, chu_giai_ten)."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "RACI dòng 1.4 và 2.4: Bên ngoài Chủ đầu tư (I), Phê duyệt bên ngoài Chủ đầu tư",
+   "mo_ta": "Ở 1.4, 2.4 Chủ đầu tư chỉ được thông báo (I) nhưng lại là bên phê duyệt kiểm thử chấp nhận, trong khi 3.4, 4.4 cùng loại công việc ghi Chủ đầu tư (C). Vai trò của Chủ đầu tư trong các mục kiểm thử chưa thống nhất.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thống nhất vai trò Chủ đầu tư ở 1.4, 2.4 với 3.4, 4.4 (chuyển cdt từ I sang C) trong trach_nhiem của du_lieu/phan_cong.json, chạy lại tinh_bang_phan_cong.py."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "so_lieu",
+   "vi_tri": "Mục 1, đoạn 2: Phần quỹ chưa giao 159 MD là dư địa để tiếp nhận công việc phát sinh",
+   "mo_ta": "159 MD bằng 816 trừ 657, nhưng 2 MD của gói 1.1.5 thuộc giai đoạn Kết thúc nằm ngoài quỹ huy động (bảng tải, cột KT), nên quỹ chưa dùng trong thời gian huy động là 161 MD. Cách diễn đạt có thể làm người đọc hiểu 2 MD Kết thúc được trừ vào quỹ.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "NGUYEN_TAC: nêu rõ 159 MD là chênh lệch giữa tổng quỹ và tổng MD giao, đã gồm 2 MD giai đoạn Kết thúc ngoài quỹ, hoặc bổ sung trường quỹ chưa dùng trong phan_cong.json."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "so_lieu",
+   "vi_tri": "Mục 5, dòng Tổng cộng: S4 115,84/120, S5 106,16/120",
+   "mo_ta": "Dòng tổng được cộng từ các ô đã làm tròn nên lệch 0,01 MD so với lich#sprint.md_ke_hoach (S4 115,83, S5 106,17) và bảng sử dụng quỹ theo sprint của master plan. Tổng chung vẫn bằng 657.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "tinh_bang_phan_cong.py: dòng tổng theo sprint lấy từ lich#sprint.md_ke_hoach hoặc phân bổ phần làm tròn theo dong_tong.tong (du_lieu.md)."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 7, đoạn 1: Việc trao đổi với Chủ đầu tư thực hiện qua Công ty Cổ phần ABC Wear, đầu mối Yamada, Phòng Kế hoạch",
+   "mo_ta": "Câu lặp nghĩa (Chủ đầu tư chính là Công ty Cổ phần ABC Wear) và thiếu từ nối.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "DIEU_CHINH: Việc trao đổi với Chủ đầu tư được thực hiện qua đầu mối Yamada, Phòng Kế hoạch, các nội dung được xác nhận đều ghi thành biên bản."
+  }
+ ],
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B, phiên riêng)"
+}

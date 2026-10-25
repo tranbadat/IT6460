@@ -1,0 +1,764 @@
+{
+ "meta": {
+  "ten": "WBS 2 - Phân hệ quản lý khách hàng (thành viên)",
+  "header": "Lập kế hoạch - WBS 2, Phân hệ quản lý khách hàng (thành viên)",
+  "size_bang_pt": 12,
+  "phien_ban": "2.1",
+  "ngay": "27/05/2027"
+ },
+ "blocks": [
+  {
+   "t": "center",
+   "text": "Cấu trúc phân rã công việc",
+   "size": 18
+  },
+  {
+   "t": "center",
+   "text": "Phân hệ quản lý khách hàng (thành viên), mã WBS 2",
+   "size": 15
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "center",
+   "text": "Dự án: Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)"
+  },
+  {
+   "t": "center",
+   "text": "Khách hàng: Công ty Cổ phần ABC Wear"
+  },
+  {
+   "t": "center",
+   "text": "Tài liệu kế hoạch dự án, đường cơ sở BL2, cập nhật theo yêu cầu thay đổi CR01, phụ lục hợp đồng 01/2027/PL-ABCW"
+  },
+  {
+   "t": "center",
+   "text": "Phiên bản {{PHIEN_BAN}}, ngày {{NGAY}}"
+  },
+  {
+   "t": "blank"
+  },
+  {
+   "t": "h2",
+   "text": "1. Thông tin chung"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Tổng khối lượng",
+     "147,50 người-ngày"
+    ],
+    [
+     "Căn cứ ước lượng",
+     "Phần riêng gồm 6 chức năng (đăng ký và xác thực thư điện tử, đăng nhập và phiên làm việc, khôi phục và đổi mật khẩu, thông tin thành viên và sổ địa chỉ, đồng ý điều khoản và bảo vệ dữ liệu cá nhân, bảo mật tài khoản), 2 nhóm màn hình. Phần chung gồm kế hoạch bảo đảm chất lượng, đặc tả thành viên và yêu cầu phi chức năng, nghiên cứu hành vi người dùng, giao diện ưu tiên thành viên, kế hoạch kiểm thử, khả năng sử dụng, rà soát bảo mật, kiểm thử hồi quy, kiểm thử chấp nhận luồng thành viên, tài liệu hướng dẫn sử dụng và vận hành, phần quản lý dự án. Tổng nhóm theo căn cứ ước lượng là 147 MD, làm tròn từ phần riêng 91 MD và phần đầu việc chung phân bổ 54,83 MD theo tỷ lệ khối lượng riêng (quản lý dự án 13,32, phân tích và thiết kế chung 14,65, kiểm thử hệ thống và vận hành 15,76, triển khai và chuyển giao 11,10 MD). Phần riêng chia theo tỷ lệ giải pháp, phát triển, kiểm thử của bước 2 (119,6, 285,4, 145,2 MD) và số chức năng, màn hình của phân hệ. Đăng nhập và màn hình đăng ký, đăng nhập lớn nhất vì gồm phiên làm việc, giới hạn đăng nhập sai và kiểm soát dữ liệu đầu vào theo chỉ tiêu KT04. Đầu việc chung nguyên vẹn được gán cho phân hệ liên quan nhất. Nghiên cứu hành vi người dùng, khả năng sử dụng, tài liệu hướng dẫn sử dụng gắn với khách hàng. Yêu cầu phi chức năng, rà soát lỗ hổng theo OWASP Top 10 gắn với bảo mật tài khoản. Kế hoạch bảo đảm chất lượng, kế hoạch kiểm thử và kiểm thử hồi quy cùng chuỗi tiêu chí chất lượng. Tài liệu hướng dẫn vận hành không gắn riêng phân hệ nào, được gán vào nhóm này để tổng nhóm sát mục tiêu. Phần quản lý dàn trải chia theo tỷ lệ giữa bốn phân hệ. Ước lượng nhóm gồm thêm 1 MD tăng của gói kiểm thử hồi quy 2.4.11 theo yêu cầu thay đổi CR01. Tổng các gói của nhóm là 147,50 MD, nằm trong dung sai của nhóm. Mục mức 2 gồm 2.1 quản lý dự án 13,50 MD, 2.2 phân tích và thiết kế 28 MD, 2.3 xây dựng 35 MD, 2.4 kiểm thử 60 MD, 2.5 triển khai và chuyển giao 11 MD."
+    ],
+    [
+     "Yêu cầu thay đổi",
+     "CR01 bán hàng trên sàn thương mại điện tử, phụ lục hợp đồng 01/2027/PL-ABCW ngày 27/05/2027: 2.4.11 tăng 1 MD."
+    ],
+    [
+     "Thời gian thực hiện",
+     "18/03/2027 - 29/07/2027 (giai đoạn Khởi động, Suốt dự án và Thực hiện)"
+    ],
+    [
+     "Người chịu trách nhiệm",
+     "Phạm Tuấn Anh"
+    ],
+    [
+     "Phụ thuộc đầu vào",
+     "Hoàn thành các gói 1.1.1 (Họp khởi động, xác nhận phạm vi, điều kiện tiền đề, vai trò và trách nhiệm các bên), 1.2.4 (Thư viện thành phần giao diện dùng chung, tương thích thiết bị di động), 1.3.5 (Giao diện trang chủ và điều hướng danh mục theo Menu Layer), 1.3.6 (Giao diện tìm kiếm, kết quả và bộ lọc), 1.3.7 (Giao diện chi tiết sản phẩm), 1.4.3 (Kiểm thử trang chủ, danh mục và chi tiết sản phẩm), 1.4.11 (Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng tìm kiếm và hiển thị sản phẩm), 3.2.1 (Khảo sát nghiệp vụ bán hàng trực tuyến và quy trình hiện tại của Chủ đầu tư), 3.3.8 (Giao diện giỏ hàng), 3.3.9 (Giao diện đặt hàng gồm địa chỉ, phí vận chuyển, mã giảm giá và xác nhận), 3.3.10 (Giao diện theo dõi đơn hàng, hủy đơn và đổi trả), 3.4.3 (Kiểm thử đặt hàng, phí vận chuyển và khuyến mại), 3.4.11 (Kịch bản kiểm thử chấp nhận theo quy trình vận hành mới), 3.4.13 (Tổ chức và hỗ trợ kiểm thử vận hành cùng Chủ đầu tư luồng đặt hàng và giao nhận), 3.5.1 (Hướng dẫn vận hành cho cán bộ Chủ đầu tư theo quy trình vận hành mới, ba buổi theo lịch của Chủ đầu tư), 4.2.1 (Khảo sát hệ thống hiện có, Main System và luồng dữ liệu liên quan), 4.2.3 (Cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB), 4.3.2 (Tạo lập Selling DB theo cấu trúc đã thiết kế và tầng truy cập dữ liệu), 4.3.4 (Dịch vụ gửi thư điện tử qua máy chủ thư của Chủ đầu tư), 4.4.5 (Khắc phục lỗi sau kiểm thử hệ thống), 4.5.2 (Giám sát, cảnh báo và sao lưu tự động trên môi trường vận hành)"
+    ],
+    [
+     "Đơn vị khối lượng",
+     "Người-ngày, viết tắt MD, tính theo 8 giờ làm việc"
+    ]
+   ],
+   "widths": [
+    3000,
+    6300
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "2. Sơ đồ WBS dạng cây phân cấp"
+  },
+  {
+   "t": "p",
+   "text": "Sơ đồ dùng để trao đổi với Chủ đầu tư. Bảng chi tiết ở mục 3 dùng để ước lượng, giao việc và theo dõi tiến độ."
+  },
+  {
+   "t": "p",
+   "text": "2. Phân hệ quản lý khách hàng (thành viên)",
+   "thut": 0,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "2.1. Quản lý dự án, phần phân bổ cho phân hệ quản lý khách hàng",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "2.1.1. Kế hoạch bảo đảm chất lượng, quy chuẩn mã nguồn và tiêu chí hoàn thành công việc",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.1.2. Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint, phần phân hệ quản lý khách hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.1.3. Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả, phần phân hệ quản lý khách hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.1.4. Quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án, hồ sơ nghiệm thu và thanh toán, phần phân hệ quản lý khách hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.2. Phân tích và thiết kế phân hệ quản lý khách hàng",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "2.2.1. Đặc tả chức năng (Function) quản lý thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.2.2. Đặc tả yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi, bảo mật và thao tác",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.2.3. Nghiên cứu hành vi người dùng và khung giao diện các trang chính",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.2.4. Thiết kế giao diện ưu tiên đăng ký, đăng nhập và trang thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.2.5. Đặc tả use case đăng ký, xác thực thư điện tử, đăng nhập và khôi phục mật khẩu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.2.6. Đặc tả use case thông tin thành viên, sổ địa chỉ giao hàng và đổi mật khẩu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.2.7. Thiết kế chi tiết đăng ký, đăng nhập, phiên làm việc và bảo mật tài khoản",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.2.8. Thiết kế chi tiết thông tin thành viên và sổ địa chỉ",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.3. Xây dựng phân hệ quản lý khách hàng (lập trình và kiểm thử đơn vị)",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "2.3.1. Dịch vụ đăng ký thành viên và xác thực địa chỉ thư điện tử",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.3.2. Dịch vụ đăng nhập, phiên làm việc và giới hạn đăng nhập sai",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.3.3. Dịch vụ khôi phục và đổi mật khẩu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.3.4. Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.3.5. Dịch vụ đồng ý điều khoản và bảo vệ dữ liệu cá nhân của thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.3.6. Giao diện đăng ký, đăng nhập và khôi phục mật khẩu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.3.7. Giao diện trang thành viên và sổ địa chỉ",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4. Kiểm thử phân hệ quản lý khách hàng, gồm phần kiểm thử hệ thống và kiểm thử chấp nhận phân bổ",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "2.4.1. Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ quản lý khách hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4.2. Kiểm thử đăng ký, đăng nhập và khôi phục mật khẩu",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4.3. Kiểm thử thông tin thành viên, sổ địa chỉ và đồng ý điều khoản",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4.4. Sửa lỗi và kiểm thử lại đăng ký, đăng nhập và bảo mật tài khoản",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4.5. Kiểm thử bảo mật tài khoản theo OWASP Top 10 và tương thích thiết bị phân hệ quản lý khách hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4.6. Sửa lỗi và kiểm thử lại thông tin thành viên và sổ địa chỉ",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4.7. Tài liệu chức năng và nghiệm thu nội bộ phân hệ quản lý khách hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4.8. Kế hoạch kiểm thử hệ thống, kiểm thử chấp nhận và tiêu chí đạt",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4.9. Đánh giá khả năng sử dụng của giao diện (Easy Operation)",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4.10. Rà soát lỗ hổng bảo mật theo OWASP Top 10 trên môi trường kiểm thử",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4.11. Kiểm thử hồi quy theo các đợt khắc phục lỗi kiểm thử chấp nhận",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4.12. Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng đăng ký, đăng nhập và thành viên",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.4.13. Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ quản lý khách hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.5. Triển khai và chuyển giao, phần phân bổ cho phân hệ quản lý khách hàng",
+   "thut": 1,
+   "dam": true
+  },
+  {
+   "t": "p",
+   "text": "2.5.1. Tài liệu hướng dẫn sử dụng cho khách hàng và cán bộ bán hàng",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.5.2. Tài liệu hướng dẫn vận hành và quản trị kỹ thuật hệ thống",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "p",
+   "text": "2.5.3. Cập nhật tài liệu hướng dẫn sử dụng theo kết quả kiểm thử chấp nhận",
+   "thut": 2,
+   "dam": false
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h2",
+   "text": "3. Bảng chi tiết"
+  },
+  {
+   "t": "p",
+   "text": "Mỗi gói công việc gắn với một sản phẩm kiểm tra được, có khối lượng ước lượng được và giao được cho một người."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Mã WBS",
+     "Tên công việc",
+     "Mức",
+     "Khối lượng, MD",
+     "Loại công việc",
+     "Giai đoạn, sprint",
+     "Sản phẩm đầu ra"
+    ],
+    [
+     "2.1",
+     "Quản lý dự án, phần phân bổ cho phân hệ quản lý khách hàng",
+     "2",
+     "13,50",
+     "",
+     "Khởi động, Suốt dự án",
+     ""
+    ],
+    [
+     "2.1.1",
+     "Kế hoạch bảo đảm chất lượng, quy chuẩn mã nguồn và tiêu chí hoàn thành công việc",
+     "3",
+     "3",
+     "QA",
+     "Khởi động",
+     "Kế hoạch bảo đảm chất lượng và tiêu chí hoàn thành"
+    ],
+    [
+     "2.1.2",
+     "Họp tiến độ hằng tuần, trình diễn và báo cáo cuối sprint, phần phân hệ quản lý khách hàng",
+     "3",
+     "4",
+     "PM",
+     "Suốt dự án",
+     "Biên bản họp, báo cáo tiến độ từng sprint, phần phân hệ quản lý khách hàng"
+    ],
+    [
+     "2.1.3",
+     "Quản lý rủi ro, vấn đề và yêu cầu thay đổi đặc tả, phần phân hệ quản lý khách hàng",
+     "3",
+     "3",
+     "PM",
+     "Suốt dự án",
+     "Sổ rủi ro, sổ vấn đề và sổ yêu cầu thay đổi được cập nhật, phần phân hệ quản lý khách hàng"
+    ],
+    [
+     "2.1.4",
+     "Quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án, hồ sơ nghiệm thu và thanh toán, phần phân hệ quản lý khách hàng",
+     "3",
+     "3,50",
+     "PM",
+     "Suốt dự án",
+     "Sổ phiên bản tài liệu và hồ sơ dự án, biên bản nghiệm thu và hồ sơ thanh toán từng đợt, phần phân hệ quản lý khách hàng"
+    ],
+    [
+     "2.2",
+     "Phân tích và thiết kế phân hệ quản lý khách hàng",
+     "2",
+     "28",
+     "",
+     "S1-S3",
+     ""
+    ],
+    [
+     "2.2.1",
+     "Đặc tả chức năng (Function) quản lý thành viên",
+     "3",
+     "3",
+     "BA",
+     "S1",
+     "Đặc tả chức năng quản lý thành viên"
+    ],
+    [
+     "2.2.2",
+     "Đặc tả yêu cầu phi chức năng về hoạt động liên tục, thời gian phản hồi, bảo mật và thao tác",
+     "3",
+     "3",
+     "BA",
+     "S3",
+     "Đặc tả yêu cầu phi chức năng"
+    ],
+    [
+     "2.2.3",
+     "Nghiên cứu hành vi người dùng và khung giao diện các trang chính",
+     "3",
+     "3",
+     "DEV",
+     "S1",
+     "Khung giao diện (wireframe) các trang chính"
+    ],
+    [
+     "2.2.4",
+     "Thiết kế giao diện ưu tiên đăng ký, đăng nhập và trang thành viên",
+     "3",
+     "3",
+     "DEV",
+     "S2",
+     "Bản thiết kế giao diện ưu tiên nhóm thành viên"
+    ],
+    [
+     "2.2.5",
+     "Đặc tả use case đăng ký, xác thực thư điện tử, đăng nhập và khôi phục mật khẩu",
+     "3",
+     "5",
+     "BA",
+     "S2",
+     "Đặc tả use case đăng ký và đăng nhập"
+    ],
+    [
+     "2.2.6",
+     "Đặc tả use case thông tin thành viên, sổ địa chỉ giao hàng và đổi mật khẩu",
+     "3",
+     "3",
+     "BA",
+     "S3",
+     "Đặc tả use case thông tin thành viên"
+    ],
+    [
+     "2.2.7",
+     "Thiết kế chi tiết đăng ký, đăng nhập, phiên làm việc và bảo mật tài khoản",
+     "3",
+     "5",
+     "DEV",
+     "S2-S3",
+     "Thiết kế chi tiết chức năng đăng ký và đăng nhập"
+    ],
+    [
+     "2.2.8",
+     "Thiết kế chi tiết thông tin thành viên và sổ địa chỉ",
+     "3",
+     "3",
+     "DEV",
+     "S3",
+     "Thiết kế chi tiết chức năng thông tin thành viên"
+    ],
+    [
+     "2.3",
+     "Xây dựng phân hệ quản lý khách hàng (lập trình và kiểm thử đơn vị)",
+     "2",
+     "35",
+     "",
+     "S3-S5",
+     ""
+    ],
+    [
+     "2.3.1",
+     "Dịch vụ đăng ký thành viên và xác thực địa chỉ thư điện tử",
+     "3",
+     "5",
+     "DEV",
+     "S3",
+     "Dịch vụ đăng ký đạt kiểm thử đơn vị"
+    ],
+    [
+     "2.3.2",
+     "Dịch vụ đăng nhập, phiên làm việc và giới hạn đăng nhập sai",
+     "3",
+     "6",
+     "DEV",
+     "S3",
+     "Dịch vụ đăng nhập đạt kiểm thử đơn vị"
+    ],
+    [
+     "2.3.3",
+     "Dịch vụ khôi phục và đổi mật khẩu",
+     "3",
+     "4",
+     "DEV",
+     "S3",
+     "Dịch vụ khôi phục mật khẩu đạt kiểm thử đơn vị"
+    ],
+    [
+     "2.3.4",
+     "Dịch vụ thông tin thành viên và sổ địa chỉ giao hàng",
+     "3",
+     "5",
+     "DEV",
+     "S4-S5",
+     "Dịch vụ thông tin thành viên đạt kiểm thử đơn vị"
+    ],
+    [
+     "2.3.5",
+     "Dịch vụ đồng ý điều khoản và bảo vệ dữ liệu cá nhân của thành viên",
+     "3",
+     "4",
+     "DEV",
+     "S4-S5",
+     "Dịch vụ đồng ý điều khoản đạt kiểm thử đơn vị"
+    ],
+    [
+     "2.3.6",
+     "Giao diện đăng ký, đăng nhập và khôi phục mật khẩu",
+     "3",
+     "6",
+     "DEV",
+     "S3",
+     "Màn hình đăng ký, đăng nhập đạt kiểm thử đơn vị"
+    ],
+    [
+     "2.3.7",
+     "Giao diện trang thành viên và sổ địa chỉ",
+     "3",
+     "5",
+     "DEV",
+     "S4-S5",
+     "Màn hình trang thành viên đạt kiểm thử đơn vị"
+    ],
+    [
+     "2.4",
+     "Kiểm thử phân hệ quản lý khách hàng, gồm phần kiểm thử hệ thống và kiểm thử chấp nhận phân bổ",
+     "2",
+     "60",
+     "",
+     "S3-S9",
+     ""
+    ],
+    [
+     "2.4.1",
+     "Kịch bản kiểm thử và bộ kiểm thử tự động phân hệ quản lý khách hàng",
+     "3",
+     "6",
+     "QA",
+     "S3",
+     "Kịch bản và bộ kiểm thử tự động phân hệ"
+    ],
+    [
+     "2.4.2",
+     "Kiểm thử đăng ký, đăng nhập và khôi phục mật khẩu",
+     "3",
+     "7",
+     "QA",
+     "S4-S5",
+     "Báo cáo kiểm thử đăng ký, đăng nhập"
+    ],
+    [
+     "2.4.3",
+     "Kiểm thử thông tin thành viên, sổ địa chỉ và đồng ý điều khoản",
+     "3",
+     "6",
+     "QA",
+     "S5",
+     "Báo cáo kiểm thử thông tin thành viên"
+    ],
+    [
+     "2.4.4",
+     "Sửa lỗi và kiểm thử lại đăng ký, đăng nhập và bảo mật tài khoản",
+     "3",
+     "4",
+     "DEV",
+     "S7",
+     "Chức năng đăng ký, đăng nhập đã khắc phục lỗi kiểm thử phân hệ"
+    ],
+    [
+     "2.4.5",
+     "Kiểm thử bảo mật tài khoản theo OWASP Top 10 và tương thích thiết bị phân hệ quản lý khách hàng",
+     "3",
+     "6",
+     "QA",
+     "S4",
+     "Báo cáo kiểm thử bảo mật tài khoản và tương thích"
+    ],
+    [
+     "2.4.6",
+     "Sửa lỗi và kiểm thử lại thông tin thành viên và sổ địa chỉ",
+     "3",
+     "3",
+     "DEV",
+     "S6",
+     "Chức năng thông tin thành viên đã khắc phục lỗi kiểm thử phân hệ"
+    ],
+    [
+     "2.4.7",
+     "Tài liệu chức năng và nghiệm thu nội bộ phân hệ quản lý khách hàng",
+     "3",
+     "3",
+     "BA",
+     "S7-S8",
+     "Tài liệu chức năng và biên bản nghiệm thu nội bộ phân hệ"
+    ],
+    [
+     "2.4.8",
+     "Kế hoạch kiểm thử hệ thống, kiểm thử chấp nhận và tiêu chí đạt",
+     "3",
+     "3",
+     "QA",
+     "S4-S5",
+     "Kế hoạch kiểm thử"
+    ],
+    [
+     "2.4.9",
+     "Đánh giá khả năng sử dụng của giao diện (Easy Operation)",
+     "3",
+     "2",
+     "QA",
+     "S6",
+     "Báo cáo đánh giá khả năng sử dụng"
+    ],
+    [
+     "2.4.10",
+     "Rà soát lỗ hổng bảo mật theo OWASP Top 10 trên môi trường kiểm thử",
+     "3",
+     "3",
+     "QA",
+     "S6",
+     "Báo cáo rà soát lỗ hổng bảo mật"
+    ],
+    [
+     "2.4.11",
+     "Kiểm thử hồi quy theo các đợt khắc phục lỗi kiểm thử chấp nhận",
+     "3",
+     "8",
+     "QA",
+     "S9",
+     "Báo cáo kiểm thử hồi quy bản phát hành"
+    ],
+    [
+     "2.4.12",
+     "Tổ chức và hỗ trợ kiểm thử chấp nhận cùng Chủ đầu tư luồng đăng ký, đăng nhập và thành viên",
+     "3",
+     "4",
+     "QA",
+     "S9",
+     "Biên bản kiểm thử chấp nhận luồng đăng ký, đăng nhập và thành viên"
+    ],
+    [
+     "2.4.13",
+     "Khắc phục lỗi và điều chỉnh theo kết quả kiểm thử chấp nhận phân hệ quản lý khách hàng",
+     "3",
+     "5",
+     "DEV",
+     "S9",
+     "Phiên bản phân hệ đã khắc phục lỗi kiểm thử chấp nhận"
+    ],
+    [
+     "2.5",
+     "Triển khai và chuyển giao, phần phân bổ cho phân hệ quản lý khách hàng",
+     "2",
+     "11",
+     "",
+     "S6-S9",
+     ""
+    ],
+    [
+     "2.5.1",
+     "Tài liệu hướng dẫn sử dụng cho khách hàng và cán bộ bán hàng",
+     "3",
+     "4",
+     "BA",
+     "S6",
+     "Tài liệu hướng dẫn sử dụng"
+    ],
+    [
+     "2.5.2",
+     "Tài liệu hướng dẫn vận hành và quản trị kỹ thuật hệ thống",
+     "3",
+     "4",
+     "DEVOPS",
+     "S8",
+     "Tài liệu hướng dẫn vận hành kỹ thuật"
+    ],
+    [
+     "2.5.3",
+     "Cập nhật tài liệu hướng dẫn sử dụng theo kết quả kiểm thử chấp nhận",
+     "3",
+     "3",
+     "BA",
+     "S9",
+     "Tài liệu hướng dẫn sử dụng phiên bản bàn giao"
+    ],
+    [
+     "",
+     "Tổng cộng",
+     "",
+     "147,50",
+     "",
+     "",
+     ""
+    ]
+   ],
+   "widths": [
+    900,
+    3000,
+    600,
+    1000,
+    900,
+    1200,
+    1700
+   ],
+   "center_cols": [
+    2,
+    4,
+    5
+   ],
+   "right_cols": [
+    3
+   ],
+   "dong_dam": [
+    1,
+    6,
+    15,
+    23,
+    37
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Kiểm tra quy tắc 100%"
+  },
+  {
+   "t": "p",
+   "text": "Tổng khối lượng các hạng mục mức 2, 13,50 cộng 28 cộng 35 cộng 60 cộng 11, bằng 147,50 người-ngày, khớp với khối lượng khai báo ở mức 1. Kết luận: cân bằng."
+  }
+ ]
+}

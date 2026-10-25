@@ -1,0 +1,114 @@
+{
+ "tai_lieu": "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx, ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 4,
+ "phien_ban": "0.6 (docx), 0.7 (xlsx)",
+ "vong_kiem_tra_lop_B": 2,
+ "ngay_kiem_tra": "2026-10-25",
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục theo đặc tả: phạm vi, quy ước đánh số, trạng thái, lưu trữ, danh mục 15 tài liệu, đường cơ sở, bản phát hành, thay đổi, lịch sử 160 phiên bản, truy vết, git, nhận xét. Sổ Excel có 7 sheet tương ứng."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Số tài liệu 15, 160 phiên bản, 0 cần cập nhật, 670 lần chạy và 99 lần agent (tổng cột bảng truy vết khớp), 8 commit khớp git log, phiên bản hiện hành khớp du_lieu/phien_ban.json. Quy ước trạng thái mâu thuẫn với phân quyền phê duyệt (MH01). Tổng phiên bản trong Excel khác docx (MH03)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi phiên bản có tệp, thời điểm, bước, ghi chú, băm nội dung (Excel), 13 tệp lưu trữ có giải thích và vị trí chuyển đến."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Quy ước đánh số, trạng thái, điều kiện lập đường cơ sở kiểm chứng được bằng sổ. Chưa có BL1 do chưa ký hợp đồng, được nêu rõ."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có cơ chế phát hiện tài liệu cũ bằng băm đầu vào, thay đổi sau đường cơ sở chỉ qua yêu cầu thay đổi. Tình trạng phụ lục bằng chứng chưa được nêu (MH02)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Trình bày đúng quy định. Một số điểm diễn đạt nhỏ (MH05)."
+  },
+  {
+   "tieu_chi": "DH1",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Quy ước nhất quán với sổ phiên bản về đánh số và lưu trữ, nhưng định nghĩa Đã duyệt mâu thuẫn với người phê duyệt nêu ở mục 1 (MH01), thời điểm lập đường cơ sở nêu chưa thống nhất (MH04)."
+  },
+  {
+   "tieu_chi": "DH2",
+   "ket_qua": "dat",
+   "nhan_xet": "Nhận xét dựa trên số phiên bản (21, 15, 14), 0 mã CR."
+  },
+  {
+   "tieu_chi": "DH3",
+   "ket_qua": "dat",
+   "nhan_xet": "Nêu 0 tài liệu cần cập nhật theo sổ. Chưa nêu phụ lục bằng chứng cần xuất lại (MH02)."
+  },
+  {
+   "tieu_chi": "DH4",
+   "ket_qua": "dat",
+   "nhan_xet": "Chưa có bản phát hành (giai đoạn lập kế hoạch), ghi Chưa lập bản phát hành, khớp so_ban_phat_hanh 0."
+  },
+  {
+   "tieu_chi": "DH5",
+   "ket_qua": "dat",
+   "nhan_xet": "Chưa có đường cơ sở, nêu rõ lý do chưa ký hợp đồng, BL2 có căn cứ yêu cầu thay đổi đã phê duyệt."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 2.2, bảng Trạng thái, dòng Đã duyệt: Trưởng nhóm hoặc chủ đầu tư phê duyệt",
+   "mo_ta": "Mục 1 cùng tài liệu ghi tài liệu kế hoạch và hồ sơ dự thầu do người đại diện của nhà thầu Lê Quốc Bảo phê duyệt phía nhà thầu, master plan (bảng phê duyệt) và kế hoạch quản lý thay đổi cũng giao Lê Quốc Bảo phê duyệt. Định nghĩa trạng thái Đã duyệt chỉ nêu trưởng nhóm hoặc Chủ đầu tư nên mâu thuẫn. Chủ đầu tư viết thường.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu quy_uoc.trang_thai (so_phien_ban.py): Đã duyệt - người đại diện của nhà thầu hoặc Chủ đầu tư phê duyệt theo thẩm quyền, chạy lại tong_hop và xuất tài liệu."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "cap_nhat",
+   "vi_tri": "Mục 3: Mọi tài liệu đang dùng đầu vào mới nhất. Mục 8: Chi tiết prompt, đầu vào, đầu ra và băm nội dung của từng lần chạy ở Phụ lục bằng chứng prompt và skill",
+   "mo_ta": "TL15 (Phu_luc_bang_chung_prompt_skill.docx 0.2) xuất ngày 18/10/2026, ghi phiên bản skill cũ (ví dụ qlda-master-plan 1.1.0, mục 8 ghi đến 1.2.1) và không chứa các lần chạy sau 18/10/2026, trong khi tài liệu dẫn chi tiết 670 lần chạy sang phụ lục. Sổ ghi TL15 Cập nhật, chưa rõ cơ chế băm đầu vào có bỏ qua nhật ký chạy hay không.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "NHAN_XET: nêu TL15 cần xuất lại (chay.py bang_chung) trước khi nộp. Nhóm xác nhận thời điểm xuất lại, kiểm tra cách tính đầu vào của bước bang_chung trong so_phien_ban.py."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "so_lieu",
+   "vi_tri": "So_phien_ban.xlsx, sheet Danh_muc, dòng Tổng số phiên bản của tài liệu nộp (=SUM(I2:I16)) so với docx mục 3: tổng số phiên bản tài liệu đã đăng ký 160",
+   "mo_ta": "Công thức Excel cho 129 phiên bản của 15 tài liệu hiện hành, docx ghi 160 gồm 31 phiên bản của 13 tệp lưu trữ. Hai con số cùng tên gọi gần nhau dễ bị hiểu là mâu thuẫn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Excel thêm dòng phiên bản của tài liệu lưu trữ và tổng 160 bằng công thức, hoặc docx nêu cả 129 phiên bản tài liệu hiện hành và 31 phiên bản lưu trữ."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 2.1 Lập đường cơ sở (ký hợp đồng, phê duyệt kế hoạch, nghiệm thu), mục 2.3 dòng Đường cơ sở (BL2 và sau lập khi yêu cầu thay đổi được phê duyệt), mục 4 đoạn 2 (sau yêu cầu thay đổi lớn và khi nghiệm thu)",
+   "mo_ta": "Ba chỗ nêu thời điểm lập đường cơ sở không trùng nhau: phê duyệt kế hoạch chỉ có ở 2.1, nghiệm thu không có ở 2.3, mức lớn chỉ có ở mục 4.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thống nhất quy_uoc.danh_so, quy_uoc.quy_tac và DUONG_CO_SO: BL1 khi ký hợp đồng, đường cơ sở tiếp theo sau yêu cầu thay đổi được phê duyệt và khi nghiệm thu (nếu nhóm áp dụng)."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Mục 9, đoạn 3: Nhóm commit toàn bộ thay đổi trước khi nộp",
+   "mo_ta": "Câu đọc như đã thực hiện, trong khi ý là việc cần làm, dùng từ tiếng Anh commit nhiều lần.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "NHAN_XET: Nhóm cần ghi nhận (commit) toàn bộ thay đổi vào kho git trước khi nộp."
+  }
+ ],
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B, phiên riêng)"
+}

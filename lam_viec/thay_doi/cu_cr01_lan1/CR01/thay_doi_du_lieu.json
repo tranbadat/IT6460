@@ -1,0 +1,375 @@
+{
+ "ma": "CR01",
+ "phu_luc": {
+  "so": "01/2027/PL-ABCW",
+  "ngay": "2027-05-27",
+  "gia_dieu_chinh": 199024682,
+  "gia_hop_dong_truoc": 1750000000,
+  "gia_hop_dong_sau": 1949024682,
+  "cut_over_truoc": "2027-07-01",
+  "cut_over_moi": "2027-07-27",
+  "so_ngay_lui_cut_over": 18,
+  "moc_thanh_toan": [
+   {
+    "ma": "M3",
+    "ten": "Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+    "dot": 3,
+    "han_truoc": "2027-06-17",
+    "han_moi": "2027-06-30",
+    "ngay_du_kien": "2027-06-30"
+   },
+   {
+    "ma": "M6",
+    "ten": "Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+    "dot": 4,
+    "han_truoc": "2027-07-01",
+    "han_moi": "2027-07-27",
+    "ngay_du_kien": "2027-07-22"
+   },
+   {
+    "ma": "M7",
+    "ten": "Nhà thầu nộp bảo lãnh bảo hành, bàn giao mã nguồn và hệ thống",
+    "dot": 5,
+    "han_truoc": "2027-07-01",
+    "han_moi": "2027-07-27",
+    "ngay_du_kien": "2027-07-22"
+   }
+  ],
+  "cam_ket_chu_dau_tu": [
+   {
+    "ma": "CK4",
+    "noi_dung": "Bộ nhận diện thương hiệu, hình ảnh và nội dung sản phẩm (nhà thầu đề nghị, HSMT không quy định thời hạn)",
+    "han_truoc": "2027-06-10",
+    "han_moi": "2027-07-06",
+    "bat_dau_som_nhat": "2027-07-01"
+   }
+  ],
+  "phuong_an": "hien_tai",
+  "dot_thanh_toan": [],
+  "uat": {
+   "truoc": {
+    "tu": "2027-06-18",
+    "den": "2027-06-29"
+   },
+   "moi": {
+    "tu": "2027-07-14",
+    "den": "2027-07-23"
+   }
+  }
+ },
+ "ngay": "2027-05-27",
+ "ghi_luc": "2026-10-25 13:29:44",
+ "da_ghi": true,
+ "phuong_an": "hien_tai",
+ "tep": [
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/lam_viec/wbs/wbs_nhap.json",
+   "thay_doi": "Thêm 6 mục, 20 gói mới, 3 gói tăng MD, nguồn ghi CR01"
+  },
+  {
+   "tep": "dau_vao/uoc_luong.json",
+   "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/dau_vao/uoc_luong.json",
+   "thay_doi": "tong_md cộng 76,00 MD, tong_theo_nhom cộng theo nhóm 2, 5, thêm bước ước lượng ghi CR01"
+  },
+  {
+   "tep": "dau_vao/du_an.json",
+   "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/dau_vao/du_an.json",
+   "thay_doi": "ngay_cut_over 01/07/2027 thành 27/07/2027, khoảng uat tu 14/07/2027, den 23/07/2027, hạn CK4 10/06/2027 thành 06/07/2027, thêm cam kết CK9 (phụ lục có hiệu lực ngày 27/05/2027), sprint.cut_over_goc giữ các sprint đã qua"
+  },
+  {
+   "tep": "lam_viec/lich/moc_nhap.json",
+   "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/lam_viec/lich/moc_nhap.json",
+   "thay_doi": "Ràng buộc không sớm hơn và mốc ngày cố định từ 20/05/2027 dời theo cut over (18 ngày), hạn mốc theo phụ lục: M3 30/06/2027, M6 27/07/2027, M7 27/07/2027, gói mới gắn CK9, lập lại lịch từ 21/05/2027 (lap_lai_tu)"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/lam_viec/giao_viec/phan_cong_nhap.json",
+   "thay_doi": "Giao việc gói mới: 5.1.1 dat, 5.2.1 dat, 5.2.2 lien, 5.2.3 tuananh, 5.2.4 lien, 5.3.1 tuananh, 5.3.2 D1, 5.3.3 D3, 5.3.4 K, 5.3.5 tuananh, 5.3.6 toan, 5.3.7 tuananh, 5.4.1 toan, 5.4.2 minh, 5.4.3 minh, 5.4.4 tuananh, 5.4.5 minh, 5.5.1 toan, 5.5.2 lien, 5.5.3 tuananh; trách nhiệm của mục mới mức 1, 2; gói dàn trải 1.1.2, 1.1.3, 1.1.4, 2.1.2, 2.1.3, 2.1.4, 3.1.3, 3.1.4, 3.1.5, 4.1.1, 4.1.2, 4.1.3 kéo đến sprint cuối mới"
+  },
+  {
+   "tep": "dau_vao/don_gia.json",
+   "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/dau_vao/don_gia.json",
+   "thay_doi": "gia_chao_muc_tieu cộng 199.024.682 đồng theo 01/2027/PL-ABCW"
+  },
+  {
+   "tep": "dau_vao/chi_tieu_ky_thuat.json",
+   "de_xuat": "lam_viec/thay_doi/CR01/de_xuat/dau_vao/chi_tieu_ky_thuat.json",
+   "thay_doi": "bao_hanh.ho_tro_tang_cuong 28/07/2027 đến 10/08/2027 (bắt đầu sau cut over mới, giữ số ngày làm việc)"
+  }
+ ],
+ "kiem_tra": [
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.1.1"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.2.1"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.2.2"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.2.3"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.2.4"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.3.1"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.3.2"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.3.3"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.3.4"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.3.5"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.3.6"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.3.7"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.4.1"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.4.2"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.4.3"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.4.4"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.4.5"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.5.1"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.5.2"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi.ma",
+   "chua": "5.5.3"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi[ma=1.5.2].nguon",
+   "chua": "CR01"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi[ma=1.5.3].nguon",
+   "chua": "CR01"
+  },
+  {
+   "tep": "lam_viec/wbs/wbs_nhap.json",
+   "duong": "goi[ma=2.4.11].nguon",
+   "chua": "CR01"
+  },
+  {
+   "tep": "dau_vao/uoc_luong.json",
+   "duong": "cac_buoc",
+   "chua": "CR01"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.1.1"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.2.1"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.2.2"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.2.3"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.2.4"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.3.1"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.3.2"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.3.3"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.3.4"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.3.5"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.3.6"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.3.7"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.4.1"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.4.2"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.4.3"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.4.4"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.4.5"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.5.1"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.5.2"
+  },
+  {
+   "tep": "lam_viec/giao_viec/phan_cong_nhap.json",
+   "duong": "giao_viec.ma",
+   "chua": "5.5.3"
+  },
+  {
+   "tep": "dau_vao/du_an.json",
+   "duong": "dieu_chinh_theo_cr",
+   "chua": "CR01"
+  },
+  {
+   "tep": "lam_viec/lich/moc_nhap.json",
+   "duong": "dau_vao_ben_ngoai",
+   "chua": "CK9"
+  },
+  {
+   "tep": "dau_vao/don_gia.json",
+   "duong": "dieu_chinh_gia_theo_phu_luc",
+   "chua": "CR01"
+  },
+  {
+   "tep": "dau_vao/chi_tieu_ky_thuat.json",
+   "duong": "bao_hanh.ho_tro_tang_cuong.tu",
+   "chua": "2027-07-28"
+  }
+ ],
+ "thu_tu_chay_lai": [
+  "python .claude/skills/qlda-wbs/scripts/kiem_tra_wbs.py lam_viec/wbs/wbs_nhap.json",
+  "python .claude/skills/qlda-phan-cong/scripts/kiem_tra_giao_viec.py lam_viec/giao_viec/phan_cong_nhap.json",
+  "python .claude/skills/qlda-master-schedule/scripts/lap_lich.py lam_viec/lich/moc_nhap.json",
+  "python .claude/skills/qlda-master-schedule/scripts/xuat_gantt.py",
+  "python .claude/skills/qlda-wbs/scripts/xuat_wbs.py --ngay 2027-05-27",
+  "agent Lập rủi ro cập nhật lam_viec/rui_ro/rui_ro_nhap.json (rủi ro mới của CR01)",
+  "python .claude/skills/qlda-risk/scripts/kiem_tra_rui_ro.py lam_viec/rui_ro/rui_ro_nhap.json",
+  "python .claude/skills/qlda-cost-estimate/scripts/tinh_chi_phi.py",
+  "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi chi_phi",
+  "agent Soạn thảo cập nhật bản soạn",
+  "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien chi_phi --ghi-chu \"CR01\" --ngay 2027-05-27",
+  "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi ke_hoach_rui_ro",
+  "agent Soạn thảo cập nhật bản soạn",
+  "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien ke_hoach_rui_ro --ghi-chu \"CR01\" --ngay 2027-05-27",
+  "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi ke_hoach_thay_doi",
+  "agent Soạn thảo cập nhật bản soạn",
+  "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien ke_hoach_thay_doi --ghi-chu \"CR01\" --ngay 2027-05-27",
+  "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi ke_hoach_tong_the",
+  "agent Soạn thảo cập nhật bản soạn",
+  "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien ke_hoach_tong_the --ghi-chu \"CR01\" --ngay 2027-05-27",
+  "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi phan_cong_tai_lieu",
+  "agent Soạn thảo cập nhật bản soạn",
+  "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien phan_cong_tai_lieu --ghi-chu \"CR01\" --ngay 2027-05-27",
+  "python .claude/skills/qlda-phien-ban/scripts/so_phien_ban.py duong_co_so BL2 --ten \"Đường cơ sở sau yêu cầu thay đổi CR01\" --cr CR01 --ngay 2027-05-27",
+  "python .claude/skills/qlda-loi/scripts/chay.py chuan_bi phien_ban",
+  "agent Soạn thảo cập nhật bản soạn",
+  "python .claude/skills/qlda-loi/scripts/chay.py hoan_thien phien_ban --ghi-chu \"CR01\" --ngay 2027-05-27"
+ ],
+ "canh_bao": [
+  "TD25 Hiệu lực bảo đảm thực hiện hợp đồng theo HSMT đến 31/07/2027, sớm hơn ngày đóng dự án dự kiến 10/08/2027 sau cut over mới. Ghi gia hạn bảo đảm thực hiện trong 01/2027/PL-ABCW hoặc văn bản thỏa thuận"
+ ]
+}

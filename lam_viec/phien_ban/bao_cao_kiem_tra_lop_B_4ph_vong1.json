@@ -1,0 +1,91 @@
+{
+ "tai_lieu": "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx",
+ "phien_ban": "0.3",
+ "dac_ta": ".claude/skills/qlda-phien-ban/dac_ta/tai_lieu_phien_ban.json",
+ "ngay_kiem_tra": "2026-10-24",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B)",
+ "moi_truong": "Phiên làm việc riêng của agent Kiểm tra độc lập (agent con), Claude Code, Claude Opus 5.5; đọc tài liệu bằng python-docx, openpyxl; không đọc khung.json, ban_soan.json, noi_dung.json",
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 4,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 9 mục: phạm vi, quy ước đánh số, trạng thái, lưu trữ, danh mục 15 tài liệu, đường cơ sở (chưa lập, nêu cách lập BL1), bản phát hành (chưa có), CR (chưa có), lịch sử, truy vết, nhận xét."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Phiên bản, trạng thái 15 tài liệu, 110 phiên bản, 10 tệp lưu trữ, 0 tài liệu cần cập nhật, 519 lần chạy, 62 lần agent, 8 commit khớp phien_ban.json, phien_ban_tong_hop.json, git. Cột Phiên bản skill sai so với nhật ký (MH01)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi phiên bản có băm nội dung, bước, ghi chú. Tài liệu lưu trữ WBS cũ có vị trí lưu trữ và lý do."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Quy ước tăng phiên bản, điều kiện lập BL1, BL2, khóa hồ sơ đấu thầu rõ ràng, kiểm chứng được bằng sổ."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có phát hiện tài liệu cũ bằng băm đầu vào, quy định thay đổi sau đường cơ sở qua CR, đề xuất cải tiến commit."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Word đúng trình bày. Sổ Excel còn từ cần tránh và ngày dạng ISO (MH02, MH03)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 8, bảng truy vết, cột Phiên bản skill (và trang Nhat_ky của So_phien_ban.xlsx): hsmt-mau-5a 3.1.0, qlda-wbs 1.0.0, qlda-phan-cong 1.0.0, qlda-master-schedule 1.0.0, qlda-risk 1.0.0, qlda-cost-estimate 1.0.0, qlda-loi 1.0.0, qlda-hsdt 1.0.0, qlda-phien-ban 1.0.0, qlda-change 1.1.0, qlda-master-plan 1.1.0",
+   "mo_ta": "Cột ghi phiên bản skill của lần chạy đầu tiên. Nhật ký bang_chung/nhat_ky_chay.jsonl ghi các lần chạy gần nhất với 3.3.0, 1.3.0, 1.3.0, 1.4.0, 1.2.0, 1.5.0, 1.5.0, 1.1.0, 1.2.0, 1.4.0, 1.2.0. Người đọc hiểu nhầm tài liệu hiện hành được tạo bằng phiên bản skill cũ.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu: sửa bước tổng hợp nhat_ky trong phien_ban_tong_hop.json để ghi phiên bản skill mới nhất hoặc khoảng phiên bản (ví dụ 1.0.0 - 1.4.0), tạo lại Word và Excel."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "So_phien_ban.xlsx, trang Lich_su, cột Ghi chú các dòng Thuyet_minh_du_toan.docx 0.1, Ke_hoach_quan_ly_rui_ro.docx 0.1, Phan_cong_nhiem_vu.docx 0.1: Lập lần đầu trong lần chạy thử bộ skill",
+   "mo_ta": "Bản Word đã thay bằng vận hành thử khi dựng tài liệu nhưng dữ liệu nguồn và sổ Excel vẫn giữ chạy thử (từ cần tránh theo van_phong.json). Hai tệp của cùng bước ghi khác nhau.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu: sửa ghi_chu trong du_lieu/phien_ban.json thành vận hành thử, tạo lại sổ Excel và tài liệu."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "trinh_bay",
+   "vi_tri": "So_phien_ban.xlsx, trang Danh_muc cột Ngày (2026-10-24), Lich_su cột Ngày giờ, Du_lieu, Git",
+   "mo_ta": "Ngày ghi dạng văn bản yyyy-mm-dd, chưa theo dd/mm/yyyy. Cột Ngày của Danh_muc là ngày đăng ký phiên bản trong khi tài liệu Word mục 3 ghi Ngày tài liệu (18/03/2027) cho cùng phiên bản, tên cột dễ gây nhầm. Sổ chưa có ô tổng số phiên bản bằng công thức để đối chiếu con số 110 trong tài liệu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Script xuất sổ: ghi ngày dd/mm/yyyy (hoặc kiểu ngày có định dạng), đổi tên cột thành Ngày đăng ký, thêm ô tổng =SUM cột Số phiên bản."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "nhat_quan",
+   "vi_tri": "Mục 1, đoạn 4: Người lập Trần Bá Đạt đồng thời giữ vai trò quản lý cấu hình... Trưởng nhóm phê duyệt tài liệu nội bộ, chủ đầu tư phê duyệt...",
+   "mo_ta": "Người lập, người quản lý cấu hình và người phê duyệt nội bộ là cùng một người, trong khi master plan ghi phê duyệt phía nhà thầu là Lê Quốc Bảo. Chủ đầu tư viết thường, khác các tài liệu khác.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Lời văn (PHAM_VI): nêu người phê duyệt phía nhà thầu theo thay_doi_bang.json vai_ban.dai_dien_nt (Lê Quốc Bảo) cho tài liệu kế hoạch, viết hoa Chủ đầu tư thống nhất."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "trinh_bay",
+   "vi_tri": "Đầu trang: Kết thúc dự án - Tài liệu quản lý phiên bản; mục 3 cột Ngày tài liệu trống với Master_schedule.xlsx, Cost_estimate.xlsx, Phu_luc_bang_chung_prompt_skill.docx",
+   "mo_ta": "Tài liệu được duy trì suốt dự án và bản hiện tại lập trước ký hợp đồng nhưng đầu trang ghi giai đoạn Kết thúc dự án. Ba tài liệu chưa có ngày tài liệu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Đặc tả tai_lieu_phien_ban.json: đổi tieu_de_dau_trang thành Quản lý dự án - Tài liệu quản lý phiên bản hoặc theo giai đoạn hiện hành. Dữ liệu: ghi ngày tài liệu cho tệp Excel và phụ lục."
+  }
+ ],
+ "tai_lieu_kem": "ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx (phiên bản 0.4)"
+}

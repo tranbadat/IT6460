@@ -21,8 +21,8 @@
    "hb": "du_lieu/hsdt_bang.json",
    "da": "dau_vao/du_an.json"
   },
-  "phien_ban": "0.1",
-  "ngay": "18/03/2027"
+  "phien_ban": "2.2",
+  "ngay": "27/05/2027"
  },
  "blocks": [
   {
@@ -130,19 +130,19 @@
   },
   {
    "t": "p",
-   "text": "Kế hoạch quản lý thay đổi quy định cách tiếp nhận, đánh giá, quyết định, thực hiện và đóng mọi yêu cầu thay đổi trong quá trình thực hiện gói thầu, bảo đảm mỗi thay đổi về phạm vi, đặc tả, tiến độ hoặc giá đều có đánh giá tác động định lượng, có người có thẩm quyền quyết định và có văn bản làm căn cứ trước khi thực hiện. Kế hoạch đồng thời bảo vệ ngày cut over 01/07/2027 cố định và các mốc gắn đợt thanh toán của hợp đồng."
+   "text": "Kế hoạch quản lý thay đổi quy định cách tiếp nhận, đánh giá, quyết định, thực hiện và đóng mọi yêu cầu thay đổi trong quá trình thực hiện gói thầu, bảo đảm mỗi thay đổi về phạm vi, đặc tả, tiến độ hoặc giá đều có đánh giá tác động định lượng, có người có thẩm quyền quyết định và có văn bản làm căn cứ trước khi thực hiện. Kế hoạch đồng thời bảo vệ ngày cut over 29/07/2027 và các mốc gắn đợt thanh toán của hợp đồng, theo phụ lục hợp đồng 01/2027/PL-ABCW của yêu cầu thay đổi CR01."
   },
   {
    "t": "p",
-   "text": "Căn cứ hợp đồng gồm: Mục 17.1(a) E-ĐKC về bổ sung hạng mục công việc ngoài phạm vi hợp đồng, Mục 17.1(b) E-ĐKC về thay đổi thời gian thực hiện hợp đồng, Mục 17.1(c) E-ĐKCT quy định Các nội dung khác về sửa đổi hợp đồng: Chủ đầu tư hoặc nhà thầu được đề xuất thay đổi đặc tả khi cần thiết. Thay đổi đặc tả chỉ được thực hiện sau khi hai bên thống nhất bằng văn bản. Văn bản thống nhất nêu rõ nội dung thay đổi và ảnh hưởng đến tiến độ, giá hợp đồng (nếu có). Mục 17.2 E-ĐKC quy định hai bên thương thảo để ký văn bản sửa đổi hợp đồng khi có thay đổi. Mục 17.3 E-ĐKC và Mục 17.4 E-ĐKCT về đề xuất tiết kiệm chi phí: Trường hợp đề xuất giải pháp tiết kiệm chi phí được Chủ đầu tư chấp thuận và giúp giảm giá hợp đồng, Chủ đầu tư thanh toán cho nhà thầu 30% giá trị giảm giá hợp đồng. Mục 18 E-ĐKC về điều chỉnh tiến độ, trong đó Mục 18(e) E-ĐKCT quy định Các trường hợp khác: Chủ đầu tư cung cấp chậm tài liệu, hạ tầng, môi trường hoặc hoàn thành chậm thay đổi phía hệ thống hiện có so với thời hạn tại mục 3.5 Chương V thì các mốc liên quan được lùi tương ứng số ngày chậm."
+   "text": "Căn cứ hợp đồng gồm Mục 17.1(a) E-ĐKC về bổ sung hạng mục công việc ngoài phạm vi hợp đồng và Mục 17.1(b) E-ĐKC về thay đổi thời gian thực hiện hợp đồng. Mục 17.1(c) E-ĐKCT cho phép Chủ đầu tư hoặc nhà thầu đề xuất thay đổi đặc tả khi cần thiết, thay đổi chỉ được thực hiện sau khi hai bên thống nhất bằng văn bản nêu rõ nội dung thay đổi và ảnh hưởng đến tiến độ, giá hợp đồng. Mục 17.2 E-ĐKC quy định hai bên thương thảo để ký văn bản sửa đổi hợp đồng khi có thay đổi. Mục 17.3 E-ĐKC và Mục 17.4 E-ĐKCT quy định khi đề xuất tiết kiệm chi phí của nhà thầu được Chủ đầu tư chấp thuận và làm giảm giá hợp đồng thì nhà thầu được thanh toán một phần giá trị giảm theo tỷ lệ tại Mục 17.4 E-ĐKCT. Mục 18 E-ĐKC quy định điều chỉnh tiến độ, trong đó Mục 18(e) E-ĐKCT cho phép lùi các mốc liên quan tương ứng số ngày chậm khi Chủ đầu tư cung cấp chậm tài liệu, hạ tầng, môi trường hoặc hoàn thành chậm thay đổi phía hệ thống hiện có so với thời hạn tại mục 3.5 Chương V."
   },
   {
    "t": "p",
-   "text": "Mục 2.2(i) E-ĐKCT quy định Các tài liệu sau đây cũng là một phần của Hợp đồng: - Biên bản xác nhận đặc tả yêu cầu giữa Chủ đầu tư và nhà thầu, gồm điều kiện đo các yêu cầu phi chức năng và cấu hình hạ tầng vận hành theo mục 3.5 Chương V. - Các văn bản thống nhất thay đổi đặc tả theo Mục 17.1(c) E-ĐKCT. Như vậy văn bản thống nhất thay đổi đặc tả là một phần của hợp đồng và phải được lưu cùng hồ sơ hợp đồng. Mục 20.1 E-ĐKCT quy định Chủ đầu tư kiểm tra sản phẩm theo đặc tả đã được hai bên xác nhận, lỗi logic hoặc vấn đề khác thuộc trách nhiệm của nhà thầu do nhà thầu sửa chữa, bổ sung bằng chi phí của mình."
+   "text": "Theo Mục 2.2(i) E-ĐKCT, biên bản xác nhận đặc tả yêu cầu giữa hai bên (gồm điều kiện đo các yêu cầu phi chức năng và cấu hình hạ tầng vận hành) và các văn bản thống nhất thay đổi đặc tả theo Mục 17.1(c) E-ĐKCT là một phần của hợp đồng. Như vậy văn bản thống nhất thay đổi đặc tả là một phần của hợp đồng và phải được lưu cùng hồ sơ hợp đồng. Mục 20.1 E-ĐKCT quy định Chủ đầu tư kiểm tra sản phẩm theo đặc tả đã được hai bên xác nhận, lỗi logic hoặc vấn đề khác thuộc trách nhiệm của nhà thầu do nhà thầu sửa chữa, bổ sung bằng chi phí của mình."
   },
   {
    "t": "p",
-   "text": "Căn cứ RFP: Mỗi bên được đề xuất thay đổi đặc tả khi cần (R35), Chủ đầu tư kiểm tra sản phẩm theo điều kiện trong đặc tả và thông báo kết quả cho nhà thầu (R38), Lỗi logic hoặc vấn đề thuộc trách nhiệm nhà thầu được nhà thầu sửa chữa, bổ sung bằng chi phí của mình trong thời gian sớm nhất (R42). Kế hoạch thực hiện cam kết đã nêu trong hồ sơ dự thầu (ket_qua/02_HSDT/HSDT.docx) tại Mục 13 về vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành, và đáp ứng tiêu chí kỹ thuật về quản lý thay đổi của HSMT."
+   "text": "Căn cứ RFP gồm: mỗi bên được đề xuất thay đổi đặc tả khi cần (R35), Chủ đầu tư kiểm tra sản phẩm theo điều kiện trong đặc tả và thông báo kết quả cho nhà thầu (R38), lỗi logic hoặc vấn đề thuộc trách nhiệm nhà thầu được nhà thầu sửa chữa, bổ sung bằng chi phí của mình trong thời gian sớm nhất (R42). Kế hoạch thực hiện cam kết đã nêu trong hồ sơ dự thầu tại Mục 13 về vai trò và trách nhiệm hai bên, quản lý thay đổi, rủi ro và bảo hành, và đáp ứng tiêu chí kỹ thuật về quản lý thay đổi của HSMT."
   },
   {
    "t": "p",
@@ -189,12 +189,6 @@
      "Lớn: quyết định và ký văn bản thống nhất hoặc phụ lục hợp đồng phía Chủ đầu tư"
     ],
     [
-     "Nguyễn Thị Phương Liên, Phân tích nghiệp vụ",
-     "Nhà thầu",
-     "Tham dự khi thay đổi thuộc nhóm công việc phụ trách",
-     "Đánh giá tác động, không quyết định"
-    ],
-    [
      "Vũ Đức Minh, Kỹ sư phát triển frontend",
      "Nhà thầu",
      "Tham dự khi thay đổi thuộc nhóm công việc phụ trách",
@@ -210,6 +204,24 @@
      "Ninh Đức Toàn, Kỹ sư phát triển backend",
      "Nhà thầu",
      "Tham dự khi thay đổi thuộc nhóm công việc phụ trách",
+     "Đánh giá tác động, không quyết định"
+    ],
+    [
+     "Nguyễn Thị Phương Liên, Phân tích nghiệp vụ",
+     "Nhà thầu",
+     "Tham dự khi thay đổi đặc tả hoặc kiểm thử",
+     "Đánh giá tác động, không quyết định"
+    ],
+    [
+     "Nguyễn Hoàng Nam, Kiến trúc sư kiêm phân tích nghiệp vụ",
+     "Nhà thầu",
+     "Tham dự khi thay đổi đặc tả hoặc kiểm thử",
+     "Đánh giá tác động, không quyết định"
+    ],
+    [
+     "Phạm Ngọc Anh, Kỹ sư kiểm thử chức năng, hiệu năng và an toàn thông tin",
+     "Nhà thầu",
+     "Tham dự khi thay đổi đặc tả hoặc kiểm thử",
      "Đánh giá tác động, không quyết định"
     ]
    ],
@@ -424,7 +436,7 @@
    "t": "table"
   },
   {
-   "text": "Chi phí nội bộ của thay đổi tính bằng MD tăng nhân đơn giá loại công việc, đơn giá nhân công bình quân hiện tại là 2.161.416 đồng mỗi MD. Giá đề nghị Chủ đầu tư của phần thay đổi tính theo đơn giá suy từ giá dự thầu, bằng chi phí nội bộ nhân hệ số 1,232 (giá dự thầu chia khoản nhân công), bình quân 2.663.623 đồng mỗi MD, là căn cứ để hai bên thương thảo theo Mục 17.2 E-ĐKC.",
+   "text": "Chi phí nội bộ của thay đổi tính bằng MD tăng nhân đơn giá loại công việc, đơn giá nhân công bình quân hiện tại là 2.157.640 đồng mỗi MD. Giá đề nghị Chủ đầu tư của phần thay đổi tính theo đơn giá suy từ giá dự thầu, bằng chi phí nội bộ nhân hệ số 1,232 (giá dự thầu chia khoản nhân công), bình quân 2.658.970 đồng mỗi MD, là căn cứ để hai bên thương thảo theo Mục 17.2 E-ĐKC.",
    "t": "p"
   },
   {
@@ -479,7 +491,7 @@
      "6",
      "Quyết định theo thẩm quyền ở mục 3: Đã phê duyệt, Từ chối hoặc Hoãn",
      "Người phê duyệt theo mức",
-     "Mức nhỏ: 1 ngày làm việc sau khi có đánh giá. Mức trung bình: 5 ngày làm việc sau khi có đánh giá",
+     "Mức nhỏ: 1 ngày làm việc sau khi có đánh giá. Mức trung bình: 5 ngày làm việc sau khi có đánh giá. Mức lớn: Họp ban kiểm soát thay đổi trong 3 ngày làm việc từ khi nhận yêu cầu, quyết định 5 ngày làm việc sau khi có đánh giá",
      "Quyết định ghi trên phiếu"
     ],
     [
@@ -491,7 +503,7 @@
     ],
     [
      "8",
-     "Cập nhật dữ liệu nguồn và tạo lại tài liệu theo ma trận lan truyền ở mục 6, ghi phiên bản sau thay đổi vào sổ phiên bản",
+     "Áp dụng vào dữ liệu nguồn bằng công cụ của nhóm (căn cứ ước lượng, WBS, giao việc, dự án, mốc, đơn giá), tạo lại tài liệu theo ma trận lan truyền ở mục 6, kiểm tra lớp B các tài liệu đã cập nhật, ghi phiên bản sau thay đổi vào sổ phiên bản. Yêu cầu có phụ lục hoặc ở mức lớn được lập đường cơ sở mới (BLn, căn cứ mã yêu cầu) trên các bản đã kiểm tra, theo tài liệu quản lý phiên bản",
      "Người cập nhật tài liệu",
      "Trước khi thực hiện thay đổi",
      "Tài liệu phiên bản mới"
@@ -623,8 +635,13 @@
     ],
     [
      "Đánh giá",
-     "Số ngày chậm, tiêu hao dự trữ, chậm cut over, mốc bị ảnh hưởng",
+     "Số ngày chậm, tiêu hao dự trữ, số ngày cut over lùi, ngày cut over mới, mốc bị ảnh hưởng",
      "Công cụ của nhóm tính"
+    ],
+    [
+     "Đánh giá",
+     "Lịch có gói mới (ngày bắt đầu, kết thúc từng gói), có cần thêm người, phương án thêm nhân sự",
+     "Công cụ của nhóm tính, người đánh giá đề xuất phương án thêm nhân sự"
     ],
     [
      "Đánh giá",
@@ -657,6 +674,16 @@
      "Người có thẩm quyền theo mức"
     ],
     [
+     "Quyết định",
+     "Phương án được chọn, phụ lục hợp đồng (số, ngày, giá điều chỉnh, cut over mới, mốc thanh toán điều chỉnh)",
+     "Người có thẩm quyền theo mức, công cụ của nhóm ghi phụ lục khi áp dụng"
+    ],
+    [
+     "Quyết định",
+     "Áp dụng vào dữ liệu nguồn, thứ tự chạy lại các bước",
+     "Công cụ của nhóm, quản trị dự án xác nhận ghi"
+    ],
+    [
      "Đóng",
      "Kết quả kiểm tra phần thay đổi của Chủ đầu tư, người và ngày kiểm tra",
      "Chủ đầu tư, quản trị dự án ghi nhận"
@@ -685,11 +712,11 @@
   },
   {
    "t": "p",
-   "text": "Người đánh giá xác định các gói WBS bị ảnh hưởng và gói mới, MD tăng theo từng gói, sau đó công cụ của nhóm tính lại lịch để xác định ảnh hưởng đến đường găng. Các gói trên đường găng hiện tại gồm 2.1.1, 2.1.2, 2.1.5, 2.2.2, 2.2.3, 6.1.2, 5.3.5, 5.4.3, 7.2.1, 7.2.4, 5.5.2, 7.3.1, 7.3.2, 8.2.4, 8.3.3, 8.3.4. Thay đổi chạm các gói này làm tiêu hao trực tiếp dự trữ đến cut over, hiện còn 4 ngày. Theo quyết định của nhóm ngày 18/10/2026, dự trữ được giữ nguyên và nhà thầu báo Chủ đầu tư khi dự trữ còn dưới 2 ngày."
+   "text": "Người đánh giá xác định các gói WBS bị ảnh hưởng và gói mới, MD tăng theo từng gói, sau đó công cụ của nhóm tính lại lịch để xác định ảnh hưởng đến đường găng. Các gói trên đường găng hiện tại gồm 4.2.1, 3.2.1, 3.2.2, 4.2.2, 4.2.3, 4.2.7, 4.4.1, 4.3.6, 4.3.7, 4.3.8, 4.4.3, 3.4.12, 4.4.4, 4.4.5, 1.4.11, 2.4.12, 3.4.13, 1.5.2, 3.4.14, 1.5.3, 2.5.3, 3.5.4. Thay đổi chạm các gói này làm tiêu hao trực tiếp dự trữ đến cut over, hiện còn 7 ngày. Dự trữ này là kết quả lập lại lịch sau yêu cầu thay đổi CR01 với ngày cut over theo phụ lục hợp đồng. Theo quyết định của nhóm ngày 18/10/2026, nhóm theo dõi hằng tuần các rủi ro trên đường găng và báo Chủ đầu tư khi dự trữ còn dưới 2 ngày."
   },
   {
    "t": "p",
-   "text": "Đánh giá xác định các mốc gắn đợt thanh toán bị dời hoặc vượt hạn. Theo lịch, mốc M2 có hạn 10/05/2027, mốc M3 có hạn 17/06/2027. Thay đổi làm chậm cut over hoặc làm mốc gắn thanh toán vượt hạn được xếp mức lớn theo bảng điều kiện ở mục 3."
+   "text": "Đánh giá xác định các mốc gắn đợt thanh toán bị dời hoặc vượt hạn. Theo lịch, các mốc gắn đợt thanh toán gồm M2 hạn 10/05/2027 (Đợt 2), M3 hạn 08/07/2027 (Đợt 3), M6 là ngày cut over cố định 29/07/2027 (Đợt 4), M7 hạn 29/07/2027 (Đợt 5) và M9 hạn 27/07/2027 (Đợt 6, đợt riêng của phần giá điều chỉnh theo phụ lục của CR01). Thay đổi làm chậm cut over hoặc làm mốc gắn thanh toán vượt hạn được xếp mức lớn theo bảng điều kiện ở mục 3."
   },
   {
    "t": "p",
@@ -708,37 +735,37 @@
     ],
     [
      "Phạm vi, WBS",
-     "Giao việc theo gói WBS (dữ liệu), Master schedule, WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo bài học kinh nghiệm, Risk management plan, Báo cáo tổng kết dự án, Bảng phân chia lương, Báo cáo đánh giá dự án",
+     "Giao việc theo gói WBS (dữ liệu), Master schedule, WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Số liệu thực tế mô phỏng, Báo cáo tiến độ, Bản phát hành theo sprint, Số liệu kết thúc dự án (dữ liệu), Báo cáo bài học kinh nghiệm, Risk management plan, Báo cáo tổng kết dự án, Bảng phân chia lương, Báo cáo đánh giá dự án, Tài liệu quản lý phiên bản",
      "Hồ sơ dự thầu"
     ],
     [
      "Giao việc",
-     "Master schedule, WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo tổng kết dự án, Báo cáo bài học kinh nghiệm, Bảng phân chia lương, Báo cáo đánh giá dự án",
+     "Master schedule, WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Số liệu thực tế mô phỏng, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Bản phát hành theo sprint, Báo cáo tổng kết dự án, Báo cáo bài học kinh nghiệm, Bảng phân chia lương, Báo cáo đánh giá dự án, Tài liệu quản lý phiên bản",
      "Hồ sơ dự thầu"
     ],
     [
      "Thành viên, quỹ thời gian",
-     "Giao việc theo gói WBS (dữ liệu), Master schedule, WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Bảng phân chia lương, Báo cáo tổng kết dự án, Báo cáo bài học kinh nghiệm, Báo cáo đánh giá dự án",
+     "Giao việc theo gói WBS (dữ liệu), Master schedule, WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Số liệu thực tế mô phỏng, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Bảng phân chia lương, Bản phát hành theo sprint, Báo cáo tổng kết dự án, Báo cáo bài học kinh nghiệm, Báo cáo đánh giá dự án, Tài liệu quản lý phiên bản",
      "Hồ sơ dự thầu"
     ],
     [
      "Lịch, mốc",
-     "WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo tổng kết dự án, Báo cáo bài học kinh nghiệm, Bảng phân chia lương, Báo cáo đánh giá dự án",
+     "WBS (tài liệu), Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Số liệu thực tế mô phỏng, Báo cáo tiến độ, Bản phát hành theo sprint, Số liệu kết thúc dự án (dữ liệu), Báo cáo tổng kết dự án, Báo cáo bài học kinh nghiệm, Bảng phân chia lương, Báo cáo đánh giá dự án, Tài liệu quản lý phiên bản",
      "Hồ sơ dự thầu"
     ],
     [
      "Đơn giá",
-     "Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Change management plan, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Bảng phân chia lương, Risk management plan, Master plan, Báo cáo đánh giá dự án, Báo cáo bài học kinh nghiệm, Báo cáo tổng kết dự án",
+     "Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Change management plan, Số liệu thực tế mô phỏng, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Bảng phân chia lương, Risk management plan, Master plan, Báo cáo đánh giá dự án, Báo cáo bài học kinh nghiệm, Báo cáo tổng kết dự án",
      "Hồ sơ dự thầu"
     ],
     [
      "Sổ rủi ro",
-     "Cost estimate, Risk management plan, Change management plan, Master plan, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo đánh giá dự án, Báo cáo bài học kinh nghiệm, Báo cáo tổng kết dự án, Bảng phân chia lương",
+     "Cost estimate, Risk management plan, Change management plan, Master plan, Số liệu thực tế mô phỏng, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo đánh giá dự án, Báo cáo bài học kinh nghiệm, Báo cáo tổng kết dự án, Bảng phân chia lương",
      "Hồ sơ dự thầu"
     ],
     [
      "Lịch làm việc, ngày nghỉ",
-     "WBS (dữ liệu), Giao việc theo gói WBS (dữ liệu), Master schedule, WBS (tài liệu), Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo tổng kết dự án, Báo cáo đánh giá dự án, Báo cáo bài học kinh nghiệm, Bảng phân chia lương, Tài liệu quản lý phiên bản, Sổ đăng ký rủi ro (dữ liệu), Cost estimate",
+     "WBS (dữ liệu), Giao việc theo gói WBS (dữ liệu), Master schedule, WBS (tài liệu), Risk management plan, Change management plan, Master plan, Danh sách phân chia công việc (responsibilities), Số liệu thực tế mô phỏng, Báo cáo tiến độ, Số liệu kết thúc dự án (dữ liệu), Báo cáo tổng kết dự án, Báo cáo đánh giá dự án, Báo cáo bài học kinh nghiệm, Bảng phân chia lương, Tài liệu quản lý phiên bản, Sổ đăng ký rủi ro (dữ liệu), Cost estimate, Bản phát hành theo sprint",
      "Hồ sơ dự thầu"
     ]
    ],
@@ -766,87 +793,93 @@
     ],
     [
      "Kế hoạch dự án: WBS, master schedule, cost estimate (đường cơ sở phạm vi, tiến độ, chi phí)",
-     "1.1",
+     "1.1, 2.1, 3.1, 4.1",
      "Ký hợp đồng",
      "Trần Bá Đạt"
     ],
     [
      "1. Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
-     "2.1, 2.2",
+     "1.2, 2.2, 3.2, 4.2",
      "M2, 06/05/2027",
-     "Ninh Đức Toàn"
+     "Nguyễn Thị Phương Liên"
     ],
     [
      "2. Thiết kế quy trình vận hành mới (New Operational Flow)",
-     "2.1, 2.2",
+     "3.2",
      "M2, 06/05/2027",
      "Nguyễn Thị Phương Liên"
     ],
     [
      "3. Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
-     "2.1, 2.2",
+     "3.2, 4.2",
      "M2, 06/05/2027",
-     "Phạm Tuấn Anh"
+     "Nguyễn Hoàng Nam"
     ],
     [
      "4. Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
-     "2.1, 2.3",
+     "1.2, 2.2, 3.2",
      "M2, 06/05/2027",
-     "Vũ Đức Minh"
+     "Nguyễn Thị Phương Liên"
     ],
     [
      "5. Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
-     "2.3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.1, 8.1",
-     "M3, 16/06/2027",
-     "Phạm Tuấn Anh"
+     "1.2, 1.3, 1.4, 1.5, 3.3, 4.3, 4.4",
+     "M3, 08/07/2027",
+     "Vũ Đức Minh"
     ],
     [
      "6. Xây dựng chức năng quản lý thành viên (Member Administration)",
-     "2.3, 4.1, 4.2, 4.3, 4.4, 4.5, 6.1, 8.1",
-     "M3, 16/06/2027",
+     "1.2, 1.5, 2.2, 2.3, 2.4, 3.3, 4.3, 4.4",
+     "M3, 08/07/2027",
      "Phạm Tuấn Anh"
     ],
     [
      "7. Xây dựng chức năng đặt hàng (Order)",
-     "2.3, 5.1, 5.2, 5.3, 5.4, 5.5, 6.1, 8.1",
-     "M3, 16/06/2027",
-     "Trần Thu Hà"
-    ],
-    [
-     "8. Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
-     "6.1, 8.1",
-     "M3, 16/06/2027",
+     "1.2, 1.5, 3.2, 3.3, 3.4, 4.3, 4.4",
+     "M3, 08/07/2027",
      "Phạm Tuấn Anh"
     ],
     [
+     "8. Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+     "1.5, 4.3, 4.4",
+     "M3, 08/07/2027",
+     "Ninh Đức Toàn"
+    ],
+    [
      "9. Tích hợp với hệ thống chính (Main System)",
-     "6.2, 8.1",
-     "M3, 16/06/2027",
-     "Phạm Ngọc Anh"
+     "1.5, 4.2, 4.3, 4.4",
+     "M3, 08/07/2027",
+     "Ninh Đức Toàn"
     ],
     [
      "10. Kiểm thử hệ thống",
-     "7.1, 7.2, 7.3",
-     "M4, 16/06/2027",
+     "1.4, 2.4, 3.4, 4.4",
+     "M4, 08/07/2027",
      "Nguyễn Thị Phương Liên"
     ],
     [
      "11. Kiểm thử vận hành (Operation Test)",
-     "3.5, 4.5, 5.5, 6.2, 7.1, 7.3",
-     "M6, 01/07/2027",
-     "Phạm Ngọc Anh"
+     "1.4, 2.4, 3.4, 4.4",
+     "M6, 29/07/2027",
+     "Nguyễn Thị Phương Liên"
     ],
     [
      "12. Chuyển giao và hướng dẫn vận hành hệ thống",
-     "2.1, 8.2",
-     "M6, 01/07/2027",
-     "Đỗ Minh Quân"
+     "1.5, 2.5, 3.2, 3.5, 4.5",
+     "M6, 29/07/2027",
+     "Nguyễn Thị Phương Liên"
     ],
     [
      "13. Hỗ trợ đưa hệ thống vào vận hành (cut over)",
-     "6.3, 8.1, 8.3",
-     "M6, 01/07/2027",
-     "Bùi Anh Tuấn"
+     "1.5, 3.5, 4.3, 4.5",
+     "M6, 29/07/2027",
+     "Ninh Đức Toàn"
+    ],
+    [
+     "Phần thay đổi CR01: Bán hàng trên sàn thương mại điện tử",
+     "5.1, 5.2, 5.3, 5.4, 5.5",
+     "BL2, 27/05/2027 (phụ lục 01/2027/PL-ABCW), đặc tả tại gói 5.2.4, 17/06/2027",
+     "Trần Bá Đạt"
     ]
    ],
    "widths": [
@@ -869,15 +902,15 @@
   },
   {
    "t": "p",
-   "text": "Đường cơ sở kế hoạch dự án gồm WBS, master schedule và cost estimate được đặt khi ký hợp đồng. Đặc tả và giao diện ưu tiên được đặt đường cơ sở tại mốc M2 (06/05/2027) bằng biên bản xác nhận đặc tả, là một phần của hợp đồng theo Mục 2.2(i) E-ĐKCT. Các hạng mục khác được đặt đường cơ sở tại mốc ghi trong bảng."
+   "text": "Đường cơ sở kế hoạch dự án gồm WBS, master schedule và cost estimate được đặt khi ký hợp đồng. Đặc tả và giao diện ưu tiên được đặt đường cơ sở tại mốc M2 (06/05/2027) bằng biên bản xác nhận đặc tả, là một phần của hợp đồng theo Mục 2.2(i) E-ĐKCT. Các hạng mục khác được đặt đường cơ sở tại mốc ghi trong bảng. Yêu cầu thay đổi có phụ lục hợp đồng hoặc ở mức lớn được lập đường cơ sở mới sau khi các tài liệu đã cập nhật qua kiểm tra lớp B, căn cứ ghi mã yêu cầu, ví dụ đường cơ sở sau CR01 ghi trong sổ phiên bản."
   },
   {
    "t": "p",
-   "text": "Quy tắc nhánh mã nguồn: nhánh chính chỉ nhận thay đổi thuộc kế hoạch sprint hoặc thuộc yêu cầu thay đổi đã phê duyệt, ghi mã yêu cầu thay đổi trong ghi chú thay đổi. Bản phát hành được gắn nhãn phiên bản tại các mốc. Kiểm tra cấu hình được thực hiện trước mốc M3 (16/06/2027) và trước cut over 01/07/2027."
+   "text": "Quy tắc nhánh mã nguồn: nhánh chính chỉ nhận thay đổi thuộc kế hoạch sprint hoặc thuộc yêu cầu thay đổi đã phê duyệt, ghi mã yêu cầu thay đổi trong ghi chú thay đổi. Bản phát hành được gắn nhãn phiên bản tại các mốc. Kiểm tra cấu hình được thực hiện trước mốc M3 (08/07/2027) và trước cut over 29/07/2027."
   },
   {
    "t": "p",
-   "text": "Phiên bản tài liệu được quản lý theo sổ phiên bản, tài liệu đấu thầu đã khóa không sửa. Người phụ trách từng hạng mục ghi trong bảng trên. Gói 1.2.3 (Quản lý cấu hình, phiên bản tài liệu và hồ sơ dự án) do quản trị dự án Trần Bá Đạt thực hiện."
+   "text": "Phiên bản tài liệu được quản lý theo sổ phiên bản, tài liệu đấu thầu đã khóa không sửa. Người phụ trách từng hạng mục ghi trong bảng trên. Các gói quản lý cấu hình, phiên bản tài liệu, hồ sơ dự án của bốn phân hệ (1.1.4, 2.1.4, 3.1.5, 4.1.3) do quản trị dự án Trần Bá Đạt thực hiện."
   },
   {
    "text": "8. Thay đổi về con người",
@@ -896,34 +929,34 @@
     [
      "Khách hàng mua qua internet (R02, R03)",
      "Tìm kiếm sản phẩm, đăng ký thành viên và đặt hàng qua website",
-     "Chưa xác định, đánh giá lại sau khảo sát nghiệp vụ (2.1.1)",
+     "Chưa xác định, đánh giá lại sau khảo sát nghiệp vụ (3.2.1)",
      "Hợp lý - thực chứng, thích ứng môi trường",
-     "Tài liệu hướng dẫn sử dụng cho khách hàng (8.2.1), giao diện thao tác dễ dàng",
-     "Ngưỡng do hai bên thống nhất tại họp khởi động"
+     "Tài liệu hướng dẫn sử dụng cho khách hàng (2.5.1), giao diện thao tác dễ dàng",
+     "Kết quả đánh giá khả năng sử dụng của giao diện (2.4.9) và tỷ lệ kịch bản kiểm thử chấp nhận luồng khách hàng đạt, ngưỡng cụ thể hai bên thống nhất tại họp khởi động"
     ],
     [
      "Bộ phận vận hành bán hàng của Chủ đầu tư (R46)",
-     "Làm việc theo quy trình vận hành mới của kênh bán hàng trực tuyến",
-     "Chưa xác định, đánh giá lại sau khảo sát nghiệp vụ (2.1.1)",
+     "Làm việc theo quy trình vận hành mới của kênh bán hàng trực tuyến, kể cả kênh bán hàng trên sàn thương mại điện tử theo yêu cầu thay đổi CR01",
+     "Chưa xác định, đánh giá lại sau khảo sát nghiệp vụ (3.2.1)",
      "Tái giáo dục chuẩn mực, hợp lý - thực chứng",
-     "Hướng dẫn vận hành (8.2.3), tham gia kiểm thử chấp nhận từ 18/06/2027 đến 29/06/2027",
-     "Tỷ lệ kịch bản kiểm thử chấp nhận cán bộ tự thực hiện, dấu hiệu theo RR09"
+     "Hướng dẫn vận hành (3.5.1), tham gia kiểm thử chấp nhận từ 16/07/2027 đến 27/07/2027, hướng dẫn sử dụng bán hàng trên sàn (5.5.2) và kiểm thử chấp nhận phần bán hàng trên sàn (5.4.5)",
+     "Tỷ lệ kịch bản kiểm thử chấp nhận cán bộ tự thực hiện, dấu hiệu theo RR09, kết quả kiểm thử chấp nhận phần bán hàng trên sàn tại mốc M9"
     ],
     [
      "Bộ phận quản lý Main System (R10)",
      "Trao đổi dữ liệu giữa Main System và Selling DB",
-     "Chưa xác định, đánh giá lại sau khảo sát hệ thống hiện có (2.1.2)",
+     "Chưa xác định, đánh giá lại sau khảo sát hệ thống hiện có (4.2.1)",
      "Hợp lý - thực chứng",
-     "Tài liệu hướng dẫn vận hành và quản trị kỹ thuật (8.2.2), kiểm thử vận hành (7.3.2)",
-     "Ngưỡng do hai bên thống nhất tại họp khởi động"
+     "Tài liệu hướng dẫn vận hành và quản trị kỹ thuật (2.5.2), kiểm thử vận hành (3.4.13)",
+     "Tỷ lệ kịch bản tích hợp đạt khi Chủ đầu tư kiểm tra (4.4.6), ngưỡng cụ thể hai bên thống nhất tại họp khởi động"
     ],
     [
      "Nghiệp vụ vận chuyển (R11)",
      "Nhận thông tin đơn hàng từ Main System để giao hàng tới khách hàng",
-     "Chưa xác định, đánh giá lại sau khảo sát nghiệp vụ (2.1.1)",
+     "Chưa xác định, đánh giá lại sau khảo sát nghiệp vụ (3.2.1)",
      "Thích ứng môi trường, hợp lý - thực chứng",
-     "Kiểm thử vận hành luồng đặt hàng và giao nhận (7.3.2)",
-     "Ngưỡng do hai bên thống nhất tại họp khởi động"
+     "Kiểm thử vận hành luồng đặt hàng và giao nhận (3.4.13)",
+     "Tỷ lệ kịch bản kiểm thử vận hành luồng đặt hàng và giao nhận đạt (3.4.13), ngưỡng cụ thể hai bên thống nhất tại họp khởi động"
     ]
    ],
    "widths": [
@@ -940,15 +973,15 @@
   },
   {
    "t": "p",
-   "text": "Bước thứ nhất đánh giá mức sẵn lòng, mức sẵn sàng và khả năng thay đổi của từng nhóm người dùng trong khảo sát nghiệp vụ (2.1.1). Nhà tài trợ thay đổi là người có thẩm quyền của Chủ đầu tư, Tổng Giám đốc Công ty Cổ phần ABC Wear. Tác nhân thay đổi là quản trị dự án Trần Bá Đạt và nhóm dự án. Đối tượng thay đổi là người dùng thuộc các nhóm trong bảng trên."
+   "text": "Bước thứ nhất đánh giá mức sẵn lòng, mức sẵn sàng và khả năng thay đổi của từng nhóm người dùng trong khảo sát nghiệp vụ (3.2.1). Nhà tài trợ thay đổi là người có thẩm quyền của Chủ đầu tư, Tổng Giám đốc Công ty Cổ phần ABC Wear. Tác nhân thay đổi là quản trị dự án Trần Bá Đạt và nhóm dự án. Đối tượng thay đổi là người dùng thuộc các nhóm trong bảng trên."
   },
   {
    "t": "p",
-   "text": "Bước thứ hai chọn chiến lược cho từng nhóm theo bảng trên. Bước thứ ba thực hiện và theo dõi với truyền thông hai chiều: mời cán bộ Chủ đầu tư dự trình diễn cuối sprint, gửi tài liệu hướng dẫn trước buổi hướng dẫn vận hành (8.2.3), tổ chức đào tạo và hỗ trợ trong kiểm thử chấp nhận từ 18/06/2027 đến 29/06/2027, ghi nhận ý kiến người dùng để xử lý theo quy trình làm rõ hoặc yêu cầu thay đổi."
+   "text": "Bước thứ hai chọn chiến lược cho từng nhóm theo bảng trên. Bước thứ ba thực hiện và theo dõi với truyền thông hai chiều: mời cán bộ Chủ đầu tư dự trình diễn cuối sprint, gửi tài liệu hướng dẫn trước buổi hướng dẫn vận hành (3.5.1), tổ chức đào tạo và hỗ trợ trong kiểm thử chấp nhận từ 16/07/2027 đến 27/07/2027, ghi nhận ý kiến người dùng để xử lý theo quy trình làm rõ hoặc yêu cầu thay đổi."
   },
   {
    "t": "p",
-   "text": "Bước thứ tư đánh giá mức sẵn sàng trước cut over 01/07/2027, theo dõi trong thời gian hỗ trợ tăng cường từ 02/07/2027 đến 15/07/2027 và rút bài học. Rủi ro cán bộ Chủ đầu tư chưa sẵn sàng được quản lý theo RR09: Mời cán bộ Chủ đầu tư dự trình diễn cuối sprint từ S4, gửi tài liệu hướng dẫn trước buổi hướng dẫn vận hành. Khi dấu hiệu xuất hiện, áp dụng kế hoạch ứng phó: Khi dấu hiệu xuất hiện, Nguyễn Thị Phương Liên tổ chức thêm buổi hướng dẫn theo từng vai trò và hỗ trợ trực tiếp trong kiểm thử chấp nhận."
+   "text": "Bước thứ tư đánh giá mức sẵn sàng trước cut over 29/07/2027, theo dõi trong thời gian hỗ trợ tăng cường từ 30/07/2027 đến 12/08/2027 và rút bài học. Rủi ro cán bộ Chủ đầu tư chưa sẵn sàng được quản lý theo RR09. Biện pháp phòng ngừa là mời cán bộ Chủ đầu tư dự trình diễn cuối sprint từ S4 và gửi tài liệu hướng dẫn trước buổi hướng dẫn vận hành. Khi dấu hiệu xuất hiện, Nguyễn Thị Phương Liên tổ chức thêm buổi hướng dẫn theo từng vai trò và hỗ trợ trực tiếp trong kiểm thử chấp nhận."
   },
   {
    "text": "9. Dự phòng rủi ro và thay đổi",
@@ -970,7 +1003,11 @@
     ],
     [
      "Tổng EMV của sổ rủi ro",
-     "147 triệu đồng, khoảng từ 110 đến 183 triệu đồng"
+     "151 triệu đồng, khoảng từ 113 đến 189 triệu đồng"
+    ],
+    [
+     "EMV còn lại (rủi ro chưa xảy ra, chưa đóng)",
+     "115 triệu đồng của 18 rủi ro, 4 rủi ro đã xảy ra hoặc đã đóng"
     ],
     [
      "Điều kiện sử dụng",
@@ -983,6 +1020,10 @@
     [
      "Người phê duyệt",
      "Quản trị dự án Trần Bá Đạt phê duyệt khoản dùng cho rủi ro do thành viên khác phụ trách. Người đại diện ký hợp đồng của nhà thầu Lê Quốc Bảo phê duyệt khoản dùng cho rủi ro do quản trị dự án phụ trách và khoản làm giảm phần chi phí chung và lợi nhuận"
+    ],
+    [
+     "Phần vượt dự phòng",
+     "Khi tổng chi phí ứng phó vượt dự phòng hiện có, phần vượt được bù từ phần còn lại của giá chào sau khi trừ lương kế hoạch và khoản B theo quyết định của nhóm ngày 18/10/2026, phần này gồm khoản C và phần khoản A chưa dùng cho lương theo quyết định của nhóm ngày 25/10/2026, do người đại diện ký hợp đồng của nhà thầu phê duyệt"
     ],
     [
      "Ghi nhận",
@@ -1007,8 +1048,54 @@
    "t": "h1"
   },
   {
-   "text": "Chưa có yêu cầu thay đổi nào được ghi nhận tại thời điểm lập kế hoạch.",
-   "t": "p"
+   "rows": [
+    [
+     "Mã",
+     "Nội dung",
+     "Ngày",
+     "MD",
+     "Chi phí nội bộ, đồng",
+     "Giá đề nghị, đồng",
+     "Cut over lùi, ngày làm việc",
+     "Mức (điểm)",
+     "Trạng thái tại ngày lập"
+    ],
+    [
+     "CR01",
+     "Bán hàng trên sàn thương mại điện tử",
+     "20/05/2027",
+     "76",
+     "161.500.000",
+     "199.024.682",
+     "20",
+     "Lớn (10)",
+     "Đã phê duyệt"
+    ]
+   ],
+   "widths": [
+    650,
+    2200,
+    1050,
+    650,
+    1250,
+    1250,
+    750,
+    900,
+    600
+   ],
+   "center_cols": [
+    0,
+    2,
+    6,
+    7
+   ],
+   "right_cols": [
+    3,
+    4,
+    5
+   ],
+   "dong_dam": [],
+   "t": "table"
   },
   {
    "text": "11. Truyền thông và theo dõi",
@@ -1016,11 +1103,11 @@
   },
   {
    "t": "p",
-   "text": "Kết quả quyết định của mỗi yêu cầu thay đổi được thông báo bằng văn bản cho người đề xuất, ban kiểm soát thay đổi và người phụ trách các gói WBS bị ảnh hưởng. Mỗi kỳ báo cáo tiến độ nêu số yêu cầu thay đổi phát sinh, đang mở và đã đóng cùng tác động đến MD, chi phí và mốc. Các yêu cầu đang mở được rà soát trong họp tiến độ hằng tuần và họp cuối sprint (1.2.1)."
+   "text": "Kết quả quyết định của mỗi yêu cầu thay đổi được thông báo bằng văn bản cho người đề xuất, ban kiểm soát thay đổi và người phụ trách các gói WBS bị ảnh hưởng. Mỗi kỳ báo cáo tiến độ nêu số yêu cầu thay đổi phát sinh, đang mở và đã đóng cùng tác động đến MD, chi phí và mốc. Các yêu cầu đang mở được rà soát trong họp tiến độ hằng tuần và họp cuối sprint (1.1.2, 2.1.2, 3.1.3, 4.1.1), phần thay đổi theo yêu cầu thay đổi CR01 được theo dõi thêm tại gói 5.1.1."
   },
   {
    "t": "p",
-   "text": "Chỉ số theo dõi gồm số yêu cầu đang mở, MD tăng và giá đề nghị Chủ đầu tư lũy kế của các yêu cầu đã phê duyệt, thời gian xử lý so với hạn quyết định của từng mức. Hiện sổ yêu cầu thay đổi có 0 yêu cầu."
+   "text": "Chỉ số theo dõi gồm số yêu cầu đang mở, MD tăng và giá đề nghị Chủ đầu tư lũy kế của các yêu cầu đã phê duyệt, thời gian xử lý so với hạn quyết định của từng mức. Hiện sổ yêu cầu thay đổi có 1 yêu cầu. Yêu cầu CR01 đã ký văn bản Phụ lục hợp đồng số 01/2027/PL-ABCW ngày 27/05/2027, tăng 76 MD, giá hợp đồng sau phụ lục 1.949.024.682 đồng, cut over lùi 20 ngày làm việc thành 29/07/2027, rủi ro mới liên kết RR22 được bổ sung vào sổ đăng ký rủi ro."
   },
   {
    "t": "p",

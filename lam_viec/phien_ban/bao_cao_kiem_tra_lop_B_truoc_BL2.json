@@ -1,0 +1,68 @@
+{
+ "tai_lieu": [
+  "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx (v0.8)",
+  "ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx (v0.9)"
+ ],
+ "buoc": "phien_ban",
+ "luot": "Kiểm tra lớp B lượt xác nhận sau vòng sửa cuối (người dùng duyệt ngoại lệ sau 3 vòng): xác nhận đóng cảnh báo lượt 3 và rà soát hồi quy, không rà lại toàn bộ",
+ "can_cu": "Căn cứ hợp lệ: dau_vao/du_an.json _quyet_dinh_18_10, _quyet_dinh_24_10_ha_tang, _quyet_dinh_25_10 (điểm 1 đến 29), _quy_tac_ngay_ban_giao",
+ "nguon_da_doi_chieu": [
+  "du_lieu/phien_ban.json",
+  "du_lieu/phien_ban_tong_hop.json",
+  "lam_viec/phien_ban/bao_cao_kiem_tra_lop_B_4ph_vong3.json"
+ ],
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 0,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ các mục như lượt 3."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Danh mục TL01 đến TL15 trong tài liệu và sheet Danh_muc khớp phiên bản mới nhất trong phien_ban.json (Master schedule 0.23, WBS 0.9, 0.8, 0.8, 0.7, 0.13, Cost estimate 0.17, thuyết minh 0.16, HSDT 0.10, rủi ro 0.11, thay đổi 0.6, master plan 0.8, phân công 0.13). Tổng 185 phiên bản (154 tài liệu nộp, 31 lưu trữ), 15 tài liệu, 0 tài liệu cần cập nhật khớp phien_ban_tong_hop.json; các tài liệu phụ thuộc đều được tạo lại cùng lượt với băm đầu vào mới."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Lịch sử phiên bản gắn bước và ghi chú, chưa có CR và đường cơ sở."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Ô tổng Excel là công thức, tính lại khớp số trong tài liệu."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Quy trình đường cơ sở và thay đổi sau đường cơ sở giữ nguyên."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Ghi chú lịch sử giữ mã nội bộ theo quyết định 25/10 (29)."
+  }
+ ],
+ "phat_hien": [],
+ "dong_phat_hien_luot_3": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Nhóm quyết định 25/10 (29) giữ mã nội bộ trong ghi chú lịch sử phiên bản để truy vết, cảnh báo đóng theo quyết định."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "Ô I18 của Danh_muc là công thức tổng các COUNTIF trên Lich_su cho 13 tài liệu lưu trữ (so_luu_tru = 13), tính lại bằng 31, I19 = 185."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "Mục 4 ghi lệnh duong_co_so nâng mọi tài liệu nộp chưa khóa trong danh mục (theo phạm vi mặc định của lệnh) lên 1.0, danh sách đã gồm tài liệu quản lý phiên bản và phụ lục bằng chứng."
+  }
+ ],
+ "moi_truong": "Phiên làm việc riêng (agent con, lượt kiểm tra xác nhận sau vòng sửa cuối, ngoại lệ do người dùng duyệt), python-docx, openpyxl, LibreOffice tính lại công thức, mô hình Claude Opus 5.5"
+}

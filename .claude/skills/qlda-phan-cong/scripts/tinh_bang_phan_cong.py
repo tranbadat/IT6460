@@ -93,9 +93,26 @@ _kt = [x for x in sp if x not in {s['ma'] for s in lich['sprint']}]
 chu_thich_tai = ('Mỗi ô ghi MD trên quỹ thời gian của thành viên trong sprint theo master schedule'
                  + (f'. Lịch được lập lại từ ngày {loi.ngay(LAP_LAI["ngay"])}, các sprint {", ".join(_sp_tt)} ghi MD thực tế đã làm (có thể vượt quỹ do '
                     'làm thêm trong sprint đã qua), các sprint sau ghi MD kế hoạch' if _sp_tt else ', là MD kế hoạch')
-                 + (f'. Cột {", ".join(_kt)} là MD của giai đoạn Kết thúc sau cut over, chưa có quỹ huy động nên chỉ ghi MD' if _kt else '')
+                 + ((f'. Cột {", ".join(_kt)} là giai đoạn Kết thúc sau cut over, ghi MD trên quỹ theo tỷ lệ huy động giai đoạn Kết thúc của thành viên '
+                     'trong bảng huy động, thành viên không huy động giai đoạn này chỉ ghi MD'
+                     if any(t.get('huy_dong_ket_thuc') for t in tvs) else
+                     f'. Cột {", ".join(_kt)} là MD của giai đoạn Kết thúc sau cut over, chưa có quỹ huy động nên chỉ ghi MD') if _kt else '')
                  + '. Cột Giao bằng tổng các ô của thành viên, dòng cuối là tổng của các thành viên.')
-loi.ghi_json('du_lieu/phan_cong_bang.json', {'raci': raci, 'tai_sprint': tai, 'theo_nguoi': theo_nguoi,
+# người hỗ trợ trên đường găng và quỹ chưa giao trong thời gian huy động (không tính MD giai đoạn Kết thúc ngoài quỹ)
+_gv = {x['ma']: x for x in pc.get('giao_viec', [])}
+_gang = [m for m in lich.get('duong_gang', []) if m in _gv]
+_gang_ht = [m for m in _gang if _gv[m].get('ho_tro')]
+# quỹ chưa giao = tổng phần quỹ còn trống max(0, quỹ - MD) của từng người từng sprint, không bù phần làm vượt quỹ, không gồm kỳ KT (từ 1.3.4)
+_sp_ma = [s_['ma'] for s_ in lich['sprint']]
+_md_ns = {}
+for x in lich.get('phan_bo', []):
+    _md_ns[(x['thanh_vien'], x['sprint'])] = _md_ns.get((x['thanh_vien'], x['sprint']), 0) + x['md']
+_quy_ns = {t['id']: loi.quy_thoi_gian(t, lich['sprint']) for t in tvs}
+_chua_giao = sum(max(0.0, _quy_ns[p].get(s_, 0) - _md_ns.get((p, s_), 0)) for p in _quy_ns for s_ in _sp_ma)
+ho_tro_tom_tat = {'so_goi_gang': len(_gang), 'goi_gang_co_ho_tro': ', '.join(_gang_ht), 'so_goi_gang_co_ho_tro': len(_gang_ht),
+                  'so_goi_co_ho_tro': sum(1 for x in pc.get('giao_viec', []) if x.get('ho_tro')),
+                  'quy_chua_giao_huy_dong': round(_chua_giao, 2)}
+loi.ghi_json('du_lieu/phan_cong_bang.json', {'raci': raci, 'tai_sprint': tai, 'theo_nguoi': theo_nguoi, 'ho_tro_tom_tat': ho_tro_tom_tat,
                                               'ngay_lap_lai': loi.ngay(LAP_LAI.get('ngay')) if LAP_LAI.get('ngay') else '',
                                               'sprint_thuc_te': ', '.join(s['ma'] for s in lich['sprint'] if LAP_LAI.get('ngay') and s['den'] < LAP_LAI['ngay']),
                                               'co_ky_kt': bool(_kt), 'chu_thich_tai': chu_thich_tai,

@@ -1,0 +1,1049 @@
+{
+ "den": "2027-08-12",
+ "so_lieu_mo_phong": true,
+ "can_cu_mo_phong": [
+  "Số liệu thực tế trong bảng là số liệu mô phỏng. Số liệu mô phỏng: dữ liệu thực tế trong dau_vao/thuc_te/ do script qlda-mo-phong/scripts/mo_phong_sprint.py sinh từ kịch bản biến cố từng sprint (lam_viec/mo_phong/kich_ban_S<n>.json) theo kế hoạch đã duyệt hiện hành, không phải số liệu đo được của dự án thật."
+ ],
+ "cach_tra_luong": "cong_suc",
+ "cach_tra_luong_ten": "trả theo công sức (MD công việc)",
+ "quy_chia_theo_dong_gop": 0.0,
+ "nguoi": [
+  {
+   "id": "dat",
+   "ho_ten": "Trần Bá Đạt",
+   "loai": "Thành viên nhóm",
+   "vai_tro": "LEAD",
+   "ten_vai_tro": "Trưởng nhóm, kiến trúc sư",
+   "md_ke_hoach": 66.33,
+   "md_thuc_te": 67.25,
+   "md_huy_dong": 86.0,
+   "md_san_sang": 18.75,
+   "chenh_lech_md": 0.92,
+   "ty_trong_dong_gop": 0.0913,
+   "ngay_tinh_luong": 67.25,
+   "don_gia_ngay": 2318182,
+   "luong": 155897727,
+   "bao_hiem": 36635966,
+   "chi_phi": 192533693,
+   "phan_chia_dong_gop": 0,
+   "thu_nhap": 155897727,
+   "luong_ke_hoach": 153765000,
+   "theo_sprint": [
+    {
+     "sprint": "S1",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S2",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S3",
+     "md": 12.75,
+     "md_huy_dong": 13.0
+    },
+    {
+     "sprint": "S4",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S5",
+     "md": 3.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S6",
+     "md": 4.5,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S7",
+     "md": 5.25,
+     "md_huy_dong": 7.0
+    },
+    {
+     "sprint": "S8",
+     "md": 6.75,
+     "md_huy_dong": 8.0
+    },
+    {
+     "sprint": "S9",
+     "md": 3.0,
+     "md_huy_dong": 6.0
+    },
+    {
+     "sprint": "KT",
+     "md": 2.0,
+     "md_huy_dong": 2.0
+    }
+   ],
+   "ty_trong": 0.0913
+  },
+  {
+   "id": "tuananh",
+   "ho_ten": "Phạm Tuấn Anh",
+   "loai": "Thành viên nhóm",
+   "vai_tro": "BACKEND",
+   "ten_vai_tro": "Kỹ sư backend",
+   "md_ke_hoach": 50.0,
+   "md_thuc_te": 50.25,
+   "md_huy_dong": 69.0,
+   "md_san_sang": 18.75,
+   "chenh_lech_md": 0.25,
+   "ty_trong_dong_gop": 0.0682,
+   "ngay_tinh_luong": 50.25,
+   "don_gia_ngay": 1363636,
+   "luong": 68522727,
+   "bao_hiem": 16102841,
+   "chi_phi": 84625568,
+   "phan_chia_dong_gop": 0,
+   "thu_nhap": 68522727,
+   "luong_ke_hoach": 68181818,
+   "theo_sprint": [
+    {
+     "sprint": "S1",
+     "md": 4.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S2",
+     "md": 5.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S3",
+     "md": 7.0,
+     "md_huy_dong": 13.0
+    },
+    {
+     "sprint": "S4",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S5",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S6",
+     "md": 8.25,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S7",
+     "md": 0,
+     "md_huy_dong": 0.0
+    },
+    {
+     "sprint": "S8",
+     "md": 1.0,
+     "md_huy_dong": 0.0
+    },
+    {
+     "sprint": "S9",
+     "md": 5.0,
+     "md_huy_dong": 6.0
+    },
+    {
+     "sprint": "KT",
+     "md": 0,
+     "md_huy_dong": 0
+    }
+   ],
+   "ty_trong": 0.0682
+  },
+  {
+   "id": "minh",
+   "ho_ten": "Vũ Đức Minh",
+   "loai": "Thành viên nhóm",
+   "vai_tro": "FRONTEND",
+   "ten_vai_tro": "Kỹ sư frontend",
+   "md_ke_hoach": 58.0,
+   "md_thuc_te": 57.5,
+   "md_huy_dong": 71.0,
+   "md_san_sang": 13.5,
+   "chenh_lech_md": -0.5,
+   "ty_trong_dong_gop": 0.078,
+   "ngay_tinh_luong": 57.5,
+   "don_gia_ngay": 1272727,
+   "luong": 73181818,
+   "bao_hiem": 17197727,
+   "chi_phi": 90379545,
+   "phan_chia_dong_gop": 0,
+   "thu_nhap": 73181818,
+   "luong_ke_hoach": 73818182,
+   "theo_sprint": [
+    {
+     "sprint": "S1",
+     "md": 8.5,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S2",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S3",
+     "md": 11.0,
+     "md_huy_dong": 13.0
+    },
+    {
+     "sprint": "S4",
+     "md": 9.75,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S5",
+     "md": 6.25,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S6",
+     "md": 4.75,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S7",
+     "md": 0,
+     "md_huy_dong": 0.0
+    },
+    {
+     "sprint": "S8",
+     "md": 3.25,
+     "md_huy_dong": 3.0
+    },
+    {
+     "sprint": "S9",
+     "md": 4.0,
+     "md_huy_dong": 5.0
+    },
+    {
+     "sprint": "KT",
+     "md": 0,
+     "md_huy_dong": 0
+    }
+   ],
+   "ty_trong": 0.078
+  },
+  {
+   "id": "toan",
+   "ho_ten": "Ninh Đức Toàn",
+   "loai": "Thành viên nhóm",
+   "vai_tro": "BACKEND",
+   "ten_vai_tro": "Kỹ sư backend",
+   "md_ke_hoach": 66.5,
+   "md_thuc_te": 67.5,
+   "md_huy_dong": 76.0,
+   "md_san_sang": 8.5,
+   "chenh_lech_md": 1.0,
+   "ty_trong_dong_gop": 0.0916,
+   "ngay_tinh_luong": 67.5,
+   "don_gia_ngay": 1363636,
+   "luong": 92045455,
+   "bao_hiem": 21630682,
+   "chi_phi": 113676136,
+   "phan_chia_dong_gop": 0,
+   "thu_nhap": 92045455,
+   "luong_ke_hoach": 90681818,
+   "theo_sprint": [
+    {
+     "sprint": "S1",
+     "md": 6.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S2",
+     "md": 8.75,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S3",
+     "md": 13.0,
+     "md_huy_dong": 13.0
+    },
+    {
+     "sprint": "S4",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S5",
+     "md": 7.75,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S6",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S7",
+     "md": 3.0,
+     "md_huy_dong": 3.0
+    },
+    {
+     "sprint": "S8",
+     "md": 0,
+     "md_huy_dong": 0.0
+    },
+    {
+     "sprint": "S9",
+     "md": 9.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "KT",
+     "md": 0,
+     "md_huy_dong": 0
+    }
+   ],
+   "ty_trong": 0.0916
+  },
+  {
+   "id": "lien",
+   "ho_ten": "Nguyễn Thị Phương Liên",
+   "loai": "Thành viên nhóm",
+   "vai_tro": "BAQA",
+   "ten_vai_tro": "Phân tích nghiệp vụ, kiểm thử",
+   "md_ke_hoach": 72.5,
+   "md_thuc_te": 73.25,
+   "md_huy_dong": 83.0,
+   "md_san_sang": 9.75,
+   "chenh_lech_md": 0.75,
+   "ty_trong_dong_gop": 0.0994,
+   "ngay_tinh_luong": 73.25,
+   "don_gia_ngay": 1227273,
+   "luong": 89897727,
+   "bao_hiem": 21125966,
+   "chi_phi": 111023693,
+   "phan_chia_dong_gop": 0,
+   "thu_nhap": 89897727,
+   "luong_ke_hoach": 88977273,
+   "theo_sprint": [
+    {
+     "sprint": "S1",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S2",
+     "md": 9.75,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S3",
+     "md": 12.0,
+     "md_huy_dong": 13.0
+    },
+    {
+     "sprint": "S4",
+     "md": 8.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S5",
+     "md": 6.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S6",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S7",
+     "md": 8.0,
+     "md_huy_dong": 8.0
+    },
+    {
+     "sprint": "S8",
+     "md": 4.0,
+     "md_huy_dong": 5.0
+    },
+    {
+     "sprint": "S9",
+     "md": 5.5,
+     "md_huy_dong": 7.0
+    },
+    {
+     "sprint": "KT",
+     "md": 0,
+     "md_huy_dong": 0
+    }
+   ],
+   "ty_trong": 0.0994
+  },
+  {
+   "id": "K",
+   "ho_ten": "Nguyễn Hoàng Nam",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "SA_BA",
+   "ten_vai_tro": "Kiến trúc sư kiêm phân tích nghiệp vụ",
+   "md_ke_hoach": 70.67,
+   "md_thuc_te": 71.75,
+   "md_huy_dong": 80.0,
+   "md_san_sang": 8.25,
+   "chenh_lech_md": 1.08,
+   "ty_trong_dong_gop": 0.0974,
+   "ngay_tinh_luong": 71.75,
+   "don_gia_ngay": 2136364,
+   "luong": 153284091,
+   "bao_hiem": 36021761,
+   "chi_phi": 189305852,
+   "phan_chia_dong_gop": 0,
+   "thu_nhap": 153284091,
+   "luong_ke_hoach": 150976818,
+   "theo_sprint": [
+    {
+     "sprint": "S1",
+     "md": 9.75,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S2",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S3",
+     "md": 12.0,
+     "md_huy_dong": 13.0
+    },
+    {
+     "sprint": "S4",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S5",
+     "md": 6.5,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S6",
+     "md": 9.5,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S7",
+     "md": 0,
+     "md_huy_dong": 0.0
+    },
+    {
+     "sprint": "S8",
+     "md": 7.5,
+     "md_huy_dong": 9.0
+    },
+    {
+     "sprint": "S9",
+     "md": 6.5,
+     "md_huy_dong": 8.0
+    },
+    {
+     "sprint": "KT",
+     "md": 0,
+     "md_huy_dong": 0
+    }
+   ],
+   "ty_trong": 0.0974
+  },
+  {
+   "id": "D1",
+   "ho_ten": "Lê Quang Huy",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "BACKEND",
+   "ten_vai_tro": "Kỹ sư backend",
+   "md_ke_hoach": 67.5,
+   "md_thuc_te": 67.0,
+   "md_huy_dong": 85.0,
+   "md_san_sang": 18.0,
+   "chenh_lech_md": -0.5,
+   "ty_trong_dong_gop": 0.0909,
+   "ngay_tinh_luong": 67.0,
+   "don_gia_ngay": 1363636,
+   "luong": 91363636,
+   "bao_hiem": 21470455,
+   "chi_phi": 112834091,
+   "phan_chia_dong_gop": 0,
+   "thu_nhap": 91363636,
+   "luong_ke_hoach": 92045455,
+   "theo_sprint": [
+    {
+     "sprint": "S1",
+     "md": 4.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S2",
+     "md": 9.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S3",
+     "md": 9.0,
+     "md_huy_dong": 13.0
+    },
+    {
+     "sprint": "S4",
+     "md": 9.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S5",
+     "md": 6.5,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S6",
+     "md": 9.5,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S7",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S8",
+     "md": 2.0,
+     "md_huy_dong": 3.0
+    },
+    {
+     "sprint": "S9",
+     "md": 8.0,
+     "md_huy_dong": 9.0
+    },
+    {
+     "sprint": "KT",
+     "md": 0,
+     "md_huy_dong": 0
+    }
+   ],
+   "ty_trong": 0.0909
+  },
+  {
+   "id": "D2",
+   "ho_ten": "Đỗ Minh Quân",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "BACKEND",
+   "ten_vai_tro": "Kỹ sư backend",
+   "md_ke_hoach": 64.0,
+   "md_thuc_te": 64.25,
+   "md_huy_dong": 77.0,
+   "md_san_sang": 12.75,
+   "chenh_lech_md": 0.25,
+   "ty_trong_dong_gop": 0.0872,
+   "ngay_tinh_luong": 64.25,
+   "don_gia_ngay": 1363636,
+   "luong": 87613636,
+   "bao_hiem": 20589205,
+   "chi_phi": 108202841,
+   "phan_chia_dong_gop": 0,
+   "thu_nhap": 87613636,
+   "luong_ke_hoach": 87272727,
+   "theo_sprint": [
+    {
+     "sprint": "S1",
+     "md": 0,
+     "md_huy_dong": 0.0
+    },
+    {
+     "sprint": "S2",
+     "md": 4.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S3",
+     "md": 13.0,
+     "md_huy_dong": 13.0
+    },
+    {
+     "sprint": "S4",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S5",
+     "md": 8.25,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S6",
+     "md": 5.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S7",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S8",
+     "md": 4.0,
+     "md_huy_dong": 4.0
+    },
+    {
+     "sprint": "S9",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "KT",
+     "md": 0,
+     "md_huy_dong": 0
+    }
+   ],
+   "ty_trong": 0.0872
+  },
+  {
+   "id": "D3",
+   "ho_ten": "Bùi Anh Tuấn",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "BACKEND",
+   "ten_vai_tro": "Kỹ sư backend",
+   "md_ke_hoach": 59.5,
+   "md_thuc_te": 60.25,
+   "md_huy_dong": 86.0,
+   "md_san_sang": 25.75,
+   "chenh_lech_md": 0.75,
+   "ty_trong_dong_gop": 0.0818,
+   "ngay_tinh_luong": 60.25,
+   "don_gia_ngay": 1363636,
+   "luong": 82159091,
+   "bao_hiem": 19307386,
+   "chi_phi": 101466477,
+   "phan_chia_dong_gop": 0,
+   "thu_nhap": 82159091,
+   "luong_ke_hoach": 81136364,
+   "theo_sprint": [
+    {
+     "sprint": "S1",
+     "md": 3.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S2",
+     "md": 4.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S3",
+     "md": 12.5,
+     "md_huy_dong": 13.0
+    },
+    {
+     "sprint": "S4",
+     "md": 7.5,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S5",
+     "md": 7.25,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S6",
+     "md": 6.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S7",
+     "md": 8.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S8",
+     "md": 8.0,
+     "md_huy_dong": 8.0
+    },
+    {
+     "sprint": "S9",
+     "md": 4.0,
+     "md_huy_dong": 5.0
+    },
+    {
+     "sprint": "KT",
+     "md": 0,
+     "md_huy_dong": 0
+    }
+   ],
+   "ty_trong": 0.0818
+  },
+  {
+   "id": "Q1",
+   "ho_ten": "Trần Thu Hà",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "TESTER",
+   "ten_vai_tro": "Kỹ sư kiểm thử",
+   "md_ke_hoach": 49.5,
+   "md_thuc_te": 49.75,
+   "md_huy_dong": 70.0,
+   "md_san_sang": 20.25,
+   "chenh_lech_md": 0.25,
+   "ty_trong_dong_gop": 0.0675,
+   "ngay_tinh_luong": 49.75,
+   "don_gia_ngay": 1090909,
+   "luong": 54272727,
+   "bao_hiem": 12754091,
+   "chi_phi": 67026818,
+   "phan_chia_dong_gop": 0,
+   "thu_nhap": 54272727,
+   "luong_ke_hoach": 54000000,
+   "theo_sprint": [
+    {
+     "sprint": "S1",
+     "md": 0,
+     "md_huy_dong": 0.0
+    },
+    {
+     "sprint": "S2",
+     "md": 3.5,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S3",
+     "md": 10.0,
+     "md_huy_dong": 13.0
+    },
+    {
+     "sprint": "S4",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S5",
+     "md": 9.25,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S6",
+     "md": 2.5,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S7",
+     "md": 7.0,
+     "md_huy_dong": 8.0
+    },
+    {
+     "sprint": "S8",
+     "md": 2.0,
+     "md_huy_dong": 2.0
+    },
+    {
+     "sprint": "S9",
+     "md": 5.5,
+     "md_huy_dong": 7.0
+    },
+    {
+     "sprint": "KT",
+     "md": 0,
+     "md_huy_dong": 0
+    }
+   ],
+   "ty_trong": 0.0675
+  },
+  {
+   "id": "Q2",
+   "ho_ten": "Phạm Ngọc Anh",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "TESTER",
+   "ten_vai_tro": "Kỹ sư kiểm thử",
+   "md_ke_hoach": 50.0,
+   "md_thuc_te": 49.25,
+   "md_huy_dong": 63.0,
+   "md_san_sang": 13.75,
+   "chenh_lech_md": -0.75,
+   "ty_trong_dong_gop": 0.0668,
+   "ngay_tinh_luong": 49.25,
+   "don_gia_ngay": 1090909,
+   "luong": 53727273,
+   "bao_hiem": 12625909,
+   "chi_phi": 66353182,
+   "phan_chia_dong_gop": 0,
+   "thu_nhap": 53727273,
+   "luong_ke_hoach": 54545455,
+   "theo_sprint": [
+    {
+     "sprint": "S1",
+     "md": 0,
+     "md_huy_dong": 0.0
+    },
+    {
+     "sprint": "S2",
+     "md": 0,
+     "md_huy_dong": 0.0
+    },
+    {
+     "sprint": "S3",
+     "md": 6.0,
+     "md_huy_dong": 13.0
+    },
+    {
+     "sprint": "S4",
+     "md": 9.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S5",
+     "md": 8.25,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S6",
+     "md": 7.75,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S7",
+     "md": 5.5,
+     "md_huy_dong": 9.0
+    },
+    {
+     "sprint": "S8",
+     "md": 5.0,
+     "md_huy_dong": 2.0
+    },
+    {
+     "sprint": "S9",
+     "md": 7.75,
+     "md_huy_dong": 9.0
+    },
+    {
+     "sprint": "KT",
+     "md": 0,
+     "md_huy_dong": 0
+    }
+   ],
+   "ty_trong": 0.0668
+  },
+  {
+   "id": "D4",
+   "ho_ten": "Trương Quốc Việt",
+   "loai": "Vị trí bổ sung",
+   "vai_tro": "BACKEND",
+   "ten_vai_tro": "Kỹ sư backend",
+   "md_ke_hoach": 58.5,
+   "md_thuc_te": 58.75,
+   "md_huy_dong": 62.0,
+   "md_san_sang": 3.25,
+   "chenh_lech_md": 0.25,
+   "ty_trong_dong_gop": 0.0797,
+   "ngay_tinh_luong": 58.75,
+   "don_gia_ngay": 1363636,
+   "luong": 80113636,
+   "bao_hiem": 18826705,
+   "chi_phi": 98940341,
+   "phan_chia_dong_gop": 0,
+   "thu_nhap": 80113636,
+   "luong_ke_hoach": 79772727,
+   "theo_sprint": [
+    {
+     "sprint": "S1",
+     "md": 0,
+     "md_huy_dong": 0.0
+    },
+    {
+     "sprint": "S2",
+     "md": 0,
+     "md_huy_dong": 0.0
+    },
+    {
+     "sprint": "S3",
+     "md": 13.0,
+     "md_huy_dong": 13.0
+    },
+    {
+     "sprint": "S4",
+     "md": 9.25,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S5",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S6",
+     "md": 10.0,
+     "md_huy_dong": 10.0
+    },
+    {
+     "sprint": "S7",
+     "md": 4.0,
+     "md_huy_dong": 4.0
+    },
+    {
+     "sprint": "S8",
+     "md": 4.5,
+     "md_huy_dong": 9.0
+    },
+    {
+     "sprint": "S9",
+     "md": 8.0,
+     "md_huy_dong": 6.0
+    },
+    {
+     "sprint": "KT",
+     "md": 0,
+     "md_huy_dong": 0
+    }
+   ],
+   "ty_trong": 0.0797
+  }
+ ],
+ "tong": {
+  "md_ke_hoach": 733.0,
+  "md_thuc_te": 736.75,
+  "md_huy_dong": 908.0,
+  "md_san_sang": 171.25,
+  "luong": 1082079545,
+  "bao_hiem": 254288693,
+  "chi_phi": 1336368239,
+  "phan_chia_dong_gop": 0,
+  "thu_nhap": 1082079545,
+  "luong_ke_hoach": 1075173636,
+  "luong_theo_md_ke_hoach": 1075173636
+ },
+ "doi_chieu": {
+  "A": 1581550000.0,
+  "ty_le_chi_phi_tren_A": 0.845,
+  "chi_phi_ke_hoach": 1327839440,
+  "chenh_chi_phi": 8528799,
+  "chi_phi_theo_md_ke_hoach": 1327839440,
+  "chi_phi_luong_cost_estimate": 1327839441.0,
+  "ty_le_su_dung_huy_dong": 0.8114,
+  "he_so_bao_hiem": 1.235,
+  "ngay_lam_viec_moi_thang": 22.0
+ },
+ "theo_sprint": [
+  {
+   "sprint": "S1",
+   "tu": "2027-03-18",
+   "den": "2027-03-31",
+   "md": 55.25,
+   "md_huy_dong": 80.0,
+   "luong": 90284091
+  },
+  {
+   "sprint": "S2",
+   "tu": "2027-04-01",
+   "den": "2027-04-14",
+   "md": 74.0,
+   "md_huy_dong": 100.0,
+   "luong": 114988636
+  },
+  {
+   "sprint": "S3",
+   "tu": "2027-04-15",
+   "den": "2027-05-06",
+   "md": 131.25,
+   "md_huy_dong": 156.0,
+   "luong": 193420455
+  },
+  {
+   "sprint": "S4",
+   "tu": "2027-05-07",
+   "den": "2027-05-20",
+   "md": 112.5,
+   "md_huy_dong": 120.0,
+   "luong": 163522727
+  },
+  {
+   "sprint": "S5",
+   "tu": "2027-05-21",
+   "den": "2027-06-03",
+   "md": 89.0,
+   "md_huy_dong": 120.0,
+   "luong": 123090909
+  },
+  {
+   "sprint": "S6",
+   "tu": "2027-06-04",
+   "den": "2027-06-17",
+   "md": 87.75,
+   "md_huy_dong": 120.0,
+   "luong": 126704545
+  },
+  {
+   "sprint": "S7",
+   "tu": "2027-06-18",
+   "den": "2027-07-01",
+   "md": 60.75,
+   "md_huy_dong": 69.0,
+   "luong": 83352273
+  },
+  {
+   "sprint": "S8",
+   "tu": "2027-07-02",
+   "den": "2027-07-15",
+   "md": 48.0,
+   "md_huy_dong": 53.0,
+   "luong": 74943182
+  },
+  {
+   "sprint": "S9",
+   "tu": "2027-07-16",
+   "den": "2027-07-29",
+   "md": 76.25,
+   "md_huy_dong": 88.0,
+   "luong": 107136364
+  },
+  {
+   "sprint": "KT",
+   "tu": "2027-07-30",
+   "den": "2027-08-12",
+   "md": 2.0,
+   "md_huy_dong": 2.0,
+   "luong": 4636364
+  }
+ ],
+ "don_gia": [
+  {
+   "vai_tro": "LEAD",
+   "ten": "Trưởng nhóm, kiến trúc sư",
+   "luong_thang": 51000000,
+   "don_gia_ngay": 2318182
+  },
+  {
+   "vai_tro": "BACKEND",
+   "ten": "Kỹ sư backend",
+   "luong_thang": 30000000,
+   "don_gia_ngay": 1363636
+  },
+  {
+   "vai_tro": "FRONTEND",
+   "ten": "Kỹ sư frontend",
+   "luong_thang": 28000000,
+   "don_gia_ngay": 1272727
+  },
+  {
+   "vai_tro": "BAQA",
+   "ten": "Phân tích nghiệp vụ, kiểm thử",
+   "luong_thang": 27000000,
+   "don_gia_ngay": 1227273
+  },
+  {
+   "vai_tro": "SA_BA",
+   "ten": "Kiến trúc sư kiêm phân tích nghiệp vụ",
+   "luong_thang": 47000000,
+   "don_gia_ngay": 2136364
+  },
+  {
+   "vai_tro": "TESTER",
+   "ten": "Kỹ sư kiểm thử",
+   "luong_thang": 24000000,
+   "don_gia_ngay": 1090909
+  }
+ ],
+ "kiem_tra": {
+  "ket_luan": "dat",
+  "phat_hien": [],
+  "doi_chieu_excel": "Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (MD, ngày huy động, lương, thu nhập từng người, tổng theo sprint)."
+ }
+}

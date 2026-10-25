@@ -1,0 +1,18 @@
+{
+ "TOM_TAT": [
+  "Kết thúc kỳ {td#ky} ngày {td#ngay_bao_cao|ngay}, dự án ở trạng thái chung {td#trang_thai_chung}. SPI đạt {td#spi_hien_thi} ở mức {td#trang_thai_spi}, CPI theo công đạt {td#cpi_hien_thi} ở mức {td#trang_thai_cpi}, CPI theo chi phí thực đạt {td#cpi_thuc_hien_thi} ở mức {td#trang_thai_cpi_thuc}. Giá trị thu được lũy kế {td#EV_md|md2} MD so với kế hoạch {td#PV_md|md2} MD, công thực tế {td#AC_md|md2} MD, khối lượng hoàn thành đạt {td#ty_le_hoan_thanh|pt1} toàn dự án. Toàn bộ khối lượng của WBS đã hoàn thành, công thực tế vượt kế hoạch nhẹ do sửa lỗi và tối ưu hiệu năng trong các sprint kiểm thử.",
+  "Ngày hoàn thành dự báo {td#du_bao_hoan_thanh|ngay}, không muộn hơn ngày cut over {td#cut_over|ngay} theo phụ lục hợp đồng, TCPI {td#tcpi|so2}. Tỷ lệ sử dụng quỹ huy động đạt {td#ty_le_su_dung_quy|pt1}, còn {td#md_san_sang|md2} MD sẵn sàng không ghi công trên {td#md_huy_dong|md2} MD huy động. Chi phí khác đã chi lũy kế {td#AC_thuc_khac|tien} đồng, EAC theo chi phí thực {td#EAC_thuc|trieu} triệu đồng."
+ ],
+ "KET_QUA": [
+  "Trong giai đoạn Kết thúc hoàn thành báo cáo tổng kết, bài học kinh nghiệm và bàn giao hồ sơ 1.1.5, mốc {td#moc[ma=M8].ma} đạt ngày {td#moc[ma=M8].thuc_te|ngay}, đúng hạn. Nghĩa vụ bảo hành đã cam kết theo khoản B2 của dự toán được ghi nhận để theo dõi trong thời gian bảo hành.",
+  "Các mốc hợp đồng từ {td#moc[ma=M0].ma} đến {td#moc[ma=M8].ma} và mốc {td#moc[ma=M9].ma} của phụ lục hợp đồng đều đã đạt. Các rủi ro còn theo dõi được rà soát và đóng khi kết thúc dự án."
+ ],
+ "VAN_DE": [
+  "Sổ vấn đề có {td#van_de_tong_hop.tong|nguyen} vấn đề, đã đóng {td#van_de_tong_hop.so_dong|nguyen}, còn mở {td#van_de_tong_hop.so_mo|nguyen}.",
+  "Sổ không còn vấn đề mở, không có hành động quá hạn khi đóng dự án."
+ ],
+ "KY_TOI": [
+  "Sau ngày đóng dự án {td#ngay_dong_du_an|ngay}, nhà thầu thực hiện bảo hành theo hợp đồng, theo dõi thu các đợt thanh toán còn lại và lưu trữ hồ sơ dự án.",
+  "Nhóm đề nghị Chủ đầu tư xác nhận biên bản kết thúc dự án và đầu mối tiếp nhận yêu cầu bảo hành."
+ ]
+}

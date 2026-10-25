@@ -1,0 +1,157 @@
+{
+ "tai_lieu": "ket_qua/04_Master_schedule/Master_schedule.xlsx",
+ "buoc": "lich",
+ "phien_ban": "0.13",
+ "thoi_gian": "2026-10-24",
+ "ket_luan": "chua_dat",
+ "so_loi": 3,
+ "so_canh_bao": 8,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Có Gantt theo tuần đến hết giai đoạn Kết thúc, giai đoạn, sprint có mục tiêu và sản phẩm trình diễn, mốc gắn đợt thanh toán, tải nguồn lực, nhu cầu theo loại, cam kết và gói có Chủ đầu tư tham gia, hướng dẫn."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "177 dòng Lich_trinh khớp du_lieu/lich.json về ngày, MD, người, phụ thuộc, đường găng, sprint; tổng 657 MD, quỹ 796 MD, tỷ lệ 82,5%, nhu cầu theo loại khớp wbs.json. Lệch: trạng thái M6 (và M0) so với lich.json và hạn cut over của HSMT (MH03); cửa sổ Khởi động mâu thuẫn ngày gói (MH01)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Mốc M0-M8 dẫn về gói căn cứ, đợt thanh toán 1-5 khớp HSMT (tạm ứng, xác nhận đặc tả, chức năng chính và tích hợp, vận hành và nghiệm thu, bảo lãnh bảo hành); cam kết CK1-CK6 gắn gói."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Mốc có ngày, hạn, trạng thái bằng công thức; cut over 01/07/2027 không có hạn trên sheet Moc (MH03). Gói 2.5.3 không thể hoàn thành sản phẩm trong khoảng đã xếp (MH02)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Dự trữ 4 ngày đến cut over, gói ràng buộc cam kết không bắt đầu trước hạn, thời lượng phê duyệt 5 ngày và khoảng kiểm thử chấp nhận 8 ngày đủ. Một số phụ thuộc thiếu làm tăng rủi ro làm lại (MH04-MH07)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, chữ xanh dữ liệu, chữ đen công thức, tổng hợp bằng công thức, Gantt bằng định dạng có điều kiện. Còn tên tệp, khóa dữ liệu, ngày yyyy-mm-dd ở Huong_dan và Giai_doan (MH11)."
+  },
+  {
+   "tieu_chi": "Khả thi đến cut over",
+   "ket_qua": "dat",
+   "nhan_xet": "Kết thúc dự kiến 01/07/2027, đường găng 52 ngày, dự trữ 4 ngày; mọi phụ thuộc kết thúc trước ngày bắt đầu gói sau; không người nào quá 1 MD mỗi ngày. Cần xếp lại 2.5.3 sau kiểm thử chấp nhận (MH02)."
+  },
+  {
+   "tieu_chi": "Mốc khớp điều kiện thanh toán của HSMT",
+   "ket_qua": "dat",
+   "nhan_xet": "M0, M2, M3, M6, M7 gắn đúng đợt 1-5; M2, M3 trước hạn nhóm đặt (10/05, 17/06)."
+  },
+  {
+   "tieu_chi": "Tải nguồn lực không vượt",
+   "ket_qua": "dat",
+   "nhan_xet": "Không vượt quỹ sprint, trừ 2 MD giai đoạn Kết thúc của quản trị dự án đã được nhóm chấp nhận. S6, S7 dùng dưới 70% quỹ (MH10)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "giai_doan",
+   "vi_tri": "Sheet Giai_doan dòng Khởi động: 18/03/2027 | 24/03/2027 | 5 | 4 | 11 | ... | 1.1.1, 2.1.1, 3.1.1, 3.1.2; sheet Lich_trinh dòng 2.1.1 (01/04-05/04), 3.1.1 (29/03-07/04), 3.1.2 (08/04-14/04) cột Giai đoạn Khởi động",
+   "mo_ta": "Giai đoạn Khởi động khai báo đến 24/03/2027 nhưng ba trong bốn gói Khởi động bắt đầu và kết thúc sau ngày đó (đến 14/04/2027, cùng ngày mốc M1). Trong cùng tệp, sheet Giai_doan và Lich_trinh mâu thuẫn. lich.json ghi giai_doan.khoi_dong ket_thuc_goi 14/04/2027 nhưng Excel không thể hiện. Kế hoạch quản lý dự án (3.1.1) lập sau khi S1 đã bắt đầu thực hiện.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định một trong hai: (a) đổi dau_vao/du_an.json giai_doan.khoi_dong.den thành 2027-04-14 (hết M1); (b) giữ 24/03 và đổi giai_doan của 2.1.1, 3.1.1, 3.1.2 trong wbs_nhap.json hoặc xếp các gói này trong tuần đầu. Sau đó chạy lại lap_lich.py, xuat_gantt.py. Nên bổ sung kiểm tra L25 cho trường hợp gói nằm ngoài cửa sổ giai đoạn."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "kha_thi_phu_thuoc",
+   "vi_tri": "Sheet Lich_trinh dòng 2.5.3 Cập nhật tài liệu hướng dẫn sử dụng theo kết quả kiểm thử chấp nhận: 15/06/2027-17/06/2027, S6, phụ thuộc 2.5.1, 4.4.5; khoảng kiểm thử chấp nhận 18/06-29/06/2027 (sheet Cam_ket)",
+   "mo_ta": "Gói cần kết quả kiểm thử chấp nhận nhưng kết thúc trước khi kiểm thử chấp nhận bắt đầu. Lịch không khả thi với nội dung gói.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu WBS: thêm 2.4.12 (hoặc 1.4.11, 2.4.12, 3.4.13) vào phu_thuoc của 2.5.3, chạy lại kiem_tra_wbs.py và lap_lich.py; kiểm tra dự trữ đến cut over sau khi xếp lại (Nguyễn Thị Phương Liên còn quỹ S7)."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "loi",
+   "nhom": "moc_hop_dong",
+   "vi_tri": "Sheet Moc dòng M6 Hệ thống đưa vào vận hành (cut over) và được nghiệm thu: Ngày dự kiến 01/07/2027, Hạn trống, Trạng thái Không có hạn, Đợt thanh toán 4",
+   "mo_ta": "Cut over 01/07/2027 là thời hạn hợp đồng theo HSMT (cut_over 01/07/2027, phạt chậm 0,1%/ngày) và gắn đợt thanh toán 4, nhưng sheet Moc ghi Không có hạn. du_lieu/lich.json ghi trang_thai M6 là Đúng hạn, Excel tính lại thành Không có hạn, hai nguồn lệch nhau (M0 cũng vậy).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "lam_viec/lich/moc_nhap.json: ghi hạn M6 là 2027-07-01 (ngày cố định đồng thời là hạn), chạy lại lap_lich.py, xuat_gantt.py. Hoặc xuat_gantt.py điền hạn bằng ngày cố định khi can_cu là Ngày cố định."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "canh_bao",
+   "nhom": "phu_thuoc",
+   "vi_tri": "Sheet Lich_trinh dòng 4.4.1 Dịch vụ giả lập Main System và dữ liệu kiểm thử tích hợp: 11/06-16/06/2027, S6, phụ thuộc 4.2.7; dòng 4.4.3 Kiểm thử tích hợp với Main System trên môi trường thử: 20/05-28/05/2027",
+   "mo_ta": "Dịch vụ giả lập Main System được xếp sau kiểm thử tích hợp và sau sửa lỗi tích hợp 4.4.4, trong khi các luồng tích hợp 4.3.5-4.3.9 được lập trình từ 05/05 đến 19/05, trước khi có môi trường thử của Main System (CK2 20/05). Gói giả lập chỉ hữu ích khi có trước các gói này. Chưa chắc nhóm có ý dùng giả lập cho kiểm thử hồi quy sau này.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu WBS: thêm 4.4.1 vào phu_thuoc của 4.3.5-4.3.9 (hoặc của 4.4.3), lập lại lịch. Nếu giữ vị trí hiện tại thì đổi tên và sản phẩm gói cho đúng mục đích kiểm thử hồi quy."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "canh_bao",
+   "nhom": "phu_thuoc",
+   "vi_tri": "Sheet Lich_trinh dòng 4.3.4 Dịch vụ gửi thư điện tử qua máy chủ thư của Chủ đầu tư: 31/05-02/06/2027, S5; dòng 3.3.5 (19/04-26/04), 2.3.3 (27/04-04/05), 2.3.1 (06/05-12/05), 3.4.3 (06/05-18/05), 2.4.2 (19/05-27/05)",
+   "mo_ta": "Các dịch vụ đặt hàng có thư xác nhận, khôi phục mật khẩu, xác thực thư điện tử và các gói kiểm thử của chúng hoàn thành trước khi có dịch vụ gửi thư điện tử. 4.3.4 chỉ phụ thuộc 4.3.1, không gói nào phụ thuộc 4.3.4. Kiểm thử chức năng gửi thư phải làm lại hoặc bị bỏ sót.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu WBS: thêm 4.3.4 vào phu_thuoc của 2.3.1, 2.3.3, 3.3.5 (hoặc ít nhất của 2.4.2, 3.4.3), lập lại lịch."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "phu_thuoc",
+   "vi_tri": "Sheet Lich_trinh: 1.2.7 Thiết kế chi tiết tìm kiếm (08/04-14/04) trước 1.2.5 Đặc tả use case tìm kiếm (15/04-22/04); 1.3.2 lập trình tìm kiếm bắt đầu 19/04; 2.2.7 Thiết kế chi tiết đăng ký (08/04-14/04) trước khi 2.2.5 Đặc tả use case đăng ký xong (15/04); 3.2.11 (08/04-13/04) chồng 3.2.8 (06/04-09/04)",
+   "mo_ta": "Thiết kế chi tiết không phụ thuộc đặc tả use case của cùng chức năng (chỉ phụ thuộc đặc tả chức năng và cấu trúc Selling DB), nên được xếp trước hoặc chồng lên use case, lập trình 1.3.2 bắt đầu khi use case 1.2.5 chưa xong. Tăng rủi ro làm lại thiết kế.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Dữ liệu WBS: thêm 1.2.5 vào phu_thuoc của 1.2.7, 2.2.5 vào 2.2.7, 3.2.8 vào 3.2.11 (đối chiếu các cặp còn lại), lập lại lịch và kiểm tra dự trữ."
+  },
+  {
+   "ma": "MH07",
+   "muc_do": "canh_bao",
+   "nhom": "rui_ro_tich_hop",
+   "vi_tri": "Sheet Lich_trinh: 4.3.5-4.3.9 lập trình tích hợp 05/05-19/05/2027; 4.2.6 Chủ đầu tư xác nhận đặc tả giao diện tích hợp 11/05-17/05/2027",
+   "mo_ta": "Lập trình các luồng tích hợp bắt đầu trước khi Chủ đầu tư xác nhận đặc tả giao diện. Giả định ngoài phạm vi chỉ chấp nhận lập trình song song với xác nhận đặc tả 3.2.5, chưa nêu cho 4.2.6. Nếu Chủ đầu tư yêu cầu sửa đặc tả, 4.3.5-4.3.9 phải làm lại mà lịch chỉ còn 4 ngày dự trữ.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định: thêm 4.2.6 vào phu_thuoc của 4.3.5-4.3.9, hoặc bổ sung giả định chấp nhận làm song song kèm rủi ro trong sổ rủi ro (gắn 4.2.6)."
+  },
+  {
+   "ma": "MH08",
+   "muc_do": "canh_bao",
+   "nhom": "trinh_bay_giai_doan",
+   "vi_tri": "Sheet Lich_trinh dòng 1, 2, 3, 4 (mục mức 1 phân hệ) và 1.1, 2.1, 3.1, 4.1, cột Giai đoạn: Suốt dự án",
+   "mo_ta": "Mục mức 1 là phân hệ chức năng gồm cả gói Thực hiện, Khởi động, Kết thúc nhưng ghi Suốt dự án, cột Sprint để trống. Dòng 1 và 1.1 kéo đến 07/07/2027 (sau cut over) vẫn ghi Suốt dự án. Người đọc dễ hiểu nhầm cả phân hệ là việc quản lý dàn trải.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Script loi.phan_giai_doan hoặc xuat_gantt.py: mục cha ghi dải giai đoạn hoặc dải sprint của gói con (ví dụ Khởi động - Kết thúc, S1-S7), chỉ gói lá dàn trải ghi Suốt dự án."
+  },
+  {
+   "ma": "MH09",
+   "muc_do": "canh_bao",
+   "nhom": "moc_hop_dong",
+   "vi_tri": "Sheet Moc dòng M7 Nhà thầu nộp bảo lãnh bảo hành, bàn giao hồ sơ dự án: 01/07/2027, căn cứ 1.5.3, 3.5.4; dòng 1.1.5 Báo cáo tổng kết ... và bàn giao hồ sơ dự án: 02/07-07/07/2027",
+   "mo_ta": "Đợt thanh toán 5 theo HSMT chỉ gắn sự kiện nộp bảo lãnh bảo hành. Tên M7 thêm bàn giao hồ sơ dự án nhưng gói bàn giao hồ sơ dự án (1.1.5) thực hiện sau ngày mốc, trong giai đoạn Kết thúc.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "moc_nhap.json: đổi tên M7 thành Nhà thầu nộp bảo lãnh bảo hành, bàn giao mã nguồn và hệ thống (theo 1.5.3, 3.5.4), phần bàn giao hồ sơ dự án để ở M8."
+  },
+  {
+   "ma": "MH10",
+   "muc_do": "canh_bao",
+   "nhom": "su_dung_nguon_luc",
+   "vi_tri": "Sheet Sprint và Nhu_cau: S6 78/120 MD (65%), S7 77/120 MD (64%); sheet Tai_nguon: Vũ Đức Minh S6 2/10, Lê Quang Huy S6 2/10, Trần Bá Đạt KT 2 MD quỹ 0",
+   "mo_ta": "Tải nguồn lực không vượt quỹ ở sprint nào (đã kiểm từng người từng ngày không quá 1 MD). Tuy nhiên hai sprint cuối dùng dưới 70% quỹ huy động và hai người dưới 30% ở S6 (lớp A L07), trong khi các gói ở MH02, MH04, MH05 cần xếp lại. L28 của Trần Bá Đạt đã được nhóm chấp nhận (du_an.json).",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xem xét rút ngắn huy động S6, S7 của người dùng dưới ngưỡng hoặc dùng quỹ dư cho các gói xếp lại; quyết định ghi vào giao việc."
+  },
+  {
+   "ma": "MH11",
+   "muc_do": "canh_bao",
+   "nhom": "van_phong",
+   "vi_tri": "Sheet Tong_quan B10 Kết thúc dự kiến (không tính gói dàn trải) 01/07/2027; sheet Giai_doan G4 du_an.json giai_doan.khoi_dong; sheet Huong_dan A10 Nguồn dữ liệu: du_lieu/lich.json, tạo lúc 2026-10-24 22:29:35",
+   "mo_ta": "Nhãn Kết thúc dự kiến chưa nói rõ đã loại gói giai đoạn Kết thúc (dự án đóng 15/07/2027). Tài liệu nộp còn tên tệp, tên khóa dữ liệu và ngày dạng yyyy-mm-dd, trái van_phong.md.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "xuat_gantt.py: đổi nhãn thành Hoàn thành giai đoạn Thực hiện (không tính gói dàn trải và gói Kết thúc), thêm dòng Ngày đóng dự án 15/07/2027; cột Căn cứ ghi Quyết định của nhóm về giai đoạn; bỏ đường dẫn tệp và ghi ngày dd/mm/yyyy."
+  }
+ ]
+}

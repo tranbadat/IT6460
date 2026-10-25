@@ -25,7 +25,7 @@
  "chien_luoc": {"ne_tranh": "Né tránh", "giam_nhe": "Giảm nhẹ", "chuyen_giao": "Chuyển giao", "chap_nhan_chu_dong": "Chấp nhận chủ động", "chap_nhan_thu_dong": "Chấp nhận thụ động", "khai_thac": "Khai thác", "tang_cuong": "Tăng cường", "chia_se": "Chia sẻ"},
  "chien_luoc_theo_loai": {"de_doa": ["ne_tranh", "giam_nhe", "chuyen_giao", "chap_nhan_chu_dong", "chap_nhan_thu_dong"], "co_hoi": ["khai_thac", "tang_cuong", "chia_se", "chap_nhan_chu_dong", "chap_nhan_thu_dong"]},
  "tien_them_cach_tinh": {
-  "chenh_luong_bo_sung": "ty_le x tổng (quỹ MD huy động x lương tham chiếu tháng x hệ số bảo hiểm / ngày làm việc mỗi tháng) của các vị trí bổ sung",
+  "chenh_luong_bo_sung": "ty_le x tổng (MD cơ sở x lương tham chiếu tháng x hệ số bảo hiểm / ngày làm việc mỗi tháng) của các vị trí bổ sung; MD cơ sở là MD công việc giao khi trả lương theo công sức, quỹ MD huy động khi trả theo huy động (khai co_so để chọn khác)",
   "chi_phi_von": "tổng tỷ lệ các đợt thanh toán bị chậm x giá chào x lai_suat_nam x so_thang / 12"
  },
  "tu_tong_hop_cam": ["emv", "sổ rủi ro", "tổng tác động"],

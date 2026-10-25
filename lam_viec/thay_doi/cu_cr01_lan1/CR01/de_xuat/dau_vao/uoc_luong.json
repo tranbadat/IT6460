@@ -1,0 +1,87 @@
+{
+ "_huong_dan": "Căn cứ ước lượng khối lượng do nhóm cung cấp. Agent lập WBS phân rã gói lá sao cho tổng từng nhóm mức 1 khớp tong_theo_nhom (sai lệch trong dung_sai_nhom) và tổng toàn bộ bằng tong_md. Mỗi nhóm mức 1 ghi can_cu_uoc_luong dẫn về các bước dưới đây. Đổi phương pháp hoặc số liệu thì sửa tệp này rồi chạy lại từ bước wbs.",
+ "phuong_phap": "Ước lượng theo danh mục chức năng: phân loại từng chức năng theo thư viện định mức (giờ công chuẩn cho giải pháp, phát triển, kiểm thử đơn vị, kiểm thử), trừ phần tái sử dụng, cộng các đầu việc phi chức năng, sau đó đối chiếu với WBS và với hợp đồng tương tự",
+ "loai_uoc_luong": "Ước lượng sơ bộ giai đoạn dự thầu",
+ "khoang_sai_so": {
+  "duoi": -0.15,
+  "tren": 0.3
+ },
+ "so_chuc_nang": 106,
+ "so_dau_viec_phi_chuc_nang": 25,
+ "cac_buoc": [
+  {
+   "buoc": 1,
+   "noi_dung": "106 chức năng gắn mã WBS (khách hàng, sản phẩm, đơn hàng, tích hợp, nền tảng dùng chung, công cụ kiểm thử, triển khai) được phân loại theo thư viện định mức, nỗ lực trước hiệu chỉnh",
+   "md": 573.6
+  },
+  {
+   "buoc": 2,
+   "noi_dung": "Trừ phần tái sử dụng theo tỷ lệ của từng chức năng (thư viện, thành phần dùng chung). Sau hiệu chỉnh gồm giải pháp 119,6 MD, phát triển 285,4 MD, kiểm thử 145,2 MD. Ba thành phần cộng 550,2 MD, chênh 0,1 MD so với tổng 550,3 MD do làm tròn từng thành phần trong bảng tính của nhóm",
+   "_nguon_ghi_chu_lam_tron": "Quyết định của nhóm ngày 25/10/2026: giữ tổng bước 2 là 550,3 MD theo số liệu nhóm cung cấp, ghi chú chênh lệch 0,1 MD do làm tròn, không đổi tổng 657 MD",
+   "md": 550.3,
+   "thanh_phan": {
+    "giai_phap": 119.6,
+    "phat_trien": 285.4,
+    "kiem_thu": 145.2
+   }
+  },
+  {
+   "buoc": 3,
+   "noi_dung": "25 đầu việc phi chức năng: quản trị dự án, bảo đảm chất lượng, rà soát mã, kiểm thử tích hợp, nghiệm thu, hồ sơ kỹ thuật, triển khai, kiểm thử hiệu năng, rà soát an toàn thông tin, giám sát, đào tạo, hỗ trợ kiểm thử chấp nhận và vận hành thử, nghiên cứu tích hợp",
+   "md": 106.7
+  },
+  {
+   "buoc": 4,
+   "noi_dung": "Yêu cầu thay đổi CR01 (Bán hàng trên sàn thương mại điện tử) theo 01/2027/PL-ABCW: 20 gói mới, 3 gói tăng khối lượng, ước lượng theo từng gói trong phiếu",
+   "md": 76.0,
+   "ma_cr": "CR01",
+   "phu_luc": "01/2027/PL-ABCW"
+  }
+ ],
+ "tong_md": 733.0,
+ "_nguon_ten_nhom": "Tên phân hệ theo quyết định của nhóm ngày 24/10/2026. Phạm vi phân hệ quản lý sản phẩm là tìm kiếm và hiển thị sản phẩm (Product Search theo RFP), không gồm quản trị danh mục sản phẩm của Main System. Ánh xạ sang tên RFP chỉ nêu trong phần mô tả hoặc truy vết của WBS, không dùng làm tên phân hệ",
+ "tong_theo_nhom": {
+  "1": {
+   "ten": "Phân hệ quản lý sản phẩm",
+   "md": 152,
+   "md_rieng": 95,
+   "md_chung_phan_bo": 57.2
+  },
+  "2": {
+   "ten": "Phân hệ quản lý khách hàng (thành viên)",
+   "md": 147.0,
+   "md_rieng": 91,
+   "md_chung_phan_bo": 54.8
+  },
+  "3": {
+   "ten": "Phân hệ quản lý đơn hàng (đặt hàng)",
+   "md": 207,
+   "md_rieng": 129,
+   "md_chung_phan_bo": 77.7
+  },
+  "4": {
+   "ten": "Phân hệ tích hợp hệ thống",
+   "md": 152,
+   "md_rieng": 95,
+   "md_chung_phan_bo": 57.2
+  },
+  "5": {
+   "ten": "Bán hàng trên sàn thương mại điện tử",
+   "md": 75.0
+  }
+ },
+ "dung_sai_nhom": 0.1,
+ "nguon": "Bảng tính chi phí và báo giá của nhóm (106 chức năng, 25 đầu việc phi chức năng), tổng hợp tại HSDT của nhóm mục III.2 bảng 20 và III.5 bảng 26. Nhóm quyết định ngày 17/10/2026 dùng tổng 657 MD theo phương pháp này.",
+ "_ghi_chu": "Tài liệu nhóm ghi ba thành phần giải pháp, phát triển, kiểm thử ở bước 1 nhưng ba số này cộng ra 550,2 MD, tức kết quả bước 2 (mâu thuẫn M06), nên tệp này đặt ba thành phần ở bước 2. Mã nhóm theo WBS của bộ skill. Tài liệu nhóm đánh số phân hệ khách hàng là 3 (91 MD) và sản phẩm là 4 (95 MD); ở đây đã đổi về mã phân hệ của WBS skill. Ngày 24/10/2026 nhóm đổi cấu trúc thành 4 phân hệ: tổng riêng của phân hệ theo tài liệu nhóm, phần đầu việc chung (quản lý 60, phân tích thiết kế chung 66, kiểm thử hệ thống 71, triển khai 50 MD) chia theo tỷ lệ khối lượng riêng.",
+ "phan_bo_dau_viec_chung": {
+  "dau_viec": {
+   "quan_ly_du_an": 60,
+   "phan_tich_thiet_ke_chung": 66,
+   "kiem_thu_he_thong_va_van_hanh": 71,
+   "trien_khai_chuyen_giao": 50
+  },
+  "tong": 247,
+  "cach_phan_bo": "Theo tỷ lệ khối lượng riêng của từng phân hệ (sản phẩm 95, khách hàng 91, đơn hàng 129, tích hợp 95 MD)",
+  "_nguon": "Quyết định của nhóm ngày 24/10/2026: WBS chỉ gồm 4 phân hệ, đầu việc chung phân bổ vào 4 phân hệ, không tách nhóm riêng; yêu cầu thay đổi được duyệt thành WBS riêng."
+ }
+}

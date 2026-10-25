@@ -1,0 +1,129 @@
+{
+ "_huong_dan": "Thông tin chung của dự án. Các skill đọc file này cho bìa tài liệu, lịch làm việc, ngưỡng cảnh báo. Ngày viết dạng yyyy-mm-dd.",
+ "ten_du_an": "Xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
+ "khach_hang": "Công ty Cổ phần ABC Wear",
+ "don_vi_thuc_hien": "PM_26I_02",
+ "mon_hoc": "Quản trị dự án và Quản lý thay đổi",
+ "ma_nhom": "PM_26I_02",
+ "giang_vien": "Vũ Thị Hương Giang",
+ "nguoi_lap": "Trần Bá Đạt",
+ "ngay_bat_dau": "2027-03-18",
+ "ngay_cut_over": "2027-07-27",
+ "ngay_nghi": [
+  "2027-04-16",
+  "2027-04-30",
+  "2027-05-03"
+ ],
+ "_nguon_ngay_nghi": "Giỗ Tổ Hùng Vương 16/4/2027, 30/4/2027, nghỉ bù 1/5 vào 3/5/2027 (dự kiến, VnEconomy). Cập nhật khi có thông báo chính thức.",
+ "sprint": {
+  "so_ngay_lam_viec": 10,
+  "gop_phan_du_vao_sprint_cuoi": true,
+  "tien_to": "S",
+  "sprint_nhan_phan_du": 3,
+  "_ghi_chu": "sprint_nhan_phan_du: số thứ tự sprint nhận phần ngày làm việc dư khi tổng số ngày không chia hết cho so_ngay_lam_viec. Để trống thì dồn vào sprint cuối (gop_phan_du_vao_sprint_cuoi). Nhóm quyết định.",
+  "cut_over_goc": "2027-07-01"
+ },
+ "gio_moi_md": 8,
+ "chu_ky_bao_cao": "sprint",
+ "nguong_canh_bao": {
+  "spi_vang": 0.95,
+  "spi_do": 0.85,
+  "cpi_vang": 0.95,
+  "cpi_do": 0.85
+ },
+ "kho_luu_tru": "git, thư mục dự án này",
+ "_ghi_chu_don_vi": "Khi nha_thau.json có ten_viet_tat (hoặc ten), các script dùng giá trị đó thay cho don_vi_thuc_hien.",
+ "thoi_gian_phe_duyet_tai_lieu_ngay": 5,
+ "uat": {
+  "tu": "2027-07-14",
+  "den": "2027-07-23"
+ },
+ "cam_ket_chu_dau_tu": [
+  {
+   "ma": "CK1",
+   "noi_dung": "Tài liệu đặc tả giao diện trao đổi dữ liệu của Main System",
+   "han": "2027-04-14"
+  },
+  {
+   "ma": "CK2",
+   "noi_dung": "Môi trường thử của Main System",
+   "han": "2027-05-20"
+  },
+  {
+   "ma": "CK3",
+   "noi_dung": "Dữ liệu sản phẩm, tồn kho phục vụ chuyển đổi theo định dạng thống nhất (nhà thầu đề nghị, HSMT không quy định thời hạn)",
+   "han": "2027-06-10"
+  },
+  {
+   "ma": "CK4",
+   "noi_dung": "Bộ nhận diện thương hiệu, hình ảnh và nội dung sản phẩm (nhà thầu đề nghị, HSMT không quy định thời hạn)",
+   "han": "2027-07-06"
+  },
+  {
+   "ma": "CK5",
+   "noi_dung": "Chủ sản phẩm có thẩm quyền quyết định yêu cầu nghiệp vụ, làm rõ yêu cầu 2-3 buổi mỗi tuần trong sprint 1-3, dự demo cuối mỗi sprint",
+   "han": null
+  },
+  {
+   "ma": "CK6",
+   "noi_dung": "Người dùng nghiệp vụ tham gia kiểm thử chấp nhận trong khoảng 18/06 đến 29/06/2027",
+   "han": "2027-06-29"
+  },
+  {
+   "ma": "CK7",
+   "noi_dung": "Hạ tầng vận hành chính thức gồm máy chủ, đường truyền và phần mềm nền (nhà thầu đề nghị bàn giao sớm hơn thời hạn chậm nhất 10/06/2027 của HSMT)",
+   "han": "2027-05-20"
+  },
+  {
+   "ma": "CK8",
+   "noi_dung": "Chủ đầu tư hoàn thành thay đổi phía Main System phục vụ trao đổi dữ liệu với hệ thống mới (phân định tại mục 3.5 Chương V của HSMT)",
+   "han": "2027-05-20",
+   "_nguon": "Quyết định của nhóm ngày 25/10/2026: thêm cam kết theo HSMT (phân định dòng 7), ánh xạ gói kiểm thử tích hợp 4.4.3"
+  },
+  {
+   "ma": "CK9",
+   "noi_dung": "Phụ lục hợp đồng 01/2027/PL-ABCW điều chỉnh hợp đồng theo yêu cầu thay đổi CR01 có hiệu lực, bắt đầu phần thay đổi",
+   "han": "2027-06-01"
+  }
+ ],
+ "_quy_tac_ngay_ban_giao": "Quyết định của nhóm ngày 25/10/2026: đầu vào của Chủ đầu tư có hạn cam kết được bàn giao chậm nhất 9 giờ 00 ngày hạn, gói phụ thuộc bắt đầu ngay trong ngày hạn (không thêm ngày đệm); bàn giao sau giờ này được ghi nhận là chậm một ngày và xử lý theo rủi ro liên quan (RR02, RR14, RR16). Nội dung này được nêu trong đề nghị của nhà thầu tại HSDT và biên bản họp khởi động",
+ "_nguon_cam_ket": "Theo đề nghị của nhà thầu trong HSDT của nhóm (II.1, II.11). Lịch phải xếp các gói phụ thuộc không sớm hơn hạn cam kết.",
+ "nguong_su_dung_quy_toi_thieu": 0.8,
+ "_ghi_chu_nguong": "Tỷ lệ MD công việc trên quỹ huy động tối thiểu; thấp hơn thì bước hsdt dừng. Nhóm có thể đổi.",
+ "phuong_an_du_tru_thoi_gian": [
+  "chap_nhan_bao_cdt"
+ ],
+ "von_luu_dong_du_kien": 600000000,
+ "_nguon_von_luu_dong": "Quyết định của nhóm ngày 25/10/2026: làm tròn lên từ mức âm lớn nhất của dòng tiền lũy kế (cuối S7) sau khi đưa chi phí môi trường, công cụ của khoản B vào dòng chi, theo nguyên tắc của quyết định 18/10/2026 (3)",
+ "_quyet_dinh_18_10": "Quyết định của nhóm ngày 18/10/2026: (1) dự trữ thời gian 4 ngày giữ nguyên, chấp nhận phần EMV thời gian vượt dự trữ, theo dõi hằng tuần các rủi ro trên đường găng và báo Chủ đầu tư khi dự trữ còn dưới 2 ngày; (2) dự phòng rủi ro giữ 50.000.000 đồng trong khoản B, phần EMV vượt dự phòng được bù từ khoản còn lại sau lương theo quy tắc dùng dự phòng dùng chung; (3) vốn lưu động chuẩn bị 500.000.000 đồng, làm tròn lên từ mức âm lớn nhất của dòng tiền lũy kế, giả định chi phí vốn 10%/năm của RR19 giữ nguyên; (4) hạn các mốc M1 14/04, M2 10/05, M3 và M4 17/06/2027 giữ nguyên, cut over 01/07/2027 cố định.",
+ "giai_doan": {
+  "khoi_dong": {
+   "tu": "2027-03-18",
+   "den": "2027-04-14"
+  },
+  "ket_thuc": {
+   "so_ngay_lam_viec": 10
+  }
+ },
+ "_ghi_chu_giai_doan": "Quyết định của nhóm ngày 24/10/2026: giai đoạn Khởi động từ 18/03/2027 đến khi Chủ đầu tư xác nhận kế hoạch quản lý dự án (mốc M1, 14/04/2027), trùng S1 và S2 nhưng tách khỏi mục tiêu sprint, với điều kiện vẫn đáp ứng yêu cầu RFP; Thực hiện S1 đến S7; Kết thúc 10 ngày làm việc sau cut over đến khi đóng dự án. WBS gồm 4 phân hệ, gói quản lý dự án phân bổ trong từng phân hệ ghi giai đoạn tường minh, không gắn sprint phát triển.",
+ "_ghi_chu_ket_thuc": "Giai đoạn Kết thúc: quản trị dự án (Trần Bá Đạt) thực hiện các gói đóng dự án sau cut over, trả lương theo công sức nên không cần quỹ huy động riêng (cảnh báo L28 được chấp nhận).",
+ "_quyet_dinh_25_10": "Quyết định của nhóm ngày 25/10/2026 (agent áp dụng theo ủy quyền của nhóm): (1) huy động D1, D3 từ S1 (thanh_vien.json) để lấy lại dự trữ đến cut over, đạt 3 ngày làm việc; (2) mức tác động RR02, RR03, RR09 chấm theo mức suy ra với dự trữ mới; (3) lập trình tích hợp 4.3.5-4.3.9 song song với bước Chủ đầu tư xác nhận 4.2.6, ghi giả định WBS và biện pháp RR02; (4) RR13 tính trên MD công việc theo cách trả lương; (5) khoản B tách thành môi trường, công cụ 60 triệu, bảo hành 40 triệu, dự phòng 50 triệu, chi phí môi trường, công cụ đưa vào dòng tiền (don_gia.json), vốn lưu động làm tròn lên theo mức âm lớn nhất; (6) ngưỡng lỗi chung và dấu hiệu RR03, RR10 cùng đếm lỗi nghiêm trọng hoặc cao đang mở; (7) thời hạn phản hồi bảo hành mức Cao 4 giờ, Khác 8 giờ (chi_tieu_ky_thuat.json); (8) Mẫu 06B: thông tin định danh cá nhân do nhóm bổ sung khi nộp E-HSDT; (9) vị trí bổ sung ghi trình độ, kinh nghiệm tối thiểu yêu cầu khi huy động, số năm kinh nghiệm của quản trị dự án ghi theo kinh nghiệm chứng minh được (thanh_vien.json); (10) giữ tên phân hệ theo quyết định của nhóm ngày 24/10/2026, phạm vi phân hệ quản lý sản phẩm là tìm kiếm và hiển thị sản phẩm (Product Search theo RFP), ánh xạ tên RFP chỉ nêu trong mô tả, truy vết (uoc_luong.json); (11) giữ 550,3 MD ở bước 2 của ước lượng, ghi chú chênh 0,1 MD do làm tròn; (12) phần quản lý dự án phân bổ cho nhóm 4 vượt mục 4.1 được giải trình ở gói 4.5.5, 4.5.6; (13) giữ quỹ huy động ở sprint có mức sử dụng thấp, chấp nhận L28 cho gói đóng dự án; (14) người có thẩm quyền của Chủ đầu tư ghi theo chức danh trong HSMT, bổ sung bên liên quan phía Chủ đầu tư (phan_cong_nhap.json). Bổ sung cùng ngày sau kiểm tra lớp B lượt 2: (15) cấu hình tối thiểu hạ tầng vận hành và công nghệ đề xuất của nhà thầu (chi_tieu_ky_thuat.json ha_tang_toi_thieu, cong_nghe); (16) thời hạn phản hồi bảo hành mức Nghiêm trọng tính liên tục 24 giờ, mức Cao và Khác tính trong giờ hành chính; (17) vị trí bổ sung là nhân sự của nhà thầu, điều động nội bộ trước ngày hợp đồng có hiệu lực (RR04); (18) thêm cam kết CK8 hoàn thành thay đổi phía Main System 20/05/2027 theo HSMT, gắn gói 4.4.3; (19) đầu vào có hạn bàn giao chậm nhất 9 giờ 00 ngày hạn, không thêm ngày đệm (_quy_tac_ngay_ban_giao); (20) giữ trình tự 2.2.2 với 4.2.2 và 2.4.5 với 2.3.7, có giải trình trong giả định WBS, vì thêm phụ thuộc làm mốc M3, M4 trễ; (21) người chịu trách nhiệm đặc tả, kiểm thử tham dự ban kiểm soát thay đổi, ba bộ phận của Chủ đầu tư là C trong RACI các mục liên quan; (22) quy tắc không in đậm áp dụng cho tài liệu Word, tệp Excel giữ dòng tiêu đề in đậm để dễ đọc; (23) phần còn lại của giá chào sau lương kế hoạch và khoản B gồm khoản C và phần khoản A chưa dùng cho lương; (24) phụ lục bằng chứng prompt và skill xuất lại vào cuối dự án. Bổ sung sau kiểm tra lớp B lượt 3: (25) không thêm phụ thuộc mới cho 1.5.2 và các gói khắc phục lỗi kiểm thử chấp nhận, ghi giả định trình tự trong WBS (1.5.2 sau khi các gói khắc phục lỗi và hồi quy hoàn thành theo lịch, lỗi cuối khoảng kiểm thử chấp nhận xử lý bằng quỹ huy động chưa giao ở S7 và hỗ trợ tăng cường); (26) mốc M7 không tính là mốc cut over khi tính EMV thời gian vì không làm lùi ngày đưa hệ thống vào vận hành; (27) HSDT có bảng sơ đồ tổ chức (vai trò, người, quan hệ báo cáo) lập từ dữ liệu phân công; (28) tài liệu cài đặt là sản phẩm của gói 1.5.3, không đổi MD; (29) ghi chú lịch sử phiên bản giữ mã nội bộ để truy vết.",
+ "_quyet_dinh_24_10_ha_tang": "Quyết định của nhóm ngày 24/10/2026: trong HSDT nhà thầu đề nghị Chủ đầu tư bàn giao hạ tầng vận hành chính thức trước 20/05/2027 (CK7) để dựng môi trường vận hành (gói 4.5.1) theo lịch; HSMT quy định chậm nhất 10/06/2027 nên đây là đề nghị, bàn giao chậm thì xử lý theo RR16.",
+ "dieu_chinh_theo_cr": [
+  {
+   "ma_cr": "CR01",
+   "phu_luc": "01/2027/PL-ABCW",
+   "ngay": "2027-05-27",
+   "ngay_cut_over_truoc": "2027-07-01",
+   "ngay_cut_over_moi": "2027-07-27",
+   "uat_truoc": {
+    "tu": "2027-06-18",
+    "den": "2027-06-29"
+   },
+   "uat_moi": {
+    "tu": "2027-07-14",
+    "den": "2027-07-23"
+   }
+  }
+ ]
+}

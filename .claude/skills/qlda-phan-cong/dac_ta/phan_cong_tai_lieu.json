@@ -77,7 +77,7 @@
    }
   },
   {
-   "doan": "Nhóm gồm thành viên nhóm và các vị trí bổ sung. Tổng quỹ thời gian {lich#tong_quy|md} MD, khối lượng giao theo master schedule {lich#tong_md|md} MD. Phần quỹ chưa giao chủ yếu thuộc các vị trí bổ sung được huy động sớm hơn nhu cầu, việc điều chỉnh huy động thuộc quyết định của nhóm."
+   "doan": "Nhóm gồm thành viên nhóm và các vị trí bổ sung. Tổng quỹ thời gian {lich#tong_quy|md} MD, khối lượng giao theo master schedule {lich#tong_md|md} MD. Phần quỹ chưa giao thuộc cả thành viên nhóm và vị trí bổ sung, tập trung ở các sprint đầu và các sprint cuối, được giữ theo quyết định của nhóm vì lương trả theo công sức."
   },
   {
    "h1": "3. Nhân sự chủ chốt theo HSMT"
@@ -118,7 +118,7 @@
    "h1": "4. Ma trận RACI"
   },
   {
-   "doan": "R: thực hiện. A: chịu trách nhiệm cuối và phê duyệt trong nhóm. C: được tham vấn. I: được thông báo. Cột Phê duyệt bên ngoài ghi bên ngoài xác nhận hoặc phê duyệt hạng mục theo hợp đồng, ví dụ Chủ đầu tư xác nhận đặc tả, kiểm thử vận hành và nghiệm thu."
+   "doan": "R: thực hiện. A: chịu trách nhiệm cuối và phê duyệt trong nhóm. C: được tham vấn. I: được thông báo. Cột Phê duyệt bên ngoài ghi bên ngoài xác nhận hoặc phê duyệt kết quả của hạng mục theo hợp đồng, ví dụ Chủ đầu tư xác nhận đặc tả, kiểm thử vận hành và nghiệm thu."
   },
   {
    "bang_san": "pcb#raci"

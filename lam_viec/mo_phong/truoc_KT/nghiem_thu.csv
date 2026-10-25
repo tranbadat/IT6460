@@ -1,0 +1,19 @@
+ma,tieu_chi,hang_muc,ket_qua,ngay,nguoi_xac_nhan,ghi_chu
+NT01,"R05 Thời gian phản hồi các thao tác cốt lõi không quá 2 giây, phân vị 95 (KT02)",10,Đạt,2027-07-21,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản kiểm thử hiệu năng bản phát hành kiểm thử chấp nhận 4.4.7
+NT02,R05 Chịu tải 500 người dùng đồng thời (KT03),10,Đạt,2027-07-21,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản kiểm thử hiệu năng bản phát hành kiểm thử chấp nhận 4.4.7
+NT03,"R04 Hoạt động liên tục với hai nút ứng dụng và cân bằng tải, chuyển đổi dự phòng đạt (KT01)",11,Đạt,2027-07-21,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Kết quả diễn tập chuyển đổi dự phòng 4.4.8 và kiểm tra lại trên môi trường vận hành
+NT04,R04 An toàn dữ liệu khi vận hành liên tục: rà soát lỗ hổng theo OWASP Top 10 và kiểm thử lại sau khắc phục (KT04),10,Đạt,2027-07-21,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch","Biên bản rà soát an toàn thông tin 4.4.7, không còn lỗ hổng mức cao"
+NT05,"R04 Sao lưu toàn phần hằng ngày và sao lưu nhật ký giao dịch theo giờ, khôi phục thử đạt (KT05)",11,Đạt,2027-07-22,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Kết quả khôi phục thử trên môi trường vận hành
+NT06,R03 Khách hàng thao tác dễ dàng theo kết quả đánh giá khả năng sử dụng và kiểm thử chấp nhận,10,Đạt,2027-07-27,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Kết quả đánh giá khả năng sử dụng 2.4.9 và biên bản kiểm thử chấp nhận
+NT07,R06 Chức năng tìm kiếm sản phẩm cho khách hàng truy cập qua internet theo đặc tả đã xác nhận,5,Đạt,2027-07-27,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản kiểm thử chấp nhận luồng tìm kiếm 1.4.11
+NT08,R07 Chức năng quản lý thành viên theo đặc tả đã xác nhận,6,Đạt,2027-07-27,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản kiểm thử chấp nhận luồng thành viên 2.4.12
+NT09,R08 Chức năng đặt hàng theo đặc tả đã xác nhận,7,Đạt,2027-07-27,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản kiểm thử vận hành luồng đặt hàng 3.4.13
+NT10,R09 Cơ sở dữ liệu bán hàng Selling DB vận hành trên môi trường vận hành,8,Đạt,2027-07-27,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản kiểm thử vận hành 3.4.13 và chuyển đổi dữ liệu thử 4.5.3
+NT11,"R10 Tích hợp với Main System: đồng bộ sản phẩm, tồn kho, chuyển đơn hàng và nhận trạng thái",9,Đạt,2027-07-27,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản kiểm thử vận hành 3.4.13
+NT12,R11 Nghiệp vụ vận chuyển nhận thông tin đơn hàng từ Main System và cập nhật trạng thái giao hàng,9,Đạt,2027-07-27,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản kiểm thử vận hành luồng giao hàng 3.4.13
+NT13,R46 Quy trình vận hành mới chạy được trên hệ thống trong kiểm thử vận hành,2,Đạt,2027-07-27,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản kiểm thử vận hành 3.4.13
+NT14,R13 Hệ thống được xây dựng từ phân tích đến kiểm thử vận hành theo phạm vi hợp đồng,11,Đạt,2027-07-29,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản bàn giao ngày 29/07/2027
+NT15,R12 Hệ thống đưa vào vận hành đúng ngày cut over theo phụ lục hợp đồng,13,Đạt,2027-07-29,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản bàn giao ngày 29/07/2027
+NT16,R44 Bàn giao đặc tả hệ thống gồm cấu hình cơ sở dữ liệu và chức năng,1,Đạt,2027-07-29,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản bàn giao tài liệu ngày 29/07/2027
+NT17,R47 Bàn giao cấu trúc cơ sở dữ liệu Selling DB,3,Đạt,2027-07-29,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản bàn giao tài liệu ngày 29/07/2027
+NT18,R48 Bàn giao sơ đồ phân cấp menu và giao diện ưu tiên,4,Đạt,2027-07-29,"Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",Biên bản bàn giao tài liệu ngày 29/07/2027

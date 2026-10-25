@@ -92,6 +92,23 @@ def cau_hinh():
     return loi.doc_json(CAU_HINH)
 
 
+HD_HIEN_TAI = {}  # huy động bổ sung của sprint đang sinh, {(thành viên, sprint): MD}, mo_phong_sprint.py gán trước khi tạo ngữ cảnh
+
+
+def huy_dong_them():
+    """Huy động bổ sung thực tế {(thành viên, sprint): MD}: biến cố huy_dong trong kịch bản đã lưu ở du_lieu/mo_phong.json
+    và của sprint đang sinh (HD_HIEN_TAI). Từ 1.0.5."""
+    out = {}
+    for x in loi.doc_json('du_lieu/mo_phong.json', {}).get('sprint', []):
+        for e in (x.get('kich_ban_noi_dung') or {}).get('bien_co', []):
+            if e.get('loai') == 'huy_dong' and x.get('ma') not in {k[1] for k in HD_HIEN_TAI}:
+                k = (e.get('thanh_vien'), x.get('ma'))
+                out[k] = out.get(k, 0.0) + float(e.get('so_md') or 0)
+    for k, m in HD_HIEN_TAI.items():
+        out[k] = out.get(k, 0.0) + m
+    return out
+
+
 class NguCanh:
     """Kế hoạch hiện hành và danh mục dùng để sinh và kiểm tra dữ liệu mô phỏng."""
 
@@ -122,6 +139,9 @@ class NguCanh:
             self.quy[k] = self.quy.get(k, 0.0) + float(x.get('quy') if x.get('quy') is not None else x.get('md') or 0)
             if x['sprint'] == KY_KET_THUC:
                 md_kt[x['thanh_vien']] = md_kt.get(x['thanh_vien'], 0.0) + float(x.get('md') or 0)
+        self.quy_ke_hoach = dict(self.quy)
+        for k, m in huy_dong_them().items():  # huy động bổ sung thực tế theo kịch bản (từ 1.0.5)
+            self.quy[k] = self.quy.get(k, 0.0) + m
         for p, m in md_kt.items():  # lịch ghi quỹ kỳ KT bằng 0 (L28 của lap_lich.py): người có việc Kết thúc được làm đủ ngày của kỳ
             if m > 0 and kt:
                 self.quy[(p, KY_KET_THUC)] = max(self.quy.get((p, KY_KET_THUC), 0.0), kt['so_ngay'] * float(self.tv.get(p, {}).get('ty_le', 1.0)))

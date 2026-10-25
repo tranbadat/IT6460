@@ -1,0 +1,68 @@
+{
+ "tai_lieu": "ket_qua/02_HSDT/HSDT.docx",
+ "phien_ban": "0.2",
+ "dac_ta": "hsdt",
+ "vong": 2,
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 2,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ các mục bắt buộc, 5 tiêu chí kỹ thuật đúng thứ tự."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "Hạng A đã sửa đúng rui_ro.json (RR01, RR02, RR04, RR10, RR13). Giá, tổng 11A, mốc, cut over, huy động khớp nguồn. M2 theo giải trình: ngày trình 06/05 (S3), hạn xác nhận 10/05 (S4) đúng lich.json."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Truy vết về WBS, mốc, RR, KT, CK. Mẫu 06A khớp tài liệu phân công. Thời hạn đánh giá CR 3 ngày truy được về qlda-change/references/phan_loai.json."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Chỉ tiêu KT01 đến KT05 có cách kiểm chứng, có điều kiện cut over."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Rủi ro chính có dấu hiệu, ứng phó, người phụ trách, quy trình thay đổi theo Mục 17.1(c)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Đã bỏ chuỗi chấm phẩy ở mục 10, thứ tự bảng và câu dẫn mục 13 hợp lý."
+  }
+ ],
+ "ghi_nhan_giai_trinh": [
+  "MH02 giữ nguyên: đúng nguồn",
+  "MH03 giữ nguyên theo quyết định nhóm: chuyển thành cảnh báo ghi nhận",
+  "MH05 không sửa: nguyên văn ý thứ nhất Mẫu 5A, chấp nhận",
+  "MH06 chờ nhóm bổ sung: còn cảnh báo",
+  "MH07 không sửa: có nguồn phan_loai.json"
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH03",
+   "muc_do": "canh_bao",
+   "nhom": "chi_phi",
+   "vi_tri": "Mục 17, đơn giá theo người-tháng",
+   "mo_ta": "Có thể suy ra phần chi phí chung và lợi nhuận. Nhóm đã quyết định giữ, ghi nhận.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Không cần sửa theo giải trình"
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "canh_bao",
+   "nhom": "nhan_su",
+   "vi_tri": "Mẫu 06B: Theo hồ sơ nhân sự trên Hệ thống",
+   "mo_ta": "Thiếu căn cước, người liên lạc, số năm làm việc. Chờ nhóm bổ sung thanh_vien.json.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "dau_vao/thanh_vien.json"
+  }
+ ]
+}

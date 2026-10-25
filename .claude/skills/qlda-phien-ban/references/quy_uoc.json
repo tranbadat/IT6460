@@ -14,7 +14,7 @@
   {
    "truong_hop": "Lập đường cơ sở",
    "phien_ban": "1.0, 2.0",
-   "giai_thich": "Tăng số chính khi tài liệu được đưa vào đường cơ sở (ký hợp đồng, phê duyệt kế hoạch, nghiệm thu)"
+   "giai_thich": "Tăng số chính khi tài liệu được đưa vào đường cơ sở: BL1 khi ký hợp đồng, các đường cơ sở tiếp theo khi yêu cầu thay đổi được phê duyệt và khi nghiệm thu"
   },
   {
    "truong_hop": "Thay đổi sau đường cơ sở",
@@ -33,7 +33,7 @@
   },
   {
    "ma": "Đã duyệt",
-   "y_nghia": "Trưởng nhóm hoặc chủ đầu tư phê duyệt"
+   "y_nghia": "Người đại diện của nhà thầu hoặc Chủ đầu tư phê duyệt theo thẩm quyền"
   },
   {
    "ma": "Đường cơ sở",
@@ -79,7 +79,7 @@
   },
   {
    "noi_dung": "Đường cơ sở",
-   "quy_dinh": "BL1 lập khi ký hợp đồng, chỉ một lần. BL2 và các đường cơ sở sau lập khi yêu cầu thay đổi được phê duyệt và các tài liệu bị ảnh hưởng đã cập nhật, ghi mã CR làm căn cứ. Phiên bản đường cơ sở không bị ghi đè hay đổi trạng thái"
+   "quy_dinh": "BL1 lập khi ký hợp đồng, chỉ một lần. BL2 và các đường cơ sở sau lập khi yêu cầu thay đổi được phê duyệt và các tài liệu bị ảnh hưởng đã cập nhật (ghi mã CR làm căn cứ), và khi nghiệm thu. Phiên bản đường cơ sở không bị ghi đè hay đổi trạng thái"
   }
  ]
 }

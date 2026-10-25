@@ -3,51 +3,78 @@
   {
    "loai": "PM",
    "ten": "Quản lý dự án",
-   "md": 49.0,
-   "mm": 2.45,
+   "md": 52.0,
+   "mm": 2.6,
    "don_gia_thang": 55000000,
-   "thanh_tien": 134750000
+   "thanh_tien": 143000000
   },
   {
    "loai": "BA",
    "ten": "Phân tích nghiệp vụ, kiến trúc",
-   "md": 90.0,
-   "mm": 4.5,
+   "md": 103.0,
+   "mm": 5.15,
    "don_gia_thang": 43000000,
-   "thanh_tien": 193500000
+   "thanh_tien": 221450000
   },
   {
    "loai": "QA",
    "ten": "Kiểm thử, bảo đảm chất lượng",
-   "md": 160.0,
-   "mm": 8.0,
+   "md": 177.0,
+   "mm": 8.85,
    "don_gia_thang": 40000000,
-   "thanh_tien": 320000000
+   "thanh_tien": 354000000
   },
   {
    "loai": "DEV",
    "ten": "Phát triển phần mềm",
-   "md": 318.0,
-   "mm": 15.9,
+   "md": 359.0,
+   "mm": 17.95,
    "don_gia_thang": 42000000,
-   "thanh_tien": 667800000
+   "thanh_tien": 753900000
   },
   {
    "loai": "DEVOPS",
    "ten": "Triển khai và vận hành",
-   "md": 40.0,
-   "mm": 2.0,
+   "md": 42.0,
+   "mm": 2.1,
    "don_gia_thang": 52000000,
-   "thanh_tien": 104000000
+   "thanh_tien": 109200000
   }
  ],
- "A": 1420050000,
+ "A": 1581550000,
  "chi_phi_khac": [
   {
-   "ma": "B",
-   "ten": "Môi trường, công cụ, bảo hành 12 tháng và dự phòng",
-   "so_tien": 150000000,
-   "can_cu": "Ước tính của nhà thầu"
+   "ma": "B1",
+   "ten": "Môi trường phát triển, kiểm thử và công cụ",
+   "so_tien": 60000000,
+   "can_cu": "Ước tính của nhà thầu",
+   "phan_bo_chi": {
+    "S1": 15000000,
+    "S2": 7500000,
+    "S3": 7500000,
+    "S4": 7500000,
+    "S5": 7500000,
+    "S6": 7500000,
+    "S7": 7500000
+   },
+   "_nguon": "Quyết định của nhóm ngày 25/10/2026: tách khoản B 150.000.000 đồng thành ba khoản mục, tổng không đổi, và xác định kỳ chi để đưa vào dòng tiền; chi thiết lập và bản quyền công cụ ở S1, phí môi trường chia đều S2 đến S7"
+  },
+  {
+   "ma": "B2",
+   "ten": "Bảo hành 12 tháng và hỗ trợ tăng cường sau cut over",
+   "so_tien": 40000000,
+   "can_cu": "Ước tính của nhà thầu",
+   "phan_bo_chi": {
+    "Sau cut over": 40000000
+   },
+   "_nguon": "Quyết định của nhóm ngày 25/10/2026: tách khoản B 150.000.000 đồng thành ba khoản mục, tổng không đổi, và xác định kỳ chi để đưa vào dòng tiền"
+  },
+  {
+   "ma": "B3",
+   "ten": "Dự phòng rủi ro",
+   "so_tien": 50000000,
+   "can_cu": "Kế hoạch quản lý rủi ro, quyết định của nhóm ngày 18/10/2026",
+   "_nguon": "Quyết định của nhóm ngày 25/10/2026: tách khoản B 150.000.000 đồng thành ba khoản mục, tổng không đổi, và xác định kỳ chi để đưa vào dòng tiền; dự phòng chỉ chi khi rủi ro xảy ra, không đưa vào dòng chi"
   }
  ],
  "B": 150000000,
@@ -55,41 +82,105 @@
  "cach_tinh_du_phong": "nam_trong_chi_phi_khac",
  "du_phong_hien_co": 50000000,
  "du_phong_ca_khoan_b": false,
- "tong_emv_rui_ro": 146583750,
- "chi_phi_da_biet": 1570050000,
- "gia_chao": 1750000000,
- "gia_truoc_thue": 1750000000,
+ "tong_emv_rui_ro": 115413014,
+ "tong_emv_rui_ro_ban_dau": 150693014,
+ "so_rui_ro_da_xay_ra": 1,
+ "so_rui_ro_da_dong": 3,
+ "tac_dong_thuc_te_tien": 3150000,
+ "tac_dong_thuc_te_md": 1.5,
+ "rui_ro_da_xay_ra": [
+  {
+   "ma": "RR02",
+   "ten": "Tài liệu giao diện hoặc môi trường thử của Main System đến muộn hơn cam kết hoặc không đủ thông tin",
+   "trang_thai": "Đã xảy ra",
+   "ngay_xay_ra": "2027-04-19",
+   "ngay_dong": "",
+   "tac_dong_thuc_te_md": 1.0,
+   "tac_dong_thuc_te_tien": 2100000,
+   "emv_tien": 12600000
+  },
+  {
+   "ma": "RR01",
+   "ten": "Đặc tả yêu cầu được xác nhận chậm hoặc thay đổi nhiều sau khi xác nhận",
+   "trang_thai": "Đã đóng",
+   "ngay_xay_ra": "",
+   "ngay_dong": "2027-05-27",
+   "tac_dong_thuc_te_md": 0.0,
+   "tac_dong_thuc_te_tien": 0,
+   "emv_tien": 10080000
+  },
+  {
+   "ma": "RR04",
+   "ten": "Vị trí bổ sung không có mặt đúng sprint huy động đã thống nhất",
+   "trang_thai": "Đã đóng",
+   "ngay_xay_ra": "2027-04-01",
+   "ngay_dong": "2027-04-19",
+   "tac_dong_thuc_te_md": 0.5,
+   "tac_dong_thuc_te_tien": 1050000,
+   "emv_tien": 12600000
+  },
+  {
+   "ma": "RR21",
+   "ten": "Chủ đầu tư bàn giao môi trường thử của Main System sớm hơn 20/05/2027",
+   "trang_thai": "Đã đóng",
+   "ngay_xay_ra": "",
+   "ngay_dong": "2027-05-27",
+   "tac_dong_thuc_te_md": 0.0,
+   "tac_dong_thuc_te_tien": 0,
+   "emv_tien": 1200000
+  }
+ ],
+ "chi_phi_da_biet": 1731550000,
+ "gia_chao": 1949024682,
+ "gia_truoc_thue": 1949024682,
  "thue": 0,
  "thue_suat": 0.0,
  "can_cu_thue": "Dịch vụ phần mềm thuộc đối tượng không chịu thuế GTGT (Luật Thuế GTGT số 48/2024/QH15, khoản 21 Điều 5; Nghị định số 181/2025/NĐ-CP, khoản 13 Điều 4)",
- "C": 179950000,
- "ty_le_C": 0.1028,
+ "C": 217474682,
+ "ty_le_C": 0.1116,
+ "ty_le_C_toi_thieu": 0.05,
  "gia_goi_thau": 2000000000,
  "thap_hon_goi_thau": 250000000,
  "ty_le_thap_hon": 0.125,
+ "gia_chao_ban_dau": 1750000000,
+ "gia_dieu_chinh_phu_luc": 199024682,
+ "gia_hop_dong_sau_phu_luc": 1949024682,
+ "doan_phu_luc": [
+  "Giá chào trên là giá hợp đồng sau 1 phụ lục hợp đồng (01/2027/PL-ABCW theo CR01), gồm giá dự thầu ban đầu {cp#gia_chao_ban_dau|tien} đồng và giá điều chỉnh {cp#gia_dieu_chinh_phu_luc|tien} đồng. Giá gói thầu là trần của giá dự thầu ban đầu, không áp cho giá sau phụ lục."
+ ],
+ "phu_luc_hop_dong": [
+  {
+   "ma_cr": "CR01",
+   "so": "01/2027/PL-ABCW",
+   "ngay": "2027-05-27",
+   "gia_dieu_chinh": 199024682,
+   "gia_hop_dong_truoc": 1750000000,
+   "gia_hop_dong_sau": 1949024682
+  }
+ ],
  "do_nhay_thue": {
   "thue_suat": 0.1,
-  "gia_truoc_thue": 1590909091,
-  "C": 20859091,
-  "ty_le_C": 0.0131,
-  "C_sau_luong": 255066582,
-  "ty_le_C_sau_luong": 0.1603
+  "gia_truoc_thue": 1771840620,
+  "C": 40290620,
+  "ty_le_C": 0.0227,
+  "C_sau_luong": 294001179,
+  "ty_le_C_sau_luong": 0.1659
  },
- "C_sau_luong": 414157491,
- "ty_le_C_sau_luong": 0.2367,
+ "C_sau_luong": 471185241,
+ "ty_le_C_sau_luong": 0.2418,
  "cach_tra_luong": "cong_suc",
  "cach_tra_luong_ten": "trả theo công sức (MD công việc)",
  "co_so_luong": "MD công việc (kế hoạch là MD giao, thực tế là MD nhật ký)",
- "luong_binh_quan_md": 1804935,
- "luong_binh_quan_md_huy_dong": 1804897,
- "nguong_chiu_dung_md": 229.5,
- "md_hoa_von": 786.76,
- "md_huy_dong_hoa_von": 786.78,
- "ty_le_su_dung": 0.8254,
- "ty_le_su_dung_hoa_von": 0.8351,
+ "luong_binh_quan_md": 1811514,
+ "luong_binh_quan_md_huy_dong": 1806317,
+ "nguong_chiu_dung_md": 260.1,
+ "md_hoa_von": 873.05,
+ "md_huy_dong_hoa_von": 875.57,
+ "ty_le_su_dung": 0.8073,
+ "ty_le_su_dung_hoa_von": 0.8372,
  "thoi_han_thanh_toan_ngay": 15,
- "tong_md": 657.0,
- "tong_mm": 32.85,
+ "tong_md": 733.0,
+ "tong_mm": 36.65,
  "md_moi_mm": 20.0,
  "doi_chieu_nguoi": [
   {
@@ -99,13 +190,13 @@
    "vai_tro": "LEAD",
    "luong": 51000000.0,
    "don_gia_ngay": 2862955,
-   "md_huy_dong": 73.0,
-   "md_giao": 63.33,
-   "md_tinh_luong": 63.33,
-   "md_san_sang": 9.67,
-   "chi_phi": 181310911,
-   "chi_phi_huy_dong": 208995682,
-   "chi_phi_cong_viec": 181310911
+   "md_huy_dong": 86.0,
+   "md_giao": 66.33,
+   "md_tinh_luong": 66.33,
+   "md_san_sang": 19.67,
+   "chi_phi": 189899775,
+   "chi_phi_huy_dong": 246214091,
+   "chi_phi_cong_viec": 189899775
   },
   {
    "id": "tuananh",
@@ -114,13 +205,13 @@
    "vai_tro": "BACKEND",
    "luong": 30000000.0,
    "don_gia_ngay": 1684091,
-   "md_huy_dong": 73.0,
-   "md_giao": 59.0,
-   "md_tinh_luong": 59.0,
-   "md_san_sang": 14.0,
-   "chi_phi": 99361364,
-   "chi_phi_huy_dong": 122938636,
-   "chi_phi_cong_viec": 99361364
+   "md_huy_dong": 69.0,
+   "md_giao": 50.0,
+   "md_tinh_luong": 50.0,
+   "md_san_sang": 19.0,
+   "chi_phi": 84204546,
+   "chi_phi_huy_dong": 116202273,
+   "chi_phi_cong_viec": 84204545
   },
   {
    "id": "minh",
@@ -129,13 +220,13 @@
    "vai_tro": "FRONTEND",
    "luong": 28000000.0,
    "don_gia_ngay": 1571818,
-   "md_huy_dong": 73.0,
-   "md_giao": 50.0,
-   "md_tinh_luong": 50.0,
-   "md_san_sang": 23.0,
-   "chi_phi": 78590909,
-   "chi_phi_huy_dong": 114742727,
-   "chi_phi_cong_viec": 78590909
+   "md_huy_dong": 71.0,
+   "md_giao": 58.0,
+   "md_tinh_luong": 58.0,
+   "md_san_sang": 13.0,
+   "chi_phi": 91165455,
+   "chi_phi_huy_dong": 111599091,
+   "chi_phi_cong_viec": 91165455
   },
   {
    "id": "toan",
@@ -144,13 +235,13 @@
    "vai_tro": "BACKEND",
    "luong": 30000000.0,
    "don_gia_ngay": 1684091,
-   "md_huy_dong": 73.0,
-   "md_giao": 59.0,
-   "md_tinh_luong": 59.0,
-   "md_san_sang": 14.0,
-   "chi_phi": 99361364,
-   "chi_phi_huy_dong": 122938636,
-   "chi_phi_cong_viec": 99361364
+   "md_huy_dong": 76.0,
+   "md_giao": 66.5,
+   "md_tinh_luong": 66.5,
+   "md_san_sang": 9.5,
+   "chi_phi": 111992045,
+   "chi_phi_huy_dong": 127990909,
+   "chi_phi_cong_viec": 111992045
   },
   {
    "id": "lien",
@@ -159,13 +250,13 @@
    "vai_tro": "BAQA",
    "luong": 27000000.0,
    "don_gia_ngay": 1515682,
-   "md_huy_dong": 73.0,
-   "md_giao": 68.0,
-   "md_tinh_luong": 68.0,
-   "md_san_sang": 5.0,
-   "chi_phi": 103066364,
-   "chi_phi_huy_dong": 110644773,
-   "chi_phi_cong_viec": 103066364
+   "md_huy_dong": 83.0,
+   "md_giao": 72.5,
+   "md_tinh_luong": 72.5,
+   "md_san_sang": 10.5,
+   "chi_phi": 109886932,
+   "chi_phi_huy_dong": 125801591,
+   "chi_phi_cong_viec": 109886932
   },
   {
    "id": "K",
@@ -174,13 +265,13 @@
    "vai_tro": "SA_BA",
    "luong": 47000000.0,
    "don_gia_ngay": 2638409,
-   "md_huy_dong": 73.0,
-   "md_giao": 55.67,
-   "md_tinh_luong": 55.67,
-   "md_san_sang": 17.33,
-   "chi_phi": 146880234,
-   "chi_phi_huy_dong": 192603864,
-   "chi_phi_cong_viec": 146880234
+   "md_huy_dong": 80.0,
+   "md_giao": 70.67,
+   "md_tinh_luong": 70.67,
+   "md_san_sang": 9.33,
+   "chi_phi": 186456371,
+   "chi_phi_huy_dong": 211072727,
+   "chi_phi_cong_viec": 186456370
   },
   {
    "id": "D1",
@@ -189,13 +280,13 @@
    "vai_tro": "BACKEND",
    "luong": 30000000.0,
    "don_gia_ngay": 1684091,
-   "md_huy_dong": 63.0,
-   "md_giao": 51.0,
-   "md_tinh_luong": 51.0,
-   "md_san_sang": 12.0,
-   "chi_phi": 85888636,
-   "chi_phi_huy_dong": 106097727,
-   "chi_phi_cong_viec": 85888636
+   "md_huy_dong": 85.0,
+   "md_giao": 67.5,
+   "md_tinh_luong": 67.5,
+   "md_san_sang": 17.5,
+   "chi_phi": 113676136,
+   "chi_phi_huy_dong": 143147727,
+   "chi_phi_cong_viec": 113676136
   },
   {
    "id": "D2",
@@ -204,13 +295,13 @@
    "vai_tro": "BACKEND",
    "luong": 30000000.0,
    "don_gia_ngay": 1684091,
-   "md_huy_dong": 63.0,
-   "md_giao": 53.0,
-   "md_tinh_luong": 53.0,
-   "md_san_sang": 10.0,
-   "chi_phi": 89256818,
-   "chi_phi_huy_dong": 106097727,
-   "chi_phi_cong_viec": 89256818
+   "md_huy_dong": 77.0,
+   "md_giao": 64.0,
+   "md_tinh_luong": 64.0,
+   "md_san_sang": 13.0,
+   "chi_phi": 107781818,
+   "chi_phi_huy_dong": 129675000,
+   "chi_phi_cong_viec": 107781818
   },
   {
    "id": "D3",
@@ -219,13 +310,13 @@
    "vai_tro": "BACKEND",
    "luong": 30000000.0,
    "don_gia_ngay": 1684091,
-   "md_huy_dong": 63.0,
-   "md_giao": 56.0,
-   "md_tinh_luong": 56.0,
-   "md_san_sang": 7.0,
-   "chi_phi": 94309091,
-   "chi_phi_huy_dong": 106097727,
-   "chi_phi_cong_viec": 94309091
+   "md_huy_dong": 86.0,
+   "md_giao": 59.5,
+   "md_tinh_luong": 59.5,
+   "md_san_sang": 26.5,
+   "chi_phi": 100203409,
+   "chi_phi_huy_dong": 144831818,
+   "chi_phi_cong_viec": 100203409
   },
   {
    "id": "Q1",
@@ -234,13 +325,13 @@
    "vai_tro": "TESTER",
    "luong": 24000000.0,
    "don_gia_ngay": 1347273,
-   "md_huy_dong": 63.0,
-   "md_giao": 45.0,
-   "md_tinh_luong": 45.0,
-   "md_san_sang": 18.0,
-   "chi_phi": 60627273,
-   "chi_phi_huy_dong": 84878182,
-   "chi_phi_cong_viec": 60627273
+   "md_huy_dong": 70.0,
+   "md_giao": 49.5,
+   "md_tinh_luong": 49.5,
+   "md_san_sang": 20.5,
+   "chi_phi": 66690000,
+   "chi_phi_huy_dong": 94309091,
+   "chi_phi_cong_viec": 66690000
   },
   {
    "id": "Q2",
@@ -249,13 +340,13 @@
    "vai_tro": "TESTER",
    "luong": 24000000.0,
    "don_gia_ngay": 1347273,
-   "md_huy_dong": 53.0,
-   "md_giao": 48.0,
-   "md_tinh_luong": 48.0,
-   "md_san_sang": 5.0,
-   "chi_phi": 64669091,
-   "chi_phi_huy_dong": 71405455,
-   "chi_phi_cong_viec": 64669091
+   "md_huy_dong": 63.0,
+   "md_giao": 50.0,
+   "md_tinh_luong": 50.0,
+   "md_san_sang": 13.0,
+   "chi_phi": 67363636,
+   "chi_phi_huy_dong": 84878182,
+   "chi_phi_cong_viec": 67363636
   },
   {
    "id": "D4",
@@ -264,23 +355,23 @@
    "vai_tro": "BACKEND",
    "luong": 30000000.0,
    "don_gia_ngay": 1684091,
-   "md_huy_dong": 53.0,
-   "md_giao": 49.0,
-   "md_tinh_luong": 49.0,
-   "md_san_sang": 4.0,
-   "chi_phi": 82520455,
-   "chi_phi_huy_dong": 89256818,
-   "chi_phi_cong_viec": 82520455
+   "md_huy_dong": 62.0,
+   "md_giao": 58.5,
+   "md_tinh_luong": 58.5,
+   "md_san_sang": 3.5,
+   "chi_phi": 98519318,
+   "chi_phi_huy_dong": 104413636,
+   "chi_phi_cong_viec": 98519318
   }
  ],
- "tong_chi_phi_nguoi": 1185842510,
- "tong_md_huy_dong": 796.0,
- "tong_md_giao": 657.0,
- "tong_md_tinh_luong": 657.0,
- "tong_md_san_sang": 139.0,
- "tong_chi_phi_huy_dong": 1436697954,
- "tong_chi_phi_cong_viec": 1185842510,
- "ghi_chu_huy_dong": "Theo cách trả lương đã khai báo, ngày sẵn sàng không ghi công (139 MD) không tính lương. Lương của toàn bộ ngày huy động (1.436.697.954 đồng) chỉ dùng để theo dõi năng lực.",
+ "tong_chi_phi_nguoi": 1327839441,
+ "tong_md_huy_dong": 908.0,
+ "tong_md_giao": 733.0,
+ "tong_md_tinh_luong": 733.0,
+ "tong_md_san_sang": 175.0,
+ "tong_chi_phi_huy_dong": 1640136136,
+ "tong_chi_phi_cong_viec": 1327839439,
+ "ghi_chu_huy_dong": "Theo cách trả lương đã khai báo, ngày sẵn sàng không ghi công (175 MD) không tính lương. Lương của toàn bộ ngày huy động (1.640.136.136 đồng) chỉ dùng để theo dõi năng lực.",
  "quy_tac_du_phong": {
   "cot": [
    "Nội dung",
@@ -304,6 +395,10 @@
     "Quản trị dự án phê duyệt khoản dùng cho rủi ro do thành viên khác phụ trách. Người đại diện ký hợp đồng của nhà thầu phê duyệt khoản dùng cho rủi ro do quản trị dự án phụ trách và khoản làm giảm phần chi phí chung và lợi nhuận"
    ],
    [
+    "Phần vượt dự phòng",
+    "Khi tổng chi phí ứng phó vượt dự phòng hiện có, phần vượt được bù từ phần còn lại của giá chào sau khi trừ lương kế hoạch và khoản B theo quyết định của nhóm ngày 18/10/2026, phần này gồm khoản C và phần khoản A chưa dùng cho lương theo quyết định của nhóm ngày 25/10/2026, do người đại diện ký hợp đồng của nhà thầu phê duyệt"
+   ],
+   [
     "Ghi nhận",
     "Ghi vào sổ yêu cầu thay đổi kèm mã rủi ro, cập nhật sổ rủi ro, dự toán và lịch theo ma trận lan truyền"
    ],
@@ -313,69 +408,50 @@
    ]
   ]
  },
- "chenh_lech_A_nguoi": 234207490,
- "ty_le_chenh_lech_A": 0.1649,
- "nang_suat_hoa_von": 0.8351,
+ "chenh_lech_A_nguoi": 253710559,
+ "ty_le_chenh_lech_A": 0.1604,
+ "nang_suat_hoa_von": 0.8396,
  "he_so_bao_hiem": 1.235,
  "ngay_lam_viec_moi_thang": 22.0,
- "nguon_luong": "Mức trung vị theo vị trí, báo cáo lương ITviec 2025-2026; mức SA_BA, TESTER do nhóm xác định trong bảng quyết toán lương",
+ "nguon_luong": "Mức trung vị theo vị trí, báo cáo lương ITviec 2025-2026, riêng mức của kiến trúc sư kiêm phân tích nghiệp vụ và kỹ sư kiểm thử do nhóm xác định trong bảng quyết toán lương",
  "nguon_don_gia": "Đơn giá trọn gói theo người-tháng của nhà thầu, đã gồm lương, bảo hiểm và chi phí quản lý trực tiếp của nhân sự",
+ "doan_mau_11a": "Hồ sơ dự thầu đã khóa từ đường cơ sở hợp đồng, Mẫu 11A của hồ sơ dự thầu giữ giá dự thầu ban đầu 1.750.000.000 đồng. Bảng phân bổ ở mục 6 là phân bổ giá hợp đồng hiện hành theo hạng mục Mẫu 01A, dùng để theo dõi khối lượng và thanh toán, không thay thế Mẫu 11A. Giá hợp đồng chỉ điều chỉnh qua phụ lục hợp đồng. Phần việc theo CR01 (01/2027/PL-ABCW) được gán vào hạng mục 1, 7, 9, 10, 11, 12, 13 của Mẫu 01A theo khai báo của gói công việc.",
+ "nhan_gia_chao": "Giá hợp đồng sau phụ lục",
  "theo_wbs": [
   {
    "ma": "1",
-   "ten": "Quản lý dự án",
-   "md": 60.0,
-   "chi_phi_a": 157700000,
-   "gia_phan_bo": 194341748
+   "ten": "Phân hệ quản lý sản phẩm",
+   "md": 151.0,
+   "chi_phi_a": 327600000,
+   "gia_phan_bo": 403718179
   },
   {
    "ma": "2",
-   "ten": "Phân tích và thiết kế chung",
-   "md": 66.0,
-   "chi_phi_a": 141850000,
-   "gia_phan_bo": 174808986
+   "ten": "Phân hệ quản lý khách hàng (thành viên)",
+   "md": 147.5,
+   "chi_phi_a": 314975000,
+   "gia_phan_bo": 388159748
   },
   {
    "ma": "3",
-   "ten": "Phân hệ tìm kiếm và hiển thị sản phẩm (Product Search)",
-   "md": 95.0,
-   "chi_phi_a": 197650000,
-   "gia_phan_bo": 243574170
+   "ten": "Phân hệ quản lý đơn hàng (đặt hàng)",
+   "md": 207.5,
+   "chi_phi_a": 445075000,
+   "gia_phan_bo": 548488609
   },
   {
    "ma": "4",
-   "ten": "Phân hệ thành viên (Member Administration)",
-   "md": 91.0,
-   "chi_phi_a": 189150000,
-   "gia_phan_bo": 233099187
+   "ten": "Phân hệ tích hợp hệ thống",
+   "md": 152.0,
+   "chi_phi_a": 334400000,
+   "gia_phan_bo": 412098166
   },
   {
    "ma": "5",
-   "ten": "Phân hệ đặt hàng (Order)",
-   "md": 129.0,
-   "chi_phi_a": 268200000,
-   "gia_phan_bo": 330516531
-  },
-  {
-   "ma": "6",
-   "ten": "Cơ sở dữ liệu bán hàng và tích hợp hệ thống",
-   "md": 93.0,
-   "chi_phi_a": 194200000,
-   "gia_phan_bo": 239322559
-  },
-  {
-   "ma": "7",
-   "ten": "Kiểm thử hệ thống và kiểm thử vận hành",
-   "md": 73.0,
-   "chi_phi_a": 148800000,
-   "gia_phan_bo": 183373825
-  },
-  {
-   "ma": "8",
-   "ten": "Triển khai và chuyển giao",
-   "md": 50.0,
-   "chi_phi_a": 122500000,
-   "gia_phan_bo": 150962994
+   "ten": "Bán hàng trên sàn thương mại điện tử",
+   "md": 75.0,
+   "chi_phi_a": 159500000,
+   "gia_phan_bo": 196559980
   }
  ],
  "mau_11a": [
@@ -384,8 +460,8 @@
    "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "chi_phi_a": 111958654,
-   "thanh_tien": 137972356
+   "chi_phi_a": 141708654,
+   "thanh_tien": 174634798
   },
   {
    "stt": 2,
@@ -425,22 +501,22 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "chi_phi_a": 206531154,
-   "thanh_tien": 254518869
+   "thanh_tien": 254518868
   },
   {
    "stt": 7,
    "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "chi_phi_a": 279281154,
-   "thanh_tien": 344172402
+   "chi_phi_a": 310781154,
+   "thanh_tien": 382991457
   },
   {
    "stt": 8,
    "danh_muc": "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "chi_phi_a": 28931153,
+   "chi_phi_a": 28931154,
    "thanh_tien": 35653336
   },
   {
@@ -448,40 +524,40 @@
    "danh_muc": "Tích hợp với hệ thống chính (Main System)",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "chi_phi_a": 122331154,
-   "thanh_tien": 150754917
+   "chi_phi_a": 168531154,
+   "thanh_tien": 207689531
   },
   {
    "stt": 10,
    "danh_muc": "Kiểm thử hệ thống",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "chi_phi_a": 101521154,
-   "thanh_tien": 125109693
+   "chi_phi_a": 133821153,
+   "thanh_tien": 164914629
   },
   {
    "stt": 11,
    "danh_muc": "Kiểm thử vận hành (Operation Test)",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "chi_phi_a": 113121154,
-   "thanh_tien": 139404964
+   "chi_phi_a": 121121153,
+   "thanh_tien": 149263772
   },
   {
    "stt": 12,
    "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "chi_phi_a": 56521153,
-   "thanh_tien": 69653899
+   "chi_phi_a": 65071154,
+   "thanh_tien": 80190500
   },
   {
    "stt": 13,
    "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
    "khoi_luong": "1",
    "don_vi": "Gói",
-   "chi_phi_a": 107121154,
-   "thanh_tien": 132010856
+   "chi_phi_a": 112321154,
+   "thanh_tien": 138419083
   }
  ],
  "thanh_toan": [
@@ -492,7 +568,10 @@
    "ngay_su_kien": "2027-03-18",
    "ngay": "2027-04-02",
    "sprint": "S2",
-   "so_tien": 262500000
+   "so_tien": 262500000,
+   "co_so": 1750000000,
+   "co_so_ten": "Giá hợp đồng ban đầu",
+   "ma_cr": ""
   },
   {
    "dot": 2,
@@ -501,108 +580,162 @@
    "ngay_su_kien": "2027-05-06",
    "ngay": "2027-05-21",
    "sprint": "S5",
-   "so_tien": 437500000
+   "so_tien": 437500000,
+   "co_so": 1750000000,
+   "co_so_ten": "Giá hợp đồng ban đầu",
+   "ma_cr": ""
   },
   {
    "dot": 3,
    "phan_tram": 30,
    "su_kien": "hoàn thành các chức năng chính của hệ thống và tích hợp với các hệ thống liên quan",
-   "ngay_su_kien": "2027-06-16",
-   "ngay": "2027-07-01",
-   "sprint": "S7",
-   "so_tien": 525000000
+   "ngay_su_kien": "2027-07-08",
+   "ngay": "2027-07-23",
+   "sprint": "S9",
+   "so_tien": 525000000,
+   "co_so": 1750000000,
+   "co_so_ten": "Giá hợp đồng ban đầu",
+   "ma_cr": ""
   },
   {
    "dot": 4,
    "phan_tram": 25,
    "su_kien": "hệ thống đưa vào vận hành và được nghiệm thu",
-   "ngay_su_kien": "2027-07-01",
-   "ngay": "2027-07-16",
+   "ngay_su_kien": "2027-07-29",
+   "ngay": "2027-08-13",
    "sprint": "Sau cut over",
-   "so_tien": 437500000
+   "so_tien": 437500000,
+   "co_so": 1750000000,
+   "co_so_ten": "Giá hợp đồng ban đầu",
+   "ma_cr": ""
   },
   {
    "dot": 5,
    "phan_tram": 5,
    "su_kien": "nhà thầu nộp bảo lãnh bảo hành",
-   "ngay_su_kien": "2027-07-01",
-   "ngay": "2027-07-16",
+   "ngay_su_kien": "2027-07-29",
+   "ngay": "2027-08-13",
    "sprint": "Sau cut over",
-   "so_tien": 87500000
+   "so_tien": 87500000,
+   "co_so": 1750000000,
+   "co_so_ten": "Giá hợp đồng ban đầu",
+   "ma_cr": ""
+  },
+  {
+   "dot": 6,
+   "phan_tram": 100.0,
+   "su_kien": "Chủ đầu tư nghiệm thu phần bán hàng trên sàn thương mại điện tử theo yêu cầu thay đổi CR01",
+   "ngay_su_kien": "2027-07-27",
+   "ngay": "2027-08-11",
+   "sprint": "Sau cut over",
+   "so_tien": 199024682,
+   "co_so": 199024682,
+   "co_so_ten": "Giá điều chỉnh CR01 theo 01/2027/PL-ABCW",
+   "ma_cr": "CR01",
+   "moc": "M9",
+   "nguon": "Quyết định của nhóm cho mô phỏng: giá CR01 thanh toán thành một đợt riêng 100% khi nghiệm thu CR01, đợt 1 đến 5 giữ theo giá gốc 1.750.000.000 đồng"
   }
  ],
  "dong_tien": [
   {
    "sprint": "S1",
-   "chi_luong": 106536714,
-   "chi_luong_huy_dong": 119570455,
+   "chi_luong": 108289852,
+   "chi_luong_huy_dong": 153252273,
    "thu": 0,
-   "luy_ke_chi": 106536714,
+   "chi_khac": 15000000,
+   "luy_ke_chi": 123289852,
    "luy_ke_thu": 0,
-   "chenh_lech": -106536714
+   "chenh_lech": -123289852
   },
   {
    "sprint": "S2",
-   "chi_luong": 163020000,
+   "chi_luong": 135984166,
    "chi_luong_huy_dong": 183565909,
    "thu": 262500000,
-   "luy_ke_chi": 269556714,
+   "chi_khac": 7500000,
+   "luy_ke_chi": 266774018,
    "luy_ke_thu": 262500000,
-   "chenh_lech": -7056714
+   "chenh_lech": -4274018
   },
   {
    "sprint": "S3",
-   "chi_luong": 261876136,
+   "chi_luong": 232075586,
    "chi_luong_huy_dong": 278043409,
    "thu": 0,
-   "luy_ke_chi": 531432850,
+   "chi_khac": 7500000,
+   "luy_ke_chi": 506349605,
    "luy_ke_thu": 262500000,
-   "chenh_lech": -268932850
+   "chenh_lech": -243849605
   },
   {
    "sprint": "S4",
-   "chi_luong": 195803636,
+   "chi_luong": 202660693,
    "chi_luong_huy_dong": 213879545,
    "thu": 0,
-   "luy_ke_chi": 727236486,
+   "chi_khac": 7500000,
+   "luy_ke_chi": 716510298,
    "luy_ke_thu": 262500000,
-   "chenh_lech": -464736486
+   "chenh_lech": -454010298
   },
   {
    "sprint": "S5",
-   "chi_luong": 178710114,
+   "chi_luong": 165253105,
    "chi_luong_huy_dong": 213879545,
    "thu": 437500000,
-   "luy_ke_chi": 905946600,
+   "chi_khac": 7500000,
+   "luy_ke_chi": 889263402,
    "luy_ke_thu": 700000000,
-   "chenh_lech": -205946600
+   "chenh_lech": -189263402
   },
   {
    "sprint": "S6",
-   "chi_luong": 143091591,
+   "chi_luong": 161573927,
    "chi_luong_huy_dong": 213879545,
    "thu": 0,
-   "luy_ke_chi": 1049038191,
+   "chi_khac": 7500000,
+   "luy_ke_chi": 1058337330,
    "luy_ke_thu": 700000000,
-   "chenh_lech": -349038191
+   "chenh_lech": -358337330
   },
   {
    "sprint": "S7",
-   "chi_luong": 136804318,
-   "chi_luong_huy_dong": 213879545,
+   "chi_luong": 103544645,
+   "chi_luong_huy_dong": 117381136,
+   "thu": 0,
+   "chi_khac": 7500000,
+   "luy_ke_chi": 1169381975,
+   "luy_ke_thu": 700000000,
+   "chenh_lech": -469381975
+  },
+  {
+   "sprint": "S8",
+   "chi_luong": 81623957,
+   "chi_luong_huy_dong": 104750455,
+   "thu": 0,
+   "chi_khac": 0,
+   "luy_ke_chi": 1251005932,
+   "luy_ke_thu": 700000000,
+   "chenh_lech": -551005932
+  },
+  {
+   "sprint": "S9",
+   "chi_luong": 131107600,
+   "chi_luong_huy_dong": 155778409,
    "thu": 525000000,
-   "luy_ke_chi": 1185842509,
+   "chi_khac": 0,
+   "luy_ke_chi": 1382113532,
    "luy_ke_thu": 1225000000,
-   "chenh_lech": 39157491
+   "chenh_lech": -157113532
   },
   {
    "sprint": "Sau cut over",
-   "chi_luong": 0,
-   "chi_luong_huy_dong": 0,
-   "thu": 525000000,
-   "luy_ke_chi": 1185842509,
-   "luy_ke_thu": 1750000000,
-   "chenh_lech": 564157491
+   "chi_luong": 5725909,
+   "chi_luong_huy_dong": 5725909,
+   "thu": 724024682,
+   "chi_khac": 40000000,
+   "luy_ke_chi": 1427839441,
+   "luy_ke_thu": 1949024682,
+   "chenh_lech": 521185241
   }
  ],
  "kiem_tra": {
@@ -612,7 +745,7 @@
     "muc_do": "canh_bao",
     "nhom": "chi_phi",
     "vi_tri": "",
-    "mo_ta": "Dự phòng (50.000.000 đồng) thấp hơn tổng EMV rủi ro (146.583.750 đồng)",
+    "mo_ta": "Dự phòng (50.000.000 đồng) thấp hơn EMV còn lại của sổ rủi ro (115.413.014 đồng)",
     "cach_sua": "can_nguoi_dung",
     "de_xuat": ""
    },
@@ -621,7 +754,7 @@
     "muc_do": "canh_bao",
     "nhom": "chi_phi",
     "vi_tri": "",
-    "mo_ta": "Dòng tiền lũy kế âm ở các sprint S1, S2, S3, S4, S5, S6, cần vốn lưu động",
+    "mo_ta": "Dòng tiền lũy kế âm ở các sprint S1, S2, S3, S4, S5, S6, S7, S8, S9, cần vốn lưu động",
     "cach_sua": "can_nguoi_dung",
     "de_xuat": ""
    }

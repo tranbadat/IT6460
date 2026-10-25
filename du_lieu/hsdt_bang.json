@@ -10,7 +10,7 @@
    "bat_dau": "2027-03-18",
    "ket_thuc": "2027-05-06",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "1.1.4, 2.1.1, 2.1.2, 2.1.3, 2.1.4, 2.1.5 ...",
+   "goi": "1.2.1, 2.1.1, 2.2.1, 2.2.2, 3.2.1, 3.2.2 ...",
    "dot_thanh_toan": 2
   },
   {
@@ -23,7 +23,7 @@
    "bat_dau": "2027-04-22",
    "ket_thuc": "2027-05-06",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "2.1.7, 2.2.1",
+   "goi": "3.2.3, 3.2.5",
    "dot_thanh_toan": 2
   },
   {
@@ -36,7 +36,7 @@
    "bat_dau": "2027-04-01",
    "ket_thuc": "2027-05-06",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "2.1.7, 2.2.3",
+   "goi": "3.2.5, 4.2.3",
    "dot_thanh_toan": 2
   },
   {
@@ -49,7 +49,7 @@
    "bat_dau": "2027-03-18",
    "ket_thuc": "2027-05-06",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "2.1.7, 2.3.1, 2.3.2, 2.3.3, 2.3.4, 2.3.5",
+   "goi": "1.2.2, 1.2.3, 2.2.3, 2.2.4, 3.2.4, 3.2.5",
    "dot_thanh_toan": 2
   },
   {
@@ -59,10 +59,10 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
-   "bat_dau": "2027-04-08",
-   "ket_thuc": "2027-06-16",
+   "bat_dau": "2027-04-06",
+   "ket_thuc": "2027-06-17",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "1.2.4, 1.3.2, 2.3.6, 3.1.1, 3.1.2, 3.2.1 ...",
+   "goi": "1.2.4, 1.2.5, 1.2.6, 1.2.7, 1.2.8, 1.3.1 ...",
    "dot_thanh_toan": 3
   },
   {
@@ -72,10 +72,10 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
-   "bat_dau": "2027-04-08",
-   "ket_thuc": "2027-06-16",
+   "bat_dau": "2027-04-06",
+   "ket_thuc": "2027-06-17",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "1.2.4, 1.3.2, 2.3.6, 4.1.1, 4.1.2, 4.2.1 ...",
+   "goi": "1.2.4, 1.5.1, 2.2.5, 2.2.6, 2.2.7, 2.2.8 ...",
    "dot_thanh_toan": 3
   },
   {
@@ -86,9 +86,9 @@
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "bat_dau": "2027-03-31",
-   "ket_thuc": "2027-06-16",
+   "ket_thuc": "2027-06-17",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "1.2.4, 1.3.2, 2.3.6, 5.1.1, 5.1.2, 5.1.3 ...",
+   "goi": "1.2.4, 1.5.1, 3.2.6, 3.2.7, 3.2.8, 3.2.9 ...",
    "dot_thanh_toan": 3
   },
   {
@@ -99,9 +99,9 @@
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "bat_dau": "2027-04-08",
-   "ket_thuc": "2027-06-16",
+   "ket_thuc": "2027-06-17",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "1.3.2, 6.1.1, 6.1.2, 8.1.1",
+   "goi": "1.5.1, 4.3.1, 4.3.2, 4.4.6",
    "dot_thanh_toan": 3
   },
   {
@@ -112,9 +112,9 @@
    "don_vi": "Gói",
    "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
    "bat_dau": "2027-04-14",
-   "ket_thuc": "2027-06-16",
+   "ket_thuc": "2027-06-17",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "1.3.2, 6.2.1, 6.2.2, 6.2.3, 6.2.4, 6.2.5 ...",
+   "goi": "1.5.1, 4.2.5, 4.2.6, 4.2.7, 4.3.5, 4.3.6 ...",
    "dot_thanh_toan": 3
   },
   {
@@ -124,10 +124,10 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Theo Mục 1.5 E-ĐKCT, bàn giao tại trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
-   "bat_dau": "2027-05-05",
+   "bat_dau": "2027-05-25",
    "ket_thuc": "2027-06-29",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "7.1.1, 7.1.2, 7.1.4, 7.2.1, 7.2.2, 7.2.3 ...",
+   "goi": "1.4.8, 1.4.9, 1.4.10, 2.4.8, 2.4.9, 2.4.10 ...",
    "dot_thanh_toan": 4
   },
   {
@@ -137,10 +137,10 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
-   "bat_dau": "2027-06-08",
+   "bat_dau": "2027-06-09",
    "ket_thuc": "2027-06-29",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "3.5.2, 4.5.2, 5.5.2, 6.2.12, 7.1.1, 7.1.3 ...",
+   "goi": "1.4.11, 1.4.12, 2.4.8, 2.4.11, 2.4.12, 2.4.13 ...",
    "dot_thanh_toan": 4
   },
   {
@@ -150,10 +150,10 @@
    "khoi_luong": "1",
    "don_vi": "Gói",
    "dia_diem": "Trụ sở chính Công ty Cổ phần ABC Wear, Số 10 phố Giả Định, phường Cầu Giấy, thành phố Hà Nội",
-   "bat_dau": "2027-05-25",
+   "bat_dau": "2027-05-27",
    "ket_thuc": "2027-07-01",
    "yeu_cau": "Theo tiến độ được duyệt, trước ngày 01/07/2027",
-   "goi": "1.2.5, 2.1.8, 8.2.1, 8.2.2, 8.2.3, 8.2.4 ...",
+   "goi": "1.5.3, 2.5.1, 2.5.2, 2.5.3, 3.2.12, 3.5.1 ...",
    "dot_thanh_toan": 4
   },
   {
@@ -166,7 +166,7 @@
    "bat_dau": "2027-05-20",
    "ket_thuc": "2027-07-01",
    "yeu_cau": "01/07/2027",
-   "goi": "6.3.1, 6.3.2, 6.3.3, 8.1.2, 8.1.3, 8.3.1 ...",
+   "goi": "1.5.2, 3.5.2, 3.5.3, 3.5.4, 4.3.10, 4.5.1 ...",
    "dot_thanh_toan": 4
   }
  ],
@@ -701,7 +701,7 @@
    "ho_ten": "Trần Bá Đạt",
    "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
    "so_nam": 3,
-   "can_cu": "Từ 03/2024 đến ngày đóng thầu 08/03/2027",
+   "can_cu": "Từ 03/2024 đến ngày đóng thầu 08/03/2027. Đã quản trị 2 hợp đồng tương tự kê khai tại Mẫu số 05",
    "kinh_nghiem": "03/2024 - 11/2024: quản trị dự án Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng cho Công ty CP Thời trang Hoàng Gia (1,15 tỷ đồng, khoảng 550 MD, 10 nhân sự); 01/2025 - 07/2025: quản trị dự án Website bán hàng trực tuyến và tích hợp ERP cho Công ty TNHH Nội thất An Phát (860 triệu đồng, sprint 2 tuần); 09/2025 - 12/2026: quản lý dự án, kiến trúc sư nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ",
    "chung_chi": "Không",
    "danh_gia": "Đáp ứng"
@@ -715,7 +715,7 @@
    "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
    "so_nam": 3,
    "can_cu": "Từ 03/2024 đến ngày đóng thầu 08/03/2027",
-   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư backend dự án Hoàng Gia (API khách hàng, đơn hàng; thiết kế cơ sở dữ liệu; unit test); 01/2025 - 07/2025: trưởng nhóm backend dự án An Phát (đồng bộ tồn kho với ERP, xác thực và phân quyền)",
+   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư backend dự án Hoàng Gia (API khách hàng, đơn hàng; thiết kế cơ sở dữ liệu; unit test); 01/2025 - 07/2025: trưởng nhóm backend dự án An Phát (đồng bộ tồn kho với ERP, xác thực và phân quyền); 09/2025 - 12/2026: kỹ sư backend dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (lập trình API giỏ hàng, thanh toán và đơn hàng của ứng dụng web; tích hợp hệ thống quản lý bán hàng); 01/2027 - nay: kỹ sư backend bảo trì cổng bán hàng sau nâng cấp (khắc phục lỗi, tối ưu truy vấn)",
    "chung_chi": "Không",
    "danh_gia": "Đáp ứng"
   },
@@ -728,7 +728,7 @@
    "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
    "so_nam": 3,
    "can_cu": "Từ 03/2024 đến ngày đóng thầu 08/03/2027",
-   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư backend dự án Hoàng Gia (tìm kiếm và bộ lọc sản phẩm, chỉ mục tìm kiếm); 01/2025 - 12/2026: kỹ sư DevOps cho các dự án thương mại điện tử (pipeline CI/CD, môi trường staging và production, giám sát, sao lưu và khôi phục; tham gia cut over dự án An Phát)",
+   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư backend dự án Hoàng Gia (tìm kiếm và bộ lọc sản phẩm, chỉ mục tìm kiếm); 01/2025 - 12/2026: kỹ sư backend kiêm DevOps cho các dự án thương mại điện tử (lập trình API ứng dụng web và dịch vụ tìm kiếm sản phẩm của dự án An Phát và dự án nâng cấp cổng bán hàng, cổng thanh toán; pipeline CI/CD, môi trường staging và production, giám sát, sao lưu và khôi phục; tham gia cut over dự án An Phát)",
    "chung_chi": "Không",
    "danh_gia": "Đáp ứng"
   },
@@ -741,7 +741,7 @@
    "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
    "so_nam": 3,
    "can_cu": "Từ 03/2024 đến ngày đóng thầu 08/03/2027",
-   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư frontend dự án Hoàng Gia (giao diện danh mục, giỏ hàng, đặt hàng trên máy tính và điện thoại); 01/2025 - 07/2025: thiết kế UX/UI và lập trình giao diện dự án An Phát (prototype, quy chuẩn hiển thị, tối ưu tải trang)",
+   "kinh_nghiem": "03/2024 - 11/2024: kỹ sư frontend dự án Hoàng Gia (giao diện danh mục, giỏ hàng, đặt hàng trên máy tính và điện thoại); 01/2025 - 07/2025: thiết kế UX/UI và lập trình giao diện dự án An Phát (prototype, quy chuẩn hiển thị, tối ưu tải trang); 09/2025 - 12/2026: kỹ sư frontend dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (lập trình giao diện web trang sản phẩm, giỏ hàng, thanh toán tương thích thiết bị di động); 01/2027 - nay: kỹ sư frontend bảo trì cổng bán hàng sau nâng cấp (khắc phục lỗi giao diện, cải thiện khả năng sử dụng)",
    "chung_chi": "Không",
    "danh_gia": "Đáp ứng"
   },
@@ -754,7 +754,7 @@
    "trinh_do": "Tốt nghiệp Trường Đại học Bách khoa Hà Nội",
    "so_nam": 3,
    "can_cu": "Từ 03/2024 đến ngày đóng thầu 08/03/2027",
-   "kinh_nghiem": "03/2024 - 11/2024: chuyên viên phân tích nghiệp vụ dự án Hoàng Gia (khảo sát, SRS, use case, quy trình bán hàng trực tuyến); 01/2025 - 07/2025: BA kiêm trưởng nhóm kiểm thử dự án An Phát (test case, quản lý lỗi, tổ chức UAT với khách hàng)",
+   "kinh_nghiem": "03/2024 - 11/2024: chuyên viên phân tích nghiệp vụ dự án Hoàng Gia (khảo sát, SRS, use case, quy trình bán hàng trực tuyến); 01/2025 - 07/2025: BA kiêm trưởng nhóm kiểm thử dự án An Phát (test case, quản lý lỗi, tổ chức UAT với khách hàng); 09/2025 - 12/2026: phân tích nghiệp vụ kiêm kiểm thử dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (đặc tả use case, kịch bản kiểm thử, tổ chức kiểm thử chấp nhận); 01/2027 - nay: kỹ sư kiểm thử bảo trì cổng bán hàng sau nâng cấp (kiểm thử hồi quy, quản lý lỗi)",
    "chung_chi": "Không",
    "danh_gia": "Đáp ứng"
   }
@@ -837,70 +837,98 @@
    "ten": "Trần Bá Đạt",
    "tu": "03/2024",
    "den": "11/2024",
-   "noi_dung": "quản trị dự án Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng cho Công ty CP Thời trang Hoàng Gia (1,15 tỷ đồng, khoảng 550 MD, 10 nhân sự)"
+   "noi_dung": "Quản trị dự án Xây dựng hệ thống thương mại điện tử và tích hợp hệ thống bán hàng cho Công ty CP Thời trang Hoàng Gia (1,15 tỷ đồng, khoảng 550 MD, 10 nhân sự)"
   },
   {
    "stt": 1,
    "ten": "Trần Bá Đạt",
    "tu": "01/2025",
    "den": "07/2025",
-   "noi_dung": "quản trị dự án Website bán hàng trực tuyến và tích hợp ERP cho Công ty TNHH Nội thất An Phát (860 triệu đồng, sprint 2 tuần)"
+   "noi_dung": "Quản trị dự án Website bán hàng trực tuyến và tích hợp ERP cho Công ty TNHH Nội thất An Phát (860 triệu đồng, sprint 2 tuần)"
   },
   {
    "stt": 1,
    "ten": "Trần Bá Đạt",
    "tu": "09/2025",
    "den": "12/2026",
-   "noi_dung": "quản lý dự án, kiến trúc sư nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ"
+   "noi_dung": "Quản lý dự án, kiến trúc sư nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ"
   },
   {
    "stt": 2,
    "ten": "Phạm Tuấn Anh",
    "tu": "03/2024",
    "den": "11/2024",
-   "noi_dung": "kỹ sư backend dự án Hoàng Gia (API khách hàng, đơn hàng; thiết kế cơ sở dữ liệu; unit test)"
+   "noi_dung": "Kỹ sư backend dự án Hoàng Gia (API khách hàng, đơn hàng; thiết kế cơ sở dữ liệu; unit test)"
   },
   {
    "stt": 2,
    "ten": "Phạm Tuấn Anh",
    "tu": "01/2025",
    "den": "07/2025",
-   "noi_dung": "trưởng nhóm backend dự án An Phát (đồng bộ tồn kho với ERP, xác thực và phân quyền)"
+   "noi_dung": "Trưởng nhóm backend dự án An Phát (đồng bộ tồn kho với ERP, xác thực và phân quyền)"
+  },
+  {
+   "stt": 2,
+   "ten": "Phạm Tuấn Anh",
+   "tu": "09/2025",
+   "den": "12/2026",
+   "noi_dung": "Kỹ sư backend dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (lập trình API giỏ hàng, thanh toán và đơn hàng của ứng dụng web; tích hợp hệ thống quản lý bán hàng)"
+  },
+  {
+   "stt": 2,
+   "ten": "Phạm Tuấn Anh",
+   "tu": "01/2027",
+   "den": "nay",
+   "noi_dung": "Kỹ sư backend bảo trì cổng bán hàng sau nâng cấp (khắc phục lỗi, tối ưu truy vấn)"
   },
   {
    "stt": 3,
    "ten": "Ninh Đức Toàn",
    "tu": "03/2024",
    "den": "11/2024",
-   "noi_dung": "kỹ sư backend dự án Hoàng Gia (tìm kiếm và bộ lọc sản phẩm, chỉ mục tìm kiếm)"
+   "noi_dung": "Kỹ sư backend dự án Hoàng Gia (tìm kiếm và bộ lọc sản phẩm, chỉ mục tìm kiếm)"
   },
   {
    "stt": 3,
    "ten": "Ninh Đức Toàn",
    "tu": "01/2025",
    "den": "12/2026",
-   "noi_dung": "kỹ sư DevOps cho các dự án thương mại điện tử (pipeline CI/CD, môi trường staging và production, giám sát, sao lưu và khôi phục; tham gia cut over dự án An Phát)"
+   "noi_dung": "Kỹ sư backend kiêm DevOps cho các dự án thương mại điện tử (lập trình API ứng dụng web và dịch vụ tìm kiếm sản phẩm của dự án An Phát và dự án nâng cấp cổng bán hàng, cổng thanh toán; pipeline CI/CD, môi trường staging và production, giám sát, sao lưu và khôi phục; tham gia cut over dự án An Phát)"
   },
   {
    "stt": 4,
    "ten": "Vũ Đức Minh",
    "tu": "03/2024",
    "den": "11/2024",
-   "noi_dung": "kỹ sư frontend dự án Hoàng Gia (giao diện danh mục, giỏ hàng, đặt hàng trên máy tính và điện thoại)"
+   "noi_dung": "Kỹ sư frontend dự án Hoàng Gia (giao diện danh mục, giỏ hàng, đặt hàng trên máy tính và điện thoại)"
   },
   {
    "stt": 4,
    "ten": "Vũ Đức Minh",
    "tu": "01/2025",
    "den": "07/2025",
-   "noi_dung": "thiết kế UX/UI và lập trình giao diện dự án An Phát (prototype, quy chuẩn hiển thị, tối ưu tải trang)"
+   "noi_dung": "Thiết kế UX/UI và lập trình giao diện dự án An Phát (prototype, quy chuẩn hiển thị, tối ưu tải trang)"
+  },
+  {
+   "stt": 4,
+   "ten": "Vũ Đức Minh",
+   "tu": "09/2025",
+   "den": "12/2026",
+   "noi_dung": "Kỹ sư frontend dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (lập trình giao diện web trang sản phẩm, giỏ hàng, thanh toán tương thích thiết bị di động)"
+  },
+  {
+   "stt": 4,
+   "ten": "Vũ Đức Minh",
+   "tu": "01/2027",
+   "den": "nay",
+   "noi_dung": "Kỹ sư frontend bảo trì cổng bán hàng sau nâng cấp (khắc phục lỗi giao diện, cải thiện khả năng sử dụng)"
   },
   {
    "stt": 5,
    "ten": "Nguyễn Thị Phương Liên",
    "tu": "03/2024",
    "den": "11/2024",
-   "noi_dung": "chuyên viên phân tích nghiệp vụ dự án Hoàng Gia (khảo sát, SRS, use case, quy trình bán hàng trực tuyến)"
+   "noi_dung": "Chuyên viên phân tích nghiệp vụ dự án Hoàng Gia (khảo sát, SRS, use case, quy trình bán hàng trực tuyến)"
   },
   {
    "stt": 5,
@@ -908,6 +936,20 @@
    "tu": "01/2025",
    "den": "07/2025",
    "noi_dung": "BA kiêm trưởng nhóm kiểm thử dự án An Phát (test case, quản lý lỗi, tổ chức UAT với khách hàng)"
+  },
+  {
+   "stt": 5,
+   "ten": "Nguyễn Thị Phương Liên",
+   "tu": "09/2025",
+   "den": "12/2026",
+   "noi_dung": "Phân tích nghiệp vụ kiêm kiểm thử dự án nâng cấp cổng bán hàng và cổng thanh toán cho khách hàng bán lẻ (đặc tả use case, kịch bản kiểm thử, tổ chức kiểm thử chấp nhận)"
+  },
+  {
+   "stt": 5,
+   "ten": "Nguyễn Thị Phương Liên",
+   "tu": "01/2027",
+   "den": "nay",
+   "noi_dung": "Kỹ sư kiểm thử bảo trì cổng bán hàng sau nâng cấp (kiểm thử hồi quy, quản lý lỗi)"
   }
  ],
  "mau_07_lua_chon": "Nhà thầu kê khai: không có hoặc có 01 hợp đồng (cung cấp dịch vụ phi tư vấn) không hoàn thành do lỗi của nhà thầu kể từ ngày 01 tháng 01 năm 2024 theo quy định tại tiêu chí đánh giá 1 trong Bảng tiêu chuẩn đánh giá về năng lực và kinh nghiệm thuộc Mục 2.1 Chương III.",
@@ -988,7 +1030,7 @@
     [
      "Sao lưu toàn phần hằng ngày, sao lưu nhật ký giao dịch theo giờ"
     ],
-    "Chạy thử khôi phục trước nghiệm thu"
+    "Diễn tập sao lưu và khôi phục trên môi trường vận hành trước nghiệm thu (gói 4.4.8)"
    ]
   ],
   "widths": [
@@ -1006,29 +1048,209 @@
   "cot": [
    "Mức lỗi",
    "Thời hạn phản hồi",
-   "Thời hạn khắc phục"
+   "Thời hạn khắc phục",
+   "Cách tính thời hạn"
   ],
   "dong": [
    [
     "Nghiêm trọng",
     "2 giờ",
-    "8 giờ"
+    "8 giờ",
+    "Tính liên tục 24 giờ mỗi ngày, kể cả ngày nghỉ, từ khi tiếp nhận báo lỗi"
    ],
    [
     "Cao",
-    "Hai bên thống nhất khi xác nhận đặc tả",
-    "1 ngày làm việc"
+    "4 giờ",
+    "1 ngày làm việc",
+    "Tính trong giờ hành chính (8 giờ 00 đến 17 giờ 00 các ngày làm việc) từ khi tiếp nhận"
    ],
    [
     "Khác",
-    "Hai bên thống nhất khi xác nhận đặc tả",
-    "3 ngày làm việc"
+    "8 giờ",
+    "3 ngày làm việc",
+    "Tính trong giờ hành chính (8 giờ 00 đến 17 giờ 00 các ngày làm việc) từ khi tiếp nhận"
    ]
   ],
   "widths": [
-   2600,
+   1700,
+   1700,
+   2000,
+   3900
+  ]
+ },
+ "ha_tang_toi_thieu": {
+  "cot": [
+   "Thành phần",
+   "Số lượng",
+   "Cấu hình tối thiểu",
+   "Ghi chú"
+  ],
+  "widths": [
+   2000,
+   1300,
    3300,
-   3400
+   2700
+  ],
+  "center_cols": [
+   1
+  ],
+  "dong": [
+   [
+    "Máy chủ ứng dụng",
+    "2",
+    "8 vCPU, 16 GB RAM, 200 GB SSD mỗi máy, hệ điều hành Ubuntu Server 22.04 LTS",
+    "Hai nút sau cân bằng tải, mở rộng ngang khi tải tăng (KT01, KT03)"
+   ],
+   [
+    "Cân bằng tải",
+    "1 cặp chế độ dự phòng",
+    "Hỗ trợ HTTPS (TLS 1.2 trở lên), kiểm tra sức khỏe nút ứng dụng",
+    "Có thể dùng thiết bị hoặc dịch vụ cân bằng tải của hạ tầng Chủ đầu tư"
+   ],
+   [
+    "Máy chủ cơ sở dữ liệu",
+    "2",
+    "8 vCPU, 32 GB RAM, 500 GB SSD mỗi máy, PostgreSQL 16",
+    "Chính và dự phòng, nhân bản liên tục (KT01, KT05)"
+   ],
+   [
+    "Máy chủ chỉ mục tìm kiếm và bộ nhớ đệm",
+    "1",
+    "4 vCPU, 16 GB RAM, 100 GB SSD, OpenSearch 2 và Redis 7",
+    "Bảo đảm thời gian phản hồi tìm kiếm, trang danh mục (KT02)"
+   ],
+   [
+    "Lưu trữ sao lưu",
+    "1",
+    "Dung lượng 2 TB, tách biệt máy chủ cơ sở dữ liệu, lưu bản sao lưu tối thiểu 30 ngày",
+    "Sao lưu toàn phần hằng ngày, nhật ký giao dịch theo giờ (KT05)"
+   ],
+   [
+    "Đường truyền internet",
+    "2 đường",
+    "Tối thiểu 100 Mbps mỗi đường, hai nhà cung cấp, địa chỉ IP tĩnh, chứng thư số SSL cho tên miền",
+    "Đường thứ hai dự phòng khi đường chính sự cố (KT01)"
+   ],
+   [
+    "Kết nối với Main System",
+    "1",
+    "Mạng nội bộ hoặc kênh VPN riêng, tối thiểu 10 Mbps",
+    "Đồng bộ sản phẩm, tồn kho, chuyển đơn hàng và trạng thái vận chuyển"
+   ],
+   [
+    "Phần mềm nền",
+    "Theo số máy chủ",
+    "Ubuntu Server 22.04 LTS, Nginx, OpenJDK 21, PostgreSQL 16, OpenSearch 2, Redis 7, Docker, Prometheus và Grafana (mã nguồn mở, không phát sinh bản quyền)",
+    "Nhà thầu cài đặt, cấu hình tại gói 4.5.1, 4.5.2"
+   ]
+  ]
+ },
+ "cong_nghe": {
+  "cot": [
+   "Tầng",
+   "Công nghệ",
+   "Lý do lựa chọn"
+  ],
+  "widths": [
+   2200,
+   2900,
+   4200
+  ],
+  "dong": [
+   [
+    "Giao diện web",
+    "React 18, TypeScript, thiết kế đáp ứng (responsive)",
+    "Thư viện thành phần dùng lại được, hiển thị tốt trên máy tính và điện thoại, nhóm đã dùng trong hai hợp đồng tương tự"
+   ],
+   [
+    "Dịch vụ phía máy chủ",
+    "Java 21, Spring Boot 3, API REST",
+    "Ổn định, hỗ trợ bảo mật, phân quyền và xử lý bất đồng bộ, mở rộng ngang theo nút ứng dụng"
+   ],
+   [
+    "Cơ sở dữ liệu bán hàng (Selling DB)",
+    "PostgreSQL 16",
+    "Hỗ trợ nhân bản chính và dự phòng, sao lưu nhật ký giao dịch theo giờ, không phát sinh bản quyền"
+   ],
+   [
+    "Tìm kiếm và bộ nhớ đệm",
+    "OpenSearch 2, Redis 7",
+    "Chỉ mục tìm kiếm riêng và bộ nhớ đệm trang, phiên làm việc để đạt thời gian phản hồi không quá 2 giây"
+   ],
+   [
+    "Tích hợp với Main System",
+    "Dịch vụ tích hợp theo API hoặc tệp theo đặc tả giao diện, hàng đợi gửi lại",
+    "Không phụ thuộc nền tảng Main System chưa được mô tả, có cơ chế gửi lại khi lỗi"
+   ],
+   [
+    "Triển khai và giám sát",
+    "Docker, quy trình tích hợp và triển khai tự động, Prometheus và Grafana",
+    "Triển khai cuốn chiếu không dừng dịch vụ, cảnh báo tự động"
+   ]
+  ]
+ },
+ "to_chuc": {
+  "cot": [
+   "Vai trò",
+   "Người đảm nhận",
+   "Quan hệ báo cáo"
+  ],
+  "widths": [
+   2600,
+   3500,
+   3200
+  ],
+  "dong": [
+   [
+    "Người đại diện của nhà thầu",
+    "Lê Quốc Bảo",
+    "Ký hợp đồng, quyết định vấn đề vượt thẩm quyền quản trị dự án"
+   ],
+   [
+    "Quản trị dự án",
+    "Trần Bá Đạt",
+    "Báo cáo người đại diện của nhà thầu, đầu mối làm việc với Chủ đầu tư"
+   ],
+   [
+    "Phụ trách nhóm phân hệ quản lý sản phẩm",
+    "Vũ Đức Minh",
+    "Báo cáo quản trị dự án"
+   ],
+   [
+    "Phụ trách nhóm phân hệ quản lý khách hàng (thành viên)",
+    "Phạm Tuấn Anh",
+    "Báo cáo quản trị dự án"
+   ],
+   [
+    "Phụ trách nhóm phân hệ quản lý đơn hàng (đặt hàng)",
+    "Phạm Tuấn Anh",
+    "Báo cáo quản trị dự án"
+   ],
+   [
+    "Phụ trách nhóm phân hệ tích hợp hệ thống",
+    "Ninh Đức Toàn",
+    "Báo cáo quản trị dự án"
+   ],
+   [
+    "Phụ trách đặc tả và kiểm thử các phân hệ",
+    "Nguyễn Thị Phương Liên",
+    "Báo cáo quản trị dự án"
+   ],
+   [
+    "Phụ trách phân tích và thiết kế phân hệ tích hợp hệ thống",
+    "Nguyễn Hoàng Nam",
+    "Báo cáo quản trị dự án"
+   ],
+   [
+    "Thành viên bổ sung trong các nhóm",
+    "Lê Quang Huy, Đỗ Minh Quân, Bùi Anh Tuấn, Trần Thu Hà, Phạm Ngọc Anh, Trương Quốc Việt",
+    "Báo cáo người phụ trách nhóm theo tài liệu phân công"
+   ],
+   [
+    "Đầu mối Chủ đầu tư",
+    "Công ty Cổ phần ABC Wear, đầu mối Yamada, Phòng Kế hoạch",
+    "Phối hợp với quản trị dự án, xác nhận biên bản"
+   ]
   ]
  },
  "ho_tro_tang_cuong": [
@@ -1039,8 +1261,8 @@
    "ma": "S1",
    "tu": "2027-03-18",
    "den": "2027-03-31",
-   "so_nguoi": 6,
-   "md_huy_dong": 60.0
+   "so_nguoi": 8,
+   "md_huy_dong": 80.0
   },
   {
    "ma": "S2",
@@ -1085,7 +1307,7 @@
    "md_huy_dong": 120.0
   }
  ],
- "tong_md_huy_dong": 796.0,
+ "tong_md_huy_dong": 816.0,
  "don_du_thau": [
   "Ngày: 05/03/2027",
   "Tên gói thầu: Dịch vụ xây dựng và triển khai hệ thống website bán hàng trực tuyến (Web Selling Site System)",
@@ -1111,8 +1333,6 @@
  "bao_dam_ghi_chu": "Giá trị nhỏ hơn 50 triệu đồng nên nhà thầu cam kết trong đơn dự thầu theo Mục 18.8 E-CDNT, không nộp thư bảo lãnh dự thầu khi nộp E-HSDT.",
  "bao_dam_du_thau_chu": "ba mươi triệu",
  "canh_bao": [
-  "Trần Bá Đạt: kê khai 4 năm kinh nghiệm, kinh nghiệm liệt kê từ 03/2024 chỉ chứng minh 3 năm đến ngày đóng thầu, HSDT dùng 3 năm. Nhóm bổ sung giai đoạn trước vào kinh_nghiem nếu có",
-  "Mẫu số 06B: thanh_vien.json chưa có can_cuoc, nguoi_lien_lac, so_nam_lam_viec_hien_tai của nhân sự chủ chốt, bảng ghi \"Theo hồ sơ nhân sự trên Hệ thống\". Nhóm bổ sung các trường này nếu muốn kê khai trực tiếp",
-  "chi_tieu_ky_thuat.json bao_hanh.muc_loi còn thời hạn null, bảng ghi \"Hai bên thống nhất khi xác nhận đặc tả\""
+  "Mẫu số 06B: thanh_vien.json chưa có can_cuoc, nguoi_lien_lac, so_nam_lam_viec_hien_tai của nhân sự chủ chốt, bảng ghi \"Theo hồ sơ nhân sự trên Hệ thống\". Nhóm bổ sung các trường này nếu muốn kê khai trực tiếp"
  ]
 }

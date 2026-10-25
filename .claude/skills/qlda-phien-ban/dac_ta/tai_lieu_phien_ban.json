@@ -4,9 +4,10 @@
  "nut_ra": "doc_phien_ban",
  "ngay_tai_lieu": "{pb#ngay_tai_lieu}",
  "ten_tep": "Tai_lieu_quan_ly_phien_ban.docx",
- "tieu_de_dau_trang": "Kết thúc dự án - Tài liệu quản lý phiên bản",
+ "tieu_de_dau_trang": "Quản lý dự án - Tài liệu quản lý phiên bản",
  "nguon": {
-  "pb": "du_lieu/phien_ban_tong_hop.json"
+  "pb": "du_lieu/phien_ban_tong_hop.json",
+  "nt": "dau_vao/nha_thau.json"
  },
  "truoc": [
   [
