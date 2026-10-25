@@ -141,7 +141,7 @@ def huy_dong_bo_sung_tom_tat():
     if not d.get('danh_sach'):
         return {'co': False, 'tong': 0}
     return {'co': True, 'tong': d.get('tong', 0), 'tong_theo_sprint': d.get('tong_theo_sprint', {}), 'doi_chieu': d.get('doi_chieu', {}),
-            'nguon': TEP_HUY_DONG_BO_SUNG, 'danh_sach': d['danh_sach'],
+            'nguon': 'sổ huy động bổ sung thực tế', 'tep_nguon': TEP_HUY_DONG_BO_SUNG, 'danh_sach': d['danh_sach'],
             'theo_sprint': [{'sprint': k, 'md': v} for k, v in sorted((d.get('tong_theo_sprint') or {}).items())]}
 
 
@@ -282,9 +282,9 @@ def mo_phong():
 
 
 def can_cu_mo_phong(chu_the='báo cáo'):
-    """Đoạn căn cứ khi số liệu thực tế là số liệu mô phỏng, rỗng khi không có du_lieu/mo_phong.json. Đoạn dẫn chiếu {mo_phong#_ghi_chu}
-    để lap_khung.py (khối doan_ds) giải từ bí danh nguồn tùy chọn mo_phong của đặc tả, không chép lời văn của tệp vào dữ liệu."""
-    mp = mo_phong()
-    if not mp:
+    """Đoạn căn cứ khi số liệu thực tế là số liệu mô phỏng, rỗng khi không có du_lieu/mo_phong.json. Không dẫn _ghi_chu của
+    mo_phong.json vì ghi chú đó có đường dẫn tệp và tên script nội bộ, không hợp văn phong tài liệu nộp."""
+    if not mo_phong():
         return []
-    return [f'Số liệu thực tế trong {chu_the} là số liệu mô phỏng.' + (' {mo_phong#_ghi_chu}' if mp.get('_ghi_chu') else '')]
+    return [f'Số liệu thực tế trong {chu_the} là số liệu mô phỏng, sinh từ kịch bản biến cố từng sprint theo kế hoạch đã duyệt, '
+            'không phải số liệu đo được của dự án thật.']

@@ -63,7 +63,8 @@ def kiem_tra(bang, kh=None):
             add('MP10', f'mốc {r["ma_moc"]} ghi đạt ngày {r["ngay_dat"]} khi gói căn cứ chưa hoàn thành: {", ".join(chua[:8])}')
     vd_rr = {m for v in bang['so_van_de'] for m in str(v.get('ma_rui_ro', '')).replace(',', ';').split(';') if m.strip()}
     vd_rr = {m.strip() for m in vd_rr}
-    for m in sorted({r['ma_rui_ro'] for r in bang['theo_doi_rui_ro'] if r['trang_thai'] == 'Đã xảy ra'} - vd_rr):
+    co_hoi = {m for m, r in kh.hien_hanh.ma_rr.items() if r.get('loai') == 'co_hoi'}  # cơ hội xảy ra không cần vấn đề (từ 1.0.6)
+    for m in sorted({r['ma_rui_ro'] for r in bang['theo_doi_rui_ro'] if r['trang_thai'] == 'Đã xảy ra'} - vd_rr - co_hoi):
         add('MP11', f'rủi ro {m} đã xảy ra nhưng chưa có vấn đề nào trong so_van_de.csv ghi ma_rui_ro {m} (tín hiệu T25 của báo cáo tiến độ)', 'canh_bao')
     return F
 

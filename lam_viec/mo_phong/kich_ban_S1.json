@@ -16,6 +16,17 @@
    "ly_do": "Tái sử dụng khung định tuyến và quản lý trạng thái giao diện từ hợp đồng tương tự, dấu hiệu của cơ hội RR20 xuất hiện"
   },
   {
+   "loai": "rui_ro",
+   "ma_rui_ro": "RR20",
+   "ngay": "2027-03-29",
+   "trang_thai": "Đã xảy ra",
+   "hanh_dong": "Khai thác cơ hội: tái sử dụng khung định tuyến và quản lý trạng thái giao diện từ hợp đồng tương tự cho gói 4.3.3, lợi ích đã phản ánh trong công thực tế của gói nên không ghi tác động riêng",
+   "md_tac_dong": 0,
+   "chi_phi_tac_dong": 0,
+   "ma_goi": "4.3.3",
+   "ly_do": "Bổ sung theo ủy quyền của nhóm ngày 25/10/2026: cơ hội RR20 đã xảy ra theo tóm tắt và họp cải tiến S1, gói 4.3.3 hoàn thành ngày 29/03/2027"
+  },
+  {
    "loai": "goi",
    "ma_goi": "2.2.3",
    "ty_le_md": 0.2,

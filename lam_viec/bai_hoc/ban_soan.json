@@ -5,7 +5,7 @@
  ],
  "TONG_HOP": [
   "Bài học quan trọng nhất về quản lý thay đổi là yêu cầu thay đổi lớn giữa dự án vẫn kiểm soát được khi tác động được lượng hóa nhanh và phụ lục ghi đủ giá, mốc, đợt thanh toán (BH01), nhưng đường cơ sở sau thay đổi chỉ nên lập sau khi tài liệu qua kiểm tra độc lập (BH02).",
-  "Các rủi ro đã xảy ra RR02, RR04, RR06 đều cho bài học về theo dõi đầu vào bên ngoài (BH03), xác nhận ngày có mặt của vị trí bổ sung (BH04) và đo chỉ tiêu phi chức năng liên tục (BH06). Chỉ tiêu không đạt duy nhất là tỷ lệ sử dụng nhân lực huy động {kt#kpi[ma=K14].ma}, do huy động sát nhu cầu ở các sprint kiểm thử khiến gói chậm dồn sang S8 phải huy động bổ sung (BH05). Bài học về môi trường kiểm thử giống vận hành (BH07) là điểm cần cải thiện có tác động lớn khác đến cuối dự án."
+  "Các đe dọa đã xảy ra RR02, RR04, RR06 đều cho bài học về theo dõi đầu vào bên ngoài (BH03), xác nhận ngày có mặt của vị trí bổ sung (BH04) và đo chỉ tiêu phi chức năng liên tục (BH06), cơ hội đã xảy ra RR20 cho thấy giá trị của việc tái sử dụng thành phần từ hợp đồng tương tự (BH10). Chỉ tiêu không đạt duy nhất là tỷ lệ sử dụng nhân lực huy động {kt#kpi[ma=K14].ma}, do huy động sát nhu cầu ở các sprint kiểm thử khiến gói chậm dồn sang S8 phải huy động bổ sung (BH05). Bài học về môi trường kiểm thử giống vận hành (BH07) là điểm cần cải thiện có tác động lớn khác đến cuối dự án."
  ],
  "CAI_TIEN": [
   [

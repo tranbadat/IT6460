@@ -1,0 +1,37 @@
+{
+ "tai_lieu": "ket_qua/13_Bai_hoc_kinh_nghiem/Bao_cao_bai_hoc_kinh_nghiem.docx",
+ "phien_ban": "0.4",
+ "dac_ta": ".claude/skills/qlda-bai-hoc/dac_ta/bao_cao_bai_hoc.json",
+ "luot": "xác nhận (lượt 2) sau vòng sửa",
+ "ngay_kiem_tra": "2026-10-25",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B), phiên riêng",
+ "bao_cao_truoc": "lam_viec/bai_hoc/bao_cao_kiem_tra_lop_B_vong1.json",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 2,
+ "danh_gia_tieu_chi": [
+  {"tieu_chi": "CL01", "ket_qua": "dat", "nhan_xet": "Đủ 7 mục, 12 bài học (4 thực hành tốt, 8 cần cải thiện) phủ 9 nhóm, đủ tình huống, nguyên nhân, bài học, khuyến nghị kèm phạm vi áp dụng, bằng chứng. 7 đề xuất cải tiến phủ cả 12 BH."},
+  {"tieu_chi": "CL02", "ket_qua": "dat", "nhan_xet": "Khớp ket_thuc.json và huy_dong_bo_sung.json: huy động bổ sung 10,5 MD S8 và 2,5 MD S9 (13 MD), MD huy động 908 lên 921, tỷ lệ 79,99%, K14 Không đạt và là KPI không đạt duy nhất (13/14), 22/22 tiêu chí nghiệm thu đạt lần đầu (so_nghiem_thu_lai 0), mật độ lỗi 0,75, M5 và M9 đạt 27/07/2027, M3 08/07/2027, 5.2.3 vượt 12,5% (0,5 MD), 3.3.7 7,25/6 MD (20,8%), 736,75/733 MD, SPI 0,94 và 0,95, CR01 76 MD, phụ lục 01/2027/PL-ABCW ngày 27/05/2027."},
+  {"tieu_chi": "CL03", "ket_qua": "dat", "nhan_xet": "54 mã bằng chứng khác nhau, đếm lại khớp bảng nguồn bằng chứng (tổng 54). Số huy động bổ sung truy vết được về dau_vao/thuc_te/huy_dong_bo_sung.json theo quyết định ngày 25/10/2026. Phủ rủi ro đã xảy ra RR02, RR04, RR06, CR01 và KPI không đạt K14 (BH05)."},
+  {"tieu_chi": "CL04", "ket_qua": "dat", "nhan_xet": "Khuyến nghị có ngưỡng đo được (phần dư 15% MD xếp, nhắc trước 5 ngày làm việc, cảnh báo 1,5 giây, thời hạn quyết định 5 ngày làm việc)."},
+  {"tieu_chi": "CL05", "ket_qua": "dat", "nhan_xet": "Bài học về rủi ro và thay đổi có dấu hiệu, người, quy trình và điểm kiểm soát (rà soát độc lập trước đường cơ sở, theo dõi K14 cùng MD huy động bổ sung)."},
+  {"tieu_chi": "CL06", "ket_qua": "dat", "nhan_xet": "Times New Roman 13, bảng cỡ 12, không in đậm, không chấm phẩy, ngoặc kép, gạch dài, không viết hoa toàn bộ (trừ mã nhóm). Còn một đường dẫn tệp trong lời văn BH05 (CB01)."},
+  {"tieu_chi": "doc_hieu_1", "ket_qua": "dat", "nhan_xet": "Bài học phát biểu chung, BH02 đã bỏ viện dẫn công cụ nội bộ."},
+  {"tieu_chi": "doc_hieu_2", "ket_qua": "dat", "nhan_xet": "Nguyên nhân là nguyên nhân gốc, BH05 nêu huy động sát MD kế hoạch không có phần dư ở sprint kiểm thử."},
+  {"tieu_chi": "doc_hieu_3", "ket_qua": "dat", "nhan_xet": "Khuyến nghị là hành động cụ thể, có quy trình và người phổ biến (mục 7)."},
+  {"tieu_chi": "doc_hieu_4", "ket_qua": "dat", "nhan_xet": "Mỗi đề xuất cải tiến dẫn mã BH."}
+ ],
+ "dong_phat_hien_truoc": [
+  {"ma": "MH01", "da_dong": true, "nhan_xet": "BH05 ghi 10,5 MD S8 và 2,5 MD S9, khớp tong_theo_sprint của huy_dong_bo_sung.json, có dẫn nguồn, kèm 921 MD, 79,99%, K14 không đạt theo quyết định ngày 25/10/2026."},
+  {"ma": "MH02", "da_dong": true, "nhan_xet": "BH12 ghi vượt công 12,5% (0,5 MD), khớp ket_thuc.json 5.2.3 4,0/4,5 MD."},
+  {"ma": "MH03", "da_dong": true, "nhan_xet": "BH10 ghi 0,94 ở S3 và 0,95 ở S4, thống nhất hai chữ số."},
+  {"ma": "MH04", "da_dong": true, "nhan_xet": "BH07 tách L05 (phát hiện ở S3 khi lập trình) khỏi L18, L37 (kiểm thử đầu cuối, kiểm thử hệ thống), câu đủ thành phần."},
+  {"ma": "MH05", "da_dong": true, "nhan_xet": "BH02 phát biểu chung (kiểm tra tự động, rà soát độc lập), không còn viện dẫn chu trình mô phỏng hay kiểm tra lớp B."},
+  {"ma": "MH06", "da_dong": true, "nhan_xet": "Mục 1 đã bỏ ý đầu mối Chủ đầu tư góp ý bài học, chỉ nêu thành viên nhóm và vị trí bổ sung, quản trị dự án chủ trì."}
+ ],
+ "phat_hien": [
+  {"ma": "CB01", "muc_do": "canh_bao", "nhom": "CL06", "vi_tri": "Mục 4, BH05, cột Tình huống: (dau_vao/thuc_te/huy_dong_bo_sung.json)", "mo_ta": "Đường dẫn tệp nội bộ nằm trong lời văn bài học. Nguồn đúng nhưng nên thay bằng tên tài liệu (sổ huy động bổ sung thực tế) theo văn phong.", "cach_sua": "tu_dong", "de_xuat": "Tùy chọn: sửa lời văn bai_hoc.json BH05 tinh_huong, thay đường dẫn bằng tên sổ huy động bổ sung."},
+  {"ma": "CB02", "muc_do": "canh_bao", "nhom": "CL02", "vi_tri": "Mục 5, R-S9-02: phải huy động bổ sung trong S8", "mo_ta": "Ghi chép họp cải tiến chỉ nêu huy động bổ sung trong S8, trong khi BH05 và nguồn ghi S8 (10,5 MD) và S9 (2,5 MD). Đây là ghi chép retro gốc nên chỉ cảnh báo, không làm sai bài học.", "cach_sua": "tu_dong", "de_xuat": "Tùy chọn: bổ sung S9 vào nội dung R-S9-02 ở retro.md nếu nhóm muốn thống nhất, không bắt buộc."}
+ ],
+ "ghi_chu": "Lượt xác nhận: đóng 6/6 phát hiện lượt 1, rà hồi quy toàn văn bản và định dạng, không phát sinh lỗi mới. Không đọc khung, ban_soan, noi_dung, nhật ký sửa."
+}

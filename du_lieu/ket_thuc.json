@@ -2821,8 +2821,8 @@
    {
     "stt": 9,
     "danh_muc": "Tích hợp với hệ thống chính (Main System)",
-    "so_tieu_chi": 4,
-    "so_dat": 4,
+    "so_tieu_chi": 2,
+    "so_dat": 2,
     "ket_qua": "Đạt"
    },
    {
@@ -2862,6 +2862,106 @@
     "so_tieu_chi": 2,
     "so_dat": 2,
     "ma_nghiem_thu": "NT19, NT20",
+    "ket_qua": "Đạt"
+   }
+  ],
+  "hang_muc_va_phu_luc": [
+   {
+    "stt": 1,
+    "danh_muc": "Phân tích hệ thống và lập đặc tả hệ thống (Specification)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 2,
+    "danh_muc": "Thiết kế quy trình vận hành mới (New Operational Flow)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 3,
+    "danh_muc": "Thiết kế cấu trúc cơ sở dữ liệu (Database Structure) của Selling DB",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 4,
+    "danh_muc": "Thiết kế sơ đồ phân cấp menu (Menu Layer) và giao diện ưu tiên",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 5,
+    "danh_muc": "Xây dựng chức năng tìm kiếm sản phẩm (Product Search)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 6,
+    "danh_muc": "Xây dựng chức năng quản lý thành viên (Member Administration)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 7,
+    "danh_muc": "Xây dựng chức năng đặt hàng (Order)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 8,
+    "danh_muc": "Xây dựng cơ sở dữ liệu bán hàng (Selling DB)",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 9,
+    "danh_muc": "Tích hợp với hệ thống chính (Main System)",
+    "so_tieu_chi": 2,
+    "so_dat": 2,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 10,
+    "danh_muc": "Kiểm thử hệ thống",
+    "so_tieu_chi": 4,
+    "so_dat": 4,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 11,
+    "danh_muc": "Kiểm thử vận hành (Operation Test)",
+    "so_tieu_chi": 3,
+    "so_dat": 3,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 12,
+    "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": 13,
+    "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+    "so_tieu_chi": 2,
+    "so_dat": 2,
+    "ket_qua": "Đạt"
+   },
+   {
+    "stt": "CR01",
+    "danh_muc": "Phạm vi bổ sung theo phụ lục hợp đồng (CR01 Bán hàng trên sàn thương mại điện tử)",
+    "so_tieu_chi": 2,
+    "so_dat": 2,
     "ket_qua": "Đạt"
    }
   ]
@@ -2967,9 +3067,9 @@
  },
  "rui_ro": {
   "tong": 22,
-  "so_da_xay_ra": 3,
+  "so_da_xay_ra": 4,
   "so_kich_hoat": 2,
-  "so_khong_xay_ra": 19,
+  "so_khong_xay_ra": 18,
   "tong_emv_md": 47.6,
   "tong_emv_tien": 150693014,
   "tac_dong_md": 2.5,
@@ -2992,7 +3092,11 @@
     "ma_cr": "",
     "md_tac_dong": 1.0,
     "chi_phi_tac_dong": 2100000,
-    "so_su_kien": 3
+    "so_su_kien": 3,
+    "loai": "de_doa",
+    "ngay_xay_ra": "2027-04-19",
+    "ngay_kich_hoat": "2027-04-14",
+    "ngay_dong": "2027-06-10"
    },
    {
     "ma": "RR04",
@@ -3008,7 +3112,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.5,
     "chi_phi_tac_dong": 1050000,
-    "so_su_kien": 2
+    "so_su_kien": 2,
+    "loai": "de_doa",
+    "ngay_xay_ra": "2027-04-01",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-04-19"
    },
    {
     "ma": "RR06",
@@ -3024,7 +3132,31 @@
     "ma_cr": "",
     "md_tac_dong": 1.0,
     "chi_phi_tac_dong": 2100000,
-    "so_su_kien": 3
+    "so_su_kien": 3,
+    "loai": "de_doa",
+    "ngay_xay_ra": "2027-06-21",
+    "ngay_kich_hoat": "2027-06-21",
+    "ngay_dong": "2027-07-06"
+   },
+   {
+    "ma": "RR20",
+    "ten": "Tái sử dụng khung ứng dụng và thư viện giao diện từ hai hợp đồng tương tự",
+    "nhom": "Kỹ thuật",
+    "muc": "Thấp",
+    "emv_md": 3.2,
+    "emv_tien": 6720000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": true,
+    "da_kich_hoat": false,
+    "hanh_dong": "Khai thác cơ hội: tái sử dụng khung định tuyến và quản lý trạng thái giao diện từ hợp đồng tương tự cho gói 4.3.3, lợi ích đã phản ánh trong công thực tế của gói nên không ghi tác động riêng",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 2,
+    "loai": "co_hoi",
+    "ngay_xay_ra": "2027-03-29",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    }
   ],
   "danh_sach": [
@@ -3042,7 +3174,11 @@
     "ma_cr": "",
     "md_tac_dong": 1.0,
     "chi_phi_tac_dong": 2100000,
-    "so_su_kien": 3
+    "so_su_kien": 3,
+    "loai": "de_doa",
+    "ngay_xay_ra": "2027-04-19",
+    "ngay_kich_hoat": "2027-04-14",
+    "ngay_dong": "2027-06-10"
    },
    {
     "ma": "RR10",
@@ -3058,7 +3194,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR01",
@@ -3074,7 +3214,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-05-27"
    },
    {
     "ma": "RR04",
@@ -3090,7 +3234,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.5,
     "chi_phi_tac_dong": 1050000,
-    "so_su_kien": 2
+    "so_su_kien": 2,
+    "loai": "de_doa",
+    "ngay_xay_ra": "2027-04-01",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-04-19"
    },
    {
     "ma": "RR13",
@@ -3106,7 +3254,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR22",
@@ -3122,7 +3274,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR08",
@@ -3138,7 +3294,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR15",
@@ -3154,7 +3314,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR03",
@@ -3170,7 +3334,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR06",
@@ -3186,7 +3354,11 @@
     "ma_cr": "",
     "md_tac_dong": 1.0,
     "chi_phi_tac_dong": 2100000,
-    "so_su_kien": 3
+    "so_su_kien": 3,
+    "loai": "de_doa",
+    "ngay_xay_ra": "2027-06-21",
+    "ngay_kich_hoat": "2027-06-21",
+    "ngay_dong": "2027-07-06"
    },
    {
     "ma": "RR16",
@@ -3202,7 +3374,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR05",
@@ -3218,7 +3394,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR07",
@@ -3234,7 +3414,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR11",
@@ -3250,7 +3434,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR12",
@@ -3266,7 +3454,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR09",
@@ -3282,7 +3474,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR14",
@@ -3298,7 +3494,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR20",
@@ -3308,13 +3508,17 @@
     "emv_md": 3.2,
     "emv_tien": 6720000,
     "trang_thai_cuoi": "Đã đóng",
-    "da_xay_ra": false,
+    "da_xay_ra": true,
     "da_kich_hoat": false,
-    "hanh_dong": "",
+    "hanh_dong": "Khai thác cơ hội: tái sử dụng khung định tuyến và quản lý trạng thái giao diện từ hợp đồng tương tự cho gói 4.3.3, lợi ích đã phản ánh trong công thực tế của gói nên không ghi tác động riêng",
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 2,
+    "loai": "co_hoi",
+    "ngay_xay_ra": "2027-03-29",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR17",
@@ -3330,7 +3534,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR18",
@@ -3346,7 +3554,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    },
    {
     "ma": "RR21",
@@ -3362,7 +3574,11 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "co_hoi",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-05-27"
    },
    {
     "ma": "RR19",
@@ -3378,10 +3594,101 @@
     "ma_cr": "",
     "md_tac_dong": 0.0,
     "chi_phi_tac_dong": 0,
-    "so_su_kien": 1
+    "so_su_kien": 1,
+    "loai": "de_doa",
+    "ngay_xay_ra": "",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
    }
   ],
-  "so_su_kien": 27,
+  "so_su_kien": 28,
+  "de_doa_xay_ra_ds": [
+   {
+    "ma": "RR02",
+    "ten": "Tài liệu giao diện hoặc môi trường thử của Main System đến muộn hơn cam kết hoặc không đủ thông tin",
+    "nhom": "Tích hợp và đối tác",
+    "muc": "Cao",
+    "emv_md": 6.0,
+    "emv_tien": 12600000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": true,
+    "da_kich_hoat": true,
+    "hanh_dong": "Đến 9 giờ 00 ngày 14/04/2027 chưa nhận tài liệu đặc tả giao diện của Main System. Ninh Đức Toàn lập danh sách thông tin còn thiếu, Trần Bá Đạt gửi văn bản đề nghị Chủ đầu tư trong ngày, nhóm tích hợp chuẩn bị dịch vụ giả lập. Tài liệu đặc tả giao diện Main System nhận ngày 19/04/2027, muộn 2 ngày làm việc so với CK1. Ninh Đức Toàn đối chiếu tài liệu với danh sách thông tin còn thiếu, Trần Bá Đạt làm đặc tả giao diện tích hợp ngay khi nhận tài liệu, nhóm tích hợp tiếp tục chuẩn bị dịch vụ giả lập",
+    "ma_cr": "",
+    "md_tac_dong": 1.0,
+    "chi_phi_tac_dong": 2100000,
+    "so_su_kien": 3,
+    "loai": "de_doa",
+    "ngay_xay_ra": "2027-04-19",
+    "ngay_kich_hoat": "2027-04-14",
+    "ngay_dong": "2027-06-10"
+   },
+   {
+    "ma": "RR04",
+    "ten": "Vị trí bổ sung không có mặt đúng sprint huy động đã thống nhất",
+    "nhom": "Nhân sự",
+    "muc": "Trung bình",
+    "emv_md": 6.0,
+    "emv_tien": 12600000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": true,
+    "da_kich_hoat": false,
+    "hanh_dong": "Trần Bá Đạt xác nhận ngày có mặt của Trần Thu Hà, Nguyễn Thị Phương Liên chuẩn bị khung kế hoạch bảo đảm chất lượng để bàn giao, gói 2.1.1 làm bù trong tuần đầu sprint. Điều kiện đóng đạt",
+    "ma_cr": "",
+    "md_tac_dong": 0.5,
+    "chi_phi_tac_dong": 1050000,
+    "so_su_kien": 2,
+    "loai": "de_doa",
+    "ngay_xay_ra": "2027-04-01",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-04-19"
+   },
+   {
+    "ma": "RR06",
+    "ten": "Thời gian phản hồi vượt 2 giây hoặc không chịu tải 500 người dùng đồng thời",
+    "nhom": "Kỹ thuật",
+    "muc": "Trung bình",
+    "emv_md": 3.2,
+    "emv_tien": 6720000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": true,
+    "da_kich_hoat": true,
+    "hanh_dong": "Kích hoạt kế hoạch ứng phó khi kết quả kiểm thử hiệu năng cho thời gian phản hồi trang danh mục 2,6 giây ở mức tải 500 người dùng đồng thời. Đỗ Minh Quân tối ưu truy vấn danh mục và bộ nhớ đệm thay Phạm Tuấn Anh (không huy động trong S7), Ninh Đức Toàn rà soát cấu hình mở rộng nút ứng dụng trên môi trường vận hành, Phạm Ngọc Anh đo lại sau tối ưu",
+    "ma_cr": "",
+    "md_tac_dong": 1.0,
+    "chi_phi_tac_dong": 2100000,
+    "so_su_kien": 3,
+    "loai": "de_doa",
+    "ngay_xay_ra": "2027-06-21",
+    "ngay_kich_hoat": "2027-06-21",
+    "ngay_dong": "2027-07-06"
+   }
+  ],
+  "co_hoi_xay_ra_ds": [
+   {
+    "ma": "RR20",
+    "ten": "Tái sử dụng khung ứng dụng và thư viện giao diện từ hai hợp đồng tương tự",
+    "nhom": "Kỹ thuật",
+    "muc": "Thấp",
+    "emv_md": 3.2,
+    "emv_tien": 6720000,
+    "trang_thai_cuoi": "Đã đóng",
+    "da_xay_ra": true,
+    "da_kich_hoat": false,
+    "hanh_dong": "Khai thác cơ hội: tái sử dụng khung định tuyến và quản lý trạng thái giao diện từ hợp đồng tương tự cho gói 4.3.3, lợi ích đã phản ánh trong công thực tế của gói nên không ghi tác động riêng",
+    "ma_cr": "",
+    "md_tac_dong": 0.0,
+    "chi_phi_tac_dong": 0,
+    "so_su_kien": 2,
+    "loai": "co_hoi",
+    "ngay_xay_ra": "2027-03-29",
+    "ngay_kich_hoat": "",
+    "ngay_dong": "2027-08-04"
+   }
+  ],
+  "so_de_doa_xay_ra": 3,
+  "so_co_hoi_xay_ra": 1,
+  "so_co_hoi": 2,
   "rui_ro_moi": []
  },
  "kpi": [
@@ -3725,7 +4032,8 @@
    "md_bo_sung_khong_ghi_cong": 6.75,
    "giai_thich": "Huy động bổ sung là số ngày thành viên được gọi thêm trong sprint (sẵn sàng làm việc), nên lớn hơn phần MD ghi công vượt quỹ kế hoạch trong nhật ký. Phần chênh là ngày huy động bổ sung không ghi công: thành viên được gọi thêm để chờ gói tiền nhiệm hoàn thành (khắc phục lỗi sau kiểm thử hệ thống 4.4.5, kiểm thử hệ thống phần sàn 5.4.3) và hoàn thành sớm hơn dự kiến. Với cách trả lương theo công sức, phần này không phát sinh chi phí lương, chỉ làm giảm tỷ lệ sử dụng nhân lực huy động."
   },
-  "nguon": "dau_vao/thuc_te/huy_dong_bo_sung.json",
+  "nguon": "sổ huy động bổ sung thực tế",
+  "tep_nguon": "dau_vao/thuc_te/huy_dong_bo_sung.json",
   "danh_sach": [
    {
     "sprint": "S8",
@@ -3861,12 +4169,39 @@
   "ho_tro_tang_cuong": {
    "tu": "2027-07-30",
    "den": "2027-08-12",
-   "noi_dung": "Trực hỗ trợ trong giờ hành chính, theo dõi cảnh báo và xử lý sự cố, nằm trong chi phí bảo hành"
-  }
+   "noi_dung": "Trực hỗ trợ trong giờ hành chính, theo dõi cảnh báo và xử lý sự cố, nằm trong chi phí bảo hành",
+   "nhat_ky": [
+    [
+     "Trần Bá Đạt",
+     "1.1.5"
+    ]
+   ],
+   "co_ghi_cong_ho_tro": false
+  },
+  "muc_loi": [
+   {
+    "muc": "Nghiêm trọng",
+    "phan_hoi_gio": 2,
+    "khac_phuc": "8 giờ",
+    "cach_tinh": "Tính liên tục 24 giờ mỗi ngày, kể cả ngày nghỉ, từ khi tiếp nhận báo lỗi"
+   },
+   {
+    "muc": "Cao",
+    "phan_hoi_gio": 4,
+    "khac_phuc": "1 ngày làm việc",
+    "cach_tinh": "Tính trong giờ hành chính (8 giờ 00 đến 17 giờ 00 các ngày làm việc) từ khi tiếp nhận"
+   },
+   {
+    "muc": "Khác",
+    "phan_hoi_gio": 8,
+    "khac_phuc": "3 ngày làm việc",
+    "cach_tinh": "Tính trong giờ hành chính (8 giờ 00 đến 17 giờ 00 các ngày làm việc) từ khi tiếp nhận"
+   }
+  ]
  },
  "so_lieu_mo_phong": true,
  "can_cu_mo_phong": [
-  "Số liệu thực tế trong báo cáo là số liệu mô phỏng. {mo_phong#_ghi_chu}"
+  "Số liệu thực tế trong báo cáo là số liệu mô phỏng, sinh từ kịch bản biến cố từng sprint theo kế hoạch đã duyệt, không phải số liệu đo được của dự án thật."
  ],
  "kiem_tra": {
   "ket_luan": "dat",

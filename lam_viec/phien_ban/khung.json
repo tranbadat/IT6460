@@ -520,37 +520,37 @@
      "TL26",
      "Báo cáo tổng kết dự án",
      "Bao_cao_tong_ket_du_an.docx",
-     "0.5",
+     "0.7",
      "12/08/2027",
      "R9",
-     "Dự thảo"
+     "Đã kiểm tra"
     ],
     [
      "TL27",
      "Báo cáo đánh giá dự án",
      "Bao_cao_danh_gia_du_an.docx",
-     "0.3",
+     "0.5",
      "12/08/2027",
      "R9",
-     "Dự thảo"
+     "Đã kiểm tra"
     ],
     [
      "TL28",
      "Báo cáo bài học kinh nghiệm",
      "Bao_cao_bai_hoc_kinh_nghiem.docx",
-     "0.4",
+     "0.7",
      "12/08/2027",
      "R9",
-     "Dự thảo"
+     "Đã kiểm tra"
     ],
     [
      "TL29",
      "Bảng phân chia lương",
      "Bang_phan_chia_luong.xlsx",
-     "0.3",
+     "0.4",
      "12/08/2027",
      "R9",
-     "Dự thảo"
+     "Đã kiểm tra"
     ],
     [
      "TL30",
@@ -586,7 +586,7 @@
    "t": "p"
   },
   {
-   "text": "Số tài liệu: 30, tổng số phiên bản tài liệu đã đăng ký: 307, số tài liệu cần cập nhật theo đầu vào mới: 0.",
+   "text": "Số tài liệu: 30, tổng số phiên bản tài liệu đã đăng ký: 315, số tài liệu cần cập nhật theo đầu vào mới: 0.",
    "t": "p"
   },
   {
@@ -1043,7 +1043,7 @@
      "10",
      "4",
      "CR01",
-     "21"
+     "29"
     ]
    ],
    "widths": [
@@ -4113,6 +4113,26 @@
      "Sửa sau kiểm tra lớp B lượt 1: huy động thực tế, nghiệm thu hạng mục 12 và CR01, cơ sở BL1 và BL2, ngày đóng dự án, số âm viết chữ âm"
     ],
     [
+     "Bao_cao_tong_ket_du_an.docx",
+     "0.6",
+     "12/08/2027",
+     "25/10/2026 18:52",
+     "Báo cáo tổng kết dự án",
+     "Đã kiểm tra",
+     "R9",
+     "Sửa sau kiểm tra lớp B lượt 2: cơ hội RR20 đã xảy ra, hỗ trợ tăng cường theo nhật ký, phạm vi CR01 dòng riêng, K14 79,99%, bảo hành theo giờ, ngày RR06 bằng tham chiếu"
+    ],
+    [
+     "Bao_cao_tong_ket_du_an.docx",
+     "0.7",
+     "12/08/2027",
+     "25/10/2026 19:08",
+     "Báo cáo tổng kết dự án",
+     "Đã kiểm tra",
+     "R9",
+     ""
+    ],
+    [
      "Bao_cao_danh_gia_du_an.docx",
      "0.1",
      "12/08/2027",
@@ -4141,6 +4161,26 @@
      "Dự thảo",
      "R9",
      "Sửa sau kiểm tra lớp B lượt 1: K14 theo huy động thực tế, nghiệm thu hạng mục 12 và CR01, cơ sở BL1, rủi ro tách cơ hội, cam kết hỗ trợ tăng cường"
+    ],
+    [
+     "Bao_cao_danh_gia_du_an.docx",
+     "0.4",
+     "12/08/2027",
+     "25/10/2026 18:52",
+     "Báo cáo đánh giá dự án",
+     "Đã kiểm tra",
+     "R9",
+     "Sửa sau kiểm tra lớp B lượt 2: cơ hội RR20 đã xảy ra, hỗ trợ tăng cường theo nhật ký, phạm vi CR01 dòng riêng, K14 79,99%, bảo hành theo giờ, ngày RR06 bằng tham chiếu"
+    ],
+    [
+     "Bao_cao_danh_gia_du_an.docx",
+     "0.5",
+     "12/08/2027",
+     "25/10/2026 19:08",
+     "Báo cáo đánh giá dự án",
+     "Đã kiểm tra",
+     "R9",
+     ""
     ],
     [
      "Bao_cao_bai_hoc_kinh_nghiem.docx",
@@ -4183,6 +4223,36 @@
      "Sửa sau kiểm tra lớp B lượt 1: K14 và huy động bổ sung có nguồn, số liệu BH05, BH08, BH10, BH12, lời văn BH02, BH07"
     ],
     [
+     "Bao_cao_bai_hoc_kinh_nghiem.docx",
+     "0.5",
+     "12/08/2027",
+     "25/10/2026 18:52",
+     "Báo cáo bài học kinh nghiệm",
+     "Đã kiểm tra",
+     "R9",
+     "Sửa sau kiểm tra lớp B lượt 2: cơ hội RR20 đã xảy ra, hỗ trợ tăng cường theo nhật ký, phạm vi CR01 dòng riêng, K14 79,99%, bảo hành theo giờ, ngày RR06 bằng tham chiếu"
+    ],
+    [
+     "Bao_cao_bai_hoc_kinh_nghiem.docx",
+     "0.6",
+     "12/08/2027",
+     "25/10/2026 19:08",
+     "Báo cáo bài học kinh nghiệm",
+     "Đã kiểm tra",
+     "R9",
+     ""
+    ],
+    [
+     "Bao_cao_bai_hoc_kinh_nghiem.docx",
+     "0.7",
+     "12/08/2027",
+     "25/10/2026 19:09",
+     "Báo cáo bài học kinh nghiệm",
+     "Đã kiểm tra",
+     "R9",
+     ""
+    ],
+    [
      "Bang_phan_chia_luong.xlsx",
      "0.1",
      "12/08/2027",
@@ -4211,6 +4281,16 @@
      "Dự thảo",
      "R9",
      ""
+    ],
+    [
+     "Bang_phan_chia_luong.xlsx",
+     "0.4",
+     "12/08/2027",
+     "25/10/2026 18:51",
+     "Bảng phân chia lương",
+     "Đã kiểm tra",
+     "R9",
+     "Sửa sau kiểm tra lớp B lượt 2: tách cột huy động bổ sung trong sheet Huy_dong, ghi chú phiên bản"
     ],
     [
      "Phu_luc_bang_chung_prompt_skill.docx",
@@ -4335,7 +4415,7 @@
     [
      "qlda-loi",
      "1.0.0 - 1.6.5",
-     "172",
+     "184",
      "2",
      "qlda-loi__vai_sua__d64f5988d34d.md"
     ],
@@ -4349,8 +4429,8 @@
     [
      "qlda-phien-ban",
      "1.0.0 - 1.2.6",
-     "120",
-     "22",
+     "149",
+     "24",
      "AGENTS__362b3e315d00.md, qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ],
     [
@@ -4369,44 +4449,44 @@
     ],
     [
      "qlda-mo-phong",
-     "1.0.2 - 1.0.5",
-     "31",
-     "15",
+     "1.0.2 - 1.0.6",
+     "33",
+     "16",
      "qlda-loi__vai_sua__d64f5988d34d.md, qlda-mo-phong__vai_mo_phong__2b98b03e9d16.md"
     ],
     [
      "qlda-bao-cao-tien-do",
-     "1.5.0 - 1.5.3",
-     "98",
+     "1.5.0 - 1.5.5",
+     "101",
      "16",
      "qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ],
     [
      "qlda-tong-ket",
-     "1.4.0 - 1.4.1",
-     "17",
-     "3",
+     "1.4.0 - 1.4.2",
+     "24",
+     "6",
      "qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ],
     [
      "qlda-danh-gia",
-     "1.1.0",
+     "1.1.0 - 1.1.1",
+     "9",
      "5",
-     "3",
      "qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ],
     [
      "qlda-bai-hoc",
      "1.1.0",
-     "11",
-     "4",
+     "22",
+     "6",
      "qlda-bai-hoc__vai_rut_bai_hoc__610dfd8167ec.md, qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ],
     [
      "qlda-bang-luong",
-     "1.4.0 - 1.4.1",
-     "3",
-     "2",
+     "1.4.0 - 1.4.2",
+     "4",
+     "4",
      "qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ]
    ],
@@ -4427,7 +4507,7 @@
    "t": "table"
   },
   {
-   "text": "Nhật ký chạy ghi 1333 lần chạy, trong đó 241 lần do agent thực hiện và 5 lần do người dùng ghi (quyết định, phụ lục, kiểm tra đạt), còn lại là script. Chi tiết prompt, đầu vào, đầu ra và băm nội dung của từng lần chạy ở Phụ lục bằng chứng prompt và skill.",
+   "text": "Nhật ký chạy ghi 1414 lần chạy, trong đó 253 lần do agent thực hiện và 5 lần do người dùng ghi (quyết định, phụ lục, kiểm tra đạt), còn lại là script. Chi tiết prompt, đầu vào, đầu ra và băm nội dung của từng lần chạy ở Phụ lục bằng chứng prompt và skill.",
    "t": "p"
   },
   {
@@ -4437,6 +4517,12 @@
      "Ngày",
      "Tác giả",
      "Nội dung"
+    ],
+    [
+     "fd79c47",
+     "25/10/2026",
+     "tranbadat",
+     "update: final finish project"
     ],
     [
      "bf5fa54",

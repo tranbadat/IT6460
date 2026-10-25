@@ -68,7 +68,7 @@
    "ma": "BH05",
    "nhom": "nhan_su",
    "loai": "can_cai_thien",
-   "tinh_huong": "Mức huy động theo sprint của S7 đến S9 được đặt bằng MD xếp cộng 1 MD. Khi các gói chậm cuối S7 dồn sang S8, nhiều kiểm thử viên và kỹ sư phát triển hết quỹ, phải huy động bổ sung 10,5 MD ở S8 và 2,5 MD ở S9 (dau_vao/thuc_te/huy_dong_bo_sung.json) để giữ mốc M4 và cut over. MD huy động thực tế tăng từ 908 MD lên 921 MD, tỷ lệ sử dụng nhân lực huy động 79,99%, chỉ tiêu K14 không đạt ngưỡng 80%.",
+   "tinh_huong": "Mức huy động theo sprint của S7 đến S9 được đặt bằng MD xếp cộng 1 MD. Khi các gói chậm cuối S7 dồn sang S8, nhiều kiểm thử viên và kỹ sư phát triển hết quỹ, phải huy động bổ sung 10,5 MD ở S8 và 2,5 MD ở S9 (theo sổ huy động bổ sung thực tế) để giữ mốc M4 và cut over. MD huy động thực tế tăng từ 908 MD lên 921 MD, tỷ lệ sử dụng nhân lực huy động 79,99%, chỉ tiêu K14 không đạt ngưỡng 80%.",
    "nguyen_nhan": "Huy động theo nhu cầu được tính sát MD kế hoạch để đạt tỷ lệ sử dụng quỹ, không tính phần dư cho làm bù ở các sprint kiểm thử nơi lỗi và gói chậm dồn lại, nên khi gói chậm phải gọi thêm người và một phần ngày gọi thêm không ghi công.",
    "bai_hoc": "Tỷ lệ sử dụng quỹ cao không nên đạt bằng cách cắt hết phần dư ở các sprint có rủi ro tiến độ cao.",
    "khuyen_nghi": "Đặt mức huy động của các sprint kiểm thử và trước cut over có phần dư tối thiểu 15% MD xếp, theo dõi KPI K14 cùng số MD huy động bổ sung.",
@@ -157,7 +157,7 @@
    "nhom": "tien_do",
    "loai": "tich_cuc",
    "tinh_huong": "SPI xuống 0,94 ở S3 và 0,95 ở S4 (mức Vàng) nhưng phục hồi về 1,00 ở S8, mọi mốc đạt trong hạn và cut over đúng ngày 29/07/2027.",
-   "nguyen_nhan": "Gói chậm được ghi vào sổ vấn đề mỗi kỳ, hành động làm bù bằng quỹ sẵn sàng và dùng lại thành phần được giao người và hạn cụ thể.",
+   "nguyen_nhan": "Gói chậm được ghi vào sổ vấn đề mỗi kỳ, hành động làm bù bằng quỹ sẵn sàng và dùng lại thành phần được giao người và hạn cụ thể. Cơ hội RR20 (tái sử dụng khung giao diện từ hợp đồng tương tự) giúp gói 4.3.3 hoàn thành sớm ngay từ S1.",
    "bai_hoc": "Ghi mọi gói chậm thành vấn đề có hành động và hạn giúp phục hồi tiến độ trước khi tiêu hao dự trữ.",
    "khuyen_nghi": "Mỗi báo cáo tiến độ ghi vấn đề cho mọi gói chậm trên ngưỡng, hành động có người và hạn trong sprint kế tiếp.",
    "ap_dung_cho": "Báo cáo tiến độ, họp sprint",
@@ -166,7 +166,9 @@
     "K03",
     "M6",
     "R-S4-01",
-    "S8"
+    "S8",
+    "RR20",
+    "4.3.3"
    ]
   },
   {

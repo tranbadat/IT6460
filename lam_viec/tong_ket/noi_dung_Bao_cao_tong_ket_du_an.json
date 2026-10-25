@@ -15,7 +15,7 @@
    "mo_phong": "du_lieu/mo_phong.json",
    "da": "dau_vao/du_an.json"
   },
-  "phien_ban": "0.5",
+  "phien_ban": "0.7",
   "ngay": "12/08/2027"
  },
  "blocks": [
@@ -177,7 +177,7 @@
    "t": "table"
   },
   {
-   "text": "Số liệu thực tế trong báo cáo là số liệu mô phỏng. Số liệu mô phỏng: dữ liệu thực tế trong dau_vao/thuc_te/ do script qlda-mo-phong/scripts/mo_phong_sprint.py sinh từ kịch bản biến cố từng sprint (lam_viec/mo_phong/kich_ban_S<n>.json) theo kế hoạch đã duyệt hiện hành, không phải số liệu đo được của dự án thật.",
+   "text": "Số liệu thực tế trong báo cáo là số liệu mô phỏng, sinh từ kịch bản biến cố từng sprint theo kế hoạch đã duyệt, không phải số liệu đo được của dự án thật.",
    "t": "p"
   },
   {
@@ -194,7 +194,7 @@
   },
   {
    "t": "p",
-   "text": "Dự án đạt 13 trên 14 chỉ tiêu KPI, xếp loại Tốt. Chỉ tiêu không đạt là K14 Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động) với 79,99%, do phải huy động bổ sung 13 MD ở S8, S9. Số liệu thực hiện của dự án là số liệu mô phỏng theo du_lieu/mo_phong.json."
+   "text": "Dự án đạt 13 trên 14 chỉ tiêu KPI, xếp loại Tốt. Chỉ tiêu không đạt là K14 Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động) với 79,99%, do phải huy động bổ sung 13 MD ở S8, S9. Số liệu thực hiện của dự án là số liệu mô phỏng."
   },
   {
    "text": "2. Phạm vi và sản phẩm bàn giao",
@@ -268,8 +268,8 @@
     [
      "9",
      "Tích hợp với hệ thống chính (Main System)",
-     "4",
-     "4",
+     "2",
+     "2",
      "Đạt"
     ],
     [
@@ -296,6 +296,13 @@
     [
      "13",
      "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "2",
+     "2",
+     "Đạt"
+    ],
+    [
+     "CR01",
+     "Phạm vi bổ sung theo phụ lục hợp đồng (CR01 Bán hàng trên sàn thương mại điện tử)",
      "2",
      "2",
      "Đạt"
@@ -384,7 +391,7 @@
   },
   {
    "t": "p",
-   "text": "Phạm vi thay đổi duy nhất là yêu cầu thay đổi CR01 Bán hàng trên sàn thương mại điện tử do Chủ đầu tư đề nghị, tăng 76 MD, được phê duyệt bằng phụ lục hợp đồng 01/2027/PL-ABCW và nghiệm thu tại mốc M9 theo các tiêu chí NT19, NT20. Một số gói vượt công trên 20% so với kế hoạch, như dịch vụ đổi trả và hoàn tiền 3.3.7, do đặc tả có trường hợp nghiệp vụ phức tạp hơn ước lượng, không làm thay đổi phạm vi."
+   "text": "Phạm vi thay đổi duy nhất là yêu cầu thay đổi CR01 Bán hàng trên sàn thương mại điện tử do Chủ đầu tư đề nghị, tăng 76 MD, được phê duyệt bằng phụ lục hợp đồng 01/2027/PL-ABCW và nghiệm thu tại mốc M9 theo các tiêu chí NT19, NT20, trình bày dòng riêng trong bảng hạng mục, không tính vào hạng mục của Mẫu 01A. Một số gói vượt công trên 20% so với kế hoạch, như dịch vụ đổi trả và hoàn tiền 3.3.7, do đặc tả có trường hợp nghiệp vụ phức tạp hơn ước lượng, không làm thay đổi phạm vi."
   },
   {
    "text": "3. Tiến độ",
@@ -782,7 +789,7 @@
     [
      "Tỷ lệ sử dụng nhân lực huy động",
      "",
-     "80%"
+     "79,99%"
     ]
    ],
    "widths": [
@@ -965,7 +972,7 @@
   },
   {
    "t": "p",
-   "text": "MD huy động thực tế 921 MD gồm kế hoạch 908 MD và huy động bổ sung theo nhu cầu 13 MD ở S8, S9 (nguồn dau_vao/thuc_te/huy_dong_bo_sung.json). Tỷ lệ sử dụng nhân lực huy động đạt 79,99%, còn 184,25 MD sẵn sàng không ghi công, với cách trả theo công sức phần này là chỉ số năng lực, không phát sinh chi phí."
+   "text": "MD huy động thực tế 921 MD gồm kế hoạch 908 MD và huy động bổ sung theo nhu cầu 13 MD ở S8, S9 (nguồn sổ huy động bổ sung thực tế). Tỷ lệ sử dụng nhân lực huy động đạt 79,99%, còn 184,25 MD sẵn sàng không ghi công, với cách trả theo công sức phần này là chỉ số năng lực, không phát sinh chi phí."
   },
   {
    "t": "p",
@@ -1151,6 +1158,13 @@
      "Kích hoạt kế hoạch ứng phó khi kết quả kiểm thử hiệu năng cho thời gian phản hồi trang danh mục 2,6 giây ở mức tải 500 người dùng đồng thời. Đỗ Minh Quân tối ưu truy vấn danh mục và bộ nhớ đệm thay Phạm Tuấn Anh (không huy động trong S7), Ninh Đức Toàn rà soát cấu hình mở rộng nút ứng dụng trên môi trường vận hành, Phạm Ngọc Anh đo lại sau tối ưu",
      "1,00",
      "2.100.000"
+    ],
+    [
+     "RR20",
+     "Tái sử dụng khung ứng dụng và thư viện giao diện từ hai hợp đồng tương tự",
+     "Khai thác cơ hội: tái sử dụng khung định tuyến và quản lý trạng thái giao diện từ hợp đồng tương tự cho gói 4.3.3, lợi ích đã phản ánh trong công thực tế của gói nên không ghi tác động riêng",
+     "0,00",
+     "0"
     ]
    ],
    "widths": [
@@ -1176,7 +1190,7 @@
   },
   {
    "t": "p",
-   "text": "Trong 22 rủi ro của sổ đăng ký, 3 rủi ro đã xảy ra là RR02 (tài liệu Main System đến muộn), RR04 (vị trí bổ sung có mặt muộn) và RR06 (thời gian phản hồi vượt 2 giây), đều đã xử lý theo kế hoạch ứng phó. Tác động thực tế 2,50 MD, thấp hơn nhiều so với tổng EMV 47,60 MD, tỷ lệ dùng dự phòng tương đương 10,5%. Không có rủi ro mới phát sinh ngoài sổ."
+   "text": "Trong 22 rủi ro của sổ đăng ký, 3 đe dọa đã xảy ra là RR02 (tài liệu Main System đến muộn), RR04 (vị trí bổ sung có mặt muộn) và RR06 (thời gian phản hồi vượt 2 giây), đều đã xử lý theo kế hoạch ứng phó, và 1 cơ hội đã xảy ra là RR20 (tái sử dụng khung giao diện từ hợp đồng tương tự cho gói 4.3.3), lợi ích đã phản ánh trong công thực tế của gói. Tác động thực tế 2,50 MD, thấp hơn nhiều so với tổng EMV 47,60 MD, tỷ lệ dùng dự phòng tương đương 10,5%. Không có rủi ro mới phát sinh ngoài sổ."
   },
   {
    "text": "7. Bàn giao và công việc sau dự án",
@@ -1214,9 +1228,9 @@
     ],
     [
      "Hỗ trợ tăng cường sau cut over: Trực hỗ trợ trong giờ hành chính, theo dõi cảnh báo và xử lý sự cố, nằm trong chi phí bảo hành",
-     "Trần Bá Đạt",
+     "Chưa ghi nhận trong nhật ký công việc",
      "30/07/2027 đến 12/08/2027",
-     "Đã hoàn thành, thời gian dời theo phụ lục"
+     "Nhật ký công việc giai đoạn Kết thúc chỉ ghi gói báo cáo tổng kết 1.1.5, chưa có dữ liệu xác nhận người trực và kết quả hỗ trợ"
     ],
     [
      "Bảo hành, khắc phục sai sót 12 tháng từ ngày cut over, tiếp nhận yêu cầu qua đầu mối của Chủ đầu tư",

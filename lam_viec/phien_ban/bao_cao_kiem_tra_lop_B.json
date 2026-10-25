@@ -1,201 +1,50 @@
 {
  "tai_lieu": "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx",
  "tai_lieu_kem": "ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
- "phien_ban": "0.12",
- "phien_ban_tai_lieu_kem": "0.28",
+ "phien_ban": "0.13",
+ "phien_ban_tai_lieu_kem": "0.29",
  "dac_ta": ".claude/skills/qlda-phien-ban/dac_ta/tai_lieu_phien_ban.json",
+ "luot": "xác nhận (lượt 2) sau vòng sửa, bản kết thúc dự án",
  "ngay_kiem_tra": "2026-10-25",
- "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B, phiên riêng, bản kết thúc dự án)",
- "nguon_da_doi_chieu": [
-  "du_lieu/phien_ban.json",
-  "du_lieu/phien_ban_tong_hop.json",
-  "du_lieu/phat_hanh.json",
-  "du_lieu/thay_doi.json",
-  "du_lieu/lich.json",
-  "dau_vao/nha_thau.json",
-  "dau_vao/du_an.json",
-  "bang_chung/nhat_ky_chay.jsonl",
-  "git log",
-  "lam_viec/phien_ban/bao_cao_kiem_tra_vong1.json",
-  "các tệp trong ket_qua (bìa, thời điểm sửa)"
- ],
- "ket_luan": "chua_dat",
- "so_loi": 3,
- "so_canh_bao": 10,
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B), phiên riêng",
+ "bao_cao_truoc": "lam_viec/phien_ban/bao_cao_kiem_tra_lop_B_KT_vong1.json (đổi tên từ bao_cao_kiem_tra_lop_B.json, vì tên bao_cao_kiem_tra_lop_B_vong1.json đã có báo cáo của bản 0.1)",
+ "nguon_da_doi_chieu": ["du_lieu/phien_ban.json", "du_lieu/phien_ban_tong_hop.json", "du_lieu/phat_hanh.json", "du_lieu/thay_doi.json", "dau_vao/du_an.json", "bang_chung/nhat_ky_chay.jsonl", "git log, git tag"],
+ "tinh_lai_cong_thuc": "So_phien_ban.xlsx tính lại bằng LibreOffice headless: 0 ô lỗi, tổng 276 + 31 = 307 phiên bản khớp tài liệu Word.",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 3,
  "danh_gia_tieu_chi": [
-  {
-   "tieu_chi": "CL01",
-   "ket_qua": "dat",
-   "nhan_xet": "Đủ các mục đặc tả: phạm vi, quy ước, danh mục 30 tài liệu (kế hoạch, báo cáo tiến độ S1 đến S9 và KT, 5 tài liệu kết thúc, phụ lục bằng chứng), BL1, BL2, R1 đến R9, CR01, lịch sử 297 phiên bản, truy vết, git, nhận xét."
-  },
-  {
-   "tieu_chi": "CL02",
-   "ket_qua": "chua_dat",
-   "nhan_xet": "Danh mục, phiên bản hiện hành, ngày tài liệu, bản phát hành, trạng thái của TL01 đến TL30 khớp phien_ban_tong_hop.json và khớp phiên bản ghi trên bìa các tệp Word hiện có. BL1 (14 tài liệu, 1.0), BL2 (15 tài liệu, 2.2 đến 2.4, WBS 5 1.2, HSMT và HSDT 1.0) khớp phien_ban.json. R1 đến R9 khớp phat_hanh.json (ngày, số gói, lỗi đã sửa, lỗi còn mở, CR, R9 chính thức cut over 29/07/2027). Phiên bản gắn bản phát hành theo ngày tài liệu đúng cho toàn bộ 297 bản ghi. Lệch: số phiên bản Cost estimate (MH01), số lần agent gồm 5 lần người dùng (MH03), nhận định về git sai (MH02)."
-  },
-  {
-   "tieu_chi": "CL03",
-   "ket_qua": "dat",
-   "nhan_xet": "CR01 dẫn tới phiên bản sau thay đổi khớp thay_doi.json (phien_ban_sau), BL2 có căn cứ CR01 đã phê duyệt bằng phụ lục 01/2027/PL-ABCW, đóng ngày 29/07/2027 sau nghiệm thu mốc M9 ngày 27/07/2027 khớp lich.json và ket_qua_dong. Ghi chú lịch sử phiên bản sau hợp đồng gắn CR01."
-  },
-  {
-   "tieu_chi": "CL04",
-   "ket_qua": "dat",
-   "nhan_xet": "Quy ước đánh số, trạng thái và điều kiện chuyển trạng thái (lớp A, lớp B, phê duyệt, đường cơ sở, khóa) rõ ràng, kiểm chứng được qua sổ Excel có công thức COUNTIF."
-  },
-  {
-   "tieu_chi": "CL05",
-   "ket_qua": "dat",
-   "nhan_xet": "Có cơ chế phát hiện tài liệu cũ bằng băm đầu vào, quy định thay đổi sau đường cơ sở, lập lại BL2 có lý do ghi trong sổ. Cảnh báo về mức trình bày việc làm lại CR01 và bản BL2 đã thay (CB02, CB03)."
-  },
-  {
-   "tieu_chi": "CL06",
-   "ket_qua": "dat",
-   "nhan_xet": "Times New Roman 13, không in đậm trong thân, không ngoặc kép nhấn mạnh, không gạch dài. Một số ghi chú lịch sử chứa định danh kỹ thuật (CB08), định dạng ngày trong Excel chưa thống nhất (CB10)."
-  },
-  {
-   "tieu_chi": "DH1 Quy ước nhất quán với sổ phiên bản",
-   "ket_qua": "dat",
-   "nhan_xet": "Bảng 2.1 đến 2.3 khớp quy_uoc trong dữ liệu tổng hợp và cách đánh số thực tế (BL2 lập lại giữ số chính 2, tăng số phụ)."
-  },
-  {
-   "tieu_chi": "DH2 Nhận xét dựa trên số liệu sổ phiên bản và mã CR",
-   "ket_qua": "chua_dat",
-   "nhan_xet": "Có hai nhận định lệch nguồn: số phiên bản TL09 và tình trạng ghi nhận git (MH01, MH02)."
-  },
-  {
-   "tieu_chi": "DH3 Nêu rõ tài liệu còn cần cập nhật",
-   "ket_qua": "dat",
-   "nhan_xet": "Nguồn ghi so_can_cap_nhat 0, tài liệu ghi 0 và câu rỗng đúng. 15 tài liệu Dự thảo được liệt kê đủ."
-  },
-  {
-   "tieu_chi": "DH4 Bản phát hành khớp phat_hanh.json, bản cut over là bản chính thức",
-   "ket_qua": "dat",
-   "nhan_xet": "R1 đến R9 khớp, R9 ngày 29/07/2027 là bản chính thức."
-  },
-  {
-   "tieu_chi": "DH5 Tài liệu thuộc đường cơ sở khớp sổ, BL2 có căn cứ CR đã phê duyệt",
-   "ket_qua": "dat",
-   "nhan_xet": "Khớp phien_ban.json. HSMT, HSDT ở trạng thái Khóa 1.0 trong cả BL1 và BL2."
-  }
+  {"tieu_chi": "CL01", "ket_qua": "dat", "nhan_xet": "Đủ các mục đặc tả. Mục 1 nêu hai tệp quản lý phiên bản không xếp mã TL, mục 4 nêu cả hai lần làm lại BL2, Excel có bảng đường cơ sở đã thay."},
+  {"tieu_chi": "CL02", "ket_qua": "dat", "nhan_xet": "30 tài liệu, 307 phiên bản, 12 tệp dữ liệu, 13 tệp lưu trữ khớp phien_ban_tong_hop.json. TL28 0.4, TL29 0.3 khớp tệp hiện tại. TL02 29, TL09 24, TL10 22 phiên bản. Nhật ký 1333 lần chạy = 1087 script + 241 agent + 5 người dùng tại thời điểm dựng (18:41:10). BL1 có người lập Trần Bá Đạt. R1 đến R9 khớp phat_hanh.json."},
+  {"tieu_chi": "CL03", "ket_qua": "dat", "nhan_xet": "CR01 dẫn tới phiên bản sau thay đổi, BL2 có căn cứ CR01, lý do thay BL2 truy được về duong_co_so_thay_the. Truy vết skill không còn dòng tách theo mã bước."},
+  {"tieu_chi": "CL04", "ket_qua": "dat", "nhan_xet": "Quy ước số phiên bản, trạng thái, điều kiện chuyển trạng thái rõ ràng, kiểm chứng được qua sổ Excel."},
+  {"tieu_chi": "CL05", "ket_qua": "dat", "nhan_xet": "Nêu trung thực hai lần làm lại BL2 và việc kiểm tra độc lập BL2 lập lại được dời sau giai đoạn kết thúc theo quyết định ưu tiên của nhóm (có nguồn trong duong_co_so_thay_the)."},
+  {"tieu_chi": "CL06", "ket_qua": "dat", "nhan_xet": "Times New Roman 13, không in đậm, không chấm phẩy, ngoặc kép, gạch dài. Ngày trong Excel thống nhất ngày/tháng/năm. Mã nội bộ trong ghi chú lịch sử được giữ theo quyết định (29) ngày 25/10/2026."},
+  {"tieu_chi": "DH1 Quy ước nhất quán với sổ phiên bản", "ket_qua": "dat", "nhan_xet": "Bảng 2.1 đến 2.3 khớp quy_uoc và cách đánh số thực tế."},
+  {"tieu_chi": "DH2 Nhận xét dựa trên số liệu sổ phiên bản và mã CR", "ket_qua": "dat", "nhan_xet": "Số phiên bản TL02, TL09, TL10, số tài liệu Dự thảo, trạng thái CR01, nhận định git đều khớp nguồn tại thời điểm dựng."},
+  {"tieu_chi": "DH3 Nêu rõ tài liệu còn cần cập nhật", "ket_qua": "dat", "nhan_xet": "so_can_cap_nhat 0, 15 tài liệu Dự thảo liệt kê đủ."},
+  {"tieu_chi": "DH4 Bản phát hành khớp phat_hanh.json, bản cut over là bản chính thức", "ket_qua": "dat", "nhan_xet": "R9 ngày 29/07/2027 chính thức."},
+  {"tieu_chi": "DH5 Tài liệu thuộc đường cơ sở khớp sổ, BL2 có căn cứ CR đã phê duyệt", "ket_qua": "dat", "nhan_xet": "BL1 14 tài liệu, BL2 15 tài liệu khớp phien_ban.json."}
+ ],
+ "dong_phat_hien_truoc": [
+  {"ma": "MH01", "da_dong": true, "nhan_xet": "Mục 9: TL09 24 phiên bản, TL10 22 phiên bản, khớp danh_muc."},
+  {"ma": "MH02", "da_dong": true, "nhan_xet": "Mục 9 nêu commit cuối đã gồm tài liệu giai đoạn thực hiện và kết thúc, tồn tại là commit chưa ghi mã bước, phiên bản và chưa gắn thẻ BL1, BL2 (git tag rỗng, đúng)."},
+  {"ma": "MH03", "da_dong": true, "nhan_xet": "Mục 8 tách 241 lần agent và 5 lần người dùng, Excel sheet Nhat_ky có cột Số lần người dùng ghi, khớp nhật ký đến 18:41:10."},
+  {"ma": "CB01", "da_dong": true, "nhan_xet": "Word và Excel dựng cùng bản tổng hợp (1333 lần chạy, 307 phiên bản). Nhật ký hiện 1337 dòng do chính các lệnh dựng ghi sau, chấp nhận được."},
+  {"ma": "CB02", "da_dong": true, "nhan_xet": "Mục 4 nêu lần làm lại thứ nhất (bỏ BL2 lần đầu và các phiên bản sau S3, lưu riêng) và lần lập lại thứ hai."},
+  {"ma": "CB03", "da_dong": true, "nhan_xet": "Excel sheet Duong_co_so có mục Đường cơ sở đã thay (lập 14:09, thay 17:48, phiên bản, lý do), Word dẫn tới bảng này."},
+  {"ma": "CB04", "da_dong": true, "nhan_xet": "BL1 ghi người lập Trần Bá Đạt trong Word và phien_ban.json."},
+  {"ma": "CB05", "da_dong": true, "nhan_xet": "Mục 1 nêu hai tệp quản lý phiên bản được đăng ký trong sổ nhưng không xếp mã TL. Chưa ghi phiên bản hiện hành của hai tệp (0.29, 0.13), không ảnh hưởng kết luận."},
+  {"ma": "CB06", "da_dong": true, "nhan_xet": "Mục 9 tách tài liệu kế hoạch thuộc BL2 và tài liệu quản lý phiên bản cập nhật theo CR01 ngoài đường cơ sở."},
+  {"ma": "CB07", "da_dong": true, "nhan_xet": "Bảng truy vết không còn dòng qlda-phan-cong phan_cong_tai_lieu, qlda-master-plan ke_hoach_tong_the tách riêng."},
+  {"ma": "CB08", "da_dong": true, "nhan_xet": "Đóng theo quyết định (29) ngày 25/10/2026 giữ mã nội bộ trong ghi chú lịch sử để truy vết. Không còn dấu chấm phẩy trong văn bản."},
+  {"ma": "CB09", "da_dong": false, "nhan_xet": "Phiên bản TL26 đến TL29 khớp tệp hiện tại, nhưng sau lượt kiểm tra này trạng thái các tài liệu kết thúc có thể chuyển Đã kiểm tra, khi đó danh mục và câu 15 tài liệu Dự thảo ở mục 9 cần dựng lại. Chuyển thành CB01 của lượt này."},
+  {"ma": "CB10", "da_dong": true, "nhan_xet": "Sheet Phat_hanh và Thay_doi ghi ngày dạng ngày/tháng/năm, không còn ô dạng năm-tháng-ngày."}
  ],
  "phat_hien": [
-  {
-   "ma": "MH01",
-   "muc_do": "loi",
-   "nhom": "CL02 Nhất quán",
-   "vi_tri": "Mục 9, đoạn 1: \"tiếp theo là Cost estimate (TL09) và thuyết minh dự toán (TL10) với 22 phiên bản\"",
-   "mo_ta": "Nguồn danh_muc ghi TL09 Cost_estimate.xlsx có 24 phiên bản, TL10 có 22. Câu gộp hai tài liệu cùng 22 phiên bản là sai với TL09.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Soạn lại NHAN_XET: Cost estimate (TL09) 24 phiên bản, thuyết minh dự toán (TL10) 22 phiên bản, viết bằng tham chiếu danh_muc.so_phien_ban."
-  },
-  {
-   "ma": "MH02",
-   "muc_do": "loi",
-   "nhom": "CL02 Nhất quán",
-   "vi_tri": "Mục 9, đoạn cuối: \"Kho git có 9 lần commit, các thay đổi của giai đoạn thực hiện chưa được ghi nhận vào kho.\"",
-   "mo_ta": "Commit bf5fa54 (25/10/2026 18:20, trước khi dựng bản 0.12) đã gồm báo cáo tiến độ S1 đến S9, KT, kết quả mô phỏng, báo cáo tổng kết, đánh giá, bài học, bảng lương, phụ lục bằng chứng. Nhận định giai đoạn thực hiện chưa được ghi nhận vào kho là sai. Điều đúng: chưa có thẻ BL1, BL2 (git tag rỗng), các lần commit không ghi mã bước và phiên bản, một số thay đổi sau commit cuối chưa commit.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Soạn lại NHAN_XET, đoạn git: nêu commit cuối đã gồm tài liệu giai đoạn thực hiện và kết thúc, tồn tại là nội dung commit chưa ghi mã bước, phiên bản và chưa gắn thẻ đường cơ sở."
-  },
-  {
-   "ma": "MH03",
-   "muc_do": "loi",
-   "nhom": "CL02 Nhất quán",
-   "vi_tri": "Mục 8: \"Nhật ký chạy ghi 1275 lần chạy, trong đó 235 lần do agent thực hiện\" và cột Lần agent của dòng qlda-change (24)",
-   "mo_ta": "Trong 1275 bản ghi tại thời điểm dựng có 230 bản ghi loai agent và 5 bản ghi loai nguoi_dung (quyết định, phụ lục, kiểm tra đạt CR01 của skill qlda-change). Script tổng hợp đếm mọi bản ghi khác script là agent nên số 235 và cột Lần agent của qlda-change gộp cả quyết định của người dùng.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Sửa ở bước tạo dữ liệu: so_phien_ban.py tong_hop đếm so_lan_agent theo loai == agent và thêm so_lan_nguoi_dung (hoặc đổi câu đặc tả thành do agent hoặc người dùng thực hiện), rồi dựng lại tài liệu và sổ Excel."
-  },
-  {
-   "ma": "CB01",
-   "muc_do": "canh_bao",
-   "nhom": "CL02 Nhất quán",
-   "vi_tri": "Mục 8 (1275 lần chạy, qlda-phien-ban 116 lần script) so với So_phien_ban.xlsx và nguồn hiện tại",
-   "mo_ta": "Số liệu Word khớp nguồn tại thời điểm dựng (bản tổng hợp 18:21:49, 1275 bản ghi). Nguồn hiện ghi 1279 lần chạy và So_phien_ban.xlsx được ghi lại lúc 18:21:51 theo số mới, nên Word và Excel lệch vài lần chạy. Không phải lỗi nhưng cần dựng lại cả hai ở lần chốt cuối.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Dựng lại tài liệu sau khi các bước kết thúc dừng ghi nhật ký."
-  },
-  {
-   "ma": "CB02",
-   "muc_do": "canh_bao",
-   "nhom": "CL05 Trung thực về đường cơ sở",
-   "vi_tri": "Mục 4, đoạn BL2: \"bản lập trước chuyển vào danh sách đường cơ sở đã thay, các phiên bản cũ vẫn giữ trong sổ\"",
-   "mo_ta": "Word chỉ nêu một lần lập lại BL2 (thay bản 14:09:56). Khóa lam_lai còn ghi lần làm lại CR01 trước đó: BL2 lần 1 lập lúc 13:38:07 (cut over 27/07/2027) bị bỏ và 48 bản ghi phiên bản bị bỏ khỏi sổ, lưu riêng tại lam_viec/thay_doi/cu_cr01_lan1/. Excel (sheet Duong_co_so, ghi chú làm lại) có ghi, Word không nêu, câu các phiên bản cũ vẫn giữ trong sổ chỉ đúng với lần lập lại thứ hai.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Soạn lại DUONG_CO_SO: thêm một câu về lần làm lại CR01 (bỏ BL2 lần 1, 48 bản ghi lưu riêng) theo khóa lam_lai."
-  },
-  {
-   "ma": "CB03",
-   "muc_do": "canh_bao",
-   "nhom": "CL01 Đúng mục đích",
-   "vi_tri": "Mục 4, bảng đường cơ sở và Excel sheet Duong_co_so",
-   "mo_ta": "Bản BL2 đã thay (lập 14:09:56, các tài liệu kế hoạch 2.0, WBS 5 1.0, thay lúc 17:48:46, lý do trong duong_co_so_thay_the) chỉ được nêu bằng lời, không có dòng nào trình bày thời điểm và phiên bản của bản đã thay.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Bổ sung vào phien_ban_tong_hop và đặc tả một bảng đường cơ sở đã thay (mã, lúc lập, lúc thay, lý do, phiên bản), hoặc thêm vào lời văn DUONG_CO_SO."
-  },
-  {
-   "ma": "CB04",
-   "muc_do": "canh_bao",
-   "nhom": "CL02 Nhất quán",
-   "vi_tri": "Mục 4, bảng đường cơ sở, dòng BL1 cột Người lập để trống",
-   "mo_ta": "duong_co_so BL1 có nguoi rỗng trong khi đoạn phạm vi nêu Trần Bá Đạt là người lập đường cơ sở.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Nhóm xác nhận người lập BL1 và ghi vào du_lieu/phien_ban.json qua công cụ của qlda-phien-ban."
-  },
-  {
-   "ma": "CB05",
-   "muc_do": "canh_bao",
-   "nhom": "CL01 Đúng mục đích",
-   "vi_tri": "Mục 1, đoạn 2: \"Tài liệu áp dụng cho 30 tài liệu nộp trong thư mục ket_qua\"",
-   "mo_ta": "ket_qua có 32 tệp, gồm hai tệp của chính bước quản lý phiên bản (So_phien_ban.xlsx 0.28, Tai_lieu_quan_ly_phien_ban.docx 0.12) không có trong danh mục TL, trong khi mục 6 lại nêu phiên bản của hai tệp này.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Soạn lại PHAM_VI nêu hai tệp quản lý phiên bản được đăng ký trong sổ nhưng không xếp mã TL, kèm phiên bản hiện hành."
-  },
-  {
-   "ma": "CB06",
-   "muc_do": "canh_bao",
-   "nhom": "CL02 Nhất quán",
-   "vi_tri": "Mục 9, đoạn 3: \"các tài liệu phải cập nhật đã có phiên bản sau quyết định và thuộc đường cơ sở BL2\"",
-   "mo_ta": "Tài liệu quản lý phiên bản (thuyết minh 0.10, Excel 0.23) có trong tài liệu phải cập nhật của CR01 nhưng không thuộc BL2.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Soạn lại NHAN_XET: các tài liệu kế hoạch phải cập nhật thuộc BL2, tài liệu quản lý phiên bản cập nhật theo CR01 ngoài đường cơ sở."
-  },
-  {
-   "ma": "CB07",
-   "muc_do": "canh_bao",
-   "nhom": "CL03 Truy vết",
-   "vi_tri": "Mục 8, bảng truy vết, dòng \"qlda-phan-cong phan_cong_tai_lieu\" và \"qlda-master-plan ke_hoach_tong_the\"",
-   "mo_ta": "Hai bản ghi nhật ký ghi tên skill kèm mã bước nên tách thành dòng riêng, không có phiên bản skill, làm số lần agent của qlda-phan-cong và qlda-master-plan thiếu 1.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Không sửa nhật ký, chuẩn hóa tên skill khi tổng hợp trong so_phien_ban.py (lấy phần trước dấu cách)."
-  },
-  {
-   "ma": "CB08",
-   "muc_do": "canh_bao",
-   "nhom": "CL06 Văn phong",
-   "vi_tri": "Mục 7, ghi chú Master_schedule 0.10, 0.12, Cost_estimate 0.8: \"uoc_luong 657 MD\", \"; sửa căn cứ\", và mục 1 nêu đường dẫn lam_viec/...",
-   "mo_ta": "Ghi chú lịch sử chứa định danh kỹ thuật và dấu chấm phẩy, khác quy định văn phong. Đây là dữ liệu ghi chú lịch sử nên chỉ cảnh báo.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Tùy chọn: chuẩn hóa ghi chú khi tổng hợp, không sửa bản ghi lịch sử."
-  },
-  {
-   "ma": "CB09",
-   "muc_do": "canh_bao",
-   "nhom": "CL02 Nhất quán",
-   "vi_tri": "Mục 3, TL26 đến TL30 và mục 9 danh sách tài liệu Dự thảo",
-   "mo_ta": "Tại thời điểm kiểm tra, phiên bản trong sổ khớp bìa và thời điểm sửa của các tệp kết thúc. Bài học và bảng lương vừa có báo cáo lớp B lúc 18:25, có thể phát sinh phiên bản hoặc trạng thái mới sau bản 0.12, khi đó danh mục và nhận xét cần dựng lại.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Dựng lại tài liệu quản lý phiên bản sau cùng, sau khi các tài liệu kết thúc chốt."
-  },
-  {
-   "ma": "CB10",
-   "muc_do": "canh_bao",
-   "nhom": "CL06 Trình bày",
-   "vi_tri": "So_phien_ban.xlsx, sheet Phat_hanh cột Ngày (2027-03-31) và sheet Thay_doi cột Ngày quyết định (2027-05-27)",
-   "mo_ta": "Ngày ghi dạng năm-tháng-ngày, các sheet khác và tài liệu Word dùng ngày/tháng/năm.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Định dạng ngày thống nhất khi xuất Excel trong so_phien_ban.py."
-  }
- ]
+  {"ma": "CB01", "muc_do": "canh_bao", "nhom": "CL02 Nhất quán", "vi_tri": "Mục 3, cột Trạng thái TL16 đến TL30 và mục 9, đoạn 2: Có 15 tài liệu còn ở trạng thái Dự thảo", "mo_ta": "Đúng tại thời điểm dựng. Khi các tài liệu kết thúc và báo cáo tiến độ được chuyển Đã kiểm tra sau lớp B, tài liệu và sổ Excel sẽ lệch trạng thái.", "cach_sua": "tu_dong", "de_xuat": "Dựng lại tài liệu quản lý phiên bản và sổ Excel sau cùng, sau khi cập nhật trạng thái các tài liệu."},
+  {"ma": "CB02", "muc_do": "canh_bao", "nhom": "CL02 Nhất quán", "vi_tri": "Mục 8, bảng git (9 commit, cuối là bf5fa54) và đoạn cuối mục 9: Kho git có 9 lần commit", "mo_ta": "Sau khi dựng bản 0.13 (18:41), kho có thêm commit fd79c47 ngày 25/10/2026 18:44 (update: final finish project), nay là 10 commit. Không sai tại thời điểm dựng.", "cach_sua": "tu_dong", "de_xuat": "Cập nhật khi dựng lại lần chốt (cùng CB01)."},
+  {"ma": "CB03", "muc_do": "canh_bao", "nhom": "CL03 Truy vết", "vi_tri": "Mục 7, các dòng Bang_phan_chia_luong.xlsx 0.1, 0.2, 0.3 cột Ghi chú để trống", "mo_ta": "Bảng lương 0.3 là bản sửa sau kiểm tra lớp B lượt 1 (huy động bổ sung, căn cứ đối chiếu) nhưng ghi chú phiên bản trống, khác các tài liệu kết thúc khác (tổng kết, đánh giá, bài học có ghi chú sửa).", "cach_sua": "tu_dong", "de_xuat": "Tùy chọn: chia_luong.py truyền ghi chú khi đăng ký phiên bản ở các lần sau, không sửa bản ghi lịch sử."}
+ ],
+ "ghi_chu": "Lượt xác nhận: đóng 12/13 phát hiện lượt 1 (CB09 còn mở dưới dạng CB01), không phát sinh lỗi mới. Không đọc khung, ban_soan, noi_dung, nhật ký sửa."
 }

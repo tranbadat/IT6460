@@ -23,3 +23,5 @@ description: Lập báo cáo đánh giá dự án - kết quả theo bộ chỉ 
 Số liệu mô phỏng: đặc tả có bí danh nguồn tùy chọn mo_phong (du_lieu/mo_phong.json). Khi tệp có, khối doan_ds kt#can_cu_mo_phong (do tong_hop_ket_thuc.py ghi) in ở mục 1 câu số liệu thực tế là số liệu mô phỏng kèm {mo_phong#_ghi_chu}. Không có tệp thì không in gì. Agent Soạn thảo không viết lại câu này, phần phương pháp có thể nêu đánh giá dựa trên số liệu mô phỏng.
 
 Đầu ra: ket_qua/12_Bao_cao_danh_gia/Bao_cao_danh_gia_du_an.docx. Báo cáo bài học (qlda-bai-hoc) dùng các nhận định đã kiểm tra trong báo cáo này.
+
+Từ 1.1.1: đoạn tổng tác động thay đổi tách giá điều chỉnh theo phụ lục khỏi chi phí nội bộ ước tính.

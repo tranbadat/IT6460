@@ -44,3 +44,5 @@ Khi SPI hoặc CPI dưới ngưỡng: nêu nguyên nhân theo gói, ghi vấn đ
 Thư viện dùng chung: scripts/thuc_te.py (ngày làm việc gồm kỳ KT, ngày huy động, chi phí lương theo huy động, chi phí khác thực tế, kiểm tra ô CSV, căn cứ số liệu mô phỏng) được qlda-tong-ket và qlda-bang-luong dùng lại.
 
 Từ 1.5.3: thuc_te.md_huy_dong tính đến một ngày cộng huy động bổ sung thực tế theo nhu cầu (dau_vao/thuc_te/huy_dong_bo_sung.json, nút tt_huy_dong_bo_sung), dùng chung cho báo cáo tiến độ, tổng kết, bảng lương.
+
+Từ 1.5.4: cơ hội đã xảy ra không tạo tín hiệu vấn đề T25.

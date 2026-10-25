@@ -1,0 +1,174 @@
+{
+ "tai_lieu": "ket_qua/11_Bao_cao_tong_ket/Bao_cao_tong_ket_du_an.docx",
+ "phien_ban": "0.5",
+ "dac_ta": "qlda-tong-ket/dac_ta/bao_cao_tong_ket.json",
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "luot": "xác nhận lượt 2 sau vòng sửa, báo cáo lượt 1: lam_viec/tong_ket/bao_cao_kiem_tra_lop_B_vong1.json",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên kiểm tra riêng (agent con, lượt xác nhận 2), Claude Code, mô hình Claude Opus 5.5, python-docx đọc tệp Word",
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 3,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 8 mục, có đối chiếu BL1 và BL2, nghiệm thu hạng mục 12 và CR01, công việc sau dự án có ngày cụ thể."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Huy động 921 MD, sẵn sàng 184,25 MD và từng thành viên khớp ket_thuc.chi_phi, nhan_luc (tổng huy động 921,00 kiểm tra cộng dòng). Ngày đóng 04/08/2027, chốt 12/08/2027, thời gian thực hiện 18/03 đến 04/08/2027, BL1 (1.750.000.000 đồng, 657 MD, cut over 01/07/2027, M3 17/06/2027), giá điều chỉnh 199.024.682 đồng, 20 ngày làm việc, 22/22 tiêu chí, 16/16 yêu cầu RFP, 13/14 KPI khớp nguồn. Còn bảng chỉ tiêu mục 4 hiển thị tỷ lệ sử dụng nhân lực huy động 80%, trái với 79,99% trong lời văn và K14 Không đạt (MH07)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "CR01 truy vết về NT19, NT20 và M9, hạng mục 12 về NT21 tại M7, nêu rõ cơ sở BL2 và đối chiếu BL1. Tiêu chí CR01 được đếm vào hạng mục 9 Main System (MC7)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "13 hạng mục đều có tiêu chí đạt, khớp nghiem_thu.csv. Công việc sau dự án có ngày, người phụ trách."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "CR01 có giá điều chỉnh, chi phí nội bộ, số ngày lùi cut over. Rủi ro đã xảy ra có hành động. Dữ liệu RR20 chưa nhất quán (MC8)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, không in đậm, không ngoặc kép, không gạch dài, không chấm phẩy, số âm viết chữ âm."
+  },
+  {
+   "tieu_chi": "doc_hieu: tóm tắt khớp số liệu, không thổi phồng",
+   "ket_qua": "dat",
+   "nhan_xet": "Tóm tắt nêu 13/14 KPI, K14 79,99% Không đạt, đóng 04/08/2027, số liệu đến 12/08/2027."
+  },
+  {
+   "tieu_chi": "doc_hieu: nguyên nhân chênh lệch lớn",
+   "ket_qua": "dat",
+   "nhan_xet": "CHI_PHI nêu đúng trọng số các gói vượt (đặc tả, thiết kế, 3.3.7), RR06 tối ưu S7, đo lại S8."
+  },
+  {
+   "tieu_chi": "doc_hieu: công việc sau dự án có người, thời hạn",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ ngày cụ thể, người phụ trách hỗ trợ tăng cường chưa có nguồn dữ liệu (MC9)."
+  },
+  {
+   "tieu_chi": "doc_hieu: không đánh giá chủ quan thay báo cáo đánh giá",
+   "ket_qua": "dat",
+   "nhan_xet": "Giữ nguyên."
+  },
+  {
+   "tieu_chi": "doc_hieu: nhận xét chi phí đúng cách trả lương, ngày sẵn sàng, không kết luận tiết kiệm khi còn nghĩa vụ",
+   "ket_qua": "dat",
+   "nhan_xet": "Ngày sẵn sàng 184,25 MD là chỉ số năng lực, không chi phí, nghĩa vụ bảo hành 40.000.000 đồng tính vào tổng chi phí."
+  },
+  {
+   "tieu_chi": "doc_hieu: vấn đề tồn đọng có người phụ trách và thời hạn",
+   "ket_qua": "dat",
+   "nhan_xet": "14/14 vấn đề đã đóng."
+  }
+ ],
+ "dong_phat_hien_truoc": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Huy động 921 MD, sẵn sàng 184,25 MD, cột huy động từng người (Phạm Ngọc Anh 66, Phạm Tuấn Anh 70,5...) khớp ket_thuc.nhan_luc, lời văn nêu 13 MD bổ sung S8, S9 và 79,99%. Riêng dòng tỷ lệ trong bảng chỉ tiêu hiển thị 80%, ghi thành phát hiện mới MH07."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "Hạng mục 12 có NT21 (R37, biên bản M7 29/07/2027) Đạt, lời văn và bảng thống nhất."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "CR01 có NT19, NT20 tại M9 ngày 27/07/2027, PHAM_VI dẫn chiếu. Còn cách xếp vào hạng mục 9 (MC7)."
+  },
+  {
+   "ma": "MH04",
+   "da_dong": true,
+   "nhan_xet": "Kế hoạch và thực tế cùng 18/03/2027 đến 04/08/2027 (ket_thuc.tien_do.ket_thuc_ke_hoach)."
+  },
+  {
+   "ma": "MH05",
+   "da_dong": true,
+   "nhan_xet": "Tóm tắt ghi đóng 04/08/2027 tại M8, số liệu đến 12/08/2027, khớp ngay_dong_du_an."
+  },
+  {
+   "ma": "MH06",
+   "da_dong": true,
+   "nhan_xet": "Đoạn sau tóm tắt nêu cơ sở BL2 và đối chiếu BL1 khớp ket_thuc.duong_co_so_goc, ghi chú dưới bảng mốc."
+  },
+  {
+   "ma": "MC1",
+   "da_dong": true,
+   "nhan_xet": "CHI_PHI nêu gói đặc tả, thiết kế và 3.3.7 vượt nhiều nhất."
+  },
+  {
+   "ma": "MC2",
+   "da_dong": true,
+   "nhan_xet": "Nêu lỗi theo nhóm WBS 21, 12, 10, 7, 5 khớp loi.theo_nhom_wbs."
+  },
+  {
+   "ma": "MC3",
+   "da_dong": true,
+   "nhan_xet": "Tối ưu trong S7, đo lại đạt và đóng ở S8."
+  },
+  {
+   "ma": "MC4",
+   "da_dong": true,
+   "nhan_xet": "Thời hạn ra ngày cụ thể (30/07 đến 12/08/2027 theo chi_tieu_ky_thuat.json, 29/07/2027 đến 29/07/2028, sau 29/07/2028). Người phụ trách đổi sang Trần Bá Đạt chưa có nguồn dữ liệu, chuyển thành MC9."
+  },
+  {
+   "ma": "MC5",
+   "da_dong": true,
+   "nhan_xet": "Số âm viết chữ âm, cụm Cả 13 hạng mục."
+  },
+  {
+   "ma": "MC6",
+   "da_dong": true,
+   "nhan_xet": "Nêu giá điều chỉnh 199.024.682 đồng, chi phí nội bộ 161.500.000 đồng, lùi 20 ngày làm việc."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH07",
+   "muc_do": "loi",
+   "nhom": "CL02 số liệu KPI, hồi quy",
+   "vi_tri": "Mục 4 bảng chỉ tiêu, dòng Tỷ lệ sử dụng nhân lực huy động | | 80%",
+   "mo_ta": "ket_thuc.chi_phi.ty_le_su_dung_huy_dong = 0,7999, kpi K14 hiển thị 79,99% Không đạt với ngưỡng Tối thiểu 80%. Bảng làm tròn thành 80%, mâu thuẫn với lời văn cùng mục (79,99%), tóm tắt và báo cáo đánh giá, người đọc hiểu là đạt ngưỡng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Hiển thị hai chữ số thập phân (79,99%) theo kpi K14.thuc_te_hien_thi trong bước dựng bảng chỉ tiêu chi phí."
+  },
+  {
+   "ma": "MC7",
+   "muc_do": "canh_bao",
+   "nhom": "CL03 hạng mục nghiệm thu",
+   "vi_tri": "Mục 2 bảng hạng mục dòng 9 Tích hợp với hệ thống chính (Main System) | 4 | 4",
+   "mo_ta": "NT19, NT20 (phần bán hàng trên sàn theo phụ lục, CR01) có hang_muc = 9 trong nghiem_thu.csv nên được đếm vào hạng mục Tích hợp với Main System của Mẫu 01A. Hạng mục 9 hiển thị 4 tiêu chí trong khi chỉ NT11, NT12 thuộc Main System, bảng không có dòng cho phạm vi phụ lục dù ket_thuc.nghiem_thu.thay_doi đã tách CR01.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thêm dòng Phạm vi bổ sung theo phụ lục 01/2027/PL-ABCW (CR01) từ nghiem_thu.thay_doi và loại NT19, NT20 khỏi hạng mục 9, hoặc ghi chú dưới bảng."
+  },
+  {
+   "muc_do": "canh_bao",
+   "nhom": "CL02 dữ liệu rủi ro, cơ hội",
+   "mo_ta": "Kịch bản mô phỏng S1 (du_lieu/mo_phong.json, kich_ban_noi_dung S1 và họp cải tiến S1 liên kết 4.3.3, RR20) ghi cơ hội RR20 xảy ra: khung ứng dụng giao diện tái sử dụng thư viện từ hợp đồng tương tự, gói 4.3.3 làm 4,0 MD so với kế hoạch 5,0 MD. dau_vao/thuc_te/theo_doi_rui_ro.csv chỉ ghi RR20 Đã đóng ngày 04/08/2027, không có dòng Đã xảy ra, nên ket_thuc.rui_ro tính 3 rủi ro đã xảy ra. Tài liệu viết đúng theo ket_thuc.json nhưng nguồn mô phỏng và sổ theo dõi rủi ro không nhất quán.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận RR20 có xảy ra hay không. Nếu có, ghi dòng Đã xảy ra cho RR20 vào theo_doi_rui_ro.csv (tác động âm 1 MD, cơ hội), tạo lại ket_thuc.json và soạn lại phần rủi ro của hai báo cáo.",
+   "ma": "MC8",
+   "vi_tri": "Mục 6 đoạn THAY_DOI_RUI_RO: Trong 22 rủi ro của sổ đăng ký, 3 rủi ro đã xảy ra"
+  },
+  {
+   "ma": "MC9",
+   "muc_do": "canh_bao",
+   "nhom": "CL03 công việc sau dự án",
+   "vi_tri": "Mục 7 bảng, dòng Hỗ trợ tăng cường sau cut over | Trần Bá Đạt | 30/07/2027 đến 12/08/2027 | Đã hoàn thành",
+   "mo_ta": "Khoảng thời gian có nguồn (chi_tieu_ky_thuat.json, thay_doi.json). Người phụ trách và trạng thái Đã hoàn thành không có trong dữ liệu (không có huy động hay nhật ký sau 04/08/2027, hỗ trợ nằm trong chi phí bảo hành). Lượt 1 đã nêu cần nhóm xác nhận.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận người trực hỗ trợ, ghi vào dữ liệu bảo hành (ví dụ chi_tieu_ky_thuat.json bao_hanh.ho_tro_tang_cuong.nguoi_phu_trach) để bảng lấy từ dữ liệu."
+  }
+ ]
+}

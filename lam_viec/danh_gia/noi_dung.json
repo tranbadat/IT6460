@@ -15,7 +15,7 @@
    "mo_phong": "du_lieu/mo_phong.json",
    "da": "dau_vao/du_an.json"
   },
-  "phien_ban": "0.3",
+  "phien_ban": "0.5",
   "ngay": "12/08/2027"
  },
  "blocks": [
@@ -123,7 +123,7 @@
    "t": "p"
   },
   {
-   "text": "Số liệu thực tế trong báo cáo là số liệu mô phỏng. Số liệu mô phỏng: dữ liệu thực tế trong dau_vao/thuc_te/ do script qlda-mo-phong/scripts/mo_phong_sprint.py sinh từ kịch bản biến cố từng sprint (lam_viec/mo_phong/kich_ban_S<n>.json) theo kế hoạch đã duyệt hiện hành, không phải số liệu đo được của dự án thật.",
+   "text": "Số liệu thực tế trong báo cáo là số liệu mô phỏng, sinh từ kịch bản biến cố từng sprint theo kế hoạch đã duyệt, không phải số liệu đo được của dự án thật.",
    "t": "p"
   },
   {
@@ -162,7 +162,7 @@
   },
   {
    "t": "p",
-   "text": "Đánh giá do nhóm dự án thực hiện sau khi dự án đóng ngày 04/08/2027 tại mốc M8, số liệu tổng hợp đến ngày 12/08/2027, đầu mối Chủ đầu tư xác nhận kết quả nghiệm thu và các mốc. Bằng chứng gồm sổ mốc, nhật ký công việc, sổ lỗi, sổ vấn đề, sổ rủi ro, phiếu yêu cầu thay đổi, biên bản nghiệm thu, báo cáo tiến độ các kỳ và bảng huy động bổ sung theo nhu cầu, tổng hợp trong du_lieu/ket_thuc.json. Số liệu thực hiện là số liệu mô phỏng."
+   "text": "Đánh giá do nhóm dự án thực hiện sau khi dự án đóng ngày 04/08/2027 tại mốc M8, số liệu tổng hợp đến ngày 12/08/2027, đầu mối Chủ đầu tư xác nhận kết quả nghiệm thu và các mốc. Bằng chứng gồm sổ mốc, nhật ký công việc, sổ lỗi, sổ vấn đề, sổ rủi ro, phiếu yêu cầu thay đổi, biên bản nghiệm thu, báo cáo tiến độ các kỳ và bảng huy động bổ sung theo nhu cầu, tổng hợp trong số liệu kết thúc dự án. Số liệu thực hiện là số liệu mô phỏng."
   },
   {
    "t": "p",
@@ -394,7 +394,7 @@
      "K14 Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động)",
      "Không đạt: 79,99% so với Tối thiểu 80%",
      "Mức huy động theo sprint của S7 đến S9 được đặt sát MD kế hoạch. Các gói chậm cuối S7 (1.4.6, 1.4.9, 2.4.9, 4.5.3, 5.4.3) dồn sang S8 khi nhiều kiểm thử viên và kỹ sư phát triển đã hết quỹ, phải huy động bổ sung 13 MD ở S8, S9 để giữ mốc M4 và cut over. MD huy động thực tế tăng lên 921 MD trong khi một phần ngày huy động bổ sung không ghi công",
-     "Vấn đề VD13, VD14, bảng huy động bổ sung (dau_vao/thuc_te/huy_dong_bo_sung.json), nhật ký công việc S8, S9"
+     "Vấn đề VD13, VD14, bảng huy động bổ sung thực tế, nhật ký công việc S8, S9"
     ],
     [
      "K04 Chỉ số chi phí CPI kỳ cuối",
@@ -621,7 +621,7 @@
    "t": "table"
   },
   {
-   "text": "Số yêu cầu thay đổi: 1, được phê duyệt: 1, có quyết định trong thời hạn đánh giá: 1. Tổng tác động đã duyệt: 76 MD, 161.500.000 đồng.",
+   "text": "Số yêu cầu thay đổi: 1, được phê duyệt: 1, có quyết định trong thời hạn đánh giá: 1. Tổng tác động đã duyệt: 76 MD, giá điều chỉnh theo phụ lục 199.024.682 đồng, chi phí nội bộ ước tính của nhà thầu 161.500.000 đồng.",
    "t": "p"
   },
   {
@@ -918,7 +918,7 @@
     ],
     [
      "Đã xảy ra",
-     "3"
+     "4"
     ],
     [
      "Đã kích hoạt kế hoạch ứng phó",
@@ -954,7 +954,7 @@
     ],
     [
      "Mức độ nhận diện",
-     "3 rủi ro đe dọa đã xảy ra RR02, RR04, RR06 đều có trong sổ, không có rủi ro mới ngoài sổ. Hai cơ hội RR20, RR21 không xảy ra (RR21 đóng khi rà soát sổ sau phụ lục)",
+     "3 đe dọa đã xảy ra RR02, RR04, RR06 và 1 cơ hội đã xảy ra RR20 (tái sử dụng khung giao diện cho gói 4.3.3) đều có trong sổ, không có rủi ro mới ngoài sổ. Cơ hội RR21 không xảy ra, đóng khi rà soát sổ sau phụ lục",
      "Đạt"
     ],
     [
@@ -964,12 +964,12 @@
     ],
     [
      "Hiệu quả phòng ngừa",
-     "19 rủi ro không xảy ra, các rủi ro đe dọa về kiểm thử chấp nhận và cut over (RR03, RR08, RR10) được phòng ngừa bằng kiểm thử sớm và diễn tập triển khai",
+     "18 rủi ro không xảy ra, các rủi ro đe dọa về kiểm thử chấp nhận và cut over (RR03, RR08, RR10) được phòng ngừa bằng kiểm thử sớm và diễn tập triển khai",
      "Đạt"
     ],
     [
      "Tính kịp thời của ứng phó",
-     "RR06 kích hoạt kế hoạch ứng phó ngày 21/06/2027 (S7) khi dấu hiệu xuất hiện trong kiểm thử hiệu năng, tối ưu trong S7, đo lại đạt và đóng ngày 06/07/2027 (S8). RR02 được xử lý theo vấn đề VD04, VD06. RR04 xảy ra mà không có bước kích hoạt theo dấu hiệu, xử lý trực tiếp bằng vấn đề VD03",
+     "RR06 kích hoạt kế hoạch ứng phó ngày 21/06/2027 (S7) khi dấu hiệu xuất hiện trong kiểm thử hiệu năng, tối ưu trong S7, đo lại đạt và đóng ngày 06/07/2027 (S8). RR02 kích hoạt ngày 14/04/2027, trước khi xảy ra, xử lý theo vấn đề VD04, VD06. RR04 xảy ra mà không có bước kích hoạt theo dấu hiệu, xử lý trực tiếp bằng vấn đề VD03",
      "Đạt một phần, RR04 cần theo dõi dấu hiệu ngày có mặt trước sprint huy động"
     ],
     [
@@ -1032,14 +1032,14 @@
     [
      "Hỗ trợ tăng cường sau cut over",
      "HSDT (hỗ trợ tăng cường sau cut over), dời theo phụ lục",
-     "Hỗ trợ tăng cường từ 30/07/2027 đến 12/08/2027, giữ số ngày làm việc của cam kết, nằm trong chi phí bảo hành",
-     "Đạt"
+     "Khoảng hỗ trợ tăng cường từ 30/07/2027 đến 12/08/2027 đã dời theo phụ lục và giữ số ngày làm việc của cam kết. Nhật ký công việc giai đoạn Kết thúc không có dòng hỗ trợ tăng cường, chưa có dữ liệu xác nhận người trực và kết quả",
+     "Chưa đủ dữ liệu"
     ],
     [
      "Bảo hành trách nhiệm sai sót",
      "HSMT, E-ĐKCT, bảo hành 12 tháng, thời hạn phản hồi và khắc phục theo mức lỗi",
-     "Bảo hành từ 29/07/2027 đến 29/07/2028, nghĩa vụ ghi nhận là cam kết chưa chi 40.000.000 đồng, phản hồi và khắc phục theo mức lỗi đã thống nhất",
-     "Đạt"
+     "Bảo hành từ 29/07/2027 đến 29/07/2028, phản hồi lỗi mức Nghiêm trọng trong 2 giờ tính liên tục, mức Cao trong 4 giờ và mức Khác trong 8 giờ tính trong giờ hành chính. Nghĩa vụ ghi nhận là cam kết chưa chi 40.000.000 đồng, đến ngày tổng hợp số liệu chưa phát sinh yêu cầu bảo hành",
+     "Đang thực hiện"
     ]
    ],
    "widths": [
@@ -1070,8 +1070,6 @@
   }
  ],
  "canh_bao_soan": [
-  "RUI_RO: số liệu viết tay \"06/07/2027\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi",
-  "RUI_RO: số liệu viết tay \"18/10/2026\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi",
-  "RUI_RO: số liệu viết tay \"21/06/2027\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi"
+  "RUI_RO: số liệu viết tay \"18/10/2026\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi"
  ]
 }

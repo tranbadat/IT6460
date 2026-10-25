@@ -230,7 +230,7 @@
    "t": "p"
   },
   {
-   "text": "Số liệu thực tế trong báo cáo là số liệu mô phỏng. Số liệu mô phỏng: dữ liệu thực tế trong dau_vao/thuc_te/ do script qlda-mo-phong/scripts/mo_phong_sprint.py sinh từ kịch bản biến cố từng sprint (lam_viec/mo_phong/kich_ban_S<n>.json) theo kế hoạch đã duyệt hiện hành, không phải số liệu đo được của dự án thật.",
+   "text": "Số liệu thực tế trong báo cáo là số liệu mô phỏng, sinh từ kịch bản biến cố từng sprint theo kế hoạch đã duyệt, không phải số liệu đo được của dự án thật.",
    "t": "p"
   },
   {
@@ -683,7 +683,7 @@
    "t": "table"
   },
   {
-   "text": "Số yêu cầu thay đổi: 1, được phê duyệt: 1, có quyết định trong thời hạn đánh giá: 1. Tổng tác động đã duyệt: 76 MD, 161.500.000 đồng.",
+   "text": "Số yêu cầu thay đổi: 1, được phê duyệt: 1, có quyết định trong thời hạn đánh giá: 1. Tổng tác động đã duyệt: 76 MD, giá điều chỉnh theo phụ lục 199.024.682 đồng, chi phí nội bộ ước tính của nhà thầu 161.500.000 đồng.",
    "t": "p"
   },
   {
@@ -951,7 +951,7 @@
     ],
     [
      "Đã xảy ra",
-     "3"
+     "4"
     ],
     [
      "Đã kích hoạt kế hoạch ứng phó",

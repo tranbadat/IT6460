@@ -289,9 +289,11 @@ for y in yc:
     lq = [x for x in ds_nt if re.search(r'\b' + re.escape(y['ma']) + r'\b', x['tieu_chi'] + ' ' + x.get('ghi_chu', ''))]
     kq = 'Chưa nghiệm thu' if not lq else ('Đạt' if all(x['ket_qua'] == 'Đạt' for x in lq) else 'Không đạt')
     yc_kq.append({'ma': y['ma'], 'noi_dung': y['dien_giai'], 'ma_nghiem_thu': ', '.join(x['ma'] for x in lq), 'ket_qua': kq})
+ma_cr_pl = [c['ma'] for c in so_td['yeu_cau'] if c.get('phu_luc_hop_dong') and c.get('trang_thai') in ('Đã phê duyệt', 'Đã thực hiện', 'Đã đóng')]
+la_nt_cr = lambda x: any(re.search(r'\b' + re.escape(m_) + r'\b', x['tieu_chi'] + ' ' + x.get('ghi_chu', '')) for m_ in ma_cr_pl)  # noqa: E731
 hm = []
-for m in hsmt['mau_01a']:
-    lq = [x for x in ds_nt if str(x.get('hang_muc', '')).strip() == str(m['stt'])]
+for m in hsmt['mau_01a']:  # tiêu chí của phạm vi phụ lục (ghi mã CR) trình bày dòng riêng, không đếm vào hạng mục Mẫu 01A (từ 1.4.2)
+    lq = [x for x in ds_nt if str(x.get('hang_muc', '')).strip() == str(m['stt']) and not la_nt_cr(x)]
     kq = 'Chưa nghiệm thu' if not lq else ('Đạt' if all(x['ket_qua'] == 'Đạt' for x in lq) else 'Không đạt')
     hm.append({'stt': m['stt'], 'danh_muc': m['danh_muc'], 'so_tieu_chi': len(lq), 'so_dat': sum(1 for x in lq if x['ket_qua'] == 'Đạt'), 'ket_qua': kq})
 nghiem_thu = {'so_tieu_chi': len(ds_nt), 'so_dat': len(dat), 'ty_le_nghiem_thu_dat': round(len(dat) / len(ds_nt), 4) if ds_nt else 0,
@@ -310,6 +312,8 @@ for c in so_td['yeu_cau']:
                                        'ket_qua': 'Chưa nghiệm thu' if not lq else ('Đạt' if all(x['ket_qua'] == 'Đạt' for x in lq) else 'Không đạt')})
         if not lq:
             add('K06', f'Phạm vi yêu cầu thay đổi {c["ma"]} có phụ lục nhưng chưa có tiêu chí nghiệm thu ghi mã {c["ma"]}', 'canh_bao')
+nghiem_thu['hang_muc_va_phu_luc'] = hm + [{'stt': x['ma'], 'danh_muc': f'Phạm vi bổ sung theo phụ lục hợp đồng ({x["ma"]} {x["tieu_de"]})',
+                                          'so_tieu_chi': x['so_tieu_chi'], 'so_dat': x['so_dat'], 'ket_qua': x['ket_qua']} for x in nghiem_thu['thay_doi']]
 if not nt:
     add('K06', 'Chưa có kết quả nghiệm thu (nghiem_thu.csv)', 'canh_bao')
 
@@ -388,7 +392,11 @@ for r_ in rr['danh_sach']:
                   'emv_md': r_['emv_md'], 'emv_tien': r_['emv_tien'], 'trang_thai_cuoi': tdrr.get(r_['ma'], {}).get('trang_thai', 'Đang theo dõi'),
                   'da_xay_ra': bool(xr), 'da_kich_hoat': any(x['trang_thai'] == 'Đã kích hoạt ứng phó' for x in ev),
                   'hanh_dong': '. '.join(x['hanh_dong'] for x in ev if x.get('hanh_dong')), 'ma_cr': ', '.join(sorted({x['ma_cr'] for x in ev if x.get('ma_cr')})),
-                  'md_tac_dong': round(md_tdg, 2), 'chi_phi_tac_dong': round(tien_tdg), 'so_su_kien': len(ev)})
+                  'md_tac_dong': round(md_tdg, 2), 'chi_phi_tac_dong': round(tien_tdg), 'so_su_kien': len(ev),
+                  'loai': r_.get('loai', 'de_doa'),
+                  'ngay_xay_ra': min((x['ngay'] for x in xr), default=''),
+                  'ngay_kich_hoat': min((x['ngay'] for x in ev if x['trang_thai'] == 'Đã kích hoạt ứng phó'), default=''),
+                  'ngay_dong': max((x['ngay'] for x in ev if x['trang_thai'] == 'Đã đóng'), default='')})
 ma_so = {r_['ma'] for r_ in rr['danh_sach']}
 for m_ in sorted({x['ma_rui_ro'] for x in su_kien} - ma_so, key=loi.khoa_ma):  # rủi ro phát sinh ngoài sổ
     ev = [x for x in su_kien if x['ma_rui_ro'] == m_]
@@ -406,6 +414,10 @@ rui_ro = {'tong': len(ds_rr), 'so_da_xay_ra': len(xay_ra), 'so_kich_hoat': sum(1
           'tac_dong_tien': tac_dong_tien, 'du_phong': du_phong, 'ty_le_dung_du_phong': round(tac_dong_tien / du_phong, 4) if du_phong else 0,
           'ty_le_rui_ro_co_ung_pho': round(sum(1 for x in xay_ra if x['hanh_dong']) / len(xay_ra), 4) if xay_ra else 1.0,
           'xay_ra_ds': xay_ra, 'danh_sach': ds_rr, 'so_su_kien': len(su_kien),
+          # tách đe dọa và cơ hội đã xảy ra (từ 1.4.2)
+          'de_doa_xay_ra_ds': [x for x in xay_ra if x.get('loai', 'de_doa') != 'co_hoi'], 'co_hoi_xay_ra_ds': [x for x in xay_ra if x.get('loai') == 'co_hoi'],
+          'so_de_doa_xay_ra': sum(1 for x in xay_ra if x.get('loai', 'de_doa') != 'co_hoi'), 'so_co_hoi_xay_ra': sum(1 for x in xay_ra if x.get('loai') == 'co_hoi'),
+          'so_co_hoi': sum(1 for x in ds_rr if x.get('loai') == 'co_hoi'),
           'rui_ro_moi': sorted({x['ma_rui_ro'] for x in su_kien} - {r_['ma'] for r_ in rr['danh_sach']})}
 if not du_phong and tac_dong_tien > 0:
     add('K20', f'Không có dự phòng rủi ro (du_phong_rui_ro.so_tien bằng 0) nhưng tác động thực tế {loi.tien(tac_dong_tien)} đồng, K13 không phản ánh việc vượt dự phòng', 'canh_bao')
@@ -471,7 +483,13 @@ _goc = D(tien_do['cut_over_thuc_te'] or lich['cut_over'])
 _y, _m = divmod(_goc.month - 1 + _thang, 12)
 _het = _goc.replace(year=_goc.year + _y, month=_m + 1, day=min(_goc.day, 28 if _m + 1 == 2 else 30 if _m + 1 in (4, 6, 9, 11) else 31))
 bao_hanh_kt = {'thoi_han_thang': _thang, 'tu': _goc.isoformat(), 'het_han': _het.isoformat(),
-               'ho_tro_tang_cuong': {k_: v_ for k_, v_ in (_bh.get('ho_tro_tang_cuong') or {}).items() if not k_.startswith('_')}}
+               'ho_tro_tang_cuong': {k_: v_ for k_, v_ in (_bh.get('ho_tro_tang_cuong') or {}).items() if not k_.startswith('_')},
+               'muc_loi': _bh.get('muc_loi', [])}
+# nhật ký công việc trong khoảng hỗ trợ tăng cường: người và gói có ghi công (dữ liệu xác nhận người trực hỗ trợ), từ 1.4.2
+_htc = bao_hanh_kt['ho_tro_tang_cuong']
+_nk_htc = [x for x in nk if _htc.get('tu') and _htc['tu'] <= x['ngay'] <= _htc.get('den', _htc['tu'])]
+bao_hanh_kt['ho_tro_tang_cuong']['nhat_ky'] = sorted({(tv.get(x['thanh_vien'], {}).get('ho_ten', x['thanh_vien']), x['ma_goi']) for x in _nk_htc})
+bao_hanh_kt['ho_tro_tang_cuong']['co_ghi_cong_ho_tro'] = any(not str(x['ma_goi']).startswith('1.1.') for x in _nk_htc)
 loi_ds = [x for x in F if x['muc_do'] == 'loi']
 out = {'ngay_chot': ngay_chot.isoformat(), 'ky_cuoi': ky, 'pham_vi': pham_vi, 'tien_do': tien_do, 'chi_phi': chi_phi, 'nhan_luc': nguoi, 'van_de': van_de,
        'nghiem_thu': nghiem_thu, 'loi': loi_, 'thay_doi': thay_doi, 'rui_ro': rui_ro, 'kpi': kpi, 'so_kpi': len(kpi), 'so_kpi_dat': so_dat,

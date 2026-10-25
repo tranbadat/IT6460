@@ -1,91 +1,53 @@
 {
  "tai_lieu": "ket_qua/14_Bang_phan_chia_luong/Bang_phan_chia_luong.xlsx",
- "phien_ban": "0.2",
+ "phien_ban": "0.4",
  "dac_ta": ".claude/skills/qlda-bang-luong/SKILL.md",
- "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B), phiên riêng",
- "ket_luan": "chua_dat",
- "so_loi": 1,
- "so_canh_bao": 3,
- "tinh_lai_cong_thuc": "Tính lại bằng LibreOffice 25 headless: 0 ô lỗi, MD thực tế, MD huy động, lương, chi phí, thu nhập 12 người và tổng MD, lương 10 kỳ (S1 đến S9, KT) khớp du_lieu/luong.json (sai khác dưới 1 đồng do làm tròn).",
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "luot": "xác nhận chốt lượt 3, báo cáo lượt 2: lam_viec/bang_luong/bao_cao_kiem_tra_lop_B_vong2.json",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên kiểm tra riêng (agent con, lượt xác nhận chốt 3), Claude Code, mô hình Claude Opus 5.5, python-docx đọc tệp Word, openpyxl và LibreOffice headless tính lại công thức trên bản sao",
+ "tinh_lai_cong_thuc": "LibreOffice headless trên bản sao trong thư mục tạm của phiên: 0 ô lỗi. Huy_dong cột C = D + E, tổng C 921, D 908, E 13; 8 dòng bổ sung khớp từng (thành viên, sprint, md_bo_sung) của huy_dong_bo_sung.json (S8 10,5, S9 2,5). SUMIFS Bang_luong cột G phủ đúng vùng dữ liệu Huy_dong C2:C100. MD huy động từng người khớp báo cáo tổng kết, MD thực tế 736,75, sẵn sàng 184,25, tỷ lệ 0,79995 (79,99%), lương 1.082.079.545, chi phí doanh nghiệp 1.336.368.239, chênh 8.528.798 so với chi phí lương kế hoạch 1.327.839.441, khớp ket_thuc.json.",
+ "dong_phat_hien_truoc": [
+  {
+   "ma": "CB01",
+   "da_dong": true,
+   "nhan_xet": "Sheet Huy_dong có cột D Theo kế hoạch và E Huy động bổ sung, cột C là công thức D + E, dòng nguồn ghi sổ huy động bổ sung thực tế. Người ký thấy ngay phần bổ sung của mình."
+  }
+ ],
  "danh_gia_tieu_chi": [
   {
    "tieu_chi": "CL01",
    "ket_qua": "dat",
-   "nhan_xet": "Đủ 8 sheet theo SKILL (Thuyet_minh, Bang_luong, Theo_sprint, Doi_chieu, Tham_so, Sprint, Nhat_ky, Huy_dong), có cột ký xác nhận, ghi chú cách đọc, căn cứ mô phỏng."
+   "nhan_xet": "Bảng lương, theo sprint, đối chiếu, tham số, nhật ký, huy động, thuyết minh, cột ký xác nhận."
   },
   {
    "tieu_chi": "CL02",
-   "ket_qua": "chua_dat",
-   "nhan_xet": "Cách trả lương cong_suc đúng don_gia.json. Đơn giá ngày = lương tham chiếu / 22 đúng 6 vai trò, hệ số bảo hiểm 1,235. MD thực tế theo nhật ký 736,75 MD (988 dòng), MD kế hoạch 733 MD khớp lich.json và chi_phi.json md_giao từng người. Lương 1.082.079.545, chi phí doanh nghiệp 1.336.368.239 khớp ket_thuc.json, chi phí lương kế hoạch 1.327.839.441 khớp chi_phi.json tong_chi_phi_nguoi, chênh 8.528.798. Thuyết minh mục 7 mô tả sai căn cứ đối chiếu (MH01)."
+   "ket_qua": "dat",
+   "nhan_xet": "Số liệu sau tính lại khớp luong.json, ket_thuc.json, huy_dong_bo_sung.json."
   },
   {
    "tieu_chi": "CL03",
    "ket_qua": "dat",
-   "nhan_xet": "Mỗi số dẫn về sheet nguồn (Nhat_ky, Huy_dong, Tham_so) và tệp nguồn ở cột Ghi chú của Doi_chieu."
+   "nhan_xet": "Huy động bổ sung truy được tới từng thành viên và sprint."
   },
   {
    "tieu_chi": "CL04",
    "ket_qua": "dat",
-   "nhan_xet": "Ô chênh lệch MD tô màu khi lệch quá 10% (định dạng có điều kiện J2:J13), cột ký xác nhận cho từng thành viên."
+   "nhan_xet": "Công thức tính lại được, không lỗi."
   },
   {
    "tieu_chi": "CL05",
-   "ket_qua": "chua_dat",
-   "nhan_xet": "Huy động bổ sung S8, S9 chưa phản ánh trong sheet Huy_dong, kiểm tra lớp A không cảnh báo ghi công ngoài huy động (MH02, MH03). Ghi cảnh báo theo bối cảnh, không tính là lỗi."
+   "ket_qua": "dat",
+   "nhan_xet": "Không áp dụng trực tiếp, ngày sẵn sàng tách riêng, không trừ lương."
   },
   {
    "tieu_chi": "CL06",
    "ket_qua": "dat",
-   "nhan_xet": "Dòng tiêu đề in đậm theo quyết định (22) ngày 25/10/2026. Lặp tên nhóm ở Thuyet_minh A3 (MH04)."
-  },
-  {
-   "tieu_chi": "SKILL_cong_thuc",
-   "ket_qua": "dat",
-   "nhan_xet": "SUMIFS cho MD thực tế, MD huy động, MD theo sprint, INDEX/MATCH cho đơn giá ngày và sprint của từng dòng nhật ký, IF theo cách trả lương, SUMPRODUCT cho chi phí theo MD kế hoạch."
-  },
-  {
-   "tieu_chi": "SKILL_ty_trong_san_sang",
-   "ket_qua": "dat",
-   "nhan_xet": "Tỷ trọng = MD thực tế / 736,75, tổng 1. Ngày sẵn sàng 171,25 MD = 908 - 736,75, trình bày riêng, không trừ lương. Phần chia theo đóng góp bằng 0 đúng với cong_suc."
+   "nhan_xet": "Đạt."
   }
  ],
- "phat_hien": [
-  {
-   "ma": "MH01",
-   "muc_do": "loi",
-   "nhom": "CL02",
-   "vi_tri": "Sheet Thuyet_minh, ô A13: Bảng đối chiếu MD kế hoạch theo master schedule, khoản A và chi phí lương theo huy động của cost estimate (sheet Doi_chieu).",
-   "mo_ta": "Mâu thuẫn với cách trả lương cong_suc và với Doi_chieu B3 (chi phí lương kế hoạch cùng cách trả lương, 1.327.839.441 đồng theo MD công việc). Chi phí theo huy động của cost estimate là 1.640.136.136 đồng, không phải số được đối chiếu.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Sửa câu mẫu trong qlda-bang-luong/scripts/chia_luong.py để dùng cùng cách trả lương: ... khoản A và chi phí lương kế hoạch của cost estimate theo cùng cách trả lương (MD công việc). Chạy lại chia_luong.py."
-  },
-  {
-   "ma": "MH02",
-   "muc_do": "canh_bao",
-   "nhom": "CL02, CL05",
-   "vi_tri": "Sheet Huy_dong và Bang_luong cột G, I; Doi_chieu B5, B7, B8",
-   "mo_ta": "Huy động bổ sung S8 (11,5 MD theo bối cảnh) và S9 (2,5 MD) chưa có trong lich.json phan_bo nên MD huy động vẫn 908, ngày sẵn sàng 171,25 MD, tỷ lệ sử dụng 81,1%. Nhật ký có MD vượt quỹ huy động: Phạm Tuấn Anh S8 1 MD khi quỹ 0, Phạm Ngọc Anh S8 5 MD/quỹ 2, Vũ Đức Minh S8 3,25/3, Trương Quốc Việt S9 8/6. Lương không đổi vì trả theo công sức, chỉ các chỉ số huy động và ngày sẵn sàng chưa đúng thực tế.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Sửa ở dữ liệu: nhóm hoàn tất khóa nguồn huy động bổ sung trong dau_vao, chạy lại lịch (phan_bo) rồi chia_luong.py."
-  },
-  {
-   "ma": "MH03",
-   "muc_do": "canh_bao",
-   "nhom": "CL05",
-   "vi_tri": "du_lieu/luong.json kiem_tra.phat_hien rỗng",
-   "mo_ta": "SKILL quy định cảnh báo khi ghi công ngoài thời gian huy động, nhưng kiểm tra lớp A không cảnh báo trường hợp Phạm Tuấn Anh ghi 1 MD trong S8 khi không được huy động (ty_le_theo_sprint S8 = 0) và các trường hợp MD vượt quỹ sprint.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Kiểm tra lại quy tắc cảnh báo ngoài huy động trong chia_luong.py (so MD theo người và sprint với quỹ phan_bo). Sẽ tự hết khi MH02 được xử lý."
-  },
-  {
-   "ma": "MH04",
-   "muc_do": "canh_bao",
-   "nhom": "CL06",
-   "vi_tri": "Sheet Thuyet_minh, ô A3: Nhóm PM_26I_02, PM_26I_02",
-   "mo_ta": "Tên nhóm và tên nhà thầu tạm trùng nhau nên bị lặp.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Trong chia_luong.py bỏ phần nhà thầu khi trùng tên nhóm."
-  }
- ],
- "ghi_chu": "Không đọc khung, ban_soan, noi_dung. Tệp tính lại nằm ở thư mục tạm của phiên kiểm tra, không ghi đè tệp kết quả."
+ "phat_hien": [],
+ "so_loi": 0,
+ "so_canh_bao": 0,
+ "ket_luan": "dat"
 }

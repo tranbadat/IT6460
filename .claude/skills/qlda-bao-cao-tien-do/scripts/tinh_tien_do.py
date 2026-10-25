@@ -307,7 +307,8 @@ for ten, v, t_, nguong, loai in (('SPI', spi, tt_spi, ng.get('spi_vang', 0.95), 
     if t_ in ('Vàng', 'Đỏ'):
         tin_hieu.append({'nguon': 'Chỉ số dưới ngưỡng', 'noi_dung': f'{ten}: {hien_thi_chi_so(v, NGUONG_HT)}, ngưỡng {loi.so(nguong, 2)}', 'khop': ('loai', loai)})
 tin_hieu += [{'nguon': 'Rủi ro đã xảy ra', 'noi_dung': f'Rủi ro {m}: {ten_rr.get(m) or t.get("ghi_chu") or "phát sinh ngoài sổ"}', 'khop': ('rui_ro', m)}
-             for m, t in sorted(tdrr.items(), key=lambda kv: loi.khoa_ma(kv[0])) if t.get('trang_thai') == 'Đã xảy ra']
+             for m, t in sorted(tdrr.items(), key=lambda kv: loi.khoa_ma(kv[0])) if t.get('trang_thai') == 'Đã xảy ra'
+             and {r['ma']: r for r in rr['danh_sach']}.get(m, {}).get('loai') != 'co_hoi']  # cơ hội xảy ra không là tín hiệu vấn đề (từ 1.5.4)
 tin_hieu += [{'nguon': 'Mốc quá hạn', 'noi_dung': f'Mốc {m["ma"]}: {m["ten"]}', 'khop': ('mo_ta', m['ma'])} for m in moc if m['trang_thai'] == 'Quá hạn chưa đạt']
 van_de_phat_hien, F_th = so_van_de.doi_chieu_tin_hieu(tin_hieu, vd['van_de'])
 for f in F_th:

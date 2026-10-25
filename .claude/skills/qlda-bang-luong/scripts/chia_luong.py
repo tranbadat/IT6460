@@ -49,7 +49,8 @@ import thuc_te  # noqa: E402
 import xlsx_chung as X  # noqa: E402
 
 CACH = thuc_te.CACH_TRA_LUONG  # cùng danh mục với cost estimate, báo cáo tiến độ, tổng kết
-ap = argparse.ArgumentParser(); ap.add_argument('--den'); a = ap.parse_args()
+ap = argparse.ArgumentParser(); ap.add_argument('--den'); ap.add_argument('--ghi-chu', default='', help='ghi chú phiên bản (lý do lập lại)')
+a = ap.parse_args()
 D = dt.date.fromisoformat
 da = loi.du_an(); dg = loi.doc_json('dau_vao/don_gia.json'); lich = loi.doc_json('du_lieu/lich.json')
 cp = loi.doc_json('du_lieu/chi_phi.json', {}); tvs = loi.doc_json('dau_vao/thanh_vien.json')['thanh_vien']; tv = {t['id']: t for t in tvs}
@@ -260,12 +261,16 @@ for i, r in enumerate(sorted(nk, key=lambda r: (r['ngay'], r['thanh_vien'], r['m
 nn = len(nk) + 1
 
 hds = wb.create_sheet('Huy_dong')
-X.tieu_de(hds, 1, ['Mã thành viên', 'Sprint', 'MD huy động đến ngày tính'], [14, 9, 16])
+X.tieu_de(hds, 1, ['Mã thành viên', 'Sprint', 'MD huy động đến ngày tính', 'Theo kế hoạch', 'Huy động bổ sung'], [14, 9, 16, 14, 14])
+HD_BS_SP = thuc_te.huy_dong_bo_sung()  # phần huy động bổ sung thực tế theo người và sprint, tách cột cho người ký xác nhận (từ 1.4.2)
 hd_rows = [(p, s['ma'], round(hd_sp.get((p, s['ma']), 0), 4)) for p in (x['id'] for x in nguoi) for s in sp if hd_sp.get((p, s['ma']))]
 for i, (p, s, v) in enumerate(hd_rows, 2):
-    X.o(hds, i, 1, p, nhap=True); X.o(hds, i, 2, s, nhap=True); X.o(hds, i, 3, v, fmt=X.SO2, nhap=True)
+    bs = min(v, HD_BS_SP.get((p, s), 0))
+    X.o(hds, i, 1, p, nhap=True); X.o(hds, i, 2, s, nhap=True); X.o(hds, i, 3, f'=D{i}+E{i}', fmt=X.SO2)
+    X.o(hds, i, 4, round(v - bs, 4), fmt=X.SO2, nhap=True); X.o(hds, i, 5, bs, fmt=X.SO2, nhap=True)
 nh = max(len(hd_rows) + 1, 2)
-X.ghi_chu_bang(hds, nh + 2, 'Nguồn: du_lieu/lich.json phan_bo[].quy, sprint đang chạy tính theo tỷ lệ ngày làm việc đã qua.')
+X.ghi_chu_bang(hds, nh + 2, 'Nguồn: kế hoạch huy động của master schedule (phan_bo quỹ theo sprint), sprint đang chạy tính theo tỷ lệ ngày làm việc đã qua; '
+               'huy động bổ sung theo sổ huy động bổ sung thực tế (dau_vao/thuc_te/huy_dong_bo_sung.json).')
 
 bl = wb.create_sheet('Bang_luong', 1)
 HDR = ['STT', 'Mã thành viên', 'Họ tên', 'Loại', 'Vai trò', 'MD kế hoạch', 'MD huy động', 'MD thực tế', 'Ngày sẵn sàng không ghi công',
@@ -355,12 +360,13 @@ if kq and kq.get('status'):
 
 out = {'den': den.isoformat(), 'so_lieu_mo_phong': bool(MP), 'can_cu_mo_phong': CAN_CU_MP, 'cach_tra_luong': cach, 'cach_tra_luong_ten': CACH[cach], 'quy_chia_theo_dong_gop': QUY,
        'nguoi': nguoi, 'tong': tong, 'doi_chieu': doi_chieu, 'theo_sprint': theo_sprint,
+       'huy_dong_bo_sung': [{'thanh_vien': p, 'sprint': s, 'md': m} for (p, s), m in sorted(HD_BS_SP.items())],
        'don_gia': [{'vai_tro': k, 'ten': v['ten'], 'luong_thang': v['luong'], 'don_gia_ngay': round(dgn[k])} for k, v in vt],
        'kiem_tra': {'ket_luan': 'dat', 'phat_hien': F, 'doi_chieu_excel': ghi}}
 loi.ghi_json('du_lieu/luong.json', out)
 print(f'Đến {loi.ngay(den)}, {CACH[cach]}: {len(nguoi)} người, {loi.md(tong["md_thuc_te"])} MD thực tế trên {loi.md(tong["md_huy_dong"])} MD huy động, '
       f'tổng lương {loi.trieu(tong["luong"])} triệu, chi phí doanh nghiệp {loi.trieu(tong["chi_phi"])} triệu ({loi.pt(doi_chieu["ty_le_chi_phi_tren_A"])} khoản A). {ghi}')
-pbs = loi.hoan_tat_buoc('bang_luong', f'Lập bảng phân chia lương, {CACH[cach]}. ' + ghi,
+pbs = loi.hoan_tat_buoc('bang_luong', f'Lập bảng phân chia lương, {CACH[cach]}. ' + ghi, ghi_chu=a.ghi_chu,
                         hash_tep={'ket_qua/14_Bang_phan_chia_luong/Bang_phan_chia_luong.xlsx': loi.bam_obj(out)})
 for k, v in pbs.items():
     print(f'  {k}: phiên bản {v}')

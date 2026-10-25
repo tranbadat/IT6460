@@ -263,7 +263,7 @@
    "t": "table"
   },
   {
-   "text": "Số liệu thực tế trong báo cáo là số liệu mô phỏng. Số liệu mô phỏng: dữ liệu thực tế trong dau_vao/thuc_te/ do script qlda-mo-phong/scripts/mo_phong_sprint.py sinh từ kịch bản biến cố từng sprint (lam_viec/mo_phong/kich_ban_S<n>.json) theo kế hoạch đã duyệt hiện hành, không phải số liệu đo được của dự án thật.",
+   "text": "Số liệu thực tế trong báo cáo là số liệu mô phỏng, sinh từ kịch bản biến cố từng sprint theo kế hoạch đã duyệt, không phải số liệu đo được của dự án thật.",
    "t": "p"
   },
   {
@@ -342,8 +342,8 @@
     [
      "9",
      "Tích hợp với hệ thống chính (Main System)",
-     "4",
-     "4",
+     "2",
+     "2",
      "Đạt"
     ],
     [
@@ -370,6 +370,13 @@
     [
      "13",
      "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
+     "2",
+     "2",
+     "Đạt"
+    ],
+    [
+     "CR01",
+     "Phạm vi bổ sung theo phụ lục hợp đồng (CR01 Bán hàng trên sàn thương mại điện tử)",
      "2",
      "2",
      "Đạt"
@@ -848,7 +855,7 @@
     [
      "Tỷ lệ sử dụng nhân lực huy động",
      "",
-     "80%"
+     "79,99%"
     ]
    ],
    "widths": [
@@ -1205,6 +1212,13 @@
      "Kích hoạt kế hoạch ứng phó khi kết quả kiểm thử hiệu năng cho thời gian phản hồi trang danh mục 2,6 giây ở mức tải 500 người dùng đồng thời. Đỗ Minh Quân tối ưu truy vấn danh mục và bộ nhớ đệm thay Phạm Tuấn Anh (không huy động trong S7), Ninh Đức Toàn rà soát cấu hình mở rộng nút ứng dụng trên môi trường vận hành, Phạm Ngọc Anh đo lại sau tối ưu",
      "1,00",
      "2.100.000"
+    ],
+    [
+     "RR20",
+     "Tái sử dụng khung ứng dụng và thư viện giao diện từ hai hợp đồng tương tự",
+     "Khai thác cơ hội: tái sử dụng khung định tuyến và quản lý trạng thái giao diện từ hợp đồng tương tự cho gói 4.3.3, lợi ích đã phản ánh trong công thực tế của gói nên không ghi tác động riêng",
+     "0,00",
+     "0"
     ]
    ],
    "widths": [

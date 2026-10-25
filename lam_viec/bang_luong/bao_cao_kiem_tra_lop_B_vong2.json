@@ -1,0 +1,33 @@
+{
+ "tai_lieu": "ket_qua/14_Bang_phan_chia_luong/Bang_phan_chia_luong.xlsx",
+ "phien_ban": "0.3",
+ "dac_ta": ".claude/skills/qlda-bang-luong/SKILL.md",
+ "luot": "xác nhận (lượt 2) sau vòng sửa",
+ "ngay_kiem_tra": "2026-10-25",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B), phiên riêng",
+ "bao_cao_truoc": "lam_viec/bang_luong/bao_cao_kiem_tra_lop_B_vong1.json",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 1,
+ "tinh_lai_cong_thuc": "Tính lại bằng LibreOffice headless trên bản sao trong thư mục tạm: 0 ô lỗi. MD kế hoạch 733, MD huy động 921, MD thực tế 736,75, ngày sẵn sàng 184,25, tỷ lệ sử dụng 79,99%, lương 1.082.079.545, chi phí doanh nghiệp 1.336.368.239, chênh so với chi phí lương kế hoạch 8.528.798 (làm tròn) khớp du_lieu/luong.json và ket_thuc.json. MD huy động từng người khớp ket_thuc.json nhan_luc.",
+ "danh_gia_tieu_chi": [
+  {"tieu_chi": "CL01", "ket_qua": "dat", "nhan_xet": "Đủ 8 sheet, cột ký xác nhận, thuyết minh căn cứ, ký hiệu, căn cứ mô phỏng."},
+  {"tieu_chi": "CL02", "ket_qua": "dat", "nhan_xet": "Cách trả lương cong_suc, đơn giá ngày bằng lương tham chiếu chia 22, hệ số 1,235. Sheet Huy_dong gồm kế hoạch phan_bo cộng 13 MD bổ sung (S8 10,5, S9 2,5) theo huy_dong_bo_sung.json, tổng 921. Thuyết minh mục 7 đúng căn cứ đối chiếu cùng cách trả lương."},
+  {"tieu_chi": "CL03", "ket_qua": "dat", "nhan_xet": "Số liệu dẫn về Nhat_ky, Huy_dong, Tham_so, tệp nguồn ghi ở Doi_chieu và Thuyet_minh mục 2."},
+  {"tieu_chi": "CL04", "ket_qua": "dat", "nhan_xet": "Định dạng có điều kiện cho chênh lệch quá 10%, cột ký xác nhận từng thành viên."},
+  {"tieu_chi": "CL05", "ket_qua": "dat", "nhan_xet": "Đối chiếu MD nhật ký theo người và sprint với sheet Huy_dong: không còn trường hợp ghi công vượt huy động, luong.json kiem_tra rỗng là đúng."},
+  {"tieu_chi": "CL06", "ket_qua": "dat", "nhan_xet": "Thuyet_minh A3 còn Nhóm PM_26I_02, không lặp. Dòng tiêu đề in đậm theo quyết định (22)."},
+  {"tieu_chi": "SKILL_cong_thuc", "ket_qua": "dat", "nhan_xet": "SUMIFS cho MD thực tế, huy động, theo sprint, INDEX/MATCH cho đơn giá, SUMPRODUCT cho chi phí theo MD kế hoạch, IF cho tỷ lệ."},
+  {"tieu_chi": "SKILL_ty_trong_san_sang", "ket_qua": "dat", "nhan_xet": "Tỷ trọng theo MD thực tế, tổng 1. Ngày sẵn sàng 184,25 = 921 - 736,75, trình bày riêng, không trừ lương. Phần chia theo đóng góp 0 đúng với cong_suc."}
+ ],
+ "dong_phat_hien_truoc": [
+  {"ma": "MH01", "da_dong": true, "nhan_xet": "Thuyet_minh A13: khoản A và chi phí lương kế hoạch của cost estimate theo cùng cách trả lương (MD công việc), khớp Doi_chieu B3."},
+  {"ma": "MH02", "da_dong": true, "nhan_xet": "Huy_dong có 13 MD bổ sung (ví dụ Phạm Tuấn Anh S8 1,5, Vũ Đức Minh S8 4, Trương Quốc Việt S9 8,5), MD huy động 921, ngày sẵn sàng 184,25, tỷ lệ 79,99%."},
+  {"ma": "MH03", "da_dong": true, "nhan_xet": "Sau khi tính huy động bổ sung, không còn MD ghi công vượt huy động theo người và sprint, kiểm tra lớp A không cảnh báo là đúng."},
+  {"ma": "MH04", "da_dong": true, "nhan_xet": "A3 chỉ ghi Nhóm PM_26I_02."}
+ ],
+ "phat_hien": [
+  {"ma": "CB01", "muc_do": "canh_bao", "nhom": "CL03", "vi_tri": "Sheet Huy_dong, cột C MD huy động đến ngày tính", "mo_ta": "Các dòng S8, S9 gộp mức kế hoạch và huy động bổ sung trong một số, sheet không có cột tách phần bổ sung. Tổng 13 MD được nêu ở Thuyet_minh mục 2 nên vẫn truy được, nhưng người ký xác nhận không thấy ngay phần bổ sung của mình.", "cach_sua": "tu_dong", "de_xuat": "Tùy chọn: thêm cột MD bổ sung (và Ghi chú nguồn) vào sheet Huy_dong trong chia_luong.py."}
+ ],
+ "ghi_chu": "Lượt xác nhận: đóng 4/4 phát hiện lượt 1, rà hồi quy công thức và số liệu, không phát sinh lỗi mới. Không đọc khung, ban_soan, noi_dung, nhật ký sửa. Tệp tính lại nằm ở thư mục tạm của phiên kiểm tra."
+}

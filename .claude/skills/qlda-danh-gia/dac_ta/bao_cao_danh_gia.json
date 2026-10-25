@@ -289,7 +289,7 @@
    }
   },
   {
-   "doan": "Số yêu cầu thay đổi: {kt#thay_doi.tong}, được phê duyệt: {kt#thay_doi.so_duyet}, có quyết định trong thời hạn đánh giá: {kt#thay_doi.so_dung_han}. Tổng tác động đã duyệt: {kt#thay_doi.md_tang_duyet|md} MD, {kt#thay_doi.chi_phi_tang_duyet|tien} đồng."
+   "doan": "Số yêu cầu thay đổi: {kt#thay_doi.tong}, được phê duyệt: {kt#thay_doi.so_duyet}, có quyết định trong thời hạn đánh giá: {kt#thay_doi.so_dung_han}. Tổng tác động đã duyệt: {kt#thay_doi.md_tang_duyet|md} MD, giá điều chỉnh theo phụ lục {kt#thay_doi.gia_dieu_chinh_duyet|tien} đồng, chi phí nội bộ ước tính của nhà thầu {kt#thay_doi.chi_phi_tang_duyet|tien} đồng."
   },
   {
    "soan": "THAY_DOI",

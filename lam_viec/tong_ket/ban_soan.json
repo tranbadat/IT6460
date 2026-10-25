@@ -3,11 +3,11 @@
   "Dự án xây dựng hệ thống website bán hàng trực tuyến cho Công ty Cổ phần ABC Wear đã hoàn thành mục tiêu theo HSMT và RFP. Hệ thống được đưa vào vận hành ngày {kt#tien_do.cut_over_thuc_te|ngay}, đúng ngày cut over theo phụ lục hợp đồng, dự án đóng ngày {kt#ngay_dong_du_an|ngay} tại mốc {kt#tien_do.moc_dong_du_an}, số liệu được tổng hợp đến ngày {kt#ngay_chot|ngay}.",
   "Kế hoạch dùng để so sánh trong báo cáo là đường cơ sở BL2 sau phụ lục hợp đồng của yêu cầu thay đổi {kt#thay_doi.danh_sach[0].ma}. So với đường cơ sở hợp đồng BL1, ngày cut over đổi từ {kt#duong_co_so_goc.cut_over|ngay} sang {kt#duong_co_so_goc.cut_over_hien_hanh|ngay} (lùi {kt#duong_co_so_goc.so_ngay_lui_cut_over|nguyen} ngày làm việc), giá hợp đồng trước thuế từ {kt#duong_co_so_goc.gia|tien} đồng lên {kt#duong_co_so_goc.gia_hien_hanh|tien} đồng, khối lượng từ {kt#duong_co_so_goc.BAC_md|md} MD lên {kt#duong_co_so_goc.BAC_md_hien_hanh|md} MD, hạn mốc thanh toán Đợt 3 đổi từ {kt#duong_co_so_goc.moc[ma=M3].han_goc|ngay} sang {kt#duong_co_so_goc.moc[ma=M3].han_hien_hanh|ngay}.",
   "Về phạm vi, {kt#pham_vi.so_goi_hoan_thanh|nguyen} trên {kt#pham_vi.so_goi|nguyen} gói công việc hoàn thành. Về tiến độ, {kt#tien_do.so_moc_dung_han|nguyen} trên {kt#tien_do.so_moc|nguyen} mốc đạt đúng hạn, SPI kỳ cuối {kt#tien_do.spi_cuoi|so2}. Về chi phí, công thực tế {kt#chi_phi.AC_md|md} MD so với kế hoạch {kt#chi_phi.BAC_md|md} MD, CPI kỳ cuối {kt#tien_do.cpi_cuoi|so2}. Về chất lượng, {kt#nghiem_thu.so_dat|nguyen} trên {kt#nghiem_thu.so_tieu_chi|nguyen} tiêu chí nghiệm thu đạt ngay lần đầu, không còn lỗi mở khi kết thúc.",
-  "Dự án đạt {kt#so_kpi_dat} trên {kt#so_kpi|nguyen} chỉ tiêu KPI, xếp loại {kt#xep_loai}. Chỉ tiêu không đạt là {kt#kpi_khong_dat[0].ma} {kt#kpi_khong_dat[0].chi_tieu} với {kt#kpi_khong_dat[0].thuc_te_hien_thi}, do phải huy động bổ sung {kt#huy_dong_bo_sung.tong|md} MD ở S8, S9. Số liệu thực hiện của dự án là số liệu mô phỏng theo du_lieu/mo_phong.json."
+  "Dự án đạt {kt#so_kpi_dat} trên {kt#so_kpi|nguyen} chỉ tiêu KPI, xếp loại {kt#xep_loai}. Chỉ tiêu không đạt là {kt#kpi_khong_dat[0].ma} {kt#kpi_khong_dat[0].chi_tieu} với {kt#kpi_khong_dat[0].thuc_te_hien_thi}, do phải huy động bổ sung {kt#huy_dong_bo_sung.tong|md} MD ở S8, S9. Số liệu thực hiện của dự án là số liệu mô phỏng."
  ],
  "PHAM_VI": [
   "Các sản phẩm theo RFP gồm đặc tả hệ thống, quy trình vận hành mới, cấu trúc cơ sở dữ liệu Selling DB và sơ đồ phân cấp menu đã được bàn giao và nghiệm thu, {kt#nghiem_thu.so_yeu_cau_rfp_dat|nguyen} trên {kt#nghiem_thu.so_yeu_cau_rfp|nguyen} yêu cầu RFP thuộc phạm vi nghiệm thu đạt. Cả {kt#nghiem_thu.hang_muc|dem} hạng mục của Mẫu 01A đều có tiêu chí nghiệm thu đạt, trong đó hạng mục chuyển giao và hướng dẫn vận hành được nghiệm thu tại mốc M7 ({kt#nghiem_thu.danh_sach[ma=NT21].ma}).",
-  "Phạm vi thay đổi duy nhất là yêu cầu thay đổi {kt#thay_doi.danh_sach[0].ma} {kt#thay_doi.danh_sach[0].tieu_de} do Chủ đầu tư đề nghị, tăng {kt#thay_doi.md_tang_duyet|md} MD, được phê duyệt bằng phụ lục hợp đồng {kt#thay_doi.danh_sach[0].so_phu_luc} và nghiệm thu tại mốc M9 theo các tiêu chí {kt#nghiem_thu.thay_doi[0].ma_nghiem_thu}. Một số gói vượt công trên 20% so với kế hoạch, như dịch vụ đổi trả và hoàn tiền {kt#pham_vi.goi_vuot_20pt[0].ma}, do đặc tả có trường hợp nghiệp vụ phức tạp hơn ước lượng, không làm thay đổi phạm vi."
+  "Phạm vi thay đổi duy nhất là yêu cầu thay đổi {kt#thay_doi.danh_sach[0].ma} {kt#thay_doi.danh_sach[0].tieu_de} do Chủ đầu tư đề nghị, tăng {kt#thay_doi.md_tang_duyet|md} MD, được phê duyệt bằng phụ lục hợp đồng {kt#thay_doi.danh_sach[0].so_phu_luc} và nghiệm thu tại mốc M9 theo các tiêu chí {kt#nghiem_thu.thay_doi[0].ma_nghiem_thu}, trình bày dòng riêng trong bảng hạng mục, không tính vào hạng mục của Mẫu 01A. Một số gói vượt công trên 20% so với kế hoạch, như dịch vụ đổi trả và hoàn tiền {kt#pham_vi.goi_vuot_20pt[0].ma}, do đặc tả có trường hợp nghiệp vụ phức tạp hơn ước lượng, không làm thay đổi phạm vi."
  ],
  "TIEN_DO": [
   "SPI duy trì ở mức Xanh trong phần lớn các kỳ, giảm xuống mức Vàng ở các kỳ S3, S4 do chuỗi thiết kế chi tiết hoàn thành muộn và tài liệu Main System đến muộn (rủi ro RR02), sau đó phục hồi nhờ làm bù bằng quỹ sẵn sàng và huy động bổ sung theo nhu cầu ở S8, S9. SPI kỳ cuối đạt {kt#tien_do.spi_cuoi|so2}.",
@@ -24,7 +24,7 @@
  ],
  "THAY_DOI_RUI_RO": [
   "Dự án có {kt#thay_doi.tong|nguyen} yêu cầu thay đổi, được quyết định đúng thời hạn. Phụ lục {kt#thay_doi.danh_sach[0].so_phu_luc} điều chỉnh giá hợp đồng thêm {kt#thay_doi.danh_sach[0].gia_dieu_chinh|tien} đồng (chi phí nội bộ ước tính của nhà thầu {kt#thay_doi.danh_sach[0].chi_phi_tang|tien} đồng), tăng {kt#thay_doi.md_tang_duyet|md} MD và lùi cut over {kt#thay_doi.danh_sach[0].so_ngay_lui_cut_over|nguyen} ngày làm việc. Yêu cầu đã đóng sau khi phần bán hàng trên sàn được nghiệm thu và các tài liệu kế hoạch được cập nhật thành đường cơ sở BL2.",
-  "Trong {kt#rui_ro.tong|nguyen} rủi ro của sổ đăng ký, {kt#rui_ro.so_da_xay_ra|nguyen} rủi ro đã xảy ra là RR02 (tài liệu Main System đến muộn), RR04 (vị trí bổ sung có mặt muộn) và RR06 (thời gian phản hồi vượt 2 giây), đều đã xử lý theo kế hoạch ứng phó. Tác động thực tế {kt#rui_ro.tac_dong_md|md} MD, thấp hơn nhiều so với tổng EMV {kt#rui_ro.tong_emv_md|md} MD, tỷ lệ dùng dự phòng tương đương {kt#rui_ro.ty_le_dung_du_phong|pt}. Không có rủi ro mới phát sinh ngoài sổ."
+  "Trong {kt#rui_ro.tong|nguyen} rủi ro của sổ đăng ký, {kt#rui_ro.so_de_doa_xay_ra|nguyen} đe dọa đã xảy ra là RR02 (tài liệu Main System đến muộn), RR04 (vị trí bổ sung có mặt muộn) và RR06 (thời gian phản hồi vượt 2 giây), đều đã xử lý theo kế hoạch ứng phó, và {kt#rui_ro.so_co_hoi_xay_ra|nguyen} cơ hội đã xảy ra là RR20 (tái sử dụng khung giao diện từ hợp đồng tương tự cho gói 4.3.3), lợi ích đã phản ánh trong công thực tế của gói. Tác động thực tế {kt#rui_ro.tac_dong_md|md} MD, thấp hơn nhiều so với tổng EMV {kt#rui_ro.tong_emv_md|md} MD, tỷ lệ dùng dự phòng tương đương {kt#rui_ro.ty_le_dung_du_phong|pt}. Không có rủi ro mới phát sinh ngoài sổ."
  ],
  "BAN_GIAO": [
   [
@@ -35,9 +35,9 @@
   ],
   [
    "Hỗ trợ tăng cường sau cut over: {kt#bao_hanh.ho_tro_tang_cuong.noi_dung}",
-   "Trần Bá Đạt",
+   "Chưa ghi nhận trong nhật ký công việc",
    "{kt#bao_hanh.ho_tro_tang_cuong.tu|ngay} đến {kt#bao_hanh.ho_tro_tang_cuong.den|ngay}",
-   "Đã hoàn thành, thời gian dời theo phụ lục"
+   "Nhật ký công việc giai đoạn Kết thúc chỉ ghi gói báo cáo tổng kết 1.1.5, chưa có dữ liệu xác nhận người trực và kết quả hỗ trợ"
   ],
   [
    "Bảo hành, khắc phục sai sót {kt#bao_hanh.thoi_han_thang|nguyen} tháng từ ngày cut over, tiếp nhận yêu cầu qua đầu mối của Chủ đầu tư",

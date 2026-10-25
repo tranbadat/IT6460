@@ -2541,7 +2541,7 @@
  "ngay_dong_du_an": "2027-08-12",
  "so_lieu_mo_phong": true,
  "can_cu_mo_phong": [
-  "Số liệu thực tế trong báo cáo là số liệu mô phỏng. {mo_phong#_ghi_chu}"
+  "Số liệu thực tế trong báo cáo là số liệu mô phỏng, sinh từ kịch bản biến cố từng sprint theo kế hoạch đã duyệt, không phải số liệu đo được của dự án thật."
  ],
  "canh_bao_du_lieu": [],
  "lich_su_den_ky": [

@@ -1,118 +1,76 @@
 {
  "tai_lieu": "ket_qua/13_Bai_hoc_kinh_nghiem/Bao_cao_bai_hoc_kinh_nghiem.docx",
- "phien_ban": "0.3",
+ "phien_ban": "0.5",
  "dac_ta": ".claude/skills/qlda-bai-hoc/dac_ta/bao_cao_bai_hoc.json",
- "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B), phiên riêng",
- "ket_luan": "chua_dat",
- "so_loi": 2,
- "so_canh_bao": 4,
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "luot": "xác nhận chốt lượt 3, báo cáo lượt 2: lam_viec/bai_hoc/bao_cao_kiem_tra_lop_B_vong2.json",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên kiểm tra riêng (agent con, lượt xác nhận chốt 3), Claude Code, mô hình Claude Opus 5.5, python-docx đọc tệp Word, openpyxl và LibreOffice headless tính lại công thức trên bản sao",
+ "dong_phat_hien_truoc": [
+  {
+   "ma": "CB01",
+   "da_dong": true,
+   "nhan_xet": "BH05 ghi (theo sổ huy động bổ sung thực tế), không còn đường dẫn tệp."
+  },
+  {
+   "ma": "CB02",
+   "da_dong": false,
+   "nhan_xet": "R-S9-02 vẫn ghi huy động bổ sung trong S8 trong khi BH05 ghi S8 10,5 MD và S9 2,5 MD. Là ghi chép retro gốc, giữ cảnh báo tùy chọn."
+  }
+ ],
  "danh_gia_tieu_chi": [
   {
    "tieu_chi": "CL01",
    "ket_qua": "dat",
-   "nhan_xet": "Đủ 7 mục theo đặc tả, 12 bài học (4 thực hành tốt, 8 cần cải thiện) phủ đủ 9 nhóm, mỗi bài học có tình huống, nguyên nhân, bài học, khuyến nghị kèm phạm vi áp dụng và bằng chứng. Đề xuất cải tiến 7 dòng, mỗi dòng dẫn mã BH, phủ cả 12 BH."
+   "nhan_xet": "12 bài học (4 thực hành tốt, 8 cần cải thiện), phủ 9 nhóm, có ghi chép retro và đề xuất cải tiến quy trình."
   },
   {
    "tieu_chi": "CL02",
-   "ket_qua": "chua_dat",
-   "nhan_xet": "Phần lớn số liệu khớp ket_thuc.json (CR01 76 MD, phụ lục 27/05/2027, cut over 29/07/2027, 18/18 tiêu chí nghiệm thu, mật độ lỗi 0,75, 3.3.7 7,25/6 MD, 736,75/733 MD, M3 08/07, M5 và M9 27/07, RR06 2,6 giây). Hai số lệch hoặc không có nguồn: BH05 10,5 MD huy động bổ sung S8, BH12 5.2.3 vượt 15%."
+   "ket_qua": "dat",
+   "nhan_xet": "Rà hồi quy: mục 2 nêu 3 đe dọa RR02, RR04, RR06 và 1 cơ hội RR20, BH05 10,5 + 2,5 = 13 MD, 921 MD, 79,99%, K14; bảng nguồn bằng chứng rủi ro 5 mã (RR02, RR04, RR06, RR20, RR22) khớp bai_hoc.json; nhật ký 4.3.3 = 4 MD."
   },
   {
    "tieu_chi": "CL03",
-   "ket_qua": "chua_dat",
-   "nhan_xet": "Mọi mã bằng chứng tồn tại trong dữ liệu (CR01, RR02, RR04, RR06, RR22, 13 mã R-Sx-nn, NT01, NT06, L05, L18, L37, K02, K03, K05, K07, K10, K11, K14, M3, M4, M5, M6, M9, 13 gói WBS), bảng nguồn bằng chứng đếm đúng (tổng 53). Phủ đủ rủi ro đã xảy ra RR02 (BH03), RR04 (BH04), RR06 (BH06), CR01 (BH01, BH02), không có KPI không đạt. Riêng số MD huy động bổ sung trong BH05 không truy vết được về dữ liệu."
+   "ket_qua": "dat",
+   "nhan_xet": "Mỗi bài học có mã bằng chứng tồn tại. Liên kết RR20 với BH10 còn yếu (CB03)."
   },
   {
    "tieu_chi": "CL04",
    "ket_qua": "dat",
-   "nhan_xet": "Khuyến nghị có ngưỡng đo được (phần dư 15% MD xếp, nhắc trước 5 ngày làm việc, cảnh báo 1,5 giây, thời hạn quyết định 5 ngày làm việc)."
+   "nhan_xet": "Khuyến nghị có ngưỡng, thời hạn cụ thể (15% MD xếp, 5 ngày làm việc)."
   },
   {
    "tieu_chi": "CL05",
    "ket_qua": "dat",
-   "nhan_xet": "Bài học về rủi ro và thay đổi nêu dấu hiệu, người, quy trình áp dụng và điểm kiểm soát trước đường cơ sở."
+   "nhan_xet": "Bài học về rủi ro, thay đổi có hành động và phạm vi áp dụng."
   },
   {
    "tieu_chi": "CL06",
    "ket_qua": "dat",
-   "nhan_xet": "Times New Roman 13, bảng cỡ 12, bảng lưới, không in đậm, không chấm phẩy, không ngoặc kép, không gạch dài, bảng bài học in trang ngang. Một số câu cần chỉnh (MH04, MH05)."
-  },
-  {
-   "tieu_chi": "doc_hieu_1",
-   "ket_qua": "dat",
-   "nhan_xet": "Bài học phát biểu chung, áp dụng được cho dự án khác."
-  },
-  {
-   "tieu_chi": "doc_hieu_2",
-   "ket_qua": "dat",
-   "nhan_xet": "Nguyên nhân nêu nguyên nhân gốc (thiếu bước xác nhận, thiếu đo liên tục, môi trường kiểm thử một nút, huy động sát MD), không chỉ mô tả lại sự kiện."
-  },
-  {
-   "tieu_chi": "doc_hieu_3",
-   "ket_qua": "dat",
-   "nhan_xet": "Khuyến nghị là hành động cụ thể, có quy trình áp dụng, có người chịu trách nhiệm phổ biến ở mục 7."
-  },
-  {
-   "tieu_chi": "doc_hieu_4",
-   "ket_qua": "dat",
-   "nhan_xet": "Mỗi đề xuất cải tiến quy trình dẫn mã BH."
+   "nhan_xet": "Đạt."
   }
  ],
  "phat_hien": [
   {
-   "ma": "MH01",
-   "muc_do": "loi",
-   "nhom": "CL02, CL03",
-   "vi_tri": "Mục 4, BH05, cột Tình huống: phải huy động bổ sung 10,5 MD ở S8 và 2,5 MD ở S9",
-   "mo_ta": "Số MD huy động bổ sung không có trong dữ liệu nguồn: lich.json phan_bo (quỹ S8 53, S9 88, tổng 908) và thanh_vien.json ty_le_theo_sprint chưa ghi huy động bổ sung, nhật ký chỉ cho phần MD vượt quỹ khoảng 4,25 MD ở S8 (Phạm Ngọc Anh 5/2, Phạm Tuấn Anh 1/0, Vũ Đức Minh 3,25/3) và 2 MD ở S9 (Trương Quốc Việt 8/6). Mức 10,5 MD ở S8 cũng lệch với mức 11,5 MD nhóm đang bổ sung vào khóa nguồn.",
-   "cach_sua": "can_nguoi_dung",
-   "de_xuat": "Sửa ở dữ liệu: nhóm xác nhận số MD huy động bổ sung S8, S9 và ghi khóa nguồn trong dau_vao (thanh_vien.json hoặc du_an.json), sau đó rút lại du_lieu/bai_hoc.json BH05 dẫn số từ khóa đó. Nếu chưa có khóa thì bỏ con số, chỉ nêu có huy động bổ sung ở S8, S9."
-  },
-  {
-   "ma": "MH02",
-   "muc_do": "loi",
+   "ma": "CB02",
+   "muc_do": "canh_bao",
    "nhom": "CL02",
-   "vi_tri": "Mục 4, BH12, cột Tình huống: làm gói này vượt công 15%",
-   "mo_ta": "ket_thuc.json pham_vi.goi ghi 5.2.3 kế hoạch 4,0 MD, thực tế 4,5 MD, chênh 12,5%, không phải 15%.",
+   "vi_tri": "Mục 5, R-S9-02: phải huy động bổ sung trong S8",
+   "mo_ta": "Giữ từ lượt 2. Ghi chép retro gốc chỉ nêu S8, nguồn ghi S8 và S9.",
    "cach_sua": "tu_dong",
-   "de_xuat": "Sửa ở dữ liệu du_lieu/bai_hoc.json BH12 tinh_huong: vượt công 12,5% (0,5 MD), chạy lại kiem_tra_bai_hoc.py và hoan_thien."
+   "de_xuat": "Tùy chọn: bổ sung S9 vào R-S9-02 trong retro.md."
   },
   {
-   "ma": "MH03",
+   "ma": "CB03",
    "muc_do": "canh_bao",
-   "nhom": "CL02, CL06",
-   "vi_tri": "Mục 3, BH10, cột Tình huống: SPI xuống 0,94 ở S3 và 0,947 ở S4",
-   "mo_ta": "Độ chính xác không thống nhất. SPI S4 trong ket_thuc.json là 0,9475, các báo cáo tiến độ hiển thị hai chữ số thập phân (0,95).",
+   "nhom": "CL03 truy vết RR20",
+   "vi_tri": "Mục 2: cơ hội đã xảy ra RR20 cho thấy giá trị của việc tái sử dụng thành phần từ hợp đồng tương tự (BH10); mục 5 R-S1-01 cột Bài học để trống",
+   "mo_ta": "BH10 chỉ thêm RR20 vào cột Nguyên nhân, cột Bài học và Khuyến nghị nói về ghi gói chậm thành vấn đề, không phát biểu bài học tái sử dụng thành phần như câu tổng hợp mục 2. Ghi chép R-S1-01 (4.3.3, RR20) chưa gắn BH10 trong khi R-S4-01 có gắn.",
    "cach_sua": "tu_dong",
-   "de_xuat": "Sửa ở dữ liệu bai_hoc.json BH10: 0,94 ở S3 và 0,95 ở S4 (hai chữ số như spi_hien_thi)."
-  },
-  {
-   "ma": "MH04",
-   "muc_do": "canh_bao",
-   "nhom": "CL06",
-   "vi_tri": "Mục 4, BH07, cột Tình huống: Một số lỗi mức cao như tạo trùng đơn hàng (L05) ở S3, chỉ được phát hiện ở kiểm thử đầu cuối và kiểm thử hệ thống: ...",
-   "mo_ta": "Câu ghép khiến người đọc hiểu L05 cũng phát hiện ở kiểm thử đầu cuối, trong khi loi.csv ghi L05 phát hiện ở gói lập trình 3.3.5 ngày 22/04/2027. Câu cũng thiếu vị ngữ rõ ràng.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Sửa lời văn trong bai_hoc.json BH07, ví dụ: Lỗi mức cao tạo trùng đơn hàng (L05) phát hiện ở S3 khi lập trình. Hai lỗi mức cao khác chỉ được phát hiện ở kiểm thử đầu cuối và kiểm thử hệ thống: giữ tồn kho ... (L18) và mất phiên ... (L37)."
-  },
-  {
-   "ma": "MH05",
-   "muc_do": "canh_bao",
-   "nhom": "doc_hieu_1, CL06",
-   "vi_tri": "Mục 4, BH02, cột Nguyên nhân: Chu trình mô phỏng và quy trình yêu cầu thay đổi đặt bước đường cơ sở ngay sau khi tài liệu đạt kiểm tra tự động",
-   "mo_ta": "Nguyên nhân viện dẫn công cụ nội bộ (chu trình mô phỏng, kiểm tra lớp B) thay vì phát biểu chung, làm bài học khó áp dụng cho dự án khác và lẫn bối cảnh mô phỏng vào nội dung bài học.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Sửa lời văn bai_hoc.json BH02: quy trình yêu cầu thay đổi đặt bước lập đường cơ sở ngay sau kiểm tra tự động, chưa có bước rà soát độc lập. Thay kiểm tra lớp B bằng rà soát độc lập ở cột Khuyến nghị."
-  },
-  {
-   "ma": "MH06",
-   "muc_do": "canh_bao",
-   "nhom": "CL03",
-   "vi_tri": "Mục 1, đoạn cách thu thập: đầu mối Chủ đầu tư góp ý các bài học về giao tiếp và nghiệm thu",
-   "mo_ta": "retro.md và dữ liệu không ghi nhận Chủ đầu tư tham gia góp ý bài học. Chưa chắc đây là sai, nhưng hiện không truy vết được.",
-   "cach_sua": "tu_dong",
-   "de_xuat": "Soạn lại khối CACH_LAM: bỏ ý Chủ đầu tư góp ý hoặc dẫn nguồn ghi nhận (biên bản họp tổng kết)."
+   "de_xuat": "Sửa câu tổng hợp mục 2 cho khớp nội dung BH10 (RR20 là một nguyên nhân phục hồi tiến độ), hoặc bổ sung ý tái sử dụng thành phần vào bài học, khuyến nghị BH10 và gắn R-S1-01 với BH10 trong bai_hoc.json."
   }
  ],
- "ghi_chu": "Huy động bổ sung S8, S9 theo bối cảnh nhóm đang bổ sung khóa nguồn trong dau_vao. Kết luận sẽ thay đổi khi khóa nguồn có và BH05 dẫn đúng số. Không đọc khung, ban_soan, noi_dung."
+ "so_loi": 0,
+ "so_canh_bao": 2,
+ "ket_luan": "dat"
 }

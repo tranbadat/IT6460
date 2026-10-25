@@ -1,6 +1,6 @@
 {
  "PHUONG_PHAP": [
-  "Đánh giá do nhóm dự án thực hiện sau khi dự án đóng ngày {kt#ngay_dong_du_an|ngay} tại mốc {kt#tien_do.moc_dong_du_an}, số liệu tổng hợp đến ngày {kt#ngay_chot|ngay}, đầu mối Chủ đầu tư xác nhận kết quả nghiệm thu và các mốc. Bằng chứng gồm sổ mốc, nhật ký công việc, sổ lỗi, sổ vấn đề, sổ rủi ro, phiếu yêu cầu thay đổi, biên bản nghiệm thu, báo cáo tiến độ các kỳ và bảng huy động bổ sung theo nhu cầu, tổng hợp trong du_lieu/ket_thuc.json. Số liệu thực hiện là số liệu mô phỏng.",
+  "Đánh giá do nhóm dự án thực hiện sau khi dự án đóng ngày {kt#ngay_dong_du_an|ngay} tại mốc {kt#tien_do.moc_dong_du_an}, số liệu tổng hợp đến ngày {kt#ngay_chot|ngay}, đầu mối Chủ đầu tư xác nhận kết quả nghiệm thu và các mốc. Bằng chứng gồm sổ mốc, nhật ký công việc, sổ lỗi, sổ vấn đề, sổ rủi ro, phiếu yêu cầu thay đổi, biên bản nghiệm thu, báo cáo tiến độ các kỳ và bảng huy động bổ sung theo nhu cầu, tổng hợp trong số liệu kết thúc dự án. Số liệu thực hiện là số liệu mô phỏng.",
   "Kế hoạch dùng để so sánh là đường cơ sở BL2 sau phụ lục hợp đồng của yêu cầu thay đổi {kt#thay_doi.danh_sach[0].ma}, các cam kết theo hợp đồng gốc được đối chiếu với đường cơ sở BL1. Mỗi chỉ tiêu KPI so thực tế với ngưỡng đã khai báo, xếp loại theo tỷ lệ chỉ tiêu đạt, không có ngưỡng KPI nào được ghi đè."
  ],
  "DANH_GIA_KPI": [
@@ -8,7 +8,7 @@
    "{kt#kpi[ma=K14].ma} {kt#kpi[ma=K14].chi_tieu}",
    "Không đạt: {kt#kpi[ma=K14].thuc_te_hien_thi} so với {kt#kpi[ma=K14].muc_tieu_hien_thi}",
    "Mức huy động theo sprint của S7 đến S9 được đặt sát MD kế hoạch. Các gói chậm cuối S7 (1.4.6, 1.4.9, 2.4.9, 4.5.3, 5.4.3) dồn sang S8 khi nhiều kiểm thử viên và kỹ sư phát triển đã hết quỹ, phải huy động bổ sung {kt#huy_dong_bo_sung.tong|md} MD ở S8, S9 để giữ mốc M4 và cut over. MD huy động thực tế tăng lên {kt#chi_phi.md_huy_dong|md} MD trong khi một phần ngày huy động bổ sung không ghi công",
-   "Vấn đề VD13, VD14, bảng huy động bổ sung (dau_vao/thuc_te/huy_dong_bo_sung.json), nhật ký công việc S8, S9"
+   "Vấn đề VD13, VD14, bảng huy động bổ sung thực tế, nhật ký công việc S8, S9"
   ],
   [
    "{kt#kpi[ma=K04].ma} {kt#kpi[ma=K04].chi_tieu}",
@@ -76,7 +76,7 @@
  "RUI_RO": [
   [
    "Mức độ nhận diện",
-   "{kt#rui_ro.so_da_xay_ra|nguyen} rủi ro đe dọa đã xảy ra RR02, RR04, RR06 đều có trong sổ, không có rủi ro mới ngoài sổ. Hai cơ hội RR20, RR21 không xảy ra (RR21 đóng khi rà soát sổ sau phụ lục)",
+   "{kt#rui_ro.so_de_doa_xay_ra|nguyen} đe dọa đã xảy ra RR02, RR04, RR06 và {kt#rui_ro.so_co_hoi_xay_ra|nguyen} cơ hội đã xảy ra RR20 (tái sử dụng khung giao diện cho gói 4.3.3) đều có trong sổ, không có rủi ro mới ngoài sổ. Cơ hội RR21 không xảy ra, đóng khi rà soát sổ sau phụ lục",
    "Đạt"
   ],
   [
@@ -91,7 +91,7 @@
   ],
   [
    "Tính kịp thời của ứng phó",
-   "RR06 kích hoạt kế hoạch ứng phó ngày 21/06/2027 (S7) khi dấu hiệu xuất hiện trong kiểm thử hiệu năng, tối ưu trong S7, đo lại đạt và đóng ngày 06/07/2027 (S8). RR02 được xử lý theo vấn đề VD04, VD06. RR04 xảy ra mà không có bước kích hoạt theo dấu hiệu, xử lý trực tiếp bằng vấn đề VD03",
+   "RR06 kích hoạt kế hoạch ứng phó ngày {kt#rui_ro.danh_sach[ma=RR06].ngay_kich_hoat|ngay} (S7) khi dấu hiệu xuất hiện trong kiểm thử hiệu năng, tối ưu trong S7, đo lại đạt và đóng ngày {kt#rui_ro.danh_sach[ma=RR06].ngay_dong|ngay} (S8). RR02 kích hoạt ngày {kt#rui_ro.danh_sach[ma=RR02].ngay_kich_hoat|ngay}, trước khi xảy ra, xử lý theo vấn đề VD04, VD06. RR04 xảy ra mà không có bước kích hoạt theo dấu hiệu, xử lý trực tiếp bằng vấn đề VD03",
    "Đạt một phần, RR04 cần theo dõi dấu hiệu ngày có mặt trước sprint huy động"
   ],
   [
@@ -134,14 +134,14 @@
   [
    "Hỗ trợ tăng cường sau cut over",
    "HSDT (hỗ trợ tăng cường sau cut over), dời theo phụ lục",
-   "Hỗ trợ tăng cường từ {kt#bao_hanh.ho_tro_tang_cuong.tu|ngay} đến {kt#bao_hanh.ho_tro_tang_cuong.den|ngay}, giữ số ngày làm việc của cam kết, nằm trong chi phí bảo hành",
-   "Đạt"
+   "Khoảng hỗ trợ tăng cường từ {kt#bao_hanh.ho_tro_tang_cuong.tu|ngay} đến {kt#bao_hanh.ho_tro_tang_cuong.den|ngay} đã dời theo phụ lục và giữ số ngày làm việc của cam kết. Nhật ký công việc giai đoạn Kết thúc không có dòng hỗ trợ tăng cường, chưa có dữ liệu xác nhận người trực và kết quả",
+   "Chưa đủ dữ liệu"
   ],
   [
    "Bảo hành trách nhiệm sai sót",
    "HSMT, E-ĐKCT, bảo hành {kt#bao_hanh.thoi_han_thang|nguyen} tháng, thời hạn phản hồi và khắc phục theo mức lỗi",
-   "Bảo hành từ {kt#bao_hanh.tu|ngay} đến {kt#bao_hanh.het_han|ngay}, nghĩa vụ ghi nhận là cam kết chưa chi {kt#chi_phi.cam_ket_chua_chi|tien} đồng, phản hồi và khắc phục theo mức lỗi đã thống nhất",
-   "Đạt"
+   "Bảo hành từ {kt#bao_hanh.tu|ngay} đến {kt#bao_hanh.het_han|ngay}, phản hồi lỗi mức Nghiêm trọng trong {kt#bao_hanh.muc_loi[muc=Nghiêm trọng].phan_hoi_gio|nguyen} giờ tính liên tục, mức Cao trong {kt#bao_hanh.muc_loi[muc=Cao].phan_hoi_gio|nguyen} giờ và mức Khác trong {kt#bao_hanh.muc_loi[muc=Khác].phan_hoi_gio|nguyen} giờ tính trong giờ hành chính. Nghĩa vụ ghi nhận là cam kết chưa chi {kt#chi_phi.cam_ket_chua_chi|tien} đồng, đến ngày tổng hợp số liệu chưa phát sinh yêu cầu bảo hành",
+   "Đang thực hiện"
   ]
  ],
  "KET_LUAN": [

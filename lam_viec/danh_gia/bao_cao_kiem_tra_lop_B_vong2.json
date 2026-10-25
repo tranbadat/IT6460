@@ -1,0 +1,155 @@
+{
+ "tai_lieu": "ket_qua/12_Bao_cao_danh_gia/Bao_cao_danh_gia_du_an.docx",
+ "phien_ban": "0.3",
+ "dac_ta": "qlda-danh-gia/dac_ta/bao_cao_danh_gia.json",
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "luot": "xác nhận lượt 2 sau vòng sửa, báo cáo lượt 1: lam_viec/danh_gia/bao_cao_kiem_tra_lop_B_vong1.json",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên kiểm tra riêng (agent con, lượt xác nhận 2), Claude Code, mô hình Claude Opus 5.5, python-docx đọc tệp Word",
+ "ket_luan": "dat",
+ "so_loi": 0,
+ "so_canh_bao": 3,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 7 mục, có cam kết hỗ trợ tăng cường và bảo hành."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "dat",
+   "nhan_xet": "14 KPI khớp ket_thuc.kpi (K14 79,99% Không đạt, 13/14, 92,9%, Tốt, K03 1,00), ngày đóng 04/08/2027, EMV 21,2 ngày, găng 9,0 ngày, EMV còn lại 115.413.014 đồng khớp rui_ro.json. Báo cáo tổng kết còn hiển thị 80% ở một bảng (MH07 của tổng kết), cần sửa ở tổng kết."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Bảng yêu cầu RFP có R02 (NT22) và R12 (NT15), CR01 dẫn về NT19, NT20, hạng mục 12 về NT21, nguyên nhân K04 dẫn về biến cố gói 4.4.1, 4.3.10, 5.3.7 trong mo_phong.json."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "22/22 tiêu chí, 16/16 yêu cầu, hạng mục 12 và CR01 có biên bản."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Tách cơ hội, đánh giá dự phòng so EMV theo quyết định 18/10/2026, EMV thời gian, RR06 S7 đến S8, RR04 không kích hoạt."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Đúng phông, không in đậm, không ngoặc kép, không gạch dài, không chấm phẩy."
+  },
+  {
+   "tieu_chi": "doc_hieu: nhận định dựa trên số liệu và mã bằng chứng",
+   "ket_qua": "dat",
+   "nhan_xet": "K14 dẫn VD13, VD14, huy_dong_bo_sung.json. K04 không còn gắn RR20."
+  },
+  {
+   "tieu_chi": "doc_hieu: đánh giá cả mặt chưa tốt",
+   "ket_qua": "dat",
+   "nhan_xet": "Nêu K14 không đạt, nhân sự chủ chốt Đạt một phần, RR04 Đạt một phần."
+  },
+  {
+   "tieu_chi": "doc_hieu: so EMV với tác động thực tế",
+   "ket_qua": "dat",
+   "nhan_xet": "So MD, tiền, thời gian và dự phòng."
+  },
+  {
+   "tieu_chi": "doc_hieu: quản lý thay đổi theo từng bước",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ các bước, có giá điều chỉnh của phụ lục."
+  },
+  {
+   "tieu_chi": "doc_hieu: kiến nghị cụ thể, kiểm chứng được",
+   "ket_qua": "dat",
+   "nhan_xet": "Thêm kiến nghị theo dõi MD huy động bổ sung cùng K14."
+  }
+ ],
+ "dong_phat_hien_truoc": [
+  {
+   "ma": "DG01",
+   "da_dong": true,
+   "nhan_xet": "K14 79,99% Không đạt, bảng nhóm Chi phí 3/2, 92,9% (13/14), xếp loại Tốt, KET_LUAN nêu K14."
+  },
+  {
+   "ma": "DG02",
+   "da_dong": true,
+   "nhan_xet": "Hạng mục 12 nghiệm thu NT21 tại M7, CR01 NT19, NT20 tại M9, khớp nghiem_thu.csv."
+  },
+  {
+   "ma": "DG03",
+   "da_dong": true,
+   "nhan_xet": "PHUONG_PHAP ghi đóng 04/08/2027 tại M8, số liệu đến 12/08/2027."
+  },
+  {
+   "ma": "DC1",
+   "da_dong": false,
+   "nhan_xet": "CAM_KET và bảng các bước thay đổi đã nêu BL1, BL2, giá điều chỉnh 199.024.682 đồng. Câu tổng hợp mục 4 vẫn ghi Tổng tác động đã duyệt: 76 MD, 161.500.000 đồng (chi phí nội bộ), giữ lại thành DC1 mức cảnh báo."
+  },
+  {
+   "ma": "DC2",
+   "da_dong": true,
+   "nhan_xet": "Cơ hội RR20, RR21 tách khỏi đe dọa, K04 không còn gắn RR20 và dẫn đúng gói dùng lại thành phần. Phát sinh điểm dữ liệu RR20 (DC9)."
+  },
+  {
+   "ma": "DC3",
+   "da_dong": true,
+   "nhan_xet": "Nêu dự phòng thấp hơn EMV theo quyết định 18/10/2026, EMV còn lại BL2 115.413.014 đồng, EMV thời gian 21,2 ngày, găng 9,0 ngày."
+  },
+  {
+   "ma": "DC4",
+   "da_dong": true,
+   "nhan_xet": "RR06 kích hoạt S7, đóng 06/07/2027 S8, RR04 không kích hoạt được đánh giá Đạt một phần."
+  },
+  {
+   "ma": "DC5",
+   "da_dong": true,
+   "nhan_xet": "Có dòng hỗ trợ tăng cường 30/07 đến 12/08/2027 và bảo hành. Mức phản hồi theo giờ chưa nêu (DC10)."
+  },
+  {
+   "ma": "DC6",
+   "da_dong": true,
+   "nhan_xet": "Nhân sự chủ chốt Đạt một phần, nêu Phạm Tuấn Anh không huy động S7, S8."
+  },
+  {
+   "ma": "DC7",
+   "da_dong": true,
+   "nhan_xet": "Bảng yêu cầu RFP có R02, R12, 16 yêu cầu khớp ket_thuc.nghiem_thu.yeu_cau_rfp."
+  },
+  {
+   "ma": "DC8",
+   "da_dong": true,
+   "nhan_xet": "K03 hiển thị 1,00."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "DC1",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 lời văn thay đổi",
+   "vi_tri": "Mục 4 đoạn: Tổng tác động đã duyệt: 76 MD, 161.500.000 đồng.",
+   "mo_ta": "161.500.000 đồng là chi phí nội bộ ước tính (thay_doi.chi_phi_tang_duyet), tác động giá đã duyệt theo phụ lục là 199.024.682 đồng (gia_dieu_chinh_duyet). Bảng ngay dưới đã ghi đúng nên chỉ là diễn đạt.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại câu: tác động đã duyệt 76 MD, giá điều chỉnh 199.024.682 đồng, chi phí nội bộ ước tính 161.500.000 đồng."
+  },
+  {
+   "muc_do": "canh_bao",
+   "nhom": "CL02 dữ liệu rủi ro, cơ hội",
+   "mo_ta": "Kịch bản mô phỏng S1 (du_lieu/mo_phong.json, kich_ban_noi_dung S1 và họp cải tiến S1 liên kết 4.3.3, RR20) ghi cơ hội RR20 xảy ra: khung ứng dụng giao diện tái sử dụng thư viện từ hợp đồng tương tự, gói 4.3.3 làm 4,0 MD so với kế hoạch 5,0 MD. dau_vao/thuc_te/theo_doi_rui_ro.csv chỉ ghi RR20 Đã đóng ngày 04/08/2027, không có dòng Đã xảy ra, nên ket_thuc.rui_ro tính 3 rủi ro đã xảy ra. Tài liệu viết đúng theo ket_thuc.json nhưng nguồn mô phỏng và sổ theo dõi rủi ro không nhất quán.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm xác nhận RR20 có xảy ra hay không. Nếu có, ghi dòng Đã xảy ra cho RR20 vào theo_doi_rui_ro.csv (tác động âm 1 MD, cơ hội), tạo lại ket_thuc.json và soạn lại phần rủi ro của hai báo cáo.",
+   "ma": "DC9",
+   "vi_tri": "Mục 5 bảng tiêu chí dòng Mức độ nhận diện: Hai cơ hội RR20, RR21 không xảy ra"
+  },
+  {
+   "ma": "DC10",
+   "muc_do": "canh_bao",
+   "nhom": "CL04 cam kết bảo hành",
+   "vi_tri": "Mục 6 bảng CAM_KET dòng Bảo hành trách nhiệm sai sót: phản hồi và khắc phục theo mức lỗi đã thống nhất | Đạt",
+   "mo_ta": "Không nêu mức cam kết cụ thể (phản hồi mức Cao 4 giờ, Khác 8 giờ theo chi_tieu_ky_thuat.json), và nghĩa vụ kéo dài đến 29/07/2028 nên tại ngày chốt 12/08/2027 mới đang thực hiện, đánh giá Đạt chưa kiểm chứng được.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại dòng CAM_KET: nêu mức phản hồi theo giờ, đánh giá Đang thực hiện hoặc Đạt đến ngày chốt số liệu."
+  }
+ ]
+}

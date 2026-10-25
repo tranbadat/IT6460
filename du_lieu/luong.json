@@ -1003,6 +1003,48 @@
    "luong": 4636364
   }
  ],
+ "huy_dong_bo_sung": [
+  {
+   "thanh_vien": "D1",
+   "sprint": "S8",
+   "md": 1.0
+  },
+  {
+   "thanh_vien": "D2",
+   "sprint": "S8",
+   "md": 1.0
+  },
+  {
+   "thanh_vien": "D4",
+   "sprint": "S9",
+   "md": 2.5
+  },
+  {
+   "thanh_vien": "Q1",
+   "sprint": "S8",
+   "md": 2.0
+  },
+  {
+   "thanh_vien": "Q2",
+   "sprint": "S8",
+   "md": 3.0
+  },
+  {
+   "thanh_vien": "lien",
+   "sprint": "S8",
+   "md": 1.0
+  },
+  {
+   "thanh_vien": "minh",
+   "sprint": "S8",
+   "md": 1.0
+  },
+  {
+   "thanh_vien": "tuananh",
+   "sprint": "S8",
+   "md": 1.5
+  }
+ ],
  "don_gia": [
   {
    "vai_tro": "LEAD",

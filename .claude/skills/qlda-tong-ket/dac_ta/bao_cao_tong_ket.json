@@ -103,7 +103,7 @@
   },
   {
    "bang": {
-    "nguon": "kt#nghiem_thu.hang_muc",
+    "nguon": "kt#nghiem_thu.hang_muc_va_phu_luc",
     "cot": [
      [
       "STT",
@@ -384,7 +384,7 @@
      [
       "Tỷ lệ sử dụng nhân lực huy động",
       "",
-      "{kt#chi_phi.ty_le_su_dung_huy_dong|pt}"
+      "{kt#kpi[ma=K14].thuc_te_hien_thi}"
      ]
     ],
     "widths": [

@@ -48,3 +48,5 @@ Mọi lệnh của chu trình chạy với QLDA_NGAY bằng ngày cuối sprint 
 ## Ghi nhật ký
 
 mo_phong_sprint.py tự ghi nhật ký bước script (mo_phong.S<n>.sinh, mo_phong.kiem_tra). Agent Mô phỏng ghi bước viết kịch bản bằng `qlda-loi/scripts/nhat_ky.py` (lệnh trong prompt).
+
+Từ 1.0.6: MP11 không yêu cầu vấn đề cho cơ hội đã xảy ra.
