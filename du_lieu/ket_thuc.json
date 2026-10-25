@@ -1783,8 +1783,11 @@
  },
  "tien_do": {
   "ngay_bat_dau": "2027-03-18",
-  "ket_thuc_ke_hoach": "2027-07-29",
+  "ket_thuc_ke_hoach": "2027-08-04",
   "ket_thuc_thuc_te": "2027-08-04",
+  "moc_dong_du_an": "M8",
+  "ngay_ghi_cong_cuoi": "2027-08-04",
+  "ket_thuc_thuc_hien_ke_hoach": "2027-07-29",
   "cut_over": "2027-07-29",
   "moc_cut_over": "M6",
   "cut_over_thuc_te": "2027-07-29",
@@ -2029,7 +2032,7 @@
     "spi_hien_thi": "1,00",
     "cpi_hien_thi": "0,99",
     "cpi_thuc_hien_thi": "0,98",
-    "ty_le_su_dung_quy": 0.805,
+    "ty_le_su_dung_quy": 0.7948,
     "trang_thai_chung": "Xanh"
    },
    {
@@ -2044,7 +2047,7 @@
     "spi_hien_thi": "1,00",
     "cpi_hien_thi": "0,99",
     "cpi_thuc_hien_thi": "0,99",
-    "ty_le_su_dung_quy": 0.811,
+    "ty_le_su_dung_quy": 0.7995,
     "trang_thai_chung": "Xanh"
    },
    {
@@ -2059,7 +2062,7 @@
     "spi_hien_thi": "1,00",
     "cpi_hien_thi": "0,99",
     "cpi_thuc_hien_thi": "0,99",
-    "ty_le_su_dung_quy": 0.8114,
+    "ty_le_su_dung_quy": 0.7999,
     "trang_thai_chung": "Xanh"
    }
   ]
@@ -2084,7 +2087,7 @@
   "cach_tra_luong_ten": "trả theo công sức (MD công việc)",
   "co_so_luong": "MD công việc (kế hoạch là MD giao, thực tế là MD nhật ký)",
   "chi_phi_huy_dong_ke_hoach": 1640136136,
-  "chi_phi_huy_dong_thuc_te": 1640136136,
+  "chi_phi_huy_dong_thuc_te": 1660064545,
   "gia_hop_dong_truoc_thue": 1949024682.0,
   "chi_phi_nhan_su_ke_hoach": 1327839441,
   "chi_phi_nhan_su_thuc_te": 1336368239,
@@ -2094,9 +2097,9 @@
   "chi_phi_san_sang_ke_hoach": 0,
   "chi_phi_san_sang_thuc_te": 0,
   "md_huy_dong_ke_hoach": 908.0,
-  "md_huy_dong": 908.0,
-  "md_san_sang": 171.25,
-  "ty_le_su_dung_huy_dong": 0.8114,
+  "md_huy_dong": 921.0,
+  "md_san_sang": 184.25,
+  "ty_le_su_dung_huy_dong": 0.7999,
   "he_so_bao_hiem": 1.235,
   "tong_chi_phi_ke_hoach": 1477839441,
   "tong_chi_phi_thuc_te": 1436368239,
@@ -2126,7 +2129,7 @@
      "8.528.798"
     ],
     [
-     "Ngày sẵn sàng không ghi công (175 MD kế hoạch, 171,25 MD thực tế), không tính lương",
+     "Ngày sẵn sàng không ghi công (175 MD kế hoạch, 184,25 MD thực tế), không tính lương",
      "0",
      "0",
      "0"
@@ -2212,11 +2215,11 @@
    "chenh_lech": 0.25,
    "ty_le_chenh": 0.005,
    "md_huy_dong_ke_hoach": 69.0,
-   "md_huy_dong": 69.0,
-   "md_san_sang": 18.75,
-   "ty_le_su_dung": 0.7283,
+   "md_huy_dong": 70.5,
+   "md_san_sang": 20.25,
+   "ty_le_su_dung": 0.7128,
    "chi_phi_huy_dong_ke_hoach": 116202273,
-   "chi_phi_huy_dong_thuc_te": 116202273,
+   "chi_phi_huy_dong_thuc_te": 118728409,
    "chi_phi_cong_suc_ke_hoach": 84204546,
    "chi_phi_cong_suc_thuc_te": 84625568
   },
@@ -2231,11 +2234,11 @@
    "chenh_lech": -0.5,
    "ty_le_chenh": -0.0086,
    "md_huy_dong_ke_hoach": 71.0,
-   "md_huy_dong": 71.0,
-   "md_san_sang": 13.5,
-   "ty_le_su_dung": 0.8099,
+   "md_huy_dong": 72.0,
+   "md_san_sang": 14.5,
+   "ty_le_su_dung": 0.7986,
    "chi_phi_huy_dong_ke_hoach": 111599091,
-   "chi_phi_huy_dong_thuc_te": 111599091,
+   "chi_phi_huy_dong_thuc_te": 113170909,
    "chi_phi_cong_suc_ke_hoach": 91165455,
    "chi_phi_cong_suc_thuc_te": 90379546
   },
@@ -2269,11 +2272,11 @@
    "chenh_lech": 0.75,
    "ty_le_chenh": 0.0103,
    "md_huy_dong_ke_hoach": 83.0,
-   "md_huy_dong": 83.0,
-   "md_san_sang": 9.75,
-   "ty_le_su_dung": 0.8825,
+   "md_huy_dong": 84.0,
+   "md_san_sang": 10.75,
+   "ty_le_su_dung": 0.872,
    "chi_phi_huy_dong_ke_hoach": 125801591,
-   "chi_phi_huy_dong_thuc_te": 125801591,
+   "chi_phi_huy_dong_thuc_te": 127317273,
    "chi_phi_cong_suc_ke_hoach": 109886932,
    "chi_phi_cong_suc_thuc_te": 111023693
   },
@@ -2307,11 +2310,11 @@
    "chenh_lech": -0.5,
    "ty_le_chenh": -0.0074,
    "md_huy_dong_ke_hoach": 85.0,
-   "md_huy_dong": 85.0,
-   "md_san_sang": 18.0,
-   "ty_le_su_dung": 0.7882,
+   "md_huy_dong": 86.0,
+   "md_san_sang": 19.0,
+   "ty_le_su_dung": 0.7791,
    "chi_phi_huy_dong_ke_hoach": 143147727,
-   "chi_phi_huy_dong_thuc_te": 143147727,
+   "chi_phi_huy_dong_thuc_te": 144831818,
    "chi_phi_cong_suc_ke_hoach": 113676136,
    "chi_phi_cong_suc_thuc_te": 112834091
   },
@@ -2326,11 +2329,11 @@
    "chenh_lech": 0.25,
    "ty_le_chenh": 0.0039,
    "md_huy_dong_ke_hoach": 77.0,
-   "md_huy_dong": 77.0,
-   "md_san_sang": 12.75,
-   "ty_le_su_dung": 0.8344,
+   "md_huy_dong": 78.0,
+   "md_san_sang": 13.75,
+   "ty_le_su_dung": 0.8237,
    "chi_phi_huy_dong_ke_hoach": 129675000,
-   "chi_phi_huy_dong_thuc_te": 129675000,
+   "chi_phi_huy_dong_thuc_te": 131359091,
    "chi_phi_cong_suc_ke_hoach": 107781818,
    "chi_phi_cong_suc_thuc_te": 108202841
   },
@@ -2364,11 +2367,11 @@
    "chenh_lech": 0.25,
    "ty_le_chenh": 0.0051,
    "md_huy_dong_ke_hoach": 70.0,
-   "md_huy_dong": 70.0,
-   "md_san_sang": 20.25,
-   "ty_le_su_dung": 0.7107,
+   "md_huy_dong": 72.0,
+   "md_san_sang": 22.25,
+   "ty_le_su_dung": 0.691,
    "chi_phi_huy_dong_ke_hoach": 94309091,
-   "chi_phi_huy_dong_thuc_te": 94309091,
+   "chi_phi_huy_dong_thuc_te": 97003636,
    "chi_phi_cong_suc_ke_hoach": 66690000,
    "chi_phi_cong_suc_thuc_te": 67026818
   },
@@ -2383,11 +2386,11 @@
    "chenh_lech": -0.75,
    "ty_le_chenh": -0.015,
    "md_huy_dong_ke_hoach": 63.0,
-   "md_huy_dong": 63.0,
-   "md_san_sang": 13.75,
-   "ty_le_su_dung": 0.7817,
+   "md_huy_dong": 66.0,
+   "md_san_sang": 16.75,
+   "ty_le_su_dung": 0.7462,
    "chi_phi_huy_dong_ke_hoach": 84878182,
-   "chi_phi_huy_dong_thuc_te": 84878182,
+   "chi_phi_huy_dong_thuc_te": 88920000,
    "chi_phi_cong_suc_ke_hoach": 67363636,
    "chi_phi_cong_suc_thuc_te": 66353182
   },
@@ -2402,11 +2405,11 @@
    "chenh_lech": 0.25,
    "ty_le_chenh": 0.0043,
    "md_huy_dong_ke_hoach": 62.0,
-   "md_huy_dong": 62.0,
-   "md_san_sang": 3.25,
-   "ty_le_su_dung": 0.9476,
+   "md_huy_dong": 64.5,
+   "md_san_sang": 5.75,
+   "ty_le_su_dung": 0.9109,
    "chi_phi_huy_dong_ke_hoach": 104413636,
-   "chi_phi_huy_dong_thuc_te": 104413636,
+   "chi_phi_huy_dong_thuc_te": 108623864,
    "chi_phi_cong_suc_ke_hoach": 98519318,
    "chi_phi_cong_suc_thuc_te": 98940341
   }
@@ -2430,8 +2433,8 @@
   ]
  },
  "nghiem_thu": {
-  "so_tieu_chi": 18,
-  "so_dat": 18,
+  "so_tieu_chi": 22,
+  "so_dat": 22,
   "ty_le_nghiem_thu_dat": 1.0,
   "so_nghiem_thu_lai": 0,
   "khong_dat": [],
@@ -2615,9 +2618,55 @@
     "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
     "ghi_chu": "Biên bản bàn giao tài liệu ngày 29/07/2027",
     "so_lan": 1
+   },
+   {
+    "ma": "NT19",
+    "tieu_chi": "R38 Phần bán hàng trên sàn thương mại điện tử theo phụ lục 01/2027/PL-ABCW (CR01): kết nối sàn, đồng bộ sản phẩm, giá và tồn kho lên sàn",
+    "hang_muc": "9",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-27",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản nghiệm thu phần bán hàng trên sàn (mốc M9) ngày 27/07/2027, kiểm thử chấp nhận 5.4.5",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT20",
+    "tieu_chi": "R38 Phần bán hàng trên sàn thương mại điện tử theo phụ lục 01/2027/PL-ABCW (CR01): nhận đơn hàng từ sàn, cập nhật trạng thái, đối soát và giao diện quản trị kênh sàn",
+    "hang_muc": "9",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-27",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản nghiệm thu phần bán hàng trên sàn (mốc M9) ngày 27/07/2027, kiểm thử chấp nhận 5.4.5",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT21",
+    "tieu_chi": "R37 Chuyển giao hệ thống, tài liệu hướng dẫn vận hành và hướng dẫn vận hành cho cán bộ Chủ đầu tư",
+    "hang_muc": "12",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-29",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản bàn giao (mốc M7) ngày 29/07/2027, tài liệu hướng dẫn vận hành 2.5.2, hướng dẫn vận hành 3.5.1",
+    "so_lan": 1
+   },
+   {
+    "ma": "NT22",
+    "tieu_chi": "R02 Kênh bán hàng trực tuyến mới qua internet vận hành từ ngày cut over",
+    "hang_muc": "13",
+    "ket_qua": "Đạt",
+    "ngay": "2027-07-29",
+    "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+    "ghi_chu": "Biên bản đưa hệ thống vào vận hành (mốc M6) ngày 29/07/2027",
+    "so_lan": 1
    }
   ],
   "yeu_cau_rfp": [
+   {
+    "ma": "R02",
+    "noi_dung": "Mục tiêu dự án: mở rộng khách hàng qua internet, tạo kênh bán hàng mới",
+    "ma_nghiem_thu": "NT22",
+    "ket_qua": "Đạt"
+   },
    {
     "ma": "R03",
     "noi_dung": "Chính sách phát triển: khách hàng thao tác dễ dàng",
@@ -2673,6 +2722,12 @@
     "ket_qua": "Đạt"
    },
    {
+    "ma": "R12",
+    "noi_dung": "Đưa hệ thống vào vận hành ngày 01/07",
+    "ma_nghiem_thu": "NT15",
+    "ket_qua": "Đạt"
+   },
+   {
     "ma": "R13",
     "noi_dung": "Phạm vi: xây dựng hệ thống website bán hàng từ phân tích hệ thống đến kiểm thử vận hành",
     "ma_nghiem_thu": "NT14",
@@ -2703,8 +2758,8 @@
     "ket_qua": "Đạt"
    }
   ],
-  "so_yeu_cau_rfp": 14,
-  "so_yeu_cau_rfp_dat": 14,
+  "so_yeu_cau_rfp": 16,
+  "so_yeu_cau_rfp_dat": 16,
   "yeu_cau_chua_nghiem_thu": [],
   "hang_muc": [
    {
@@ -2766,8 +2821,8 @@
    {
     "stt": 9,
     "danh_muc": "Tích hợp với hệ thống chính (Main System)",
-    "so_tieu_chi": 2,
-    "so_dat": 2,
+    "so_tieu_chi": 4,
+    "so_dat": 4,
     "ket_qua": "Đạt"
    },
    {
@@ -2787,19 +2842,29 @@
    {
     "stt": 12,
     "danh_muc": "Chuyển giao và hướng dẫn vận hành hệ thống",
-    "so_tieu_chi": 0,
-    "so_dat": 0,
-    "ket_qua": "Chưa nghiệm thu"
+    "so_tieu_chi": 1,
+    "so_dat": 1,
+    "ket_qua": "Đạt"
    },
    {
     "stt": 13,
     "danh_muc": "Hỗ trợ đưa hệ thống vào vận hành (cut over)",
-    "so_tieu_chi": 1,
-    "so_dat": 1,
+    "so_tieu_chi": 2,
+    "so_dat": 2,
     "ket_qua": "Đạt"
    }
   ],
-  "ty_le_yeu_cau_rfp_dat": 1.0
+  "ty_le_yeu_cau_rfp_dat": 1.0,
+  "thay_doi": [
+   {
+    "ma": "CR01",
+    "tieu_de": "Bán hàng trên sàn thương mại điện tử",
+    "so_tieu_chi": 2,
+    "so_dat": 2,
+    "ma_nghiem_thu": "NT19, NT20",
+    "ket_qua": "Đạt"
+   }
+  ]
  },
  "loi": {
   "tong": 55,
@@ -2891,9 +2956,14 @@
     "han_quyet_dinh": "2027-06-01",
     "so_ngay_xu_ly": 5,
     "dung_han": true,
-    "phu_luc_hop_dong": true
+    "phu_luc_hop_dong": true,
+    "gia_dieu_chinh": 199024682,
+    "so_ngay_lui_cut_over": 20,
+    "so_phu_luc": "01/2027/PL-ABCW",
+    "ngay_phu_luc": "2027-05-27"
    }
-  ]
+  ],
+  "gia_dieu_chinh_duyet": 199024682
  },
  "rui_ro": {
   "tong": 22,
@@ -3347,7 +3417,7 @@
    "muc_tieu": 0.95,
    "thuc_te": 1.0,
    "muc_tieu_hien_thi": "Tối thiểu 0,95",
-   "thuc_te_hien_thi": "1",
+   "thuc_te_hien_thi": "1,00",
    "ket_qua": "Đạt",
    "ly_do_ghi_de": ""
   },
@@ -3430,7 +3500,7 @@
    "so_sanh": "le",
    "muc_tieu": 2.0,
    "thuc_te": 0.75,
-   "muc_tieu_hien_thi": "Tối đa 2 lỗi/10 MD",
+   "muc_tieu_hien_thi": "Tối đa 2,00 lỗi/10 MD",
    "thuc_te_hien_thi": "0,75 lỗi/10 MD",
    "ket_qua": "Đạt",
    "ly_do_ghi_de": ""
@@ -3477,16 +3547,16 @@
    "chi_tieu": "Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động)",
    "so_sanh": "ge",
    "muc_tieu": 0.8,
-   "thuc_te": 0.8114,
+   "thuc_te": 0.7999,
    "muc_tieu_hien_thi": "Tối thiểu 80%",
-   "thuc_te_hien_thi": "81,1%",
-   "ket_qua": "Đạt",
+   "thuc_te_hien_thi": "79,99%",
+   "ket_qua": "Không đạt",
    "ly_do_ghi_de": ""
   }
  ],
  "so_kpi": 14,
- "so_kpi_dat": 14,
- "ty_le_kpi_dat": 1.0,
+ "so_kpi_dat": 13,
+ "ty_le_kpi_dat": 0.9286,
  "xep_loai": "Tốt",
  "kpi_theo_nhom": [
   {
@@ -3498,7 +3568,7 @@
   {
    "nhom": "Chi phí",
    "so": 3,
-   "dat": 3,
+   "dat": 2,
    "ma": "K04, K05, K14"
   },
   {
@@ -3544,8 +3614,256 @@
    "ten": "Chưa đạt"
   }
  ],
- "kpi_khong_dat": [],
- "ngay_dong_du_an": "2027-08-12",
+ "kpi_khong_dat": [
+  {
+   "ma": "K14",
+   "nhom": "Chi phí",
+   "chi_tieu": "Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động)",
+   "so_sanh": "ge",
+   "muc_tieu": 0.8,
+   "thuc_te": 0.7999,
+   "muc_tieu_hien_thi": "Tối thiểu 80%",
+   "thuc_te_hien_thi": "79,99%",
+   "ket_qua": "Không đạt",
+   "ly_do_ghi_de": ""
+  }
+ ],
+ "ngay_dong_du_an": "2027-08-04",
+ "han_dong_du_an": "2027-08-12",
+ "duong_co_so_goc": {
+  "co_phu_luc": true,
+  "gia": 1750000000,
+  "gia_hien_hanh": 1949024682.0,
+  "cut_over": "2027-07-01",
+  "cut_over_hien_hanh": "2027-07-29",
+  "BAC_md": 657.0,
+  "BAC_md_hien_hanh": 733.0,
+  "so_ngay_lui_cut_over": 20,
+  "moc": [
+   {
+    "ma": "M0",
+    "ten": "Hợp đồng có hiệu lực, khởi động dự án",
+    "han_goc": "2027-03-18",
+    "han_hien_hanh": "2027-03-18",
+    "doi_han": false
+   },
+   {
+    "ma": "M1",
+    "ten": "Kế hoạch quản lý dự án được Chủ đầu tư xác nhận",
+    "han_goc": "2027-04-14",
+    "han_hien_hanh": "2027-04-14",
+    "doi_han": false
+   },
+   {
+    "ma": "M2",
+    "ten": "Đặc tả yêu cầu và giao diện ưu tiên được hai bên xác nhận",
+    "han_goc": "2027-05-10",
+    "han_hien_hanh": "2027-05-10",
+    "doi_han": false
+   },
+   {
+    "ma": "M3",
+    "ten": "Chủ đầu tư kiểm tra đạt các chức năng chính và tích hợp với Main System",
+    "han_goc": "2027-06-17",
+    "han_hien_hanh": "2027-07-08",
+    "doi_han": true
+   },
+   {
+    "ma": "M4",
+    "ten": "Hoàn thành kiểm thử hệ thống, bản phát hành sẵn sàng kiểm thử chấp nhận",
+    "han_goc": "2027-07-15",
+    "han_hien_hanh": "2027-07-15",
+    "doi_han": false
+   },
+   {
+    "ma": "M9",
+    "ten": "Chủ đầu tư nghiệm thu phần bán hàng trên sàn thương mại điện tử theo yêu cầu thay đổi CR01",
+    "han_goc": "",
+    "han_hien_hanh": "2027-07-27",
+    "doi_han": true
+   },
+   {
+    "ma": "M5",
+    "ten": "Hoàn thành kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư",
+    "han_goc": "2027-07-28",
+    "han_hien_hanh": "2027-07-28",
+    "doi_han": false
+   },
+   {
+    "ma": "M6",
+    "ten": "Hệ thống đưa vào vận hành (cut over) và được nghiệm thu",
+    "han_goc": "2027-07-01",
+    "han_hien_hanh": "2027-07-29",
+    "doi_han": true
+   },
+   {
+    "ma": "M7",
+    "ten": "Nhà thầu nộp bảo lãnh bảo hành, bàn giao mã nguồn và hệ thống",
+    "han_goc": "2027-07-01",
+    "han_hien_hanh": "2027-07-29",
+    "doi_han": true
+   },
+   {
+    "ma": "M8",
+    "ten": "Đóng dự án, báo cáo tổng kết và bài học kinh nghiệm được lập, hồ sơ dự án được lưu trữ",
+    "han_goc": "2027-08-12",
+    "han_hien_hanh": "2027-08-12",
+    "doi_han": false
+   }
+  ]
+ },
+ "huy_dong_bo_sung": {
+  "co": true,
+  "tong": 13.0,
+  "tong_theo_sprint": {
+   "S8": 10.5,
+   "S9": 2.5
+  },
+  "doi_chieu": {
+   "md_bo_sung": 13.0,
+   "md_vuot_quy_ke_hoach": 6.25,
+   "md_bo_sung_khong_ghi_cong": 6.75,
+   "giai_thich": "Huy động bổ sung là số ngày thành viên được gọi thêm trong sprint (sẵn sàng làm việc), nên lớn hơn phần MD ghi công vượt quỹ kế hoạch trong nhật ký. Phần chênh là ngày huy động bổ sung không ghi công: thành viên được gọi thêm để chờ gói tiền nhiệm hoàn thành (khắc phục lỗi sau kiểm thử hệ thống 4.4.5, kiểm thử hệ thống phần sàn 5.4.3) và hoàn thành sớm hơn dự kiến. Với cách trả lương theo công sức, phần này không phát sinh chi phí lương, chỉ làm giảm tỷ lệ sử dụng nhân lực huy động."
+  },
+  "nguon": "dau_vao/thuc_te/huy_dong_bo_sung.json",
+  "danh_sach": [
+   {
+    "sprint": "S8",
+    "thanh_vien": "minh",
+    "ho_ten": "Vũ Đức Minh",
+    "md_bo_sung": 1,
+    "quy_ke_hoach": 3.0,
+    "goi": [
+     "4.4.5"
+    ],
+    "ly_do": "Vũ Đức Minh hoàn thành phần khắc phục lỗi giao diện sau kiểm thử hệ thống 4.4.5 trên đường găng",
+    "md_thuc_lam": 3.25,
+    "md_vuot_quy_ke_hoach": 0.25,
+    "md_bo_sung_khong_ghi_cong": 0.75
+   },
+   {
+    "sprint": "S8",
+    "thanh_vien": "Q2",
+    "ho_ten": "Phạm Ngọc Anh",
+    "md_bo_sung": 3,
+    "quy_ke_hoach": 2.0,
+    "goi": [
+     "1.4.9",
+     "5.4.3"
+    ],
+    "ly_do": "Phạm Ngọc Anh hoàn thành kiểm thử hiệu năng 1.4.9 sau tối ưu (RR06) và kiểm thử hệ thống luồng bán hàng trên sàn 5.4.3 chuyển từ S7",
+    "md_thuc_lam": 5.0,
+    "md_vuot_quy_ke_hoach": 3.0,
+    "md_bo_sung_khong_ghi_cong": 0.0
+   },
+   {
+    "sprint": "S8",
+    "thanh_vien": "Q1",
+    "ho_ten": "Trần Thu Hà",
+    "md_bo_sung": 2,
+    "quy_ke_hoach": 2.0,
+    "goi": [
+     "5.4.3"
+    ],
+    "ly_do": "Trần Thu Hà hoàn thành kiểm thử hệ thống luồng bán hàng trên sàn 5.4.3 chuyển từ S7",
+    "md_thuc_lam": 2.0,
+    "md_vuot_quy_ke_hoach": 0,
+    "md_bo_sung_khong_ghi_cong": 2
+   },
+   {
+    "sprint": "S8",
+    "thanh_vien": "tuananh",
+    "ho_ten": "Phạm Tuấn Anh",
+    "md_bo_sung": 1.5,
+    "quy_ke_hoach": 0,
+    "goi": [
+     "4.5.3",
+     "3.5.3"
+    ],
+    "ly_do": "Phạm Tuấn Anh hoàn thành phần còn lại của chuyển đổi thử dữ liệu 4.5.3 để diễn tập triển khai 3.5.3 không chờ đến S9",
+    "md_thuc_lam": 1.0,
+    "md_vuot_quy_ke_hoach": 1.0,
+    "md_bo_sung_khong_ghi_cong": 0.5
+   },
+   {
+    "sprint": "S8",
+    "thanh_vien": "D1",
+    "ho_ten": "Lê Quang Huy",
+    "md_bo_sung": 1,
+    "quy_ke_hoach": 3.0,
+    "goi": [
+     "4.4.5"
+    ],
+    "ly_do": "Lê Quang Huy hỗ trợ khắc phục lỗi sau kiểm thử hệ thống 4.4.5 trên đường găng",
+    "md_thuc_lam": 2.0,
+    "md_vuot_quy_ke_hoach": 0,
+    "md_bo_sung_khong_ghi_cong": 1
+   },
+   {
+    "sprint": "S8",
+    "thanh_vien": "D2",
+    "ho_ten": "Đỗ Minh Quân",
+    "md_bo_sung": 1,
+    "quy_ke_hoach": 4.0,
+    "goi": [
+     "4.4.5"
+    ],
+    "ly_do": "Đỗ Minh Quân hỗ trợ khắc phục lỗi sau kiểm thử hệ thống 4.4.5 trên đường găng",
+    "md_thuc_lam": 4.0,
+    "md_vuot_quy_ke_hoach": 0,
+    "md_bo_sung_khong_ghi_cong": 1
+   },
+   {
+    "sprint": "S8",
+    "thanh_vien": "lien",
+    "ho_ten": "Nguyễn Thị Phương Liên",
+    "md_bo_sung": 1,
+    "quy_ke_hoach": 5.0,
+    "goi": [
+     "3.2.12"
+    ],
+    "ly_do": "Nguyễn Thị Phương Liên cập nhật đặc tả hệ thống 3.2.12 sau kiểm thử hệ thống",
+    "md_thuc_lam": 4.0,
+    "md_vuot_quy_ke_hoach": 0,
+    "md_bo_sung_khong_ghi_cong": 1
+   },
+   {
+    "sprint": "S9",
+    "thanh_vien": "D4",
+    "ho_ten": "Trương Quốc Việt",
+    "md_bo_sung": 2.5,
+    "quy_ke_hoach": 6.0,
+    "goi": [
+     "1.4.10",
+     "1.5.2"
+    ],
+    "ly_do": "Trương Quốc Việt hoàn thành tối ưu hiệu năng 1.4.10 và triển khai chính thức 1.5.2 trước cut over",
+    "md_thuc_lam": 8.0,
+    "md_vuot_quy_ke_hoach": 2.0,
+    "md_bo_sung_khong_ghi_cong": 0.5
+   }
+  ],
+  "theo_sprint": [
+   {
+    "sprint": "S8",
+    "md": 10.5
+   },
+   {
+    "sprint": "S9",
+    "md": 2.5
+   }
+  ]
+ },
+ "bao_hanh": {
+  "thoi_han_thang": 12,
+  "tu": "2027-07-29",
+  "het_han": "2028-07-29",
+  "ho_tro_tang_cuong": {
+   "tu": "2027-07-30",
+   "den": "2027-08-12",
+   "noi_dung": "Trực hỗ trợ trong giờ hành chính, theo dõi cảnh báo và xử lý sự cố, nằm trong chi phí bảo hành"
+  }
+ },
  "so_lieu_mo_phong": true,
  "can_cu_mo_phong": [
   "Số liệu thực tế trong báo cáo là số liệu mô phỏng. {mo_phong#_ghi_chu}"

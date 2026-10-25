@@ -3,7 +3,7 @@
   "ten": "Phụ lục bằng chứng prompt và skill",
   "header": "Phụ lục bằng chứng prompt và skill",
   "size_bang_pt": 10,
-  "phien_ban": "0.3",
+  "phien_ban": "0.4",
   "ngay": "25/10/2026"
  },
  "blocks": [
@@ -99,15 +99,15 @@
     ],
     [
      "qlda-bang-luong",
-     "1.4.0",
+     "1.4.1",
      "Lập bảng phân chia lương của nhóm theo cách trả lương nhóm khai báo (theo ngày huy động, theo công sức thực tế hoặc kết hợp) - ngày huy động cùng nguồn với cost estimate, MD thực tế trong nhật ký công việc, đơn giá ngày của vai trò, bảo hiểm phần doanh nghiệp,",
-     "60a314d166cb"
+     "fc6542e2855d"
     ],
     [
      "qlda-bao-cao-tien-do",
-     "1.5.2",
+     "1.5.3",
      "Lập báo cáo tiến độ theo kỳ (cuối sprint hoặc ngày bất kỳ) bằng phương pháp giá trị thu được - PV, EV, AC theo MD và tiền, SPI, CPI theo công và CPI theo chi phí thực (lương theo cách trả lương nhóm khai báo cộng chi phí khác), tỷ lệ sử dụng quỹ huy động, EAC,",
-     "d093d11e80b7"
+     "83707407fb71"
     ],
     [
      "qlda-change",
@@ -135,7 +135,7 @@
     ],
     [
      "qlda-loi",
-     "1.6.4",
+     "1.6.5",
      "Lõi dùng chung của bộ skill quản lý dự án BTL_QLDA (ABC Wear Web Selling Site System) - điều phối các bước, xem trạng thái và tài liệu nào đã cũ, phân tích ảnh hưởng khi có thay đổi, dựng và kiểm tra tài liệu Word, ghi nhật ký và xuất phụ lục bằng chứng prompt",
      "c54def6bb740"
     ],
@@ -165,9 +165,9 @@
     ],
     [
      "qlda-phien-ban",
-     "1.2.5",
+     "1.2.6",
      "Quản lý phiên bản bộ tài liệu dự án (version control) - sổ phiên bản tự động theo băm nội dung và băm đầu vào, trạng thái dự thảo, đã kiểm tra, đã duyệt, đường cơ sở BL1 (ký hợp đồng) và BL2 (sau yêu cầu thay đổi), khóa hồ sơ đấu thầu sau ký hợp đồng, phiên bả",
-     "d1156ce727ba"
+     "b7fda3fcf237"
     ],
     [
      "qlda-risk",
@@ -177,9 +177,9 @@
     ],
     [
      "qlda-tong-ket",
-     "1.4.0",
+     "1.4.1",
      "Tổng hợp số liệu kết thúc dự án và lập báo cáo tổng kết dự án - kế hoạch so với thực tế về phạm vi, sản phẩm bàn giao theo Mẫu 01A, mốc so với hạn, SPI và CPI các kỳ, chi phí nhân sự theo cách trả lương nhóm khai báo (MD công việc hoặc ngày huy động, ngày sẵn ",
-     "b36c6734dbe8"
+     "fc9134f6f947"
     ],
     [
      "qlda-wbs",
@@ -340,7 +340,7 @@
      "bao_cao_tien_do",
      "Báo cáo tiến độ",
      "qlda-bao-cao-tien-do",
-     "lich, wbs, phan_cong, chi_phi, don_gia, thanh_vien, tt_nhat_ky, tt_hoan_thanh, rui_ro, tt_rui_ro, thay_doi, du_an, tt_van_de, tt_hanh_dong, tt_chi_phi, tt_moc, mo_phong",
+     "lich, wbs, phan_cong, chi_phi, don_gia, thanh_vien, tt_nhat_ky, tt_huy_dong_bo_sung, tt_hoan_thanh, rui_ro, tt_rui_ro, thay_doi, du_an, tt_van_de, tt_hanh_dong, tt_chi_phi, tt_moc, mo_phong",
      [
       "du_lieu/tien_do",
       "ket_qua/09_Bao_cao_tien_do"
@@ -359,7 +359,7 @@
      "so_lieu_ket_thuc",
      "Số liệu kết thúc dự án (dữ liệu)",
      "qlda-tong-ket",
-     "wbs, lich, chi_phi, phan_cong, thanh_vien, don_gia, tt_nhat_ky, tt_hoan_thanh, tt_moc, tt_nghiem_thu, tt_loi, rui_ro, tt_rui_ro, thay_doi, hsmt, rfp_yc, tt_chi_phi, tien_do, kpi, tt_van_de, tt_hanh_dong, chi_tieu, du_an, mo_phong",
+     "wbs, lich, chi_phi, phan_cong, thanh_vien, don_gia, tt_nhat_ky, tt_huy_dong_bo_sung, tt_hoan_thanh, tt_moc, tt_nghiem_thu, tt_loi, rui_ro, tt_rui_ro, thay_doi, hsmt, rfp_yc, tt_chi_phi, tien_do, kpi, tt_van_de, tt_hanh_dong, chi_tieu, du_an, mo_phong",
      [
       "du_lieu/ket_thuc.json"
      ]
@@ -396,7 +396,7 @@
      "bang_luong",
      "Bảng phân chia lương",
      "qlda-bang-luong",
-     "tt_nhat_ky, thanh_vien, don_gia, chi_phi, lich, du_an, mo_phong",
+     "tt_nhat_ky, tt_huy_dong_bo_sung, thanh_vien, don_gia, chi_phi, lich, du_an, mo_phong",
      [
       "du_lieu/luong.json",
       "ket_qua/14_Bang_phan_chia_luong/Bang_phan_chia_luong.xlsx"
@@ -449,10 +449,10 @@
     ],
     [
      "du_lieu/bai_hoc.json",
-     "0.3",
-     "2026-10-25 18:07",
+     "0.4",
+     "2026-10-25 18:38",
      "bai_hoc",
-     "914bee35d8ac",
+     "3b445e194345",
      ""
     ],
     [
@@ -473,10 +473,10 @@
     ],
     [
      "du_lieu/ket_thuc.json",
-     "0.2",
-     "2026-10-25 18:03",
+     "0.5",
+     "2026-10-25 18:35",
      "so_lieu_ket_thuc",
-     "80bed6dfa9e9",
+     "a67b4840c306",
      "Chốt ngày 2027-08-12"
     ],
     [
@@ -489,18 +489,18 @@
     ],
     [
      "du_lieu/luong.json",
-     "0.2",
-     "2026-10-25 18:07",
+     "0.3",
+     "2026-10-25 18:34",
      "bang_luong",
-     "be677d8704a8",
+     "1b93ef67ddb0",
      ""
     ],
     [
      "du_lieu/mo_phong.json",
-     "0.18",
-     "2026-10-25 18:03",
+     "0.20",
+     "2026-10-25 18:33",
      "mo_phong",
-     "a762cbd48434",
+     "f9563d7fd2f7",
      "Sinh số liệu mô phỏng KT"
     ],
     [
@@ -521,10 +521,10 @@
     ],
     [
      "du_lieu/phien_ban_tong_hop.json",
-     "0.26",
-     "2026-10-25 18:07",
+     "0.28",
+     "2026-10-25 18:21",
      "phien_ban",
-     "819dedc59be2",
+     "473133640b3c",
      ""
     ],
     [
@@ -769,11 +769,11 @@
     ],
     [
      "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_KT.docx",
-     "0.1",
-     "2026-10-25 18:01",
+     "0.2",
+     "2026-10-25 18:33",
      "bao_cao_tien_do",
-     "e246ab276273",
-     "Kỳ KT, số liệu mô phỏng"
+     "17fb4277649f",
+     "Kỳ KT, số liệu mô phỏng, tính huy động thực tế gồm huy động bổ sung theo nhu cầu"
     ],
     [
      "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S1.docx",
@@ -817,11 +817,11 @@
     ],
     [
      "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S6.docx",
-     "0.1",
-     "2026-10-25 17:52",
+     "0.2",
+     "2026-10-25 18:21",
      "bao_cao_tien_do",
-     "bdf906586ad6",
-     "Kỳ S6, số liệu mô phỏng"
+     "214fa21e78af",
+     "Kỳ S6, số liệu mô phỏng, sửa sau đường cơ sở BL2: ngày dự báo viết bằng tham chiếu dữ liệu"
     ],
     [
      "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S7.docx",
@@ -833,19 +833,19 @@
     ],
     [
      "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S8.docx",
-     "0.1",
-     "2026-10-25 17:59",
+     "0.2",
+     "2026-10-25 18:33",
      "bao_cao_tien_do",
-     "2c414bfef5cb",
-     "Kỳ S8, số liệu mô phỏng"
+     "72c5fbd94519",
+     "Kỳ S8, số liệu mô phỏng, tính huy động thực tế gồm huy động bổ sung theo nhu cầu"
     ],
     [
      "ket_qua/09_Bao_cao_tien_do/Bao_cao_tien_do_S9.docx",
-     "0.1",
-     "2026-10-25 18:01",
+     "0.2",
+     "2026-10-25 18:33",
      "bao_cao_tien_do",
-     "6f5da56930b3",
-     "Kỳ S9, số liệu mô phỏng"
+     "cd7693c28950",
+     "Kỳ S9, số liệu mô phỏng, tính huy động thực tế gồm huy động bổ sung theo nhu cầu"
     ],
     [
      "ket_qua/10_Responsibilities/Phan_cong_nhiem_vu.docx",
@@ -857,58 +857,58 @@
     ],
     [
      "ket_qua/11_Bao_cao_tong_ket/Bao_cao_tong_ket_du_an.docx",
-     "0.2",
-     "2026-10-25 18:04",
+     "0.5",
+     "2026-10-25 18:37",
      "tong_ket",
-     "bfb97ebc3947",
-     "Tổng kết dự án, số liệu mô phỏng"
+     "dd0437b734a3",
+     "Sửa sau kiểm tra lớp B lượt 1: huy động thực tế, nghiệm thu hạng mục 12 và CR01, cơ sở BL1 và BL2, ngày đóng dự án, số âm viết chữ âm"
     ],
     [
      "ket_qua/12_Bao_cao_danh_gia/Bao_cao_danh_gia_du_an.docx",
-     "0.2",
-     "2026-10-25 18:05",
+     "0.3",
+     "2026-10-25 18:38",
      "danh_gia",
-     "16c35209773d",
-     "Đánh giá dự án, số liệu mô phỏng"
+     "d0592db4790f",
+     "Sửa sau kiểm tra lớp B lượt 1: K14 theo huy động thực tế, nghiệm thu hạng mục 12 và CR01, cơ sở BL1, rủi ro tách cơ hội, cam kết hỗ trợ tăng cường"
     ],
     [
      "ket_qua/13_Bai_hoc_kinh_nghiem/Bao_cao_bai_hoc_kinh_nghiem.docx",
-     "0.3",
-     "2026-10-25 18:07",
+     "0.4",
+     "2026-10-25 18:38",
      "bai_hoc",
-     "7db1e43c1d4f",
-     "Bài học kinh nghiệm, số liệu mô phỏng"
+     "62ff504977b4",
+     "Sửa sau kiểm tra lớp B lượt 1: K14 và huy động bổ sung có nguồn, số liệu BH05, BH08, BH10, BH12, lời văn BH02, BH07"
     ],
     [
      "ket_qua/14_Bang_phan_chia_luong/Bang_phan_chia_luong.xlsx",
-     "0.2",
-     "2026-10-25 18:07",
+     "0.3",
+     "2026-10-25 18:34",
      "bang_luong",
-     "be677d8704a8",
+     "1b93ef67ddb0",
      ""
     ],
     [
      "ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
-     "0.26",
-     "2026-10-25 18:07",
+     "0.28",
+     "2026-10-25 18:21",
      "phien_ban",
-     "819dedc59be2",
+     "473133640b3c",
      ""
     ],
     [
      "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx",
-     "0.11",
-     "2026-10-25 18:08",
+     "0.12",
+     "2026-10-25 18:21",
      "phien_ban",
-     "d1ddb66fc501",
-     "Bản kết thúc dự án, BL2 lập lại, CR01 đã đóng"
+     "318f2cfa6d66",
+     "Bản kết thúc, sau sửa để sau (báo cáo S6)"
     ],
     [
      "ket_qua/16_Bang_chung/Phu_luc_bang_chung_prompt_skill.docx",
-     "0.2",
-     "2026-10-18 08:28",
+     "0.3",
+     "2026-10-25 18:08",
      "bang_chung",
-     "0ab6a15407e2",
+     "c5e3a1c0a580",
      ""
     ]
    ],
@@ -958,7 +958,35 @@
      "0"
     ],
     [
+     "bai_hoc_v0.3_lopB.json",
+     "ket_qua/13_Bai_hoc_kinh_nghiem/Bao_cao_bai_hoc_kinh_nghiem.docx",
+     "Chưa đạt",
+     "2",
+     "4"
+    ],
+    [
+     "bai_hoc_v0.4_lopA.json",
+     "lam_viec/bai_hoc/bai_hoc_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "bang_luong_v0.2_lopB.json",
+     "ket_qua/14_Bang_phan_chia_luong/Bang_phan_chia_luong.xlsx",
+     "Chưa đạt",
+     "1",
+     "3"
+    ],
+    [
      "bao_cao_tien_do_Bao_cao_tien_do_KT_v0.1_lopA.json",
+     "lam_viec/bao_cao_tien_do/bao_cao_tien_do_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "bao_cao_tien_do_Bao_cao_tien_do_KT_v0.2_lopA.json",
      "lam_viec/bao_cao_tien_do/bao_cao_tien_do_vong1.docx",
      "Đạt",
      "0",
@@ -1167,6 +1195,13 @@
      "0"
     ],
     [
+     "bao_cao_tien_do_Bao_cao_tien_do_S6_v0.2_lopA.json",
+     "lam_viec/bao_cao_tien_do/bao_cao_tien_do_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
      "bao_cao_tien_do_Bao_cao_tien_do_S7_v0.1_lopA.json",
      "lam_viec/bao_cao_tien_do/bao_cao_tien_do_vong1.docx",
      "Đạt",
@@ -1188,7 +1223,21 @@
      "0"
     ],
     [
+     "bao_cao_tien_do_Bao_cao_tien_do_S8_v0.2_lopA.json",
+     "lam_viec/bao_cao_tien_do/bao_cao_tien_do_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
      "bao_cao_tien_do_Bao_cao_tien_do_S9_v0.1_lopA.json",
+     "lam_viec/bao_cao_tien_do/bao_cao_tien_do_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "bao_cao_tien_do_Bao_cao_tien_do_S9_v0.2_lopA.json",
      "lam_viec/bao_cao_tien_do/bao_cao_tien_do_vong1.docx",
      "Đạt",
      "0",
@@ -1492,6 +1541,20 @@
     ],
     [
      "danh_gia_v0.2_lopA.json",
+     "lam_viec/danh_gia/danh_gia_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "danh_gia_v0.2_lopB.json",
+     "ket_qua/12_Bao_cao_danh_gia/Bao_cao_danh_gia_du_an.docx",
+     "Chưa đạt",
+     "3",
+     "8"
+    ],
+    [
+     "danh_gia_v0.3_lopA.json",
      "lam_viec/danh_gia/danh_gia_vong1.docx",
      "Đạt",
      "0",
@@ -2350,6 +2413,20 @@
      "Đạt",
      "0",
      "0"
+    ],
+    [
+     "phien_ban_v0.12_lopA.json",
+     "lam_viec/phien_ban/phien_ban_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "phien_ban_v0.12_lopB.json",
+     "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx",
+     "Chưa đạt",
+     "3",
+     "10"
     ],
     [
      "phien_ban_v0.1_lopA.json",
@@ -3720,6 +3797,34 @@
      "0"
     ],
     [
+     "tong_ket_v0.2_lopB.json",
+     "ket_qua/11_Bao_cao_tong_ket/Bao_cao_tong_ket_du_an.docx",
+     "Chưa đạt",
+     "6",
+     "6"
+    ],
+    [
+     "tong_ket_v0.3_lopA.json",
+     "lam_viec/tong_ket/tong_ket_vong1.docx",
+     "Đạt",
+     "0",
+     "1"
+    ],
+    [
+     "tong_ket_v0.4_lopA.json",
+     "lam_viec/tong_ket/tong_ket_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
+     "tong_ket_v0.5_lopA.json",
+     "lam_viec/tong_ket/tong_ket_vong1.docx",
+     "Đạt",
+     "0",
+     "0"
+    ],
+    [
      "wbs_vong1_lopB.json",
      "ket_qua/03_WBS",
      "Chưa đạt",
@@ -3756,7 +3861,7 @@
    "t": "h1"
   },
   {
-   "text": "Tổng số bước đã ghi: 1264. Bước do agent thực hiện: 227. Bước do người dùng thực hiện: 5. Bước do script thực hiện: 1032.",
+   "text": "Tổng số bước đã ghi: 1332. Bước do agent thực hiện: 241. Bước do người dùng thực hiện: 5. Bước do script thực hiện: 1086.",
    "t": "p"
   },
   {
@@ -15145,6 +15250,618 @@
      "Tổng hợp sổ phiên bản",
      "",
      "đạt"
+    ],
+    [
+     "25/10/2026 18:08",
+     "qlda-loi",
+     "bang_chung",
+     "script",
+     "Xuất phụ lục bằng chứng prompt và skill",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:08",
+     "qlda-phien-ban",
+     "phien_ban",
+     "script",
+     "Tổng hợp sổ phiên bản",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-bao-cao-tien-do",
+     "tien_do.S6.tinh",
+     "script",
+     "Tính EVM kỳ S6: SPI 0.98, CPI 0.99, CPI thực 0.99",
+     "",
+     "Vàng"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-bao-cao-tien-do",
+     "bao_cao_tien_do.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-loi",
+     "bao_cao_tien_do.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-bao-cao-tien-do",
+     "bao_cao_tien_do.hoan_thien",
+     "script",
+     "Tạo tài liệu Báo cáo tiến độ, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-bao-cao-tien-do",
+     "tien_do.KT.tinh",
+     "script",
+     "Tính EVM kỳ KT: SPI 1.00, CPI 0.99, CPI thực 0.99",
+     "",
+     "Xanh"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-bao-cao-tien-do",
+     "bao_cao_tien_do.sua",
+     "agent",
+     "agent Sửa: Sửa để sau: báo cáo S6 thay cụm 'một ngày' bằng tham chiếu ngày dự báo và ngày cut over, lập lại kỳ S6 theo bản chụp kế hoạch ke_hoach_S6",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-mo-phong",
+     "mo_phong.huy_dong_bo_sung",
+     "agent",
+     "agent Sửa: Ghi nguồn quyết định huy động bổ sung theo nhu cầu: S8 10,5 MD, S9 2,5 MD, tổng 13 MD, 8 dòng; tệp riêng trong dau_vao/thuc_te không thuộc sơ đồ phụ thuộc nên không làm tài liệu BL2 thành cũ",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-phan-cong",
+     "phan_cong_tai_lieu.sua",
+     "agent",
+     "agent Sửa: Sửa để sau MH01, MH02 (phân công) và MH10, MH11 (WBS) đã có hiệu lực trong bản BL2 lập lại (Phan_cong_nhiem_vu 2.3: quỹ chưa giao 179,05 MD theo diễn giải, chú thích không còn tên tệp; WBS_tong_hop 2.4 và WBS_",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-phien-ban",
+     "phien_ban",
+     "script",
+     "Tổng hợp sổ phiên bản",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-phien-ban",
+     "phien_ban",
+     "script",
+     "Tổng hợp sổ phiên bản",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-phien-ban",
+     "phien_ban.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-loi",
+     "phien_ban.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-phien-ban",
+     "phien_ban.hoan_thien",
+     "script",
+     "Tạo tài liệu Tài liệu quản lý phiên bản, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:21",
+     "qlda-phien-ban",
+     "phien_ban",
+     "script",
+     "Tổng hợp sổ phiên bản",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:22",
+     "qlda-bao-cao-tien-do",
+     "tien_do.KT.tinh",
+     "script",
+     "Tính EVM kỳ KT: SPI 1.00, CPI 0.99, CPI thực 0.99",
+     "",
+     "Xanh"
+    ],
+    [
+     "25/10/2026 18:22",
+     "qlda-tong-ket",
+     "so_lieu_ket_thuc",
+     "script",
+     "Tổng hợp số liệu kết thúc dự án",
+     "",
+     "14/14 KPI đạt"
+    ],
+    [
+     "25/10/2026 18:29",
+     "qlda-tong-ket",
+     "tong_ket.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Lượt 1: chưa đạt, 6 lỗi (huy động bổ sung, hạng mục 12 và CR01 thiếu nghiệm thu, cơ sở kế hoạch BL1/BL2, ngày đóng), 6 cảnh báo",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:29",
+     "qlda-danh-gia",
+     "danh_gia.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Lượt 1: chưa đạt, 3 lỗi (K14, nghiệm thu, ngày đóng), 8 cảnh báo",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:29",
+     "qlda-bai-hoc",
+     "bai_hoc.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Lượt 1: chưa đạt, 2 lỗi (BH05 truy vết huy động bổ sung, BH12 tỷ lệ), 4 cảnh báo",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:29",
+     "qlda-bang-luong",
+     "bang_luong.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Lượt 1: chưa đạt, 1 lỗi (thuyết minh ghi lương theo huy động), 3 cảnh báo",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:29",
+     "qlda-phien-ban",
+     "phien_ban.kiem_tra_lop_B",
+     "agent",
+     "agent Kiểm tra độc lập: Bản kết thúc lượt 1: chưa đạt, 3 lỗi lời văn và đếm lần chạy agent, 10 cảnh báo",
+     "6932625a7893",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-mo-phong",
+     "mo_phong.S9.sinh",
+     "script",
+     "Sinh số liệu mô phỏng S9: 76.25 MD, 29 gói hoàn thành",
+     "",
+     "dat"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-mo-phong",
+     "mo_phong.KT.sinh",
+     "script",
+     "Sinh số liệu mô phỏng KT: 2 MD, 1 gói hoàn thành",
+     "",
+     "dat"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-bao-cao-tien-do",
+     "tien_do.S8.tinh",
+     "script",
+     "Tính EVM kỳ S8: SPI 1.00, CPI 0.99, CPI thực 0.98",
+     "",
+     "Xanh"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-bao-cao-tien-do",
+     "bao_cao_tien_do.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-loi",
+     "bao_cao_tien_do.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-bao-cao-tien-do",
+     "bao_cao_tien_do.hoan_thien",
+     "script",
+     "Tạo tài liệu Báo cáo tiến độ, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-bao-cao-tien-do",
+     "tien_do.S9.tinh",
+     "script",
+     "Tính EVM kỳ S9: SPI 1.00, CPI 0.99, CPI thực 0.99",
+     "",
+     "Xanh"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-bao-cao-tien-do",
+     "bao_cao_tien_do.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-loi",
+     "bao_cao_tien_do.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-bao-cao-tien-do",
+     "bao_cao_tien_do.hoan_thien",
+     "script",
+     "Tạo tài liệu Báo cáo tiến độ, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-bao-cao-tien-do",
+     "tien_do.KT.tinh",
+     "script",
+     "Tính EVM kỳ KT: SPI 1.00, CPI 0.99, CPI thực 0.99",
+     "",
+     "Xanh"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-bao-cao-tien-do",
+     "bao_cao_tien_do.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-loi",
+     "bao_cao_tien_do.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-bao-cao-tien-do",
+     "bao_cao_tien_do.hoan_thien",
+     "script",
+     "Tạo tài liệu Báo cáo tiến độ, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-bao-cao-tien-do",
+     "tien_do.KT.tinh",
+     "script",
+     "Tính EVM kỳ KT: SPI 1.00, CPI 0.99, CPI thực 0.99",
+     "",
+     "Xanh"
+    ],
+    [
+     "25/10/2026 18:33",
+     "qlda-tong-ket",
+     "so_lieu_ket_thuc",
+     "script",
+     "Tổng hợp số liệu kết thúc dự án",
+     "",
+     "13/14 KPI đạt"
+    ],
+    [
+     "25/10/2026 18:34",
+     "qlda-bao-cao-tien-do",
+     "tien_do.KT.tinh",
+     "script",
+     "Tính EVM kỳ KT: SPI 1.00, CPI 0.99, CPI thực 0.99",
+     "",
+     "Xanh"
+    ],
+    [
+     "25/10/2026 18:34",
+     "qlda-tong-ket",
+     "so_lieu_ket_thuc",
+     "script",
+     "Tổng hợp số liệu kết thúc dự án",
+     "",
+     "13/14 KPI đạt"
+    ],
+    [
+     "25/10/2026 18:34",
+     "qlda-bang-luong",
+     "bang_luong",
+     "script",
+     "Lập bảng phân chia lương, trả theo công sức (MD công việc). Đã tính lại công thức, 0 lỗi, giá trị Excel khớp tính toán Python (MD, ngày huy động, lương, thu nhập từng người, tổng theo sprint).",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:35",
+     "qlda-bao-cao-tien-do",
+     "tien_do.KT.tinh",
+     "script",
+     "Tính EVM kỳ KT: SPI 1.00, CPI 0.99, CPI thực 0.99",
+     "",
+     "Xanh"
+    ],
+    [
+     "25/10/2026 18:35",
+     "qlda-tong-ket",
+     "so_lieu_ket_thuc",
+     "script",
+     "Tổng hợp số liệu kết thúc dự án",
+     "",
+     "13/14 KPI đạt"
+    ],
+    [
+     "25/10/2026 18:36",
+     "qlda-tong-ket",
+     "tong_ket.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:36",
+     "qlda-tong-ket",
+     "tong_ket.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:36",
+     "qlda-loi",
+     "tong_ket.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 1 cảnh báo)"
+    ],
+    [
+     "25/10/2026 18:36",
+     "qlda-tong-ket",
+     "tong_ket.hoan_thien",
+     "script",
+     "Tạo tài liệu Báo cáo tổng kết dự án, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:36",
+     "qlda-loi",
+     "tong_ket.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 1 cảnh báo)"
+    ],
+    [
+     "25/10/2026 18:36",
+     "qlda-tong-ket",
+     "tong_ket.hoan_thien",
+     "script",
+     "Tạo tài liệu Báo cáo tổng kết dự án, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:36",
+     "qlda-loi",
+     "tong_ket.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "25/10/2026 18:36",
+     "qlda-tong-ket",
+     "tong_ket.hoan_thien",
+     "script",
+     "Tạo tài liệu Báo cáo tổng kết dự án, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:37",
+     "qlda-tong-ket",
+     "tong_ket.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:37",
+     "qlda-loi",
+     "tong_ket.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "25/10/2026 18:37",
+     "qlda-tong-ket",
+     "tong_ket.hoan_thien",
+     "script",
+     "Tạo tài liệu Báo cáo tổng kết dự án, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:38",
+     "qlda-danh-gia",
+     "danh_gia.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:38",
+     "qlda-loi",
+     "danh_gia.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "25/10/2026 18:38",
+     "qlda-danh-gia",
+     "danh_gia.hoan_thien",
+     "script",
+     "Tạo tài liệu Báo cáo đánh giá dự án, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:38",
+     "qlda-bai-hoc",
+     "bai_hoc",
+     "script",
+     "Kiểm tra và ghi danh sách bài học kinh nghiệm",
+     "",
+     "12 bài học"
+    ],
+    [
+     "25/10/2026 18:38",
+     "qlda-bai-hoc",
+     "bai_hoc.chuan_bi",
+     "script",
+     "Lập khung tài liệu từ đặc tả và dữ liệu",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:38",
+     "qlda-loi",
+     "bai_hoc.kiem_tra_vong1",
+     "script",
+     "Kiểm tra lớp A",
+     "",
+     "Kết luận: dat (0 lỗi, 0 cảnh báo)"
+    ],
+    [
+     "25/10/2026 18:38",
+     "qlda-bai-hoc",
+     "bai_hoc.hoan_thien",
+     "script",
+     "Tạo tài liệu Báo cáo bài học kinh nghiệm, đạt kiểm tra lớp A sau 1 vòng",
+     "",
+     "đạt"
+    ],
+    [
+     "25/10/2026 18:40",
+     "qlda-tong-ket",
+     "tong_ket.sua",
+     "agent",
+     "agent Sửa: Lớp B lượt 1: MH01 huy động thực tế 921 MD gồm 13 MD bổ sung, K14 79,99% Không đạt, 13/14 KPI Tốt; MH02, MH03 thêm NT19, NT20 (CR01), NT21 (hạng mục 12), NT22 (R02); MH04, MH05 kết thúc kế hoạch và thực tế the",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:40",
+     "qlda-danh-gia",
+     "danh_gia.sua",
+     "agent",
+     "agent Sửa: Lớp B lượt 1: DG01 K14 Không đạt và nguyên nhân gói chậm dồn sang S8; DG02 nghiệm thu hạng mục 12 và CR01; DG03 ngày đóng dự án; DC1 BL1 so với BL2, giá điều chỉnh tách chi phí nội bộ; DC2 tách cơ hội, sửa ngu",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:40",
+     "qlda-bai-hoc",
+     "bai_hoc.sua",
+     "agent",
+     "agent Sửa: Lớp B lượt 1: MH01 BH05 dẫn số huy động bổ sung từ dau_vao/thuc_te/huy_dong_bo_sung.json và K14; MH02 BH12 12,5%; MH03 BH10 0,95; MH04 BH07 lời văn; MH05 BH02 rà soát độc lập; MH06 bỏ ý Chủ đầu tư góp ý; BH08 ",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:40",
+     "qlda-bang-luong",
+     "bang_luong.sua",
+     "agent",
+     "agent Sửa: Lớp B lượt 1: MH01 thuyết minh đối chiếu theo cùng cách trả lương; MH02 huy động thực tế 921 MD gồm huy động bổ sung; MH03 L07 so MD theo người và sprint với huy động; MH04 tên nhóm không lặp (qlda-bang-luong ",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:40",
+     "qlda-mo-phong",
+     "mo_phong.S9.kich_ban",
+     "agent",
+     "agent Sửa: Quyết định của nhóm 25/10/2026: thêm NT19, NT20 (R38, CR01, hạng mục 9, M9), NT21 (R37, hạng mục 12, M7), NT22 (R02, hạng mục 13), sinh lại S9 và KT cùng hạt giống, các tệp thực tế khác không đổi; huy_dong_bo_",
+     "d64f5988d34d",
+     "hoàn thành"
+    ],
+    [
+     "25/10/2026 18:40",
+     "qlda-phien-ban",
+     "phien_ban.sua",
+     "agent",
+     "agent Sửa: Lớp B lượt 1: MH01 số phiên bản TL09, TL10 riêng; MH02 câu git; MH03 đếm agent theo loai, tách lần người dùng ghi; CB02, CB03 hai lần làm lại BL2 và bảng đường cơ sở đã thay; CB04 người lập BL1 Trần Bá Đạt; CB",
+     "d64f5988d34d",
+     "hoàn thành"
     ]
    ],
    "widths": [
@@ -17590,6 +18307,12 @@
      "Mã",
      "Người",
      "Nội dung"
+    ],
+    [
+     "2026-10-25",
+     "bf5fa54",
+     "tranbadat",
+     "update: final project"
     ],
     [
      "2026-10-24",

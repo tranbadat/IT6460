@@ -2104,7 +2104,7 @@
    "trang_thai_hien_thi": "Đang xử lý",
    "qua_han": false,
    "so_hanh_dong": 1,
-   "so_hanh_dong_xong": 0,
+   "so_hanh_dong_xong": 1,
    "ket_qua": "",
    "nguoi_dong": "",
    "ngay_dong": "",
@@ -2133,7 +2133,7 @@
    "trang_thai": "Đang thực hiện",
    "trang_thai_hien_thi": "Đang thực hiện",
    "qua_han": false,
-   "bang_chung": "",
+   "bang_chung": "Kế hoạch sprint S7 ngày 18/06/2027",
    "ngay_xong": ""
   }
  ],

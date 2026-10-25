@@ -28,7 +28,7 @@ Ngày hiện hành: loi.ngay_hien_hanh() là biến môi trường QLDA_NGAY (yy
   Ví dụ {lich#duong_gang} ra "1.1.1, 1.1.2, 2.1.2", {lich#ngay_nghi|ngay} ra các ngày dạng dd/mm/yyyy. Danh sách số có phần thập phân dễ lẫn với dấu phẩy phân cách, nên tham chiếu từng phần tử.
 - dinh_dang: tien (1.750.000.000, số âm in "âm 296.981.818"), trieu (1.750,00), md (12,50), pt (41,4%), ngay (01/07/2027), so, so1, so2, so3, nguyen,
   chu (bằng chữ), dem (số phần tử của danh sách hoặc đối tượng, ví dụ {hsmt#mau_01a|dem}, {rr#danh_sach[?muc=cao]|dem}).
-  pt1 (luôn một chữ số thập phân, 12,0%) và md2 (luôn hai chữ số, 373,00) dùng cho tài liệu theo kỳ cần cùng định dạng giữa các kỳ (báo cáo tiến độ).
+  pt1 (luôn một chữ số thập phân, 12,0%) và md2 (luôn hai chữ số, 373,00), mda (MD chênh lệch, số âm viết chữ âm, âm 1,25) dùng cho tài liệu theo kỳ cần cùng định dạng giữa các kỳ (báo cáo tiến độ).
 
 Nguồn của đặc tả (khóa nguon):
 - Đường dẫn tương đối thư mục dự án, hoặc "skill:<skill>/references/<tệp>.json" cho tệp tham chiếu tĩnh của skill dùng chung giữa các đặc tả

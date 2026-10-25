@@ -306,7 +306,7 @@
      "Tiến độ",
      "Chỉ số tiến độ SPI kỳ cuối",
      "Tối thiểu 0,95",
-     "1",
+     "1,00",
      "Đạt"
     ],
     [
@@ -361,7 +361,7 @@
      "K10",
      "Chất lượng",
      "Mật độ lỗi trên 10 MD thực tế",
-     "Tối đa 2 lỗi/10 MD",
+     "Tối đa 2,00 lỗi/10 MD",
      "0,75 lỗi/10 MD",
      "Đạt"
     ],
@@ -394,8 +394,8 @@
      "Chi phí",
      "Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động)",
      "Tối thiểu 80%",
-     "81,1%",
-     "Đạt"
+     "79,99%",
+     "Không đạt"
     ]
    ],
    "widths": [
@@ -434,7 +434,7 @@
      "Chi phí",
      "K04, K05, K14",
      "3",
-     "3"
+     "2"
     ],
     [
      "Phạm vi",
@@ -464,7 +464,7 @@
      "Tổng",
      "",
      "14",
-     "14"
+     "13"
     ]
    ],
    "widths": [
@@ -482,7 +482,7 @@
    "t": "table"
   },
   {
-   "text": "Tỷ lệ chỉ tiêu đạt 100% (14/14), xếp loại chung: Tốt.",
+   "text": "Tỷ lệ chỉ tiêu đạt 92,9% (13/14), xếp loại chung: Tốt.",
    "t": "p"
   },
   {
@@ -516,6 +516,12 @@
      "Yêu cầu RFP",
      "Biên bản nghiệm thu",
      "Kết quả"
+    ],
+    [
+     "R02",
+     "Mục tiêu dự án: mở rộng khách hàng qua internet, tạo kênh bán hàng mới",
+     "NT22",
+     "Đạt"
     ],
     [
      "R03",
@@ -569,6 +575,12 @@
      "R11",
      "Nghiệp vụ vận chuyển nhận thông tin từ Main System và giao hàng tới khách hàng",
      "NT12",
+     "Đạt"
+    ],
+    [
+     "R12",
+     "Đưa hệ thống vào vận hành ngày 01/07",
+     "NT15",
      "Đạt"
     ],
     [

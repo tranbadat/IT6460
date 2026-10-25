@@ -31,3 +31,5 @@ Số liệu mô phỏng: có du_lieu/mo_phong.json (dữ liệu do qlda-mo-phong
 3. Có thay đổi nhật ký hoặc huy động thì chạy lại bước 1. Phiên bản chỉ tăng khi số liệu đổi.
 
 Đầu ra: du_lieu/luong.json, Bang_phan_chia_luong.xlsx. Không có văn bản Word riêng, phần thuyết minh nằm trong sheet Thuyet_minh.
+
+Từ 1.4.1: ngày huy động thực tế cộng huy động bổ sung (dau_vao/thuc_te/huy_dong_bo_sung.json); L07 cảnh báo MD ghi công của người trong sprint vượt huy động (kế hoạch cộng bổ sung); thuyết minh đối chiếu chi phí lương kế hoạch theo cùng cách trả lương; tên nhóm trùng tên nhà thầu ghi một lần.

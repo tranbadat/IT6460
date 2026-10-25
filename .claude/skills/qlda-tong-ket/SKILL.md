@@ -33,3 +33,5 @@ description: Tổng hợp số liệu kết thúc dự án và lập báo cáo t
 5. Agent Kiểm tra lớp B với `dac_ta/bao_cao_tong_ket.json`.
 
 Đầu ra: ket_qua/11_Bao_cao_tong_ket/Bao_cao_tong_ket_du_an.docx.
+
+Từ 1.4.1: huy động thực tế cộng dau_vao/thuc_te/huy_dong_bo_sung.json (qua thuc_te.md_huy_dong); kết thúc kế hoạch và thực tế cùng cơ sở là mốc đóng dự án, ngay_dong_du_an là ngày đạt mốc đó (han_dong_du_an là hạn); duong_co_so_goc đối chiếu BL1 với hiện hành (giá, cut over, MD, hạn mốc); thay_doi.danh_sach có gia_dieu_chinh tách khỏi chi phí nội bộ; nghiem_thu.thay_doi theo mã CR; yêu cầu RFP gồm mục tiêu và yêu cầu mốc có tiêu chí dẫn chiếu; KPI hiển thị cùng số chữ số, phần trăm sát ngưỡng hiển thị hai chữ số; bao_hanh gồm hỗ trợ tăng cường và ngày hết hạn.

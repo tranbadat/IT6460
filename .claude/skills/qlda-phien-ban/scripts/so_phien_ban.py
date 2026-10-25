@@ -315,7 +315,8 @@ for p in sorted(reg['tai_lieu'], key=lambda p: (thu_tu_tep(p), p)):
     (danh_muc if p.startswith('ket_qua/') and con_tep else luu_tru if p.startswith('ket_qua/') else du_lieu_ds).append(row)
     for r in lst:
         lich_su.append({'tep': p, 'ten_tep': os.path.basename(p), 'phien_ban': r['phien_ban'], 'ngay': r['ngay'], 'thoi_diem': ngay_gio(r['ngay']), 'ngay_tai_lieu': ngay_tl(p, r),
-                        'nguoi': r.get('nguoi', ''), 'buoc': r['buoc'], 'ten_buoc': ten_buoc(r['buoc']), 'trang_thai': r.get('trang_thai', ''), 'ghi_chu': r.get('ghi_chu', ''), 'hash': r['hash'],
+                        'nguoi': r.get('nguoi', ''), 'buoc': r['buoc'], 'ten_buoc': ten_buoc(r['buoc']), 'trang_thai': r.get('trang_thai', ''),
+                        'ghi_chu': str(r.get('ghi_chu', '')).replace('; ', ', '), 'hash': r['hash'],
                         'la_tai_lieu': p.startswith('ket_qua/'), 'phat_hanh': r.get('phat_hanh', ''), 'duong_co_so': r.get('duong_co_so', '')})
 for i, r in enumerate(danh_muc, 1):
     r['ma'] = f'TL{i:02d}'
@@ -354,8 +355,10 @@ if os.path.exists(pnk):
             pass
 theo_skill = {}
 for x in nk:
-    t = theo_skill.setdefault(x['skill'], {'skill': x['skill'], 'phien_ban_skill': '', 'cac_phien_ban': set(), 'so_lan_script': 0, 'so_lan_agent': 0, 'prompt': set()})
-    t['so_lan_script' if x.get('loai') == 'script' else 'so_lan_agent'] += 1
+    sk = str(x.get('skill', '')).split()[0] if str(x.get('skill', '')).split() else ''  # bản ghi ghép nhầm mã bước vào tên skill: lấy tên skill (từ 1.2.6)
+    t = theo_skill.setdefault(sk, {'skill': sk, 'phien_ban_skill': '', 'cac_phien_ban': set(), 'so_lan_script': 0, 'so_lan_agent': 0,
+                                   'so_lan_nguoi_dung': 0, 'prompt': set()})
+    t['so_lan_script' if x.get('loai') == 'script' else 'so_lan_agent' if x.get('loai') == 'agent' else 'so_lan_nguoi_dung'] += 1
     if x.get('phien_ban_skill'):
         t['cac_phien_ban'].add(x['phien_ban_skill'])
     if x.get('prompt'):
@@ -399,7 +402,13 @@ out = {'ngay_tong_hop': loi.bay_gio()[:10], 'ngay_tai_lieu': loi.ngay(max(_ngs).
                              else (f'Yêu cầu thay đổi {x["ma_cr"]}' if x.get('ma_cr') else 'Quyết định của nhóm')} for x in reg['duong_co_so']],
        'duong_co_so_tai_lieu': bl_tai_lieu, 'phat_hanh': phat_hanh, 'so_ban_phat_hanh': len(phat_hanh),
        'ban_chinh_thuc': next((x['ma'] for x in ph_ds if x.get('chinh_thuc')), ''),
-       'thay_doi': cr, 'nhat_ky': nhat_ky, 'so_lan_chay': len(nk), 'so_lan_agent': sum(1 for x in nk if x.get('loai') != 'script'),
+       'thay_doi': cr, 'nhat_ky': nhat_ky, 'so_lan_chay': len(nk), 'so_lan_agent': sum(1 for x in nk if x.get('loai') == 'agent'),
+       'so_lan_nguoi_dung': sum(1 for x in nk if x.get('loai') not in ('script', 'agent')),  # quyết định, phụ lục do người dùng ghi (từ 1.2.6)
+       'lam_lai': [dict(x, ngay_du_an_hien_thi=loi.ngay(x.get('ngay_du_an') or '')) for x in reg.get('lam_lai', [])],
+       'duong_co_so_thay_the': [{'ma': x['ma'], 'ngay': x['ngay'], 'luc': x.get('luc', ''), 'thay_luc': x.get('thay_luc', ''), 'ly_do': x.get('ly_do', ''),
+                                 'so_tai_lieu': len(x.get('tai_lieu', {})),
+                                 'phien_ban': ', '.join(f'{os.path.basename(p)} {v}' for p, v in x.get('tai_lieu', {}).items())}
+                                for x in reg.get('duong_co_so_thay_the', [])],
        'git': git, 'co_git': bool(git), 'hop_dong': reg.get('hop_dong', {}), 'kho_luu_tru': loi.du_an().get('kho_luu_tru', ''),
        'luu_tru': luu_tru, 'so_luu_tru': len(luu_tru),
        'so_tai_lieu': len(danh_muc), 'so_can_cap_nhat': sum(1 for r in danh_muc if r['tinh_trang'] == 'Cần cập nhật'),
@@ -459,23 +468,30 @@ if reg.get('lam_lai'):  # ghi chú làm lại đường cơ sở, bản ghi bỏ
     for x in reg['lam_lai']:
         i += 1
         X.o(bl, i, 1, loi.ngay(x.get('ngay_du_an') or ''), nhap=True); X.o(bl, i, 2, x.get('noi_dung', ''), nhap=True, wrap=True)
+if out['duong_co_so_thay_the']:  # đường cơ sở đã thay khi lập lại: mã, lúc lập, lúc thay, lý do, phiên bản (từ 1.2.6)
+    i += 1
+    X.o(bl, i, 1, 'Đường cơ sở đã thay', nhap=True)
+    for x in out['duong_co_so_thay_the']:
+        i += 1
+        for j, val in enumerate([x['ma'], f'Lập {ngay_gio(x["luc"])}, thay {ngay_gio(x["thay_luc"])}', loi.ngay(x['ngay']), x['phien_ban'], '', '', x['ly_do']], 1):
+            X.o(bl, i, j, val, nhap=True, wrap=j in (4, 7))
 phs = wb.create_sheet('Phat_hanh')
 X.tieu_de(phs, 1, ['Mã', 'Sprint', 'Ngày', 'Loại', 'Nguồn số liệu', 'Số gói', 'Hạng mục 01A', 'Yêu cầu RFP', 'Lỗi đã sửa', 'Lỗi còn mở', 'CR đưa vào',
                    'Phiên bản tài liệu gắn bản', 'Ghi chú phát hành'], [6, 8, 12, 26, 12, 8, 10, 10, 10, 10, 12, 12, 70])
 for i, r in enumerate(phat_hanh, 2):
     for j, k in enumerate(['ma', 'sprint', 'ngay', 'loai', 'nguon', 'so_goi', 'so_hang_muc_01a', 'so_yeu_cau_rfp', 'so_loi_da_sua', 'so_loi_con_mo', 'cr'], 1):
-        X.o(phs, i, j, r[k], nhap=True, wrap=k == 'loai')
+        X.o(phs, i, j, loi.ngay(r[k]) if k == 'ngay' else r[k], nhap=True, wrap=k == 'loai')  # ngày dd/mm/yyyy (từ 1.2.6)
     X.o(phs, i, 12, f'=COUNTIFS(Lich_su!$I:$I,A{i},Lich_su!$A:$A,"ket_qua/*")'); X.o(phs, i, 13, r['ghi_chu'], nhap=True, wrap=True)
 td_ = wb.create_sheet('Thay_doi')
 X.tieu_de(td_, 1, ['Mã CR', 'Nội dung', 'Trạng thái', 'Ngày quyết định', 'Tài liệu cập nhật', 'Phiên bản sau thay đổi', 'Tài liệu khóa', 'Phụ lục hợp đồng'],
           [8, 40, 14, 14, 50, 50, 22, 12])
 for i, r in enumerate(cr, 2):
     for j, k in enumerate(['ma', 'tieu_de', 'trang_thai', 'ngay_quyet_dinh', 'tai_lieu_cap_nhat', 'phien_ban_sau', 'tai_lieu_khoa', 'phu_luc_hop_dong'], 1):
-        X.o(td_, i, j, r[k], nhap=True, wrap=j in (2, 5, 6))
+        X.o(td_, i, j, loi.ngay(r[k]) if k == 'ngay_quyet_dinh' and r[k] else r[k], nhap=True, wrap=j in (2, 5, 6))
 nks = wb.create_sheet('Nhat_ky')
-X.tieu_de(nks, 1, ['Skill', 'Phiên bản skill', 'Số lần chạy script', 'Số lần agent', 'Prompt đã dùng'], [26, 14, 16, 14, 60])
+X.tieu_de(nks, 1, ['Skill', 'Phiên bản skill', 'Số lần chạy script', 'Số lần agent', 'Số lần người dùng ghi', 'Prompt đã dùng'], [26, 14, 16, 14, 14, 60])
 for i, r in enumerate(nhat_ky, 2):
-    for j, k in enumerate(['skill', 'phien_ban_skill', 'so_lan_script', 'so_lan_agent', 'prompt'], 1):
+    for j, k in enumerate(['skill', 'phien_ban_skill', 'so_lan_script', 'so_lan_agent', 'so_lan_nguoi_dung', 'prompt'], 1):
         X.o(nks, i, j, r[k], nhap=True)
 if git:
     gs = wb.create_sheet('Git')
@@ -498,7 +514,7 @@ if kq and kq.get('status'):
             loi.thoat_loi(f'Đếm phiên bản tài liệu gắn bản phát hành {r["ma"]} trong Excel lệch')
 print(f'{len(danh_muc)} tài liệu, {out["so_phien_ban_tai_lieu"]} phiên bản tài liệu, {len(reg["duong_co_so"])} đường cơ sở, {len(phat_hanh)} bản phát hành, {len(cr)} yêu cầu thay đổi, '
       f'{len(nk)} lần chạy được ghi nhật ký, {"có" if git else "chưa có"} lịch sử git. Cần cập nhật: {out["so_can_cap_nhat"]}.')
-h = loi.bam_obj({k: v for k, v in out.items() if k not in ('ngay_tong_hop', 'nhat_ky', 'so_lan_chay', 'so_lan_agent')})
+h = loi.bam_obj({k: v for k, v in out.items() if k not in ('ngay_tong_hop', 'nhat_ky', 'so_lan_chay', 'so_lan_agent', 'so_lan_nguoi_dung')})
 loi.hoan_tat_buoc('phien_ban', 'Tổng hợp sổ phiên bản', bo_qua=('doc_phien_ban',),
                   hash_tep={'ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx': h, 'du_lieu/phien_ban_tong_hop.json': h})
 print('Tiếp theo: python .claude/skills/qlda-loi/scripts/chay.py chuan_bi phien_ban')

@@ -1787,7 +1787,7 @@
    "tu": "2027-07-16",
    "den": "2027-07-29",
    "kich_ban": "lam_viec/mo_phong/kich_ban_S9.json",
-   "kich_ban_hash": "f98b8d73b5e5",
+   "kich_ban_hash": "6572f8992fa9",
    "kich_ban_noi_dung": {
     "sprint": "S9",
     "tom_tat": "Kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư diễn ra từ 16/07 đến 27/07/2027, lỗi phát hiện ở mức hợp lý và được khắc phục trong khoảng kiểm thử chấp nhận bằng quỹ chưa giao và hỗ trợ tăng cường. Phần bán hàng trên sàn được nghiệm thu (M9). Hệ thống đưa vào vận hành ngày 29/07/2027 theo phụ lục hợp đồng, bàn giao mã nguồn và tài liệu.",
@@ -2031,6 +2031,46 @@
       "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
      },
      {
+      "loai": "nghiem_thu",
+      "tieu_chi": "R38 Phần bán hàng trên sàn thương mại điện tử theo phụ lục 01/2027/PL-ABCW (CR01): kết nối sàn, đồng bộ sản phẩm, giá và tồn kho lên sàn",
+      "hang_muc": 9,
+      "ket_qua": "Đạt",
+      "ngay": "2027-07-27",
+      "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+      "ghi_chu": "Biên bản nghiệm thu phần bán hàng trên sàn (mốc M9) ngày 27/07/2027, kiểm thử chấp nhận 5.4.5",
+      "ly_do": "Bổ sung theo quyết định của nhóm ngày 25/10/2026: nghiệm thu hạng mục 12 Mẫu 01A và phạm vi CR01"
+     },
+     {
+      "loai": "nghiem_thu",
+      "tieu_chi": "R38 Phần bán hàng trên sàn thương mại điện tử theo phụ lục 01/2027/PL-ABCW (CR01): nhận đơn hàng từ sàn, cập nhật trạng thái, đối soát và giao diện quản trị kênh sàn",
+      "hang_muc": 9,
+      "ket_qua": "Đạt",
+      "ngay": "2027-07-27",
+      "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+      "ghi_chu": "Biên bản nghiệm thu phần bán hàng trên sàn (mốc M9) ngày 27/07/2027, kiểm thử chấp nhận 5.4.5",
+      "ly_do": "Bổ sung theo quyết định của nhóm ngày 25/10/2026: nghiệm thu hạng mục 12 Mẫu 01A và phạm vi CR01"
+     },
+     {
+      "loai": "nghiem_thu",
+      "tieu_chi": "R37 Chuyển giao hệ thống, tài liệu hướng dẫn vận hành và hướng dẫn vận hành cho cán bộ Chủ đầu tư",
+      "hang_muc": 12,
+      "ket_qua": "Đạt",
+      "ngay": "2027-07-29",
+      "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+      "ghi_chu": "Biên bản bàn giao (mốc M7) ngày 29/07/2027, tài liệu hướng dẫn vận hành 2.5.2, hướng dẫn vận hành 3.5.1",
+      "ly_do": "Bổ sung theo quyết định của nhóm ngày 25/10/2026: nghiệm thu hạng mục 12 Mẫu 01A và phạm vi CR01"
+     },
+     {
+      "loai": "nghiem_thu",
+      "tieu_chi": "R02 Kênh bán hàng trực tuyến mới qua internet vận hành từ ngày cut over",
+      "hang_muc": 13,
+      "ket_qua": "Đạt",
+      "ngay": "2027-07-29",
+      "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+      "ghi_chu": "Biên bản đưa hệ thống vào vận hành (mốc M6) ngày 29/07/2027",
+      "ly_do": "Bổ sung theo quyết định của nhóm ngày 25/10/2026: nghiệm thu hạng mục 12 Mẫu 01A và phạm vi CR01"
+     },
+     {
       "loai": "moc",
       "ma_moc": "M9",
       "ngay_dat": "2027-07-27",
@@ -2092,7 +2132,7 @@
     ]
    },
    "lich_hash": "bd9b7bbd1a7e",
-   "thoi_gian": "2026-10-25 18:02:47",
+   "thoi_gian": "2026-10-25 18:33:27",
    "tom_tat": {
     "tong_md": 76.25,
     "md_ke_hoach_sprint": 74.52,
@@ -2132,7 +2172,7 @@
      "huy_dong": 1,
      "loi": 3,
      "van_de": 1,
-     "nghiem_thu": 18,
+     "nghiem_thu": 22,
      "moc": 4,
      "retro": 1
     },
@@ -2141,7 +2181,7 @@
      "hoan_thanh": 29,
      "moc_thuc_te": 4,
      "loi": 12,
-     "nghiem_thu": 18
+     "nghiem_thu": 22
     }
    },
    "hash_sau": {
@@ -2153,7 +2193,7 @@
     "dau_vao/thuc_te/so_van_de.csv": "c54e3bec5d10",
     "dau_vao/thuc_te/hanh_dong.csv": "a6a8c4f80cdd",
     "dau_vao/thuc_te/chi_phi_thuc_te.csv": "997c21067394",
-    "dau_vao/thuc_te/nghiem_thu.csv": "291493f886b9",
+    "dau_vao/thuc_te/nghiem_thu.csv": "89f7fdd3a47c",
     "dau_vao/thuc_te/retro.md": "4af8698992fc"
    }
   }

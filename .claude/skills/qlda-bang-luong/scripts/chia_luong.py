@@ -15,7 +15,7 @@ Cách tính:
               (phần chia không nhân hệ số bảo hiểm).
 - Chi phí doanh nghiệp = lương x hệ số bảo hiểm. Tỷ trọng đóng góp = MD thực tế của thành viên / tổng MD thực tế.
 - Ngày sẵn sàng không ghi công = ngày huy động - MD thực tế, trình bày riêng. Đối chiếu MD kế hoạch (lich.json phan_bo, tính đến cùng ngày),
-  khoản A và chi phí lương theo huy động của cost estimate.
+  khoản A và chi phí lương kế hoạch của cost estimate theo cùng cách trả lương. Huy động thực tế cộng dau_vao/thuc_te/huy_dong_bo_sung.json (từ 1.4.1).
 Kiểm tra dữ liệu (lỗi chặn): L01 thành viên không có trong danh sách, L02 vai trò không có đơn giá, L04 vượt tỷ lệ tham gia trong ngày,
   L05 MD không hợp lệ, L09 chưa khai báo cach_tra_luong hoặc giá trị không hợp lệ, L10 ket_hop thiếu quy_chia_theo_dong_gop.so_tien.
   Cảnh báo: L03 ngày ngoài lịch dự án, L06 ngày nghỉ, L07 ghi công ngoài thời gian huy động, L08 chi phí lương kế hoạch lệch cost estimate.
@@ -112,6 +112,19 @@ for (p, d), v in ngay_tv.items():
     if v > float(tv[p].get('ty_le', 1)) + 1e-6:
         add('L04', f'{tv[p]["ho_ten"]} ghi {loi.so(v, 2)} MD ngày {loi.ngay(d)}, vượt tỷ lệ tham gia {loi.pt(float(tv[p].get("ty_le", 1)), 0)}')
 hd, hd_sp = thuc_te.md_huy_dong(lich, tvs, ds_ngay, den)
+HD_BS = thuc_te.huy_dong_bo_sung_tom_tat()
+# L07 theo quỹ sprint: MD ghi công của người trong sprint vượt quỹ huy động (kế hoạch cộng huy động bổ sung), từ 1.4.1
+md_sp_tv = {}
+for r in nk:
+    if r['thanh_vien'] in tv:
+        try:
+            k_ = (r['thanh_vien'], sprint_cua(D(r['ngay'])))
+            md_sp_tv[k_] = md_sp_tv.get(k_, 0) + float(r['md'])
+        except (ValueError, TypeError):
+            pass
+for (p_, s_), v_ in sorted(md_sp_tv.items(), key=lambda kv: (kv[0][1] or '', kv[0][0])):
+    if s_ and v_ > hd_sp.get((p_, s_), 0) + 1e-6:
+        add('L07', f'{tv[p_]["ho_ten"]} ghi {loi.so(v_, 2)} MD trong {s_}, vượt huy động {loi.so(hd_sp.get((p_, s_), 0), 2)} MD (kế hoạch và huy động bổ sung)', 'canh_bao')
 vai = sorted({tv[r['thanh_vien']]['vai_tro'] for r in nk if r['thanh_vien'] in tv} | {tv[p]['vai_tro'] for p, q in hd.items() if q and p in tv})
 for v in vai:
     if loi.don_gia_ngay_vai_tro(dg, v) is None:
@@ -192,17 +205,20 @@ tm = wb.active; tm.title = 'Thuyet_minh'
 MP = thuc_te.mo_phong()
 CAN_CU_MP = ([('Số liệu thực tế trong bảng là số liệu mô phỏng. ' + MP.get('_ghi_chu', '')).strip()] if MP else [])
 nl_txt = 'ngày huy động' if THEO_HD else 'MD thực tế'
-dong = [('Bảng phân chia lương', X.F_TEN), (da['ten_du_an'], None), (f'Nhóm {da.get("ma_nhom", "")}, {da.get("don_vi_thuc_hien", "")}', None),
+TEN_NHOM = ', '.join(dict.fromkeys(x for x in (da.get('ma_nhom', ''), da.get('don_vi_thuc_hien', '')) if x))  # tên nhóm trùng tên nhà thầu tạm thì ghi một lần (từ 1.4.1)
+dong = [('Bảng phân chia lương', X.F_TEN), (da['ten_du_an'], None), (f'Nhóm {TEN_NHOM}', None),
         (f'Số liệu tính đến ngày {loi.ngay(den)}. Cách trả lương do nhóm khai báo: {CACH[cach]}.', None), ('', None),
         ('Căn cứ', X.F_TIEU_DE),
         ('1. Công sức thực tế theo nhật ký công việc (sheet Nhat_ky), mỗi dòng là MD của một thành viên cho một gói WBS trong một ngày.', None),
-        ('2. Ngày huy động theo kế hoạch huy động của master schedule (sheet Huy_dong), cùng nguồn với cost estimate, tính đến ngày trên.', None),
+        ('2. Ngày huy động theo kế hoạch huy động của master schedule (sheet Huy_dong), cùng nguồn với cost estimate, tính đến ngày trên'
+         + (f', cộng huy động bổ sung thực tế theo nhu cầu {loi.md(HD_BS["tong"])} MD theo {HD_BS["nguon"]}.' if HD_BS['co'] else '.'), None),
         ('3. Đơn giá ngày của vai trò bằng lương tham chiếu tháng chia số ngày làm việc mỗi tháng (sheet Tham_so).', None),
         (f'4. Lương bằng ngày tính lương nhân đơn giá ngày, ngày tính lương là {nl_txt}. Chi phí doanh nghiệp gồm lương và phần bảo hiểm theo hệ số.', None),
         ('5. Tỷ trọng đóng góp là tỷ lệ MD thực tế của thành viên trên tổng MD thực tế.'
          + (' Phần chia theo đóng góp bằng quỹ chia (sheet Tham_so) nhân tỷ trọng đóng góp, không nhân hệ số bảo hiểm.' if cach == 'ket_hop' else ''), None),
         ('6. Ngày sẵn sàng không ghi công bằng ngày huy động trừ MD thực tế, trình bày riêng để đối chiếu, không dùng để trừ lương.', None),
-        ('7. Bảng đối chiếu MD kế hoạch theo master schedule, khoản A và chi phí lương theo huy động của cost estimate (sheet Doi_chieu).', None),
+        ('7. Bảng đối chiếu MD kế hoạch theo master schedule, khoản A và chi phí lương kế hoạch của cost estimate theo cùng cách trả lương ('
+         + ('MD công việc' if cach == 'cong_suc' else 'ngày huy động') + ', sheet Doi_chieu).', None),
         ] + [('8. ' + t, None) for t in CAN_CU_MP] + [
         ('', None), ('Ký hiệu', X.F_TIEU_DE), ('Chữ xanh dương: số liệu nhập. Chữ xanh lá: tham chiếu sheet khác. Chữ đen: công thức.', None),
         ('', None), ('Xác nhận', X.F_TIEU_DE), ('Thành viên ký xác nhận tại cột cuối của sheet Bang_luong.', None),

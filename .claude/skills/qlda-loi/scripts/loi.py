@@ -198,6 +198,7 @@ def ngay(v):
 DINH_DANG = {'tien': tien, 'trieu': trieu, 'md': md, 'pt': pt, 'ptg': ptg, 'ngay': ngay, 'so': lambda v: so(v, 0),
              'so1': lambda v: so(v, 1), 'so2': lambda v: so(v, 2), 'so3': lambda v: so(v, 3), 'nguyen': lambda v: str(int(round(float(v)))),
              'chu': lambda v: str(v), 'pt1': lambda v: so(float(v) * 100, 1) + '%', 'md2': lambda v: so(v, 2),
+             'mda': lambda v: ('âm ' + md(-float(v))) if float(v) < 0 else md(v),
              'dem': lambda v: str(len(v)) if isinstance(v, (list, tuple, dict)) else ('0' if v in (None, '') else '1')}
 
 
@@ -935,6 +936,9 @@ def dinh_dang_cot(vals, f):
     cố định giữa các kỳ của tài liệu theo kỳ (báo cáo tiến độ), từ 1.6.4."""
     if f in ('pt1', 'md2'):
         return ['' if v in (None, '') else DINH_DANG[f](v) for v in vals]
+    if f == 'mda':  # MD chênh lệch, số âm viết chữ âm theo van_phong.md (từ 1.6.5)
+        cot = dinh_dang_cot(vals, 'md')
+        return [x if not x.startswith('-') else 'âm ' + x[1:] for x in cot] if cot is not None else None
     if f not in ('md', 'pt', 'ptg'):
         return None
     try:

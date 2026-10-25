@@ -179,7 +179,7 @@
     ],
     [
      "Sử dụng quỹ huy động",
-     "736,75/908,00 MD (81,1%)",
+     "736,75/921,00 MD (80,0%)",
      ""
     ],
     [
@@ -344,7 +344,7 @@
     ],
     [
      "MD ghi công, MD sẵn sàng không ghi công",
-     "736,75, 171,25 (81,1% quỹ huy động có ghi công)"
+     "736,75, 184,25 (80,0% quỹ huy động có ghi công)"
     ]
    ],
    "widths": [
@@ -358,7 +358,7 @@
    "t": "table"
   },
   {
-   "text": "Cách trả lương do nhóm khai báo: trả theo công sức (MD công việc). EV nhân sự và AC nhân sự cùng cơ sở lương với cost estimate (lương tham chiếu tháng chia 22 ngày, nhân hệ số bảo hiểm 1,235). Khi thực hiện đúng kế hoạch, EV nhân sự bằng lương kế hoạch đến ngày báo cáo và CPI theo chi phí thực bằng 1. Chi phí khác chưa có kế hoạch chi theo thời gian nên so với dự toán, không tính vào CPI theo chi phí thực. Đến ngày báo cáo đã huy động 908,00 MD, lương của toàn bộ ngày huy động cả dự án là 1.640.136.136 đồng. Ngày sẵn sàng không ghi công không tính lương, chỉ dùng để theo dõi năng lực.",
+   "text": "Cách trả lương do nhóm khai báo: trả theo công sức (MD công việc). EV nhân sự và AC nhân sự cùng cơ sở lương với cost estimate (lương tham chiếu tháng chia 22 ngày, nhân hệ số bảo hiểm 1,235). Khi thực hiện đúng kế hoạch, EV nhân sự bằng lương kế hoạch đến ngày báo cáo và CPI theo chi phí thực bằng 1. Chi phí khác chưa có kế hoạch chi theo thời gian nên so với dự toán, không tính vào CPI theo chi phí thực. Đến ngày báo cáo đã huy động 921,00 MD, lương của toàn bộ ngày huy động cả dự án là 1.640.136.136 đồng. Ngày sẵn sàng không ghi công không tính lương, chỉ dùng để theo dõi năng lực.",
    "t": "p"
   },
   {
@@ -664,16 +664,16 @@
      "50,00",
      "50,25",
      "0,25",
-     "69,00",
-     "18,75"
+     "70,50",
+     "20,25"
     ],
     [
      "Vũ Đức Minh",
      "58,00",
      "57,50",
      "-0,50",
-     "71,00",
-     "13,50"
+     "72,00",
+     "14,50"
     ],
     [
      "Ninh Đức Toàn",
@@ -688,8 +688,8 @@
      "72,50",
      "73,25",
      "0,75",
-     "83,00",
-     "9,75"
+     "84,00",
+     "10,75"
     ],
     [
      "Nguyễn Hoàng Nam",
@@ -704,16 +704,16 @@
      "67,50",
      "67,00",
      "-0,50",
-     "85,00",
-     "18,00"
+     "86,00",
+     "19,00"
     ],
     [
      "Đỗ Minh Quân",
      "64,00",
      "64,25",
      "0,25",
-     "77,00",
-     "12,75"
+     "78,00",
+     "13,75"
     ],
     [
      "Bùi Anh Tuấn",
@@ -728,32 +728,32 @@
      "49,50",
      "49,75",
      "0,25",
-     "70,00",
-     "20,25"
+     "72,00",
+     "22,25"
     ],
     [
      "Phạm Ngọc Anh",
      "50,00",
      "49,25",
      "-0,75",
-     "63,00",
-     "13,75"
+     "66,00",
+     "16,75"
     ],
     [
      "Trương Quốc Việt",
      "58,50",
      "58,75",
      "0,25",
-     "62,00",
-     "3,25"
+     "64,50",
+     "5,75"
     ],
     [
      "Tổng",
      "733,00",
      "736,75",
      "3,75",
-     "908,00",
-     "171,25"
+     "921,00",
+     "184,25"
     ]
    ],
    "widths": [

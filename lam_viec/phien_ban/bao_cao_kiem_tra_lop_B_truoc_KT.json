@@ -1,0 +1,97 @@
+{
+ "tai_lieu": "ket_qua/15_Quan_ly_phien_ban/Tai_lieu_quan_ly_phien_ban.docx",
+ "tai_lieu_kem": "ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx",
+ "phien_ban": "0.10",
+ "dac_ta": ".claude/skills/qlda-phien-ban/dac_ta/tai_lieu_phien_ban.json",
+ "ngay_kiem_tra": "2026-10-25",
+ "nguoi_kiem_tra": "agent Kiểm tra độc lập (lớp B, phiên riêng, lượt xác nhận sau vòng sửa phần 1 CR01)",
+ "ket_luan": "chua_dat",
+ "so_loi": 1,
+ "so_canh_bao": 0,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ quy ước, trạng thái, lưu trữ, danh mục 20 tài liệu, BL1, BL2, R1 đến R4, CR01, lịch sử, truy vết, nhận xét. Nhận xét nêu các tài liệu BL2 chưa qua lớp B khi đặt đường cơ sở và BL2 sẽ được lập lại sau lớp B lượt 2, đúng tình trạng hiện tại."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Danh mục phiên bản (TL02 2.1, TL08 2.2, TL09 2.2, TL13 2.2, TL14 2.1, TL15 2.1, TL07 1.1), 253 phiên bản, BL1 14, BL2 15 tài liệu, R1 đến R4 khớp phien_ban_tong_hop.json và phat_hanh. Lệch: tài liệu Word lập lúc 17:27:12, trước khi master plan được dựng lại (17:27:26) và trước bản tổng hợp hiện hành (17:27:34), nên còn ghi 1 tài liệu cần cập nhật (TL14 Master plan, đầu vào Change management plan) và 1057 lần chạy, trong khi nguồn ghi so_can_cap_nhat 0 và so_lan_chay 1065, Excel cùng thư mục ghi TL14 Cập nhật (MH01)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "dat",
+   "nhan_xet": "Phiên bản sau hợp đồng gắn R1 đến R4 và CR01, BL2 gắn CR01 và R4, ghi chú làm lại có ngày và nơi lưu sổ cũ."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "dat",
+   "nhan_xet": "Quy ước kiểm chứng được qua băm nội dung, băm đầu vào, Excel có công thức đếm."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có phát hiện tài liệu cũ, quy định thay đổi sau đường cơ sở, kiểm tra lớp B trước khi đặt đường cơ sở mới, CR01 chỉ đóng sau khi Chủ đầu tư kiểm tra đạt."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Đúng định dạng. Dấu chấm phẩy chỉ nằm trong ghi chú lịch sử của phiên bản cũ (dữ liệu sổ)."
+  }
+ ],
+ "doc_hieu": [
+  {
+   "tieu_chi": "Quy ước nhất quán với sổ phiên bản",
+   "ket_qua": "dat"
+  },
+  {
+   "tieu_chi": "Nhận xét dựa trên số liệu sổ và mã CR",
+   "ket_qua": "dat"
+  },
+  {
+   "tieu_chi": "Nêu rõ tài liệu còn cần cập nhật",
+   "ket_qua": "chua_dat",
+   "ghi_chu": "MH01: nêu TL14 cần cập nhật trong khi nguồn hiện hành ghi 0"
+  },
+  {
+   "tieu_chi": "Bản phát hành khớp phat_hanh.json, bản cut over là chính thức",
+   "ket_qua": "dat",
+   "ghi_chu": "Chưa có bản chính thức vì cut over 29/07/2027 chưa đến"
+  },
+  {
+   "tieu_chi": "Tài liệu thuộc từng đường cơ sở khớp sổ, BL2 có căn cứ CR đã phê duyệt",
+   "ket_qua": "dat"
+  }
+ ],
+ "dong_phat_hien_truoc": [
+  {
+   "ma": "MH01",
+   "da_dong": true,
+   "nhan_xet": "Nhận xét đã nêu các tài liệu BL2 chưa qua lớp B trước khi đặt đường cơ sở, đã sửa thành 2.1, 2.2 ở trạng thái Dự thảo và BL2 sẽ lập lại sau lớp B lượt 2."
+  },
+  {
+   "ma": "MH02",
+   "da_dong": true,
+   "nhan_xet": "lam_lai.noi_dung ghi dự trữ đến cut over theo lịch lập lại, không còn 3 ngày."
+  },
+  {
+   "ma": "MH03",
+   "da_dong": true,
+   "nhan_xet": "So_phien_ban.xlsx trang Duong_co_so có phần Ghi chú làm lại với hai mục lam_lai."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "CL02",
+   "vi_tri": "Mục 1 và mục 3: '... và 1 tài liệu cần cập nhật theo đầu vào', bảng 'TL14 | Master plan | Change management plan'. Mục 8: 'Nhật ký chạy ghi 1057 lần chạy'. Mục 9: 'Số tài liệu cần cập nhật theo đầu vào là 1'",
+   "mo_ta": "Tài liệu được dựng trước lần dựng lại master plan và trước bản phien_ban_tong_hop.json hiện hành. Nguồn ghi so_can_cap_nhat 0 (TL14 không còn cũ, nội dung giữ 2.1) và so_lan_chay 1065. So_phien_ban.xlsx dựng sau ghi TL14 Cập nhật, nên Word và Excel mâu thuẫn.",
+   "cach_sua": "tu_dong",
+   "sua_o": "lời văn",
+   "de_xuat": "Dựng lại tài liệu quản lý phiên bản sau cùng (sau mọi tài liệu khác), có thể gộp vào lần lập lại BL2."
+  }
+ ],
+ "ghi_chu_quy_trinh": "Lỗi do thứ tự chạy, không do dữ liệu. Sẽ hết khi dựng lại tài liệu ở bước cuối của lần lập lại BL2."
+}

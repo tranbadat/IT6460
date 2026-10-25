@@ -192,7 +192,7 @@
     ],
     [
      "sprint",
-     "5"
+     "6"
     ],
     [
      "rủi ro",
@@ -212,7 +212,7 @@
     ],
     [
      "Tổng",
-     "53"
+     "54"
     ]
    ],
    "widths": [
@@ -340,7 +340,7 @@
     [
      "BH08",
      "Chất lượng và nghiệm thu",
-     "Toàn bộ 18 tiêu chí nghiệm thu đạt ngay lần đầu, mật độ lỗi 0,75 lỗi trên 10 MD, không còn lỗi mở khi bàn giao, mốc M5 và M9 đạt ngày 27/07/2027.",
+     "Toàn bộ 22 tiêu chí nghiệm thu, gồm phần bán hàng trên sàn và hạng mục chuyển giao, hướng dẫn vận hành, đạt ngay lần đầu, mật độ lỗi 0,75 lỗi trên 10 MD, không còn lỗi mở khi bàn giao, mốc M5 và M9 đạt ngày 27/07/2027.",
      "Kiểm thử từng phân hệ ngay khi lập trình hoàn thành, kiểm thử chấp nhận dựa trên kịch bản dùng lại từ kiểm thử đầu cuối và có Chủ đầu tư tham gia.",
      "Kiểm thử sớm theo phân hệ và dùng lại kịch bản giúp kiểm thử chấp nhận ít bất ngờ.",
      "Duy trì kiểm thử theo phân hệ ngay sau lập trình và lập kịch bản kiểm thử chấp nhận từ kịch bản kiểm thử đầu cuối. Áp dụng cho kiểm thử, nghiệm thu.",
@@ -349,7 +349,7 @@
     [
      "BH10",
      "Tiến độ",
-     "SPI xuống 0,94 ở S3 và 0,947 ở S4 nhưng phục hồi về 1,00 ở S8, mọi mốc đạt trong hạn và cut over đúng ngày 29/07/2027.",
+     "SPI xuống 0,94 ở S3 và 0,95 ở S4 (mức Vàng) nhưng phục hồi về 1,00 ở S8, mọi mốc đạt trong hạn và cut over đúng ngày 29/07/2027.",
      "Gói chậm được ghi vào sổ vấn đề mỗi kỳ, hành động làm bù bằng quỹ sẵn sàng và dùng lại thành phần được giao người và hạn cụ thể.",
      "Ghi mọi gói chậm thành vấn đề có hành động và hạn giúp phục hồi tiến độ trước khi tiêu hao dự trữ.",
      "Mỗi báo cáo tiến độ ghi vấn đề cho mọi gói chậm trên ngưỡng, hành động có người và hạn trong sprint kế tiếp. Áp dụng cho báo cáo tiến độ, họp sprint.",
@@ -399,10 +399,10 @@
     [
      "BH02",
      "Công cụ và quy trình",
-     "Đường cơ sở BL2 sau CR01 được lập ngày 27/05/2027 khi các tài liệu kế hoạch chưa qua kiểm tra lớp B, kiểm tra sau đó phát hiện lỗi về quỹ huy động, đợt thanh toán 6 và vị trí mốc M9 nên BL2 phải lập lại cùng ngày.",
-     "Chu trình mô phỏng và quy trình yêu cầu thay đổi đặt bước đường cơ sở ngay sau khi tài liệu đạt kiểm tra tự động, chưa có bước kiểm tra độc lập.",
-     "Đường cơ sở chỉ có giá trị khi gồm các tài liệu đã được kiểm tra độc lập, kiểm tra tự động không phát hiện được mâu thuẫn giữa lời văn và quyết định.",
-     "Đưa bước kiểm tra lớp B và chuyển trạng thái Đã kiểm tra vào trước lệnh lập đường cơ sở trong quy trình thay đổi, sổ phiên bản từ chối đường cơ sở có tài liệu Dự thảo. Áp dụng cho quản lý cấu hình, quản lý phiên bản.",
+     "Đường cơ sở BL2 sau CR01 được lập ngày 27/05/2027 khi các tài liệu kế hoạch mới qua kiểm tra tự động, rà soát độc lập sau đó phát hiện lỗi về quỹ huy động, đợt thanh toán 6 và vị trí mốc M9 nên BL2 phải lập lại cùng ngày.",
+     "Quy trình yêu cầu thay đổi đặt bước lập đường cơ sở ngay sau kiểm tra tự động, chưa có bước rà soát độc lập các tài liệu sau thay đổi.",
+     "Đường cơ sở chỉ có giá trị khi gồm các tài liệu đã được rà soát độc lập, kiểm tra tự động không phát hiện được mâu thuẫn giữa lời văn và quyết định.",
+     "Đưa bước rà soát độc lập và trạng thái Đã kiểm tra vào trước bước lập đường cơ sở trong quy trình thay đổi, sổ phiên bản từ chối đường cơ sở có tài liệu còn ở trạng thái Dự thảo. Áp dụng cho quản lý cấu hình, quản lý phiên bản.",
      "CR01, S5"
     ],
     [
@@ -426,11 +426,11 @@
     [
      "BH05",
      "Nhân sự và tổ chức nhóm",
-     "Mức huy động theo sprint của S7 đến S9 được đặt bằng MD xếp cộng 1 MD. Khi các gói chậm cuối S7, nhiều kiểm thử viên và kỹ sư phát triển hết quỹ ở S8, phải huy động bổ sung 10,5 MD ở S8 và 2,5 MD ở S9 để giữ mốc M4 và cut over.",
-     "Huy động theo nhu cầu được tính sát MD kế hoạch nhằm đạt tỷ lệ sử dụng quỹ, không tính phần dư cho làm bù ở các sprint kiểm thử nơi lỗi và gói chậm dồn lại.",
+     "Mức huy động theo sprint của S7 đến S9 được đặt bằng MD xếp cộng 1 MD. Khi các gói chậm cuối S7 dồn sang S8, nhiều kiểm thử viên và kỹ sư phát triển hết quỹ, phải huy động bổ sung 10,5 MD ở S8 và 2,5 MD ở S9 (dau_vao/thuc_te/huy_dong_bo_sung.json) để giữ mốc M4 và cut over. MD huy động thực tế tăng từ 908 MD lên 921 MD, tỷ lệ sử dụng nhân lực huy động 79,99%, chỉ tiêu K14 không đạt ngưỡng 80%.",
+     "Huy động theo nhu cầu được tính sát MD kế hoạch để đạt tỷ lệ sử dụng quỹ, không tính phần dư cho làm bù ở các sprint kiểm thử nơi lỗi và gói chậm dồn lại, nên khi gói chậm phải gọi thêm người và một phần ngày gọi thêm không ghi công.",
      "Tỷ lệ sử dụng quỹ cao không nên đạt bằng cách cắt hết phần dư ở các sprint có rủi ro tiến độ cao.",
      "Đặt mức huy động của các sprint kiểm thử và trước cut over có phần dư tối thiểu 15% MD xếp, theo dõi KPI K14 cùng số MD huy động bổ sung. Áp dụng cho lập kế hoạch huy động, master schedule.",
-     "K14, M4, 4.4.5, R-S9-02, S8"
+     "K14, M4, 4.4.5, R-S9-02, S8, S9"
     ],
     [
      "BH06",
@@ -444,7 +444,7 @@
     [
      "BH07",
      "Chất lượng và nghiệm thu",
-     "Một số lỗi mức cao như tạo trùng đơn hàng (L05) ở S3, chỉ được phát hiện ở kiểm thử đầu cuối và kiểm thử hệ thống: giữ tồn kho không giải phóng khi thanh toán thất bại (L18) và mất phiên khi chuyển giữa hai nút ứng dụng (L37).",
+     "Lỗi mức cao tạo trùng đơn hàng (L05) phát hiện ở S3 khi lập trình. Hai lỗi mức cao khác chỉ được phát hiện ở kiểm thử đầu cuối và kiểm thử hệ thống: giữ tồn kho không giải phóng khi thanh toán thất bại (L18) và mất phiên khi chuyển giữa hai nút ứng dụng (L37).",
      "Kiểm thử đơn vị chưa phủ nhánh thất bại, môi trường kiểm thử trước kiểm thử hệ thống chỉ có một nút ứng dụng.",
      "Môi trường kiểm thử phải giống cấu hình vận hành và ca kiểm thử phải gồm nhánh thất bại của giao dịch.",
      "Dựng môi trường kiểm thử hai nút từ đầu giai đoạn kiểm thử phân hệ, bổ sung ca kiểm thử nhánh thanh toán thất bại vào bộ kiểm thử tự động. Áp dụng cho kiểm thử.",
@@ -462,7 +462,7 @@
     [
      "BH12",
      "Phạm vi và yêu cầu",
-     "Ở S1, danh sách đối tượng phỏng vấn người dùng của gói 2.2.3 phải bổ sung giữa sprint (vấn đề VD01). Ở S6, giới hạn tần suất gọi của giao diện lập trình sàn chỉ được biết khi thiết kế tích hợp 5.2.3, làm gói này vượt công 15%.",
+     "Ở S1, danh sách đối tượng phỏng vấn người dùng của gói 2.2.3 phải bổ sung giữa sprint (vấn đề VD01). Ở S6, giới hạn tần suất gọi của giao diện lập trình sàn chỉ được biết khi thiết kế tích hợp 5.2.3, làm gói này vượt công 12,5% (0,5 MD).",
      "Khảo sát đầu giai đoạn tập trung vào nghiệp vụ, chưa có danh mục kiểm tra điều kiện kỹ thuật của hệ thống bên ngoài và đối tượng phỏng vấn chưa được thống nhất với Chủ sản phẩm tại họp khởi động.",
      "Khảo sát cần danh mục kiểm tra cả đối tượng người dùng và điều kiện kỹ thuật của hệ thống bên ngoài trước khi đặc tả.",
      "Dùng danh mục khảo sát gồm đối tượng phỏng vấn đã thống nhất, giới hạn tần suất, thời hạn khóa truy cập và môi trường thử của mỗi hệ thống bên ngoài, ký xác nhận với Chủ đầu tư. Áp dụng cho khảo sát, phân tích yêu cầu.",

@@ -143,7 +143,12 @@ tre_cut = loi.ngay_lam_viec_giua(days, lich['cut_over'], ngay_cut_tt) if ngay_cu
 som_cut = max(0, -tre_cut) if tre_cut is not None else None
 tre_cut = max(0, tre_cut) if tre_cut is not None else None
 ngay_kt_tt = max([D(x['ngay']) for x in nk if D(x['ngay']) <= ngay_chot])
-tien_do = {'ngay_bat_dau': lich['ngay_bat_dau'], 'ket_thuc_ke_hoach': lich['ket_thuc_du_kien'], 'ket_thuc_thuc_te': ngay_kt_tt.isoformat(),
+# kết thúc kế hoạch và thực tế cùng cơ sở: mốc có ngày kế hoạch muộn nhất (mốc đóng dự án), từ 1.4.1
+moc_dong = max(moc, key=lambda m: m['ke_hoach']) if moc else None
+ngay_dong_tt = (moc_dong or {}).get('thuc_te') or ''
+tien_do = {'ngay_bat_dau': lich['ngay_bat_dau'], 'ket_thuc_ke_hoach': moc_dong['ke_hoach'] if moc_dong else lich['ket_thuc_du_kien'],
+           'ket_thuc_thuc_te': ngay_dong_tt or ngay_kt_tt.isoformat(), 'moc_dong_du_an': (moc_dong or {}).get('ma', ''),
+           'ngay_ghi_cong_cuoi': ngay_kt_tt.isoformat(), 'ket_thuc_thuc_hien_ke_hoach': lich['ket_thuc_du_kien'],
            'cut_over': lich['cut_over'], 'moc_cut_over': moc_cut['ma'], 'cut_over_thuc_te': ngay_cut_tt,
            'so_ngay_tre_cut_over': tre_cut, 'so_ngay_som_cut_over': som_cut, 'dat_cut_over': tre_cut is not None and tre_cut <= 0,
            'so_moc': len(moc), 'so_moc_dat': len(moc_co), 'so_moc_dung_han': sum(1 for m in moc_co if m['lech_ngay'] <= 0),
@@ -273,9 +278,12 @@ for x in nt_moi.values():
         add('K05', f'nghiem_thu.csv: {x["ma"]} có kết quả "{x["ket_qua"]}", chỉ dùng Đạt hoặc Không đạt')
 ds_nt = [dict(x, so_lan=so_lan[x['ma']]) for x in sorted(nt_moi.values(), key=lambda r: loi.khoa_ma(r['ma']))]
 dat = [x for x in ds_nt if x['ket_qua'] == 'Đạt']
-NHOM_NT = ('he_thong', 'san_pham', 'pham_vi', 'chinh_sach')  # yêu cầu về sản phẩm, không tính thủ tục đấu thầu, hợp đồng, nội dung đề xuất
+NHOM_NT = ('he_thong', 'san_pham', 'pham_vi', 'chinh_sach', 'muc_tieu')  # yêu cầu về sản phẩm và mục tiêu, không tính thủ tục đấu thầu, hợp đồng, đề xuất
+NHOM_NT_KHI_CO = ('moc',)  # yêu cầu mốc (ngày cut over) chỉ tính khi có tiêu chí nghiệm thu dẫn chiếu, từ 1.4.1
 khong_nt = {x['ma'] if isinstance(x, dict) else str(x) for x in wbs.get('khong_can_goi', [])}  # phần loại trừ phạm vi
-yc = [y for y in rfp['yeu_cau'] if y.get('xu_ly') == 'dap_ung' and y.get('nhom') in NHOM_NT and y['ma'] not in khong_nt]
+co_nt = lambda ma: any(re.search(r'\b' + re.escape(ma) + r'\b', x['tieu_chi']) for x in ds_nt)  # noqa: E731
+yc = [y for y in rfp['yeu_cau'] if y['ma'] not in khong_nt and (
+      (y.get('xu_ly') == 'dap_ung' and y.get('nhom') in NHOM_NT) or (y.get('nhom') in NHOM_NT_KHI_CO and co_nt(y['ma'])))]
 yc_kq = []
 for y in yc:
     lq = [x for x in ds_nt if re.search(r'\b' + re.escape(y['ma']) + r'\b', x['tieu_chi'] + ' ' + x.get('ghi_chu', ''))]
@@ -292,6 +300,16 @@ nghiem_thu = {'so_tieu_chi': len(ds_nt), 'so_dat': len(dat), 'ty_le_nghiem_thu_d
               'so_yeu_cau_rfp_dat': sum(1 for x in yc_kq if x['ket_qua'] == 'Đạt'),
               'yeu_cau_chua_nghiem_thu': [x for x in yc_kq if x['ket_qua'] == 'Chưa nghiệm thu'], 'hang_muc': hm}
 nghiem_thu['ty_le_yeu_cau_rfp_dat'] = round(nghiem_thu['so_yeu_cau_rfp_dat'] / len(yc_kq), 4) if yc_kq else 0
+# phạm vi yêu cầu thay đổi có phụ lục: tiêu chí nghiệm thu ghi mã CR (từ 1.4.1)
+nghiem_thu['thay_doi'] = []
+for c in so_td['yeu_cau']:
+    if c.get('phu_luc_hop_dong') and c.get('trang_thai') in ('Đã phê duyệt', 'Đã thực hiện', 'Đã đóng'):
+        lq = [x for x in ds_nt if re.search(r'\b' + re.escape(c['ma']) + r'\b', x['tieu_chi'] + ' ' + x.get('ghi_chu', ''))]
+        nghiem_thu['thay_doi'].append({'ma': c['ma'], 'tieu_de': c['tieu_de'], 'so_tieu_chi': len(lq), 'so_dat': sum(1 for x in lq if x['ket_qua'] == 'Đạt'),
+                                       'ma_nghiem_thu': ', '.join(x['ma'] for x in lq),
+                                       'ket_qua': 'Chưa nghiệm thu' if not lq else ('Đạt' if all(x['ket_qua'] == 'Đạt' for x in lq) else 'Không đạt')})
+        if not lq:
+            add('K06', f'Phạm vi yêu cầu thay đổi {c["ma"]} có phụ lục nhưng chưa có tiêu chí nghiệm thu ghi mã {c["ma"]}', 'canh_bao')
 if not nt:
     add('K06', 'Chưa có kết quả nghiệm thu (nghiem_thu.csv)', 'canh_bao')
 
@@ -331,7 +349,11 @@ for c in so_td['yeu_cau']:
         dung_han = c['trang_thai'] in QD and so_ngay is not None and so_ngay <= han.get(c['muc'], 3)
     cr.append({'ma': c['ma'], 'tieu_de': c['tieu_de'], 'nguon': c.get('nguon', ''), 'muc': c.get('muc_ten', c['muc']), 'trang_thai': c['trang_thai'],
                'md_tang': c['md_tang'], 'chi_phi_tang': c['chi_phi_tang'], 'ngay_cham': c['ngay_cham'], 'ngay_de_xuat': c['ngay_de_xuat'],
-               'ngay_quyet_dinh': ngay_qd, 'han_quyet_dinh': c.get('han_quyet_dinh', ''), 'so_ngay_xu_ly': so_ngay, 'dung_han': dung_han, 'phu_luc_hop_dong': c.get('phu_luc_hop_dong', False)})
+               'ngay_quyet_dinh': ngay_qd, 'han_quyet_dinh': c.get('han_quyet_dinh', ''), 'so_ngay_xu_ly': so_ngay, 'dung_han': dung_han, 'phu_luc_hop_dong': c.get('phu_luc_hop_dong', False),
+               # giá điều chỉnh theo phụ lục (giá đề nghị Chủ đầu tư) tách khỏi chi phí nội bộ chi_phi_tang, số ngày lùi cut over theo phụ lục
+               'gia_dieu_chinh': (c.get('phu_luc') or {}).get('gia_dieu_chinh', c.get('gia_de_nghi')),
+               'so_ngay_lui_cut_over': (c.get('phu_luc') or {}).get('so_ngay_lui_cut_over', c.get('ngay_cham_cut_over')),
+               'so_phu_luc': (c.get('phu_luc') or {}).get('so', ''), 'ngay_phu_luc': (c.get('phu_luc') or {}).get('ngay', '')})
 duyet = [c for c in cr if c['trang_thai'] in ('Đã phê duyệt', 'Đã thực hiện', 'Đã đóng')]
 tt_cr = {}
 for c in cr:
@@ -339,7 +361,21 @@ for c in cr:
 thay_doi = {'tong': len(cr), 'theo_trang_thai': [{'trang_thai': k, 'so': v} for k, v in tt_cr.items()], 'so_duyet': len(duyet),
             'md_tang_duyet': round(sum(c['md_tang'] for c in duyet), 2), 'chi_phi_tang_duyet': round(sum(c['chi_phi_tang'] for c in duyet)),
             'ngay_cham_duyet': max([c['ngay_cham'] or 0 for c in duyet] or [0]), 'so_dung_han': sum(1 for c in cr if c['dung_han']),
-            'ty_le_cr_dung_han': round(sum(1 for c in cr if c['dung_han']) / len(cr), 4) if cr else 1.0, 'danh_sach': cr}
+            'ty_le_cr_dung_han': round(sum(1 for c in cr if c['dung_han']) / len(cr), 4) if cr else 1.0, 'danh_sach': cr,
+            'gia_dieu_chinh_duyet': round(sum(float(c['gia_dieu_chinh'] or 0) for c in duyet if c['phu_luc_hop_dong']))}
+# đường cơ sở hợp đồng gốc (BL1) so với hiện hành: giá, cut over, MD, hạn mốc trước và sau phụ lục (từ 1.4.1)
+pl_ds = [c['phu_luc'] for c in so_td['yeu_cau'] if c.get('phu_luc') and c.get('trang_thai') in ('Đã phê duyệt', 'Đã thực hiện', 'Đã đóng')]
+pl_ds.sort(key=lambda x: x.get('ngay', ''))
+han_moc_bl1 = {}
+for pl in reversed(pl_ds):
+    for m in pl.get('moc_thanh_toan', []):
+        han_moc_bl1[m['ma']] = m.get('han_truoc', '')
+duong_co_so_goc = {'co_phu_luc': bool(pl_ds), 'gia': pl_ds[0].get('gia_hop_dong_truoc') if pl_ds else gia, 'gia_hien_hanh': gia,
+                   'cut_over': pl_ds[0].get('cut_over_truoc') if pl_ds else lich['cut_over'], 'cut_over_hien_hanh': lich['cut_over'],
+                   'BAC_md': round(float(wbs['tong_md']) - thay_doi['md_tang_duyet'], 2), 'BAC_md_hien_hanh': float(wbs['tong_md']),
+                   'so_ngay_lui_cut_over': sum(int(pl.get('so_ngay_lui_cut_over') or 0) for pl in pl_ds),
+                   'moc': [{'ma': m['ma'], 'ten': m['ten'], 'han_goc': han_moc_bl1.get(m['ma'], m['han']) if m['ma'] in han_moc_bl1 else m['han'],
+                            'han_hien_hanh': m['han'], 'doi_han': m['ma'] in han_moc_bl1 and han_moc_bl1[m['ma']] != m['han']} for m in moc]}
 
 # 8. Rủi ro
 tdrr, su_kien = loi.theo_doi_rui_ro(ngay_chot.isoformat())
@@ -410,10 +446,15 @@ for k in kpi_md:
     else:
         ok = v >= k['muc_tieu'] if k['so_sanh'] == 'ge' else (v <= k['muc_tieu'] if k['so_sanh'] == 'le' else v == k['muc_tieu'])
         kq = 'Đạt' if ok else 'Không đạt'
-    f = (lambda x: loi.pt(x)) if k['don_vi'] == '%' else (lambda x: loi.so(x, 2) if isinstance(x, float) and x != int(x) else loi.so(x))
+    le_ = 2 if any(isinstance(z, float) and z != int(z) for z in (k.get('muc_tieu'), v)) else 0  # ngưỡng và thực tế cùng số chữ số (1,00 thay cho 1)
+    f = (lambda x: loi.pt(x)) if k['don_vi'] == '%' else (lambda x, le_=le_: loi.so(x, le_))
+    # phần trăm làm tròn một chữ số chạm ngưỡng mà kết quả khác ngưỡng (79,99% hiển thị 80%) thì hiển thị hai chữ số
+    sat_nguong = (k['don_vi'] == '%' and v is not None and k.get('muc_tieu') is not None and v != k['muc_tieu']
+                  and round(v * 100, 1) == round(k['muc_tieu'] * 100, 1))
+    f_tt = (lambda x: loi.pt(x, 2)) if sat_nguong else f
     kpi.append({'ma': k['ma'], 'nhom': k['nhom'], 'chi_tieu': k['chi_tieu'], 'so_sanh': k['so_sanh'], 'muc_tieu': k['muc_tieu'], 'thuc_te': v,
                 'muc_tieu_hien_thi': '' if k['muc_tieu'] is None else ('Tối đa ' if k['so_sanh'] == 'le' else ('Tối thiểu ' if k['so_sanh'] == 'ge' else '')) + f(k['muc_tieu']) + ('' if k['don_vi'] in ('%', '') else ' ' + k['don_vi']),
-                'thuc_te_hien_thi': '' if v is None else f(v) + ('' if k['don_vi'] in ('%', '') else ' ' + k['don_vi']),
+                'thuc_te_hien_thi': '' if v is None else f_tt(v) + ('' if k['don_vi'] in ('%', '') else ' ' + k['don_vi']),
                 'ket_qua': kq, 'ly_do_ghi_de': ghi_de.get(k['ma'], {}).get('ly_do', '')})
 so_dat = sum(1 for k in kpi if k['ket_qua'] == 'Đạt')
 ty_le_kpi = round(so_dat / len(kpi), 4) if kpi else 0
@@ -423,12 +464,22 @@ for nh in dict.fromkeys(k['nhom'] for k in kpi):
     ks = [k for k in kpi if k['nhom'] == nh]
     theo_nhom_kpi.append({'nhom': nh, 'so': len(ks), 'dat': sum(1 for k in ks if k['ket_qua'] == 'Đạt'), 'ma': ', '.join(k['ma'] for k in ks)})
 
+# bảo hành và hỗ trợ tăng cường sau cut over theo chỉ tiêu kỹ thuật (đã dời theo phụ lục), hết hạn bảo hành tính từ ngày cut over thực tế (từ 1.4.1)
+_bh = loi.doc_json('dau_vao/chi_tieu_ky_thuat.json', {}).get('bao_hanh', {})
+_thang = int(_bh.get('thoi_han_thang') or hsmt['hop_dong'].get('bao_hanh_thang') or 0)
+_goc = D(tien_do['cut_over_thuc_te'] or lich['cut_over'])
+_y, _m = divmod(_goc.month - 1 + _thang, 12)
+_het = _goc.replace(year=_goc.year + _y, month=_m + 1, day=min(_goc.day, 28 if _m + 1 == 2 else 30 if _m + 1 in (4, 6, 9, 11) else 31))
+bao_hanh_kt = {'thoi_han_thang': _thang, 'tu': _goc.isoformat(), 'het_han': _het.isoformat(),
+               'ho_tro_tang_cuong': {k_: v_ for k_, v_ in (_bh.get('ho_tro_tang_cuong') or {}).items() if not k_.startswith('_')}}
 loi_ds = [x for x in F if x['muc_do'] == 'loi']
 out = {'ngay_chot': ngay_chot.isoformat(), 'ky_cuoi': ky, 'pham_vi': pham_vi, 'tien_do': tien_do, 'chi_phi': chi_phi, 'nhan_luc': nguoi, 'van_de': van_de,
        'nghiem_thu': nghiem_thu, 'loi': loi_, 'thay_doi': thay_doi, 'rui_ro': rui_ro, 'kpi': kpi, 'so_kpi': len(kpi), 'so_kpi_dat': so_dat,
        'ty_le_kpi_dat': ty_le_kpi, 'xep_loai': xep_loai, 'kpi_theo_nhom': theo_nhom_kpi,
        'xep_loai_thang': KPI_CFG['xep_loai'], 'kpi_khong_dat': [k for k in kpi if k['ket_qua'] != 'Đạt'],
-       'ngay_dong_du_an': lich.get('ngay_dong_du_an', ''), 'so_lieu_mo_phong': bool(thuc_te.mo_phong()),
+       'ngay_dong_du_an': ngay_dong_tt or lich.get('ngay_dong_du_an', ''), 'han_dong_du_an': lich.get('ngay_dong_du_an', ''),
+       'duong_co_so_goc': duong_co_so_goc, 'huy_dong_bo_sung': thuc_te.huy_dong_bo_sung_tom_tat(), 'bao_hanh': bao_hanh_kt,
+       'so_lieu_mo_phong': bool(thuc_te.mo_phong()),
        'can_cu_mo_phong': thuc_te.can_cu_mo_phong('báo cáo'),
        'kiem_tra': {'ket_luan': 'dat' if not loi_ds else 'chua_dat', 'phat_hien': F}}
 for x in F:

@@ -1,0 +1,183 @@
+{
+ "tai_lieu": "ket_qua/11_Bao_cao_tong_ket/Bao_cao_tong_ket_du_an.docx",
+ "phien_ban": "0.2",
+ "dac_ta": "qlda-tong-ket/dac_ta/bao_cao_tong_ket.json",
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên kiểm tra riêng (agent con), Claude Code, mô hình Claude Opus 5.5, python-docx đọc tệp Word",
+ "ket_luan": "chua_dat",
+ "so_loi": 6,
+ "so_canh_bao": 6,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 8 mục theo đặc tả, các bảng kế hoạch so với thực tế, mốc, EVM theo kỳ, chi phí, nhân lực, chất lượng, thay đổi, rủi ro, công việc sau dự án."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Ngày huy động thực tế không gồm 13 MD huy động bổ sung S8, S9 (MH01). Mâu thuẫn bảng Mẫu 01A với lời văn về hạng mục 12 (MH02). Thời gian thực hiện kế hoạch và thực tế khác cơ sở (MH04). Ngày đóng dự án 12/08 mâu thuẫn mốc M8 04/08 (MH05). Các số khác (AC 736,75 MD, SPI 1,00, CPI 0,99, CPI thực 0,99, chi phí nhân sự 1.336.368.239, tỷ suất 24,2% và 26,3%, mật độ lỗi 0,75, rủi ro 2,50 MD, 5.250.000 đồng, 10,5%) khớp du_lieu/ket_thuc.json và báo cáo tiến độ."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Phạm vi CR01 (nhóm WBS 5, mốc M9) không có tiêu chí nghiệm thu NT, không có dòng trong bảng hạng mục (MH03). Cột Kế hoạch dùng đường cơ sở BL2 nhưng không nêu, không đối chiếu BL1 (MH06)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Hạng mục 12 Chuyển giao và hướng dẫn vận hành có 0 tiêu chí, kết quả Chưa nghiệm thu nhưng lời văn khẳng định không có hạng mục chưa nghiệm thu. Công việc sau dự án có thời hạn chưa ra ngày (MC4)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Có bảng CR01, rủi ro đã xảy ra với hành động, so tác động thực tế với EMV và dự phòng. Thiếu số liệu giá điều chỉnh của phụ lục (MC6)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Times New Roman, thân 13, bảng 12, không in đậm, không ngoặc kép, không gạch dài, không chấm phẩy. Còn dấu trừ ở cột chênh lệch MD và cụm Các 13 hạng mục (MC5)."
+  },
+  {
+   "tieu_chi": "doc_hieu: tóm tắt khớp số liệu, không thổi phồng",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Tóm tắt nêu 14 trên 14 KPI đạt và dự án đóng 12/08/2027, cả hai chưa đúng với dữ liệu thực tế (MH01, MH05)."
+  },
+  {
+   "tieu_chi": "doc_hieu: nguyên nhân chênh lệch lớn",
+   "ket_qua": "dat",
+   "nhan_xet": "Nêu nguyên nhân SPI Vàng S3, S4 (RR02, chuỗi thiết kế), M4 sau kế hoạch 2 ngày, gói vượt trên 20%. Nguyên nhân vượt MD chưa đúng trọng số (MC1)."
+  },
+  {
+   "tieu_chi": "doc_hieu: công việc sau dự án có người, thời hạn",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Hai dòng có thời hạn Theo thời hạn bảo hành, Sau thời hạn bảo hành, chưa ra ngày cụ thể (MC4)."
+  },
+  {
+   "tieu_chi": "doc_hieu: không đánh giá chủ quan thay báo cáo đánh giá",
+   "ket_qua": "dat",
+   "nhan_xet": "Chỉ nêu kết quả, xếp loại lấy từ dữ liệu."
+  },
+  {
+   "tieu_chi": "doc_hieu: nhận xét chi phí đúng cách trả lương, ngày sẵn sàng, không kết luận tiết kiệm khi còn nghĩa vụ",
+   "ket_qua": "dat",
+   "nhan_xet": "Nêu trả theo công sức, ngày sẵn sàng là chỉ số năng lực, nghĩa vụ bảo hành 40.000.000 đồng chưa chi tính vào tổng chi phí, không kết luận tiết kiệm. Số ngày sẵn sàng sai do MH01."
+  },
+  {
+   "tieu_chi": "doc_hieu: vấn đề tồn đọng có người phụ trách và thời hạn",
+   "ket_qua": "dat",
+   "nhan_xet": "Sổ vấn đề 14/14 đã đóng, không còn hành động chưa xong, khớp ket_thuc.van_de."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "MH01",
+   "muc_do": "loi",
+   "nhom": "CL02 số liệu huy động",
+   "vi_tri": "Mục 1 dòng Ngày huy động nhân sự 908 | 908, mục 4 bảng chi phí dòng Ngày sẵn sàng (175 kế hoạch, 171,25 thực tế), bảng chỉ tiêu dòng Tỷ lệ sử dụng nhân lực huy động 81,1%, bảng nhân lực cột Huy động, đoạn CHI_PHI",
+   "mo_ta": "Ngày huy động thực tế bằng đúng kế hoạch 908 MD, không gồm 13 MD huy động bổ sung theo nhu cầu ở S8 (10,5) và S9 (2,5) ghi trong dau_vao/thuc_te/huy_dong_bo_sung.json. Hệ quả: người làm nhiều hơn huy động trong sprint (Phạm Ngọc Anh S8 làm 5 MD với huy động 2, Phạm Tuấn Anh S8 làm 1 MD với huy động 0). Huy động thực tế đúng là 921 MD, sẵn sàng 184,25 MD, tỷ lệ sử dụng 736,75/921 = 79,99%. Lời văn mục 3 lại nêu huy động bổ sung ở S8, tự mâu thuẫn với bảng.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Sửa ở dữ liệu: script tổng hợp ket_thuc.json (chi_phi.md_huy_dong, md_san_sang, ty_le_su_dung_huy_dong, nhan_luc[].md_huy_dong) cộng huy_dong_bo_sung.json; kiểm tra cùng lỗi ở du_lieu/tien_do/S8, S9, KT. Nhóm xác nhận vì đổi kết quả KPI K14 sang Không đạt."
+  },
+  {
+   "ma": "MH02",
+   "muc_do": "loi",
+   "nhom": "CL02, CL04 nghiệm thu",
+   "vi_tri": "Mục 2 bảng hạng mục dòng 12 Chuyển giao và hướng dẫn vận hành hệ thống | 0 | 0 | Chưa nghiệm thu, đoạn PHAM_VI: Các 13 hạng mục của Mẫu 01A đều có tiêu chí nghiệm thu đạt, không có hạng mục chưa nghiệm thu; mục 7 dòng Hướng dẫn vận hành ... Đã hoàn thành",
+   "mo_ta": "Lời văn khẳng định trái với bảng ngay phía trên. Hạng mục 12 Mẫu 01A (HSMT mau_01a[11]) không có tiêu chí nghiệm thu nào trong nghiem_thu.csv, nhưng mục 7 ghi hướng dẫn vận hành đã hoàn thành mà không có biên bản.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Nhóm quyết định số liệu thực tế mô phỏng: bổ sung tiêu chí nghiệm thu hạng mục 12 vào dau_vao/thuc_te/nghiem_thu.csv rồi tạo lại ket_thuc.json, hoặc soạn lại PHAM_VI và BAN_GIAO nêu đúng hạng mục 12 chưa có biên bản nghiệm thu."
+  },
+  {
+   "ma": "MH03",
+   "muc_do": "loi",
+   "nhom": "CL03 truy vết phạm vi thay đổi",
+   "vi_tri": "Mục 2 bảng hạng mục (13 dòng, không có phạm vi CR01), đoạn PHAM_VI: ... được phê duyệt bằng phụ lục hợp đồng 01/2027/PL-ABCW và nghiệm thu tại mốc M9",
+   "mo_ta": "18 tiêu chí NT01 đến NT18 không có tiêu chí nào cho phần bán hàng trên sàn thương mại điện tử (nhóm WBS 5, 76 MD, 7 lỗi). Nghiệm thu CR01 chỉ dẫn được về mốc M9, không có tiêu chí nghiệm thu, nên tỷ lệ nghiệm thu 18/18 không phủ phạm vi phụ lục.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Sửa ở dữ liệu: thêm tiêu chí nghiệm thu CR01 (gắn M9, biên bản 27/07/2027) vào nghiem_thu.csv và hạng mục phụ lục vào ket_thuc.nghiem_thu.hang_muc. Nhóm xác nhận vì là dữ liệu thực tế."
+  },
+  {
+   "ma": "MH04",
+   "muc_do": "loi",
+   "nhom": "CL02 cơ sở so sánh",
+   "vi_tri": "Mục 1 dòng Thời gian thực hiện | 18/03/2027 đến 29/07/2027 | 18/03/2027 đến 04/08/2027",
+   "mo_ta": "Kế hoạch lấy ngày cut over (ket_thuc.tien_do.ket_thuc_ke_hoach = 29/07) còn thực tế lấy mốc đóng dự án M8 (04/08). M8 kế hoạch 04/08 và đạt đúng ngày, nhưng bảng ngụ ý kết thúc chậm 4 ngày làm việc.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa ở dữ liệu: ket_thuc.tien_do.ket_thuc_ke_hoach lấy ngày kế hoạch của M8 (04/08/2027) theo lịch hiện hành."
+  },
+  {
+   "ma": "MH05",
+   "muc_do": "loi",
+   "nhom": "CL02 ngày",
+   "vi_tri": "Đoạn TOM_TAT: ... dự án đóng ngày 12/08/2027",
+   "mo_ta": "Mốc M8 Đóng dự án đạt 04/08/2027 (moc_thuc_te.csv: biên bản kết thúc dự án ngày 04/08/2027), nhật ký công việc cuối cùng 04/08. 12/08/2027 là ngày chốt số liệu và hạn M8. ket_thuc.ngay_dong_du_an đang gán bằng ngay_chot.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa ở dữ liệu ngay_dong_du_an = ngày thực tế M8, soạn lại TOM_TAT (ID TOM_TAT) ghi đóng dự án 04/08/2027, số liệu chốt 12/08/2027."
+  },
+  {
+   "ma": "MH06",
+   "muc_do": "loi",
+   "nhom": "CL03 đường cơ sở BL1, BL2",
+   "vi_tri": "Mục 1 bảng Kế hoạch so với Thực tế (cut over 29/07, giá 1.949.024.682, công sức 733 MD), mục 3 cột Hạn của mốc, mục 4 bảng chi phí",
+   "mo_ta": "Cột Kế hoạch là đường cơ sở BL2 sau phụ lục 01/2027/PL-ABCW nhưng tài liệu không nêu, không đối chiếu BL1 18/03/2027 (cut over 01/07/2027, giá 1.750.000.000 đồng, 657 MD, hạn M3 17/06/2027). Người đọc không thấy được chênh lệch do CR01 (lùi 20 ngày làm việc, giá điều chỉnh 199.024.682 đồng, 76 MD) so với hợp đồng gốc.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa ở dữ liệu: thêm vào ket_thuc.json các trường BL1 (cut over, giá, BAC_md, hạn mốc) từ du_lieu/phien_ban.json và thay_doi.json phu_luc; thêm cột hoặc dòng BL1 vào bảng mục 1 và ghi chú cơ sở BL2 dưới bảng mốc."
+  },
+  {
+   "ma": "MC1",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 lời văn",
+   "vi_tri": "Đoạn CHI_PHI: chênh 8.528.798 đồng tương ứng 3,75 MD vượt kế hoạch, chủ yếu do sửa lỗi và tối ưu hiệu năng",
+   "mo_ta": "Theo ket_thuc.pham_vi.goi, phần vượt lớn nhất là các gói đặc tả, thiết kế (1.2.5, 3.2.3, 4.2.5, 2.2.3, cộng 3,5 MD) và 3.3.7 (1,25 MD), sửa lỗi và tối ưu (1.4.6, 1.3.8, 4.4.5) chỉ 1,75 MD. Tổng vượt 10 MD, bù 6,25 MD ở gói làm nhanh.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại CHI_PHI."
+  },
+  {
+   "ma": "MC2",
+   "muc_do": "canh_bao",
+   "nhom": "CL01 đặc tả",
+   "vi_tri": "Đoạn CHAT_LUONG: Lỗi tập trung ở các đợt kiểm thử đặt hàng, kiểm thử tích hợp và kiểm thử chấp nhận",
+   "mo_ta": "Hướng dẫn yêu cầu phân bố lỗi theo nhóm WBS. Dữ liệu ket_thuc.loi.theo_nhom_wbs: nhóm 3 có 21, nhóm 4 có 12, nhóm 2 có 10, nhóm 5 (CR01) có 7, nhóm 1 có 5. Đoạn văn không nêu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại CHAT_LUONG dùng tham chiếu loi.theo_nhom_wbs."
+  },
+  {
+   "ma": "MC3",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 lời văn",
+   "vi_tri": "Đoạn CHAT_LUONG: ... chỉ đạt sau khi tối ưu truy vấn và bộ nhớ đệm trang danh mục trong kỳ S7",
+   "mo_ta": "RR06 kích hoạt 21/06 (S7) nhưng đóng 06/07 (S8), kiểm thử hiệu năng 1.4.9 sau tối ưu hoàn thành ở S8 bằng huy động bổ sung.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại CHAT_LUONG: tối ưu ở S7, đo lại đạt ở S8."
+  },
+  {
+   "ma": "MC4",
+   "muc_do": "canh_bao",
+   "nhom": "CL04 công việc sau dự án",
+   "vi_tri": "Mục 7 bảng BAN_GIAO dòng 2, 3, 5",
+   "mo_ta": "Thời hạn Theo thời hạn bảo hành, Sau thời hạn bảo hành chưa ra ngày (bảo hành 12 tháng từ 29/07/2027). Dòng hỗ trợ tăng cường giao Nguyễn Hoàng Nam Đã hoàn thành 12/08 nhưng Nam không có huy động hay nhật ký sau 29/07, HSDT cam kết hỗ trợ tăng cường 02/07 đến 15/07/2027 theo cut over cũ và chưa nêu khoảng thời gian mới.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Soạn lại BAN_GIAO ghi ngày cụ thể. Nhóm xác nhận người và thời gian hỗ trợ tăng cường thực tế."
+  },
+  {
+   "ma": "MC5",
+   "muc_do": "canh_bao",
+   "nhom": "CL06",
+   "vi_tri": "Mục 4 bảng nhân lực cột Chênh lệch, MD (-0,50, -0,75), đoạn PHAM_VI: Các 13 hạng mục",
+   "mo_ta": "Dùng dấu trừ cho số âm (van_phong.md quy định viết chữ âm cho tiền, nên áp dụng thống nhất), cụm Các 13 hạng mục chưa chuẩn.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Định dạng md âm theo quy tắc âm, soạn lại PHAM_VI."
+  },
+  {
+   "ma": "MC6",
+   "muc_do": "canh_bao",
+   "nhom": "CL05 thay đổi",
+   "vi_tri": "Mục 6 bảng CR01 cột Chi phí 161.500.000, đoạn THAY_DOI_RUI_RO",
+   "mo_ta": "161.500.000 đồng là chi phí nội bộ, giá điều chỉnh theo phụ lục là 199.024.682 đồng (thay_doi.json gia_de_nghi, phu_luc.gia_dieu_chinh) không xuất hiện trong báo cáo, và số ngày lùi cut over 20 ngày làm việc chưa nêu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thêm trường giá điều chỉnh vào ket_thuc.thay_doi.danh_sach và nêu trong THAY_DOI_RUI_RO."
+  }
+ ]
+}

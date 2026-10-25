@@ -241,6 +241,46 @@
    "ly_do": "Nghiệm thu theo chỉ tiêu kỹ thuật và yêu cầu RFP"
   },
   {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R38 Phần bán hàng trên sàn thương mại điện tử theo phụ lục 01/2027/PL-ABCW (CR01): kết nối sàn, đồng bộ sản phẩm, giá và tồn kho lên sàn",
+   "hang_muc": 9,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-27",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản nghiệm thu phần bán hàng trên sàn (mốc M9) ngày 27/07/2027, kiểm thử chấp nhận 5.4.5",
+   "ly_do": "Bổ sung theo quyết định của nhóm ngày 25/10/2026: nghiệm thu hạng mục 12 Mẫu 01A và phạm vi CR01"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R38 Phần bán hàng trên sàn thương mại điện tử theo phụ lục 01/2027/PL-ABCW (CR01): nhận đơn hàng từ sàn, cập nhật trạng thái, đối soát và giao diện quản trị kênh sàn",
+   "hang_muc": 9,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-27",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản nghiệm thu phần bán hàng trên sàn (mốc M9) ngày 27/07/2027, kiểm thử chấp nhận 5.4.5",
+   "ly_do": "Bổ sung theo quyết định của nhóm ngày 25/10/2026: nghiệm thu hạng mục 12 Mẫu 01A và phạm vi CR01"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R37 Chuyển giao hệ thống, tài liệu hướng dẫn vận hành và hướng dẫn vận hành cho cán bộ Chủ đầu tư",
+   "hang_muc": 12,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-29",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản bàn giao (mốc M7) ngày 29/07/2027, tài liệu hướng dẫn vận hành 2.5.2, hướng dẫn vận hành 3.5.1",
+   "ly_do": "Bổ sung theo quyết định của nhóm ngày 25/10/2026: nghiệm thu hạng mục 12 Mẫu 01A và phạm vi CR01"
+  },
+  {
+   "loai": "nghiem_thu",
+   "tieu_chi": "R02 Kênh bán hàng trực tuyến mới qua internet vận hành từ ngày cut over",
+   "hang_muc": 13,
+   "ket_qua": "Đạt",
+   "ngay": "2027-07-29",
+   "nguoi_xac_nhan": "Yamada, đầu mối Chủ đầu tư, Phòng Kế hoạch",
+   "ghi_chu": "Biên bản đưa hệ thống vào vận hành (mốc M6) ngày 29/07/2027",
+   "ly_do": "Bổ sung theo quyết định của nhóm ngày 25/10/2026: nghiệm thu hạng mục 12 Mẫu 01A và phạm vi CR01"
+  },
+  {
    "loai": "moc",
    "ma_moc": "M9",
    "ngay_dat": "2027-07-27",

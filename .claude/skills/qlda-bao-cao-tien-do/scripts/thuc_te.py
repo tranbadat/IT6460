@@ -123,11 +123,37 @@ def ty_le_sprint_da_qua(lich, days, den):
     return out
 
 
+TEP_HUY_DONG_BO_SUNG = 'dau_vao/thuc_te/huy_dong_bo_sung.json'
+
+
+def huy_dong_bo_sung():
+    """{(id, sprint): MD} huy động bổ sung thực tế theo nhu cầu ngoài kế hoạch (dau_vao/thuc_te/huy_dong_bo_sung.json danh_sach), từ 1.5.3."""
+    out = {}
+    for x in loi.doc_json(TEP_HUY_DONG_BO_SUNG, {}).get('danh_sach', []):
+        k = (x['thanh_vien'], x['sprint'])
+        out[k] = out.get(k, 0.0) + float(x.get('md_bo_sung') or 0)
+    return out
+
+
+def huy_dong_bo_sung_tom_tat():
+    """Tóm tắt huy động bổ sung thực tế cho tài liệu: tổng, theo sprint, đối chiếu với nhật ký, nguồn và quyết định (từ 1.5.3)."""
+    d = loi.doc_json(TEP_HUY_DONG_BO_SUNG, {})
+    if not d.get('danh_sach'):
+        return {'co': False, 'tong': 0}
+    return {'co': True, 'tong': d.get('tong', 0), 'tong_theo_sprint': d.get('tong_theo_sprint', {}), 'doi_chieu': d.get('doi_chieu', {}),
+            'nguon': TEP_HUY_DONG_BO_SUNG, 'danh_sach': d['danh_sach'],
+            'theo_sprint': [{'sprint': k, 'md': v} for k, v in sorted((d.get('tong_theo_sprint') or {}).items())]}
+
+
 def md_huy_dong(lich, tvs, days, den=None):
-    """Trả về ({id: MD huy động}, {(id, sprint): MD huy động}) tính đến ngày den (date), den None là cả dự án."""
+    """Trả về ({id: MD huy động}, {(id, sprint): MD huy động}) tính đến ngày den (date), den None là cả dự án theo kế hoạch.
+    Tính đến ngày den (thực tế) thì cộng huy động bổ sung thực tế của các sprint đã qua theo cùng tỷ lệ thời gian (từ 1.5.3)."""
     q = quy_sprint(lich, tvs)
     tl = ty_le_sprint_da_qua(lich, days, den) if den else None
     theo_sp = {k: v * (tl.get(k[1], 0.0) if tl is not None else 1.0) for k, v in q.items()}
+    if tl is not None:
+        for k, v in huy_dong_bo_sung().items():
+            theo_sp[k] = theo_sp.get(k, 0.0) + v * tl.get(k[1], 0.0)
     tong = {}
     for (p, _), v in theo_sp.items():
         tong[p] = tong.get(p, 0.0) + v

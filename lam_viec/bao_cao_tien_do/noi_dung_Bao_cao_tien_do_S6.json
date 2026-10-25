@@ -17,7 +17,7 @@
    "mo_phong": "du_lieu/mo_phong.json",
    "da": "dau_vao/du_an.json"
   },
-  "phien_ban": "0.1",
+  "phien_ban": "0.2",
   "ngay": "17/06/2027"
  },
  "blocks": [
@@ -176,7 +176,7 @@
   },
   {
    "t": "p",
-   "text": "Ngày hoàn thành dự báo theo SPI chỉ lệch ngày cut over một ngày, phần chênh do chuỗi kiểm thử đầu cuối bắt đầu muộn. Nhóm làm bù bằng quỹ sẵn sàng của các kỹ sư phát triển còn quỹ trong S7 và theo dõi dự trữ đến cut over hằng tuần theo kế hoạch quản lý rủi ro, chưa cần dùng dự phòng."
+   "text": "Ngày hoàn thành dự báo theo SPI 30/07/2027 sát ngày cut over 29/07/2027, phần chênh do chuỗi kiểm thử đầu cuối bắt đầu muộn. Nhóm làm bù bằng quỹ sẵn sàng của các kỹ sư phát triển còn quỹ trong S7 và theo dõi dự trữ đến cut over hằng tuần theo kế hoạch quản lý rủi ro, chưa cần dùng dự phòng."
   },
   {
    "text": "2. Giá trị thu được",

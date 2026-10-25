@@ -131,7 +131,7 @@ def khop_tong_hien_thi(vals, goc, f, ten_cot):
     Chênh lệch lớn hơn là sai dữ liệu: giữ nguyên và cảnh báo. Trả về (giá trị dòng đã định dạng, tổng)."""
     so_ = [float(v or 0) for v in vals]
     nhan = 100 if f in ('pt', 'pt1') else 1
-    le = 2 if f in ('md', 'md2') else 1
+    le = 2 if f in ('md', 'md2', 'mda') else 1
     moi = loi.khop_tong([v * nhan for v in so_], goc * nhan, le)
     if moi is None:
         print(f'CẢNH BÁO: cột {ten_cot} cộng {loi.so(sum(so_), le)}, khác tổng gốc {loi.so(goc, le)} quá sai số làm tròn, giữ nguyên số liệu')

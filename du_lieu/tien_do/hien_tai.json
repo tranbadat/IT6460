@@ -27,9 +27,9 @@
  "VAC_md": -3.75,
  "EAC": 1589487500,
  "tcpi": -0.0,
- "md_huy_dong": 908.0,
- "md_san_sang": 171.25,
- "ty_le_su_dung_quy": 0.8114,
+ "md_huy_dong": 921.0,
+ "md_san_sang": 184.25,
+ "ty_le_su_dung_quy": 0.7999,
  "BAC_thuc_nhan_su": 1327839441,
  "PV_thuc_nhan_su": 1327839441,
  "EV_thuc_nhan_su": 1327839441,
@@ -2236,18 +2236,18 @@
    "ke_hoach": 50.0,
    "thuc_te": 50.25,
    "chenh_lech": 0.25,
-   "huy_dong": 69.0,
-   "san_sang": 18.75,
-   "ty_le_su_dung": 0.7283
+   "huy_dong": 70.5,
+   "san_sang": 20.25,
+   "ty_le_su_dung": 0.7128
   },
   {
    "ho_ten": "Vũ Đức Minh",
    "ke_hoach": 58.0,
    "thuc_te": 57.5,
    "chenh_lech": -0.5,
-   "huy_dong": 71.0,
-   "san_sang": 13.5,
-   "ty_le_su_dung": 0.8099
+   "huy_dong": 72.0,
+   "san_sang": 14.5,
+   "ty_le_su_dung": 0.7986
   },
   {
    "ho_ten": "Ninh Đức Toàn",
@@ -2263,9 +2263,9 @@
    "ke_hoach": 72.5,
    "thuc_te": 73.25,
    "chenh_lech": 0.75,
-   "huy_dong": 83.0,
-   "san_sang": 9.75,
-   "ty_le_su_dung": 0.8825
+   "huy_dong": 84.0,
+   "san_sang": 10.75,
+   "ty_le_su_dung": 0.872
   },
   {
    "ho_ten": "Nguyễn Hoàng Nam",
@@ -2281,18 +2281,18 @@
    "ke_hoach": 67.5,
    "thuc_te": 67.0,
    "chenh_lech": -0.5,
-   "huy_dong": 85.0,
-   "san_sang": 18.0,
-   "ty_le_su_dung": 0.7882
+   "huy_dong": 86.0,
+   "san_sang": 19.0,
+   "ty_le_su_dung": 0.7791
   },
   {
    "ho_ten": "Đỗ Minh Quân",
    "ke_hoach": 64.0,
    "thuc_te": 64.25,
    "chenh_lech": 0.25,
-   "huy_dong": 77.0,
-   "san_sang": 12.75,
-   "ty_le_su_dung": 0.8344
+   "huy_dong": 78.0,
+   "san_sang": 13.75,
+   "ty_le_su_dung": 0.8237
   },
   {
    "ho_ten": "Bùi Anh Tuấn",
@@ -2308,27 +2308,27 @@
    "ke_hoach": 49.5,
    "thuc_te": 49.75,
    "chenh_lech": 0.25,
-   "huy_dong": 70.0,
-   "san_sang": 20.25,
-   "ty_le_su_dung": 0.7107
+   "huy_dong": 72.0,
+   "san_sang": 22.25,
+   "ty_le_su_dung": 0.691
   },
   {
    "ho_ten": "Phạm Ngọc Anh",
    "ke_hoach": 50.0,
    "thuc_te": 49.25,
    "chenh_lech": -0.75,
-   "huy_dong": 63.0,
-   "san_sang": 13.75,
-   "ty_le_su_dung": 0.7817
+   "huy_dong": 66.0,
+   "san_sang": 16.75,
+   "ty_le_su_dung": 0.7462
   },
   {
    "ho_ten": "Trương Quốc Việt",
    "ke_hoach": 58.5,
    "thuc_te": 58.75,
    "chenh_lech": 0.25,
-   "huy_dong": 62.0,
-   "san_sang": 3.25,
-   "ty_le_su_dung": 0.9476
+   "huy_dong": 64.5,
+   "san_sang": 5.75,
+   "ty_le_su_dung": 0.9109
   }
  ],
  "rui_ro": [
@@ -2662,7 +2662,7 @@
    "spi_hien_thi": "1,00",
    "cpi_hien_thi": "0,99",
    "cpi_thuc_hien_thi": "0,98",
-   "ty_le_su_dung_quy": 0.805,
+   "ty_le_su_dung_quy": 0.7948,
    "trang_thai_chung": "Xanh"
   },
   {
@@ -2677,7 +2677,7 @@
    "spi_hien_thi": "1,00",
    "cpi_hien_thi": "0,99",
    "cpi_thuc_hien_thi": "0,99",
-   "ty_le_su_dung_quy": 0.811,
+   "ty_le_su_dung_quy": 0.7995,
    "trang_thai_chung": "Xanh"
   },
   {
@@ -2692,7 +2692,7 @@
    "spi_hien_thi": "1,00",
    "cpi_hien_thi": "0,99",
    "cpi_thuc_hien_thi": "0,99",
-   "ty_le_su_dung_quy": 0.8114,
+   "ty_le_su_dung_quy": 0.7999,
    "trang_thai_chung": "Xanh"
   }
  ]

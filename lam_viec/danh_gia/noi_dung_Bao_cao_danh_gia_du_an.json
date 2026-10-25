@@ -15,7 +15,7 @@
    "mo_phong": "du_lieu/mo_phong.json",
    "da": "dau_vao/du_an.json"
   },
-  "phien_ban": "0.2",
+  "phien_ban": "0.3",
   "ngay": "12/08/2027"
  },
  "blocks": [
@@ -162,11 +162,11 @@
   },
   {
    "t": "p",
-   "text": "Đánh giá do nhóm dự án thực hiện sau ngày đóng dự án 12/08/2027, đầu mối Chủ đầu tư xác nhận kết quả nghiệm thu và các mốc. Bằng chứng gồm sổ mốc, nhật ký công việc, sổ lỗi, sổ vấn đề, sổ rủi ro, phiếu yêu cầu thay đổi, biên bản nghiệm thu và báo cáo tiến độ các kỳ, tổng hợp trong du_lieu/ket_thuc.json. Số liệu thực hiện là số liệu mô phỏng."
+   "text": "Đánh giá do nhóm dự án thực hiện sau khi dự án đóng ngày 04/08/2027 tại mốc M8, số liệu tổng hợp đến ngày 12/08/2027, đầu mối Chủ đầu tư xác nhận kết quả nghiệm thu và các mốc. Bằng chứng gồm sổ mốc, nhật ký công việc, sổ lỗi, sổ vấn đề, sổ rủi ro, phiếu yêu cầu thay đổi, biên bản nghiệm thu, báo cáo tiến độ các kỳ và bảng huy động bổ sung theo nhu cầu, tổng hợp trong du_lieu/ket_thuc.json. Số liệu thực hiện là số liệu mô phỏng."
   },
   {
    "t": "p",
-   "text": "Mỗi chỉ tiêu KPI so thực tế với ngưỡng đã khai báo, xếp loại theo tỷ lệ chỉ tiêu đạt. Không có ngưỡng KPI nào được ghi đè trong đánh giá này."
+   "text": "Kế hoạch dùng để so sánh là đường cơ sở BL2 sau phụ lục hợp đồng của yêu cầu thay đổi CR01, các cam kết theo hợp đồng gốc được đối chiếu với đường cơ sở BL1. Mỗi chỉ tiêu KPI so thực tế với ngưỡng đã khai báo, xếp loại theo tỷ lệ chỉ tiêu đạt, không có ngưỡng KPI nào được ghi đè."
   },
   {
    "text": "2. Kết quả theo bộ chỉ tiêu",
@@ -203,7 +203,7 @@
      "Tiến độ",
      "Chỉ số tiến độ SPI kỳ cuối",
      "Tối thiểu 0,95",
-     "1",
+     "1,00",
      "Đạt"
     ],
     [
@@ -258,7 +258,7 @@
      "K10",
      "Chất lượng",
      "Mật độ lỗi trên 10 MD thực tế",
-     "Tối đa 2 lỗi/10 MD",
+     "Tối đa 2,00 lỗi/10 MD",
      "0,75 lỗi/10 MD",
      "Đạt"
     ],
@@ -291,8 +291,8 @@
      "Chi phí",
      "Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động)",
      "Tối thiểu 80%",
-     "81,1%",
-     "Đạt"
+     "79,99%",
+     "Không đạt"
     ]
    ],
    "widths": [
@@ -331,7 +331,7 @@
      "Chi phí",
      "K04, K05, K14",
      "3",
-     "3"
+     "2"
     ],
     [
      "Phạm vi",
@@ -361,7 +361,7 @@
      "Tổng",
      "",
      "14",
-     "14"
+     "13"
     ]
    ],
    "widths": [
@@ -379,7 +379,7 @@
    "t": "table"
   },
   {
-   "text": "Tỷ lệ chỉ tiêu đạt 100% (14/14), xếp loại chung: Tốt.",
+   "text": "Tỷ lệ chỉ tiêu đạt 92,9% (13/14), xếp loại chung: Tốt.",
    "t": "p"
   },
   {
@@ -392,32 +392,32 @@
     ],
     [
      "K14 Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động)",
-     "Đạt sát ngưỡng: 81,1% so với Tối thiểu 80%",
-     "Huy động theo nhu cầu sát MD kế hoạch, các thành viên còn MD sẵn sàng ở S1 đến S4 khi chờ gói tiền nhiệm, phần dư được dùng làm bù ở S5 đến S7",
-     "Bảng huy động trong Cost estimate, nhật ký công việc, vấn đề VD13"
+     "Không đạt: 79,99% so với Tối thiểu 80%",
+     "Mức huy động theo sprint của S7 đến S9 được đặt sát MD kế hoạch. Các gói chậm cuối S7 (1.4.6, 1.4.9, 2.4.9, 4.5.3, 5.4.3) dồn sang S8 khi nhiều kiểm thử viên và kỹ sư phát triển đã hết quỹ, phải huy động bổ sung 13 MD ở S8, S9 để giữ mốc M4 và cut over. MD huy động thực tế tăng lên 921 MD trong khi một phần ngày huy động bổ sung không ghi công",
+     "Vấn đề VD13, VD14, bảng huy động bổ sung (dau_vao/thuc_te/huy_dong_bo_sung.json), nhật ký công việc S8, S9"
     ],
     [
      "K04 Chỉ số chi phí CPI kỳ cuối",
      "Đạt: 0,99, ngưỡng Tối thiểu 0,95",
-     "Công thực tế vượt kế hoạch nhẹ ở dịch vụ đổi trả 3.3.7 và sửa lỗi, tối ưu hiệu năng sau rủi ro RR06, bù lại bằng các gói dùng lại thành phần (4.4.1, 4.3.10, 3.4.11)",
-     "Báo cáo tiến độ các kỳ, kịch bản mô phỏng"
+     "Công thực tế vượt kế hoạch ở các gói đặc tả, thiết kế và dịch vụ đổi trả 3.3.7, bù một phần bằng các gói làm nhanh hơn kế hoạch nhờ dùng lại thành phần có sẵn: dịch vụ giả lập Main System 4.4.1, công cụ chuyển đổi dữ liệu 4.3.10, giao diện quản trị kênh sàn 5.3.7",
+     "Báo cáo tiến độ các kỳ, kịch bản mô phỏng S4 đến S7"
     ],
     [
      "K02 Tỷ lệ mốc đạt đúng hạn",
      "Đạt: 100%",
-     "Mọi mốc đạt trong hạn, mốc M4 đạt sau ngày dự kiến do khắc phục lỗi kiểm thử hệ thống 4.4.5, được giữ trong hạn nhờ huy động bổ sung ở S8",
+     "Mọi mốc đạt trong hạn của đường cơ sở BL2, mốc M4 đạt sau ngày dự kiến do khắc phục lỗi kiểm thử hệ thống 4.4.5, được giữ trong hạn nhờ huy động bổ sung ở S8",
      "Sổ mốc, biên bản M3, M4, M9, vấn đề VD13"
     ],
     [
      "K01 Đưa hệ thống vào vận hành (cut over) đúng hạn hợp đồng",
      "Đạt: 0 ngày làm việc",
-     "Cut over theo phụ lục hợp đồng của CR01, dự trữ đến cut over sau lập lại lịch được giữ đến cuối dự án",
+     "Cut over theo phụ lục hợp đồng của CR01, ngày 29/07/2027 thay cho 01/07/2027 của hợp đồng gốc, dự trữ đến cut over sau lập lại lịch được giữ đến cuối dự án",
      "Biên bản M6, phụ lục 01/2027/PL-ABCW"
     ],
     [
      "K13 Tác động thực tế của rủi ro so với dự phòng",
      "Đạt: 10,5%",
-     "Các rủi ro đã xảy ra có tác động nhỏ và được ứng phó sớm theo dấu hiệu",
+     "Các rủi ro đã xảy ra có tác động nhỏ và được ứng phó trong cùng sprint phát hiện",
      "Sổ rủi ro, vấn đề VD03, VD06, VD12"
     ]
    ],
@@ -442,6 +442,12 @@
      "Yêu cầu RFP",
      "Biên bản nghiệm thu",
      "Kết quả"
+    ],
+    [
+     "R02",
+     "Mục tiêu dự án: mở rộng khách hàng qua internet, tạo kênh bán hàng mới",
+     "NT22",
+     "Đạt"
     ],
     [
      "R03",
@@ -498,6 +504,12 @@
      "Đạt"
     ],
     [
+     "R12",
+     "Đưa hệ thống vào vận hành ngày 01/07",
+     "NT15",
+     "Đạt"
+    ],
+    [
      "R13",
      "Phạm vi: xây dựng hệ thống website bán hàng từ phân tích hệ thống đến kiểm thử vận hành",
      "NT14",
@@ -549,7 +561,7 @@
   },
   {
    "t": "p",
-   "text": "Toàn bộ 14 yêu cầu RFP thuộc phạm vi nghiệm thu đạt, 18 trên 18 tiêu chí nghiệm thu đạt ngay lần đầu, không có tiêu chí phải nghiệm thu lại và không còn yêu cầu chưa nghiệm thu."
+   "text": "Toàn bộ 16 yêu cầu RFP thuộc phạm vi nghiệm thu đạt, 22 trên 22 tiêu chí nghiệm thu đạt ngay lần đầu, không có tiêu chí phải nghiệm thu lại. Mục tiêu dự án mở kênh bán hàng qua internet (R02) và ngày đưa vào vận hành (R12, theo phụ lục) được nghiệm thu tại NT22 và NT15."
   },
   {
    "t": "p",
@@ -557,7 +569,11 @@
   },
   {
    "t": "p",
-   "text": "Các chức năng tìm kiếm (R06), quản lý thành viên (R07), đặt hàng (R08), Selling DB (R09), tích hợp Main System (R10) và nghiệp vụ vận chuyển (R11) đạt trong kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư. Sản phẩm bàn giao theo RFP gồm đặc tả (R44), quy trình vận hành mới (R46), cấu trúc Selling DB (R47) và sơ đồ menu (R48) được nghiệm thu khi bàn giao ngày 29/07/2027."
+   "text": "Các chức năng tìm kiếm (R06), quản lý thành viên (R07), đặt hàng (R08), Selling DB (R09), tích hợp Main System (R10) và nghiệp vụ vận chuyển (R11) đạt trong kiểm thử chấp nhận và kiểm thử vận hành cùng Chủ đầu tư. Sản phẩm bàn giao gồm đặc tả (R44), quy trình vận hành mới (R46), cấu trúc Selling DB (R47), sơ đồ menu (R48), hạng mục chuyển giao và hướng dẫn vận hành của Mẫu 01A được nghiệm thu tại mốc M7 (NT21). Cả 13 hạng mục của Mẫu 01A đều có tiêu chí đạt."
+  },
+  {
+   "t": "p",
+   "text": "Phạm vi bổ sung theo phụ lục của yêu cầu thay đổi CR01 được nghiệm thu tại mốc M9 theo 2 tiêu chí NT19, NT20, kết quả Đạt."
   },
   {
    "text": "4. Đánh giá quản lý thay đổi",
@@ -622,7 +638,7 @@
     ],
     [
      "Đánh giá tác động",
-     "Đánh giá MD tăng 76, chi phí, ngày cut over phải lùi và tiêu hao dự trữ trên đường găng bằng công cụ của nhóm",
+     "Đánh giá MD tăng 76, chi phí nội bộ 161.500.000 đồng, ngày cut over phải lùi và tiêu hao dự trữ trên đường găng",
      "Đạt, đánh giá ban đầu được cập nhật khi nhóm chọn cut over trong phụ lục"
     ],
     [
@@ -632,17 +648,17 @@
     ],
     [
      "Phụ lục hợp đồng khi đổi giá hoặc mốc",
-     "Phụ lục 01/2027/PL-ABCW ghi giá điều chỉnh, cut over mới, đợt thanh toán gắn mốc M9 và gia hạn bảo đảm thực hiện",
+     "Phụ lục 01/2027/PL-ABCW điều chỉnh giá thêm 199.024.682 đồng (giá hợp đồng từ 1.750.000.000 lên 1.949.024.682 đồng), cut over từ 01/07/2027 sang 29/07/2027 (lùi 20 ngày làm việc), đợt thanh toán gắn mốc M9 và gia hạn bảo đảm thực hiện",
      "Đạt"
     ],
     [
      "Cập nhật tài liệu và phiên bản",
-     "Các tài liệu kế hoạch được cập nhật thành đường cơ sở BL2, BL2 được lập lại cùng ngày sau khi sửa theo kiểm tra lớp B",
-     "Đạt một phần, tài liệu sau thay đổi nên qua kiểm tra lớp B trước khi lập đường cơ sở, quy trình đã được sửa"
+     "Các tài liệu kế hoạch được cập nhật thành đường cơ sở BL2, BL2 được lập lại cùng ngày sau khi sửa theo kiểm tra độc lập",
+     "Đạt một phần, tài liệu sau thay đổi nên qua kiểm tra độc lập trước khi lập đường cơ sở, quy trình đã được sửa"
     ],
     [
      "Kiểm soát thay đổi không chính thức",
-     "Không ghi nhận thay đổi phạm vi ngoài phiếu yêu cầu thay đổi, các điều chỉnh huy động trong S8, S9 là quyết định quản lý nguồn lực trong phạm vi đã duyệt",
+     "Không ghi nhận thay đổi phạm vi ngoài phiếu yêu cầu thay đổi, huy động bổ sung ở S8, S9 là quyết định quản lý nguồn lực trong phạm vi đã duyệt, ghi nguồn trong bảng huy động bổ sung",
      "Đạt"
     ]
    ],
@@ -938,27 +954,27 @@
     ],
     [
      "Mức độ nhận diện",
-     "3 rủi ro đã xảy ra RR02, RR04, RR06 đều có trong sổ, không có rủi ro mới ngoài sổ",
+     "3 rủi ro đe dọa đã xảy ra RR02, RR04, RR06 đều có trong sổ, không có rủi ro mới ngoài sổ. Hai cơ hội RR20, RR21 không xảy ra (RR21 đóng khi rà soát sổ sau phụ lục)",
      "Đạt"
     ],
     [
      "Độ chính xác đánh giá",
-     "Tác động thực tế 2,50 MD so với tổng EMV 47,60 MD, các rủi ro xảy ra có tác động thấp hơn mức đã đánh giá",
+     "Tác động thực tế 2,50 MD so với tổng EMV 47,60 MD. EMV thời gian của sổ tại đường cơ sở BL2 là 21,2 ngày, trên đường găng 9,0 ngày, trong khi tác động tiến độ thực tế chỉ là tài liệu Main System đến muộn (RR02) làm SPI xuống mức Vàng ở S3, S4, cut over vẫn đúng hạn",
      "Đạt, đánh giá thận trọng, EMV cao hơn thực tế"
     ],
     [
      "Hiệu quả phòng ngừa",
-     "19 rủi ro không xảy ra, các rủi ro kiểm thử chấp nhận và cut over (RR03, RR08, RR10) được phòng ngừa bằng kiểm thử sớm và diễn tập triển khai",
+     "19 rủi ro không xảy ra, các rủi ro đe dọa về kiểm thử chấp nhận và cut over (RR03, RR08, RR10) được phòng ngừa bằng kiểm thử sớm và diễn tập triển khai",
      "Đạt"
     ],
     [
      "Tính kịp thời của ứng phó",
-     "2 lần kích hoạt kế hoạch ứng phó theo dấu hiệu, RR06 được xử lý trong cùng sprint phát hiện",
-     "Đạt"
+     "RR06 kích hoạt kế hoạch ứng phó ngày 21/06/2027 (S7) khi dấu hiệu xuất hiện trong kiểm thử hiệu năng, tối ưu trong S7, đo lại đạt và đóng ngày 06/07/2027 (S8). RR02 được xử lý theo vấn đề VD04, VD06. RR04 xảy ra mà không có bước kích hoạt theo dấu hiệu, xử lý trực tiếp bằng vấn đề VD03",
+     "Đạt một phần, RR04 cần theo dõi dấu hiệu ngày có mặt trước sprint huy động"
     ],
     [
      "Mức dùng dự phòng",
-     "Tác động thực tế tương đương 10,5% dự phòng 50.000.000 đồng",
+     "Dự phòng 50.000.000 đồng thấp hơn tổng EMV 150.693.014 đồng theo quyết định của nhóm ngày 18/10/2026, EMV còn lại tại đường cơ sở BL2 là 115.413.014 đồng. Tác động thực tế tương đương 10,5% dự phòng",
      "Đạt"
     ]
    ],
@@ -985,15 +1001,15 @@
     ],
     [
      "Thời hạn đưa hệ thống vào vận hành",
-     "HSMT, E-ĐKCT và phụ lục hợp đồng 01/2027/PL-ABCW",
+     "HSMT, E-ĐKCT, BL1 cut over 01/07/2027, phụ lục 01/2027/PL-ABCW cut over 29/07/2027",
      "Cut over ngày 29/07/2027, đúng ngày theo phụ lục",
      "Đạt"
     ],
     [
      "Nhân sự chủ chốt",
      "HSDT, danh sách nhân sự chủ chốt",
-     "Không thay đổi nhân sự chủ chốt, vị trí bổ sung huy động theo kế hoạch và huy động bổ sung theo nhu cầu ở S8, S9",
-     "Đạt"
+     "Không thay đổi nhân sự chủ chốt. Kỹ sư phát triển chủ chốt Phạm Tuấn Anh không được huy động trong S7, S8 theo kế hoạch huy động BL2, việc tối ưu khi RR06 xảy ra giao Đỗ Minh Quân, phần chuyển đổi thử 4.5.3 phải huy động bổ sung ở S8",
+     "Đạt một phần"
     ],
     [
      "Phương pháp và kế hoạch thực hiện theo sprint",
@@ -1014,9 +1030,15 @@
      "Đạt một phần"
     ],
     [
+     "Hỗ trợ tăng cường sau cut over",
+     "HSDT (hỗ trợ tăng cường sau cut over), dời theo phụ lục",
+     "Hỗ trợ tăng cường từ 30/07/2027 đến 12/08/2027, giữ số ngày làm việc của cam kết, nằm trong chi phí bảo hành",
+     "Đạt"
+    ],
+    [
      "Bảo hành trách nhiệm sai sót",
-     "HSMT, E-ĐKCT, bảo hành 12 tháng",
-     "Nghĩa vụ bảo hành ghi nhận là cam kết chưa chi 40.000.000 đồng, thực hiện sau ngày đóng dự án",
+     "HSMT, E-ĐKCT, bảo hành 12 tháng, thời hạn phản hồi và khắc phục theo mức lỗi",
+     "Bảo hành từ 29/07/2027 đến 29/07/2028, nghĩa vụ ghi nhận là cam kết chưa chi 40.000.000 đồng, phản hồi và khắc phục theo mức lỗi đã thống nhất",
      "Đạt"
     ]
    ],
@@ -1036,16 +1058,20 @@
   },
   {
    "t": "p",
-   "text": "Dự án được xếp loại Tốt với 14 trên 14 chỉ tiêu KPI đạt. Điểm mạnh là cut over đúng ngày theo phụ lục dù có yêu cầu thay đổi lớn giữa dự án, nghiệm thu đạt ngay lần đầu và rủi ro được ứng phó sớm."
+   "text": "Dự án được xếp loại Tốt với 13 trên 14 chỉ tiêu KPI đạt, chỉ tiêu không đạt là K14 Tỷ lệ sử dụng nhân lực huy động (MD thực tế trên MD huy động). Điểm mạnh là cut over đúng ngày theo phụ lục dù có yêu cầu thay đổi lớn giữa dự án, nghiệm thu đạt ngay lần đầu và rủi ro được ứng phó sớm."
   },
   {
    "t": "p",
-   "text": "Hạn chế chính là huy động theo nhu cầu sát MD kế hoạch làm các sprint kiểm thử thiếu quỹ khi gói trước chậm, phải huy động bổ sung ở S8, S9, và đường cơ sở sau thay đổi được lập trước khi tài liệu qua kiểm tra lớp B."
+   "text": "Hạn chế chính là huy động theo nhu cầu sát MD kế hoạch làm các sprint kiểm thử thiếu quỹ khi gói trước chậm, phải huy động bổ sung ở S8, S9 và làm tỷ lệ sử dụng nhân lực huy động xuống dưới ngưỡng, đồng thời đường cơ sở sau thay đổi được lập trước khi tài liệu qua kiểm tra độc lập."
   },
   {
    "t": "p",
-   "text": "Kiến nghị nhóm dự án lập mức huy động của các sprint kiểm thử có phần dư cho làm bù, kiểm tra lớp B mọi tài liệu sau thay đổi trước khi đặt đường cơ sở. Kiến nghị Chủ đầu tư duy trì đầu mối tiếp nhận yêu cầu bảo hành và xác nhận biên bản nghiệm thu tổng thể để thanh toán các đợt còn lại."
+   "text": "Kiến nghị nhóm dự án lập mức huy động của các sprint kiểm thử có phần dư cho làm bù và theo dõi số MD huy động bổ sung cùng chỉ tiêu K14, rà soát độc lập mọi tài liệu sau thay đổi trước khi đặt đường cơ sở, xác nhận ngày có mặt của vị trí bổ sung trước mỗi sprint huy động. Kiến nghị Chủ đầu tư duy trì đầu mối tiếp nhận yêu cầu bảo hành và xác nhận biên bản nghiệm thu tổng thể để thanh toán các đợt còn lại."
   }
  ],
- "canh_bao_soan": []
+ "canh_bao_soan": [
+  "RUI_RO: số liệu viết tay \"06/07/2027\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi",
+  "RUI_RO: số liệu viết tay \"18/10/2026\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi",
+  "RUI_RO: số liệu viết tay \"21/06/2027\", nên dùng tham chiếu dữ liệu để tự cập nhật khi có thay đổi"
+ ]
 }

@@ -27,9 +27,9 @@
  "VAC_md": -4.75,
  "EAC": 1591729390,
  "tcpi": 1.0569,
- "md_huy_dong": 818.0,
- "md_san_sang": 159.5,
- "ty_le_su_dung_quy": 0.805,
+ "md_huy_dong": 828.5,
+ "md_san_sang": 170.0,
+ "ty_le_su_dung_quy": 0.7948,
  "BAC_thuc_nhan_su": 1327839441,
  "PV_thuc_nhan_su": 1191005932,
  "EV_thuc_nhan_su": 1173648315,
@@ -2081,18 +2081,18 @@
    "ke_hoach": 45.0,
    "thuc_te": 45.25,
    "chenh_lech": 0.25,
-   "huy_dong": 63.0,
-   "san_sang": 17.75,
-   "ty_le_su_dung": 0.7183
+   "huy_dong": 64.5,
+   "san_sang": 19.25,
+   "ty_le_su_dung": 0.7016
   },
   {
    "ho_ten": "Vũ Đức Minh",
    "ke_hoach": 54.0,
    "thuc_te": 53.5,
    "chenh_lech": -0.5,
-   "huy_dong": 66.0,
-   "san_sang": 12.5,
-   "ty_le_su_dung": 0.8106
+   "huy_dong": 67.0,
+   "san_sang": 13.5,
+   "ty_le_su_dung": 0.7985
   },
   {
    "ho_ten": "Ninh Đức Toàn",
@@ -2108,9 +2108,9 @@
    "ke_hoach": 67.0,
    "thuc_te": 67.75,
    "chenh_lech": 0.75,
-   "huy_dong": 76.0,
-   "san_sang": 8.25,
-   "ty_le_su_dung": 0.8914
+   "huy_dong": 77.0,
+   "san_sang": 9.25,
+   "ty_le_su_dung": 0.8799
   },
   {
    "ho_ten": "Nguyễn Hoàng Nam",
@@ -2126,18 +2126,18 @@
    "ke_hoach": 59.5,
    "thuc_te": 59.0,
    "chenh_lech": -0.5,
-   "huy_dong": 76.0,
-   "san_sang": 17.0,
-   "ty_le_su_dung": 0.7763
+   "huy_dong": 77.0,
+   "san_sang": 18.0,
+   "ty_le_su_dung": 0.7662
   },
   {
    "ho_ten": "Đỗ Minh Quân",
    "ke_hoach": 54.0,
    "thuc_te": 54.25,
    "chenh_lech": 0.25,
-   "huy_dong": 67.0,
-   "san_sang": 12.75,
-   "ty_le_su_dung": 0.8097
+   "huy_dong": 68.0,
+   "san_sang": 13.75,
+   "ty_le_su_dung": 0.7978
   },
   {
    "ho_ten": "Bùi Anh Tuấn",
@@ -2153,18 +2153,18 @@
    "ke_hoach": 44.0,
    "thuc_te": 44.25,
    "chenh_lech": 0.25,
-   "huy_dong": 63.0,
-   "san_sang": 18.75,
-   "ty_le_su_dung": 0.7024
+   "huy_dong": 65.0,
+   "san_sang": 20.75,
+   "ty_le_su_dung": 0.6808
   },
   {
    "ho_ten": "Phạm Ngọc Anh",
    "ke_hoach": 42.0,
    "thuc_te": 41.5,
    "chenh_lech": -0.5,
-   "huy_dong": 54.0,
-   "san_sang": 12.5,
-   "ty_le_su_dung": 0.7685
+   "huy_dong": 57.0,
+   "san_sang": 15.5,
+   "ty_le_su_dung": 0.7281
   },
   {
    "ho_ten": "Trương Quốc Việt",
@@ -2280,7 +2280,7 @@
    "trang_thai_hien_thi": "Đang xử lý",
    "qua_han": false,
    "so_hanh_dong": 1,
-   "so_hanh_dong_xong": 0,
+   "so_hanh_dong_xong": 1,
    "ket_qua": "",
    "nguoi_dong": "",
    "ngay_dong": "",
@@ -2309,7 +2309,7 @@
    "trang_thai": "Đang thực hiện",
    "trang_thai_hien_thi": "Đang thực hiện",
    "qua_han": false,
-   "bang_chung": "",
+   "bang_chung": "Cấu hình kết nối sàn trên môi trường vận hành ngày 19/07/2027",
    "ngay_xong": ""
   }
  ],
@@ -2465,7 +2465,7 @@
    "spi_hien_thi": "1,00",
    "cpi_hien_thi": "0,99",
    "cpi_thuc_hien_thi": "0,98",
-   "ty_le_su_dung_quy": 0.805,
+   "ty_le_su_dung_quy": 0.7948,
    "trang_thai_chung": "Xanh"
   }
  ]

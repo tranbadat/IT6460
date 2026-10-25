@@ -90,8 +90,8 @@
    "ten_vai_tro": "Kỹ sư backend",
    "md_ke_hoach": 50.0,
    "md_thuc_te": 50.25,
-   "md_huy_dong": 69.0,
-   "md_san_sang": 18.75,
+   "md_huy_dong": 70.5,
+   "md_san_sang": 20.25,
    "chenh_lech_md": 0.25,
    "ty_trong_dong_gop": 0.0682,
    "ngay_tinh_luong": 50.25,
@@ -141,7 +141,7 @@
     {
      "sprint": "S8",
      "md": 1.0,
-     "md_huy_dong": 0.0
+     "md_huy_dong": 1.5
     },
     {
      "sprint": "S9",
@@ -164,8 +164,8 @@
    "ten_vai_tro": "Kỹ sư frontend",
    "md_ke_hoach": 58.0,
    "md_thuc_te": 57.5,
-   "md_huy_dong": 71.0,
-   "md_san_sang": 13.5,
+   "md_huy_dong": 72.0,
+   "md_san_sang": 14.5,
    "chenh_lech_md": -0.5,
    "ty_trong_dong_gop": 0.078,
    "ngay_tinh_luong": 57.5,
@@ -215,7 +215,7 @@
     {
      "sprint": "S8",
      "md": 3.25,
-     "md_huy_dong": 3.0
+     "md_huy_dong": 4.0
     },
     {
      "sprint": "S9",
@@ -312,8 +312,8 @@
    "ten_vai_tro": "Phân tích nghiệp vụ, kiểm thử",
    "md_ke_hoach": 72.5,
    "md_thuc_te": 73.25,
-   "md_huy_dong": 83.0,
-   "md_san_sang": 9.75,
+   "md_huy_dong": 84.0,
+   "md_san_sang": 10.75,
    "chenh_lech_md": 0.75,
    "ty_trong_dong_gop": 0.0994,
    "ngay_tinh_luong": 73.25,
@@ -363,7 +363,7 @@
     {
      "sprint": "S8",
      "md": 4.0,
-     "md_huy_dong": 5.0
+     "md_huy_dong": 6.0
     },
     {
      "sprint": "S9",
@@ -460,8 +460,8 @@
    "ten_vai_tro": "Kỹ sư backend",
    "md_ke_hoach": 67.5,
    "md_thuc_te": 67.0,
-   "md_huy_dong": 85.0,
-   "md_san_sang": 18.0,
+   "md_huy_dong": 86.0,
+   "md_san_sang": 19.0,
    "chenh_lech_md": -0.5,
    "ty_trong_dong_gop": 0.0909,
    "ngay_tinh_luong": 67.0,
@@ -511,7 +511,7 @@
     {
      "sprint": "S8",
      "md": 2.0,
-     "md_huy_dong": 3.0
+     "md_huy_dong": 4.0
     },
     {
      "sprint": "S9",
@@ -534,8 +534,8 @@
    "ten_vai_tro": "Kỹ sư backend",
    "md_ke_hoach": 64.0,
    "md_thuc_te": 64.25,
-   "md_huy_dong": 77.0,
-   "md_san_sang": 12.75,
+   "md_huy_dong": 78.0,
+   "md_san_sang": 13.75,
    "chenh_lech_md": 0.25,
    "ty_trong_dong_gop": 0.0872,
    "ngay_tinh_luong": 64.25,
@@ -585,7 +585,7 @@
     {
      "sprint": "S8",
      "md": 4.0,
-     "md_huy_dong": 4.0
+     "md_huy_dong": 5.0
     },
     {
      "sprint": "S9",
@@ -682,8 +682,8 @@
    "ten_vai_tro": "Kỹ sư kiểm thử",
    "md_ke_hoach": 49.5,
    "md_thuc_te": 49.75,
-   "md_huy_dong": 70.0,
-   "md_san_sang": 20.25,
+   "md_huy_dong": 72.0,
+   "md_san_sang": 22.25,
    "chenh_lech_md": 0.25,
    "ty_trong_dong_gop": 0.0675,
    "ngay_tinh_luong": 49.75,
@@ -733,7 +733,7 @@
     {
      "sprint": "S8",
      "md": 2.0,
-     "md_huy_dong": 2.0
+     "md_huy_dong": 4.0
     },
     {
      "sprint": "S9",
@@ -756,8 +756,8 @@
    "ten_vai_tro": "Kỹ sư kiểm thử",
    "md_ke_hoach": 50.0,
    "md_thuc_te": 49.25,
-   "md_huy_dong": 63.0,
-   "md_san_sang": 13.75,
+   "md_huy_dong": 66.0,
+   "md_san_sang": 16.75,
    "chenh_lech_md": -0.75,
    "ty_trong_dong_gop": 0.0668,
    "ngay_tinh_luong": 49.25,
@@ -807,7 +807,7 @@
     {
      "sprint": "S8",
      "md": 5.0,
-     "md_huy_dong": 2.0
+     "md_huy_dong": 5.0
     },
     {
      "sprint": "S9",
@@ -830,8 +830,8 @@
    "ten_vai_tro": "Kỹ sư backend",
    "md_ke_hoach": 58.5,
    "md_thuc_te": 58.75,
-   "md_huy_dong": 62.0,
-   "md_san_sang": 3.25,
+   "md_huy_dong": 64.5,
+   "md_san_sang": 5.75,
    "chenh_lech_md": 0.25,
    "ty_trong_dong_gop": 0.0797,
    "ngay_tinh_luong": 58.75,
@@ -886,7 +886,7 @@
     {
      "sprint": "S9",
      "md": 8.0,
-     "md_huy_dong": 6.0
+     "md_huy_dong": 8.5
     },
     {
      "sprint": "KT",
@@ -900,8 +900,8 @@
  "tong": {
   "md_ke_hoach": 733.0,
   "md_thuc_te": 736.75,
-  "md_huy_dong": 908.0,
-  "md_san_sang": 171.25,
+  "md_huy_dong": 921.0,
+  "md_san_sang": 184.25,
   "luong": 1082079545,
   "bao_hiem": 254288693,
   "chi_phi": 1336368239,
@@ -917,7 +917,7 @@
   "chenh_chi_phi": 8528799,
   "chi_phi_theo_md_ke_hoach": 1327839440,
   "chi_phi_luong_cost_estimate": 1327839441.0,
-  "ty_le_su_dung_huy_dong": 0.8114,
+  "ty_le_su_dung_huy_dong": 0.7999,
   "he_so_bao_hiem": 1.235,
   "ngay_lam_viec_moi_thang": 22.0
  },
@@ -983,7 +983,7 @@
    "tu": "2027-07-02",
    "den": "2027-07-15",
    "md": 48.0,
-   "md_huy_dong": 53.0,
+   "md_huy_dong": 63.5,
    "luong": 74943182
   },
   {
@@ -991,7 +991,7 @@
    "tu": "2027-07-16",
    "den": "2027-07-29",
    "md": 76.25,
-   "md_huy_dong": 88.0,
+   "md_huy_dong": 90.5,
    "luong": 107136364
   },
   {

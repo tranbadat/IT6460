@@ -523,7 +523,7 @@
    }
   },
   {
-   "doan": "Nhật ký chạy ghi {pb#so_lan_chay} lần chạy, trong đó {pb#so_lan_agent} lần do agent thực hiện. Chi tiết prompt, đầu vào, đầu ra và băm nội dung của từng lần chạy ở Phụ lục bằng chứng prompt và skill."
+   "doan": "Nhật ký chạy ghi {pb#so_lan_chay} lần chạy, trong đó {pb#so_lan_agent} lần do agent thực hiện và {pb#so_lan_nguoi_dung} lần do người dùng ghi (quyết định, phụ lục, kiểm tra đạt), còn lại là script. Chi tiết prompt, đầu vào, đầu ra và băm nội dung của từng lần chạy ở Phụ lục bằng chứng prompt và skill."
   },
   {
    "bang": {

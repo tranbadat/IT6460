@@ -12,7 +12,7 @@
    "nt": "dau_vao/nha_thau.json",
    "da": "dau_vao/du_an.json"
   },
-  "phien_ban": "0.11",
+  "phien_ban": "0.13",
   "ngay": "12/08/2027"
  },
  "blocks": [
@@ -106,15 +106,15 @@
   },
   {
    "t": "p",
-   "text": "Tài liệu áp dụng cho 30 tài liệu nộp trong thư mục ket_qua và 12 tệp dữ liệu chuẩn trong thư mục du_lieu do công cụ tính. Mỗi tài liệu được gán mã từ TL01 đến TL30, ghi phiên bản, trạng thái, ngày cập nhật và người lập trong sổ phiên bản. Tính đến ngày tổng hợp, sổ ghi nhận 295 phiên bản tài liệu, tính cả các tài liệu lưu trữ, và 0 tài liệu cần cập nhật theo đầu vào."
+   "text": "Tài liệu áp dụng cho 30 tài liệu nộp trong thư mục ket_qua và 12 tệp dữ liệu chuẩn trong thư mục du_lieu do công cụ tính. Mỗi tài liệu được gán mã từ TL01 đến TL30, ghi phiên bản, trạng thái, ngày cập nhật và người lập trong sổ phiên bản. Tính đến ngày tổng hợp, sổ ghi nhận 307 phiên bản tài liệu, tính cả các tài liệu lưu trữ, và 0 tài liệu cần cập nhật theo đầu vào."
   },
   {
    "t": "p",
-   "text": "Ngoài danh mục trên, sổ giữ 13 tài liệu lưu trữ là WBS_1_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx, WBS_1_Quan_ly_du_an.docx, WBS_2_Phan_he_thanh_vien_Member_Administration.docx, WBS_2_Phan_tich_va_thiet_ke_chung.docx, WBS_3_Phan_he_dat_hang_Order.docx, WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.docx, WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx, WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.docx, WBS_4_Phan_he_thanh_vien_Member_Administration.docx, WBS_5_Phan_he_dat_hang_Order.docx, WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx, WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx, WBS_8_Trien_khai_va_chuyen_giao.docx. Đây là các tệp WBS của các cấu trúc phân rã trước và các tệp tạm mang tên phân hệ theo RFP (đã hoàn tác, giữ tên phân hệ theo quyết định của nhóm ngày 24/10/2026), đã được thay bằng WBS hiện hành gồm bốn phân hệ và chuyển khỏi ket_qua/03_WBS sang lam_viec/tai_lieu_wbs/cu_351md/, lam_viec/tai_lieu_wbs/cu_8nhom/ và lam_viec/tai_lieu_wbs/cu_ten_phan_he/, lịch sử phiên bản của các tệp này vẫn được giữ trong sổ để truy vết."
+   "text": "Ngoài danh mục trên, sổ giữ 13 tài liệu lưu trữ là WBS_1_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx, WBS_1_Quan_ly_du_an.docx, WBS_2_Phan_he_thanh_vien_Member_Administration.docx, WBS_2_Phan_tich_va_thiet_ke_chung.docx, WBS_3_Phan_he_dat_hang_Order.docx, WBS_3_Phan_he_tim_kiem_san_pham_Product_Search.docx, WBS_3_Phan_he_tim_kiem_va_hien_thi_san_pham_Product_Search.docx, WBS_4_Phan_he_quan_ly_thanh_vien_Member_Administration.docx, WBS_4_Phan_he_thanh_vien_Member_Administration.docx, WBS_5_Phan_he_dat_hang_Order.docx, WBS_6_Co_so_du_lieu_ban_hang_va_tich_hop_he_thong.docx, WBS_7_Kiem_thu_he_thong_va_kiem_thu_van_hanh.docx, WBS_8_Trien_khai_va_chuyen_giao.docx. Đây là các tệp WBS của các cấu trúc phân rã trước và các tệp tạm mang tên phân hệ theo RFP (đã hoàn tác, giữ tên phân hệ theo quyết định của nhóm ngày 24/10/2026), đã được thay bằng WBS hiện hành gồm bốn phân hệ và chuyển khỏi thư mục tài liệu nộp sang thư mục lưu trữ của bước WBS, lịch sử phiên bản của các tệp này vẫn được giữ trong sổ để truy vết. Hai tệp của chính bước quản lý phiên bản (sổ phiên bản Excel và tài liệu này) được đăng ký phiên bản trong sổ nhưng không xếp mã TL."
   },
   {
    "t": "p",
-   "text": "Người lập Trần Bá Đạt đồng thời giữ vai trò quản lý cấu hình, chịu trách nhiệm chạy công cụ đăng ký phiên bản, cập nhật trạng thái sau kiểm tra và lập đường cơ sở. Tài liệu kế hoạch và hồ sơ dự thầu do người đại diện của nhà thầu Lê Quốc Bảo phê duyệt phía nhà thầu, Chủ đầu tư phê duyệt các tài liệu thuộc đường cơ sở hợp đồng. Toàn bộ tài liệu được lưu trong kho lưu trữ của dự án (git, thư mục dự án này), thành viên nhóm truy cập qua kho git, bản đầy đủ của sổ phiên bản ở tệp So_phien_ban.xlsx."
+   "text": "Người lập Trần Bá Đạt đồng thời giữ vai trò quản lý cấu hình, chịu trách nhiệm chạy công cụ đăng ký phiên bản, cập nhật trạng thái sau kiểm tra và lập đường cơ sở. Tài liệu kế hoạch và hồ sơ dự thầu do người đại diện của nhà thầu Lê Quốc Bảo phê duyệt phía nhà thầu, Chủ đầu tư phê duyệt các tài liệu thuộc đường cơ sở hợp đồng. Toàn bộ tài liệu được lưu trong kho lưu trữ của dự án (git, thư mục dự án này), thành viên nhóm truy cập qua kho git, bản đầy đủ của sổ phiên bản ở sổ phiên bản Excel kèm theo tài liệu này."
   },
   {
    "text": "2. Quy ước",
@@ -414,7 +414,7 @@
      "TL16",
      "Báo cáo tiến độ KT",
      "Bao_cao_tien_do_KT.docx",
-     "0.1",
+     "0.2",
      "12/08/2027",
      "R9",
      "Dự thảo"
@@ -468,7 +468,7 @@
      "TL22",
      "Báo cáo tiến độ S6",
      "Bao_cao_tien_do_S6.docx",
-     "0.1",
+     "0.2",
      "17/06/2027",
      "R6",
      "Dự thảo"
@@ -486,7 +486,7 @@
      "TL24",
      "Báo cáo tiến độ S8",
      "Bao_cao_tien_do_S8.docx",
-     "0.1",
+     "0.2",
      "15/07/2027",
      "R8",
      "Dự thảo"
@@ -495,7 +495,7 @@
      "TL25",
      "Báo cáo tiến độ S9",
      "Bao_cao_tien_do_S9.docx",
-     "0.1",
+     "0.2",
      "29/07/2027",
      "R9",
      "Dự thảo"
@@ -504,7 +504,7 @@
      "TL26",
      "Báo cáo tổng kết dự án",
      "Bao_cao_tong_ket_du_an.docx",
-     "0.2",
+     "0.5",
      "12/08/2027",
      "R9",
      "Dự thảo"
@@ -513,7 +513,7 @@
      "TL27",
      "Báo cáo đánh giá dự án",
      "Bao_cao_danh_gia_du_an.docx",
-     "0.2",
+     "0.3",
      "12/08/2027",
      "R9",
      "Dự thảo"
@@ -522,7 +522,7 @@
      "TL28",
      "Báo cáo bài học kinh nghiệm",
      "Bao_cao_bai_hoc_kinh_nghiem.docx",
-     "0.3",
+     "0.4",
      "12/08/2027",
      "R9",
      "Dự thảo"
@@ -531,7 +531,7 @@
      "TL29",
      "Bảng phân chia lương",
      "Bang_phan_chia_luong.xlsx",
-     "0.2",
+     "0.3",
      "12/08/2027",
      "R9",
      "Dự thảo"
@@ -540,9 +540,9 @@
      "TL30",
      "Phụ lục bằng chứng prompt và skill",
      "Phu_luc_bang_chung_prompt_skill.docx",
-     "0.2",
-     "18/10/2026",
-     "",
+     "0.4",
+     "12/08/2027",
+     "R9",
      "Dự thảo"
     ]
    ],
@@ -570,7 +570,7 @@
    "t": "p"
   },
   {
-   "text": "Số tài liệu: 30, tổng số phiên bản tài liệu đã đăng ký: 295, số tài liệu cần cập nhật theo đầu vào mới: 0.",
+   "text": "Số tài liệu: 30, tổng số phiên bản tài liệu đã đăng ký: 307, số tài liệu cần cập nhật theo đầu vào mới: 0.",
    "t": "p"
   },
   {
@@ -599,7 +599,7 @@
      "Ký hợp đồng",
      "Chưa có",
      "14",
-     ""
+     "Trần Bá Đạt"
     ],
     [
      "BL2",
@@ -901,7 +901,11 @@
   },
   {
    "t": "p",
-   "text": "Đường cơ sở BL2 (Đường cơ sở sau yêu cầu thay đổi CR01) lập ngày 27/05/2027 theo yêu cầu thay đổi CR01 đã phê duyệt bằng phụ lục hợp đồng, tại bản phát hành R4. Đường cơ sở gồm các tài liệu kế hoạch đã cập nhật theo phụ lục, tài liệu WBS mới của phần bán hàng trên sàn thương mại điện tử, hồ sơ mời thầu và hồ sơ dự thầu giữ phiên bản khóa của hợp đồng. Đường cơ sở này được lập lại cùng ngày sau khi các tài liệu được sửa theo kiểm tra lớp B: bản lập trước chuyển vào danh sách đường cơ sở đã thay, các phiên bản cũ vẫn giữ trong sổ, phiên bản mới giữ số chính của bản trước và tăng số phụ, lý do lập lại ghi trong sổ phiên bản."
+   "text": "Đường cơ sở BL2 (Đường cơ sở sau yêu cầu thay đổi CR01) lập ngày 27/05/2027 theo yêu cầu thay đổi CR01 đã phê duyệt bằng phụ lục hợp đồng, tại bản phát hành R4. Đường cơ sở gồm các tài liệu kế hoạch đã cập nhật theo phụ lục, tài liệu WBS mới của phần bán hàng trên sàn thương mại điện tử, hồ sơ mời thầu và hồ sơ dự thầu giữ phiên bản khóa của hợp đồng."
+  },
+  {
+   "t": "p",
+   "text": "Đường cơ sở BL2 đã qua hai lần làm lại. Lần thứ nhất, khi nhóm quyết định lại ngày cut over của phụ lục và cách huy động, bản BL2 lập lần đầu cùng các phiên bản đăng ký sau kỳ S3 được bỏ khỏi sổ, sổ trước khi làm lại được lưu riêng trong thư mục lưu trữ của yêu cầu thay đổi. Lần thứ hai, sau khi các tài liệu được sửa theo kiểm tra độc lập, đường cơ sở được lập lại cùng ngày: bản lập trước (15 tài liệu) chuyển vào danh sách đường cơ sở đã thay với lý do ghi trong sổ, các phiên bản cũ vẫn giữ, phiên bản mới giữ số chính của bản trước và tăng số phụ. Sổ phiên bản Excel (sheet Duong_co_so) ghi các lần làm lại và bảng đường cơ sở đã thay gồm thời điểm lập, thời điểm thay và phiên bản."
   },
   {
    "t": "p",
@@ -999,7 +1003,7 @@
      "6",
      "4",
      "CR01",
-     "1"
+     "2"
     ],
     [
      "R7",
@@ -1023,7 +1027,7 @@
      "8",
      "2",
      "CR01",
-     "1"
+     "2"
     ],
     [
      "R9",
@@ -1035,7 +1039,7 @@
      "10",
      "4",
      "CR01",
-     "11"
+     "21"
     ]
    ],
    "widths": [
@@ -1312,7 +1316,7 @@
      "Master schedule",
      "Dự thảo",
      "",
-     "Lập lại kế hoạch 657 MD theo quyết định nhóm 17-18/10/2026: uoc_luong 657 MD, huy động sớm (D1, D2, D3, Q1 từ S2; Q2, D4 từ S3)"
+     "Lập lại kế hoạch 657 MD theo quyết định nhóm 17-18/10/2026: uoc_luong 657 MD, huy động sớm (D1, D2, D3, Q1 từ S2, Q2, D4 từ S3)"
     ],
     [
      "Master_schedule.xlsx",
@@ -1332,7 +1336,7 @@
      "Master schedule",
      "Đã kiểm tra",
      "",
-     "Quyết định nhóm 18/10/2026: D4 xác nhận họ tên, phương án dự trữ thời gian chấp nhận và báo Chủ đầu tư, vốn lưu động 500 triệu; sửa căn cứ ước lượng nhóm 6, 7"
+     "Quyết định nhóm 18/10/2026: D4 xác nhận họ tên, phương án dự trữ thời gian chấp nhận và báo Chủ đầu tư, vốn lưu động 500 triệu, sửa căn cứ ước lượng nhóm 6, 7"
     ],
     [
      "Master_schedule.xlsx",
@@ -2662,7 +2666,7 @@
      "Cost estimate",
      "Dự thảo",
      "",
-     "Lập lại kế hoạch 657 MD theo quyết định nhóm 17-18/10/2026: uoc_luong 657 MD, huy động sớm (D1, D2, D3, Q1 từ S2; Q2, D4 từ S3)"
+     "Lập lại kế hoạch 657 MD theo quyết định nhóm 17-18/10/2026: uoc_luong 657 MD, huy động sớm (D1, D2, D3, Q1 từ S2, Q2, D4 từ S3)"
     ],
     [
      "Cost_estimate.xlsx",
@@ -2882,7 +2886,7 @@
      "Cost estimate",
      "Dự thảo",
      "",
-     "Lập lại kế hoạch 657 MD theo quyết định nhóm 17-18/10/2026: uoc_luong 657 MD, huy động sớm (D1, D2, D3, Q1 từ S2; Q2, D4 từ S3)"
+     "Lập lại kế hoạch 657 MD theo quyết định nhóm 17-18/10/2026: uoc_luong 657 MD, huy động sớm (D1, D2, D3, Q1 từ S2, Q2, D4 từ S3)"
     ],
     [
      "Thuyet_minh_du_toan.docx",
@@ -2892,7 +2896,7 @@
      "Cost estimate",
      "Dự thảo",
      "",
-     "Lập lại theo 657 MD; quyết định nhóm: dự phòng 50 triệu, vốn lưu động 500 triệu, giữ dự trữ 4 ngày"
+     "Lập lại theo 657 MD, quyết định nhóm: dự phòng 50 triệu, vốn lưu động 500 triệu, giữ dự trữ 4 ngày"
     ],
     [
      "Thuyet_minh_du_toan.docx",
@@ -3062,7 +3066,7 @@
      "Hồ sơ dự thầu",
      "Đã kiểm tra",
      "",
-     "Sửa MH01, MH04, MH08 lớp B vòng 1; giải trình MH02, MH03, MH05, MH07"
+     "Sửa MH01, MH04, MH08 lớp B vòng 1, giải trình MH02, MH03, MH05, MH07"
     ],
     [
      "HSDT.docx",
@@ -3212,7 +3216,7 @@
      "Risk management plan",
      "Đã kiểm tra",
      "",
-     "Lập lại theo 657 MD; quyết định nhóm: giữ dự trữ 4 ngày, chấp nhận và báo Chủ đầu tư, dự phòng 50 triệu"
+     "Lập lại theo 657 MD, quyết định nhóm: giữ dự trữ 4 ngày, chấp nhận và báo Chủ đầu tư, dự phòng 50 triệu"
     ],
     [
      "Ke_hoach_quan_ly_rui_ro.docx",
@@ -3795,6 +3799,16 @@
      "Kỳ KT, số liệu mô phỏng"
     ],
     [
+     "Bao_cao_tien_do_KT.docx",
+     "0.2",
+     "12/08/2027",
+     "25/10/2026 18:33",
+     "Báo cáo tiến độ",
+     "Dự thảo",
+     "R9",
+     "Kỳ KT, số liệu mô phỏng, tính huy động thực tế gồm huy động bổ sung theo nhu cầu"
+    ],
+    [
      "Bao_cao_tien_do_S1.docx",
      "0.1",
      "31/03/2027",
@@ -3975,6 +3989,16 @@
      "Kỳ S6, số liệu mô phỏng"
     ],
     [
+     "Bao_cao_tien_do_S6.docx",
+     "0.2",
+     "17/06/2027",
+     "25/10/2026 18:21",
+     "Báo cáo tiến độ",
+     "Dự thảo",
+     "R6",
+     "Kỳ S6, số liệu mô phỏng, sửa sau đường cơ sở BL2: ngày dự báo viết bằng tham chiếu dữ liệu"
+    ],
+    [
      "Bao_cao_tien_do_S7.docx",
      "0.1",
      "01/07/2027",
@@ -4005,6 +4029,16 @@
      "Kỳ S8, số liệu mô phỏng"
     ],
     [
+     "Bao_cao_tien_do_S8.docx",
+     "0.2",
+     "15/07/2027",
+     "25/10/2026 18:33",
+     "Báo cáo tiến độ",
+     "Dự thảo",
+     "R8",
+     "Kỳ S8, số liệu mô phỏng, tính huy động thực tế gồm huy động bổ sung theo nhu cầu"
+    ],
+    [
      "Bao_cao_tien_do_S9.docx",
      "0.1",
      "29/07/2027",
@@ -4015,6 +4049,16 @@
      "Kỳ S9, số liệu mô phỏng"
     ],
     [
+     "Bao_cao_tien_do_S9.docx",
+     "0.2",
+     "29/07/2027",
+     "25/10/2026 18:33",
+     "Báo cáo tiến độ",
+     "Dự thảo",
+     "R9",
+     "Kỳ S9, số liệu mô phỏng, tính huy động thực tế gồm huy động bổ sung theo nhu cầu"
+    ],
+    [
      "Bao_cao_tong_ket_du_an.docx",
      "0.1",
      "12/08/2027",
@@ -4035,6 +4079,36 @@
      "Tổng kết dự án, số liệu mô phỏng"
     ],
     [
+     "Bao_cao_tong_ket_du_an.docx",
+     "0.3",
+     "12/08/2027",
+     "25/10/2026 18:36",
+     "Báo cáo tổng kết dự án",
+     "Dự thảo",
+     "R9",
+     "Sửa sau kiểm tra lớp B lượt 1: huy động thực tế, nghiệm thu hạng mục 12 và CR01, cơ sở BL1 và BL2, ngày đóng dự án"
+    ],
+    [
+     "Bao_cao_tong_ket_du_an.docx",
+     "0.4",
+     "12/08/2027",
+     "25/10/2026 18:36",
+     "Báo cáo tổng kết dự án",
+     "Dự thảo",
+     "R9",
+     "Sửa sau kiểm tra lớp B lượt 1: huy động thực tế, nghiệm thu hạng mục 12 và CR01, cơ sở BL1 và BL2, ngày đóng dự án"
+    ],
+    [
+     "Bao_cao_tong_ket_du_an.docx",
+     "0.5",
+     "12/08/2027",
+     "25/10/2026 18:37",
+     "Báo cáo tổng kết dự án",
+     "Dự thảo",
+     "R9",
+     "Sửa sau kiểm tra lớp B lượt 1: huy động thực tế, nghiệm thu hạng mục 12 và CR01, cơ sở BL1 và BL2, ngày đóng dự án, số âm viết chữ âm"
+    ],
+    [
      "Bao_cao_danh_gia_du_an.docx",
      "0.1",
      "12/08/2027",
@@ -4053,6 +4127,16 @@
      "Dự thảo",
      "R9",
      "Đánh giá dự án, số liệu mô phỏng"
+    ],
+    [
+     "Bao_cao_danh_gia_du_an.docx",
+     "0.3",
+     "12/08/2027",
+     "25/10/2026 18:38",
+     "Báo cáo đánh giá dự án",
+     "Dự thảo",
+     "R9",
+     "Sửa sau kiểm tra lớp B lượt 1: K14 theo huy động thực tế, nghiệm thu hạng mục 12 và CR01, cơ sở BL1, rủi ro tách cơ hội, cam kết hỗ trợ tăng cường"
     ],
     [
      "Bao_cao_bai_hoc_kinh_nghiem.docx",
@@ -4085,6 +4169,16 @@
      "Bài học kinh nghiệm, số liệu mô phỏng"
     ],
     [
+     "Bao_cao_bai_hoc_kinh_nghiem.docx",
+     "0.4",
+     "12/08/2027",
+     "25/10/2026 18:38",
+     "Báo cáo bài học kinh nghiệm",
+     "Dự thảo",
+     "R9",
+     "Sửa sau kiểm tra lớp B lượt 1: K14 và huy động bổ sung có nguồn, số liệu BH05, BH08, BH10, BH12, lời văn BH02, BH07"
+    ],
+    [
      "Bang_phan_chia_luong.xlsx",
      "0.1",
      "12/08/2027",
@@ -4099,6 +4193,16 @@
      "0.2",
      "12/08/2027",
      "25/10/2026 18:07",
+     "Bảng phân chia lương",
+     "Dự thảo",
+     "R9",
+     ""
+    ],
+    [
+     "Bang_phan_chia_luong.xlsx",
+     "0.3",
+     "12/08/2027",
+     "25/10/2026 18:34",
      "Bảng phân chia lương",
      "Dự thảo",
      "R9",
@@ -4122,6 +4226,26 @@
      "Phụ lục bằng chứng prompt và skill",
      "Dự thảo",
      "",
+     ""
+    ],
+    [
+     "Phu_luc_bang_chung_prompt_skill.docx",
+     "0.3",
+     "12/08/2027",
+     "25/10/2026 18:08",
+     "Phụ lục bằng chứng prompt và skill",
+     "Dự thảo",
+     "R9",
+     ""
+    ],
+    [
+     "Phu_luc_bang_chung_prompt_skill.docx",
+     "0.4",
+     "12/08/2027",
+     "25/10/2026 18:41",
+     "Phụ lục bằng chứng prompt và skill",
+     "Dự thảo",
+     "R9",
      ""
     ]
    ],
@@ -4180,7 +4304,7 @@
      "qlda-phan-cong",
      "1.0.0 - 1.3.4",
      "256",
-     "25",
+     "27",
      "qlda-loi__vai_kiem_tra__24e2f43660f0.md, qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a098eadfb618.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md, qlda-phan-cong__vai_giao_viec__2f94e528a4c4.md, qlda-phan-cong__vai_giao_viec__a1ff5af62476.md"
     ],
     [
@@ -4206,8 +4330,8 @@
     ],
     [
      "qlda-loi",
-     "1.0.0 - 1.6.4",
-     "158",
+     "1.0.0 - 1.6.5",
+     "172",
      "2",
      "qlda-loi__vai_sua__d64f5988d34d.md"
     ],
@@ -4220,80 +4344,66 @@
     ],
     [
      "qlda-phien-ban",
-     "1.0.0 - 1.2.5",
-     "110",
-     "19",
+     "1.0.0 - 1.2.6",
+     "120",
+     "22",
      "AGENTS__362b3e315d00.md, qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ],
     [
      "qlda-change",
      "1.1.0 - 1.4.7",
      "40",
-     "24",
+     "19",
      "qlda-change__vai_danh_gia_thay_doi__c9589f1ccafb.md, qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ],
     [
      "qlda-master-plan",
      "1.1.0 - 1.2.4",
      "31",
-     "16",
+     "17",
      "qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ],
     [
      "qlda-mo-phong",
-     "1.0.2 - 1.0.4",
-     "28",
-     "12",
+     "1.0.2 - 1.0.5",
+     "31",
+     "15",
      "qlda-loi__vai_sua__d64f5988d34d.md, qlda-mo-phong__vai_mo_phong__2b98b03e9d16.md"
     ],
     [
      "qlda-bao-cao-tien-do",
-     "1.5.0 - 1.5.2",
-     "81",
-     "15",
+     "1.5.0 - 1.5.3",
+     "98",
+     "16",
      "qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ],
     [
-     "qlda-phan-cong phan_cong_tai_lieu",
-     "",
-     "0",
-     "1",
-     "qlda-loi__vai_soan_thao__a3c6b4541064.md"
-    ],
-    [
-     "qlda-master-plan ke_hoach_tong_the",
-     "",
-     "0",
-     "1",
-     "qlda-loi__vai_soan_thao__a3c6b4541064.md"
-    ],
-    [
      "qlda-tong-ket",
-     "1.4.0",
-     "6",
-     "1",
-     "qlda-loi__vai_soan_thao__a3c6b4541064.md"
+     "1.4.0 - 1.4.1",
+     "17",
+     "3",
+     "qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ],
     [
      "qlda-danh-gia",
      "1.1.0",
+     "5",
      "3",
-     "1",
-     "qlda-loi__vai_soan_thao__a3c6b4541064.md"
+     "qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ],
     [
      "qlda-bai-hoc",
      "1.1.0",
-     "8",
-     "2",
-     "qlda-bai-hoc__vai_rut_bai_hoc__610dfd8167ec.md, qlda-loi__vai_soan_thao__a3c6b4541064.md"
+     "11",
+     "4",
+     "qlda-bai-hoc__vai_rut_bai_hoc__610dfd8167ec.md, qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_soan_thao__a3c6b4541064.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ],
     [
      "qlda-bang-luong",
-     "1.4.0",
+     "1.4.0 - 1.4.1",
+     "3",
      "2",
-     "0",
-     ""
+     "qlda-loi__vai_kiem_tra__6932625a7893.md, qlda-loi__vai_sua__d64f5988d34d.md"
     ]
    ],
    "widths": [
@@ -4313,7 +4423,7 @@
    "t": "table"
   },
   {
-   "text": "Nhật ký chạy ghi 1256 lần chạy, trong đó 230 lần do agent thực hiện. Chi tiết prompt, đầu vào, đầu ra và băm nội dung của từng lần chạy ở Phụ lục bằng chứng prompt và skill.",
+   "text": "Nhật ký chạy ghi 1333 lần chạy, trong đó 241 lần do agent thực hiện và 5 lần do người dùng ghi (quyết định, phụ lục, kiểm tra đạt), còn lại là script. Chi tiết prompt, đầu vào, đầu ra và băm nội dung của từng lần chạy ở Phụ lục bằng chứng prompt và skill.",
    "t": "p"
   },
   {
@@ -4323,6 +4433,12 @@
      "Ngày",
      "Tác giả",
      "Nội dung"
+    ],
+    [
+     "bf5fa54",
+     "25/10/2026",
+     "tranbadat",
+     "update: final project"
     ],
     [
      "8279e2a",
@@ -4393,23 +4509,23 @@
   },
   {
    "t": "p",
-   "text": "Sổ phiên bản ghi nhận 295 phiên bản tài liệu, tính cả các phiên bản của tài liệu lưu trữ. Master schedule (TL02) thay đổi nhiều nhất với 29 phiên bản, tiếp theo là Cost estimate (TL09) và thuyết minh dự toán (TL10) với 22 phiên bản. Phần lớn các lần cập nhật diễn ra trong giai đoạn lập kế hoạch trước đường cơ sở hợp đồng, các lần cập nhật sau hợp đồng gắn mã yêu cầu thay đổi CR01."
+   "text": "Sổ phiên bản ghi nhận 307 phiên bản tài liệu, tính cả các phiên bản của tài liệu lưu trữ. Master schedule (TL02) thay đổi nhiều nhất với 29 phiên bản, tiếp theo là Cost estimate (TL09) với 24 phiên bản và thuyết minh dự toán (TL10) với 22 phiên bản. Phần lớn các lần cập nhật diễn ra trong giai đoạn lập kế hoạch trước đường cơ sở hợp đồng, các lần cập nhật sau hợp đồng gắn mã yêu cầu thay đổi CR01."
   },
   {
    "t": "p",
-   "text": "Trong giai đoạn thực hiện đã có 9 bản phát hành cuối sprint từ R1 đến R9, số liệu thực tế của các bản phát hành là số liệu mô phỏng. Mỗi báo cáo tiến độ được đăng ký phiên bản gắn bản phát hành hiện hành tại ngày báo cáo, bản phát hành chính thức đưa vào vận hành là R9. Có 15 tài liệu còn ở trạng thái Dự thảo (Bao_cao_tien_do_KT.docx, Bao_cao_tien_do_S1.docx, Bao_cao_tien_do_S2.docx, Bao_cao_tien_do_S3.docx, Bao_cao_tien_do_S4.docx, Bao_cao_tien_do_S5.docx, Bao_cao_tien_do_S6.docx, Bao_cao_tien_do_S7.docx, Bao_cao_tien_do_S8.docx, Bao_cao_tien_do_S9.docx, Bao_cao_tong_ket_du_an.docx, Bao_cao_danh_gia_du_an.docx, Bao_cao_bai_hoc_kinh_nghiem.docx, Bang_phan_chia_luong.xlsx, Phu_luc_bang_chung_prompt_skill.docx), cần kiểm tra lớp B trước khi chuyển trạng thái Đã kiểm tra. Số tài liệu cần cập nhật theo đầu vào là 0."
+   "text": "Trong giai đoạn thực hiện đã có 9 bản phát hành cuối sprint từ R1 đến R9, số liệu thực tế của các bản phát hành là số liệu mô phỏng. Mỗi báo cáo tiến độ được đăng ký phiên bản gắn bản phát hành hiện hành tại ngày báo cáo, bản phát hành chính thức đưa vào vận hành là R9. Có 15 tài liệu còn ở trạng thái Dự thảo (Bao_cao_tien_do_KT.docx, Bao_cao_tien_do_S1.docx, Bao_cao_tien_do_S2.docx, Bao_cao_tien_do_S3.docx, Bao_cao_tien_do_S4.docx, Bao_cao_tien_do_S5.docx, Bao_cao_tien_do_S6.docx, Bao_cao_tien_do_S7.docx, Bao_cao_tien_do_S8.docx, Bao_cao_tien_do_S9.docx, Bao_cao_tong_ket_du_an.docx, Bao_cao_danh_gia_du_an.docx, Bao_cao_bai_hoc_kinh_nghiem.docx, Bang_phan_chia_luong.xlsx, Phu_luc_bang_chung_prompt_skill.docx), cần kiểm tra độc lập trước khi chuyển trạng thái Đã kiểm tra. Số tài liệu cần cập nhật theo đầu vào là 0."
   },
   {
    "t": "p",
-   "text": "Yêu cầu thay đổi CR01 (Bán hàng trên sàn thương mại điện tử) ở trạng thái Đã đóng sau khi phần bán hàng trên sàn được Chủ đầu tư nghiệm thu tại mốc M9, các tài liệu phải cập nhật đã có phiên bản sau quyết định và thuộc đường cơ sở BL2."
+   "text": "Yêu cầu thay đổi CR01 (Bán hàng trên sàn thương mại điện tử) ở trạng thái Đã đóng sau khi phần bán hàng trên sàn được Chủ đầu tư nghiệm thu tại mốc M9. Các tài liệu kế hoạch phải cập nhật có phiên bản sau quyết định và thuộc đường cơ sở BL2, tài liệu quản lý phiên bản và sổ phiên bản Excel cũng được cập nhật theo yêu cầu thay đổi nhưng nằm ngoài đường cơ sở."
   },
   {
    "t": "p",
-   "text": "Đường cơ sở BL2 lần đầu được đặt khi các tài liệu kế hoạch chưa qua kiểm tra lớp B, nên phải lập lại sau khi sửa. Theo quyết định ưu tiên của nhóm, lượt kiểm tra lớp B xác nhận các tài liệu của đường cơ sở lập lại được thực hiện sau giai đoạn kết thúc. Quy trình yêu cầu thay đổi đã được sửa để kiểm tra lớp B các tài liệu sau thay đổi trước khi đặt đường cơ sở mới."
+   "text": "Đường cơ sở BL2 lần đầu được đặt khi các tài liệu kế hoạch chưa qua kiểm tra độc lập, nên phải lập lại sau khi sửa. Theo quyết định ưu tiên của nhóm, lượt kiểm tra độc lập xác nhận các tài liệu của đường cơ sở lập lại được thực hiện sau giai đoạn kết thúc. Quy trình yêu cầu thay đổi đã được sửa để kiểm tra độc lập các tài liệu sau thay đổi trước khi đặt đường cơ sở mới."
   },
   {
    "t": "p",
-   "text": "Kho git có 8 lần commit, các thay đổi của giai đoạn thực hiện chưa được ghi nhận vào kho. Nhóm cần ghi nhận thay đổi sau mỗi lần hoàn thiện tài liệu kèm mã bước và phiên bản, gắn thẻ BL1, BL2 tại các đường cơ sở. Phụ lục bằng chứng prompt và skill (TL30) được xuất lại vào cuối dự án để gồm toàn bộ nhật ký chạy."
+   "text": "Kho git có 9 lần commit, lần commit cuối đã gồm các tài liệu của giai đoạn thực hiện và kết thúc. Tồn tại là nội dung commit chưa ghi mã bước và phiên bản tài liệu, chưa gắn thẻ BL1, BL2 tại các đường cơ sở, nhóm cần bổ sung khi ghi nhận thay đổi tiếp theo. Phụ lục bằng chứng prompt và skill (TL30) được xuất lại vào cuối dự án để gồm toàn bộ nhật ký chạy."
   }
  ],
  "canh_bao_soan": [

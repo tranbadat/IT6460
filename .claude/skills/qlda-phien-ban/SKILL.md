@@ -37,3 +37,5 @@ Mọi script của bộ skill tự đăng ký phiên bản vào du_lieu/phien_ba
 Đầu ra: ket_qua/15_Quan_ly_phien_ban/So_phien_ban.xlsx, Tai_lieu_quan_ly_phien_ban.docx.
 
 Thư mục dự án nên là kho git: commit sau mỗi lần hoàn thiện tài liệu với nội dung "<bước> <phiên bản>", gắn thẻ khi lập đường cơ sở. Lịch sử git được đưa vào sổ phiên bản.
+
+Từ 1.2.6: tong_hop đếm so_lan_agent theo loai agent, tách so_lan_nguoi_dung; chuẩn hóa tên skill bị ghép mã bước; ghi chú lịch sử thay dấu chấm phẩy; phien_ban_tong_hop có lam_lai và duong_co_so_thay_the (sheet Duong_co_so có phần Đường cơ sở đã thay); ngày trong Excel dạng dd/mm/yyyy.

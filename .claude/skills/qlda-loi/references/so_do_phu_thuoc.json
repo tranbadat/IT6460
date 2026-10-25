@@ -51,6 +51,11 @@
    "mo_ta": "Sổ yêu cầu thay đổi, cập nhật trong quá trình thực hiện",
    "bat_buoc": false
   },
+  "tt_huy_dong_bo_sung": {
+   "tep": "dau_vao/thuc_te/huy_dong_bo_sung.json",
+   "mo_ta": "Huy động bổ sung thực tế theo nhu cầu ngoài kế hoạch (thành viên, sprint, MD) và quyết định của nhóm",
+   "bat_buoc": false
+  },
   "tt_nhat_ky": {
    "tep": "dau_vao/thuc_te/nhat_ky_cong_viec.csv",
    "mo_ta": "Nhật ký công việc thực tế: ngày, thành viên, mã gói WBS, MD",
@@ -401,6 +406,7 @@
     "don_gia",
     "thanh_vien",
     "tt_nhat_ky",
+    "tt_huy_dong_bo_sung",
     "tt_hoan_thanh",
     "rui_ro",
     "tt_rui_ro",
@@ -451,6 +457,7 @@
     "thanh_vien",
     "don_gia",
     "tt_nhat_ky",
+    "tt_huy_dong_bo_sung",
     "tt_hoan_thanh",
     "tt_moc",
     "tt_nghiem_thu",
@@ -547,6 +554,7 @@
    "ten": "Bảng phân chia lương",
    "vao": [
     "tt_nhat_ky",
+    "tt_huy_dong_bo_sung",
     "thanh_vien",
     "don_gia",
     "chi_phi",

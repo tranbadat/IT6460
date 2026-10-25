@@ -1,0 +1,169 @@
+{
+ "tai_lieu": "ket_qua/12_Bao_cao_danh_gia/Bao_cao_danh_gia_du_an.docx",
+ "phien_ban": "0.2",
+ "dac_ta": "qlda-danh-gia/dac_ta/bao_cao_danh_gia.json",
+ "vai": "agent Kiểm tra độc lập (lớp B)",
+ "ngay_kiem_tra": "2026-10-25",
+ "moi_truong": "Phiên kiểm tra riêng (agent con), Claude Code, mô hình Claude Opus 5.5, python-docx đọc tệp Word",
+ "ket_luan": "chua_dat",
+ "so_loi": 3,
+ "so_canh_bao": 8,
+ "danh_gia_tieu_chi": [
+  {
+   "tieu_chi": "CL01",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ 7 mục: phương pháp, KPI, nghiệm thu, thay đổi, rủi ro, cam kết, kết luận kiến nghị."
+  },
+  {
+   "tieu_chi": "CL02",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "K14 và tỷ lệ 14/14 tính trên huy động thiếu 13 MD bổ sung (DG01). Ngày đóng dự án 12/08 mâu thuẫn M8 04/08 (DG03). Các số khác khớp ket_thuc.json và khớp báo cáo tổng kết (KPI, EMV 47,60 MD, 150.693.014 đồng, tác động 2,50 MD, 5.250.000 đồng, 10,5%, CR01 5 ngày)."
+  },
+  {
+   "tieu_chi": "CL03",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Nhận định có mã R, NT, CR, RR, VD, gói WBS. Thiếu truy vết nghiệm thu phạm vi CR01 và hạng mục 12 Mẫu 01A (DG02). R12 có NT15 nhưng không có trong bảng yêu cầu RFP (DC7)."
+  },
+  {
+   "tieu_chi": "CL04",
+   "ket_qua": "chua_dat",
+   "nhan_xet": "Khẳng định không còn yêu cầu chưa nghiệm thu trong khi hạng mục 12 Mẫu 01A chưa nghiệm thu và CR01 không có tiêu chí (DG02)."
+  },
+  {
+   "tieu_chi": "CL05",
+   "ket_qua": "dat",
+   "nhan_xet": "Đánh giá thay đổi theo từng bước quy trình, rủi ro so EMV với thực tế. Còn thiếu đối chiếu dự phòng với EMV, EMV thời gian, cơ hội (DC2, DC3)."
+  },
+  {
+   "tieu_chi": "CL06",
+   "ket_qua": "dat",
+   "nhan_xet": "Đúng phông, cỡ, không in đậm, không ngoặc kép, không chấm phẩy. K03 hiển thị 1 thay vì 1,00 (DC8)."
+  },
+  {
+   "tieu_chi": "doc_hieu: nhận định dựa trên số liệu và mã bằng chứng",
+   "ket_qua": "dat",
+   "nhan_xet": "Có mã bằng chứng. Một vài viện dẫn chưa chính xác (DC2: 3.4.11 không phải gói dùng lại thành phần)."
+  },
+  {
+   "tieu_chi": "doc_hieu: đánh giá cả mặt chưa tốt",
+   "ket_qua": "dat",
+   "nhan_xet": "Có Đạt một phần cho cập nhật tài liệu, hạn chế về mức huy động sát nhu cầu và BL2. Chưa nêu kỹ sư chủ chốt không huy động S7, S8 (DC6)."
+  },
+  {
+   "tieu_chi": "doc_hieu: so EMV với tác động thực tế",
+   "ket_qua": "dat",
+   "nhan_xet": "So 2,50 MD với 47,60 MD và theo từng rủi ro. Chưa so EMV thời gian và dự phòng với EMV (DC3)."
+  },
+  {
+   "tieu_chi": "doc_hieu: quản lý thay đổi theo từng bước",
+   "ket_qua": "dat",
+   "nhan_xet": "Đủ tiếp nhận, đánh giá tác động, phê duyệt, phụ lục, cập nhật tài liệu, thay đổi không chính thức."
+  },
+  {
+   "tieu_chi": "doc_hieu: kiến nghị cụ thể, kiểm chứng được",
+   "ket_qua": "dat",
+   "nhan_xet": "Kiến nghị gắn hành động cụ thể (phần dư huy động sprint kiểm thử, kiểm tra lớp B trước đường cơ sở, đầu mối bảo hành)."
+  }
+ ],
+ "phat_hien": [
+  {
+   "ma": "DG01",
+   "muc_do": "loi",
+   "nhom": "CL02 KPI",
+   "vi_tri": "Mục 2 bảng KPI dòng K14 81,1% Đạt, bảng theo nhóm Chi phí 3/3, đoạn Tỷ lệ chỉ tiêu đạt 100% (14/14), DANH_GIA_KPI dòng K14, KET_LUAN: 14 trên 14 chỉ tiêu KPI đạt",
+   "mo_ta": "K14 tính 736,75/908 nhưng 908 không gồm 13 MD huy động bổ sung S8, S9 (huy_dong_bo_sung.json), chính KET_LUAN thừa nhận phải huy động bổ sung ở S8, S9. Tính đúng 736,75/921 = 79,99% dưới ngưỡng 80%, K14 Không đạt, tỷ lệ 13/14 = 92,9%, xếp loại vẫn Tốt.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Sửa ở dữ liệu ket_thuc.json (cùng gốc MH01 của báo cáo tổng kết), tạo lại KPI, soạn lại DANH_GIA_KPI, KET_LUAN. Nhóm xác nhận cách tính và kết quả K14 vì sát ngưỡng."
+  },
+  {
+   "ma": "DG02",
+   "muc_do": "loi",
+   "nhom": "CL03, CL04 nghiệm thu",
+   "vi_tri": "Đoạn NGHIEM_THU: ... không có tiêu chí phải nghiệm thu lại và không còn yêu cầu chưa nghiệm thu, bảng CAM_KET dòng Bảo đảm chất lượng và nghiệm thu ... Đạt",
+   "mo_ta": "Hạng mục 12 Mẫu 01A Chuyển giao và hướng dẫn vận hành có 0 tiêu chí, kết quả Chưa nghiệm thu (ket_thuc.nghiem_thu.hang_muc), phạm vi CR01 không có tiêu chí NT nào, đánh giá nghiệm thu không nêu hai điểm này và không đánh giá tiêu chí kỹ thuật HSMT theo hạng mục.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Cùng gốc MH02, MH03: nhóm quyết định bổ sung tiêu chí nghiệm thu thực tế hoặc soạn lại NGHIEM_THU, CAM_KET nêu hạng mục chưa nghiệm thu và đánh giá Đạt một phần."
+  },
+  {
+   "ma": "DG03",
+   "muc_do": "loi",
+   "nhom": "CL02 ngày",
+   "vi_tri": "Đoạn PHUONG_PHAP: Đánh giá do nhóm dự án thực hiện sau ngày đóng dự án 12/08/2027",
+   "mo_ta": "Mốc M8 Đóng dự án đạt 04/08/2027, 12/08/2027 là ngày chốt số liệu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa ket_thuc.ngay_dong_du_an (cùng gốc MH05), soạn lại PHUONG_PHAP."
+  },
+  {
+   "ma": "DC1",
+   "muc_do": "canh_bao",
+   "nhom": "CL03 đường cơ sở BL1, BL2",
+   "vi_tri": "Mục 4 đoạn Tổng tác động đã duyệt: 76 MD, 161.500.000 đồng, bảng CAM_KET dòng Thời hạn đưa hệ thống vào vận hành, KPI K01",
+   "mo_ta": "Không nêu cơ sở so sánh: HSMT, HSDT và BL1 cut over 01/07/2027, giá 1.750.000.000 đồng, phụ lục và BL2 cut over 29/07/2027 (lùi 20 ngày làm việc), giá 1.949.024.682 đồng. 161.500.000 đồng là chi phí nội bộ, tác động giá đã duyệt là 199.024.682 đồng.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Thêm trường BL1 và giá điều chỉnh vào ket_thuc.json, soạn lại THAY_DOI, CAM_KET."
+  },
+  {
+   "ma": "DC2",
+   "muc_do": "canh_bao",
+   "nhom": "CL05 rủi ro, cơ hội",
+   "vi_tri": "Bảng rủi ro dòng RR20, RR21, RUI_RO dòng Hiệu quả phòng ngừa: 19 rủi ro không xảy ra, DANH_GIA_KPI dòng K04",
+   "mo_ta": "RR20, RR21 là cơ hội nhưng bảng và đánh giá phòng ngừa gộp chung với đe dọa. K04 lấy gói dùng lại thành phần làm nguyên nhân bù công (gắn cơ hội RR20 tái sử dụng khung) trong khi RR20 ghi không xảy ra, tác động 0, và 3.4.11 là kịch bản kiểm thử chấp nhận, không phải gói dùng lại thành phần.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại RUI_RO, DANH_GIA_KPI tách cơ hội. Nếu RR20 thực tế đã xảy ra thì ghi theo_doi_rui_ro.csv (nhóm xác nhận)."
+  },
+  {
+   "ma": "DC3",
+   "muc_do": "canh_bao",
+   "nhom": "CL05 dự phòng so với EMV",
+   "vi_tri": "RUI_RO dòng Độ chính xác đánh giá, Mức dùng dự phòng",
+   "mo_ta": "Không đánh giá việc dự phòng 50.000.000 đồng thấp hơn tổng EMV 150.693.014 đồng (quyết định 18/10/2026 chấp nhận phần vượt), không nêu cơ sở EMV (sổ rủi ro tại BL2, EMV còn lại 115.413.014 đồng), không so EMV thời gian 21,2 ngày với tác động tiến độ thực tế (RR02 tài liệu muộn 2 ngày làm việc, SPI Vàng S3, S4).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại RUI_RO."
+  },
+  {
+   "ma": "DC4",
+   "muc_do": "canh_bao",
+   "nhom": "CL02 lời văn",
+   "vi_tri": "RUI_RO dòng Tính kịp thời: RR06 được xử lý trong cùng sprint phát hiện",
+   "mo_ta": "RR06 kích hoạt 21/06/2027 (S7), đóng 06/07/2027 (S8), đo lại 1.4.9 hoàn thành ở S8. RR04 xảy ra nhưng không kích hoạt kế hoạch ứng phó (da_kich_hoat false), chưa được đánh giá về dấu hiệu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại RUI_RO."
+  },
+  {
+   "ma": "DC5",
+   "muc_do": "canh_bao",
+   "nhom": "CL01 cam kết HSDT",
+   "vi_tri": "Bảng CAM_KET",
+   "mo_ta": "Thiếu cam kết HSDT về hỗ trợ tăng cường sau cut over (02/07 đến 15/07/2027 theo cut over cũ, cần dời theo cut over 29/07) và thời hạn phản hồi, khắc phục theo mức lỗi trong bảo hành.",
+   "cach_sua": "can_nguoi_dung",
+   "de_xuat": "Soạn lại CAM_KET, nhóm xác nhận thời gian hỗ trợ tăng cường thực tế."
+  },
+  {
+   "ma": "DC6",
+   "muc_do": "canh_bao",
+   "nhom": "CL01 nhân sự chủ chốt",
+   "vi_tri": "CAM_KET dòng Nhân sự chủ chốt: Không thay đổi nhân sự chủ chốt ... Đạt",
+   "mo_ta": "Phạm Tuấn Anh (kỹ sư phát triển chủ chốt theo HSDT) có tỷ lệ huy động 0 ở S7, S8, việc tối ưu RR06 phải giao Đỗ Minh Quân. Đánh giá Đạt chưa nêu điểm này.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Soạn lại CAM_KET."
+  },
+  {
+   "ma": "DC7",
+   "muc_do": "canh_bao",
+   "nhom": "CL03 yêu cầu RFP",
+   "vi_tri": "Mục 3 bảng yêu cầu RFP (14 dòng)",
+   "mo_ta": "NT15 nghiệm thu R12 (cut over) nhưng R12 không có trong bảng yêu cầu RFP, R02 mục tiêu dự án không được đánh giá. Chưa chắc phạm vi 14 yêu cầu là chủ ý của bộ chỉ tiêu.",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Xem lại quy tắc chọn yêu cầu RFP trong script tổng hợp ket_thuc.json."
+  },
+  {
+   "ma": "DC8",
+   "muc_do": "canh_bao",
+   "nhom": "CL06",
+   "vi_tri": "Bảng KPI dòng K03 cột Thực tế: 1",
+   "mo_ta": "Hiển thị 1 trong khi các chỉ số khác hai chữ số thập phân (báo cáo tổng kết ghi 1,00).",
+   "cach_sua": "tu_dong",
+   "de_xuat": "Sửa thuc_te_hien_thi của K03 trong dữ liệu."
+  }
+ ]
+}

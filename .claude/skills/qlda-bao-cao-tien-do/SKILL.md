@@ -42,3 +42,5 @@ Sổ vấn đề (so_van_de.csv) và hành động (hanh_dong.csv) mở từ M0.
 Khi SPI hoặc CPI dưới ngưỡng: nêu nguyên nhân theo gói, ghi vấn đề vào sổ, kích hoạt kế hoạch ứng phó rủi ro tương ứng (ghi theo_doi_rui_ro.csv), hoặc lập yêu cầu thay đổi (skill qlda-change) nếu cần điều chỉnh phạm vi, mốc, huy động.
 
 Thư viện dùng chung: scripts/thuc_te.py (ngày làm việc gồm kỳ KT, ngày huy động, chi phí lương theo huy động, chi phí khác thực tế, kiểm tra ô CSV, căn cứ số liệu mô phỏng) được qlda-tong-ket và qlda-bang-luong dùng lại.
+
+Từ 1.5.3: thuc_te.md_huy_dong tính đến một ngày cộng huy động bổ sung thực tế theo nhu cầu (dau_vao/thuc_te/huy_dong_bo_sung.json, nút tt_huy_dong_bo_sung), dùng chung cho báo cáo tiến độ, tổng kết, bảng lương.
